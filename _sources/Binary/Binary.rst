@@ -79,10 +79,4 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
 
     Which of the following are advantages of building computers out of binary devices?
     
-
-.. attribution::
-    :title_1: Introduction to Computer Science using Java
-    :title_link_1: http://chortle.ccsu.edu/java5/index.html
-    :author_1: Bradley Kjell
-    :author_link_1: http://chortle.ccsu.edu/
-    :license_1: CC_BY_NC_30
+.. quick_attribution:: ICSJava

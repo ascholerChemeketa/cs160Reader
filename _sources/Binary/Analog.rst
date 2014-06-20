@@ -23,6 +23,8 @@ That is one of the reasons computers are built as **digital** devices. A digital
      
 We could have more than two possible states - we refer to "digits" in numbers as digits because they are only allowed to be 0, 1, 2, 3, 4, 5, 6, 7, 8 or 9. A single digit can't represent a value halfway between 1 and 2. The English alphabet is a digital system with 26 possible values (A-Z).
     
+.. pseudo_h4:: Self Check 
+    :class: underlined
     
 .. mchoicemf:: questionanalog_1
     :answer_a: Yes—the noise hides the exact values of the original signal.
@@ -37,9 +39,5 @@ We could have more than two possible states - we refer to "digits" in numbers as
     
     If an **analog** signal picks up some noise (the values at each point in time change by a random amount), has information been lost?
 
-.. attribution::
-    :title_1: Introduction to Computer Science using Java
-    :title_link_1: http://chortle.ccsu.edu/java5/index.html
-    :author_1: Bradley Kjell
-    :author_link_1: http://chortle.ccsu.edu/
-    :license_1: CC_BY_NC_30    
+
+.. quick_attribution:: ICSJava

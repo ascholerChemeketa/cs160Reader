@@ -33,6 +33,7 @@ def setup(app):
     app.add_directive('pseudo_h4',PseudoHeader)
     app.add_directive('pseudo_h5',PseudoHeader)
     app.add_directive('attribution',Attribution)
+    app.add_directive('quick_attribution',QuickAttribution)
 
 
 
@@ -61,13 +62,85 @@ class PseudoHeader(Directive):
         
 
         
-def attribution_link(argument):
-    """Conversion function for the "attribute_type" option."""
-    result = directives.choice(argument, ('CC_BY_NC_30'))
-    if result == "CC_BY_NC_30":
-        result = ' <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>'
+class AttributionLine():
+    """
+        Helper to Attribution and QuickAttribution
+         options for construction should be a dict with:
+         options['title'] : title of source
+         options['title_link'] : optional link to source
+         options['author'] : optional name of author
+         options['author_link_' : optional link to author
+         options['license'] : optional license name
+    """
+
+    options = {}
+
+    def __init__(self, options):
+        self.options = options
         
-    return result
+        
+    def getTitleText(self):
+        if 'title_link' in self.options:
+            return "<a src='%(title_link)s'>%(title)s</a>" % self.options
+        else:
+            return "%(title)s" % self.options
+            
+    def getAuthorText(self):
+        if 'author' in self.options:
+            if 'author_link' in self.options:
+                return " by <a src='%(author_link)s'>%(author)s</a>" % self.options
+            else:
+                return " by %(author)s" % self.options
+        else:
+            return ""
+            
+    def getLicenseText(self):
+        if 'license' in self.options:
+            if self.options['license'] == 'CC_BY_NC_30':
+                return ' (<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>)'
+            else:
+                return ""
+        else:
+            return ""
+            
+            
+    def getText(self):
+        output = ''
+        output = output + '<br />\n' + self.getTitleText()
+        output = output + self.getAuthorText()
+        output = output + self.getLicenseText()
+        return output
+
+        
+        
+        
+class QuickAttribution(Directive):
+    """Adds attribution(s) from list of known sources
+        sources to be listed should be whitespace separated after quick_attribution. Ex:
+        .. quick_attribution:: ICSJava VT"""
+    required_arguments = 0
+    optional_arguments = 5
+    has_content = False
+                   
+    def run(self):
+        attribution_number = 0
+        
+        output = '\n<div class="attribution">Materials on this page adapted with permission from:'
+        
+        for argument in self.arguments:
+            cur_options = {}
+            if argument == 'ICSJava':
+                cur_options['title'] = "Introduction to Computer Science using Java"
+                cur_options['title_link'] = "http://chortle.ccsu.edu/java5/index.html"
+                cur_options['author'] = "Bradley Kjell"
+                cur_options['author_link'] = "http://chortle.ccsu.edu/"
+                cur_options['license'] = "CC_BY_NC_30"
+            
+            output = output + AttributionLine(cur_options).getText()
+            
+        output = output + '</div>'
+        return [nodes.raw('',output , format='html')]
+        
 
 class Attribution(Directive):
     required_arguments = 0
@@ -134,9 +207,8 @@ class Attribution(Directive):
             if 'license_' + num_s in self.options:
                 cur_options['license'] = self.options['license_' + num_s]
             
-            output = output + '<br />\n' + self.getTitleText(cur_options)
-            output = output + self.getAuthorText(cur_options)
-            output = output + self.getLicenseText(cur_options)
+            cur_line = AttributionLine(cur_options).getText()
+            output = output + cur_line
             
             attribution_number = attribution_number + 1
             

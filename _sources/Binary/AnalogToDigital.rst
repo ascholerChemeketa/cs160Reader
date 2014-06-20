@@ -24,6 +24,8 @@ Even if the electrical circuit that is trying to represent this pattern has a lo
 
 Even though there is a lot of noise - the signal is bouncing above and below the voltage we are trying to use, it is very much clear what the value should be at T1 and T2. We can ignore the noise and confidently say the signal at T1 is "off" and at T2 is "on".
 
+.. pseudo_h4:: Self Check 
+    :class: underlined
 
 .. mchoicemf:: questionanalogdigital_1
     :answer_a: Yes—the exact value of the signal cannot be determined.
@@ -38,10 +40,5 @@ Even though there is a lot of noise - the signal is bouncing above and below the
     
     If a **digital** signal picks up some noise, has information been lost?
 
-    
-.. attribution::
-    :title_1: Introduction to Computer Science using Java
-    :title_link_1: http://chortle.ccsu.edu/java5/index.html
-    :author_1: Bradley Kjell
-    :author_link_1: http://chortle.ccsu.edu/
-    :license_1: CC_BY_NC_30
+
+.. quick_attribution:: ICSJava
