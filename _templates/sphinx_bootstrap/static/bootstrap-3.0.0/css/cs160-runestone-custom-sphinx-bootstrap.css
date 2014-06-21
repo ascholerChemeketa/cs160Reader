@@ -3,7 +3,7 @@
 /* Runestone custom modifications */
 
 body {
-    padding-top: 60px;
+    padding-top: 50px;
     background-color: #eeeeee;
 }
 
@@ -402,10 +402,7 @@ div.flash {
     height: auto !important;
     width: auto !important;
 }
-
 .navLink{
-	z-index: 2;
-	display: inline;
 }
 
 #relations-next{
@@ -418,6 +415,18 @@ div.flash {
 	margin-left: 50px;
 	margin-bottom: 20px;
     float: left;
+}
+
+#relation-links {
+z-index: 1030;
+position: fixed;
+top: 98px;
+width: 100%;
+
+}
+
+#relation-links .container {
+background-color:rgba(0,0,0,0);
 }
 
 .navLink a{
@@ -520,4 +529,18 @@ button[name="compare"] {
 
 .underlined {
     border-bottom: thin #ccc solid;
+}
+
+h1 {
+    border-bottom: thin #ccc solid;
+}
+
+div.attribution {
+    margin: 1.4em 0px;
+    border-top: thin solid #ccc;
+    padding-top: 5px;
+}
+
+h4 {
+    margin: 1.4em 0px .9em 0px;
 }

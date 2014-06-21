@@ -1,6 +1,6 @@
 .. include:: ../global.rst
 
- 
+
 Binary
 ====================
 
@@ -33,13 +33,4 @@ You may already know that computers are "digital" and that they use "binary" num
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-    
-
-.. attribution::
-    :title_1: Introduction to Computer Science using Java
-    :title_link_1: http://chortle.ccsu.edu/java5/index.html
-    :author_1: Bradley Kjell
-    :author_link_1: http://chortle.ccsu.edu/
-    :license_1: CC_BY_NC_30
     

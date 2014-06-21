@@ -1,11 +1,12 @@
+.. include:: global.rst
 
-Contents
-====================
+.. rst-class:: asdf
 
-.. raw:: html
-
-    <hr />
+Table of Contents   
+##################
     
+Computation    
+==============
    
 .. toctree::
    :maxdepth: 2
@@ -14,3 +15,6 @@ Contents
    HistoryOfComputers/index.rst
    Binary/index.rst
 
+
+BYOB    
+=========

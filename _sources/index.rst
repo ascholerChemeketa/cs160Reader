@@ -1,19 +1,14 @@
 .. include:: global.rst
 
-=====================
-CS160 Reader
-=====================
+Welcome to CS160
+==================
+  
+This reader contains a collection of resources we will be using uring the term.
 
-
-Welcome to the course
-=====================
-
-.. _my-reference-label:
-
-Blah blah blah
-
+To get started, go to the  :doc:`Table of Contents <booktoc>`.
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    
-   booktoc
+   booktoc 

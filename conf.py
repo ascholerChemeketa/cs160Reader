@@ -114,7 +114,7 @@ html_short_title ='CS160'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['../runestone/common/js',
                     '../runestone/common/css',
-                    #'../runestone/common/ext/skulpt/dist',
+                    '../runestone/common/ext/skulpt/dist',
                     '../runestone/common/ext/js-parsons',
                     #'../runestone/common/ext/codelens/v3',
                     '../runestone/common/bootstrap',

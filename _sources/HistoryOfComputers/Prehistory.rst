@@ -9,6 +9,5 @@ asdf asdf asdf asdf aswdf   Woot woot sfaasd fasdf asdf asdf asdf asdf asdf asdf
 sfaasd fasdf asdf asdf asdf asdf asdf asdf asdf aswdf    
 Woot woot sfaasd fasdf asdf asdf asdf asdf asdf asdf asdf aswdf 
    
-   
-This is an :red:`inline text`
-
+ 
+.. quick_attribution:: ICSJava

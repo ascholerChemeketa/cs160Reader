@@ -49,7 +49,7 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
 
 #. Anything that can be represented with some sort of pattern can be represented with a binary pattern
     It might seem hard right now to imagine how we could represent things as diverse as numbers, music, images and text can all be represented by just "on" and "off". But we will learn tricks for converting anything that can be represented as any kind of pattern using just these two values.
- 
+
 .. pseudo_h4:: Self Check 
     :class: underlined
  
