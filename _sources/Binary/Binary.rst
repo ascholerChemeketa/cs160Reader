@@ -1,11 +1,13 @@
 .. include:: ../global.rst
 
 .. index:: ! binary
+
+.. _binary:
  
 Binary and Its Advantages
 ============================
 
-**Binary** means "two states." The two states are sometimes called "1" and "0", or called "true" and "false", or called "on" and "off". The essential characteristic is that a *single binary device can be in just one of two possible states*.
+B\ **inary** means "two states." The two states are sometimes called "1" and "0", or called "true" and "false", or called "on" and "off". The essential characteristic is that a *single binary device can be in just one of two possible states*.
 
 A good example is a toggle switch, such as a light switch. You can turn it on or off but not (in normal operation) anything else. A light switch holds one bit of information. 
 

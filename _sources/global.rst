@@ -2,6 +2,6 @@
 
 .. role:: red
     :class: red
-   
-.. role:: pseudo_h2
-    :class: big
+    
+
+.. role:: inlinegroup

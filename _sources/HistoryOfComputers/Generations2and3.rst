@@ -2,7 +2,7 @@
 
 .. index:: vacuum tube, Colossus
 
-The First Generation
+The Second Generation
 =======================
 
 .. sidebar:: Vacuum tube

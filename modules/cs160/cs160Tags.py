@@ -98,6 +98,8 @@ class AttributionLine():
         if 'license' in self.options:
             if self.options['license'] == 'CC_BY_NC_30':
                 return ' (<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>)'
+            if self.options['license'] == 'CC_SA_30':
+                return ' (<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)'
             else:
                 return ""
         else:
@@ -135,6 +137,11 @@ class QuickAttribution(Directive):
                 cur_options['author'] = "Bradley Kjell"
                 cur_options['author_link'] = "http://chortle.ccsu.edu/"
                 cur_options['license'] = "CC_BY_NC_30"
+            
+            if argument == 'Wikipedia':
+                cur_options['title'] = "Wikipedia"
+                cur_options['title_link'] = "http://en.wikipedia.org/"
+                cur_options['license'] = "CC_SA_30"
             
             output = output + AttributionLine(cur_options).getText()
             
