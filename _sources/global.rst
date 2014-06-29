@@ -5,3 +5,7 @@
     
 
 .. role:: inlinegroup
+
+.. role:: main-table
+
+.. highlight:: none

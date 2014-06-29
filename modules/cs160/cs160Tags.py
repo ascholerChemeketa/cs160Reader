@@ -18,12 +18,9 @@ __author__ = 'andewscholer'
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst import Directive
+from docutils.parsers.rst.roles import set_classes
 
-"""
-    ReST directive for making heading tags that are not indexed
-
-    .. h2:: This is a heading
-"""
+from docutils.nodes import TextElement, Inline
 
 
 def setup(app):
@@ -33,10 +30,33 @@ def setup(app):
     app.add_directive('pseudo_h4',PseudoHeader)
     app.add_directive('pseudo_h5',PseudoHeader)
     app.add_directive('attribution',Attribution)
+    app.add_directive('faux_code',FauxCodeBlock)
     app.add_directive('quick_attribution',QuickAttribution)
 
 
 
+class FauxCodeBlock(Directive):
+    required_arguments = 0
+    has_content = True
+    option_spec = {'class': directives.class_option,
+                   'name': directives.unchanged}
+
+    def run(self):
+        set_classes(self.options)
+        self.assert_has_content()
+        text = '\n'.join(self.content)
+        node = nodes.literal_block(text, '')
+        self.state.nested_parse(self.content, self.content_offset,
+                                node)
+        return [node]
+        
+        
+
+"""
+    ReST directive for making heading tags that are not indexed
+
+    .. h2:: This is a heading
+"""
 
 class PseudoHeader(Directive):
     required_arguments = 1

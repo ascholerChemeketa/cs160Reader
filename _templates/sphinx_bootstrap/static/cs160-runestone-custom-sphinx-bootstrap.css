@@ -39,6 +39,8 @@ h5 {
 }
 
 
+
+
 div.container {
     background-color: #ffffff;
 }
@@ -422,11 +424,11 @@ z-index: 1030;
 position: fixed;
 top: 98px;
 width: 100%;
-
+height: 0px;
 }
 
 #relation-links .container {
-background-color:rgba(0,0,0,0);
+height: 0px;
 }
 
 .navLink a{
@@ -602,10 +604,19 @@ div.sidebar a {
     text-align: center;
 }
 
+/*drop cap*/
 div.section>p:first-of-type { padding-top: 10px; }
 
 div.section>p:first-of-type:first-letter { float: left; --color: #677915; font-size: 40pt; line-height: 28pt; padding-top: 0px; padding-right: 3px; padding-bottom: 2px;
 padding-left: 0px; font-family: Georgia}
+
+div.section>p:first-of-type:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
 
 .my-video-overlay  {
     position: relative;
@@ -628,4 +639,104 @@ blockquote  p {
     font-weight: inherit;
     line-height: 1.3;
     font-style: italic;
+}
+
+table.maintable {
+    max-width: 80%;
+    border: 0px solid #f0f0f0;
+}
+
+table.maintable td, table.maintable th {
+    text-align: center;
+}
+
+table.place-values {
+    width: auto;
+    padding: 0px;
+    font-size: 16pt;
+    border: 1px solid #f0f0f0;
+}
+
+table.place-values col {
+    width: 50px;
+}
+
+
+table.place-values thead tr:first-child {
+    color: #888;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-size: 12pt;
+}
+
+table.place-values thead { 
+    color: #888;
+    font-size: 10pt;
+}
+
+table.place-values td, table.place-values th{
+
+    border: 1px solid #ccc;
+}
+
+.place-values thead>tr>th, 
+.place-values thead>tr>td, 
+.place-values tbody>tr>th, 
+.place-values tfoot>tr>th, 
+.place-values tbody>tr>td, 
+.place-values tfoot>tr>td { 
+    line-height: 1;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+
+.emphasis {
+    font-weight: bold;
+}
+
+.line-block {
+margin-top: 0em;
+margin-bottom: 0em;
+};
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('play_overlay_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+blockquote  p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+table.maintable {
+    max-width: 80%;
+    border: 0px solid #f0f0f0;
+}
+table.maintable td, table.maintable th {
+    text-align: center;
+}
+
+.emphasis {
+    font-weight: bold;
+}
+
+.line-block {
+margin-top: 0em;
+margin-bottom: 0em;
+}
+
+pre code {
+padding: 2px 4px;
+font-size: 90%;
+color: #c7254e;
+white-space: nowrap;
+background-color: #f9f2f4;
+border-radius: 4px;
 }

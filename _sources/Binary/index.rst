@@ -14,7 +14,11 @@ You may already know that computers are "digital" and that they use "binary" num
     Analog.rst
     AnalogToDigital.rst
     Binary.rst
+    Bits.rst
+    BitPatterns.rst
+    Bytes.rst
 
+    
     
 .. raw:: html  
 

@@ -15,13 +15,13 @@ sys.path.insert(0, os.path.abspath('modules'))
 extensions = ['sphinx.ext.mathjax',
               'luther.sphinx.video',
               'luther.sphinx.reveal',
-              #'luther.sphinx.poll',
+              'luther.sphinx.poll',
               'luther.sphinx.tabbedStuff',
               'luther.sphinx.disqus',
-              #'luther.sphinx.codelens',
+              'luther.sphinx.codelens',
               'luther.sphinx.activecode',
               'luther.sphinx.assess',
-              #'luther.sphinx.animation',
+              'luther.sphinx.animation',
               'luther.sphinx.meta',
               'gatech.parsons',
               'cs160']
@@ -116,10 +116,13 @@ html_static_path = ['../runestone/common/js',
                     '../runestone/common/css',
                     '../runestone/common/ext/skulpt/dist',
                     '../runestone/common/ext/js-parsons',
-                    #'../runestone/common/ext/codelens/v3',
+                    '../runestone/common/ext/codelens/v3',
                     '../runestone/common/bootstrap',
                     '../runestone/common/images',
-                    '_static']
+                    '../runestone/static/_static',
+                    '_static/cs160',
+                    '_static',
+                    '../runestone/source/_static',]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
