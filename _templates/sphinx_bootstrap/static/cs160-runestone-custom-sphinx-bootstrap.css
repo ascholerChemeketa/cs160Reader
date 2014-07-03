@@ -528,6 +528,7 @@ div.figure {
 
 div.figure img {
     margin: auto 0px;
+    max-width: 100%;
 }
 
 p.caption {
@@ -593,30 +594,43 @@ h4 {
 
 div.sidebar {
     padding: 7px;
-    padding-bottom: 0px;
+    padding-bottom: 7px;
     width: 30%;
 }
 
 div.sidebar a {
+    --display: inline-block;
+    --margin: 0px 0px 7px 0px;
+    --width: 100%;
+    --text-align: center;
+}
+
+div.sidebar a.image-reference {
     display: inline-block;
     margin: 0px 0px 7px 0px;
     width: 100%;
     text-align: center;
 }
 
-/*drop cap*/
-div.section>p:first-of-type { padding-top: 10px; }
+div.sidebar img {
+    max-width: 100%;
+}
 
-div.section>p:first-of-type:first-letter { float: left; --color: #677915; font-size: 40pt; line-height: 28pt; padding-top: 0px; padding-right: 3px; padding-bottom: 2px;
+/*---------drop cap-----*/
+.container>div.section:first-of-type>p:first-of-type { padding-top: 10px; }
+
+.container>div.section:first-of-type>p:first-of-type:first-letter { float: left; --color: #677915; font-size: 36pt; line-height: 26pt; padding-top: 0px; padding-right: 3px; padding-bottom: 2px;
 padding-left: 0px; font-family: Georgia}
+/*----------------------*/
 
+/*
 div.section>p:first-of-type:after {
 	visibility: hidden;
 	display: block;
 	content: "";
 	clear: both;
 	height: 0;
-	}
+	} */
 
 .my-video-overlay  {
     position: relative;

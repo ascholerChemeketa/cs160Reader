@@ -12,7 +12,7 @@ Dawn of Computers
 
    .. raw:: html
    
-        <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/calculators/1/51/2205"><img title="False Dawn: The Babbage Engine" src="http://s3v.computerhistory.org/102695004-03-01.jpg"><span></span></a><p class="caption">Image courtesy of Computer History Museum</p><p>False Dawn: The Babbage Engine</p>
+        <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/calculators/1/51/2205"><img title="False Dawn: The Babbage Engine" src="http://s3v.computerhistory.org/102695004-03-01.jpg"><span></span></a><p class="caption">Computer History Museum</p><p>False Dawn: The Babbage Engine</p>
 
 C\ **harles Babbage**, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century. In 1823, on a commission from the British government, he began designing and building the the **Difference Engine** to calculate values for polynomial functions. After working on the machine for ten years he realized that a much more general design that could be instructed to perform arbitrary computations was possible and began to focus on that project. 
 
@@ -52,6 +52,7 @@ Whereas the Difference Engine could only calculate the values of polynomial func
 
     .. image:: Images/Ada_Lovelace_portrait.jpg
         :alt: Ada Lovelace
+        
         
 **Ada Byron Lovelace** collaborated with Babbage on documenting the Analytical Engine. She is often credited as the first programmer, having developed the first algorithm - one to calculate `Bernoulli numbers <http://en.wikipedia.org/wiki/Bernoulli_number>`_ - specifically designed to run on a general computational device. She also saw the potential for calculation to be applied to tasks other than strict number crunching:
 

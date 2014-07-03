@@ -42,7 +42,7 @@ By about 2500 BC, counting devices had been abstracted away from counting a part
 In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become into a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642, when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner, and sought to produce a device which could reduce some of his workload. The device he built, called the **Pascaline** could do addition and subtraction including automatically carrying from one place to the next. Many other mathematicians of the 17th century tried their hand at building their own calculators, including `Gotfried Leibniz <http://en.wikipedia.org/wiki/Gottfried_Leibniz>`_ who described a machine that would be implemented using :ref:`binary numbers <binary>`.
 
 
-.. container:: inlinegroup
+.. container:: inlinegroup clear
 
     .. figure:: Images/Pascaline.jpg
        :alt: Abacus

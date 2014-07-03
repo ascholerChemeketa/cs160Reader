@@ -30,7 +30,7 @@ Computers do all of their processing in terms of bits - any piece of information
 
 
 .. pseudo_h4:: Self Check 
-    :class: underlined
+    :class: underlined clear
  
 .. mchoicemf:: questionbits_1 
     :answer_a: A single on/off value.

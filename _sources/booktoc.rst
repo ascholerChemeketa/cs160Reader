@@ -7,8 +7,9 @@ Table of Contents
 Computation and Computer Science  
 ==================================
    
-.. toctree::
-   :maxdepth: 2
+.. toctree::   
+   :includehidden:
+   :maxdepth: 3
    :numbered:
    
    HistoryOfComputers/index.rst

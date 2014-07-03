@@ -50,7 +50,7 @@ If you think about it for a minute, you can probably see that the largest value 
     1               0               1               1               0               0               1               1
     =============   =============   =============   =============   =============   =============   =============   =============    
 
-:math:`10110011_{2}` means 128 + 32 + 16 + 2 + 1 or 179
+:math:`{10110011}_{2}` means 128 + 32 + 16 + 2 + 1 or 179
 
 Confused by how number systems determine the value of the digits in a number? Check out this video for a more detailed explanation:
 

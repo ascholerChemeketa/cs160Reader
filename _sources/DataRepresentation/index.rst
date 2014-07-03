@@ -13,6 +13,9 @@ Because computers represent everything as patterns of 1s and 0s, we need to come
 
     NumberSystems.rst
     BinaryConversions.rst
+    BinaryConversions2.rst
+    ASCII.rst
+    Images.rst
 
 
     
