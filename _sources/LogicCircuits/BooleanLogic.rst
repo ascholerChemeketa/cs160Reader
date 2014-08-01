@@ -1,32 +1,55 @@
 .. include:: ../global.rst
 
-.. index:: ! bit
+.. index:: Boolean logic
 
  
-Bits
+Boolean Logic
 ============================
 
+The basic building block of computers is th switch - in modern computers a transistor - able to turn a signal on or off. A computer does all its work with these switches, manipulating the binary information that represents data. These switches are combined in various ways to produce what are known as **logic gates**. Logic gates take one or more input signals and produce an output based on the current input.  
 
-.. sidebar:: Bits
+As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to light bulb if either switch is on. *(Note that this is a highly simplified version of how electrical circuits really work)*  In the figure below, the electricity is being routed through the top switch that is on. The fact that the bottom switch is off does not change the fact that power can reach the bulb.
 
-    .. image:: Images/punchcard.jpg
-        :alt: Punchcard
-        :width: 150
-        
-    Each hole (or spot where there is no hole punched) in this card represents a bit of information.
+.. image:: Images/switchesOr1.png
 
-A **bit** (short for "BInary digiT") is a single on/off value. Only these two values are possible, though the two values may go by different names, such as true/false, or 1/0. There are many ways in which a bit can be implemented. Here are some ways that bits are implemented:
+If only the bottom switch is on, or if both switches are on, the power can still reach the bulb to light it:
 
-* A mechanical electrical switch (like a light switch.)
-* Voltage on a wire.
-* A light bulb being on or off.
-* The state of a single transistor.
-* The magnetic charge on a tiny part of the surface of a disk.
-* The presence or absence of a hole punched in a card.
-* A tiny part of the light-reflecting surface of a CD.
-* Part of a radio signal.
+.. container:: inlinegroup
 
-Computers do all of their processing in terms of bits - any piece of information a computer stores or manipulates is stored as a sequence of these on/off values. For different purposes a computer may use any of the mechanisms listed above (or many others) to represent those bits.
+    .. image:: Images/switchesOr2.png
+        :width: 45%
+
+    .. image:: Images/switchesOr4.png
+        :width: 45%
+
+
+The only way the light bulb will not be on is if both switches are in the off position:
+
+.. image:: Images/switchesOr3.png
+
+.. sidebar:: George Boole
+    
+    `George Boole <http://en.wikipedia.org/wiki/George_Boole>`_ invented the rules of logic that computers use in the 1800s. The term **Boolean** logic gets its name from him.
+    
+    .. image:: Images/George_Boole_color.jpg
+
+.. index:: truth table
+
+These switches are demonstrating the Boolean logic rule of **OR**. The OR rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a **truth table**. A truth table shows each possible set of input and the output those input produces. 
+
+For the circuit shown above, we can think of the top switch as Input 1 and the bottom switch as Input 2. We will call on "1" and off "0". There are four possible sets of inputs for the two switches: 00 - both off, 10 - top on, 01 - bottom on, 11 - both on. In every situation but 00, the output is on (1). The truth table below shows those four possibilities:
+
+.. rst-class:: place-values
+
+    =============   =============   =============     
+    Input 1         Input 2         Output 
+    =============   =============   =============  
+    0               0               0
+    0               1               1
+    1               0               1
+    1               1               1
+    =============   =============   ============= 
+    
 
 
 .. pseudo_h4:: Self Check 

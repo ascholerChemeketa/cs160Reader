@@ -23,6 +23,9 @@ from docutils.parsers.rst.roles import set_classes
 from docutils.nodes import TextElement, Inline
 
 
+from docutils.parsers.rst.directives.admonitions import BaseAdmonition
+
+
 def setup(app):
     app.add_directive('pseudo_h1',PseudoHeader)
     app.add_directive('pseudo_h2',PseudoHeader)
@@ -31,6 +34,7 @@ def setup(app):
     app.add_directive('pseudo_h5',PseudoHeader)
     app.add_directive('attribution',Attribution)
     app.add_directive('faux_code',FauxCodeBlock)
+    app.add_directive('definition',DefinitionBlock)
     app.add_directive('quick_attribution',QuickAttribution)
 
 
@@ -42,15 +46,46 @@ class FauxCodeBlock(Directive):
                    'name': directives.unchanged}
 
     def run(self):
+        if 'class' not in self.options:
+            self.options['classes'] = "faux"
+        else:
+            self.options['classes'] = 'class="faux ' + self.options['class'] + '"'
         set_classes(self.options)
         self.assert_has_content()
-        text = '\n'.join(self.content)
+        text = "".join(self.content)
         node = nodes.literal_block(text, '')
         self.state.nested_parse(self.content, self.content_offset,
                                 node)
         return [node]
         
         
+        
+""" currently broken... """    
+class DefinitionBlock(Directive):
+    required_arguments = 1
+    has_content = True
+    final_argument_whitespace = True
+    option_spec = {'class': directives.class_option,
+                   'name': directives.unchanged}
+            
+    def run(self):
+        self.assert_has_content()
+        if 'class' not in self.options:
+            self.options['classes'] = "definition"
+        else:
+            self.options['classes'] = 'class="definition ' + self.options['class'] + '"'
+        set_classes(self.options)
+        self.assert_has_content()
+        text =  "<div %(classes)s>" % self.options
+        text = text + '<p class="first admonition-title">' + self.arguments[0] + "</p>"
+        text = text + '\n'.join(self.content)
+        text = text + "</div>"
+        node = nodes.container(rawsource=text)
+        self.state.nested_parse(self.content, self.content_offset,
+                                node)
+        return [node]
+
+               
 
 """
     ReST directive for making heading tags that are not indexed

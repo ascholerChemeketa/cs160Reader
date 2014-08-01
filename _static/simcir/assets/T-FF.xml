@@ -1,0 +1,35 @@
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+  <device type="Ref" label="RS Flip Flop" id="d0" x="344" y="216">
+    <param name="url" value="assets/RS-FF.xml"/>
+  </device>
+  <device type="Ref" label="RS Flip Flop" id="d1" x="488" y="216">
+    <param name="url" value="assets/RS-FF.xml"/>
+  </device>
+  <device factory="BasicSet.swf" type="DC" id="d2" x="112" y="216" label="DC"/>
+  <device factory="BasicSet.swf" type="PushOn" id="d3" x="168" y="216" label="PushOn"/>
+  <device type="In" id="d4" x="224" y="216" label="CLK"/>
+  <device factory="BasicSet.swf" type="NAND" id="d5" x="288" y="248" label="NAND"/>
+  <device factory="BasicSet.swf" type="NAND" id="d6" x="288" y="184" label="NAND"/>
+  <device factory="BasicSet.swf" type="NAND" id="d7" x="432" y="248" label="NAND"/>
+  <device factory="BasicSet.swf" type="NAND" id="d8" x="432" y="184" label="NAND"/>
+  <device type="Out" id="d9" x="576" y="248" label="~Q"/>
+  <device type="Out" id="d10" x="576" y="184" label="Q"/>
+  <device factory="BasicSet.swf" type="NOT" id="d11" x="288" y="120" label="NOT"/>
+  <connector in="d0.0" out="d6.0"/>
+  <connector in="d0.1" out="d5.0"/>
+  <connector in="d1.0" out="d8.0"/>
+  <connector in="d1.1" out="d7.0"/>
+  <connector in="d3.0" out="d2.0"/>
+  <connector in="d4.0" out="d3.0"/>
+  <connector in="d5.0" out="d4.0"/>
+  <connector in="d5.1" out="d1.0"/>
+  <connector in="d6.0" out="d1.1"/>
+  <connector in="d6.1" out="d4.0"/>
+  <connector in="d7.0" out="d0.1"/>
+  <connector in="d7.1" out="d11.0"/>
+  <connector in="d8.0" out="d11.0"/>
+  <connector in="d8.1" out="d0.0"/>
+  <connector in="d9.0" out="d1.1"/>
+  <connector in="d10.0" out="d1.0"/>
+  <connector in="d11.0" out="d4.0"/>
+</simcir>

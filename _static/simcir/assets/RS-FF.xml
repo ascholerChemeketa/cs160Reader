@@ -1,0 +1,21 @@
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+  <device type="In" id="d0" x="352" y="160" label="~S"/>
+  <device factory="BasicSet.swf" type="NAND" id="d1" x="408" y="168" label="NAND"/>
+  <device type="In" id="d2" x="352" y="240" label="~R"/>
+  <device factory="BasicSet.swf" type="NAND" id="d3" x="408" y="232" label="NAND"/>
+  <device type="Out" id="d4" x="464" y="232" label="~Q"/>
+  <device type="Out" id="d5" x="464" y="168" label="Q"/>
+  <device factory="BasicSet.swf" type="PushOff" id="d6" x="296" y="160" label="PushOff"/>
+  <device factory="BasicSet.swf" type="PushOff" id="d7" x="296" y="240" label="PushOff"/>
+  <device factory="BasicSet.swf" type="DC" id="d8" x="240" y="200" label="DC"/>
+  <connector in="d0.0" out="d6.0"/>
+  <connector in="d1.0" out="d0.0"/>
+  <connector in="d1.1" out="d3.0"/>
+  <connector in="d2.0" out="d7.0"/>
+  <connector in="d3.0" out="d1.0"/>
+  <connector in="d3.1" out="d2.0"/>
+  <connector in="d4.0" out="d3.0"/>
+  <connector in="d5.0" out="d1.0"/>
+  <connector in="d6.0" out="d8.0"/>
+  <connector in="d7.0" out="d8.0"/>
+</simcir>

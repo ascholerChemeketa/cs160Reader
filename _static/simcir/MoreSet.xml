@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<simcir xmlns="http://www.d-project.com/simcir/2012" title="MoreSet">
+	<device factory="BasicSet.swf" type="NAND" label="NAND(3in)">
+		<param name="numInputs" value="3"/>
+	</device>
+	<device factory="BasicSet.swf" type="LED" label="LED(Y)">
+		<param name="color" value="#ffff00" />
+	</device>
+</simcir>

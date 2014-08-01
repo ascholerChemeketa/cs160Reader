@@ -1,0 +1,17 @@
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+  <device factory="BasicSet.swf" type="Toggle" id="d0" x="88" y="80" label="Input2"/>
+  <device factory="BasicSet.swf" type="AND" id="d1" x="232" y="48" label="AND"/>
+  <device factory="BasicSet.swf" type="LED" id="d2" x="304" y="48" label="Output"/>
+  <device factory="BasicSet.swf" type="Toggle" id="d3" x="88" y="16" label="Input1"/>
+  <device factory="BasicSet.swf" type="Toggle" id="d4" x="88" y="152" label="Input3"/>
+  <device factory="BasicSet.swf " type="DC" id="d5" x="16" y="80" label="DC"/>
+  <device factory="BasicSet.swf" type="AND" id="d6" x="168" y="120" label="AND"/>
+  <connector in="d0.0" out="d5.0"/>
+  <connector in="d1.0" out="d3.0"/>
+  <connector in="d1.1" out="d6.0"/>
+  <connector in="d2.0" out="d1.0"/>
+  <connector in="d3.0" out="d5.0"/>
+  <connector in="d4.0" out="d5.0"/>
+  <connector in="d6.0" out="d0.0"/>
+  <connector in="d6.1" out="d4.0"/>
+</simcir>

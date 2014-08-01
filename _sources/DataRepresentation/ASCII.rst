@@ -124,8 +124,8 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
 
 .. fillintheblank:: ASCII_1
    :correct: \\bf\\b
-   :feedback1: ('[\\d]+', 'The answer is a letter... try using the table above')
-   :feedback2: ('\\b.{2,}\\b', 'The answer should only have one character')
+   :feedback1: ('.{1}', 'The answer is a letter... try using the table above')
+   :feedback2: ('.*', 'The answer should only have one character')
    :blankid: ASCII_1_ans1
 
    What letter or symbol does 01100110 map to on the ASCII table? :textfield:`ASCII_1_ans1::mini`    

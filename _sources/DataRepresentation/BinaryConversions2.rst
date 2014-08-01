@@ -78,7 +78,7 @@ If we follow this algorithm to convert :math:`{1101}_{2}` into to a decimal valu
     Step 3: Remove leftmost digit of ``number`` and add to ``answer``
     \          ``number`` is now 01 and ``answer`` is 3 
     Step 4: ``number`` still has digits, go back to step 2
-    Step 2: ``answer`` is multiplied by 2 - it becomes 6
+    Step 2: ``answer`` is multiplied by 2 - it becomes 6 
     Step 3: Remove leftmost digit of ``number`` and add to ``answer``
     \          ``number`` is now 1 and ``answer`` is 6 
     Step 4: ``number`` still has digits, go back to step 2

@@ -40,7 +40,7 @@ When we are talking about much larger chunks of information, like the informatio
    :feedback1: ('[^\\d]+', 'Your answer should be a number')
    :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
    :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('\\d{2}', 'Hint: each byte is 8 bits')
+   :feedback4: ('.*', 'Hint: each byte is 8 bits')
    :blankid: bytes_1_ans1
 
    How many bits are in 3 bytes? :textfield:`bytes_1_ans1::large`
@@ -50,7 +50,7 @@ When we are talking about much larger chunks of information, like the informatio
    :feedback1: ('[^\\d]+', 'Your answer should be a number')
    :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
    :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-   :feedback4: ('\\d{4}', 'Hint: each KB is 1024 bytes')
+   :feedback4: ('.*}', 'Hint: each KB is 1024 bytes')
    :blankid: bytes_2_ans1
 
    How many bytes are in 4 KB ? :textfield:`bytes_2_ans1::large`

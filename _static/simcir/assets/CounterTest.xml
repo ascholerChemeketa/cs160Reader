@@ -1,0 +1,32 @@
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+  <device type="Ref" label="T Flip Flop" id="d0" x="304" y="96">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device type="Ref" label="T Flip Flop" id="d1" x="304" y="144">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device type="Ref" label="T Flip Flop" id="d2" x="304" y="192">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device type="Ref" label="T Flip Flop" id="d3" x="304" y="240">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device type="Ref" label="T Flip Flop" id="d4" x="304" y="288">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device type="Ref" label="T Flip Flop" id="d5" x="304" y="336">
+    <param name="url" value="assets/T-FF.xml"/>
+  </device>
+  <device factory="BasicSet.swf" type="4bit7seg" label="4bit 7seg" id="d6" x="432" y="240"/>
+  <device factory="BasicSet.swf" type="OSC" id="d7" x="240" y="96" label="OSC"/>
+  <connector in="d0.0" out="d7.0"/>
+  <connector in="d1.0" out="d0.0"/>
+  <connector in="d2.0" out="d1.0"/>
+  <connector in="d3.0" out="d2.0"/>
+  <connector in="d4.0" out="d3.0"/>
+  <connector in="d5.0" out="d4.0"/>
+  <connector in="d6.0" out="d2.0"/>
+  <connector in="d6.1" out="d3.0"/>
+  <connector in="d6.2" out="d4.0"/>
+  <connector in="d6.3" out="d5.0"/>
+</simcir>

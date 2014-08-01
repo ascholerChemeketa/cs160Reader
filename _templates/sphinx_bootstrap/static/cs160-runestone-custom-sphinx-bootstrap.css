@@ -555,11 +555,13 @@ div.figure.align-right {
 
 .inlinegroup  {
     text-align: center;
+    clear: both;
 }
 
-.inlinegroup div.figure {
+.inlinegroup div.figure, .inlinegroup img, .inlinegroup table {
     display: inline-block;
     vertical-align: middle;
+    margin: 0px 5px;
 }
 
 .padded {
@@ -614,6 +616,10 @@ div.sidebar a.image-reference {
 
 div.sidebar img {
     max-width: 100%;
+}
+
+.container .section > img {
+    margin-bottom: 10px;
 }
 
 /*---------drop cap-----*/
@@ -691,6 +697,8 @@ table.place-values thead {
 table.place-values td, table.place-values th{
 
     border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 3px;
 }
 
 .place-values thead>tr>th, 
@@ -703,6 +711,70 @@ table.place-values td, table.place-values th{
     padding: 2px 4px;
     text-align: center;
 }
+
+.place-values thead>tr {
+    padding: 5px 10px;
+}
+
+/*--------------------------------------------*/
+table.truth-table {
+    width: auto;
+    padding: 0px;
+    font-size: 16pt;
+}
+
+table.truth-table col {
+    width: 50px;
+}
+
+
+table.truth-table thead tr:first-child {
+    color: #888;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-size: 12pt;
+}
+
+table.truth-table thead { 
+    color: #888;
+    font-size: 10pt;
+}
+
+table.truth-table td, table.truth-table th{
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 3px;
+}
+
+.truth-table thead>tr>th, 
+.truth-table thead>tr>td, 
+.truth-table tbody>tr>th, 
+.truth-table tfoot>tr>th, 
+.truth-table tbody>tr>td, 
+.truth-table tfoot>tr>td { 
+    line-height: 1;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+.truth-table thead>tr {
+    padding: 5px 10px;
+}
+
+.truth-table caption {
+    white-space: nowrap;
+} 
+
+.truth-table tbody tr{
+    color: #B1841D;
+}
+
+.truth-table tbody tr td:last-child, .truth-table tbody tr td.output {
+    color: #677915;
+    font-weight: bold;
+}
+
+/*------------------------------------------*/
 
 
 .emphasis {
@@ -746,11 +818,30 @@ margin-top: 0em;
 margin-bottom: 0em;
 }
 
-pre code {
+.topic {
+    color: #333;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 4px;
+}
+
+pre.literal-block code {
 padding: 2px 4px;
 font-size: 90%;
 color: #c7254e;
 white-space: nowrap;
 background-color: #f9f2f4;
 border-radius: 4px;
+}
+
+pre.literal-block p {
+    margin: 0px;
+}
+
+.red {
+    color: #c7254e;
+}
+
+.blue {
+    color: #2579c6;
 }

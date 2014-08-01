@@ -1,0 +1,28 @@
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+  <device factory="BasicSet.swf " type="DC" id="d0" x="8" y="144" label="DC"/>
+  <device factory="BasicSet.swf" type="Toggle" id="d1" x="80" y="96" label="Input1"/>
+  <device factory="BasicSet.swf" type="Toggle" id="d2" x="80" y="160" label="Input2"/>
+  <device factory="BasicSet.swf" type="Toggle" id="d3" x="80" y="240" label="Carry In"/>
+  <device factory="BasicSet.swf" type="EOR" id="d4" x="224" y="232" label="EOR"/>
+  <device factory="BasicSet.swf" type="AND" id="d5" x="224" y="176" label="AND"/>
+  <device factory="BasicSet.swf" type="LED" id="d6" x="304" y="32" label="Carry Out"/>
+  <device factory="BasicSet.swf" type="LED" id="d7" x="376" y="32" label="Output"/>
+  <device factory="BasicSet.swf" type="EOR" id="d8" x="152" y="152" label="EOR"/>
+  <device factory="BasicSet.swf" type="AND" id="d9" x="152" y="96" label="AND"/>
+  <device factory="BasicSet.swf" type="OR" id="d10" x="272" y="112" label="OR"/>
+  <connector in="d1.0" out="d0.0"/>
+  <connector in="d2.0" out="d0.0"/>
+  <connector in="d3.0" out="d0.0"/>
+  <connector in="d4.0" out="d8.0"/>
+  <connector in="d4.1" out="d3.0"/>
+  <connector in="d5.0" out="d8.0"/>
+  <connector in="d5.1" out="d3.0"/>
+  <connector in="d6.0" out="d10.0"/>
+  <connector in="d7.0" out="d4.0"/>
+  <connector in="d8.0" out="d1.0"/>
+  <connector in="d8.1" out="d2.0"/>
+  <connector in="d9.0" out="d1.0"/>
+  <connector in="d9.1" out="d2.0"/>
+  <connector in="d10.0" out="d9.0"/>
+  <connector in="d10.1" out="d5.0"/>
+</simcir>

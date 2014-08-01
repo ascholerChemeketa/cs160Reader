@@ -79,8 +79,8 @@ Just like with decimal numbers, leading zeros do not modify the value of a numbe
    :correct: \\b60\\b
    :feedback1: ('[^\\d]+', 'Your answer should be a number')
    :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('\\d{4}', 'Hint: With 6 binary digits the largest column you should use is 32')
+   :feedback3: ('\\d{4}', 'Hint: With 6 binary digits the largest column you should use is 32')
+   :feedback4: ('\\b.{3,}\\b', 'That is too many digits')
    :blankid: binaryconversions_1_ans1
 
    What decimal value does the binary number 111100 represent? :textfield:`binaryconversions_1_ans1::mini`

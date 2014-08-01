@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<simcir xmlns="http://www.d-project.com/simcir/2012">
+	<device type="Ref" label="RS Flip Flop">
+		<param name="url" value="assets/RS-FF.xml" />
+	</device>
+	<device type="Ref" label="T Flip Flop">
+		<param name="url" value="assets/T-FF.xml" />
+	</device>
+</simcir>

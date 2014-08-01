@@ -2,10 +2,23 @@
 
 .. role:: red
     :class: red
-    
+
+.. role:: blue
+    :class: blue   
+ 
+.. role:: underlined
+    :class: underlined
 
 .. role:: inlinegroup
 
 .. role:: main-table
 
 .. highlight:: none
+
+.. |br| raw:: html
+
+   <br />
+   
+.. |space| raw:: html
+
+   &nbsp;
