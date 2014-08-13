@@ -39,6 +39,8 @@ In 1946, the US finished work on **ENIAC**, designed to calculate artillery firi
  
 Early computing machines had fixed programs. For example, a desk calculator is a fixed program computer. It can do basic mathematics, but it cannot be used as a word processor or a gaming console. Changing the program of a fixed-program machine requires re-wiring, re-structuring, or re-designing the machine. The earliest computers were not so much "programmed" as they were "designed". "Reprogramming", when it was possible at all, was a laborious process, starting with flowcharts and paper notes, followed by detailed engineering designs, and then the often-arduous process of physically re-wiring and re-building the machine. With the proposal of the stored-program computer this changed. A stored-program computer includes by design an instruction set and can store in memory a set of instructions (a program) that details the computation.
 
+.. _vonNeumann:
+
 .. sidebar::  \ 
 
     .. image:: Images/420px-Von_Neumann_architecture.png

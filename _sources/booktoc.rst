@@ -16,6 +16,7 @@ Computation and Computer Science
    Binary/index.rst
    DataRepresentation/index.rst
    LogicCircuits/index.rst
+   ComputerArchitecture/index.rst
 
 
 BYOB    

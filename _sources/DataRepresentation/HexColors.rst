@@ -1,242 +1,168 @@
 .. include:: ../global.rst
 
-.. index:: hex colors
- 
-Hex Colors
+Hex Data & Colors
 ============================
 
-H\ **exadecimal** is base 16. Much like base 10 uses digits that represent powers of 10 and binary uses digits that represent powers of 2, hexadecimal uses digits that represent powers of 16. Here is how we would interpret :math:`{2047}_{16}`:
+Hexadecimal is used to display large binary values for people to read. Although all data is stored as binary, for many pieces of data a computer works with, the 1s and 0s have a meaning defined by their data type; the computer interprets a sequence of 1s and 0s as a signed integer, or an ASCII character, or a floating point decimal. But some pieces of information do not have a natural type. Things like memory addresses in a computer are just binary sequences (00000, 00001, etc...). When a computer has to display data that does not have a "type" or for which the type is unknown, the raw information is typically shown in hexadecimal.
 
-.. rst-class:: place-values
+.. figure:: Images/hexaddress.png
+   :alt: Hex display of data
+   :figwidth: 80%
+   
+   ..
+   
+   A programmers view of two pieces of information in a program. 
 
-    ==============  ==============  ==============  ==============     
-    4096s           256s            16s             1s 
-    :math:`{16}^3`  :math:`{16}^2`  :math:`{16}^1`  :math:`{16}^0`
-    ==============  ==============  ==============  ==============  
-    2               0               4               7
-    ==============  ==============  ==============  ============== 
+The image above shows a screen shot of looking at data while debugging a computer program. **x** is known to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the decimal number 7. **memory_address** is a memory address for an unknown type (void *) - so its bits (001010001111111010111000) are displayed in hex as 28feb8.
 
-So :math:`{2047}_{16}` = **2** * 4096 + **0** * 256 + **4** * 16 + **7** * 1 = :math:`{8263}_{10}`.
+.. index:: hex colors
+ 
+The first place many people encounter hexadecimal is learning about specifying colors for websites. Colors are generally specified as 24-bit numbers - 8 bits each to represent how much red, green and blue. These 8 bits are enough to give values of :math:`{0-255}_{10}` (:math:`{00000000-11111111}_{2}`) for each of the three primary colors. To make different colors, we mix different amounts of the three primaries. 255 red, 0 green, 140 blue makes a :pink:`nice pink`. To specify this color, a website designer can write the 24 binary digits as 6 hex digits (remember that 4 binary digits correspond to one hex digit). 255 is FF in hex. 0 is 00 in hex. 140 is 8D in hex. So :pink:`this shade of pink` can be written as FF008D - a website designer would type something like "color: #FF008D;" to specify that some text should be pink.
 
-Using this scheme, :math:`{10}_{16}` = **1** * 16 + **0** * 1 = :math:`{16}_{10}`. Which raises the question "how do we represent ten in hexadecimal?" A 1 in the second column indicates a 16, so we can't use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F to indicate 9-15:
+You can play with the sliders below to explore how colors can be described as a mix of red, green and blue. Move the sliders to change the amount of each color. The current value is displayed in both decimal and hexadecimal. By writing the hex digits for each color as one 6 digit number (red/green/blue), you can determine the hex code for the color - which is shown below the color swatch.
 
 .. raw:: html
-
-    <span style="">When you are describing colors on a
-    web page, one common way to specify a particular color is with the hex
-    representation of the red, green and blue values to use to make the color. Two
-    hex digits can describe a value between 0 and 255. So something like #FF0000
-    means #<span style="color:red">FF</span><span style="color:#00B050">00</span><span style="color:#0070C0">00:</span> <span style="color:red">FF</span> red (255 in
-    decimal), <span style="color:#92D050">00</span> green (0 in decimal), <span style="color:#0070C0">00</span> blue (0 in decimal). If you mix max red, no
-    green and no blue, you get pure red (see below).</span>
-
     
-    <table class="dtable" style="width:500px">
-				<tbody><tr>
-					<th>Color</th>
-					<th>HTML/CSS Name</th>
-					<th>Hex Code<p>#RRGGBB</p></th>
-					<th>Decimal Code<p>(R,G,B)</p></th>
-				</tr>
-				<tr>
-					<td style="background: #000000" width="57">&nbsp;</td>
-					<td>Black</td>
-					<td>#000000</td>
-					<td width="120">(0,0,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #FFFFFF" width="57">&nbsp;</td>
-					<td>White</td>
-					<td>#FFFFFF</td>
-					<td width="120">(255,255,255)</td>
-				</tr>
-				<tr>
-					<td style="background: #FF0000" width="57">&nbsp;</td>
-					<td>Red</td>
-					<td>#FF0000</td>
-					<td width="120">(255,0,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #00FF00" width="57">&nbsp;</td>
-					<td>Lime</td>
-					<td>#00FF00</td>
-					<td width="120">(0,255,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #0000FF" width="57">&nbsp;</td>
-					<td>Blue</td>
-					<td>#0000FF</td>
-					<td width="120">(0,0,255)</td>
-				</tr>
-				<tr>
-					<td style="background: #FFFF00" width="57">&nbsp;</td>
-					<td>Yellow</td>
-					<td>#FFFF00</td>
-					<td width="120">(255,255,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #00FFFF" width="57">&nbsp;</td>
-					<td>Cyan / Aqua</td>
-					<td>#00FFFF</td>
-					<td width="120">(0,255,255)</td>
-				</tr>
-				<tr>
-					<td style="background: #FF00FF" width="57">&nbsp;</td>
-					<td>Magenta / Fuchsia</td>
-					<td>#FF00FF</td>
-					<td width="120">(255,0,255)</td>
-				</tr>
-				<tr>
-					<td style="background: #C0C0C0; " width="90">&nbsp;</td>
-					<td width="148">Silver</td>
-					<td>#C0C0C0</td>
-					<td width="120">(192,192,192)</td>
-				</tr>
-				<tr>
-					<td style="background: #808080" width="57">&nbsp;</td>
-					<td>Gray</td>
-					<td>#808080</td>
-					<td width="120">(128,128,128)</td>
-				</tr>
-				<tr>
-					<td style="background: #800000" width="57">&nbsp;</td>
-					<td>Maroon</td>
-					<td>#800000</td>
-					<td width="120">(128,0,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #808000" width="57">&nbsp;</td>
-					<td>Olive</td>
-					<td>#808000</td>
-					<td width="120">(128,128,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #008000" width="57">&nbsp;</td>
-					<td>Green</td>
-					<td>#008000</td>
-					<td width="120">(0,128,0)</td>
-				</tr>
-				<tr>
-					<td style="background: #800080" width="57">&nbsp;</td>
-					<td>Purple</td>
-					<td>#800080</td>
-					<td width="120">(128,0,128)</td>
-				</tr>
-				<tr>
-					<td style="background: #008080" width="57">&nbsp;</td>
-					<td>Teal</td>
-					<td>#008080</td>
-					<td width="120">(0,128,128)</td>
-				</tr>
-				<tr>
-					<td style="background: #000080" width="57">&nbsp;</td>
-					<td>Navy</td>
-					<td>#000080</td>
-					<td width="120">(0,0,128)</td>
-				</tr>
-			</tbody></table>
+    <style>
+      .colorbar {
+        float: left;
+        width: 400px;
+        clear: left;
+      }
+      .colorVal {
+            width: 80px;
+            text-align: center;
+            margin-top: 2px;
+            vertical-align: top;
+            border: 1px solid #ccc;
+            background: #f6f6f6;
+      }
+      #colorLabel {
+        clear: both;
+        text-align: right;
+        
+      }
+      #colorName {
+        width: 118px;
+        margin: 0px;
+        margin-left: 10px;
+        text-align: center;
+            border: 1px solid #ccc;
+            background: #f6f6f6
+      }
+      .colorpicker {
+        width: 520px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      #red, #green, #blue {
+        width: 250px;
+        margin: 5px 15px;
+        display: inline-block;
+      }
+      #swatchblock {
+        width: 120px;
+        margin-top: 0px;
+        margin-left: 400px;
+        margin-bottom: 15px;
+      }
+      #swatch {
+        width: 120px;
+        height: 90px;
+        margin-top: 0px;
+        background-image: none;
+      }
+      #red .ui-slider-range { background: #ef2929; }
+      #red .ui-slider-handle { border-color: #ef2929; }
+      #green .ui-slider-range { background: #8ae234; }
+      #green .ui-slider-handle { border-color: #8ae234; }
+      #blue .ui-slider-range { background: #729fcf; }
+      #blue .ui-slider-handle { border-color: #729fcf; }
+      #outputBlock {
+        clear: both;
+      }
+      </style>
+      <script>
+      function hexFromRGB(r, g, b) {
+        var hex = [
+          r.toString( 16 ),
+          g.toString( 16 ),
+          b.toString( 16 )
+        ];
+        $.each( hex, function( nr, val ) {
+          if ( val.length === 1 ) {
+            hex[ nr ] = "0" + val;
+          }
+        });
+        return hex.join( "" ).toUpperCase();
+      }
+      function refreshSwatch() {
+        var red = $( "#red" ).slider( "value" ),
+          green = $( "#green" ).slider( "value" ),
+          blue = $( "#blue" ).slider( "value" ),
+          hex = hexFromRGB( red, green, blue );
+        $( "#swatch" ).css( "background-color", "#" + hex );
+        $("#redVal").val( red + " (" + hex.substring(0,2) + ")"  );
+        $("#greenVal").val( green + " (" + hex.substring(2,4) + ")"  );
+        $("#blueVal").val( blue + " (" + hex.substring(4,6) + ")"  );
+        $("#colorName").val( hex.substring(0,6) );
+      }
+      $(function() {
+        $( "#red, #green, #blue" ).slider({
+          orientation: "horizontal",
+          range: "min",
+          max: 255,
+          value: 127,
+          slide: refreshSwatch,
+          change: refreshSwatch
+        });
+        $( "#red" ).slider( "value", 255 );
+        $( "#green" ).slider( "value", 0 );
+        $( "#blue" ).slider( "value", 140 );
+      });
+      </script>
+    </head>
+    <body class="ui-widget-content" style="border:0;">
+     
+    <div class="colorpicker">
+    <div class="colorbar"><div id="red"></div>
+            <input type="text" class="colorVal" id="redVal" readonly="true" /></div>
+    <div class="colorbar"><div id="green"></div>
+            <input type="text" class="colorVal" id="greenVal" readonly="true" /></div>
+    <div class="colorbar"><div id="blue"></div>
+            <input type="text" class="colorVal" id="blueVal" readonly="true" /></div>
 
-.. rst-class:: hex1
-    
-    ==============  ============== 
-    Decimal         Hexadecimal
-    ==============  ============== 
-    10              A
-    11              B
-    12              C
-    13              D
-    14              E
-    15              F
-    ==============  ============== 
+    <div id="swatchblock">
+    <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+    </div>
+    <div id="colorLabel">Hex color code:<input type="text" id="colorName" readonly="true" /></div>
+    </div>
 
-Thus in the hexadecimal number :math:`{1\textrm{EA}}_{16}` the E means means 14 copies of the second digit (16). The A means 10 copies of the rightmost digit (1):
-
-.. rst-class:: place-values
-
-    ==============  ==============  ==============     
-    256s            16s             1s 
-    ==============  ==============  ==============  
-    1               14 (E)          10 (A)
-    ==============  ==============  ============== 
-
-So :math:`{1\textrm{EA}}_{16}` = **1** * 256 + **14** * 16 + **10** * 1 = :math:`{490}_{10}`.
-
-
-.. pseudo_h3:: Conversion To and From Binary
-    :class: underlined
-
-In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same number of values using 4 bits: 0000-1111 (0-15). What that means, is that each hex digit represents the same information as four binary digits - there is a direct mapping between a hex digit and a four bit pattern:
-
-
-.. rst-class:: hex1
-    
-    ==============  ==============  ==============  ==============  ==============
-    Binary          Hexadecimal                     Binary          Hexadecimal
-    ==============  ==============  ==============  ==============  ==============  
-    0000            0                               1000            8
-    0001            1                               1001            9
-    0010            2                               1010            A
-    0011            3                               1011            B
-    0100            4                               1100            C
-    0101            5                               1101            D
-    0110            6                               1110            E
-    0111            7                               1111            F
-    ==============  ==============  ==============  ==============  ==============
-
-To convert binary to hex, simply break up the number into groups of 4 digits and convert each group:
-    
-.. faux_code::
-
-    011011000011    (1731 in decimal)
-    :red:`0110`:blue:`1100`:red:`0011`
-    :red:`6`   :blue:`C`   :red:`3`
-    6C3             (1731 in decimal)
-    
-
-To convert hex to binary, we can just turn each hex digit into one group of four binary digits:
-    
-.. faux_code::
-
-    A1              (161 in decimal)   
-    :red:`A`   :blue:`1`
-    :red:`1010`:blue:`0001`
-    10100001        (161 in decimal)    
-
-
-This video reviews how hexadecimal works and provides a few more examples:
-
-.. youtube:: m1JtWKuTLR0
-    :height: 315
-    :width: 560
-
-|br|    
-
-.. pseudo_h3:: Why Hexadecimal
-    :class: underlined
- 
-Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same. Those two binary strings listed above look like this in hex: :math:`{3976}_{16}` and :math:`{3966}_{16}` - it is a little easier to say the values and to see where the difference is, isn't it? Because changing switching from binary to hex is so easy, hexadecimal is used to display binary values in a more human readable form. You will see an example of where this is used in web page design on the next page.
     
 .. pseudo_h4:: Self Check 
     :class: underlined
  
- 
-.. fillintheblank:: hex_1
-   :correct: \\b42\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number',)
-   :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: Use the table from the top of the page')
-   :blankid: hex_1_ans1
+.. mchoicemf:: hexcolors_1 
+    :answer_a: A255A2
+    :answer_b: 58B3B3
+    :answer_c: 43C0C0
+    :answer_d: 777777
+    :correct: b
+    :feedback_a: Try reproducing the color with the tool above
+    :feedback_b: 
+    :feedback_c: Try reproducing the color with the tool above
+    :feedback_d: Try reproducing the color with the tool above
+    
+    Which of the following hex values describes a smoky-aqua color?
+    
+.. fillintheblank:: hexcolors_2
+   :correct: \\b000000\\b
+   :feedback1: ('[^0-9A-Fa-f]+', 'Your answer should consist of hex digits: 0-9, A, B, C, D, E, F',)
+   :feedback2: ('\\b.{1,5}\\b', 'That is not enough digits')
+   :feedback3: ('\\b.{7,}\\b', 'That is too many digits')
+   :feedback4: ('.*', 'Hint: Try reproducing the color with the tool above')
+   :blankid: hexcolors_2_ans1
 
-   What decimal value does the hexadecimal number 2A represent? :textfield:`hex_1_ans1::mini`
+   What hex code specifies black? :textfield:`hexcolors_2_ans1::large`
 
    
-.. fillintheblank:: hex_2 
-   :correct: \\b0011 ?1111 ?1100\\b
-   :feedback1: ('[^0-1 ]+', 'Your answer should only consist of 1s and 0s',)
-   :feedback2: ('\\b.{1,11}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{15,}\\b', 'That is too many digits')
-   :feedback4: ('.*', '')
-   :blankid: hex_2_ans1
-
-   What does hexadecimal 3FC look like in binary? :textfield:`hex_2_ans1::large`

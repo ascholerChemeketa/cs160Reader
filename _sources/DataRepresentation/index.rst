@@ -14,6 +14,7 @@ Because computers represent everything as patterns of 1s and 0s, we need to come
     NumberSystems.rst
     BinaryConversions.rst
     BinaryConversions2.rst
+    Hexadecimal.rst
     BinaryMath.rst
     BinaryMath2.rst
     TwosComplement.rst
@@ -21,6 +22,6 @@ Because computers represent everything as patterns of 1s and 0s, we need to come
     FloatingPointNumbers.rst
     ASCII.rst
     ImageRepresentation.rst
-    Hexadecimal.rst
+    HexColors.rst
 
     

@@ -5,6 +5,9 @@
 
 .. role:: blue
     :class: blue   
+    
+.. role:: pink
+    :class: pink      
  
 .. role:: underlined
     :class: underlined
