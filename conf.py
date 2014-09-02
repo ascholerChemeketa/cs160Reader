@@ -120,9 +120,9 @@ html_static_path = ['../runestone/common/js',
                     '../runestone/common/bootstrap',
                     '../runestone/common/images',
                     '../runestone/static/_static',
-                    '_static/cs160',
                     '_static',
-                    '../runestone/source/_static',]
+                    '../runestone/source/_static',
+                    '_static/cs160',]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.

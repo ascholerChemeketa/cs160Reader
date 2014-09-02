@@ -58,7 +58,7 @@ The truth table for this circuit would have two output columns and look like the
 
     Everything a computer does is in terms of answering logical questions. Doing math, modifying an image, recognizing speech, playing music, etc... all at some level are represented as logical questions the computer can process using logic gates.
     
-The circuit shown above is known as a **half adder**. To add larger numbers, we need a **full adder** - a full adder is two half adders merged together with an OR that take three inputs. Two of the inputs are current values being added; the third input is whether or not there is a carry coming in from the previous column. The two outputs indicate the answers to the questions "does this column have a 1 in th answer?" and "do we need to carry a 1 to the next column?". 
+The circuit shown above is known as a **half adder**. To add larger numbers, we need a **full adder** - a full adder is two half adders merged together with an OR that take three inputs. Two of the inputs are current values being added; the third input is whether or not there is a carry coming in from the previous column. The two outputs indicate the answers to the questions "does this column have a 1 in the answer?" and "do we need to carry a 1 to the next column?". 
 
 .. raw:: html
 

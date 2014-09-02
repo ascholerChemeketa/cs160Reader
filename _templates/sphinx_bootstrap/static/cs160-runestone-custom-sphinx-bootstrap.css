@@ -1,4 +1,5 @@
 /* ../../static/runestone-custom-sphinx-bootstrap.css */
+/* ../../static/runestone-custom-sphinx-bootstrap.css */
 
 /* Runestone custom modifications */
 
@@ -38,6 +39,9 @@ h5 {
     }
 }
 
+div.container .section > iframe {
+    margin-bottom: 10px
+}
 
 
 
@@ -54,6 +58,12 @@ div.section {
 @media (max-width: 992px) {
     div.section {
         max-width: 580px;
+    }
+}
+
+@media (min-width: 992px){
+    canvas {
+        width: auto !important;
     }
 }
 
@@ -516,6 +526,7 @@ iframe[seamless] {
 div.figure {
     text-align: center;
     clear: both;
+    background-color: white;
     border: 1px solid #f0f0f0;
     padding: 8px 10px;
     border-radius: 5px;
@@ -556,6 +567,14 @@ div.figure.align-right {
 .inlinegroup  {
     text-align: center;
     clear: both;
+}
+
+.inlinegroup  > pre.literal-block {
+    text-align: left;
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 5px;
 }
 
 .inlinegroup div.figure, .inlinegroup img, .inlinegroup table {
@@ -746,6 +765,10 @@ table.truth-table td, table.truth-table th{
     padding: 3px;
 }
 
+.type-size-100p {
+    font-size: 100% !important;
+}
+
 .truth-table thead>tr>th, 
 .truth-table thead>tr>td, 
 .truth-table tbody>tr>th, 
@@ -838,7 +861,11 @@ pre.literal-block p {
     margin: 0px;
 }
 
-.red {
+pre.literal-block em {
+    color: #677915;
+}
+
+.red, .red pre {
     color: #c7254e;
 }
 
@@ -848,4 +875,16 @@ pre.literal-block p {
 
 .blue {
     color: #2579c6;
+}
+
+.center {
+    text-align: center;
+}
+
+.highlight-none .highlight {
+    background: transparent;
+}
+
+table.indextable dd dt {
+    padding-left: 20px;
 }

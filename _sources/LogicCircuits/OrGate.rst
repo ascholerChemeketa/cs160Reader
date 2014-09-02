@@ -6,7 +6,7 @@
 The OR Gate
 ============================
 
-The basic building block of computers is th switch - in modern computers a transistor - able to turn a signal on or off. A computer does all its work with these switches, manipulating the binary information that represents data. These switches are combined in various ways to produce what are known as **logic gates**. Logic gates take one or more input signals and produce an output based on the current input.  
+The basic building block of computers is the switch - in modern computers a transistor - able to turn a signal on or off. A computer does all its work with these switches, manipulating the binary information that represents data. These switches are combined in various ways to produce what are known as **logic gates**. Logic gates take one or more input signals and produce an output based on the current input.  
 
 As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to light bulb if either switch is on. *(Note that this is a highly simplified version of how electrical circuits really work)*  In the figure below, the electricity is being routed through the top switch that is on. The fact that the bottom switch is off does not change the fact that power can reach the bulb.
 

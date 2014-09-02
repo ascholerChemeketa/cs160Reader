@@ -17,6 +17,10 @@ Computation and Computer Science
    DataRepresentation/index.rst
    LogicCircuits/index.rst
    ComputerArchitecture/index.rst
+   ProgrammingLanguages/index.rst
+   Algorithms/index.rst
+   OperatingSystems/index.rst
+   ParallelProcessing/index.rst
 
 
 BYOB    

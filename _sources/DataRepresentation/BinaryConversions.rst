@@ -3,6 +3,8 @@
 
 .. index:: 
     pair: conversion; binary
+    
+.. _binary-conversion:
 
 Binary Conversions - Table Method
 ===================================

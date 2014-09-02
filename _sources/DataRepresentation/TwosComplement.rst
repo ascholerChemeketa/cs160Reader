@@ -1,7 +1,9 @@
 .. include:: ../global.rst
 
 .. index:: number systems, binary numbers, two's complement
- 
+
+.. _twos-complement:
+
 Negative Values - Two's Complement
 =======================================
 

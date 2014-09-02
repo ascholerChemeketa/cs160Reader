@@ -2,6 +2,8 @@
 
 .. index:: ASCII
 
+.. _ascii::
+
 Representing Letters with ASCII
 ======================================================
 

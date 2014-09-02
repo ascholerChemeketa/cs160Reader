@@ -27,7 +27,7 @@ from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 
 
 def setup(app):
-    app.add_directive('pseudo_h1',PseudoHeader)
+    app.add_directive('pseudo_h1',PseudoHeader) 
     app.add_directive('pseudo_h2',PseudoHeader)
     app.add_directive('pseudo_h3',PseudoHeader)
     app.add_directive('pseudo_h4',PseudoHeader)
@@ -186,6 +186,11 @@ class QuickAttribution(Directive):
         
         for argument in self.arguments:
             cur_options = {}
+            if argument == 'VT':
+                cur_options['title'] = "Online Interactive Modules for Teaching Computer Science"
+                cur_options['title_link'] = "http://courses.cs.vt.edu/csonline/"
+                cur_options['author'] = "Osman Balci et al."
+                
             if argument == 'ICSJava':
                 cur_options['title'] = "Introduction to Computer Science using Java"
                 cur_options['title_link'] = "http://chortle.ccsu.edu/java5/index.html"
@@ -227,14 +232,14 @@ class Attribution(Directive):
    
     def getTitleText(self, options):
         if 'title_link' in options:
-            return "<a src='%(title_link)s'>%(title)s</a>" % options
+            return "<a href='%(title_link)s'>%(title)s</a>" % options
         else:
             return "%(title)s" % options
             
     def getAuthorText(self, options):
         if 'author' in options:
             if 'author_link' in options:
-                return " by <a src='%(author_link)s'>%(author)s</a>" % options
+                return " by <a href='%(author_link)s'>%(author)s</a>" % options
             else:
                 return " by %(author)s" % options
         else:

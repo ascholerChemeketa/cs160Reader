@@ -2,6 +2,8 @@
 
 .. index:: floating point numbers
  
+.. _floating-point:
+
 Floating Point Numbers
 =======================================
 
@@ -20,7 +22,7 @@ The alternative is to use a **floating point** representation. You may not have 
 Computers use this same trick, but instead of representing values as decimals multiplied by powers of ten, they use binary numbers multiplied by a power of two. There are thus three things to represent: the sign of the number, the binary value and the power of two to multiply it by. We will use the following scheme:
 
 * 1 bit to represent the **sign**. 0 for positive, 1 for negative.
-* 3 bits to represent the **exponent** - the power of two to multiply by. We need to represent positive and negative exponents; to do so we will subtract 4 from the binary number the exponent represents. For example, if the three exponent bits are 101, that means 5. We would subtract 4 to get 1 and thus raise 2 to the 1st power. If the exponent bits were 001, representing 1, we would subtract 4 and get -3... this indicates we should raise 2 to th -3 power.
+* 3 bits to represent the **exponent** - the power of two to multiply by. We need to represent positive and negative exponents; to do so we will subtract 4 from the binary number the exponent represents. For example, if the three exponent bits are 101, that means 5. We would subtract 4 to get 1 and thus raise 2 to the 1st power. If the exponent bits were 001, representing 1, we would subtract 4 and get -3... this indicates we should raise 2 to the -3 power.
 * 4 bits to represent the **binary fraction** (more formally known as the **mantissa**). We will always interpret these four bits as filling in the blanks of 0.XXXX. For example, if the four fraction bits are 0100 we would interpret that as :math:`{0.0100}_{2}` or :math:`{0.25}_{10}`.
 * The final value is obtained by multiplying the binary fractional by the power of two indicated by the exponent.
 
