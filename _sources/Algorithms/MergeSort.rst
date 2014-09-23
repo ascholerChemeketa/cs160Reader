@@ -292,24 +292,26 @@ Think you have it? Give it a try below. Use the ListA and ListB buttons to move 
         }
     </script>
     <script>
-      function step(id) {
+      function step(id, direction) {
         var pjs = Processing.getInstanceById(id);    
-        var isSorted = pjs.step();
+		
+        var isSorted;
+		if(direction == 'Left')
+			isSorted = pjs.stepL();
+		else 
+			isSorted = pjs.stepR();
+			
         if (isSorted) {
           alert("The list is now sorted.\nClick Reset to start over" );        
         }; 
       }
-      
+	  
       function reset(id) {
         var pjs = Processing.getInstanceById(id);
         pjs.reset();
         pjs.draw();
       }
-      function resetLarge(id) {
-          var pjs = Processing.getInstanceById(id);
-          pjs.resetLarge();
-          pjs.draw();
-      }
+	  
       //this is needed to prevent processing rendering bug seen in chrome
       (function() {
         setTimeout(function() {
@@ -318,8 +320,8 @@ Think you have it? Give it a try below. Use the ListA and ListB buttons to move 
     </script>
     <p></p> 
     <div align="center">
-      <button type="button" onclick="stepL('Merge')">Merge from List A</button>
-      <button type="button" onclick="stepR('Merge')">Merge from List B</button>
+      <button type="button" onclick="step('Merge', 'Left')">Merge from List A</button>
+      <button type="button" onclick="step('Merge', 'Right')">Merge from List B</button>
       <button type="button" onclick="reset('Merge')">Reset</button>
     <div style="font-size: 80%">Animation based on work by <a href="http://cs.armstrong.edu/liang/animation/animation.html">Y. Daniel Liang</a></div>
     </div>
