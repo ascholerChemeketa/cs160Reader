@@ -27,7 +27,7 @@ C\ **harles Babbage**, an English mechanical engineer and polymath, originated t
 
 .. index:: Analytical Engine
    
-Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose compute. Input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of feeding a program into a computer until the 1970's.
+Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose compute. Input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of `feeding a program into a computer <https://www.youtube.com/watch?v=KG2M4ttzBnY>`__ until the 1970's.
  
 .. container:: inlinegroup
 
@@ -52,7 +52,8 @@ Whereas the Difference Engine could only calculate the values of polynomial func
 
     .. image:: Images/Ada_Lovelace_portrait.jpg
         :alt: Ada Lovelace
-        
+
+|br|        
         
 **Ada Byron Lovelace** collaborated with Babbage on documenting the Analytical Engine. She is often credited as the first programmer, having developed the first algorithm - one to calculate `Bernoulli numbers <http://en.wikipedia.org/wiki/Bernoulli_number>`_ - specifically designed to run on a general computational device. She also saw the potential for calculation to be applied to tasks other than strict number crunching:
 

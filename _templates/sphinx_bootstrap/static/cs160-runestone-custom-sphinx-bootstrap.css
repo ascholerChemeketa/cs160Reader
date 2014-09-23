@@ -383,6 +383,14 @@ div.flash {
 }
 /* End modal dialog styles */
 
+table.table.width-auto {
+    width: auto;
+}
+
+.width-80p {
+    width: 80%;
+}
+
 .footnote.table {
     width: auto;
     margin-bottom: 10px;
@@ -581,6 +589,10 @@ div.figure.align-right {
     display: inline-block;
     vertical-align: middle;
     margin: 0px 5px;
+}
+
+.width45p {
+    width: 45% !important;
 }
 
 .padded {
@@ -865,8 +877,18 @@ pre.literal-block em {
     color: #677915;
 }
 
+.container-box {
+    text-align: left;
+    border: solid 1px #aaa;
+    display: inline-block;
+}
+
 .red, .red pre {
     color: #c7254e;
+}
+
+.gray, .gray pre {
+    color: #aaaaaa;
 }
 
 .pink {
@@ -887,4 +909,13 @@ pre.literal-block em {
 
 table.indextable dd dt {
     padding-left: 20px;
+}
+
+
+hr.comment-divider {
+    margin-bottom: 10px;
+}
+
+div#license {
+    font-size: 75%;
 }

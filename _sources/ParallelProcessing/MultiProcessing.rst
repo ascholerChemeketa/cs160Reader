@@ -29,5 +29,8 @@ These new chips were not clocked as fast as the ones they replaced, but they fea
 
 Now days, just about every computer processor is **multi-core**. Personal computers routinely come with four or more processing cores. Computer graphics cards have thousands of processing units (though they are optimized to perform specific types of jobs). Super computers, like `IBM's Watson computer that beat the best human Jeopardy players <https://www.youtube.com/watch?v=FC3IryWr4c8>`__, combine thousands of processors into room sized devices.
 
+Unfortunately, adding processing cores greatly complicates programming a computer. It is not the cases that we can add a second core and magically run every program twice as fast. The following pages introduce some of the issues we encounter with multi core systems.
 
+
+.. important:: The move to parallel computation is a road to more powerful computers, but it is plan B for how to get there. If system designers and programmers had their choice, we would still be focused on cranking up the speed of single processors instead of increasing power by adding cores.
 

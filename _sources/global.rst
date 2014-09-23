@@ -2,6 +2,9 @@
 
 .. role:: red
     :class: red
+    
+.. role:: gray
+    :class: gray
 
 .. role:: blue
     :class: blue   
@@ -13,6 +16,8 @@
     :class: underlined
 
 .. role:: inlinegroup
+
+.. role:: container-box
 
 .. role:: main-table
 

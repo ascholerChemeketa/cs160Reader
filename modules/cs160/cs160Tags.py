@@ -182,7 +182,7 @@ class QuickAttribution(Directive):
     def run(self):
         attribution_number = 0
         
-        output = '\n<div class="attribution">Materials on this page adapted with permission from:'
+        output = '\n<div class="attribution">Materials on this page adapted from:'
         
         for argument in self.arguments:
             cur_options = {}

@@ -37,7 +37,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CS160 Reader' # e.g. How To Think Like a Computer Scientist
-copyright = u'' # e.g. "2013, Brad Miller and David Ranum"
+copyright = u'Andrew Scholer' # e.g. "2013, Brad Miller and David Ranum"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -94,6 +94,8 @@ html_theme_options = {
     # Options are "nav" (default), "footer" or anything else to exclude.
     'source_link_position': "nav",
 }
+
+html_add_permalinks = None
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ["_templates"]

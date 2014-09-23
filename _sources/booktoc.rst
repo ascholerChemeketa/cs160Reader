@@ -9,7 +9,7 @@ Computation and Computer Science
    
 .. toctree::   
    :includehidden:
-   :maxdepth: 3
+   :maxdepth: 1
    :numbered:
    
    HistoryOfComputers/index.rst
@@ -21,7 +21,15 @@ Computation and Computer Science
    Algorithms/index.rst
    OperatingSystems/index.rst
    ParallelProcessing/index.rst
+   LimitsAndFuture/index.rst
 
 
-BYOB    
-=========
+Nine Algorithms Book    
+===================================
+
+.. toctree::   
+   :includehidden:
+   :maxdepth: 2
+   
+   NineAlgorithms/index.rst
+
