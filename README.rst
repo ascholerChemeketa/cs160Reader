@@ -28,4 +28,4 @@ Setup cs160reader
 #. From cmd prompt in cs160reader folder, do ``paver build`` to produce output. Future builds should only rebuild modified files unless you do ``paver build --all``
 
 
-For more info see `http://runestoneinteractive.org/build/html/developer.html` or bug me.
+For more info see `http://runestoneinteractive.org/build/html/developer.html`, `http://runestoneinteractive.org/instructors.html#getstarted`, or bug me.
