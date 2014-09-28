@@ -107,7 +107,7 @@
             {% if 'overview' in course_id: %}
                 <li><a href='/{{appname}}/static/{{course_id}}/overview.html'>Stuff</a></li>
             {% else: %}
-                <li><a href='{{ pathto("booktoc") }}'>Table of Contents</a></li>
+                <li><a href='{{ pathto("index") }}'>Table of Contents</a></li>
             {% endif %}
             <li><a href='{{ pathto("genindex") }}'>Book Index</a></li>
             <li class="divider"></li>
@@ -155,6 +155,7 @@
 -->
 
         <!-- help menu dropdown -->
+        <!--
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
             <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
@@ -167,9 +168,10 @@
             <li><a href='https://github.com/bnmnetp/runestone/issues/new'>Report A Problem</a></li>
           </ul>
         </li>
+        <li class="divider-vertical"></li>
+        -->
         <!-- end help menu dropdown -->
 
-        <li class="divider-vertical"></li>
 
       </ul>
 

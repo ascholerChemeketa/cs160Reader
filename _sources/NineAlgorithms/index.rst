@@ -1,9 +1,9 @@
 
 
-Nine Algorithms Supplements
-===================================
+Supplements to Nine Algorithms
+============================================
 
-Resources that go with the Nine Algorithms book readings.
+Resources and additional materials to accompany readings in *Nine Algorithms That Changed the Future*.
     
 .. toctree::   
    :maxdepth: 1

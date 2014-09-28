@@ -35,11 +35,5 @@ In the late 1970's computers like the Altair, Apple and Commodore were the first
        The first IBM PC was the 5150
        
        
-
-.. raw:: html
-
-    <div class="figure" style="width: 525px;">
-    <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/digital-logic/12/288/2220"><img title="From Sand to Silicon: Integrated Circuit Design and Manufacturing" src="http://s3v.computerhistory.org/102695604-03-01.jpg"><span></span></a>
-    <p class="caption">Computer History Museum</p><div class="legend">From Sand to Silicon: Integrated Circuit Design and Manufacturing</div></div>
     
 .. quick_attribution:: Wikipedia 
