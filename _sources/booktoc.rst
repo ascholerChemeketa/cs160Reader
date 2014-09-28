@@ -1,8 +1,8 @@
 .. include:: global.rst
 
 
-Table of Contents   
-##################
+CS160 Course Reader   
+####################
     
 Computation and Computer Science  
 ==================================
@@ -12,6 +12,7 @@ Computation and Computer Science
    :maxdepth: 1
    :numbered:
    
+   ComputingFields/index.rst
    HistoryOfComputers/index.rst
    Binary/index.rst
    DataRepresentation/index.rst
@@ -29,7 +30,7 @@ Nine Algorithms Book
 
 .. toctree::   
    :includehidden:
-   :maxdepth: 2
+   :maxdepth: 1
    
    NineAlgorithms/index.rst
 

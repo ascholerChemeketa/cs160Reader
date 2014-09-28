@@ -203,6 +203,10 @@ class QuickAttribution(Directive):
                 cur_options['title_link'] = "http://en.wikipedia.org/"
                 cur_options['license'] = "CC_SA_30"
             
+            if argument == 'ACM':
+                cur_options['title'] = "Association for Computing Machinery"
+                cur_options['title_link'] = "http://computingcareers.acm.org/"
+                
             output = output + AttributionLine(cur_options).getText()
             
         output = output + '</div>'
