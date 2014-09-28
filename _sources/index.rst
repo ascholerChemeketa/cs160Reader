@@ -1,14 +1,36 @@
 .. include:: global.rst
 
-Welcome to CS160
-==================
-  
-This reader contains a collection of resources we will be using uring the term.
 
-To get started, go to the  :doc:`Table of Contents <booktoc>`.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
+CS160 Course Reader   
+####################
+    
+Computation and Computer Science  
+==================================
    
-   booktoc 
+.. toctree::   
+   :includehidden:
+   :maxdepth: 1
+   :numbered:
+   
+   ComputingFields/index.rst
+   HistoryOfComputers/index.rst
+   Binary/index.rst
+   DataRepresentation/index.rst
+   LogicCircuits/index.rst
+   ComputerArchitecture/index.rst
+   ProgrammingLanguages/index.rst
+   Algorithms/index.rst
+   OperatingSystems/index.rst
+   ParallelProcessing/index.rst
+   LimitsAndFuture/index.rst
+
+
+Nine Algorithms Book    
+===================================
+
+.. toctree::   
+   :includehidden:
+   :maxdepth: 1
+   
+   NineAlgorithms/index.rst
+
