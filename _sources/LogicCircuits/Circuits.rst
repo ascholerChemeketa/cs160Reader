@@ -5,7 +5,9 @@
 Circuits
 ============================
 
-The circuits that make up the hardware of a computer are no more than combinations of the basic gates made by connecting the output of gates to the input of other gates to build up complex logic. These circuits are often drawn as diagrams where each gate is represented by a symbol and lines connect inputs to outputs. In these diagrams, the gates are drawn using the symbols shown below.
+Every circuit in a computer is made by wiring together switches (transistors) so they implement logic gates. These logic gates are used to store information, do math, make comparisons, and everything else a computer can do.
+
+The diagrams for these circuit are drawn using the symbols shown below. Traditionally, the inputs to a gate come from the left, and the output comes out of the right side. That is why there are two lines going into every gate but NOT... every other gate requires two inputs.
 
 .. figure:: Images/BasicGates.png
 
@@ -21,7 +23,7 @@ The negated gates are the same as the basic gates, but with the little NOT circl
     
 .. figure:: Images/NegatedGates.png
 
-If we add symbols representing inputs (as switches) and outputs (as light bulbs), we would draw a simple circuit just containing an OR gate something like this:
+Below is an **OR** gate being used in a full circuit. There are two inputs (light switches) that feed into the left side of the gate. The output of the **OR** gate comes out of the right side and travels to the light bulb.
 
 .. figure:: Images/SimpleCircuit.png
 

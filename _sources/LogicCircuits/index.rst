@@ -17,8 +17,8 @@ Computers represent all information as bits that can be thought of as on/off, 1/
     NegatedGates.rst
     Circuits.rst
     ComplexCircuits.rst
-    Adders.rst
     Memory.rst
+    Adders.rst
 
 
 

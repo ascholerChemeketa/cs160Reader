@@ -27,7 +27,7 @@ The exclusive or gate, known as **XOR** (or sometimes **EOR**) describes a gate 
         1               1               0
         =============   =============   ============= 
     
-Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. "Entrées come with fries or a salad" probably means you can get one or the other, but not both. On the other hand if a rule stated: "If you turn in copied work, or the wrong assignment, you will get a 0", a plagiarized copy of the wrong assignment (both parts true) would still mean you get a 0. 
+Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one *or* the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts true). In this case, *or* means logical **OR**.
 
 .. index::
     pair: Logic Gate; NOT
@@ -35,8 +35,7 @@ Watch out for **XOR** and **OR** - in English we often use the word "or" to mean
 .. pseudo_h3:: NOT Gates
     :class: underlined
 
-The **NOT** gate is special in that it only has one input. The output is always the opposite of the input. It is the kind of logic we need to map the input "is a number positive" to the output "is the product of the number and -1 positive". If the number we start with is negative (0), the answer is positive (1). If the number we start with is positive (1), then the answer is negative (0).    
-   
+The **NOT** gate is special in that it only has one input. The output is always the opposite of the input: 
 
 .. rst-class:: truth-table
 
@@ -48,4 +47,11 @@ The **NOT** gate is special in that it only has one input. The output is always 
         0               1
         1               0
         =============   ============= 
+
+It is the kind of logic we need if we know the answer to "is a certain number greater than 0?" but want to answer the question 
+"is the number less than or equal to 0?". The answer to the second question is always the opposite of the first question. 
+
+For example, if the number in question is -3, the answer to the first question is NO (0) and the answer to the second is YES (1). Even if I do not tell you the number in question, but I do tell you the answer to "is the number greater than 0?" is YES (1), you could determine that the answer to "is it less than or equal to 0" by applying the **NOT** rule.
+   
+
     

@@ -3,18 +3,19 @@
 Remembering Things
 ============================
 
-Circuits can even be built to feed the current output back into the circuit as an input. This is one of the main ways computer memory is implemented. Using the circuit shown below (known as an SR Flip Flop), try the following experiments
-
-* Turn on Input 1 - this **Sets** the memory to 1.
-* Turn off Input 1. Notice that the memory stays on even though both switches are off.
-* Turn on Input 2 - this **Resets** the memory to 0.
-* Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.
+In previous circuits we have seen, every path has gone strictly left to right. But we can take the output of a gate and feed it back in as the inputs to earlier gates. This is the secret behind building a "memory" circuit: feeding the output back into the circuit produces a loop that "remembers" a value.  In the circuit shown below, notice how the output of each NOR gate feeds back as an input to the other gate.
 
 .. raw:: html
 
         <iframe src="../_static/simcir/simcir.html?circuits/SRFlipFlop.xml" style="border: 0px; width: 600px; height: 325px;"></iframe>
         
-Essentially, the circuit remembers which input, Set or Reset, was most recently on. It does this by sending the current output back into an NOR gate with each of the inputs. There are of course many other ways to store a value in a circuit, but they all use this same basic idea of feeding outputs back in as inputs.
+        
+With that circuit (known as an SR Flip Flop), try the following experiments
 
-Much like chaining full adders to add multi-digit numbers, the secret to remembering large binary values is to simply repeat this basic building block. By using 32 of these SR flip flops, we could remember a 32 digit binary value.
+* Turn on Input 1 - this **Sets** the memory to 1.
+* Turn off Input 1. Notice that the memory stays on even though both switches are off.
+* Turn on Input 2 - this **Resets** the memory to 0.
+* Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.
+        
+Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we want to remember **1**, we flip **Input1** on briefly. To remember **0**, we flip **Input2** on briefly. There are many other circuits that can "remember" a value, but they all use this same basic idea of feeding outputs back in as inputs. To remember more than one bit, we would simply need to make multiple copies of this circuit, one for each bit we need to store.
  
