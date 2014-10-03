@@ -4,7 +4,7 @@
 Other Gates
 ============================
 
-We can combine two inputs to produce an output using many rules other than **AND** or **OR**. We won't worry about what the switches would look like for the other rules we will learn about... we would have to make our simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.
+We can combine two inputs to produce an output using many rules other than **AND** or **OR**. We won't worry about what the switches would look like for the new rules below... we would have to make our simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.
 
 .. index::
     pair: Logic Gate; XOR
@@ -27,7 +27,7 @@ The exclusive or gate, known as **XOR** (or sometimes **EOR**) describes a gate 
         1               1               0
         =============   =============   ============= 
     
-Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one *or* the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts true). In this case, *or* means logical **OR**.
+Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one or the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts true). In this case, *or* means logical **OR** - if either part is true, the answer is true.
 
 .. index::
     pair: Logic Gate; NOT

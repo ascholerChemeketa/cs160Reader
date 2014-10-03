@@ -55,5 +55,5 @@ For the circuit shown above, we can think of the top switch as Input 1 and the b
         1               1               1
         =============   =============   ============= 
 
-Of course, these 1s and 0s can stand for any kind of information - the basic logic rule of OR is useful in many situations. For example, maybe our two inputs represent "Is it raining right now?" and "Is rain forecast for later?" and our output represents "Bring an umbrella". The logical rule OR could decide if we need to have an umbrella with us; if it is raining now, or if it is expected to rain later (or if it is raining now and is expected to rain later) then we need an umbrella.
+Although the computer will only think in terms of 1 and 0, those can stand for any piece of information that has a true/false or yes/no answer. For example, maybe our two inputs represent "Is it raining right now?" and "Is rain forecast for later?" and our output represents "Bring an umbrella". The logical rule **OR** is appropriate to decide if we need to have an umbrella with us; if it is raining now, or if it is expected to rain later (or if it is raining now and is expected to rain later) then we need an umbrella.
 

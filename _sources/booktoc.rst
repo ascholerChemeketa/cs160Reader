@@ -15,8 +15,8 @@ Computation and Computer Science
    ComputingFields/index.rst
    HistoryOfComputers/index.rst
    Binary/index.rst
-   DataRepresentation/index.rst
    LogicCircuits/index.rst
+   DataRepresentation/index.rst
    ComputerArchitecture/index.rst
    ProgrammingLanguages/index.rst
    Algorithms/index.rst
