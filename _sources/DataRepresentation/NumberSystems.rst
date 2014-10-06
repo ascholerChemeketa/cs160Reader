@@ -36,9 +36,12 @@ The **binary number** system is the same idea - each digit has a value based on 
 
 Notice that since each digit can only be a 1 or a 0, we don't actually need to multiply. A 1 indicates we have the value for that column and a 0 indicates we don't. So **101** in binary simply means 4 + 1 = 5 because the first 1 is in the "fours" column and the second 1 is in the "ones" column.
 
-Because things can get confusing when we are talking about different bases (does "101" mean the binary number that represents 5 or the decimal number 101?), we often use a subscript to indicate the base of the number being represented. Thus :math:`101_{10}` indicates the decimal number 101 and :math:`101_{2}` indicates a binary number with the value 5.
 
-If you think about it for a minute, you can probably see that the largest value that we can represent with 3 binary digits is 7. With three decimal digits we can express values up to 999. Binary numbers take more digits to express large numbers. With 8 bits, we can express values up to 255; to decode them, we need to add more column to our table - each new column will be twice the value of the last column. Here is what :math:`10110011_{2}` represents:
+Because things can get confusing when we are talking about different bases (does "101" mean the binary number that represents 5 or the decimal number 101?), we often use a subscript to indicate the base of the number being represented. Thus :math:`101_{10}` indicates the decimal number 101 and :math:`101_{2}` indicates a binary number with the value 5. 
+
+If you think about it for a minute, you can probably see that the largest value that we can represent with 3 binary digits is 7. With three decimal digits we can express values up to 999. Binary numbers take more digits to express large numbers. 
+
+With 8 bits, we can express values up to 255; to decode them, we need to add more column to our table - each new column will be twice the value of the last column. Here is what :math:`10110011_{2}` represents:
 
 
 .. rst-class:: place-values

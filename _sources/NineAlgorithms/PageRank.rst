@@ -8,7 +8,7 @@ Page Rank (Ch 3)
 .. pseudo_h3:: Hints for Simulator
     :class: underlined
     
-The `PageRank Simulator <http://caccio.blogdns.net/software/pagerank-simulator>`__ is a Java application. Due to recent security improvements in Java, *you probably will not be able to run the file* as downloaded from the author's site. Use the copy linked on my home page.
+The `PageRank Simulator <http://caccio.blogdns.net/software/pagerank-simulator>`__ is a Java application. Due to recent security improvements in Java, *you probably will not be able to run the file* as downloaded from the author's site. Use the copy linked on the CS160 page.
 
 .. image:: Images/PageRankSim.png
 
@@ -18,7 +18,7 @@ You can find a tutorial on the author's web page, but here are a few quick hints
     Click **New Page**, then click in the right panel below the button
     
 * To Add a Link
-    Click **New Link**, then click on one page, **hold down the mouse button** and drag to another page before releasing. Arrow heads show direction of a link. To link from A to B and B to A you need to draw the link in both directions. You can only have one link from any page A to any other page B.
+    Click **New Link**, then click on one page, **hold down the mouse button** and drag to another page before releasing. Arrow heads show direction of a link. To link from A to B and B to A you need to draw the link in both directions.
     
 * To Run Simulation
     Click **Page Rank**. You will need to rerun th simulation after any changes you make.
