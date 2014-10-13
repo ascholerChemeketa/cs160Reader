@@ -16,11 +16,11 @@ Because computers represent everything as patterns of 1s and 0s, we need to come
     BinaryConversions2.rst
     BinaryMath.rst
     BinaryMath2.rst
-    ASCII.rst
-    ImageRepresentation.rst
     TwosComplement.rst
     FractionalValues.rst
     FloatingPointNumbers.rst
+    ASCII.rst
+    ImageRepresentation.rst
     Hexadecimal.rst
     HexColors.rst
 
