@@ -115,12 +115,12 @@ As mentioned earlier, the advantage of this algorithm is that it very easily con
  
  
 .. mchoicemf:: binaryconversions2_1 
-    :answer_a: 3
+    :answer_a: 5
     :answer_b: 4
-    :answer_c: 5
+    :answer_c: 6
     :answer_d: 49
     :correct: c
-    :feedback_a: You are dividing by 2 until you reach 0. 3 divisions won't get you there
+    :feedback_a: You are dividing by 2 until you reach 0. 5 divisions won't get you there
     :feedback_b: You are dividing by 2 until you reach 0. 4 divisions won't get you there
     :feedback_c: 
     :feedback_d: You are dividing by 2 until you reach 0. don't need that many divisions
