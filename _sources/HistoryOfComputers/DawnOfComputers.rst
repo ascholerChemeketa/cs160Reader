@@ -62,7 +62,7 @@ Whereas the Difference Engine could only calculate the values of polynomial func
     Supposing, for instance, that the fundamental relations of pitched sounds in the science of harmony and of musical composition were susceptible of such expression and adaptations, the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent.
 
     
-Babbage was a man ahead of his time - manufacturing the fine clockwork mechanisms required for hs Engines was impossible with current technology. Neither engine was ever completed in his lifetime. But sixty years after Babbage developed the idea of the Analytical Engine, another inventory would successfully build a machine that would transform the way governments and businesses processed information.
+Babbage was a man ahead of his time - manufacturing the fine clockwork mechanisms required for his Engines was impossible with current technology. Neither engine was ever completed in his lifetime. But sixty years after Babbage developed the idea of the Analytical Engine, another inventory would successfully build a machine that would transform the way governments and businesses processed information.
 
 .. index:: Hollerith Machine
 .. index:: 
