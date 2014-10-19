@@ -6,7 +6,7 @@
 Bytes
 ============================
     
-One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make is appropriate for storing things like a single character of text. 
+One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make is appropriate for storing things like a single character of text - with 256 different values we can assign a different 8-bit pattern to each letter, digit, punctuation mark, etc... 
 
 When more than eight bits are required for some data, several bytes are used. For example, typically: 
 
@@ -14,7 +14,7 @@ When more than eight bits are required for some data, several bytes are used. Fo
 * A decimal number is represented with a group of 8 bytes (64 bits)
 * A color is repented by a group of 3 bytes (24 bits)
 
-When we are talking about much larger chunks of information, like the information that makes up an entire image or music file, we describe it in therms of 
+When we are talking about much larger chunks of information, like the information that makes up an entire image or music file, we describe it in terms of kilobytes, megabytes, gigabytes or even larger quantities. These are all names for different powers of 2:
 
 
 .. rst-class:: maintable
