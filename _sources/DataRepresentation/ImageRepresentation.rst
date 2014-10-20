@@ -60,7 +60,7 @@ Real images of course use a much greater number of pixels than we have seen here
    :correct: \\b600\\b
    :feedback1: ('[\\D]+', 'The answer should be just numeric digits')
    :feedback2: ('\\b.{1,2}\\b', 'The answer should have 3 digits')
-   :feedback3: ('\\b.{4,}\\b', 'The answer should have 8 digits')
+   :feedback3: ('\\b.{4,}\\b', 'The answer should have 3 digits')
    :feedback4: ('.*', '')
    :blankid: image_1_ans1
 

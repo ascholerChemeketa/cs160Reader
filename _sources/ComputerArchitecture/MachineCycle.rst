@@ -19,13 +19,13 @@ In this tutorial, we are focusing on the step 4 in the diagram above - the proce
     :alt: Instruction Cycle
 
 * Fetch
-    In the fetch cycle, the control unit looks at the program counter register (PC) to get the memory address of the next instruction. It then requests this instruction from main memory.
+    In the fetch cycle, the control unit looks at the program counter register (PC) to get the memory address of the next instruction. It then requests this instruction from main memory and places it in the instruction register (IR).
 
 * Decode
-    Here, the control unit checks the instruction that is now stored within the instruction register (IR). It looks at the instruction - which is just a sequence of 0s and 1s and decides what needs to be done. Does the instruction say to add two numbers? Does it say to load a value from memory? The control unit figures out what signals need to be sent to get whatever task it is done.
+    Here, the control unit checks the instruction that is now stored within the instruction register (IR). It looks at the instruction - which is just a sequence of 0s and 1s and decides what needs to be done. Does the instruction say to add two numbers? Does it say to load a value from memory? Where in memory? The control unit interprests the binary instruction to answer questions like these.
 
 * Execute
-    Now the control unit sends the signals that tell the ALU, memory, and other components what they need to do and the work happens.
+    Now the control unit sends the signals that tell the ALU, memory, and other components signals to cause them to perform the correct work.
 
 The animation below demonstrates a simple program running on computer. This imaginary computer shown uses special registers to hold memory address (MAR) and data that just came in from memory (MBR). It also uses registers called AL and BL to hold values temporarily. Don't worry about the details of those other registers, focus on the fetch/decode/execute cycle and how the PC and IR are used.
 
