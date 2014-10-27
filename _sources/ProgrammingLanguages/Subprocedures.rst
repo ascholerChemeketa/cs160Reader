@@ -8,7 +8,7 @@ Subprocedures
 
 The last major control structure that all high level languages supply is the idea of a **subprocedure** often called **functions**. A subprocedure is a chunk of code that does a particular task. It is essentially a small program that may take some input, does some work and then can give back an answer.
 
-Ideally, a subprocedure works like a black box - we pass some information into it and receive an answer out of it. It is very similar to the mathematical idea of a function only not every subprocedure has inputs or outputs. The inputs given to a subprocedure, if any, are called the **parameters**. The answer received, if any, is called the **return value**. Making use of a subproceudre is known as **calling it** - try calling the ``Power`` subprocedure below by passing in values for x and y and pressing the button.
+Ideally, a subprocedure works like a black box - we pass some information into it and receive an answer out of it. It is very similar to the mathematical idea of a function, only not every subprocedure has inputs or outputs. The inputs given to a subprocedure, if any, are called the **parameters**. The answer received, if any, is called the **return value**. Making use of a subproceudre is known as **calling it** - try calling the ``Power`` subprocedure below by passing in values for x and y and pressing the button.
 
 .. figure:: Images/callpower.swf
    :width: 550
@@ -28,9 +28,7 @@ The value of subprocedures lies in this black box behavior. You do not need to k
     
     Abstractions are one of the most powerful tools in programming. Modern programming languages feature large libraries of subprocedures to do things like draw images and form internet connections. These allow application developers to focus on building programs from these high level behaviors instead of spending all their time wrangling 0s and 1s.
 
-Of course, the computer needs actual instructions for how to do the work. Someone somewhere must write the code for how ``Power`` is to do its work and when the computer is asked to do ``Power`` it must go run that code. At that point, it jumps off to the first instruction in the subprocedure and starts running those commands. When the subprocedure is finished, the processor jumps back to what it was doing and continues on.
-
-If we watch behind the scenes, we can see the kind of instruction that might make ``Power`` might do its job.
+If we watch behind the scenes, we can see the kind of instructions that might make ``Power`` might do its job:
 
 .. figure:: Images/tracepower.swf
    :width: 550
@@ -38,6 +36,10 @@ If we watch behind the scenes, we can see the kind of instruction that might mak
    :class: clear
 
    `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`__
+
+    
+Of course, the computer needs actual instructions like these for how to do the work. Someone somewhere must write the code for this ``Power`` procedure. But once that code is written and tested, it can be reused, avoiding the need to constantly reinvent the wheel.
+
 
 
 

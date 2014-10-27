@@ -32,7 +32,7 @@ The tabs below show what code might look like in various language levels. Imagin
     
         ::
 
-            tip = mealCost * 0.015
+            tip = mealCost * 0.15
             bill = mealCost + tip
         
 
@@ -59,7 +59,7 @@ The tabs below show what code might look like in various language levels. Imagin
             0001010101111100
             1101101010111111
             
-Note that the high level language is much more compact than the assembly or machine code and, even more important, it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about LOADing and STOREing values into registers, we can express commands that look more like normal calculations: ``tip = mealCost * 0.015``.
+Note that the high level language is much more compact than the assembly or machine code and, even more important, it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about LOADing and STOREing values into registers, we can express commands that look more like normal calculations: ``tip = mealCost * 0.15``.
 
 
 .. quick_attribution:: VT ICSJava

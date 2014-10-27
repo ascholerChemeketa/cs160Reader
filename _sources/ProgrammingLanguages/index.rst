@@ -15,6 +15,7 @@ The feature that makes computers so useful is their generality. Unlike most tool
     Assembly.rst
     HighLevelLanguages.rst
     SyntaxAndVariety.rst
+    Pseudocode.rst
     VariablesAndTypes.rst
     AssignmentStatements.rst
     AssignmentStatements2.rst
@@ -22,7 +23,6 @@ The feature that makes computers so useful is their generality. Unlike most tool
     Loops.rst
     Subprocedures.rst
     Subprocedures2.rst
-    Pseudocode.rst
     
 
 

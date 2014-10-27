@@ -10,6 +10,7 @@ body {
 
 pre {
     margin: 0 0 1em;
+    word-break: normal;
 }
 
 h5 {

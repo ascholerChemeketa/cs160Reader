@@ -2,7 +2,7 @@
 
 .. index:: subprocedure
     
-Subprocedures, cont
+Subprocedures Implemented
 =================================
 
 In code, subprocedures are each given a name when they are **defined** (the code is written). The parameters that they take are usually listed in parentheses after the name. The following code says *"There is a new subprocedure called Power that requires two inputs. The first we will call the base and the second the exponent."*::
@@ -29,7 +29,7 @@ Once execution hits the "return" command, the processor jumps back to the place 
 
     theValue = Power(8, 6)
 
-To put everything together, here is an example you can try running. Note that when the computer hits "def Power" it just remembers that this function exists... it does not run it right away. The first real line of code to be executed is line 12. On line 13 ``Power`` is called and the program jumps up to run it. Once the answer is calculated and returned we print it and then call ``Power`` again with different inputs. In addition to abstraction, functions are a powerful way to reuse pieces of code without having to type the details over and over!
+To put everything together, here is an example you can try running:
 
 .. codelens:: IfStatement
 
@@ -45,11 +45,13 @@ To put everything together, here is an example you can try running. Note that wh
 
     #------Main part of program------
     print "Calculating 5 to the 3rd power..."
-    thirdPower = Power(5, 3)
-    print thirdPower
+    answer1 = Power(5, 3)
+    print answer1
     
-    print "Calculating 5 to the 4th power..."
-    fourthPower = Power(5, 4)
-    print fourthPower
+    print "Calculating 8 to the 2nd power..."
+    answer2 = Power(8, 2)
+    print answer2
     
+Note that when the computer hits "def Power" it just remembers that this function exists... it does not run it right away. The first real line of code to be executed is line 12. On line 13 ``Power`` is called and the program jumps up to run it. Once the power is calculated, execution picks up again at line 13. Once we reach line 17, the code calls ``Power`` again with different inputs. 
 
+.. important:: In addition to abstraction, functions are a powerful way to reuse pieces of code without having to copy and paste entire algorithms around in your code. We can reuse the algorithm in the Power subprocedure by calling it instead of duplicating all of the instructions.
