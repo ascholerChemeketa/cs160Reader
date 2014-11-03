@@ -33,7 +33,7 @@ Algorithms are especially important to computers because computers are really ge
 To be useful, an algorithm must meet certain requirements:
 
 * Algorithms have computable operations
-    Each step in an algorithm must be doable, that is, the operation must be something that is possible to do. For computers, many mathematical operations such as division by zero or finding the square root of a negative number are also impossible. These operations are not effectively computable so they cannot be used in writing algorithms.
+    Each step in an algorithm must be something that is possible to do. For computers, many mathematical operations such as division by zero or finding the square root of a negative number are also impossible. These operations are not computable so they cannot be used in writing algorithms.
     
 * Algorithms have unambiguous operations
     Each operation in an algorithm must be sufficiently clear so that it does not need to be simplified. The meaning of "sufficiently clear" depends on who or what the algorithm is written for. The instruction ``average the two numbers`` would be perfectly clear to most humans. But the same instruction is ambiguous to a computer because the computer has no basic operations for averaging. For a computer, the algorithm would have to be expressed in terms of operations that can be carried out by programming language statements - adding the two numbers and dividing the sum by two.
