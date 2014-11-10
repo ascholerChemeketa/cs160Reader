@@ -8,7 +8,7 @@ Digital Signing (Ch 9)
 This chapter powers through a couple of big ideas. Here is a recommendation for breaking up the reading.
 
 #. Read until you hit *Signing with an Exponent Padlock...* section. Don't go on until you feel comfortable with the basic idea.
-#. To play with the idea of multiplicative keys, you can use `this application to test different clock sizes and keys <http://faculty.chemeketa.edu/ascholer/cs160/webapps/RSATimesTable.html>`__. You do not need to master doing the math by hand... just make sure you are confident the process works.
+#. Go try out the idea of multiplicative keys - use `this application to test different clock sizes and keys <http://faculty.chemeketa.edu/ascholer/cs160/webapps/RSATimesTable.html>`__. You do not need to master doing the math by hand... just make sure you are confident the process works.
 #. Now continue on with to *Signing with an Exponent Padlock...* and continue reading from there. To test out the math for something like :math:`9^7 \textrm{ mod } 22` use wolfram alpha and type it in as "9^7 mod 22"
 
 .. raw:: html
