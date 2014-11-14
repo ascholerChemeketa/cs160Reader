@@ -49,7 +49,7 @@ The example shown below would be much more appropriate. The first tab shows pseu
             1   cout << "Enter test average:" << endl;
             2   int testGrade;
                 cin >> testGrade;
-            3   cout >> "Enter work average:" << endl;
+            3   cout << "Enter work average:" << endl;
             4   int workGrade;
                 cin >> workGrade;
             5   double overallGrade = (testGrade + workGrade) / 2.0;
