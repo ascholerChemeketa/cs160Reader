@@ -327,4 +327,4 @@ Think you have it? Give it a try below. Use the ListA and ListB buttons to move 
     </div>
     <br/>
 
-Once you have merging down, move on to Merge Sort on the next page. Remember for later what was mentioned at the end of the video - merging **n** items is a **linear algorithm** - it takes :math:`O(n)` time.
+Once you have merging down, move on to Merge Sort on the next page. Remember for later what was mentioned at the end of the video - merging **n** items is a **linear algorithm** - it takes :math:`O(n)` work.

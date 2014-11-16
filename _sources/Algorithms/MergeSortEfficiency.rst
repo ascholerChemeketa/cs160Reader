@@ -7,9 +7,14 @@
 Merge Sort Efficiency
 =================================
 
-So how efficient is Merge Sort? Well, for starters, remember that merging **n** items takes :math:`O(n)` time. In other words, merging 5 items takes ~5 units of time, merging 20 items, takes ~20 units of time, etc... Now lets do a rough analysis of how long it takes to do a merge sort on a list of length 1024.
+So how efficient is Merge Sort? Well, for starters, remember that merging **n** items takes :math:`O(n)` work. In other words, merging 5 items takes ~5 units of work, merging 20 items, takes ~20 units of work, etc... Now lets do a rough analysis of how long it takes to do a merge sort on a list of length 1024.
 
-All the hard work takes place as we merge the lists back together. The first merge for a list of 1024 things would be to merge 1024 single items into 512 lists of length 2. Each merge would take ~2 units of time since there are two items in the new lists. 512 lists times 2 units of time = ~1024 units of time. The next level would be to merge those 512 lists of size 2 into 256 lists of size 4. Each merge in that level would take ~4 units of time. 256 lists times 4 units of time = 1024 units of time again. The table below shows this and the pattern for the rest of the level:
+All the hard work takes place as we merge the lists back together:
+
+* The first merge for a list of 1024 things would be to merge 1024 single items into 512 lists of length two. Each merge would take ~2 units of work since there are two items in the new lists. 512 lists times 2 units of work = ~1024 units of work. 
+* The next level would be to merge those 512 lists of size 2 into 256 lists of size 4. Each merge in that level would take ~4 units of work. 256 lists times 4 units of work = 1024 units of work again. 
+
+The table below shows this and the pattern for the rest of the level:
 
 .. raw:: html
 
@@ -27,7 +32,7 @@ All the hard work takes place as we merge the lists back together. The first mer
                 <th class="head">Description</th>
                 <th class="head">Number of Lists</th>
                 <th class="head">Size of Each List</th>
-                <th class="head">Amount of Time</th>
+                <th class="head">Amount of Work</th>
             </tr>
         </thead>
         <tbody valign="top">
@@ -74,7 +79,7 @@ All the hard work takes place as we merge the lists back together. The first mer
     </table>
 
 
-Note that each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can say each level takes :math:`O(n)` time.
+Note that each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can say each level takes :math:`O(n)` work.
 
 Th only other thing we need to figure out is "how many levels are required?" The table above skips a few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like::
 
@@ -84,7 +89,7 @@ That is 10 levels of merging to group 1024 single items into one list of 1024.
 
 .. sidebar:: Wolfram Alpha
     
-    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 by typing something like "log2(1024)". To calculate :math:`100·log_2(100) you would type "100*log2(100)". Try it below.
+    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 by typing something like "log2(1024)". To calculate :math:`100·log_2(100)` you would type "100*log2(100)". Try it below.
     
     .. raw:: html
     
@@ -92,16 +97,16 @@ That is 10 levels of merging to group 1024 single items into one list of 1024.
         
 Like we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined by the mathematical function :math:`log_2(n)`. :math:`log_2(1024) = 10`. Using that, we could calculate the number of levels of merges required to do a Merge Sort on a list of 100,000 items: :math:`log_2(100,000) ≈ 16.61`. (Since we can't do 16.61 merges levels, we would call that 17.)
 
-The formula also allows us to write a general formula for the overall time taken for a Merge Sort. Starting with:
+The formula also allows us to write a general formula for the overall work required for a Merge Sort. Starting with:
 
-:math:`\textrm{total time} = \textrm{time taken per level} · \textrm{number of levels}`
+:math:`\textrm{total work} = \textrm{work per level} · \textrm{number of levels}`
 
-We know that sorting **n** items will require :math:`log_2(n)` levels and each level will take **n** time:
+We know that sorting **n** items will require :math:`log_2(n)` levels and each level will take **n** work:
 
-:math:`\textrm{total time} = \textrm{n time} · log_2(n) \textrm{ levels}`
+:math:`\textrm{total work} = \textrm{n work} · log_2(n) \textrm{ levels}`
 
 Or:
 
-:math:`\textrm{total time} = n·log_2(n)`
+:math:`\textrm{total work} = n·log_2(n)`
 
-Merge Sort takes :math:`O(n·log_2(n))` time to sort a list of size **n**.
+Merge Sort requires :math:`O(n·log_2(n))` work to sort a list of size **n**.
