@@ -16,7 +16,7 @@ One of the keys to Merge Sort is an algorithm for merging two sorted lists into 
 .. faux_code::
 
     1   **How to Merge listA and listB into sortedList**
-    1   repeat while until ``listA`` is empty AND ``listB`` is empty
+    1   repeat until ``listA`` is empty AND ``listB`` is empty
     2       if ``listA`` is empty
     3           move first item from ``listB`` to end of ``sortedList``
     4       else if ``listB`` is empty
