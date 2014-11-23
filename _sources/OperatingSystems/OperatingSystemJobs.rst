@@ -36,4 +36,4 @@ Instead of that nightmare situation, the operating system provides an **abstract
 Related to the job of hardware abstraction is providing tools to other programs to interact with users in a consistent and effective manner. Operating systems provide application programming interfaces (APIs) that include tools for doing things like drawing windows. Rather than each application designer deciding what windows should look like, what font to use in the title bar, where to put the close button, etc... the operating system provides code that takes care of those details. Not only does this makes programming an application easier, it also helps enforce a consistent experience for the user.
 
 
-We could fill books with all the ways that operating systems provide allocation of and abstraction for computer hardware, but on the following pages we will constrain our tour to two fundamental resources: main memory and processors.
+We could fill books with all the ways that operating systems provide allocation of and abstraction for computer hardware, but on the following pages we will foucs on two fundamental resources: processors and main memory.

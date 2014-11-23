@@ -6,7 +6,7 @@ Parallel vs Serial Performance
     
 Having multiple core computers is wonderful if you want to do multiple jobs at one time. But it does not necessarily improve our ability to do any one particular job faster. That is because normal algorithms do not always divide up into equal sized chunks of work. 
 
-For any given task, there are likely parts that are **serial** (ones that must be done in order) and parts that are **parallel** (that can be done at the same time or even out of order). Say I have a giant pile of index cards with definitions written on them but the cards are all jumbled up and I want to find one with information about Amdahl's Law and add facts from it to this page. Fortunately I have 4 friends with me. I could divide up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile. Once someone finds the right card, they can announce it and give it back for me to use. This program might look like:
+For any given task, there are likely parts that are **serial** (ones that must be done in order) and parts that are **parallel** (that can be done at the same time or even out of order). Say I have a giant pile of index cards with definitions written on them. I want to find one with information about Amdahl's Law and add facts from it to this page but the cards are all jumbled up. Fortunately I have 4 friends with me. I could divide up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile. Once someone finds the right card, they can announce it and give it back for me to use. This program might look like:
 
 .. faux_code::
 
@@ -18,21 +18,21 @@ For any given task, there are likely parts that are **serial** (ones that must b
 
 Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles, communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the "looking" phase down to 1/100th of the original time, but that won't help me type the information we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be sped up.
 
-The figure below on the left shows how the total time depends on how much work can be split up and how many workers we have. The one on the right compares total time on a hypothetical job for 1-5 workers.
+The figure below on the left shows how the total time depends on how much work can be split up and how many workers we have. The one on the right compares total time on a hypothetical job for 1-5 workers. Notice that although more workers means less time on the parallel part, the serial part always takes the same time.
 
 .. container:: inlinegroup
 
     .. figure:: Images/amdahl1.png
         :figwidth: 45%
         
-        Effect of splitting parallel part of job in 5
+        Effect of splitting parallel part of job in 5.
         
         
     
     .. figure:: Images/amdahl2.png
         :figwidth: 45%
 
-        Going from 1 to 2 workers has more effect than going from 4 to 5
+        Going from 1 to 2 workers has more effect than going from 4 to 5.
 
 |br|
        
@@ -42,17 +42,17 @@ This feature of diminishing returns due to a serial part of problems was codifie
 
 :math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}}`
 
-Say 60% of a job can be made parallel and we use 2 processors. Substituting into the formula gives:
+Say 60% of a job can be made parallel and we use 2 processors. Substituting .60 for **P** and 2 for **N** into the formula gives:
 
 :math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{2}} = \frac{1}{0.70} = 1.43`
 
-40% of the work needs to be done in serial. The other 60% is split into two equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original time, or 1.43x faster.
+We would see a speedup of 1.43 times. 40% of the work needs to be done in serial. The other 60% is split into two equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original time, or 1.43x faster.
 
 Lets say we use 3 workers on the same job:
 
 :math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} = \frac{1}{0.60} = 1.67`
 
-We get the work done 1.67 times faster than with one worker (takes 60% of the original time). Better, but we are already seeing the diminishing returns of multiple workers. If we try putting 60 workers into that formula it predicts a total speedup of only 2.43x over one worker. The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions. 
+We get the work done 1.67 times faster than with one worker (i.e. the work takes 60% of the original time). Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that formula it predicts a total speedup of only 2.43x over one worker! The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions. 
 
 .. figure:: Images/AmdahlsLaw.png
 

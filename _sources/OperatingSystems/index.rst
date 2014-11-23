@@ -13,8 +13,8 @@ A computer's **Operating System** is the software that manages the low level fun
 
     OperatingSystems.rst
     OperatingSystemJobs.rst
-    VirtualMemory.rst
     ProcessManagement.rst
+    VirtualMemory.rst
     
 
 

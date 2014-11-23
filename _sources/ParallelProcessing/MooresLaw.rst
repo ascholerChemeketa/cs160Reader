@@ -13,11 +13,11 @@ Moore's Law
         Image © Intel Corporation
     
     
-In the 1960's, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a circuit would double every two years. This prediction came to be called **Moore's Law**. Although Moore's Law talked only about the number of components on a chip, other people have modified it to attempts to predict overall performance increases based on increases in both complexity and speed. The generally quoted number for overall processing power growth is a doubling every 18 months.
+In the 1960's, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a circuit would double every two years. This prediction came to be called **Moore's Law**. Although Moore was focused on the number of transistors on a chip, others have expanded his idea into a prediction for overall performance increases. The combined benefits of increased complexity and speed in chips has resulted in processing power doubling every 18 months. Thus the term "Moore's Law" is used to refer to this idea that overall processing power doubles every year and a half.
 
-Using the pattern of doubled power every 1.5 years, that means that a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (Which helps explain why computers need to be upgraded so frequently.) This doubling of computing power in a chip every 1.5-2 years has held steady for the past 40+ years. 
+Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (Which helps explain why computers need to be upgraded so frequently.) 
 
-To put this kind of growth into perspective: If Moore’s Law applied to the air travel industry, a flight from New York to Paris that took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a penny.
+This continuous doubling and redoubling of computing power in chips has held steady for the past 40+ years. To put this kind of growth into perspective: If Moore’s Law applied to the air travel industry, a flight from New York to Paris that took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a penny.
 
     
 .. figure:: Images/TransistorCounts.png

@@ -29,9 +29,9 @@ Depending on the timing, we could end up with 15, 6 or 16 stored as the value fo
 * A finishes completely (``x`` now 15) and then B goes (``x`` now 16)
 * B finishes completely (``x`` now 6) and then A goes (``x`` now 16)
 * A1 runs, program A gets 5. B1 runs, B gets 5. B finishes steps 2 and 3, (``x`` now is 6). Then A finishes steps 2 and 3 but using the value of 5 it already retrieved (``x`` now is 15)
-* A1 runs, program A gets 5. B1 runs, B gets 5. A finishes steps 2 and 3, (``x`` now is 15). Then B finishes steps 2 and 3 but using the value of 5 it already retrieved (``x`` now is 6
+* A1 runs, program A gets 5. B1 runs, B gets 5. A finishes steps 2 and 3, (``x`` now is 15). Then B finishes steps 2 and 3 but using the value of 5 it already retrieved (``x`` now is 6)
 
-The potential for different results depending on which worker acts first is called a **race condition** and leads to nasty bugs in programs (you likely only see the error occasionally making it very hard to track down).
+The potential for different results depending on which worker acts first is called a **race condition** and leads to nasty bugs in programs (you likely only see the error occasionally, making it very hard to track down).
 
 .. pseudo_h3:: Locks and Deadlock
     :class: underlined
