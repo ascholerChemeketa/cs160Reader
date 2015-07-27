@@ -8,54 +8,29 @@ from sphinxcontrib import paverutils
 
 sys.path.append(os.getcwd())
 
-######## CHANGE THIS ##########
-project_name = "cs160reader"
-###############################
-
+home_dir = os.getcwd()
 master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
+serving_dir = "../built/CS160Reader"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="../built/"+project_name,
+        builddir="../built/CS160Reader",
         sourcedir="_sources",
-        outdir="../built/"+project_name,
+        outdir="../built/CS160Reader",
         confdir=".",
-        template_args={'course_id':project_name,
+        project_name = "CS160Reader",
+        template_args={'course_id': 'CS160Reader',
                        'login_required':'false',
                        'appname':master_app,
-                       'loglevel':10,
-                       'course_url':master_url }
+                       'loglevel': 0,
+                       'course_url':master_url,
+                       'use_services': 'false',
+                       'python3': 'false'
+                        }
     )
 )
 
-if project_name == "<project_name>":
-  print "Please edit pavement.py and give your project a name"
-  exit()
-
-@task
-@cmdopts([
-    ('all','a','rebuild everything'),
-    ('outputdir=', 'o', 'output static files here'),
-    ('masterurl=', 'u', 'override the default master url'),
-    ('masterapp=', 'p', 'override the default master app')
-])
-def build(options):
-    if 'all' in options.build:
-      options['force_all'] = True
-      options['freshenv'] = True
-
-    if 'outputdir' in options.build:
-        options.build.outdir = options.build.outputdir
-
-    if 'masterurl' in options.build:
-        options.build.template_args['course_url'] = options.build.masterurl
-
-    if 'masterapp' in options.build:
-        options.build.template_args['appname'] = options.build.masterapp
-
-    print 'Building into ', options.build.outdir    
-    paverutils.run_sphinx(options,'build')
-
+from runestone import build  # build is called implicitly by the paver driver.
