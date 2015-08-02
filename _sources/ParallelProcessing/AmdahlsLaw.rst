@@ -38,21 +38,30 @@ The figure below on the left shows how the total time depends on how much work c
        
 .. index:: amdahl's law
 
-This feature of diminishing returns due to a serial part of problems was codified into a formula known as **Amdahl's Law**. It predicts the speedup possible given: 1) the percentage of the total work that is parallel (P) and 2) the number of processing cores (N) to work on it. 
+This feature of diminishing returns due to a serial part of problems was codified into a formula known as **Amdahl's Law**. It predicts the speedup possible given: **P**: the percentage of the total work that is parallel (expressed as a decimal) and **N**: the number of ways we split the work.
 
-:math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}}`
+
+.. figure:: Images/AmdahlFormula.png
+
+
+The bottom of the fraction represents the percent of the original time we will take - this equals the serial part plus one share of the parallel part. Dividing 1 by that gives us how many times faster we are working.
 
 Say 60% of a job can be made parallel and we use 2 processors. Substituting .60 for **P** and 2 for **N** into the formula gives:
 
-:math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{2}} = \frac{1}{0.70} = 1.43`
+:math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{2}} =  \frac{1}{0.40 + 0.30} = \frac{1}{0.70} = 1.43`
 
 We would see a speedup of 1.43 times. 40% of the work needs to be done in serial. The other 60% is split into two equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original time, or 1.43x faster.
 
 Lets say we use 3 workers on the same job:
 
-:math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} = \frac{1}{0.60} = 1.67`
+:math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} =  \frac{1}{0.40 + 0.20} = \frac{1}{0.60} = 1.67`
 
-We get the work done 1.67 times faster than with one worker (i.e. the work takes 60% of the original time). Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that formula it predicts a total speedup of only 2.43x over one worker! The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions. 
+40% of the work still must be done in serial. The 60% that is parallel will only take 20% or the original total time. Thus, the work gets done in 60% of the original time or a speedup of 1.67 times.
+
+Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that formula it predicts a total speedup of only 2.43x over one worker! Even an infinite number of workers would only speed things up by a factor 2.5 times... because 40% of the job is serial it can never be done in less time than that.
+
+
+The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions. 
 
 .. figure:: Images/AmdahlsLaw.png
 
