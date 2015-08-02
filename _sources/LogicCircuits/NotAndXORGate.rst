@@ -52,6 +52,45 @@ It is the kind of logic we need if we know the answer to "is a certain number gr
 "is the number less than or equal to 0?". The answer to the second question is always the opposite of the first question. 
 
 For example, if the number in question is -3, the answer to the first question is NO (0) and the answer to the second is YES (1). Even if I do not tell you the number in question, but I do tell you the answer to "is the number greater than 0?" is YES (1), you could determine that the answer to "is it less than or equal to 0" by applying the **NOT** rule.
+
+Because the NOT rule applies to only one input, it can be applied to a single bit pattern like 0101. To figure out the answer, simply "flip" every bit from 1 to 0 or vice verse:
+
+.. rst-class:: result-table
+
+    .. table:: NOT of 0101
+    
+        =============	=============   =============   =============	=============
+        Input pattern   1               0               1				0
+        NOT             0               1               0				1
+        =============   =============   ============= 	=============	=============
+
    
+.. pseudo_h4:: Self Check 
+    :class: underlined
+ 
+.. fillintheblank:: not_1
+
+    .. blank:: not_1_ans1
+        :correct: \\b0001\\b
+        :feedback1: ('[^01]+', 'Your answer should be just 1s and 0s',)
+        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: flip each bit in the input pattern to its opposite.')
+
+        What is the result of applying **NOT** to: |br| 
+        1110? |br| 
+            
 
     
+.. fillintheblank:: xor_1
+
+    .. blank:: xor_1_ans1
+        :correct: \\b0110\\b
+        :feedback1: ('[^01]+', 'Your answer should be just 1s and 0s',)
+        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: apply XOR to each column of bits. XOR reports 1 if one (and only one) of the bits is 1.')
+
+        What is the result of applying **XOR** to: |br| 
+        0101 |br| 
+        0011? |br| 

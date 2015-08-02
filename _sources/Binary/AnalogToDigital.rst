@@ -27,7 +27,7 @@ Even though there is a lot of noise - the signal is bouncing above and below the
 .. pseudo_h4:: Self Check 
     :class: underlined
 
-.. mchoicemf:: questionanalogdigital_1
+.. mchoice:: questionanalogdigital_1
     :answer_a: Yes—the exact value of the signal cannot be determined.
     :answer_b: No—the value of the signal can be determined, as long as the noise is not too great.
     :answer_c: No—digital signals can't pick up any noise.

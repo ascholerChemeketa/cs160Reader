@@ -142,7 +142,7 @@ You can play with the sliders below to explore how colors can be described as a 
 .. pseudo_h4:: Self Check 
     :class: underlined
  
-.. mchoicemf:: hexcolors_1 
+.. mchoice:: hexcolors_1 
     :answer_a: A255A2
     :answer_b: 58B3B3
     :answer_c: 43C0C0
@@ -155,14 +155,16 @@ You can play with the sliders below to explore how colors can be described as a 
     
     Which of the following hex values describes a smoky-aqua color?
     
+    
 .. fillintheblank:: hexcolors_2
-   :correct: \\b000000\\b
-   :feedback1: ('[^0-9A-Fa-f]+', 'Your answer should consist of hex digits: 0-9, A, B, C, D, E, F',)
-   :feedback2: ('\\b.{1,5}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{7,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: Try reproducing the color with the tool above')
-   :blankid: hexcolors_2_ans1
 
-   What hex code specifies black? :textfield:`hexcolors_2_ans1::large`
+    .. blank:: hexcolors_2_ans1
+        :correct: \\b000000\\b
+        :feedback1: ('[^0-9A-Fa-f]+', 'Your answer should consist of hex digits: 0-9, A, B, C, D, E, F',)
+        :feedback2: ('\\b.{1,5}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{7,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: Try reproducing the color with the tool above')
+
+        What hex code specifies black?
 
    

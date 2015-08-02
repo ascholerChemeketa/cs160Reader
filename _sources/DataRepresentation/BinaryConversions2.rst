@@ -114,7 +114,7 @@ As mentioned earlier, the advantage of this algorithm is that it very easily con
     :class: underlined
  
  
-.. mchoicemf:: binaryconversions2_1 
+.. mchoice:: binaryconversions2_1 
     :answer_a: 5
     :answer_b: 4
     :answer_c: 6

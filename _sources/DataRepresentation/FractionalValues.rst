@@ -72,18 +72,18 @@ There is no way to exactly represent the answer, you can just come close. (The c
 .. pseudo_h4:: Self Check 
     :class: underlined
  
- 
 .. fillintheblank:: fractions_1
-   :correct: ^0?\\.875\\b
-   :feedback1: ('[^0-9\\.]+', 'Your answer should be a number')
-   :feedback2: ('\\b1.*\\b', 'Your answer should start with 0.')
-   :feedback3: ('.*', 'Use the blank table above. The 0 goes in the ones column.')
-   :blankid: fractions_1_ans1
 
-   What decimal value does the binary number 0.111 represent? :textfield:`fractions_1_ans1::large`
+    .. blank:: fractions_1_ans1 
+        :correct: ^0?\\.875\\b
+        :feedback1: ('[^0-9\\.]+', 'Your answer should be a number')
+        :feedback2: ('\\b1.*\\b', 'Your answer should start with 0.')
+        :feedback3: ('.*', 'Use the blank table above. The 0 goes in the ones column.')
+
+        What decimal value does the binary number 0.111 represent? 
 
    
-.. mchoicemf:: fractions_2 
+.. mchoice:: fractions_2 
     :answer_a: 0.00011
     :answer_b: 0.01010
     :answer_c: 0.00111

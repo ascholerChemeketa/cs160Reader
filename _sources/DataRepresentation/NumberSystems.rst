@@ -67,17 +67,18 @@ Confused by how number systems determine the value of the digits in a number? Ch
  
  
 .. fillintheblank:: numbersystems_1
-   :correct: \\b10\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number',)
-   :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: With 4 binary digits what columns will you be using?')
-   :blankid: numbersystems_1_ans1
 
-   What decimal value does the binary number 1010 represent? :textfield:`numbersystems_1_ans1::mini`
+    .. blank:: numbersystems_1_ans1
+       :correct: \\b10\\b
+       :feedback1: ('[^\\d]+', 'Your answer should be a number',)
+       :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
+       :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
+       :feedback4: ('.*', 'Hint: With 4 binary digits what columns will you be using?')
+
+       What decimal value does the binary number 1010 represent? 
 
    
-.. mchoicemf:: numbersystems_2 
+.. mchoice:: numbersystems_2 
     :answer_a: 1
     :answer_b: 5
     :answer_c: 6

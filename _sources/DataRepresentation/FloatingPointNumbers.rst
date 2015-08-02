@@ -167,16 +167,17 @@ It may sound a little complex, but remember it is the same idea as scientific no
  
  
 .. fillintheblank:: floatingpoint_1
-   :correct: ^\\+?7\\.5\\b
-   :feedback1: ('[^0-9\\.\\-]+', 'Your answer should be a number')
-   :feedback2: ('^\\-.*', 'Your answer should be positive')
-   :feedback3: ('.*', 'Hint: To make a large value you need the largest exponent and largest fraction you can make')
-   :blankid: floatingpoint_1_ans1
 
-   What is the largest value you can make using the scheme above? :textfield:`floatingpoint_1_ans1::mini`
+    .. blank:: floatingpoint_1_ans1 
+        :correct: ^\\+?7\\.5\\b
+        :feedback1: ('[^0-9\\.\\-]+', 'Your answer should be a number')
+        :feedback2: ('^\\-.*', 'Your answer should be positive')
+        :feedback3: ('.*', 'Hint: To make a large value you need the largest exponent and largest fraction you can make')
+
+        What is the largest value you can make using the scheme above? 
 
    
-.. mchoicemf:: floatingpoint_2 
+.. mchoice:: floatingpoint_2 
     :answer_a: 2
     :answer_b: 3
     :answer_c: 4
@@ -192,11 +193,12 @@ It may sound a little complex, but remember it is the same idea as scientific no
     What power of two is represented by exponent bits of 110?
  
  
-.. fillintheblank:: floatingpoint_3
-   :correct: ^1010\\b
-   :feedback1: ('[^0-1]+', 'Your answer should only consist of 0s and 1s')
-   :feedback2: ('^[0-1]{4}\\b', 'Use the tool above to help figure out the answer')
-   :feedback3: ('.*', 'Make sure your answer is 4 digits')
-   :blankid: floatingpoint_3_ans1
+.. fillintheblank:: bitPatterns_3
 
-   Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25? :textfield:`floatingpoint_3_ans1::mini`
+    .. blank:: bitPatterns_3_ans1
+           :correct: ^1010\\b
+           :feedback1: ('[^0-1]+', 'Your answer should only consist of 0s and 1s')
+           :feedback2: ('^[0-1]{4}\\b', 'Use the tool above to help figure out the answer')
+           :feedback3: ('.*', 'Make sure your answer is 4 digits')
+
+           Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25? 

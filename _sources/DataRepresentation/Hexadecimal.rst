@@ -112,22 +112,24 @@ Why would we want another base system? Large binary values are hard for people t
  
  
 .. fillintheblank:: hex_1
-   :correct: \\b42\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number',)
-   :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: Use the table from the top of the page')
-   :blankid: hex_1_ans1
 
-   What decimal value does the hexadecimal number 2A represent? :textfield:`hex_1_ans1::mini`
+    .. blank:: hex_1_ans1
+        :correct: \\b42\\b
+        :feedback1: ('[^\\d]+', 'Your answer should be a number',)
+        :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: Use the table from the top of the page')
+
+        What decimal value does the hexadecimal number 2A represent? 
 
    
-.. fillintheblank:: hex_2 
-   :correct: \\b0011 ?1111 ?1100\\b
-   :feedback1: ('[^0-1 ]+', 'Your answer should only consist of 1s and 0s',)
-   :feedback2: ('\\b.{1,11}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{15,}\\b', 'That is too many digits')
-   :feedback4: ('.*', '')
-   :blankid: hex_2_ans1
+.. fillintheblank:: hex_2
 
-   What does hexadecimal 3FC look like in binary? :textfield:`hex_2_ans1::large`
+    .. blank:: hex_2_ans1
+       :correct: \\b0011 ?1111 ?1100\\b
+       :feedback1: ('[^0-1 ]+', 'Your answer should only consist of 1s and 0s',)
+       :feedback2: ('\\b.{1,11}\\b', 'That is not enough digits')
+       :feedback3: ('\\b.{15,}\\b', 'That is too many digits')
+       :feedback4: ('.*', '')
+
+       What does hexadecimal 3FC look like in binary? 

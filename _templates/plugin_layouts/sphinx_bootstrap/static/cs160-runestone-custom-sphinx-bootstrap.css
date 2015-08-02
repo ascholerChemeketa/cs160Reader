@@ -783,16 +783,29 @@ table.place-values td, table.place-values th{
 }
 
 /*--------------------------------------------*/
-table.truth-table {
+
+table.result-table, table.truth-table {
     width: auto;
     padding: 0px;
     font-size: 16pt;
+    margin-bottom: 1em;
 }
 
-table.truth-table col {
+table.result-table col, table.truth-table col {
     width: 50px;
 }
+table.result-table td {
+    text-align: center;
+}
 
+table.result-table tr>td:first-child {
+    text-align: left;
+    padding-right: 20px;
+}
+
+table.result-table colgroup>col:first-child {
+    width: auto;
+}
 
 table.truth-table thead tr:first-child {
     color: #888;
@@ -805,8 +818,17 @@ table.truth-table thead {
     color: #888;
     font-size: 10pt;
 }
+table.result-table tbody>tr>td {
+    border: 0px solid #ccc;
+}
 
-table.truth-table td, table.truth-table th{
+table.result-table tbody>tr:last-child {
+    color: #677915;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+}
+
+table.truth-table td, table.truth-table th {
     border: 1px solid #ccc;
     white-space: nowrap;
     padding: 3px;

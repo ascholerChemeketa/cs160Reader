@@ -51,4 +51,25 @@ In math, that equation does not make sense. It does not have a solution. But sin
     
 Believe it or not, computers spend quite a lot of time simply adding one to a value.
     
+.. pseudo_h4:: Self Check 
+    :class: underlined
+
+.. mchoice:: questionanalog_1
+    :answer_a: x = 6, y = 4
+    :answer_b: x = 6, y = 6
+    :answer_c: x = 4, y = 6
+    :answer_d: x = 4, y = 2
+    :correct: c
+    :feedback_a: x is only assigned to on the first line...
+    :feedback_b: x is only assigned to on the first line...
+    :feedback_c: 
+    :feedback_d: x on the right side of the = means get the current value of x
+    
+    What is the result of doing this series of assignments?
+    
+    x = 4
+    
+    y = x + 2
+    
+    
 .. quick_attribution:: VT

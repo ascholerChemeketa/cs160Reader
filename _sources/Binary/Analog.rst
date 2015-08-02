@@ -26,7 +26,7 @@ We could have more than two possible states - we refer to "digits" in numbers as
 .. pseudo_h4:: Self Check 
     :class: underlined
     
-.. mchoicemf:: questionanalog_1
+.. mchoice:: questionanalog_1 
     :answer_a: Yes—the noise hides the exact values of the original signal.
     :answer_b: No—electronics can just ignore the noise.
     :answer_c: No—information has been added to the signal.

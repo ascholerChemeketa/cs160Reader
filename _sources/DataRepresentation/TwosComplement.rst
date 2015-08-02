@@ -152,7 +152,7 @@ As an unsigned number, 1010 would mean ten. But in two's complement that means -
 .. pseudo_h4:: Self Check 
     :class: underlined
  
-.. mchoicemf:: twoscomplement_1 
+.. mchoice:: twoscomplement_1 
     :answer_a: 00011
     :answer_b: 10011
     :answer_c: 11100
@@ -165,7 +165,7 @@ As an unsigned number, 1010 would mean ten. But in two's complement that means -
     
     Which of these represents -3 as a five bit two's complement number?
  
-.. mchoicemf:: twoscomplement_2 
+.. mchoice:: twoscomplement_2 
     :answer_a: 5
     :answer_b: 7
     :answer_c: 15
@@ -180,14 +180,13 @@ As an unsigned number, 1010 would mean ten. But in two's complement that means -
     
     
 .. fillintheblank:: twoscomplement_3
-   :correct: \\b6\\b
-   :feedback1: ('\\b0110\\b', 'That is the correct binary value. What is the decimal value?')
-   :feedback2: ('\\b10110\\b', 'You must chop off the first digit to get down to 4 bits and then figure out the decimal value.')
-   :feedback3: ('.*', 'Hint: The largest possible positive number you can represent with 4 bit twos complement is 7.')
-   :blankid: twoscomplement_3_ans1
 
-   If you add the 4-bit two's complement number 1011 (-5) to itself, the result should be -10. But you can not write -10 as a 4-bit two's complement number - there will be overflow that turns your negative value back into a positive one. Do the math to add 1011 + 1011 (don't forget to only keep the last four digits of the answer) and then give the decimal value your answer represents.  
-   
-   :textfield:`twoscomplement_3_ans1::mini`
+    .. blank:: twoscomplement_3_ans1
+       :correct: \\b6\\b
+       :feedback1: ('\\b0110\\b', 'That is the correct binary value. What is the decimal value?')
+       :feedback2: ('\\b10110\\b', 'You must chop off the first digit to get down to 4 bits and then figure out the decimal value.')
+       :feedback3: ('.*', 'Hint: The largest possible positive number you can represent with 4 bit twos complement is 7.')
+
+       If you add the 4-bit two's complement number 1011 (-5) to itself, the result should be -10. But you can not write -10 as a 4-bit two's complement number - there will be overflow that turns your negative value back into a positive one. |br| Do the math to add 1011 + 1011 (don't forget to only keep the last four digits of the answer) and then give the decimal value your answer represents. |br|
 
    

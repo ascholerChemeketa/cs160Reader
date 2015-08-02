@@ -17,6 +17,13 @@ In the 1960's, Gordon Moore, one of the co-founders of Intel, noticed that integ
 
 Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (Which helps explain why computers need to be upgraded so frequently.) 
 
+================    ========    ========    ========    ========    ========    ========    ======== 
+Years               1.5         3           4.5         6           7.5         ...         15          
+Doublings           1           2           3           4           5           ...         10          
+Relative Power      x2          x4          x8          x16         x32         ...         x1024           
+================    ========    ========    ========    ========    ========    ========    ========   
+    
+
 This continuous doubling and redoubling of computing power in chips has held steady for the past 40+ years. To put this kind of growth into perspective: If Moore’s Law applied to the air travel industry, a flight from New York to Paris that took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a penny.
 
     

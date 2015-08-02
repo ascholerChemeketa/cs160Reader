@@ -32,7 +32,7 @@ Computers do all of their processing in terms of bits - any piece of information
 .. pseudo_h4:: Self Check 
     :class: underlined clear
  
-.. mchoicemf:: questionbits_1 
+.. mchoice:: questionbits_1 
     :answer_a: A single on/off value.
     :answer_b: A value of "one."
     :answer_c: A large section of computer memory.
@@ -45,7 +45,7 @@ Computers do all of their processing in terms of bits - any piece of information
     
     What is a **bit**?
  
-.. mchoicemf:: questionbits_2 
+.. mchoice:: questionbits_2 
     :answer_a: The method used to implement a bit does not affect the information it represents
     :answer_b: A bit may be implemented as a small part of a magnetic disk.
     :answer_c: Copying a bit from one medium to another does not affect the information it represents.

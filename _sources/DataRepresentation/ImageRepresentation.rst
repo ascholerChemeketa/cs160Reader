@@ -57,11 +57,12 @@ Real images of course use a much greater number of pixels than we have seen here
     :class: underlined
 
 .. fillintheblank:: image_1
-   :correct: \\b600\\b
-   :feedback1: ('[\\D]+', 'The answer should be just numeric digits')
-   :feedback2: ('\\b.{1,2}\\b', 'The answer should have 3 digits')
-   :feedback3: ('\\b.{4,}\\b', 'The answer should have 3 digits')
-   :feedback4: ('.*', '')
-   :blankid: image_1_ans1
 
-   How many bits would a 10x20 image with 8 different possible colors per pixel require? (Hint: how many bits are required to represent 8 different colors) :textfield:`image_1_ans1::large`    
+    .. blank:: image_1_ans1
+       :correct: \\b600\\b
+       :feedback1: ('[\\D]+', 'The answer should be just numeric digits')
+       :feedback2: ('\\b.{1,2}\\b', 'The answer should have 3 digits')
+       :feedback3: ('\\b.{4,}\\b', 'The answer should have 3 digits')
+       :feedback4: ('.*', '')
+
+       How many bits would a 10x20 image with 8 different possible colors per pixel require? (Hint: how many bits are required to represent 8 different colors)  

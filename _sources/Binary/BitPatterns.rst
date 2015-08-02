@@ -82,15 +82,18 @@ Memorize this fact. Better yet, make lists of patterns (as above) and play aroun
     :class: underlined
  
  
+ 
 .. fillintheblank:: bitPatterns_1
-   :correct: \\b1024\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number')
-   :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: it has to be a power of 2')
-   :blankid: bitPatterns_1_ans1
 
-   How many different values can be formed from a pattern of 10 bits? :textfield:`bitPatterns_1_ans1::mini`
-  
+    .. blank:: bitPatterns_1_ans1
+        :correct: \\b1024\\b
+        :feedback1: ('[^\\d]+', 'Your answer should be a number')
+        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: it has to be a power of 2')
+
+        How many different values can be formed from a pattern of 10 bits? 
+   
+
     
 .. quick_attribution:: ICSJava

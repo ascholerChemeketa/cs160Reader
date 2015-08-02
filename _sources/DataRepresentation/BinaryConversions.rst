@@ -76,19 +76,19 @@ Just like with decimal numbers, leading zeros do not modify the value of a numbe
 .. pseudo_h4:: Self Check 
     :class: underlined
  
- 
 .. fillintheblank:: binaryconversions_1
-   :correct: \\b60\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number')
-   :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\d{4}', 'Hint: With 6 binary digits the largest column you should use is 32')
-   :feedback4: ('\\b.{3,}\\b', 'That is too many digits')
-   :blankid: binaryconversions_1_ans1
 
-   What decimal value does the binary number 111100 represent? :textfield:`binaryconversions_1_ans1::mini`
+    .. blank:: binaryconversions_1_ans1
+        :correct: \\b60\\b
+        :feedback1: ('[^\\d]+', 'Your answer should be a number')
+        :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
+        :feedback3: ('\\d{4}', 'Hint: With 6 binary digits the largest column you should use is 32')
+        :feedback4: ('\\b.{3,}\\b', 'That is too many digits')
+
+        What decimal value does the binary number 111100 represent? 
 
    
-.. mchoicemf:: binaryconversions_2 
+.. mchoice:: binaryconversions_2 
     :answer_a: 7
     :answer_b: 8
     :answer_c: 32

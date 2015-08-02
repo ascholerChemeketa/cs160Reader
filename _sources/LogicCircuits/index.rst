@@ -13,6 +13,7 @@ Computers represent all information as bits - values that can be thought of as 1
 
     OrGate.rst
     AndGate.rst
+    ApplyingRules.rst
     NotAndXORGate.rst
     NegatedGates.rst
     Circuits.rst

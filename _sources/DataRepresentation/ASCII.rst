@@ -125,19 +125,22 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
     :class: underlined
 
 .. fillintheblank:: ASCII_1
-   :correct: \\bf\\b
-   :feedback1: ('.{1}', 'The answer is a letter... try using the table above')
-   :feedback2: ('.*', 'The answer should only have one character')
-   :blankid: ASCII_1_ans1
 
-   What letter or symbol does 01100110 map to on the ASCII table? :textfield:`ASCII_1_ans1::mini`    
+    .. blank:: ASCII_1_ans1
+        :correct: \\bf\\b
+        :feedback1: ('.{1}', 'The answer is a letter... try using the table above')
+        :feedback2: ('.*', 'The answer should only have one character')
 
+        What letter or symbol does 01100110 map to on the ASCII table? 
+
+        
 .. fillintheblank:: ASCII_2
-   :correct: \\b00101011\\b
-   :feedback1: ('\\b.{1,7}\\b', 'The answer should have 8 digits')
-   :feedback2: ('\\b.{9,}\\b', 'The answer should have 8 digits')
-   :feedback3: ('[^01]+', 'The answer should be just 0s and 1s')
-   :feedback4: ('.*', 'Try looking it up on the table above')
-   :blankid: ASCII_2_ans1
 
-   What binary number corresponds to the plus symbol on the ASCII table? :textfield:`ASCII_2_ans1::large`    
+    .. blank:: ASCII_2_ans1
+        :correct: \\b00101011\\b
+        :feedback1: ('\\b.{1,7}\\b', 'The answer should have 8 digits')
+        :feedback2: ('\\b.{9,}\\b', 'The answer should have 8 digits')
+        :feedback3: ('[^01]+', 'The answer should be just 0s and 1s')
+        :feedback4: ('.*', 'Try looking it up on the table above')
+
+        What binary number corresponds to the plus symbol on the ASCII table?

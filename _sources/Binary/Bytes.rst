@@ -34,26 +34,28 @@ When we are talking about much larger chunks of information, like the informatio
 .. pseudo_h4:: Self Check 
     :class: underlined
 
-
+   
 .. fillintheblank:: bytes_1
-   :correct: \\b24\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number')
-   :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-   :feedback4: ('.*', 'Hint: each byte is 8 bits')
-   :blankid: bytes_1_ans1
 
-   How many bits are in 3 bytes? :textfield:`bytes_1_ans1::large`
+    .. blank:: bytes_1_ans1
+        :correct: \\b24\\b
+        :feedback1: ('[^\\d]+', 'Your answer should be a number')
+        :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
+        :feedback4: ('.*', 'Hint: each byte is 8 bits')
+
+        How many bits are in 3 bytes? 
   
 .. fillintheblank:: bytes_2
-   :correct: \\b4096\\b
-   :feedback1: ('[^\\d]+', 'Your answer should be a number')
-   :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
-   :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-   :feedback4: ('.*}', 'Hint: each KB is 1024 bytes')
-   :blankid: bytes_2_ans1
 
-   How many bytes are in 4 KB ? :textfield:`bytes_2_ans1::large`
+    .. blank:: bytes_2_ans1
+        :correct: \\b4096\\b
+        :feedback1: ('[^\\d]+', 'Your answer should be a number')
+        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
+        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
+        :feedback4: ('.*}', 'Hint: each KB is 1024 bytes')
+
+        How many bytes are in 4 KB ? 
    
    
 .. quick_attribution:: ICSJava
