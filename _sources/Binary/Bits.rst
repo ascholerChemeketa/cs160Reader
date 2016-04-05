@@ -50,11 +50,11 @@ Computers do all of their processing in terms of bits - any piece of information
     :answer_b: A bit may be implemented as a small part of a magnetic disk.
     :answer_c: Copying a bit from one medium to another does not affect the information it represents.
     :answer_d: A bit is always implemented as something electrical.
-    :correct: c
+    :correct: d
     :feedback_a: A light bulb that is "Off" represents the same thing as an "Off" represented by a hole that is not punched
-    :feedback_b:  
-    :feedback_c: 
-    :feedback_d: A bit can be represented any way we can distinguish two distinct states
+    :feedback_b: This is how hard drives store informatio
+    :feedback_c: Computers do this all the time - turn an electrical signal in a circuit into a magnetic field on a disk. Or turn a hole into a punch card into an electrical signal
+    :feedback_d: 
     
     Which one of the following statements is FALSE?
     
