@@ -8,21 +8,19 @@ Page Rank (Ch 3)
 .. pseudo_h3:: Hints for Simulator
     :class: underlined
     
-The `PageRank Simulator <http://caccio.blogdns.net/software/pagerank-simulator>`__ is a Java application. Due to recent security improvements in Java, *you probably will not be able to run the file* as downloaded from the author's site. Use the copy linked on the CS160 page.
+The `PageRank Simulator <http://faculty.chemeketa.edu/ascholer/cs160/WebApps/PageRank/>`__ is a javascript applet that should run in any modern browser.
 
 .. image:: Images/PageRankSim.png
+	:target: http://faculty.chemeketa.edu/ascholer/cs160/WebApps/PageRank/
 
-You can find a tutorial on the author's web page, but here are a few quick hints:
+You can use it to run simulations of how PageRank would assign importance to a group of web pages based soley on how they link to each other.
 
-* To Make a Page
-    Click **New Page**, then click in the right panel below the button
-    
-* To Add a Link
-    Click **New Link**, then click on one page, **hold down the mouse button** and drag to another page before releasing. Arrow heads show direction of a link. To link from A to B and B to A you need to draw the link in both directions.
-    
-* To Run Simulation
-    Click **Page Rank**. You will need to rerun th simulation after any changes you make.
-
+* Click Add Page to add a new page.
+* Click and drag a page to move it.
+* Click a page and then click another page to add a link.
+* Click a page or link and then Delete Selected (or press Delete) to remove something.
+* Click Run Page Rank to display rankings.
+	
     
 
 .. pseudo_h3:: Optional: Mathematically Solving Page Rank
