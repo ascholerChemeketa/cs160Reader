@@ -1,13 +1,10 @@
-.. include:: ../global.rst
+.. include:: ../../global.rst
 
 .. index:: artificial intelligence, chess
 
-Search & AI, page 3 (Bonus Topic)
+Search and Gameplay
 =========================================
 
-.. pseudo_h3:: Game Play
-    :class: underlined
-    
 .. figure:: Images/game_ais.png
     :figwidth: 250
     :width: 230
@@ -15,7 +12,9 @@ Search & AI, page 3 (Bonus Topic)
 
     `Cartoon by XKCD <http://xkcd.com/1002/>`__
 
-Our basic search algorithm can also be modified to play games. A computer can examine every possible move, then each possible response, to look for the optimal move in any situation. This produces an upside down tree like structure like we saw with the eight puzzle. Here is what it might look like for Tic-Tac-Toe:
+Other examples of the ways that search can be used to solve problems we think of as requiring "intelligence" can be seen in the way that computers play games. 
+
+Our basic search algorithm can be used to play games by thinking of each possible arrangement of pieces as a location and the moves that can be made as "steps" from one location to another. A computer examines the states that can be reached by every possible move, then each possible response to each of those moves, then each possible counter-counter move, etc... to look for the optimal move in any situation. This produces an upside down tree like structure like we saw with the eight puzzle. Here is what it might look like for Tic-Tac-Toe:
 
 .. image:: Images/tictactoe.png
     :width: 325
@@ -28,7 +27,7 @@ For more complex games, computers can't simulate an entire game, but can simulat
     
 While expert human chess players can mentally play a sequence of moves to explore a possible action, they can only consider a couple of moves per second. Instead of explicitly analyzing each possible move and counter move, people rely on experience to identify patterns and positions that are likely to be promising, focusing their attention on those. A computer can use heuristic search to emulate this process, but in general, a computer isn't as good at recognizing patterns - their heuristics just are not as good as top level players. On the other hand, a computer can consider many millions of moves a second.
 
-IBM has long used self designed "Grand Challenges" to push their engineering knowhow by attacking difficult unsolved problems. The Deep Blue computer was a project at IBM in the 1990s that became the first machine to beat the human world champion: 
+Because games often involve problems with very precisely defined rules that operate in a smaller environment than the real world, they have served as an important area for testing out algorithms related to the field of artificial intelligence. IBM has long used self designed "Grand Challenges" to push their engineering knowhow by attacking difficult unsolved problems. The Deep Blue computer was a project at IBM in the 1990s that became the first machine to beat the human world champion: 
 
 .. youtube:: KFSVZlkHHmM
 

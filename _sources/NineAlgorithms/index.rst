@@ -16,8 +16,6 @@ Resources and additional materials to accompany readings in *Nine Algorithms Tha
    Compression.rst
    Authentication/index.rst
    DigitalSignatures.rst
-   Search.rst
-   Search2.rst
-   Search3.rst
+   SearchAI/index.rst
    DatabasesAndConcurrency.rst
    Computability.rst

@@ -1,11 +1,11 @@
-.. include:: ../global.rst
+.. include:: ../../global.rst
 
 .. index:: artificial intelligence, heuristic, eight puzzle*
 
 Heuristic Search
 =========================================
 
-There is however a large problem with the breadth first search strategy shown on the previous pages - all the effort involved in checking every possible path. Think about all the red lines (paths that had to be explored) required to find the right path in the animation on the first page. If each possible search location has many possible moves, the space we are searching grows too rapidly to make progress past a couple of steps. Consider a situation in which each move leads to 20 new moves. In one step we have 20 location to worry about. After 2 steps, we have 20 x 20 = 400 locations we need to consider. By seven moves we have over a billion possibilities!
+There is another large problem with the breadth first search strategy we started with - all the effort involved in checking every possible path. Think about all the red lines (paths that had to be explored) required to find the right path in the animation on the first page. If each possible search location has many possible moves, the space we are searching grows too rapidly to make progress past a couple of steps. Consider a situation in which each move leads to 20 new moves. In one step we have 20 location to worry about. After 2 steps, we have 20 x 20 = 400 locations we need to consider. By seven moves we have over a billion possibilities!
 
 ===================  ==============  ==============  ==============  ==============  ==============  ==============
 Step #               1               2               3               4               5               6
@@ -13,19 +13,12 @@ Step #               1               2               3               4          
 # of Locations       20              400             8,000           160,000         3,200,000       64,000,000
 ===================  ==============  ==============  ==============  ==============  ==============  ==============
 
+Although the best first strategy may explore paths in a different order, it still suffers from the same issues. It will explore out in every direction and quite rapidly have to consider billions of possible paths.
+
 What we need is a way to constrain the search - to explore the "good" possibilities before we worry about the crazy looking ones. Imagine you were doing the *cat → dog* word ladder. You would probably say something like "hmmm, I could make *cot* and that looks like it is closer to *dog*". You then would look at where *cot* could take you before backtracking and trying something like cat → bat. If at some point you got stuck, you would go back and think about something else.
 
 Adding this extra bit of *"I think this direction looks promising'* gives us a **heuristic search** algorithm. A **heuristic** is simply a rule of thumb - a shortcut that helps guide us in the right direction. For the word ladder, our mental heuristic would be something like *"first try words that have more letters that match the target"*. Because *cot* is only 2 letters off from *dog* we would explore it before we worried about *bat* which is 3 letters off from *dog*.
 
-
-.. pseudo_h3:: Best First Search
-    :class: underlined
-
-How does google maps plan a route? Imagine we have a map that shows different towns and the distance between them. This video demonstrates a technique to make sure we find the best possible path from one town to another.
-
-.. youtube:: uyfZlHtXP74
-
-.. note:: This is a simplified version of an algorithm called Djiksta's shortest path algorithm. It finds the best route to every other city from a given city. You can `try it out here <http://www.cs.usfca.edu/~galles/visualization/Dijkstra.html>`__ if you like. Enter a vertex (circle/town) number to start at and press the Run Djikstra.
 
 
 .. pseudo_h3:: Eight Puzzle
@@ -34,17 +27,12 @@ How does google maps plan a route? Imagine we have a map that shows different to
 To get a better sense of how heuristics work we are going to solve the *eight puzzle*. In this puzzle you have 8 squares in a 3x3 grid with one open square. You make moves by sliding a piece that is next to the empty square into the gap. The goal is to rearrange the 8 pieces into a particular picture or pattern.
 
 
-.. image:: Images/8puzzle.png
-    :class: align-right
+.. image:: Images/8puzzle1.png
 
+	
+.. sidebar:: Try an 8-Puzzle
 
-.. figure:: Images/8PuzzleCat.png
-    :figwidth: 180
-    :figclass: align-right
-
-    ..
-
-    `Click here for an 8 puzzle you can try by hand <http://kiznore.pythonanywhere.com/puzzle/>`__
+    `Click here for an 8 puzzle you can try by hand <http://www.nationalgeographic.com/games/photo-puzzle-slide/>`__
 
 
 To guide our search we need to come up with a heuristic - something that does a pretty good job of estimating the amount of work that remains. Since each move can only move one piece, if there are 4 pieces out of position, we know there are at least 4 more moves to go. That suggests we can at any point look at a board and estimate the remaining work by counting up the number of pieces that are not in the right place according to the goal. If we add that estimate of future work to the amount of work it take to get to any state, we can estimate how much work the total path to the goal will be if we go through that state.

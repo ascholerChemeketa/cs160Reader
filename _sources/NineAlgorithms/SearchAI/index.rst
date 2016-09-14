@@ -1,4 +1,4 @@
-
+.. include:: ../../global.rst
 
 Search & AI
 =========================================
@@ -13,6 +13,8 @@ This chapter focuses on how search algorithms work and how they play a roll in m
 .. toctree::
    :maxdepth: 1
 
-   Search.rst
-   Search2.rst
-   Search3.rst
+   BreadthFirstSearch.rst
+   WordLadder.rst
+   BestFirstSearch.rst
+   HeuristicSearch.rst
+   SearchGameplay.rst
