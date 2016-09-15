@@ -1,7 +1,7 @@
 
 
-Authentication & Public Key Encryption
-=========================================
+Authentication & Public Key Encryption (Ch 9 Replacement)
+=============================================================
 
 **Authentication** is the process of confirming that someone is who they say they are - making sure that the computer claiming to be wellsfargo.com is really owned by Wells Fargo. The structure of the internet makes this an important problem - we rely on many unknown messengers to relay the messages we send to its destination. These pages explore how we use a trick called **asymmetric encryption** to verify who's who on the internet.
 
