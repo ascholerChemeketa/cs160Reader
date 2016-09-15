@@ -71,23 +71,31 @@ Message   Use key A                      Encrypted   Use key B                  
 17        raise to 3rd power, mod by 22  7           raise to the 7th power, mod by 22  17
 ========  =============================  ==========  =================================  ========
 
-If you wish verify those, I recommend using `Wolfram Alpha website <http://www.wolframalpha.com/>`__. If you try other messages, note that the message must be smaller than C; since C is 22, 21 is the largest message you can encrypt with this key.
+If you wish verify those, I recommend using `Wolfram Alpha website <http://www.wolframalpha.com/>`__. Type something in the format '4^3 mod 22':
 
 .. raw:: html
 
-    <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=small" type="text/javascript"></script></div>
+    <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=large" type="text/javascript"></script></div>
 
-Also, note that A cannot decrypt a number it encrypted:
+If you try encoding other messages, note that the message number must be smaller than C; since C is 22, 21 is the largest message you can encrypt with this key.
+
+
+.. pseudo_h3:: Other properties
+    :class: underlined
+
+
+It is important to note two other facts.
+
+The first is that A cannot decrypt a number it encrypted. Say we use the key A = 3, C = 22 to encrypt the message 4 we get 20:
 
 :math:`4^3 \textrm{ mod }  22 = encryptedmessage = 20`
 
 If we use A and C to try to decrypt the 20, we get:
 
 :math:`20^3 \textrm{ mod }  22 = message = 14`???
-(20 to the 3rd power is 8,000; on a clock of 22 that is 14)
-The decryption did not work!
+20 to the 3rd power is 8,000; on a clock of 22 that is 14. We did not get back to 4 - the decryption did not work!
 
-Finally, using B to encrypt a message makes an encrypted message (different than the message that encrypting with A would produce) that only A can decrypt:
+Second, using B to encrypt a message produces an encrypted message (different than the one encrypting with A would produce) that only A can decrypt:
 
 ========  =============================  ==========  =================================  ========
 Message   Use key B                      Encrypted   Use key A                          Message

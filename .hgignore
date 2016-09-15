@@ -4,3 +4,4 @@ syntax: glob
 *.pyc
 *.~vsd
 Thumbs.db
+build_info
