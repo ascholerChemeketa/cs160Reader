@@ -29,3 +29,9 @@ Setup cs160reader
 
 
 For more info see `http://runestoneinteractive.org/build/html/developer.html`, `http://runestoneinteractive.org/instructors.html#getstarted`, or bug me.
+
+
+Building PDF
+--------------------------------------------
+
+#. Change pavement.py build options to be same as latex options. Do 'paver build'. Convert .tex output to PDF (via sharelatex.com is easiest way).

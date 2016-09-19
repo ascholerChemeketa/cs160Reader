@@ -30,6 +30,8 @@ from runestone import runestone_static_dirs, runestone_extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160']
 
+#extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160']  + ['rst2pdf.pdfbuilder']
+
 #,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode']
 
 # Add any paths that contain templates here, relative to this directory.
@@ -170,7 +172,7 @@ html_short_title ='Chemeketa CS160'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path =  runestone_static_dirs() + ['_static'] 
+html_static_path =  runestone_static_dirs() + ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -215,4 +217,3 @@ html_show_copyright = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'PythonCoursewareProjectdoc'
-
