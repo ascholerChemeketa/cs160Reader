@@ -2,10 +2,12 @@
 
 .. index:: asymmetric cryptography
 
+.. _target: asymmetric_math
+
 Asymmetric Cryptography Math
 =========================================
 
-Before we continue with our story of how Alice can make sure she is really talking to Bob, let us convince ourselves that we can convert this hypothetical box into a mathematical algorithm. (Recall that we can represent anything with binary numbers - so if we can encrypt numbers we can encrypt any information we want by first representing that information as a number.) To do so, we need to identify two functions such that either one undoes the work of the other one - these functions will be the mathematical equivalent of keys that lock or unlock a box.
+As we discussed how identity can be confirmed on the internet, we stuck to the metaphore of lock boxes. But we should convince ourselves that we can convert this hypothetical box into a mathematical algorithm. (Recall that we can represent anything with binary numbers - so if we can encrypt numbers we can encrypt any information we want by first representing that information as a number.) To do so, we need to identify two functions such that either one undoes the work of the other one - these functions will be the mathematical equivalent of keys that lock or unlock a box.
 
 A simple pair of functions that undo each other might be "multiply by two" and "divide by two". If you wanted to encrypt a message represented by the number 6, you would multiply it by two and get 12. To decrypt that message you would take the encrypted version - 12 - and divide by two to get back to 6. You could also use the keys in reverse order: if you start with the message 6 and "lock" it by dividing by two, you get 3; if you then multiply that by two you get back to 6.
 
@@ -53,13 +55,15 @@ It looks complex, but what it simply means is we have a pair of mathematical key
 
 An example of such numbers A, B and C is A = 3, B = 7, C = 22. Say we want to encrypt the numeric message 4. Plugging in 4 as the message and 3 for A and 22 for C we get:
 
-:math:`4^3 \textrm{ mod }  22 = encryptedmessage = 20`
-(4 to the 3rd power is 64; on a clock of 22 that is 20)
+| :math:`encryptedMessage = message^A \textrm{ mod }  C = 4^3 \textrm{ mod }  22 = 20`
+| (4 to the 3rd power is 64; on a clock of 22 that is 20)
+
 
 If we use B = 7 and C = 22 to decrypt the 20, we get:
 
-:math:`20^7 \textrm{ mod }  22 = message = 4`
-(20 to the 7th power is 1,280,000,000; on a clock of 22 that is 4)
+| :math:`message = (encryptedMessage )^B \textrm{ mod }  C = 20^7 \textrm{ mod }  22 = 4`
+| (20 to the 7th power is 1,280,000,000; on a clock of 22 that is 4)
+
 
 The table below shows that other messages work the same way - encrypting with A produces a message B can decrypt:
 
@@ -77,7 +81,9 @@ If you wish verify those, I recommend using `Wolfram Alpha website <http://www.w
 
     <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=large" type="text/javascript"></script></div>
 
-If you try encoding other messages, note that the message number must be smaller than C; since C is 22, 21 is the largest message you can encrypt with this key.
+.. note::
+
+  If you try encoding other messages, know that the message number must be smaller than C; since C is 22, 21 is the largest message you can encrypt with this key.
 
 
 .. pseudo_h3:: Other properties

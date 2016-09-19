@@ -8,7 +8,9 @@ Two Kinds of Cryptography
 
 To resolve this problem of identifying who we are talking to on the internet, we first need to talk about a new kind of cryptograhpy algorithm.
 
-The traditional cryptography we looked at while studying the Diffie-Hellman algorithm is **symmetric cryptography** meaning that the same key (or secret) is used to encrypt the message and decrypt the message. If the encryption key is *"shift every letter by 8"*, the decryption key will also be *"shift every letter by 8"* (only in the other direction). It is a like a lock on a box where there is one key used to both seal the lock and later to unlock it. If two people, Alice and Bob, are the only two with a key for the lock, they can use the box to pass secret messages. Alice can write a message, lock the box, then safely give the box to Eve who promises to deliver it to Bob.
+The traditional cryptography we looked at while studying the Diffie-Hellman algorithm is **symmetric cryptography**, meaning that the same key (or secret) is used to encrypt the message and decrypt the message. If the encryption key is *"shift every letter by 8"*, the decryption key will also be *"shift every letter by 8"* (only in the other direction).
+
+It is like a lock on a box where there is one key used to both seal the lock and later to unlock it. If two people, Alice and Bob, are the only two with a key for the lock, they can use the box to pass secret messages. Alice can write a message, lock the box, then safely give the box to Eve who promises to deliver it to Bob.
 
 .. image:: Images/symmetricKey.png
 

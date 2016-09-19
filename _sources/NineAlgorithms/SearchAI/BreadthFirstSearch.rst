@@ -550,16 +550,11 @@ The animation below visualizes this exact algorithm. You can watch the computer 
 
 You may have noticed that there are some possible steps (edges) that do not end up getting colored red. They represent paths that go to a location for which we have already discovered a route. Because the computer considers all the 1-step paths first, then 2-step, etc... we will never discover a new "shorter" route to a location we have already found. So any path that leads to a location we have discovered can be safely ignored. Say we discover that from location A we can jump to locations B, C and D in one step. Later we realize you can get from C to B in one step. There would not be any reason to use that path; why go from A to C then to B when we could just go from A to B.
 
-By the same logic we can argue that this algorithm always discovers the most efficient path between two locations. Because it checks all possible paths of length *n* before checking any paths of length *n + 1*, we do not have to worry about it stumbling on a path that does not actually turn out to be the best one. (Although there might be other equally short paths.)
 
-This same basic technique can be applied any time we can represent a problem as a collection of states and transitions between those states. For example, take the kind of puzzle called a **word ladder**. A word ladder involves trying to turn one word, say *cat* into another, say *dog*, by changing just one letter at a time to make a new word. From the starting word *cat* we could make lots of words: *cab, car, can, cap, bat, rat, fat, mat, cot, etc...* Each of those words leads to other possible words.
-
-Viewed as a search problem, each word is a "location", and the "roads" between each location show the moves we can make. We would assign each step a cost of 1 and try to find a path with the minimal number of moves using the same process as we did on a map. One solution for cat->dog is shown below.
-
-.. figure:: Images/wordLadder.png
+.. figure:: Images/SimpleGraph.png
 
     ..
 
-    A word ladder: cat -> cot -> dot -> dog.
+    We will never need to use the edge between B and C. We can directly go to B or C from our starting location A.
 
-A computer using this algorithm would first determine all the words that were 1 step away from the start word. Then it would take each of those words, and find the words that were 2 steps away. Then it would look at each 2 step word to figure out where it could get in three steps... spreading out something like the animation shown below.
+By the same logic we can argue that this algorithm always discovers the most efficient path between two locations. Because it checks all possible paths of length *n* before checking any paths of length *n + 1*, we do not have to worry about it stumbling on a path that does not actually turn out to be the best one. (Although there might be other equally short paths.)

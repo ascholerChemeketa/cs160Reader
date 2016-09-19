@@ -10,8 +10,9 @@ Authentication & Public Key Encryption (Ch 9 Replacement)
 
    InternetArchitecture.rst
    AsymmetricCryptography.rst
-   AsymmetricMath.rst
-   RSA.rst
    PublicKeyCrypto.rst
    CertificationAuthorities.rst
+   CertificationAuthorities2.rst
    HTTPS.rst
+   AsymmetricMath.rst
+   RSA.rst

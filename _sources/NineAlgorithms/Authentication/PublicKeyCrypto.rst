@@ -5,17 +5,17 @@
 Public Key Cryptography
 =========================================
 
-We have established the idea of a special lock that has a pair of keys and shown how it can be implemented mathematically to do encryption. But it is not clear how that solves the problem of your computer authenticating a website like wellsfargo.com when you connect to it - we need a way to verify the identity of that site.
+We have established the idea of a special lock that has a pair of keys; in a few pages we will look at how that conceptual idea can be turned into a mathematical recipe (feel free to :ref:`skip ahead <asymmetric_math>`_ if you want to be convinced that can be done). But it is not clear how that solves the problem of your computer authenticating a website like wellsfargo.com when you connect to it - we need a way to verify the identity of that site.
 
-The trick used on the internet to solve this problem sounds unintuitive - we generate pairs of encryption keys and then give one of them away. Websites that want users to be able to verify their identity and connect securely generate an asymmetric key pair (an A and B key) then keep one of the key pair (either A or B, it does not matter) secret and give the other key to whoever wants it. The key that is handed out to anyone is called the **public key** and the one that is kept secret is the **private key**.
+The trick used on the internet to solve this problem sounds unintuitive - we generate pairs of encryption keys and then give one of them away. Websites that want users to be able to verify their identity and connect securely generate an asymmetric key pair (we will call the two keys A and B) then keep one of the key pair secret (either A or B, it does not matter) and give the other key to whoever wants it. The key that is handed out to anyone is called the **public key** and the one that is kept secret is the **private key**.
 
 Because the private key is a secret only held by the website and anyone can have a copy of the public key, they give very different guarantees:
 
-* Anyone can use the public key to encrypt a message and be sure that only the holder of the private key can decrypt it. Other people cannot use the public key to decrypt the message. A message you lock with that public key can only be read by the holder of the private key.
+# A message someone locks with that public key can only be read by the holder of the private key. (Remember the same key cannot be used to unlock a box it locked.) Thus, anyone can use the public key to encrypt a message and be sure that only the holder of the private key can decrypt it.
 
 .. figure:: Images/guarantee2.png
 
-* The holder of the private key can use it to lock messages that anyone can read using the public key. But, the reader will know that the message must be from the holder of the private key - only they have the key that will encrypt a message so that the public key unlocks it. No one can use the public key to make a message that other public keys can unlock.
+# The private key can be used to prove messages come from a particular source. When a message is locked with the private key, anyone can use the public key to unlock it. But, the reader can be certain the message must be from the holder of the private key. The only way to make a lockbox the public key opens is with the private key.
 
 .. figure:: Images/guarantee1.png
 

@@ -18,7 +18,7 @@ If we did the same work for a selection sort on a list of 100 things (\ :math:`n
     :class: place-values type-size-100p
 
     ============================    ============================    ============================
-    Step                            Comparisons                     Swaps        
+    Step                            Comparisons                     Swaps
     ============================    ============================    ============================
     1                               99                              1
     2                               98                              1
@@ -39,16 +39,16 @@ Since there were :math:`n - 1` numbers to start with, there will be :math:`\frac
 
 Overall, our work will be given by:
 
-:math:`\textrm{Total work} = \textrm{Comparisons} + \textrm{Swaps}`
+:math:`\text{Total work} = \text{Comparisons} + \text{Swaps}`
 
 Or:
 
 :math:`\textrm{Total work} = (\frac{n^2}{2} - \frac{n}{2}) + (n-1) = \frac{n^2}{2} + \frac{n}{2} - 1`
 
-.. index:: 
+.. index::
     pair: selection sort; big-O
     pair: insertion sort; big-O
-    
+
 Since for Big-O purposes, all we care about is the class of the dominant term, in this case :math:`\frac{n^2}{2}`, we will say that Selection Sort is :math:`O(n^2)` (Quadratic). A similar process can be used to show that so is Insertion Sort.
 
 .. important::
