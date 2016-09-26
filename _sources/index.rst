@@ -31,10 +31,8 @@ BYOB Programming
 .. toctree::
     :includehidden:
     :maxdepth: 1
-    :numbered:
 
-    BYOB/BYOBBasics.rst
-    BYOB/ShapesComplexity.rst
+    BYOB/index.rst
 
 
 

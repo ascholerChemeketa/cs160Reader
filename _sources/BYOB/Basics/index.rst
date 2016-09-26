@@ -1,6 +1,6 @@
-.. include:: ../global.rst
+.. include:: ../../global.rst
 
-BYOB Terminology and Interface
+BYOB Basics
 =================================
 
 This module is focused on understanding the basics of how BYOB works.
@@ -11,3 +11,6 @@ This module is focused on understanding the basics of how BYOB works.
 
     SavingAndOpening.rst
     Terminology.rst
+    FirstPrograms.rst
+    UsingRepeat.rst
+    UsingVariables.rst

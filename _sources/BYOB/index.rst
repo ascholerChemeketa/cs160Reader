@@ -10,8 +10,5 @@ BYOB Programming
     :maxdepth: 5
     :numbered:
 
-    BYOBBasics.rst
-    Stuff.rst
-
-
-.. contents:: :depth: 2
+    Basics/index.rst
+    ConditionalsBlocks/index.rst

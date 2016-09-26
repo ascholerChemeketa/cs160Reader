@@ -37,7 +37,7 @@ def setup(app):
     app.add_directive('definition',DefinitionBlock)
     app.add_directive('quick_attribution',QuickAttribution)
 
-
+		
 
 class FauxCodeBlock(Directive):
     required_arguments = 0

@@ -1,13 +1,15 @@
-.. include:: ../global.rst
+.. include:: ../../global.rst
 
 
 .. index:: BYOB
 
-Here are a few key terms/ideas you will encounter as you start learning to program
-with BYOB.
+
 
 BYOB Terminology
 ---------------------------------
+
+Here are a few key terms/ideas you will encounter as you start learning to program
+with BYOB.
 
 ---------------------
 
