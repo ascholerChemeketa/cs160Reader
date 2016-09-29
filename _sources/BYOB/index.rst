@@ -12,3 +12,6 @@ BYOB Programming
 
     Basics/index.rst
     ConditionalsBlocks/index.rst
+    Lists/index.rst
+    Recursion/index.rst
+    Parallelism/index.rst
