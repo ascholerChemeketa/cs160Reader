@@ -2,12 +2,12 @@
 
 .. index:: asymmetric cryptography
 
-.. _target: asymmetric_math
+.. _asymmetric_math:
 
 Asymmetric Cryptography Math
 =========================================
 
-As we discussed how identity can be confirmed on the internet, we stuck to the metaphore of lock boxes. But we should convince ourselves that we can convert this hypothetical box into a mathematical algorithm. (Recall that we can represent anything with binary numbers - so if we can encrypt numbers we can encrypt any information we want by first representing that information as a number.) To do so, we need to identify two functions such that either one undoes the work of the other one - these functions will be the mathematical equivalent of keys that lock or unlock a box.
+As we discussed how identity can be confirmed on the internet, we stuck to the metaphor of lock boxes. But we should convince ourselves that we can convert this hypothetical box into a mathematical algorithm. (Recall that we can represent anything with binary numbers - so if we can encrypt numbers we can encrypt any information we want by first representing that information as a number.) To do so, we need to identify two functions such that either one undoes the work of the other one - these functions will be the mathematical equivalent of keys that lock or unlock a box.
 
 A simple pair of functions that undo each other might be "multiply by two" and "divide by two". If you wanted to encrypt a message represented by the number 6, you would multiply it by two and get 12. To decrypt that message you would take the encrypted version - 12 - and divide by two to get back to 6. You could also use the keys in reverse order: if you start with the message 6 and "lock" it by dividing by two, you get 3; if you then multiply that by two you get back to 6.
 

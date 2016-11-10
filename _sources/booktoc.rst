@@ -1,17 +1,17 @@
 .. include:: global.rst
 
 
-CS160 Course Reader   
+CS160 Course Reader
 ####################
-    
-Computation and Computer Science  
+
+Computation and Computer Science
 ==================================
-   
-.. toctree::   
+
+.. toctree::
    :includehidden:
    :maxdepth: 1
    :numbered:
-   
+
    ComputingFields/index.rst
    HistoryOfComputers/index.rst
    Binary/index.rst
@@ -25,12 +25,22 @@ Computation and Computer Science
    LimitsAndFuture/index.rst
 
 
-Nine Algorithms Book    
+Nine Algorithms Book
 ===================================
 
-.. toctree::   
+.. toctree::
    :includehidden:
    :maxdepth: 1
-   
+
    NineAlgorithms/index.rst
 
+
+
+BYOB Programming
+===================================
+
+.. toctree::
+  :includehidden:
+  :maxdepth: 1
+
+  BYOB/index.rst

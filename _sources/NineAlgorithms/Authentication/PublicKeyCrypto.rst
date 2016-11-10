@@ -5,7 +5,7 @@
 Public Key Cryptography
 =========================================
 
-We have established the idea of a special lock that has a pair of keys; in a few pages we will look at how that conceptual idea can be turned into a mathematical recipe (feel free to :ref:`skip ahead <asymmetric_math>`_ if you want to be convinced that can be done). But it is not clear how that solves the problem of your computer authenticating a website like wellsfargo.com when you connect to it - we need a way to verify the identity of that site.
+We have established the idea of a special lock that has a pair of keys; in a few pages we will look at how that conceptual idea can be turned into a mathematical recipe (feel free to :ref:`skip ahead <asymmetric_math>` if you want to be convinced that can be done). But it is not clear how that solves the problem of your computer authenticating a website like wellsfargo.com when you connect to it - we need a way to verify the identity of that site.
 
 The trick used on the internet to solve this problem sounds unintuitive - we generate pairs of encryption keys and then give one of them away. Websites that want users to be able to verify their identity and connect securely generate an asymmetric key pair (we will call the two keys A and B) then keep one of the key pair secret (either A or B, it does not matter) and give the other key to whoever wants it. The key that is handed out to anyone is called the **public key** and the one that is kept secret is the **private key**.
 
