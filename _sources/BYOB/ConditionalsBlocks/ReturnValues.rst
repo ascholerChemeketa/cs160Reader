@@ -56,10 +56,14 @@ The video below introduces reporters:
 
         Make a block that takes in a number and negates it (report 0 - the input).
 
-        The picture below shows it being used by itself, with the result of a ``[ ] + [ ]`` as its input,
-        and with its reported value being used in another block. The correct outputs from top to bottom are: -5, -6, -30.
+        The picture below shows it being used with an input of 5. (The output should be -5)
 
         .. image:: Images/CP24b.gif
+		
+		
+	You should be able to use it as part of a complex math expression. Below it is shown with the result of a ``[ ] + [ ]`` as its input, and with its reported value being used in another block. The correct outputs would be -6 and -30.
+
+        .. image:: Images/CP24b2.gif
 
         .. note::
 

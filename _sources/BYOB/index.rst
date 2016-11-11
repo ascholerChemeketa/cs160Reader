@@ -15,3 +15,4 @@ BYOB Programming
     Lists/index.rst
     Recursion/index.rst
     Parallelism/index.rst
+    HigherOrderFunctions/index.rst
