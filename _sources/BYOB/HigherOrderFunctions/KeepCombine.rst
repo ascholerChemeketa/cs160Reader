@@ -51,47 +51,19 @@ If you put something in one of the blanks it won't work right!
 
     .. tab:: Checkpoint B
 
-        **Keep all but first**
+        **Keep long words**
 
-        Use **Keep** to filter the list of numbers down to everything after the first number.
+        Use **Keep** to filter the list of words down to only words with a length of more than 4.
 
     .. tab:: Hint
 
-        You need to use the |number| symbol. You will NOT use a blank hole.
+        You need to use the |length| block.
 
     .. tab:: Sample Answer
 
         .. image:: Images/CP63b.png
 
 
-.. tabbed:: exercise3
-
-    .. tab:: Checkpoint C
-
-        **Keep all but first**
-
-        Use **Keep** to filter the list of numbers down to everything but the last number.
-
-    .. tab:: Hint
-
-        You will need to use the |length| block and the |number| block
-
-    .. tab:: Sample Answer
-
-        .. image:: Images/CP63c.png
-
-
-.. tabbed:: exercise4
-
-    .. tab:: Checkpoint D
-
-        **Keep all but first and last**
-
-        Use **Keep** to filter the list of numbers down to everything but the first and last number.
-
-    .. tab:: Sample Answer
-
-        .. image:: Images/CP63d.png
 
 
 .. pseudo_h3:: Combine Exercises

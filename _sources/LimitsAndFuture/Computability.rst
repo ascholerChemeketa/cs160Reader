@@ -5,29 +5,20 @@
 Computability
 =========================================
 
-Before the first modern computer was even built, **Alan Turing** had proven that there are some problems that are unsolvable with any conceivable mechanical calculation device - these functions are said to be **uncomputable** as opposed to **computable** problems that can be solved by an algorithm in some finite number of steps. 
+Before the first modern computer was even built, **Alan Turing** had proven that there are some problems that are unsolvable with any conceivable mechanical calculation device - these functions are said to be **uncomputable** as opposed to **computable** problems that can be solved by an algorithm in some finite number of steps.
 
-.. note:: 
+.. note::
 
     Chapter 10 of *Nine Algorithms that Changed the Future* describes the basic idea of the proof.
 
-But even in the realm of functions that are theoretically computable, there are problems that are so complex to solve via computation that they are **practically uncomputable**. We may be able to solve simple versions of the problem, but as the input size grows, the time it takes to find a solution grows so fast that it rapidly becomes unusable. 
-
-.. sidebar:: P = NP?
-
-    One of the greatest problems in theoretical computer science is to prove that the class of polynomial problems (P) is distinct from those that can be solved only only in non-polynomial (NP). (Or to prove that they are actually the same.) 
-    
-    There is a `million dollar prize <http://www.claymath.org/millenium-problems/p-vs-np-problem>`__ on offer for a mathematical proof of this idea.
-    
-    Writers of the Simpsons and Futurama have even `snuck the debate into their shows <https://www.youtube.com/watch?v=dJUEkjxylBw>`__.
-    
+But even in the realm of functions that are theoretically computable, there are problems that are so complex to solve via computation that they are **practically uncomputable**. We may be able to solve simple versions of the problem, but as the input size grows, the time it takes to find a solution grows so fast that it rapidly becomes unusable.
 
 .. index:: non-polynomial
 
-Problems that have this characteristic are described as **non-polynomial** problems. This is a way of saying that the Big-O function that governs their behavior is something that can not be written as a polynomial (a function where ever term consists of a constant power of **n**). Instead, the Big-O is something like :math:`O(2^n)` where **n** is the exponent or :math:`O(n! \times)` (n! = 1 × 2 × 3 × ... × n). The relative growth of some polynomial functions (:math:`n` and :math:`n^2`) and non-polynomial ones (:math:`2^n` and :math:`n!`) can be seen below.
+Problems that have this characteristic are described as **non-polynomial** problems. This is a way of saying that the Big-O function that governs their behavior is something that can not be written as a polynomial (a function where every term consists of a constant power of **n**). Instead, the Big-O is something like :math:`O(2^n)` where **n** is the exponent or :math:`O(n! \times)` (n! = 1 × 2 × 3 × ... × n). The relative growth of some polynomial functions (:math:`n` and :math:`n^2`) and non-polynomial ones (:math:`2^n` and :math:`n!`) can be seen below.
 
 .. table::
-    :class: width-auto 
+    :class: width-auto
 
     =========================   =========================   =========================   =========================
     :math:`n`                   :math:`n^2`                 :math:`2^n`                 :math:`n!`
@@ -47,22 +38,32 @@ Many optimization problems are also non-polynomial. The traveling salesman probl
 
     .. figure:: Images/TSP2.jpg
         :figwidth: 45%
-        
+
         `Image by Jeremy Kubica <http://computationaltales.blogspot.com/2011/08/traveling-salesmans-problem-part-6-of.html>`__ |br| `Creative Commons CC BY SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`__
-    
+
         Traveling Salesman: Is this the best possible route?
 
     .. figure:: Images/Knapsack.png
         :figwidth: 45%
-        
+
         `Image via Wikipedia Commons <http://en.wikipedia.org/wiki/Knapsack_problem#mediaviewer/File:Knapsack.svg>`__ |br| `Creative Commons CC BY SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`__
-    
+
         Knapsack Problem: What collection of items is optimal?
-        
+
 |br|
 
-Faced with a problem that is non-polynomial, instead of looking for a perfect answer that will take too long to find, we must instead develop algorithms that look for a "pretty good" answer in a tractable amount of time.
+
+.. sidebar:: P = NP?
+
+    One of the greatest problems in theoretical computer science is to prove or disprove that the class of polynomial problems (P) is distinct from those for which solutions can be checked in polynomial time but finding those solutions is harder (the class of problems called NP).
+
+    Writers of the Simpsons and Futurama have even `snuck the debate into their shows <https://www.youtube.com/watch?v=dJUEkjxylBw>`__.
 
 
-.. youtube::
+Faced with a problem that is non-polynomial, instead of looking for a perfect answer that will take too long to find, we must instead do things like try to develop algorithms that look for a "pretty good" answer in a tractable amount of time or that can efficiently solve some special subset of the hard problems.
 
+This video does an **amazing** job of explaining the relationship between polynomial functions (the class known as P) and those problems that we believe to be fundamentally harder. It goes into more detail than we are worried about learning for this class, so do not worry about absorbing every detail. Instead, focus on the explanations of how polynomial functions are different, why Moore's Law can't help us with harder problems, and what this all means:
+
+.. youtube:: YX40hbAHx3s
+    :height: 200
+    :width: 356

@@ -12,9 +12,20 @@ This video introduces our first tool for using higher order blocks: **Map**.
 
 .. note::
 
+  **Using Tools**
+
   The video shows how to load the new blocks used in this chapter in BYOB. If you are using SNAP (online version), you can just go to the **File** menu and **Import Tools**
 
   .. image:: Images/BYOB62a.png
+
+
+.. note::
+
+    **Snap Tips**
+
+    SNAP does not have a (copy of (list)) block. That is OK, the only reason I use (copy of (list)) is because otherwise BYOB hides the list from view - SNAP does not have that bug.
+
+    See BYOB Chapter 3.1 for how to set up a list in SNAP if you just switched to using it.
 
 
 
@@ -39,6 +50,8 @@ Two other hints:
 
 
 .. |asciiBlock| image:: Images/CP62b.png
+.. |unicodeBlock| image:: Images/BYOB6unicodeBlock.png
+
 
 .. tabbed:: exercise1
 
@@ -46,7 +59,7 @@ Two other hints:
 
         **Doubler**
 
-        Use **Map** to make a list where each number in the numnbers list is double the value in the original list. (144, 158, 174, 136, 178)
+        Use **Map** to make a list where each number in the numbers list is double the value in the original list. (144, 158, 174, 136, 178)
 
     .. tab:: Sample Answer
 
@@ -61,7 +74,7 @@ Two other hints:
 
         Use **Map** to make a list where the numbers in the numbers list are converted to the letters that they correspond to on the ASCII table.
 
-        Hint: use the |asciiBlock| block to convert a number to a letter. The list should spell a word.
+        Hint: use the |asciiBlock| block (BYOB) or |unicodeBlock| block (SNAP) to convert a number to a letter. The list should spell a word.
 
     .. tab:: Sample Answer
 
