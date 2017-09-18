@@ -31,6 +31,7 @@ To recap the video, our reasons for using this technique:
 #. The code ends up much more readable. Which of these is easier to read and understand the intent of:
 
    .. image:: Images/BYOB61a.png
+   
    OR
 
    .. image:: Images/BYOB61b.png

@@ -77,15 +77,15 @@ There is no way to exactly represent the answer, you can just come close. (The c
 .. pseudo_h4:: Self Check
     :class: underlined
 
+
 .. fillintheblank:: fractions_1
 
-    .. blank:: fractions_1_ans1
-        :correct: ^0?\\.875\\b
-        :feedback1: ('[^0-9\\.]+', 'Your answer should be a number')
-        :feedback2: ('\\b1.*\\b', 'Your answer should start with 0.')
-        :feedback3: ('.*', 'Use the blank table above. The 0 goes in the ones column.')
+    What decimal value does the binary number 0.111 represent?
 
-        What decimal value does the binary number 0.111 represent?
+    - :0?\.875: Correct!
+      :[^0-9\.]+: Your answer should be a number
+      :1.*: Your answer should start with 0.
+      :x: Use the blank table above. The 0 goes in the ones column.
 
 
 .. mchoice:: fractions_2

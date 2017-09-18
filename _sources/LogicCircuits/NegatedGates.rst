@@ -115,29 +115,28 @@ XOR gives a 1 if the two inputs are different (0 1 or 1 0). XNOR gives a 1 only 
     :class: underlined
 
 
+
 .. fillintheblank:: nor_1
 
-    .. blank:: nor_1_ans1
-       :correct: \\b0010\\b
-       :feedback1: ('[^01]+', 'Your answer should be just 1s and 0s',)
-       :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
-       :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-       :feedback4: ('.*', 'Hint: NOR only gives 1 if BOTH inputs are 0. Where does that happen?')
+    What is the result of applying **NOR** to: |br|
+    1101 |br|
+    1001? |br|
 
-       What is the result of applying **NOR** to: |br|
-       1101 |br|
-       1001? |br|
+    - :0010: Correct!
+      :[^01]+: Your answer should be just 1s and 0s
+      :.{1,3}: Not enough digits
+      :.{5,}: Too many digits
+      :x: Hint: NOR only gives 1 if BOTH inputs are 0. Where does that happen?
 
 
 .. fillintheblank:: xnor_1
 
-    .. blank:: xnor_1_ans1
-        :correct: \\b1011\\b
-        :feedback1: ('[^01]+', 'Your answer should be just 1s and 0s',)
-        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
-        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-        :feedback4: ('.*', 'Hint: XNOR gives a 1 if the two input digits match. In what columns do the input digits match?')
+    What is the result of applying **XNOR** to: |br|
+    1101 |br|
+    1001? |br|
 
-        What is the result of applying **XNOR** to: |br|
-        1101 |br|
-        1001? |br|
+    - :1011: Correct!
+      :[^01]+: Your answer should be just 1s and 0s
+      :.{1,3}: Not enough digits
+      :.{5,}: Too many digits
+      :x: Hint: XNOR gives a 1 if the two input digits match. In what columns do the input digits match?

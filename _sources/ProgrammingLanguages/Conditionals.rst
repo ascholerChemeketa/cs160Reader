@@ -18,9 +18,9 @@ The primary control structures are: Conditionals, Loops and Subprocedure calls.
     1   If (This condition is true) Then:
     2       Do this special thing
     3       And this
-    4    
-    5   No matter what, do this. 
-    
+    4
+    5   No matter what, do this.
+
 The indentation shows that statements 2 and 3 are "inside" the if. They only execute if the condition is true. Otherwise, we skip them completely. Often times, we will expand an if statement with an else clause to specify two alternatives::
 
     1   If (This condition is true) Then:
@@ -29,14 +29,14 @@ The indentation shows that statements 2 and 3 are "inside" the if. They only exe
     4   Else:
     5       This only happens if condition was NOT true
     6       So does this
-    7    
-    8   No matter what, do this. 
+    7
+    8   No matter what, do this.
 
 ..  image:: Images/IfElse.png
     :class: align-right
     :width: 200
-    
-If the condition is true in line 1, lines 2 and 3 are executed, then we would skip down to line 7. On the other hand, if the condition is not true, we skip 2 and 3 and do the lines inside the Else. 
+
+If the condition is true in line 1, lines 2 and 3 are executed, then we would skip down to line 7. On the other hand, if the condition is not true, we skip 2 and 3 and do the lines inside the Else.
 
 Think of an If/Else as a choice between two paths through the code. Note that either way, after executing either the if or the else, we continue on with the rest of the code in the program.
 
@@ -44,10 +44,10 @@ Think of an If/Else as a choice between two paths through the code. Note that ei
     :class: clear
 
     Indentation or some other system (some languages use { } to show the start and end of a group of lines) is critical to show what actually depends on the condition. This (bad) attempt at writing a condition would always print out "Looks sunny" - the print is not indented to be part of the if. (The if says "If the temperature is above 80, do nothing special.")::
-    
+
         1   If temperature > 80 Then:
         2   print "Looks sunny"
-    
+
 The condition is usually written by doing a logical comparison - asking if two values are equal or not equal, or if one is larger than the other. Because = usually means assignment, to specify comparing two things to see if they are equal, we often use == to mean "equals" and because things like :raw-html:`&#8804;` are hard to type, we use <= to mean "less than or equal".
 
 ============    ==================  ==================  =======================================
@@ -60,31 +60,31 @@ Symbol          Meaning             Example             Example Meaning
 <               less than           a < b               a is less than b
 <=              less or equal       a <= b              a is less than or equal to b
 ============    ==================  ==================  =======================================
-    
+
 Compare the execution of these two programs. All that is different between them is what the variable ``outsideTemp`` is set to at the beginning of the program. That variable affects which path through the program the code takes. This first version starts with a temperature of 45:
 
 .. codelens:: IfStatement
 
     outsideTemp = 45
-    print "Lets check the weather"
-    
+    print("Lets check the weather")
+
     if (outsideTemp > 60):
-        print "Doesn't look too bad out."
+        print("Doesn't look too bad out.")
     else:
-        print "You are going to need a jacket!"
-        
-    print "See you later"
+        print("You are going to need a jacket!")
+
+    print("See you later")
 
 This second version starts with a temperature of 85:
- 
+
 .. codelens:: IfStatement2
 
     outsideTemp = 85
-    print "Lets check the weather"
-    
+    print("Lets check the weather")
+
     if (outsideTemp > 60):
-        print "Doesn't look too bad out."
+        print("Doesn't look too bad out.")
     else:
-        print "You are going to need a jacket!"
-        
-    print "See you later"           
+        print("You are going to need a jacket!")
+
+    print("See you later")

@@ -71,4 +71,4 @@ Stage
 
 .. rst-class:: clear
 
----------------------
+|br|

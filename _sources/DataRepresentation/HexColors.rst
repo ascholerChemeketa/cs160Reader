@@ -8,21 +8,21 @@ Hexadecimal is used to display large binary values for people to read. Although 
 .. figure:: Images/hexaddress.png
    :alt: Hex display of data
    :figwidth: 80%
-   
-   ..
-   
-   A programmers view of two pieces of information in a program. 
 
-The image above shows a screen shot of looking at data while debugging a computer program. **x** is known to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the decimal number 7. **memory_address** is a memory address for an unknown type (void *) - so its bits (001010001111111010111000) are displayed in hex as 28feb8.
+   ..
+
+   A programmers view of two pieces of information in a program.
+
+The image above shows a screen shot of looking at data while debugging a computer program. **x** is known to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the decimal number 7. **memory_address** is a memory address for an unknown type (void \*) - so its bits (001010001111111010111000) are displayed in hex as 28feb8.
 
 .. index:: hex colors
- 
+
 The first place many people encounter hexadecimal is learning about specifying colors for websites. Colors are generally specified as 24-bit numbers - 8 bits each to represent how much red, green and blue. These 8 bits are enough to give values of :math:`{0-255}_{10}` (:math:`{00000000-11111111}_{2}`) for each of the three primary colors. To make different colors, we mix different amounts of the three primaries. 255 red, 0 green, 140 blue makes a :pink:`nice pink`. To specify this color, a website designer can write the 24 binary digits as 6 hex digits (remember that 4 binary digits correspond to one hex digit). 255 is FF in hex. 0 is 00 in hex. 140 is 8D in hex. So :pink:`this shade of pink` can be written as FF008D - a website designer would type something like "color: #FF008D;" to specify that some text should be pink.
 
 You can play with the sliders below to explore how colors can be described as a mix of red, green and blue. Move the sliders to change the amount of each color. The current value is displayed in both decimal and hexadecimal. By writing the hex digits for each color as one 6 digit number (red/green/blue), you can determine the hex code for the color - which is shown below the color swatch.
 
 .. raw:: html
-    
+
     <style>
       .colorbar {
         float: left;
@@ -40,7 +40,7 @@ You can play with the sliders below to explore how colors can be described as a 
       #colorLabel {
         clear: both;
         text-align: right;
-        
+
       }
       #colorName {
         width: 118px;
@@ -123,7 +123,7 @@ You can play with the sliders below to explore how colors can be described as a 
       </script>
     </head>
     <body class="ui-widget-content" style="border:0;">
-     
+
     <div class="colorpicker">
     <div class="colorbar"><div id="red"></div>
             <input type="text" class="colorVal" id="redVal" readonly="true" /></div>
@@ -138,33 +138,30 @@ You can play with the sliders below to explore how colors can be described as a 
     <div id="colorLabel">Hex color code:<input type="text" id="colorName" readonly="true" /></div>
     </div>
 
-    
-.. pseudo_h4:: Self Check 
+
+.. pseudo_h4:: Self Check
     :class: underlined
- 
-.. mchoice:: hexcolors_1 
+
+.. mchoice:: hexcolors_1
     :answer_a: A255A2
     :answer_b: 58B3B3
     :answer_c: 43C0C0
     :answer_d: 777777
     :correct: b
     :feedback_a: Try reproducing the color with the tool above
-    :feedback_b: 
+    :feedback_b:
     :feedback_c: Try reproducing the color with the tool above
     :feedback_d: Try reproducing the color with the tool above
-    
+
     Which of the following hex values describes a smoky-aqua color?
-    
-    
+
+
 .. fillintheblank:: hexcolors_2
 
-    .. blank:: hexcolors_2_ans1
-        :correct: \\b000000\\b
-        :feedback1: ('[^0-9A-Fa-f]+', 'Your answer should consist of hex digits: 0-9, A, B, C, D, E, F',)
-        :feedback2: ('\\b.{1,5}\\b', 'That is not enough digits')
-        :feedback3: ('\\b.{7,}\\b', 'That is too many digits')
-        :feedback4: ('.*', 'Hint: Try reproducing the color with the tool above')
+    What hex code specifies black?
 
-        What hex code specifies black?
-
-   
+    - :000000: Correct!
+      :[^0-9A-Fa-f]+: Your answer should consist of hex digits: 0-9, A, B, C, D, E, F
+      :.{1,5}: Not enough digits
+      :.{7,}: Too many digits
+      :x: Hint: Try reproducing the color with the tool above

@@ -10,7 +10,6 @@ Computation and Computer Science
 .. toctree::
    :includehidden:
    :maxdepth: 1
-   :numbered:
 
    ComputingFields/index.rst
    HistoryOfComputers/index.rst

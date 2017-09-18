@@ -193,9 +193,9 @@ Normally integers are stored as 32-bit values. This gives a range of approximate
   .. fillintheblank:: twoscomplement_3
 
       .. blank:: twoscomplement_3_ans1
-         :correct: \\b6\\b
-         :feedback1: ('\\b0110\\b', 'That is the correct binary value. What is the decimal value?')
-         :feedback2: ('\\b10110\\b', 'You must chop off the first digit to get down to 4 bits and then figure out the decimal value.')
+         :correct: 6
+         :feedback1: ('0110', 'That is the correct binary value. What is the decimal value?')
+         :feedback2: ('10110', 'You must chop off the first digit to get down to 4 bits and then figure out the decimal value.')
          :feedback3: ('.*', 'Hint: The largest possible positive number you can represent with 4 bit twos complement is 7.')
 
          If you add the 4-bit two's complement number 1011 (-5) to itself, the result should be -10. But you can not write -10 as a 4-bit two's complement number - there will be overflow that turns your negative value back into a positive one. |br| Do the math to add 1011 + 1011 (don't forget to only keep the last four digits of the answer) and then give the decimal value your answer represents. |br|

@@ -120,7 +120,7 @@
             {% else: %}
                 <li><a href='{{ pathto(master_doc) }}'>Table of Contents</a></li>
             {% endif %}
-            <li><a href='/{{appname}}/static/{{course_id}}/genindex.html'>Book Index</a></li>
+            <li><a href='/{{course_id}}/genindex.html'>Book Index</a></li>
             <li class="divider"></li>
 			<!--
             <li id="scratch_ac_link"><a href="javascript:toggleScratchActivecode()">Scratch ActiveCode</a></li>
@@ -146,7 +146,7 @@
 
         <li class="divider-vertical"></li>
 
-        <!-- user account dropdown 
+        <!-- user account dropdown
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
             <i class="glyphicon glyphicon-user" style="opacity:0.9;"></i>
@@ -172,7 +172,7 @@
 <!--
         <li class="divider-vertical"></li>
 -->
-        <!-- help menu dropdown 
+        <!-- help menu dropdown
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown">
             <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
@@ -269,7 +269,7 @@
 
 <div class="container" id="main-content">
   {% block body %}{% endblock %}
-  
+
     <hr class="comment-divider" />
 
     <div  class="section">
@@ -291,8 +291,8 @@
        </script>
 
     </div>
-	
-</div> 
+
+</div>
 {%- endblock %}
 
 {%- block footer %}
@@ -365,7 +365,7 @@ function scroll_if_anchor(href) {
             }
         }
     }
-}    
+}
 
 // When our page loads, check to see if it contains and anchor
 scroll_if_anchor(window.location.hash);

@@ -2,13 +2,13 @@
 
 .. index:: ! byte
 
- 
+
 Bytes
 ============================
-    
-One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make is appropriate for storing things like a single character of text - with 256 different values we can assign a different 8-bit pattern to each letter, digit, punctuation mark, etc... 
 
-When more than eight bits are required for some data, several bytes are used. For example, typically: 
+One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make is appropriate for storing things like a single character of text - with 256 different values we can assign a different 8-bit pattern to each letter, digit, punctuation mark, etc...
+
+When more than eight bits are required for some data, several bytes are used. For example, typically:
 
 * An integer is represented with a group of 4 bytes (32 bits)
 * A decimal number is represented with a group of 8 bytes (64 bits)
@@ -31,31 +31,31 @@ When we are talking about much larger chunks of information, like the informatio
 
 
 
-.. pseudo_h4:: Self Check 
+.. pseudo_h4:: Self Check
     :class: underlined
 
-   
+
 .. fillintheblank:: bytes_1
 
-    .. blank:: bytes_1_ans1
-        :correct: \\b24\\b
-        :feedback1: ('[^\\d]+', 'Your answer should be a number')
-        :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-        :feedback3: ('\\b.{3,}\\b', 'That is too many digits')
-        :feedback4: ('.*', 'Hint: each byte is 8 bits')
+    How many bits are in 3 bytes?
 
-        How many bits are in 3 bytes? 
-  
+    - :24: Correct!
+      :[^\d]+: Your answer should be a number
+      :.{1}: That is not enough digits
+      :.{3,}: That is too many digits
+      :x: Hint: each byte is 8 bits
+
+
 .. fillintheblank:: bytes_2
 
-    .. blank:: bytes_2_ans1
-        :correct: \\b4096\\b
-        :feedback1: ('[^\\d]+', 'Your answer should be a number')
-        :feedback2: ('\\b.{1,3}\\b', 'That is not enough digits')
-        :feedback3: ('\\b.{5,}\\b', 'That is too many digits')
-        :feedback4: ('.*}', 'Hint: each KB is 1024 bytes')
+    How many bytes are in 4 KB ?
 
-        How many bytes are in 4 KB ? 
-   
-   
+    - :4096: Correct!
+      :[^\d]+: Your answer should be a number
+      :.{1,3}: That is not enough digits
+      :.{5,}: That is too many digits
+      :x: Hint: each KB is 1024 bytes
+
+
+
 .. quick_attribution:: ICSJava

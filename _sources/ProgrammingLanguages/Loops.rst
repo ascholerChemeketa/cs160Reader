@@ -11,7 +11,7 @@ A **loop statement** specifies that a chunk the code inside of it may be run mor
     1   Repeat (5) Times:
     2       Do this thing
     3       And this
-    4    
+    4
     5   Then this only once
 
 The program would run line 1, then 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, then finally 4 and 5. Like with a conditional statement, the indentation show the lines of code that need to be more than once.
@@ -26,7 +26,7 @@ Often loops are written with a condition. A **while loop** says to repeat everyt
     1   While (This condition is true):
     2       Do this thing
     3       And this
-    4    
+    4
     5   Then this only once
 
 
@@ -37,16 +37,16 @@ The condition of a **while loop** works just like that of an **if statement** bu
 
 Try running this program. Notice now we keep repeating lines 5-7 until the current number is no longer greater than 0.
 
-.. codelens:: While 
+.. codelens:: While
 
     currentNumber = 5
-    print "Let's sing a song!"
-    
+    print("Let's sing a song!")
+
     while (currentNumber > 0):
-        print currentNumber, " bottles of root beer on the wall,"
-        print currentNumber, " bottles of root beer"
+        print(currentNumber, " bottles of root beer on the wall,")
+        print(currentNumber, " bottles of root beer")
         currentNumber = currentNumber - 1
-        
-    print "No more bottles of root beer on the wall."
- 
+
+    print("No more bottles of root beer on the wall.")
+
 It is a silly program, but it shows how loops can be used to avoid repeating ourselves (do not have to type lines 5 and 6 five times each) and to handle an unknown amount of work. We could easily change the program to start currentNumber to 100 or ask the user for a starting value; without changing anything but line 1 of the program, we would then get 100 versions of the song's refrain.

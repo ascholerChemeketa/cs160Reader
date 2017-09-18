@@ -19,9 +19,9 @@ If the withdawl block returns true, they announce that they got their money.
 .. pseudo_h3:: Part A
   :class: underlined
 
-.. sidebar::
+.. sidebar:: Hint
 
-  Hint: When multiple sprites are trying to do something at the same time, they are generally processed from top to bottom. i.e. Whatever sprite is highest on the screen goes first.
+  When multiple sprites are trying to do something at the same time, they are generally processed from top to bottom. i.e. Whatever sprite is highest on the screen goes first.
 
 Run the script as is a number of times to see what happens. Describe the results in the Assignment question.
 
@@ -35,7 +35,7 @@ Modify the ``withdrawl`` script to look like this:
 
 We are intentionally introducing the kind of random delay that often times naturally happens when computers are running multiple jobs that depend on things like accessing a disk, reading from the network etc…
 
-Run the program using this new version of ``withdrawl``a number of times.
+Run the program using this new version of ``withdrawl`` a number of times.
 
 * How are the results different?
 * Why are they different?
@@ -52,7 +52,7 @@ Modify the ``withdrawl`` script to look like this:
 
 We are introducing multiple points at which a sprite that is trying to ``withdrawl`` can get stuck for a brief amount of time.
 
-Again run the program a number of times. 
+Again run the program a number of times.
 
 * How are the results different?
 * Why are they different?

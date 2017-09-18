@@ -1,14 +1,14 @@
 .. include:: ../global.rst
 
 
-.. index:: 
+.. index::
     pair: conversion; binary
-    
+
 .. _binary-conversion:
 
 Binary Conversions - Table Method
 ===================================
- 
+
 Almost always, there is more than one possible algorithm to solve a problem; converting numbers from Binary to Decimal and back is no exception. We are going to look at two different approaches: **use of a table of powers of 2** and **repeated multiplication/division by 2**. Although the table method shown on this page is the most straightforward method, the division/multiplication method shown on the next page is important to understand because it is easier to express as an algorithm that a computer can execute.
 
 Binary to Decimal
@@ -20,14 +20,14 @@ For example, I want to convert :math:`{11010}_{2}` to decimal - I will need at l
 
 .. rst-class:: place-values
 
-    =============   =============   =============   =============   =============     
-    16s             8s              4s              2s                 1s 
-    =============   =============   =============   =============   =============     
+    =============   =============   =============   =============   =============
+    16s             8s              4s              2s                 1s
+    =============   =============   =============   =============   =============
     1               1               0               1               0
-    =============   =============   =============   =============   =============     
+    =============   =============   =============   =============   =============
 
 That tells me I need to add 16, 8 and 2. So :math:`{11010}_{2} = 16 + 8 + 2 = {26}_{10}`
-  
+
 Decimal to Binary
 ---------------------
 
@@ -35,68 +35,69 @@ The first way to convert a decimal number to a binary one is with a table like t
 
 .. rst-class:: place-values
 
-    =============   =============   =============   =============   =============   =============   =============   =============     
-    128s            64s             32s             16s             8s              4s              2s                 1s 
-    =============   =============   =============   =============   =============   =============   =============   =============    
+    =============   =============   =============   =============   =============   =============   =============   =============
+    128s            64s             32s             16s             8s              4s              2s                 1s
+    =============   =============   =============   =============   =============   =============   =============   =============
     |
-    =============   =============   =============   =============   =============   =============   =============   =============   
-    
+    =============   =============   =============   =============   =============   =============   =============   =============
+
 For example, I want to write 155 as a binary number: ::
 
-    Do I need 128? Yes, that is less than 155. 
+    Do I need 128? Yes, that is less than 155.
         155 - 128 = 27: that is what we have left to make
     Do I need 64? No - I only have 27 left
     Do I need 32? No - I only have 27 left
-    Do I need 16? Yes, that is less than 27. 
+    Do I need 16? Yes, that is less than 27.
         27 - 16 = 11: that is now what we have left
-    Do I need 8? Yes, that is less than 11. 
+    Do I need 8? Yes, that is less than 11.
         11 - 8 = 3
     Do I need 4? No - I only have 3 left
-    Do I need 2? Yes. 
+    Do I need 2? Yes.
         3 - 2 = 1
-    Do I need 1? Yes. 
+    Do I need 1? Yes.
         1 - 1 = 0
-    
+
 If we think of each column we used as representing a 1 and each column we didn't as a 0, we get this:
 
 .. rst-class:: place-values
 
-    =============   =============   =============   =============   =============   =============   =============   =============     
-    128s            64s             32s             16s             8s              4s              2s                 1s 
-    =============   =============   =============   =============   =============   =============   =============   =============    
+    =============   =============   =============   =============   =============   =============   =============   =============
+    128s            64s             32s             16s             8s              4s              2s                 1s
+    =============   =============   =============   =============   =============   =============   =============   =============
     1               0               0               1               1               0               1               1
-    =============   =============   =============   =============   =============   =============   =============   =============   
+    =============   =============   =============   =============   =============   =============   =============   =============
 
-Or written without a table: :math:`{10011011}_{2}`. 
+Or written without a table: :math:`{10011011}_{2}`.
 
 Just like with decimal numbers, leading zeros do not modify the value of a number. So :math:`{00000101}_{2}` is the same as :math:`{101}_{2}`.
 
 
 
-.. pseudo_h4:: Self Check 
+.. pseudo_h4:: Self Check
     :class: underlined
- 
+
+
 .. fillintheblank:: binaryconversions_1
 
-    .. blank:: binaryconversions_1_ans1
-        :correct: \\b60\\b
-        :feedback1: ('[^\\d]+', 'Your answer should be a number')
-        :feedback2: ('\\b.{1}\\b', 'That is not enough digits')
-        :feedback3: ('\\d{4}', 'Hint: With 6 binary digits the largest column you should use is 32')
-        :feedback4: ('\\b.{3,}\\b', 'That is too many digits')
+    What decimal value does the binary number 111100 represent?
 
-        What decimal value does the binary number 111100 represent? 
+    - :60: Correct!
+      :[^\d]+: Your answer should be a number
+      :.{1}: That is not enough digits
+      :.{4}: Hint: With 6 binary digits the largest column you should use is 32
+      :.{3,}: Too many digits
+      :x: We are looking for a base ten number
 
-   
-.. mchoice:: binaryconversions_2 
+
+.. mchoice:: binaryconversions_2
     :answer_a: 7
     :answer_b: 8
     :answer_c: 32
     :answer_d: 128
     :correct: a
-    :feedback_a:  
+    :feedback_a:
     :feedback_b: The 8th column would be 128... we don't need that
     :feedback_c: 32 bits can represent over 4 billion
-    :feedback_d: 
-    
+    :feedback_d:
+
     How many columns do you need to represent 125?
