@@ -7,7 +7,7 @@ This chapter focuses on **parallel processing** and the challenges related to it
 
 You can download the starter programs for this tutorial as a zip file:
 
-`http://faculty.chemeketa.edu/ascholer/CS160/Files/BYOB/BYOB5Starters.zip <http://faculty.chemeketa.edu/ascholer/CS160/Files/BYOB/BYOB5Starters.zip>`_
+`http://faculty.chemeketa.edu/ascholer/CS160Old/Files/BYOB/BYOB5Starters.zip <http://faculty.chemeketa.edu/ascholer/CS160Old/Files/BYOB/BYOB5Starters.zip>`_
 
 Download the .zip and extract the files from it to the desktop or somewhere similar. To open the files, start BYOB and then do File->Open… and select the appropriate file.
 

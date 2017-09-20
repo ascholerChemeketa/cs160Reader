@@ -16,7 +16,7 @@ This video demonstrates using recursion to build a ``add all numbers in (list)``
 
 The link below has a starter file you can use with ``first half of (list)`` and ``second half of (list)`` already built (look under the Variables section for these two blocks).
 
-`http://faculty.chemeketa.edu/ascholer/cs160/Files/BYOB/DivideConquerStarter.zip <http://faculty.chemeketa.edu/ascholer/cs160/Files/BYOB/DivideConquerStarter.zip>`_
+`http://faculty.chemeketa.edu/ascholer/CS160Old/Files/BYOB/DivideConquerStarter.zip <http://faculty.chemeketa.edu/ascholer/CS160Old/Files/BYOB/DivideConquerStarter.zip>`_
 
 Download the .zip file, then copy the DivideConquerStarter.ypr file that is inside it to your desktop or somewhere. Open it from BYOB (File->Open). If you are using the online SNAP version of BYOB, do the same, but use the Import command in SNAP and then select the DivideConquerStarter.ypr file.
 

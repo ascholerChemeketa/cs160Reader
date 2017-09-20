@@ -7,7 +7,7 @@ RSA
 
 .. sidebar:: Making your own keys
 
-  Want to try generating your own RSA key pair?  `This application <http://faculty.chemeketa.edu/ascholer/cs160/webapps/RSAExponentKeys.html>`__ will walk you through generating a public/private key pair for use with the RSA algorithm.
+  Want to try generating your own RSA key pair?  `This application <http://faculty.chemeketa.edu/ascholer/CS160Old/webapps/RSAExponentKeys.html>`__ will walk you through generating a public/private key pair for use with the RSA algorithm.
 
 
 The particular algorithm shown on the previous page for asymmetric encryption is known as the **RSA** algorithm (after its creators Rivest, Shamir and Adleman). To explain exactly how to pick a set of A, B and C numbers that work together as keys and why they do work requires more math than we have time for here. That said, outlining the process used to generate keys is important to understand why the keys are considered to be secure.

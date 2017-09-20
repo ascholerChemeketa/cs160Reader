@@ -10,21 +10,21 @@ sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 master_url = 'http://127.0.0.1:8000'
-master_app = 'CS160Reader'
-serving_dir = "../built/CS160Reader"
+master_app = 'cs160ReaderOld'
+serving_dir = "../built/cs160ReaderOld"
 
 options(
     sphinx = Bunch(docroot=".",),
 
 
 	latex = Bunch(
-        builddir="../builtlatex/CS160Reader",
+        builddir="../builtlatex/cs160ReaderOld",
         sourcedir="_sources",
-        outdir="../builtlatex/CS160Reader",
+        outdir="../builtlatex/cs160ReaderOld",
         builder='latex',
         confdir=".",
-        project_name = "CS160Reader",
-        template_args={'course_id': 'CS160Reader',
+        project_name = "cs160ReaderOld",
+        template_args={'course_id': 'cs160ReaderOld',
                        'login_required':'false',
                        'appname':master_app,
                        'loglevel': 0,
@@ -35,12 +35,12 @@ options(
     ),
 
     build = Bunch(
-        builddir="../built/CS160Reader",
+        builddir="../built/cs160ReaderOld",
         sourcedir="_sources",
-        outdir="../built/CS160Reader",
+        outdir="../built/cs160ReaderOld",
         confdir=".",
-        project_name = "CS160Reader",
-        template_args={'course_id': 'CS160Reader',
+        project_name = "cs160ReaderOld",
+        template_args={'course_id': 'cs160ReaderOld',
                        'login_required':'false',
                        'appname':master_app,
                        'loglevel': 0,
