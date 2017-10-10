@@ -28,7 +28,21 @@ from runestone import runestone_static_dirs, runestone_extensions
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160']
+extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160'] + ['rinoh.frontend.sphinx']
+
+
+latex_documents = ['index',                # top-level file (index.rst)
+            'target',               # output (target.pdf)
+            'CS160Reader',          # document title
+            'Andrew Scholer',
+            'manual',
+            False],      # document author
+
+latex_elements = {}
+            
+latex_elements['papersize'] = 'letterpaper'          
+
+latex_paper_size = 'letter'
 
 #extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160']  + ['rst2pdf.pdfbuilder']
 

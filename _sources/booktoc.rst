@@ -15,8 +15,8 @@ Computation and Computer Science
    ComputingFields/index.rst
    HistoryOfComputers/index.rst
    Binary/index.rst
-   LogicCircuits/index.rst
    DataRepresentation/index.rst
+   LogicCircuits/index.rst
    ComputerArchitecture/index.rst
    ProgrammingLanguages/index.rst
    Algorithms/index.rst
@@ -33,14 +33,3 @@ Nine Algorithms Book
    :maxdepth: 1
 
    NineAlgorithms/index.rst
-
-
-
-BYOB Programming
-===================================
-
-.. toctree::
-  :includehidden:
-  :maxdepth: 1
-
-  BYOB/index.rst

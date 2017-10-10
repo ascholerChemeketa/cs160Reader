@@ -30,7 +30,7 @@ options(
                        'loglevel': 0,
                        'course_url':master_url,
                        'use_services': 'false',
-                       'python3': 'false'
+                       'python3': 'true'
                         }
     ),
 
@@ -46,18 +46,18 @@ options(
                        'loglevel': 0,
                        'course_url':master_url,
                        'use_services': 'false',
-                       'python3': 'false'
+                       'python3': 'true'
                         }
     ),
 
-	#pdf=Bunch(
-    #    builddir="../builtpdf/CS160Reader",
-    #    sourcedir="_sources",
-    #    outdir="../builtpdf/CS160Reader",
-    #    project_name = "CS160Reader",
-    #    builder='pdf',
-    #    confdir=".",
-    #),
+	pdf=Bunch(
+        builddir="../builtpdf/CS160Reader",
+        sourcedir="_sources",
+        outdir="../builtpdf/CS160Reader",
+        project_name = "CS160Reader",
+        builder='rinoh',
+        confdir="."
+    ),
 )
 
 from runestone import build  # build is called implicitly by the paver driver.

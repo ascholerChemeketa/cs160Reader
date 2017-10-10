@@ -1,7 +1,7 @@
 .. include:: ../global.rst
 
 
-Other Gates
+XOR and NOT Gates
 ============================
 
 We can combine two inputs to produce an output using many rules other than **AND** or **OR**. We won't worry about what the switches would look like for the new rules below... we would have to make our simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.
@@ -63,6 +63,10 @@ Because the NOT rule applies to only one input, it can be applied to a single bi
         Input pattern   1               0               1				0
         NOT             0               1               0				1
         =============   =============   ============= 	=============	=============
+
+.. note::
+
+    People refer to a AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in every other case. Similarly, a NOR is an OR followed by a NOT and an XNOR (or ENOR) is a NOT after an XOR. You are not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what they are.
 
 
 .. pseudo_h4:: Self Check

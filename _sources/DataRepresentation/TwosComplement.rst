@@ -133,12 +133,6 @@ And from -5 back to 5:
 .. pseudo_h3:: Overflow
     :class: underlined
 
-.. sidebar:: Real world overflow
-
-    You can see this "feature" of binary representation `at work in the game Hearthstone. <http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone>`_.
-
-    Google `"game overflow integer" <https://www.google.com/#q=game+overflow+integer>`_ for more fun examples.
-
 Remember that **overflow** is when a value becomes too large to store in the bits we have. With two's complement, an overflow with a large positive value can produce a negative answer. For example, say I am working with 4-bit two's complement numbers. The largest positive number we can write in two's complement with four bits is 0111 or 7. Now say I add 5 + 5 (0101 + 0101):
 
 .. faux_code::

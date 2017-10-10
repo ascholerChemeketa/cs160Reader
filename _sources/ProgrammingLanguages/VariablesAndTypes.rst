@@ -22,7 +22,7 @@ In addition to identifying a location in memory, variables identify the **type**
 * Reals
     Also known as floats. Values that can have a fractional part and are stored as :ref:`floating point values<floating-point>`.
 * Characters.
-    Single letters stored in :ref:`ASCII<_ascii>` or some other encoding. In code, these often have single quotes around them like 'A' or 'B' or 'C'.
+    Single letters stored in :ref:`ASCII<ascii>` or some other encoding. In code, these often have single quotes around them like 'A' or 'B' or 'C'.
 * Booleans
     Values that can only be true or false. Used for making decisions. We might use a variable ``OvernightShipping`` to remember if someone asked for express delivery. In that case we would probably have an instruction somewhere that looked like: "if ``OvernightShipping`` add $5 to price".
 * Arrays

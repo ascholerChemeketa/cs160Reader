@@ -12,21 +12,18 @@ The diagrams for these circuit are drawn using the symbols shown below. Traditio
 .. figure:: Images/BasicGates.png
 
     ..
-    
+
     Key features:
-    
+
     * AND has a flat left side and is rounder, OR bends in on the left and is pointier
     * XOR looks just like OR but with an extra line behind it
     * NOT has a little circle at the tip of a triangle
 
-The negated gates are the same as the basic gates, but with the little NOT circle at the output. This helps make clear that the behavior of something like NAND is really the same as an AND gate with a NOT after it.
-    
-.. figure:: Images/NegatedGates.png
 
 Below is an **OR** gate being used in a full circuit. There are two inputs (light switches) that feed into the left side of the gate. The output of the **OR** gate comes out of the right side and travels to the light bulb.
 
 .. figure:: Images/SimpleCircuit.png
 
     ..
-    
+
     An OR gate connected to two inputs. The output is on Because the top input is on.
