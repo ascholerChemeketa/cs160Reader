@@ -31,6 +31,8 @@ Because games often involve problems with very precisely defined rules that oper
 
 .. youtube:: KFSVZlkHHmM
 
+`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e>`__
+
 More recently, IBM built a computer that beat some of the best human players at Jeopardy - a much more daunting problem for a computer. You can find `more info about that project here <https://www.youtube.com/results?search_query=ibm+watson>`__ if you wish.
 
 

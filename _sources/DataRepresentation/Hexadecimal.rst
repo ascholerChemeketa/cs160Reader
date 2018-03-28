@@ -100,6 +100,8 @@ This video reviews how hexadecimal works and provides a few more examples:
     :height: 315
     :width: 560
 
+`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163>`__
+
 |br|
 
 .. pseudo_h3:: Why Hexadecimal

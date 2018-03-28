@@ -10,7 +10,6 @@ Resources and additional materials to accompany readings in *Nine Algorithms Tha
    PageRank.rst
    DiffieHellman.rst
    ErrorCorrection.rst
-   PatternRecognition.rst
    PatternRecognition2.rst
    Compression.rst
    Authentication/index.rst

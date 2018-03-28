@@ -48,3 +48,6 @@ You are probably most familiar with the kind of operating system that runs on a 
     .. youtube:: 5ocq6_3-nEw
         :height: 320
         :width: 570
+		
+		
+    `Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e>`__

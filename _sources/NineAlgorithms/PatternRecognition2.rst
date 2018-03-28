@@ -2,7 +2,7 @@
 
 .. index:: machine learning, decision trees, neural networks
 
-Pattern Recognition, Cont. (Ch 6) 
+Pattern Recognition & Machine Learning
 =========================================
 
 Decision Trees, Neural Networks and Nearest Neighbor algorithms are all similar in that they are algorithms for recognizing patterns - for looking at incomplete information and making judgments based on it. But Decision Trees and Neural Networks share another characteristic: they are both forms of **machine learning**. In a machine learning algorithm, it is not up to a human to specify every detail of how to solve a problem. Instead, a programmer sets up a system that allows the computer to "learn" how to categorize data by looking at examples. These training examples are inputs for which the desired output is known. The computer works backwards from these samples to adjust parameters in the algorithm it is running so that it produces the desired output.
@@ -16,6 +16,8 @@ You can download the decision tree builder to experiment with decision trees fro
 
 .. youtube:: 5lM9Mq5wzJo
 
+`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521237964sagefreeman_3741054e6efb>`__
+
 |br|
 
 
@@ -27,6 +29,8 @@ This video demonstrates using the Neural Network Applet. The human contribution 
 Although you do not have to use the Neural Network program yourself, do watch this video to check out what happens when a neural network is trained. (Note: Video stops at 4:21 mark. The rest of the video shows an applet that uses a neural network to recognize symbols, you can watch that part if you want but do not need to.)
 
 .. youtube:: h4mSmqHmLRA?end=261
+
+`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521237983sagefreeman_f72e437146eb>`__
 
 |br|
 
