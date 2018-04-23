@@ -87,7 +87,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
         var output = "<table class='place-values table' style='width:600px;'>";
         var headers = "<thead><tr><th class='header'>Binary</th>";
         var decs = "<tr><th class='header'>Decimal</th>";
-        var values = "<tr><td class='header'>Charcter</td>"
+        var values = "<tr><td class='header'>Character</td>"
         for(var i = temp - 3; i < temp + 3; i++) {
             var binString = Number(i).toString(2);
             headers += "<th>" +  pad.substring(0, pad.length - binString.length) + binString + "</th>";
