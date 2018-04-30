@@ -9,10 +9,14 @@ Decision Trees, Neural Networks and Nearest Neighbor algorithms are all similar 
 
 This kind of approach makes lots of sense when we are dealing with problems for which human experts "know" the right answer but can't cleanly describe a set of rules to get to that answer; things like "does this picture have someone with sunglasses in it?" Instead of people having to explicitly describe how to solve the problem, the machine learning algorithm can presented with a series of examples (pictures for which a person has already decided *yes* or *no* sunglasses) and figure out through trial and error what works.
 
-.. pseudo_h3:: Decision Tree Applet
+.. pseudo_h3:: Decision Tree Development
     :class: underlined
     
-You can download the decision tree builder to experiment with decision trees from the course web page. The video below demonstrates how to use it. The human input to the process is the training data and the details that the system considers for each example. (In the email example in the video, someone had to decide that email length would b a criteria and the possible values were *short* or *long*). The computer's contribution is to figure out how to arrange those details into a decision tree to best categorize examples.
+This video shows using a program to develop a decision tree that decides if someone will read or skip a given email. If an email program wants to figure out which items to send to your junk mail folder, and which ones to mark important, it might do so by developing a decision tree like this one.
+
+The human input to the process is the training data and the details that the system considers for each example. (In the email example in the video, someone had to decide that email length would b a criteria and the possible values were *short* or *long*). The computer's contribution is to figure out how to arrange those details into a decision tree to best categorize examples.
+
+You do not have to actually run the program yourself, so focus mostly on how the tree is developed, what information it communicates, and how to read it. If you want to try running the program yourself, you can `find it here <http://www.aispace.org/dTree/index.shtml>`__.
 
 .. youtube:: 5lM9Mq5wzJo
 
@@ -21,16 +25,20 @@ You can download the decision tree builder to experiment with decision trees fro
 |br|
 
 
-.. pseudo_h3:: Neural Networks
+.. pseudo_h3:: Optional: Neural Network Learning Examples
     :class: underlined
     
-This video demonstrates using the Neural Network Applet. The human contribution to a neural network is deciding on how many nodes there will be and training samples that match input values to a desired output. The computer algorithm repeatedly tweaks the connection weights between nodes until it finds a set of weights that produce the desired output.
+Neural networks "learn" by adjusting the weights of connections between nodes. They see an example and then guess at the correct output; if they get it right, they strengthen the existing weights; if they get it wrong, they modify the existing weights to make that answer less likely in the future. (There are multiple ways to do these modifications, if you are interested, google "neural network training algorithms"). Here are a few websites you can check out to see this happening in practice:
 
-Although you do not have to use the Neural Network program yourself, do watch this video to check out what happens when a neural network is trained. (Note: Video stops at 4:21 mark. The rest of the video shows an applet that uses a neural network to recognize symbols, you can watch that part if you want but do not need to.)
+	
+`This website has a neural network simulation <https://playground.tensorflow.org/>`__ that you can watch go through the learning process. Hit the "Play" button on the page and watch as the network learns to categorize a 2D plane into "orange" and "blue" areas. The weights between nodes are illustrated by the thickness of the lines connecting them. Here is what it looks like:
 
-.. youtube:: h4mSmqHmLRA?end=261
+.. figure:: Images/neuralNetworkLearn.png
 
-`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521237983sagefreeman_f72e437146eb>`__
+    `Neural network learning visualization <https://playground.tensorflow.org/>`__
+
+`This website <https://cs.stanford.edu/people/karpathy/convnetjs/>`__ does not show the actual neural networks, but it does show the output as neural networks learn to do things like recognize objects in images or learn to read handwriting.  
+
 
 |br|
 
