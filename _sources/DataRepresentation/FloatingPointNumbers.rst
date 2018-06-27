@@ -110,17 +110,17 @@ It may sound a little complex, but remember it is the same idea as scientific no
             var exp = $("#digit1").val() + $("#digit2").val() + $("#digit3").val();
             var expValue = parseInt(exp, 2);
             var expValueDecimal = Math.pow(2, expValue - 4)
-            var expHTML = "\\[ egin{align*}  {" + exp + "}_2 &= " + expValue + " \\hspace{20 px} \\textrm{(Exponent bits as binary number)}  \\cr ";
+            var expHTML = "\\[ \\begin{align*}  {" + exp + "}_2 &= " + expValue + " \\hspace{20 px} \\textrm{(Exponent bits as binary number)}  \\cr ";
             expHTML+= "" + expValue + " - 4 &= " + (expValue - 4) + " \\hspace{20 px} \\textrm{(Subtract 4 for excess notation)} \\cr ";
             expHTML+= "2^{" + (expValue - 4) + "} &= " + expValueDecimal + " \\hspace{20 px} \\textrm{  (Calculate 2 to that power)} \\cr ";
             expHTML+= "\\textrm{exponent value} &= " + expValueDecimal ;
             expHTML+= " \\end{align*} \\]";
-            $("#exponent").html("\\[ egin{align*} " + exp + "_2 &= " + expValue + " \\cr \\end{align*} \\]");
+            $("#exponent").html("\\[ \\begin{align*} " + exp + "_2 &= " + expValue + " \\cr \\end{align*} \\]");
             $("#exponent").html(expHTML);
 
             var mantissa = $("#digit4").val() + $("#digit5").val() + $("#digit6").val() + $("#digit7").val();
             var mantissaVal = parseInt(mantissa, 2) / 16.0;
-            var mantissaHTML = "\\[ egin{align*} {0." + mantissa + "}_2 &= " + mantissaVal + "\\hspace{10 px} (";
+            var mantissaHTML = "\\[ \\begin{align*} {0." + mantissa + "}_2 &= " + mantissaVal + "\\hspace{10 px} (";
             if( $("#digit4").val() == "1")
                 mantissaHTML += "1/2 + ";
             if( $("#digit5").val() == "1")
@@ -140,7 +140,7 @@ It may sound a little complex, but remember it is the same idea as scientific no
 
             $("#mantissa").html(mantissaHTML);
 
-            $("#meaning").html("\\[ egin{align*} value &= \\textrm{ (sign) (exponent value)} \\cdot \\textrm{(fraction value) } \\cr ");
+            $("#meaning").html("\\[ \\begin{align*} value &= \\textrm{ (sign) (exponent value)} \\cdot \\textrm{(fraction value) } \\cr ");
             $("#meaning").append("&= " + sign + expValueDecimal + " \\cdot " + mantissaVal + " \\cr ");
             $("#meaning").append("&= " + sign + expValueDecimal * mantissaVal + " \\end{align*} \\]");
 
