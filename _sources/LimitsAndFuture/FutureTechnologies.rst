@@ -7,14 +7,14 @@ End of Moore's Law?
 
 Although it is hard to underestimate the degree to which computation has changed modern life, there are limits to what we can do with modern computers and new barriers to progress on the horizon. We have discussed problems that are proven to be unsolvable by any computer, and those that have no polynomial time solution and thus are unsolvable in practical terms on a modern computer. In addition to those algorithmic limits, physical limits are increasingly affecting our ability to build faster computers.
 
-.. sidebar:: How Big? 
+.. sidebar:: How Big?
 
-    \ `This cool animation <http://htwins.net/scale2/>`__ allows you to explore the microscopic world. (Hint: you'll find transistors at about :math:`{10}^{-7}` meters)
+    \ `This cool animation <http://scaleofuniverse.com/>`__ allows you to explore the microscopic world. (Hint: you'll find transistors at about :math:`{10}^{-7}` meters)
 
-Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly shrinking the size of computational components we have been able to build more complex and faster processors. But the exponential growth of computer power predicted by Moore's Law may be close to an end. Modern transistors are manufactured at a size of about 20 nanometers - or 1/5000th of the size of a human hair. At this scale, the gate in a transistor the blocks or allows current is only about 100 atoms wide. 
+Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly shrinking the size of computational components we have been able to build more complex and faster processors. But the exponential growth of computer power predicted by Moore's Law may be close to an end. Modern transistors are manufactured at a size of about 20 nanometers - or 1/5000th of the size of a human hair. At this scale, the gate in a transistor the blocks or allows current is only about 100 atoms wide.
 
 .. figure:: Images/nanoscale.jpg
-    
+
     `Image by US Dept. of Energy <http://www.nano.gov/nanotech-101/what/nano-size>`__
 
     A transistor is 20 nm or 1/5000th the size of a human hair.
@@ -26,5 +26,3 @@ Researchers in labs have already built transistors as small as a single atom, th
 .. youtube:: ue4z9lB5ZHg
     :height: 315
     :width: 560
-
-
