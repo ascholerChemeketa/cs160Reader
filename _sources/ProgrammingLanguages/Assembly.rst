@@ -14,14 +14,6 @@ Because strings of 0s and 1s are so hard for people to read, **assembly language
     
 The image above shows an imaginary list of machine instructions, along with what they might look like in assembly. Do not worry about the details of this particular assembly language or machine language, just recognize that each instruction is just a translation of the machine code. Each "LOAD" instruction corresponds to a machine instruction that starts with the opcode 001 that means load; each "STORE" instruction corresponds to a machine instruction that starts with the opcode 010.
 
-You can see this hypothetical program run below - it places the values 2 and 5 into memory at locations 13 and 14, then adds the values and places the result at location 15 in memory.
-
-.. figure:: Images/SumProgram.swf
-    :height: 500
-    :width: 580
-    
-    Animation from `Virgina Tech Online Interactive Modules for Teaching Computer Science <http://courses.cs.vt.edu/csonline/>`__.
-
 Although assembly is much easier to read than machine code, you probably noticed that it is still very low level. A job as simple as "add 2 and 5" took many instructions to express. For this reason, most programmers do not work in assembly most of the time. 
 
 However, assembly is the way that machine code is displayed in human readable format. Since all programs at some point become machine code, that means when a programmer is debugging a program at a low level, they will often be looking at assembly. There are also times, typically when working on an **embedded processor** (the kind of simple processor built into an electric device) when a programmer has to interact with the hardware at a very low level - in that situation assembly is the tool they use.

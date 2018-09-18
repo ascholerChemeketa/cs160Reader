@@ -24,13 +24,12 @@ The following algorithm converts a decimal number to a binary one:
       
 Here is an example of running the algorithm to convert :math:`{11}_{10}` to binary:
 
-.. figure:: Images/decimaltobinary.swf
-   :alt: Decimal to Binary Animation
-   :figwidth: 100%
-   :width: 550
-   :height: 350
+.. youtube:: TaagNvZCbjo
+   :height: 315
+   :width: 560
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`_
+*Animation used by permission of Virginia Tech*
+
    
 ..  Static example commented out...
     .. faux_code::

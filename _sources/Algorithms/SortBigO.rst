@@ -4,13 +4,13 @@
 Sorting Efficiency
 =================================
 
-To figure out how efficient selection sort is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This animation shows what that would look like for a Selection Sort on a list of 4 items:
+To figure out how efficient selection sort is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This video works through how much work there is for a Selection Sort on a list of 4 items:
 
-.. figure:: Images/worstcaseselectionsort.swf
-   :width: 550
-   :height: 450
+.. youtube:: zm75IhDgO-Y
+   :height: 315
+   :width: 560
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`__
+*Animation used by permission of Virginia Tech*
 
 If we did the same work for a selection sort on a list of 100 things (\ :math:`n = 100`), it would look like:
 

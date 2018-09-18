@@ -26,7 +26,7 @@ Addresses start from 0 and count up - this is shown in the picture above. The fi
 
 The highest possible address depends on both the computer's hardware and operating system. Although the picture to the right only shows addresses that consist of 2 hex digits (which correspond to 8 bits) and thus only go up to 255, most computers use addresses that are much longer, often 32 or 64 bits long (8 or 16 hexadecimal digits) and thus can address billions of different bytes.
 
-
+ 
 .. figure:: Images/640px-4GB_DDR3_SO-DIMM.jpg
     :figwidth: 80%
     :alt: RAM

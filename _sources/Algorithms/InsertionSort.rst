@@ -7,7 +7,9 @@
 Insertion Sort
 =================================
 
-While **Selection sort** gets the job done, it is not the only algorithm that can be used for sorting a list. **Insertion sort** is another relatively straightforward algorithm. It too divides the list into a sorted and unsorted portion, but it sorts cards by shifting each one to the left until it is larger than its neighbor - "inserting" one card at a time into the correct location. Here is a "human algorithm" for using it to sort cards:
+While **Selection sort** gets the job done, it is not the only algorithm that can be used for sorting a list. **Insertion sort** is another relatively straightforward algorithm. It too divides the list into a sorted and unsorted portion, but it sorts cards by shifting each one to the left until it is larger than its neighbor - "inserting" one card at a time into the correct location. 
+
+Here is a "human algorithm" for using it to sort cards:
 
 .. faux_code::
 
@@ -19,12 +21,13 @@ While **Selection sort** gets the job done, it is not the only algorithm that ca
     6       Advance the marker to the right one card
     7   Stop
 
-To see how the Insertion Card Sort Algorithm works, click on the animation below. Pay attention to how the sorted portion is built up. Cards keep swapping until they "find" their resting spot - they do not jump directly to it. Also, note that the sorted portion in this algorithm does not always have the smallest values, just the values that are known to be sorted relative to each other.
+To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion is built up. Cards keep swapping until they "find" their resting spot - they do not jump directly to it. Also, note that the sorted portion in this algorithm does not always have the smallest values, just the values that are known to be sorted relative to each other.
 
-.. figure:: Images/insertioncardsort.swf
-   :width: 550
-   :height: 450
+   
+.. youtube:: zDPNARGL9kY
+   :height: 315
+   :width: 560
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`__
+*Animation used by permission of Virginia Tech*
     
 .. quick_attribution:: VT

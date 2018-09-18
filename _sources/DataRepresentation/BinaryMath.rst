@@ -59,13 +59,12 @@ With slight modifications can use our normal algorithms for doing binary math. T
 
 For multi-digit numbers, simple work from right to left, adding each column and carrying as necessary:
 
-.. figure:: Images/binaryaddition.swf
-   :alt: Binary Addition Animation
-   :figwidth: 100%
-   :width: 550
-   :height: 350
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`_
+.. youtube:: CDURJ_E4ALA
+   :height: 315
+   :width: 560
+
+*Animation used by permission of Virginia Tech*
 
 
 .. index:: ! overflow
