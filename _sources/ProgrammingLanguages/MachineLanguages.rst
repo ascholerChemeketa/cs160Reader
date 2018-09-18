@@ -3,6 +3,9 @@
 
 .. index:: machine language, opcode
 
+
+.. _machine-languages:
+
 Machine Languages
 =================================
 

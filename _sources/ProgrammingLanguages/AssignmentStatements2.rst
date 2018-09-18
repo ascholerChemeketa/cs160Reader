@@ -54,7 +54,7 @@ Believe it or not, computers spend quite a lot of time simply adding one to a va
 .. pseudo_h4:: Self Check 
     :class: underlined
 
-.. mchoice:: questionanalog_1
+.. mchoice:: questionassign_1
     :answer_a: x = 6, y = 4
     :answer_b: x = 6, y = 6
     :answer_c: x = 4, y = 6

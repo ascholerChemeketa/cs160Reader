@@ -11,13 +11,13 @@ The trick used on the internet to solve this problem sounds unintuitive - we gen
 
 Because the private key is a secret only held by the website and anyone can have a copy of the public key, they give very different guarantees:
 
-#. A message someone locks with that public key can only be read by the holder of the private key. (Remember the same key cannot be used to unlock a box it locked.) Thus, anyone can use the public key to encrypt a message and be sure that only the holder of the private key can decrypt it.
+1. A message someone locks with that **public key** can only be read by the holder of the **private key**. (Remember the same key cannot be used to unlock a box it locked.) Thus, anyone can use the **public key** to encrypt a message and be sure that only the holder of the **private key** can decrypt it.
 
    This message is said to be **signed** - we can tell it came from a certain source.
 
 .. figure:: Images/guarantee2.png
 
-#. The private key can be used to prove messages come from a particular source. When a message is locked with the private key, anyone can use the public key to unlock it. But, the reader can be certain the message must be from the holder of the private key. The only way to make a lockbox the public key opens is with the private key.
+2. The **private key** can be used to prove messages come from a particular source. When a message is locked with the **private key**, anyone can use the **public key** to unlock it. But, the reader can be certain the message must be from the holder of the **private key**. The only way to make a lockbox the **public key** opens is with the **private key**.
 
 .. figure:: Images/guarantee1.png
 
