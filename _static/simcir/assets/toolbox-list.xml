@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<simcir xmlns="http://www.d-project.com/simcir/2012">
-	<device type="Ref" label="BasicSet">
-		<param name="url" value="BasicSet.xml" />
-	</device>
-	<device type="Ref" label="MoreSet">
-		<param name="url" value="MoreSet.xml" />
-	</device>
-</simcir>
