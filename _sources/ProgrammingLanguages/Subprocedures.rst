@@ -14,7 +14,7 @@ Ideally, a subprocedure works like a black box - we pass some information into i
    :width: 550
    :height: 350
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`__
+   `Animation used by permission of Virginia Tech <http://courses.cs.vt.edu/csonline/>`__
 
    
 ..  image:: Images/Subprocedure.png
@@ -35,7 +35,7 @@ If we watch behind the scenes, we can see the kind of instructions that might ma
    :height: 350
    :class: clear
 
-   `Animation used by permission of Virgnia Tech <http://courses.cs.vt.edu/csonline/>`__
+   `Animation used by permission of Virginia Tech <http://courses.cs.vt.edu/csonline/>`__
 
     
 Of course, the computer needs actual instructions like these for how to do the work. Someone somewhere must write the code for this ``Power`` procedure. But once that code is written and tested, it can be reused, avoiding the need to constantly reinvent the wheel.

@@ -31,7 +31,7 @@ Once execution hits the "return" command, the processor jumps back to the place 
 
 To put everything together, here is an example you can try running:
 
-.. codelens:: IfStatement
+.. codelens:: Subprocedure2
 
     #----------Subprocedure---------
     def Power(base, exponent):
