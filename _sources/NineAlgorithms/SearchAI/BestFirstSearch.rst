@@ -18,6 +18,5 @@ This situation - where the edges can be assigned different costs - is known as a
 
 .. youtube:: uyfZlHtXP74
 
-`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521237838sagefreeman_78d6c44dedd5>`__
 
 .. note:: This is a simplified version of an algorithm called Djiksta's shortest path algorithm. It finds the best route to every other city from a given city. You can `try it out here <http://www.cs.usfca.edu/~galles/visualization/Dijkstra.html>`__ if you like. Enter a vertex (circle/town) number to start at and press the Run Djikstra.

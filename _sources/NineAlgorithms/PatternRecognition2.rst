@@ -20,7 +20,6 @@ You do not have to actually run the program yourself, so focus mostly on how the
 
 .. youtube:: 5lM9Mq5wzJo
 
-`Closed Caption Version <https://smartplayer.captionsync.com/play.php?vid=1521237964sagefreeman_3741054e6efb>`__
 
 |br|
 

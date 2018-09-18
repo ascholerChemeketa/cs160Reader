@@ -30,9 +30,11 @@ One of the keys to Merge Sort is an algorithm for merging two sorted lists into 
 
 The video below demonstrates the process:
 
-.. youtube:: EeQ8pwjQxTM?start=0&end=197
+.. youtube:: EeQ8pwjQxTM
     :height: 315
     :width: 560
+    :start: 0
+    :end: 197
 
 Think you have it? Give it a try below. Use the ListA and ListB buttons to move an item from the two sorted lists at the bottom to the new list at the top:
 
