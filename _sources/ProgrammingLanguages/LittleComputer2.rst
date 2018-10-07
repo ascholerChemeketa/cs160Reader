@@ -11,9 +11,14 @@ Normally, a computer works its way through the instructions in memory in order. 
 .. pseudo_h3:: Decisions   
     :class: underlined     
    
-In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch. A 6XX instruction says to always branch (jump) to the instruction at memory location XX instead of advancing to the next one. The 7XX and 8XX instructions tell the computer to look at the accumulator value - if it is 0 (for 7XX) or greater than or equal to 0 (8XX), then the computer will do the branch. If the accumulator does not have the right value, the branch is ignored and the computer moves to the next instruction.    
- 
-Branch instructions are how a computer can make decisions. In high level languages, we generally use "if" statements to make decisions about which instructions to execute. At a low level, those decisions are usually implemented as possibly skipping some instructions. This video demonstrates a Little Computer program that makes a decision based on the input it gets:
+Branch instructions are how a computer can make decisions. In high level languages, we generally use "if" statements to make decisions about which instructions to execute. At a low level, those decisions are usually implemented as branches to skip certain instructions.
+
+In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch. 
+
+* A 6XX instruction says to always branch (jump) to the instruction at memory location XX instead of advancing to the next one. 
+* The 7XX and 8XX instructions tell the computer to look at the accumulator value - if it is 0 (for 7XX) or greater than or equal to 0 (8XX), then the computer will take the branch. If the accumulator does not have the right value, the branch is ignored and the computer moves to the next instruction.    
+
+This video demonstrates a Little Computer program that makes a decision based on the input it gets:
 
 .. youtube:: povKvhOyif0
     :height: 315 

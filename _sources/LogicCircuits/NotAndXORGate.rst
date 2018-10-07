@@ -12,7 +12,7 @@ We can combine two inputs to produce an output using many rules other than **AND
 .. pseudo_h3:: XOR Gates
     :class: underlined
 
-The exclusive or gate, known as **XOR** (or sometimes **EOR**) describes a gate that only outputs a 1 only if one input is on and the other off. It is the rule we can use to determine if the result of a multiplication is positive or negative. If we think of the inputs as "is the first number negative?" and "is the second number negative?" and the output as "the result is negative", we can see that the truth table below gives us the correct answer for each of the four possible situations. The only way to get a negative product is to have exactly one negative input (01 or 10), if both inputs are negative (11), the result is positive:
+The exclusive or gate, known as **XOR** describes a gate that only outputs a 1 only if one of the inputs is 1 and the other is 0. In other words, we can have either input on, but not both on.
 
 .. rst-class:: truth-table
 
@@ -27,7 +27,11 @@ The exclusive or gate, known as **XOR** (or sometimes **EOR**) describes a gate 
         1               1               0
         =============   =============   =============
 
+It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents "the first number negative" and input 2 represents "the second number is negative", then **XOR**'s output would tell us "is the answer negative". If either one of the two numbers, but not both of them, were negative, then the answer will be negative.
+
 Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one or the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts true). In this case, *or* means logical **OR** - if either part is true, the answer is true.
+
+|br|
 
 .. index::
     pair: Logic Gate; NOT
@@ -48,10 +52,7 @@ The **NOT** gate is special in that it only has one input. The output is always 
         1               0
         =============   =============
 
-It is the kind of logic we need if we know the answer to "is a certain number greater than 0?" but want to answer the question
-"is the number less than or equal to 0?". The answer to the second question is always the opposite of the first question.
-
-For example, if the number in question is -3, the answer to the first question is NO (0) and the answer to the second is YES (1). Even if I do not tell you the number in question, but I do tell you the answer to "is the number greater than 0?" is YES (1), you could determine that the answer to "is it less than or equal to 0" by applying the **NOT** rule.
+It is the kind of logic if we have a value that say represents "the number is positive" but want to have the value for "the number is not positive". Anytime we want to say "we do not have X" we can say "NOT X".
 
 Because the NOT rule applies to only one input, it can be applied to a single bit pattern like 0101. To figure out the answer, simply "flip" every bit from 1 to 0 or vice verse:
 

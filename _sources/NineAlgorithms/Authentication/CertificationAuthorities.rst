@@ -2,8 +2,7 @@
 
 .. index:: certification authorities
 
-.. index::
-  :single: signing, digital
+.. index:: signing, digital
 
 Certificate Authorities
 =========================================

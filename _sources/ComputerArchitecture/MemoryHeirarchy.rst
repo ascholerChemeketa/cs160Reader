@@ -16,15 +16,26 @@ In an ideal, simple computer there would only be one memory - the main memory. T
 
 .. pseudo_h4:: Registers
 
-A register is a memory location within the CPU itself. Because the memory is right on the CPU and because of the way it is built, it provides instant access to the information it contains. But because the space on the CPU is limited, the real estate there is very valuable and there is generally not much room for registers. Only the most immediate set of information (current instruction and a few pieces of data) is in the registers.
+The small memory location on the CPU itself. Because the memory is right on the CPU, and because of the way it is engineered, it provides basically instant access to the information it contains. But because the space on the CPU is limited, the real estate there is very valuable and there is generally not much room for registers. At any time, only the most important set of information (current instruction and a few pieces of data) is in the registers.
+
 
 .. pseudo_h4:: Cache
 
 This is special memory that is smaller and faster than the normal main memory and that is housed closer to the CPU. By maintaining a copy of parts of what is in main memory, it allows quicker access to some information. As far as the logic of a program goes, the cache doesn't really exist... we always request information from main memory (RAM). The cache just makes it so that sometimes those memory requests come back extra fast. Lots of engineering goes into figuring out how the computer should decide what is important enough to get cached.
 
+
 .. pseudo_h4:: RAM - Main Memory (Physical Memory)
 
-The "normal" main memory that we saw on the previous page. It generally runs significantly slower then the CPU - each time the CPU has to access main memory, it can represent a significant slow down. RAM generally needs to have power to maintain its state; when the power is turned off, it forgets the information it is storing. 
+The "normal" main memory that we saw on the previous page. It generally runs significantly slower then the CPU - often times hundreds of times slower. Thus each time the CPU has to access main memory, it can represent a significant slow down. RAM generally needs to have power to maintain its state; when the power is turned off, it forgets the information it is storing. 
+ 
+.. figure:: Images/640px-4GB_DDR3_SO-DIMM.jpg
+    :figwidth: 80%
+    :alt: RAM
+    
+    `Image via Wikipedia Commons <http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg>`__ - `Creative Commons CC BY SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`__
+    
+    A stick of RAM memory that might go in a laptop computer.
+
 
 .. pseudo_h4:: Secondary Memory
 

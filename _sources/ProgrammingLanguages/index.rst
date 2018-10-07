@@ -12,6 +12,9 @@ The feature that makes computers so useful is their generality. Unlike most tool
     :maxdepth: 1
 
     MachineLanguages.rst
+    LittleComputer1.rst
+    LittleComputer2.rst
     Assembly.rst
+    LittleComputer3.rst
     HighLevelLanguages.rst
     SyntaxAndVariety.rst

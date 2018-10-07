@@ -1,7 +1,9 @@
 .. include:: ../global.rst
 
 
-.. index:: assembly language
+.. index:: assembly languages
+
+.. _assembly-languages:
 
 Assembly Languages
 =================================

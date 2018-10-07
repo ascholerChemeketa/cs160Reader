@@ -31,7 +31,7 @@ Modern computers vary add many layers of complexity to this basic model. One suc
     :alt: ALU
 
     
-The arithmetic logic unit is the circuits that can do math and logic. Early processors could only do very simple operations - add an subtract numbers, compare two numbers to see which is larger, and perform manipulations using Boolean logic rules (being able to say do logical OR on two input patterns). More complex operations, like say multiplication might have to be performed via simpler operations that the ALU can do directly. Instead of multiplying two numbers, a very simple computer would have to add them repeatedly. 
+The arithmetic logic unit is the circuits that can do math and logic. Early processors could only do very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via simpler operations that the ALU can do directly. Instead of multiplying two numbers, a very simple computer would have to add them repeatedly. 
 
 As components became smaller, more and more logic could be built into ALUs - from circuits to do multiplication, to circuits to work with floating point decimals or process text. Now days, almost every processor has multiple ALUs that work in parallel and are often specialized for specific jobs.
 

@@ -17,10 +17,6 @@ Computers are built as a sequence of abstractions. Logical gates hide the messy 
     Memory.rst
     MemoryHeirarchy.rst
     MachineCycle.rst
-    LittleComputer1.rst
-    LittleComputer2.rst
-    LittleComputer3.rst
-
 
 
     

@@ -5,9 +5,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="littleComputer.css">
 
     <script>
         $(function() {
+            
             $("#compile").click(function () {
 
                 var keywords = ["HLT", "ADD", "SUB", "STA", "LDA", "BRA", "BRZ", "BRP", "INP", "OUT", "DAT"];
@@ -16,7 +18,7 @@
                 var lines = input.split(/\n/);
 
                 var linesTemp = [];
-                
+
                 for (var i = 0; i < lines.length; i++) {
                     var line = lines[i].trim();
                     var words = line.split(/\s/);
@@ -135,6 +137,33 @@
 
                 $("#output").val(output);
 
+                });
+
+
+            $("#test").click(function () {
+
+                var outputText = $("#output").val();
+                var seperator = "-------------------------------------";
+
+                var success = false;
+                if(outputText.indexOf(seperator) >= 0) {
+                    var codeStartLocation = outputText.indexOf(seperator) + seperator.length;
+                    outputText = outputText.substring(codeStartLocation);
+                    outputText = outputText.trim();
+
+                    var lines = outputText.split(/\n/);
+                    if(lines.length > 0)
+                        success = true;
+                }
+
+
+                if (success) {
+                    var programText = lines.join("/");
+                    window.open ('littleComputer.html?program='+programText,'lc',false);
+                } else {
+                    $("#output").val( $("#output").val() + "\nNo valid program to run!");
+                }
+
             });
         });
     </script>
@@ -150,40 +179,149 @@
             display: inline-block;
         }
 
+        #instructions {
+            text-align: left;
+        }
+
+        a {
+            color: #649ada;
+        }
+
+        #instructions {
+            text-align: left;
+        }
+
+        #instructionBox {
+            text-align: center;
+            border: 1px solid #333;
+            padding: 20px 20px;
+            background-color: #f4f4f4;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Little Computer Assembler</h1>
-
-    Input code into the left box. Then click "Assemble Code". The Result pane will show the output after you run the assembler. 
-    If all goes well, you will see your final code output after a line like this: "--------------------". 
-    You can copy and paste those lines (not including the "---------------" or anything above it) directly into the <a href="littleComputer.html">Little Computer</a> memory to test.
-    <br/>There is an assembly language reference at the bottom or side of the screen.
-
-    <div id="mainArea">
+	<h1>The Little Computer Assembler</h1>
+	<div id="content">
+        <div id="instructions">
+        Input code into the left box. Then click "Assemble Code". The Result pane will show the output after you run the assembler. 
+        If all goes well, you will see your final code output after a line like this: "--------------------". 
+        You can then use the "Try Code in Little Computer" button to try running the program in a <a href="littleComputer.html">Little Computer</a>.
+        <br/>There is an assembly language reference at the bottom of the page. See <a href="http://computerscience.chemeketa.edu/cs160Reader/ProgrammingLanguages/LittleComputer3.html">here for more information about writing Little Computer Assembly.</a> 
+        </div>
         <div class="area">
             <h3>Type Assembly Here:</h3>
             <textarea cols="40" rows="20" id="assembly">
 INP
 STA FIRST
-INP
-ADD FIRST
+ADD NUMBER
 OUT
 HLT
 FIRST DAT
+NUMBER DAT 5
             </textarea>
             <br/>
             <button id="compile">Assemble Code</button>
         </div>
         <div class="area">     
             <h3>Result:</h3>
-            <textarea cols="40" rows="30" id="output"></textarea>
+            <textarea cols="40" rows="20" id="output"></textarea>
+            <br/>
+            <button id="test">Try Code in Little Computer</button>
         </div>
-        <div class="area" style="padding-left: 25px;">
-            <h3>Language Reference:</h3>
-            <img src="littleComputerAssembler.png" width="500px" />
-        </div>
+
+        
+        <br/>
+        <br/>
+		
+		<div id="instructionBox">
+			<p class='componentLabel'>Instruction Guide:</p>
+			<table id="instructions">
+				<tr>
+					<th style="width: 120px;">Assembly</th>
+					<th style="width: 150px;">Machine Code</th>
+					<th style="width: 220px;">Instruction</th>
+					<th>Note</th>
+				</tr>
+				<tr style="background-color: #d8cee8;"> 
+					<td>HLT</td>
+					<td>000</td>
+					<td>Halt</td>
+					<td></td>
+				</tr>
+				<tr style="background-color: #ced6e8;">
+					<td>ADD</td>
+					<td>1XX</td>
+					<td>Add location XX</td>
+					<td></td>
+				</tr>
+				<tr style="background-color: #ced6e8;">
+					<td>SUB</td>
+					<td>2XX</td>
+					<td>Subtract location XX</td>
+					<td></td>
+				</tr>
+				<tr style="background-color: #e8dfce;">
+					<td>STA</td>
+					<td>3XX</td>
+					<td>Store to XX</td>
+					<td>STore Accumulator</td>
+				</tr>
+				<tr style="background-color: #e8dfce;">
+					<td>LDA</td>
+					<td>5XX</td>
+					<td>Load from XX</td>
+					<td>LoaD Accumulator</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>BRA</td>
+					<td>6XX</td>
+					<td>Branch always to XX</td>
+					<td>BRanch Always</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>BRZ</td>
+					<td>7XX</td>
+					<td>Branch if > 0 to XX</td>
+					<td>BRanch if Zero</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>BRP</td>
+					<td>8XX</td>
+					<td>Branch if >= 0 to XX</td>
+					<td>BRanch if Positive</td>
+				</tr>
+				<tr style="background-color: #cee8d1;">
+					<td>INP</td>
+					<td>901</td>
+					<td>Get input</td>
+					<td></td>
+				</tr>
+				<tr style="background-color: #cee8d1;">
+					<td>Output</td>
+					<td>902</td>
+					<td>Output</td>
+					<td></td>
+				</tr>
+				<tr style="background-color: #ffff00;">
+					<td>DAT</td>
+					<td></td>
+					<td></td>
+                    <td>Used to say "store data here". Examples:<br>
+                        <ul>
+                            <li>
+                                X DAT : "Make this location be called X, leave it blank to store data.
+                            </li>
+                            <li>
+                                Y DAT 5 : "Make this location be called Y, Start it with value 5.
+                            </li>
+                        </ul>
+                    </td>
+				</tr>
+			</table>
+			<p class="note">XX indicates a two-digit memory address</p>
+		</div>
     </div>
 </body>
 </html>

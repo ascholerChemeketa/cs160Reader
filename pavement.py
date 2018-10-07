@@ -17,7 +17,7 @@ options(
     sphinx = Bunch(docroot=".",),
 
 
-	# latex = Bunch(
+	# build = Bunch(
     #     builddir="../builtlatex/CS160Reader",
     #     sourcedir="_sources",
     #     outdir="../builtlatex/CS160Reader",

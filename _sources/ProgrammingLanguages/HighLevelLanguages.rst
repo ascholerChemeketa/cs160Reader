@@ -3,6 +3,8 @@
 
 .. index:: high level languages
 
+.. _high-level-languages:
+
 High Level Programming Languages
 =================================
 
