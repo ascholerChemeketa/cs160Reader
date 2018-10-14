@@ -155,9 +155,17 @@ h1 {
 			}
 			$('#memoryAddresses').text(addressesText);
 			
-			
+			function isValidKey(keyCode) {
+				if((keyCode >= '0'.charCodeAt() && keyCode <= '9'.charCodeAt()) ||
+					keyCode == '-'.charCodeAt() ||
+					keyCode == '\r'.charCodeAt() ) {
+					return true;
+				}
+				return false;
+			}
+
 			$('#memoryBody').on('keypress', function(e) {
-			    if((e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt()) && e.which != '\r'.charCodeAt()) {
+			    if(!isValidKey(e.which)) {
 			        e.preventDefault();
 			    }
 				
@@ -192,11 +200,13 @@ h1 {
 			
 			//step
             $('#Input').on('keypress', function(e) {
-			    if(e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt()) {
+			    if(!isValidKey(e.which)) {
 			        e.preventDefault();
 			    }
-				if(e.which == '\r'.charCodeAt())
+				if(e.which == '\r'.charCodeAt()) {
+			        e.preventDefault();
 					doStep();
+				}
 			}); 
 			
 			

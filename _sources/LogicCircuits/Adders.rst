@@ -123,6 +123,7 @@ The circuit shown above is known as a **half adder**. To add larger numbers, we 
 	    {"from":"dev2.in0","to":"dev4.out0"},
 	    {"from":"dev2.in1","to":"dev5.out0"},
 	    {"from":"dev3.in0","to":"dev1.out0"},
+	    {"from":"dev3.in1","to":"dev6.out0"},
 	    {"from":"dev4.in0","to":"dev0.out0"},
 	    {"from":"dev5.in0","to":"dev0.out0"},
 	    {"from":"dev6.in0","to":"dev0.out0"},
