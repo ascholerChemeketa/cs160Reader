@@ -220,6 +220,7 @@ h1 {
             $('#resetButton').on('click', null, function (e) {
 				$('#PC').val(0);
 				$('#ACC').val(0);
+				$('#Output').val('');
 				getInstruction();
 				$('#Input').prop('disabled', true);
 				$('#memHighlight').css('margin-top', '1.2em');
