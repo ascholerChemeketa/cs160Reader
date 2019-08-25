@@ -13,6 +13,10 @@ master_url = 'http://127.0.0.1:8000'
 master_app = 'CS160Reader'
 serving_dir = "../built/CS160Reader"
 
+
+minify_js = True
+minifiedjs = True
+
 options(
     sphinx = Bunch(docroot=".",),
 
