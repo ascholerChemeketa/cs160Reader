@@ -7,7 +7,7 @@
 Merging
 =================================
 
-A problem solving method that is often utilized in computer science is called **divide-and-conquer**. In this paradigm, a problem is repeatedly divided into smaller and smaller sub-problems, until the solution to individual sub-problems becomes obvious. The solutions to these sub-problems are then combined to form a solution to the original problem.
+A problem-solving method that is often utilized in computer science is called **divide-and-conquer**. In this paradigm, a problem is repeatedly divided into smaller and smaller sub-problems, until the solution to individual sub-problems becomes obvious. The solutions to these sub-problems are then combined to form a solution to the original problem.
 
 The sorting algorithms we have learned to this point (Insertion sort and Selection sort) have been **quadratic** time algorithms: they require in the worst case :math:`O(n^2)` amount of time to sort **n** items. There are a number of sorting algorithms that perform much better than that - a common feature of most of them is some kind of reliance on a divide and conquer strategy. The algorithm we are going to examine is **Merge Sort**.
 

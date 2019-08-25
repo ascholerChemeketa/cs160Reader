@@ -7,9 +7,9 @@
 Selection Sort Code
 =================================
 
-Turning the selection sort into an algorithm for a computer requires a little more detail than the version a human can use to sort cards. The basic strategy is the same, but instead of a marker and two hands we need to use variables to store locations in the list that we care about.
+Turning the selection sort into an algorithm for a computer requires a little more detail than the version a human can use to sort cards. The basic strategy is the same, but instead of a marker and two hands, we need to use variables to store locations in the list that we care about.
 
-In the code below, ``i`` is equivalent to the black line - it marks the start of the unsorted portion of the list. ``j`` is the right hand - it stores the location we are at as we scan for the next smallest card. Finally, ``currentMinIndex`` is the left hand - it remembers the  where the smallest value we have seen as we sweep through the unsorted part of the list. Also, recall that ``list[j]`` means "the value in the list at location j".
+In the code below, ``i`` is equivalent to the black line - it marks the start of the unsorted portion of the list. ``j`` is the right hand - it stores the location we are at as we scan for the next smallest card. Finally, ``currentMinIndex`` is the left hand - it remembers where the smallest value we have seen is as we sweep through the unsorted part of the list. Also, recall that ``list[j]`` means "the value in the list at location j".
 
 Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.
 

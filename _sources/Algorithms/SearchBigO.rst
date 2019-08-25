@@ -12,7 +12,7 @@ We already have discusses the fact that binary search is much more efficient tha
 .. pseudo_h3:: Linear Search
     :class: underlined
     
-Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In the best case, that paper might be at the top of the pile - it would only take one unit of work. In the worst case, if we go through the pile from top to bottom, it would be the bottom paper in the pile - we would have to look at every single paper. This worst case would also apply if the paper was not even in the stack - we would have to check every paper to figure that out. The average would be somewhere between those two: sometimes we get lucky and find it early, sometimes we are less lucky - in general we would have to look at half of the papers.
+Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In the best case, that paper might be at the top of the pile - it would only take one unit of work. In the worst case, if we go through the pile from top to bottom, it would be the bottom paper in the pile - we would have to look at every single paper. This worst case would also apply if the paper was not even in the stack - we would have to check every paper to figure that out. The average would be somewhere between those two: sometimes we get lucky and find it early, sometimes we are less lucky - in general, we would have to look at half of the papers.
 
 Here are those three scenarios summarized:
 

@@ -7,11 +7,11 @@
 Binary Search
 =================================
 
-If a list is sorted, we can describe a more efficient algorithm than linear search. For a sorted list, any value you check gives you some information about the relative location of the thing you are looking for. Imagine you pick up a phone book looking for "Davis, Sue". You flip to the middle somewhere and see "Jones" - oops you are too far in, so you jump way earlier in the book. Now you see "Evans" - still too far back - so you jump earlier again. Then you see "Clark" - that means you need to jump back part way to where "Evans" was...
+If a list is sorted, we can describe a more efficient algorithm than linear search. For a sorted list, any value you check gives you some information about the relative location of the thing you are looking for. Imagine you pick up a phone book looking for "Davis, Sue". You flip to the middle somewhere and see "Jones" - oops you are too far in, so you jump way earlier in the book. Now you see "Evans" - still too far back - so you jump earlier again. Then you see "Clark" - that means you need to jump back partway to where "Evans" was...
 
-This is essentially the strategy of **binary search**. To do binary search for a particular value (``key``) in a list, check the middle item in the list. If it is not the key and the key is smaller than the middle item, the target must be in the first half of the list. If the target is larger than the middle item, the  target must be in the last half of the list. Thus, one unsuccessful comparison reduces the number of items left to check by half!
+This is essentially the strategy of **binary search**. To do binary search for a particular value (``key``) in a list, check the middle item in the list. If it is not the key and the key is smaller than the middle item, the target must be in the first half of the list. If the target is larger than the middle item, the target must be in the last half of the list. Thus, one unsuccessful comparison reduces the number of items left to check by half!
 
-To continue, if the item you are looking for is less than the value you just checked, throw out everything at or above the middle. If the value you are looking for is bigger, throw out from the middle down. Then repeat the process but only using the values you have not thrown out. The splitting process continues until the target is located or there is nothing in the list left.
+To continue, if the item you are looking for is less than the value you just checked, throw out everything at or above the middle. If the value you are looking for is bigger, throw out from the middle down. Then repeat the process but only using the values you have not thrown out. The splitting process continues until the target is located or there is nothing left in the list.
 
 Try watching the algorithm run on various values. Note that items that have turned white have been "thrown out" and no longer need to be worried about. Gray items show the range of possible locations that still need to be checked:
     
@@ -190,7 +190,7 @@ Try watching the algorithm run on various values. Note that items that have turn
     <br/>
 
 
-Below are the main steps of the binary search algorithm, expressed in pseudocode. To do binary search you need to keep track of the ``lowIndex``, the lowest possible location the number could be at, and the ``highIndex``, the highest possible location. Each time at each step of the loop you calculate the middle between those two location and check that ``middleIndex``. If you do not find what you are looking for, you change either the low or high boundary to "throw out" half of the remaining items. Try running the algorithm by hand and make sure you can predict the values the animation above shows.
+Below are the main steps of the binary search algorithm, expressed in pseudocode. To do binary search you need to keep track of the ``lowIndex``, the lowest possible location the number could be at, and the ``highIndex``, the highest possible location. Each time at each step of the loop you calculate the middle between those two locations and check that ``middleIndex``. If you do not find what you are looking for, you change either the low or high boundary to "throw out" half of the remaining items. Try running the algorithm by hand and make sure you can predict the values the animation above shows.
 
 .. faux_code::
 

@@ -7,7 +7,7 @@
 Merge Sort Efficiency
 =================================
 
-So how efficient is Merge Sort? Well, for starters, remember that merging **n** items takes :math:`O(n)` work. In other words, merging 5 items takes ~5 units of work, merging 20 items, takes ~20 units of work, etc... Now lets do a rough analysis of how long it takes to do a merge sort on a list of length 1024.
+So how efficient is Merge Sort? Well, for starters, remember that merging **n** items takes :math:`O(n)` work. In other words, merging 5 items takes ~5 units of work, merging 20 items, takes ~20 units of work, etc... Now let's do a rough analysis of how long it takes to do a merge sort on a list of length 1024.
 
 All the hard work takes place as we merge the lists back together:
 
@@ -81,7 +81,7 @@ The table below shows this and the pattern for the rest of the level:
 
 Note that each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can say each level takes :math:`O(n)` work.
 
-Th only other thing we need to figure out is "how many levels are required?" The table above skips a few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like::
+The only other thing we need to figure out is "how many levels are required?" The table above skips a few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like::
 
     1024 → 512 → 256 → 128 → 64 → 32 → 16 → 8 → 4 → 2 → 1
 

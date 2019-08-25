@@ -27,7 +27,7 @@ So how does merging help us sort? Well, with it we can define Merge Sort (for a 
 
 .. index:: recursive
       
-It looks almost like cheating... *How do you sort a list? You cut it in half and sort each half, then merge the halves together!* Note that the definition for **MergeSort** calls **MergeSort** on the halves of the list - that means it is a **recursive** definition, a function that is defined in terms of itself. So your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those gets split into half again... Until finally we have lists of size 1. A list of size 1 is always sorted, so then we start merging the sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of length 2 back into a sorted list of length 4... 
+It looks almost like cheating... *How do you sort a list? You cut it in half and sort each half, then merge the halves together!* Note that the definition for **MergeSort** calls **MergeSort** on the halves of the list - that means it is a **recursive** definition, a function that is defined in terms of itself. So your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those gets split into half again... Until finally, we have lists of size 1. A list of size 1 is always sorted, so then we start merging the sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of length 2 back into a sorted list of length 4... 
 
 The video below demonstrates the process:
 
@@ -41,7 +41,7 @@ The video below demonstrates the process:
 
     *A point of accuracy you can feel free to ignore...*
     
-    The video and animation below merge lists in a slightly different order than the pseudocode. According to the pseudocode (and real implementations of Merge Sort), we would merge indexes 1 and 2, then 3 and 4, then {1, 2} and {3, 4}, then 5 and 6, then 7 and 8, then {5, 6} and {7, 8}, then finally {1, 2, 3, 4} and {5, 6, 7, 8}. Basically, we always go do as much as we can on the left half of the list we are working on, then back track to the right side. This order does not change anything about the efficiency or general process, but know that if you run the pseudocode algorithm by hand you will notice differences from the video/animation.
+    The video and animation below merge lists in a slightly different order than the pseudocode. According to the pseudocode (and real implementations of Merge Sort), we would merge indexes 1 and 2, then 3 and 4, then {1, 2} and {3, 4}, then 5 and 6, then 7 and 8, then {5, 6} and {7, 8}, then finally {1, 2, 3, 4} and {5, 6, 7, 8}. Basically, we always go do as much as we can on the left half of the list we are working on, then backtrack to the right side. This order does not change anything about the efficiency or general process, but know that if you run the pseudocode algorithm by hand you will notice differences from the video/animation.
 
 The animation below allows you to step through the process on a randomly generated list. 
     
