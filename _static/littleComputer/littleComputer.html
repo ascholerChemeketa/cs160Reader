@@ -220,6 +220,7 @@ h1 {
             $('#resetButton').on('click', null, function (e) {
 				$('#PC').val(0);
 				$('#ACC').val(0);
+				$('#Output').val('');
 				getInstruction();
 				$('#Input').prop('disabled', true);
 				$('#memHighlight').css('margin-top', '1.2em');
@@ -531,11 +532,11 @@ h1 {
 				</tr>
 				<tr style="background-color: #cee8e7;">
 					<td>7XX</td>
-					<td>Branch if ACC = 0 to XX</td>
+					<td>Branch to XX if ACC equals 0</td>
 				</tr>
 				<tr style="background-color: #cee8e7;">
 					<td>8XX</td>
-					<td>Branch if ACC >= 0 to XX</td>
+					<td>Branch to XX if ACC >= 0</td>
 				</tr>
 				<tr style="background-color: #cee8d1;">
 					<td>901</td>
