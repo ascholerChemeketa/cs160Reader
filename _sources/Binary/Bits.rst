@@ -26,7 +26,7 @@ A **bit** (short for "BInary digiT") is a single on/off value. Only these two va
 * A tiny part of the light-reflecting surface of a CD.
 * Part of a radio signal.
 
-Computers do all of their processing in terms of bits - any piece of information a computer stores or manipulates is stored as a sequence of these on/off values. For different purposes a computer may use any of the mechanisms listed above (or many others) to represent those bits.
+Computers do all of their processing in terms of bits - any piece of information a computer stores or manipulates is stored as a sequence of these on/off values. For different purposes, a computer may use any of the mechanisms listed above (or many others) to represent those bits.
 
 
 .. pseudo_h4:: Self Check 
@@ -52,7 +52,7 @@ Computers do all of their processing in terms of bits - any piece of information
     :answer_d: A bit is always implemented as something electrical.
     :correct: d
     :feedback_a: A light bulb that is "Off" represents the same thing as an "Off" represented by a hole that is not punched
-    :feedback_b: This is how hard drives store informatio
+    :feedback_b: This is how hard drives store information
     :feedback_c: Computers do this all the time - turn an electrical signal in a circuit into a magnetic field on a disk. Or turn a hole into a punch card into an electrical signal
     :feedback_d: 
     

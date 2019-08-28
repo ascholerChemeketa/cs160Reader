@@ -5,9 +5,9 @@
 Information Systems
 =====================================
  
-In some ways **Information Systems** attacks the same basic problem as Information Technology, "how do use technology to support businesses and organizations?" However, while IT is more concerned with the technology side of the problem, Information Systems comes at the problem from the business side. They are interested in questions like: "What information does the enterprise need?", "How is that information generated?", "Is it delivered to the people who need it? Is it presented to them in ways that permit them to use it readily?"
+In some ways **Information Systems** attacks the same basic problem as Information Technology, "how should we use technology to support businesses and organizations?" However, while IT is more concerned with the technology side of the problem, Information Systems comes at the problem from the business side. They are interested in questions like: "What information does the enterprise need?", "How is that information generated?", "Is it delivered to the people who need it? Is it presented to them in ways that permit them to use it readily?"
 
-Information Systems degrees generally have a blend of courses in technology, business and communications.  IS professionals must understand both technical and organizational factors so they can serve as a bridge between the technical and management groups in an organization. The graph below shows this expected range of knowledge: a thorough knowledge of how to understand and meet business needs, with enough knowledge of applications and software development to make knowledgeable decisions about how to use those tools
+Information Systems degrees generally have a blend of courses in technology, business, and communications.  IS professionals must understand both technical and organizational factors so they can serve as a bridge between the technical and management groups in an organization. The graph below shows this expected range of knowledge: a thorough knowledge of how to understand and meet business needs, with enough knowledge of applications and software development to make knowledgeable decisions about how to use those tools
 
 
 .. figure:: Images/fieldsIS.png

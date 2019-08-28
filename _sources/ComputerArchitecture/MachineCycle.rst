@@ -7,7 +7,7 @@
 The Machine Cycle
 =================================
 
-When software is installed onto a computer (by downloading it from the Internet or installing off a disk), the program and any associated files are stored in secondary memory. The program's code is stored as a series of bits that represent machine instructions. The code remains there until the user chooses to execute the program in question, on which point sections of the code are loaded into the computers memory.
+When software is installed onto a computer (by downloading it from the Internet or installing off a disk), the program and any associated files are stored in secondary memory. The program's code is stored as a series of bits that represent machine instructions. The code remains there until the user chooses to execute the program in question, on which point sections of the code are loaded into the computer's memory.
 
 .. image:: Images/execution.gif
     :alt: Execution
@@ -22,12 +22,12 @@ To actually run the code, the processor then needs to retrieve instructions one 
     In the fetch cycle, the control unit looks at the program counter register (PC) to get the memory address of the next instruction. It then requests this instruction from main memory and places it in the instruction register (IR).
 
 * Decode
-    Here, the control unit checks the instruction that is now stored within the instruction register (IR). It looks at the instruction - which is just a sequence of 0s and 1s and decides what needs to be done. Does the instruction say to add two numbers? Does it say to load a value from memory? Where in memory? The control unit interprests the binary instruction to answer questions like these.
+    Here, the control unit checks the instruction that is now stored within the instruction register (IR). It looks at the instruction - which is just a sequence of 0s and 1s and decides what needs to be done. Does the instruction say to add two numbers? Does it say to load a value from memory? Where in memory? The control unit interprets the binary instruction to answer questions like these.
 
 * Execute
     Now the control unit sends the signals that tell the ALU, memory, and other components signals to cause them to perform the correct work.
 
-The video below demonstrates a simple program running on computer. This imaginary computer shown uses special registers to hold memory address (MAR) and data that just came in from memory (MBR). It also uses registers called AL and BL to hold values temporarily. Don't worry about the details of those other registers, focus on the fetch/decode/execute cycle and how the PC and IR are used.
+The video below demonstrates a simple program running on a computer. This imaginary computer shown uses special registers to hold memory address (MAR) and data that just came in from memory (MBR). It also uses registers called AL and BL to hold values temporarily. Don't worry about the details of those other registers, focus on the fetch/decode/execute cycle and how the PC and IR are used.
 
 
 .. youtube:: jcHuWnIt6eI

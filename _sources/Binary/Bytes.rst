@@ -6,7 +6,7 @@
 Bytes
 ============================
 
-One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make is appropriate for storing things like a single character of text - with 256 different values we can assign a different 8-bit pattern to each letter, digit, punctuation mark, etc...
+One bit of information is so little that usually computer memory is organized into groups of eight bits. Each eight-bit group is called a byte. Because it has 8 bits, it can store :math:`2^8` or 256 different values. This make it appropriate for storing things like a single character of text - with 256 different values we can assign a different 8-bit pattern to each letter, digit, punctuation mark, etc...
 
 When more than eight bits are required for some data, several bytes are used. For example, typically:
 
@@ -48,7 +48,7 @@ When we are talking about much larger chunks of information, like the informatio
 
 .. fillintheblank:: bytes_2
 
-    How many bytes are in 4 KB ?
+    How many bytes are in 4KB ?
 
     - :4096: Correct!
       :[^\d]+: Your answer should be a number

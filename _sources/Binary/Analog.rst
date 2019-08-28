@@ -5,13 +5,13 @@
 Analog and Digital 
 =====================
 
-The computers we are most familiar with are electrical devices. Normally, an electrical signal is an **analog** phenomenon - meaning it can change continuously change in value. The voltage flowing through a circuit can take on in infinite number of possible values. In the figure below, imagine the wave as representing the voltage on a wire over time - the voltage changes smoothly over time.
+The computers we are most familiar with are electrical devices. Normally, an electrical signal is an **analog** phenomenon - meaning it can change continuously change in value. The voltage flowing through a circuit can take on an infinite number of possible values. In the figure below, imagine the wave as representing the voltage on a wire over time - the voltage changes smoothly over time.
 
 .. image:: Images/analog_wave.gif
     :alt: An analog signal
     :class: padded
    
-Now imagine we cared about the exact voltage at any point in time - that 3.00000 volts means one thing and 3.00001 volts means something else. Not only is that difference so small we could not even see if in the figure, it would be very difficult to build a machine that could reliably produce or exactly the right signal or measure that signal with perfect accuracy. Even the slightest bit of noise would make it impossible to tell whether we were looking at 3.00000 volts or 3.00001 volts.
+Now imagine we cared about the exact voltage at any point in time - that 3.00000 volts means one thing and 3.00001 volts means something else. Not only is that difference so small we could not even see it in the figure, it would also be very difficult to build a machine that could reliably produce or exactly the right signal or measure that signal with perfect accuracy. Even the slightest bit of noise would make it impossible to tell whether we were looking at 3.00000 volts or 3.00001 volts.
 
 .. index:: ! digital
 

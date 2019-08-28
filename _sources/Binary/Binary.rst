@@ -47,7 +47,7 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
         :alt: Noise in a digital signal
         :class: padded
 
-    Image now we are trying to copy the red signal but produce the grey one. When we attempt to read the copy, we can easily tell what the signal was supposed to be and restore it to the correct value. Because any noise introduced with a copy can be immediately filtered out, we can copy the information as many times as needed without worrying about the errors compounding. This is essential in a computer system, where bit patterns (patterns of one and zero, or on and off) are copied back and forth between the processor and memory millions of times a second. The copies have to be perfect.
+    Imagine now we are trying to copy the red signal but produce the grey one. When we attempt to read the copy, we can easily tell what the signal was supposed to be and restore it to the correct value. Because any noise introduced with a copy can be immediately filtered out, we can copy the information as many times as needed without worrying about the errors compounding. This is essential in a computer system, where bit patterns (patterns of one and zero, or on and off) are copied back and forth between the processor and memory millions of times a second. The copies have to be perfect.
 
 #. Anything that can be represented with some sort of pattern can be represented with a binary pattern
     It might seem hard right now to imagine how we could represent things as diverse as numbers, music, images and text can all be represented by just "on" and "off". But we will learn tricks for converting anything that can be represented as any kind of pattern using just these two values.
