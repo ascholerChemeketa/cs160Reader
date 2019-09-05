@@ -8,7 +8,7 @@ The OR Gate
 
 The basic building block of computers is the switch - in modern computers a transistor - able to turn a signal on or off. A computer does all its work with these switches, manipulating the binary information that represents data. These switches are combined in various ways to produce what are known as **logic gates**. Logic gates take one or more input signals and produce an output based on the current input.  
 
-As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to light bulb if either switch is on. *(Note that this is a highly simplified version of how electrical circuits really work)*  In the figure below, the electricity is being routed through the top switch that is on. The fact that the bottom switch is off does not change the fact that power can reach the bulb.
+As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to a light bulb if either switch is on. *(Note that this is a highly simplified version of how electrical circuits really work)*  In the figure below, the electricity is being routed through the top switch that is on. The fact that the bottom switch is off does not change the fact that power can reach the bulb.
 
 .. image:: Images/switchesOr1.png
 
@@ -38,7 +38,7 @@ The only way the light bulb will not be on is if both switches are in the off po
 
 .. index:: truth table, Boolean logic
 
-These switches are demonstrating the Boolean logic rule of **OR**. The OR rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a **truth table**. A truth table shows each possible set of input and the output those input produces. 
+These switches are demonstrating the Boolean logic rule of **OR**. The OR rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a **truth table**. A truth table shows each possible set of input and the output those inputs produces. 
 
 For the circuit shown above, we can think of the top switch as Input 1 and the bottom switch as Input 2. We will call on "1" and off "0". There are four possible sets of inputs for the two switches: 00 - both off, 10 - top on, 01 - bottom on, 11 - both on. In every situation but 00, the output is on (1). The truth table below shows those four possibilities:
 

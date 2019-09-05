@@ -45,7 +45,7 @@ Try reading these values:
 
         -6.
 
-        Leading 1 says "negative" and requires us to flip last three bits to 101. That means 5. Add one to get 6.
+        Leading 1 says "negative" and requires us to flip the last three bits to 101. That means 5. Add one to get 6.
 
 
 .. tabbed:: exercise3
@@ -58,7 +58,7 @@ Try reading these values:
 
         -2.
 
-        Leading 1 says "negative" and requires us to flip last three bits to 001. That means 1. Add one to get 2.
+        Leading 1 says "negative" and requires us to flip the last three bits to 001. That means 1. Add one to get 2.
 
 
 We can use this same idea with more than 4 bits. We always just use the first bit as the sign and the rest of the bits as the value and use the same rules for negative numbers. Thus the 8-bit two's complement number 11011000 would mean: first bit is 1, so negative, flip the last seven bits to 0100111, that is 39 (32 + 4 + 2 + 1), add one to get 40, so the value is -40.
@@ -103,7 +103,7 @@ It is also easy to find the inverse of a number. To turn a negative into a posit
 
 .. topic:: Two's Complement Conversion
 
-    To change the sign of a number, flip all the bits and add one. Ignore any carry past last original digit.
+    To change the sign of a number, flip all the bits and add one. Ignore any carry past the last original digit.
 
 For example, here is converting 5 to -5:
 
@@ -142,7 +142,7 @@ Remember that **overflow** is when a value becomes too large to store in the bit
     \ :underlined:`+0101`   (5)
     \  1010   (-6 in two's complement)
 
-As an unsigned number, 1010 would mean ten. But in two's complement that means -6! The same thing can happen with negative numbers - if a negative number becomes too small it can wrap around to positive numbers!
+As an unsigned number, 1010 would mean ten. But in two's complement, that means -6! The same thing can happen with negative numbers - if a negative number becomes too small it can wrap around to positive numbers!
 
 Normally integers are stored as 32-bit values. This gives a range of approximately +2.147 billion to -2.147 billion - usually enough to hold our answers. But if your math problem involves an answer that is too big you can "wrap around". Below I have added code to make your web browser try to display the answer to some math problems. The answers to both are wrong as we are overflowing and wrapping from + to - or vice verse:
 

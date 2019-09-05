@@ -56,7 +56,7 @@ So :math:`{1\textrm{EA}}_{16}` = **1** * 256 + **14** * 16 + **10** * 1 = :math:
 .. pseudo_h3:: Conversion To and From Binary
     :class: underlined
 
-In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same number of values using 4 bits: 0000-1111 (0-15). What that means, is that each hex digit represents the same information as four binary digits - there is a direct mapping between a hex digit and a four bit pattern:
+In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same number of values using 4 bits: 0000-1111 (0-15). What that means, is that each hex digit represents the same information as four binary digits - there is a direct mapping between a hex digit and a four-bit pattern:
 
 
 .. rst-class:: hex1
@@ -107,7 +107,7 @@ This video reviews how hexadecimal works and provides a few more examples:
 .. pseudo_h3:: Why Hexadecimal
     :class: underlined
 
-Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same. Those two binary strings listed above look like this in hex: :math:`{3976}_{16}` and :math:`{3966}_{16}` - it is a little easier to say the values and to see where the difference is, isn't it? Because changing switching from binary to hex is so easy, hexadecimal is used to display binary values in a more human readable form. You will see an example of where this is used in web page design on the next page.
+Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same. Those two binary strings listed above look like this in hex: :math:`{3976}_{16}` and :math:`{3966}_{16}` - it is a little easier to say the values and to see where the difference is, isn't it? Because changing switching from binary to hex is so easy, hexadecimal is used to display binary values in a more human-readable form. You will see an example of where this is used in web page design on the next page.
 
 .. pseudo_h4:: Self Check
     :class: underlined

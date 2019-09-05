@@ -7,7 +7,7 @@ Breadth First Search
 
 Say a computer is trying to find the best route from one location to another - it knows about a whole bunch of locations, and paths that can be used to get from one location to another location. One strategy for finding a path from a particular location A to some other location Z is to start from A and explore every possible location you can get directly from A - all the places you can get to in exactly one "step". Once you have done that, explore every location you can get to from those locations - all the places you could get to using two "steps" from location A.
 
-The animation below visualizes this exact algorithm. You can watch the computer "explore" all the paths of length 1, then all the paths of length 2, then all the paths of length 3, etc... until it discovers a path to get from the starting location in the lower left corner to its destination in the upper right corner. The dots (**verticies** in the language used in computer science) represent locations and the lines between them (known as **edges**) represent possible "steps". As the computer explores a possible step it is turned red:
+The animation below visualizes this exact algorithm. You can watch the computer "explore" all the paths of length 1, then all the paths of length 2, then all the paths of length 3, etc... until it discovers a path to get from the starting location in the lower-left corner to its destination in the upper right corner. The dots (**vertices** in the language used in computer science) represent locations and the lines between them (known as **edges**) represent possible "steps". As the computer explores a possible step it is turned red:
 
 .. raw:: html
 

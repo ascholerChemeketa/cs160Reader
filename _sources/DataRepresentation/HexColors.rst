@@ -3,7 +3,7 @@
 Hex Data & Colors
 ============================
 
-Hexadecimal is used to display large binary values for people to read. Although all data is stored as binary, for many pieces of data a computer works with, the 1s and 0s have a meaning defined by their data type; the computer interprets a sequence of 1s and 0s as a signed integer, or an ASCII character, or a floating point decimal. But some pieces of information do not have a natural type. Things like memory addresses in a computer are just binary sequences (00000, 00001, etc...). When a computer has to display data that does not have a "type" or for which the type is unknown, the raw information is typically shown in hexadecimal.
+Hexadecimal is used to display large binary values for people to read. Although all data is stored as binary, for many pieces of data a computer works with, the 1s and 0s have a meaning defined by their data type; the computer interprets a sequence of 1s and 0s as a signed integer, or an ASCII character, or a floating-point decimal. But some pieces of information do not have a natural type. Things like memory addresses in a computer are just binary sequences (00000, 00001, etc...). When a computer has to display data that does not have a "type" or for which the type is unknown, the raw information is typically shown in hexadecimal.
 
 .. figure:: Images/hexaddress.png
    :alt: Hex display of data
@@ -11,9 +11,9 @@ Hexadecimal is used to display large binary values for people to read. Although 
 
    ..
 
-   A programmers view of two pieces of information in a program.
+   A programmer's view of two pieces of information in a program.
 
-The image above shows a screen shot of looking at data while debugging a computer program. **x** is known to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the decimal number 7. **memory_address** is a memory address for an unknown type (void \*) - so its bits (001010001111111010111000) are displayed in hex as 28feb8.
+The image above shows a screenshot of looking at data while debugging a computer program. **x** is known to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the decimal number 7. **memory_address** is a memory address for an unknown type (void \*) - so its bits (001010001111111010111000) are displayed in hex as 28feb8.
 
 .. index:: hex colors
 

@@ -7,17 +7,17 @@
 Floating Point Numbers
 =======================================
 
-Computers generally store data in fixed sized chunks. Hardware can more efficiently handle data if it is assumed that integers are represented with 32-bits, doubles with 64-bits and so on. But with a fixed number of bits to store decimal values, we are left with a hard choice: how many bits should we have on either side of the binary point?
+Computers generally store data in fixed-sized chunks. Hardware can more efficiently handle data if it is assumed that integers are represented with 32-bits, doubles with 64-bits and so on. But with a fixed number of bits to store decimal values, we are left with a hard choice: how many bits should we have on either side of the binary point?
 
 Imagine we are only using 8 bits to store decimal numbers. If we do not worry about negative values and assume that there are always 4 digits on each side of the decimal - something like 1010.0110 - that means that the largest value we can represent is 15.9375 (1111.1111). The smallest non-zero value would be 0.0625 (0000.0001). If we use only 2 bits to represent integers and 6 to represent fractional values - like 10.101101 - we could represent smaller values. With 00.000001 we could represent 0.015625; but with this scheme, the largest value we could now represent would be 3.984375 (11.111111).
 
-Which of these two formats would be best? 4.4? or 2.6? There is no good answer. Sometimes we care about accurately representing small values and do not care about large ones. Other times, we need to represent larger values. A system with a fixed binary point, like where there are always 2 places to the left of the . and 6 to the right, or 4 to the left and 4 to the right, locks us into one particular set of compromises.
+Which of these two formats would be best? 4.4? or 2.6? There is no good answer. Sometimes we care about accurately representing small values and do not care about large ones. Other times, we need to represent larger values. A system with a fixed number of digits to the right of the '.' locks us into one particular set of compromises.
 
 .. sidebar:: IEEE 754
 
-    We are considering a simple example of how floating point numbers work - real systems have a few extra details like special values to represent inifinity. You can find information about the most common real implementation, the IEEE 754 floating point standard, `on this page <http://www.tfinley.net/notes/cps104/floating.html>`_ or on `wikipedia <http://en.wikipedia.org/wiki/Floating_point>`_.
+    We are considering a simple example of how floating-point numbers work - real systems have a few extra details like special values to represent infinity. You can find information about the most common real implementation, the IEEE 754 floating-point standard, `on this page <http://www.tfinley.net/notes/cps104/floating.html>`_ or on `wikipedia <http://en.wikipedia.org/wiki/Floating_point>`_.
 
-The alternative is to use a **floating point** representation. You may not have heard of the term, but you have seen the same basic idea in **scientific notation**. When we write 6.2 x :math:`{10}^{12}` instead of 6200000000000 or 1.65 x :math:`{10}^{-8}` instead of 0.0000000165, we are condensing the representation of large and small values by shifting (or floating) the decimal point. Values are recorded as a decimal multiplied by some power of ten.
+The alternative is to use a **floating-point** representation. You may not have heard of the term, but you have seen the same basic idea in **scientific notation**. When we write 6.2 x :math:`{10}^{12}` instead of 6200000000000 or 1.65 x :math:`{10}^{-8}` instead of 0.0000000165, we are condensing the representation of large and small values by shifting (or floating) the decimal point. Values are recorded as a decimal multiplied by some power of ten.
 
 Computers use this same trick, but instead of representing values as decimals multiplied by powers of ten, they use binary numbers multiplied by a power of two. There are thus three things to represent: the sign of the number, the binary value and the power of two to multiply it by. We will use the following scheme:
 
@@ -26,7 +26,7 @@ Computers use this same trick, but instead of representing values as decimals mu
 * 4 bits to represent the **binary fraction** (more formally known as the **mantissa**). We will always interpret these four bits as filling in the blanks of 0.XXXX. For example, if the four fraction bits are 0100 we would interpret that as :math:`{0.0100}_{2}` or :math:`{0.25}_{10}`.
 * The final value is obtained by multiplying the binary fractional by the power of two indicated by the exponent.
 
-It may sound a little complex, but remember it is the same idea as scientific notation - calculate an exponent of 2, and a binary fraction and multiply them. Experiment with the floating point decoder below. The row of boxes shows the bits of a number (initially all 0s), below that is an explanation of how that value would be decoded.
+It may sound a little complex, but remember it is the same idea as scientific notation - calculate an exponent of 2, and a binary fraction and multiply them. Experiment with the floating-point decoder below. The row of boxes shows the bits of a number (initially all 0s), below that is an explanation of how that value would be decoded.
 
 
 .. raw:: html

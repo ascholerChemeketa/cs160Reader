@@ -13,7 +13,7 @@ The Second Generation
         
     Transistors: the defining component of Second Generation computers.
     
-Vacuum tubes had numerous disadvantages as a building block for computers; not only were they quite large, they consumed large amounts of electrical current and produced large amounts of waste heat. First generation computers were room-sized and required gigantic air conditioning systems. Even when properly cooled, the vacuum tubes still were prone to burning out and needing to be replaced.
+Vacuum tubes had numerous disadvantages as a building block for computers; not only were they quite large, they consumed large amounts of electrical current and produced large amounts of waste heat. First-generation computers were room-sized and required gigantic air conditioning systems. Even when properly cooled, the vacuum tubes still were prone to burning out and needing to be replaced.
 
 The **transistor** was invented in 1947. The transistor did the same basic job as a vacuum tube - function as an electronic switch that could either be on or off - but was faster, more reliable, smaller, and much cheaper to build.
 

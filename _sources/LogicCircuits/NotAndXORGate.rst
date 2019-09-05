@@ -52,7 +52,7 @@ The **NOT** gate is special in that it only has one input. The output is always 
         1               0
         =============   =============
 
-It is the kind of logic if we have a value that say represents "the number is positive" but want to have the value for "the number is not positive". Anytime we want to say "we do not have X" we can say "NOT X".
+The NOT operation is what we use if we have a truth value like "it is raining" but want to have the value for "it is not raining". Anytime we want to say "we do not have X" we can say "NOT X".
 
 Because the NOT rule applies to only one input, it can be applied to a single bit pattern like 0101. To figure out the answer, simply "flip" every bit from 1 to 0 or vice verse:
 

@@ -23,5 +23,5 @@ You can try it out by hand with your own card or on this spreadsheet:
 
 `Credit Card Validation Spreadsheet <https://docs.google.com/spreadsheets/d/1TXNIsCdceepd48eZWhQZTEYeb9WEsdFZSSvPQNFqtnw/edit?usp=sharing>`__.    
     
-Book ISBN numbers are validated with a stair step code. You will build a program to do this later on in the course, but if you are interested you can `read about how the validation works here <http://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digits>`__.
+Book ISBN numbers are validated with a stair-step code. You will build a program to do this later on in the course, but if you are interested you can `read about how the validation works here <http://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digits>`__.
     

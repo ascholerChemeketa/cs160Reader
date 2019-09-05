@@ -7,7 +7,7 @@ Circuits
 
 Every circuit in a computer is made by wiring together switches (transistors) so they implement logic gates. These logic gates are used to store information, do math, make comparisons, and everything else a computer can do.
 
-The diagrams for these circuit are drawn using the symbols shown below. Traditionally, the inputs to a gate come from the left, and the output comes out of the right side. That is why there are two lines going into every gate but NOT... every other gate requires two inputs.
+The diagrams for these circuits are drawn using the symbols shown below. Traditionally, the inputs to a gate come from the left, and the output comes out of the right side. That is why there are two lines going into every gate but NOT... every other gate requires two inputs.
 
 .. figure:: Images/BasicGates.png
 

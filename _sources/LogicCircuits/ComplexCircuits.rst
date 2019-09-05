@@ -60,7 +60,7 @@ In other words, we want the output to be on only if the first input is on and th
     * DC means "Direct Current" - think of it as the battery.
     
     
-More complex circuits can have more than 2 inputs, or more than one output. Here is a three input circuit - see if you can figure out what state the input switches need to be in to produce an "ON" for output.
+More complex circuits can have more than 2 inputs or more than one output. Here is a three-input circuit - see if you can figure out what state the input switches need to be in to produce an "ON" for output.
 
 .. raw:: html
 

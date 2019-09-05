@@ -5,7 +5,7 @@
 Heuristic Search
 =========================================
 
-There is another large problem with the breadth first search strategy we started with - all the effort involved in checking every possible path. Think about all the red lines (paths that had to be explored) required to find the right path in the animation on the first page. If each possible search location has many possible moves, the space we are searching grows too rapidly to make progress past a couple of steps. Consider a situation in which each move leads to 20 new moves. In one step we have 20 location to worry about. After 2 steps, we have 20 x 20 = 400 locations we need to consider. By seven moves we have over a billion possibilities!
+There is another large problem with the breadth-first search strategy we started with - all the effort involved in checking every possible path. Think about all the red lines (paths that had to be explored) required to find the right path in the animation on the first page. If each possible search location has many possible moves, the space we are searching grows too rapidly to make progress past a couple of steps. Consider a situation in which each move leads to 20 new moves. In one step we have 20 locations to worry about. After 2 steps, we have 20 x 20 = 400 locations we need to consider. By seven moves we have over a billion possibilities!
 
 ===================  ==============  ==============  ==============  ==============  ==============  ==============
 Step #               1               2               3               4               5               6
@@ -24,7 +24,7 @@ Adding this extra bit of *"I think this direction looks promising'* gives us a *
 .. pseudo_h3:: Eight Puzzle
     :class: underlined
 
-To get a better sense of how heuristics work we are going to solve the *eight puzzle*. In this puzzle you have 8 squares in a 3x3 grid with one open square. You make moves by sliding a piece that is next to the empty square into the gap. The goal is to rearrange the 8 pieces into a particular picture or pattern.
+To get a better sense of how heuristics work we are going to solve the *eight puzzle*. In this puzzle, you have 8 squares in a 3x3 grid with one open square. You make moves by sliding a piece that is next to the empty square into the gap. The goal is to rearrange the 8 pieces into a particular picture or pattern.
 
 
 .. image:: Images/8puzzle1.png
@@ -35,11 +35,11 @@ To get a better sense of how heuristics work we are going to solve the *eight pu
     `Click here for an 8 puzzle you can try by hand <http://www.nationalgeographic.com/games/photo-puzzle-slide/>`__
 
 
-To guide our search we need to come up with a heuristic - something that does a pretty good job of estimating the amount of work that remains. Since each move can only move one piece, if there are 4 pieces out of position, we know there are at least 4 more moves to go. That suggests we can at any point look at a board and estimate the remaining work by counting up the number of pieces that are not in the right place according to the goal. If we add that estimate of future work to the amount of work it take to get to any state, we can estimate how much work the total path to the goal will be if we go through that state.
+To guide our search we need to come up with a heuristic - something that does a pretty good job of estimating the amount of work that remains. Since each move can only move one piece, if there are 4 pieces out of position, we know there are at least 4 more moves to go. That suggests we can at any point look at a board and estimate the remaining work by counting up the number of pieces that are not in the right place according to the goal. If we add that estimate of future work to the amount of work it takes to get to any state, we can estimate how much work the total path to the goal will be if we go through that state.
 
 :math:`\textrm{estimated cost} = \textrm{moves so far } + \textrm{ pieces out of place}`
 
-When we pick a state to explore next we will always chose the one with the smallest estimated total cost.
+When we pick a state to explore next we will always choose the one with the smallest estimated total cost.
 
 .. raw:: html
 

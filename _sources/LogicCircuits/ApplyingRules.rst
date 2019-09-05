@@ -4,7 +4,7 @@
 Applying Logic Rules
 ============================
 
-Computers generally work with bit patterns like 01011100 to represent information. That means that often times, we need to apply a rule like AND or OR to not just two bits, but to two bit patterns. To apply a rule like AND to two bit patterns like 1010 and 1110, we simply apply the rule to each successive pair of bits in the two patterns as shown in the diagram below:
+Computers generally work with bit patterns like 01011100 to represent information. That means that often times, we need to apply a rule like AND or OR to not just two-bits, but to two-bit patterns. To apply a rule like AND to two-bit patterns like 1010 and 1110, we simply apply the rule to each successive pair of bits in the two patterns as shown in the diagram below:
 
 .. raw:: html
 
@@ -25,7 +25,7 @@ Computers generally work with bit patterns like 01011100 to represent informatio
         .. image:: Images/ApplyingAND1.png
             :class: puzzleborder
 
-        The AND rule states that if both input bits are 1, the output is 1. The first bit of both patterns, is 1, so we record a 1 for the first bit of our answer.
+        The AND rule states that if both input bits are 1, the output is 1. The first bit of both patterns is 1, so we record a 1 for the first bit of our answer.
 
     .. tab:: 2
 
@@ -46,7 +46,7 @@ Computers generally work with bit patterns like 01011100 to represent informatio
         .. image:: Images/ApplyingAND4.png
             :class: puzzleborder
 
-        Finally, in the last position, two 0's result in 0 according to the AND rule. Our final answer is 1010. In any digit where both patterns had a 1 our answer has a 1; otherwise it has a 0.
+        Finally, in the last position, two 0's result in 0 according to the AND rule. Our final answer is 1010. In any digit where both patterns had a 1 our answer has a 1; otherwise, it has a 0.
 
 
 Here is the result of applying the OR rule to the same two patterns:

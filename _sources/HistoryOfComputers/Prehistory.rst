@@ -23,7 +23,7 @@ By about 2500 BC, counting devices had been abstracted away from counting a part
    :alt: Abacus
    :figwidth: 80%
    
-   Image courtesy of Computer History Museum.
+   Image courtesy of the Computer History Museum.
    
    An abacus
 
@@ -36,10 +36,10 @@ By about 2500 BC, counting devices had been abstracted away from counting a part
 
 .. index:: Pascaline, Antikythera Mechanism
 .. index:: 
-    single: Leibniz, Gotfried
+    single: Leibniz, Gottfried
     single: Pascal, Blaise
     
-In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become into a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642, when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner, and sought to produce a device which could reduce some of his workload. The device he built, called the **Pascaline** could do addition and subtraction including automatically carrying from one place to the next. Many other mathematicians of the 17th century tried their hand at building their own calculators, including `Gotfried Leibniz <http://en.wikipedia.org/wiki/Gottfried_Leibniz>`_ who described a machine that would be implemented using :ref:`binary numbers <binary>`.
+In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19 years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that could reduce his workload. The device he built, called the **Pascaline** could do addition and subtraction including automatically carrying from one place to the next. Many other mathematicians of the 17th century tried their hand at building their own calculators, including `Gottfried Leibniz <http://en.wikipedia.org/wiki/Gottfried_Leibniz>`_ who described a machine that would be implemented using :ref:`binary numbers <binary>`.
 
 
 .. container:: inlinegroup clear
@@ -48,7 +48,7 @@ In the 1600s, the first mechanical calculators were developed. A teenager named 
        :alt: Abacus
        :figwidth: 45%
        
-       Image courtesy of Computer History Museum.
+       Image courtesy of the Computer History Museum.
        
        The Pascaline
        
@@ -58,7 +58,7 @@ In the 1600s, the first mechanical calculators were developed. A teenager named 
     
        ..
        
-       Libniz's notes on binary numbers
+       Leibniz's notes on binary numbers
    
 
 .. quick_attribution:: Wikipedia

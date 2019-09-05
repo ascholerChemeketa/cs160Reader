@@ -5,7 +5,7 @@
 Computability (Ch 10) 
 =========================================
 
-The idea of proving that CanCrash.exe can't exist is pretty mind bending. This video might be helpful - it walks through the logic on why we can't write a program that detects if a program Halts (stops running at some point):
+The idea of proving that CanCrash.exe can't exist is pretty mind-bending. This video might be helpful - it walks through the logic on why we can't write a program that detects if a program Halts (stops running at some point):
     
 .. youtube:: macM_MtS_w4
 

@@ -10,11 +10,11 @@
 The Little Computer
 ================================= 
 
-The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine level languages work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that dat. 
+The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine level languages work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that data. 
 
 The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three :ref:`registers <registers>`: a program counter, an instruction register, and an accumulator. The CPU supports a very basic set of operations: it can get input and output, it can store data to memory and load it from memory, it can do addition and subtraction, and it can branch (or jump) to a different instruction if certain conditions are met. 
 
-Rather than use binary to encode instructions, it uses decimal numbers to represent data and instructions. This makes it a little easier for a human to see what is going on. But other than that, it is a relatively accurate, if very simple, simulation of a computer.  A real processor will have more registers to work with, and will support dozens of instructions instead of the handful that the Little Computer does. But for the most part, everything they do is just as simple: they load/store data from memory, they do basic math and logic operations on data, and they use branches to make decisions and repeat operations. Whatever code a programmer writes in a :ref:`high level language <high-level-languages>` like javascript or C++ gets turned into these basic :ref:`machine instructions <machine-languages>`.
+Rather than use binary to encode instructions, it uses decimal numbers to represent data and instructions. This makes it a little easier for a human to see what is going on. But other than that, it is a relatively accurate, if very simple, simulation of a computer.  A real processor will have more registers to work with and will support dozens of instructions instead of the handful that the Little Computer does. But for the most part, everything they do is just as simple: they load/store data from memory, they do basic math and logic operations on data, and they use branches to make decisions and repeat operations. Whatever code a programmer writes in a :ref:`high level language <high-level-languages>` like javascript or C++ gets turned into these basic :ref:`machine instructions <machine-languages>`.
 
 This video introduces how the Little Computer works:
 

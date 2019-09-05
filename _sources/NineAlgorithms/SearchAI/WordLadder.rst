@@ -16,4 +16,5 @@ Viewed as a search problem, each word is a "location", and the "steps" between e
 
     A word ladder: cat -> cot -> dot -> dog.
 
-Once again, we know that this algorithm would find the shortest possible ladder as we check every possible "one step" solution before we move on to two step solutions, and all the possible two step solutions before moving on to three step ones.
+Once again, we know that this algorithm would find the shortest possible ladder as we check every possible "one step" solution before we move on to two-step solutions, and all the possible two-step solutions before moving on to three-step ones.
+

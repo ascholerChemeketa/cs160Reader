@@ -24,7 +24,7 @@ Today we live in a world dominated by computers. We are surrounded not only by t
        
        ..
        
-       Smartphones like the iphone are more powerful computers than the super computers of the 1970s. And they can play Angry Bids.
+       Smartphones like the iPhone are more powerful computers than the supercomputers of the 1970s. And they can play Angry Birds.
        
        
 

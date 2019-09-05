@@ -11,7 +11,7 @@ Operating Systems Goals
 
    `Wikimedia Commons <http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg>`__ - `CC-BY-SA-3.0 <http://creativecommons.org/licenses/by-sa/3.0>`__
    
-When a computer is turned on, the hardware loads code from a set location in permanent memory (generally the disk drive) into main memory. Those instructions load the operating system code and start it up. Once running, the operating system is responsible for starting up application programs and managing the hardware resources that they need. Indeed, most programs are not allowed to interact directly with the hardware - instead, the operating system mediates all interactions between programs and the hardware. 
+When a computer is turned on, the hardware loads code from a set location in permanent memory (generally the disk drive) into the main memory. Those instructions load the operating system code and start it up. Once running, the operating system is responsible for starting up application programs and managing the hardware resources that they need. Indeed, most programs are not allowed to interact directly with the hardware - instead, the operating system mediates all interactions between programs and the hardware. 
 
 
 .. pseudo_h3:: Hardware Allocation

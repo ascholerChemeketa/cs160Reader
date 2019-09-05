@@ -4,16 +4,16 @@
 Parallel vs Serial Performance
 =================================
     
-Having multiple core computers is wonderful if you want to do multiple jobs at one time. But it does not necessarily improve our ability to do any one particular job faster. That is because normal algorithms do not always divide up into equal sized chunks of work. 
+Having multiple core computers is wonderful if you want to do multiple jobs at one time. But it does not necessarily improve our ability to do any one particular job faster. That is because normal algorithms do not always divide up into equal-sized chunks of work. 
 
-For any given task, there are likely parts that are **serial** (ones that must be done in order) and parts that are **parallel** (that can be done at the same time or even out of order). Say I have a giant pile of index cards with definitions written on them. I want to find one with information about Amdahl's Law and add facts from it to this page but the cards are all jumbled up. Fortunately I have 4 friends with me. I could divide up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile. Once someone finds the right card, they can announce it and give it back for me to use. This program might look like:
+For any given task, there are likely parts that are **serial** (ones that must be done in order) and parts that are **parallel** (that can be done at the same time or even out of order). Say I have a giant pile of index cards with definitions written on them. I want to find one with information about Amdahl's Law and add facts from it to this page but the cards are all jumbled up. Fortunately, I have 4 friends with me. I could divide up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile. Once someone finds the right card, they can announce it and give it back for me to use. This program might look like:
 
 .. faux_code::
 
     Divide pile up into 5 stacks                                        ``Serial``
     Hand out one stack to each person and announce what to look for     ``Serial``
     Everyone look for the card                                          ``Parallel`` 
-    Give card to me                                                     ``Serial`` 
+    Give the card to me                                                 ``Serial`` 
     Add fact to page                                                    ``Serial`` 
 
 Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles, communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the "looking" phase down to 1/100th of the original time, but that won't help me type the information we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be sped up.
@@ -25,7 +25,7 @@ The figure below on the left shows how the total time depends on how much work c
     .. figure:: Images/amdahl1.png
         :figwidth: 45%
         
-        Effect of splitting parallel part of job in 5.
+        Effect of splitting the parallel part of a job in 5.
         
         
     
@@ -38,7 +38,7 @@ The figure below on the left shows how the total time depends on how much work c
        
 .. index:: amdahl's law
 
-This feature of diminishing returns due to a serial part of problems was codified into a formula known as **Amdahl's Law**. It predicts the speedup possible given: **P**: the percentage of the total work that is parallel (expressed as a decimal) and **N**: the number of ways we split the work.
+This feature of diminishing returns from extra workers due to a serial portion of problems is captured by a formula known as **Amdahl's Law**. It predicts the speedup possible given: **P**: the percentage of the total work that is parallel (expressed as a decimal) and **N**: the number of ways we split the work.
 
 
 .. figure:: Images/AmdahlFormula.png

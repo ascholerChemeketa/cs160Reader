@@ -19,7 +19,7 @@ Suppose for a moment that you were asked to perform a task and were given the fo
 
 These instructions have no real meaning to you, but they are exactly the kind of instructions that a computer expects. It only knows how to deal with 0s and 1s, so all of its instructions must be written in binary format. A processor's control unit has a format it expects each such instruction to be in: typically a instruction will be a set length, say 16 or 32 or 64 bits and the first few bits will specify what kind of instruction it is. These first few bits, known as the **opcode** (operation code), say what general task is to be done - something like "store a number" or "add two numbers". The rest of the instruction will contain **operands**, the extra information needed to understand the instruction - things like where to store the number or which two numbers to add.
 
-The figure below shows how an imaginary computer might interpret an instruction. The first 4 bits are the opcode - in this case we are assuming 0001 means "add two values". The next 6 bits specify the memory address of the first number we are adding and the last 6 bits specify the memory address of the second number.
+The figure below shows how an imaginary computer might interpret an instruction. The first 4 bits are the opcode - in this case, we are assuming 0001 means "add two values". The next 6 bits specify the memory address of the first number we are adding and the last 6 bits specify the memory address of the second number.
 
 .. figure:: Images/MachineInstruction.png
     :alt: A machine instruction

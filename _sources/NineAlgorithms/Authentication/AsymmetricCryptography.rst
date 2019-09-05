@@ -6,7 +6,7 @@
 Two Kinds of Cryptography
 =========================================
 
-To resolve this problem of identifying who we are talking to on the internet, we first need to talk about a new kind of cryptograhpy algorithm.
+To resolve this problem of identifying who we are talking to on the internet, we first need to talk about a new kind of cryptography algorithm.
 
 The traditional cryptography we looked at while studying the Diffie-Hellman algorithm is **symmetric cryptography**, meaning that the same key (or secret) is used to encrypt the message and decrypt the message. If the encryption key is *"shift every letter by 8"*, the decryption key will also be *"shift every letter by 8"* (only in the other direction).
 

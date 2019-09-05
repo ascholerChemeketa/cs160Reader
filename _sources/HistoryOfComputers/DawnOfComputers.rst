@@ -1,7 +1,6 @@
 .. include:: ../global.rst
-
 .. index:: Difference Engine, Analytical Engine
-.. index:: 
+.. index::
     single: Babbage, Charles
     single: Lovelace, Ada
 
@@ -14,7 +13,7 @@ Dawn of Computers
    
         <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/calculators/1/51/2205"><img title="False Dawn: The Babbage Engine" src="http://s3v.computerhistory.org/102695004-03-01.jpg"><span></span></a><p class="caption">Computer History Museum</p><p>False Dawn: The Babbage Engine</p>
 
-C\ **harles Babbage**, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century. In 1823, on a commission from the British government, he began designing and building the the **Difference Engine** to calculate values for polynomial functions. After working on the machine for ten years he realized that a much more general design that could be instructed to perform arbitrary computations was possible and began to focus on that project. 
+C\ **harles Babbage**, an English mechanical engineer and polymath, originated the concept of a programmable computer. Considered the "father of the computer", he conceptualized and invented the first mechanical computer in the early 19th century. In 1823, on a commission from the British government, he began designing and building the **Difference Engine** to calculate values for polynomial functions. After working on the machine for ten years he realized that a much more general design that could be instructed to perform arbitrary computations was possible and began to focus on that project. 
 
 .. figure:: Images/Difference_engine_plate_1853.jpg
    :alt: The Difference Engine
@@ -27,7 +26,7 @@ C\ **harles Babbage**, an English mechanical engineer and polymath, originated t
 
 .. index:: Analytical Engine
    
-Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose compute. Input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of `feeding a program into a computer <https://www.youtube.com/watch?v=KG2M4ttzBnY>`__ until the 1970's.
+Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer. Input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of `feeding a program into a computer <https://www.youtube.com/watch?v=KG2M4ttzBnY>`__ until the 1970's.
  
 .. container:: inlinegroup
 
@@ -78,4 +77,4 @@ The 1880 census had taken seven years to process and it was estimated that the 1
    A replica of the Hollerith tabulating desk
    
 
-.. quick_attribution:: Wikipedia 
+.. quick_attribution:: Wikipedia

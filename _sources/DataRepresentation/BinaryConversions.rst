@@ -31,7 +31,7 @@ That tells me I need to add 16, 8 and 2. So :math:`{11010}_{2} = 16 + 8 + 2 = {2
 Decimal to Binary
 ---------------------
 
-The first way to convert a decimal number to a binary one is with a table like the on below (if needed you can add more columns - each new column to the left should be twice the value of the preceding one). Then, working from left to right, decide if you need that columns value to make your number. The value for any column you use should be subtracted from the value you are trying to make.
+The first way to convert a decimal number to a binary one is with a table like the one below (if needed you can add more columns - each new column to the left should be twice the value of the preceding one). Then, working from left to right, decide if you need that column's value to make your number. The value for any column you use should be subtracted from the value you are trying to make.
 
 .. rst-class:: place-values
 
