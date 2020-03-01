@@ -1,0 +1,35 @@
+
+html, body {
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+  height: 90%;
+}
+
+body {
+  display: table;
+  width: 90%;
+}
+
+.tr {
+  display: table-row;
+}
+
+#cy {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #bbb;
+}
+button {
+  margin-right: 10px;
+}
+#instructions {
+  margin: 10px 0px;
+}
+
+#info {
+  color: #c88;
+  font-size: 1em;
+  position: absolute;
+  z-index: -1;
+  left: 1em;
+  top: 1em;
+}

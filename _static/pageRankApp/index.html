@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <meta charset=utf-8 />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <title>PageRank Simulator</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.6.9/cytoscape.min.js"></script>-->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.25/cytoscape.js"></script>
+
+  <script src="code.js"></script>
+</head>
+
+<body>
+  <h2 class="tr">Page Rank Simulator</h2>
+  <div class="tr" id="instructions">
+    <ul>
+      <li>Click Add Page to add a new page.</li>
+      <li>Click and drag a page to move it.</li>
+      <li>Click a page and then click another page to add a link.</li>
+      <li>Click a page or link and then Delete Selected (or press Delete) to remove something.</li>
+      <li>Click Run Page Rank to display rankings.</li>
+    </ul>
+      <button id="addPage">Add Page</button>
+      <button id="delete">Delete Selected</button>
+      <button id="runPageRank">Run Page Rank</button>
+      <button id="reset">Reset</button>
+  </div>
+  <div class="tr" id="cy"></div>
+</body>
+</html>
