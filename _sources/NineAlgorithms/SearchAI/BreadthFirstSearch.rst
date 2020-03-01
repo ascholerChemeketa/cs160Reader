@@ -392,7 +392,7 @@ The animation below visualizes this exact algorithm. You can watch the computer 
       {
         // create source and sink vertices
         source = (_src == null) ? new DiVert( graphSize * 0.051, graphSize * 0.051 ) : _src;
-        sink = (_snk == null) ? new DiVert( graphSize * 0.951, graphSize * 0.951 ) : _snk;
+        sink = (_snk == null) ? new DiVert( graphSize * 0.751, graphSize * 0.751 ) : _snk;
 
         // randomly select points in the graph to use as vertices and add randomness if desired
         innerVerts = new ArrayList<DiVert>();

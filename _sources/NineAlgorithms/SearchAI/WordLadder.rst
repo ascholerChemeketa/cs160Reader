@@ -1,7 +1,7 @@
 .. include:: ../../global.rst
 
 
-Search and Word Ladders
+Search and Other Problems
 =========================================
 
 The algorithm discussed on the previous page is a much more general tool than it might appear at first. This same basic technique can be applied any time we can represent a problem as a collection of possible states (locations) and transitions (steps) between those states.

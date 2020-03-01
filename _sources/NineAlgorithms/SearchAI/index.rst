@@ -15,6 +15,6 @@ This chapter focuses on how search algorithms work and how they play a roll in m
 
    BreadthFirstSearch.rst
    WordLadder.rst
-   BestFirstSearch.rst
+   WeightedSearch.rst
    HeuristicSearch.rst
    SearchGameplay.rst

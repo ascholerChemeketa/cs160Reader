@@ -11,10 +11,14 @@ h1 {
 }
 
 #content {
+	margin: 0px auto;
+	width: 950px;
 	display: grid;
 	grid-template-columns: 200px 350px 300px;
 	grid-column-gap: 50px;
 	column-gap: 50px;
+	font-family: sans-serif;
+	font-size: 14pt;
 }
 
 #leftPane {
@@ -51,6 +55,16 @@ h1 {
 
 #controlBox button {
 	width: calc(50% - 20px);
+	margin: 0px 5px;
+	font-size: 18pt;
+	background-color: #649ada;
+	color: white;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#controlBox button:active {
+	background-color: #598abb;
 }
 
 #inputBox img {
@@ -59,11 +73,44 @@ h1 {
 	margin-bottom: -50px;
 }
 
+.componentLabel {
+	font-size: 120%;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+#instructions {
+    border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+
+.note {
+	font-style: italic;
+	color: #888;
+}
+
+#instructions td {
+	border: 1px solid #888;
+	padding: 2px 10px;
+}
+#instructions tr td:last-child {
+	text-align: left;
+}
+
+#inputBox input[type="text"]:disabled {
+	background-color: #f4f4f4; 
+}
+
 #memBox, #cpuBox {
 	text-align: center;
 	border: 1px solid #333;
 	padding: 20px 20px;
 	background-color: #f4f4f4;
+}
+
+.partLabel {
+	margin-bottom: 5px;
 }
 
 
@@ -142,7 +189,6 @@ h1 {
 }
 
 	</style>
-	<link rel="stylesheet" type="text/css" href="littleComputer.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	  $(document).ready(function () {
@@ -155,17 +201,9 @@ h1 {
 			}
 			$('#memoryAddresses').text(addressesText);
 			
-			function isValidKey(keyCode) {
-				if((keyCode >= '0'.charCodeAt() && keyCode <= '9'.charCodeAt()) ||
-					keyCode == '-'.charCodeAt() ||
-					keyCode == '\r'.charCodeAt() ) {
-					return true;
-				}
-				return false;
-			}
-
+			
 			$('#memoryBody').on('keypress', function(e) {
-			    if(!isValidKey(e.which)) {
+			    if((e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt()) && e.which != '\r'.charCodeAt()) {
 			        e.preventDefault();
 			    }
 				
@@ -200,13 +238,11 @@ h1 {
 			
 			//step
             $('#Input').on('keypress', function(e) {
-			    if(!isValidKey(e.which)) {
+			    if(e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt()) {
 			        e.preventDefault();
 			    }
-				if(e.which == '\r'.charCodeAt()) {
-			        e.preventDefault();
+				if(e.which == '\r'.charCodeAt())
 					doStep();
-				}
 			}); 
 			
 			
@@ -220,7 +256,6 @@ h1 {
             $('#resetButton').on('click', null, function (e) {
 				$('#PC').val(0);
 				$('#ACC').val(0);
-				$('#Output').val('');
 				getInstruction();
 				$('#Input').prop('disabled', true);
 				$('#memHighlight').css('margin-top', '1.2em');
@@ -477,7 +512,18 @@ h1 {
 			</div>
 			<div id="memRight">
 				Value <br>
-				<textarea id="memoryBody" rows="100" cols="3"></textarea>
+				<textarea id="memoryBody" rows="100" cols="3">
+104
+701
+902
+902
+902
+1212
+902
+410
+000
+12
+14</textarea>
 			</div>
 		</div>
 	</div>
@@ -532,11 +578,11 @@ h1 {
 				</tr>
 				<tr style="background-color: #cee8e7;">
 					<td>7XX</td>
-					<td>Branch to XX if ACC equals 0</td>
+					<td>Branch if > 0 to XX</td>
 				</tr>
 				<tr style="background-color: #cee8e7;">
 					<td>8XX</td>
-					<td>Branch to XX if ACC >= 0</td>
+					<td>Branch if >= 0 to XX</td>
 				</tr>
 				<tr style="background-color: #cee8d1;">
 					<td>901</td>

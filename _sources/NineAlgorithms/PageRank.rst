@@ -7,11 +7,11 @@ Page Rank (Ch 3)
 
 .. pseudo_h3:: Hints for Simulator
     :class: underlined
-    
-The `PageRank Simulator <http://faculty.chemeketa.edu/ascholer/cs160/WebApps/PageRank/>`__ is a javascript applet that should run in any modern browser.
+
+The `PageRank Simulator <../_static/pageRankApp/index.html>`__ is a javascript applet that should run in any modern browser.
 
 .. image:: Images/PageRankSim.png
-	:target: http://faculty.chemeketa.edu/ascholer/cs160/WebApps/PageRank/
+	:target: ../_static/pageRankApp/index.html
 
 You can use it to run simulations of how PageRank would assign importance to a group of web pages based soley on how they link to each other.
 
