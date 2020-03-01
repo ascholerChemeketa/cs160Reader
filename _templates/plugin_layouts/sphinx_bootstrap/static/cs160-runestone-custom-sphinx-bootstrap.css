@@ -972,3 +972,7 @@ div#license {
 a {
     color: #677915;
 }
+
+.runestone_caption {
+    display: none;
+}

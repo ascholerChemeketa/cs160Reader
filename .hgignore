@@ -5,3 +5,4 @@ syntax: glob
 *.~vsd
 Thumbs.db
 build_info
+built/

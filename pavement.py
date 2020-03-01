@@ -39,9 +39,9 @@ options(
     # ),
 
     build = Bunch(
-        builddir="../built/CS160Reader",
+        builddir="./built/CS160Reader",
         sourcedir="_sources",
-        outdir="../built/CS160Reader",
+        outdir="./built/CS160Reader",
         confdir=".",
         project_name = "CS160Reader",
         template_args={'course_id': 'CS160Reader',
