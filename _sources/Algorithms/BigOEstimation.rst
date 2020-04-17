@@ -27,7 +27,7 @@ For example, say we have a list of 1000 things...
     
     .. raw:: html
     
-        <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=small" type="text/javascript"></script></div>
+        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
         
 
 .. pseudo_h4:: Sample Problem 1

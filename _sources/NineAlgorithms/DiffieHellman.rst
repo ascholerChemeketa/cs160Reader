@@ -12,11 +12,11 @@ Diffie Hellman (Ch 4)
     
 Doing clock math on small numbers isn't too hard - once you learn about it, you should be able to figure out what say 20 on a clock size of 7 is (the answer is 6). It is a little bit harder when you are dealing with really large numbers. Here is a tip on how to calculate clock math for large values:
 
-The more formal name for clock math is modulo arithmetic or mod for short. We would write 20 on a clock size of 7 as: :math:`20 \textrm{ mod } 7`. You can ask `wolfram alpha (www.wolframalpha.com) <www.wolframalpha.com>`__ to do that math for you, try typing "20 mod 7" in the box below:
+The more formal name for clock math is modulo arithmetic or mod for short. We would write 20 on a clock size of 7 as: :math:`20 \textrm{ mod } 7`. You can ask `Wolfram Alpha <http://www.wolframalpha.com>`__ to do that math for you, try typing "20 mod 7" in the box below and hitting enter:
     
 .. raw:: html
 
-    <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=large" type="text/javascript"></script></div>
+    <div style="text-align: center;">Wolfram Alpha: <form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div><br/>
     
 .. figure:: Images/clock.png
     :figclass: align-right

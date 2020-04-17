@@ -68,14 +68,15 @@ Imagine we are searching in a list that is 1000 items long. If we assume we have
     =====================   =====================
 
 
+
 .. sidebar:: Wolfram Alpha
     
-    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 of 1000 by typing "log2(1000)". Try it below.
+    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 by typing something like "log2(1024)". Try it below.
     
     .. raw:: html
     
-        <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=small" type="text/javascript"></script></div>
-
+        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
+        
 Instead of counting how many times we divide the starting number by 2 we can calculate that number. Using a logarithm. Taking the base 2 logarithm of a number asks *"How many times do I have to divide this number by 2 in order to reach 1?"* Calculating :math:`log_2(1000)` gives 9.96. Since we can't do .96 units of work (each unit is checking one paper... hard to see how we can check 0.96 papers), we will round that up to 10. Since this function gives us the answer to how much work binary search requires, we will say Binary Search is :math:`O(log(n))`.
 
 .. important::

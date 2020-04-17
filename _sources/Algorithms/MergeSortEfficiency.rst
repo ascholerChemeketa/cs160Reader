@@ -89,12 +89,12 @@ That is 10 levels of merging to group 1024 single items into one list of 1024.
 
 .. sidebar:: Wolfram Alpha
     
-    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 by typing something like "log2(1024)". To calculate :math:`100·log_2(100)` you would type "100*log2(100)". Try it below.
+    You can use `Wolfram Alpha website <http://www.wolframalpha.com/>`__ to calculate log base 2 by typing something like "log2(1024)". Try it below.
     
     .. raw:: html
     
-        <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=small" type="text/javascript"></script></div>
-        
+        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
+
 Like we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined by the mathematical function :math:`log_2(n)`. :math:`log_2(1024) = 10`. Using that, we could calculate the number of levels of merges required to do a Merge Sort on a list of 100,000 items: :math:`log_2(100,000) ≈ 16.61`. (Since we can't do 16.61 merges levels, we would call that 17.)
 
 The formula also allows us to write a general formula for the overall work required for a Merge Sort. Starting with:

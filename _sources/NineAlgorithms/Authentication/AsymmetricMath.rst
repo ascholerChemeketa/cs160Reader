@@ -75,11 +75,11 @@ Message   Use key A                      Encrypted   Use key B                  
 17        raise to 3rd power, mod by 22  7           raise to the 7th power, mod by 22  17
 ========  =============================  ==========  =================================  ========
 
-If you wish verify those, I recommend using `Wolfram Alpha website <http://www.wolframalpha.com/>`__. Type something in the format '4^3 mod 22':
+If you wish verify those, I recommend using `Wolfram Alpha website <http://www.wolframalpha.com/>`__. Type something in the format '4^3 mod 22'. You can try it here:
 
 .. raw:: html
 
-    <div style="text-align: center;"><script id="WolframAlphaScript" src="http://www.wolframalpha.com/input/embed/?type=large" type="text/javascript"></script></div>
+    <div style="text-align: center;">Wolfram Alpha: <form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
 
 .. note::
 
