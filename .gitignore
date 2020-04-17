@@ -1,3 +1,5 @@
 *.pyc
 Thumbs.db
 built/*
+build_info
+sphinx-enki-info.txt
