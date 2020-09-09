@@ -26,7 +26,7 @@ Below is shown the expected skills in an IT graduate. They need skills to enable
 
 **Education:**
 
-* Students interested in Information Technology careers should talk to Mandy Reininger in the `Computer Information Systems <http://www.chemeketa.edu/programs/computer/cis_program.html>`__ department at Chemeketa. They offer multiple certificate and two-year degree programs.
+* Students interested in Information Technology careers should explore the `Computer Information Systems <https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/>`__ department at Chemeketa. They offer multiple certificate and two-year degree programs.
 * Although many areas of IT are open to anyone with a certificate or two-year degree, positions with more responsibility may require a Bachelor's degree. OIT offers Bachelor's degrees in `Information Technology <http://www.oit.edu/academics/degrees/information-technology>`__.
 
 .. quick_attribution:: ACM 

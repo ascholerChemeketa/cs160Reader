@@ -26,8 +26,7 @@ The graph below shows the expected skillset of a Computer Science graduate. It c
 
 **Education:**
 
-* Working as a software developer requires a Bachelor's degree; working as a researcher requires a graduate degree. Most 4-year schools offer a CS degree, though the focus of programs can be very different. See this `transfer guide <http://faculty.chemeketa.edu/ascholer/csadvising/index.html>`__ for some basic pointers.
-* At Chemeketa, `Andrew Scholer <http://faculty.chemeketa.edu/ascholer/>`__ advises students interested in studying CS. Most students work on an AAOT at Chemeketa and take the CS and Math courses needed to transfer into a 4-year school to complete a degree.
-
+* Working as a software developer requires a Bachelor's degree; working as a researcher requires a graduate degree.
+* At Chemeketa the CS department can prepare you for transfer to a 4-year Bachelor's program. See the `CS Department Advising Information page <http://computerscience.chemeketa.edu/advising/>`__ for details.
 
 .. quick_attribution:: ACM 

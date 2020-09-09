@@ -29,17 +29,18 @@ Wolfram Alpha will work even when arbitrarily large numbers are involved. With D
 
 .. pseudo_h3:: Practice Problem
     :class: underlined
-    
+
 Want to verify you know how to do the calculations from this week's 9 Algorithms chapter correctly? Try this:
+    
+.. fillintheblank:: diffie_1
 
-We want to communicate secretly. I announce publicly that our clock size will be 13 and our base will be 4. I then pick my private number and use it to calculate my Public/Private number and announce it is 10.
+    We want to communicate secretly. I announce publicly that our clock size will be 13 and our base will be 4. I then pick my private number and use it to calculate my Public/Private number and announce it is 10.
 
-You pick the private number 8 (sorry, need to make sure everyone "picks" the same one). You calculate your Public/Private number as 3 and announce that. (Verify this calculation).
+    You pick the private number 8. You calculate your Public/Private number as 3 and announce that. (Verify this calculation).
 
-Use the publicly available information and your private number to calculate our Shared Secret Number (SSN). Once you think you have it, go to: 
+    Use the publicly available information and your private number to calculate our Shared Secret Number (SSN). Once you think you have it:
 
-**\http://faculty.chemeketa.edu/ascholer/SSN.html** 
-
-Where *SSN* is the number you calculated (something like **...ascholer/1.html** or **.../ascholer2.html**). If you get a error page you know you got the wrong number!
+    - :9: Correct!
+      :x: No. Try again! Make sure you are using the formula (other PPN) ^ (your secret number) mod (clock size)
 
 Incidentally, because our clock size is 13, it would be easy to uncover the secret. You simply have to try **0.html**, then **1.html**, **2.html**, ... up to **12.html** - on a clock size of 13 you can never have an answer greater than 12. For this reason, when using hte algorithm in real life, the clock size needs to be much, much larger.

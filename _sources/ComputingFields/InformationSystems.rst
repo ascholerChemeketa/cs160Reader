@@ -23,7 +23,7 @@ Information Systems degrees generally have a blend of courses in technology, bus
 
 **Education:**
 
-* Students interested in Information Science careers should talk to Mandy Reininger in the `Computer Information Systems <http://www.chemeketa.edu/programs/computer/cis_program.html>`__ department at Chemeketa. They offer multiple certificate and two year degree programs.
+* Students interested in Information Science careers should explore the `Computer Information Systems <https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/>`__ department at Chemeketa. They offer multiple certificate and two year degree programs.
 * Because IS jobs tend to be "big picture" management, they are more likely to require a Bachelor's degree than IT jobs. Local options include: `Western Oregon's Information Systems <https://www.wou.edu/las/cs/babsis.php>`__ degree and `OIT's Business/Systems Anaylsis <http://www.oit.edu/academics/degrees/information-technology>`__ IT degree.
 
 .. quick_attribution:: ACM 

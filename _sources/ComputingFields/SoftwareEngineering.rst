@@ -27,8 +27,8 @@ A software engineer is expected to have expertise in software development rangin
 
 **Education:**
 
-* OIT offers the only Software Engineering Bachelor's degree in the Oregon public universities. At other schools, software engineering is something a student studies within computer science. There are also a few Master's programs in Software Engineering.
-* At Chemeketa, SE students take the same basic core of classes as CS students in order to transfer to a 4-year school to complete a Bachelor's. `Andrew Scholer <http://faculty.chemeketa.edu/ascholer/>`__ is the person to contact about preparing for transferring into a SE program.
+* OIT offers the only Software Engineering Bachelor's degree in the Oregon public universities. At other schools, software engineering is something a student studies as a focus within a Computer Science program.
+* At Chemeketa, SE students take the same basic core of classes as CS students in order to transfer to a 4-year school to complete a Bachelor's. See the `CS Department Advising Information <http://computerscience.chemeketa.edu/advising/>`__ for more information.
 
 
 .. quick_attribution:: ACM 

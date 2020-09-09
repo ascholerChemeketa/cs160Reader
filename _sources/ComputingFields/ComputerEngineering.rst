@@ -26,7 +26,7 @@ engineer needs an understanding of software development, but not necessarily its
 **Education:**
 
 * To work in this field you need a Bachelor's degree in Computer Engineering. At some schools, instead of a separate Computer Engineering degree, students specialize in that field while earning a degree in Electrical Engineering.
-* At Chemeketa, `Mark Miller <http://www.chemeketa.edu/programs/drafting/documents/TransferEngineering.pdf>`__ in the Engineering department offers two-year sequences designed to help students transfer to 4-year engineering programs.
+* At Chemeketa, the `Engineering department<https://www.chemeketa.edu/programs-classes/program-finder/engineering/>`__ offers two-year sequences designed to help students transfer to 4-year engineering programs.
 
 
 .. quick_attribution:: ACM 
