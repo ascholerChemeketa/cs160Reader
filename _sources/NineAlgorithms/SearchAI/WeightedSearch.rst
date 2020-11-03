@@ -21,8 +21,8 @@ This situation - where the edges can be assigned different costs - is known as a
     :height: 315
     :width: 560
 
-Try out the process yourself using the link to the Best First Search Playground below. It will check that you are always choosing nodes to explore in the correct order. To keep track of what your options are, use some scratch paper to draw a search tree as you explore. (For now, don't use the "Allow Intuition" option.) Click the "New Random" button to make new maps.
+Try out the process yourself using the link to the Search Playground below. It will check that you are always choosing nodes to explore in the correct order. To keep track of what your options are, use some scratch paper to draw a search tree as you explore. (For now, don't use the "Allow Intuition" option.) Click the "New Random" button to make new maps.
 
-`Best First Search Playground <../../_static/searchApp/search.html>`__
+`Search Playground <../../_static/searchApp/search.html>`__
 
 .. note:: The algorithm we are discussion is essentially a simplified version of `Djiksta's shortest path algorithm <https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm>`__. It finds the best route from one vertex to every other vertex in a graph.

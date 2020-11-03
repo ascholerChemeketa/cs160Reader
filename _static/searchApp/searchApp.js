@@ -206,7 +206,7 @@ $(function(){
             $('#instructions').append("<p>Goal: Find the best path to " + farthestNodeFrom1.id() + ".</p>");
             
             if(isStrict)
-               $('#instructions > p').append(" You must always explore the best potential path first.");
+               $('#instructions > p').append(" You must always explore the shortest possible path first.");
 
 
             
