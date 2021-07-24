@@ -19,7 +19,7 @@ import sys, os
 #sys.path.insert(0, os.path.abspath('../modules'))
 sys.path.insert(0, os.path.abspath('modules'))
 
-from runestone import runestone_static_dirs, runestone_extensions
+from runestone import runestone_static_dirs, runestone_extensions, setup
 
 # -- General configuration -----------------------------------------------------
 

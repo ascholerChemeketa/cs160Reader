@@ -201,16 +201,16 @@ Below are the main steps of the binary search algorithm, expressed in pseudocode
     4       set ``middleIndex`` = (``lowIndex`` + ``highIndex``)/2   *round down*
     5       set ``middleValue`` = ``list[middleIndex]``
     6       if ``middleValue`` == ``key``
-    7           print "Found at " + ``middleLocation``
+    7           print "Found at " + ``middleIndex``
     8           end program
     9       
     10      *Note: We didn't find, it check to see if too high or too low:*
     11      if ``middleValue`` > ``key`` then
     12          *Note: Too high, change the upper bound*
-    13          ``highIndex`` = ``middleLocation`` - 1
+    13          ``highIndex`` = ``middleIndex`` - 1
     14      else 
     15          *Note: Too low, change the lower bound*
-    16          ``lowIndex`` = ``middleLocation`` + 1
+    16          ``lowIndex`` = ``middleIndex`` + 1
     17
     18  print "Value not found"
    

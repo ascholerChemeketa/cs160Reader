@@ -51,9 +51,9 @@ using that computer and that web browser. If you save to the cloud, you will be 
 
 .. container:: inlinegroup
 
-  .. image:: Images/SnapSave.png
+  .. image:: Images/SNAPSave.png
 
-  .. image:: Images/SnapSaveOpts.png
+  .. image:: Images/SNAPSaveOpts.png
 
 |br|
 To signup for a cloud account for saving, use the Cloud menu:

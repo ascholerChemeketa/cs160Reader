@@ -58,7 +58,7 @@ Code                                        Decoded                             
 :gray:`000011110`\ :red:`01`\ 00            aabce               Is 01 a code? Yes, it represents **e**. We have used up the 01.
 :gray:`00001111001`\ :red:`0`\ 0            aabce               Is 0 a code? No, continue...
 :gray:`00001111001`\ :red:`00`\             aabcea              Is 00 a code? Yes, it represents **a**. We have used up the 00.
-:gray:`0000111100100`\ :red:``\             aabcea              We have consumed all the bits, the message was **aabcea**
+:gray:`0000111100100`                       aabcea              We have consumed all the bits, the message was **aabcea**
 ========================================    ================    ================================================================================
 
 
