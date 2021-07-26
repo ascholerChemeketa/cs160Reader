@@ -34,6 +34,7 @@ It looks almost like cheating... *How do you sort a list? You cut it in half and
 The video below demonstrates the process:
 
 .. youtube:: EeQ8pwjQxTM
+    :divid: EeQ8pwjQxTM-2
     :height: 315
     :width: 560
     :start: 198
