@@ -31,7 +31,7 @@ Using the Big-O classification of each algorithm like this gives us a rough esti
 Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half second to run? At what point does Merges Sort start taking more than a half second?
 
 .. image:: Images/working.gif
-    :class: display-none
+    :class: hidden
 
 .. raw:: html
     
@@ -100,24 +100,23 @@ Below, you can use the Sort Timer to simulate running sorts of different sizes u
         var places = 5 - Math.floor(getBaseLog(n,10));
         if(places < 0) places = 0;
         setTimeout(function() {
-            
             $("#insertSorting").text( (n / 1000.0).toFixed(places) + " seconds");
-            
             $( "#goNSqButton" ).removeAttr('disabled');
         }, n);
       }
-      function addCommas(nStr)
-        {
-            nStr += '';
-            x = nStr.split('.');
-            x1 = x[0];
-            x2 = x.length > 1 ? '.' + x[1] : '';
-            var rgx = /(\d+)(\d{3})/;
-            while (rgx.test(x1)) {
-                x1 = x1.replace(rgx, '$1' + ',' + '$2');
-            }
-            return x1 + x2;
-        }
+
+      function addCommas(nStr) {
+         nStr += '';
+         x = nStr.split('.');
+         x1 = x[0];
+         x2 = x.length > 1 ? '.' + x[1] : '';
+         var rgx = /(\d+)(\d{3})/;
+         while (rgx.test(x1)) {
+               x1 = x1.replace(rgx, '$1' + ',' + '$2');
+         }
+         return x1 + x2;
+      }
+
       function simulateNLogNWork(n) {
         var total = 0;
         n *= Math.log(n);  //base e but adjust to 2 with tuning constant
@@ -131,11 +130,13 @@ Below, you can use the Sort Timer to simulate running sorts of different sizes u
             $( "#goNLogNButton" ).removeAttr('disabled');
         }, n);
       }
+
       function changeSize() {
         var n = $( "#probSize" ).slider( "value" );
         $("#probSizeText").val( addCommas(Math.pow(10,n)) );
-      }
-      $(function() {
+      }    
+
+      document.addEventListener('DOMContentLoaded', (event) => {
         $( "#probSize" ).slider({
           orientation: "horizontal",
           min: 1,

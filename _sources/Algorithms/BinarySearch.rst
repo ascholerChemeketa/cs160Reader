@@ -1,7 +1,9 @@
 .. include:: ../global.rst
 
+.. add_script:: https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js
+   :defer:
 
-.. index:: 
+.. index::  
     pair: search; binary
 
 Binary Search
@@ -37,11 +39,7 @@ Try watching the algorithm run on various values. Note that items that have turn
         pjs.reset();
         pjs.draw();
       }
-      //this is needed to prevent processing rendering bug seen in chrome
-      (function() {
-        setTimeout(function() {
-            $("span:last-of-type:contains('AAAAAAAA')").css("display","none");}, 50);
-      })();
+      
     </script>
     <div align="center">
     <canvas id="BinarySearch" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>

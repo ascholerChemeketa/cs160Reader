@@ -1,5 +1,7 @@
 .. include:: ../global.rst
 
+.. add_script:: https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js
+   :defer:
 
 .. index:: 
     pair: sort; merge
@@ -313,12 +315,6 @@ Think you have it? Give it a try below. Use the ListA and ListB buttons to move 
         pjs.reset();
         pjs.draw();
       }
-	  
-      //this is needed to prevent processing rendering bug seen in chrome
-      (function() {
-        setTimeout(function() {
-            $("span:last-of-type:contains('AAAAAAAA')").css("display","none");}, 50);
-      })();
     </script>
     <p></p> 
     <div align="center">

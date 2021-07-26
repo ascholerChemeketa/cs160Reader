@@ -1,5 +1,7 @@
 .. include:: ../global.rst
 
+.. add_script:: https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js
+   :defer:
 
 .. index:: 
     pair: search; linear
@@ -52,11 +54,6 @@ You can try doing a linear search below. Type the number you wish to search for 
         pjs.reset();
         //pjs.draw();
       }
-      //this is needed to prevent processing rendering bug seen in chrome
-      (function() {
-        setTimeout(function() {
-            $("span:last-of-type:contains('AAAAAAAA')").css("display","none");}, 50);
-      })();
     </script>
     <div align="center">
     <canvas id="LinearSearch" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>
