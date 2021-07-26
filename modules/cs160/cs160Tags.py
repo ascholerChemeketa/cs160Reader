@@ -27,6 +27,7 @@ from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 
 
 def setup(app):
+    app.add_directive('add_script',AddScript)
     app.add_directive('pseudo_h1',PseudoHeader) 
     app.add_directive('pseudo_h2',PseudoHeader)
     app.add_directive('pseudo_h3',PseudoHeader)
@@ -37,7 +38,18 @@ def setup(app):
     app.add_directive('definition',DefinitionBlock)
     app.add_directive('quick_attribution',QuickAttribution)
 
-		
+class AddScript(Directive):
+    """Argument is URL of script to load. Specify :defer: as option to set defer attr on script tag."""
+    required_arguments = 1
+    has_content = False
+    option_spec = {'defer': directives.flag}
+
+    def run(self):
+        if 'defer' not in self.options:
+            self.options['defer'] = True
+        defer_val = "defer" if bool(self.options['defer']) else ""
+        rawsource='<script src="{src}" {defer}></script>'.format(src = self.arguments[0], defer = defer_val)
+        return [nodes.raw('', rawsource , format='html')]
 
 class FauxCodeBlock(Directive):
     required_arguments = 0
