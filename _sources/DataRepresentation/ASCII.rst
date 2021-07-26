@@ -117,7 +117,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
 
     * The codes from 0-31 (00000000-00011111) are all invisible symbols like "tab" or "end of line".
     * The capital letters range from 65-90 (01000001-01011010)
-    * The lower case letters start at 97 (01100001). That means a computer often things 'A' is less than 'a'
+    * The lower case letters start at 97 (01100001). That means a computer often thinks 'A' is less than 'a'.
     * Originally, the ASCII codes only covered 7 bits (up to 127). All the codes above 127 were added later, and there are multiple versions of what they mean. Often they are used for things like accented characters.
 
 

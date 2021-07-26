@@ -128,8 +128,8 @@ Why would we want another base system? Large binary values are hard for people t
 
     What does hexadecimal 3FC look like in binary?
 
-    - :0011 ?1111 ?1100: Correct!
+    - :0*11\s*1111\s*1100: Correct!
       :[^0-1 ]+: Your answer should only consist of 1s and 0s
-      :.{1,11}: Not enough digits
+      :.{1,9}: Not enough digits
       :.{15,}: Too many digits
       :x: Hint: Convert each digit separately

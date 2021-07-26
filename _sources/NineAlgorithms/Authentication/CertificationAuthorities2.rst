@@ -1,9 +1,6 @@
 .. include:: ../../global.rst
 
-.. index:: certification authorities
-
-.. index::
-  :single: signing, digital
+.. index:: certification authorities, signing, digital
 
 Certificate Authorities in Use
 =========================================
