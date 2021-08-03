@@ -76,7 +76,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
 .. raw:: html
 
     <script>
-    $(function() {
+    window.addEventListener("load", function() {
     var s = $('#ascii-slider').slider({
       min: 3,
       max: 253,
@@ -84,7 +84,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
       slide: function( event, ui ) {
         var pad = "00000000"
         var temp = ui.value ;
-        var output = "<table class='place-values table' style='width:600px;'>";
+        var output = "<table class='place-values table' style='width:600px; margin:0 auto;'>";
         var headers = "<thead><tr><th class='header'>Binary</th>";
         var decs = "<tr><th class='header'>Decimal</th>";
         var values = "<tr><td class='header'>Character</td>"

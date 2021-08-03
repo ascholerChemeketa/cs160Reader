@@ -107,7 +107,7 @@ You can play with the sliders below to explore how colors can be described as a 
         $("#blueVal").val( blue + " (" + hex.substring(4,6) + ")"  );
         $("#colorName").val( hex.substring(0,6) );
       }
-      $(function() {
+      window.addEventListener("load", function() {
         $( "#red, #green, #blue" ).slider({
           orientation: "horizontal",
           range: "min",

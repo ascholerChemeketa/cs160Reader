@@ -2,6 +2,9 @@
 
 .. index:: breadth first search
 
+.. add_script:: https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js
+   :defer:
+
 Breadth First Search
 =========================================
 
@@ -21,7 +24,7 @@ The animation below visualizes this exact algorithm. The dots (**vertices** in t
             POINT_CHAOS : 0.5,
             WINDOW_SIZE : 600
         };
-        $(function() {
+        window.addEventListener("load", function () {
 
             pvars.WINDOW_SIZE = $("#graphBox").width() - 40;
 
@@ -394,7 +397,7 @@ The animation below visualizes this exact algorithm. The dots (**vertices** in t
       public DiGraph(float graphSize, float pointDensity, DiVert _src, DiVert _snk)
       {
         // create source and sink vertices
-        source = (_src == null) ? new DiVert( graphSize * 0.051, graphSize * 0.051 ) : _src;
+        source = (_src == null) ? new DiVert( graphSize * 0.401, graphSize * 0.401 ) : _src;
         sink = (_snk == null) ? new DiVert( graphSize * 0.751, graphSize * 0.751 ) : _snk;
 
         // randomly select points in the graph to use as vertices and add randomness if desired
@@ -545,7 +548,7 @@ The animation below visualizes this exact algorithm. The dots (**vertices** in t
     </script>
     <p></p>
     <p></p>
-    <form class="form-horizontal">
+    <form class="form-horizontal" style="max-width: 500px;">
     <div class="form-group" style="padding: 0 35px;">
     <label class="col-xs-2 control-label">Delay</label>
     <div class="col-xs-10" style="padding-top: 10px">

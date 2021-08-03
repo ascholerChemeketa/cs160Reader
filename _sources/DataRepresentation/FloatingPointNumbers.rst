@@ -71,7 +71,7 @@ It may sound a little complex, but remember it is the same idea as scientific no
     </style>
     <script>
 
-    $( function() {
+    window.addEventListener("load", function() {
         var digitsTable = "<table style='clear: both; border-collapse: inherit; border-spacing: 0; border-radius: 5px; border: 1px solid #ccc;'><tr><th class='signcol'>Sign</th><th class='expcol'>Exponent</th><th class='fraccol'>Fraction</th></tr><tr>";
 
         var i = 0;
