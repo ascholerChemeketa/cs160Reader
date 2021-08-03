@@ -17,7 +17,7 @@ home_dir = os.getcwd()
 
 master_url = 'http://127.0.0.1:8000'
 project_name = 'CS160Reader'
-serving_dir = './built/CS160Reader'
+serving_dir = './built/cs160Reader'
 
 options(
     sphinx = Bunch(docroot=".",),
