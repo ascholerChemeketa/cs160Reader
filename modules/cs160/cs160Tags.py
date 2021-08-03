@@ -45,6 +45,7 @@ class AddScript(Directive):
     option_spec = {'defer': directives.flag}
 
     def run(self):
+        print("====",self.arguments[0])
         if 'defer' not in self.options:
             self.options['defer'] = True
         defer_val = "defer" if bool(self.options['defer']) else ""
