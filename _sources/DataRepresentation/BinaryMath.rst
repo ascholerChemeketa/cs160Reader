@@ -9,45 +9,45 @@ With slight modifications can use our normal algorithms for doing binary math. T
 
 .. raw:: html
 
-          <table width="360" border="0" bordercolorlight="#FFFFFF" bordercolordark="#666666" bgcolor="#dff0d8" cellpadding="2" cellspacing="0">
+      <table width="360" border="0" bgcolor="#dff0d8" style="margin-bottom: 20px;">
         <tbody>
         <tr>
-          <td width="60">
+          <td style="width: 60px; padding-right:10px;">
             <pre><b>
 
     0
  <u>+  0</u>
     0</font></b></pre>
           </td>
-          <td width="60">
+          <td style="width: 60px; padding-right:10px;">
             <pre><b>
 
     0
  <u>+  1</u>
     1</font></b></pre>
           </td>
-          <td width="60">
+          <td style="width: 60px; padding-right:10px;">
             <pre><b>
 
     1
  <u>+  0</u>
     1</font></b></pre>
           </td>
-          <td width="60">
+          <td style="width: 60px; padding-right:10px;">
             <pre><b>
 
     1
  <u>+  1</u>
    10</font></b></pre>
           </td>
-          <td width="60">
+          <td style="width: 60px; padding-right:10px;">
             <pre><b>
     1
     1
  <u>+  1</u>
    11</font></b></pre>
           </td>
-          <td width="60">
+          <td style="width: 60px;">
             <pre><b>   1
     1
     1
@@ -58,7 +58,6 @@ With slight modifications can use our normal algorithms for doing binary math. T
       </tbody></table>
 
 For multi-digit numbers, simple work from right to left, adding each column and carrying as necessary:
-
 
 .. youtube:: CDURJ_E4ALA
    :height: 315
@@ -78,9 +77,6 @@ For multi-digit numbers, simple work from right to left, adding each column and 
     Real software can have bugs when the developers do not use enough bits to represent numbers. Youtube engineers had to `add more bits to the storage <https://www.wired.com/2014/12/gangnam-style-youtube-math/>`_ for view counts of the video Gangnam Style when the view counter for the video was threatening to overflow the 32 bits they had originally used.
 
     You can see the same kind of bug `at work in the game Hearthstone. <http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone>`_.
-
-
-
 
 One thing we do have to watch out for any time we have a fixed number of bits to represent numbers is **overflow**. That is when a value becomes too large to store in the bits we have. When we are doing math on paper, we can add as many digits as we need. But when an electric circuit is doing math, there are a fixed number of digits that can be represented. For example, say we are using 4-bit numbers and we try to add 9 + 9 (:math:`{1001}_2` + :math:`{1001}_2`) - any bits past 4 need to be discarded.
 

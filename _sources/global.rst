@@ -17,8 +17,6 @@
 
 .. role:: inlinegroup
 
-.. role:: container-box
-
 .. role:: main-table
 
 .. highlight:: none

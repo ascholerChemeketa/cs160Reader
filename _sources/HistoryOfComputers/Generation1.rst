@@ -19,7 +19,7 @@ World War II inspired a great deal of mathematical work. The British developed a
 
 .. raw:: html
 
-    <div class="figure" style="width: 500px"><a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/birth-of-the-computer/4/82/2218"><img title="Colossus: Breaking the Code" src="http://s3v.computerhistory.org/102695598-03-01.jpg?"><span></span></a><p class="caption">Computer History Museum</p><div class="legend">Breaking The Code</div></div>
+    <div class="figure"><a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/birth-of-the-computer/4/82/2218"><img title="Colossus: Breaking the Code" src="http://s3v.computerhistory.org/102695598-03-01.jpg?"><span></span></a><p class="caption">Computer History Museum</p><div class="legend">Breaking The Code</div></div>
 
 .. index:: ENIAC
 

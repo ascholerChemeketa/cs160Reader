@@ -5,31 +5,6 @@
 Bit Patterns
 ============================
 
-..  sidebar:: \
-
-    .. raw:: html
-
-        <div class="inlinegroup container">
-        <img style="width: 40%;" src="../_images/toggleOff.gif" class="toggleImg"/>
-        <img style="width: 40%;"  src="../_images/toggleOff.gif" class="toggleImg"/>
-        <script>
-          function toggle() {
-            if($(this).attr('src').indexOf("toggleOn") != -1)
-                $(this).attr('src','../_images/toggleOff.gif');
-            else
-                $(this).attr('src','../_images/toggleOn.gif');
-          }
-          $("img.toggleImg").mousedown(toggle);
-        </script></div>
-
-        You should be able to make 4 patterns with these two switches
-
-.. These two images are to force sphinx to copy needed images over
-.. image:: Images/toggleOff.gif
-    :class: display-none
-
-.. image:: Images/toggleOn.gif
-    :class: display-none
 
 A bit can only represent two possible values - 0 or 1. With one bit there are two possible patterns. How many patterns can be formed with two bits? Here is a complete list:
 
@@ -38,16 +13,42 @@ A bit can only represent two possible values - 0 or 1. With one bit there are tw
    | 1 0
    | 1 1
 
+.. raw:: html
+
+   <div class="figure" style="max-width: 300px;">
+      <img style="width: 40%;" src="../_images/toggleOff.gif" class="toggleImg"/>
+      <img style="width: 40%;"  src="../_images/toggleOff.gif" class="toggleImg"/>
+      <script>
+         function toggle() {
+         if($(this).attr('src').indexOf("toggleOn") != -1)
+               $(this).attr('src','../_images/toggleOff.gif');
+         else
+               $(this).attr('src','../_images/toggleOn.gif');
+         }
+         window.addEventListener("load", () => $("img.toggleImg").mousedown(toggle));
+      </script>
+      <div class="legend">
+      Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations of on and off.
+      </div>
+   </div>
+
+.. These two images are to force sphinx to copy needed images over
+.. image:: Images/toggleOff.gif
+      :class: display-none
+
+.. image:: Images/toggleOn.gif
+      :class: display-none
+
 How many patterns can be formed with three bits? Let's list them:
 
-    | 0 0 0
-    | 0 0 1
-    | 0 1 0
-    | 0 1 1
-    | 1 0 0
-    | 1 0 1
-    | 1 1 0
-    | 1 1 1
+   | 0 0 0
+   | 0 0 1
+   | 0 1 0
+   | 0 1 1
+   | 1 0 0
+   | 1 0 1
+   | 1 1 0
+   | 1 1 1
 
 The list of patterns for three bits has 8 lines (patterns). Notice that the first four patterns are a "0" followed by the possible patterns for 2 bits. The second four patterns are a "1" followed by the patterns for 2 bits.
 
@@ -60,14 +61,14 @@ as power of two:
 
 .. rst-class:: maintable
 
-    =====   =========   =============
-    Bits    Patterns    Power of two
-    =====   =========   =============
-    1	    2	        :math:`2^1`
-    2	    4	        :math:`2^2`
-    3	    8	        :math:`2^3`
-    4	    16	        :math:`2^4`
-    =====   =========   =============
+   =====   =========   =============
+   Bits    Patterns    Power of two
+   =====   =========   =============
+   1	    2	        :math:`2^1`
+   2	    4	        :math:`2^2`
+   3	    8	        :math:`2^3`
+   4	    16	        :math:`2^4`
+   =====   =========   =============
 
 How many patterns with 5 bits? Make two copies of the 4-bit patterns (16 patterns per copy). Make the patterns unique by prefixing "0" to the first 16 patterns and "1" to the second 16. You now have :math:`16×2 = 32 = 2^5` unique patterns. This demonstrates the following:
 
@@ -79,7 +80,7 @@ Memorize this fact. Better yet, make lists of patterns (as above) and play aroun
 
 
 .. pseudo_h4:: Self Check
-    :class: underlined
+   :class: underlined
 
 
 

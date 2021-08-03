@@ -51,8 +51,6 @@ Whereas the Difference Engine could only calculate the values of polynomial func
 
     .. image:: Images/Ada_Lovelace_portrait.jpg
         :alt: Ada Lovelace
-
-|br|        
         
 **Ada Byron Lovelace** collaborated with Babbage on documenting the Analytical Engine. She is often credited as the first programmer, having developed the first algorithm - one to calculate `Bernoulli numbers <http://en.wikipedia.org/wiki/Bernoulli_number>`_ - specifically designed to run on a general computational device. She also saw the potential for calculation to be applied to tasks other than strict number crunching:
 
