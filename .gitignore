@@ -4,3 +4,4 @@ built/*
 build_info
 sphinx-enki-info.txt
 .vscode
+sphinx_settings.json
