@@ -22,6 +22,7 @@ Computation and Computer Science
    OperatingSystems/index.rst
    ParallelProcessing/index.rst
    LimitsAndFuture/index.rst
+   ImpactsOfComputing/index.rst
 
 
 
