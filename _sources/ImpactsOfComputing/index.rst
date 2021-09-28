@@ -31,3 +31,4 @@ we are learning about to consider their impacts.
     B2B.rst
     AnalyzingImpacts.rst
     Example1.rst
+    Example2.rst
