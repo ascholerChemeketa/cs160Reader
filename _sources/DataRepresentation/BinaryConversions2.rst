@@ -15,7 +15,7 @@ The following algorithm converts a decimal number to a binary one:
 
 .. faux_code::
 
-     Step 1: Start with a blank ``answer`` and the ``number`` your are converting
+     Step 1: Start with a blank ``answer`` and the ``number`` you are converting
      Step 2: Divide your ``number`` by 2 to make a ``quotient`` and a ``remainder``
      Step 3: Place your ``remainder`` on the **left** side of your ``answer``
      Step 4: If your ``quotient`` is 0, you are done
