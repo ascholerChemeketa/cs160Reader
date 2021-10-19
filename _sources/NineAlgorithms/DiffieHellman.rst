@@ -10,7 +10,7 @@ Diffie Hellman (Ch 4)
 .. pseudo_h3:: Math Tips
     :class: underlined
     
-Doing clock math on small numbers isn't too hard - once you learn about it, you should be able to figure out what say 20 on a clock size of 7 is (the answer is 6). It is a little bit harder when you are dealing with really large numbers. Here is a tip on how to calculate clock math for large values:
+Doing clock math on small numbers isn't too hard - once you learn about it, you should be able to figure out what 20 on a clock size of 7 is (the answer is 6). It is a little bit harder when you are dealing with really large numbers. Here is a tip on how to calculate clock math for large values:
 
 The more formal name for clock math is modulo arithmetic or mod for short. We would write 20 on a clock size of 7 as: :math:`20 \textrm{ mod } 7`. You can ask `Wolfram Alpha <http://www.wolframalpha.com>`__ to do that math for you, try typing "20 mod 7" in the box below and hitting enter:
     
@@ -43,4 +43,4 @@ Want to verify you know how to do the calculations from this week's 9 Algorithms
     - :9: Correct!
       :x: No. Try again! Make sure you are using the formula (other PPN) ^ (your secret number) mod (clock size)
 
-Incidentally, because our clock size is 13, it would be easy to uncover the secret. You simply have to try **0.html**, then **1.html**, **2.html**, ... up to **12.html** - on a clock size of 13 you can never have an answer greater than 12. For this reason, when using hte algorithm in real life, the clock size needs to be much, much larger.
+Incidentally, because our clock size is 13, it would be easy to uncover the secret. You simply have to try **0.html**, then **1.html**, **2.html**, ... up to **12.html** - on a clock size of 13 you can never have an answer greater than 12. For this reason, when using the algorithm in real life, the clock size needs to be much, much larger.
