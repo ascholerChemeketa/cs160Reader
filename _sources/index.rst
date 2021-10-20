@@ -9,6 +9,7 @@ Computation and Computer Science
 
 .. toctree::
    :includehidden:
+   :numbered:
    :maxdepth: 1
 
    ComputingFields/index.rst

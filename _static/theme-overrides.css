@@ -469,3 +469,7 @@ div.runestone_caption {
 .underlined {
     border-bottom: thin #ccc solid;
 }
+
+#scprogresscontainer {
+    display: none;
+}
