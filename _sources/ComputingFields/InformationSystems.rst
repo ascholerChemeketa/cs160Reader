@@ -5,25 +5,51 @@
 Information Systems
 =====================================
  
-In some ways **Information Systems** attacks the same basic problem as Information Technology, "how should we use technology to support businesses and organizations?" However, while IT is more concerned with the technology side of the problem, Information Systems comes at the problem from the business side. They are interested in questions like: "What information does the enterprise need?", "How is that information generated?", "Is it delivered to the people who need it? Is it presented to them in ways that permit them to use it readily?"
+In some ways **Information Systems** attacks the same basic problem as Information Technology,
+in that it is focused on making computer technology work for people and organizations.
 
-Information Systems degrees generally have a blend of courses in technology, business, and communications.  IS professionals must understand both technical and organizational factors so they can serve as a bridge between the technical and management groups in an organization. The graph below shows this expected range of knowledge: a thorough knowledge of how to understand and meet business needs, with enough knowledge of applications and software development to make knowledgeable decisions about how to use those tools
+However, while IT is more concerned with the technology itself, Information Systems focuses
+more on business related issues. They are interested in questions like: "What information
+does the enterprise need?", "How is that information generated?", "Is it delivered to the people
+who need it? Is it presented to them in ways that permit them to use it readily?"
 
+Information Systems degrees generally have a blend of courses in technology, business, and
+communications. IS professionals must understand both technical and organizational factors
+so they can serve as a bridge between the technical and management groups in an organization.
 
-.. figure:: Images/fieldsIS.png
-   :alt: Information Systems
-   
-   `ACM Computing Curriculum report <http://www.acm.org/education/education/curric_vols/CC2005-March06Final.pdf>`__
-   
-    
 **Typical careers:**
 
 #. `Computer Systems Analyst <http://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm>`__
-#. `Information Security Analyst <http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm>`__
 
 **Education:**
 
-* Students interested in Information Science careers should explore the `Computer Information Systems <https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/>`__ department at Chemeketa. They offer multiple certificate and two year degree programs.
-* Because IS jobs tend to be "big picture" management, they are more likely to require a Bachelor's degree than IT jobs. Local options include: `Western Oregon's Information Systems <https://www.wou.edu/las/cs/babsis.php>`__ degree and `OIT's Business/Systems Anaylsis <http://www.oit.edu/academics/degrees/information-technology>`__ IT degree.
+Because IS jobs tend to have significant business and management responsibilities, they are more likely to require a Bachelor's
+degree than IT jobs.
+
+An Information Systems degree will combine technical knowledge and business knowledge in different degrees. Some IS programs
+have a more technical focus, with a core of technical skills like an IT professional. Other programs are much
+more business focused and have technical courses that don't focus on developing practical skills, but instead focus
+on understanding how technologies are used so that the IS practitioner can manage people with the more applied skills.
+
+**Knowledge Domains:**
+
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+ 
+.. raw:: html
+
+    <div>
+      <canvas id="disciplineChart" height="500px" style="width: 100%"></canvas>
+    </div>
+    <div style="margin: 0 auto; text-align:center; font-family: Roboto; font-size: 0.8em;">Click a discipline label to enable or disable it in the visualization.</div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="../_static/ACMDataVis.js"></script>
+    <script>
+      makeChart("disciplineChart", ["IS"]);
+    </script>
+
+
+.. quick_attribution:: ACM 
 
 .. quick_attribution:: ACM 

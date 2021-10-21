@@ -5,28 +5,53 @@
 Information Technology
 =====================================
  
-Although sometimes the term "Information Technology" is used to refer to anyone who works with computers, it also has a more specific meaning - the skill set required to put computers to work in a business or other organization. If Computer Science is more about learning to build new technology, **Information Technology** is more about learning how to take existing computer technology and put it to use.
+Although the term **Information Technology** is sometimes used to any career involving computers,
+in the world of education it has a more specific meaning - the skill set required to put computers
+to work in a business or other organization.
 
-IT professionals have the responsibility for selecting hardware and software products appropriate for an organization. They integrate those products with organizational needs and infrastructure and install, customize and maintain those applications, thereby providing a secure and effective environment that supports the activities of the organization’s computer users. In IT, programming often involves writing short programs that typically connect existing components (scripting).
+IT professionals have the responsibility for installing and maintaining hardware and software products
+as well as to integrate those products with each other to meet organizational needs. They often work
+directly with non-technical users of complex technology and to support those users and fix issues.
 
-Below is shown the expected skills in an IT graduate. They need skills to enable them to effectively deploy and apply technology as well as to  work with end users. They also need some experience with developing solutions so they understand how to make the modifications required to get customize tools to the needs of a particular job. This knowledge is usually focused on a particular area - databases, system administration, web design, networking, etc...
-
-.. figure:: Images/fieldsIT.png
-   :alt: Information Technology
+A broad range of basic knowledge is required for an IT professional - they need to understand the
+basics of networking, programming, operating systems, computer hardware, and security. On top of
+this base layer of knowledge, many IT professionals develop more extensive expertise in a particular
+area such as database administration, system administration, cybersecurity.
    
-   `ACM Computing Curriculum report <http://www.acm.org/education/education/curric_vols/CC2005-March06Final.pdf>`__
-   
-    
 **Typical careers:**
 
-#. `Network and Systems Administrator <http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm>`__
-#. `Information Security Analysts <http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm>`__
-#. `Database Administrator <http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm>`__
 #. `Computer Support Specialist <http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm>`__
+#. `Network and Systems Administrator <http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm>`__
+#. `Database Administrator <http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm>`__
 
 **Education:**
 
-* Students interested in Information Technology careers should explore the `Computer Information Systems <https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/>`__ department at Chemeketa. They offer multiple certificate and two-year degree programs.
-* Although many areas of IT are open to anyone with a certificate or two-year degree, positions with more responsibility may require a Bachelor's degree. OIT offers Bachelor's degrees in `Information Technology <http://www.oit.edu/academics/degrees/information-technology>`__.
+Many entry level jobs in IT are open to anyone with a certificate or two-year degree Associate's. However, advanced jobs
+in specific areas often require advanced training or certification in that field. For example, to become a
+network administrator, you would need significant specialized knowledge in installing and configuring computer
+networks on top of the base level of knowledge expected from all IT professionals.
+
+Positions with more business or management responsibility may require a Bachelor's degree.
+
+**Knowledge Domains:**
+
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+required expertise while 1 represents a minimal amount. Additional specialized knowledge in one or more areas
+is often required for career advancement.
+ 
+.. raw:: html
+
+    <div>
+      <canvas id="disciplineChart" height="500px" style="width: 100%"></canvas>
+    </div>
+    <div style="margin: 0 auto; text-align:center; font-family: Roboto; font-size: 0.8em;">Click a discipline label to enable or disable it in the visualization.</div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="../_static/ACMDataVis.js"></script>
+    <script>
+      makeChart("disciplineChart", ["IT"]);
+    </script>
+
 
 .. quick_attribution:: ACM 

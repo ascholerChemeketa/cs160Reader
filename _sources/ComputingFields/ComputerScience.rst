@@ -5,18 +5,15 @@
 Computer Science
 =====================================
 
-Despite its name, much of **computer science** is not focused on the study of computers themselves. Computer science spans a wide range of topics, from its theoretical and algorithmic foundations to cutting-edge developments in robotics, computer vision, intelligent systems, bioinformatics, and other areas. What these different areas of study all have in common is a focus on studying ways to solve problems through computation with *algorithms*. (An algorithm is simply a step by step process for solving a problem.) Although computer scientists must develop a solid understanding of the machines we depend on to do computations for us, computer scientists are more concerned with understanding what problems can be solved with computation and how we can most efficiently solve those problems. 
+Despite its name, much of **computer science** is not focused on the study of computers themselves. 
+Instead, computer scientists are more concerned with understanding what problems can be solved with
+computation and how we can most efficiently and appropriately solve those problems with *algorithms*. 
+(An algorithm is simply a step by step process for solving a problem.) 
 
-The first year of study generally focuses on programming - the essential skill needed to solve problems using a computer. Courses in the following years tend to be more focused on the theory of why software and hardware work and how to build software. Students are usually expected to choose a concentration (such as systems, graphics, databases, artificial intelligence, theory, etc.). Some schools offer "applied" computer science degrees less focused on theory and more oriented to techniques used in a particular field (computational biology, software development, etc...).
-
-The graph below shows the expected skillset of a Computer Science graduate. It covers most of the left side because computer scientists are expected to have a strong theoretical grounding focusing on software, but also need to understand how computing hardware works. They design and develop all types of software from systems infrastructure (operating systems, communications programs, etc.) to application technologies (web browsers, databases, search engines, etc.), but generally, do not participate in the deployment or configuration of software or computer systems.
-
-.. figure:: Images/fieldsCS.png
-   :alt: Computer Science
-   
-   `ACM Computing Curriculum report <http://www.acm.org/education/education/curric_vols/CC2005-March06Final.pdf>`__
-   
-    
+Computer science tends to have a more theoretical focus than other computing disciplines. There is a 
+core to the discipline that is closely related to ideas in math and logic. But the discipline also 
+applies those theoretical tools to solve specific problems in areas from artificial intelligence,
+to graphics, to simulations, and many others.
 
 **Typical careers:**
 
@@ -26,7 +23,37 @@ The graph below shows the expected skillset of a Computer Science graduate. It c
 
 **Education:**
 
-* Working as a software developer requires a Bachelor's degree; working as a researcher requires a graduate degree.
-* At Chemeketa the CS department can prepare you for transfer to a 4-year Bachelor's program. See the `CS Department Advising Information page <http://computerscience.chemeketa.edu/advising/>`__ for details.
+* Working as a software developer requires a Bachelor's degree
+* Working as a research scientist requires a graduate degree (Master's of PhD).
+
+The first year of study generally focuses on programming - the essential skill needed to solve problems using a computer. Courses in the following years tend to be more focused on the theory of why software and hardware work and how to build software.
+
+During their Jr and Sr years students usually can chose from classes to concentrate in a specific area
+(graphics, databases, artificial intelligence, computational biology, software development). For students who
+intend to become software developers, this is an important opportunity to take courses on software engineering
+and applied programming skills.
+
+Computer science students generally need a strong core of mathematics to support the theoretical parts of
+their CS coursework.
+
+
+**Knowledge Domains:**
+
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+ 
+.. raw:: html
+
+    <div>
+      <canvas id="disciplineChart" height="500px" style="width: 100%"></canvas>
+    </div>
+    <div style="margin: 0 auto; text-align:center; font-family: Roboto; font-size: 0.8em;">Click a discipline label to enable or disable it in the visualization.</div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="../_static/ACMDataVis.js"></script>
+    <script>
+      makeChart("disciplineChart", ["CS"]);
+    </script>
+   
 
 .. quick_attribution:: ACM 

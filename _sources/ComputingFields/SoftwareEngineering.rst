@@ -5,21 +5,20 @@
 Software Engineering
 =====================================
  
-S\ **oftware engineering** is concerned with developing and maintaining software systems that behave reliably and efficiently, are affordable to develop and maintain, and satisfy the requirements of the users. It has developed to meet the needs of industry for graduates capable of working in teams on large software systems.
+S\ **oftware engineering** is concerned with developing and maintaining software systems
+that behave reliably and efficiently, are affordable to develop and maintain, and satisfy
+the requirements of the users. It has developed to meet the needs of industry for graduates
+capable of working in teams on large software systems.
 
-Like computer science, software engineers need a strong foundation in programming fundamentals and basic computer science theory. After that similar start, Software Engineering programs generally have a well-defined sequence of courses focusing on the skills needed to develop reliable software in an efficient manner (problem modeling and analysis, software design, software verification and validation, development process management). While both CS and SE programs typically require students to experience team project activity, SE programs tend to involve the students in significantly more of it.
-
-Although some schools offer degrees specifically in Software Engineering, at most schools it exists as a specialization within the computer science department. Someone who knows they want to become a working software developer thus would focus on that sequence of courses instead of picking a more theoretical area to specialize in.
-
-A software engineer is expected to have expertise in software development ranging from theoretical, through development and deployment and configuration. They are also expected to have an understanding of how to develop the system architectures that programs run on and how the needs of an organization affect the software development process. The graph below shows this range of expected expertise.
-
-
-.. figure:: Images/fieldsSE.png
-   :alt: SoftwareEngineering
-   
-   `ACM Computing Curriculum report <http://www.acm.org/education/education/curric_vols/CC2005-March06Final.pdf>`__
-   
-    
+There is significant overlap in the skills required in SE and CS - both require a strong foundation in
+programming fundamentals and some knowledge of computational theory. Where the two disciplines differ
+is their focus after that. While Computer Science is concerned about learning how to use computation to solve
+new problems in many different areas, Software Engineering is more concerned with mastering a specific
+set of skills required to design and develop reliable software projects. If you need someone to design
+a new way for computers to render more complex graphics in video games or solve new problems in computational
+biology, you want a computer scientist. If you want someone to help build a new application that is
+going to be a commercial project and be used by thousands of consumers, you probably want a software
+engineer.
 
 **Typical careers:**
 
@@ -27,8 +26,33 @@ A software engineer is expected to have expertise in software development rangin
 
 **Education:**
 
-* OIT offers the only Software Engineering Bachelor's degree in the Oregon public universities. At other schools, software engineering is something a student studies as a focus within a Computer Science program.
-* At Chemeketa, SE students take the same basic core of classes as CS students in order to transfer to a 4-year school to complete a Bachelor's. See the `CS Department Advising Information <http://computerscience.chemeketa.edu/advising/>`__ for more information.
+A Software Engineering degree will have many of the same programming courses as a CS degree along with
+the same basic theory classes and supporting math. However, the junior and senior years, while a CS student might
+take a wider range of more theoretical classes, a SE student will have coursework focused more
+narrowly on topics like designing and testing software, managing projects, and using industry standard tools.
+
+Although some schools offer degrees specifically in Software Engineering, at most schools it exists as a specialization
+within the computer science department. Someone who knows they want to become a working software developer thus would
+earn a CS degree, but focus on the Software Engineering related courses instead of picking a more theoretical area to specialize in.
+
+**Knowledge Domains:**
+
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+ 
+.. raw:: html
+
+    <div>
+      <canvas id="disciplineChart" height="500px" style="width: 100%"></canvas>
+    </div>
+    <div style="margin: 0 auto; text-align:center; font-family: Roboto; font-size: 0.8em;">Click a discipline label to enable or disable it in the visualization.</div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="../_static/ACMDataVis.js"></script>
+    <script>
+      makeChart("disciplineChart", ["SE"]);
+    </script>
+   
 
 
 .. quick_attribution:: ACM 
