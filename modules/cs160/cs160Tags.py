@@ -45,7 +45,6 @@ class AddScript(Directive):
     option_spec = {'defer': directives.flag}
 
     def run(self):
-        print("====",self.arguments[0])
         if 'defer' not in self.options:
             self.options['defer'] = True
         defer_val = "defer" if bool(self.options['defer']) else ""
@@ -149,14 +148,14 @@ class AttributionLine():
         
     def getTitleText(self):
         if 'title_link' in self.options:
-            return "<a src='%(title_link)s'>%(title)s</a>" % self.options
+            return "<a href='%(title_link)s'>%(title)s</a>" % self.options
         else:
             return "%(title)s" % self.options
             
     def getAuthorText(self):
         if 'author' in self.options:
             if 'author_link' in self.options:
-                return " by <a src='%(author_link)s'>%(author)s</a>" % self.options
+                return " by <a href='%(author_link)s'>%(author)s</a>" % self.options
             else:
                 return " by %(author)s" % self.options
         else:
@@ -217,8 +216,8 @@ class QuickAttribution(Directive):
                 cur_options['license'] = "CC_SA_30"
             
             if argument == 'ACM':
-                cur_options['title'] = "Association for Computing Machinery"
-                cur_options['title_link'] = "http://computingcareers.acm.org/"
+                cur_options['title'] = "Association for Computing Machinery Curriculum Report"
+                cur_options['title_link'] = "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf"
                 
             output = output + AttributionLine(cur_options).getText()
             
