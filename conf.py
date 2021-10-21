@@ -222,10 +222,10 @@ html_theme_path = [pkg_resources.resource_filename('runestone', 'common/project_
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Chemeketa CS160 Reader'
+html_title = 'CS160 Reader'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='Chemeketa CS160'
+html_short_title ='CS160'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
