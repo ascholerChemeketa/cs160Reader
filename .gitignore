@@ -1,7 +1,11 @@
+__pycache__
 *.pyc
-Thumbs.db
 built/*
 build_info
 sphinx-enki-info.txt
-.vscode
 sphinx_settings.json
+
+*.bak
+
+.vscode
+Thumbs.db
