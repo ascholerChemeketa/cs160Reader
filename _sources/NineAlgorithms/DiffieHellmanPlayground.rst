@@ -1,7 +1,7 @@
 .. include:: ../global.rst
 
 Diffie Hellman Color Mixing Playground (Ch 4)
-=========================================
+=======================================================
 
 The `Diffie Hellman Color Mixing Playground <../_static/sharedSecretColorApp/colorMixing.html>`__ is a javascript app that allows you to experiment with the shared secret paint-mixing example from chapter 4.
 
