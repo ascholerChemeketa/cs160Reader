@@ -5,6 +5,9 @@ Diffie Hellman Color Mixing Playground (Ch 4)
 
 The `Diffie Hellman Color Mixing Playground <../_static/sharedSecretColorApp/colorMixing.html>`__ is a JavaScript app that allows you to experiment with the shared secret paint-mixing example from chapter 4.
 
+.. image:: Images/colorMixingPlayground.png
+	:target: ../_static/sharedSecretColorApp/colorMixing.html
+
 .. pseudo_h3:: How To Use
     :class: underlined
 
