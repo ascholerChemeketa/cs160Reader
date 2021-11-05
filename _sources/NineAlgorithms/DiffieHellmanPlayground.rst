@@ -21,5 +21,5 @@ Additionally, You can enable the use of "clock math", which will show you the ca
 * With clock math enabled, use the lower text boxes to change your private number, the public base, and public clock.
 
 .. attribution::
-    :title_1: Diffie Helman Color Mixing Demo Application
+    :title_1: Diffie-Hellman Color Mixing Demo Application
     :author_1: Samuel S. Jennings
