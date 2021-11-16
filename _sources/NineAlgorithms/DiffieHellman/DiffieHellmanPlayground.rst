@@ -1,14 +1,14 @@
-.. include:: ../global.rst
+.. include:: ../../global.rst
 
 Diffie Hellman Color Mixing Playground (Ch 4)
 =======================================================
 
-The `Diffie Hellman Color Mixing Playground <../_static/sharedSecretColorApp/colorMixing.html>`__ is a JavaScript app that allows you to experiment with the shared secret paint-mixing example from chapter 4.
+The `Diffie Hellman Color Mixing Playground <../../_static/sharedSecretColorApp/colorMixing.html>`__ is a JavaScript app that allows you to experiment with the shared secret algorithm from chapter 4. It demonstrates both the "paint mixing" version of the algorithm as well as the final version using exponents and modular arithmetic. 
 
 .. image:: Images/colorMixingPlayground.png
-	:target: ../_static/sharedSecretColorApp/colorMixing.html
+	:target: ../../_static/sharedSecretColorApp/colorMixing.html
 
-.. pseudo_h3:: How To Use
+.. pseudo_h3:: How To Use The Playground
     :class: underlined
 
 Initially, you will see a series of interconnected colored boxes, each representing a different mixed color. Behind the black "walls" are your color and Arnold's color, which can only be seen from their corresponding views. In the middle is the public color, which is always visible. The boxes overlapping the public color, are your and Arnold's public/private colors (the private color mixed with the public color). Notice how those boxes extend past the wall and into each corner. The overlap between the private color, and the other person's public/private color, shows the shared secret color.
