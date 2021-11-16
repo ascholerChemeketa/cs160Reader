@@ -8,7 +8,7 @@ Resources and additional materials to accompany readings in *Nine Algorithms Tha
    :maxdepth: 1
 
    PageRank.rst
-   DiffieHellman.rst
+   DiffieHellman/index.rst
    ErrorCorrection.rst
    PatternRecognition2.rst
    Compression.rst
