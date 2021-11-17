@@ -9,7 +9,7 @@ Modern PC processors often have memory addresses `given by 48 bits <http://en.wi
 
 Not only are there significantly more addresses that a program is allowed to use than actually exist, every program that is running thinks it gets to use nearly the entire memory space. Two programs may both decide to store a piece of information at byte address #100000 - the operating system needs to make sure that neither program destroys the other's information and that they can both get to what they stored.
 
-Operating systems can address both of these issues through memory address visualization. The basic idea is that the operating system takes any memory reference from a program (a **virtual address**) and remaps it to a location in main memory. What a program thinks is address #100000 may actually be at address #203434. When a second program asks to store information at address #100000, that is mapped to a completely different location, say #834255.
+Operating systems can address both of these issues through memory address virtualization. The basic idea is that the operating system takes any memory reference from a program (a **virtual address**) and remaps it to a location in main memory. What a program thinks is address #100000 may actually be at address #203434. When a second program asks to store information at address #100000, that is mapped to a completely different location, say #834255.
 
 However, all this juggling is completely invisible to running programs. The operating system provides the abstraction of a nice clean sequential set of memory addresses for each program to use while doing complicated tricks in the background to allocate the physical hardware among all the different running processes. The diagram below demonstrates how this works 
 
