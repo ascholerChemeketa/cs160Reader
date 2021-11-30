@@ -17,7 +17,7 @@ Although the simplest microprocessors (like those inside simple electronic devic
 
    ..
 
-   Popular operating systems logos. Clockwise from top-left: Macintosh, Linux, Windows, iOS, Android, FreeBSD
+   Popular operating systems logos. Clockwise from top-left: Macintosh, Linux, Windows, FreeBSD, Android, iOS
 
 .. sidebar:: \*nix
 
