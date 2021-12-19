@@ -1,13 +1,13 @@
 .. include:: ../global.rst
 
-Example Two
-=========================================
+Example: Street Maps
+====================
 
-This example describes the impacts of street map applications on society.
+This example analyzes the impacts of street map applications on society.
 
 --------------------------------
 
-**A. According to your source(s), what is the purpose/use of the technology?**
+**A. According to your sources, what is the purpose/use of the technology?**
 
 Street map software, such as the original `MapQuest
 <https://en.wikipedia.org/wiki/MapQuest>`_, the dominant
@@ -18,7 +18,7 @@ to browse maps on the web and plan driving routes. They often have other
 features, such as searching for businesses in a particular geographical
 area, planning trips with multiple stops, and predicting traffic.
 
-**B. According to your source(s), how does the technology uses computation?**
+**B. According to your sources, how does the technology use computation?**
 
 The main data used is a spatial description of the map itself, including
 not only the coordinates of significant landmarks and turns in the

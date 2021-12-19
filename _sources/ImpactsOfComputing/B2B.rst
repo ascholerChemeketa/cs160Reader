@@ -3,9 +3,10 @@
 Blown To Bits
 =========================================
 
-The book *Blown to Bits* does a wonderful job of laying out many of the
-effects of computing technology. These paragraphs from the book lay out
-its thesis and also elegantly describe our the concerns we should all have:
+The book `Blown to Bits <https://www.bitsbook.com/>`_ does a wonderful
+job of laying out many of the effects of computing technology. These
+paragraphs from the book lay out its thesis and also elegantly describe
+our the concerns we should all have:
 
 Good and Ill, Promise and Peril
 -----------------------------------
@@ -62,13 +63,14 @@ The key to managing the ethical and moral consequences of technology
 while nourishing economic growth is to regulate the use of technology without banning
 or restricting its creation.
 
-Few regulations mandate disclosure that the information is being collected or
-restrict the use to which the data can be put. The USA PATRIOT Act and other
-federal laws give government agencies sweeping authority to sift through mostly
-innocent data looking for signs of “suspicious activity” by potential terrorists—
-and to notice lesser transgressions in the process. Although the World Wide Web
-reaches into millions of households, the rules and regulations governing it are
-not much better than those of a lawless frontier town of the Old West.
+Few regulations mandate disclosure that the information is being collected
+or restrict the use to which the data can be put. The USA PATRIOT Act
+and other federal laws give government agencies sweeping authority to
+sift through mostly innocent data looking for signs of “suspicious
+activity” by potential terrorists—and to notice lesser transgressions
+in the process. Although the World Wide Web reaches into millions of
+households, the rules and regulations governing it are not much better
+than those of a lawless frontier town of the Old West.
 
 New Technologies Bring Both Risks and Opportunities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
