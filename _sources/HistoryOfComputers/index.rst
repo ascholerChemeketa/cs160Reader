@@ -16,9 +16,8 @@ History of computers
 
 There is no one person who can claim to be the inventor of the computer - many people contributed to the development of the modern computer:
    
-.. raw:: html
 
-    <div class="figure" style="width: 525px;">
-    <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/birth-of-the-computer/4/91/2214"><img title="Who Invented the Computer?" src="http://s3v.computerhistory.org/102695599-03-01.jpg"><span></span></a>
-    <p class="caption">Computer History Museum</p><div class="legend">Who Invented the Computer?</div></div>
-    
+.. youtube:: d1pvc9Zh7Tg
+   :height: 315
+   :width: 560
+   

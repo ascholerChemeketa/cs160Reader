@@ -8,7 +8,7 @@ Prehistory
 
 Devices have been used to aid computation for thousands of years. The earliest known counting devices are clay tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.
 
-.. figure:: Images/Calculi.jpg
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/0/0a/Accountancy_clay_envelope_Louvre_Sb1932.jpg
    :alt: Counting stones
    :figwidth: 200
    
@@ -19,11 +19,11 @@ Devices have been used to aid computation for thousands of years. The earliest k
    
 By about 2500 BC, counting devices had been abstracted away from counting a particular thing and abacuses first appeared in Sumeria. These devices rely on the user moving beads or stones to represent numbers and to do arithmetic on them. Since then, many other forms of reckoning boards or tables have been invented. In a medieval European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to certain rules, as an aid to calculating sums of money.
 
-.. figure:: Images/Abacus.jpg
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg
    :alt: Abacus
    :figwidth: 80%
    
-   Image courtesy of the Computer History Museum.
+   Wikimedia Commons
    
    An abacus
 
@@ -44,19 +44,19 @@ In the 1600s, the first mechanical calculators were developed. A teenager named 
 
 .. container:: inlinegroup clear
 
-    .. figure:: Images/Pascaline.jpg
-       :alt: Abacus
+    .. figure:: https://upload.wikimedia.org/wikipedia/commons/4/4d/Pascaline-CnAM_00823-0003-IMG_6509.JPG
+       :alt: Pascaline
        :figwidth: 45%
        
-       Image courtesy of the Computer History Museum.
+       Rama, CC BY-SA 3.0 FR, via Wikimedia Commons
        
        The Pascaline
        
-    .. figure:: Images/Leibniz_Binary.jpg
-       :alt: Abacus
+    .. figure:: https://upload.wikimedia.org/wikipedia/commons/a/ac/Leibniz_binary_system_1703.png
+       :alt: Leibniz notes
        :figwidth: 45%
     
-       ..
+       Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons
        
        Leibniz's notes on binary numbers
    

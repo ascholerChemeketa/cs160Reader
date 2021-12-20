@@ -9,31 +9,30 @@ Today we live in a world dominated by computers. We are surrounded not only by t
 
 .. container:: inlinegroup
 
-    .. figure:: Images/coreI7.jpg
+    .. figure:: https://upload.wikimedia.org/wikipedia/commons/7/70/Intel%4014nm%40%40Skylake%40Skylake-X%28LCC%29%40i7-7820X%40SR3L5_DSC09728_%2839868601861%29.jpg
        :alt: Intel Core i7 microprocessor
        :figwidth: 45%
        
-       ..
+       Fritzchens Fritz, CC0, via Wikimedia Commons
        
        Modern microprocessors like this Intel i7 processor feature billions of transistors on one chip the size of a fingernail.
 
        
-    .. figure:: Images/iphone.jpg
+    .. figure:: https://upload.wikimedia.org/wikipedia/commons/8/87/IPhone_4s_white_front%2C_back_and_side.jpg
        :alt: Apple Iphone
        :figwidth: 45%
        
-       ..
+       Apple, CC BY-SA 4.0, via Wikimedia Commons
        
        Smartphones like the iPhone are more powerful computers than the supercomputers of the 1970s. And they can play Angry Birds.
        
        
 
 How these fantastically complex microprocessors are manufactured: 
-       
-.. raw:: html
 
-    <div class="figure" style="width: 525px;">
-    <a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/digital-logic/12/288/2220"><img title="From Sand to Silicon: Integrated Circuit Design and Manufacturing" src="http://s3v.computerhistory.org/102695604-03-01.jpg"><span></span></a>
-    <p class="caption">Computer History Museum</p><div class="legend">From Sand to Silicon: Integrated Circuit Design and Manufacturing</div></div>
+.. youtube:: bor0qLifjz4
+    :height: 315
+    :width: 560
+    :end: 392
     
 .. quick_attribution:: Wikipedia 

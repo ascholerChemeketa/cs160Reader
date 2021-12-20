@@ -7,29 +7,32 @@ The First Generation
 
 .. sidebar:: Vacuum tube
 
-    .. image:: Images/vacuum-tube.jpg
+    .. figure:: https://upload.wikimedia.org/wikipedia/commons/9/9f/RCA_%E2%80%99808%E2%80%99_Power_Vacuum_Tube.jpg
         :alt: Vacuum tube
         :width: 100
 
-    The fundamental building block of most early computers.
+    Public domain, via Wikimedia Commons
+
+    A vacuum tube - the fundamental building block of most early computers.
 
 Generations of computers are largely defined by the components used to build them. Although mechanical computers like Babbage's Engines and the Hollerith desk would continue to see use well into the 20th century, mathematicians and engineers in the 1930's realized that the logic of computation - Boolean logic - could be implemented with electronic relays and switches. **Vacuum tubes**, an electrical component that can be used as a switching device, became the core components of the first electrical computers.
 
 World War II inspired a great deal of mathematical work. The British developed a series of computational devices designed to do calculations required to break German codes. These devices culminated in **Colossus**, the world's first electronic digital computer that was all programmable. Operators could reprogram the machine by changing switches and rewiring connections. Colossus could not compute any possible program, but it could be "reprogrammed" to solve different problems relating to the breaking of codes.
 
-.. raw:: html
+.. youtube:: 7cDeG3hyraA
+    :height: 315
+    :width: 560
 
-    <div class="figure"><a target="_blank" class="my-video-overlay" href="http://www.computerhistory.org/revolution/birth-of-the-computer/4/82/2218"><img title="Colossus: Breaking the Code" src="http://s3v.computerhistory.org/102695598-03-01.jpg?"><span></span></a><p class="caption">Computer History Museum</p><div class="legend">Breaking The Code</div></div>
 
 .. index:: ENIAC
 
 In 1946, the US finished work on **ENIAC**, designed to calculate artillery firing tables for the army. It is regarded as the first truly general purpose computer - it could run an arbitrary series of mathematical operations. But, like the Colossus, its program was represented through the physical wiring of the machine. Unlike Colossus, which was part of an ultra-secret British program, the ENIAC was widely known of.
 
-.. figure:: Images/Eniac.jpg
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/4/4e/Eniac.jpg
    :alt: ENIAC
    :figwidth: 80%
 
-   ..
+   Public domain, via Wikimedia Commons
 
    The ENIAC computer took up 1800 sq. feet and consumed 150kW of power.
 
@@ -41,10 +44,10 @@ Early computing machines had fixed programs. For example, a desk calculator is a
 
 .. _vonNeumann:
 
-.. sidebar::  \
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/e/e5/Von_Neumann_Architecture.svg
+    :alt: von Neumann Architecture
 
-    .. image:: Images/420px-Von_Neumann_architecture.png
-        :alt: von Neumann Architecture
+    Kapooht, CC BY-SA 3.0, via Wikimedia Commons
 
     The basic architecture of most modern computers.
 
@@ -59,13 +62,13 @@ Although EDVAC was the first general-purpose stored program computer designed, i
 
 By 1950s, computers had left the labs and gone mainstream - machines like the UNIVAC and the IBM 650 were sold commercially to government and businesses. The UNIVAC became publicly well known when CBS news used it to run a prediction of the 1952 Presidential election. The polls were predicting a win for Adlai Stevenson, but a UNIVAC program run for CBS predicted correctly that Eisenhower would win the race.
 
-.. figure:: Images/univac.jpg
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/3/37/Grace_Hopper_and_UNIVAC.jpg
    :alt: Univac
    :figwidth: 80%
 
-   Image courtesy of Computer History Museum.
+   Unknown (Smithsonian Institution), CC BY 2.0, via Wikimedia Commons
 
-   UNIVAC designer J. Presper Eckert and operator Harold Sweeney demonstrate the UNIVAC to CBS newsman Walter Cronkite.
+   Grace Murray Hopper at the UNIVAC keyboard. Grace Hopper was an American mathematician and rear admiral in the U.S. Navy who was a pioneer in developing computer technology,
 
 
 .. quick_attribution:: Wikipedia
