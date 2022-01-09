@@ -51,5 +51,3 @@ This diagram illustrates the knowledge areas required in this field. A 5 represe
 
 
 .. quick_attribution:: ACM 
-
-.. quick_attribution:: ACM 
