@@ -8,7 +8,7 @@
 Operating Systems
 =================================
 
-An operating system is a complex program that keeps the hardware and software components of a computer system coordinated. Usually, it is the only program that has full access to the computer hardware - its primary task is to manage that hardware and allow other programs to use it safely.
+An operating system is a complex program that keeps the hardware and software components of a computer system coordinated. Usually, it is the only program that has full access to the computer hardware - its primary task is to manage that hardware and control the ways in which other programs can make use of it.
 
 Although the simplest microprocessors (like those inside simple electronic devices) may not have an operating system, every complex modern computational device uses one. There are a wide range of operating systems, some specialized for running personal computers, others for smartphones and others for more specialized hardware. How many of the operating system logos do you recognize in the image below?
 

@@ -15,21 +15,60 @@ However, all this juggling is completely invisible to running programs. The oper
 
 If main memory is full, the operating system moves information to secondary memory (like the hard drive) but pretends it is still in main memory (this trick is known as **virtual memory**). Although this allows the computer to pretend there is more RAM available, it also means that any access of that memory involves retrieving it from the hard drive, which is tens of thousands of times slower. When needed, it will be swapped into memory and something else will be moved to the hard drive. If you have ever started up too many programs at once and had your computer grind to a crawl as you switch from one to another, you have seen this in practice - memory is being swapped in/out to the very slow hard drive as you switch from one program to another.
 
-This image illustrates how the process works:
-  
-.. figure:: Images/Virtual_memory.png
-    :figwidth: 90%
-    :width: 300
+Below is an illustration of how the virtual memory trick works:
 
-    `Image via Wikipedia Commons <http://en.wikipedia.org/wiki/Virtual_memory#mediaviewer/File:Virtual_memory.svg>`__ - `Creative Commons CC BY SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>`__
-    
-    The virtual addresses of a program (left side) mapped onto the physical memory of a computer (right side).
-	
-This diagram shows a program that thinks access to 16 memory addresses (the virtual addresses). The computer only has 11 addresses in physical memory (RAM). The parts of the physical memory marked red (addresses 3-6 and 10) are in use by other programs and not available to the "yellow" program.
+.. raw:: html
 
-The lines show how blocks of virtual addresses (program memory) are mapped onto the physical memory. The block of virtual addresses numbered 8-10 are mapped to physical addresses 7-9. That means if the program asks for address 8, the operating system would silently say "oh, it means address 7 of RAM, I'll use that". 
+    <style> .virtual-mem { border: 10px solid white; border-radius: 5px; margin-bottom: 10px; } </style>
 
-Because the program is using more memory than is actually available in RAM, its memory addresses 3-7 and 11-15 are currently being stored on the hard drive. If the program asks for address 12, the operating system would have to move that data into RAM so the data is available to work with. This would mean something else would have to be moved out of RAM and off to the hard drive to make room.
+
+.. tabbed:: virtualMemory
+
+    .. tab:: 1
+
+        .. image:: Images/VirtualMemory-Page-1.png
+            :class: virtual-mem
+
+        Process A thinks it has 8 addresses to use. So does process B. Orange blocks show memory for process A that is currently actually in the physical RAM, blue blocks show memory for B that is currently in RAM.
+
+        When Process A asks the operating system for "memory location 1" because it wants to access the data **A1**, the operating system looks up where that memory is really stored, finds the data in location 3 and then gives that back to the process. Process A will never know that what it thinks of as "memory location 1" is actually physically stored in location 3.
+
+        If Process B asks for "memory location 1", the operating system will give it the memory that is actually stored at location 6. If it asked for "memory location 2", it would get the data that is actually stored in location 1.
+
+    .. tab:: 2
+
+        .. image:: Images/VirtualMemory-Page-2.png
+            :class: virtual-mem
+
+        The gray blocks are blocks that are not currently in RAM. They are sitting on the hard drive, which is being used as backup storage for the RAM since there is too much total information to all fit in main memory at the same time.
+
+    .. tab:: 3
+
+        .. image:: Images/VirtualMemory-Page-3.png
+            :class: virtual-mem
+
+        Now imaging Process B asks the operating system for "memory location 8". 
+        
+        That memory block is not currently in RAM, it is on the hard drive. So, the operating system needs to move it back into RAM (the hard drive is too slow to work from directly). 
+        
+        To do that, the operating system needs to make room by evicting some other memory block. It may chose to do this based on which block has been used the least or used the least recently. We will assume it choses the block at location 5, "A3".
+
+    .. tab:: 4
+
+        .. image:: Images/VirtualMemory-Page-4.png
+            :class: virtual-mem
+
+        The needed block, "B8" has now been placed into location 5. Meanwhile, "A3" has finished moving to the hard drive to be stored until it is needed again.
+
+    .. tab:: 5
+
+        .. image:: Images/VirtualMemory-Page-5.png
+            :class: virtual-mem
+
+
+        Finally now, the operating system can complete the request by giving Process B the memory block "B8".
+
+        Process A doesn't know that "A3" is no longer actually in main memory. If it goes to access it, the operating will use the same procedure  to restore it from the hard drive by evicting some other block of memory.
 
 
 .. pseudo_h4:: Self Check
@@ -37,28 +76,28 @@ Because the program is using more memory than is actually available in RAM, its 
 
 
 .. mchoice:: virtual_memory1
-    :answer_a: 0
-    :answer_b: 1
-    :answer_c: 2
+    :answer_a: 8
+    :answer_b: 6
+    :answer_c: 3
     :answer_d: It would need to be brought in from the hard drive
-    :correct: c
-    :feedback_a: That is currently mapped to virtual address 2
-    :feedback_b: The block containing virtual address 0 and 1 is mapped to RAM starting at address 1. That means virtual address 0 would match with physical address 1.
-    :feedback_c: 
-    :feedback_d: Virtual addresses 0 and 1 are currently in RAM
+    :correct: a
+    :feedback_a: 
+    :feedback_b: That currently contains "B1", we are looking for "A6"
+    :feedback_c: That currently contains "A1", we are looking for "A6"
+    :feedback_d: "A6" is currently available in RAM
 	
-    In the diagram above, a program asks for the data at address 1 (virtual address), what physical address would the computer actually access?
+    In the diagram above, at step 5, Program A asks for "memory location 6". Where in physical memory will that be found?
 	
 	
 .. mchoice:: virtual_memory2
     :answer_a: 0
-    :answer_b: 3
+    :answer_b: 5
     :answer_c: 7
     :answer_d: It would need to be brought in from the hard drive
     :correct: d
-    :feedback_a: That is currently mapped to virtual address 2
-    :feedback_b: Physical address 3 is being used by some other program
-    :feedback_c: Physical addresses 7-9 are mapped to the virtual addresses 8-10
+    :feedback_a: That currently contains "B2", we are looking for "B5"
+    :feedback_b: That currently contains "B8", we are looking for "B5"
+    :feedback_c: That currently contains "A5", we are looking for "B5"
     :feedback_d: 
 	
-    In the diagram above, a program asks for the data at address 7 (virtual address), what physical address would the computer actually access?
+    In the diagram above, at step 5, Program B asks for "memory location 5". Where in physical memory will that be found?

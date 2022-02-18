@@ -25,5 +25,5 @@ Hundreds of times a second, the hardware interrupts the running program and give
 *Animation used by permission of Virginia Tech*
 
 
-Many modern CPUs feature multiple processing "cores" and can be running instructions from two or more processes at once. But the basic model still holds - each processing core is constantly switching between different processes.
+Many modern CPUs feature multiple processing "cores" and can be running instructions from two or more processes at once. But the basic model still holds - each processing core is constantly switching between different processes, giving each a brief chance to run some instructions before switching to the next.
 
