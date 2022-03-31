@@ -33,6 +33,10 @@ networks on top of the base level of knowledge expected from all IT professional
 
 Positions with more business or management responsibility may require a Bachelor's degree.
 
+You can start studying information technology at Chemeketa in the `Computer Information Systems program`_.
+
+.. _`Computer Information Systems program`: https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/
+
 **Knowledge Domains:**
 
 This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
