@@ -35,3 +35,13 @@ Nine Algorithms Book Supplements
    :maxdepth: 2
 
    NineAlgorithms/index.rst
+
+
+Programming in Python
+===================================
+
+.. toctree::
+   :includehidden:
+   :maxdepth: 1
+
+   CSP/index.rst
