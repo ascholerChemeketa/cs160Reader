@@ -11,9 +11,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-11-6-
+
 	
 Changing Step 3: Changing which data we use
 ============================================

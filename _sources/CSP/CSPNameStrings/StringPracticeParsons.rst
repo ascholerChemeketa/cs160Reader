@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 4-7-
-   :start: 1
+
 
 Mixed Up Code Practice
 ------------------------------

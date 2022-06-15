@@ -36,9 +36,7 @@
     :align: top
     :alt: move to last button
     
-.. 	qnum::
-	:start: 1
-	:prefix: csp-3-5-
+
 
 .. highlight:: java
    :linenothreshold: 4

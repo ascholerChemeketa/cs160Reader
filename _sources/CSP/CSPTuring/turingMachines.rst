@@ -11,9 +11,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-2-2-
+
 
 
 Turing Machines

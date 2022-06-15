@@ -11,9 +11,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-9-3-
+
 	
 .. highlight:: java
    :linenothreshold: 4

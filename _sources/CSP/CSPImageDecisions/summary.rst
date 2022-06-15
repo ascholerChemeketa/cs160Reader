@@ -8,9 +8,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-15-5-
+
 
 
 Chapter 15 - Concept Summary

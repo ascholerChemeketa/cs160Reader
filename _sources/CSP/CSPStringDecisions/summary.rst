@@ -8,9 +8,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-13-5-
+
 
 
 Chapter 13 - Summary

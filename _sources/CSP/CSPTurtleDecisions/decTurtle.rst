@@ -6,9 +6,7 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-14-2-
+
 
 Using Decisions with Turtles
 ==============================

@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 11-9-
-   :start: 1
+
    
 Exam Questions for Chapters 9 to 11
 -------------------------------------

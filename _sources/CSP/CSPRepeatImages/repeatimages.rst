@@ -11,9 +11,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-11-1-
+
 
 Using Repetition with Images
 ============================================

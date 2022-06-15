@@ -11,9 +11,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-18-5-
+
 
 What's the lowest PM 2.5 pollution?
 =====================================

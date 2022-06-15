@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 24-1-
-   :start: 1
+
    
 Post Exam
 -------------

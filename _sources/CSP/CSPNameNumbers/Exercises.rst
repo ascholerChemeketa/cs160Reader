@@ -10,9 +10,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-3-12-
+
 
 Chapter 3 Exercises
 ----------------------

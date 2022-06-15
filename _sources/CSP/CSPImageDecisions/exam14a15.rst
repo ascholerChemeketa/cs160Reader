@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 15-7-
-   :start: 1
+
    
 Exam Questions for Chapters 14 and 15
 -------------------------------------

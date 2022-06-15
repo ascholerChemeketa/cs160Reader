@@ -11,9 +11,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-11-3-
+
 
 A Pattern for Image Processing
 ================================

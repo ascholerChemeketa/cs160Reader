@@ -11,9 +11,7 @@
     :align: top
     :alt: teacher note
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-5-5-
+
 	
 .. highlight:: java
    :linenothreshold: 4

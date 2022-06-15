@@ -11,9 +11,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-11-5-
+
 
 Changing Step 6: Changing where we put the colors
 ===================================================

@@ -10,9 +10,7 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: 9-6-
+
 
 Chapter 9 Exercises
 --------------------

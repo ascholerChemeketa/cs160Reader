@@ -8,9 +8,7 @@
 
 .. setup for automatic question numbering.
     
-.. 	qnum::
-	:start: 1
-	:prefix: csp-16-8-
+
   
 For Each Item Loop
 ===================

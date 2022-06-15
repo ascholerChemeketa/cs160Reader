@@ -1,6 +1,4 @@
-.. 	qnum::
-	:start: 1
-	:prefix: csp-24-1-
+
 
 AP CS Principles Exam Format
 ======================================================

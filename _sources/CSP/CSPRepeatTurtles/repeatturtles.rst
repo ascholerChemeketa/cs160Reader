@@ -11,9 +11,7 @@
     :align: top
     :alt: teacher note
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-10-1-
+
 
 Using Repetition with Turtles
 ===============================

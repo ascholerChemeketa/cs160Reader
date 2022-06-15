@@ -11,10 +11,6 @@
 
 .. setup for automatic question numbering.
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-1-4-
-
 
 .. |runbutton| image:: Figures/run-button.png
     :height: 20px

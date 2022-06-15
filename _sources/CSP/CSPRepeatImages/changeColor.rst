@@ -12,9 +12,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-11-4-
+
 
 Changing Step 5: Increasing and decreasing color values
 ========================================================

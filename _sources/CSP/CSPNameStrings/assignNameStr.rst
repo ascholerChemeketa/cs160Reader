@@ -16,9 +16,7 @@
     :align: top
     :alt: audio tour button
 
-.. 	qnum::
-	:start: 1
-	:prefix: csp-4-1-
+
 
 Assign a Name to a String
 ===========================

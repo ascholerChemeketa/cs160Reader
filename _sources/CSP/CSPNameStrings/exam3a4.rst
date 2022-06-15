@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 4-7-
-   :start: 1
+
    
 Exam Questions for Chapters 3 and 4
 -------------------------------------

@@ -8,9 +8,7 @@
 
 .. setup for automatic question numbering.
     
-.. 	qnum::
-	:start: 1
-	:prefix: csp-16-1-
+
 
 
 Working with Collections of Data

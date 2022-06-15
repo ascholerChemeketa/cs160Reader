@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 13-7-
-   :start: 1
+
    
 Exam Questions for Chapters 12 and 13
 -------------------------------------

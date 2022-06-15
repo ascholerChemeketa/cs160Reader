@@ -1,6 +1,4 @@
-.. qnum::
-   :prefix: 6-10-
-   :start: 1
+
    
 Exam Questions for Chapters 5 and 6
 -------------------------------------
