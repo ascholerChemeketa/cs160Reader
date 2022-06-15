@@ -144,16 +144,6 @@ The following code is an attempt to show another way to print the values from 1 
                 print(counter)
                 counter = counter + 1
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_8_3_5_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_8_3

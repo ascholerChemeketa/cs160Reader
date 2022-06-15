@@ -88,10 +88,4 @@ While the strings themselves can't be changed you can change the value of a vari
      s2 = s1.lower()
      s3 = s2.capitalize()
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_4_3

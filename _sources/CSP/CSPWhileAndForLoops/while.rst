@@ -99,10 +99,4 @@ How about the square root of 25?  How about 2,356?  It's difficult to know ahead
           var2 = var2 - 1
       print("var1: " + str(var1) + " var2 " + str(var2))
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_8_4

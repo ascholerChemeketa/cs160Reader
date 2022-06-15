@@ -102,10 +102,4 @@ Try to change the code above to use both an ``elif`` and ``else`` to draw three 
        sue.pendown()             
        sue.forward(height)  
       
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_14_3  

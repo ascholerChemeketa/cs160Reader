@@ -140,19 +140,9 @@ Can you modify the code above to use 3 different colors?  You can use ``num % 3`
                   jaz.pendown()
 
                                             
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_14_4_2_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_14_4
 
 
 

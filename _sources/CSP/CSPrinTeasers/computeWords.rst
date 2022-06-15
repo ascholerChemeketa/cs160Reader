@@ -90,10 +90,3 @@ A string can also be asked to return a new string that is changed in some way fr
       next = "There"
       print ((first + next) * 2)
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_1_4

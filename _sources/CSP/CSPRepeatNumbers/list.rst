@@ -138,17 +138,7 @@ Let's write that program again with a better variable name.  We will use ``produ
               # PRINT RESULT 
               print(summation(10)) 
                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_7_3_5_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_7_3
 

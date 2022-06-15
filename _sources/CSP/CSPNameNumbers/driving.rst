@@ -126,11 +126,5 @@ Try editing the program above and running it to answer this question:
 
    What would be printed by ``print("costPerGallon")`` if this line was added to the end of the last program?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_5
 

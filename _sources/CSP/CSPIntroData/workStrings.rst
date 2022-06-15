@@ -117,16 +117,6 @@ Run the code below to see what type of error you get if you use a different star
               combined = string1 + string2
               print(combined * 3)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_16_2_4_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_16_2

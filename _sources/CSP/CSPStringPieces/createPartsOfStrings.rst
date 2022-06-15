@@ -104,10 +104,4 @@ Say that you are looking for a name in a string but don't know the exact positio
        name = "Unknown"
    print(name)
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_17_6

@@ -35,11 +35,7 @@ Chapter 16 Exercises
                 print(combined)
                 print name * 3
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch16ex1q
 
 #.
 
@@ -57,11 +53,7 @@ Chapter 16 Exercises
                 cString = (aString + bString) * 2
                 print(len(cString))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex2q
 
 #.
 
@@ -81,11 +73,7 @@ Chapter 16 Exercises
                 print(mySecondList
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex3q
 
 #.
 
@@ -107,11 +95,7 @@ Chapter 16 Exercises
 
                 nameProcedure(John)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex4q
 
 #.
 
@@ -132,11 +116,7 @@ Chapter 16 Exercises
 
                 itemLister([2,4,6 8])
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex9q
 
 #.
 
@@ -159,11 +139,7 @@ Chapter 16 Exercises
                 aList = [99, 100, 74, 63, 100, 100]
                 print(gradeAverage(aList))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex6q
 
 #.
 
@@ -182,11 +158,7 @@ Chapter 16 Exercises
                 soFar = [source[index]] + soFar
                 print(soFar)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch16ex5q
 
 #.
 
@@ -205,11 +177,7 @@ Chapter 16 Exercises
                 items[2] = items[1]
                 print(items)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex8q
 
 #.
 
@@ -236,11 +204,7 @@ Chapter 16 Exercises
                     print(soFar)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex7q
 
 #.
 
@@ -266,11 +230,7 @@ Chapter 16 Exercises
                     soFar =  [source[index]] + soFar
                 print(soFar)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex10q
 
 #.
 
@@ -292,11 +252,7 @@ Chapter 16 Exercises
 
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex11q
 
 #.
 
@@ -322,11 +278,7 @@ Chapter 16 Exercises
                 # print the result
                 print(evens)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex12q
 
 #.
 
@@ -345,11 +297,7 @@ Chapter 16 Exercises
 
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex13q
 
 #.
 
@@ -375,11 +323,7 @@ Chapter 16 Exercises
                 # print the current value of the list
                 print(newList)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex14q
 
 #.
 
@@ -393,11 +337,7 @@ Chapter 16 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex15q
 
 #.
 
@@ -411,11 +351,7 @@ Chapter 16 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex16q
 
 #.
 
@@ -428,11 +364,7 @@ Chapter 16 Exercises
            .. activecode::  ch16ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex17q
 
 #.
 
@@ -445,11 +377,7 @@ Chapter 16 Exercises
             .. activecode::  ch16ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex18q
 
 #.
 
@@ -462,11 +390,7 @@ Chapter 16 Exercises
            .. activecode::  ch16ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex19q
 
 #.
 
@@ -479,8 +403,4 @@ Chapter 16 Exercises
             .. activecode::  ch16ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch16ex20q

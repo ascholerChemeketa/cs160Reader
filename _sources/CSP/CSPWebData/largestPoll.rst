@@ -520,10 +520,4 @@ Replace the lines that start with a comment (a ``#``) below to find the city wit
    # print the largest PM 2.5 value
    print("Largest is ",max25," in ",maxCity)
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_18_4

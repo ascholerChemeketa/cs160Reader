@@ -33,11 +33,7 @@ Chapter 4 Exercises
                 print("Your name is " + name +
                       and your favorite color is" + color + ".")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch4ex1q
 
 #.
 
@@ -54,11 +50,7 @@ Chapter 4 Exercises
                 age = 12
                 print("My name is name and I am" + age + "years old".)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex2q
 
 #.
 
@@ -76,11 +68,7 @@ Chapter 4 Exercises
                print("Your name is" + name +
                      "and your age is" + age + ".")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex3q
 
 #.
 
@@ -98,11 +86,7 @@ Chapter 4 Exercises
                 timeTaken = milesPerHour / distanceTravelled
                 print(timeTaken)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex4q
 
 #.
 
@@ -120,11 +104,7 @@ Chapter 4 Exercises
                print ("Your name is " + Name
                       " and you are "  age "years old.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch4ex5q
 
 #.
 
@@ -141,11 +121,7 @@ Chapter 4 Exercises
                 price = 5
                 print("The" fruit "costs $" + "price")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex6q
 
 
 #.
@@ -166,11 +142,7 @@ Chapter 4 Exercises
                numMiles = milesPerGallon * numGallons
                print(numMiles)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex7q
 
 #.
 
@@ -187,11 +159,7 @@ Chapter 4 Exercises
                 s1 =
                 print(s1)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex8q
 
 #.
 
@@ -211,11 +179,7 @@ Chapter 4 Exercises
                 numWings =  total / price
                 print(numWings)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex9q
 
 #.
 
@@ -232,11 +196,7 @@ Chapter 4 Exercises
                 s2 = [16:13]sentence
                 print(s2)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex10q
 
 #.
 
@@ -255,11 +215,7 @@ Chapter 4 Exercises
                 print(numHours)
                 print(numMinutes)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex11q
 
 #.
 
@@ -278,11 +234,7 @@ Chapter 4 Exercises
                 length = len( )
                 print(length)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex12q
 
 #.
 
@@ -302,11 +254,7 @@ Chapter 4 Exercises
                 print()
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex13q
 
 #.
 
@@ -323,11 +271,7 @@ Chapter 4 Exercises
                 s1.capitalize()
                 print(s1)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex14q
 
 
 #.
@@ -341,11 +285,7 @@ Chapter 4 Exercises
            .. activecode::  ch4ex15q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex15q
 
 #.
 
@@ -358,11 +298,7 @@ Chapter 4 Exercises
             .. activecode::  ch4ex16q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex16q
 
 #.
 
@@ -375,11 +311,7 @@ Chapter 4 Exercises
            .. activecode::  ch4ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex17q
 
 #.
 
@@ -395,11 +327,7 @@ Chapter 4 Exercises
                 s1 = "hi"
                 s2 = "My namesake is Bob, and he and I love to eat ham."
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex18q
 
 #.
 
@@ -412,11 +340,7 @@ Chapter 4 Exercises
            .. activecode::  ch4ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex19q
 
 #.
 
@@ -429,8 +353,4 @@ Chapter 4 Exercises
             .. activecode::  ch4ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch4ex20q

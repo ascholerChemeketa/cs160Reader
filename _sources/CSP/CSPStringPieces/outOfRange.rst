@@ -70,12 +70,6 @@ You have probably figured out why the `range` in the `for` loop stops at one les
   myList = ["this",1,"can","do", 2]
   # You fill in here
   
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_17_4			   		   
 
 

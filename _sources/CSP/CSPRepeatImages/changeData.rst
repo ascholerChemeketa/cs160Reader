@@ -195,16 +195,6 @@ Let's try side-to-side copying.
               win = ImageWin(img.getWidth(),img.getHeight())
               img.draw(win)
   
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_11_6_1_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_11_6

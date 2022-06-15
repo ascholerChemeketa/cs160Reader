@@ -164,16 +164,5 @@ Try the program above on some of the other images by changing the name of the im
               img.draw(win)
 
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_11_4_1_WSq
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_11_4

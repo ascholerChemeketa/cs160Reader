@@ -199,10 +199,4 @@ The following example has 4 errors.  Can you fix the errors so that the code com
             mateo.Forward(50)
             mateo.right(120)
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_10_3

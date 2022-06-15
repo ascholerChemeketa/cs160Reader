@@ -33,11 +33,7 @@ Chapter 12 Exercises
                 print ("x is less than 3")
                 print ("All done)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch12ex1q
 
 #.
 
@@ -54,11 +50,7 @@ Chapter 12 Exercises
                 if x < 3:
                     print("Hello")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex2q
 
 #.
 
@@ -81,11 +73,7 @@ Chapter 12 Exercises
                 print(price)
                 print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex3q
 
 #.
 
@@ -107,11 +95,7 @@ Chapter 12 Exercises
                     total = weight * price
                     print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex4q
 
 #.
 
@@ -135,11 +119,7 @@ Chapter 12 Exercises
                     print(price)
                 print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch12ex5q
 
 #.
 
@@ -158,11 +138,7 @@ Chapter 12 Exercises
                 if x > 2:
                     print("Hey")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex6q
 
 #.
 
@@ -180,11 +156,7 @@ Chapter 12 Exercises
                 print ("x is a number from 1 to 10")
                     print ("All done")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex7q
 
 #.
 
@@ -203,11 +175,7 @@ Chapter 12 Exercises
                 else:
                     print("This is 8")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex8q
 
 #.
 
@@ -226,11 +194,7 @@ Chapter 12 Exercises
                     print ("You can go out!")
                 print ("All done")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex9q
 
 #.
 
@@ -247,11 +211,7 @@ Chapter 12 Exercises
                     if
                 print("Good job")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex10q
 
 #.
 
@@ -274,11 +234,7 @@ Chapter 12 Exercises
                 print(Price)
                 print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex11q
 
 #.
 
@@ -303,11 +259,7 @@ Chapter 12 Exercises
                     if total > wallet:
                     print("You have no money")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex12q
 
 #.
 
@@ -333,11 +285,7 @@ Chapter 12 Exercises
                    grade = "E"
                 print(grade)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex13q
 
 #.
 
@@ -357,11 +305,7 @@ Chapter 12 Exercises
                 print("The number is NOT 5")
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex14q
 
 #.
 
@@ -384,11 +328,7 @@ Chapter 12 Exercises
                 print(price
                 print(Total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex15q
 
 #.
 
@@ -407,11 +347,7 @@ Chapter 12 Exercises
 
                     print("Hello")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex16q
 
 #.
 
@@ -424,11 +360,7 @@ Chapter 12 Exercises
            .. activecode::  ch12ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex17q
 
 #.
 
@@ -441,11 +373,7 @@ Chapter 12 Exercises
             .. activecode::  ch12ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex18q
 
 #.
 
@@ -458,11 +386,7 @@ Chapter 12 Exercises
            .. activecode::  ch12ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex19q
 
 #.
 
@@ -476,8 +400,4 @@ Chapter 12 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch12ex20q

@@ -36,11 +36,7 @@ Chapter 10 Exercises
     	            alisha.forward(100)        	# move forward by 100 units
       	            alisha.right(90)           	# turn by 90 degrees
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch10ex1q
 
 #.
 
@@ -61,11 +57,7 @@ Chapter 10 Exercises
                     alisha.forward(100)
                     alisha.right(90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex2q
 
 #.
 
@@ -89,11 +81,7 @@ Chapter 10 Exercises
                 carlos.forward(150)
                 carlos.right(90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex3q
 
 #.
 
@@ -114,11 +102,7 @@ Chapter 10 Exercises
                     liz.forward(45)
                 liz.right(50)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex4q
 
 #.
 
@@ -140,11 +124,7 @@ Chapter 10 Exercises
       	            will.right(y)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch10ex5q
 
 #.
 
@@ -165,11 +145,7 @@ Chapter 10 Exercises
                     mia.forward(40)
                     mia.
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex6q
 
 #.
 
@@ -191,11 +167,7 @@ Chapter 10 Exercises
                     marie.forward(100)
                     marie.left()
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex7q
 
 #.
 
@@ -213,11 +185,7 @@ Chapter 10 Exercises
                 hi = Turtle()
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex8q
 
 #.
 
@@ -246,11 +214,7 @@ Chapter 10 Exercises
       	            zoe.forward(50)         # move forward by 50 unit
       	            zoe.right(72)           # turn by 72 degrees
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex9q
 
 #.
 
@@ -268,11 +232,7 @@ Chapter 10 Exercises
                         aTurtle.forward(100)
                         aTurtle.right(90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex10q
 
 #.
 
@@ -296,11 +256,7 @@ Chapter 10 Exercises
                     jose.forward()
                     jose.right(36)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex11q
 
 #.
 
@@ -328,11 +284,7 @@ Chapter 10 Exercises
                         t.forward(x)
                         t.right(x)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex12q
 
 #.
 
@@ -354,11 +306,7 @@ Chapter 10 Exercises
       	            alisha.right(90)           	# turn by 90 degrees
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex13q
 
 #.
 
@@ -382,11 +330,7 @@ Chapter 10 Exercises
 
                     tess.forward(size)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex14q
 
 #.
 
@@ -410,11 +354,7 @@ Chapter 10 Exercises
                     carlos.forward(150)
                     carlos.right(90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex15q
 
 #.
 
@@ -433,11 +373,7 @@ Chapter 10 Exercises
                 space = Screen()
                 zoe = Turtle()
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex16q
 
 #.
 
@@ -450,11 +386,7 @@ Chapter 10 Exercises
            .. activecode::  ch10ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex17q
 
 #.
 
@@ -468,11 +400,7 @@ Chapter 10 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex18q
 
 #.
 
@@ -485,11 +413,7 @@ Chapter 10 Exercises
            .. activecode::  ch10ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex19q
 
 #.
 
@@ -503,8 +427,4 @@ Chapter 10 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch10ex20q

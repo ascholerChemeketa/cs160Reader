@@ -43,11 +43,7 @@ Chapter 6 Exercises
                 malik = Turtle()    	# create a turtle named malik
                 square(malik)       	# draw a square with malik
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch6ex1q
 
 #.
 
@@ -66,11 +62,7 @@ Chapter 6 Exercises
 
                 print(recPerimeter(2,4))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex2q
 
 #.
 
@@ -99,11 +91,7 @@ Chapter 6 Exercises
                 square()       	        # draw a square with malik
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex3q
 
 #.
 
@@ -123,11 +111,7 @@ Chapter 6 Exercises
                 	return area
                 print(x)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex4q
 
 #.
 
@@ -159,11 +143,7 @@ Chapter 6 Exercises
                 square(Malik, 50)    	# draw a square of size 50
                 square(Malik, 25)   	# draw a square of size 25
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch6ex5q
 
 #.
 
@@ -191,11 +171,7 @@ Chapter 6 Exercises
                 t = Turtle()
                 move(t, 100, 90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex6q
 
 #.
 
@@ -227,11 +203,7 @@ Chapter 6 Exercises
                 square(50)    	    # draw a square of size 50
                 square(malik, 25)   	# draw a square of size 25
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex7q
 
 #.
 
@@ -249,11 +221,7 @@ Chapter 6 Exercises
 
                 print(nameAndAge(18, "John"))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex8q
 
 #.
 
@@ -281,11 +249,7 @@ Chapter 6 Exercises
                 malik = Turtle()    	# create a turtle named malik
                 square(malik)       	# draw a square with malik
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex9q
 
 #.
 
@@ -303,11 +267,7 @@ Chapter 6 Exercises
                     height = 4
                     return (5 * 4) / 2
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex10q
 
 #.
 
@@ -327,11 +287,7 @@ Chapter 6 Exercises
                 total = numGallons * pricePerGallon
                 print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex11q
 
 #.
 
@@ -357,11 +313,7 @@ Chapter 6 Exercises
                 	turtle2.forward(turtle)
                 	return distance
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex12q
 
 #.
 
@@ -381,11 +333,7 @@ Chapter 6 Exercises
                 numMiles = numGallons * milesPerGallon
                 print(numMiles)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex13q
 
 #.
 
@@ -403,11 +351,7 @@ Chapter 6 Exercises
                 timeTakenToTravel =
                 print(timeTakenToTravel)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex14q
 
 #.
 
@@ -420,11 +364,7 @@ Chapter 6 Exercises
            .. activecode::  ch6ex15q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex15q
 
 #.
 
@@ -437,11 +377,7 @@ Chapter 6 Exercises
             .. activecode::  ch6ex16q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex16q
 
 #.
 
@@ -454,11 +390,7 @@ Chapter 6 Exercises
            .. activecode::  ch6ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex17q
 
 #.
 
@@ -471,11 +403,7 @@ Chapter 6 Exercises
             .. activecode::  ch6ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex18q
 
 #.
 
@@ -488,11 +416,7 @@ Chapter 6 Exercises
            .. activecode::  ch6ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex19q
 
 #.
 
@@ -505,8 +429,4 @@ Chapter 6 Exercises
             .. activecode::  ch6ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch6ex20q

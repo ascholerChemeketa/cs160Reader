@@ -117,10 +117,4 @@ Use the area below to try to draw a pattern using a ``for`` loop and the ``stamp
 .. activecode:: Turtle_Stamp_Open
     :nocodelens:
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_10_5

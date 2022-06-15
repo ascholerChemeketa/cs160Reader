@@ -146,10 +146,4 @@ Since you can't have spaces in a variable name you can either join words togethe
 
    Which of the following is *not* a legal variable name?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_1

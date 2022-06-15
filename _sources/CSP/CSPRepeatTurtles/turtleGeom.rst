@@ -151,16 +151,3 @@ Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 s
          # CALL THE PROCEDURE
          polygon(mia,5)
 
-   .. tab:: Discussion
-
-      .. disqus::
-         :shortname: cslearn4u
-         :identifier: studentcsp_10_2_3_WSq
-
-.. note::
-
-   Discuss topics in this section with classmates.
-
-   .. disqus::
-      :shortname: cslearn4u
-      :identifier: studentcsp_10_2

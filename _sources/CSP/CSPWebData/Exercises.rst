@@ -625,11 +625,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
 
                 inFile.close()
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch18ex1q
 
 #.
 
@@ -658,11 +654,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
 
                 print("Average PM 2.5 value for cities that start with 'A' is ", total25/count)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex2q
 
 #.
 
@@ -690,11 +682,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 print("Largest PM 2.5 value is ",max25," in ",maxCity)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex3q
 
 #.
 
@@ -718,11 +706,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                         print(line)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex4q
 
 #.
 
@@ -749,11 +733,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 min25 = new25 # save the minimum PM 2.5 value
                 print("Smallest PM 2.5 ",min25," in ",minCity)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex5q
 
 #.
 
@@ -787,11 +767,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                     # print the values
                     print("Even min PM 2.5 ", num ," in ", city)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex6q
 
 #.
 
@@ -818,11 +794,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
 
                 print("Average PM 2.5 value is ",total25/count)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch18ex7q
 
 #.
 
@@ -835,11 +807,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
             .. activecode::  ch18ex8q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex8q
 
 #.
 
@@ -865,11 +833,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 inFile.close()
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex9q
 
 #.
 
@@ -882,11 +846,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
            .. activecode::  ch18ex10q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex10q
 
 #.
 
@@ -912,11 +872,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 inFile.close()
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex11q
 
 #.
 
@@ -929,11 +885,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
            .. activecode::  ch18ex12q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex12q
 
 #.
 
@@ -962,11 +914,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 file = open("stocks.txt", "r")
                 biggestLoss(file)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex13q
 
 #.
 
@@ -990,11 +938,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                 file = open("stocks.txt", "r")
                 pointGain(file)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex14q
 
 #.
 
@@ -1020,11 +964,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                         date = values[0]
                 print(date)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex15q
 
 #.
 
@@ -1045,11 +985,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
                     if date[0] == "1":
                         print(date + " had a high value of " + values[2])
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex16q
 
 #.
 
@@ -1062,11 +998,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
             .. activecode::  ch18ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex17q
 
 #.
 
@@ -1079,11 +1011,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
             .. activecode::  ch18ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex18q
 
 #.
 
@@ -1096,11 +1024,7 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
            .. activecode::  ch18ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex19q
 
 #.
 
@@ -1113,8 +1037,4 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
             .. activecode::  ch18ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch18ex20q

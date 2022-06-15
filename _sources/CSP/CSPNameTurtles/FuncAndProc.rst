@@ -134,10 +134,4 @@ We have seen string **functions** like ``lower()`` which returns a new string wi
    jamal.left(65)
    jamal.forward(45)
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_5_2

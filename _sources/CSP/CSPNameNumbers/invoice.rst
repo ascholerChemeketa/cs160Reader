@@ -164,16 +164,6 @@ You are welcome to try out the following answers by copying and pasting them int
                 # 3. PRINT RESULT 
                 print(numPaperclips)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_3_8_4_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_8

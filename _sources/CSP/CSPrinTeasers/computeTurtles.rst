@@ -119,10 +119,3 @@ Just by going forward, backward, left, and right, we can have a turtle draw a sh
     zari.forward(100)    	# tell zari to move forward by 100 units
     zari.right(90)       	# turn by 90 degrees
    
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_1_5

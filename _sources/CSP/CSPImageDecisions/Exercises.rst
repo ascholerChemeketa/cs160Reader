@@ -76,11 +76,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch15ex1q
 
 #.
 
@@ -119,11 +115,7 @@ Below is a selection of images that you can use in the programs in this section.
                     win = ImageWin(img.getWidth(),img.getHeight())
                     img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex2q
 
 #.
 
@@ -168,11 +160,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex3q
 
 #.
 
@@ -209,11 +197,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex4q
 
 #.
 
@@ -264,11 +248,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch15ex5q
 
 #.
 
@@ -311,11 +291,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img2.getWidth(),img2.getHeight())
                 img2.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex6q
 
 #.
 
@@ -353,11 +329,7 @@ Below is a selection of images that you can use in the programs in this section.
                 img2.draw(win)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex7q
 
 #.
 
@@ -400,11 +372,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img2.getWidth(),img2.getHeight())
                 img2.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex8q
 
 #.
 
@@ -455,11 +423,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex9q
 
 #.
 
@@ -504,11 +468,7 @@ Below is a selection of images that you can use in the programs in this section.
                     win = ImageWin(img.getWidth(),img.getHeight())
                     img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex10q
 
 #.
 
@@ -559,11 +519,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex11q
 
 #.
 
@@ -610,11 +566,7 @@ Below is a selection of images that you can use in the programs in this section.
                     img = Image(motorcycle.jpg)
                     edger(img)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex12q
 
 #.
 
@@ -653,11 +605,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex13q
 
 #.
 
@@ -708,11 +656,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex14q
 
 #.
 
@@ -726,11 +670,7 @@ Below is a selection of images that you can use in the programs in this section.
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex15q
 
 #.
 
@@ -781,11 +721,7 @@ Below is a selection of images that you can use in the programs in this section.
                 win = ImageWin(img.getWidth(),img.getHeight())
                 img.draw(win)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex16q
 
 #.
 
@@ -798,11 +734,7 @@ Below is a selection of images that you can use in the programs in this section.
            .. activecode::  ch15ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex17q
 
 #.
 
@@ -815,11 +747,7 @@ Below is a selection of images that you can use in the programs in this section.
             .. activecode::  ch15ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex18q
 
 #.
 
@@ -832,11 +760,7 @@ Below is a selection of images that you can use in the programs in this section.
            .. activecode::  ch15ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex19q
 
 #.
 
@@ -849,8 +773,4 @@ Below is a selection of images that you can use in the programs in this section.
             .. activecode::  ch15ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch15ex20q

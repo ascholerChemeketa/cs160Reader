@@ -131,16 +131,5 @@ Modify the code above to draw a square of stars.
               print(line)
 
                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_8_5_2_WSq
                
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_8_5

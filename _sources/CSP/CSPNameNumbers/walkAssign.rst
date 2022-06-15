@@ -169,17 +169,7 @@ We can see values (including the values for named variables) by printing them.  
 	       
 	       print (bill)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_3_7_5_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_7
 

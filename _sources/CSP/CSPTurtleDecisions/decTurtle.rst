@@ -64,10 +64,4 @@ For more information on what this code does listen to the audio tour.
    
 Modify the code above to draw a different pattern.  Try turning changing the direction of every turn, what does that do?
    
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_14_2 

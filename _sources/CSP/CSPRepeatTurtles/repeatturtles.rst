@@ -118,10 +118,4 @@ The ``range(n)`` function returns a list with the values from 0 to n -1.  The *f
     :align: top
     :alt: teachernote
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_10_1

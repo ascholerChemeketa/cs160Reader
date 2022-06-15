@@ -103,13 +103,7 @@ then answer the multiple choice questions below.
    
 Now go back and change the last active code (csp_sd_score) to work correctly.  Remember that you can use ``and`` to join two logical expressions.  This is especially useful if you want to test if a number is in a range of numbers like 10 to 19 inclusive.  So change the example to print the first thing if less than 10, the second thing if it is between 10 and 19 and the third thing if it is 20 or more.  
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_13_1
 
 
 

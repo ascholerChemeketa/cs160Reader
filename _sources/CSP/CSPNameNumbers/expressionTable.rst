@@ -106,10 +106,3 @@ Summary of Expression Types
 
    What is the result of ``2 % 6``?
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_3

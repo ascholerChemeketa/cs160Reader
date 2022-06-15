@@ -33,11 +33,7 @@ Chapter 5 Exercises
                 alex = Turtle
                 alex.Forward(150)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch5ex1q
 
 #.
 
@@ -57,11 +53,7 @@ Chapter 5 Exercises
                 space = Screen()
                 alex.forward(75)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex2q
 
 #.
 
@@ -79,11 +71,7 @@ Chapter 5 Exercises
                 alex =
                 alex.forward(150)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex3q
 
 #.
 
@@ -107,11 +95,7 @@ Chapter 5 Exercises
                 franklin.left(90)
                 franklin.forward(100)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex4q
 
 #.
 
@@ -131,11 +115,7 @@ Chapter 5 Exercises
                 alex.turn(90)
                 alex.forward(75)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch5ex5q
 
 #.
 
@@ -157,11 +137,7 @@ Chapter 5 Exercises
                 john.left(120)
                 john.Forward(100)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex6q
 
 #.
 
@@ -181,11 +157,7 @@ Chapter 5 Exercises
                 alex.left(90)
                 alex.forward(75)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex7q
 
 #.
 
@@ -206,11 +178,7 @@ Chapter 5 Exercises
                 hi.color("BLUE")
                 hi.forward(50)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex8q
 
 #.
 
@@ -227,11 +195,7 @@ Chapter 5 Exercises
                 alex.left(90)
                 alex.forward(75)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex9q
 
 #.
 
@@ -249,11 +213,7 @@ Chapter 5 Exercises
                 alex = Turtle()
                 alex.forward(150)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex10q
 
 #.
 
@@ -266,11 +226,7 @@ Chapter 5 Exercises
            .. activecode::  ch5ex11q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex11q
 
 #.
 
@@ -288,11 +244,7 @@ Chapter 5 Exercises
                 bob = turtle
                 Bob.forward("100")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex12q
 
 #.
 
@@ -305,11 +257,7 @@ Chapter 5 Exercises
            .. activecode::  ch5ex13q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex13q
 
 #.
 
@@ -330,11 +278,7 @@ Chapter 5 Exercises
                 jack.sizepen(15)
                 jack.forward(10)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex14q
 
 #.
 
@@ -347,11 +291,7 @@ Chapter 5 Exercises
            .. activecode::  ch5ex15q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex15q
 
 #.
 
@@ -364,11 +304,7 @@ Chapter 5 Exercises
             .. activecode::  ch5ex16q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex16q
 
 #.
 
@@ -383,11 +319,7 @@ Chapter 5 Exercises
            .. activecode::  ch5ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex17q
 
 #.
 
@@ -400,11 +332,7 @@ Chapter 5 Exercises
             .. activecode::  ch5ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex18q
 
 #.
 
@@ -417,11 +345,7 @@ Chapter 5 Exercises
            .. activecode::  ch5ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex19q
 
 #.
 
@@ -435,8 +359,4 @@ Chapter 5 Exercises
             .. activecode::  ch5ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch5ex20q

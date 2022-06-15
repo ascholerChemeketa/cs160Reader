@@ -71,10 +71,4 @@ The ``for p in pixels`` on line 9 let's us loop through all of the pixels in the
 
 This ability to name functions and procedures, and sets of functions and procedures, and absolutely anything and any set of things in a computer is very powerful.  It allows us to create **abstractions** that make the computer easier to program and use.  More on that in a future chapter.
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_6_6

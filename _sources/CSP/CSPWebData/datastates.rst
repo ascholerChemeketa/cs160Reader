@@ -52,10 +52,4 @@ What causes more pollution?
 
 Let's give you a way of asking these questions.  Let's write a program to get the average pollution **for a state**.
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_18_7

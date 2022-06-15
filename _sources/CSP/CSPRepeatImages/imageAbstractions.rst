@@ -36,12 +36,6 @@ Understanding Image Representation
 There are some excellent CS Unplugged activities for understanding `image and color representation <http://csunplugged.org/image-representation>`_.
 
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_11_2
 
 

@@ -154,16 +154,6 @@ Here's the fortune teller code from before but now it is written using ``elif`` 
               else:
                   print("There are 50 US states, are you sure you traveled this many?")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_13_4_4_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_13_4

@@ -62,10 +62,3 @@ Can you find values that work well to only change the shirt color and not anythi
 
 Remember that white light is a combination of red, green, and blue light with each value at 255 for totally white light.  Try to change just the white background to green.  
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_15_1

@@ -44,11 +44,5 @@ What if we want to change this story? We can change the values for ``firstName``
 
 Sure, we can -- if we can take that string apart.  The computer knows how to break larger pieces of data into smaller ones.
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_17_2
 

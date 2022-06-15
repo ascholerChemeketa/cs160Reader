@@ -67,11 +67,5 @@ This isn't actually a different ``for`` loop.  The function ``range`` actually c
 
    What would happen if we changed line 2 to `myList = range(0,len(myString)/2)`? (Hint: You could try it)
 			   		   
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_16_8
 

@@ -46,10 +46,4 @@ The functions ``abs`` and ``int`` are *names*.  They are *variables* whose value
    
    If you add one more line to the above program, `print(noDecimal(absolute(-16.789)))`, what prints?
    
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_6_7

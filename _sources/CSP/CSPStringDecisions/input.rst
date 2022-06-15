@@ -62,13 +62,7 @@ You can use ``if`` statements to make a story interactive where the reader picks
    
 What should the program do if the user enters something besides in, left, or right?  Fix the code above to let the user know what went wrong.  Also add another possibility like "out".
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_13_2
 
 
 

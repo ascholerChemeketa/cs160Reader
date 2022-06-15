@@ -69,10 +69,4 @@ Here are our six steps:
 7. STEP 7: SHOW THE RESULT.  This will draw the changed image in a window.
 
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_11_3

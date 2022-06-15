@@ -36,11 +36,5 @@ Computers can work with more than just single values like 34.2 or single words l
 
 The rest of this chapter will give examples of using two data *collections*: strings and lists.
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_16_1
 

@@ -147,10 +147,4 @@ Use the area below to try to draw a letter or number.  Use block style rather th
 .. activecode:: Turtle_Letter
     :nocodelens:
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_5_2_1

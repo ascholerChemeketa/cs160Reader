@@ -33,11 +33,7 @@ Chapter 8 Exercises
                     Print(counter)
                     counter = Counter + 1
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch8ex1q
 
 #.
 
@@ -55,11 +51,7 @@ Chapter 8 Exercises
                     print(x)
                     x = x + 1
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex2q
 
 #.
 
@@ -80,11 +72,7 @@ Chapter 8 Exercises
                 print(output)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex3q
 
 #.
 
@@ -104,11 +92,7 @@ Chapter 8 Exercises
                 print("*")
                 y += 1
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex4q
 
 #.
 
@@ -129,11 +113,7 @@ Chapter 8 Exercises
                 print(output)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch8ex5q
 
 #.
 
@@ -153,11 +133,7 @@ Chapter 8 Exercises
                     i = i + 1
                 print()
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex6q
 
 #.
 
@@ -179,11 +155,7 @@ Chapter 8 Exercises
                         guessSquared = guess * guess
                     print("Square root of", target,"is", guess)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex7q
 
 #.
 
@@ -204,11 +176,7 @@ Chapter 8 Exercises
 
                 print(sumFunc(1,10))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex8q
 
 #.
 
@@ -225,11 +193,7 @@ Chapter 8 Exercises
                     for y in range(1,10)
                         print(str(x) + " * " str(y) + " = " x*y)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex9q
 
 #.
 
@@ -246,11 +210,7 @@ Chapter 8 Exercises
                      for y in range(1,11):
                          print(str(x) + " * " + str(y) + " = " + str(x*y))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex10q
 
 #.
 
@@ -269,11 +229,7 @@ Chapter 8 Exercises
                     product = product * number
                 print(product)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex11q
 
 #.
 
@@ -294,11 +250,7 @@ Chapter 8 Exercises
                 average = sum / 2
                 print(average)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex12q
 
 #.
 
@@ -322,11 +274,7 @@ Chapter 8 Exercises
                 # STEP 5: PROCESS RESULT
                 print(product)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex13q
 
 #.
 
@@ -347,11 +295,7 @@ Chapter 8 Exercises
 		        print("Odd")
 		    number += 1
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex14q
 
 #.
 
@@ -376,11 +320,7 @@ Chapter 8 Exercises
                 print("The sum is: " + str(sum) +
                       " the average is: " + str(sum / count))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex15q
 
 #.
 
@@ -397,11 +337,7 @@ Chapter 8 Exercises
                 for y in range(1,11):
                 print(str(x) + " * " + str(y) + " = " + str(x*y))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex16q
 
 #.
 
@@ -414,11 +350,7 @@ Chapter 8 Exercises
            .. activecode::  ch8ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex17q
 
 #.
 
@@ -432,11 +364,7 @@ Chapter 8 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex18q
 
 #.
 
@@ -449,11 +377,7 @@ Chapter 8 Exercises
            .. activecode::  ch8ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex19q
 
 #.
 
@@ -466,8 +390,4 @@ Chapter 8 Exercises
             .. activecode::  ch8ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch8ex20q

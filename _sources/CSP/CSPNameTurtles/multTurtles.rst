@@ -160,10 +160,4 @@ Every turtle object has its own attributes like its current position and color. 
    tina.Forward(150) #paired
 
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_5_4

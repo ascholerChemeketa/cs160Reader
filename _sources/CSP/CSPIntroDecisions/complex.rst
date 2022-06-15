@@ -92,10 +92,4 @@ A common use of ``or`` is to check if either one of two conditions are true.  Fo
          print ("condition true")
      print ("All done")
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_12_5

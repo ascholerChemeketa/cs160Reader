@@ -84,16 +84,5 @@ Run this next one, and look at how a simple change to the pattern gives a very d
               print("Here's the result of using newStringB + letter:")
               print(newStringB + newStringA)
                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_9_2_2_WSq
     
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_9_2

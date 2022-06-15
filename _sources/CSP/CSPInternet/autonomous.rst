@@ -137,10 +137,3 @@ To answer the questions at the beginning of this section, the systems that are i
 These standards and autonomous systems as well as its hierarchical structure are what allowed the Internet to become global in scale; and nowadays, there is not a country in the world that does not have access to the Internet. The Internet is continuing to grow as well. As a result of the existing protocols, it is easy to create more and more, knowing that everyone will be able to access it immediately as long it adheres to the standards.
 
 
-.. note::
-
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_20_2

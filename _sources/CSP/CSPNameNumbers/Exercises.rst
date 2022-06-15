@@ -39,11 +39,7 @@ Chapter 3 Exercises
 
                print(9 * 5)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex1q
 
 #.
 
@@ -62,11 +58,7 @@ Chapter 3 Exercises
                 print(5 # 2 # 3 == -1)
                 print(3 # 2 # 1 == 7)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex2q
 
 #.
 
@@ -83,11 +75,7 @@ Chapter 3 Exercises
                x = 6 * 1 - 2
                print(x)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex3q
 
 #.
 
@@ -105,11 +93,7 @@ Chapter 3 Exercises
                x = 12 * 2 - 3 + 4 * 2
                print(x)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex4q
 
 #.
 
@@ -129,11 +113,7 @@ Chapter 3 Exercises
                total =
                print(total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex5q
 
 #.
 
@@ -153,11 +133,7 @@ Chapter 3 Exercises
                 thatDay = thatDayNumber ...
                 print(thatDay)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex6q
 
 
 #.
@@ -178,11 +154,7 @@ Chapter 3 Exercises
                numMiles =
                print(numMiles)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex7q
 
 #.
 
@@ -201,11 +173,7 @@ Chapter 3 Exercises
                 a Number * b Number = cNumber
                 print(cNumber)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex8q
 
 #.
 
@@ -227,11 +195,7 @@ Chapter 3 Exercises
                 couponPrice =
                 print(couponPrice)
 
-	.. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex9q
 
 #.
 
@@ -250,11 +214,7 @@ Chapter 3 Exercises
                 print (c)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex10q
 
 
 
@@ -277,11 +237,7 @@ Chapter 3 Exercises
                 numWings =
                 print(numWings)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3e11q
 
 
 
@@ -302,11 +258,7 @@ Chapter 3 Exercises
                 print(clockTime)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex12q
 
 
 
@@ -327,11 +279,7 @@ Chapter 3 Exercises
                 print(numHours)
                 print(numMinutes)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex13q
 
 
 #.
@@ -351,11 +299,7 @@ Chapter 3 Exercises
                 total =
                 print (total)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex14q
 
 
 
@@ -377,11 +321,7 @@ Chapter 3 Exercises
                 amount / payPerHour = numHours
                 print(numHours)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex15q
 
 
 #.
@@ -402,11 +342,7 @@ Chapter 3 Exercises
                 print(numMinutes)
                 print(numSeconds)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex16q
 
 
 #.
@@ -428,11 +364,7 @@ Chapter 3 Exercises
                 numApples =
                 print(numApples)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex17q
 
 
 #.
@@ -454,11 +386,7 @@ Chapter 3 Exercises
                 gasRemaining =
                 print(gasRemaining)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex18q
 
 
 #.
@@ -472,11 +400,7 @@ Chapter 3 Exercises
            .. activecode::  ch3ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch3ex19q
 
 #.
 
@@ -489,8 +413,4 @@ Chapter 3 Exercises
             .. activecode::  ch3ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch3ex20q

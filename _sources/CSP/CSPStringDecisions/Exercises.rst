@@ -36,11 +36,7 @@ Chapter 13 Exercises
                 if score > 20
                 print("Amazing"
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch13ex1q
 
 #.
 
@@ -59,11 +55,7 @@ Chapter 13 Exercises
                     if x =< 5
                     print("Greater than or equal to 5")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex2q
 
 #.
 
@@ -89,11 +81,7 @@ Chapter 13 Exercises
                     print("You choose to turn right.")
                 print("A greenish light is visible in the distance.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex3q
 
 #.
 
@@ -119,11 +107,7 @@ Chapter 13 Exercises
                     print("You choose to turn right.")
                     print("A greenish light is visible in the distance.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex4q
 
 #.
 
@@ -150,11 +134,7 @@ Chapter 13 Exercises
                 print(grade)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch13ex5q
 
 #.
 
@@ -173,11 +153,7 @@ Chapter 13 Exercises
                 if age < 11:
                     print("You're in elementary school")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex6q
 
 #.
 
@@ -198,11 +174,7 @@ Chapter 13 Exercises
                 if score > 20:
                     print("Amazing")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex7q
 
 #.
 
@@ -224,11 +196,7 @@ Chapter 13 Exercises
                     else:
                         print(
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex8q
 
 #.
 
@@ -253,11 +221,7 @@ Chapter 13 Exercises
                 if num == "5":
                     print("You will ace a test.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex9q
 
 #.
 
@@ -280,11 +244,7 @@ Chapter 13 Exercises
                         if userInput = 10
                             print("You tied the high score.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex10q
 
 #.
 
@@ -306,11 +266,7 @@ Chapter 13 Exercises
                 if (team2 == team1):
                     print("team1 and team2 tied")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex11q
 
 #.
 
@@ -337,11 +293,7 @@ Chapter 13 Exercises
                 else:
                     print("Who else loves CS?")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex12q
 
 #.
 
@@ -364,11 +316,7 @@ Chapter 13 Exercises
                 else:
                     print("I don't know the weather")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex13q
 
 #.
 
@@ -400,11 +348,7 @@ Chapter 13 Exercises
                 if people <= vans:
                 print("Fine, let's stay home then.")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex14q
 
 #.
 
@@ -427,11 +371,7 @@ Chapter 13 Exercises
                 if x > .75:
                     print("x is in the fourth quartile - .75 < x <= 1")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex15q
 
 #.
 
@@ -458,11 +398,7 @@ Chapter 13 Exercises
                 if age < 2:
                     print("baby")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex16q
 
 #.
 
@@ -475,11 +411,7 @@ Chapter 13 Exercises
            .. activecode::  ch13ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex17q
 
 #.
 
@@ -493,11 +425,7 @@ Chapter 13 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex18q
 
 #.
 
@@ -510,11 +438,7 @@ Chapter 13 Exercises
            .. activecode::  ch13ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex19q
 
 #.
 
@@ -527,8 +451,4 @@ Chapter 13 Exercises
             .. activecode::  ch13ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch13ex20q

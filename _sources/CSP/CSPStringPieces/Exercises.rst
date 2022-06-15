@@ -49,11 +49,7 @@ Chapter 17 Exercises
                 print (next3
                 print(ending)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch17ex1q
 
 #.
 
@@ -77,11 +73,7 @@ Chapter 17 Exercises
                 print("Last name is:" + pieces[2])
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex2q
 
 #.
 
@@ -122,11 +114,7 @@ Chapter 17 Exercises
                 print(ending)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex3q
 
 #.
 
@@ -166,11 +154,7 @@ Chapter 17 Exercises
                 print(next3)
                 print(ending)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex4q
 
 #.
 
@@ -202,11 +186,7 @@ Chapter 17 Exercises
                # call the procedure
                witchStory("boy", "Abe" "Brown", "1313 Maple Lane", "trick")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex5q
 
 #.
 
@@ -246,11 +226,7 @@ Chapter 17 Exercises
                 print(next3)
                 print(ending)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex6q
 
 #.
 
@@ -278,11 +254,7 @@ Chapter 17 Exercises
                 print(line3)
                 print(line4)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch17ex7q
 
 #.
 
@@ -322,11 +294,7 @@ Chapter 17 Exercises
                 print(next3)
                 print(ending)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex8q
 
 #.
 
@@ -347,11 +315,7 @@ Chapter 17 Exercises
                     name = "Unknown"
                 print(name)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex9q
 
 #.
 
@@ -393,11 +357,7 @@ Chapter 17 Exercises
                 # call the procedure
                 witchStory("Abe,Brown,boy,1313 Maple Lane,trick")
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex10q
 
 #.
 
@@ -419,11 +379,7 @@ Chapter 17 Exercises
                 print(headline)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex11q
 
 #.
 
@@ -444,11 +400,7 @@ Chapter 17 Exercises
                     age = "Unknown"
                 print(age)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex12q
 
 #.
 
@@ -471,11 +423,7 @@ Chapter 17 Exercises
                 print("So, " + name + " went home.")
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex13q
 
 #.
 
@@ -504,11 +452,7 @@ Chapter 17 Exercises
                     name = "Unknown"
                 print(name)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex14q
 
 #.
 
@@ -522,11 +466,7 @@ Chapter 17 Exercises
                 :nocodelens:
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex15q
 
 #.
 
@@ -539,11 +479,7 @@ Chapter 17 Exercises
             .. activecode::  ch17ex16q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex16q
 
 #.
 
@@ -556,11 +492,7 @@ Chapter 17 Exercises
            .. activecode::  ch17ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex17q
 
 #.
 
@@ -573,11 +505,7 @@ Chapter 17 Exercises
             .. activecode::  ch17ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex18q
 
 #.
 
@@ -590,11 +518,7 @@ Chapter 17 Exercises
            .. activecode::  ch17ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex19q
 
 #.
 
@@ -607,8 +531,4 @@ Chapter 17 Exercises
             .. activecode::  ch17ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch17ex20q

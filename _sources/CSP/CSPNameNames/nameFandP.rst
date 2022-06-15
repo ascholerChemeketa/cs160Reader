@@ -58,10 +58,4 @@ In programming there are two different terms used for a named sequence of statem
    
    What do you think `print(int(abs(-16.789)))`, prints?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_6_2

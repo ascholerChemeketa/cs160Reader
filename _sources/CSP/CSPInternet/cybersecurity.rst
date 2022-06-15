@@ -85,10 +85,3 @@ Another way that security can be ensured at the highest level is through **digit
 This, just like everything else is built on the trust-model at the heart of the Internet. You trust your bank to handle your money properly. You trust a doctor to do their best to help you get better. And you trust that the systems underlying the Internet provide the latest and greatest security available to protect your sensitive information, whether that be bank account information, your passwords, or the e-mails you send.
 
 
-.. note::
-
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_20_4

@@ -92,10 +92,4 @@ Change the weight (in inches) and height (in pounds) in the program above, and p
    
    Imagine that you are 5 foot 7 inches and weighed 140 pounds.  What is your BMI?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_1_3

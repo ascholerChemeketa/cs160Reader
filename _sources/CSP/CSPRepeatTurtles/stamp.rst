@@ -115,10 +115,4 @@ not sure, write a new line of code after the ``for`` loop to change tess' color,
    =====
        jose.right(20) #paired
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_10_4

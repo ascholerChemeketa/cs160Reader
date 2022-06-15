@@ -231,19 +231,9 @@ The ``find(string)`` function takes a string as input and returns the index wher
                 # PRINT RESULT 
                 print('The length is ' + str(len(sentence)))
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_4_2_4_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_4_2
 
    
    

@@ -105,16 +105,5 @@ That is what you are doing when you execute a statement like ``from turtle impor
               # CALL THE PROCEDURE 
               pentagon(emily,100)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_6_5_2_WSq
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_6_5

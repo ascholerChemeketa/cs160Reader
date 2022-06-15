@@ -87,10 +87,3 @@ You can change the default order by adding parentheses around part of an express
     result = (4 + -2) * 3
     print(result)
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_5

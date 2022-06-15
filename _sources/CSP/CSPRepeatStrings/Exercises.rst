@@ -39,11 +39,7 @@ Chapter 9 Exercises
                 # STEP 5: PROCESS RESULT
                 print(newString
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch9ex1q
 
 #.
 
@@ -67,11 +63,7 @@ Chapter 9 Exercises
                 # STEP 5: PROCESS RESULT
                 print(newString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex2q
 
 #.
 
@@ -96,11 +88,7 @@ Chapter 9 Exercises
                     print(newString)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex3q
 
 #.
 
@@ -123,11 +111,7 @@ Chapter 9 Exercises
                     # STEP 5: PROCESS RESULT
                     print(phrase)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex4q
 
 #.
 
@@ -152,11 +136,7 @@ Chapter 9 Exercises
                 print()
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch9ex5q
 
 #.
 
@@ -180,11 +160,7 @@ Chapter 9 Exercises
                 # STEP 5: PROCESS RESULT
                 print(newString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex6q
 
 #.
 
@@ -203,11 +179,7 @@ Chapter 9 Exercises
                     str = str[0:pos] + "i" + str[pos+1:len(str)]
                 print(str)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex7q
 
 #.
 
@@ -231,11 +203,7 @@ Chapter 9 Exercises
                 # STEP 5: PROCESS RESULT
                 print(newString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex8q
 
 #.
 
@@ -257,11 +225,7 @@ Chapter 9 Exercises
                     encodedMessage = encodedMessage + eStr[pos:pos+1]
                 print encodedMessage)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex9q
 
 #.
 
@@ -281,11 +245,7 @@ Chapter 9 Exercises
             	    str = str[0:pos] + "i" + str[pos+1:len(str)]
                 print(str)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex10q
 
 #.
 
@@ -309,11 +269,7 @@ Chapter 9 Exercises
                 # STEP 5: PROCESS RESULT
                 print(newString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex11q
 
 #.
 
@@ -333,11 +289,7 @@ Chapter 9 Exercises
                     pos = str.find("recieved")
                 print(str)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex12q
 
 #.
 
@@ -362,11 +314,7 @@ Chapter 9 Exercises
                 print(newString)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex13q
 
 #.
 
@@ -386,11 +334,7 @@ Chapter 9 Exercises
                     pos =
                 print(str)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex14q
 
 #.
 
@@ -412,11 +356,7 @@ Chapter 9 Exercises
                     encodedMessage = encodedMessage + eStr[pos:pos+1]
                 print(encodedMessage)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex15q
 
 #.
 
@@ -443,11 +383,7 @@ Chapter 9 Exercises
                 print(reverseString)
                 print(mirrorString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex16q
 
 #.
 
@@ -469,11 +405,7 @@ Chapter 9 Exercises
                     message = message + str[pos:pos+1]
                 print(message)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex17q
 
 #.
 
@@ -492,11 +424,7 @@ Chapter 9 Exercises
                 # STEP 2: GET DATA
                 phrase = "This is a mirror!"
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex18q
 
 #.
 
@@ -509,11 +437,7 @@ Chapter 9 Exercises
            .. activecode::  ch9ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex19q
 
 #.
 
@@ -535,8 +459,4 @@ Chapter 9 Exercises
                     encodedMessage = encodedMessage + eStr[pos:pos+1]
                 print(encodedMessage)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch9ex20q

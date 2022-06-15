@@ -29,10 +29,4 @@ The Internet doesn't connect all devices on the Internet directly to each other,
 
 This may all seem like a complicated process, but we will attempt to break this down step by step in the following sections.
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_20_1

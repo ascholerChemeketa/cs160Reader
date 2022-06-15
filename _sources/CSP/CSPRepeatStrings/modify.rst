@@ -140,16 +140,4 @@ Can you loop through and encode a string to hide the contents of the message?
           # PRINT RESULT
           print(str)
             
-    .. tab:: Discussion 
 
-        .. disqus::
-            :shortname: cslearn4u
-            :identifier: studentcsp_9_4_4_WSq
-
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_9_4

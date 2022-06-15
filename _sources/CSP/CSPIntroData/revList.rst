@@ -50,11 +50,5 @@ We can use the looping ability of computers, plus the indexing ability, to manip
 
 		   Why did the code above end up reversing the list?
 		   
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_16_5
 

@@ -100,11 +100,5 @@ The next type of problem is new.  It shows correct code in code blocks on the le
    print("Ketchup speed:")
    print(dripFPS)
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_3_6
 

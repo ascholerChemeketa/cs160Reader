@@ -49,11 +49,7 @@ Chapter 14 Exercises
        	            sue.pendown()                    # put the pen down
        	            sue.forward(width)               # move forward by the width
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch14ex1q
 
 #.
 
@@ -97,11 +93,7 @@ Chapter 14 Exercises
 
                 turtleSetup(width, jaz)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex2q
 
 #.
 
@@ -138,11 +130,7 @@ Chapter 14 Exercises
                 sue.left(90)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex3q
 
 #.
 
@@ -179,11 +167,7 @@ Chapter 14 Exercises
                 t.color("green")
                 t.forward(100)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex4q
 
 #.
 
@@ -227,11 +211,7 @@ Chapter 14 Exercises
                 jaz = Turtle()            # create a turtle named jaz
                 turtleProcedure(width,jaz)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch14ex5q
 
 #.
 
@@ -265,11 +245,7 @@ Chapter 14 Exercises
                     sue.pendown()                    # put the pen down
                     sue.forward(width)               # move forward by the width
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex6q
 
 #.
 
@@ -302,11 +278,7 @@ Chapter 14 Exercises
                     jaz.goto(randX,randY)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex7q
 
 #.
 
@@ -347,11 +319,7 @@ Chapter 14 Exercises
                         sue.forward(height)
                         sue.left(90)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex8q
 
 
 #.
@@ -381,11 +349,7 @@ Chapter 14 Exercises
                 jaz.right(45)
                 mia.right(45)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex9q
 
 #.
 
@@ -417,11 +381,7 @@ Chapter 14 Exercises
                     randY = random.randrange(minY, maxY)
                     jaz.goto(randX,randY)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex10q
 
 #.
 
@@ -445,11 +405,7 @@ Chapter 14 Exercises
                     jose.forward(-50)
                     jose.right(36)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex11q
 
 #.
 
@@ -484,11 +440,7 @@ Chapter 14 Exercises
                     randY = random.randrange(minY, maxY)
                     jaz.goto(randX,randY)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex12q
 
 #.
 
@@ -512,11 +464,7 @@ Chapter 14 Exercises
                     tess.right(24)              # and turn her
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex13q
 
 #.
 
@@ -545,11 +493,7 @@ Chapter 14 Exercises
                         jaz.right(45)
                         mia.right(45)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex14q
 
 #.
 
@@ -583,11 +527,7 @@ Chapter 14 Exercises
        	            sue.pendown()                    # put the pen down
        	            sue.forward(width)               # move forward by the width
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex15q
 
 #.
 
@@ -623,11 +563,7 @@ Chapter 14 Exercises
                 mia = Turtle()
                 turtleDraw(jaz,mia)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex16q
 
 #.
 
@@ -640,11 +576,7 @@ Chapter 14 Exercises
            .. activecode::  ch14ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex17q
 
 #.
 
@@ -657,11 +589,7 @@ Chapter 14 Exercises
             .. activecode::  ch14ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex18q
 
 #.
 
@@ -674,11 +602,7 @@ Chapter 14 Exercises
            .. activecode::  ch14ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex19q
 
 #.
 
@@ -691,8 +615,4 @@ Chapter 14 Exercises
             .. activecode::  ch14ex20q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch14ex20q

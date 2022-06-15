@@ -79,13 +79,7 @@ Rewrite the code for posterizing an image using if and else rather than multiple
    
    How many different colors will be in our image when we are done?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_15_4
    
  
 

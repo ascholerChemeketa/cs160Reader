@@ -123,10 +123,3 @@ It is certainly possible to have multiple ``if`` statements, and each one can ma
          x = 0;
      print(x)
      
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_12_6

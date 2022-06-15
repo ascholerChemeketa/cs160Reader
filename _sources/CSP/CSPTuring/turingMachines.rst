@@ -84,12 +84,6 @@ When you work with a computer, you have all kinds of abilities already built-in 
 	
 A **programming language** (like *Java* or *Python*) which is a language that allows you to tell a computer what to do, can do anything that a Turing Machine can do (no more or less).  A programming tool like `Alice <http://www.alice.org>`_ or `Scratch <http://scratch.mit.edu>`_ can do *most* of what a Turing Machine can do, but typically, not everything.  **You can program anything that a Turing Machine can do in Python .**
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_2_2
 
 

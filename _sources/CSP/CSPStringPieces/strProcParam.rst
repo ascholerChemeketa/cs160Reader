@@ -59,11 +59,5 @@ Creating a procedure with parameters makes it easy to customize the madlib stori
    
        witchStory("Emily", "Smith", "girl", "2783 Main Street", "smell")
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_17_5       
 

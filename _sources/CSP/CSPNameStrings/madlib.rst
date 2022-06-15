@@ -184,15 +184,4 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
                 # PROCESS AND DISPLAY RESULT 
                 print("I will travel " + str(totalBlocks) + " blocks in an hour if I walk " + str(ratePerMinute) + " blocks every minute.")
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_4_4_6_WSq
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_4_4

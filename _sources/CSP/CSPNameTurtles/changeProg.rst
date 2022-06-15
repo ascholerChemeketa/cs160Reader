@@ -72,10 +72,4 @@ Run the following program.
 
    The code ``alex.left(0)`` will not turn the turtle toward the starting point.  Which of these will?
    
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_5_6

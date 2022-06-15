@@ -168,13 +168,7 @@ Let's make another square inside the house, to create a "window."
    bob.right(90)
    bob.forward(30)
    
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_5_5
 
 
 

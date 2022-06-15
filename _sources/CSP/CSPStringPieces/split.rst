@@ -151,19 +151,9 @@ This makes it easy to change all of the data, by changing only one line as shown
               print("My number is:")
               print(phoneNumber[1])
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_17_3_3_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_17_3
 
    
 

@@ -98,17 +98,7 @@ Try to figure out what the program above does, then try to answer this question.
               for index in range(10, -2, -2):
                 print(index)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_16_7_3_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_16_7
 

@@ -37,10 +37,4 @@ The following are examples of logical expressions:
 | a != b     | True if a is *not* equal to b.                          | 
 +------------+---------------------------------------------------------+
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_12_4

@@ -34,11 +34,7 @@ Chapter 7 Exercises
     	            sum = sum + number
                 print(sum)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch7ex1q
 
 #.
 
@@ -57,11 +53,7 @@ Chapter 7 Exercises
                     sum = number
                 print(sum)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex2q
 
 #.
 
@@ -81,11 +73,7 @@ Chapter 7 Exercises
                 print(sum)
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex3q
 
 #.
 
@@ -104,11 +92,7 @@ Chapter 7 Exercises
                 	product = product + number
                 print(product)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex4q
 
 #.
 
@@ -127,11 +111,7 @@ Chapter 7 Exercises
     	            product = product *
 
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: teachercsp_ch7ex5q
 
 #.
 
@@ -150,11 +130,7 @@ Chapter 7 Exercises
                 sum = sum + number
                 print(sum)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex6q
 
 #.
 
@@ -173,11 +149,7 @@ Chapter 7 Exercises
     	            product = product * number
                 print(product)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex7q
 
 #.
 
@@ -196,11 +168,7 @@ Chapter 7 Exercises
                 	aString = word
                 	print(aString)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex8q
 
 #.
 
@@ -224,11 +192,7 @@ Chapter 7 Exercises
                 # STEP 5: PROCESS RESULT
                 print(sum)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex9q
 
 #.
 
@@ -241,11 +205,7 @@ Chapter 7 Exercises
             .. activecode::  ch7ex10q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex10q
 
 #.
 
@@ -269,11 +229,7 @@ Chapter 7 Exercises
                 # STEP 5: PROCESS RESULT
                 print(sum)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex11q
 
 #.
 
@@ -286,11 +242,7 @@ Chapter 7 Exercises
             .. activecode::  ch7ex12q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex12q
 
 #.
 
@@ -314,11 +266,7 @@ Chapter 7 Exercises
                 # STEP 5: PROCESS RESULT
                 print(product)
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex13q
 
 #.
 
@@ -331,11 +279,7 @@ Chapter 7 Exercises
             .. activecode::  ch7ex14q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex14q
 
 #.
 
@@ -348,11 +292,7 @@ Chapter 7 Exercises
            .. activecode::  ch7ex15q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex15q
 
 #.
 
@@ -374,11 +314,7 @@ Chapter 7 Exercises
                 aList = ["H", "i"]
                 print(letterCombiner( ))
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex16q
 
 #.
 
@@ -391,11 +327,7 @@ Chapter 7 Exercises
            .. activecode::  ch7ex17q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex17q
 
 #.
 
@@ -408,11 +340,7 @@ Chapter 7 Exercises
             .. activecode::  ch7ex18q
                 :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex18q
 
 #.
 
@@ -425,11 +353,7 @@ Chapter 7 Exercises
            .. activecode::  ch7ex19q
                :nocodelens:
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex19q
 
 #.
 
@@ -442,8 +366,4 @@ Chapter 7 Exercises
             .. activecode::  ch7ex20q
                 :nocodelens:
 
-    	.. tab:: Discussion
-
-            .. disqus::
-                :shortname: teachercsp
-                :identifier: teachercsp_ch7ex20q
+    

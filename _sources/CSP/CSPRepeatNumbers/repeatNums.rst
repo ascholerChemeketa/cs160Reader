@@ -67,11 +67,5 @@ What is the sum of all the numbers between 1 and 10?  Run the program below to c
 
    What is printed if you change the program above so that lines 4 and 5 are not indented?
    
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_7_2
 

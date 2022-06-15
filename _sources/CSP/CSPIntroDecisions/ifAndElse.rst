@@ -114,15 +114,5 @@ It is easy to write an ``if`` when you want *exactly* one block to execute, but 
               print(price)
               print(total)
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_12_7_2_WSq
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_12_7

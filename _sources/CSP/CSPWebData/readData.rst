@@ -559,16 +559,6 @@ There is actually a way of using a **for** loop to read in a file.  We can read 
 
               inFile.close()
 
-        .. tab:: Discussion
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_18_3_2_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates.
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_18_3

@@ -79,10 +79,3 @@ Try other ways to detect big changes in color from one pixel to another.
    
    How many different colors will be in our image (except the last column) when we are done?
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_15_3

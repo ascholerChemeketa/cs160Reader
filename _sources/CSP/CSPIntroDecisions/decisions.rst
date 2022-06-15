@@ -53,10 +53,4 @@ Computers can also make decisions or take action when something is true.  More s
 	
 The computer's ability to take action (execute some code) when something is true is also called **conditional execution**.  
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_12_1

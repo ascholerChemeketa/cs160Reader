@@ -152,10 +152,4 @@ This one does a little math with the x and y.
     
 Try the program above on some of the other images as well by changing the file name on line 5.   Which picture looks the best after you run the program?
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_11_5

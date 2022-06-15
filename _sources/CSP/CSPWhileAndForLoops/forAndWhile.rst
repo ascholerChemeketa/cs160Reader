@@ -106,10 +106,3 @@ The code below will loop as long as the number that you enter isn't negative.  I
 		  
 	   	  What happens if you enter a negative number as the first input to the code above?
 
-.. note::
-
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_8_1

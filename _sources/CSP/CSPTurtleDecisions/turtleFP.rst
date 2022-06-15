@@ -92,12 +92,6 @@ ycor        None          Returns the y values of the turtle's position
 Once you are comfortable with the basics of turtle graphics you can read about even
 more options on the `Python Docs Website <http://docs.python.org/dev/py3k/library/turtle.html>`_. 
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_14_1
 
   

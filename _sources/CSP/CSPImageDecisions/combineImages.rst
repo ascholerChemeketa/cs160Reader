@@ -55,11 +55,7 @@ We can use a conditional to copy just the non-white pixels from one picture to a
           img2.draw(win)
         
           
-    .. tab:: Discussion
 
-       .. disqus::
-           :shortname: cslearn4u
-           :identifier: studentcsp_ch15combine
           
     Below is a selection of images that you can use in the programs in this section.
 
@@ -111,17 +107,7 @@ Here are a couple of other pictures that we can also use.  The first is apple.jp
 
 
                                 
-        .. tab:: Discussion 
 
-            .. disqus::
-                :shortname: cslearn4u
-                :identifier: studentcsp_15_2_1_WSq
 
-.. note::
 
-    Discuss topics in this section with classmates. 
-
-      .. disqus::
-          :shortname: cslearn4u
-          :identifier: studentcsp_15_2
 
