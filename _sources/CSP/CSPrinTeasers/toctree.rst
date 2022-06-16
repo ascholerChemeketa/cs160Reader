@@ -1,15 +1,15 @@
-Chapter 1 - What is this Book About?
+An introduction to programming
 ::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
 
    studentBook.rst 
-   pretest.rst
+   .. pretest.rst
    computeNumbers.rst
    computeWords.rst
    computeTurtles.rst
    computeImages.rst
-   standards.rst
+   .. standards.rst
    ch1_summary.rst
-   Exercises.rst
+   .. Exercises.rst

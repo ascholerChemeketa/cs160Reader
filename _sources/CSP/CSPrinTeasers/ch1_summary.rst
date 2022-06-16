@@ -35,7 +35,3 @@ Chapter 1 included the following concepts from computing.
 - **Screen** - A ``Screen`` is part of the Turtle library.  It is a space on the page for the turtle to move in and draw on.
 - **String** - A string is anything we can type between a pair of pair of single quotes (``'Hi'``), double quotes (``"Hi"``), or triple quotes (``'''Hi'''``).  It is a sequence of characters.  
 - **Variable** -  A variable is a name associated with computer memory that can hold a value and that value can change or vary. One example of a variable is the score in a game.
-
-.. note::  
-
-   This is the end of chapter 1. We would love it if you could give us some feedback on this chapter at https://www.surveymonkey.com/r/ch1-student-fb.  You might want to open this link in a new tab to make it easier for you to return to your place in this ebook.

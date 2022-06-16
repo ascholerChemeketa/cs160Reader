@@ -35,35 +35,34 @@ The computer can also compute with words, or more accurately, with **strings** w
 Underneath the program below, to the right of the *Run* button |runbutton|, you'll see the button to open the audio tour for this program: |audiobutton|.  Click on that button and then click on "Line-by-line Tour" to hear the audio tour.  You can use the provided buttons to pause, play, jump ahead, or go back. 
 
 .. activecode:: String_Operators
-  :tour_1: "Line-by-line Tour"; 1: str1-line1; 2: str1-line2; 3: str1-line3; 4: str1-line4; 5: str1-line5; 6: str1-line6; 7: str1-line7; 8: str1-line8; 9: str1-line9; 10: str1-line10;
-  :nocodelens:
   
-  basic = "Ma"
+  basic = "da"
   print(basic)
-  basic3 = basic + basic + basic
+  basic3 = basic + "-" + basic + "-" + basic
   print(basic3)
-  next = "Mow"
+  next = "dum"
   next3 = next * 3
   print(next3)
-  together = (basic * 3) + (next * 2)
+  together = (basic + "-") * 3 + next
   print(together)
-  print(together + "Mmm" + together)
-  
-..	index::
-	single: dot-notation
-	pair: programming; dot-notation
+  print(together + " " + together)
 
-A string can also be asked to return a new string that is changed in some way from the original string.  In the example below, we'll take a string in all-caps and turn it into a nicely capitalized sentence.  This example uses **dot-notation** (``sentence.lower()``) which is the way to tell a string how we want it to change. 
+.. index::
+    single: object
+    single: dot-notation
+
+Strings are different than numbers in that they are **objects**. Objects are complex entities in code that combine data (like the text that is part of a string) with behaviors - things the object can do. To access the behaviors of an object, we use **dot-notation**. In dot notation, we use a ``.`` (or dot) to describe which behavior of an object we want to make use of.
+
+For example, the program below uses ``sentence.lower()`` to tell the string **sentence** that we want it to give us a copy of itself that has been changed to all lower case letters. We then ask the new string, called **better** to make a copy of itself where just the first letter is capitalized.
 
 .. activecode:: String_Methods
-   :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;
-   :nocodelens:
-   
-   sentence = "THIS IS A TEST"
-   better = sentence.lower()
-   print(better)
-   betterStill = better.capitalize() + "."
-   print(betterStill)
+
+    sentence = "THIS IS A TEST"
+    better = sentence.lower()
+    print("The string better is :", better)
+    print("sentence is still    :", sentence)
+    betterStill = better.capitalize() + "."
+    print("betterStill is       :", betterStill)
    
 .. mchoice:: 1_4_1_String_Methods_Q1
    :answer_a: Hi There
@@ -77,11 +76,11 @@ A string can also be asked to return a new string that is changed in some way fr
    :feedback_c: Adding strings together and repeating them doesn't add spaces between the strings
    :feedback_d: Strings are added together without adding any space and they are repeated without adding a space
    :feedback_e: The * 2 repeats the string two times
-   
+
    What would the following code print?
    
    :: 
-   
+       
       first = "Hi"
       next = "There"
       print ((first + next) * 2)

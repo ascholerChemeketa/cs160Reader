@@ -37,7 +37,7 @@ Nine Algorithms Book Supplements
    NineAlgorithms/index.rst
 
 
-Programming in Python
+Exploring Programming
 ===================================
 
 .. toctree::

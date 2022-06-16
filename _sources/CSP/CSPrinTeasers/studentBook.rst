@@ -40,18 +40,7 @@ Thus, this text uses the following sequence to introduce programming as a whole 
 - We ask you to *use* what you are learning from the examples in some simple *practice* exercises. These exercises are meant to be short and easy.
 - Eventually you will build to writing your own interesting programs.
 
-.. figure:: Figures/studentsAtComputers.jpg
-    :width: 400px
-    :align: center
-    :alt: students in a computer classroom
-    :figclass: align-center
-
-    Students in a computer classroom
-
-
-
 This first chapter introduces the approach used in this book and offers some quick "teasers" of things we'll be doing later.  **Don't worry if you don't understand the code (programs - instructions that a computer can understand) that you see in this chapter**.  We'll go through things much more slowly in the next few chapters.  
-
 
 
 License
@@ -68,14 +57,14 @@ All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
-    * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-    * Neither the name of the <organization> nor the
-      names of its contributors may be used to endorse or promote products
-      derived from this software without specific prior written permission.
+* Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+* Neither the name of the <organization> nor the
+    names of its contributors may be used to endorse or promote products
+    derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
