@@ -5,42 +5,33 @@ Circuit Playground
 
 Here is a circuit you can edit.
 
-|br|   
+.. simcir::
 
-.. raw:: html
+    {
+        "width":600,
+        "height":500,
+        "showToolbox":true,
+        "toolbox":[
+        {"type":"DC"},
+        {"type":"LED"},
+        {"type":"Toggle"},
+        {"type":"NOT"},
+        {"type":"AND"},
+        {"type":"OR"},
+        {"type":"XOR"},
+        {"type":"Joint"}
+        ],
+        "devices":[
+        {"type":"Toggle","id":"dev0","x":120,"y":96,"label":"Input1","state":{"on":false}},
+        {"type":"DC","id":"dev1","x":40,"y":160,"label":"DC"},
+        {"type":"Toggle","id":"dev2","x":120,"y":216,"label":"Input2","state":{"on":false}}
+        ],
+        "connectors":[
+        {"from":"dev0.in0","to":"dev1.out0"},
+        {"from":"dev2.in0","to":"dev1.out0"}
+        ]
+    }
 
-    <script type="text/javascript" src="../_static/simcir/simcir.js"></script>
-    <link rel="stylesheet" type="text/css" href="../_static/simcir/simcir.css" />
-    <script type="text/javascript" src="../_static/simcir/simcir-basicset.js"></script>
-    <link rel="stylesheet" type="text/css" href="../_static/simcir/simcir-basicset.css" />
-	
-    <div class="simcir">
-	{
-	  "width":600,
-	  "height":500,
-	  "showToolbox":true,
-	  "toolbox":[
-	    {"type":"DC"},
-	    {"type":"LED"},
-	    {"type":"Toggle"},
-	    {"type":"NOT"},
-	    {"type":"AND"},
-	    {"type":"OR"},
-	    {"type":"XOR"},
-	    {"type":"Joint"}
-	  ],
-	  "devices":[
-	    {"type":"Toggle","id":"dev0","x":120,"y":96,"label":"Input1","state":{"on":false}},
-	    {"type":"DC","id":"dev1","x":40,"y":160,"label":"DC"},
-	    {"type":"Toggle","id":"dev2","x":120,"y":216,"label":"Input2","state":{"on":false}}
-	  ],
-	  "connectors":[
-	    {"from":"dev0.in0","to":"dev1.out0"},
-	    {"from":"dev2.in0","to":"dev1.out0"}
-	  ]
-	}
-    </div>
-	
 
 
 Instructions:
