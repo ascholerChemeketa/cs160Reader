@@ -46,8 +46,6 @@ The Python program below sets some values for these variables and then does the 
 
 Press the |runbutton| button below to make the computer execute these steps. The output from this program will be displayed to the right of the program.
 
-Pres the |audiobutton| button below to bring up an "Audio Tour" that explains this program, line-by-line.
-
 You can only use the *Save* and *Load* buttons if you are logged in. The *Save* button will save the current program and the *Load* button will load a saved program.
 
 .. activecode:: payment_calc

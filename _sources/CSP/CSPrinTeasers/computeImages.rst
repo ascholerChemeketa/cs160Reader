@@ -72,7 +72,7 @@ Let's remove the red from this picture.  The program below does that.
 
 In Python, images are another example of an **object**. To work with them, we will make use of another **library**, this one called ``image``. That library will allow us to make an ``Image`` that holds the data from an image and an ``ImageWin`` which draws that image to the screen after we have modified the data.
   
-The lines that are important are under the comments (lines that start with a ``#``). Press the |audiobutton| button to hear an audio explanation of the important lines.  Press the |runbutton| button to run the program and show the changed image.  Please note that processing all those pixels can take a few seconds.  
+The lines that are important are under the comments (lines that start with a ``#``). Press the |runbutton| button to run the program and show the changed image.  Please note that processing all those pixels can take a few seconds.  
 
 .. raw:: html
 
