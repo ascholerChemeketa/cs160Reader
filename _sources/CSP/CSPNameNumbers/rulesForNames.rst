@@ -115,14 +115,14 @@ underscores between words like ``height_in_inches`` (called **snake-case**).
     :answer_d: date
     :answer_e: hd
     :correct: a
-    :feedback_a: Correct! This or "hire_date" would both be reasonable choices for a name.
-    :feedback_b: "hire_date" would be reasonable. But you don't usually start a 
+    :feedback_a: Correct! This or <code>hire_date</code> would both be reasonable choices for a name.
+    :feedback_b: <code>hire_date</code> would be reasonable. But you don't usually start a 
         variable name with an underscore. 
     :feedback_c: You can't have a space in a variable name
-    :feedback_d: "date" isn't the worst option here, but it might not be clear to other readers
+    :feedback_d: <code>date</code>  isn't the worst option here, but it might not be clear to other readers
         of the code what date we are referring to. Is it a person's hire date? their birth day?
         today's date?
-    :feedback_e: An abbreviation would not be appropriate in this case. "hd" is not meaningful.
+    :feedback_e: An abbreviation would not be appropriate in this case. <code>hd</code> is not meaningful.
 
     Say you have a variable that represents the date someone was hired. Which of these would
     be the most appropriate name?
