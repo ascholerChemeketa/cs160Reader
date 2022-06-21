@@ -1,4 +1,7 @@
 
+.. include:: ../csp_global.rst
+
+
 .. |runbutton| image:: Figures/run-button.png
     :height: 20px
     :align: top
@@ -7,7 +10,7 @@
 .. |audiobutton| image:: Figures/start-audio-tour.png
     :height: 20px
     :align: top
-    :alt: audio tour button
+    :alt: audio tour button 
 
 .. |codelensfirst| image:: Figures/codelens-first.png
     :height: 20px

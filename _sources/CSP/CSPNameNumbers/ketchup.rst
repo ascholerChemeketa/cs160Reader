@@ -6,45 +6,15 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
-
-.. |codelensfirst| image:: Figures/codelens-first.png
-    :height: 20px
-    :align: top
-    :alt: move to first button
-
-.. |codelensback| image:: Figures/codelens-back.png
-    :height: 20px
-    :align: top
-    :alt: back button
-
-.. |codelensfwd| image:: Figures/codelens-forward.png
-    :height: 20px
-    :align: top
-    :alt: forward (next) button
-
-.. |codelenslast| image:: Figures/codelens-last.png
-    :height: 20px
-    :align: top
-    :alt: move to last button
-    
-
-
-.. highlight:: java
-   :linenothreshold: 4
+.. include:: includes.rst
 
 Following the Ketchup Ooze
 ====================================
 
-Let's compute how long it would take ketchup to ooze down a table.  Imagine that you tilted a four foot table, and poured ketchup at the top.  How long would it take to get to the bottom of the table?  We're going to ignore physics and the angle of the table, and just start from the average speed of ketchup as .028 miles per hour.
+Let's compute how long it would take ketchup to ooze down a table.  Imagine that you tilted a four
+foot table, and poured ketchup at the top.  How long would it take to get to the bottom of the
+table?  We're going to ignore physics and the angle of the table, and just start from the average
+speed of ketchup as .028 miles per hour.
 
 .. figure:: Figures/ketchup.jpg
     :width: 200px
@@ -78,12 +48,12 @@ The next type of problem is new.  It shows correct code in code blocks on the le
     :height: 480
     :align: center
 
-.. parsonsprob:: 3_6_1_Ketchup_Speed
+.. parsonsprob:: 2_7_3_Ketchup_Speed
    :practice: T
    :numbered: left
    :adaptive:
 
-   The following program figures out the ketchup speed in feet per <i>seconds</i>.  Drag the blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
+   The following program figures out the ketchup speed in feet per *seconds*.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check* button to check your solution.
    -----
    dripMPH = .028
    FPM= 5280.0

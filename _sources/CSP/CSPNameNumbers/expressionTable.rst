@@ -6,63 +6,38 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
-
-.. |codelensfirst| image:: Figures/codelens-first.png
-    :height: 20px
-    :align: top
-    :alt: move to first button
-
-.. |codelensback| image:: Figures/codelens-back.png
-    :height: 20px
-    :align: top
-    :alt: back button
-
-.. |codelensfwd| image:: Figures/codelens-forward.png
-    :height: 20px
-    :align: top
-    :alt: forward (next) button
-
-.. |codelenslast| image:: Figures/codelens-last.png
-    :height: 20px
-    :align: top
-    :alt: move to last button
-    
-
-
-.. highlight:: java
-   :linenothreshold: 4
-
-
+.. include:: includes.rst
 
 Summary of Expression Types
 ============================
 
-+------------+-------------------------------------------------------------------------------------------------+
-| Expression | Arithmetic meaning                                                                              |
-+------------+-------------------------------------------------------------------------------------------------+
-| 1 + 2      | Addition, the result is 3                                                                       |
-+------------+-------------------------------------------------------------------------------------------------+
-| 3 * 4      | Multiplication, the result is 12                                                                |
-+------------+-------------------------------------------------------------------------------------------------+
-| 1 / 3      | Integer division, the result is 0 in older Python environments, but 0.333333333333 in Python 3  |
-+------------+-------------------------------------------------------------------------------------------------+
-| 2.0 / 4.0  | Division, the result is 0.5, since you are using decimal numbers in the calculation             |
-+------------+-------------------------------------------------------------------------------------------------+
-| 2 % 3      | Modulo (remainder), the result is 2                                                             |
-+------------+-------------------------------------------------------------------------------------------------+
-| -1         | Negation, the result is -1                                                                      |
-+------------+-------------------------------------------------------------------------------------------------+
+Here is a table summarizing the basic arithmetic operations:
 
-.. mchoice:: 3_3_1_intDiv_Q1
+.. list-table::
+    :widths: 10 90
+    :header-rows: 1
+    :align: left
+
+    * - Expression
+      - Arithmetic meaning
+    * - 1 + 2
+      - Addition, the result is 3  
+    * - 3 * 4
+      - Multiplication, the result is 12 
+    * - 4 / 3 
+      - Division, the result is 1.333333333333 in Python 3 but would be 1 in older versions of
+        Python or in some other programming languages that interpret this as whole number math
+    * - 4.0 / 3.0 
+      - Division, the result is 1.333333333333. The result would be a decimal in any version of
+        Python since we are starting with decimal numbers
+    * - 16 % 3 
+      - Modulo (remainder), the result is 1  
+    * - 2 ** 3 
+      - Power, 2 to the 3rd power - result is 8
+    * - -1
+      - Negation, the result is -1 
+
+.. mchoice:: 2_4_1_intDiv_Q1
    :practice: T
    :answer_a: 0
    :answer_b: 1
@@ -76,7 +51,7 @@ Summary of Expression Types
 
    What is the result of ``3 / 4``?
     
-.. mchoice:: 3_3_2_mod_Q1
+.. mchoice:: 2_4_2_mod_Q1
    :practice: T
    :answer_a: 0
    :answer_b: 1
@@ -90,7 +65,7 @@ Summary of Expression Types
 
    What is the result of ``18 % 5``?
    
-.. mchoice:: 3_3_3_mod_Q2
+.. mchoice:: 2_4_3_mod_Q2
    :practice: T
    :answer_a: 0
    :answer_b: 1
