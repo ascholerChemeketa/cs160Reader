@@ -9,7 +9,7 @@
 ..  shortname:: Chapter: What You Can Do with a Computer
 ..  description:: Some tidbits of what you can do with a computer
 
-.. include:: ../csp_global.rst
+.. include:: includes.rst
 
 Compute with Turtles
 =====================

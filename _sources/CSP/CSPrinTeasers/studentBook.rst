@@ -10,7 +10,7 @@
 ..  description:: Some tidbits of what you can do with a computer
 
 
-.. include:: ../csp_global.rst
+.. include:: includes.rst
 
 About This Section of the Reader
 ===================================

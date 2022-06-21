@@ -5,14 +5,14 @@
     Invariant Sections being Forward, Prefaces, and Contributor List,
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
-
+ 
 ..  shortname:: Chapter: What You Can Do with a Computer
 ..  description:: Some tidbits of what you can do with a computer
 
-.. include:: ../csp_global.rst
+.. include:: includes.rst
 
 Compute with Numbers
-=====================
+===================== 
 
 .. index::
     single: variable

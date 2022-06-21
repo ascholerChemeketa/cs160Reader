@@ -11,7 +11,7 @@
 
 .. setup for automatic question numbering.
 
-.. include:: ../csp_global.rst
+.. include:: includes.rst
 
 Compute with Words
 ===================
