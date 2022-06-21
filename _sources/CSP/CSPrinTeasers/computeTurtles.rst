@@ -14,7 +14,9 @@
 Compute with Turtles
 =====================
 
-The idea of "turtle programming" dates back to the 1960's and originated with Seymour Papert. He developed a robot turtle with a physical pen in it.  Children would steer the robot around and create drawings with the pen by writing programs in a language called Logo.
+The idea of "turtle programming" dates back to the 1960's and originated with Seymour Papert.
+He developed a robot turtle with a physical pen in it.  Children would steer the robot around
+and create drawings with the pen by writing programs in a language called Logo.
 
 .. figure:: Figures/mindstorms_turtle.jpg 
     :width: 200px
@@ -29,12 +31,24 @@ The idea of "turtle programming" dates back to the 1960's and originated with Se
     single: library
     single: turtle
 
-Today, we can play with virtual turtles in a fully-graphical and non-robotic way. To do so, we will make use of another feature of Python - code libraries. A **library** is a collection of existing code designed to help programs perform some task. Using a library means we do not have to figure out how to handle all the details of a particular problem - the library code will take care of many of those details for us. In the case of making a virtual turtle, our program will need to have a way to keep track of where the turtle is, a way to move the turtle around, a way to draw to the screen, etc... The ``turtle`` library will handle these details for us.
+Today, we can play with virtual turtles in a fully-graphical and non-robotic way. To do so, we
+will make use of another feature of Python - code libraries. A **library** is a collection of
+existing code designed to help programs perform some task. Using a library means we do not have
+to figure out how to handle all the details of a particular problem - the library code will
+take care of many of those details for us. In the case of making a virtual turtle, our program
+will need to have a way to keep track of where the turtle is, a way to move the turtle around,
+a way to draw to the screen, etc... The ``turtle`` library will handle these details for us.
 
 .. index::
     single: import
 
-To use a library, we need to tell Python we want to use the library with an **import** statement. In the program below, we start with ``from turtle import *`` to tell Python we want to make use of the **turtle** library. Then it creates a **Screen**, a space on the page for the turtle to move in and draw on (``space = Screen()``).  Next it creates a turtle named ``alex`` (``alex = Turtle()``). The turtles that we make are  **objects** that have behaviors we can access with dot-notation. We use these to tell the turtle ``alex`` to move around on the screen using commands like: ``alex.forward(150)``. As the turtle moves around it draws a line behind itself. 
+To use a library, we need to tell Python we want to use the library with an **import** statement.
+In the program below, we start with ``from turtle import *`` to tell Python we want to make use
+of the **turtle** library. Then it creates a **Screen**, a space on the page for the turtle to
+move in and draw on (``space = Screen()``).  Next it creates a turtle named ``alex``
+(``alex = Turtle()``). The turtles that we make are  **objects** that have behaviors we can access
+with dot-notation. We use these to tell the turtle ``alex`` to move around on the screen using
+commands like: ``alex.forward(150)``. As the turtle moves around it draws a line behind itself. 
 
 Try clicking the |runbutton| button below to see what the following program does.
 
@@ -92,4 +106,5 @@ Just by going forward, backward, left, and right, we can have a turtle draw a sh
         zari.right(90)          # turn by 90 degrees
     
     - :square|Square|SQUARE: Correct!
-      :.*: Make sure to type the name of the shape created. You can copy this code into the ActiveCode area above and then hit **Save & Run** to test it.
+      :.*: Make sure to type the name of the shape created. You can copy this code into
+        the ActiveCode area above and then hit **Save & Run** to test it.

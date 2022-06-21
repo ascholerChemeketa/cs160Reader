@@ -25,7 +25,9 @@ Compute with Images
 .. index::
     single: pixels
     
-Pictures on a computer are broken up into little bits called **pixels**, for *picture* (pix) *elements* (els).  These are laid out on a grid, from left to right (the horizontal or **x** dimension) and top to bottom (the vertical or **y** dimension).
+Pictures on a computer are broken up into little bits called **pixels**, for *picture* (pix)
+*elements* (els).  These are laid out on a grid, from left to right (the horizontal or **x**
+dimension) and top to bottom (the vertical or **y** dimension).
 
 .. figure:: Figures/grid.png
     :align: center
@@ -56,7 +58,12 @@ Pixels are quite small.  Even this small picture below has 180 columns and 240 r
    
    Which way does y increase on an image?
 
-Each pixel has a color associated with it: An amount of red, an amount of green, and an amount of blue.  The amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the maximum amount of that color.  A pixel is displayed using light, not paint, so it may work a bit differently than you might expect if you only have experience making colors by mixing paint.  For example, you would mix blue and yellow paint to make green, but you mix red and green light to make yellow light.
+Each pixel has a color associated with it: An amount of red, an amount of green, and an amount of
+blue.  The amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the
+maximum amount of that color.  A pixel is displayed using light, not paint, so it may work a bit
+differently than you might expect if you only have experience making colors by mixing paint.  For
+example, you would mix blue and yellow paint to make green, but you mix red and green light to make
+yellow light.
 
 .. figure:: Figures/additive-color.jpg
     :width: 480px
@@ -66,13 +73,19 @@ Each pixel has a color associated with it: An amount of red, an amount of green,
     
     Figure 3: How lights combine to make colors
 
-All image manipulations in programs like Photoshop or Instagram filters are created through manipulating those red, green, and blue color components in each pixel. 
+All image manipulations in programs like Photoshop or Instagram filters are created through
+manipulating those red, green, and blue color components in each pixel. 
 
 Let's remove the red from this picture.  The program below does that.
 
-In Python, images are another example of an **object**. To work with them, we will make use of another **library**, this one called ``image``. That library will allow us to make an ``Image`` that holds the data from an image and an ``ImageWin`` which draws that image to the screen after we have modified the data.
+In Python, images are another example of an **object**. To work with them, we will make use of
+another **library**, this one called ``image``. That library will allow us to make an ``Image``
+that holds the data from an image and an ``ImageWin`` which draws that image to the screen after
+we have modified the data.
   
-The lines that are important are under the comments (lines that start with a ``#``). Press the |runbutton| button to run the program and show the changed image.  Please note that processing all those pixels can take a few seconds.  
+The lines that are important are under the comments (lines that start with a ``#``). Press the
+|runbutton| button to run the program and show the changed image.  Please note that processing
+all those pixels can take a few seconds.  
 
 .. raw:: html
 
@@ -100,12 +113,14 @@ The lines that are important are under the comments (lines that start with a ``#
     img.draw(win)
     
 .. mchoice:: 1_6_2_Image_Black
-   :answer_a: You still see the picture, but it is all in shades of gray.  
-   :answer_b: The picture is all white.
-   :answer_c: The picture is all black.
-   :correct: c
-   :feedback_a: Not if you set all the color values to 0.
-   :feedback_b: Did you try it?  This would be true if you set all the values to 255 instead of 0.
-   :feedback_c: Black is the absence of light so setting all colors to 0 results in an all black image since there is no light.
-   
-   What do you think happens when you set all the colors to 0?  Try adding ``p.setBlue(0)`` and ``p.setGreen(0)`` to the program above after the ``p.setRed(0)`` and run it to check.
+    :answer_a: You still see the picture, but it is all in shades of gray.  
+    :answer_b: The picture is all white.
+    :answer_c: The picture is all black.
+    :correct: c
+    :feedback_a: Not if you set all the color values to 0.
+    :feedback_b: Did you try it?  This would be true if you set all the values to 255 instead of 0.
+    :feedback_c: Black is the absence of light so setting all colors to 0 results in an all
+        black image since there is no light.
+
+    What do you think happens when you set all the colors to 0?  Try adding ``p.setBlue(0)`` and
+    ``p.setGreen(0)`` to the program above after the ``p.setRed(0)`` and run it to check.
