@@ -26,7 +26,7 @@ of characters.  We can create a **string** by typing characters between a pair o
 some of the same basic arithmetic operators -- they just mean something different here.  Here we
 generate silly song lyrics by using ``+`` to combine (append) two strings and ``*`` to repeat strings.
 
-.. activecode:: String_Operators
+.. activecode:: 1_3_1_String_Operators
     :nocodelens:
   
   basic = "da"
@@ -45,7 +45,7 @@ generate silly song lyrics by using ``+`` to combine (append) two strings and ``
     single: dot-notation
 
 Strings are different than numbers in that they are **objects**. Objects are complex entities
-in code that combine data (like the text that is part of a string) with behaviors - things the object
+in code that combine data (like the text that is part of a string) with behaviors - things theobject
 can do. To access the behaviors of an object, we use **dot-notation**. In dot notation, we use a ``.``
 (or dot) to describe which behavior of an object we want to make use of.
 
@@ -53,7 +53,7 @@ For example, the program below uses ``sentence.lower()`` to tell the string **se
 it to give us a copy of itself that has been changed to all lower case letters. We then ask the new
 string, called **better** to make a copy of itself where just the first letter is capitalized.
 
-.. activecode:: String_Methods
+.. activecode:: 1_3_2_String_Methods
     :nocodelens:
 
     sentence = "THIS IS A TEST"
@@ -63,7 +63,7 @@ string, called **better** to make a copy of itself where just the first letter i
     betterStill = better.capitalize() + "."
     print("betterStill is       :", betterStill)
    
-.. mchoice:: 1_4_1_String_Methods_Q1
+.. mchoice:: 1_3_3_String_Methods_Q1
    :answer_a: Hi There
    :answer_b: HiThere
    :answer_c: Hi There Hi There

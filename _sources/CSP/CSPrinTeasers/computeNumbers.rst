@@ -59,7 +59,7 @@ program will be displayed to the right of the program.
 You can only use the *Save* and *Load* buttons if you are logged in. The *Save* button will save
 the current program and the *Load* button will load a saved program.
 
-.. activecode:: payment_calc
+.. activecode:: 1_2_1_payment_calc
     :nocodelens:
     
     P = 10000       # $10,000 - notice we don't use ,'s in numbers
@@ -95,7 +95,7 @@ trying to run the note as if it was code.
     Notice how naming the values (using variables) for things like **n** makes it easier to see which
     values to change to make the program calculate a different loan.
 
-.. mchoice:: payment_calc_q1
+.. mchoice:: 1_2_2_payment_calc_q1
     :answer_a: 134.48
     :answer_b: 134.4794369902589
     :answer_c: 134
@@ -109,7 +109,7 @@ trying to run the note as if it was code.
     Try calculating the payment for an $8,000 loan at 6.5% interest over 72 months. What is the monthly payment?
 
 
-.. fillintheblank:: payment_calc_q2
+.. fillintheblank:: 1_2_3_payment_calc_q2
 
     Try calculating the payment for a $20,000 loan at 7% interest over 48 months. What is the monthly payment?
 

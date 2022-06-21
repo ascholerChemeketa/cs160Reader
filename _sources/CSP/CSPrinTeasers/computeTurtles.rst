@@ -52,7 +52,7 @@ commands like: ``alex.forward(150)``. As the turtle moves around it draws a line
 
 Try clicking the |runbutton| button below to see what the following program does.
 
-.. activecode:: Turtle_1
+.. activecode:: 1_4_1_Turtle_1
     :tour_1: "Line-by-line Tour"; 1: first-turtle-line-1; 2: first-turtle-line-2; 3: first-turtle-line-3; 4: first-turtle-line-4; 5: first-turtle-line-5; 6: first-turtle-line-6;
     :nocodelens:
     
@@ -64,7 +64,7 @@ Try clicking the |runbutton| button below to see what the following program does
     alex.forward(75)        # move forward by 75 units 
 
 
-.. mchoice:: 1_5_1_Turtle_Q1
+.. mchoice:: 1_4_2_mc1
    :answer_a: Up
    :answer_b: Right
    :answer_c: Down
@@ -86,7 +86,7 @@ Try clicking the |runbutton| button below to see what the following program does
 
 Just by going forward, backward, left, and right, we can have a turtle draw a shape.  
 
-.. fillintheblank:: 1_5_2_Shape_fill
+.. fillintheblank:: 1_4_3_fb1
 
     What shape will the program below draw when you click on the Run button? 
     
