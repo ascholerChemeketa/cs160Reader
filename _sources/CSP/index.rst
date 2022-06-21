@@ -11,7 +11,6 @@
    :maxdepth: 3
 
    CSPrinTeasers/toctree.rst
-   CSPTuring/toctree.rst
    CSPNameNumbers/toctree.rst
    CSPNameStrings/toctree.rst
    CSPNameTurtles/toctree.rst
