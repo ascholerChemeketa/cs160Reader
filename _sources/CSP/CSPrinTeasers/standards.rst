@@ -12,17 +12,7 @@
 .. setup for automatic question numbering.
 
 
-
-
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
+.. include:: ../csp_global.rst
 
 
 Standards - Big Ideas

@@ -9,16 +9,7 @@
 ..  shortname:: Chapter: What You Can Do with a Computer
 ..  description:: Some tidbits of what you can do with a computer
 
-
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
+.. include:: ../csp_global.rst
 
 Compute with Numbers
 =====================
