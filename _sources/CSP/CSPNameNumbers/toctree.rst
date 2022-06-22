@@ -25,5 +25,5 @@ Names for Numbers
    walkAssign.rst
    invoice.rst
    summary.rst
-   Exercises.rst
    VariablePracticeParsons.rst
+   Exercises.rst
