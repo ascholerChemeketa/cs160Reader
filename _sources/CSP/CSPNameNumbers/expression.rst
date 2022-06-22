@@ -32,12 +32,9 @@ expression will be stored in the variable.
     result = 2 * 2 + 1
     print(result)
     
-Integer Division
+Operations
 -------------------
 
-.. index::
-    single: integer division
-   
 You can use all the standard mathematical operations, you just have to know the right symbols
 to use: ``/`` means divsion; ``*`` means times; ``**`` means "to the power of". 
 
@@ -56,16 +53,39 @@ to use: ``/`` means divsion; ``*`` means times; ``**`` means "to the power of".
     result = 1 / 3
     print(result)
 
-.. note::
 
-    This book is using Python 3.0 which returns a decimal value from an integer calculation like
-    ``1 / 3``.  If we had executed ``1 / 3`` in an older Python development environment it would
-    have printed ``0`` instead.  In many languages if you are only using integers in calculations
-    (whole numbers - like -3,65, -39028, 602939) the result will also be an integer and the
-    factional part (part after the decimal point) is thrown away. In those environments it is
-    important to use decimal values (like ``1.0 / 2``, ``1 / 2.0``, or ``1.0 / 2.0``) if you want
-    a decimal result.
+Division and Integer Division
+------------------------------------
+
+.. index::
+    single: integer division
    
+This book is using Python 3.0 which returns a decimal value - 1.66666666666667 - from a calculation like
+``5 / 3``.  If we executed ``5 / 3`` in many programming languages (or older version so Python)
+it would result in just 1 because we can only divide 5 by 3 one whole time. This form of
+division is known as **integer division** and is what you probably learned in elementary school
+before you learned long division.
+
+There are times when we want to do integer division as part of solving a problem. If I want to figure out how many
+whole feet are in 37 inches, I would divide 37 by 12. From it, I want an answer of just 3,
+not 3.083333333333333. To do integer division in Python, we use ``//``. Compare the two results
+in the code sample below. The first is done using normal (decimal) division. The second is
+from doing integer division:
+
+   
+.. activecode:: 2_3_2_2_Expression_Div2
+    :nocodelens:
+    
+    result1 = 37 / 3
+    print(result1)
+    result2 = 37 // 3
+    print(result2)
+
+.. note:: 
+
+    Integer division always just ignores the remainder - it does not round the answer.
+    ``5 // 3`` is just 1.
+
 Modulo 
 ---------
 
@@ -73,11 +93,13 @@ Modulo
     single: modulo
     single: remainder
    
-There are also some symbols that may be used in ways that you don't expect.  
+If you are doing integer division, you may also care about the remainder. When I divide
+do ``37/12`` to figure out the number of feet in 37 inches, I get 3. But maybe I also
+want to know that there is one inch left over.
 
 You may not be familiar with the **modulo** (remainder) operator ``%``.  It returns the remainder
-when you divide the first number by the second.  You probably did this long ago when you were
-learning long division.  In the case of ``4 % 2``, ``2`` goes into ``4`` two times with a remainder
+when you divide the first number by the second.  In the case of ``4 % 2``, ``2`` goes
+into ``4`` two times with a remainder
 of ``0``.  The result of ``5 % 2`` would be ``1`` since ``2`` goes into ``5``, two times with a
 remainder of ``1``.
 
@@ -86,21 +108,21 @@ remainder of ``1``.
     :align: center
     :figclass: align-center
     
-    Long division showing the whole number result and the remainder
+    Division showing the whole number result and the remainder
 
 
 .. fillintheblank:: 2_3_3_1_Mod_fill
 
    What will be printed when you click on the Run button in the code below? 
  
-   -    :^0$: Correct!  The 11 is evenly divisible by 3 with a remainder of 2.
+   -    :^2$: Correct!  The 11 is evenly divisible by 3 with a remainder of 2.
         :.*: Did you actually run the program?
 
 .. activecode:: 2_3_3_2_Expression_Mod
     :nocodelens:
     
-    result = 11 % 3
-    print(result)
+    x = 11 % 3
+    print(x)
 
 
 .. note::

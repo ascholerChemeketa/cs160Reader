@@ -25,11 +25,9 @@ Here is a table summarizing the basic arithmetic operations:
     * - 3 * 4
       - Multiplication, the result is 12 
     * - 4 / 3 
-      - Division, the result is 1.333333333333 in Python 3 but would be 1 in older versions of
-        Python or in some other programming languages that interpret this as whole number math
-    * - 4.0 / 3.0 
-      - Division, the result is 1.333333333333. The result would be a decimal in any version of
-        Python since we are starting with decimal numbers
+      - Division, the result is 1.333333333333
+    * - 4 / 3 
+      - Integer Division, the result is 1
     * - 16 % 3 
       - Modulo (remainder), the result is 1  
     * - 2 ** 3 
@@ -44,13 +42,29 @@ Here is a table summarizing the basic arithmetic operations:
    :answer_c: 0.75
    :answer_d: 0.25
    :correct: c
-   :feedback_a: If the two values are both integers (whole numbers) you will normally get an integer (whole number) result in older Python environments.  But, this book is using Python 3 so you get a decimal result.
-   :feedback_b: This would be correct if the result was rounded up before the values after the decimal point were thrown away, but it does not do this.   
-   :feedback_c: While this isn't the what older Pyton development environments would return, in this book we are using Python 3 so it returns a decimal result.
+   :feedback_a: In some languages, this would be correct. But, this book is using Python 3 so you get a decimal result.
+   :feedback_b: No, try again.
+   :feedback_c: Correct.
    :feedback_d: This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code>
 
    What is the result of ``3 / 4``?
-    
+
+
+.. mchoice:: 2_4_1_intDiv_Q2
+   :practice: T
+   :answer_a: 2
+   :answer_b: 1
+   :answer_c: 1.6
+   :answer_d: 0.25
+   :correct: b
+   :feedback_a: You will get an integer answer, but that is not it.
+   :feedback_b: Correct. // does integer division.
+   :feedback_c: Remember that // does <em>integer division</em>
+   :feedback_d: This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code>
+   
+   What is the result of ``8 // 5``?
+
+
 .. mchoice:: 2_4_2_mod_Q1
    :practice: T
    :answer_a: 0
