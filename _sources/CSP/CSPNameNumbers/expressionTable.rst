@@ -26,7 +26,7 @@ Here is a table summarizing the basic arithmetic operations:
       - Multiplication, the result is 12 
     * - 4 / 3 
       - Division, the result is 1.333333333333
-    * - 4 / 3 
+    * - 4 // 3 
       - Integer Division, the result is 1
     * - 16 % 3 
       - Modulo (remainder), the result is 1  
