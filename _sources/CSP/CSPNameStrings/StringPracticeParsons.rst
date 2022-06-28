@@ -1,11 +1,15 @@
 
+.. include:: ../csp_global.rst
 
 Mixed Up Code Practice
 ------------------------------
 
-Try to solve each of the following. Click the *Check Me* button to check each solution.  You will be told if your solution is too short, has a block in the wrong order, or you are using the wrong block.  Some of the problems have an extra block that isn't needed in the correct solution.  Try to solve these on your phone or other mobile device!
+Try to solve each of the following. Click the *Check Me* button to check each solution.
+You will be told if your solution is too short, has a block in the wrong order, or you are
+using the wrong block.  Some of the problems have an extra block that isn't needed in the
+correct solution.
 
-.. parsonsprob:: ch4ex1muc
+.. parsonsprob:: ch3ex1muc
    :adaptive:
    :noindent:
 
@@ -21,7 +25,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    print(Maria) #distractor
 
 
-.. parsonsprob:: ch4ex2muc
+.. parsonsprob:: ch3ex2muc
    :adaptive:
    :noindent:
 
@@ -36,7 +40,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    print("And so are you")
 
 
-.. parsonsprob:: ch4ex3muc
+.. parsonsprob:: ch3ex3muc
    :adaptive:
    :noindent:
 
@@ -52,7 +56,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    print(name, color) #distractor
 
 
-.. parsonsprob:: ch4ex4muc
+.. parsonsprob:: ch3ex4muc
    :adaptive:
    :noindent:
 
@@ -69,7 +73,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    print(part1 * part2) #distractor
 
 
-.. parsonsprob:: ch4ex5muc
+.. parsonsprob:: ch3ex5muc
    :adaptive:
    :noindent:
 
@@ -87,7 +91,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    print("Your name is " name) #distractor
 
 
-.. parsonsprob:: ch4ex6muc
+.. parsonsprob:: ch3ex6muc
    :adaptive:
    :noindent:
 
@@ -101,7 +105,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    =====
    place = sentence.slice("Tom") #distractor
 
-.. parsonsprob:: ch4ex7muc
+.. parsonsprob:: ch3ex7muc
    :adaptive:
    :noindent:
 
@@ -119,7 +123,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    =====
    print(initials) #distractor
 
-.. parsonsprob:: ch4ex8muc
+.. parsonsprob:: ch3ex8muc
    :adaptive:
    :noindent:
 
@@ -133,7 +137,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    =====
    print(Message) #distractor
 
-.. parsonsprob:: ch4ex9muc
+.. parsonsprob:: ch3ex9muc
    :adaptive:
    :noindent:
 
@@ -149,7 +153,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    =====
    part = message[0:4] #distractor
 
-.. parsonsprob:: ch4ex10muc
+.. parsonsprob:: ch3ex10muc
    :adaptive:
    :noindent:
 

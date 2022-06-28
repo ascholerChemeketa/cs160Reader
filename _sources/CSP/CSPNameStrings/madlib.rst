@@ -5,63 +5,58 @@
     Invariant Sections being Forward, Prefaces, and Contributor List,
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
-    
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
 
 
+.. include:: ../csp_global.rst
 
 Making a MadLib story
 ===================================
 
-You might have done MadLib stories when you were a kid.  You provide some pieces of information, like a name of a friend, a verb, and a favorite game (for example), and those pieces of information get plugged into a story.  Since you don't know the story beforehand, you're surprised at what happens to your friend in the story.
+You might have done MadLib stories when you were a kid.  You provide some pieces of information,
+like a name of a friend, a verb, and a favorite game (for example), and those pieces of
+information get plugged into a story.  Since you don't know the story beforehand, you're
+surprised at what happens to your friend in the story.
 
 .. activecode:: Story1
-   :tour_1: "Line by line tour"; 1: StEx-line1; 2: StEx-line2; 3: StEx-line3; 4: StEx-line4; 5: StEx-line5; 6: StEx-line6; 7: StEx-line7; 8: StEx-line8; 9: StEx-line9; 10: StEx-line10; 11: StEx-line11; 12: StEx-line12; 13: StEx-line13; 14: StEx-line14; 15: StEx-line15;
-   :tour_2: "Structural tour"; 1-5: StEx-line1-5; 6-10: StEx-line6-10; 11-15: StEx-line11-15;
-
-   firstName = "Pat"
-   lastName = "Smith"
-   gender = "girl"
-   address = "65 Elm Street"
-   verb = "eat"
-   start = "Once there was a " + gender + " named " + firstName + "."
-   next1 = "A good " + gender + " living at " + address + "."
-   next2 = "One day, a wicked witch came to the " + lastName + " house."
-   next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
-   ending = "But " + firstName + " was smart and avoided the wicked witch."
-   print(start)
-   print(next1)
-   print(next2)
-   print (next3)
-   print(ending)
+      
+    firstName = "Pat"
+    lastName = "Smith"
+    gender = "girl"
+    address = "65 Elm Street"
+    verb = "eat"
+    start = "Once there was a " + gender + " named " + firstName + "."
+    next1 = "A good " + gender + " living at " + address + "."
+    next2 = "One day, a wicked witch came to the " + lastName + " house."
+    next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
+    ending = "But " + firstName + " was smart and avoided the wicked witch."
+    print(start)
+    print(next1)
+    print(next2)
+    print (next3)
+    print(ending)
 
 
-.. mchoice:: 4_4_1_Story1_Q1
-   :answer_a: realEnding = firstName + " called the police who took the witch away."
-   :answer_b: print(firstName + " called the police who took the witch away.")
-   :answer_c: print("Pat called the police who took the witch away.")
-   :correct: b
-   :feedback_a: This would only work if you also put <code>print(realEnding)</code> after this line.
-   :feedback_b: This is a good way to do this since the line that is printed will have the correct first name.  You could also make a string named <code>realEnding</code> first, and then print it.
-   :feedback_c: This <i>would</i> work.  But if you changed the <code>firstName</code> variable, this line would not change.  A different answer is better.
+.. mchoice:: 3_4_2_Story1_Q1
+    :answer_a: realEnding = firstName + " called the police who took the witch away."
+    :answer_b: print(firstName + " called the police who took the witch away.")
+    :answer_c: print("Pat called the police who took the witch away.")
+    :correct: b
+    :feedback_a: This would only work if you also put <code>print(realEnding)</code> after this line.
+    :feedback_b: This is a good way to do this since the line that is printed will have the correct
+        first name.  You could also make a string named <code>realEnding</code> first, and then print it.
+    :feedback_c: This <i>would</i> work.  But if you changed the <code>firstName</code> variable,
+        this line would not change.  A different answer is better.
 
-   Now you want to add more to the story. You want it to say: "Pat called the police who took the witch away."  Adding which of these lines to the end of the program will make that happen?  (Hint: It is okay to *try* each one!)
+    Now you want to add more to the story. You want it to say: "Pat called the police who took the
+    witch away."  Adding which of these lines to the end of the program will make that happen?
+    (Hint: It is okay to *try* each one!)
 
 
 **You should really do this:** Run this program to see what gets generated, then change some of the variables to make different stories.  Try different names, different verbs.  
 
 
 .. activecode:: Story2
-   :tour_1: "Line by line tour"; 1: story-line1; 2: story-line2; 3: story-line3; 4: story-line4; 5: story-line5; 6: story-line6; 7: story-line7; 8: story-line8; 9: story-line9; 10: story-line10; 11: story-line11; 12: story-line12; 13: story-line13; 14: story-line14; 15: story-line15; 
-
+   
    firstName = "Sofia"
    lastName = "Diaz"
    gender = "girl"
@@ -78,7 +73,7 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
    print(next3)
    print(ending)
    
-.. mchoice:: 4_4_2_Story2_Q1
+.. mchoice:: 3_4_4_Story2_Q1
    :answer_a: Yes
    :answer_b: No
    :correct: a
@@ -105,7 +100,7 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
      ending = "But " + firstName + " was smart and avoided the wicked witch."
      print(ending)
      
-.. mchoice:: 4_4_3_StringVsVariableName
+.. mchoice:: 3_4_3_StringVsVariableName
    :practice: T
    :answer_a: Mali is Mali
    :answer_b: Mali is 5
@@ -127,7 +122,7 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
 .. Note::
    When you print a string (a sequence of characters in a pair of single, double, or triple quotes) in Python it will print the exact characters in the string.  When you print a variable it will print the value of that variable.
      
-.. parsonsprob:: 4_4_4_Poem
+.. parsonsprob:: 3_4_5_Poem
    :numbered: left
    :adaptive:
 
@@ -141,7 +136,7 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
    =====
    print("And so is Sue.")
      
-.. parsonsprob:: 4_4_5_Story
+.. parsonsprob:: 3_4_6_Story
    :numbered: left
    :adaptive:
 
@@ -158,28 +153,32 @@ You might have done MadLib stories when you were a kid.  You provide some pieces
    =====
    print("So, " + name + " went home.")
 
-.. tabbed:: 4_4_6_WSt
+.. tabbed:: 3_4_7_WSt
 
         .. tab:: Question
 
-           Write the code below to calculate and print how many blocks you can travel in an hour if you walk .3 blocks every minute.  It should print: "I will travel 18 blocks in an hour if I walk .3 blocks every minute."
+           Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the
+           story still works if you change the values of the variables!
            
-           .. activecode::  4_4_6_WSq
-                :nocodelens:
+           .. activecode::  3_4_7_WSq
+
+                name = "Jesse"
+                month = "October"
+                place = "Portland"
+                activity = "sailing"
 
         .. tab:: Answer
         
-            Name each of the values.  Calculate the ``totalBlocks`` it will take and print the information.
+            There are many possible stories, here is one:
             
-            .. activecode::  4_4_6_WSa
-                :nocodelens:
+            .. activecode::  3_4_7_WSa
 
-                # DECLARE VARIABLES
-                ratePerMinute = .3
-                minutesPerHour = 60
-                # CREATE FORMULA
-                totalBlocks = ratePerMinute * minutesPerHour
-                # PROCESS AND DISPLAY RESULT 
-                print("I will travel " + str(totalBlocks) + " blocks in an hour if I walk " + str(ratePerMinute) + " blocks every minute.")
-                                
+                name = "Maria"
+                month = "October"
+                place = "Portland"
+                activity = "sailing"
+                start = month + " is " + name + "'s favorite month for " + activity + "."
+                print(start)
+                end = "This year " + name + " decided that she would go " + activity + " in " + place + "."
+                print(end)
 

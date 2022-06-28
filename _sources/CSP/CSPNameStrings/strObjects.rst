@@ -5,49 +5,43 @@
     Invariant Sections being Forward, Prefaces, and Contributor List,
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
-    
-.. |runbutton| image:: Figures/run-button.png
-    :height: 20px
-    :align: top
-    :alt: run button
-
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
 
 
+.. include:: ../csp_global.rst
 
-   
 Strings are Objects
 =====================
    
-..	index::
-	single: dot-notation
-	pair: programming; dot-notation
+.. index::
+    single: dot-notation
+    pair: programming; dot-notation
 
-Strings are objects in Python which means that there is a set of built-in functions that you can use to manipulate strings.  You use **dot-notation** to invoke the functions on a string object such as ``sentence.lower()``.  The function ``lower()`` returns a new string with all of the characters in the original string set to lowercase.  The function ``capitalize()`` will return a new string with the first letter of the string capitalized.
+Strings are objects in Python which means that there is a set of built-in functions that you can
+use to manipulate strings.  You use **dot-notation** to invoke the functions on a string object
+such as ``sentence.lower()``.  The function ``lower()`` returns a new string with all of the
+characters in the original string set to lowercase.  The function ``capitalize()`` will return
+a new string with the first letter of the string capitalized.
 
 .. activecode:: String_Methods2
-   :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;
-   :nocodelens:
-   
-   sentence = "THIS IS A TEST"
-   better = sentence.lower()
-   print(better)
-   betterStill = better.capitalize() + "."
-   print(betterStill)
-   
-   
+
+    sentence = "THIS IS A TEST"
+    better = sentence.lower()
+    print(better)
+    betterStill = better.capitalize() + "."
+    print(betterStill)
+
+
 Getting Part of a String
 -------------------------
 
-..	index::
-	single: index
-	single: slice
-	pair: string; slice
+.. index::
+    single: index
+    single: slice
+    pair: string; slice
 
-A string has characters in a sequence.  Each character is at a position or **index** which starts with 0 as shown below.  An **index** is a number associated with a position in a collection of values like a string.
+A string has characters in a sequence.  Each character is at a position or **index** which starts
+with 0 as shown below.  An **index** is the term for a number associated with a position in a
+collection of values like a string.
 
 .. figure:: Figures/stringIndicies.png
     :width: 400px
@@ -55,22 +49,23 @@ A string has characters in a sequence.  Each character is at a position or **ind
     :alt: a string with the position (index) shown above each character
     :figclass: align-center
 
-    Figure 1: A string with the position (index) shown above each character
+    A string with the position (index) shown above each character
    
-A **slice** is a way to get part of a string.  One way to use a **slice** is to do `stringName[num]``.  This will return a new string with just the character at that position in the string.
+A **slice** is a way to get part of a string.  One way to use a **slice** is to do
+`stringName[num]``.  This will return a new string with just the character at that position in
+the string.
 
 .. activecode:: String_Slice1
-   :nocodelens:
-   
-   sentence = "This is a test"
-   s1 = sentence[1]
-   print(s1)
-   s2 = sentence[5]
-   print(s2)
-   s3 = sentence[8]
-   print(s3)
-   s4 = sentence[10]
-   print(s4)
+
+    sentence = "This is a test"
+    s1 = sentence[1]
+    print(s1)
+    s2 = sentence[5]
+    print(s2)
+    s3 = sentence[8]
+    print(s3)
+    s4 = sentence[10]
+    print(s4)
    
 .. figure:: Figures/stringIndicies.png
     :width: 400px
@@ -78,44 +73,44 @@ A **slice** is a way to get part of a string.  One way to use a **slice** is to 
     :alt: a string with the position (index) shown above each character
     :figclass: align-center
 
-    Figure 2: A string with the position (index) shown above each character
-   
-A **slice** with two values separated with a ``:`` between them returns a new string with the characters from the given start position to the one before the given end position.
+    A string with the position (index) shown above each character
+
+A **slice** with two values separated with a ``:`` between them returns a new string with the
+characters from the given start position to the one before the given end position.
 
 .. activecode:: String_Slice2
-   :nocodelens:
-   
-   sentence = "This is a test"
-   s1 = sentence[1:3]
-   print(s1)
-   s2 = sentence[5:7]
-   print(s2)
-   s3 = sentence[8:11]
-   print(s3)
-   s4 = sentence[10:14]
-   print(s4)
-   
+
+    sentence = "This is a test"
+    s1 = sentence[1:3]
+    print(s1)
+    s2 = sentence[5:7]
+    print(s2)
+    s3 = sentence[8:11]
+    print(s3)
+    s4 = sentence[10:14]
+    print(s4)
+
 **Check Your Understanding**
 
-.. mchoice:: 4_2_1_Slice
-   :practice: T
-   :answer_a: This is the end
-   :answer_b: This
-   :answer_c: his
-   :correct: c
-   :feedback_a: This would be true if we were printing the value of str and we hand't changed it on line 2.
-   :feedback_b: This would be true if the first position was 1 and the substring included the character at the end position, but the first character in a string is at position 0 and the substring won't include the character at the last position.  
-   :feedback_c: This will return a string that starts at position 1 and ends at position 3.  
+.. mchoice:: 3_2_2_Slice
+    :practice: T
+    :answer_a: This is the end
+    :answer_b: This
+    :answer_c: his
+    :correct: c
+    :feedback_a: This would be true if we were printing the value of str and we hand't changed it on line 2.
+    :feedback_b: This would be true if the first position was 1 and the substring included the character at the end position, but the first character in a string is at position 0 and the substring won't include the character at the last position.  
+    :feedback_c: This will return a string that starts at position 1 and ends at position 3.  
 
-   What will be printed when the following executes?
-   
-   :: 
+    What will be printed when the following executes?
 
-     str = "This is the end"
-     str = str[1:4]
-     print(str)
+    :: 
+
+        str = "This is the end"
+        str = str[1:4]
+        print(str)
      
-.. mchoice:: 4_2_2_Slice2
+.. mchoice:: 3_2_2_Slice2
    :practice: T
    :answer_a: i
    :answer_b: s
@@ -143,8 +138,7 @@ Some Other String Functions
 The ``len(string)`` function takes a string as input and returns the number of characters in the string including spaces. 
 
 .. activecode:: String_Length
-   :nocodelens:
-   
+      
    sentence = "This is a test"
    length = len(sentence)
    print(length)
@@ -159,8 +153,7 @@ The ``len(string)`` function takes a string as input and returns the number of c
 The ``find(string)`` function takes a string as input and returns the index where that string is found in the current string. If the string isn't found it returns -1.
 
 .. activecode:: String_Find
-   :nocodelens:
-   
+      
    sentence = "This is a test"
    pos = sentence.find("is")
    print(pos)
@@ -172,7 +165,7 @@ The ``find(string)`` function takes a string as input and returns the index wher
    
    **Check your understanding**
    
-.. mchoice:: 4_2_3_stringLen
+.. mchoice:: 3_2_1_3_stringLen
    :practice: T
    :answer_a: 13
    :answer_b: 15
@@ -190,7 +183,7 @@ The ``find(string)`` function takes a string as input and returns the index wher
      street = "125 Main Street"
      print(len(street))
      
-.. mchoice:: 4_2_4_Find
+.. mchoice:: 3_2_1_4_Find
    :practice: T
    :answer_a: 1
    :answer_b: 9
@@ -208,27 +201,26 @@ The ``find(string)`` function takes a string as input and returns the index wher
      pos = str.find("is")
      print(pos)
 
-.. tabbed:: 4_2_5_WSt
+.. tabbed:: 3_2_5_WSt
 
-        .. tab:: Question
+    .. tab:: Question
 
-           Write the code to evaluate the length of the string "I like green eggs" and print it. It should print "The length is 17".
-           
-           .. activecode::  4_2_5_WSq
-               :nocodelens:
-
-        .. tab:: Answer
+        Write the code to evaluate the length of the string "I like green eggs" and print it. It should print "The length is 17".
         
-            Create variable to hold the string.  
-            
-            .. activecode::  4_2_5_WSa
-                :nocodelens:
+        .. activecode::  3_2_5_WSq
 
-                # DECLARE VARIABLES
-                sentence = 'I like green eggs'
-                # PRINT RESULT 
-                print('The length is ' + str(len(sentence)))
-                                
+            sentence = 'I like green eggs'
+            
+    .. tab:: Answer
+
+        
+        .. activecode::  3_2_5_WSa
+            
+            # DECLARE VARIABLES
+            sentence = 'I like green eggs'
+            # PRINT RESULT 
+            print('The length is ' + str(len(sentence)))
+
 
 
 

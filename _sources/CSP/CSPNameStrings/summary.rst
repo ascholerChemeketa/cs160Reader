@@ -6,30 +6,31 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. setup for automatic question numbering.
 
 
-
-
-Chapter 4 - Summary
+Chapter Summary
 ====================
 
-Chapter 4 included the following concepts from computing.
+Chapter 3 included the following concepts from computing.
 
-..	index::
+.. index::
     single: append
     single: capitalize
-	single: concatenate
-	single: function
-	single: immutable
-	single: index
-	single: object
-	single: string
-	single: substring
+    single: concatenate
+    single: function
+    single: immutable
+    single: index
+    single: object
+    single: string
+    single: substring
 
 - **Append** - You can add two strings together using the ``+`` symbol.  This is also called **concatenate**.  
 - **Capitalize** - The capitalize function returns a new string with the first character capitalized.
-- **Concatenate** - You can use ``+`` to concatenate (append) two strings like this ``string3 = string1 + string2``.  This will create a new string called ``string3`` with all the characters from the first string, ``string1``, followed by all the characters in the second string, ``string2``.
+
+- **Concatenate** - You can use ``+`` to concatenate (append) two strings like this
+  ``string3 = string1 + string2``.  This will create a new string called ``string3`` with all
+  the characters from the first string, ``string1``, followed by all the characters in the second
+  string, ``string2``.
 - **Function** - A function returns a value.  Function can take input as well, but don't have to.  An example is the string ``lower()`` function that returns a string with all lowercase letters.
 - **Immutable** - Immutable means that it does not change.  Strings are immutable in Python.  When you call a function that appears to change a string, it will actually return a new string.  
 - **Index** - An index is a number associated with the position of a character in a string.  In Python the first character in a string is at index 0.  
@@ -40,21 +41,23 @@ Chapter 4 included the following concepts from computing.
 Summary of String Functions
 ----------------------------
 
-..	index::
-	single: find
-	single: len
-	single: lower
-	single: slice
-	
+.. index::
+    single: find
+    single: len
+    single: lower
+    single: slice
+
 Chapter 4 also included the following string functions.
 
-- **append** - You can add two strings together using the ``+`` symbol.  This is also called **concatenate**.  The result of ``"Happy" + " Birthday"`` is ``"Happy Birthday"``.
-- **find** - The find function takes a string as input and returns the **index** of the first occurence of that string in the string the function is called on. The code ``"goodbye".find('bye')`` returns 4.  
-- **len** - The len function that can take a string as input and returns the number of characters in the string including any spaces.  For example ``len("Hi there")`` will return 8.  
-- **lower** - The lower string function returns a new string with only lowercase letters. For example ``"ALL CAPS".lower()`` returns ``"all caps"``.  
-- **slice** - You can get part of a string which is also called a **substring** using [start] or [start:end] which will return a substring of the current string starting at the given start position and if an end position is given ending at the character before the end position.  For example ``"out"[1]`` will return ``"u"`` and ``"otter"[2:5]`` returns ``"ter"``.  
-
-.. note::  
-
-   This is the end of chapter 4.   We would love it if you could give us some feedback on this chapter at https://www.surveymonkey.com/r/ch4-student-fb.  You might want to open this link in a new tab to make it easier for you to return to your place in this ebook. 
-
+- **append** - You can add two strings together using the ``+`` symbol.  This is also called
+  **concatenate**.  The result of ``"Happy" + " Birthday"`` is ``"Happy Birthday"``.
+- **find** - The find function takes a string as input and returns the **index** of the first
+  occurence of that string in the string the function is called on. The code ``"goodbye".find('bye')`` returns 4.
+- **len** - The len function that can take a string as input and returns the number of
+  characters in the string including any spaces.  For example ``len("Hi there")`` will return 8.  
+- **lower** - The lower string function returns a new string with only lowercase letters.
+  For example ``"ALL CAPS".lower()`` returns ``"all caps"``.  
+- **slice** - You can get part of a string which is also called a **substring** using [start]
+  or [start:end] which will return a substring of the current string starting at the given 
+  start position and if an end position is given ending at the character before the end position.
+  For example ``"out"[1]`` will return ``"u"`` and ``"otter"[2:5]`` returns ``"ter"``.  
