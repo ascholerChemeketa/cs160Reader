@@ -14,163 +14,163 @@
 Chapter Exercises
 ----------------------
 
-#.
-    .. activecode:: ch2_ex1q
-        :autograde: unittest
-        :nocodelens:
-        :practice: T
 
-        ``==`` is an operator that checks for equality. If the value on the left side is equal
-        to the value on the right side, it gives ``True``. Otherwise it gives ``False``. 
-        
-        Insert the correct operators in place of the ``#``'s so each line prints ``True``. Don't change any 
-        of the numbers.
-        ~~~~
-        print((7 # 2) # 10 == 35)
-        print(2 # 4 == 0.5)
-        print(5 # 2 # 3 == -1)
-        print(3 # 2 # 1 == 7)
-        print(16 # 7 == 2)
-        =====
+.. activecode:: ch2_ex1q
+    :autograde: unittest
+    :nocodelens:
+    :practice: T
 
-        from unittest.gui import TestCaseGui
+    ``==`` is an operator that checks for equality. If the value on the left side is equal
+    to the value on the right side, it gives ``True``. Otherwise it gives ``False``. 
+    
+    Insert the correct operators in place of the ``#``'s so each line prints ``True``. Don't change any 
+    of the numbers.
+    ~~~~
+    print((7 # 2) # 10 == 35)
+    print(2 # 4 == 0.5)
+    print(5 # 2 # 3 == -1)
+    print(3 # 2 # 1 == 7)
+    print(16 # 7 == 2)
+    =====
 
-        class myTests(TestCaseGui):
-            def testOne(self):
-                self.assertNotIn("False", self.getOutput(), "Testing that you have no False's.")
-                self.assertNotIn("True", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-                self.assertRegex(self.getOutput(), r"(True[\s\n]*){5}", "Testing that you produced 5 True's.")
+    from unittest.gui import TestCaseGui
 
-        myTests().main()
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertNotIn("False", self.getOutput(), "Testing that you have no False's.")
+            self.assertNotIn("True", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+            self.assertRegex(self.getOutput(), r"(True[\s\n]*){5}", "Testing that you produced 5 True's.")
 
-#.
-    .. activecode:: cs2_ex2
-        :autograde: unittest
-        :practice: T
-
-        Add a set of parentheses to the expression  ``x = 6 * 1 - 2`` so that the code below prints -6 instead of 4.
-        ~~~~
-        x = 6 * 1 - 2
-        print(x)
-        =====
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-            def testOne(self):
-                self.assertEqual(x, -6, "Testing that x has the correct value." )
-                self.assertNotIn("-6", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-
-        myTests().main()
-
-#.
-    .. activecode::  ch2_ex3q
-        :nocodelens:
-        :practice: T
-
-        Add parentheses to ``x = 12 * 2 - 3 + 4 * 2`` so that it prints -4 instead of 29.
-        ~~~~
-        x = 12 * 2 - 3 + 4 * 2
-        print(x)
-
-        =====
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-            def testOne(self):
-                self.assertEqual(x, -4, "Testing that x has the correct value." )
-                self.assertRegex(self.getEditorText(), r"x = 12[()\s]*\*[()\s]*2[()\s]*-[()\s]*3[()\s]*\+[()\s]*4[()\s]*\*[()\s]*2", "Testing that you still have all the original pieces.")
-
-        myTests().main()
+    myTests().main()
 
 
-#.
-    .. activecode:: ch2_ex4q
-        :autograde: unittest
-        :practice: T
+.. activecode:: cs2_ex2
+    :autograde: unittest
+    :practice: T
 
-        Complete the code on lines 3 and 5 below to print the cost of a car trip of 500 miles 
-        when the car gets 26 miles per gallon and gas costs 3.45 a gallon.  It should print 66.34615384615385.
-        ~~~~
-        miles = 500
-        milesPerGallon = 26
-        numGallons =
-        pricePerGallon = 3.45
-        total =
-        print(total)
-        =====
+    Add a set of parentheses to the expression  ``x = 6 * 1 - 2`` so that the code below prints -6 instead of 4.
+    ~~~~
+    x = 6 * 1 - 2
+    print(x)
+    =====
 
-        from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(x, -6, "Testing that x has the correct value." )
+            self.assertNotIn("-6", self.getEditorText(), "Testing that you didn't hardcode the answer.")
 
-            def testOne(self):
-                self.assertEqual(float(self.getOutput().strip()), 66.34615384615385, "Testing that output has the correct value." )
-                self.assertNotIn("66.34615384615385", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-
-        myTests().main()
-
-#.
-    .. activecode:: ch2_ex5q
-        :autograde: unittest
-        :practice: T
-
-        It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (12-hour time,
-        not 24-hour time). The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder
-        of 4 hours.
-
-        *Hint: rember that **%** is the modulo or remainder operator.*
-
-        ~~~~
-        currentTime = 10
-        newTime = 10 + 18
-        clockTime =
-        print(clockTime)
-        =====
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-            def testOne(self):
-                self.assertEqual(clockTime, 4, "Testing that clockTime has the correct value." )
-                self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-
-        myTests().main()
+    myTests().main()
 
 
-#.
-    .. activecode:: ch2_ex6q
-        :autograde: unittest
-        :practice: T
+.. activecode::  ch2_ex3q
+    :nocodelens:
+    :practice: T
 
-        Finish the code on lines 2 and 3 in the code below to print how many hours and minutes
-        you have been waiting when you have been waiting a total of 270 minutes. Remember that
-        there are 60 minutes in an hour. It should print 4 and then 30.
+    Add parentheses to ``x = 12 * 2 - 3 + 4 * 2`` so that it prints -4 instead of 29.
+    ~~~~
+    x = 12 * 2 - 3 + 4 * 2
+    print(x)
 
-        *Hint: don't forget the difference between division and integer division.*
+    =====
 
-        ~~~~
-        totalMinutes = 270
-        numHours =
-        numMinutes =
-        print(numHours)
-        print(numMinutes)
-        =====
+    from unittest.gui import TestCaseGui
 
-        from unittest.gui import TestCaseGui
+    class myTests(TestCaseGui):
 
-        class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(x, -4, "Testing that x has the correct value." )
+            self.assertRegex(self.getEditorText(), r"x = 12[()\s]*\*[()\s]*2[()\s]*-[()\s]*3[()\s]*\+[()\s]*4[()\s]*\*[()\s]*2", "Testing that you still have all the original pieces.")
 
-            def testOne(self):
-                self.assertEqual(numHours, 4, "Testing that numHours has the correct value." )
-                self.assertEqual(numMinutes, 30, "Testing that numHours has the correct value." )
-                self.assertNotIn("30", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-                self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+    myTests().main()
 
-        myTests().main()
+
+
+.. activecode:: ch2_ex4q
+    :autograde: unittest
+    :practice: T
+
+    Complete the code on lines 3 and 5 below to print the cost of a car trip of 500 miles 
+    when the car gets 26 miles per gallon and gas costs 3.45 a gallon.  It should print 66.34615384615385.
+    ~~~~
+    miles = 500
+    milesPerGallon = 26
+    numGallons =
+    pricePerGallon = 3.45
+    total =
+    print(total)
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(float(self.getOutput().strip()), 66.34615384615385, "Testing that output has the correct value." )
+            self.assertNotIn("66.34615384615385", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+    myTests().main()
+
+
+.. activecode:: ch2_ex5q
+    :autograde: unittest
+    :practice: T
+
+    It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (12-hour time,
+    not 24-hour time). The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder
+    of 4 hours.
+
+    *Hint: rember that **%** is the modulo or remainder operator.*
+
+    ~~~~
+    currentTime = 10
+    newTime = 10 + 18
+    clockTime =
+    print(clockTime)
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(clockTime, 4, "Testing that clockTime has the correct value." )
+            self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+    myTests().main()
+
+
+
+.. activecode:: ch2_ex6q
+    :autograde: unittest
+    :practice: T
+
+    Finish the code on lines 2 and 3 in the code below to print how many hours and minutes
+    you have been waiting when you have been waiting a total of 270 minutes. Remember that
+    there are 60 minutes in an hour. It should print 4 and then 30.
+
+    *Hint: don't forget the difference between division and integer division.*
+
+    ~~~~
+    totalMinutes = 270
+    numHours =
+    numMinutes =
+    print(numHours)
+    print(numMinutes)
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(numHours, 4, "Testing that numHours has the correct value." )
+            self.assertEqual(numMinutes, 30, "Testing that numHours has the correct value." )
+            self.assertNotIn("30", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+            self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+    myTests().main()
 
 
 .. #.

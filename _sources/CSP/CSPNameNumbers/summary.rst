@@ -9,7 +9,7 @@
 .. setup for automatic question numbering.
 
 
-Chapter 2 - Summary
+Chapter Summary
 ============================
 
 Chapter 2 included the following concepts from computing.
