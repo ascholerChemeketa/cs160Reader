@@ -11,7 +11,7 @@
 
 
 
-Chapter 1 - Concept Summary
+Chapter Summary
 ============================
 
 Chapter 1 included the following concepts from computing.
