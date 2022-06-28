@@ -3,7 +3,7 @@
 Mixed Up Code Practice
 ------------------------------
 
-Try to solve each of the following. Click the *Check Me* button to check each solution.  You will be told if your solution is too short, has a block in the wrong order, or you are using the wrong block.  Some of the problems have one or more extra blocks that aren't needed in the correct solution.  Try to solve these on your phone or other mobile device!
+Try to solve each of the following. Click the *Check Me* button to check each solution.  You will be told if your solution is too short, has a block in the wrong order, or you are using the wrong block.  Some of the problems have one or more extra blocks that aren't needed in the correct solution.
 
 .. parsonsprob:: ch16ex1muc
    :numbered: left
