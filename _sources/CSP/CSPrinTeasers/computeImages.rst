@@ -92,7 +92,6 @@ all those pixels can take a few seconds.
     <img src="../../_images/arch.jpg" id="arch.jpg" style="display: none">
     
 .. activecode:: 1_5_2_Images_Q2
-    :tour_1: "Important Lines Tour"; 3,6,10,14: timg1-line361014; 4: timg1-line4; 7: timg1-line7; 8: timg1-line8; 11: timg1-line11; 12: timg1-line12; 15-16: timg1-line15-16;
     :nocodelens:
 
     # MAKE USE OF IMAGE LIBRARY

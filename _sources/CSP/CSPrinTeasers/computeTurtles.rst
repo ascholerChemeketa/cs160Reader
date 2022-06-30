@@ -53,7 +53,6 @@ commands like: ``alex.forward(150)``. As the turtle moves around it draws a line
 Try clicking the |runbutton| button below to see what the following program does.
 
 .. activecode:: 1_4_1_Turtle_1
-    :tour_1: "Line-by-line Tour"; 1: first-turtle-line-1; 2: first-turtle-line-2; 3: first-turtle-line-3; 4: first-turtle-line-4; 5: first-turtle-line-5; 6: first-turtle-line-6;
     :nocodelens:
     
     from turtle import *    # use the turtle library
