@@ -474,3 +474,8 @@ div.runestone_caption {
 section > div.highlight-python {
     margin-bottom: 10px;
 }
+
+.highlight span.linenos::after {
+    content: '|';
+    color:#888;
+}
