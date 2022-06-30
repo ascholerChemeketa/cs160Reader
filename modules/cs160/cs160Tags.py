@@ -37,6 +37,7 @@ def setup(app):
     app.add_directive('faux_code',FauxCodeBlock)
     app.add_directive('definition',DefinitionBlock)
     app.add_directive('quick_attribution',QuickAttribution)
+    app.add_directive('simcir',SimCir)
 
 class AddScript(Directive):
     """Argument is URL of script to load. Specify :defer: as option to set defer attr on script tag."""
@@ -50,6 +51,32 @@ class AddScript(Directive):
         defer_val = "defer" if bool(self.options['defer']) else ""
         rawsource='<script src="{src}" {defer}></script>'.format(src = self.arguments[0], defer = defer_val)
         return [nodes.raw('', rawsource , format='html')]
+
+class SimCir(Directive):
+    required_arguments = 0
+    has_content = True
+
+    def run(self):
+        self.assert_has_content()
+
+        text = ""
+        if not hasattr(self.state_machine.document, "has_simcir"):
+            text = """
+            <script src="../_static/simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="../_static/simcir/simcir.css" />
+            <script src="../_static/simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="../_static/simcir/simcir-basicset.css" />
+            <script src="../_static/simcir/simcir-library.js"></script>
+            <script src="../_static/simcir/misc/simcir-altfulladder.js"></script>
+            """
+            setattr(self.state_machine.document, "has_simcir", True)
+            
+        text += '<div class="simcir">'
+        text += ''.join(self.content)
+        text += '</div>'
+        node = nodes.raw(text, text, format='html')
+        return [node]
+
 
 class FauxCodeBlock(Directive):
     required_arguments = 0
