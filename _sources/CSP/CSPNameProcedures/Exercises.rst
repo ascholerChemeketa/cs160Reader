@@ -156,17 +156,7 @@
     ~~~~
     def colorRectangle(turtleName, width, colorValue):
         # height will always be 100
-        turtleName.pendown()
-        turtleName.color(colorValue)
-        turtleName.forward(width)
-        turtleName.right(90)
-        turtleName.forward(100)
-        turtleName.right(90)
-        turtleName.forward(width)
-        turtleName.right(90)
-        turtleName.forward(100)
-        turtleName.right(90)
-        turtleName.penup()
+        # your code here
 
 
     from turtle import *
