@@ -28,10 +28,12 @@ procedures and functions.
       - Description
     * - backward
       - amount
-      - Moves the turtle backward by the specified amount
+      - Moves the turtle backward by the specified amount. If the pen is down, draws a line.
+        A move of 0 makes a dot if the pen is down.
     * - forward
       - amount
-      - Moves the turtle forward by the specified amount
+      - Moves the turtle forward by the specified amount. If the pen is down, draws a line.
+        A move of 0 makes a dot if the pen is down.
     * - goto
       - x, y
       - Moves the turtle to position x, y. Note you must put a comma between the

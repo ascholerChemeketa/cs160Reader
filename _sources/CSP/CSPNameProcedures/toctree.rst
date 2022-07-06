@@ -4,8 +4,8 @@ Names for Procedures
 *Learning Objectives:*
 
 - Learn how to define new functions and procedures.
-- Learn that we can use libraries containing functions and procedures written by others.
-- Learn that *any* name can be renamed, even Python's internal names.
+- Learn how parameters can be used to make functions flexible.
+- Learn how to use arguments in function calls to specify parameter values.
 
 .. pseudo_h2:: Contents
 
