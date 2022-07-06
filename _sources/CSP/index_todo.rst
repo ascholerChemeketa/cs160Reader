@@ -8,7 +8,6 @@
 
 .. toctree::
    :numbered:
-   :start: 7
    :maxdepth: 3
 
    CSPNameFunctions/toctree.rst
