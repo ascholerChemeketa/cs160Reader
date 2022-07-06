@@ -64,7 +64,7 @@ procedures and functions.
     * - color
       - colorname
       - Sets the color for drawing. Use **strings** - like 'red', 'black', etc...
-        This page has a c
+        This page has a `table of colors <https://trinket.io/docs/colors>`__
         Make sure to put quotation marks around the name of the color!
     * - begin_fill
       - None
@@ -74,7 +74,12 @@ procedures and functions.
       - Tells the turtle to stop painting inside the shape it draws
     * - fillcolor
       - colorname
-      - Use strings in the same way you do for the color procedure
+      - This page has a `table of colors <https://trinket.io/docs/colors>`__
+    * - colormode
+      - mode
+      - If you pass 255 as the mode like ``turtleName.colormode(255)``, you
+        can then set colors using a list of red, green, blue values between 0-255
+        like: ``turtleName.color(255,255,0)`` or ``turtleName.fillcolor(0, 125, 200)``
     
 
 .. note::

@@ -14,7 +14,7 @@ Assign a Name to a String
 .. index::
     single: assignment
     single: string
-    pair: strings; assignment
+    pair: string; assignment
     single: function
     single: concatenate
     single: append

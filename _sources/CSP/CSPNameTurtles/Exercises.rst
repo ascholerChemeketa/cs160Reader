@@ -12,7 +12,7 @@
 Chapter Exercises
 --------------------
 
-.. activecode:: ch5ex1q
+.. activecode:: ch4ex1q
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -34,7 +34,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch5ex2q
+.. activecode:: ch4ex2q
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -61,7 +61,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch5ex3q
+.. activecode:: ch4ex3q
     :nocodelens:
 
     
@@ -74,7 +74,7 @@ Chapter Exercises
     space = Screen()
     jessica = Turtle()
 
-.. activecode:: ch5ex4q
+.. activecode:: ch4ex4q
     :nocodelens:
     :practice: T
 
