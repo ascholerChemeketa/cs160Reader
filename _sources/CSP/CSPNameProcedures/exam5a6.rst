@@ -9,7 +9,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
 
 .. timed:: ch5a6ex
     
-    .. mchoice:: e5a6_1
+    .. mchoice:: e5a5_1
        :practice: T
        :answer_a: value
        :answer_b: Second
@@ -33,7 +33,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
 
           myFunction("Second")
            
-    .. mchoice:: e5a6_2
+    .. mchoice:: e5a5_2
        :practice: T
        :answer_a: <img src="../_static/squarea.png" alt="A square with the first line in black and the next 3 in red" width="300">
        :answer_b: <img src="../_static/squareb.png" alt="A square with all lines in red" width="300">
@@ -61,7 +61,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           alice.left(90)
           alice.forward(50)
           
-    .. mchoice:: e5a6_3
+    .. mchoice:: e5a5_3
        :practice: T
        :answer_a: bob.move(50)
        :answer_b: bob.left(50)
@@ -81,7 +81,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           space = Screen() 
           bob = Turtle()
           
-    .. mchoice:: e5a6_4
+    .. mchoice:: e5a5_4
        :practice: T
        :answer_a: definition
        :answer_b: procedure
@@ -95,7 +95,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
 
        A named sequence of statements that returns a result is known as which of the following?
            
-    .. mchoice:: e5a6_5
+    .. mchoice:: e5a5_5
        :practice: T
        :answer_a: <img src="../_static/checka.png" alt="Shorter line to south and then longer line to east" width="300">
        :answer_b: <img src="../_static/checkb.png" alt="Longer line to south and then shorter line to east" width="300">
@@ -120,7 +120,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           sue.forward(150)
           
            
-    .. mchoice:: e5a6_6
+    .. mchoice:: e5a5_6
        :practice: T
        :answer_a: Two squares connected with a straight line
        :answer_b: Two triangles connected with a straight line
