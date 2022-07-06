@@ -1,4 +1,4 @@
-Names for Procedures
+Names for Functions
 :::::::::::::::::::::::::::::::::::::::
 
 *Learning Objectives:*

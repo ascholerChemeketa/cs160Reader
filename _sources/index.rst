@@ -45,3 +45,13 @@ Exploring Programming
    :maxdepth: 1
 
    CSP/index.rst
+
+
+Exploring Programming - To Do
+===================================
+
+.. toctree::
+   :includehidden:
+   :maxdepth: 1
+
+   CSP/index_todo.rst

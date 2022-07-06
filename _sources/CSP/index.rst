@@ -6,8 +6,6 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-FIXME - Edited
-
 .. toctree::
    :numbered:
    :maxdepth: 3
@@ -18,25 +16,3 @@ FIXME - Edited
    CSPNameTurtles/toctree.rst
    CSPNameProcedures/toctree.rst
    CSPDesigningProcedures/toctree.rst
-   
-FIXME - Unedited
-   CSPNameFunctions/toctree.rst
-   CSPRepeatNumbers/toctree.rst
-   CSPWhileAndForLoops/toctree.rst
-   CSPRepeatStrings/toctree.rst
-   CSPRepeatTurtles/toctree.rst
-   CSPRepeatImages/toctree.rst
-   CSPIntroDecisions/toctree.rst
-   CSPStringDecisions/toctree.rst
-   CSPTurtleDecisions/toctree.rst
-   CSPImageDecisions/toctree.rst
-   CSPIntroData/toctree.rst
-   CSPStringPieces/toctree.rst
-   CSPWebData/toctree.rst
-   CSPAbilitySummary/toctree.rst
-   CSPInternet/toctree.rst
-   CSPCreativity/toctree.rst
-   CSPGlobalImpact/toctree.rst
-   CSPWhatsNext/toctree.rst
-   CSPPracticeQuestions/toctree.rst
-   CSPUntimedPracticeQuestions/toctree.rst
