@@ -9,6 +9,9 @@
 
 .. include:: ../csp_global.rst
 
+Chapter Exercises
+============================
+
 Design your own drawing using turtle graphics. You should use multiple colors, and your
 design must be complicated enough to features multiple procedures, including at least one procedure
 that calls other procedures you have written.

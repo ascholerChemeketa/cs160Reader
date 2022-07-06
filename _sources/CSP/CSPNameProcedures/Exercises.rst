@@ -9,6 +9,9 @@
 
 .. include:: ../csp_global.rst
 
+Chapter Exercises
+============================
+
 .. activecode:: ch5ex1q
     :autograde: unittest
     :nocodelens:
