@@ -16,3 +16,4 @@
    CSPNameTurtles/toctree.rst
    CSPNameProcedures/toctree.rst
    CSPDesigningProcedures/toctree.rst
+   CSPNameFunctions/toctree.rst

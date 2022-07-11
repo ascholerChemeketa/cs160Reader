@@ -10,7 +10,6 @@
    :numbered:
    :maxdepth: 3
 
-   CSPNameFunctions/toctree.rst
    CSPRepeatNumbers/toctree.rst
    CSPWhileAndForLoops/toctree.rst
    CSPRepeatStrings/toctree.rst
