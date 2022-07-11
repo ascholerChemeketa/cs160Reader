@@ -12,419 +12,163 @@
 
 
 
-Chapter 6 Exercises
+Chapter Exercises
 --------------------
 
-#.
+.. activecode:: ch7_ex1
+    :autograde: unittest
+    :practice: T
 
-    .. tabbed:: ch7ex1t
+    Fix the errors so it runs and returns the perimeter of a rectangle.
+    ~~~~
+    def recPerimeter(length, width):
+    perimeter = 2 * (length + width)
+    Return recPerimeter
 
-        .. tab:: Question
+    # Main program
+    result = recPerimeter(2, 4)
+    print(result)
+    =====
 
-            There are errors in the indention in the following code.  Fix it to work correctly without errors.
+    from unittest.gui import TestCaseGui
 
-            .. activecode:: ch7ex1q
-                :nocodelens:
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(result, 12, "Testing that result has the correct value." )
+            self.assertNotIn("12", self.getEditorText(), "Testing that you didn't hardcode the answer.")
 
-                def square(turtle):
-                turtle.forward(100)
-                turtle.right(90)
-                turtle.forward(100)
-                turtle.right(90)
-                turtle.forward(100)
-                turtle.right(90)
-                turtle.forward(100)
-                turtle.right(90)
+    myTests().main()
 
-                from turtle import * 	# use the turtle library
-                space = Screen()     	# create a turtle screen
-                malik = Turtle()    	# create a turtle named malik
-                square(malik)       	# draw a square with malik
 
+.. activecode:: ch7_ex2
+    :autograde: unittest
+    :practice: T
 
+    The ``areaTriangle`` function below was hard coded so it always uses 5 and 4 for the base and
+    height of a triangle to calculate the area for. Modify the function so that it has parameters
+    for base and height and works to calculate the area of different triangles.
+    ~~~~
+    def areaTriangle():
+        base = 5
+        height = 4
+        return (5 * 4) / 2
 
-#.
+    # Main program. Do not modify lines below
+    print(areaTriangle(5, 4))
+    print(areaTriangle(6, 3))
+    =====
 
-    .. tabbed:: ch7ex2t
+    from unittest.gui import TestCaseGui
 
-        .. tab:: Question
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(self.getOutput().strip(), "10.0\n9.0", "Testing that your program prints the right answers." )
+            self.assertRegex(self.getEditorText(), r"\nprint\(areaTriangle\(5, 4\)\)\nprint\(areaTriangle\(6, 3\)\)", "Testing that you still have the starter main program")
 
-            Fix the errors so it runs and returns the perimeter of a rectangle.
+    myTests().main()
 
-            .. activecode::  ch7ex2q
-                :nocodelens:
 
-                def recPerimeter(length, width)
-                perimeter = 2 * (length + width)
-                Return recPerimeter
+.. activecode:: ch7_ex3
+    :autograde: unittest
+    :practice: T
 
-                print(recPerimeter(2,4))
+    The mathemetician Newton invented a method to approximate the square root of a number. 
+    Take the number **N** you want the square root for and a guess **G** and then
+    calculate :math:`1/2(N/G + G)`. You will get a rough approximation. If you use the
+    answer as a new guess and repeat the process, you will get a closer approximation. You
+    can keep repeating the process to make your approcimation closer and closer to the real
+    value.
 
+    Write an ``approximateSqrt`` function that takes a number and guess as its parameters
+    and then uses Newton's formula to estimate the square root of the number. 
+    
+    There is already code provided to use your function to calculate the square root of 150.
+    ~~~~
+    # Your code here
 
+    # Main program. Do not modify lines below
+    number = 150            #number to figure out the square root of
+    guess1 = 10             #initial guess
+    guess2 = approximateSqrt(number, guess1)
+    guess3 = approximateSqrt(number, guess2)
+    guess4 = approximateSqrt(number, guess3)
+    print(guess4)
+    =====
 
-#.
+    from unittest.gui import TestCaseGui
 
-    .. tabbed:: ch7ex3t
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertAlmostEqual(guess4, 12.2474489, 3, "Testing that you got the right value for guess4.")
+            self.assertNotRegex(self.getEditorText(), r"12\.24", "Testing that you did not hard code the answer.")
 
-        .. tab:: Question
+    myTests().main()
 
-           There are 2 syntax errors in the following code.  Fix the errors so that it runs.
 
-           .. activecode::  ch7ex3q
-                :nocodelens:
+.. #.
 
-                def square(turtle)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
+..     .. tabbed:: ch7ex11t
 
-                from turtle import * 	# use the turtle library
-                space = Screen()     	# create a turtle screen
-                malik = Turtle()    	# create a turtle named malik
-                square()       	        # draw a square with malik
+..         .. tab:: Question
 
+..            Change the code below to create a function that calculates the cost of a trip.  It should take the ``miles``, ``milesPerGallon``, and ``pricePerGallon`` as parameters and should return the cost of the trip.
 
+..            .. activecode::  ch7ex11q
+..                 :nocodelens:
 
+..                 miles = 500
+..                 milesPerGallon = 26
+..                 numGallons = miles / milesPerGallon
+..                 pricePerGallon = 3.45
+..                 total = numGallons * pricePerGallon
+..                 print(total)
 
-#.
 
-    .. tabbed:: ch7ex4t
+.. #.
 
-        .. tab:: Question
+..     .. tabbed:: ch7ex13t
 
-            Fix the errors so the code runs and returns the area of a square.
+..         .. tab:: Question
 
-            .. activecode::  ch7ex4q
-                :nocodelens:
+..            Change the code below to create a function to return the number of miles you can drive.  It will take as input (parameters) the ``tankCapacity``, ``theAmountLeft``, and the ``milesPerGallon``.
 
-                x = squareArea(5)
+..            .. activecode::  ch7ex13q
+..                 :nocodelens:
 
-                Def squareArea(sideLength):
-                	area = length * length
-                	return area
-                print(x)
+..                 tankCapacity = 10
+..                 amountLeft = 0.25
+..                 numGallons = tankCapacity * amountLeft
+..                 milesPerGallon = 32
+..                 numMiles = numGallons * milesPerGallon
+..                 print(numMiles)
 
 
 
-#.
+.. #.
 
-    .. tabbed:: ch7ex5t
+..     .. tabbed:: ch7ex14t
 
-        .. tab:: Question
+..         .. tab:: Question
 
-           The following code has 4 syntax errors.  Fix the errors so that the code runs.
+..             Complete and change the code to be a function with 2 parameters that returns the time taken to travel and call the function
 
-           .. activecode::  ch7ex5q
-                :nocodelens:
+..             .. activecode::  ch7ex14q
+..                 :nocodelens:
 
-                def square(turtle,size):
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
+..                 speed = 5
+..                 distance = 25
+..                 timeTakenToTravel =
+..                 print(timeTakenToTravel)
 
+.. #.
 
-                from turtle import *	# use the turtle library
-                space = Screen()    	# create a turtle screen (space)
-                malik = Turtle()    	# create a turtle named malik
-                square(Malik, 100) 	# draw a square of size 100
-                square(Malik, 75)   	# draw a square of size 75
-                square(Malik, 50)    	# draw a square of size 50
-                square(Malik, 25)   	# draw a square of size 25
+..     .. tabbed:: ch7ex20t
 
+..         .. tab:: Question
 
+..             Write a function that takes the current hour, current minute, an int to be added to the current hour, and an int to be added to the current minute, and return a string with the new hour and minute (standard 12 hour time; if minutes exceed 60, it should go to the hour) and call the function.
 
-#.
-
-    .. tabbed:: ch7ex6t
-
-        .. tab:: Question
-
-            Change the code to take 3 parameters, a turtle, a size that tells it how far to go, and an angle it tells the turtle to turn.
-
-            .. activecode::  ch7ex6q
-                :nocodelens:
-
-                def move(turtle):
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-
-                from turtle import *
-                space = Screen()
-                t = Turtle()
-                move(t, 100, 90)
-
-
-
-#.
-
-    .. tabbed:: ch7ex7t
-
-        .. tab:: Question
-
-           The following code has three lines that need to be changed.  Fix the code to run correctly.
-
-           .. activecode::  ch7ex7q
-                :nocodelens:
-
-                def square(turtle,size):
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
-                    turtle.forward(size)
-                    turtle.right(90)
-
-
-                from turtle import *	# use the turtle library
-                space = Screen()    	# create a turtle screen (space)
-                malik = Turtle()    	# create a turtle named malik
-                square(100, malik) 	# draw a square of size 100
-                square(malik)   	    # draw a square of size 75
-                square(50)    	    # draw a square of size 50
-                square(malik, 25)   	# draw a square of size 25
-
-
-
-#.
-
-    .. tabbed:: ch7ex8t
-
-        .. tab:: Question
-
-            Fix the errors so it prints ``"My name is John and I am 18 years old"``.
-
-            .. activecode::  ch7ex8q
-                :nocodelens:
-
-                def nameAndAge(nameString, ageInt):
-                	print(My name is "nameString" and I am + "str(ageInt)" + years old)
-
-                print(nameAndAge(18, "John"))
-
-
-
-#.
-
-    .. tabbed:: ch7ex9t
-
-        .. tab:: Question
-
-           Change the square procedure below to take a size parameter and have the turtle go forward by the specified size each time.
-
-           .. activecode::  ch7ex9q
-                :nocodelens:
-
-                def square(turtle):
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-                    turtle.forward(100)
-                    turtle.right(90)
-
-                from turtle import * 	# use the turtle library
-                space = Screen()     	# create a turtle screen
-                malik = Turtle()    	# create a turtle named malik
-                square(malik)       	# draw a square with malik
-
-
-
-#.
-
-    .. tabbed:: ch7ex10t
-
-        .. tab:: Question
-
-            Change the code so the function takes parameters for the base and height of the triangle. Then, write code to call the function and print the result.
-
-            .. activecode::  ch7ex10q
-                :nocodelens:
-
-                def areaTriangle():
-                    base = 5
-                    height = 4
-                    return (5 * 4) / 2
-
-
-
-#.
-
-    .. tabbed:: ch7ex11t
-
-        .. tab:: Question
-
-           Change the code below to create a function that calculates the cost of a trip.  It should take the ``miles``, ``milesPerGallon``, and ``pricePerGallon`` as parameters and should return the cost of the trip.
-
-           .. activecode::  ch7ex11q
-                :nocodelens:
-
-                miles = 500
-                milesPerGallon = 26
-                numGallons = miles / milesPerGallon
-                pricePerGallon = 3.45
-                total = numGallons * pricePerGallon
-                print(total)
-
-
-
-#.
-
-    .. tabbed:: ch7ex12t
-
-        .. tab:: Question
-
-            Fix the errors in the procedure and call it.
-
-            .. activecode::  ch7ex12q
-                :nocodelens:
-
-                from turtle import *
-                space = Screen()
-                t = Turtle()
-                t2 = Turtle()
-                turtleDrawing(t, t2, 100, 45)
-
-                turtleDrawing def(turtle, turtle2, distance, angle)
-                	turtle.left(angle)
-                	turtle2.right(angle)
-                	turtle.forward(turtle2)
-                	turtle2.forward(turtle)
-                	return distance
-
-
-
-#.
-
-    .. tabbed:: ch7ex13t
-
-        .. tab:: Question
-
-           Change the code below to create a function to return the number of miles you can drive.  It will take as input (parameters) the ``tankCapacity``, ``theAmountLeft``, and the ``milesPerGallon``.
-
-           .. activecode::  ch7ex13q
-                :nocodelens:
-
-                tankCapacity = 10
-                amountLeft = 0.25
-                numGallons = tankCapacity * amountLeft
-                milesPerGallon = 32
-                numMiles = numGallons * milesPerGallon
-                print(numMiles)
-
-
-
-#.
-
-    .. tabbed:: ch7ex14t
-
-        .. tab:: Question
-
-            Complete and change the code to be a function with 2 parameters that returns the time taken to travel and call the function
-
-            .. activecode::  ch7ex14q
-                :nocodelens:
-
-                speed = 5
-                distance = 25
-                timeTakenToTravel =
-                print(timeTakenToTravel)
-
-
-
-#.
-
-    .. tabbed:: ch7ex15t
-
-        .. tab:: Question
-
-           Create a procedure to draw a rectangle and call it.  Be sure to take the ``width`` and ``height`` of the rectangle as input to the procedure.
-
-           .. activecode::  ch7ex15q
-                :nocodelens:
-
-
-
-#.
-
-    .. tabbed:: ch7ex16t
-
-        .. tab:: Question
-
-            Create a procedure that takes 2 parameters, a string that you get from a user input and an int. Make the procedure print the string the number of times the int parameter gives and call the procedure.
-
-            .. activecode::  ch7ex16q
-                :nocodelens:
-
-
-
-#.
-
-    .. tabbed:: ch7ex17t
-
-        .. tab:: Question
-
-           Create a procedure to draw a triangle and call it.  Be sure to take the length of each side of the triangle as input to the procedure.
-
-           .. activecode::  ch7ex17q
-                :nocodelens:
-
-
-
-#.
-
-    .. tabbed:: ch7ex18t
-
-        .. tab:: Question
-
-            Create a procedure that takes 7 paramters (turtle, distance, angle, and 4 color strings) and call the procedure to draw a square in 4 different colors.
-
-            .. activecode::  ch7ex18q
-                :nocodelens:
-
-
-
-#.
-
-    .. tabbed:: ch7ex19t
-
-        .. tab:: Question
-
-           Write the code below to create a procedure that prints a mad lib.  You can ask the user for input and then pass that input into the procedure.
-
-           .. activecode::  ch7ex19q
-               :nocodelens:
-
-
-
-#.
-
-    .. tabbed:: ch7ex20t
-
-        .. tab:: Question
-
-            Write a function that takes the current hour, current minute, an int to be added to the current hour, and an int to be added to the current minute, and return a string with the new hour and minute (standard 12 hour time; if minutes exceed 60, it should go to the hour) and call the function.
-
-            .. activecode::  ch7ex20q
-                :nocodelens:
+..             .. activecode::  ch7ex20q
+..                 :nocodelens:
 
 

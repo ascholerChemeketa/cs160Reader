@@ -1,4 +1,4 @@
-Names for Procedures
+Names for Functions
 :::::::::::::::::::::::::::::::::::::::
 
 *Learning Objectives:*
@@ -12,12 +12,13 @@ Names for Procedures
 .. toctree::
     :maxdepth: 2
 
-    nameFandP.rst
-    defining.rst
-    definingWhy.rst
-    turtleProcedures.rst
-    imageLib.rst
-    renameFunctions.rst
+    functionsComposition.rst
+    definingFunctionsHow.rst
+    definingFunctionsWhy.rst
+    commonIssues.rst
+    functionsCallingFunctions.rst
+    functionsCallingFunctions2.rst
+    functionsCallingFunctions3.rst
     summary.rst
     Exercises.rst
-    exam5a6.rst
+    .. exam5a6.rst

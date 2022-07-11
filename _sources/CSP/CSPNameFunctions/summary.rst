@@ -11,38 +11,16 @@
 
 
 
-Chapter 6 - Summary
+Chapter Summary
 ============================
 
-Chapter 6 included the following concepts from computing.
+This chapter included the following concepts from computing.
 
-..	index::
-    single: abstraction
-    single: actual parameter
-	single: argument
-	single: call
-	single: define
-	single: execute
-	single: formal parameter
-	single: function
-	single: library
-	single: parameter
-	single: procedure
-	single: run
-	
-- **Abstraction** - Abstraction means focusing on just the important details in a context.  An example is the abstract female figure used to indicate a restroom for females.
-- **Actual Parameter** - An actual parameter is a value passed into a procedure or function when it is called.  In ``forward(50)`` the actual parameter is 50.  This is also called an **argument**.  
-- **Argument** - An argument is a value passed into a procedure or function when it is called.  In ``forward(50)`` the argument is 50.  This is also called an **actual parameter**.  
-- **Call** - You can call or run a procedure or function by using the name of the procedure or function followed by values to pass into the procedure or function.  An example is ``forward(50)``.  This is also known as **executing** or **running** a procedure or function.
-- **Define** - You can define a new procedure or function in Python using the ``def`` keyword.
-- **Execute** - Execute means to **run** or **call** a procedure or function.  
-- **Formal Parameter** - A formal parameter is named input in the definition of a procedure or function.  This is also called a **parameter**.  
-- **Function** - A function is a named set of instructions that *returns a result*.  An example is the ``abs(num)`` which returns the absolute value of the num.  
-- **Library** - A library is a named group of related procedures and functions.  An example is the Turtle library.
-- **Parameter** - A parameter is input to a procedure or function that is named when you define the procedure or function. It will be assigned a value when you call the procedure or function.  This is also called a **formal parameter**.   
-- **Procedure** - A procedure is a named set of instructions that *does not return a result*, but can cause something to happen like the turtle ``forward(amount)`` procedure. 
-- **Run** - To run a procedure or function use the name of the procedure or function in your program.  This is also known as **calling** or **executing** a procedure or function.
+.. index::
+    single: composition
+    single: functional composition
+    single: return
 
-.. note::  
-
-   This is the end of chapter 6.   We would love it if you could give us some feedback on this chapter at https://www.surveymonkey.com/r/ch7-student-fb.  You might want to open this link in a new tab to make it easier for you to return to your place in this ebook.
+- **Composition** - Using one function inside of another. Also known as **functional composition**.
+- **Return** - The **return** keyword is used inside a function to specify a value that will be passed back
+  to the location the function was called from. At that location the returned value is substituted for the function.
