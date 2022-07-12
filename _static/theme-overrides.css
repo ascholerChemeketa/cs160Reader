@@ -479,3 +479,19 @@ section > div.highlight-python {
     content: '|';
     color:#888;
 }
+
+.CodeMirror {
+    height: auto !important;
+    max-height: 500px;
+}
+
+.ac_output pre {
+    max-height: 300px;
+    overflow: scroll;
+}
+
+/* This is for Codelens areas - no cleaner way to select them */
+
+iframe[height*="500"] {
+    height: 650px !important;
+}
