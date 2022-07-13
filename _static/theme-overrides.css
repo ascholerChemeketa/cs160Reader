@@ -471,7 +471,8 @@ div.runestone_caption {
 
 /* -------------------------CSP stuff----------------- */
 
-section > div.highlight-python {
+section > div.highlight-python,
+section > div.highlight-default {
     margin-bottom: 10px;
 }
 
