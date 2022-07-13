@@ -6,72 +6,74 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. |bigteachernote| image:: Figures/apple.jpg
-    :width: 50px
-    :align: top
-    :alt: teacher note
 
+.. include:: ../csp_global.rst
 
-
-|bigteachernote| Teacher Note: Turtle Geometry
-===============================================
-The turtle is actually useful for exploring a wide variety of ideas in geometry.  The book `Turtle Geometry <http://www.amazon.com/Turtle-Geometry-Mathematics-Artificial-Intelligence/dp/0262510375>`_ does a wonderful job of showing how turtles can be used to explore a wide variety of geometric, mathematical, and scientific ideas (e.g., using turtles to model insect behavior).  The example **pattern** below is drawn from that book.
-
-.. figure:: Figures/turtle-geometry.jpg
-    :width: 200px
-    :align: center
-    :alt: a scan of the cover of the book about turtle geometry
-    :figclass: align-center
-
-    Figure 1: A scan of Mark's copy of the book
-
-
-Total Turtle Trip Theorem
+A Regular Polygon Recipe
 ===========================
 
-That last piece of code is actually a **pattern** for a wide variety of geometric shapes.  Here's a triangle.  It may not be obvious why we turn 120 in this program, but it will be soon.
+You undoubtedly have recognized that there are some similarities to drawing shapes like the
+square or hexagon. It turns out there is a general pattern to drawing any regular (all sides are
+the same length and all angles are the same size) geometric shape. 
+
+Let's look at a few more examples. Here's a triangle:
 
 .. activecode:: Turtle_Triangle
-    :tour_1: "Lines of code"; 1: tR3-line1; 2: tR3-line2; 3: tR3-line3; 4: tR3-line4; 5: tR3-line5; 6: tR3-line6; 7: tR3-line7;
     :nocodelens:
 
-    from turtle import *   	# use the turtle library
-    space = Screen()    	# create a turtle space
-    avery = Turtle()   		# create a turtle named avery
-    avery.setheading(90)   	# point due north
-    for sides in range(3):	# repeat the indented lines 3 times
-      	avery.forward(100)    	# move forward by 100 units
-      	avery.right(120)         	# turn by 120 degrees
+    from turtle import *
+    space = Screen()
+    avery = Turtle()
+    avery.begin_fill()
 
-And here's a pentagon.
+    for side in range(3):
+        avery.forward(100)
+        avery.right(120)
+        
+    avery.end_fill()
+
+And here's a pentagon:
 
 .. activecode:: Turtle_Pentagon
-    :tour_1: "Lines of code"; 1: tR3-line1; 2: tR3-line2; 3: tR4-line3; 4: tR4-line4; 5: tR4-line5; 6: tR4-line6; 7: tR4-line7;
     :nocodelens:
 
-    from turtle import *   	# use the turtle library
-    space = Screen()    	# create a turtle space
-    will = Turtle()   		# create a turtle named will
-    will.setheading(90)    	# point due north
-    for sides in range(5):	# repeat the indented lines 5 times
-      	will.forward(100)      	# move forward by 100 units
-      	will.right(72)          	# turn by 72 degrees
+    from turtle import *
+    space = Screen()
+    will = Turtle()
+    will.begin_fill()
 
-The **Total Turtle Trip Theorem** states that the turtle will draw a closed figure with *n* sides when the sum of the angles turned is a multiple of 360.  In the triangle example ``3 * 120 = 360`` and in the pentagon example ``5 * 72 = 360``.
+    for side in range(5):
+        will.forward(100)
+        will.right(72)
 
-Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 sided polygon, which is called a dodecagon.  If you get it right the turtle will draw a 12 sided closed polygon.
+    will.end_fill()
+
+Notice that the only code that is "inside" the ``for`` loop (indented after it) are the
+parts we want to repeat. We only want to ``end_fill`` once, so it is not indented. It is
+not part of the code that is repeated.
+
+The only two things that are different between the two programs are the number of repetitions
+in the loop, and the angle that the turtle turns.
+
+Any time we want to make a regular polygon, we need the turns to all sum up to :math:`360`. 
+In the triangle example :math:`3 * 120 = 360` and in the pentagon example :math:`5 * 72 = 360`.
+
+Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 sided polygon
+(called a dodecagon).  If you get it right the turtle will draw a 12 sided closed polygon.
 
 .. activecode:: Turtle_Dodecagon
-    :tour_1: "Lines of code"; 1: tR3-line1; 2: tR3-line2; 3: tR5-line3; 4: tR5-line4; 5: tR5-line5; 6: tR5-line6; 7: tR5-line7;
     :nocodelens:
 
-    from turtle import * 	# use the turtle library
-    space = Screen()   		# create a turtle space
-    mia = Turtle()   		# create a turtle named maria
-    mia.setheading(90)     	# point due north
-    for sides in range(12):	# repeat the indented lines 12 times
-      	mia.forward(40)       	# move forward by 40 units
-      	mia.right(??)          	# change ?? to the amount to turn
+    from turtle import *
+    space = Screen()
+    mia = Turtle()
+    mia.begin_fill()
+
+    for sides in range(12):
+        mia.forward(40)
+        mia.right(??)
+        
+    mia.end_fill()
 
 .. mchoice:: 10_2_1_Turtle_Dodecagon_Q1
    :answer_a: 15
@@ -84,68 +86,63 @@ Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 s
    :feedback_c: No, 12 * 12 is 144, which is not a multiple of 360
    :feedback_d: This one will generate a square, three times. 12 * 90 = 1080 = 360 * 3
 
-   How much does ``mia`` need turn in the program above to create a closed dodecagon (12-sided figure)?  Only one of these works.
+   How much does ``mia`` need turn in the program above to create a closed dodecagon
+   (12-sided figure)?  Only one of these works.
 
-.. parsonsprob:: 10_2_2_Triangle
-   :numbered: left
-   :adaptive:
+Now that we have identified a pattern, it is a bit silly to write separate functions
+like ``square`` and ``dodecagon`` for all the shapes. They are all basically the same and
+we don't like repeating ourselves.
 
-   The following program uses a turtle to draw a triangle as shown below, but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 100 pixels, and then turn left 120 degrees. Drag the needed blocks of statements from the left column to the right column and put them in the right order with the correct indention.  There may be additional blocks that are not needed in a correct solution.  Click on *Check Me* to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.
-
-   .. image:: Figures/TurtleTriangle.png
-       :width: 150px
-       :align: center
-   -----
-   from turtle import *
-   =====
-   space = Screen()
-   =====
-   space = screen() #paired
-   =====
-   marie = Turtle()
-   =====
-   # repeat 3 times
-   for i in range(3):
-   =====
-   # repeat 3 times
-   for i in range(3) #paired
-   =====
-       marie.forward(100)
-   =====
-       marie.forward(100 #paired
-   =====
-       marie.left(120)
-   =====
-       marie.turn(120) #paired
+In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure
+that can draw any ``polygon``. It will take parameters to control how many sides there
+are and how long to make each side.
 
 
-.. tabbed:: 10_2_3_WSt
+.. parsonsprob:: 8_3
+    :numbered: left
+    :adaptive:
 
-   .. tab:: Question
+    Arrange the blocks in the correct order and indentation to make the ``polygon`` procedure.
+    This procedure will use ``begin_fill`` and ``end_fill`` to make the shapes be colored.
 
-      Write a procedure which takes in a turtle and the number of sides as parameters to draw a polygon. Call the function to test it.
+    Those commands do not need to be repeated - we only want to use each one once - so make
+    sure they are not 
 
-      .. activecode:: 10_2_3_WSq
-         :nocodelens:
+    You will not need to use all of them.
 
-   .. tab:: Answer
+    -----
+    def polygon(turtleName, sides, size)
+    =====
+        turtleName.begin_fill()
+    =====
+        for s in range(sides):
+    =====
+        for s in range(size) #paired
+    =====
+            turtleName.forward(size)
+    =====
+            turtleName.forward(sides) #paired
+    =====
+            turtleName.left(360 / sides)
+    =====
+            turtleName.turn(sides / 360) #paired
+    =====
+        turtleName.end_fill()
 
-      .. activecode:: 10_2_3_WSa
-         :nocodelens:
+Once you have figured out the procedure, add it to the program below:
 
-         # DEFINE THE PROCEDURE
-         def polygon(turtle, sides):
-             degree = 360 / sides
-             for side in range(sides):
-                 mia.forward(40)
-                 mia.right(degree)
+.. activecode:: 10_3_Polygon
+    :nocodelens:
 
-         # CREATE THE TURTLE WORLD
-         from turtle import *
-         space = Screen()
-         mia = Turtle()
-         mia.setheading(90)
+    # DEFINE THE PROCEDURE HERE
 
-         # CALL THE PROCEDURE
-         polygon(mia,5)
+    # Main program
+    from turtle import *
+    space = Screen()
+    mia = Turtle()
+    mia.fillcolor("light blue")
 
+    polygon(mia, 6, 100)
+    polygon(mia, 5, 100)
+    polygon(mia, 4, 100)
+    polygon(mia, 3, 100)

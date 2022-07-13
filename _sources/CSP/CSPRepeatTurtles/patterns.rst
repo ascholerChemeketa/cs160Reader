@@ -6,117 +6,86 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-.. |bigteachernote| image:: Figures/apple.jpg
-    :width: 50px
-    :align: top
-    :alt: teacher note
+.. include:: ../csp_global.rst
 
+Nesting Loops
+======================================
 
+If we keep drawing the same shape over and over, turning slightly and/or moving
+between each drawing, we can make `spirograph <http://en.wikipedia.org/wiki/Spirograph>`_
+like patterns.
 
-Making Patterns within Patterns
-===============================
+.. index::
+    pair: loop; nested
 
-We now know the pattern for creating any polygon.  We can wrap that pattern in another loop to create `spirograph <http://en.wikipedia.org/wiki/Spirograph>`_ like patterns.  The example below uses pentagons, but you can use other polygons instead.
+The program below does this by drawing 20 pentagons. To do this, we need to repeat the
+pentagon recipe 20 times with a ``for`` loop. The pentagon recipe has its own ``for`` loop
+which repeats 5 times. A loop inside of another loop is known as a **nested loop**. The
+inner loop will do all of its repetitions for each iteration of the outer loop.
 
-..	index::
-	pair: for loops; nested
-	single: setExecutionLimit
-
-.. note::
-   The outer ``for`` loop in the code below on line 8 executes 20 times and the inner ``for`` loop on line 13 executes 5 times *for each* of the outer loop values, 5 times when the outer loop value is 0, 5 times when the outer loop value is 1, 5 times when the outer loop value is 2, and so on.  The inner loop is executed a total of 20 * 5 = 100 times.  The turtle can take a long time to finish drawing this pattern.  Normally code in the browser is limited to only running in 10 seconds or less.  But, we can use the ``sys`` library (short for system) ``setExecutionLimit(milliseconds)`` procedure which will let the code run for up to the specified number of milliseconds.  One second is 1,000 milliseconds, so 50,0000 milliseconds is 50 seconds.
+In this example, the code inside of the inner loop (``forward(50)`` and ``right(72)``) will
+be repeated 5 times and that group will be repeated 20 times. So each of those lines will
+happen 100 times!
 
 .. activecode:: Turtle_Spirograph1
-    :tour_1: "Lines of code"; 1-2: tr3-1-line1-2; 3: tr3-1-line3; 4: tr3-1-line4; 5: tr3-1-line5; 6: tr3-1-line6; 8: tr3-1-line8; 9: tr3-1-line9; 10: tr3-1-line10; 13: tr3-1-line13; 14: tr3-1-line14; 15: tr3-1-line15;
     :nocodelens:
 
-    from turtle import *     # use the turtle library
-    from sys import *        # use the system library
-    setExecutionLimit(50000) # let this take up to 50 seconds
-    space = Screen()         # create a turtle space
-    zoe = Turtle()           # create a turtle named zoe
-    zoe.setheading(90)       # point due north
+    from turtle import *
+    from sys import *
+    space = Screen()
+    zoe = Turtle()
+    zoe.speed(0)
 
-    for repeats in range(20):   # draw the pattern 20 times
-      	zoe.forward(10)         	# Offset the shapes a bit
-      	zoe.right(18)             	# And turn each one a bit
+    for repeats in range(20):
+        zoe.forward(10)
+        zoe.right(18)
 
-      	# This part makes a pentagon
-      	for sides in range(5):    # repeat 5 times
-      	    zoe.forward(50)         # move forward by 50 unit
-      	    zoe.right(72)           # turn by 72 degrees
+        # This part makes a pentagon
+        for sides in range(5):
+            zoe.forward(50)
+            zoe.right(72)
 
-By setting the pen color differently, we can distinguish the part that draws the shape, from the part that draws *between* the shapes.
+
+By setting the pen color differently, we can distinguish the part that draws the shape
+from the part that draws *between* the shapes. The ``forward`` and ``right`` inside of
+the outer loop, before the second ``for`` work together to make a circle. 20 turns of
+18 degrees will make a full circle of 360 degrees. At each of those 20 points, the
+turtle draws a pentagon.
 
 .. activecode:: Turtle_Spirograph2
-    :tour_1: "Lines of code"; 1-2: tr3-1-line1-2; 3: tr3-1-line3; 4: tr3-1-line4; 5: tr3-1-line5; 6: tr3-1-line6; 8: tr3-1-line8; 9: ts2-line9; 10: ts2-line10; 11: ts2-line11; 12: ts2-line12; 15: ts2-line15; 16: ts2-line16; 17: ts2-line17;
     :nocodelens:
 
-    from turtle import *     # use the turtle library
-    from sys import *        # use the system library
-    setExecutionLimit(50000) # let this take up to 50 seconds
-    space = Screen()         # create a turtle space
-    zoe = Turtle()           # create a turtle named zoe
-    zoe.setheading(90)       # point zoe due north
+    from turtle import *
+    from sys import *
+    space = Screen()
+    zoe = Turtle()
+    zoe.speed(0)
 
-    for repeats in range(20):   # 20 times to draw the pattern
-      	zoe.color("green")      # set the color to green
-      	zoe.forward(10)           # Offset the shapes a bit
-      	zoe.right(18)             # And turn each one a bit
-      	zoe.color("red")          # set the color to red
+    for repeats in range(20):
+      	zoe.color("blue")
+      	zoe.pensize(2)
+        zoe.forward(10)
+        zoe.right(18)
 
-     	# This part makes a pentagon
-      	for sides in range(5):    # repeat 5 times
-            zoe.forward(50)         # move forward 50 units
-            zoe.right(72)           # turn by 72 degrees
+        # This part makes a pentagon
+      	zoe.color("red")
+      	zoe.pensize(1)
+        for sides in range(5):
+            zoe.forward(50)
+            zoe.right(72)
 
-You can use the coloring in the picture below to help you figure out the correct order of the lines below.
+You can use the coloring in the picture below to help you figure out the correct order of the
+lines below.
 
 .. parsonsprob:: 10_3_1_Turtle_Spiro
    :numbered: left
    :adaptive:
 
-   There is a way of arranging the statements below such that the image shown below is created. The turtle will draw many triangles.  Move the needed pieces of the program from the left into the space on the right.  Indent lines as needed.
+   There is a way of arranging the statements below such that the image shown below is created.
+   The turtle will draw 10 triangles. As it does so, we want it to make a full circle. Think
+   carefully about how many degrees the turtle needs to turn at each step to make a full circle.
 
-   .. image:: Figures/BlueTrianglesRedCircle.png
-       :width: 150px
-       :align: center
-   -----
-   from turtle import *
-   from sys import *
-   setExecutionLimit(50000)
-   =====
-   wn = Screen()
-   mateo = Turtle()
-   mateo.setheading(90)
-   =====
-   for repeats in range(20):
-   =====
-   for repeats in range(20) #distractor
-   =====
-       mateo.color("red")
-       mateo.forward(10)
-       mateo.left(18)
-   =====
-       mateo.color("red")
-       mateo.forward(10)
-       mateo.left(12) #distractor
-   =====
-       for sides in range(3):
-       =====
-       for sides in range(4): #distractor
-   =====
-           mateo.color("blue")
-           mateo.forward(50)
-           mateo.right(120)
-
-
-You can use the coloring in the picture below to help you figure out the correct order of the lines below.
-
-.. parsonsprob:: 10_3_2_Turtle_Spiro_Blue_Red
-   :numbered: left
-   :adaptive:
-
-   There is a way of arranging the statements below such that the image shown below is created. The turtle will draw many triangles. Move the needed pieces of the program from the left into the space on the right.  Indent lines as needed.
+   You will not need all of the blocks.
 
    .. image:: Figures/RedTrianglesBlueCircle.png
        :width: 150px
@@ -124,77 +93,135 @@ You can use the coloring in the picture below to help you figure out the correct
    -----
    from turtle import *
    from sys import *
-   setExecutionLimit(50000)
-   =====
-   wn = Screen()
+   screen = Screen()
    mateo = Turtle()
-   mateo.setheading(90)
+   mateo.speed(0)
    =====
-   for repeats in range(20):
+   for repeats in range(10):
    =====
-   for repeats in range(20) #distractor
+   for repeats in range(10) #paired
    =====
        mateo.color("blue")
        mateo.forward(10)
-       mateo.left(18)
-
+       mateo.left(36)
+   =====
+       mateo.color("blue")
+       mateo.forward(10)
+       mateo.left(18) #paired
    =====
        for sides in range(3):
-   =====
-       for sides in range(3) #distractor
+       =====
+       for sides in range(4): #paired
    =====
            mateo.color("red")
            mateo.forward(50)
            mateo.right(120)
-   =====
-           mateo.color("red")
-           mateo.forward(50)
-           mateo.right(60) #distractor
 
-The following example has 4 errors.  Can you fix the errors so that the code compiles and runs?
+The following example has 3 syntax errors. Can you fix the errors so that the code compiles and runs?
+(None of the errors are in the numbers used - those would be logic errors, not syntax errors.)
 
 .. activecode:: Turtle_Nested_Error1
     :nocodelens:
 
-    from turtle import *    # use the turtle library
+    from turtle import *
     from sys import *
-    setExecutionLimit(50000)
 
-    wn = Screen
-    mateo = Turtle()
-    mateo.setheading(90)
+    screen = Screen
+    dave = Turtle()
+    dave.speed(0)
 
     for repeats in range(20)
-        mateo.color("red")
-        mateo.forward(10)
-        mateo.left(18)
+        dave.color("red")
+        dave.forward(10)
+        dave.left(18)
 
-        for sides in range(3):
-            mateo.Color("blue")
-            mateo.forward(50)
-            mateo.Right(120)
+        dave.Color("blue")
+        for sides in range(4):
+        dave.forward(50)
+        dave.right(90)
 
-The following example has 4 errors.  Can you fix the errors so that the code compiles and runs?
+Execution Limit & Run Amok Programs
+------------------------------------------
 
-.. activecode:: Turtle_Nested_Error2
+.. index::
+    single: setExecutionLimit
+
+A Python program that is running in the browser has a limited amount of time it is allowed to run.
+If a program takes more than ~20 seconds, it will stop running even if it is not done. This can
+prevent complex programs for ever finishing what they are doing. Try running this program and wait
+until an error is printed.
+
+.. activecode:: Turtle_Timeout
     :nocodelens:
 
-    from turtle import *    # use the turtle library
-    from sys import *
-    setExecutionLimit(50000)
+    from turtle import *
+    import sys
+    sys.setExecutionLimit(60000)
 
-    wn = screen()
-    mateo = Turtle
-    mateo.setheading(90)
+    screen = Screen
+    dave = Turtle()
+    dave.speed(3)
 
-    for repeats in range(20):
-        mateo.color("red")
-        mateo.forward(10)
-        mateo.left(18)
+    for repeats in range(36):
+        dave.forward(10)
+        dave.left(10)
 
-        for sides in range(3)
-            mateo.color("blue")
-            mateo.Forward(50)
-            mateo.right(120)
+        for sides in range(4):
+            dave.forward(50)
+            dave.right(90)
+
+Now try uncommenting these two lines:
+
+.. code::
+
+    import sys
+    sys.setExecutionLimit(60000)
+
+They set the time limit for the program to 60,000 millisends. (One second is 1,000 milliseconds,
+so 60,000 milliseconds is 60 seconds.) This should give the program time to finish.
+
+Of course we also could increase the speed of the turtle to help get the program done faster.
+But since there is a limit to the turtle's speed, it may sometimes be necessary to also increase
+the execution limit.
+
+.. index::
+    single: timeout
+
+If you ever get bored waiting for a program to **timeout** (exceed its execution limit), you can
+simply refresh the browser page.
 
 
+Indirect Nesting
+------------------------------------------
+
+It is also important to recognize that we can get the same behavior if we indirectly nest loops.
+The sample below has a ``square`` procedure with a loop. The main part of the program has a loop as
+well and that loop calls the ``square`` procedure inside of it. So the lines inside ``square``'s
+loop get executed 40 total times - the loop in main calls square 10 times and each call to square
+repeats them 4 times.
+
+.. activecode:: Turtle_Indirect_Nested_loops
+    :nocodelens:
+
+    def square(turtleName):
+        for sides in range(4):
+            turtleName.forward(50)
+            turtleName.right(90)
+
+    # main part of program
+    from turtle import *
+    screen = Screen
+    dave = Turtle()
+    dave.speed(0)
+
+    for repeats in range(10):
+        dave.forward(10)
+        dave.left(36)
+        square(dave)
+
+Normal nested loops can get difficult to read once you have multiple "levels" of loop all stacked
+inside of each other. The "indirect" nesting, where the inner loop is hidden inside of a procedure
+makes the main part of the program a bit easier to read. Compare this program to the one at the
+top of the page. It is much easier to see that this program draws 10 squares than it was to see
+that the first one drew 20 pentagons. We had to use a comment in the first one just to try to make
+things clear.

@@ -7,13 +7,14 @@
     is included in the section entitled "GNU Free Documentation License".
 
 .. toctree::
-   :numbered:
-   :maxdepth: 3
+    :numbered:
+    :maxdepth: 3
 
-   CSPrinTeasers/toctree.rst
-   CSPNameNumbers/toctree.rst
-   CSPNameStrings/toctree.rst
-   CSPNameTurtles/toctree.rst
-   CSPNameProcedures/toctree.rst
-   CSPDesigningProcedures/toctree.rst
-   CSPNameFunctions/toctree.rst
+    CSPrinTeasers/toctree.rst
+    CSPNameNumbers/toctree.rst
+    CSPNameStrings/toctree.rst
+    CSPNameTurtles/toctree.rst
+    CSPNameProcedures/toctree.rst
+    CSPDesigningProcedures/toctree.rst
+    CSPNameFunctions/toctree.rst
+    CSPRepeatTurtles/toctree.rst
