@@ -6,99 +6,144 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
     
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
-
-
+.. include:: ../csp_global.rst
 
 Using Repetition with Images
 ============================================
 
-*Learning Objectives:*
+In Python, the line of code ``img = Image("cat.jpg")`` creates an Image object in the
+program that has all of the data from the image cat.jpg and names it with the variable
+``img``. Once we have done that, we can draw the entire image using lines of code like this:
 
-- Use ``for`` loops to repeat actions on all pixels in a picture.
-- Understand the pattern (the steps) used in modifying all the pixels in a picture.
+.. code::
 
-..	index::
-	single: images
-	pair: statements; for
+    win = ImageWin(img.getWidth(), img.getHeight())  # Make a window to hold the image
+    img.draw(win)                                    # draw it in that window
 
-.. index::
-    single: pixel
-	single: picture
-	single: color
+To modify the colors in an image, we need to modify all of its pixels one by one. In
+an image with 60,000 pixels, we would not want to write a separate line of code for
+each pixel. What we would like to do is specify what code to run for each of the pixels.
 
-Pictures on a computer are broken up into little bits called **pixels**, for *picture* (pix) *elements* (els).  These are laid out on a grid, from left to right (horizontal or **x** dimension) and top to bottom (vertical or **y** dimension).
+That is exactly what a ``for`` loop does - it takes a list of values and some instructions
+and runs the instructions for each one of the values. We can get a list of all the pixels
+with the procedure ``img.getPixels()``.
 
-.. figure:: Figures/grid.png
-    :align: center
-    :alt: A grid with horizontal (x) and vertical (y) dimensions 
-    :figclass: align-center
+The program below modifies the cat image to remove all the red from each of its pixels.
+There are lot of lines in the program below, 
+
+.. warning:: 
     
-    Figure: A grid with horizontal (x) and vertical (y) dimensions
+    Be patient with program that modify images, they can take a little while to produce their results.
+    Don't press the "Save and Run" button multiple times or you will just have to wait longer.
 
-Pixels are quite small.  Even this small picture below has 180 columns and 240 rows of pixels:
-
-.. raw:: html
-
-    <img src="../_static/arch.jpg" id="arch.jpg">
-
-Each pixel has a color associated with it: An amount of redness, an amount of greenness, and an amount of blueness.
-Let's remove the red from this picture.  Now, there are lot of lines in the program below, but fortunately, you can ignore most of them. The Audio Tour explains the important lines.  Press |audiobutton| to hear the audio tour explanation.  When you run this program it may take several minutes to show the changed picture. 
-
-
+    If you do hit the button too many times, you can reload the browser window to stop the program.
 
 .. activecode:: Image_Remove_Red
-    :tour_1: "Important Lines Tour"; 1: timg3-line1; 4: timg3-line4; 7-8: timg3-line7-8; 11: timg3-line11; 14: timg3-line14; 17-18: timg3-line17-18;
     :nocodelens:
 
     from image import *
-    
-    # CREATE AN IMAGE FROM A FILE
-    img = Image("arch.jpg")
-    
-    # LOOP THROUGH THE PIXELS
+
+    # Create an image from a file. This file must be part of the webpage.
+    # Store that image in the variable img
+    img = Image("cat.jpg")
+
+    # Get a list of the pixels and store it in pixelList
     pixelList = img.getPixels()
-    for p in pixelList:
-    
-    	# SET THE RED TO 0
-        p.setRed(0)
+
+    for p in pixelList:                 #Loop through each pixel in the list and call it p
+        # set the red value of p to 0
+        p.setRed(300)
             
-        # UPDATE THE IMAGE
+        # p is a copy of a pixel from the image
+        # we need to tell the image to use the updated version of p
         img.updatePixel(p)
             
-    # SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
+    # show the image
+    win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
 
-The program above can take several minutes to execute on the ``arch.jpg`` picture.  But we're not stuck using just the arch image.  We can use smaller images which will execute more quickly.
+
+There are :math:`200 \times 300 = 60,000` pixels in the ``pixelList``. Our for loop takes that giant
+list of pixels and one by one, calls the current one ``p`` and then does the body of the loop
+with it. After the loop is done, we make a window to display the image in and draw it - but
+don't worry too much about that code - we want to focus on the loop and what it does to each
+pixel. This program changes the red value of each pixel to 0 - essentially it removes all the
+red from the image, making it look like we are looking through blue-green glass at it.
 
 A Library of Images
 =====================
 
-Here are some other small images that you can use.  Modify the program above to try out the code on some of these other images by changing line 4 above. 
+The images we work with in this book must be built into the webpage - you can't use an image
+from your own computer. Below are some images that are built into the webpages in this chapter
+that we can use. To use a different image, use it's name in the
+command that creates an image ``img = Image("student1.jpg")``.
 
-You can actually run this code on any image on the web by specifying the image url.  We recommend using small images since larger images will take more time to process.
+Modify the program above to try out the code on some of these other images by changing line 5 above. 
 
 .. raw:: html
 
-   <table>
-   <tr><td>beach.jpg</td><td>baby.jpg</td><td>vangogh.jpg</td><td>swan.jpg</td></tr>
-   <tr><td><img src="../_static/beach.jpg" id="beach.jpg"></td><td><img src="../_static/baby.jpg" id="baby.jpg"></td><td><img src="../_static/vangogh.jpg" id="vangogh.jpg"></td><td><img src="../_static/swan.jpg" id="swan.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>puppy.jpg</td><td>kitten.jpg</td><td>girl.jpg</td><td>motorcycle.jpg</td></tr>
-   <tr><td><img src="../_static/puppy.jpg" id="puppy.jpg"></td><td><img src="../_static/kitten.jpg" id="kitten.jpg"></td><td><img src="../_static/girl.jpg" id="girl.jpg"></td><td><img src="../_static/motorcycle.jpg" id="motorcycle.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>gal1.jpg</td><td>guy1.jpg</td><td>gal2.jpg</td></tr>
-   <tr><td><img src="../_static/gal1.jpg" id="gal1.jpg"></td><td><img src="../_static/guy1.jpg" id="guy1.jpg"></td><td><img src="../_static/gal2.jpg" id="gal2.jpg"></td></tr>
-   </table>
-   
+    <style>
+        .flexgrid {
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .flexgrid div {
+            flex: 1 200px;
+        }
+        .flexgrid .img-title {
+            text-align: cetner;
+        }
+    </style>
+    <div class="flexgrid">
+    <div>
+        <img src="../../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg">
+        <div class="img-title">mount_hood.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/graduates.jpg" id="graduates.jpg">
+        <div class="img-title">graduates.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg">
+        <div class="img-title">goalkeeper.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/student1.jpg" id="student1.jpg">
+        <div class="img-title">student1.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/student2.jpg" id="student2.jpg">
+        <div class="img-title">student2.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
+        <div class="img-title">green_screen.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/scooter.jpg" id="scooter.jpg">
+        <div class="img-title">scooter.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/chemeketa_logo.jpg" id="chemeketa_logo.jpg">
+        <div class="img-title">chemeketa_logo.jpg</div>
+    </div>
+    <div>
+        <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">
+        <div class="img-title">cat.jpg</div>
+    </div>
+    </div>
+
+.. note:: 
+
+    It is also possible to use an image that is on another web page if you know its full address.
+    Doing this would look like:
+
+    .. code::
+
+        img = Image("https://shorturl.at/dNUX7")
 
 
-
-
+    If you try this, make sure to stick to small images or your program will take a very long time
+    to run.
 

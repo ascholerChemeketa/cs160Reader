@@ -89,7 +89,7 @@ all those pixels can take a few seconds.
 
 .. raw:: html
 
-    <img src="../../_images/arch.jpg" id="arch.jpg" style="display: none">
+    <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">
     
 .. activecode:: 1_5_2_Images_Q2
     :nocodelens:
@@ -98,7 +98,7 @@ all those pixels can take a few seconds.
     from image import *
     
     # CREATE AN IMAGE FROM A FILE
-    img = Image("arch.jpg")
+    img = Image("cat.jpg")
 
     # LOOP THROUGH ALL THE PIXELS
     pixels = img.getPixels()

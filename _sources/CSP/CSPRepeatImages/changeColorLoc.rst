@@ -6,148 +6,206 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
     
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
+.. include:: ../csp_global.rst 
 
+|image_defs| 
 
+Thinking About Pixel Locations
+======================================================
 
-Changing Step 6: Changing where we put the colors
-===================================================
-
-Below is a selection of images that you can use in the programs in this section.
-	
-.. raw:: html
-
-   <table>
-   <tr><td>beach.jpg</td><td>baby.jpg</td><td>vangogh.jpg</td><td>swan.jpg</td></tr>
-   <tr><td><img src="../_static/beach.jpg" id="beach.jpg"></td><td><img src="../_static/baby.jpg" id="baby.jpg"></td><td><img src="../_static/vangogh.jpg" id="vangogh.jpg"></td><td><img src="../_static/swan.jpg" id="swan.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>puppy.jpg</td><td>kitten.jpg</td><td>girl.jpg</td><td>motorcycle.jpg</td></tr>
-   <tr><td><img src="../_static/puppy.jpg" id="puppy.jpg"></td><td><img src="../_static/kitten.jpg" id="kitten.jpg"></td><td><img src="../_static/girl.jpg" id="girl.jpg"></td><td><img src="../_static/motorcycle.jpg" id="motorcycle.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>gal1.jpg</td><td>guy1.jpg</td><td>gal2.jpg</td></tr>
-   <tr><td><img src="../_static/gal1.jpg" id="gal1.jpg"></td><td><img src="../_static/guy1.jpg" id="guy1.jpg"></td><td><img src="../_static/gal2.jpg" id="gal2.jpg"></td></tr>
-   </table>
-   
-We have been getting a list of all of the pixels from an image using ``img.getPixels()`` and then looping through all the pixels using ``for p in pixels:``.  This processed all the pixels in the first row, then all the pixels in the second row, and so on until it processed all the pixels in the image.
+So far, we have been getting a list of all of the pixels from an image using ``img.getPixels()``
+and then looping through all the pixels using ``for p in pixels:``. This processed all the
+pixels in the first row, then all the pixels in the second row, and so on until it processed
+all the pixels in the image.
 
 .. figure:: Figures/rowOrder.png
     :align: center
     :figclass: align-center
     
-    Figure 1: The order that pixels are processed if you use ``img.getPixels()``
+    The order that pixels are processed if you use ``img.getPixels()``
 
-We can also loop through all the x and y values in the image and then use the current (x,y) location to get the pixel from the image.  This approach uses two ``for`` loops with one inside of the other.  This is called a **nested loop**. See step 3 below for the nested loop.  Also, notice that we now need to get the pixel at the (x,y) location in step 4 as well. 
+This approach has some limitations because we never know what coordinates the pixel we are
+working on is located at. This prevents us from writing programs that change where pixels are
+or do different things in different parts of the image.
 
-Since the outer loop changes the  x (the column) and the inner loop changes the y (the row), we will be processing all the pixels in the first column, then all the pixels in the second column, and so on until we process all the pixels in the image.  The order doesn't matter if we are just setting the red to zero at every pixel as shown below. 
+If we want to have access to the location of the pixel we are working with, we need to change
+our loop strategy. We will use nested loops, with an outer one that iterates over all the columns
+in the image and inner one that iterates over all of the rows in that column. This sample shows the
+basic idea but just prints out the locations of pixels in the order they would be visited instead
+of doing actual work on an image.
+
+.. activecode:: Nested_Loops_rows_cols
+    :nocodelens:
+
+    imageWidth = 4
+    imageHeight = 4
+
+    for x in range(imageWidth):         # For each possible x coordinate
+        for y in range(imageHeight):        # For each possible y at that x
+            print("Working on pixel: " + str(x) + ", " + str(y))
+
+Notice that we start counting from 0 in images (in programming we generally start counting
+from 0 instead of 1). So the uppermost left pixel is 0, 0. The bottom left pixel in a 4 x 4
+image is 3, 0.
+
+.. figure:: Figures/grid_coords.png
+    :align: center
+    :figclass: align-center
+    
+    The x, y locations of various pixels in a 4 x 4 image. 
+
+Since the outer loop in our program changes the  x (the column) and the inner loop changes
+the y (the row), we will start on column 0. On that column, the inner loop processes all
+the rows in that column. Then we move to column 1, where we process all of its rows...
 
 .. figure:: Figures/colOrder.png
     :align: center
     :figclass: align-center
     
-    Figure 2: The order that pixels are processed if you use a nested loop with x changing in the outer loop and y changing in the inner loop.
+    The order that pixels are processed if you use a nested loop with x changing in the outer
+    loop and y changing in the inner loop.
+
+
+.. mchoice:: 9_5_mc1
+    :answer_a: 4, 9
+    :answer_b: 5, 10
+    :answer_c: 9, 4
+    :answer_d: 10, 5
+    :correct: c
+    :feedback_a: Remember that the width defines the possible x coordinates and the x comes first
+    :feedback_b: Remember that the width defines the possible x coordinates and the x comes first
+    :feedback_c: Correct. We start counting from 0, so a width of 10 means columns 0-9. A height of 5 means rows 0-4.
+    :feedback_d: That would be true if the image had a width of 11 and a height of 6.
+    
+    In the program above, if we set ``imageWidth`` to be 10 and ``imageHeight`` to be 5, what
+    would the coordinates of the last pixel processed be?
+
+Now let's put the pixel coordinates to work. To do so, instead of printing coordinates like 0,0
+we will use them to call ``getPixel`` on the image. In the past, our loop was given a big list of
+all the pixels and iterated through those. Now we have two loops, that are iterating through all
+the location in the image. We use those locations to get the pixels one by one.
+
+The sample below dose exactly that. Then, after getting the pixel, it modifies the There
+color channels (red, green, blue) of that pixel by subtracting the x coordinate. This means on
+the left side of the image, where x is 0 or close to it, there is little change. On the right
+side, where x is larger, we remove more and more of the color, getting closer and closer to
+pure black. (Once we hit column 255, we could only get black as the starting red/green/blue
+values are all 255 at most.)
 
 .. activecode:: Nested_Loop_Clear_Red
-    :tour_1: "Important Lines Tour"; 2: nli1-line2; 5: nli1-line5; 8: nli1-line8; 9: nli1-line9; 12: nli1-line12; 15: nli1-line15; 18: nli1-line18; 21-22: nli1-line21-22; 
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
+    img = Image("student2.jpg")
 
     # STEP 3: LOOP THROUGH THE PIXELS
     for x in range(img.getWidth()):
     	for y in range(img.getHeight()):
         
             # STEP 4: GET THE DATA
-            p = img.getPixel(x, y)
+            p = img.getPixel(x, y)      # Get pixel at location x, y
+            r = p.getRed()
+            g = p.getGreen()
+            b = p.getBlue()
             
             # STEP 5: MODIFY THE COLOR
-            p.setRed(0)
+            p.setRed(r - x)             # Subtract column # from each color
+            p.setGreen(g - x)
+            p.setBlue(b - x)
                         
             # STEP 6: MODIFY THE IMAGE
             img.updatePixel(p)
                     
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
+    win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
 
-We don't always have to modify the pixel color.  Sometimes we can just change the color at a different (x,y) location than the current pixel. This time we will skip step 5 (changing the color) and change step 6 to get the pixel at (x,y) and copy the color from that pixel to the pixel at location (y,x).  So this will copy the color from (0,2) to (2,0).  Later it will also copy the color from (2,0) to (0,2), since this loops through all the pixels in the image, but that will just copy back the original color. 
+We don't always have to modify the pixel color. We can also use the coordinates to move a particular
+pixel to a new location. This sample calculates a ``newY`` that is used as the y coordinate for the
+pixel when we put it back in the image. This ``newY`` is calculated as the height of the image
+minus one minus the y location of where we got the pixel.
 
 .. activecode:: Image_Location_Change
-    :tour_1: "Important Lines Tour"; 2: nli2-line2; 5: nli2-line5; 8-9: nli2-line8-9; 12: nli2-line12; 15: nli2-line15; 18-19: nli2-line18-19;
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
+    img = Image("student2.jpg")
 
     # STEP 3: LOOP THROUGH THE PIXELS
-    last = min(img.getWidth(), img.getHeight())
-    for x in range(last):
-    	for y in range(last):
+    for x in range(img.getWidth()):
+        for y in range(img.getHeight()):
         
             # STEP 4: GET THE DATA
             p = img.getPixel(x, y)
             
             # STEP 6: MODIFY THE IMAGE
-            img.setPixel(y, x, p)
+            # Calculate a new Y location for the pixel 
+            newY = (img.getHeight() - 1) - y
+            # Write it to the image at (x, newY)
+            img.setPixel(x, newY, p)
                     
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
+    win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     
-Try the program above on some of the other images as well by changing the file name on line 5. Does it always have the same effect?
 
 .. mchoice:: 11_5_1_Image_YX_Q1
-   :answer_a: We rotated the image 90 degrees to the left and flipped it over.
-   :answer_b: We mirrored the image around a diagonal line from the top left to the bottom right.
-   :answer_c: We flipped the image horizontally.
-   :answer_d: No change.
-   :correct: b
-   :feedback_a: This would be true if we created a new image and set the values in the new image from the old pixel values.
-   :feedback_b: This is true since we copy the pixel colors from the current image to the new location.
-   :feedback_c: The pixels would be copied to the same row.
-   :feedback_d: Compare this image to the original vangogh.jpg image.
-   
-   What happened when we copied the pixel color from (x,y) to (y,x)?
+    :answer_a: We rotated the image 90 degrees to the left and flipped it over.
+    :answer_b: We mirrored the image around a horizontal line.
+    :answer_c: We flipped the image horizontally.
+    :answer_d: No change.
+    :correct: b
+    :feedback_a: This would be true if we created a new image and set the values in the new image from the old pixel values.
+    :feedback_b: Correct. The top rows are copied to the bottom and end up erasing the top part of the image.
+    :feedback_c: This would be true if we created a new image and set the values in the new image from the old pixel values.
+    :feedback_d: Compare this image to the original student2.jpg image.
 
-This one does a little math with the x and y.
+    What happened when we copied the pixel from (x,y) to (x, newY)?
 
-.. activecode:: 11_5_2_Image_Flip_Both
-    :tour_1: "Important Lines Tour"; 8-9: nli3-line8-9; 12: nli3-line12; 15: nli3-line15;
+Say an image has a height of 10. When y is 0 (top row), newY will be :math:`(10 - 1) - 0 = 9`
+which is the last row in the image. When y is 1, newY will be: :math:`(9 - 1) - 0 = 8`, or
+the next to last row in the image. So the top row gets copied to the bottom. The second row
+gets copied to the row above that, etc...
+
+Unfortunately, as we move rows from the top to the bottom, we lose the data that used to be there.
+So once we get to the bottom half, we are copying data that was copied from the top half back
+to its starting location. If we want to fix that problem, we need to copy our data from one Image
+to another so that we don't wipe out the original as we make changes. This program does exactly
+that - it copies from ``imgSource`` to ``imgTarget`` and then draws ``imgTarget`` when it is done.
+``imgSource`` never changes - to verify that, after running the program, try changing the last
+line to draw ``imgSource`` instead of ``imgTarget``.
+
+.. activecode:: 11_5_2_Image_Flip_Total
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
+    # first copy we will read from
+    imgSource = Image("student2.jpg")
+    # load a second copy we will write to
+    imgTarget = Image("student2.jpg")
 
     # STEP 3: SELECT THE DATA
-    for x in range(img.getWidth()):
-    	for y in range(img.getHeight()):
-    	
-    	    # STEP 4: GET THE DATA
-            p = img.getPixel(x, y)
+    for x in range(imgSource.getWidth()):
+        for y in range(imgSource.getHeight()):
+        
+            # STEP 4: GET THE DATA
+            p = imgSource.getPixel(x, y)
             
             # STEP 6: CHANGE THE IMAGE
-            img.setPixel(img.getWidth() - 1 - x, 
-                         img.getHeight() - 1 - y, 
-                         p)
+            # Calculate a new Y location for the pixel 
+            newY = (imgSource.getHeight() - 1) - y
+            # Write the data to a copy of the image
+            imgTarget.setPixel(x, newY, p)
             
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
-    
-Try the program above on some of the other images as well by changing the file name on line 5.   Which picture looks the best after you run the program?
-
-
+    win = ImageWin(imgTarget.getWidth(), imgTarget.getHeight())
+    imgTarget.draw(win)

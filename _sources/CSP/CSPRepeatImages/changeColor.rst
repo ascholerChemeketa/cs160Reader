@@ -6,161 +6,92 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
+.. include:: ../csp_global.rst 
     
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
+|image_defs| 
 
-
-
-Changing Step 5: Increasing and decreasing color values
+Increasing and decreasing brightness
 ========================================================
 
-Below is a selection of images that you can use in the programs in this section.
-	
-.. raw:: html
+We can change one color channel (red/green/blue) at a time, or we can change all three.
+If we increase the value of all colors, we make the image get brighter. If we decrease
+all the colors, we make the image darker.
 
-   <table>
-   <tr><td>beach.jpg</td><td>baby.jpg</td><td>vangogh.jpg</td><td>swan.jpg</td></tr>
-   <tr><td><img src="../_static/beach.jpg" id="beach.jpg"></td><td><img src="../_static/baby.jpg" id="baby.jpg"></td><td><img src="../_static/vangogh.jpg" id="vangogh.jpg"></td><td><img src="../_static/swan.jpg" id="swan.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>puppy.jpg</td><td>kitten.jpg</td><td>girl.jpg</td><td>motorcycle.jpg</td></tr>
-   <tr><td><img src="../_static/puppy.jpg" id="puppy.jpg"></td><td><img src="../_static/kitten.jpg" id="kitten.jpg"></td><td><img src="../_static/girl.jpg" id="girl.jpg"></td><td><img src="../_static/motorcycle.jpg" id="motorcycle.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>gal1.jpg</td><td>guy1.jpg</td><td>gal2.jpg</td></tr>
-   <tr><td><img src="../_static/gal1.jpg" id="gal1.jpg"></td><td><img src="../_static/guy1.jpg" id="guy1.jpg"></td><td><img src="../_static/gal2.jpg" id="gal2.jpg"></td></tr>
-   </table>
-
-First example: Let's change STEP 5, so that we decrease the red by 50%.
+This program uses step five to increase each color value by 50% (1.5 times its original
+value.)
 
 .. activecode:: Image_Decrease_Red
-    :tour_1: "Important Lines Tour"; 2: timg5-line2; 5: timg5-line5; 8-9: timg5-line8-9; 12: timg5-line12; 15: timg5-line15; 18: timg5-line18; 21-22: timg5-line21-22;
     :nocodelens: 
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("beach.jpg")
+    img = Image("student1.jpg")
+    win = ImageWin(img.getWidth(), img.getHeight())
+    img.draw(win)
 
     # STEP 3: LOOP THROUGH THE PIXELS
     pixels = img.getPixels();
     for p in pixels:
-        
-    	# STEP 4: GET THE DATA
+
+        # STEP 4: GET THE DATA
         r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
             
         # STEP 5: MODIFY THE COLOR
-        p.setRed(r * 0.5);
+        p.setRed(r * 1.5)
+        p.setGreen(g * 1.5)
+        p.setBlue(b * 1.5)
             
         # STEP 6: UPDATE THE IMAGE 
         img.updatePixel(p)
             
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
+    win2 = ImageWin(img.getWidth(), img.getHeight())
+    img.draw(win2)
 
-Try the program above on some of the other images by changing the name of the image file on line 5.  What effect does it always have?  Is this what you expected when we decrease the red?
-
-We can *increase* the red in a similar way. Let's change STEP 5, so that we increase the red by 150%.
-
-.. activecode:: Image_Increase_Red
-    :tour_1: "Important Lines Tour"; 2: timg5-line2; 5: timg5-line5; 8-9: timg5-line8-9; 12: timg5-line12; 15: timg6-line15; 18: timg5-line18; 21-22: timg5-line21-22; 
-    :nocodelens:
-
-    # STEP 1: USE THE IMAGE LIBRARY 
-    from image import *
-    
-    # STEP 2: PICK THE IMAGE
-    img = Image("beach.jpg")
-
-    # STEP 3: LOOP THROUGH THE PIXELS
-    pixels = img.getPixels()
-    for p in pixels:
-        
-    	# STEP 4: GET THE DATA
-        r = p.getRed()
-            
-        # STEP 5: MODIFY THE COLOR
-        p.setRed(r * 1.5)
-            
-        # STEP 6: UPDATE THE IMAGE
-        img.updatePixel(p)
-            
-    # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
-
-Try the program above on some of the other images by changing the name of the image file on line 5.   What effect does it always have? Is this what you expected when you increase the red?  What happens if you increase two colors at the same time?
+Try decreasing each color channel by 50% (0.5 times its original value) - you should end up with a 
+darker version of the same picture.
 
 .. parsonsprob:: Image_Decrease_GB
-   :numbered: left
-   :adaptive:
+    :numbered: left
+    :adaptive:
 
-   Another way to get a similar effect to increasing the red, is to decrease the green and blue.  Figure out how to do that in the program above and then use that information to drag the code blocks below from the left to the right in the correct order with the correct indention. 
-   -----
-   from image import *
-   =====
-   img = Image("beach.jpg")
-   =====
-   pixels = img.getPixels()
-   for p in pixels:
-   =====
-       g = p.getGreen()
-       b = p.getBlue()
-   =====       
-       p.setGreen(g * 0.75)
-       p.setBlue(b * 0.75)
-   =====
-       img.updatePixel(p)
-   =====
-   win = ImageWin(img.getWidth(),img.getHeight())
-   img.draw(win)
+    If we ant to make the image both brighter and more red, we could increase just the red value.
+    However, if we want it to look more red, but get brighter overall, we would want to make a
+    small increase to the red value and a decrease to the blue and green values. 
 
-.. tabbed:: 11_4_1_WSt
+    Arrange and indent the blocks below to make a recipe that would make the image more red but
+    not increase the overall brightness much. You should modify the red value before you modify
+    the green & blue (that would not matter in a real program, but here you need to have them
+    in that order.)
 
-        .. tab:: Question
-
-           Decrease the red by .5 and increase the blue and green by .5 in puppy.jpg. 
-           
-           .. activecode::  11_4_1_WSq
-               :nocodelens:
-
-        .. tab:: Answer
-            
-          .. activecode::  11_4_1_WSa
-              :nocodelens:
-
-              # STEP 1: USE THE IMAGE LIBRARY
-              from image import *
-
-              # STEP 2: PICK THE IMAGE
-              img = Image("puppy.jpg")
-
-              # STEP 3: LOOP THROUGH THE PIXELS
-              pixels = img.getPixels()
-              for p in pixels:
-
-                  # STEP 4: GET THE DATA
-                  r = p.getRed()
-                  g = p.getGreen()
-                  b = p.getBlue()
-
-                  # STEP 5: MODIFY THE COLOR
-                  p.setRed(r * .5)
-                  p.setGreen(g * 1.5)
-                  p.setBlue(b * 1.5)
-
-                  # STEP 6: UPDATE THE IMAGE
-                  img.updatePixel(p)
-
-              # STEP 7: SHOW THE RESULT
-              win = ImageWin(img.getWidth(),img.getHeight())
-              img.draw(win)
-
-                                
-
+    -----
+    from image import *
+    =====
+    img = Image("cat.jpg")
+    =====
+    pixels = img.getPixels()
+    for p in pixels:
+    =====
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+    =====       
+        p.setRed(g * 1.2)
+    =====       
+        p.setRed(g * 0.9) #paired
+    =====       
+        p.setGreen(g * 0.9)
+        p.setBlue(b * 0.9)
+    =====       
+        p.setGreen(g * 1.2)
+        p.setBlue(b * 1.2) #paired
+    =====
+        img.updatePixel(p)
+    =====
+    win = ImageWin(img.getWidth(), img.getHeight())
+    img.draw(win)
 

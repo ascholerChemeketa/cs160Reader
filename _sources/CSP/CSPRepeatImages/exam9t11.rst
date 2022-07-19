@@ -99,10 +99,10 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           
     .. mchoice:: e9t11_5
        :practice: T
-       :answer_a: <img src="../_static/turtleStamp5.png" alt="5 turtles facing out in a circle with one in the center facing east" width="300">
-       :answer_b: <img src="../_static/turtleStamp5WithLines.png" alt="5 turtles facing out in a circle with one in the center facing east with lines from the center to each turtle on the circle" width="300">
-       :answer_c: <img src="../_static/turtleStamp10.png" alt="10 turtles facing out in a circle with one in the center facing east" width="300">
-       :answer_d: <img src="../_static/turtleStamp10WithLines.png" alt="10 turtles facing out in a circle with one in the center facing east with lines from the center to each turtle on the circle" width="300">
+       :answer_a: <img src="../../_static/turtleStamp5.png" alt="5 turtles facing out in a circle with one in the center facing east" width="300">
+       :answer_b: <img src="../../_static/turtleStamp5WithLines.png" alt="5 turtles facing out in a circle with one in the center facing east with lines from the center to each turtle on the circle" width="300">
+       :answer_c: <img src="../../_static/turtleStamp10.png" alt="10 turtles facing out in a circle with one in the center facing east" width="300">
+       :answer_d: <img src="../../_static/turtleStamp10WithLines.png" alt="10 turtles facing out in a circle with one in the center facing east with lines from the center to each turtle on the circle" width="300">
        :correct: a
        :feedback_a: This stamps 5 turtles on a circle with a radius of 25.
        :feedback_b: This would be true if the line zoe.penup() was removed.

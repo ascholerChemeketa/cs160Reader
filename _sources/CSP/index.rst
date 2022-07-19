@@ -18,3 +18,4 @@
     CSPDesigningProcedures/toctree.rst
     CSPNameFunctions/toctree.rst
     CSPRepeatTurtles/toctree.rst
+    CSPRepeatImages/toctree.rst

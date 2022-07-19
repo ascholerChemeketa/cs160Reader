@@ -6,193 +6,123 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
     
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
 
+.. include:: ../csp_global.rst 
 
-	
-Changing Step 3: Changing which data we use
+|image_defs| 
+
+Changing which data we use
 ============================================
 
-Below is a selection of images that you can use in the programs in this section.
-	
-.. raw:: html
+Now that we are using coordinates to iterate through all of the pixels, we can also change which
+part of the picture we read and manipulate. Instead of writing a loop that visits every possible
+x and y, we can chose to only visit some of the coordinate pairs.
 
-   <table>
-   <tr><td>beach.jpg</td><td>baby.jpg</td><td>vangogh.jpg</td><td>swan.jpg</td></tr>
-   <tr><td><img src="../_static/beach.jpg" id="beach.jpg"></td><td><img src="../_static/baby.jpg" id="baby.jpg"></td><td><img src="../_static/vangogh.jpg" id="vangogh.jpg"></td><td><img src="../_static/swan.jpg" id="swan.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>puppy.jpg</td><td>kitten.jpg</td><td>girl.jpg</td><td>motorcycle.jpg</td></tr>
-   <tr><td><img src="../_static/puppy.jpg" id="puppy.jpg"></td><td><img src="../_static/kitten.jpg" id="kitten.jpg"></td><td><img src="../_static/girl.jpg" id="girl.jpg"></td><td><img src="../_static/motorcycle.jpg" id="motorcycle.jpg"></td></tr>
-   </table>
-   <table>
-   <tr><td>gal1.jpg</td><td>guy1.jpg</td><td>gal2.jpg</td></tr>
-   <tr><td><img src="../_static/gal1.jpg" id="gal1.jpg"></td><td><img src="../_static/guy1.jpg" id="guy1.jpg"></td><td><img src="../_static/gal2.jpg" id="gal2.jpg"></td></tr>
-   </table>
-
-
-We can also change which part of the picture we read and manipulate.  When we are changing several colors at once we can create a new pixel with the desired color using ``Pixl(red,green,blue)`` as shown below on line 20.
+This program changes only the upper-left 1/4 of the image. To do so, it uses loops that
+only go up to 1/2 the width and 1/2 the height. At each location, it gets the existing pixel
+and then inverts each color channel (subtracts it from 255 so that a value of 0 becomes 255,
+a value of 1 becomes 254, 2 becomes 253, etc...).
 
 .. activecode:: Image_Negate_Quarter
-    :tour_1: "Important Lines Tour"; 1-2: imgR2-line1-2; 4-5: imgR2-line4-5; 8: imgR6-line8; 9: imgR6-line9; 10: imgR6-line10; 11: imgR6-line11; 13-17: imgR6-line13-17; 19-20: imgR6-line19-20; 22-23: imgR6-line22-23; 25-27: imgR6-line25-27;
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
+    img = Image("scooter.jpg")
 
     # STEP 3: SELECT THE DATA
-    halfWidth = (int) (img.getWidth() / 2)
-    halfHeight = (int) (img.getHeight() / 2)
+    # Calculate the midpoint for x and y. Make sure answer is changed to a whole number (int)
+    halfWidth = img.getWidth() // 2
+    halfHeight = img.getHeight() // 2
+
     for x in range(halfWidth):
-    	for y in range(halfHeight):
+        for y in range(halfHeight):
 
             # STEP 4: GET THE DATA
             p = img.getPixel(x, y)
-            r = p.getRed()
-            g = p.getGreen()
-            b = p.getBlue()
             
             # STEP 5: CREATE THE COLOR
-            newPixel = Pixel(255-r, 255-g, 255-b)
+            p.setRed(255 - p.getRed())
+            p.setBlue(255 - p.getBlue())
+            p.setGreen(255 - p.getGreen())
             
             # STEP 6: CHANGE THE PIXEL
             img.setPixel(x, y, newPixel)
             
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
+    win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
 
-What happens if we skip every other x and y as we manipulate the colors?  Maybe make the green 255 and the blue 0? 
+
+.. mchoice:: 9_7_1_Image_Quadrent_mc
+    :answer_a: Change line 12 to <code>for x in range(halfWidth, img.getWidth()):</code>
+    :answer_b: Change line 13 to <code>for y in range(halfHeight, img.getHeight()):</code>
+    :answer_c: Do both
+    :correct: c
+    :feedback_a: Correct, that uses x coordinates from the half way point until the full width.
+    :feedback_b: No, that is the lower-left quadrant. It uses y value that start halfway down and go until the bottom.
+    :feedback_c: That would be the lower-right quadrant. For both x and y, it starts at the midpoint and goes until the right or bottom edge.
+
+    Which of the following changes would invert the upper-right quadrent instead of the upper-left?
+
+
+You may have noticed that we used ``// 2`` to divide by two in that sample. Why?
+``range`` only works with whole numbers. And ``/ 2`` produces a decimal value (also known as a 
+``float`` for "floating decimal point").  Try this example and note the error you get.
+
+.. activecode:: range_integer_only
+
+    max = 11 / 2
+    print(max)
+    for x in range(max):           # error here!!! range wants an integer
+        print(x)
+
+Change the first line to set ``max`` to ``10 / 2``. It is the same problem - ``/`` produces a decimal
+even for whole numbers and range does not want that. Then try changing the first line to set ``max``
+to ``11 // 2``. Recall that the ``//`` operator does integer division and drops the decimal part of
+the answer. So using ``//`` ensures that we always get a whole number (or ``int`` for integer).
+
+We could even use two sets of loops to visit two different parts of the image. This program
+has two copies of the code for steps 3-6. The first one visits the top 30 rows. The second
+copy visits the last 30 rows. In each of those locations, we don't even both accessing
+the existing color. Instead we use the ``Pixel(red, green, blue)`` function to make a new
+red pixel (255 red, 0 green and blue) and store it into the image at the current location.
 
 .. activecode:: Image_Every_Other
-    :tour_1: "Important Lines Tour"; 1-2: imgR2-line1-2; 4-5: imgR2-line4-5; 8: imgR7-line8; 9: imgR7-line9;  11-13: imgR7-line11-13; 15-16: imgR7-line15-16; 18-19: imgR7-line18-19; 21-23: imgR7-line21-23; 25-27: 
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
     from image import *
     
     # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
+    img = Image("scooter.jpg")
 
-    # STEP 3: SELECT THE DATA
-    for x in range(0,img.getWidth(),2):
-    	for y in range(0,img.getHeight(),2):
-        
-            # STEP 4: GET THE DATA
-            p = img.getPixel(x, y)
-            r = p.getRed()
-            
+    # STEP 3: SELECT THE DATA - TOP
+    for x in range(img.getWidth()):
+        for y in range(30):
             # STEP 5: CREATE THE COLOR
-            newPixel = Pixel(r, 255, 0)
+            newPixel = Pixel(255, 0, 0)
+            
+            # STEP 6: CHANGE THE PIXEL
+            img.setPixel(x, y, newPixel)
+
+    # STEP 3: SELECT THE DATA - BOTTOM
+    for x in range(img.getWidth()):
+        for y in range(img.getHeight() - 30, img.getHeight()):
+            # STEP 5: CREATE THE COLOR
+            newPixel = Pixel(255, 0, 0)
             
             # STEP 6: CHANGE THE PIXEL
             img.setPixel(x, y, newPixel)
             
     # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
+    win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
 
-Let's try side-to-side copying.
-
-
-.. activecode:: Image_Copy_Left
-    :tour_1: "Important Lines Tour"; 1-2: imgR2-line1-2; 4-5: imgR2-line4-5; 8: imgR8-line8; 9: imgR8-line9; 10: imgR8-line10; 12-16: imgR8-line12-16; 18-19: imgR8-line18-19; 21-22: imgR8-line21-22; 24-26: imgR8-line24-26;
-    :nocodelens:
-
-    # STEP 1: USE THE IMAGE LIBRARY 
-    from image import *
-    
-    # STEP 2: PICK THE IMAGE
-    img = Image("vangogh.jpg")
-
-    # STEP 3: SELECT THE DATA
-    halfway = (int) (img.getWidth() / 2)
-    for x in range(halfway):
-        for y in range(img.getHeight()):
-        
-            # STEP 4: GET THE DATA
-            p = img.getPixel(x, y)
-            r = p.getRed()
-            g = p.getGreen()
-            b = p.getBlue()
-            
-            # STEP 5: CREATE THE COLOR
-            newPixel = Pixel(r, g, b)
-            
-            # STEP 6: CHANGE THE PIXEL
-            img.setPixel(halfway + x, y, newPixel)
-            
-    # STEP 7: SHOW THE RESULT
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
-
-.. mchoice:: 11_6_1_Image_Mirror_Q1
-   :answer_a: img.setPixel(halfway - x, y, newPixel) 
-   :answer_b: img.setPixel(x - halfway, y, newPixel) 
-   :answer_c: img.setPixel(img.getWidth() - 1 - x, y, newPixel) 
-   :answer_d: img.setPixel(x - img.getWidth(), y, newPixel) 
-   :correct: c
-   :feedback_a: It does mirror, but only the left half
-   :feedback_b: This creates two copies of the left half
-   :feedback_c: Yes, it looks like the woman is kissing herself
-   :feedback_d: No, no effect.
-   
-   Try it: How would you mirror the image from left-to-right around a vertical line in the middle of the picture?  Try changing line 22 to these.  If you get it right it will look like the women is nose to nose with herself.
-
-.. figure:: Figures/ImageCopy.png
-    :width: 150px
-    :align: center
-    :alt: 
-    :figclass: align-center
-
-.. tabbed:: 11_6_1_WSt
-
-        .. tab:: Question
-
-           Copy the pixels in the top left quadrant to the the bottom right quadrant. Look at the picture above for the expected result.
-           
-           .. activecode::  11_6_1_WSq
-               :nocodelens:
-
-        .. tab:: Answer
-            
-          .. activecode::  11_6_1_WSa
-              :nocodelens:
-
-              # USE THE IMAGE LIBRARY
-              from image import *
-
-              # PICK THE IMAGE
-              img = Image("vangogh.jpg")
-
-              # SELECT THE DATA
-              halfwayWidth = (int) (img.getWidth() / 2)
-              halfwayHeight = (int) (img.getHeight() / 2)
-              for x in range(halfwayWidth):
-                  for y in range(halfwayHeight):
-
-                      # GET THE DATA
-                      p = img.getPixel(x, y)
-                      r = p.getRed()
-                      g = p.getGreen()
-                      b = p.getBlue()
-
-                      # CREATE THE COLOR
-                      newPixel = Pixel(r, g, b)
-
-                      # CHANGE THE PIXEL
-                      img.setPixel(halfwayWidth + x, halfwayHeight + y, newPixel)
-
-              # SHOW THE RESULT
-              win = ImageWin(img.getWidth(),img.getHeight())
-              img.draw(win)
-  
-
-
+Try modifying the program so that the red bars are on the left and right side of the image. To
+do so, you will have to "fix" ``for y...`` loops AND change the ``for x`` loops to only cover
+a limited distance. The first ``for x`` should cover a range from 0 to 30. The second one
+should start at the width - 30 and continue until it hits the full width.
 

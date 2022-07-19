@@ -1,5 +1,7 @@
 .. include:: ../global.rst
 
+.. _hex_colors:
+
 Hex Data & Colors
 ============================
 

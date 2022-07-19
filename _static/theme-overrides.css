@@ -471,8 +471,8 @@ div.runestone_caption {
 
 /* -------------------------CSP stuff----------------- */
 
-section > div.highlight-python,
-section > div.highlight-default {
+div.highlight-python,
+div.highlight-default {
     margin-bottom: 10px;
 }
 
@@ -483,13 +483,13 @@ section > div.highlight-default {
 
 .CodeMirror {
     height: auto !important;
-    max-height: 500px;
 }
 
+/*
 .ac_output pre {
     max-height: 300px;
     overflow: scroll;
-}
+} */
 
 /* This is for Codelens areas - no cleaner way to select them */
 

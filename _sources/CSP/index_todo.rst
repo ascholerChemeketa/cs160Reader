@@ -13,7 +13,6 @@
     CSPRepeatNumbers/toctree.rst
     CSPWhileAndForLoops/toctree.rst
     CSPRepeatStrings/toctree.rst
-    CSPRepeatImages/toctree.rst
     CSPIntroDecisions/toctree.rst
     CSPStringDecisions/toctree.rst
     CSPTurtleDecisions/toctree.rst
