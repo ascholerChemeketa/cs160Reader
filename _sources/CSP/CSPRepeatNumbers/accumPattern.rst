@@ -7,155 +7,125 @@
     is included in the section entitled "GNU Free Documentation License".
 
 
-	
-.. highlight:: java
-   :linenothreshold: 4
+.. include:: ../csp_global.rst
 
 
-There's a Pattern Here!
+The Accumulator Pattern
 =====================================
 
-There's a pattern in these programs, a pattern that is common when processing data.  We call this the **Accumulator Pattern**.  In the first program above, we *accumulated* the values into the variable ``sum``.  In the last few programs, we *accumulated* a product into the variable ``product``.
+We have seen the two program below before. They do very different jobs - one turns a decimal number into
+a binary one, the other lets the user enter numbers and then prints out their average. However,
+there is a common pattern in these programs - the **Accumulator Pattern**. The accumulator
+pattern is a common recipe for using a loop to combine a number of values and build up an answer.
 
-Here are the five steps in this pattern.
+In the first program, we *accumulate* the different values that ``value`` holds into
+the variable ``sum``:
 
-1. Set the accumulator variable to its initial value.  This is the value we want if there is no data to be processed.
-2. Get all the data to be processed.
-3. Step through all the data using a ``for`` loop so that the variable takes on each value in the data.
-4. Combine each *piece* of the data into the accumulator.
-5. Do something with the result.
+.. code::
+    
+    sum = 0
+    count = 0
+    message = "Enter an integer. Enter 0 or less to stop."
+    value = input(message)
+    while int(value) > 0:
+        sum = sum + int(value)
+        count = count + 1
+        value = input(message)
 
-Using the Accumulator Pattern
-=====================================
+    print("The sum is: " + str(sum) + " the average is: " + str(sum / count))
+
+In the second program, we *accumulate* the different values that ``remainder`` holds into
+the variable ``binary``:
+
+.. code::
+
+    number = 11
+    binary = ""
+
+    while number != 0:
+        remainder = number % 2      
+        binary = str(remainder) + binary
+        number = number // 2
+
+    print(binary)
+
+
+Here are the five steps in this pattern:
+  
+#. Set the **accumulator variable** to its initial value. This is the value we want if there 
+   is no data to be processed. For the first loop, the ``sum`` is set to 0. For the second
+   loop, ``binary`` is set to the empty string ``""``. This happens before the loop.
+
+#. Use a loop to iterate through all the data. There should be a variable that on each value 
+   in the data we are trying to accumulate.
+
+#. Combine each *piece* of the data into the accumulator. The first program uses ``+`` to add each
+   value to the number ``sum``. The second program uses ``+`` to build up the string ``binary``.
+
+#. Once the loop is done, do something with the result.
 
 What is the sum of all the numbers between 1 and 100?  We can answer that easily using our pattern.
 
 .. activecode:: Numbers_Sum
-    :tour_1: "Code tour"; 2: accum_line2; 4: accum_line4; 6: accum_line6; 8: accum_line8; 10: accum_line10;
-	
+
     # STEP 1: INITIALIZE ACCUMULATOR 
     sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(1,101)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE 
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
+    # STEP 2: LOOP THROUGH THE DATA
+    for number in range(1,101):
+        # STEP 3: ACCUMULATE 
+        sum = sum + number
+
+    # STEP 4: PROCESS RESULT
     print(sum)
 
-The ``range`` function has one more version that we can use here.  By providing *three* input numbers, we can specify the *start* value, the *ending* value (which is one more than the *last* value), and the *step* -- how much to change *between* numbers.
+Step 3 does not have to use ``+`` to build up our answer. We could use ``*`` in the accumulator
+pattern to build up the value of :math:`7!`. (:math:`7!` means the value you get by calculating
+:math:`7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1`)
 
-.. activecode:: Range_Examples
+.. activecode:: Factorial_Accumulator
 
-  print(range(1,11,1))
-  print(range(0,11,2))
-  print(range(1,11,3))
-  print(range(5,50,5))
-  print(range(10,1,-1))
-
-Now let's answer a slightly harder question: What is the sum of all the *even* numbers between 0 and 100?  It's easy with our pattern.
-  
-.. activecode:: Numbers_Sum_Even
-    :tour_1: "Code tour"; 2: accE_line2; 4: accE_line4; 6: accE_line6; 8: accE_line8; 10: accE_line10;
-	
     # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(0,101,2)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE 
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
+    product = 1  # 0! is defined as 1... that is our starting point
+    # STEP 2: LOOP THROUGH THE DATA
+    for number in range(7, 0, -1):
+        # STEP 3: ACCUMULATE 
+        product = product * number
+
+    # STEP 4: PROCESS RESULT
+    print(product)
+
+One ingredient that is critical is that we do step 1 before the loop starts. If we try to
+initialize the accumulator in the loop we will just keep resetting it. Watch this failed
+attempt to add up the numbers from 1 to 5 run line by line to see why:
+
+.. codelens:: BadAcccumulator
+
+    # STEP 2: LOOP THROUGH THE DATA
+    for number in range(6):
+        # STEP 1: INITIALIZE ACCUMULATOR???
+        sum = 0
+        # STEP 3: ACCUMULATE 
+        sum = sum + number
+
+    # STEP 4: PROCESS RESULT
     print(sum)
 
-.. mchoice:: 7_5_1_Numbers_Even_Q1
-   :answer_a: Because we started at 0
-   :answer_b: Because we want to include 100
-   :answer_c: Because the computer only understands 1s and 0s
-   :answer_d: Because we're using a step of 2
-   :correct: b
-   :feedback_a: We would want to include 100.
-   :feedback_b: If we stop BEFORE 101, we include 100.
-   :feedback_c: Internally, yes, but in Python, all decimal digits are allowed.
-   :feedback_d: That doesn't really matter.
 
-   Why do we stop at 101 in the above program?
 
-.. mchoice:: 7_5_2_Numbers_Even_Q2
-   :answer_a: Because if we started with 1, we would get all odd numbers
-   :answer_b: Because all lists start with zero
-   :answer_c: Because we end with 101
-   :correct: a
-   :feedback_a: This gives us [0,2,4,6...98,100].
-   :feedback_b: They don't have to start at 0.  
-   :feedback_c: That is true, but is not relevant here.
-
-   Why do we START with zero?
-
-How do we know what's really going on in this program?  How do we know that *number* is taking on all of the even values from 0 to 100?  One way we can tell is by using a CodeLens on a smaller problem from 0 to 20.  We can step through the program line-by-line, or race to the end by clicking the *Last* button and then step backwards.
-
-.. codelens:: Numbers_Sum_Step
-	
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(0,21,2)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
-    print(sum)
-    
 .. parsonsprob:: 7_5_3_Sum_100
-   :numbered: left
-   :adaptive:
+    :numbered: left
+    :adaptive:
 
-   The following is the correct code for printing the sum of all the odd numbers from 1 to 100 using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  <b>Remember that the statements in the body of a loop must be indented!</b>  To indent a block drag it further right. Click the <i>Check Me</i> button to check your solution.</p>
-   -----
-   sum = 0  
-   =====
-   numbers = range(1,101,2)
-   =====
-   for number in numbers:
-   =====
-       sum = sum + number
-   =====
-   print(sum)
-
-.. mchoice:: 7_5_4_Numbers_Add_Odds_Q1
-   :answer_a: Changed the range step from 2 to 3
-   :answer_b: Changed the range end from 101 to 100
-   :answer_c: Changed the range end from 101 to 99
-   :answer_d: Changed the range start from 0 to 1
-   :correct: d
-   :feedback_a: That would give us [0,3,6,9,12...99].
-   :feedback_b: That would give us the even numbers from 0 to 98.
-   :feedback_c: That would give us the even numbers from 0 to 98.
-   :feedback_d: That would give us [1,3,5,...99].
-
-   Change the program above (in ActiveCode 3: Numbers_Sum_Even) to add up all the ODD numbers including up to 99.  You should run it to get 2500. What change did you make to the program?
-   
-.. parsonsprob:: 7_5_5_Sum_From_50
-   :numbered: left
-   :adaptive:
-
-   The following is the correct code for printing the sum of all the even numbers from 50 to 100 using the accumulator pattern, but it is mixed up and <b>contains one extra block</b>. Drag the required blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block further right to indent.  Click the <i>Check Me</i> button to check your solution.</p>
-   -----
-   sum = 0  
-   =====
-   numbers = range(50,101,2)
-   =====
-   for number in numbers:
-   =====
-       sum = sum + number
-   =====
-   print(sum)
-   =====
-   numbers = range(50,100,2) #distractor
-
-
-
-
+    The following is the correct code for printing the sum of all the odd numbers from 1 to 29
+    using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put
+    them in the correct order and indentation on the right.
+    -----
+    sum = 0  
+    =====
+    numbers = range(1, 30, 2)
+    =====
+    for number in numbers:
+    =====
+        sum = sum + number
+    =====
+    print(sum)

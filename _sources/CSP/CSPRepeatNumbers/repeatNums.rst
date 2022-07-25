@@ -6,23 +6,61 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
+.. include:: ../csp_global.rst
 
-	
-.. highlight:: java
-   :linenothreshold: 4
+Repeating Calculations
+================================
 
-Repeating with Numbers
-=======================
+While calculating an approximate square root with Newton's method, we often want to use the
+formula :math:`1/2((N/G) + G)` multiple times to keep improving our approximation. Earlier, we 
+defined a procedure to make it easier to reuse the formula. But if we want to apply the
+formula a whole bunch of times in a row, a loop makes sense. Try running this program with the
+Codelens:
 
-..	index::
-	single: list
+.. activecode:: Numbers_Repeat1
 
-..	index::
-	single: for loop
-	pair: loop; for
-	pair: loop; body
-	pair: loop; indention
-	
+    # Number to find square root of
+    number = 110
+    # Our first (obviously incorrect guess)
+    guess = number          
+    
+    for iteration in range(5):
+        guess = 1/2 * ((number / guess) + guess)
+
+    print("The square root of ", number, "is approximately:")
+    print(guess)
+
+Each time we pass through the loop, we update the guess and it becomes a little closer to
+the truest value for the square root we can represent (we can never write a perfect
+representation of the answer as a decimal, so we have to settle for being correct to a 
+significant number of digits). The for loop is initially set to
+repeat 4 times, which gets us pretty close to the true value of the square root - 10.48808848170152.
+
+
+.. fillintheblank:: 10_2_fb
+
+    Modify the loop to repeat more times. What is the minimum number of repetitions you
+    need to get an answer that is as acurate as possible? (One that displays as 10.48808848170152)
+
+    - :^8$: Correct!
+      :^9$: That is more repetitions than needed
+      :\d{2}: That is more repetitions than needed
+      :\d: The answer is still changing after that many repetitions
+      :.*: Make sure to give your answer as a number
+    
+
+
+2 - 5
+
+.. index::
+    single: list
+
+.. index::
+    single: for loop
+    pair: loop; for
+    pair: loop; body
+    pair: loop; indention
+
 We are going to use a ``for`` loop.  A ``for`` loop is one type of loop or way to repeat a statement or set of statements in a program.  A ``for`` loop will use a variable and make the variable take on each of the values in a **list** of numbers one at a time.  A **list** holds values in an order.  
 
 Notice that line 3 in the program below ends with a ``:`` and that line 4 is **indented** four spaces so that it starts under the ``n`` in ``number``.  **Indented** means that text on the line has spaces at the beginning of the line so that the text doesn't start right at the left boundary. Both the ``:`` and the indention are required in a loop.  Line 3 is the start of the ``for`` loop and line 4 is the **body** of the loop.  The **body** of the loop is repeated for each value in the list ``thingsToAdd``.   
@@ -32,7 +70,7 @@ What is the sum of all the numbers between 1 and 10?  Run the program below to c
 .. activecode:: Numbers_Repeat1
     :tour_1: "Line by line tour"; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;
     :tour_2: "High level tour"; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;
-	
+
     sum = 0  # Start out with nothing
     thingsToAdd = [1,2,3,4,5,6,7,8,9,10]
     for number in thingsToAdd:
