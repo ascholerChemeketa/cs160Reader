@@ -6,48 +6,46 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-
-	
-.. highlight:: python
-   :linenothreshold: 3
+.. include:: ../csp_global.rst
 
 Using if and else
 ==========================
 
-..	index::
+.. index::
+    single: else
    	pair: if; else
 
-Most professional programmers would write the following code:
+The first program we saw on the last page is a bit repetitive. It compares
+``weight`` to the number 1 twice, once to see if it is below that number,
+once to see if it is not below that number: 
 
-.. activeCode:: Multiple_Ifs_2
-     :tour_1: "Structural Tour"; 1: c1-line1; 2-3: c1-line2-3; 4-5: c1-line4-5; 6: c1-line6; 7-9: c3f-line7-9;
+.. code::
 
-     weight = 0.5
      if weight < 1:
          price = 1.45
      if weight >= 1: 
          price = 1.15
-     total = weight * price
-     print(weight)
-     print(price)
-     print(total)
-     
-Like this:
+
+In situations like this, where there are exactly two mutually exclusive options (we either
+have to do one or the other), there is an easier way to write the logic.
+That is to use ``else``. ``else`` provides a way to say "if the condition for the preceding
+if was False, do this". The body of the else - the code that will be executed if the if's test
+fails - is indented after the else.
 
 .. activeCode:: if_and_else
-     :tour_1: "Structural Tour"; 1: c5-line1; 2-3: c5-line2-3; 4-5: c5-line4-5; 6: c5-line6; 7-9: c3f-line7-9;
 
      weight = 0.5
      if weight < 1:
          price = 1.45
      else:
-         price = 1.15
+         price = 1.15           # happens if weight is NOT < 1
      total = weight * price
      print(weight)
      print(price)
      print(total)
 
-An ``else`` is an additional optional phrase on an ``if`` statement.  IF AND ONLY IF the *test* in the ``if`` is **false** does the block of statements after the ``else`` get executed.  Using an ``if`` with an ``else`` makes sure that *either* the ``if`` block is executed *or* the ``else`` block is executed, but **never** both.  
+Using an ``if`` with an ``else`` makes sure that *either* the ``if`` block is executed *or* the
+``else`` block is executed, but **never** both.
 
 .. figure:: Figures/ifAndElseFlow.png
     :height: 350px
@@ -55,62 +53,39 @@ An ``else`` is an additional optional phrase on an ``if`` statement.  IF AND ONL
     :alt: Flowchart for both an if and else
     :figclass: align-center
 
-    Figure 4: Flow of execution for both an if and else
-    
+    Flow of execution for both an if and else
+
+We never **have** to use an ``else``. We can always write two seperate ``if`` statements. But
+using ``else`` can help avoid bugs where there is a "gap" between the two options like we saw on
+the previous page.
+
 **Mixed up programs**
 
-.. parsonsprob:: 12_7_1_Even_Odd
+.. parsonsprob:: 11_7_1_Even_Odd
    :numbered: left
    :adaptive:
 
-   The following program should print out "x is even" if the remainder of x divided by 2 is 0 and "x is odd" otherwise, but the code is mixed up. The ``%`` symbol gives the remainder after the first number is divided by the second number.  Drag the blocks from the left and place them in the correct order on the right.  Be sure to also indent correctly! Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or have the wrong indention.</p>
+   The following program should print out "x is even" if the remainder of x divided by 2 is 0
+   and "x is odd" otherwise, but the code is mixed up. Remember that the ``%`` symbol gives
+   the remainder after the first number is divided by the second number.  Drag the blocks from
+   the left and place them in the correct order on the right.  Be sure to also indent correctly!
    -----
-   x = 92
+   x = input("Enter a number")
    if x % 2 == 0:
        print("x is even")
    else: 
        print("x is odd")
 
-It is easy to write an ``if`` when you want *exactly* one block to execute, but you can accidentally create a "hole" -- a condition where neither block executes.  That's what happened in the example below when the weight is equal to 1 pound.
+.. parsonsprob:: 11_7_1_Shipping
+   :numbered: left
 
-.. activeCode:: Price_If_Broken2
-     :tour_1: "Structural Tour"; 1: c1-line1; 2-3: c1-line2-3; 4-5: c3-line4-5; 6: c1-line6; 7-9: c3f-line7-9;
-
-     weight = 0.5
-     if weight < 1:
-         price = 1.45
-     if weight > 1: 
-         price = 1.15
-     total = weight * price
-     print(weight)
-     print(price)
-     print(total)
-
-.. tabbed:: 12_7_2_WSt
-
-        .. tab:: Question
-
-           Fix the example above such that the cost of frozen yogurt is 0 if you pour exactly 1 lb. in your cup. 
-           
-           .. activecode::  12_7_2_WSq
-               :nocodelens:
-
-        .. tab:: Answer
-            
-          .. activecode::  12_7_2_WSa
-              :nocodelens:
-              
-              weight = 0.5
-              if weight < 1:
-                price = 1.45
-              if weight == 1:
-                price = 0
-              if weight > 1: 
-                price = 1.15
-              total = weight * price
-              print(weight)
-              print(price)
-              print(total)
-                                
-
-
+   The following function should calculate the shipping cost for an order. Orders over $50 ship free.
+   Otherwise, it is $5 base shipping plus $0.75 per pound. Drag the blocks from
+   the left and place them in the correct order on the right.  Be sure to also indent correctly!
+   -----
+    def calculateShipping(orderCost, weight):
+        if orderCost > 50:
+            shipping = 0
+        else:
+            shipping = 5 + 0.75 * weight
+        return shipping

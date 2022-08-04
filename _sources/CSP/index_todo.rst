@@ -10,9 +10,6 @@
     :numbered:
     :maxdepth: 3
 
-    CSPWhileAndForLoops/toctree.rst
-    CSPRepeatStrings/toctree.rst
-    CSPIntroDecisions/toctree.rst
     CSPStringDecisions/toctree.rst
     CSPTurtleDecisions/toctree.rst
     CSPImageDecisions/toctree.rst
@@ -26,3 +23,7 @@
     CSPWhatsNext/toctree.rst
     CSPPracticeQuestions/toctree.rst
     CSPUntimedPracticeQuestions/toctree.rst
+
+    
+    CSPWhileAndForLoops/toctree.rst
+    CSPRepeatStrings/toctree.rst

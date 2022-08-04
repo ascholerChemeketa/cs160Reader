@@ -6,49 +6,23 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-
-	
-.. highlight:: python
-   :linenothreshold: 3
-
+.. include:: ../csp_global.rst
 
 Making Decisions
 ==================
 
-*Learning Objectives:*
+We have discussed two major features used by computer algorithms. We can name values and we can
+repeat steps. The third major tool we can use to build algorithms is the ability to make decisions.
 
-- Write programs that make decisions.
-- Introduce conditional execution with ``if`` statements.
-- Give examples of logical expressions and relational operators.
-- Introduce complex conditionals (with ``and``, ``or``, and ``not``).
-- Understand programs with multiple ``if`` statements.
-- Introduce ``if`` and ``else``.
-- Understand common difficulties students have with conditionals.
+We make decisions all the time.  Before we leave the house we may check to see if it will rain
+that day, and if it will, we bring an umbrella.
 
-We have discussed two major abilities that computers have.  Computers can name values.  Computers can repeat steps.  The third major ability that a computer has is the ability to make decisions.  We make decisions all the time.  Before we leave the house we may check to see if it will rain that day, and if it will, we bring an umbrella.
-
-.. figure:: Figures/umbrella.jpg
+.. image:: Figures/umbrella.jpg
     :height: 200px
     :align: center
-    :alt: Picture of an umbrella
-    :figclass: align-center
 
-    Figure 1: An umbrella in the rain
-
-
-Computers can also make decisions or take action when something is true.  More specifically, (1) a computer can *test data* and (2) a computer can *execute instructions* if that test is true.  The ability to test data and take actions on the result is what allows the computer to deal with input and take action on it (e.g., if the credit card is valid then charge the card), or deal with data from the world around (e.g., if I see a stop sign then stop.).
-
-.. figure:: Figures/stop.jpg
-    :height: 200px
-    :align: center
-    :alt: Picture of a stop sign
-    :figclass: align-center
-
-    Figure 2: Picture of a stop sign
-    
-..	index::
-	single: conditional execution
-	
-The computer's ability to take action (execute some code) when something is true is also called **conditional execution**.  
-
+Algorithms also often need to make decisions about what actions to take. If a computer is processing
+an order and a credit card is valid then charge the card, otherwise it needs to ask for a new
+credit card. The computer's ability to take action (execute some code) when something is true is also
+called **conditional execution**.  
 

@@ -6,38 +6,79 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-
-	
-.. highlight:: python
-   :linenothreshold: 3
+.. include:: ../csp_global.rst
 
 The if Statement
 =====================
-..	index::
-	pair: if; statements
-	single: logical expression
-	single: Boolean expression
-	single: Conditional expression
-	
-In Python, we test data and execute instructions if the test is true using an ``if`` statement.  An ``if`` statement includes a **logical expression** which is the 'test.'   A **logical expression** is one that is either true or false.  This is also called a **Boolean expression**.  An example of a **logical expression** is ``x < 3``. The ``if`` statement is followed by a colon ``if x < 3:`` and a **block of code**.  The colon (``:``) at the end of the ``if`` statement is required.  The **block of code**  includes the instructions to execute if the test is true.  The **block of code** includes all the statements that are indented following the ``if`` statement.  If the test is true, execute the statement or statements in the block following the ``if`` will be executed.  If the test isn't true (is false) then execution will skip the block following the if and continue with the next statement following the block after the ``if`` statement.  
-    
-Run the code below with x set to 0 and then change x to 4 and see how the output differs depending on the value of x.   
-    
+
+.. index::
+    pair: if; statements
+    single: logical expression
+    single: Boolean expression
+
+In Python, we test data and execute instructions if the test is true using an ``if`` statement
+which takes the form:
+
+.. code::
+
+    if TEST:
+        BODY
+
+The **test**, also known as the **condition**, must be a **logical expression** - something
+that evaluates to either ``True`` or ``False``. Like a ``while`` statement, after the test,
+we must type a colon (``:``) and then indent the lines of the **body** - the instructions
+to execute if the test is ``True``.
+
+While learning about ``while``, we already learned the most common way to write logical
+expressions - by using **comparison operators**. As a review, here they are - the result
+of using any of these is either ``True`` or ``False``:
+
+.. index::
+    single: comparison operators
+
++------------+---------------------------------------------------------+
+| Expression | Logical meaning                                         |
++------------+---------------------------------------------------------+
+| a < b      | True if a is less than b                                |
++------------+---------------------------------------------------------+
+| a <= b     | True if a is less than or equal to b                    |
++------------+---------------------------------------------------------+
+| a > b      | True if a is greater than b                             |
++------------+---------------------------------------------------------+
+| a >= b     | True if a is greater than or equal to b                 |
++------------+---------------------------------------------------------+
+| a == b     | True if a is equal to b.                                | 
+|            | (Two equals signs, to distinguish it from assignment)   |
++------------+---------------------------------------------------------+
+| a != b     | True if a is *not* equal to b.                          | 
++------------+---------------------------------------------------------+
+
+Unlike a ``while``, an ``if`` will only run the instructions in its body one time. After the
+instructions have executed (which only happens if the test was ``True``), Python continues
+running the rest of this program. If the test isn't ``True`` (is ``False``) then execution
+will skip the block following the if and continue with the next statement following the
+block after the ``if`` statement.  
+
+Run the program below in codelens. Then change the first line so that it sets x to 4 and again
+run with codelens to see how the behavior differs if the test is True or False.
+
 .. activecode:: If_Structure
-    :tour_1: "Structural Tour"; 1: c0-line1; 2-3: c0-line2-3; 4: c0-line4;
 
     x = 0
     if x < 3:
     	print ("x is less than 3")
     print ("All done")
-    
-..	index::
-	single: flowchart
-	single: condition
-    
-The figure below is called a **flowchart**.  It shows the execution paths for a program.  The diamond shape contains the **logical expression** and shows the path 
-that the execution takes if the logical expression (also called the **condition**) is true as well as the path if the logical expression is false.  Notice that it will only execute the statements in the 
-indented block if the logical expression was true.  If the logical expression was false, execution will skip the code in the indented block and resume with the next statement.
+
+.. index::
+    single: flowchart
+    single: condition
+
+The figure below is called a **flowchart**.  It shows the execution paths for a program. 
+The diamond shape contains the **logical expression** and shows the path that the execution
+takes if the logical expression is true as well as the path if the logical expression is
+false.  Notice that it will only execute the statements in the indented block if the
+logical expression was true. Regardless if the indented code is executed, the program
+then continues running.
 
 .. figure:: Figures/decision.png
     :height: 350px
@@ -47,22 +88,26 @@ indented block if the logical expression was true.  If the logical expression wa
 
     Figure 3: Flow of execution for an if statement
     
-.. mchoice:: 12_2_1_If_Structure
-  :practice: T
-  :answer_a: line 3
-  :answer_b: line 4
-  :correct: b
-  :feedback_a: Line 3 will only execute when x is less than 3.
-  :feedback_b: Execution continues at the next statement beyond the block following the <code>if</code> when the logical expression is false.
+.. mchoice:: 11_2_1_If_Structure
+    :practice: T
+    :answer_a: A
+    :answer_b: B
+    :answer_c: A and B
+    :answer_d: Nothing
+    :correct: c
+    :feedback_a: A will be printed, but then the program continues running
+    :feedback_b: 10 is "greater than or equal to" 8
+    :feedback_c: Correct
+    :feedback_d: Try modifying the program above so you can test this code.
 
-   Given the code below, what line executes after line 2 executes? 
-   
-   :: 
-   
-     x = 4
-     if x < 3:
-         print ("x is less than 3")
-     print ("All done")
+    Given the code below, what will be printed?
+
+    :: 
+
+        x = 10
+        if x >= 8:
+            print ("A")
+        print ("B")
 
 
 

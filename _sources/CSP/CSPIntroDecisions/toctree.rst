@@ -1,15 +1,23 @@
-Chapter 12 - A Computer can Make Decisions
+Making Decisions
 ::::::::::::::::::::::::::::::::::::::::::::
 
-.. toctree::
-   :maxdepth: 2
+*Learning Objectives:*
 
-   decisions.rst
-   if.rst
-   multiple.rst
-   logicalEx.rst
-   complex.rst
-   practice.rst
-   ifAndElse.rst
-   summary.rst
-   Exercises.rst
+- Write programs that make decisions.
+- Introduce conditional execution with ``if`` statements and comparison operators
+- Introduce complex conditionals (with ``and``, ``or``, and ``not``).
+
+.. toctree::
+    :maxdepth: 2
+
+    decisions.rst
+    if.rst
+    ifFunctions.rst
+    multiple.rst
+    ifAndElse.rst
+    elif.rst
+    complex.rst
+    complexTricks.rst
+    practice.rst
+    summary.rst
+    Exercises.rst
