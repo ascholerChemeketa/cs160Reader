@@ -60,7 +60,7 @@ Division and Integer Division
 .. index::
     single: integer division
    
-This book is using Python 3.0 which returns a decimal value - 1.66666666666667 - from a calculation like
+This book is using Python 3 which returns a decimal value - 1.66666666666667 - from a calculation like
 ``5 / 3``.  If we executed ``5 / 3`` in many programming languages (or older version so Python)
 it would result in just 1 because we can only divide 5 by 3 one whole time. This form of
 division is known as **integer division** and is what you probably learned in elementary school

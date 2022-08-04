@@ -68,7 +68,7 @@ Try clicking the |runbutton| button below to see what the following program does
    :answer_b: Right
    :answer_c: Down
    :answer_d: Left
-   :correct: d
+   :correct: b
    :feedback_a: Check which way alex moved first in the example above
    :feedback_b: Check which way alex moved first in the example above
    :feedback_c: Check which way alex moved first in the example above

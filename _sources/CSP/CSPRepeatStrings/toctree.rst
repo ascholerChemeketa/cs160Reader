@@ -1,4 +1,4 @@
-Chapter 9 - Repeating Steps with Strings
+Repeating Steps with Strings
 :::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::

@@ -124,7 +124,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
   :answer_d: .2
   :correct: a
   :feedback_a: Correct. In Python code, pseudo code as well, a decimal value will be returned from an integer calculation. Note that in older Python code, it would have printed 0. In other languages as well, the code will return the number just before the decimal.
-  :feedback_b: Incorrect. Because we are applying Python 3.0, the code will return a decimal.
+  :feedback_b: Incorrect. Because we are applying Python 3, the code will return a decimal.
   :feedback_c: Incorrect. The code will calculate the value of a fraction.
   :feedback_d: Incorrect. The value of 1/4 is .25, not .2 or .20.
 

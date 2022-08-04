@@ -6,15 +6,7 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
     
-.. |audiobutton| image:: Figures/start-audio-tour.png
-    :height: 20px
-    :align: top
-    :alt: audio tour button
-
-
-	
-.. highlight:: java
-   :linenothreshold: 4
+.. include:: ../csp_global.rst
 
 Using Repetition with Strings
 ==============================

@@ -112,7 +112,7 @@ attempt to add up the numbers from 1 to 5 run line by line to see why:
 
 
 
-.. parsonsprob:: 7_5_3_Sum_100
+.. parsonsprob:: 10_5_3_Sum_100
     :numbered: left
     :adaptive:
 
