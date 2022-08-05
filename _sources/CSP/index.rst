@@ -20,4 +20,4 @@
     CSPRepeatTurtles/toctree.rst
     CSPRepeatImages/toctree.rst
     CSPRepeatNumbers/toctree.rst
-    CSPIntroDecisions/toctree.rst
+    CSPDecisionsIntro/toctree.rst
