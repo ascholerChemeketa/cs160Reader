@@ -8,6 +8,8 @@
 
 .. include:: ../csp_global.rst
 
+.. _building-a-simulation:
+
 Building a Simulation
 ==========================
 

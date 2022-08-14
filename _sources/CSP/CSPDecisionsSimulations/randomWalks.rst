@@ -13,7 +13,7 @@ Random Walks
 
 A `random walk <https://en.wikipedia.org/wiki/Random_walk>`__ is simulation technique that has
 been applied to solve problems in areas from physics to biology to materials science economics
-to who to recommend that people follow on `Twitter<https://dl.acm.org/doi/10.1145/2488388.2488433>`__
+to who to recommend that people follow on `Twitter <https://dl.acm.org/doi/10.1145/2488388.2488433>`__
 
 The basic idea is to think about a process in terms of a series of steps. These steps are done
 with some degree of randomness: maybe a fixed distance in a random direction, or in a fixed direction
