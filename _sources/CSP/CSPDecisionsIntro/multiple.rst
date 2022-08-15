@@ -79,7 +79,7 @@ turns out to be less than 1.
     of less than 1, 1, and more than 1. Are there values for weight that make the two programs
     above print different results when the same weight is used in both programs?
 
-**Mixed up programs**
+**Check your understanding**
 
 .. parsonsprob:: 11_3_2_Price_By_Weight
     :practice: T
@@ -107,4 +107,22 @@ turns out to be less than 1.
     print(price)
     print(total)
 
+.. mchoice:: 11_6_4_Logic_Ifs
+    :practice: T
+    :answer_a: x will always equal 0 after this code executes for any value of x
+    :answer_b: if x is greater than 2, the value in x will be doubled after this code executes
+    :answer_c: if x is greater than 2, x will equal 0 after this code executes
+    :correct: c
+    :feedback_a: If x was set to 1 originally, then it would still equal 1.
+    :feedback_b: What happens in the original when x is greater than 2?  
+    :feedback_c: If x is greater than 2, it will be set to 0.  
 
+    Which of the following is true about the code below?  
+
+    :: 
+
+        if (x > 2): 
+            x = x * 2
+        if (x > 4): 
+            x = 0
+        print(x)

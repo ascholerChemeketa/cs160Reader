@@ -1,6 +1,11 @@
 Repeating Steps with Turtles
 ::::::::::::::::::::::::::::::::::::::::::
 
+*Learning Objectives:*
+
+- Use a ``for`` loop to repeat code
+- Use range to create a list of numbers
+
 .. toctree::
     :maxdepth: 2
 

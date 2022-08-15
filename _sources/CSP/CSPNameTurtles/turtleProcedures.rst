@@ -51,6 +51,12 @@ procedures and functions.
       - number
       - How fast to move the turtle. Should be a value from 1-10 (1 is slow, 10 is fast), 
         or 0 which means "as fast as possible".
+    * - xcor
+      - None
+      - A function - returns the current x position of the turtle.
+    * - ycor
+      - None
+      - A function - returns the current y position of the turtle.
     * - hideturtle
       - None
       - Hides the turtle (the triangle icon)
