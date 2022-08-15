@@ -13,17 +13,18 @@ Names for Numbers
 .. pseudo_h2:: Contents
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   assignName.rst
-   rulesForNames.rst
-   expression.rst
-   expressionTable.rst
-   orderOfOperations.rst
-   driving.rst
-   ketchup.rst
-   walkAssign.rst
-   invoice.rst
-   summary.rst
-   VariablePracticeParsons.rst
-   Exercises.rst
+    assignName.rst
+    rulesForNames.rst
+    expression.rst
+    expressionTable.rst
+    orderOfOperations.rst
+    driving.rst
+    ketchup.rst
+    walkAssign.rst
+    invoice.rst
+    mathLibrary.rst
+    summary.rst
+    VariablePracticeParsons.rst
+    Exercises.rst
