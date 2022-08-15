@@ -15,9 +15,10 @@ sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 
-master_url = 'http://127.0.0.1:8000'
+master_url = get_master_url()
 project_name = 'CS160Reader'
-serving_dir = './built/cs160Reader'
+serving_dir = './built/'
+dest = '../published'
 
 options(
     sphinx = Bunch(docroot=".",),
@@ -37,8 +38,8 @@ options(
             'downloads_enabled': 'false',
             'enable_chatcodes': 'false',
             'allow_pairs': 'false',
-            'dynamic_pages': False,
-            'use_services': 'false',
+            'dynamic_pages': True,
+            'use_services': 'true',
             'basecourse': project_name,
             'course_id': project_name,
             # These are used for non-dynamic books.
