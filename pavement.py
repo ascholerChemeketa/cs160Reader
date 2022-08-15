@@ -16,7 +16,7 @@ sys.path.append(os.getcwd())
 home_dir = os.getcwd()
 
 master_url = get_master_url()
-project_name = 'CS160Reader'
+project_name = 'cs160Reader'
 serving_dir = './built/'
 dest = '../published'
 
