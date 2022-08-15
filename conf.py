@@ -242,7 +242,7 @@ html_favicon = "_static/chemeketa_favicon192.png"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path =  runestone_static_dirs() + ['_static'] + ['_sources/ComputingFields/_static']
+html_static_path =  runestone_static_dirs() + ['_static'] + ['_sources/ComputingFields/_static'] + ['_sources/CSP/_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -318,6 +318,6 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 #shortanswer_optional_div_class = 'journal alert alert-success'
 #showeval_div_class = 'runestone explainer alert alert-warning'
 #tabbed_div_class = 'alert alert-warning'
-
+generate_component_labels = False
 
 setup.custom_css_files = ["theme-overrides.css"]
