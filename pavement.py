@@ -17,7 +17,7 @@ home_dir = os.getcwd()
 
 master_url = get_master_url()
 project_name = 'cs160Reader'
-serving_dir = './built/'
+serving_dir = './built/cs160Reader'
 dest = './published'
 
 options(
