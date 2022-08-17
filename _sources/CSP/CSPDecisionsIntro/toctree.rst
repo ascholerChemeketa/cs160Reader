@@ -16,8 +16,7 @@ Making Decisions
     multiple.rst
     ifAndElse.rst
     elif.rst
-    complex.rst
-    complexTricks.rst
+    elifTricks.rst
     practice.rst
     summary.rst
     Exercises.rst
