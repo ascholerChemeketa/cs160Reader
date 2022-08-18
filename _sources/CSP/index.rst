@@ -22,4 +22,6 @@
     CSPRepeatNumbers/toctree.rst
     CSPDecisionsIntro/toctree.rst
     CSPDecisionsSimulations/toctree.rst
+    CSPDecisionsStrings/toctree.rst
+    CSPDecisionsImages/toctree.rst
     

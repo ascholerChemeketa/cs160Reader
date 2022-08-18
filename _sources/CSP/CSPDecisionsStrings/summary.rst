@@ -11,12 +11,12 @@
 
 
 
-Chapter 13 - Summary
+Chapter Summary
 ============================
 
-Chapter 13 included the following concepts from computing.
+This chapter included the following concepts from computing.
 
-..	index::
+.. index::
     single: and
     single: boolean expression
     single: condition
