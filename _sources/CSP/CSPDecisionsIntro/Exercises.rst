@@ -19,7 +19,7 @@ Chapter Exercises
     :autograde: unittest
     :practice: T
 
-    The code below is supposed ot set the price to 1.5 if the weight is less than 2 and
+    The code below is supposed to set the price to 1.5 if the weight is less than 2 and
     otherwise set it to 1.3. It then calculates the total be multiplying the weight by price.
 
     Fix 3 errors with indention in the code below so that it calculates the right total

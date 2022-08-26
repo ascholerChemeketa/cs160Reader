@@ -7,105 +7,115 @@
     is included in the section entitled "GNU Free Documentation License".
 
 
+.. include:: ../csp_global.rst 
+
+|image_defs| 
 
 Combining Pictures
 ====================
 
-We can use a conditional to copy just the non-white pixels from one picture to another picture.  We can take this tiny image of the women and put her by the Eiffel tower in Paris, France.  
+A common use of color replacement technology is "green scren" background replacement. An actor
+performs in front of a green wall or a Zoom meeting participant sits in front of a green sheet.
+A computer algorithm them looks for green pixels and replaces them with pixels from some other
+image. The result is that the person looks like they are in some other location. (Unless of 
+course they have a green shirt on, in which case it will look like their disembodied head is
+floating in the background.)
+
+We are going to put the woman shown below into the beach scene:
 
 .. raw:: html
 
-    <img src="../_static/lady_tiny.png" id="lady_tiny.png">
-    <img src="../_static/eiffel.jpg" id="eiffel.jpg">
+    <img class="center-block" src="../../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
+    <img class="center-block" src="../../_static/CSPImages/beach.jpg" id="beach.jpg">
+
+First up, we need to have an ``isGreen`` function to identify which pixels are part of the
+green background. It will be very similar to the ``isRed`` from the last page, only we want
+to verify that the green is greater than the red or blue values.
+
+.. activecode:: isGreen
+    :autograde: unittest
+    :practice: T
+
+    Write code to return ``True`` if the green value is 20 or more greater than both the red 
+    and blue values. Otherwise, return ``False``
+
+    ~~~~
+    from image import *
+
+    def isGreen(r, g, b):
+        #Write your logic here
+
+    # Main part of program
+    # These three should be considered green
+    print( isGreen(59, 165, 119) )
+    print( isGreen(47, 142, 102) )
+    print( isGreen(60, 220, 125) )
+    # These should not be considered green
+    print( isGreen(200, 200, 200) ) # gray
+    print( isGreen(180, 180, 0) )   # dark yellow
+    print( isGreen(200, 0, 200) )   # aqua
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(isGreen(59, 165, 144), True, "Testing 59, 165, 144.")
+            self.assertEqual(isGreen(47, 142, 102), True, "Testing 47, 142, 102.")
+            self.assertEqual(isGreen(190, 220, 125), True, "Testing 190, 220, 125.")
+            self.assertEqual(isGreen(200, 200, 200), False, "Testing 200, 200, 200.")
+            self.assertEqual(isGreen(180, 180, 0), False, "Testing 180, 180, 0.")
+            self.assertEqual(isGreen(200, 0, 200), False, "Testing 200, 0, 200.")
+
+    myTests().main()
+
+Once you get that working, you can bopy and paste it into the program below. It will load the
+two pictures, with the woman stored as ``img1`` and the beach as ``img2``. It the goes through
+each pixel in ``img1`` and asks ``isGreen`` about it. If so, that pixel gets replaced with the
+pixel from ``img2`` that is at the same x, y.
+
+.. activecode:: Copy_Non_White
+    :nocodelens:
+
+    from image import *
+
+    # PUT YOUR isGreen CODE HERE
+
+    # Main program
+    # CREATE THE IMAGES 
+    img1 = Image("green_screen.jpg")
+    img2 = Image("beach.jpg")
+
+    # LOOP THROUGH ALL THE PIXELS IN IMG1
+    for x in range(img1.getWidth()):
+        for y in range(img1.getHeight()):
+            p1 = img1.getPixel(x, y)
+            r1 = p1.getRed()
+            g1 = p1.getGreen()
+            b1 = p1.getBlue()
+
+            # CHECK IF THE PIXEL IS GREEN
+            if isGreen(r1, g1, b1):
     
-.. tabbed:: tab_combine
-
-    .. tab:: Copy_Non_White_Exercize
+                # GET THE CORESPONDING PIXEL FROM img2 
+                p2 = img2.getPixel(x, y)
+                # USE THAT INSTEAD in img1
+                img1.setPixel(x, y, p2)
     
-       Run the program below.  What would happen if ``img1`` was wider or taller than ``img2``, like if we tried to do this with the apple (see below) as img1 and gal2 (see below) as img2?  Can you modify the program below to work even if that were true?  One thing you might need to know is that the function ``min(value1,value2)`` will return the smaller of the two values.  If you have trouble figuring out a solution click on the Answer tab to see one way to do this.
+    # SHOW THE CHANGED IMAGE
+    win = ImageWin(img1.getWidth(), img1.getHeight())
+    img1.draw(win)
 
-       .. activecode:: Copy_Non_White
-          :tour_1: "Structural Tour"; 1: id2a-line1; 4-5: id2a-line4-5; 8-9: id2a-line8-9; 10: id2a-line10; 11-13: id2a-line11-13; 16: id2a-line16; 19: id2a-line19; 22-23: id2a-line21-22;
-          :nocodelens:
+.. mchoice:: 14_5_mc1
+    :answer_a: y < 110 and y > 10 and x > 70 and x < 200
+    :answer_b: (y > 110 or y < 10) and (x < 70 or x > 200)
+    :answer_c: y > 110 and y < 10 and x < 70 and x > 200
+    :answer_d: y > 110 or y < 10 or x < 70 or x > 200
+    :correct: d
+    :feedback_a: That will select pixels in the middle of the screen (y from 10-110 and x from 70-200). We want the opposite.
+    :feedback_b: That requires both the x and y to be outside the center area. It will make a "cross" of color.
+    :feedback_c: How can the y be > 110 and also be < 10? There will be no pixels that meet the criteria to be changed.
+    :feedback_d: Correct
 
-          from image import *
-    
-          # CREATE THE IMAGES 
-          img1 = Image("lady_tiny.png")
-          img2 = Image("eiffel.jpg")
-
-          # LOOP THROUGH ALL THE PIXELS IN IMG1
-          for x in range(img1.getWidth()):
-              for y in range(img1.getHeight()):
-                  p1 = img1.getPixel(x, y)
-                  r1 = p1.getRed()
-                  g1 = p1.getGreen()
-                  b1 = p1.getBlue()
-  
-                  # CHECK IF THE PIXEL ISN'T WHITE
-                  if r1 < 250 and g1 < 250 and b1 < 250:
-            
-            	      # COPY THE COLOR TO IMG2 
-            	      img2.setPixel(x, y + 130, p1)
-            
-          # SHOW THE CHANGED IMAGE
-          win = ImageWin(img2.getWidth(),img2.getHeight())
-          img2.draw(win)
-        
-          
-
-          
-    Below is a selection of images that you can use in the programs in this section.
-
-    
-
-          
-Here are a couple of other pictures that we can also use.  The first is apple.jpg and the second is gal2.jpg.  The apple is 500 wide by 334 high and gal2 is 248 wide by 240 high.
-
-.. raw:: html
-
-    <img src="../_static/apple.jpg" id="apple.jpg">
-    <img src="../_static/gal2.jpg" id="gal2.jpg">
-
-.. tabbed:: 15_2_1_WSt
-
-        .. tab:: Question
-
-           The decimal red-green-blue color code for purple is 128, 0, 128 respectively. Write code to change the white background in gal2.jpg to purple. 
-           
-           .. activecode::  15_2_1_WSq
-               :nocodelens:
-
-        .. tab:: Answer
-            
-          .. activecode::  15_2_1_WSa
-              :nocodelens:
-
-              from image import *
-
-              # CREATE AN IMAGE FROM A FILE
-              img = Image("gal2.jpg")
-
-              # LOOP THROUGH ALL PIXELS
-              for x in range(img.getWidth()):
-                  for y in range(img.getHeight()):
-                      p = img.getPixel(x, y)
-                      r = p.getRed()
-                      g = p.getGreen()
-                      b = p.getBlue()
-                     
-                      # VALUES FOR THE NEW COLOR
-                      if r >250 and g > 250 and b >250:
-                        newPixel = Pixel(128, 0, 128)
-                        img.setPixel(x, y, newPixel)
-
-              # SHOW THE CHANGED IMAGE
-              win = ImageWin(img.getWidth(),img.getHeight())
-              img.draw(win)
-
-
-                                
-
-
-
-
+    Which of these recipes will result in just the faces being in color and the outer parts of
+    the image being in black and white?

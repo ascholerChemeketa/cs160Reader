@@ -70,6 +70,8 @@ don't worry too much about that code - we want to focus on the loop and what it 
 pixel. This program changes the red value of each pixel to 0 - essentially it removes all the
 red from the image, making it look like we are looking through blue-green glass at it.
 
+.. _image-library:
+
 A Library of Images
 =====================
 
@@ -125,8 +127,8 @@ Modify the program above to try out the code on some of these other images by ch
         <div class="img-title">scooter.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/chemeketa_logo.jpg" id="chemeketa_logo.jpg">
-        <div class="img-title">chemeketa_logo.jpg</div>
+        <img src="../../_static/CSPImages/logo.jpg" id="logo.jpg">
+        <div class="img-title">logo.jpg</div>
     </div>
     <div>
         <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">

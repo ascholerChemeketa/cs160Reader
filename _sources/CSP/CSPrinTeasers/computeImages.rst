@@ -36,14 +36,11 @@ dimension) and top to bottom (the vertical or **y** dimension).
     
     Figure 1: A grid with horizontal (x) and vertical (y) dimensions 
 
-Pixels are quite small.  Even this small picture below has 180 columns and 240 rows of pixels:
+Pixels are quite small.  Even this small picture below has 200 columns and 300 rows of pixels:
 
-.. figure:: Figures/arch.jpg
-    :align: center
-    :alt: picture of an arch from Oxford, England
-    :figclass: align-center
-    
-    Figure 2: Picture of an arch from Oxford, England
+.. raw:: html
+
+    <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg" alt="A cat">
     
 .. mchoice:: 1_5_1_Image_Q1
    :answer_a: From left to right
@@ -87,9 +84,6 @@ The lines that are important are under the comments (lines that start with a ``#
 |runbutton| button to run the program and show the changed image.  Please note that processing
 all those pixels can take a few seconds.  
 
-.. raw:: html
-
-    <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">
     
 .. activecode:: 1_5_2_Images_Q2
     :nocodelens:

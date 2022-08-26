@@ -71,8 +71,8 @@ in this book:
         <div class="img-title">scooter.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/chemeketa_logo.jpg" id="chemeketa_logo.jpg">
-        <div class="img-title">chemeketa_logo.jpg</div>
+        <img src="../../_static/CSPImages/logo.jpg" id="logo.jpg">
+        <div class="img-title">logo.jpg</div>
     </div>
     <div>
         <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">

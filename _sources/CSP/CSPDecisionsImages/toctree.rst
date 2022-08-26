@@ -1,13 +1,19 @@
-Chapter 15 - Using Decisions with Images
+Using Decisions with Images
 ::::::::::::::::::::::::::::::::::::::::::::
+
+- Apply conditionals to modify images.
+- Combine loops, conditionals, and procedures.
 
 .. toctree::
    :maxdepth: 2
 
    decImages.rst
+   advancedSelection.rst 
    combineImages.rst
-   imageIfElse.rst
-   imageMultIf.rst
-   summary.rst
+   posterize.rst
+   locationConditions.rst
    Exercises.rst
-   exam14a15.rst
+
+.. note::
+
+    All of the :ref:`images we used earlier <image-library>` can be used in this chapter.
