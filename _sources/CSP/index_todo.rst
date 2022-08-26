@@ -21,8 +21,4 @@
     CSPPracticeQuestions/toctree.rst
     CSPUntimedPracticeQuestions/toctree.rst
 
-    
-    CSPWhileAndForLoops/toctree.rst
     CSPRepeatStrings/toctree.rst
-    CSPStringDecisions/toctree.rst
-    CSPImageDecisions/toctree.rst
