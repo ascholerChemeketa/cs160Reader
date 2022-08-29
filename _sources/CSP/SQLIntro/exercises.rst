@@ -150,23 +150,9 @@ columns of data:
     :dburl: /_static/movies.db
     :practice: T
 
-    Write a query to find just the year of release for the most recent movie
-    with a Metacritic score of 95 or above
+    Write a query to find just the year of release for movies with a Metacritic score
+    of 95 or above. Order the results so that the most recent movie comes first.
     ~~~~
 
     ====
     assert 0,0 == 2013
-
-.. activecode:: ch17_ex8
-    :language: sql
-    :dburl: /_static/movies.db
-    :practice: T
-
-    Write a query to find the average IMDB score for movies that were 
-    directed at least partially by Quentin Tarantino. (Hint: A movie can have
-    multiple directors, so you will need to use ``LIKE`` to identify movies
-    where Quentin Tarantino is in the list of directors.)
-    ~~~~
-
-    ====
-    assert 0,0 == 8.4

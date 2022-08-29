@@ -1,0 +1,225 @@
+..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+    and/or modify this document under the terms of the GNU Free Documentation
+    License, Version 1.3 or any later version published by the Free Software
+    Foundation; with Invariant Sections being Forward, Prefaces, and
+    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
+    the license is included in the section entitled "GNU Free Documentation
+    License".
+
+
+.. setup for automatic question numbering.
+
+Chapter Exercises
+--------------------
+
+The exercises for this chapter use a different database than the rest of the chapter. The 
+**movies** database has two tables, ``movies`` and ``actors``. We will be using the ``movie``
+table (so queries will look like ``SELECT * from movies``). It features the following 
+columns of data:
+
+.. list-table::
+    :widths: 30 70 
+    :header-rows: 1
+    :align: left
+    :name: movie_table
+
+    * - Column Name
+      - Description
+    * - id
+      - A unique number for each record
+    * - imdb_id
+      - The id of the movie in the Internet Movie DataBase (IMDB)
+    * - title
+      - Title fo  the movie
+    * - director
+      - Name of the director
+    * - year
+      - Year (number) the movie was released
+    * - rating
+      - Rating (R, PG, etc...)
+    * - genre
+      - Comma separated list of genres
+    * - runtime
+      - Length in minutes
+    * - country
+      - Comma separated list of countries it was released in
+    * - language
+      - Comma separated list of languages it was released in
+    * - imdb_score
+      - Score of movie (1-10) in IMDB
+    * - imdb_votes
+      - Number of ratings for the movie in the IMDB
+    * - metacritic_score
+      - Score of movie (1-100) on the Metacritic website
+
+
+.. activecode:: ch18_ex1
+    :language: sql
+    :dburl: /_static/movies.db
+    :practice: T
+
+    Write a query to find the average IMDB score for all the movies.
+    ~~~~
+
+    ====
+    assert 0,0 == 8.303999999999997
+
+
+.. activecode:: ch18_ex2
+    :language: sql
+    :dburl: /_static/movies.db
+    :practice: T
+
+    Write a query to find the highest IMDB score for any movie that was 
+    directed at least partially by Quentin Tarantino. (Hint: A movie can have
+    multiple directors, so you will need to use ``director LIKE '%Quentin Tarantino%'``
+    to identify movies where Quentin Tarantino is in the list of directors.)
+    ~~~~
+
+    ====
+    assert 0,0 == 8.9
+
+
+.. activecode:: ch18_ex3
+   :language: sql
+   :dburl: /_static/movies.db
+
+   Write a query to display the total number of 'PG-13' movies in the database.
+   ~~~~
+
+   ====
+   assert 0,0 == 32
+
+
+.. activecode:: ch18_ex4
+    :language: sql
+    :dburl: /_static/movies.db
+
+    Use ``GROUP BY`` to write a query to display the total number of movies in each rating category.
+    Make sure to select the rating and the total count like:
+
+    .. faux_code::
+
+        ...
+        PG    | 43
+        PG-13 | 32
+        ...
+
+    ~~~~
+
+    ====
+    assert 1,0 == G
+    assert 1,1 == 14
+
+.. activecode:: ch18_ex5
+    :language: sql
+    :dburl: /_static/movies.db
+
+    Write a query to get the highest rated movie according to IMDB score for each director.
+    (It is OK to treat a list of directors as a "separate director"). 
+    Display the director's name and the IMDB score achieved. Order the output so the directors
+    with the highest scores come first.
+
+    ~~~~
+
+    ====
+    assert 0,0 == Frank Darabont
+    assert 0,1 == 9.3
+    assert 1,0 == Francis Ford Coppola
+    assert 1,1 == 9.2
+
+.. activecode:: ch18_ex6
+    :language: sql
+    :dburl: /_static/movies.db
+
+    Write a query to get the total number of films on the list made by each director.
+    But only retrieve the data for directors with at least 2 films.
+
+    Display the director's name and the number of films. Don't sort the results.
+
+    ~~~~
+
+    ====
+    assert 0,0 == Akira Kurosawa
+    assert 0,1 == 5
+    assert 1,0 == Alfred Hitchcock
+    assert 1,1 == 6
+
+.. activecode:: ch18_ex7
+    :language: sql
+    :dburl: /_static/movies.db
+
+    Write a query to get the total number of films on the list made by each director.
+    But only retrieve the data for directors with at least 2 films.
+
+    Display the director's name and the number of films. Don't sort the results.
+
+    ~~~~
+
+    ====
+    assert 0,0 == Akira Kurosawa
+    assert 0,1 == 5
+    assert 1,0 == Alfred Hitchcock
+    assert 1,1 == 6
+
+The following problems will also make use of the ``actors`` table. It consists of records that
+match a movie to a particular actor. If an actor appears in multiple movies, they will appear
+in one record for each movie they appear in.
+
+.. list-table::
+    :widths: 30 70 
+    :header-rows: 1
+    :align: left
+    :name: actor_table
+
+    * - Column Name
+      - Description
+    * - id
+      - A unique number for each record
+    * - movie_id
+      - The id of the movie the actor appears in. This will match the ``id`` field in the ``movies`` table.
+    * - imdb_id
+      - ID of the actor on the IMDB website
+    * - name
+      - Name of the actor
+
+
+.. activecode:: ch18_ex8
+    :language: sql
+    :dburl: /_static/movies.db
+
+    We would like to know which movies Marlon Brando acted in.
+
+    Write a query that displays all of the data that we get from joining the ``actors`` table
+    with the ``movies`` table (so that ``actors.movie_id`` matches with ``movies.id``) and
+    selecting the actor whose name is ``'Marlon Brando'``.
+
+    ~~~~
+
+    ====
+    assert 0,3 == Marlon Brando
+    assert 0,6 == Apocalypse Now
+    assert 1,3 == Marlon Brando
+    assert 1,6 == On the Waterfront
+
+
+.. activecode:: ch18_ex9
+    :language: sql
+    :dburl: /_static/movies.db
+
+    Display the highest Metacritic score for the movies each actor appeared in.
+
+    Display the actor's name and the highest score (we won't know what movie it is for).
+
+    You will have to join ``actors`` and ``movies`` so that you have access to all the
+    needed data. You will also have to ``GROUP BY``. The ``GROUP BY`` should come after the
+    ``JOIN``.
+
+    ~~~~
+
+    ====
+    assert 0,0 == A.B. Lane
+    assert 0,1 == 0
+    assert 2,0 == A.K. Hangal
+    assert 2,1 == 84

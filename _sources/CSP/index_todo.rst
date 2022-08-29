@@ -10,7 +10,6 @@
     :numbered:
     :maxdepth: 3
 
-    CSPIntroData/toctree.rst
     CSPStringPieces/toctree.rst
     CSPWebData/toctree.rst
     CSPAbilitySummary/toctree.rst

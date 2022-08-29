@@ -24,4 +24,6 @@
     CSPDecisionsSimulations/toctree.rst
     CSPDecisionsStrings/toctree.rst
     CSPDecisionsImages/toctree.rst
-    
+    CSPIntroData/toctree.rst
+    SQLIntro/toctree.rst
+    SQLGroupJoin/toctree.rst

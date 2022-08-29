@@ -22,7 +22,6 @@ SQL Introduction
     filtering.rst
     like.rst
     sorting.rst
-    aggregating.rst
     summary.rst
     exercises.rst
 
