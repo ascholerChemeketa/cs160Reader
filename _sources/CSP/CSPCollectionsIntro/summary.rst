@@ -9,33 +9,35 @@
 .. setup for automatic question numbering.
 
 
-
-
-Chapter 16 - Concept Summary
+Chapter Concept Summary
 ============================
 
-Chapter 16 included the following concepts from computing.
+This chapter included the following concepts from computing.
 
-..	index::
-    single: append
-    single: for each loop
+.. index::
     single: list
     single: len
     single: index
-    single: range
-    single: string
+    pair: list; append
+    pair: list; insert
+    pair: list; remove
+    pair: list; pop
     
-- **Append** - To append means to combine two strings with the characters from the second string following right after the characters in the first string.  You can also append two lists which means that the items in the second list are added in order to the end of the first list.  This is also called **concatenation**.  
-- **For Each Loop** - A for each loop loops executes the body of the loop one time for each element in a collection (a string or list).  
-- **List** - A list holds items in order.  An example of a list is ``[1, "hi", 3]``.   Lists in Python can hold numbers and strings.  
-- **Index** - The index is the position of the item in a list or string.  In Python the first item is at index 0.  
-- **String** - A string is a collection of characters in order.  In Python the characters are inside a pair of single or double quotes.  
+- **Append** - To append means to add something to the end
+- **List** - A list holds items in order.  An example of a list is ``[1, "hi", 3]``. 
+  Lists in Python can hold any type of data.
+- **Index** - The index is the position of the item in a list or string.  In Python the
+  first item is at index 0.  
 
 Summary of Python Keywords and Functions
 ------------------------------------------- 
-- **Len** - The ``len`` (length) function returns the number of items in a collection (a string or a list). 
-- **Range** - The ``range`` function returns a list of numbers.  For example, ``range(3)`` returns the list ``[0, 1, 2]``.  The optional third value is the change amount ``range(5, -1, -1)`` returns the list ``[5, 4, 3, 2, 1, 0]``.
+- **len** - The ``len`` (length) function returns the number of items in a collection (a string or
+  a list). It is used like: ``len(list)``
+- **append** - Adds an item to the end of a list: ``list.append(item)``
+- **insert** - Adds an item to the specified position of a list: ``list.insert(0, item)`` adds the
+  item at the start of the list.
+- **pop** - Removes an item from the specified position of a list: ``list.pop(1)`` removes the
+  second item (index 1). When called without an index, ``list.pop()``, it removes the last thing.
+- **remove** - Removes the first copy of the specified item from the list. ``list.remove("A")``
+  would remove the first "A" from the list.
 
-.. note::  
-
-   This is the end of chapter 16.   We would love it if you could give us some feedback on this chapter at https://www.surveymonkey.com/r/ch16-student-fb.  You might want to open this link in a new tab to make it easier for you to return to your place in this ebook.

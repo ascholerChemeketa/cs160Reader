@@ -6,19 +6,16 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-
-	
-.. highlight:: java
-   :linenothreshold: 4
-
 What is a List?
 =================
 
 .. index::
     single: list
-    
-A **list** holds items in order. A **list** in Python is enclosed in ``[`` and ``]`` and can have values separated by commas, like ``[1,2,3,4,5,6,7,8,9,10]``.  You probably use **lists** all the time.  People often 
-make a list before they go shopping or a list of things to do.  A **list** has an order and each list item has a position in the list, like the first item in a list or the last item in a list.
+
+A **list** is just an ordered collection of items - you probably use **lists** all the time.
+People often  make a list before they go shopping or a list of things to do.  Although they
+may not explicitly number the items, there is always a first thing in a list, and a second,
+and so on:
 
 .. figure:: Figures/lists.jpg
     :height: 250px
@@ -26,120 +23,61 @@ make a list before they go shopping or a list of things to do.  A **list** has a
     :alt: a shopping list
     :figclass: align-center
 
-    Figure 2: A shopping list
-
-When you ran the code in the last section, did you get 55?  That's the sum of all the numbers from 1 to 10.  Here is the program again.  Run it if you don't remember what it printed before.
-
-.. activecode:: Numbers_Repeat2
-    :tour_1: "Line by line tour"; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;
-    :tour_2: "High level tour"; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;
-	
-    sum = 0  # Start out with nothing
-    thingsToAdd = [1,2,3,4,5,6,7,8,9,10]
-    for number in thingsToAdd:
-    	sum = sum + number
-    print(sum)
-
-.. mchoice:: 7_3_1_Numbers_Repeat2_Q1
-   :answer_a: 55
-   :answer_b: 0
-   :answer_c: 3628800
-   :answer_d: Error - number is too big
-   :correct: c
-   :feedback_a: That's the sum
-   :feedback_b: That's what you get if you leave the sum as 0.  Multipying everything by 0 gets you 0
-   :feedback_c: That's 1*2*3*4*5*6*7*8*9*10
-   :feedback_d: It should actually work
-
-   Now, change the program above to get the product instead of the sum (e.g., replace `+` with `*`, and replace the `0` as the initial value of `sum` to `1`).  What do you get now when you run the program?
-
-.. note
-    Once you change the program above in order to use ``*`` instead of ``+``, you will see that it is still using the name (*variable*) ``sum`` to represent the `product` of all the numbers in ``thingsToAdd``.  The program would be *better* if we used the right name for the variable: ``product`` instead of ``sum`` once we switched to multiplication (``*``) from addition (``+``).  However, the program still *works*.  In the end, the names for the variables are there for the benefit of the *humans*, not the computer.  The computer doesn't care if we name the program `xyzzy1776`.  It will *work* with a bad variable name.  It's just not as readable.  **You should write your programs so that people can understand them, not just computers.** 
-
-Using Better Variable Names
------------------------------
-
-Let's write that program again with a better variable name.  We will use ``product`` instead of ``sum`` for the variable name that holds the result of the calculation.  Step through the code below by clicking on the *Forward* button and note what value the variable ``number`` is set to each time through the loop.  Also note how the variable ``product`` changes during the loop.
-
-.. codelens:: Numbers_Product
-	
-    product = 1  # Start out with nothing
-    numbers = [1,2,3,4,5,6,7,8,9,10]
-    for number in numbers:
-    	product = product * number
-    print(product)
-    
-.. mchoice:: 7_3_2_Numbers_Product_Q1
-   :answer_a: 1
-   :answer_b: 2
-   :answer_c: 3
-   :answer_d: 4
-   :answer_e: 10
-   :correct: c
-   :feedback_a: That's the value the first time through the loop
-   :feedback_b: That's the value the second time through the loop
-   :feedback_c: That's the value the third time through the loop
-   :feedback_d: That's the value the fourth time through the loop
-   :feedback_e: That's the value the last time through the loop
-
-   What is the value of number the 3rd time through the loop?
-   
-.. mchoice:: 7_3_3_Numbers_Product_Q2
-   :answer_a: 6
-   :answer_b: 10
-   :answer_c: 24
-   :answer_d: 120
-   :correct: c
-   :feedback_a: That's the value after the 3rd time through the loop.
-   :feedback_b: That's the value if we were adding up the values rather than multiplying them.
-   :feedback_c: That's the value after the 4th time through the loop.
-   :feedback_d: That's the value after the 5th time through the loop.
-
-   What is the value of product after the 4th time through the loop?
-   
-.. parsonsprob:: 7_3_4_Average
-   :numbered: left
-   :adaptive:
-
-   The following program calculates the average of a list of numbers, but the code is mixed up.  First initialize the sum to 0.  Then create the list of numbers.  Loop through the list and each time add the current number to the sum.  Print the sum divided by the number of items in the list.  <b>Don't forget that you must indent the lines that are repeated in the loop</b>.
-   -----
-   sum = 0
-   numbers = [90, 80, 75, 90, 83]
-   for number in numbers:
-       sum = sum + number
-   print(sum / 5) 
-
-.. tabbed:: 7_3_5_WSt
-
-        .. tab:: Question
-
-           Define a function to calculate the sum of 1 to the passed number using the range function.  Return the sum from the function.  Call the function and print the result.
-           
-           .. activecode::  7_3_5_WSq
-                :nocodelens:
-
-        .. tab:: Answer
-            
-          .. activecode::  7_3_5_WSa
-              :nocodelens:
-              
-              # DEFINE THE FUNCTION
-              def summation(endvalue):
-                # INITIALIZE ACCUMULATOR 
-                sum = 0  
-                # NAME DATA
-                numbers = range(1, endvalue +1)
-                # LOOP THROUGH DATA
-                for number in numbers:
-                  # ACCUMULATE 
-                  sum = sum + number
-                # RETURN SUM
-                return sum
-
-              # PRINT RESULT 
-              print(summation(10)) 
-                
+    A shopping list
 
 
+A **list** in Python is a collection of values. We can write a list by enclosed values in
+``[`` and ``]`` and separating them by commas, like ``[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]``.
+The values in a list can be any type of data, and can even be a mix of types of data
+(though it is often best to avoid complicating things by mixing different types of
+data in one list).
+
+.. activecode:: list_samples
+
+    numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    print(numberList)
+
+    nameList = ["Dora", "Rex", "Humberto", "Devon"]
+    print(nameList)
+
+    randomList = [42, "hello", 3.14]
+    print(randomList)
+
+Recall that the ``for`` loop will automatically repeat code for each value in a list. That means
+if I want to greet each name in the ``nameList`` I could do:
+
+.. activecode:: list_for_sample
+
+    nameList = ["Dora", "Rex", "Humberto", "Devon"]
+
+    # Iterate through the values and call each one name
+    for name in nameList:
+        # Do stuff with that name
+        print("Greetings", name)
+
+Putting items into a list makes it easier to process them all in a similar way without repeating
+chunks of code multiple times. Complete this algorithm for the problem discussed on the last page
+of finding the highest quiz score.
+
+.. parsonsprob:: list_basics_parson
+    :numbered: left
+    :practice: T
+    :adaptive:
+
+    The following program should loop through all the scores and compare them to the highest
+    score we have seen so far. (When we start, the highest score we have seen is 0.) If a
+    score is higher than the highest score we have seen, we need to update the highest value.
+    When we are done looping through the scores, we will print the highest value we saw.
+    -----
+    scores = [82, 95, 92, 76, 98, 84, 89, 92]
+    highest = 0
+    =====
+    for score in scores:
+    =====
+        if score > highest:
+    =====
+            highest = score
+    =====
+    print("The highest score was", highest)
 
 
