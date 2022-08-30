@@ -11,7 +11,6 @@
     :maxdepth: 3
 
     CSPStringPieces/toctree.rst
-    CSPWebData/toctree.rst
     CSPAbilitySummary/toctree.rst
     CSPInternet/toctree.rst
     CSPCreativity/toctree.rst
