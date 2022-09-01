@@ -1,16 +1,20 @@
-Chapter 18 - Working with Data on the Web
+Working with Data in Python
 ::::::::::::::::::::::::::::::::::::::::::::
 
-.. toctree::
-   :maxdepth: 2
+*Learning Objectives:*
 
-   webData.rst
-   pollData.rst
-   readData.rst
-   largestPoll.rst
-   lowestPoll.rst
-   avgPoll.rst
-   datastates.rst
-   findPollState.rst
-   summary.rst
-   Exercises.rst
+- Use Python to analyze tables of data.
+
+.. toctree::
+    :maxdepth: 2
+
+    pythonData.rst
+    pollData.rst
+    readData.rst
+    largestPoll.rst
+    avgPoll.rst
+    datastates.rst
+    findPollState.rst
+    compareStates.rst
+    summary.rst
+    Exercises.rst

@@ -6,557 +6,188 @@
     no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
     is included in the section entitled "GNU Free Documentation License".
 
-..  shortname:: Data on the Web
-..  description:: An introduction to analyzing data on the Web
-
-.. setup for automatic question numbering.
-
-
 
 Reading the data
 =================
 
-This section uses the same data file that we just saw. If you want to see **all** of the data click on the *Show* button below.  Once it appears, you can hide it again by clicking on the *Hide* button.
+This section uses the same data file that we just saw. If you want to see it, click
+the *Show* button below.  Once it appears, you can hide it again by clicking
+on the *Hide* button.
 
-.. reveal:: pol_Data_18_3
-    :showtitle: Show
-    :hidetitle: Hide
+.. include:: ./usPollData.rst
 
-    .. raw:: html
+.. index::
+    single: file; text
+    single: file; binary
 
-       <pre id="uspoll.txt">
-       Aberdeen, SD :13 :8
-       Adrian, MI :15 :9
-       Akron, OH :18 :11
-       Albany, GA :18 :11
-       Albany-Lebanon, OR :14 :8
-       Albany-Schenectady-Troy, NY :13 :8
-       Albuquerque, NM :12 :7
-       Alexandria, LA :20 :12
-       Allegan, MI :14 :9
-       Allentown-Bethlehem-Easton, PA-NJ :21 :12
-       Altoona, PA :19 :12
-       Anchorage, AK :13 :8
-       Anderson, IN :18 :11
-       Ann Arbor, MI :16 :10
-       Appleton, WI :14 :9
-       Asheville, NC :15 :9
-       Athens, OH :14 :9
-       Athens, TN :15 :9
-       Athens-Clarke County, GA :16 :9
-       Atlanta-Sandy Springs-Marietta, GA :23 :14
-       Atlantic City-Hammonton, NJ :14 :8
-       Augusta-Richmond County, GA-SC :18 :11
-       Augusta-Waterville, ME :14 :9
-       Austin-Round Rock, TX :17 :10
-       Bakersfield, CA :24 :15
-       Baltimore-Towson, MD :20 :12
-       Bangor, ME :12 :7
-       Baraboo, WI :17 :10
-       Baton Rouge, LA :19 :11
-       Bay City, MI :13 :8
-       Beaver Dam, WI :15 :9
-       Beckley, WV :14 :8
-       Bellingham, WA :7 :4
-       Bennington, VT :11 :7
-       Birmingham-Hoover, AL :20 :12
-       Bishop, CA :11 :6
-       Bismarck, ND :11 :6
-       Bloomington, IN :17 :10
-       Bloomington-Normal, IL :16 :9
-       Boise City-Nampa, ID :17 :10
-       Boone, NC :13 :8
-       Boston-Cambridge-Quincy, MA-NH :16 :10
-       Boulder, CO :12 :7
-       Bowling Green, KY :17 :10
-       Bradenton-Sarasota-Venice, FL :12 :7
-       Brainerd, MN :8 :5
-       Bremerton-Silverdale, WA :7 :4
-       Bridgeport-Stamford-Norwalk, CT :16 :9
-       Brigham City, UT :12 :7
-       Brookings, SD :14 :9
-       Brownsville-Harlingen, TX :16 :10
-       Brunswick, GA :13 :8
-       Buffalo-Niagara Falls, NY :16 :9
-       Burlington, NC :14 :9
-       Burlington-South Burlington, VT :12 :7
-       Butte-Silver Bow, MT :19 :11
-       Cadillac, MI :10 :6
-       Cambridge, MD :13 :8
-       Canton-Massillon, OH :21 :12
-       Cape Coral-Fort Myers, FL :12 :7
-       Casper, WY :9 :5
-       Cedar Rapids, IA :16 :10
-       Champaign-Urbana, IL :16 :10
-       Charleston, WV :18 :11
-       Charleston-North Charleston-Summerville, SC :16 :10
-       Charlotte-Gastonia-Concord, NC-SC :16 :10
-       Charlottesville, VA :13 :8
-       Chattanooga, TN-GA :18 :11
-       Cheyenne, WY :9 :6
-       Chicago-Naperville-Joliet, IL-IN-WI :22 :13
-       Chico, CA :12 :7
-       Cincinnati-Middletown, OH-KY-IN :23 :14
-       Clarksburg, WV :16 :10
-       Clarksville, TN-KY :16 :10
-       Clearlake, CA :7 :4
-       Cleveland-Elyria-Mentor, OH :24 :15
-       Clinton, IA :18 :11
-       Colorado Springs, CO :12 :7
-       Columbia, SC :17 :10
-       Columbia, TN :14 :8
-       Columbus, GA-AL :19 :11
-       Columbus, OH :18 :11
-       Concord, NH :16 :9
-       Cookeville, TN :14 :9
-       Corning, NY :11 :7
-       Corpus Christi, TX :18 :11
-       Dallas-Fort Worth-Arlington, TX :20 :12
-       Daphne-Fairhope-Foley, AL :15 :9
-       Davenport-Moline-Rock Island, IA-IL :18 :11
-       Dayton, OH :18 :11
-       Decatur, AL :15 :9
-       Decatur, IL :17 :10
-       Deltona-Daytona Beach-Ormond Beach, FL :11 :6
-       Denver-Aurora-Broomfield, CO :14 :9
-       Des Moines-West Des Moines, IA :15 :9
-       Detroit-Warren-Livonia, MI :21 :12
-       Dickinson, ND :7 :4
-       Dothan, AL :15 :9
-       Dover, DE :14 :8
-       Duluth, MN-WI :11 :6
-       Durango, CO :7 :4
-       Durham, NC :14 :8
-       Durham-Chapel Hill, NC :14 :8
-       Dyersburg, TN :15 :9
-       East Stroudsburg, PA :13 :8
-       Eau Claire, WI :14 :8
-       El Centro, CA :24 :14
-       El Dorado, AR :18 :11
-       El Paso, TX :21 :12
-       Elizabethtown, KY :20 :12
-       Elkhart-Goshen, IN :21 :12
-       Erie, PA :19 :11
-       Eugene-Springfield, OR :13 :8
-       Eureka-Arcata-Fortuna, CA :11 :7
-       Evansville, IN-KY :19 :12
-       Fairbanks, AK :31 :19
-       Fairmont, WV :17 :10
-       Fargo, ND-MN :13 :8
-       Farmington, NM :8 :5
-       Fayetteville, NC :15 :9
-       Fayetteville-Springdale-Rogers, AR-MO :16 :10
-       Flagstaff, AZ :9 :5
-       Flint, MI :13 :8
-       Florence, SC :15 :9
-       Florence-Muscle Shoals, AL :15 :9
-       Fort Collins-Loveland, CO :12 :7
-       Fort Madison-Keokuk, IA-MO :18 :11
-       Fort Payne, AL :15 :9
-       Fort Smith, AR-OK :17 :10
-       Fort Wayne, IN :23 :14
-       Fresno, CA :74 :45
-       Gadsden, AL :16 :10
-       Gainesville, FL :12 :7
-       Gainesville, GA :16 :9
-       Gettysburg, PA :18 :11
-       Gillette, WY :13 :8
-       Goldsboro, NC :21 :13
-       Grand Island, NE :13 :8
-       Grand Junction, CO :12 :7
-       Grand Rapids-Wyoming, MI :16 :10
-       Grants Pass, OR :12 :7
-       Greeley, CO :13 :8
-       Green Bay, WI :16 :10
-       Greensboro-High Point, NC :14 :9
-       Greenville, NC :13 :8
-       Greenville-Mauldin-Easley, SC :16 :10
-       Grenada, MS :16 :9
-       Gulfport-Biloxi, MS :16 :10
-       Hagerstown-Martinsburg, MD-WV :19 :11
-       Hammond, LA :15 :9
-       Hanford-Corcoran, CA :28 :17
-       Harriman, TN :22 :13
-       Harrisburg-Carlisle, PA :20 :12
-       Harrisonburg, VA :15 :9
-       Hartford-West Hartford-East Hartford, CT :14 :9
-       Hattiesburg, MS :18 :11
-       Helena, MT :16 :9
-       Helena-West Helena, AR :16 :9
-       Hickory-Lenoir-Morganton, NC :16 :10
-       Hilo, HI :27 :16
-       Hobbs, NM :13 :8
-       Holland-Grand Haven, MI :15 :9
-       Homosassa Springs, FL :11 :7
-       Honolulu, HI :12 :7
-       Hot Springs, AR :18 :11
-       Houma-Bayou Cane-Thibodaux, LA :13 :8
-       Houston-Sugar Land-Baytown, TX :21 :13
-       Huntington-Ashland, WV-KY-OH :19 :11
-       Huntsville, AL :16 :9
-       Indianapolis-Carmel, IN :25 :15
-       Iowa City, IA :16 :10
-       Jackson, MS :19 :11
-       Jackson, TN :15 :9
-       Jackson, WY-ID :11 :6
-       Jacksonville, FL :13 :8
-       Jamestown-Dunkirk-Fredonia, NY :13 :8
-       Jasper, IN :18 :11
-       Johnstown, PA :19 :12
-       Juneau, AK :11 :6
-       Kahului-Wailuku, HI :11 :6
-       Kalamazoo-Portage, MI :17 :10
-       Kalispell, MT :13 :8
-       Kansas City, MO-KS :24 :15
-       Kapaa, HI :11 :7
-       Keene, NH :16 :10
-       Kingsport-Bristol-Bristol, TN-VA :15 :9
-       Kinston, NC :13 :8
-       Klamath Falls, OR :18 :11
-       Knoxville, TN :18 :11
-       Kokomo, IN :16 :10
-       La Crosse, WI-MN :14 :8
-       Laconia, NH :11 :7
-       Lafayette, IN :24 :14
-       Lafayette, LA :18 :11
-       Lake Charles, LA :14 :8
-       Lake Havasu City-Kingman, AZ :6 :4
-       Lakeland-Winter Haven, FL :13 :8
-       Lancaster, PA :21 :13
-       Lansing-East Lansing, MI :14 :9
-       Laramie, WY :9 :6
-       Las Cruces, NM :25 :15
-       Las Vegas-Paradise, NV :20 :12
-       Laurel, MS :18 :11
-       Lawrenceburg, TN :14 :8
-       Lebanon, NH-VT :11 :7
-       Lebanon, PA :24 :14
-       Lewiston-Auburn, ME :13 :8
-       Lexington-Fayette, KY :16 :10
-       Lima, OH :17 :10
-       Lincoln, NE :14 :9
-       Little Rock-North Little Rock-Conway, AR :19 :12
-       Logan, UT-ID :15 :9
-       Los Angeles-Long Beach-Santa Ana, CA :33 :20
-       Louisville/Jefferson County, KY-IN :22 :13
-       Lumberton, NC :14 :9
-       Lynchburg, VA :13 :8
-       Macon, GA :19 :12
-       Madera, CA :27 :16
-       Madison, WI :16 :9
-       Manchester-Nashua, NH :14 :8
-       Marshall, MN :12 :7
-       Marshall, TX :17 :10
-       McAlester, OK :19 :11
-       McAllen-Edinburg-Mission, TX :18 :11
-       Medford, OR :15 :9
-       Memphis, TN-MS-AR :17 :10
-       Merced, CA :18 :11
-       Meridian, MS :17 :10
-       Miami-Fort Lauderdale-Pompano Beach, FL :14 :8
-       Michigan City-La Porte, IN :16 :10
-       Middlesborough, KY :17 :10
-       Milwaukee-Waukesha-West Allis, WI :18 :11
-       Minneapolis-St. Paul-Bloomington, MN-WI :17 :10
-       Missoula, MT :21 :12
-       Mobile, AL :15 :9
-       Modesto, CA :25 :15
-       Monroe, LA :22 :13
-       Monroe, MI :16 :9
-       Montgomery, AL :18 :11
-       Morgantown, WV :15 :9
-       Mount Vernon, IL :14 :9
-       Muncie, IN :16 :10
-       Muscatine, IA :18 :11
-       Muskegon-Norton Shores, MI :15 :9
-       Napa, CA :23 :14
-       Nashville-Davidson--Murfreesboro--Franklin, TN :17 :10
-       New Castle, IN :15 :9
-       New Haven-Milford, CT :15 :9
-       New Orleans-Metairie-Kenner, LA :21 :13
-       New York-Northern New Jersey-Long Island, NY-NJ-PA :23 :14
-       Niles-Benton Harbor, MI :14 :9
-       Nogales, AZ :16 :10
-       Norwich-New London, CT :13 :8
-       Ogden-Clearfield, UT :15 :9
-       Oklahoma City, OK :16 :10
-       Omaha-Council Bluffs, NE-IA :19 :12
-       Orlando-Kissimmee, FL :12 :7
-       Owensboro, KY :18 :11
-       Oxnard-Thousand Oaks-Ventura, CA :16 :10
-       Paducah, KY-IL :17 :10
-       Palm Bay-Melbourne-Titusville, FL :10 :6
-       Parkersburg-Marietta-Vienna, WV-OH :17 :10
-       Pascagoula, MS :15 :9
-       Pendleton-Hermiston, OR :12 :7
-       Pensacola-Ferry Pass-Brent, FL :14 :8
-       Peoria, IL :16 :10
-       Philadelphia-Camden-Wilmington, PA-NJ-DE-MD :28 :17
-       Phoenix-Mesa-Scottsdale, AZ :26 :16
-       Pittsburgh, PA :25 :15
-       Pittsfield, MA :14 :9
-       Platteville, WI :15 :9
-       Pocatello, ID :15 :9
-       Ponca City, OK :17 :10
-       Portland-South Portland-Biddeford, ME :15 :9
-       Portland-Vancouver-Beaverton, OR-WA :12 :7
-       Portsmouth, OH :16 :10
-       Poughkeepsie-Newburgh-Middletown, NY :13 :8
-       Prescott, AZ :7 :4
-       Prineville, OR :14 :9
-       Providence-New Bedford-Fall River, RI-MA :18 :11
-       Provo-Orem, UT :14 :8
-       Pueblo, CO :11 :7
-       Quincy, IL-MO :16 :10
-       Raleigh-Cary, NC :16 :9
-       Rapid City, SD :11 :6
-       Reading, PA :19 :11
-       Red Bluff, CA :14 :8
-       Redding, CA :10 :6
-       Reno-Sparks, NV :15 :9
-       Richmond, VA :15 :9
-       Richmond-Berea, KY :15 :9
-       Riverside-San Bernardino-Ontario, CA :34 :21
-       Riverton, WY :13 :8
-       Roanoke, VA :15 :9
-       Rochester, MN :13 :8
-       Rochester, NY :14 :9
-       Rock Springs, WY :13 :8
-       Rockford, IL :16 :9
-       Rocky Mount, NC :13 :8
-       Rome, GA :18 :11
-       Russellville, AR :14 :9
-       Rutland, VT :15 :9
-       Sacramento--Arden-Arcade--Roseville, CA :15 :9
-       Salinas, CA :10 :6
-       Salisbury, NC :16 :9
-       Salt Lake City, UT :15 :9
-       San Antonio, TX :14 :9
-       San Diego-Carlsbad-San Marcos, CA :24 :14
-       San Francisco-Oakland-Fremont, CA :16 :10
-       San Jose-Sunnyvale-Santa Clara, CA :16 :10
-       San Luis Obispo-Paso Robles, CA :16 :10
-       Santa Barbara-Santa Maria-Goleta, CA :14 :9
-       Santa Cruz-Watsonville, CA :10 :6
-       Santa Fe, NM :8 :5
-       Santa Rosa-Petaluma, CA :14 :8
-       Sault Ste. Marie, MI :14 :8
-       Savannah, GA :17 :10
-       Scottsbluff, NE :9 :6
-       Scranton--Wilkes-Barre, PA :14 :8
-       Seaford, DE :14 :8
-       Seattle-Tacoma-Bellevue, WA :16 :10
-       Sheridan, WY :14 :8
-       Shreveport-Bossier City, LA :26 :16
-       Sierra Vista-Douglas, AZ :11 :7
-       Sioux City, IA-NE-SD :16 :10
-       Sioux Falls, SD :14 :9
-       Somerset, KY :16 :10
-       South Bend-Mishawaka, IN-MI :21 :13
-       Spartanburg, SC :16 :10
-       Spokane, WA :12 :7
-       Springfield, IL :16 :10
-       Springfield, MA :15 :9
-       Springfield, MO :17 :10
-       Springfield, OH :17 :10
-       St. Cloud, MN :14 :8
-       St. George, UT :11 :7
-       St. Joseph, MO-KS :20 :12
-       St. Louis, MO-IL :22 :13
-       State College, PA :19 :11
-       Stockton, CA :21 :12
-       Syracuse, NY :12 :7
-       Talladega-Sylacauga, AL :17 :10
-       Tallahassee, FL :14 :9
-       Tampa-St. Petersburg-Clearwater, FL :13 :8
-       Terre Haute, IN :19 :12
-       Texarkana, TX-Texarkana, AR :18 :11
-       Thomasville-Lexington, NC :17 :10
-       Toledo, OH :17 :10
-       Topeka, KS :14 :9
-       Torrington, CT :9 :6
-       Trenton-Ewing, NJ :15 :9
-       Truckee-Grass Valley, CA :10 :6
-       Tucson, AZ :10 :6
-       Tulsa, OK :16 :10
-       Tupelo, MS :16 :10
-       Tuscaloosa, AL :16 :9
-       Ukiah, CA :12 :7
-       Valdosta, GA :14 :9
-       Vallejo-Fairfield, CA :15 :9
-       Vernal, UT :12 :7
-       Virginia Beach-Norfolk-Newport News, VA-NC :14 :8
-       Visalia-Porterville, CA :25 :15
-       Warner Robins, GA :16 :10
-       Washington-Arlington-Alexandria, DC-VA-MD-WV :19 :12
-       Waterloo-Cedar Falls, IA :16 :10
-       Watertown, SD :18 :11
-       Weirton-Steubenville, WV-OH :20 :12
-       Wenatchee, WA :17 :10
-       Wheeling, WV-OH :20 :12
-       Wichita, KS :16 :9
-       Wilmington, NC :14 :9
-       Winchester, VA-WV :16 :10
-       Winston-Salem, NC :15 :9
-       Worcester, MA :15 :9
-       Yakima, WA :17 :10
-       York-Hanover, PA :20 :12
-       Youngstown-Warren-Boardman, OH-PA :23 :14
-       Yuba City, CA :12 :7
-       Yuma, AZ :14 :9
-       </pre>
+This data is contained in a file called ``"uspoll.txt"``. A **text file** is of course
+actually binary - everything a computer stores is stored as binary data. But in a 
+**text file**, all of the information is stored as a series of ASCII encoded characters.
+Thus in the file, the number 250 would be stored as "250" which would be stored by the
+8-bit values for "2", "5", and "0". Because everything is stored as text, we can open
+**text files** in a program like Notepad to read or edit them.
 
-If you clicked on the `Show` button you can tell that it is a lot of data.  But we don't actually know the number of lines of data in the file by looking at it.  Since we don't know the number of lines here, we won't use a *for* loop to process it.  We will use a *while* loop to keep reading the data until there isn't any more (returns an empty string).
+In a **binary file**, data is stored in its natural binary form. Thus the number 250
+could be stored as as the 8-bit binary value 11111010. A **binary file** only makes sense
+if we know how to read it. If you see a 256-bit chunk of 1's and 0's, there is no
+way to know just by looking at the data if it is supposed to be eight 32-bit values, 
+or thirty-two 8-bit ones. And you can't know if those 8-bit values are supposed to be
+numbers or ASCII characters. 
 
-We can process it by *opening* the file containing the data, then *reading* each line in.  As long as the line is not empty, we keep going doing a ``split`` and processing the data.  (This data is separated by a ``:`` instead of a ``,``.)
+Text files tend to be more wasteful of bits and slower for a computer to process - the
+computer needs to turn the text ``"250"`` into the number ``250`` before it can compute
+with it. But they are easier for people to read and write. Thus, if we have data that people need to
+interact with, and the amount of information is not too great, it is common to store it
+in text format. If there is a tremendous amount of information, or no need for people
+to interact with it, we are more likely to store it in binary form.
 
-In Python, we must **open** files before we can use them and **close** them when we are done with them. Opening a file returns a Python object that has predefined functions and procedures, just like the turtle objects we have seen before. :ref:`Table 1<filemethods1a>` shows the functions and procedures that can be used to open and close files.
+In Python, we must **open** files before we can read from them or write to them
+and **close** them when we are done with them. Opening a file returns a
+Python object that has predefined functions and procedures, just like the turtle, string, or
+image objects we have seen before. Here are the functions and procedures that can be used to
+open and close files.
 
 .. _filemethods1a:
 
-================ ======================== =====================================================
-**Method Name**   **Use**                  **Explanation**
-================ ======================== =====================================================
-``open``          ``open(filename,'r')``    Open a file called filename and use it for reading.  This will return a reference to a file object.
-``open``          ``open(filename,'w')``    Open a file called filename and use it for writing.  This will also return a reference to a file object.
-``close``         ``filename.close()``      Closes the file after you are finished with it.
-================ ======================== =====================================================
+.. list-table::
+    :widths: 20 30 50
+    :header-rows: 1
+    :align: left
 
-The code below will print out the pollution information for all the cities that start with ``"A"``.  It will print the city, state on one line and the two pollution values for that city on another line.  It stops looping when there aren't any more lines to be read (when the returned line is an empty string).
+    * - Name
+      - Use
+      - Explanation
+    * - open
+      - ``fileReference = open("filename")``
+      - Open a file called filename and use it for reading.
+        This will return a reference to a file object. We can use
+        that reference to ask for data to be read, or to close the file.
+    * - read().splitlines()
+      - ``data = fileReference.read().splitlines()``
+      - This is actually two commands, but we will always use them together like this.
+        ``read`` will read in the entire file of
+        data into one big string. ``splitlines`` takes that and splits it into a 
+        list - each item in the list is a string that has the text of one line
+        from the file.
+    * - close
+      - ``fileReference.close()``
+      - Close a file.
 
-.. activecode:: printData
-   :tour_1: "Structural tour"; 2: web1-line4; 5: web1-line5; 8: web1-line6; 11: web1-line7; 14: web1-line8; 17: web1-line9; 18-19: web1-line10-11; 22: web1-line12; 25: web1-line14;
-   :nocodelens:
+Here is a sample of using those commands to open our file, read in all the data into a list
+called ``data``, and close the file. Once we have all the data, we can use a ``for in`` loop
+to iterate through all the lines in the file. Here we just print them out:
 
-   # open the file for reading
-   inFile = open("uspoll.txt","r")
+.. activecode:: printFileData
+    :nocodelens:
 
-   # read a line from the file
-   line = inFile.readline()
+    # Open the file for reading. The reference we will use to work with it will be inFile
+    inFile = open("uspoll.txt")
 
-   # while there is another line
-   while line:
+    # get all the lines of data
+    data = inFile.read().splitlines()
 
-       # create a list by splitting at the :
-       values = line.split(":")
+    # Print out the full array of data
+    print(data)
+    print("-------------------------------------------")
 
-       # get the city from the list
-       city = values[0]
+    # close the file
+    inFile.close()
 
-       # if the city starts with an A print the info
-       if (city.find("A") == 0):
-           print('City: ', city)
-           print("Pollution values:",values[1],values[2])
+    # Now process all the data by looping through the lines
+    for line in data:
+        print(line)
 
-       # read the next line
-       line = inFile.readline()
+To do any real work with the lines of the file, we need to break up the lines into
+their three parts. We want to turn ``"Aberdeen, SD :13 :8"`` into a list that looks
+like ``["Aberdeen, SD", "13", "8"]``. That will make it easier to get the location - ``values[0]``,
+or the PM10 value - ``values[1]``, or the PM2.5 value - ``values[2]``.
 
-   # close the file
-   inFile.close()
+In this version, the first thing we do with each line is to split it up at the ":"
+marks. The ``split`` function will turn a string into a list by splitting it at the
+value you give it. ``values = line.split(":")`` says to take the string called line,
+split it at the ":" and to call the resulting list ``values``. We can then use that
+to get just the city name, or the PM 10 value, or the PM2.5 value.
+
+.. activecode:: printDataPieces
+    :autograde: unittest
+
+    Currently, this program prints each city followed by its PM2.5 value.
+    After you run it, try modifying it so it prints out the PM10 values
+    instead of the PM2.5. Your output should look like this:
+
+    .. faux_code::
+
+        Aberdeen, SD 
+        \  PM10: 8 
+        Adrian, MI 
+        \  PM10: 9 
+        ...
+
+    Make sure not to print out extra lines. The test will assume that you have just that output.
+
+    ~~~~
+    # open the file for reading
+    inFile = open("uspoll.txt")
+
+    # get all the lines of data
+    data = inFile.read().splitlines()
+
+    # close the file
+    inFile.close()
+
+    # Now process all the data by looping through the lines
+    for line in data:
+
+        # create a list by splitting at the :
+        values = line.split(":")
+
+        # get the city from the list
+        city = values[0]
+
+        print(city)
+        print("  PM2.5:", values[2])
+    =====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn("PM10: 13", self.getOutput().split("\n")[1], "Testing that you printed the right value for Aberdeen")
+            self.assertIn("PM10: 19", self.getOutput().split("\n")[21], "Testing that you printed the right value for Altoona")
+
+    myTests().main()
+
 
 .. parsonsprob:: 18_3_1_printInfoForCity
-   :numbered: left
-   :adaptive:
+    :numbered: left
+    :adaptive:
 
-   The following program prints the pollution information for all cities that start with a ``D``, but the code is mixed up.  Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or have the wrong indention.
-   -----
-   # open the file for reading
-   inFile = open("uspoll.txt","r")
-
-   # read a line from the file
-   line = inFile.readline()
-   =====
-   # while there is another line
-   while line:
-   =====
-       # split at the :
-       v = line.split(":")
-
-       # get the city
-       city = v[0]
-   =====
-       # if city starts with an D print info
-       if (city.find("D") == 0):
-           print('City: ', city)
-           print("Pollution values:",v[1],v[2])
-   =====
-       # read the next line
-       line = inFile.readline()
-   =====
-   # close the file
-   inFile.close()
+    The following program prints the pollution information for all cities that start with a ``D``,
+    but the code is mixed up.  Arrange the blocks and indent them to make a working program.
+    -----
+    inFile = open("uspoll.txt")
+    =====
+    data = inFile.read().splitlines()
+    inFile.close()
+    =====
+    for line in data:
+    =====
+        values = line.split(":")
+    =====
+        city = values[0]
+    =====
+        if city[0] == "D":
+    =====
+            print("City:", city)
+            print("PM10:", values[1])
+            print("PM2.5:", values[2])
 
 
-There is actually a way of using a **for** loop to read in a file.  We can read the whole thing into one giant list, and then use a **for** loop to process each line in the list.
+.. note::
 
-.. activecode:: printData_withLines
-   :tour_1: "Structural tour"; 2: web1-line4; 3: web2-line5; 4: web2-line6; 7: web2-line8; 10: web2-line9; 13: web2-line10; 16: web2-line11; 17-18: web2-line12-13;
-   :nocodelens:
+    If we were reading in a tremendously large file, reading it all at once might take up too
+    much memory. In that case we would have to read it one line at a time, then discard that
+    line before getting the next. That way, we would only need memory to store one line of
+    data instead of all of them at once.
 
-   # open the file, read the lines into a list, and close the file
-   inFile = open("uspoll.txt","r")
-   lines = inFile.readlines()
-   inFile.close()
-
-   # loop through the lines list
-   for line in lines:
-
-       # split at :
-       values = line.split(":")
-
-       # get the city
-       city = values[0]
-
-       # if city starts with A print the info
-       if (city.find("A") == 0):
-           print('City: ', city)
-           print("Pollution values:",values[1],values[2])
-
-.. mchoice:: 18_3_1_for_disadvantage
-   :answer_a: For a big data file, this could overload memory.
-   :answer_b: <code>for</code> loops are inefficient.
-   :answer_c: <code>for</code> loops are not as flexible as <code>while</code> loops.
-   :correct: a
-   :feedback_a: This will be true for very large data sets.
-   :feedback_b: <code>for</code> loops and <code>while</code> loops have the same efficiency.
-   :feedback_c: <code>while</code> loops are flexible, but <code>for</code> loops are more understandable, so you should use what makes the most sense for you.
-
-   What is the disadvantage of the second program, with a ``for`` loop?
-
-.. tabbed:: 18_3_2_WSt
-
-        .. tab:: Question
-
-           Write code to that will read an input file uspoll.txt . It will print the city name and the pollution values for all cities that have a PM 10 pollution of 20 or more.
-
-
-           .. activecode::  18_3_2_WSq
-               :nocodelens:
-
-        .. tab:: Answer
-
-          .. activecode::  18_3_2_WSa
-              :nocodelens:
-
-              # open the file, read the lines into a list, and close the file
-              inFile = open("uspoll.txt","r")
-              line = inFile.readline()
-
-              # loop through the lines list
-              while line:
-
-                     # split at :
-                     values = line.split(":")
-
-                     # get the PM 10 pollution
-                     pollution = float(values[1])
-                     if (pollution > 19):
-                            print('City: ', values[0])
-                            print("Pollution values:",values[1],values[2])
-                     line = inFile.readline()
-
-              inFile.close()
-
-
-
-
+    In the interest of simplicity, we will stick with the "read it all at once" strategy since
+    our files are relatively small.

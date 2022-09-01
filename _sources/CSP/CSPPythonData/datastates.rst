@@ -11,9 +11,22 @@
 Most Populated and Least Populated States
 ======================================================
 
-We're going to use another set of data (about the states) to give us insight into how we analyze the pollution data.
+If we want to dig into patterns in pollution, there are many hypotheses we might want to
+test:
 
-The top three largest states in population are:
+- Maybe bigger states have more *stuff* and that leads to more pollution?
+- Maybe smaller states have more things crammed into a smaller place, and
+  that leads to more pollution?
+- Maybe richer states have more industry, and that leads to more pollution?
+- Maybe poorer states are home to more polluting industries like coal
+  powered factories and that leads to more pollution?
+- Maybe more populous states have more people (so more cars and houses...)
+  and that leads to more pollution?
+
+To try to answer these questions, we need to calculate average pollution for a specific state.
+
+We will also need some data about which states are large and small and which are richer and
+poorer. The top three largest states in population are:
 
 ==================   ============
 State                Population
@@ -33,21 +46,8 @@ Vermont                 626,630
 Wyoming                 582,658
 ====================    ============
 
+The three largest states in land area are Alaska, Texas, and California.  
+The three smallest are Connecticut, Delaware, and Rhode Island.
 
-The three largest states in land area are Alaska, Texas, and California.  The three smallest are Connecticutt, Delaware, and Rhode Island.
-
-The three *richest* states (by per capita income) are Maryland, Alaska, and New Jersey.  The three poorest are Arkansas, West Virginia, and Mississippi.
-
-Do bigger or richer states have more pollution?
-------------------------------------------------
-
-What causes more pollution?
- 
- - Maybe bigger states have more *stuff* and that leads to more pollution?
- - Maybe smaller states have more things crammed into a smaller place, and that leads to more pollution?
- - Maybe richer states have more industry, and that leads to more pollution?
- - Maybe more populous states have more people (so more cars and houses...) and that leads to more pollution?
-
-Let's give you a way of asking these questions.  Let's write a program to get the average pollution **for a state**.
-
-
+The three *richest* states (by per capita income) are Maryland, Alaska, and New Jersey.
+The three poorest are Arkansas, West Virginia, and Mississippi.

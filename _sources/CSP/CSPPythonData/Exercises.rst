@@ -7,434 +7,31 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
-.. setup for automatic question numbering.
-
-
-
-Chapter 18 Exercises
+Chapter Exercises
 ---------------------
 
-Here are just the first 9 lines of the data for city pollution. The data is in the order: City, PM 10, PM 2.5. This data set will be used for exercise questions 1 - 12.
+The problems in these exercises use a new data set. The file ``"stocks.txt"`` has data from
+the Dow Jones Industrial Average which tracks the average performance of a collection of
+large stocks. Each line of the file represents the opening day of trading (not always the
+first of the month as the market is not open every day).These lines look like:
 
- ::
+.. code::
 
-     Aberdeen, SD :13 :8
-     Adrian, MI :15 :9
-     Akron, OH :18 :11
-     Albany, GA :18 :11
-     Albany-Lebanon, OR :14 :8
-     Albany-Schenectady-Troy, NY :13 :8
-     Albuquerque, NM :12 :7
-     Alexandria, LA :20 :12
+    3-Dec-01,9848.93,10220.78,9651.87,10021.57
 
-If you want to see **all** of the data click on the *Show* button below.  Once it appears, you can hide it again by clicking on the *Hide* button.
+The values on the line are separated by commas and are the following (in order):
 
-.. reveal:: pol_Data_8_10
-    :showtitle: Show
-    :hidetitle: Hide
+* Date
+* Opening value
+* High value for month
+* Low value for month
+* Close value for month
+* Volume - number of shares traded
 
-    .. raw:: html
+If you want to see this data click on the *Show* button below. Once it appears, you can hide
+it again by clicking on the *Hide* button.
 
-       <pre id="uspoll.txt">
-       Aberdeen, SD :13 :8
-       Adrian, MI :15 :9
-       Akron, OH :18 :11
-       Albany, GA :18 :11
-       Albany-Lebanon, OR :14 :8
-       Albany-Schenectady-Troy, NY :13 :8
-       Albuquerque, NM :12 :7
-       Alexandria, LA :20 :12
-       Allegan, MI :14 :9
-       Allentown-Bethlehem-Easton, PA-NJ :21 :12
-       Altoona, PA :19 :12
-       Anchorage, AK :13 :8
-       Anderson, IN :18 :11
-       Ann Arbor, MI :16 :10
-       Appleton, WI :14 :9
-       Asheville, NC :15 :9
-       Athens, OH :14 :9
-       Athens, TN :15 :9
-       Athens-Clarke County, GA :16 :9
-       Atlanta-Sandy Springs-Marietta, GA :23 :14
-       Atlantic City-Hammonton, NJ :14 :8
-       Augusta-Richmond County, GA-SC :18 :11
-       Augusta-Waterville, ME :14 :9
-       Austin-Round Rock, TX :17 :10
-       Bakersfield, CA :24 :15
-       Baltimore-Towson, MD :20 :12
-       Bangor, ME :12 :7
-       Baraboo, WI :17 :10
-       Baton Rouge, LA :19 :11
-       Bay City, MI :13 :8
-       Beaver Dam, WI :15 :9
-       Beckley, WV :14 :8
-       Bellingham, WA :7 :4
-       Bennington, VT :11 :7
-       Birmingham-Hoover, AL :20 :12
-       Bishop, CA :11 :6
-       Bismarck, ND :11 :6
-       Bloomington, IN :17 :10
-       Bloomington-Normal, IL :16 :9
-       Boise City-Nampa, ID :17 :10
-       Boone, NC :13 :8
-       Boston-Cambridge-Quincy, MA-NH :16 :10
-       Boulder, CO :12 :7
-       Bowling Green, KY :17 :10
-       Bradenton-Sarasota-Venice, FL :12 :7
-       Brainerd, MN :8 :5
-       Bremerton-Silverdale, WA :7 :4
-       Bridgeport-Stamford-Norwalk, CT :16 :9
-       Brigham City, UT :12 :7
-       Brookings, SD :14 :9
-       Brownsville-Harlingen, TX :16 :10
-       Brunswick, GA :13 :8
-       Buffalo-Niagara Falls, NY :16 :9
-       Burlington, NC :14 :9
-       Burlington-South Burlington, VT :12 :7
-       Butte-Silver Bow, MT :19 :11
-       Cadillac, MI :10 :6
-       Cambridge, MD :13 :8
-       Canton-Massillon, OH :21 :12
-       Cape Coral-Fort Myers, FL :12 :7
-       Casper, WY :9 :5
-       Cedar Rapids, IA :16 :10
-       Champaign-Urbana, IL :16 :10
-       Charleston, WV :18 :11
-       Charleston-North Charleston-Summerville, SC :16 :10
-       Charlotte-Gastonia-Concord, NC-SC :16 :10
-       Charlottesville, VA :13 :8
-       Chattanooga, TN-GA :18 :11
-       Cheyenne, WY :9 :6
-       Chicago-Naperville-Joliet, IL-IN-WI :22 :13
-       Chico, CA :12 :7
-       Cincinnati-Middletown, OH-KY-IN :23 :14
-       Clarksburg, WV :16 :10
-       Clarksville, TN-KY :16 :10
-       Clearlake, CA :7 :4
-       Cleveland-Elyria-Mentor, OH :24 :15
-       Clinton, IA :18 :11
-       Colorado Springs, CO :12 :7
-       Columbia, SC :17 :10
-       Columbia, TN :14 :8
-       Columbus, GA-AL :19 :11
-       Columbus, OH :18 :11
-       Concord, NH :16 :9
-       Cookeville, TN :14 :9
-       Corning, NY :11 :7
-       Corpus Christi, TX :18 :11
-       Dallas-Fort Worth-Arlington, TX :20 :12
-       Daphne-Fairhope-Foley, AL :15 :9
-       Davenport-Moline-Rock Island, IA-IL :18 :11
-       Dayton, OH :18 :11
-       Decatur, AL :15 :9
-       Decatur, IL :17 :10
-       Deltona-Daytona Beach-Ormond Beach, FL :11 :6
-       Denver-Aurora-Broomfield, CO :14 :9
-       Des Moines-West Des Moines, IA :15 :9
-       Detroit-Warren-Livonia, MI :21 :12
-       Dickinson, ND :7 :4
-       Dothan, AL :15 :9
-       Dover, DE :14 :8
-       Duluth, MN-WI :11 :6
-       Durango, CO :7 :4
-       Durham, NC :14 :8
-       Durham-Chapel Hill, NC :14 :8
-       Dyersburg, TN :15 :9
-       East Stroudsburg, PA :13 :8
-       Eau Claire, WI :14 :8
-       El Centro, CA :24 :14
-       El Dorado, AR :18 :11
-       El Paso, TX :21 :12
-       Elizabethtown, KY :20 :12
-       Elkhart-Goshen, IN :21 :12
-       Erie, PA :19 :11
-       Eugene-Springfield, OR :13 :8
-       Eureka-Arcata-Fortuna, CA :11 :7
-       Evansville, IN-KY :19 :12
-       Fairbanks, AK :31 :19
-       Fairmont, WV :17 :10
-       Fargo, ND-MN :13 :8
-       Farmington, NM :8 :5
-       Fayetteville, NC :15 :9
-       Fayetteville-Springdale-Rogers, AR-MO :16 :10
-       Flagstaff, AZ :9 :5
-       Flint, MI :13 :8
-       Florence, SC :15 :9
-       Florence-Muscle Shoals, AL :15 :9
-       Fort Collins-Loveland, CO :12 :7
-       Fort Madison-Keokuk, IA-MO :18 :11
-       Fort Payne, AL :15 :9
-       Fort Smith, AR-OK :17 :10
-       Fort Wayne, IN :23 :14
-       Fresno, CA :74 :45
-       Gadsden, AL :16 :10
-       Gainesville, FL :12 :7
-       Gainesville, GA :16 :9
-       Gettysburg, PA :18 :11
-       Gillette, WY :13 :8
-       Goldsboro, NC :21 :13
-       Grand Island, NE :13 :8
-       Grand Junction, CO :12 :7
-       Grand Rapids-Wyoming, MI :16 :10
-       Grants Pass, OR :12 :7
-       Greeley, CO :13 :8
-       Green Bay, WI :16 :10
-       Greensboro-High Point, NC :14 :9
-       Greenville, NC :13 :8
-       Greenville-Mauldin-Easley, SC :16 :10
-       Grenada, MS :16 :9
-       Gulfport-Biloxi, MS :16 :10
-       Hagerstown-Martinsburg, MD-WV :19 :11
-       Hammond, LA :15 :9
-       Hanford-Corcoran, CA :28 :17
-       Harriman, TN :22 :13
-       Harrisburg-Carlisle, PA :20 :12
-       Harrisonburg, VA :15 :9
-       Hartford-West Hartford-East Hartford, CT :14 :9
-       Hattiesburg, MS :18 :11
-       Helena, MT :16 :9
-       Helena-West Helena, AR :16 :9
-       Hickory-Lenoir-Morganton, NC :16 :10
-       Hilo, HI :27 :16
-       Hobbs, NM :13 :8
-       Holland-Grand Haven, MI :15 :9
-       Homosassa Springs, FL :11 :7
-       Honolulu, HI :12 :7
-       Hot Springs, AR :18 :11
-       Houma-Bayou Cane-Thibodaux, LA :13 :8
-       Houston-Sugar Land-Baytown, TX :21 :13
-       Huntington-Ashland, WV-KY-OH :19 :11
-       Huntsville, AL :16 :9
-       Indianapolis-Carmel, IN :25 :15
-       Iowa City, IA :16 :10
-       Jackson, MS :19 :11
-       Jackson, TN :15 :9
-       Jackson, WY-ID :11 :6
-       Jacksonville, FL :13 :8
-       Jamestown-Dunkirk-Fredonia, NY :13 :8
-       Jasper, IN :18 :11
-       Johnstown, PA :19 :12
-       Juneau, AK :11 :6
-       Kahului-Wailuku, HI :11 :6
-       Kalamazoo-Portage, MI :17 :10
-       Kalispell, MT :13 :8
-       Kansas City, MO-KS :24 :15
-       Kapaa, HI :11 :7
-       Keene, NH :16 :10
-       Kingsport-Bristol-Bristol, TN-VA :15 :9
-       Kinston, NC :13 :8
-       Klamath Falls, OR :18 :11
-       Knoxville, TN :18 :11
-       Kokomo, IN :16 :10
-       La Crosse, WI-MN :14 :8
-       Laconia, NH :11 :7
-       Lafayette, IN :24 :14
-       Lafayette, LA :18 :11
-       Lake Charles, LA :14 :8
-       Lake Havasu City-Kingman, AZ :6 :4
-       Lakeland-Winter Haven, FL :13 :8
-       Lancaster, PA :21 :13
-       Lansing-East Lansing, MI :14 :9
-       Laramie, WY :9 :6
-       Las Cruces, NM :25 :15
-       Las Vegas-Paradise, NV :20 :12
-       Laurel, MS :18 :11
-       Lawrenceburg, TN :14 :8
-       Lebanon, NH-VT :11 :7
-       Lebanon, PA :24 :14
-       Lewiston-Auburn, ME :13 :8
-       Lexington-Fayette, KY :16 :10
-       Lima, OH :17 :10
-       Lincoln, NE :14 :9
-       Little Rock-North Little Rock-Conway, AR :19 :12
-       Logan, UT-ID :15 :9
-       Los Angeles-Long Beach-Santa Ana, CA :33 :20
-       Louisville/Jefferson County, KY-IN :22 :13
-       Lumberton, NC :14 :9
-       Lynchburg, VA :13 :8
-       Macon, GA :19 :12
-       Madera, CA :27 :16
-       Madison, WI :16 :9
-       Manchester-Nashua, NH :14 :8
-       Marshall, MN :12 :7
-       Marshall, TX :17 :10
-       McAlester, OK :19 :11
-       McAllen-Edinburg-Mission, TX :18 :11
-       Medford, OR :15 :9
-       Memphis, TN-MS-AR :17 :10
-       Merced, CA :18 :11
-       Meridian, MS :17 :10
-       Miami-Fort Lauderdale-Pompano Beach, FL :14 :8
-       Michigan City-La Porte, IN :16 :10
-       Middlesborough, KY :17 :10
-       Milwaukee-Waukesha-West Allis, WI :18 :11
-       Minneapolis-St. Paul-Bloomington, MN-WI :17 :10
-       Missoula, MT :21 :12
-       Mobile, AL :15 :9
-       Modesto, CA :25 :15
-       Monroe, LA :22 :13
-       Monroe, MI :16 :9
-       Montgomery, AL :18 :11
-       Morgantown, WV :15 :9
-       Mount Vernon, IL :14 :9
-       Muncie, IN :16 :10
-       Muscatine, IA :18 :11
-       Muskegon-Norton Shores, MI :15 :9
-       Napa, CA :23 :14
-       Nashville-Davidson--Murfreesboro--Franklin, TN :17 :10
-       New Castle, IN :15 :9
-       New Haven-Milford, CT :15 :9
-       New Orleans-Metairie-Kenner, LA :21 :13
-       New York-Northern New Jersey-Long Island, NY-NJ-PA :23 :14
-       Niles-Benton Harbor, MI :14 :9
-       Nogales, AZ :16 :10
-       Norwich-New London, CT :13 :8
-       Ogden-Clearfield, UT :15 :9
-       Oklahoma City, OK :16 :10
-       Omaha-Council Bluffs, NE-IA :19 :12
-       Orlando-Kissimmee, FL :12 :7
-       Owensboro, KY :18 :11
-       Oxnard-Thousand Oaks-Ventura, CA :16 :10
-       Paducah, KY-IL :17 :10
-       Palm Bay-Melbourne-Titusville, FL :10 :6
-       Parkersburg-Marietta-Vienna, WV-OH :17 :10
-       Pascagoula, MS :15 :9
-       Pendleton-Hermiston, OR :12 :7
-       Pensacola-Ferry Pass-Brent, FL :14 :8
-       Peoria, IL :16 :10
-       Philadelphia-Camden-Wilmington, PA-NJ-DE-MD :28 :17
-       Phoenix-Mesa-Scottsdale, AZ :26 :16
-       Pittsburgh, PA :25 :15
-       Pittsfield, MA :14 :9
-       Platteville, WI :15 :9
-       Pocatello, ID :15 :9
-       Ponca City, OK :17 :10
-       Portland-South Portland-Biddeford, ME :15 :9
-       Portland-Vancouver-Beaverton, OR-WA :12 :7
-       Portsmouth, OH :16 :10
-       Poughkeepsie-Newburgh-Middletown, NY :13 :8
-       Prescott, AZ :7 :4
-       Prineville, OR :14 :9
-       Providence-New Bedford-Fall River, RI-MA :18 :11
-       Provo-Orem, UT :14 :8
-       Pueblo, CO :11 :7
-       Quincy, IL-MO :16 :10
-       Raleigh-Cary, NC :16 :9
-       Rapid City, SD :11 :6
-       Reading, PA :19 :11
-       Red Bluff, CA :14 :8
-       Redding, CA :10 :6
-       Reno-Sparks, NV :15 :9
-       Richmond, VA :15 :9
-       Richmond-Berea, KY :15 :9
-       Riverside-San Bernardino-Ontario, CA :34 :21
-       Riverton, WY :13 :8
-       Roanoke, VA :15 :9
-       Rochester, MN :13 :8
-       Rochester, NY :14 :9
-       Rock Springs, WY :13 :8
-       Rockford, IL :16 :9
-       Rocky Mount, NC :13 :8
-       Rome, GA :18 :11
-       Russellville, AR :14 :9
-       Rutland, VT :15 :9
-       Sacramento--Arden-Arcade--Roseville, CA :15 :9
-       Salinas, CA :10 :6
-       Salisbury, NC :16 :9
-       Salt Lake City, UT :15 :9
-       San Antonio, TX :14 :9
-       San Diego-Carlsbad-San Marcos, CA :24 :14
-       San Francisco-Oakland-Fremont, CA :16 :10
-       San Jose-Sunnyvale-Santa Clara, CA :16 :10
-       San Luis Obispo-Paso Robles, CA :16 :10
-       Santa Barbara-Santa Maria-Goleta, CA :14 :9
-       Santa Cruz-Watsonville, CA :10 :6
-       Santa Fe, NM :8 :5
-       Santa Rosa-Petaluma, CA :14 :8
-       Sault Ste. Marie, MI :14 :8
-       Savannah, GA :17 :10
-       Scottsbluff, NE :9 :6
-       Scranton--Wilkes-Barre, PA :14 :8
-       Seaford, DE :14 :8
-       Seattle-Tacoma-Bellevue, WA :16 :10
-       Sheridan, WY :14 :8
-       Shreveport-Bossier City, LA :26 :16
-       Sierra Vista-Douglas, AZ :11 :7
-       Sioux City, IA-NE-SD :16 :10
-       Sioux Falls, SD :14 :9
-       Somerset, KY :16 :10
-       South Bend-Mishawaka, IN-MI :21 :13
-       Spartanburg, SC :16 :10
-       Spokane, WA :12 :7
-       Springfield, IL :16 :10
-       Springfield, MA :15 :9
-       Springfield, MO :17 :10
-       Springfield, OH :17 :10
-       St. Cloud, MN :14 :8
-       St. George, UT :11 :7
-       St. Joseph, MO-KS :20 :12
-       St. Louis, MO-IL :22 :13
-       State College, PA :19 :11
-       Stockton, CA :21 :12
-       Syracuse, NY :12 :7
-       Talladega-Sylacauga, AL :17 :10
-       Tallahassee, FL :14 :9
-       Tampa-St. Petersburg-Clearwater, FL :13 :8
-       Terre Haute, IN :19 :12
-       Texarkana, TX-Texarkana, AR :18 :11
-       Thomasville-Lexington, NC :17 :10
-       Toledo, OH :17 :10
-       Topeka, KS :14 :9
-       Torrington, CT :9 :6
-       Trenton-Ewing, NJ :15 :9
-       Truckee-Grass Valley, CA :10 :6
-       Tucson, AZ :10 :6
-       Tulsa, OK :16 :10
-       Tupelo, MS :16 :10
-       Tuscaloosa, AL :16 :9
-       Ukiah, CA :12 :7
-       Valdosta, GA :14 :9
-       Vallejo-Fairfield, CA :15 :9
-       Vernal, UT :12 :7
-       Virginia Beach-Norfolk-Newport News, VA-NC :14 :8
-       Visalia-Porterville, CA :25 :15
-       Warner Robins, GA :16 :10
-       Washington-Arlington-Alexandria, DC-VA-MD-WV :19 :12
-       Waterloo-Cedar Falls, IA :16 :10
-       Watertown, SD :18 :11
-       Weirton-Steubenville, WV-OH :20 :12
-       Wenatchee, WA :17 :10
-       Wichita, KS :16 :9
-       Wilmington, NC :14 :9
-       Winchester, VA-WV :16 :10
-       Winston-Salem, NC :15 :9
-       Worcester, MA :15 :9
-       Yakima, WA :17 :10
-       York-Hanover, PA :20 :12
-       Youngstown-Warren-Boardman, OH-PA :23 :14
-       Yuba City, CA :12 :7
-       Yuma, AZ :14 :9
-       </pre>
-
-This data set shows the monthly Dow Jones averages from 1989 to 2001. The data is in the order: Date, Open, High, Low, Close, Volume. This data will be used for exercise questions 13 - 20.
-
-::
-
-        3-Dec-01,9848.93,10220.78,9651.87,10021.57
-        1-Nov-01,9087.45,10054.58,8987.61,9851.56
-        1-Oct-01,8845.97,9626.54,8659.9,9075.14
-        4-Sep-01,9946.98,10238.5,7926.93,8847.56
-        1-Aug-01,10527.38,10663.07,9829.35,9949.75
-        2-Jul-01,10504.95,10758.14,10049.38,10522.81
-        1-Jun-01,10913.57,11236.68,10313.4,10502.4
-        1-May-01,10734.05,11436.42,10638.48,10911.94
-        2-Apr-01,9877.16,10973.15,9303.48,10734.97
-
-
-If you want to see **all** of the data click on the *Show* button below.  Once it appears, you can hide it again by clicking on the *Hide* button.
-
-.. reveal:: pol_Data_8_10_2
+.. reveal:: stock_data_file
    :showtitle: Show
    :hidetitle: Hide
 
@@ -600,439 +197,671 @@ If you want to see **all** of the data click on the *Show* button below.  Once i
       </pre>
 
 
-#.
+.. activecode:: cs18ex_1q
+    :nocodelens:
 
-    .. tabbed:: ch18ex1t
+    Below is the start of a program to read in the ``"stocks.txt"`` file and run code
+    on each line in the file.
 
-        .. tab:: Question
+    Add code to split the line into a list of values and print out the date value. 
+    (The date should be the first value in the list that you create with split.)
 
-            Fix 5 errors in the code below so that the code runs correctly and prints the pollution for all cities that start with the letter A.
+    Your final output should be a long list of dates and nothing else.
 
-            .. activecode:: ch18ex1q
-                :nocodelens:
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing. Feel free to use extra ones while writing your code and Then
+    remove them or comment them out when everything is working.
+    ~~~~
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
 
-                inFile = open("uspoll.txt","r)
-                line = inFile.readLine()
-                while line
-                    values = line.split(":")
-                    city = values[0]
-                    if (city.find("A") == 0):
-                        print('City: ' city)
-                        print("Pollution values:",values[1],values[2])
-                    line = infile.readline()
+    for line in data:
+        #Your code here
+    =====
+    from unittest.gui import TestCaseGui
 
-                inFile.close()
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(self.getOutput().split("\n")[0], "3-Dec-01", "Testing the first line.")
+            self.assertEqual(self.getOutput().split("\n")[9], "1-Mar-01", "Testing the tenth line.")
+            self.assertEqual(self.getOutput().split("\n")[66], "3-Jun-96", "Testing a mystery line.")
 
+    myTests().main()
 
 
-#.
+.. activecode:: cs18ex_2q
+    :nocodelens:
 
-    .. tabbed:: ch18ex2t
+    Modify your program to print out the highest value the Dow Jones reached. (This should be the
+    largest of the monthly high values.) 
 
-        .. tab:: Question
+    Tip: When you get the high value, you will need to convert it from a string to a float to work
+    with it as a decimal number. This should look like: ``float(values[??])``.
 
-            Fix the errors in the code below so that it prints the average PM values of only the cities that start with "A".
+    The final version of your program should only print out the highest value, but you should
+    work your way up to that. Start by printing out all of the monthly high values, then worry
+    about finding the highest one.
 
-            .. activecode::  ch18ex2q
-                :nocodelens:
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing.
+    ~~~~
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
 
-                inFile = open("uspoll.txt","r")
-                lines = inFile.readlines()
-                inFile.close()
+    #Your code here
+    =====
+    from unittest.gui import TestCaseGui
 
-                total25 = 0
-                count = 1.0
-                for line in lines:
-                    values = line.split(":")
-                    new25 = float(values[2])
-                    city = values[1]
-                    if (city.find("A") == -1):
-                        total25 = total25 + new25
-                    count = count + 1
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(self.getOutput().strip(), "11908.5", "Testing for right answer.")
+            self.assertNotIn(self.getEditorText(), "11908.5", "Testing that you did not hard code answer.")
 
-                print("Average PM 2.5 value for cities that start with 'A' is ", total25/count)
+    myTests().main()
 
 
+.. activecode:: cs18ex_3q
+    :nocodelens:
+
+    Modify your program from question 1 to only print the dates from a specific year specified by
+    a variable ``desiredYear``. If ``desiredYear`` is 96, you would only print out values where
+    the year (last part of the date value) is "96".
+
+    You should try changing desired year to different values to make sure your program works for
+    any year for which there is data (89-01), but to pass the tests, you must set ``desiredYear``
+    to "92".
+
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing.
+    ~~~~
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
 
-#.
+    desiredYear = "92"
 
-    .. tabbed:: ch18ex3t
+    #Your code here
+    =====
+    from unittest.gui import TestCaseGui
 
-        .. tab:: Question
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(self.getOutput().split("\n")[0], "1-Dec-92", "Testing the first line.")
+            self.assertEqual(self.getOutput().split("\n")[9], "2-Mar-92", "Testing the tenth line.")
+
+    myTests().main()
+
+
+.. activecode:: cs18ex_4q
+    :nocodelens:
+
+    Combine your solutions from problems 2 and 3 and make your program find the largest highest value
+    from the records indicated by the variable ``desiredYear``. I.e. if ``desiredYear`` is "96",
+    your program should only consider the records where the date value ends in "96", and from those,
+    should find the largest "highest value for month" seen in those records.
+    
+    You should try changing desired year to different values to make sure your program works for
+    any year for which there is data (89-01), but to pass the tests, you must set ``desiredYear``
+    to "96".
+
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing.
+    ~~~~
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
+
+    desiredYear = "96"
+
+    #Your code here
+    =====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(self.getOutput().strip(), "6623.96", "Testing for right answer.")
+            self.assertNotIn(self.getEditorText(), "6623.96", "Testing that you did not hard code answer.")
+
+    myTests().main()
+
+
+.. activecode:: cs18ex_5q
+    :nocodelens:
+
+    Turn your code from question 4 into a function so we can easily check the max value in
+    multiple years. The function should be called ``maxHighForYear``. It should take the
+    ``desiredYear`` and the ``data`` as parameters and return the max "highest value for month"
+    found in the records that match the desired year.
+    
+    The starter code has a simple test of your function followed by a more complex test that
+    tests all the valid years. If you need to debug your code, it might be easier if you comment
+    out the complex test and just run the simple one.
+
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing.
+    ~~~~
+    def maxHighForYear(desiredYear, data):
+        # your code here
+        # make sure to return the answer 
+
+    # Main part of program
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
+
+    # Simple test
+    print(maxHighForYear("95", data))
+
+    # Test all years - feel free to comment out while working on code
+    for yearNum in range(1989, 2002):
+        yearNum = yearNum % 100     # keep just last two digits
+
+        #Now format year into a string. Make sure to add a "0" if one digit
+        if yearNum > 10:
+            year = str(yearNum)
+        else:
+            year = "0" + str(yearNum)
+        
+        yearsMax = maxHighForYear(year, data)
+        print("Max value for", year, "was", yearsMax)
 
-           Fix the 5 errors in the code below so that it runs and prints the largest PM 2.5 value and the city that has that value.
+    =====
+    from unittest.gui import TestCaseGui
 
-           .. activecode::  ch18ex3q
-                :nocodelens:
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(maxHighForYear("95", data), 5266.69, "Testing answer returned for \"95\".")
+            self.assertEqual(maxHighForYear("00", data), 11908.5, "Testing answer returned for \"00\".")
+
+    myTests().main()
+
+
+.. activecode:: cs18ex_6q
+    :nocodelens:
+
+    Write the function ``avgVolumeForYear``. It should take the ``desiredYear`` and the ``data``
+    as parameters and return the average of the "volume" value
+    found in the records that match the desired year. (The "volume" is the last value in
+    each record.)
+    
+    The starter code has a simple test of your function followed by a more complex test that
+    tests all the valid years. If you need to debug your code, it might be easier if you comment
+    out the complex test and just run the simple one.
 
-                inFile = open("uspoll.txt","r"
-                lines = inFile.readlines()
-                inFile.Close()
+    You can't use codelens with file reading problems, but you can use print statements to check
+    what your code is doing.
+    ~~~~
+    def avgVolumeForYear(desiredYear, data):
+        # your code here
+        # make sure to return the answer 
 
-                maxCity = ''
-                max25 =   # initialize max25
-                for line  lines:
-                    values = line.split(":")
-                    new25 = float(values[2]) # get the current value
-                    if new25 > max25
-                        maxCity = values[0]
-                        max25 = new25 # save the new maximum
-                print("Largest PM 2.5 value is ",max25," in ",maxCity)
+    # Main part of program
+    inFile = open("stocks.txt")
+    data = inFile.read().splitlines()
+    inFile.close()
 
+    # Simple test
+    print(avgVolumeForYear("95", data))
 
+    # Test all years - feel free to comment out while working on code
+    for yearNum in range(1989, 2002):
+        yearNum = yearNum % 100     # keep just last two digits
 
+        #Now format year into a string. Make sure to add a "0" if one digit
+        if yearNum > 10:
+            year = str(yearNum)
+        else:
+            year = "0" + str(yearNum)
+        
+        yearsMax = avgVolumeForYear(year, data)
+        print("Max value for", year, "was", yearsMax)
 
-#.
+    =====
+    from unittest.gui import TestCaseGui
 
-    .. tabbed:: ch18ex4t
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(avgVolumeForYear("91", data), 2964.3625, "Testing answer returned for \"91\".")
+            self.assertEqual(avgVolumeForYear("00", data), 10688.0425, "Testing answer returned for \"00\".")
 
-        .. tab:: Question
+    myTests().main()
 
-            The code below prints all the lines that have a city that starts with an "A". Change it so that it prints out all lines that have a city that starts with "A" or "B".
 
-            .. activecode::  ch18ex4q
-                :nocodelens:
+.. #.
 
-                # read all the lines
-                inFile = open("uspoll.txt","r")
-                lines = inFile.readlines()
-                inFile.close()
+..     .. tabbed:: ch18ex1t
 
-                # loop through the lines
-                for line in lines:
-                    if line[0] == "A":
-                        print(line)
+..         .. tab:: Question
 
+..             Fix 5 errors in the code below so that the code runs correctly and prints the pollution for all cities that start with the letter A.
 
+..             .. activecode:: ch18ex1q
+..                 :nocodelens:
 
+..                 inFile = open("uspoll.txt","r)
+..                 line = inFile.readLine()
+..                 while line
+..                     values = line.split(":")
+..                     city = values[0]
+..                     if (city.find("A") == 0):
+..                         print('City: ' city)
+..                         print("Pollution values:",values[1],values[2])
+..                     line = infile.readline()
 
-#.
+..                 inFile.close()
 
-    .. tabbed:: ch18ex5t
 
-        .. tab:: Question
 
-           Fix the indention below for the code to correctly find and print the lowest 2.5 value and city.
+.. #.
 
-           .. activecode::  ch18ex5q
-                :nocodelens:
+..     .. tabbed:: ch18ex2t
 
-                inFile = open("uspoll.txt","r")
-                lines = inFile.readlines()
-                inFile.close()
+..         .. tab:: Question
 
-                minCity = ''
-                min25 = 500
-                for line in lines:
-                values = line.split(":")
-                new25 = float(values[2]) # set the value for new25 to be the current PM 2.5 value
-                if new25 < min25:
-                minCity = values[0] # Save the minimum city and state
-                min25 = new25 # save the minimum PM 2.5 value
-                print("Smallest PM 2.5 ",min25," in ",minCity)
+..             Fix the errors in the code below so that it prints the average PM values of only the cities that start with "A".
 
+..             .. activecode::  ch18ex2q
+..                 :nocodelens:
 
+..                 inFile = open("uspoll.txt","r")
+..                 lines = inFile.readlines()
+..                 inFile.close()
 
-#.
+..                 total25 = 0
+..                 count = 1.0
+..                 for line in lines:
+..                     values = line.split(":")
+..                     new25 = float(values[2])
+..                     city = values[1]
+..                     if (city.find("A") == -1):
+..                         total25 = total25 + new25
+..                     count = count + 1
 
-    .. tabbed:: ch18ex6t
+..                 print("Average PM 2.5 value for cities that start with 'A' is ", total25/count)
 
-        .. tab:: Question
 
-            Fix the code so that it prints out the min value and the cities only when the min value is even.
 
-            .. activecode::  ch18ex6q
-                :nocodelens:
+.. #.
 
-                # read all the lines
-                inFile = open("uspoll.txt", r)
-                lines = inFile.readline
-                inFile.close()
+..     .. tabbed:: ch18ex3t
 
-                # loop through the lines
-                for line in lines:
+..         .. tab:: Question
 
-                    # split at :
-                    values = line.split(" ")
+..            Fix the 5 errors in the code below so that it runs and prints the largest PM 2.5 value and the city that has that value.
 
-                    # get the min PM 2.5 pollution and the city
-                    num = str(values[2])
-                    city = values[0]
+..            .. activecode::  ch18ex3q
+..                 :nocodelens:
 
-                    # check if even
-                    if num % 2 == 0:
+..                 inFile = open("uspoll.txt","r"
+..                 lines = inFile.readlines()
+..                 inFile.Close()
 
-                    # print the values
-                    print("Even min PM 2.5 ", num ," in ", city)
+..                 maxCity = ''
+..                 max25 =   # initialize max25
+..                 for line  lines:
+..                     values = line.split(":")
+..                     new25 = float(values[2]) # get the current value
+..                     if new25 > max25
+..                         maxCity = values[0]
+..                         max25 = new25 # save the new maximum
+..                 print("Largest PM 2.5 value is ",max25," in ",maxCity)
 
 
 
-#.
 
-    .. tabbed:: ch18ex7t
+.. #.
 
-        .. tab:: Question
+..     .. tabbed:: ch18ex4t
 
-           Fix the indention on the lines below so that it correctly prints the average PM 2.5 value.
+..         .. tab:: Question
 
-           .. activecode::  ch18ex7q
-                :nocodelens:
+..             The code below prints all the lines that have a city that starts with an "A". Change it so that it prints out all lines that have a city that starts with "A" or "B".
 
-                inFile = open("uspoll.txt","r")
-                lines = inFile.readlines()
-                inFile.close()
+..             .. activecode::  ch18ex4q
+..                 :nocodelens:
 
-                total25 = 0
-                count = 1.0
-                for line in lines:
-                values = line.split(":")
-                new25 = float(values[2])
-                total25 = total25 + new25
-                count = count + 1
+..                 # read all the lines
+..                 inFile = open("uspoll.txt","r")
+..                 lines = inFile.readlines()
+..                 inFile.close()
 
-                print("Average PM 2.5 value is ",total25/count)
+..                 # loop through the lines
+..                 for line in lines:
+..                     if line[0] == "A":
+..                         print(line)
 
 
 
-#.
 
-    .. tabbed:: ch18ex8t
+.. #.
 
-        .. tab:: Question
+..     .. tabbed:: ch18ex5t
 
-            Write a procedure that takes in the file name as a parameter and prints out all the cities that start with a vowel (a,e,i,o, or u) and their associated pollution values.
+..         .. tab:: Question
 
-            .. activecode::  ch18ex8q
-                :nocodelens:
+..            Fix the indention below for the code to correctly find and print the lowest 2.5 value and city.
 
+..            .. activecode::  ch18ex5q
+..                 :nocodelens:
 
+..                 inFile = open("uspoll.txt","r")
+..                 lines = inFile.readlines()
+..                 inFile.close()
 
-#.
+..                 minCity = ''
+..                 min25 = 500
+..                 for line in lines:
+..                 values = line.split(":")
+..                 new25 = float(values[2]) # set the value for new25 to be the current PM 2.5 value
+..                 if new25 < min25:
+..                 minCity = values[0] # Save the minimum city and state
+..                 min25 = new25 # save the minimum PM 2.5 value
+..                 print("Smallest PM 2.5 ",min25," in ",minCity)
 
-    .. tabbed:: ch18ex9t
 
-        .. tab:: Question
 
-           Turn the following code into a procedure.  Pass the input file and the amount of PM 10 to the procedure. It will print the city name and the pollution values for all cities that have that much PM 10 pollution or more.
+.. #.
 
-           .. activecode::  ch18ex9q
-                :nocodelens:
+..     .. tabbed:: ch18ex6t
 
-                inFile = open("uspoll.txt","r")
-                line = inFile.readline()
-                while line:
-                    values = line.split(":")
-                    pollution = float(values[1])
-                    if (pollution > 25):
-                        print('City: ', values[0])
-                        print("Pollution values:",values[1],values[2])
-                    line = inFile.readline()
+..         .. tab:: Question
 
-                inFile.close()
+..             Fix the code so that it prints out the min value and the cities only when the min value is even.
 
+..             .. activecode::  ch18ex6q
+..                 :nocodelens:
 
+..                 # read all the lines
+..                 inFile = open("uspoll.txt", r)
+..                 lines = inFile.readline
+..                 inFile.close()
 
+..                 # loop through the lines
+..                 for line in lines:
 
-#.
+..                     # split at :
+..                     values = line.split(" ")
 
-    .. tabbed:: ch18ex10t
+..                     # get the min PM 2.5 pollution and the city
+..                     num = str(values[2])
+..                     city = values[0]
 
-        .. tab:: Question
+..                     # check if even
+..                     if num % 2 == 0:
 
-           Write a function that returns the average PM 2.5 of cities that start with "L".
+..                     # print the values
+..                     print("Even min PM 2.5 ", num ," in ", city)
 
-           .. activecode::  ch18ex10q
-                :nocodelens:
 
 
+.. #.
 
-#.
+..     .. tabbed:: ch18ex7t
 
-    .. tabbed:: ch18ex11t
+..         .. tab:: Question
 
-        .. tab:: Question
+..            Fix the indention on the lines below so that it correctly prints the average PM 2.5 value.
 
-           Change the following code into a procedure that prints the city name and pollution values for all cities that have a PM 2.5 of less than some passed value.  Pass in the input file and the amount of pollution.
+..            .. activecode::  ch18ex7q
+..                 :nocodelens:
 
-           .. activecode::  ch18ex11q
-                :nocodelens:
+..                 inFile = open("uspoll.txt","r")
+..                 lines = inFile.readlines()
+..                 inFile.close()
 
-                inFile = open("uspoll.txt","r")
-                line = inFile.readline()
-                while line:
-                    values = line.split(":")
-                    pollution = float(values[2])
-                    if (pollution < 5):
-                        print('City: ', values[0])
-                        print("Pollution values:",values[1],values[2])
-                    line = inFile.readline()
+..                 total25 = 0
+..                 count = 1.0
+..                 for line in lines:
+..                 values = line.split(":")
+..                 new25 = float(values[2])
+..                 total25 = total25 + new25
+..                 count = count + 1
 
-                inFile.close()
+..                 print("Average PM 2.5 value is ",total25/count)
 
 
 
+.. #.
 
-#.
+..     .. tabbed:: ch18ex8t
 
-    .. tabbed:: ch18ex12t
+..         .. tab:: Question
 
-        .. tab:: Question
+..             Write a procedure that takes in the file name as a parameter and prints out all the cities that start with a vowel (a,e,i,o, or u) and their associated pollution values.
 
-           Write a procedure that takes the name of a city and prints the pollution values for that city if it is found.
+..             .. activecode::  ch18ex8q
+..                 :nocodelens:
 
-           .. activecode::  ch18ex12q
-                :nocodelens:
 
 
+.. #.
 
-#.
+..     .. tabbed:: ch18ex9t
 
-    .. tabbed:: ch18ex13t
+..         .. tab:: Question
 
-        .. tab:: Question
+..            Turn the following code into a procedure.  Pass the input file and the amount of PM 10 to the procedure. It will print the city name and the pollution values for all cities that have that much PM 10 pollution or more.
 
-            Complete the code at the ``#`` so that it prints out the date with the biggest loss from open to close.
+..            .. activecode::  ch18ex9q
+..                 :nocodelens:
 
-            .. activecode::  ch18ex13q
-                :nocodelens:
+..                 inFile = open("uspoll.txt","r")
+..                 line = inFile.readline()
+..                 while line:
+..                     values = line.split(":")
+..                     pollution = float(values[1])
+..                     if (pollution > 25):
+..                         print('City: ', values[0])
+..                         print("Pollution values:",values[1],values[2])
+..                     line = inFile.readline()
 
-                def biggestLoss(file):
-                    maxLoss = 0
-                    lines = file.readlines()
-                    for # in lines:
-                        values = line.split(#)
-                        open = float(values[#])
-                        close = float(values[4])
-                        dailyLoss = open # close
-                        if (dailyLoss # maxLoss):
-                            maxLoss = dailyLoss
-                            date = values[#]
-                    print(date + " loss " + str(maxLoss))
+..                 inFile.close()
 
-                file = open("stocks.txt", "r")
-                biggestLoss(file)
 
 
 
-#.
+.. #.
 
-    .. tabbed:: ch18ex14t
+..     .. tabbed:: ch18ex10t
 
-        .. tab:: Question
+..         .. tab:: Question
 
-            Fix the errors below so that the procedure prints all the dates where the Dow Jones gained more than 300 points from open to close.
+..            Write a function that returns the average PM 2.5 of cities that start with "L".
 
-            .. activecode::  ch18ex14q
-                :nocodelens:
+..            .. activecode::  ch18ex10q
+..                 :nocodelens:
 
-                def pointGain(file):
-                    lines = file.readlines()
-                    for lines in lines:
-                    values = line.split()
-                    open = str(values[2])
-                    close = float(values[4])
-                    if (close - open) < 300:
-                        print(values[0])
-                file = open("stocks.txt", "r")
-                pointGain(file)
 
 
+.. #.
 
-#.
+..     .. tabbed:: ch18ex11t
 
-    .. tabbed:: ch18ex15t
+..         .. tab:: Question
 
-        .. tab:: Question
+..            Change the following code into a procedure that prints the city name and pollution values for all cities that have a PM 2.5 of less than some passed value.  Pass in the input file and the amount of pollution.
 
-            The code currently prints the date that the Dow Jones had the biggest percent loss. Change 2 lines so that it prints the date with the biggest percent gain.
+..            .. activecode::  ch18ex11q
+..                 :nocodelens:
 
-            .. activecode::  ch18ex15q
-                :nocodelens:
+..                 inFile = open("uspoll.txt","r")
+..                 line = inFile.readline()
+..                 while line:
+..                     values = line.split(":")
+..                     pollution = float(values[2])
+..                     if (pollution < 5):
+..                         print('City: ', values[0])
+..                         print("Pollution values:",values[1],values[2])
+..                     line = inFile.readline()
 
-                file = open("stocks.txt", "r")
-                lines = file.readlines()
-                maxGain = 100000
-                for line in lines:
-                    values = line.split(",")
-                    open = float(values[1])
-                    close = float(values[4])
-                    perChange = ((close - open) / open) * 100
-                    if perChange < maxGain:
-                        maxGain = perChange
-                        date = values[0]
-                print(date)
+..                 inFile.close()
 
 
 
-#.
 
-    .. tabbed:: ch18ex16t
+.. #.
 
-        .. tab:: Question
+..     .. tabbed:: ch18ex12t
 
-            The code below prints all the dates and high price for dates that occur on the first day of the month (i.e. January 1, February 1...). Change it so that it prints the date and low price for all the dates that occur in June.
+..         .. tab:: Question
 
-            .. activecode::  ch18ex16q
-                :nocodelens:
+..            Write a procedure that takes the name of a city and prints the pollution values for that city if it is found.
 
-                file = open("stocks.txt", "r")
-                lines = file.readlines()
-                for line in lines:
-                    values = line.split(",")
-                    date = values[0]
-                    if date[0] == "1":
-                        print(date + " had a high value of " + values[2])
+..            .. activecode::  ch18ex12q
+..                 :nocodelens:
 
 
 
-#.
+.. #.
 
-    .. tabbed:: ch18ex17t
+..     .. tabbed:: ch18ex13t
 
-        .. tab:: Question
+..         .. tab:: Question
 
-            Write a procedure that takes in the stocks file and a string of the last two digits from the years 1989 - 2001 (i.e. "89") and prints the difference between the highest and lowest points of that year.
+..             Complete the code at the ``#`` so that it prints out the date with the biggest loss from open to close.
 
-            .. activecode::  ch18ex17q
-                :nocodelens:
+..             .. activecode::  ch18ex13q
+..                 :nocodelens:
 
+..                 def biggestLoss(file):
+..                     maxLoss = 0
+..                     lines = file.readlines()
+..                     for # in lines:
+..                         values = line.split(#)
+..                         open = float(values[#])
+..                         close = float(values[4])
+..                         dailyLoss = open # close
+..                         if (dailyLoss # maxLoss):
+..                             maxLoss = dailyLoss
+..                             date = values[#]
+..                     print(date + " loss " + str(maxLoss))
 
+..                 file = open("stocks.txt", "r")
+..                 biggestLoss(file)
 
-#.
 
-    .. tabbed:: ch18ex18t
 
-        .. tab:: Question
+.. #.
 
-            Write a function that takes the stocks file and the abbreviation for a month (i.e. Jan, Feb) as parameters and returns the average value of all the closing prices during that month from all the years given (Hint: Use a counter variable).
+..     .. tabbed:: ch18ex14t
 
-            .. activecode::  ch18ex18q
-                :nocodelens:
+..         .. tab:: Question
 
+..             Fix the errors below so that the procedure prints all the dates where the Dow Jones gained more than 300 points from open to close.
 
+..             .. activecode::  ch18ex14q
+..                 :nocodelens:
 
-#.
+..                 def pointGain(file):
+..                     lines = file.readlines()
+..                     for lines in lines:
+..                     values = line.split()
+..                     open = str(values[2])
+..                     close = float(values[4])
+..                     if (close - open) < 300:
+..                         print(values[0])
+..                 file = open("stocks.txt", "r")
+..                 pointGain(file)
 
-    .. tabbed:: ch18ex19t
 
-        .. tab:: Question
 
-            Write a function that returns the difference between the average of all the gains or breakevens (0 change) and the absolute value of the average of all the losses from open to close.
+.. #.
 
-           .. activecode::  ch18ex19q
-               :nocodelens:
+..     .. tabbed:: ch18ex15t
 
+..         .. tab:: Question
 
+..             The code currently prints the date that the Dow Jones had the biggest percent loss. Change 2 lines so that it prints the date with the biggest percent gain.
 
-#.
+..             .. activecode::  ch18ex15q
+..                 :nocodelens:
 
-    .. tabbed:: ch18ex20t
+..                 file = open("stocks.txt", "r")
+..                 lines = file.readlines()
+..                 maxGain = 100000
+..                 for line in lines:
+..                     values = line.split(",")
+..                     open = float(values[1])
+..                     close = float(values[4])
+..                     perChange = ((close - open) / open) * 100
+..                     if perChange < maxGain:
+..                         maxGain = perChange
+..                         date = values[0]
+..                 print(date)
 
-        .. tab:: Question
 
-            Write a procedure that takes the stock file as a parameter and prints the date, and high to low change price only for the date that had the highest high to low change out of the dates that fall on the first day of the month.
 
-            .. activecode::  ch18ex20q
-                :nocodelens:
+.. #.
+
+..     .. tabbed:: ch18ex16t
+
+..         .. tab:: Question
+
+..             The code below prints all the dates and high price for dates that occur on the first day of the month (i.e. January 1, February 1...). Change it so that it prints the date and low price for all the dates that occur in June.
+
+..             .. activecode::  ch18ex16q
+..                 :nocodelens:
+
+..                 file = open("stocks.txt", "r")
+..                 lines = file.readlines()
+..                 for line in lines:
+..                     values = line.split(",")
+..                     date = values[0]
+..                     if date[0] == "1":
+..                         print(date + " had a high value of " + values[2])
+
+
+
+.. #.
+
+..     .. tabbed:: ch18ex17t
+
+..         .. tab:: Question
+
+..             Write a procedure that takes in the stocks file and a string of the last two digits from the years 1989 - 2001 (i.e. "89") and prints the difference between the highest and lowest points of that year.
+
+..             .. activecode::  ch18ex17q
+..                 :nocodelens:
+
+
+
+.. #.
+
+..     .. tabbed:: ch18ex18t
+
+..         .. tab:: Question
+
+..             Write a function that takes the stocks file and the abbreviation for a month (i.e. Jan, Feb) as parameters and returns the average value of all the closing prices during that month from all the years given (Hint: Use a counter variable).
+
+..             .. activecode::  ch18ex18q
+..                 :nocodelens:
+
+
+
+.. #.
+
+..     .. tabbed:: ch18ex19t
+
+..         .. tab:: Question
+
+..             Write a function that returns the difference between the average of all the gains or breakevens (0 change) and the absolute value of the average of all the losses from open to close.
+
+..            .. activecode::  ch18ex19q
+..                :nocodelens:
+
+
+
+.. #.
+
+..     .. tabbed:: ch18ex20t
+
+..         .. tab:: Question
+
+..             Write a procedure that takes the stock file as a parameter and prints the date, and high to low change price only for the date that had the highest high to low change out of the dates that fall on the first day of the month.
+
+..             .. activecode::  ch18ex20q
+..                 :nocodelens:
 
 
