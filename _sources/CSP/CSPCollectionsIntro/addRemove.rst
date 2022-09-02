@@ -7,7 +7,9 @@
     is included in the section entitled "GNU Free Documentation License".
 
 .. setup for automatic question numbering.
-    
+
+.. _list-add-remove:
+
 Adding and Removing Items
 ================================
 

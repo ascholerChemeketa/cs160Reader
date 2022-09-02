@@ -25,6 +25,7 @@
     CSPDecisionsStrings/toctree.rst
     CSPDecisionsImages/toctree.rst
     CSPCollectionsIntro/toctree.rst
+    CSPCollectionsContinued/toctree.rst
     SQLIntro/toctree.rst
     SQLGroupJoin/toctree.rst
     CSPPythonData/toctree.rst

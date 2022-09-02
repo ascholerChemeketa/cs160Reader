@@ -8,6 +8,8 @@
 
 .. include:: ../csp_global.rst
 
+.. _random-numbers:
+
 Random Numbers
 ==========================
 

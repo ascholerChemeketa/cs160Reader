@@ -1,13 +1,12 @@
-Working with Collections
+Working with Lists
 ::::::::::::::::::::::::::::::::::::::
 
 *Learning Objectives:*
 
-- Introduce ``collections`` as a common way of thinking about lists and strings. 
-- Introduce the ``len`` (length) function to get the number of characters in a string or the number of items in a list.
 - Introduce a list as something that holds items in order.
 - Use an index to get an item from a list.
-- Generate a decreasing list with the ``range`` function.
+- Add and remove items from a list.
+- Process a list by counting items, accumulating totals, and finding the max and min
 - Introduce the rainfall problem.
 
 .. toctree::

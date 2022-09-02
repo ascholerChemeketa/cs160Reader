@@ -9,7 +9,7 @@
 .. setup for automatic question numbering.
     
 
-Working with Collections of Data
+The Need for Lists
 =================================
 
 .. index:: 
