@@ -1,7 +1,7 @@
 .. include:: global.rst
 
 
-CS160 Course Reader
+Welcome To CS
 ####################
 
 Computation and Computer Science
