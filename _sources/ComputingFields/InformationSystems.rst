@@ -31,10 +31,6 @@ have a more technical focus, with a core of technical skills like an IT professi
 more business focused and have technical courses that don't focus on developing practical skills, but instead focus
 on understanding how technologies are used so that the IS practitioner can manage people with the more applied skills.
 
-You can start studying information systems at Chemeketa in the `Computer Information Systems program`_.
-
-.. _`Computer Information Systems program`: https://www.chemeketa.edu/programs-classes/program-finder/computer-information-systems/
-
 **Knowledge Domains:**
 
 This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.

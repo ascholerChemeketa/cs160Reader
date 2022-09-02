@@ -14,10 +14,7 @@ C\ **omputer Engineers** research, design, develop and test computer chips, circ
 
 **Education:**
 
-To work in this field you need a Bachelor's degree in Computer Engineering. At some schools, instead of a separate Computer Engineering degree, students specialize in that field while earning a degree in Electrical Engineering. At Chemeketa, you can start studying computer engineering in the `Engineering program`_.
-
-.. _`Engineering program`: https://www.chemeketa.edu/programs-classes/program-finder/engineering/
-
+To work in this field you need a Bachelor's degree in Computer Engineering. At some schools, instead of a separate Computer Engineering degree, students specialize in that field while earning a degree in Electrical Engineering. 
 In addition to deep knowledge of computer hardware and some programming knowledge, Computer Engineers
 need to do significant course work in general engineering principles, physics, and math. 
 

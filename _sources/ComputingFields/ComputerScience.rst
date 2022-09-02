@@ -36,10 +36,6 @@ and applied programming skills.
 Computer science students generally need a strong core of mathematics to support the theoretical parts of
 their CS coursework.
 
-You can start studying computer science at Chemeketa in the `Computer Science program`_.
-
-.. _`Computer Science program`: http://computerscience.chemeketa.edu/
-
 
 **Knowledge Domains:**
 

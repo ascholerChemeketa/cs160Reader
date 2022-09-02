@@ -35,10 +35,6 @@ Although some schools offer degrees specifically in Software Engineering, at mos
 within the computer science department. Someone who knows they want to become a working software developer thus would
 earn a CS degree, but focus on the Software Engineering related courses instead of picking a more theoretical area to specialize in.
 
-You can start studying software engineering at Chemeketa in the `Computer Science program`_.
-
-.. _`Computer Science program`: http://computerscience.chemeketa.edu/
-
 **Knowledge Domains:**
 
 This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
