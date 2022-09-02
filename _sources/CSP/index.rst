@@ -29,3 +29,4 @@
     SQLIntro/toctree.rst
     SQLGroupJoin/toctree.rst
     CSPPythonData/toctree.rst
+    CSPWhatsNext/index.rst
