@@ -25,18 +25,6 @@ Computation and Computer Science
    LimitsAndFuture/index.rst
    ImpactsOfComputing/index.rst
 
-
-
-Nine Algorithms Book Supplements
-===================================
-
-.. toctree::
-   :includehidden:
-   :maxdepth: 2
-
-   NineAlgorithms/index.rst
-
-
 Exploring Programming
 ===================================
 
@@ -46,12 +34,11 @@ Exploring Programming
 
    CSP/index.rst
 
-
-Exploring Programming - To Do
+Nine Algorithms Book Supplements
 ===================================
 
 .. toctree::
    :includehidden:
-   :maxdepth: 1
+   :maxdepth: 2
 
-   CSP/index_todo.rst
+   NineAlgorithms/index.rst
