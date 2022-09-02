@@ -469,11 +469,6 @@ div.runestone_caption {
     border-bottom: thin #ccc solid;
 }
 
-#scprogresscontainer {
-    display: none;
-}
-
-
 /* -------------------------CSP stuff----------------- */
 
 div.highlight-python,
