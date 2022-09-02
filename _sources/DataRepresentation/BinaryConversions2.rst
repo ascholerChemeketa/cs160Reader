@@ -3,6 +3,8 @@
 .. index:: 
     pair: conversion; binary
 
+.. _binary_conversion_division:
+
 Binary Conversions - Multiplication/Division Method
 ======================================================
 

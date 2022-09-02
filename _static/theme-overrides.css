@@ -168,6 +168,12 @@ div.figure.align-right {
     text-align: center;
 }
 
+figure figcaption {
+    font-style: italic;
+    font-size: 0.8em; 
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 
 .inlinegroup  {
     text-align: center;
@@ -470,6 +476,28 @@ div.runestone_caption {
 
 /* -------------------------CSP stuff----------------- */
 
-section > div.highlight-python {
+div.highlight-python,
+div.highlight-default {
     margin-bottom: 10px;
+}
+
+.highlight span.linenos::after {
+    content: '|';
+    color:#888;
+}
+
+.CodeMirror {
+    height: auto !important;
+}
+
+/*
+.ac_output pre {
+    max-height: 300px;
+    overflow: scroll;
+} */
+
+/* This is for Codelens areas - no cleaner way to select them */
+
+iframe[height*="500"] {
+    height: 650px !important;
 }

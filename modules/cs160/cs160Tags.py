@@ -192,8 +192,10 @@ class AttributionLine():
         if 'license' in self.options:
             if self.options['license'] == 'CC_BY_NC_30':
                 return ' (<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</a>)'
-            if self.options['license'] == 'CC_SA_30':
+            elif self.options['license'] == 'CC_SA_30':
                 return ' (<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)'
+            elif self.options['license'] == 'GNU_FDL':
+                return ' (<a rel="license" href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Document License</a>)'
             else:
                 return ""
         else:
@@ -241,6 +243,11 @@ class QuickAttribution(Directive):
                 cur_options['title'] = "Wikipedia"
                 cur_options['title_link'] = "http://en.wikipedia.org/"
                 cur_options['license'] = "CC_SA_30"
+
+            if argument == 'FOPP':
+                cur_options['title'] = "Foundations of Python Programming"
+                cur_options['title_link'] = "https://github.com/RunestoneInteractive/fopp"
+                cur_options['license'] = "GNU_FDL"
             
             if argument == 'ACM':
                 cur_options['title'] = "Association for Computing Machinery Curriculum Report"
