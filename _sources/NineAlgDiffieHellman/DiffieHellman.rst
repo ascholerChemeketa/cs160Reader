@@ -20,7 +20,6 @@ The more formal name for clock math is modulo arithmetic or mod for short. We wo
     :figclass: align-right
     :width: 300
     
-    
 The results will include the answer as well as other handy info like other numbers that produce the same answer for the given clock and the clock representation of the answer.
     
 Wolfram Alpha will work even when arbitrarily large numbers are involved. With Diffie-Hellman, the use of exponents means the values involved grow rapidly, but Wolfram Alpha will do just fine calculating something like 23 to the 17th power on a clock size 11. Use ^ to represent exponentiation and type something like "23^17 mod 11" as your input.    

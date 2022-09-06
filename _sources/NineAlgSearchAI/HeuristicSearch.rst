@@ -1,4 +1,4 @@
-.. include:: ../../global.rst
+.. include:: ../global.rst
 
 .. index:: artificial intelligence, heuristic*
 

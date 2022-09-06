@@ -1,4 +1,4 @@
-.. include:: ../../global.rst
+.. include:: ../global.rst
 
 Diffie Hellman Color Mixing Playground (Ch 4)
 =======================================================
