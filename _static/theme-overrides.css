@@ -59,11 +59,19 @@ div.container section > iframe {
 }
 
 @media (min-width: 600px) {
-    #main-content section >  aside.sidebar {
+    #main-content section > aside.sidebar {
         float: right;
         width: 240px;
         margin-right: calc((100% - var(--contentWidthRegular))/2);
         margin-left: 15px;
+        margin-top: 0;
+    }
+
+    #main-content section > figure.align-right {
+        float: right;
+        margin-right: calc((100% - var(--contentWidthRegular))/2);
+        margin-left: 15px;
+        margin-top: 0;
     }
 }
 

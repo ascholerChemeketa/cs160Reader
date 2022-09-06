@@ -7,7 +7,7 @@ Multi Processing
     
 .. figure:: Images/quad-core.jpg
     :figclass: align-right
-    :width: 300
+    :width: 200
     
     Image © Intel Corporation 
    
