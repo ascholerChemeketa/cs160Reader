@@ -37,8 +37,18 @@ Exploring Programming
 Nine Algorithms Book Supplements
 ===================================
 
-.. toctree::
-   :includehidden:
-   :maxdepth: 2
+Resources and additional materials to accompany readings in *Nine Algorithms That Changed the Future*.
 
-   NineAlgorithms/index.rst
+.. toctree::
+    :includehidden:
+    :maxdepth: 1
+
+    NineAlgorithms/PageRank.rst
+    NineAlgDiffieHellman/index.rst
+    NineAlgorithms/ErrorCorrection.rst
+    NineAlgorithms/PatternRecognition2.rst
+    NineAlgorithms/Compression.rst
+    NineAlgorithms/NineAlgAuthentication/index.rst
+    NineAlgorithms/SearchAI/index.rst
+    NineAlgorithms/DatabasesAndConcurrency.rst
+    NineAlgorithms/Computability.rst
