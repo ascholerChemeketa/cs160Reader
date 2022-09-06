@@ -7,7 +7,7 @@
     is included in the section entitled "GNU Free Documentation License".
 
 
-.. index:: ../csp_global.rst
+.. index:: ../CSP/csp_global.rst
 
 Counting with a While Loop
 ===========================

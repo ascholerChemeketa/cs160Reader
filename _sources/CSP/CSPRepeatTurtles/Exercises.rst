@@ -7,7 +7,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. include:: ../csp_global.rst
+.. include:: ../CSP/csp_global.rst
 
 Chapter Exercises
 ---------------------

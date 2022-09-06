@@ -1,5 +1,5 @@
 
-.. include:: ../csp_global.rst
+.. include:: ../CSP/csp_global.rst
 
 
 .. |runbutton| image:: Figures/run-button.png
