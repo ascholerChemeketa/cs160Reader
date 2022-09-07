@@ -31,6 +31,10 @@ div.container section > iframe {
     margin-bottom: 10px;
 }
 
+#main-content section > a {
+    display: block;
+    text-align: center;
+}
 
 #main-content section >  aside.sidebar {
     float: none;
@@ -67,7 +71,7 @@ div.container section > iframe {
         margin-top: 0;
     }
 
-    #main-content section > figure.align-right {
+    #main-content section > .align-right {
         float: right;
         margin-right: calc((100% - var(--contentWidthRegular))/2);
         margin-left: 15px;
@@ -211,6 +215,17 @@ div.attribution {
     padding: 5px 0;
 }
 
+
+li.dropdown.open a.dropdown-toggle, li.dropdown.open a.dropdown-toggle:focus {
+    border: 0px !important;
+    background-color: #404714 !important;
+    color: #F8F8F8 !important;
+}
+
+a.dropdown-toggle:focus {
+    background-color: #404714 !important;
+    color: #F8F8F8 !important;
+}
 
 /*---------Drop Caps-----*/
 .container>div.section:first-of-type>p:first-of-type { padding-top: 10px; }
@@ -398,7 +413,7 @@ table.truth-table td, table.truth-table th {
 
 /*--------------Interactive Questions-----------------*/
 
-button[name="compare"] { 
+/* button[name="compare"] { 
     display: none;
 }
 
@@ -416,7 +431,7 @@ div.runestone.alert .alert {
 
 div.runestone_caption {
     display: none;
-}
+} */
 
 /*--------------Mixins-----------------*/
 
