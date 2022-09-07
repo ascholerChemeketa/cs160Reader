@@ -45,7 +45,7 @@ options(
             # These are used for non-dynamic books.
             'appname': project_name,
             'course_url': master_url,
-            'minimal_outside_links': True,
+            'minimal_outside_links': False,
         }
     ),
 )
