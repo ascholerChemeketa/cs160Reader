@@ -3,10 +3,10 @@
 Diffie Hellman Color Mixing Playground (Ch 4)
 =======================================================
 
-The `Diffie Hellman Color Mixing Playground <../../_static/sharedSecretColorApp/colorMixing.html>`__ is a JavaScript app that allows you to experiment with the shared secret algorithm from chapter 4. It demonstrates both the "paint mixing" version of the algorithm as well as the final version using exponents and modular arithmetic. 
+The `Diffie Hellman Color Mixing Playground <../_static/sharedSecretColorApp/colorMixing.html>`__ is a JavaScript app that allows you to experiment with the shared secret algorithm from chapter 4. It demonstrates both the "paint mixing" version of the algorithm as well as the final version using exponents and modular arithmetic. 
 
 .. image:: Images/colorMixingPlayground.png
-	:target: ../../_static/sharedSecretColorApp/colorMixing.html
+    :target: ../_static/sharedSecretColorApp/colorMixing.html
 
 .. pseudo_h3:: How To Use The Playground
     :class: underlined

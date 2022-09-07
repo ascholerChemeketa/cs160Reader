@@ -19,7 +19,7 @@ Searching in this manner, where we use some kind of intuition about which direct
 
 To experiment with using heuristic search, try the Search Playground again. This time, check the box that says "**Allow Intuition**". Now you will get to see where the destination is, and you are not forced to explore unpromising looking routes. Try searching through a few different maps. Can you successfully find the shortest path without exploring everything?
 
-`Search Playground <../../_static/searchApp/search.html>`__
+`Search Playground <../_static/searchApp/search.html>`__
 
 
 How would you describe the heuristic (intuition or rule of thumb) you used while exploring maps? It was probably something like "pick the location that is closest to the destination". Did it always work? Or did you sometimes get greedy and skip over options you should have explored? (Try typing in 3142 for the **Map Number** and then press **Reload Map** for an example of one that is easy to get fooled on).
