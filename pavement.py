@@ -30,7 +30,7 @@ options(
         confdir = ".",
         template_args={
             'login_required':'false',
-            'loglevel': 0,
+            'loglevel': 10,
             'course_title': project_name,
             'python3': 'true',
             'dburl': '',
