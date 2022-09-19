@@ -20,8 +20,8 @@ the flag of Chad (bottom).
 
 .. raw:: html
 
-    <img class="center-block" src="../../_static/CSPImages/fr-flag.gif" id="fr-flag.gif">
-    <img class="center-block" src="../../_static/CSPImages/cd-flag.gif" id="cd-flag.gif">
+    <img class="center-block" src="../_static/CSPImages/fr-flag.gif" id="fr-flag.gif">
+    <img class="center-block" src="../_static/CSPImages/cd-flag.gif" id="cd-flag.gif">
 
 To do this, we need to change just the white pixels in the image and make them yellow. This
 means we need a way to answer the question "is this pixel white?". A pure white pixel has
@@ -82,7 +82,7 @@ or red ones.
 
 .. raw:: html
 
-    <img class="center-block" src="../../_static/CSPImages/be-flag.gif" id="be-flag.gif">
+    <img class="center-block" src="../_static/CSPImages/be-flag.gif" id="be-flag.gif">
 
 .. activecode:: Flag_Swap_2
     :nocodelens:

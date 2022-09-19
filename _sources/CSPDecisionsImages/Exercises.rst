@@ -21,7 +21,7 @@ Chapter Exercises
 
     .. raw:: html
 
-        <img class="center-block" src="../../_static/CSPImages/fr-flag.gif" id="fr-flag.gif">
+        <img class="center-block" src="../_static/CSPImages/fr-flag.gif" id="fr-flag.gif">
 
     The code below is supposed to change the white in the French flag to aqua (Aqua is made
     by mixing blue and green with no red). Arrange and indent the blocks to make a correct
@@ -65,7 +65,7 @@ Chapter Exercises
 
     .. raw:: html
 
-        <img class="center-block" src="../../_static/CSPImages/logo.jpg" id="logo.jpg">
+        <img class="center-block" src="../_static/CSPImages/logo.jpg" id="logo.jpg">
 
     ~~~~
     from image import *
@@ -110,7 +110,7 @@ Chapter Exercises
 
     .. raw:: html
 
-        <img class="center-block" src="../../_static/CSPImages/logo.jpg" id="logo.jpg">
+        <img class="center-block" src="../_static/CSPImages/logo.jpg" id="logo.jpg">
 
     ~~~~
     from image import *
@@ -155,7 +155,7 @@ Chapter Exercises
 
     .. raw:: html
 
-        <img class="center-block" src="../../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg">
+        <img class="center-block" src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg">
 
     ~~~~
 

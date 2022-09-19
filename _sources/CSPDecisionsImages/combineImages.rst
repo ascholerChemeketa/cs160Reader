@@ -25,8 +25,8 @@ We are going to put the woman shown below into the beach scene:
 
 .. raw:: html
 
-    <img class="center-block" src="../../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
-    <img class="center-block" src="../../_static/CSPImages/beach.jpg" id="beach.jpg">
+    <img class="center-block" src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
+    <img class="center-block" src="../_static/CSPImages/beach.jpg" id="beach.jpg">
 
 First up, we need to have an ``isGreen`` function to identify which pixels are part of the
 green background. It will be very similar to the ``isRed`` from the last page, only we want

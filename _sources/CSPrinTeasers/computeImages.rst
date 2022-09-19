@@ -40,7 +40,7 @@ Pixels are quite small.  Even this small picture below has 200 columns and 300 r
 
 .. raw:: html
 
-    <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg" alt="A cat">
+    <img src="../_static/CSPImages/cat.jpg" id="cat.jpg" alt="A cat">
     
 .. mchoice:: 1_5_1_Image_Q1
    :answer_a: From left to right

@@ -22,7 +22,7 @@ the graduates faces stand out from the background in this image:
 
 .. raw:: html
 
-    <img class="center-block" src="../../_static/CSPImages/graduates.jpg" id="graduates.jpg">
+    <img class="center-block" src="../_static/CSPImages/graduates.jpg" id="graduates.jpg">
 
 First, we need to make some procedures that we will use to make a pixel gray and to darken it.
 These procedures will accept a pixel as their parameter (or one of their parameters) and modify

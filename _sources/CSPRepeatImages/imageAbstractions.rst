@@ -43,7 +43,7 @@ example of this.
 
     .. raw:: html
 
-        <img class="center-block" src="../../_static/CSPImages/cat.jpg" id="cat.jpg">
+        <img class="center-block" src="../_static/CSPImages/cat.jpg" id="cat.jpg">
 
 3. Each pixel has a **color** value that is specified as three values: the amount of red
     the amount of blue, and the amount of green. Each of those values is a number between

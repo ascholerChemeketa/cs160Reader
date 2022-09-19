@@ -19,7 +19,7 @@ in this picture into a blue one.
 
 .. raw:: html
 
-    <img class="center-block" src="../../_static/CSPImages/scooter.jpg" id="scooter.jpg">
+    <img class="center-block" src="../_static/CSPImages/scooter.jpg" id="scooter.jpg">
 
 To do that we need to select all the red pixels. But there are a lot of different "reds".
 Obviously, a pixel with the color red = 255, green = 0, blue = 0 is red. 

@@ -43,39 +43,39 @@ in this book:
     </style>
     <div class="flexgrid">
     <div>
-        <img src="../../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg">
+        <img src="../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg">
         <div class="img-title">mount_hood.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/graduates.jpg" id="graduates.jpg">
+        <img src="../_static/CSPImages/graduates.jpg" id="graduates.jpg">
         <div class="img-title">graduates.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg">
+        <img src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg">
         <div class="img-title">goalkeeper.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/student1.jpg" id="student1.jpg">
+        <img src="../_static/CSPImages/student1.jpg" id="student1.jpg">
         <div class="img-title">student1.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/student2.jpg" id="student2.jpg">
+        <img src="../_static/CSPImages/student2.jpg" id="student2.jpg">
         <div class="img-title">student2.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
+        <img src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg">
         <div class="img-title">green_screen.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/scooter.jpg" id="scooter.jpg">
+        <img src="../_static/CSPImages/scooter.jpg" id="scooter.jpg">
         <div class="img-title">scooter.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/logo.jpg" id="logo.jpg">
+        <img src="../_static/CSPImages/logo.jpg" id="logo.jpg">
         <div class="img-title">logo.jpg</div>
     </div>
     <div>
-        <img src="../../_static/CSPImages/cat.jpg" id="cat.jpg">
+        <img src="../_static/CSPImages/cat.jpg" id="cat.jpg">
         <div class="img-title">cat.jpg</div>
     </div>
     </div>
