@@ -80,7 +80,7 @@ from your own computer. Below are some images that are built into the webpages i
 that we can use. To use a different image, use it's name in the
 command that creates an image ``img = Image("student1.jpg")``.
 
-Modify the program above to try out the code on some of these other images by changing line 5 above. 
+Try out one or more of these images by changing line 5 in the program above. 
 
 .. raw:: html
 
