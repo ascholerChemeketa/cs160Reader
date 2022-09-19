@@ -8,8 +8,6 @@ Computation and Computer Science
 ==================================
 
 .. toctree::
-   :includehidden:
-   :numbered:
    :maxdepth: 1
 
    ComputingFields/index.rst
@@ -29,26 +27,25 @@ Exploring Programming
 ===================================
 
 .. toctree::
-   :includehidden:
    :maxdepth: 1
 
-   CSP/index.rst
-
-Nine Algorithms Book Supplements
-===================================
-
-Resources and additional materials to accompany readings in *Nine Algorithms That Changed the Future*.
-
-.. toctree::
-    :includehidden:
-    :maxdepth: 1
-
-    NineAlgorithms/PageRank.rst
-    NineAlgDiffieHellman/index.rst
-    NineAlgorithms/ErrorCorrection.rst
-    NineAlgorithms/PatternRecognition2.rst
-    NineAlgorithms/Compression.rst
-    NineAlgorithms/NineAlgAuthentication/index.rst
-    NineAlgorithms/SearchAI/index.rst
-    NineAlgorithms/DatabasesAndConcurrency.rst
-    NineAlgorithms/Computability.rst
+   CSPrinTeasers/toctree.rst
+   CSPNameNumbers/toctree.rst
+   CSPNameStrings/toctree.rst
+   CSPNameTurtles/toctree.rst
+   CSPNameProcedures/toctree.rst
+   CSPDesigningProcedures/toctree.rst
+   CSPNameFunctions/toctree.rst
+   CSPRepeatTurtles/toctree.rst
+   CSPRepeatImages/toctree.rst
+   CSPRepeatNumbers/toctree.rst
+   CSPDecisionsIntro/toctree.rst
+   CSPDecisionsSimulations/toctree.rst
+   CSPDecisionsStrings/toctree.rst
+   CSPDecisionsImages/toctree.rst
+   CSPCollectionsIntro/toctree.rst
+   CSPCollectionsContinued/toctree.rst
+   SQLIntro/toctree.rst
+   SQLGroupJoin/toctree.rst
+   CSPPythonData/toctree.rst
+   CSPWhatsNext/index.rst
