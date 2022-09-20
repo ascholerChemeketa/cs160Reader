@@ -9,6 +9,7 @@ Computation and Computer Science
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    ComputingFields/index.rst
    HistoryOfComputers/index.rst
@@ -28,6 +29,7 @@ Exploring Programming
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
 
    CSPrinTeasers/toctree.rst
    CSPNameNumbers/toctree.rst
