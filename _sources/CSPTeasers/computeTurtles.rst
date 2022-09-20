@@ -85,7 +85,7 @@ Try clicking the |runbutton| button below to see what the following program does
 
 Just by going forward, backward, left, and right, we can have a turtle draw a shape.  
 
-.. fillintheblank:: 1_4_3_fb1
+.. fillintheblank:: 
 
     What shape will the program below draw when you click on the Run button? 
     
