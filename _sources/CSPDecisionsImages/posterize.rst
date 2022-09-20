@@ -21,7 +21,7 @@ technology didn't let one make complex blends).
 This time, we need to make a function that will force a color value between 0 and 255 to
 become one of a few specific options.
 
-.. activecode:: posterize
+.. activecode:: cspdecisionsimages_posterize1
     :autograde: unittest
     :practice: T
 
@@ -56,7 +56,7 @@ become one of a few specific options.
 
 Now that you have that function, add it to this program to see it in action:
 
-.. activecode:: Posterize_Image
+.. activecode:: cspdecisionsimages_posterize2
     :nocodelens:
 
     from image import *
@@ -92,7 +92,7 @@ Now that you have that function, add it to this program to see it in action:
     
 Rewrite the code for posterizing an image using if and else rather than multiple if's.  Test that it still works correctly. 
 
-.. mchoice:: 15_4_1_posterize1
+.. mchoice:: cspdecisionsimages_posterize3
    :answer_a: 8
    :answer_b: 3
    :answer_c: 120

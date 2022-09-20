@@ -75,7 +75,7 @@ Below is an illustration of how the virtual memory trick works:
     :class: underlined
 
 
-.. mchoice:: virtual_memory1
+.. mchoice:: operatingsystems_virtualmemory1
     :answer_a: 8
     :answer_b: 6
     :answer_c: 3
@@ -89,7 +89,7 @@ Below is an illustration of how the virtual memory trick works:
     In the diagram above, at step 5, Program A asks for "memory location 6". Where in physical memory will that be found?
 	
 	
-.. mchoice:: virtual_memory2
+.. mchoice:: operatingsystems_virtualmemory2
     :answer_a: 0
     :answer_b: 5
     :answer_c: 7

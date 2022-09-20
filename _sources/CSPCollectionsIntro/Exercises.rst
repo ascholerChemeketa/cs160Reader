@@ -13,7 +13,7 @@
 Chapter Exercises
 ---------------------
 
-.. parsonsprob:: ch15ex1muc
+.. parsonsprob:: cspcollectionsintro_exercises1
    :numbered: left
    :practice: T
 
@@ -46,7 +46,7 @@ Chapter Exercises
            duplicates + 1 #distractor
 
 
-.. activecode:: ch15ex2
+.. activecode:: cspcollectionsintro_exercises2
     :autograde: unittest
     :practice: T
 
@@ -73,7 +73,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch15ex3
+.. activecode:: cspcollectionsintro_exercises3
     :autograde: unittest
     :practice: T
 
@@ -110,7 +110,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch15ex4
+.. activecode:: cspcollectionsintro_exercises4
     :autograde: unittest
     :practice: T
 
@@ -142,7 +142,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch15ex5
+.. activecode:: cspcollectionsintro_exercises5
     :autograde: unittest
     :practice: T
 
@@ -182,7 +182,7 @@ Chapter Exercises
 
 
 
-.. .. parsonsprob:: ch16ex1muc
+ .. parsonsprob:: cspcollectionsintro_exercises6
 ..     :numbered: left
 ..     :practice: T
 ..     :adaptive:
@@ -203,7 +203,7 @@ Chapter Exercises
 ..     first = numbers[1]
 ..     last = numbers[4] #distractor
 
-.. .. parsonsprob:: ch16ex3muc
+ .. parsonsprob:: cspcollectionsintro_exercises7
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -222,7 +222,7 @@ Chapter Exercises
 ..    =====
 ..            item.append(long_list) #distractor
 
-.. .. parsonsprob:: ch16ex4muc
+ .. parsonsprob:: cspcollectionsintro_exercises8
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -240,13 +240,13 @@ Chapter Exercises
 ..    =====
 ..    months[-1] = "December" #distractor
 
-.. .. parsonsprob:: ch16ex5muc
+ .. parsonsprob:: cspcollectionsintro_exercises9
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
 
 
-.. .. parsonsprob:: ch16ex6muc
+ .. parsonsprob:: cspcollectionsintro_exercises10
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -266,7 +266,7 @@ Chapter Exercises
 ..    =====
 ..    print(newList)
 
-.. .. parsonsprob:: ch16ex7muc
+ .. parsonsprob:: cspcollectionsintro_exercises11
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -288,7 +288,7 @@ Chapter Exercises
 ..            vocabulary.append(response)
 
 
-.. .. parsonsprob:: ch13ex1muc
+ .. parsonsprob:: cspcollectionsintro_exercises12
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -319,7 +319,7 @@ Chapter Exercises
 
 ..            Fix 5 syntax errors in the code below so that it runs and prints the contents of ``items``.
 
-..            .. activecode::  ch16ex5q
+            .. activecode:: cspcollectionsintro_exercises13
 ..                 :nocodelens:
 
 ..                def itemLister(items):
@@ -340,7 +340,7 @@ Chapter Exercises
 
 ..             Complete the code on lines 4 and 5 so that the function returns the average of a list of integers.
 
-..             .. activecode::  ch16ex6q
+             .. activecode:: cspcollectionsintro_exercises14
 ..                 :nocodelens:
 
 ..                 def gradeAverage(aList):
@@ -363,7 +363,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below so that it runs correctly.  It should loop and add the current value of ``source`` to ``soFar`` each time through the loop.  It should also print the value of ``soFar`` each time through the loop.
 
-..            .. activecode::  ch16ex7q
+            .. activecode:: cspcollectionsintro_exercises15
 ..                 :nocodelens:
 
 ..                 source = ["This", "is", "a", "list"]
@@ -382,7 +382,7 @@ Chapter Exercises
 
 ..             Fix the code so that the code prints "['hihi', 0, 0, 4]" .
 
-..             .. activecode::  ch16ex8q
+             .. activecode:: cspcollectionsintro_exercises16
 ..                 :nocodelens:
 
 ..                 items = ["hi" 2, 3, 4]
@@ -401,7 +401,7 @@ Chapter Exercises
 
 ..            Fix 4 syntax errors in the code below.  After the code executes the list ``soFar`` should contain the reverse of the ``source`` list.
 
-..            .. activecode::  ch16ex9q
+            .. activecode:: cspcollectionsintro_exercises17
 ..                 :nocodelens:
 
 ..                 # setup the source list
@@ -428,7 +428,7 @@ Chapter Exercises
 
 ..             The code below currently prints the reverse of a list. Change it so that it prints a mirrored version of the list. It should print "['list', 'a', 'is', 'This', 'This', 'is', 'a', 'list']".
 
-..             .. activecode::  ch16ex10q
+             .. activecode:: cspcollectionsintro_exercises18
 ..                 :nocodelens:
 
 ..                 # setup the source list
@@ -454,7 +454,7 @@ Chapter Exercises
 
 ..            Change the following code into a function.  It should take the list and return a list of the values at the even indicies.
 
-..            .. activecode::  ch16ex11q
+            .. activecode:: cspcollectionsintro_exercises19
 ..                 :nocodelens:
 
 ..                 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -476,7 +476,7 @@ Chapter Exercises
 
 ..             The following code creates and prints a list of even numbers. Change it and add to it so that it creates a list of all multiples of 5 from 0 to 50, inclusive.
 
-..             .. activecode::  ch16ex12q
+             .. activecode:: cspcollectionsintro_exercises20
 ..                 :nocodelens:
 
 ..                 # initialize the variables
@@ -502,7 +502,7 @@ Chapter Exercises
 
 ..            Change the following into a procedure. It prints a countdown from 5 to 0.  Have it take the starting number for the countdown as a parameter.  Print each value till it gets to 0.
 
-..            .. activecode::  ch16ex13q
+            .. activecode:: cspcollectionsintro_exercises21
 ..                 :nocodelens:
 
 ..                 for index in range(5, -1, -1):
@@ -521,7 +521,7 @@ Chapter Exercises
 
 ..             Fix the errors so that the code individually adds each item from ``source`` to ``newList``. Make the range decrement, so it starts from the end, but keep ``newList`` in the same order as ``source``.
 
-..             .. activecode::  ch16ex14q
+             .. activecode:: cspcollectionsintro_exercises22
 ..                 :nocodelens:
 
 ..                 # initialize the variables
@@ -547,7 +547,7 @@ Chapter Exercises
 
 ..            Write a function that returns the values at the odd indices in a list.  The function should take the number list as a parameter.  If it is passed [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] for example, it should return [1, 3, 5, 7, 9].
 
-..            .. activecode::  ch16ex15q
+            .. activecode:: cspcollectionsintro_exercises23
 ..                 :nocodelens:
 
 
@@ -561,7 +561,7 @@ Chapter Exercises
 
 ..             Write a function that takes a list of numbers as a parameter and adds 5 to each number and returns the list.
 
-..             .. activecode::  ch16ex16q
+             .. activecode:: cspcollectionsintro_exercises24
 ..                 :nocodelens:
 
 
@@ -575,7 +575,7 @@ Chapter Exercises
 
 ..            Write a function that takes a list of numbers and returns the sum of the positive numbers in the list.
 
-..            .. activecode::  ch16ex17q
+            .. activecode:: cspcollectionsintro_exercises25
 ..                 :nocodelens:
 
 
@@ -588,7 +588,7 @@ Chapter Exercises
 
 ..             Write a function that takes in a list of numbers as a parameter. The function should calculate the sum of all the positive numbers in the list, the absolute value of the sum of the negative numbers, and return the average of the two sums.
 
-..             .. activecode::  ch16ex18q
+             .. activecode:: cspcollectionsintro_exercises26
 ..                 :nocodelens:
 
 
@@ -601,7 +601,7 @@ Chapter Exercises
 
 ..            Write a function to return the reverse of a list, but with only every other item from the original list starting at the end of the list.  So, if it is passed the list [0, 1, 2, 3, 4, 5] for example, it should return the list [5, 3, 1].
 
-..            .. activecode::  ch16ex19q
+            .. activecode:: cspcollectionsintro_exercises27
 ..                :nocodelens:
 
 
@@ -614,7 +614,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes an int as a parameter. The procedure should add every other odd number from 1 to the int parameter (inclusive) into a new list. The procedure should print the new list and the sum of the new list.
 
-..             .. activecode::  ch16ex20q
+             .. activecode:: cspcollectionsintro_exercises28
 ..                 :nocodelens:
 
 
@@ -628,7 +628,7 @@ Chapter Exercises
 
 ..             Write a function that takes in a list of grades and returns the letter grade of the average (A is 90+, B is 80-89, C is 70-79, D is 60-69, F is 59 and below). Call the function and print the result.
 
-..             .. activecode::  ch13ex18q
+             .. activecode:: cspcollectionsintro_exercises29
 ..                 :nocodelens:
 
 
@@ -642,7 +642,7 @@ Chapter Exercises
 
 ..             Complete the code so that it iterates through the list of numbers and prints positive, negative, or neither based off the integer.
 
-..             .. activecode::  ch13ex8q
+             .. activecode:: cspcollectionsintro_exercises30
 ..                 :nocodelens:
 
 ..                 numbers = [-1, 0, 1]

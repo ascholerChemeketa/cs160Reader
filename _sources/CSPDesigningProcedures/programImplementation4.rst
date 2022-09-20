@@ -28,7 +28,7 @@ that code while you are working on the roof.
 
 |turtle_ref|
 
-.. activecode:: program_implementation_4
+.. activecode:: cspdesigningprocedures_programimplementation41
     :nocodelens:
 
     Implement the ``drawRoof`` procedure

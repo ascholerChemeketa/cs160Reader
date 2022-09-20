@@ -28,7 +28,7 @@ a circle, we use a trick: we use ``pensize`` to make a really big (circular) pen
 ``forward(0)`` to make a dot of the current ``color``.
 
 
-.. activecode:: Turtle_Snowman
+.. activecode:: cspnameturtles_turtlecoordinates1
     :nocodelens:
 
     from turtle import *
@@ -69,7 +69,7 @@ that nearly fills the drawing space. It uses ``fillcolor``, ``begin_fill``, and 
 shape as it draws it.
 
 
-.. activecode:: Turtle_Bounds
+.. activecode:: cspnameturtles_turtlecoordinates2
     :nocodelens:
 
     from turtle import *
@@ -103,7 +103,7 @@ shape as it draws it.
 
 **Mixed up programs**
 
-.. parsonsprob:: 4_4_1_DrawF
+.. parsonsprob:: cspnameturtles_turtlecoordinates3
    :numbered: left
    :adaptive:
 
@@ -142,7 +142,7 @@ shape as it draws it.
    =====
    anu.forward(50)
 
-.. parsonsprob:: 4_4_2_DrawA
+.. parsonsprob:: cspnameturtles_turtlecoordinates4
    :numbered: left
    :adaptive:
 

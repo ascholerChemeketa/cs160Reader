@@ -97,7 +97,7 @@ One thing we do have to watch out for any time we have a fixed number of bits to
     :class: underlined
 
 
-.. mchoice:: binarymath_1
+.. mchoice:: datarepresentation_binarymath1
     :answer_a: 1102
     :answer_b: 1010
     :answer_c: 1000
@@ -111,7 +111,7 @@ One thing we do have to watch out for any time we have a fixed number of bits to
     What is binary 1011 + 0001?
 
 
-.. mchoice:: binarymath_2
+.. mchoice:: datarepresentation_binarymath2
     :answer_a: 1011
     :answer_b: 0111
     :answer_c: 1111

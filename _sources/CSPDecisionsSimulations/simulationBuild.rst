@@ -28,7 +28,7 @@ So let's start with the basics - how do we see if we got 5 heads in a row? Well,
 we flip a coin, if it is a heads, we need to add one to ``headsInARow``. If it is a tails,
 that means we now have seen 0 ``headsInARow``:
 
-.. activecode:: 12_heads_in_row
+.. activecode:: cspdecisionssimulations_simulationbuild1
 
     import random
 
@@ -52,7 +52,7 @@ with the rest of the program. In this case, if ``headsInARow`` hits 5, we can st
 the loop early - we know that we got 5 heads and we don't want to keep going and flip a
 tails and then "forget" that we had 5 in a row.
 
-.. activecode:: 12_heads_in_row_break
+.. activecode:: cspdecisionssimulations_simulationbuild2
 
     import random
 
@@ -75,7 +75,7 @@ tails and then "forget" that we had 5 in a row.
         print(False)
 
 
-.. mchoice:: 12_simulation_change
+.. mchoice:: cspdecisionssimulations_simulationbuild3
     :answer_a: 4, 13, 16
     :answer_b: 13, 16
     :answer_c: 7, 13, 16
@@ -92,7 +92,7 @@ tails and then "forget" that we had 5 in a row.
 Now, we want to turn the code into a function that returns True or False instead of printing the
 answer. Making it into a function will make it easier to repeat the process over and over. 
 
-.. parsonsprob:: 12_heads_in_row_function
+.. parsonsprob:: cspdecisionssimulations_simulationbuild4
     :numbered: left
     :adaptive:
 

@@ -165,7 +165,7 @@ It may sound a little complex, but remember it is the same idea as scientific no
 .. pseudo_h4:: Self Check
     :class: underlined
 
-.. fillintheblank:: floatingpoint_1
+.. fillintheblank:: datarepresentation_floatingpointnumbers1
 
     What is the largest value you can make using the scheme above?
 
@@ -175,7 +175,7 @@ It may sound a little complex, but remember it is the same idea as scientific no
       :x: Hint: To make a large value you need the largest exponent and largest fraction you can make
 
 
-.. mchoice:: floatingpoint_2
+.. mchoice:: datarepresentation_floatingpointnumbers2
     :answer_a: 2
     :answer_b: 3
     :answer_c: 4
@@ -191,7 +191,7 @@ It may sound a little complex, but remember it is the same idea as scientific no
     What power of two is represented by exponent bits of 110?
 
 
-.. fillintheblank:: bitPatterns_3
+.. fillintheblank:: datarepresentation_floatingpointnumbers3
 
     Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25?
 

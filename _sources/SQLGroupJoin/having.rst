@@ -27,7 +27,7 @@ Trying to do so will give an error. However, there is a ``HAVING`` clause that c
 just like a ``WHERE`` to filter data, only it works with aggregations. To ask about the
 stations with over 10000 trips we would write:
 
-.. activecode:: bikeshare_having_over_100_trips
+.. activecode:: sqlgroupjoin_having1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -47,7 +47,7 @@ While ``WHERE`` filters the data being queried, ``HAVING`` filters the results
 based on the value of an aggregating function. The ``HAVING`` clause can only be
 used immediately following the ``GROUP BY`` clause.
 
-.. activecode:: bikeshare_bikes_having_over_1_hour
+.. activecode:: sqlgroupjoin_having2
     :language: sql
     :dburl: /_static/bikeshare.db
 

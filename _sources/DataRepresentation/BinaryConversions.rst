@@ -77,7 +77,7 @@ Just like with decimal numbers, leading zeros do not modify the value of a numbe
     :class: underlined
 
 
-.. fillintheblank:: binaryconversions_1
+.. fillintheblank:: datarepresentation_binaryconversions1
 
     What decimal value does the binary number 111100 represent?
 
@@ -89,7 +89,7 @@ Just like with decimal numbers, leading zeros do not modify the value of a numbe
       :x: We are looking for a base ten number
 
 
-.. mchoice:: binaryconversions_2
+.. mchoice:: datarepresentation_binaryconversions2
     :answer_a: 7
     :answer_b: 8
     :answer_c: 32

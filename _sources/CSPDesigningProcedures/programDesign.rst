@@ -84,7 +84,7 @@ My design process might look like this:
 
 Now that I've broken everything down into manageable chunks, we are ready to start implementing...
 
-.. parsonsprob:: 5_9_design_check
+.. parsonsprob:: cspdesigningprocedures_programdesign1
     :numbered: left
     :grader: dag
 

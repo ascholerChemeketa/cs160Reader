@@ -19,14 +19,14 @@ In natural (human) languages, if I want to say that the color of a car can be bl
 I would only mention the car once: "The car can be blue or green." If you try to do that in Python
 your program will not work as expected:
 
-.. activecode:: bad_compound_or
+.. activecode:: cspdecisionsstrings_complextricks1
 
     color = "red"
     if color == "blue" or "green":
         print("That is a valid color.")
     print("Done")
 
-.. mchoice:: 12_5_bad_or
+.. mchoice:: cspdecisionsstrings_complextricks2
     :answer_a: Produces an error message
     :answer_b: Prints "That is a valid color." then "Done"
     :answer_c: Prints "Done"
@@ -69,7 +69,7 @@ The only way to get the logic we want, is to make sure both the left and right s
 are expressions that make sense on their own as logical expressions. We have to repeat the
 ``color == `` part so that ``"green"`` is not evaluated on its own:
 
-.. activecode:: good_compound_or
+.. activecode:: cspdecisionsstrings_complextricks3
 
     color = "red"
     if color == "blue" or color == "green":

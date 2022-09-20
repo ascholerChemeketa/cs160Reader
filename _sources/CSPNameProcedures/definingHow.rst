@@ -50,7 +50,7 @@ Here is a definition for the ``square`` procedure we tried to use on the last pa
 procedure takes one input (called ``turtleName``). It has 8 instructions in its body. Try running
 this code sample:
 
-.. activecode:: Square_Def
+.. activecode:: cspnameprocedures_defininghow1
     :nocodelens:
 
     def square(turtleName):
@@ -83,7 +83,7 @@ we must provide the name of a turtle.
 This code sample defines our function, creates a turtle, and then calls the square function and gives
 it our turtle as input:
 
-.. activecode:: Square_Call
+.. activecode:: cspnameprocedures_defininghow2
     :nocodelens:
 
     # define HOW to do a square
@@ -105,7 +105,7 @@ it our turtle as input:
 
 
 
-.. mchoice:: 5_3_1_Functions_Q1
+.. mchoice:: cspnameprocedures_defininghow3
    :answer_a: square(lilly)
    :answer_b: lilly.square(turtleName)
    :answer_c: lilly.square()

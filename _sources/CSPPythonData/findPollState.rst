@@ -31,7 +31,7 @@ Step 6 is in the sample below is where we do the key work. We grab ``values[0]``
 city/state string, make a list out of it using ``split``, and call that list ``cityState``.
 We can then use ``cityState[0]`` to get the city name and ``cityState[1]`` to get the state.
 
-.. codelens:: splitCityState
+.. codelens:: csppythondata_findpollstate1
 
     line = "Pocatello,ID:15:9"
     values = line.split(":")
@@ -51,7 +51,7 @@ through all of the records, split the line up into values, split the city/state 
 list, and then test the state value against the state code "OR" and only print out records
 that have that code.
 
-.. activecode:: findStates
+.. activecode:: csppythondata_findpollstate2
     :nocodelens:
 
     inFile = open("uspoll.txt")
@@ -82,7 +82,7 @@ output.
 Now, we can merge our average logic into that code. We will only count records that are
 in the target state.
 
-.. activecode:: average25state
+.. activecode:: csppythondata_findpollstate3
     :nocodelens:
 
     inFile = open("uspoll.txt")
@@ -115,7 +115,7 @@ in the target state.
     average = total25 / count
     print("Average PM 2.5 value for " , targetState, " is ", average)
 
-.. fillintheblank:: tx_pollution
+.. fillintheblank:: csppythondata_findpollstate4
 
     Modify the program to calculate the average PM2.5 pollution in Texas (state code "TX"). 
     What is the value?
@@ -125,7 +125,7 @@ in the target state.
       :.*: Make sure to give your answer as a number
 
 
-.. parsonsprob:: highest_state_muc
+.. parsonsprob:: csppythondata_findpollstate5
     :numbered: left
     :adaptive:
 

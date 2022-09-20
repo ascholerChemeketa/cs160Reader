@@ -124,7 +124,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
 .. pseudo_h4:: Self Check
     :class: underlined
 
-.. fillintheblank:: ASCII_1
+.. fillintheblank:: datarepresentation_ascii1
 
     What letter or symbol does 01100110 map to on the ASCII table?
 
@@ -133,7 +133,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
       :x: The answer should only have one character
 
 
-.. fillintheblank:: ASCII_2
+.. fillintheblank:: datarepresentation_ascii2
 
     What binary number corresponds to the plus symbol on the ASCII table?
 

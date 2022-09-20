@@ -26,7 +26,7 @@ of characters.  We can create a **string** by typing characters between a pair o
 some of the same basic arithmetic operators -- they just mean something different here.  Here we
 generate silly song lyrics by using ``+`` to combine (append) two strings and ``*`` to repeat strings.
 
-.. activecode:: 1_3_1_String_Operators
+.. activecode:: cspteasers_computewords1
     :nocodelens:
   
   basic = "da"
@@ -53,7 +53,7 @@ For example, the program below uses ``sentence.lower()`` to tell the string **se
 it to give us a copy of itself that has been changed to all lower case letters. We then ask the new
 string, called **better** to make a copy of itself where just the first letter is capitalized.
 
-.. activecode:: 1_3_2_String_Methods
+.. activecode:: cspteasers_computewords2
     :nocodelens:
 
     sentence = "THIS IS A TEST"
@@ -63,7 +63,7 @@ string, called **better** to make a copy of itself where just the first letter i
     betterStill = better.capitalize() + "."
     print("betterStill is       :", betterStill)
    
-.. mchoice:: 1_3_3_String_Methods_Q1
+.. mchoice:: cspteasers_computewords3
    :answer_a: Hi There
    :answer_b: HiThere
    :answer_c: Hi There Hi There

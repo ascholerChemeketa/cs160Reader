@@ -27,7 +27,7 @@ In this example, the code inside of the inner loop (``forward(50)`` and ``right(
 be repeated 5 times and that group will be repeated 20 times. So each of those lines will
 happen 100 times!
 
-.. activecode:: Turtle_Spirograph1
+.. activecode:: csprepeatturtles_patterns1
     :nocodelens:
 
     from turtle import *
@@ -52,7 +52,7 @@ the outer loop, before the second ``for`` work together to make a circle. 20 tur
 18 degrees will make a full circle of 360 degrees. At each of those 20 points, the
 turtle draws a pentagon.
 
-.. activecode:: Turtle_Spirograph2
+.. activecode:: csprepeatturtles_patterns2
     :nocodelens:
 
     from turtle import *
@@ -77,7 +77,7 @@ turtle draws a pentagon.
 You can use the coloring in the picture below to help you figure out the correct order of the
 lines below.
 
-.. parsonsprob:: 10_3_1_Turtle_Spiro
+.. parsonsprob:: csprepeatturtles_patterns3
    :numbered: left
    :adaptive:
 
@@ -120,7 +120,7 @@ lines below.
 The following example has 3 syntax errors. Can you fix the errors so that the code compiles and runs?
 (None of the errors are in the numbers used - those would be logic errors, not syntax errors.)
 
-.. activecode:: Turtle_Nested_Error1
+.. activecode:: csprepeatturtles_patterns4
     :nocodelens:
 
     from turtle import *
@@ -151,7 +151,7 @@ If a program takes more than ~20 seconds, it will stop running even if it is not
 prevent complex programs for ever finishing what they are doing. Try running this program and wait
 until an error is printed.
 
-.. activecode:: Turtle_Timeout
+.. activecode:: csprepeatturtles_patterns5
     :nocodelens:
 
     from turtle import *
@@ -200,7 +200,7 @@ well and that loop calls the ``square`` procedure inside of it. So the lines ins
 loop get executed 40 total times - the loop in main calls square 10 times and each call to square
 repeats them 4 times.
 
-.. activecode:: Turtle_Indirect_Nested_loops
+.. activecode:: csprepeatturtles_patterns6
     :nocodelens:
 
     def square(turtleName):

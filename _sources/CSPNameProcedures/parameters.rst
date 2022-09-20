@@ -60,7 +60,7 @@ Try running this program below. It defines the ``hop`` procedure. Then, the main
 the program makes two turtles, has them mark their starting location, then has them each
 do a hop before doing a forward movement.
 
-.. activecode:: 5_parameters_args_1
+.. activecode:: cspnameprocedures_parameters1
     :nocodelens:
 
     def hop(turtleName):                # turtleName is the parameter
@@ -94,7 +94,7 @@ do a hop before doing a forward movement.
 
 **Check Your Understanding**
 
-.. mchoice:: 5_5_2_Parameters_Q1
+.. mchoice:: cspnameprocedures_parameters2
     :answer_a: turtleName
     :answer_b: sue
     :answer_c: buster
@@ -106,7 +106,7 @@ do a hop before doing a forward movement.
 
     Which turtle made the line going North (up)?
 
-.. mchoice:: 5_5_3_Parameters_Q2
+.. mchoice:: cspnameprocedures_parameters3
     :answer_a: ray
     :answer_b: who
     :answer_c: turtleName

@@ -22,7 +22,7 @@ such as ``sentence.lower()``.  The function ``lower()`` returns a new string wit
 characters in the original string set to lowercase.  The function ``capitalize()`` will return
 a new string with the first letter of the string capitalized.
 
-.. activecode:: String_Methods2
+.. activecode:: cspnamestrings_strobjects1
 
     sentence = "THIS IS A TEST"
     better = sentence.lower()
@@ -55,7 +55,7 @@ A **slice** is a way to get part of a string.  One way to use a **slice** is to 
 `stringName[num]``.  This will return a new string with just the character at that position in
 the string.
 
-.. activecode:: String_Slice1
+.. activecode:: cspnamestrings_strobjects2
 
     sentence = "This is a test"
     s1 = sentence[1]
@@ -78,7 +78,7 @@ the string.
 A **slice** with two values separated with a ``:`` between them returns a new string with the
 characters from the given start position to the one before the given end position.
 
-.. activecode:: String_Slice2
+.. activecode:: cspnamestrings_strobjects3
 
     sentence = "This is a test"
     s1 = sentence[1:3]
@@ -92,7 +92,7 @@ characters from the given start position to the one before the given end positio
 
 **Check Your Understanding**
 
-.. mchoice:: 3_2_2_Slice
+.. mchoice:: cspnamestrings_strobjects4
     :practice: T
     :answer_a: This is the end
     :answer_b: This
@@ -110,7 +110,7 @@ characters from the given start position to the one before the given end positio
         str = str[1:4]
         print(str)
      
-.. mchoice:: 3_2_2_Slice2
+.. mchoice:: cspnamestrings_strobjects5
    :practice: T
    :answer_a: i
    :answer_b: s
@@ -137,7 +137,7 @@ Some Other String Functions
 
 The ``len(string)`` function takes a string as input and returns the number of characters in the string including spaces. 
 
-.. activecode:: String_Length
+.. activecode:: cspnamestrings_strobjects6
       
    sentence = "This is a test"
    length = len(sentence)
@@ -152,7 +152,7 @@ The ``len(string)`` function takes a string as input and returns the number of c
 
 The ``find(string)`` function takes a string as input and returns the index where that string is found in the current string. If the string isn't found it returns -1.
 
-.. activecode:: String_Find
+.. activecode:: cspnamestrings_strobjects7
       
    sentence = "This is a test"
    pos = sentence.find("is")
@@ -165,7 +165,7 @@ The ``find(string)`` function takes a string as input and returns the index wher
    
    **Check your understanding**
    
-.. mchoice:: 3_2_1_3_stringLen
+.. mchoice:: cspnamestrings_strobjects8
    :practice: T
    :answer_a: 13
    :answer_b: 15
@@ -183,7 +183,7 @@ The ``find(string)`` function takes a string as input and returns the index wher
      street = "125 Main Street"
      print(len(street))
      
-.. mchoice:: 3_2_1_4_Find
+.. mchoice:: cspnamestrings_strobjects9
    :practice: T
    :answer_a: 1
    :answer_b: 9
@@ -207,14 +207,14 @@ The ``find(string)`` function takes a string as input and returns the index wher
 
         Write the code to evaluate the length of the string "I like green eggs" and print it. It should print "The length is 17".
         
-        .. activecode::  3_2_5_WSq
+        .. activecode:: cspnamestrings_strobjects10
 
             sentence = 'I like green eggs'
             
     .. tab:: Answer
 
         
-        .. activecode::  3_2_5_WSa
+        .. activecode:: cspnamestrings_strobjects11
             
             # DECLARE VARIABLES
             sentence = 'I like green eggs'

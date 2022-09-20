@@ -19,14 +19,14 @@ The *right hand* side of the assignment statement doesn't have to be a value.  I
 arithmetic expression*, like ``2 * 2``. The expression will be evaluated and the result from the
 expression will be stored in the variable. 
 
-.. fillintheblank:: 2_3_1_1_Mult_fill
+.. fillintheblank:: cspnamenumbers_expression1
 
     What will be printed when you click on the Run button in the code below? 
 
     - :^4$: Correct. 2 times 2 plus 1 is 5
       :.*: Did you actually run the program?
  
-.. activecode:: 2_3_1_2_Expression_Mult
+.. activecode:: cspnamenumbers_expression2
     :nocodelens:
     
     result = 2 * 2 + 1
@@ -38,7 +38,7 @@ Operations
 You can use all the standard mathematical operations, you just have to know the right symbols
 to use: ``/`` means divsion; ``*`` means times; ``**`` means "to the power of". 
 
-.. fillintheblank:: 2_3_2_1_Div_fill
+.. fillintheblank:: cspnamenumbers_expression3
 
     What will be printed when you click on the Run button in the code below? 
 
@@ -47,7 +47,7 @@ to use: ``/`` means divsion; ``*`` means times; ``**`` means "to the power of".
       :^0.3{1,15}$: Close, but that is not the number of digits you will actually get.
       :.*: Did you actually run the program?
    
-.. activecode:: 2_3_2_2_Expression_Div
+.. activecode:: cspnamenumbers_expression4
     :nocodelens:
     
     result = 1 / 3
@@ -73,7 +73,7 @@ in the code sample below. The first is done using normal (decimal) division. The
 from doing integer division:
 
    
-.. activecode:: 2_3_2_2_Expression_Div2
+.. activecode:: cspnamenumbers_expression5
     :nocodelens:
     
     result1 = 37 / 3
@@ -111,14 +111,14 @@ remainder of ``1``.
     Division showing the whole number result and the remainder
 
 
-.. fillintheblank:: 2_3_3_1_Mod_fill
+.. fillintheblank:: cspnamenumbers_expression6
 
    What will be printed when you click on the Run button in the code below? 
  
    -    :^2$: Correct!  The 11 is evenly divisible by 3 with a remainder of 2.
         :.*: Did you actually run the program?
 
-.. activecode:: 2_3_3_2_Expression_Mod
+.. activecode:: cspnamenumbers_expression7
     :nocodelens:
     
     x = 11 % 3

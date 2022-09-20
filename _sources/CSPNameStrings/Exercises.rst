@@ -13,7 +13,7 @@ Chapter 3 Exercises
 --------------------
 
 
-.. activecode:: ch3ex1q
+.. activecode:: cspnamestrings_exercises1
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -37,7 +37,7 @@ Chapter 3 Exercises
     myTests().main()
 
 
-.. activecode:: ch3ex2q
+.. activecode:: cspnamestrings_exercises2
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -63,7 +63,7 @@ Chapter 3 Exercises
 
 
 
-.. activecode:: ch3ex3q
+.. activecode:: cspnamestrings_exercises3
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -86,7 +86,7 @@ Chapter 3 Exercises
     myTests().main()
 
 
-.. activecode:: ch3ex4q
+.. activecode:: cspnamestrings_exercises4
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -112,7 +112,7 @@ Chapter 3 Exercises
     myTests().main()
 
 
-.. activecode:: ch3ex5q
+.. activecode:: cspnamestrings_exercises5
     :nocodelens:
     :practice: T
 
@@ -133,7 +133,7 @@ Chapter 3 Exercises
 
 ..            Combine lines 4 and 5 in the code below to print: "270 is 4.0 hours and 30 minutes."
 
-..            .. activecode::  ch3ex11q
+            .. activecode:: cspnamestrings_exercises6
                 
 ..                 totalMinutes = 270
 ..                 numMinutes = totalMinutes % 60
@@ -149,7 +149,7 @@ Chapter 3 Exercises
 
 ..            There are 3 syntax errors in the following code.  Fix it to print correctly without errors.  It will print your name and age.
 
-..            .. activecode::  ch3ex5q
+            .. activecode:: cspnamestrings_exercises7
                
 ..                age = input("How old are you?")
 ..                name = input ("What is your first name?")
@@ -166,7 +166,7 @@ Chapter 3 Exercises
 
 ..             Fix the syntax errors so that the code prints "The apple costs $5".
 
-..             .. activecode::  ch3ex6q
+             .. activecode:: cspnamestrings_exercises8
                 
 ..                 fruit = apple
 ..                 price = 5
@@ -183,7 +183,7 @@ Chapter 3 Exercises
 
 ..             Fix the syntax errors so it prints "My name is Sam and I am 12 years old."
 
-..             .. activecode::  ch3ex2q
+             .. activecode:: cspnamestrings_exercises9
                 
 ..                 name = Sam
 ..                 age = 12
@@ -200,7 +200,7 @@ Chapter 3 Exercises
 
 ..            Modify line 6 to print: "The number of miles you can drive on 25 dollars is 273.97260274."
 
-..            .. activecode::  ch3ex7q
+            .. activecode:: cspnamestrings_exercises10
                
 ..                funds = 25
 ..                milesPerGallon = 40
@@ -222,7 +222,7 @@ Chapter 3 Exercises
 
 ..            Modify line 6 to print: "You can order 40.0 wings when you have 5 people who can each spend 4 dollars and wings cost 0.5 each."
 
-..            .. activecode::  ch3ex9q
+            .. activecode:: cspnamestrings_exercises11
                 
 ..                 numPeople = 5
 ..                 amountPerPerson = 4
@@ -241,7 +241,7 @@ Chapter 3 Exercises
 
 ..             Fix the code so that only "meow" is printed.
 
-..             .. activecode::  ch3ex10q
+             .. activecode:: cspnamestrings_exercises12
                 
 ..                 sentence = "The cat goes meow."
 ..                 s2 = [16:13]sentence
@@ -257,7 +257,7 @@ Chapter 3 Exercises
 
 ..             Complete the code on lines 3 and 4 so that it prints "2" and then "22".
 
-..             .. activecode::  ch3ex12q
+             .. activecode:: cspnamestrings_exercises13
                 
 ..                 sentence = "This is his wish."
 ..                 sentence2 = "His only wish is this."
@@ -275,7 +275,7 @@ Chapter 3 Exercises
 
 ..            Complete the calculations on lines 2 and 4 and enter the items to be printed on line 5 to print the number of miles you can drive if you have a 10 gallon gas tank and are down to a quarter of a tank of gas and your car gets 32 miles per gallon.  It should print: "You can go 80.0 miles."
 
-..            .. activecode::  ch3ex13q
+            .. activecode:: cspnamestrings_exercises14
                 
 ..                 tankCapacity = 10
 ..                 numGallons =
@@ -294,7 +294,7 @@ Chapter 3 Exercises
 
 ..             Fix line 2 so that it prints "Hi" instead of "hi".
 
-..             .. activecode::  ch3ex14q
+             .. activecode:: cspnamestrings_exercises15
                 
 ..                 s1 = "hi"
 ..                 s1.capitalize()
@@ -310,7 +310,7 @@ Chapter 3 Exercises
 
 ..            Write code to get the name of a color from the user using the ``input`` function. Next convert the name of the color to all lowercase letters and print it.
 
-..            .. activecode::  ch3ex15q
+            .. activecode:: cspnamestrings_exercises16
                 
 
 
@@ -322,7 +322,7 @@ Chapter 3 Exercises
 
 ..             Write code to get the input of a user’s first name, then get only the first letter of their name, and print that letter lowercase.
 
-..             .. activecode::  ch3ex16q
+             .. activecode:: cspnamestrings_exercises17
                 
 
 
@@ -334,7 +334,7 @@ Chapter 3 Exercises
 
 ..            Write the code below to calculate and print how many months it will take to save $200 if you earn $20 a week.  It should print: "It will take 2.5 months to earn 200 if you make 20 dollars a week."
 
-..            .. activecode::  ch3ex17q
+            .. activecode:: cspnamestrings_exercises18
                 
 
 
@@ -346,7 +346,7 @@ Chapter 3 Exercises
 
 ..             Write code to print out the statement "Hi my name is Bob and I am 2" using only string methods or string slicing. You must get every part of the new string from the given strings.
 
-..             .. activecode::  ch3ex18q
+             .. activecode:: cspnamestrings_exercises19
                 
 ..                 s1 = "hi"
 ..                 s2 = "My namesake is Bob, and he and I love to eat ham."
@@ -361,6 +361,6 @@ Chapter 3 Exercises
 
 ..             Write code that gets user input and print a string that states their input in all lowercase and gives the length of their string.
 
-..             .. activecode::  ch3ex20q
+             .. activecode:: cspnamestrings_exercises20
                 
 

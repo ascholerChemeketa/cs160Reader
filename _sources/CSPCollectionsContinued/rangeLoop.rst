@@ -22,7 +22,7 @@ This is because when ``value`` is naming a value in the list, making a change ju
 what ``value`` is naming - it does not change the list itself. Watch this codelens program
 that attempts to set each item in a list to 0 to see how it does not work:
 
-.. codelens:: for_in_no_change
+.. codelens:: cspcollectionscontinued_rangeloop1
 
     list = [5, 10, 15]
     for value in list:
@@ -52,7 +52,7 @@ exactly what we need. For the example above, ``range( len(list) )`` would genera
 
 Here is the final version of the more complex loop. 
 
-.. codelens:: iterate_list_with_range
+.. codelens:: cspcollectionscontinued_rangeloop2
 
     list = [5, 10, 15]
     for index in range( len(list) ):
@@ -73,7 +73,7 @@ need to be capitalized. To do this, we loop through the indexes 0-3, access the
 value at that index (``names[i]``), call ``capitalize()`` on it, and then store it
 back to the same location in the list ``names[i] = ...``:
 
-.. codelens:: iterate_list_with_i
+.. codelens:: cspcollectionscontinued_rangeloop3
 
     names = ["vu", "reggie", "dana", "serena"]
     for i in range( len(names) ):
@@ -82,7 +82,7 @@ back to the same location in the list ``names[i] = ...``:
     print(names)
 
 
-.. activecode:: double_number_list
+.. activecode:: cspcollectionscontinued_rangeloop4
     :autograde: unittest
 
     Write an indexed based loop and use it to double each item in the list called ``numbers``.
@@ -105,7 +105,7 @@ back to the same location in the list ``names[i] = ...``:
     myTests().main()
 
 
-.. parsonsprob:: list_replace_negative
+.. parsonsprob:: cspcollectionscontinued_rangeloop5
     :numbered: left
     :adaptive:
     :practice: T

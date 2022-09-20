@@ -43,7 +43,7 @@ that we start with and then change if needed. This has the advantage of being si
   print(price)
   print(total)
 
-.. mchoice:: 12_6_2_Multiple_Ifs
+.. mchoice:: cspdecisionssimulations_practice1
   :answer_a: $3.45
   :answer_b: $3.11
   :answer_c: $3.105
@@ -56,7 +56,7 @@ that we start with and then change if needed. This has the advantage of being si
 
    What is the total for 12 items that weigh 3 pounds?
      
-.. mchoice:: 12_6_4_Logic_Ifs
+.. mchoice:: cspdecisionssimulations_practice2
    :practice: T
    :answer_a: x will always equal 0 after this code executes for any value of x
    :answer_b: if x is greater than 2, the value in x will be doubled after this code executes

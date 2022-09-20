@@ -12,7 +12,7 @@
 Chapter Exercises
 ---------------------
 
-.. activecode:: ch8ex1t
+.. activecode:: csprepeatturtles_exercises1
     :autograde: unittest
     :nocodelens:
 
@@ -39,7 +39,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch8ex2t
+.. activecode:: csprepeatturtles_exercises2
     :autograde: unittest
     :nocodelens:
 
@@ -66,7 +66,7 @@ Chapter Exercises
 
     myTests().main()
 
-.. activecode:: ch8ex3t
+.. activecode:: csprepeatturtles_exercises3
     :autograde: unittest
     :nocodelens:
 
@@ -107,7 +107,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. mchoice:: 8_ex_mc1
+.. mchoice:: csprepeatturtles_exercises4
     :answer_a: range(10, 0, -2)
     :answer_b: range(10, 1, 2)
     :answer_c: range(10, 2, -2)
@@ -121,7 +121,7 @@ Chapter Exercises
     Which is range recipe would generate the sequence: 10, 8, 6, ... 2
         
 
-.. fillintheblank:: 8_ex_fb1
+.. fillintheblank:: csprepeatturtles_exercises5
 
     Write the correct recipe to fill in the ____________ in the code below to generate the pattern
     5, 25, 45, ... 105. Use the smallest possible value for your stopValue. (Don't include "range"
@@ -136,7 +136,7 @@ Chapter Exercises
       :.*: Make sure you provide something that looks like ``startValue, stopValue, step``
 
 
-.. activecode:: ch8ex6t
+.. activecode:: csprepeatturtles_exercises6
     :nocodelens:
 
     We want to make a series of rectangles such that the first one is 10x90, the next
@@ -195,7 +195,7 @@ Chapter Exercises
 
 ..             Fix 4 syntax errors in the code below to correctly draw a square
 
-..             .. activecode:: ch8ex1q
+             .. activecode:: csprepeatturtles_exercises7
 ..                 :nocodelens:
 
 ..                 from turtle import
@@ -217,7 +217,7 @@ Chapter Exercises
 
 ..            Fix the code below to draw a rectangle. You will need to fix the indention on 3 lines.
 
-..            .. activecode::  ch8ex3q
+            .. activecode:: csprepeatturtles_exercises8
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -240,7 +240,7 @@ Chapter Exercises
 
 ..            Fill in values for ``x`` on line 5 and ``y`` on line 7 to allow the code below to correctly draw a pentagon.
 
-..            .. activecode::  ch8ex5q
+            .. activecode:: csprepeatturtles_exercises9
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -262,7 +262,7 @@ Chapter Exercises
 
 ..             Complete the code on lines 5 and 7 to draw a hexagon.
 
-..             .. activecode::  ch8ex6q
+             .. activecode:: csprepeatturtles_exercises10
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -283,7 +283,7 @@ Chapter Exercises
 
 ..            Finish the code on lines 1, 2, 3, 6 and 8 below to correctly draw a triangle.
 
-..            .. activecode::  ch8ex7q
+            .. activecode:: csprepeatturtles_exercises11
 ..                 :nocodelens:
 
 ..                 from
@@ -305,7 +305,7 @@ Chapter Exercises
 
 ..             Finish the code to draw a 15 sided figure with each side having a length of 40.
 
-..             .. activecode::  ch8ex8q
+             .. activecode:: csprepeatturtles_exercises12
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -323,7 +323,7 @@ Chapter Exercises
 
 ..             The procedure below draws a square. Write code that uses the procedure to draw two squares connected by a line 50 units in length.
 
-..             .. activecode::  ch8ex10q
+             .. activecode:: csprepeatturtles_exercises13
 ..                 :nocodelens:
 
 ..                 def square(aTurtle):
@@ -341,7 +341,7 @@ Chapter Exercises
 
 ..            Fix the following code below to draw a circle of turtles using the ``stamp`` procedure.  You will need to change 3 lines.
 
-..            .. activecode::  ch8ex11q
+            .. activecode:: csprepeatturtles_exercises14
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -365,7 +365,7 @@ Chapter Exercises
 
 ..                 Complete the code where the ``x's`` are so that the code draws 20 triangles.
 
-..             .. activecode::  ch8ex12q
+             .. activecode:: csprepeatturtles_exercises15
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -393,7 +393,7 @@ Chapter Exercises
 
 ..            Rewrite the following code to create a procedure to draw a square with a turtle.  Pass the turtle and the size of the square as input (parameters) to the procedure.
 
-..            .. activecode::  ch8ex13q
+            .. activecode:: csprepeatturtles_exercises16
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -415,7 +415,7 @@ Chapter Exercises
 
 ..             Currently, the code has a turtle drawing a straight line. Add 2 lines of code (1 before the loop and 1 in the loop) to make the turtle stamp in the line.
 
-..             .. activecode::  ch8ex14q
+             .. activecode:: csprepeatturtles_exercises17
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -439,7 +439,7 @@ Chapter Exercises
 
 ..            Rewrite the following code to create a procedure to draw a rectangle with a turtle.  Pass the turtle and the length and width of the rectangle as parameters to the procedure.
 
-..            .. activecode::  ch8ex15q
+            .. activecode:: csprepeatturtles_exercises18
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -463,7 +463,7 @@ Chapter Exercises
 
 ..             Complete the code so that the turtle stamps a square pattern 20 times (it should look like a circle enclosing a couple of circles if you use a turn angle of 18)
 
-..             .. activecode::  ch8ex16q
+             .. activecode:: csprepeatturtles_exercises19
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -482,7 +482,7 @@ Chapter Exercises
 
 ..            Create a procedure to draw 4 turtles at the 4 corners of a square using the ``stamp`` procedure.
 
-..            .. activecode::  ch8ex17q
+            .. activecode:: csprepeatturtles_exercises20
 ..                 :nocodelens:
 
 
@@ -495,7 +495,7 @@ Chapter Exercises
 
 ..             Create a procedure that takes in a turtle and integer parameter. The procedure should stamp a turtle shape into a circle in 20 steps with the forward number being equal to the parameter.
 
-..             .. activecode::  ch8ex18q
+             .. activecode:: csprepeatturtles_exercises21
 ..                 :nocodelens:
 
 
@@ -509,7 +509,7 @@ Chapter Exercises
 
 ..            Write a procedure that takes a turtle and a number of sides as parameters and draws a polygon with that number of sides.
 
-..            .. activecode::  ch8ex19q
+            .. activecode:: csprepeatturtles_exercises22
 ..                :nocodelens:
 
 
@@ -522,7 +522,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes a turtle, an int for the number of sides for a polygon, and an int for the number of times to draw that polygon. The procedure should draw that polygon that number of times in a circular path.
 
-..             .. activecode::  ch8ex20q
+             .. activecode:: csprepeatturtles_exercises23
 ..                 :nocodelens:
 
 

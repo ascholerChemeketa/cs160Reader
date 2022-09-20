@@ -17,7 +17,7 @@ The library charges $0.10 per page for up to 30 pages. If the number of pages is
 they charge $3.00 plus $0.05 per page over 30. The ``costForPrints`` function in the
 program below implements that logic.
 
-.. activecode:: Price_Prints
+.. activecode:: cspdecisionsintro_iffunctions1
 
     def costForPrints(numberPages):
         # Assume number is < 30
@@ -41,7 +41,7 @@ multiple times and pass different values for each function call. If we don't use
 we can only test one value each time we run the program.
 
 
-.. activecode:: if_function_ac
+.. activecode:: cspdecisionsintro_iffunctions2
     :autograde: unittest
     :practice: T
 

@@ -35,7 +35,7 @@ Why do we make new procedures or functions? There are two primary reasons:
 
 Examine the program below. Can you easily tell what it does? Click *Run* and see what happens. 
 
-.. activecode:: 5_Why_Procedures_1
+.. activecode:: cspnameprocedures_definingwhy1
     :nocodelens:
 
     from turtle import *
@@ -74,7 +74,7 @@ into logical sections, but it would still not be fun to read. It also represents
 
 Now compare that program to this one.
 
-.. activecode:: Why_Procedures_2
+.. activecode:: cspnameprocedures_definingwhy2
     :nocodelens:
 
     from turtle import *

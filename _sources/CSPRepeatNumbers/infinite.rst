@@ -15,7 +15,7 @@ Infinite Loops
 In the last section, we saw what happens if a loop's control variable is never updated.
 It will run forever.
 
-.. codelens:: while_counter_infinite_2
+.. codelens:: csprepeatnumbers_infinite1
 
     counter = 1
     while counter <= 10:
@@ -25,7 +25,7 @@ Getting a computer to repeat a set of statements is simple. Sometimes it can be 
 it to *stop*.  Remember that a while loop will execute as long as the logical expression is true.
 What happens if the logical expression is *always* true?
 
-.. codelens:: while_counter_infinite_3
+.. codelens:: csprepeatnumbers_infinite2
 
     while 1 == 1:
         print("Looping")
@@ -48,7 +48,7 @@ Try running it. The problem will freeze up and eventually your browser tab will 
 To stop the program you will have to close the browser tab and reopen the page (copy the page
 address from the address bar of your browser before closing it).
 
-.. activecode:: while_counter_infinite_4
+.. activecode:: csprepeatnumbers_infinite3
 
     counter = 1
     while counter != 10:
@@ -61,7 +61,7 @@ up until that point. Try doing so. The loop says to keep going as long as the co
 10. The counter never hits 10 - it skips directly from 9 to 11!
 
 
-.. fillintheblank:: 10_5_fb
+.. fillintheblank:: csprepeatnumbers_infinite4
 
     The program was supposed to display the numbers 1,3,5,7,9. What operator should have been
     used in ``while counter ______ 10:`` instead of ``!=``?

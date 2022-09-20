@@ -18,7 +18,7 @@ the same length and all angles are the same size) geometric shape.
 
 Let's look at a few more examples. Here's a triangle:
 
-.. activecode:: Turtle_Triangle
+.. activecode:: csprepeatturtles_turtlegeom1
     :nocodelens:
 
     from turtle import *
@@ -34,7 +34,7 @@ Let's look at a few more examples. Here's a triangle:
 
 And here's a pentagon:
 
-.. activecode:: Turtle_Pentagon
+.. activecode:: csprepeatturtles_turtlegeom2
     :nocodelens:
 
     from turtle import *
@@ -61,7 +61,7 @@ In the triangle example :math:`3 * 120 = 360` and in the pentagon example :math:
 Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 sided polygon
 (called a dodecagon).  If you get it right the turtle will draw a 12 sided closed polygon.
 
-.. activecode:: Turtle_Dodecagon
+.. activecode:: csprepeatturtles_turtlegeom3
     :nocodelens:
 
     from turtle import *
@@ -75,7 +75,7 @@ Change the ``??`` in line 7 below to the amount to turn each time to draw a 12 s
         
     mia.end_fill()
 
-.. mchoice:: 10_2_1_Turtle_Dodecagon_Q1
+.. mchoice:: csprepeatturtles_turtlegeom4
    :answer_a: 15
    :answer_b: 30
    :answer_c: 12
@@ -98,7 +98,7 @@ that can draw any ``polygon``. It will take parameters to control how many sides
 are and how long to make each side.
 
 
-.. parsonsprob:: 8_3
+.. parsonsprob:: csprepeatturtles_turtlegeom5
     :numbered: left
     :adaptive:
 
@@ -131,7 +131,7 @@ are and how long to make each side.
 
 Once you have figured out the procedure, add it to the program below:
 
-.. activecode:: 10_3_Polygon
+.. activecode:: csprepeatturtles_turtlegeom6
     :nocodelens:
 
     # DEFINE THE PROCEDURE HERE

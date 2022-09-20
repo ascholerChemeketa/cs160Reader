@@ -84,7 +84,7 @@ Memorize this fact. Better yet, make lists of patterns (as above) and play aroun
 
 
 
-.. fillintheblank:: bitPatterns_1
+.. fillintheblank:: binary_bitpatterns1
 
     How many different values can be formed from a pattern of 10 bits?
 

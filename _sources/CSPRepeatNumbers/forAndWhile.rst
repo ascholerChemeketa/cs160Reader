@@ -38,7 +38,7 @@ know in advance how many times to repeat is if we are getting input from outside
 The code below will keep asking you to enter numbers. It will do so until you enter a number
 that isn't negative. It will print out the sum and average of all of the numbers you have entered.
 
-.. activecode:: while_input
+.. activecode:: csprepeatnumbers_forandwhile1
 
     sum = 0
     count = 0
@@ -56,7 +56,7 @@ The loop in this sample takes your input, which is stored in ``value`` as a stri
 turns that into an integer like 12. It checks to see if that value is greater than 0. If so, it
 does the loop body, if not, we skip over the loop body and continue with the rest of the program.
 
-.. mchoice:: 10_1_2_While_Input1
+.. mchoice:: csprepeatnumbers_forandwhile2
     :answer_a: 3
     :answer_b: 4
     :answer_c: 5
@@ -69,7 +69,7 @@ does the loop body, if not, we skip over the loop body and continue with the res
 
     How many lines are in the body of the ``while`` loop in while_input above?
 
-.. mchoice:: 10_1_2_While_InputError
+.. mchoice:: csprepeatnumbers_forandwhile3
     :answer_a: It prints the sum is 0 and the average is 0.
     :answer_b: It prints a message that it can't divide by 0.  
     :answer_c: There is an error.

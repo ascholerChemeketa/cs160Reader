@@ -19,7 +19,7 @@ We can use that to do things like iterating through every other item in a list. 
 program does exactly that by starting from 0 and using a change value of 2. This means it visits
 indexes 0, 2, 4...
 
-.. activecode:: loop_even_indexes
+.. activecode:: cspcollectionscontinued_rangechange1
 
     numbers = [8, 9, 7, 10, 6, 10, 7, 4]
 
@@ -32,7 +32,7 @@ indexes 0, 2, 4...
         
     print("Total is", total)
 
-.. mchoice:: 16_6_1_addEvensQ2
+.. mchoice:: cspcollectionscontinued_rangechange2
     :correct: b
     :answer_a: Change the range to range(0, len(numbers), 3)
     :answer_b: Change the range to range(1, len(numbers), 2)
@@ -49,7 +49,7 @@ indexes 0, 2, 4...
 Or maybe we want to only iterate through half of the list. We can specify a range that does
 not start at 0 and end at ``len(list_name)``.
 
-.. activecode:: loop_half_list
+.. activecode:: cspcollectionscontinued_rangechange3
     :autograde: unittest
 
     The current code loops through just the first half of the list. It calculates half of

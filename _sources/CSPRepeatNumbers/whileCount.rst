@@ -19,7 +19,7 @@ A ``for`` loop automatically moves to the next value as we iterate through a lis
 will set ``counter`` to 1, print it, then change ``counter`` to 2, print that, etc... It continues
 counting until it reaches 11 (and stops the loop before printing it).
 
-.. codelens:: for_counter_10_3
+.. codelens:: csprepeatnumbers_whilecount1
 
     for counter in range(1,11):
         print(counter)
@@ -28,7 +28,7 @@ In a ``while`` loop, there is not a known list of items we are iterating through
 can't automatically go to the next value. It is up to us to advance the loop. Here is a ``while``
 loop that counts from 1 to 10:
 
-.. codelens:: while_count
+.. codelens:: csprepeatnumbers_whilecount2
 
     counter = 1
     while counter < 11:
@@ -50,7 +50,7 @@ The last line in the loop: ``counter = counter + 1`` is the update. It is what a
 to the next value. Without that line, ``counter`` would never change. Try running this version
 of the program:
 
-.. codelens:: while_count_no_update
+.. codelens:: csprepeatnumbers_whilecount3
 
     counter = 1
     while counter < 11:
@@ -64,7 +64,7 @@ back into counter, so we do ``counter = ...``.
 
 We can do whatever we want to update the counter. We could count from 30 down to 0 by 5:
 
-.. codelens:: while_count_by5s
+.. codelens:: csprepeatnumbers_whilecount4
 
     counter = 30
     while counter > 0:
@@ -73,7 +73,7 @@ We can do whatever we want to update the counter. We could count from 30 down to
 
 Or we could double the counter with each iteration:
 
-.. codelens:: while_count_times2
+.. codelens:: csprepeatnumbers_whilecount5
 
     counter = 1
     while counter < 100:
@@ -85,7 +85,7 @@ then add 2 to the ``counter``. When we get to 6, it is printed, then we add 2. T
 back to the ``while``'s test. Since ``counter < 8`` is no longer true, we end the loop. So
 we see the value 0,2,4,6 even though the counter ends up reaching 8.
 
-.. codelens:: while_count_by2s1
+.. codelens:: csprepeatnumbers_whilecount6
 
     counter = 0
     while counter < 8:
@@ -98,7 +98,7 @@ Thus the first thin printed is 2. Then, when counter gets to 6, we add 2 more to
 then print that value before we go back up to test the ``while``'s expression again.
 At that point, we realize it is time to stop. Thus this version prints out 2,4,6,8.
 
-.. codelens:: while_count_by2s2
+.. codelens:: csprepeatnumbers_whilecount7
 
     counter = 0
     while counter < 8:
@@ -113,7 +113,7 @@ At that point, we realize it is time to stop. Thus this version prints out 2,4,6
     start of each iteration that the logical expression is evaluated to decide "should we
     do the body again?"
 
-.. parsonsprob:: 10_3_3_While_Countdown
+.. parsonsprob:: csprepeatnumbers_whilecount8
     :numbered: left
     :adaptive:
 
@@ -126,7 +126,7 @@ At that point, we realize it is time to stop. Thus this version prints out 2,4,6
         print(counter)
         counter = counter - 1
 
-.. parsonsprob:: 10_2_4_While_Count_Even
+.. parsonsprob:: csprepeatnumbers_whilecount9
     :numbered: left
     :adaptive:
 
@@ -148,7 +148,7 @@ At that point, we realize it is time to stop. Thus this version prints out 2,4,6
         counter = counter + 1 #distractor
 
 
-.. mchoice:: 10_3_1_While_Count_Q1
+.. mchoice:: csprepeatnumbers_whilecount10
     :answer_a: 1
     :answer_b: 10
     :answer_c: 11
@@ -166,7 +166,7 @@ At that point, we realize it is time to stop. Thus this version prints out 2,4,6
             print(counter)
             counter = counter + 1
 
-.. mchoice:: 10_3_2_NegativeCounter
+.. mchoice:: csprepeatnumbers_whilecount11
    :practice: T
    :answer_a: 5 4 3 2 1
    :answer_b: -5 -4 -3 -2 -1

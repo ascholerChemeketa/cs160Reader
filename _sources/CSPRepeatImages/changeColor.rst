@@ -20,7 +20,7 @@ all the colors, we make the image darker.
 This program uses step five to increase each color value by 50% (1.5 times its original
 value.)
 
-.. activecode:: Image_Decrease_Red
+.. activecode:: csprepeatimages_changecolor1
     :nocodelens: 
 
     # STEP 1: USE THE IMAGE LIBRARY 
@@ -55,7 +55,7 @@ value.)
 Try decreasing each color channel by 50% (0.5 times its original value) - you should end up with a 
 darker version of the same picture.
 
-.. parsonsprob:: Image_Decrease_GB
+.. parsonsprob:: csprepeatimages_changecolor2
     :numbered: left
     :adaptive:
 

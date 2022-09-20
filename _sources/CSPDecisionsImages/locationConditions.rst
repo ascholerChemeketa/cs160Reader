@@ -34,7 +34,7 @@ Changing the turtle's location or direction in a function permanantly changes it
 Below, the code for ``makeGray`` is already written. Your task is to write the code for
 ``darken`` that will be used to make pixels darker:
 
-.. activecode:: pixelHelpers
+.. activecode:: cspdecisionsimages_locationconditions1
     :autograde: unittest
     :practice: T
 
@@ -85,7 +85,7 @@ Now we can use a conditional to apply those only to particular pixels in the ima
 ``darken`` and ``makeGray`` from the program above into this program. Then examine the code inside the loop.
 Notice that we use a conditional to apply the functions only to pixels that have a Y value of 110 or more.
 
-.. activecode:: Location_Condition
+.. activecode:: cspdecisionsimages_locationconditions2
     :nocodelens:
 
     from image import *

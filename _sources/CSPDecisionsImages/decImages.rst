@@ -43,7 +43,7 @@ All of the white pixels need to be changed to yellow. A yellow will always have 
 high green and red value and a low blue value. A good value for the yellow in the flag is
 254 red, 242 green, 0 blue.
 
-.. activecode:: Flag_Swap
+.. activecode:: cspdecisionsimages_decimages1
     :nocodelens:
  
     from image import *
@@ -84,7 +84,7 @@ or red ones.
 
     <img class="center-block" src="../_static/CSPImages/be-flag.gif" id="be-flag.gif">
 
-.. activecode:: Flag_Swap_2
+.. activecode:: cspdecisionsimages_decimages2
     :nocodelens:
  
     from image import *
@@ -108,7 +108,7 @@ or red ones.
     img.draw(win)
 
 
-.. mchoice:: 14_flag_mc1
+.. mchoice:: cspdecisionsimages_decimages3
     :answer_a: red < 20 and green > 80 and blue > 150
     :answer_b: red < 20 and green < 20 and blue > 200
     :answer_c: red < 20 and green > 20 and blue > 200

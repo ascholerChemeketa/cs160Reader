@@ -58,7 +58,7 @@ Real images, of course, use a much greater number of pixels than we have seen he
 
 
 
-.. fillintheblank:: image_1
+.. fillintheblank:: datarepresentation_imagerepresentation1
 
     How many bits would a 10x20 image with 8 different possible colors per pixel require? (Hint: how many bits are required to represent 8 different colors)
 

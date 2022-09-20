@@ -197,7 +197,7 @@ it again by clicking on the *Hide* button.
       </pre>
 
 
-.. activecode:: cs18ex_1q
+.. activecode:: csppythondata_exercises1
     :nocodelens:
 
     Below is the start of a program to read in the ``"stocks.txt"`` file and run code
@@ -230,7 +230,7 @@ it again by clicking on the *Hide* button.
     myTests().main()
 
 
-.. activecode:: cs18ex_2q
+.. activecode:: csppythondata_exercises2
     :nocodelens:
 
     Modify your program to print out the highest value the Dow Jones reached. (This should be the
@@ -262,7 +262,7 @@ it again by clicking on the *Hide* button.
     myTests().main()
 
 
-.. activecode:: cs18ex_3q
+.. activecode:: csppythondata_exercises3
     :nocodelens:
 
     Modify your program from question 1 to only print the dates from a specific year specified by
@@ -294,7 +294,7 @@ it again by clicking on the *Hide* button.
     myTests().main()
 
 
-.. activecode:: cs18ex_4q
+.. activecode:: csppythondata_exercises4
     :nocodelens:
 
     Combine your solutions from problems 2 and 3 and make your program find the largest highest value
@@ -327,7 +327,7 @@ it again by clicking on the *Hide* button.
     myTests().main()
 
 
-.. activecode:: cs18ex_5q
+.. activecode:: csppythondata_exercises5
     :nocodelens:
 
     Turn your code from question 4 into a function so we can easily check the max value in
@@ -378,7 +378,7 @@ it again by clicking on the *Hide* button.
     myTests().main()
 
 
-.. activecode:: cs18ex_6q
+.. activecode:: csppythondata_exercises6
     :nocodelens:
 
     Write the function ``avgVolumeForYear``. It should take the ``desiredYear`` and the ``data``
@@ -437,7 +437,7 @@ it again by clicking on the *Hide* button.
 
 ..             Fix 5 errors in the code below so that the code runs correctly and prints the pollution for all cities that start with the letter A.
 
-..             .. activecode:: ch18ex1q
+             .. activecode:: csppythondata_exercises7
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r)
@@ -462,7 +462,7 @@ it again by clicking on the *Hide* button.
 
 ..             Fix the errors in the code below so that it prints the average PM values of only the cities that start with "A".
 
-..             .. activecode::  ch18ex2q
+             .. activecode:: csppythondata_exercises8
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r")
@@ -491,7 +491,7 @@ it again by clicking on the *Hide* button.
 
 ..            Fix the 5 errors in the code below so that it runs and prints the largest PM 2.5 value and the city that has that value.
 
-..            .. activecode::  ch18ex3q
+            .. activecode:: csppythondata_exercises9
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r"
@@ -519,7 +519,7 @@ it again by clicking on the *Hide* button.
 
 ..             The code below prints all the lines that have a city that starts with an "A". Change it so that it prints out all lines that have a city that starts with "A" or "B".
 
-..             .. activecode::  ch18ex4q
+             .. activecode:: csppythondata_exercises10
 ..                 :nocodelens:
 
 ..                 # read all the lines
@@ -543,7 +543,7 @@ it again by clicking on the *Hide* button.
 
 ..            Fix the indention below for the code to correctly find and print the lowest 2.5 value and city.
 
-..            .. activecode::  ch18ex5q
+            .. activecode:: csppythondata_exercises11
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r")
@@ -570,7 +570,7 @@ it again by clicking on the *Hide* button.
 
 ..             Fix the code so that it prints out the min value and the cities only when the min value is even.
 
-..             .. activecode::  ch18ex6q
+             .. activecode:: csppythondata_exercises12
 ..                 :nocodelens:
 
 ..                 # read all the lines
@@ -604,7 +604,7 @@ it again by clicking on the *Hide* button.
 
 ..            Fix the indention on the lines below so that it correctly prints the average PM 2.5 value.
 
-..            .. activecode::  ch18ex7q
+            .. activecode:: csppythondata_exercises13
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r")
@@ -631,7 +631,7 @@ it again by clicking on the *Hide* button.
 
 ..             Write a procedure that takes in the file name as a parameter and prints out all the cities that start with a vowel (a,e,i,o, or u) and their associated pollution values.
 
-..             .. activecode::  ch18ex8q
+             .. activecode:: csppythondata_exercises14
 ..                 :nocodelens:
 
 
@@ -644,7 +644,7 @@ it again by clicking on the *Hide* button.
 
 ..            Turn the following code into a procedure.  Pass the input file and the amount of PM 10 to the procedure. It will print the city name and the pollution values for all cities that have that much PM 10 pollution or more.
 
-..            .. activecode::  ch18ex9q
+            .. activecode:: csppythondata_exercises15
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r")
@@ -670,7 +670,7 @@ it again by clicking on the *Hide* button.
 
 ..            Write a function that returns the average PM 2.5 of cities that start with "L".
 
-..            .. activecode::  ch18ex10q
+            .. activecode:: csppythondata_exercises16
 ..                 :nocodelens:
 
 
@@ -683,7 +683,7 @@ it again by clicking on the *Hide* button.
 
 ..            Change the following code into a procedure that prints the city name and pollution values for all cities that have a PM 2.5 of less than some passed value.  Pass in the input file and the amount of pollution.
 
-..            .. activecode::  ch18ex11q
+            .. activecode:: csppythondata_exercises17
 ..                 :nocodelens:
 
 ..                 inFile = open("uspoll.txt","r")
@@ -709,7 +709,7 @@ it again by clicking on the *Hide* button.
 
 ..            Write a procedure that takes the name of a city and prints the pollution values for that city if it is found.
 
-..            .. activecode::  ch18ex12q
+            .. activecode:: csppythondata_exercises18
 ..                 :nocodelens:
 
 
@@ -722,7 +722,7 @@ it again by clicking on the *Hide* button.
 
 ..             Complete the code at the ``#`` so that it prints out the date with the biggest loss from open to close.
 
-..             .. activecode::  ch18ex13q
+             .. activecode:: csppythondata_exercises19
 ..                 :nocodelens:
 
 ..                 def biggestLoss(file):
@@ -751,7 +751,7 @@ it again by clicking on the *Hide* button.
 
 ..             Fix the errors below so that the procedure prints all the dates where the Dow Jones gained more than 300 points from open to close.
 
-..             .. activecode::  ch18ex14q
+             .. activecode:: csppythondata_exercises20
 ..                 :nocodelens:
 
 ..                 def pointGain(file):
@@ -775,7 +775,7 @@ it again by clicking on the *Hide* button.
 
 ..             The code currently prints the date that the Dow Jones had the biggest percent loss. Change 2 lines so that it prints the date with the biggest percent gain.
 
-..             .. activecode::  ch18ex15q
+             .. activecode:: csppythondata_exercises21
 ..                 :nocodelens:
 
 ..                 file = open("stocks.txt", "r")
@@ -801,7 +801,7 @@ it again by clicking on the *Hide* button.
 
 ..             The code below prints all the dates and high price for dates that occur on the first day of the month (i.e. January 1, February 1...). Change it so that it prints the date and low price for all the dates that occur in June.
 
-..             .. activecode::  ch18ex16q
+             .. activecode:: csppythondata_exercises22
 ..                 :nocodelens:
 
 ..                 file = open("stocks.txt", "r")
@@ -822,7 +822,7 @@ it again by clicking on the *Hide* button.
 
 ..             Write a procedure that takes in the stocks file and a string of the last two digits from the years 1989 - 2001 (i.e. "89") and prints the difference between the highest and lowest points of that year.
 
-..             .. activecode::  ch18ex17q
+             .. activecode:: csppythondata_exercises23
 ..                 :nocodelens:
 
 
@@ -835,7 +835,7 @@ it again by clicking on the *Hide* button.
 
 ..             Write a function that takes the stocks file and the abbreviation for a month (i.e. Jan, Feb) as parameters and returns the average value of all the closing prices during that month from all the years given (Hint: Use a counter variable).
 
-..             .. activecode::  ch18ex18q
+             .. activecode:: csppythondata_exercises24
 ..                 :nocodelens:
 
 
@@ -848,7 +848,7 @@ it again by clicking on the *Hide* button.
 
 ..             Write a function that returns the difference between the average of all the gains or breakevens (0 change) and the absolute value of the average of all the losses from open to close.
 
-..            .. activecode::  ch18ex19q
+            .. activecode:: csppythondata_exercises25
 ..                :nocodelens:
 
 
@@ -861,7 +861,7 @@ it again by clicking on the *Hide* button.
 
 ..             Write a procedure that takes the stock file as a parameter and prints the date, and high to low change price only for the date that had the highest high to low change out of the dates that fall on the first day of the month.
 
-..             .. activecode::  ch18ex20q
+             .. activecode:: csppythondata_exercises26
 ..                 :nocodelens:
 
 

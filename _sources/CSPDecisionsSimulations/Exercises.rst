@@ -16,7 +16,7 @@
 Chapter Exercises
 ---------------------
 
-.. parsonsprob:: ch12ex1q
+.. parsonsprob:: cspdecisionssimulations_exercises1
     :numbered: left
 
     The code below is supposed to roll an 8 sided die (sides numbered 1-8) 10000 times and
@@ -47,7 +47,7 @@ Chapter Exercises
     print(numberOfOnes)
 
 
-.. parsonsprob:: ch12ex2q
+.. parsonsprob:: cspdecisionssimulations_exercises2
     :numbered: left
 
     The code below is supposed to "flip a coin" 100 times by making a random number that is
@@ -86,7 +86,7 @@ Chapter Exercises
     print(longestStreak)
 
 
-.. activecode:: ch12ex3q
+.. activecode:: cspdecisionssimulations_exercises3
     :autograde: unittest
     :practice: T
 
@@ -128,7 +128,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch12ex4q
+.. activecode:: cspdecisionssimulations_exercises4
     :autograde: unittest
     :practice: T
 
@@ -178,7 +178,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch12ex5q
+.. activecode:: cspdecisionssimulations_exercises5
     :autograde: unittest
     :practice: T
 
@@ -234,7 +234,7 @@ Chapter Exercises
 
 ..             Fix 5 errors in the code below so that it runs correctly. It will draw red and black horizontal stripes.
 
-..             .. activecode:: ch14ex1q
+             .. activecode:: cspdecisionssimulations_exercises6
 ..                 :nocodelens:
 
 ..                 from turtle import               # use the turtle library
@@ -268,7 +268,7 @@ Chapter Exercises
 
 ..             The code below draws three peaks, vertically. Change 1 thing to make it draw three peaks horizontally. (Hint: You have to change something that's in the body of the for loop)
 
-..             .. activecode::  ch14ex2q
+             .. activecode:: cspdecisionssimulations_exercises7
 ..                 :nocodelens:
 
 ..                 def draw(jaz, maxX):
@@ -312,7 +312,7 @@ Chapter Exercises
 
 ..            Indent lines in the code below so that it runs correctly.  It will stamp 4 turtles in two different colors at the corners of a square.
 
-..            .. activecode::  ch14ex3q
+            .. activecode:: cspdecisionssimulations_exercises8
 ..                 :nocodelens:
 
 ..                 from turtle import *             # use the turtle library
@@ -349,7 +349,7 @@ Chapter Exercises
 
 ..             Fix the errors so the turtle stays in a straight vertical line without leaving the screen.
 
-..             .. activecode::  ch14ex4q
+             .. activecode:: cspdecisionssimulations_exercises9
 ..                 :nocodelens:
 
 ..                 from turtle import *      # use the turtle library
@@ -386,7 +386,7 @@ Chapter Exercises
 
 ..            Fix 5 errors in the code below so that it runs correctly.  It will draw a repeating pattern from left to right until it hits the width of the window and then will move back to the left side of the window to continue the pattern.
 
-..            .. activecode::  ch14ex5q
+            .. activecode:: cspdecisionssimulations_exercises10
 ..                 :nocodelens:
 
 ..                 def turtleLoop(jaz, maxX):
@@ -430,7 +430,7 @@ Chapter Exercises
 
 ..             The code currently draws 5 horizontal lines of alternating colors. Change it so that it draws 5 vertical lines of alternating colors.
 
-..             .. activecode::  ch14ex6q
+             .. activecode:: cspdecisionssimulations_exercises11
 ..                 :nocodelens:
 
 ..                 from turtle import *             # use the turtle library
@@ -464,7 +464,7 @@ Chapter Exercises
 
 ..            Change the code below to use ``if`` and ``else``.  Also fix any errors.   You will need to change 3 lines.  The code will draw random connected lines in alternating colors of red and black.
 
-..            .. activecode::  ch14ex7q
+            .. activecode:: cspdecisionssimulations_exercises12
 ..                 :nocodelens:
 
 ..                 from turtle import *      # use the turtle library
@@ -497,7 +497,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code so it alternates between printing a horizontal yellow line and a vertical black line.
 
-..             .. activecode::  ch14ex8q
+             .. activecode:: cspdecisionssimulations_exercises13
 ..                 :nocodelens:
 
 ..                 from turtle import *             # use the turtle library
@@ -539,7 +539,7 @@ Chapter Exercises
 
 ..            Fix the indention so that the code runs correctly.  Two turtles will move towards each other and then turn around and move away from each other.
 
-..            .. activecode::  ch14ex9q
+            .. activecode:: cspdecisionssimulations_exercises14
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -568,7 +568,7 @@ Chapter Exercises
 
 ..             Change and fix the code below so that it draws random, but connected black and red lines (it should look like scribbling) only in the bottom right half of the drawing window.
 
-..             .. activecode::  ch14ex10q
+             .. activecode:: cspdecisionssimulations_exercises15
 ..                 :nocodelens:
 
 ..                 from turtle import *      # use the turtle library
@@ -600,7 +600,7 @@ Chapter Exercises
 
 ..            The following code stamps a circle of turtles.  Change the following code to use a different color per stamp and use at least 3 colors.  You can use a counter and reset the counter to 0 after it reaches the number of colors (i.e. use a for loop and change color based off divisibility of each number).  Use ``if``, ``elif``, and ``else``.
 
-..            .. activecode::  ch14ex11q
+            .. activecode:: cspdecisionssimulations_exercises16
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -624,7 +624,7 @@ Chapter Exercises
 
 ..             Add to the code so that  ``num`` is a random number between 1 and 3 (inclusive), and change the if clauses to be if, elif, and else. The code should draw random lines with 3 different colors based off the value of ``num``.
 
-..             .. activecode::  ch14ex12q
+             .. activecode:: cspdecisionssimulations_exercises17
 ..                 :nocodelens:
 
 ..                 from turtle import *      # use the turtle library
@@ -659,7 +659,7 @@ Chapter Exercises
 
 ..            The following code stamps turtles in a spiral.  Change the code below to cycle through at least 3 colors.  Use ``if``, ``elif``, and ``else``.
 
-..            .. activecode::  ch14ex13q
+            .. activecode:: cspdecisionssimulations_exercises18
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -683,7 +683,7 @@ Chapter Exercises
 
 ..             The code currently makes the two turtles just draw a circle. Fix the errors on line 13 so that the turtles move towards each other and then turn around and move away from each other.
 
-..             .. activecode::  ch14ex14q
+             .. activecode:: cspdecisionssimulations_exercises19
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -712,7 +712,7 @@ Chapter Exercises
 
 ..            The following code draws vertical stripes alternating between red and black.  Change and add code below to use 5 different colors.  Use ``y % 5`` instead of ``y % 2`` to get 5 possible values.
 
-..            .. activecode::  ch14ex15q
+            .. activecode:: cspdecisionssimulations_exercises20
 ..                 :nocodelens:
 
 ..                 from turtle import *             # use the turtle library
@@ -746,7 +746,7 @@ Chapter Exercises
 
 ..             Complete and add to the ``turtleLoop`` procedure so that when the turtles collide, they move away, then turn so that they move in the same direction. It should look like a mirror image divided across the vertical axis.
 
-..             .. activecode::  ch14ex16q
+             .. activecode:: cspdecisionssimulations_exercises21
 ..                 :nocodelens:
 
 ..                 def turtleLoop(jaz,mia):
@@ -782,7 +782,7 @@ Chapter Exercises
 
 ..            Write a function takes a number and returns a color.  It will return 'yellow' if the number modulus 3 is 0, 'blue' if it is 1, and 'green' if it is 2.
 
-..            .. activecode::  ch14ex17q
+            .. activecode:: cspdecisionssimulations_exercises22
 ..                 :nocodelens:
 
 
@@ -795,7 +795,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes in any number as the first parameter and a turtle as another parameter. The procedure should determine if the number is even or odd. If it is even have the turtle go right. If it is odd, have it go left. The procedure should get a random value between 1 and 2 (inclusive) and assign a color based on that number.
 
-..             .. activecode::  ch14ex18q
+             .. activecode:: cspdecisionssimulations_exercises23
 ..                 :nocodelens:
 
 
@@ -808,7 +808,7 @@ Chapter Exercises
 
 ..            Write code that draws a pattern with the turtle with at least 3 different colors used.  The code must have a ``for`` loop and must have a ``if`` statement inside the for loop that changes the color.
 
-..            .. activecode::  ch14ex19q
+            .. activecode:: cspdecisionssimulations_exercises24
 ..                :nocodelens:
 
 
@@ -821,7 +821,7 @@ Chapter Exercises
 
 ..             Write code that uses 2 turtles and a for loop to get a range of numbers. You should change the color of the based off if the number from the for loop is even or odd. The two turtles should move towards each other but turn away and move when they are about to intersect.
 
-..             .. activecode::  ch14ex20q
+             .. activecode:: cspdecisionssimulations_exercises25
 ..                 :nocodelens:
 
 

@@ -24,7 +24,7 @@ a test of the procedure to the end of the main part of the program.
 
 |turtle_ref|
 
-.. activecode:: program_implementation_3
+.. activecode:: cspdesigningprocedures_programimplementation31
     :autograde: unittest
     :nocodelens:
 

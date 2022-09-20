@@ -28,7 +28,7 @@ then do the work to calculate the average and return it. There are some ``print`
 function just to show us what data is being worked on to help confirm the code is working.
 In the main part of the program, we call the function twice - once for "OR" and once for "TX".
 
-.. activecode:: getAvgPM25_function
+.. activecode:: csppythondata_comparestates1
     :nocodelens:
 
     def getAvgPM25(targetState, data):
@@ -73,7 +73,7 @@ over is the perfect job for a loop. Let's write a loop that can iterate through 
 states:
 
 
-.. activecode:: loopStates
+.. activecode:: csppythondata_comparestates2
     :autograde: unittest
 
     Write a loop to print out each state in ``stateList`` on its own line. Do not
@@ -98,7 +98,7 @@ your loop runs the two lines shown in comments (you may have to adjust the varia
 name ``state`` so it matches your loop). ``stateList`` has a list of the three richest
 (MD, AK, NJ) and poorest states (AK, WV, MS) by per capita income.
 
-.. activecode:: final_pollution_compare
+.. activecode:: csppythondata_comparestates3
     :nocodelens:
 
     def getAvgPM25(targetState, data):
@@ -132,7 +132,7 @@ name ``state`` so it matches your loop). ``stateList`` has a list of the three r
         #pollution = getAvgPM25(state, data)
         #print("Average Pollution in", state, "is", pollution)
 
-.. mchoice:: final_pollution_compare_mc
+.. mchoice:: csppythondata_comparestates4
     :answer_a: The richer states seem to be more polluted.
     :answer_b: The poorer states seem to be more polluted.
     :answer_c: There does not seem to be a pattern to the results.

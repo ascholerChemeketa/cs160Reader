@@ -38,7 +38,7 @@ item in the list. ``myList[1]`` will access the second item in the list.
     will always have an index one less than the number of items - the last item in a list with
     10 values is index 9.
 
-.. mchoice:: 16_4_1_lastIndex
+.. mchoice:: cspcollectionsintro_listindexes1
     :answer_a: 0
     :answer_b: 1
     :answer_c: 2
@@ -51,7 +51,7 @@ item in the list. ``myList[1]`` will access the second item in the list.
 
     What is the last index for the list ``myFirstList``?
 
-.. mchoice:: 16_4_2_valueLastIndex
+.. mchoice:: cspcollectionsintro_listindexes2
     :answer_a: 12
     :answer_b: "ape"
     :answer_c: 13
@@ -69,7 +69,7 @@ Using ``list[index]`` on the right side of an assignment returns the value at th
 list. Using ``list[index]`` on the left side of an assignment statement changes the value at
 that index in the list.
 
-.. codelens:: Items_As_Variables
+.. codelens:: cspcollectionsintro_listindexes3
     :showoutput:
 
     items = [2, 4, 6, 8]
@@ -86,7 +86,7 @@ that index in the list.
 
     print(items)
 
-.. mchoice:: 16_4_4_addLists
+.. mchoice:: cspcollectionsintro_listindexes4
     :practice: T
     :answer_a: [3, 2, 1]
     :answer_b: [2, 0, 2]
@@ -111,7 +111,7 @@ We can even use a variable that names a number as the index for an item. This sa
 ``itemNum`` to identify which value we want from the list. As we change ``itemNum``, the
 item we access by using it as an index changes as well:
 
-.. codelens:: Variable_As_index
+.. codelens:: cspcollectionsintro_listindexes5
     :showoutput:
 
     items = [2, 4, 6, 8]
@@ -138,7 +138,7 @@ Finally, just like with a string, we can find the length of a list by using the 
 We can either use it in the same way we would use any other numeric value
 by doing more work with it or giving the value a name to work with later:
 
-.. codelens:: Items_As_Variables
+.. codelens:: cspcollectionsintro_listindexes6
     :showoutput:
 
     items = [2, 4, 6, 8]

@@ -13,14 +13,14 @@ Single and Multiple Turtles
 
 The program below draws a shape we have seen before.
 
-.. fillintheblank:: 4_5_1_mystery shape
+.. fillintheblank:: cspnameturtles_multturtles1
 
    What shape will the program below draw when you click on the Run button?
 
    -    :^triangle$|^Triangle$|^TRIANGLE$: Correct!
         :.*: Try to follow the directions as if you are the turtle
 
-.. activecode:: 4_5_2_mystery
+.. activecode:: cspnameturtles_multturtles2
     :nocodelens:
 
     from turtle import *
@@ -40,7 +40,7 @@ When we say ``forward``, the actual direction ``zari`` moves depends on what tur
 If we introduce another turtle and use it to run some of the procedures, we will not get the same
 shape.
 
-.. activecode:: Two_Turtles
+.. activecode:: cspnameturtles_multturtles3
     :nocodelens:
 
     from turtle import *
@@ -64,7 +64,7 @@ screen (0, 0). Similarly, his direction starts out at the default (East).
 
 **Mixed up programs**
 
-.. parsonsprob:: 4_5_4_JandT
+.. parsonsprob:: cspnameturtles_multturtles4
     :numbered: left
     :adaptive:
 
@@ -104,7 +104,7 @@ screen (0, 0). Similarly, his direction starts out at the default (East).
     tina.left(180)
     tina.forward(75)
 
-.. parsonsprob:: 4_5_5_JandT2
+.. parsonsprob:: cspnameturtles_multturtles5
     :numbered: left
     :adaptive:
 

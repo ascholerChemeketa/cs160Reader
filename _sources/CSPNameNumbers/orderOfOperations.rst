@@ -38,7 +38,7 @@ below from highest precedence to lowest. If two symbols have the same precedence
       - Addition and Subtraction
 
 
-.. fillintheblank:: 2_5_1_Order1_fill
+.. fillintheblank:: cspnamenumbers_orderofoperations1
 
    What is printed when you click on the Run button in the code below? 
    Try evaluating it by hand before running the program to check yourself.
@@ -46,7 +46,7 @@ below from highest precedence to lowest. If two symbols have the same precedence
    -    :^13$: Correct!
         :.*: Did you actually run the program?
 
-.. activecode:: 2_5_2_Expression_Order1
+.. activecode:: cspnamenumbers_orderofoperations2
     :nocodelens:
     
     result = 4 ** 2 + -1 * 3
@@ -56,7 +56,7 @@ You can change the default order by adding parentheses around part of an express
 math is inside the parentheses is done (using the same order of operations) before any operations
 outside the parentheses are done.
 
-.. fillintheblank:: 2_5_3_Order2_fill
+.. fillintheblank:: cspnamenumbers_orderofoperations3
 
    What is printed when you click on the Run button in the code below? 
    Try evaluating it by hand before running the program to check yourself.
@@ -64,7 +64,7 @@ outside the parentheses are done.
    -    :^-12$: Correct!
         :.*: Did you actually run the program
 
-.. activecode:: 2_5_4_Expression_Order2
+.. activecode:: cspnamenumbers_orderofoperations4
     :nocodelens:
     
     result = 4 ** (2 + -1) * -3

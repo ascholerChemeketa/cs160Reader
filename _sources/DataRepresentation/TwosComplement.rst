@@ -156,7 +156,7 @@ Normally integers are stored as 32-bit values. This gives a range of approximate
 .. pseudo_h4:: Self Check
     :class: underlined
 
-.. mchoice:: twoscomplement_1
+.. mchoice:: datarepresentation_twoscomplement1
     :answer_a: 00011
     :answer_b: 10011
     :answer_c: 11100
@@ -169,7 +169,7 @@ Normally integers are stored as 32-bit values. This gives a range of approximate
 
     Which of these represents -3 as a five bit two's complement number?
 
-.. mchoice:: twoscomplement_2
+.. mchoice:: datarepresentation_twoscomplement2
     :answer_a: 5
     :answer_b: 7
     :answer_c: 15
@@ -184,7 +184,7 @@ Normally integers are stored as 32-bit values. This gives a range of approximate
 
 
 ..
-  .. fillintheblank:: twoscomplement_3
+  .. fillintheblank:: datarepresentation_twoscomplement3
 
       .. blank:: twoscomplement_3_ans1
          :correct: 6

@@ -16,7 +16,7 @@ instead of joining, and can often be more efficient. For example, the following
 query calculates the mean duration of trips that start at an open station.
 
 
-.. activecode:: bikeshare_subquery_mean_duration_open_stations
+.. activecode:: sqlgroupjoin_subqueries1
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -50,7 +50,7 @@ query, it is complex to calculate both in a single ``SELECT`` statement.
 However, a subquery can be used to simply and logically accomplish this.
 
 
-.. activecode:: bikeshare_subquery_proportion_trips_per_start_station
+.. activecode:: sqlgroupjoin_subqueries2
    :language: sql
    :dburl: /_static/bikeshare.db
 

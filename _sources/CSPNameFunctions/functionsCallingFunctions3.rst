@@ -31,7 +31,7 @@ view to run the program. As you watch it run, here are some things to pay attent
 When the **perimeter** is set in ``triangle_area``, use the value to answer the question below the code
 sample.
 
-.. activecode:: triangle_area_final 
+.. activecode:: cspnamefunctions_functionscallingfunctions31
 
     def distance(x1, y1, x2, y2):
         xDifference = x2 - x1
@@ -60,7 +60,7 @@ sample.
     print(testArea)
 
 
-.. fillintheblank:: 7_7_fb
+.. fillintheblank:: cspnamefunctions_functionscallingfunctions32
 
     What is the value of ``perimeter`` that is calculated inside ``triangle_area``?
 

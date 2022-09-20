@@ -68,7 +68,7 @@ execution. To sanity check it, try the following:
 
 **Mixed up programs**
 
-.. parsonsprob:: 12_roll_dice
+.. parsonsprob:: cspdecisionssimulations_usingrandom1
     :numbered: left
     :adaptive:
 

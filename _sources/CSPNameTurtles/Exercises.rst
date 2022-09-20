@@ -12,7 +12,7 @@
 Chapter Exercises
 --------------------
 
-.. activecode:: ch4ex1q
+.. activecode:: cspnameturtles_exercises1
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -34,7 +34,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch4ex2q
+.. activecode:: cspnameturtles_exercises2
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -61,7 +61,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch4ex3q
+.. activecode:: cspnameturtles_exercises3
     :nocodelens:
 
     
@@ -74,7 +74,7 @@ Chapter Exercises
     space = Screen()
     jessica = Turtle()
 
-.. activecode:: ch4ex4q
+.. activecode:: cspnameturtles_exercises4
     :nocodelens:
     :practice: T
 
@@ -95,7 +95,7 @@ Chapter Exercises
 
 ..            The following program is missing things on lines 1, 2, and 3.  Add the missing parts.
 
-..            .. activecode::  ch4ex3q
+            .. activecode:: cspnameturtles_exercises5
 ..                 :nocodelens:
 
 ..                 from
@@ -113,7 +113,7 @@ Chapter Exercises
 
 ..             Rearrange the code so it draws a square.
 
-..             .. activecode::  ch4ex4q
+             .. activecode:: cspnameturtles_exercises6
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -137,7 +137,7 @@ Chapter Exercises
 
 ..            The following code has 3 syntax errors.  Fix the errors so that the code runs.
 
-..            .. activecode::  ch4ex5q
+            .. activecode:: cspnameturtles_exercises7
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -157,7 +157,7 @@ Chapter Exercises
 
 ..             Fix the 6 errors in the following code.
 
-..             .. activecode::  ch4ex6q
+             .. activecode:: cspnameturtles_exercises8
 ..                 :nocodelens:
 
 ..                 from turtle import
@@ -179,7 +179,7 @@ Chapter Exercises
 
 ..            The following code draws two lines of a rectangle.  Add code to finish drawing the rectangle.
 
-..            .. activecode::  ch4ex7q
+            .. activecode:: cspnameturtles_exercises9
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -199,7 +199,7 @@ Chapter Exercises
 
 ..             You need to fix or add 4 things so that the code runs.
 
-..             .. activecode::  ch4ex8q
+             .. activecode:: cspnameturtles_exercises10
 ..                 :nocodelens:
 
 ..                 space = Screen()
@@ -220,7 +220,7 @@ Chapter Exercises
 
 ..            The following code is missing 3 lines that do the required set-up.  Add them so that the code runs.
 
-..            .. activecode::  ch4ex9q
+            .. activecode:: cspnameturtles_exercises11
 ..                 :nocodelens:
 
 ..                 alex.forward(150)
@@ -237,7 +237,7 @@ Chapter Exercises
 
 ..             Finish the code so that it draws an equilateral triangle.
 
-..             .. activecode::  ch4ex10q
+             .. activecode:: cspnameturtles_exercises12
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -254,7 +254,7 @@ Chapter Exercises
 
 ..             Fix the 5 errors.
 
-..             .. activecode::  ch4ex12q
+             .. activecode:: cspnameturtles_exercises13
 ..                 :nocodelens:
 
 ..                 From turtle Import *
@@ -272,7 +272,7 @@ Chapter Exercises
 
 ..            Create a drawing with at least 3 colors and using at least 3 turtles.
 
-..            .. activecode::  ch4ex13q
+            .. activecode:: cspnameturtles_exercises14
 ..                 :nocodelens:
 
 
@@ -285,7 +285,7 @@ Chapter Exercises
 
 ..             Fix the errors.
 
-..             .. activecode::  ch4ex14q
+             .. activecode:: cspnameturtles_exercises15
 ..                 :nocodelens:
 
 ..                 from turtle import *
@@ -306,7 +306,7 @@ Chapter Exercises
 
 ..            Write code below to draw a diamond shape.
 
-..            .. activecode::  ch4ex15q
+            .. activecode:: cspnameturtles_exercises16
 ..                 :nocodelens:
 
 
@@ -319,7 +319,7 @@ Chapter Exercises
 
 ..             Write code that spells CS in block letters (it will look more like C5).
 
-..             .. activecode::  ch4ex16q
+             .. activecode:: cspnameturtles_exercises17
 ..                 :nocodelens:
 
 
@@ -334,7 +334,7 @@ Chapter Exercises
 
 ..            .. image:: Figures/star.png
 
-..            .. activecode::  ch4ex17q
+            .. activecode:: cspnameturtles_exercises18
 ..                 :nocodelens:
 
 
@@ -347,7 +347,7 @@ Chapter Exercises
 
 ..             Write code to draw a "V" starting from the center with each side a different color and only turning the turtle twice and no using penup or pendown.
 
-..             .. activecode::  ch4ex18q
+             .. activecode:: cspnameturtles_exercises19
 ..                 :nocodelens:
 
 
@@ -360,7 +360,7 @@ Chapter Exercises
 
 ..            Write code below to draw at least one of your initials in block style.
 
-..            .. activecode::  ch4ex19q
+            .. activecode:: cspnameturtles_exercises20
 ..                :nocodelens:
 
 
@@ -374,5 +374,5 @@ Chapter Exercises
 ..             Use 4 turtles and 4 colors to draw a big plus sign with each segment
 ..             of the plus sign being a different color.
 
-..             .. activecode::  ch4ex20q
+             .. activecode:: cspnameturtles_exercises21
 ..                 :nocodelens:

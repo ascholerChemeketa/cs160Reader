@@ -23,7 +23,7 @@ only go up to 1/2 the width and 1/2 the height. At each location, it gets the ex
 and then inverts each color channel (subtracts it from 255 so that a value of 0 becomes 255,
 a value of 1 becomes 254, 2 becomes 253, etc...).
 
-.. activecode:: Image_Negate_Quarter
+.. activecode:: csprepeatimages_changedata1
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
@@ -56,7 +56,7 @@ a value of 1 becomes 254, 2 becomes 253, etc...).
     img.draw(win)
 
 
-.. mchoice:: 9_7_1_Image_Quadrent_mc
+.. mchoice:: csprepeatimages_changedata2
     :answer_a: Change line 12 to <code>for x in range(halfWidth, img.getWidth()):</code>
     :answer_b: Change line 13 to <code>for y in range(halfHeight, img.getHeight()):</code>
     :answer_c: Do both
@@ -72,7 +72,7 @@ You may have noticed that we used ``// 2`` to divide by two in that sample. Why?
 ``range`` only works with whole numbers. And ``/ 2`` produces a decimal value (also known as a 
 ``float`` for "floating decimal point").  Try this example and note the error you get.
 
-.. activecode:: range_integer_only
+.. activecode:: csprepeatimages_changedata3
 
     max = 11 / 2
     print(max)
@@ -90,7 +90,7 @@ copy visits the last 30 rows. In each of those locations, we don't even both acc
 the existing color. Instead we use the ``Pixel(red, green, blue)`` function to make a new
 red pixel (255 red, 0 green and blue) and store it into the image at the current location.
 
-.. activecode:: Image_Every_Other
+.. activecode:: csprepeatimages_changedata4
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 

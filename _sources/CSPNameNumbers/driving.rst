@@ -24,7 +24,7 @@ this program:
 - Press |codelensfwd| to go forward executing a single line of the program.
 - Press |codelenslast| to execute all the lines of the program.
 
-.. codelens:: Chicago_2_Dallas
+.. codelens:: cspnamenumbers_driving1
 
     distance = 924.7
     mpg = 35.5
@@ -44,7 +44,7 @@ from Chicago to Dallas in your car.
     just the first copy of ``costPerGallon`` below to ``costpergallon`` and then run the code
     to see what happens.
 
-.. codelens:: Chicago_2_Dallas_Cost
+.. codelens:: cspnamenumbers_driving2
 
    distance = 924.7
    mpg = 35.5
@@ -74,7 +74,7 @@ You can also print multiple things on one line by putting them all inside the pa
 
 Press the |runbutton| below to see this program run at full speed.
 
-.. activecode:: 2_6_3_Trip_Calculator
+.. activecode:: cspnamenumbers_driving3
 
     distance = 924.7
     mpg = 35.5
@@ -91,7 +91,7 @@ Press the |runbutton| below to see this program run at full speed.
 
 Try editing the program above and running it to answer this question:
 
-.. mchoice:: 2_6_4_Chicago_2_Dallas_Q1
+.. mchoice:: cspnamenumbers_driving4
     :answer_a: Yes
     :answer_b: No
     :answer_c: We should fly instead.
@@ -102,7 +102,7 @@ Try editing the program above and running it to answer this question:
 
     If the cost per gallon drops to $3.45, can we drive from Chicago to Dallas for less than $90 in gas?
 
-.. mchoice:: 2_6_5_Chicago_2_Dallas_Q2
+.. mchoice:: cspnamenumbers_driving5
     :answer_a: 3.45
     :answer_b: 3.65
     :answer_c: costPerGallon

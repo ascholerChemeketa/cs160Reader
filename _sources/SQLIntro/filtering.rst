@@ -19,7 +19,7 @@ append ``WHERE column_condition`` to any SQL query, and the result will be
 filtered only to rows that satisfy the column condition. For example, you might
 want to look only at bike trips which are at least one hour (3600 seconds):
 
-.. activecode:: bikeshare_rides_over_60_minutes
+.. activecode:: sqlintro_filtering1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -68,7 +68,7 @@ For example to look at bike trips which are 60 minutes or more and the
 ``member_type`` is ``MEMBER``, the query would be as below.
 
 
-.. activecode:: bikeshare_rides_over_60_minutes_by_members
+.. activecode:: sqlintro_filtering2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -84,7 +84,7 @@ For example to look at bike trips which are 60 minutes or more and the
         member_type == 'Member'
 
 
-.. activecode:: bikeshare_rides_over_8_hours_by_W01274
+.. activecode:: sqlintro_filtering3
     :language: sql
     :dburl: /_static/bikeshare.db
 

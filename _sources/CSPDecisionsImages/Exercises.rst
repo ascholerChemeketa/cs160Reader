@@ -15,7 +15,7 @@
 Chapter Exercises
 ---------------------
 
-.. parsonsprob:: ch14ex1q
+.. parsonsprob:: cspdecisionsimages_exercises1
     :numbered: left
     :practice: T
 
@@ -51,7 +51,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch14ex2q
+.. activecode:: cspdecisionsimages_exercises2
     :autograde: unittest
     :practice: T
 
@@ -96,7 +96,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch14ex3q
+.. activecode:: cspdecisionsimages_exercises3
     :autograde: unittest
     :practice: T
 
@@ -142,7 +142,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch14ex4q
+.. activecode:: cspdecisionsimages_exercises4
     :autograde: unittest
     :practice: T
 
@@ -210,7 +210,7 @@ Chapter Exercises
 
 ..             Make changes to 10 lines in the code below so that it runs.  It changes areas that look red in the original to green.
 
-..             .. activecode:: ch15ex1q
+             .. activecode:: cspdecisionsimages_exercises5
 ..                 :nocodelens:
 
 ..                 from  import *
@@ -249,7 +249,7 @@ Chapter Exercises
 
 ..             Fix the code below so that the red in the picture gets changed to blue.
 
-..             .. activecode::  ch15ex2q
+             .. activecode:: cspdecisionsimages_exercises6
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -288,7 +288,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below so that it runs correctly.  It does a primitive form of edge detection by getting all of the pixels (except for the last row) and all the pixels to the right of those and determining if the difference between the average of the rgb values for the pixel and the pixel to the right are substantially different.
 
-..            .. activecode::  ch15ex3q
+            .. activecode:: cspdecisionsimages_exercises7
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -333,7 +333,7 @@ Chapter Exercises
 
 ..             Fix and change the code to change just the background color from white to gray.
 
-..             .. activecode::  ch15ex4q
+             .. activecode:: cspdecisionsimages_exercises8
 ..                 :nocodelens:
 
 ..                 # CREATE AN IMAGE FROM A FILE
@@ -370,7 +370,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below so that it runs correctly.  It posterizes a picture which means that it reduces all the colors in a picture to a small number of colors – like the ones you might use if you were making a poster..
 
-..            .. activecode::  ch15ex5q
+            .. activecode:: cspdecisionsimages_exercises9
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -421,7 +421,7 @@ Chapter Exercises
 
 ..             Fix the indentation so that the code puts the motorcycle on the beach. The code checks if the pixel isn't white in the first image, and if it's not, it places that pixel in the same location on the second image.
 
-..             .. activecode::  ch15ex6q
+             .. activecode:: cspdecisionsimages_exercises10
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -464,7 +464,7 @@ Chapter Exercises
 
 ..            Fix 5 errors in the code below. It will copy the non-white pixels from gal1.jpg to guy1.jpg.
 
-..            .. activecode::  ch15ex7q
+            .. activecode:: cspdecisionsimages_exercises11
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -502,7 +502,7 @@ Chapter Exercises
 
 ..             Fix the 5 errors so that a swan in shown on a beach.
 
-..             .. activecode::  ch15ex8q
+             .. activecode:: cspdecisionsimages_exercises12
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -545,7 +545,7 @@ Chapter Exercises
 
 ..            Change the code below to use ``if`` and ``else`` rather than two ``if`` statements per color.  It posterizes an image.
 
-..            .. activecode::  ch15ex9q
+            .. activecode:: cspdecisionsimages_exercises13
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -596,7 +596,7 @@ Chapter Exercises
 
 ..             Fix the indentation in the code and change it so that it edges the motorcycle but the background is black and the motorcycle edging will be white.
 
-..             .. activecode::  ch15ex10q
+             .. activecode:: cspdecisionsimages_exercises14
 ..                 :nocodelens:
 
 ..                     from image import *
@@ -641,7 +641,7 @@ Chapter Exercises
 
 ..            Change the following code into a procedure. It posterizes an image. Be sure to call it to test it.
 
-..            .. activecode::  ch15ex11q
+            .. activecode:: cspdecisionsimages_exercises15
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -692,7 +692,7 @@ Chapter Exercises
 
 ..             Fix the 5 errors in the procedure so that it edges the motorcycle which means the image should only have 2 colors. The motorcycle should be one color, everything else should be the other color.
 
-..             .. activecode::  ch15ex12q
+             .. activecode:: cspdecisionsimages_exercises16
 ..                 :nocodelens:
 
 ..                 def edger(img):
@@ -739,7 +739,7 @@ Chapter Exercises
 
 ..            Change the following into a procedure. It changes areas that are mostly red looking to green.  Be sure to call it to test it.
 
-..            .. activecode::  ch15ex13q
+            .. activecode:: cspdecisionsimages_exercises17
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -778,7 +778,7 @@ Chapter Exercises
 
 ..             The code below currently makes the picture gray. Change it so that it posterizes (reduce the number of colors) the image instead.
 
-..             .. activecode::  ch15ex14q
+             .. activecode:: cspdecisionsimages_exercises18
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -829,7 +829,7 @@ Chapter Exercises
 
 ..            Write the code to posterize a picture but use 3 values for each color instead of 2.  Use 0 if the current value is less than 85, use 85 if the value is less than 170, else use 170.
 
-..            .. activecode::  ch15ex15q
+            .. activecode:: cspdecisionsimages_exercises19
 ..                 :nocodelens:
 
 
@@ -843,7 +843,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code and change the code to use if's and else's instead of just if's.
 
-..             .. activecode::  ch15ex16q
+             .. activecode:: cspdecisionsimages_exercises20
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -894,7 +894,7 @@ Chapter Exercises
 
 ..            Write the code to do edge detection on a picture, but compare the curent pixel with the one below it rather than the one to the right.
 
-..            .. activecode::  ch15ex17q
+            .. activecode:: cspdecisionsimages_exercises21
 ..                 :nocodelens:
 
 
@@ -907,7 +907,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes an image as a parameter and edges it using the colors blue and white.
 
-..             .. activecode::  ch15ex18q
+             .. activecode:: cspdecisionsimages_exercises22
 ..                 :nocodelens:
 
 
@@ -920,7 +920,7 @@ Chapter Exercises
 
 ..            Write a procedure to remove the red on very red pixels (pixels that have a red value greater than 200 and a green and blue value of less than 100).
 
-..            .. activecode::  ch15ex19q
+            .. activecode:: cspdecisionsimages_exercises23
 ..                :nocodelens:
 
 
@@ -933,7 +933,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes a picture as a parameter and converts all the red to grayscale.
 
-..             .. activecode::  ch15ex20q
+             .. activecode:: cspdecisionsimages_exercises24
 ..                 :nocodelens:
 
 

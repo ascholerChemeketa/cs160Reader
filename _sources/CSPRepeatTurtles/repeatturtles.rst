@@ -15,7 +15,7 @@ While learning how to draw with the turtle, we have found many reasons to repeat
 ways that a loop can make easier. A simple example is a ``square`` procedure - it needs to
 do both ``forward`` and ``right`` 4 times. So why not have a ``for`` loop repeat those for us:
 
-.. activecode:: Turtle_For_Procedure
+.. activecode:: csprepeatturtles_repeatturtles1
     :nocodelens:
 
     def square(turtleName, size):
@@ -35,7 +35,7 @@ do both ``forward`` and ``right`` 4 times. So why not have a ``for`` loop repeat
 
 
 
-.. parsonsprob:: 8_6_2_turtle-squa1231231232
+.. parsonsprob:: csprepeatturtles_repeatturtles2
     :numbered: left
     :adaptive:
 
@@ -56,7 +56,7 @@ do both ``forward`` and ``right`` 4 times. So why not have a ``for`` loop repeat
     nick = Turtle()
     nick.shape("turtle")
 
-.. parsonsprob:: 8_2_Rect
+.. parsonsprob:: csprepeatturtles_repeatturtles3
     :numbered: left
     :adaptive:
 

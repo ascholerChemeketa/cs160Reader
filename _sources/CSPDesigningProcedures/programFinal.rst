@@ -21,7 +21,7 @@ is. But, we have not given that procedure a name. Chose a name for the procedure
 the whole house and replace the ``_____________`` below with your name. Make sure to replace
 it in both the procedure definition and the procedure call.
 
-.. activecode:: program_implementation_final
+.. activecode:: cspdesigningprocedures_programfinal1
     :nocodelens:
 
     Name the procedure that draws the house.

@@ -20,7 +20,7 @@ We will build the program gradually in the following steps:
 Rainfall Step 1
 ----------------------------
 
-.. activecode:: rainfall_1
+.. activecode:: cspcollectionsintro_rainfall1
     :autograde: unittest
 
     First, lets not worry about filtering out the bad values or finding the average.
@@ -71,7 +71,7 @@ Rainfall Step 1
 Rainfall Step 2
 ----------------------------
 
-.. activecode:: rainfall_2
+.. activecode:: cspcollectionsintro_rainfall2
     :autograde: unittest
 
     Now, let's worry about about ONLY adding the values of the numbers that aren't negative
@@ -116,7 +116,7 @@ Rainfall Step 2
 Rainfall Step 3
 ----------------------------
 
-.. activecode:: rainfall_3
+.. activecode:: cspcollectionsintro_rainfall3
     :autograde: unittest
 
     To get the average, we need to know how many values we have added up. If we were using
@@ -165,7 +165,7 @@ Rainfall Step 3
 Rainfall Finished
 ----------------------------
 
-.. activecode:: rainfall_4
+.. activecode:: cspcollectionsintro_rainfall4
     :autograde: unittest
 
     Now that we know we have the right sum and count, you can finish the function by returning

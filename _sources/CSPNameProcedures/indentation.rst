@@ -18,7 +18,7 @@ told to do the job with a procedure call.
 
 Try running the program below.
 
-.. activecode:: 5_order1
+.. activecode:: cspnameprocedures_indentation1
     :nocodelens:
 
     # main part of our program
@@ -46,7 +46,7 @@ Indentation shows Python (and humans) what code is contained inside other code. 
 that make up the body of a procedure **must** all be indented. Then, when we are done providing the
 body, we stop indenting:
 
-.. activecode:: 5_indentation
+.. activecode:: cspnameprocedures_indentation2
     :nocodelens:
 
     def square(turtleName):
@@ -112,7 +112,7 @@ See the video below for a hint on how to solve the next mixed up code problem.
     :height: 480
     :align: center
    
-.. parsonsprob:: 5_3_3_Triangle_Procedure
+.. parsonsprob:: cspnameprocedures_indentation3
     :numbered: left
     :adaptive:
 
@@ -140,7 +140,7 @@ Now fix the indentation in this code sample so it works correctly. Try using **t
 **shift-tab** to move lines right or left. A good trick for fixing a line is to move it
 all the way left and then move it back to the right if it needs to be indented.
 
-.. activecode:: T_Indentation_Fix
+.. activecode:: cspnameprocedures_indentation4
     :nocodelens:
 
     # define HOW to draw a T

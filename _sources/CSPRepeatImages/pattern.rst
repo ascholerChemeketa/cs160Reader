@@ -23,7 +23,7 @@ the red to the original green, the green to the original blue, and the red to th
 original green.  But, mostly we are trying to describe a pattern that you can use to
 create many image effects.
 
-.. activecode:: Image_Pattern
+.. activecode:: csprepeatimages_pattern1
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
@@ -78,7 +78,7 @@ Here is the recipe without the code:
 
 Time to experiment with our pattern.
 
-.. mchoice:: 9_4_mc1
+.. mchoice:: csprepeatimages_pattern2
     :answer_a: It turns totally green
     :answer_b: It becomes a black and white picture
     :answer_c: It takes on a green cast
@@ -91,7 +91,7 @@ Time to experiment with our pattern.
 
     What happens if in step 5 you set all three colors to ``originalGreen``?
 
-.. mchoice:: 9_4_mc2
+.. mchoice:: csprepeatimages_pattern3
     :answer_a: The goalkeeper looks pink
     :answer_b: It becomes solid red
     :answer_c: The goalkeeper looks red
@@ -106,7 +106,7 @@ Time to experiment with our pattern.
     happens?
 
 
-.. mchoice:: 9_4_mc3
+.. mchoice:: csprepeatimages_pattern4
     :answer_a: Values above 255 are treated as 255 and values less than 0 are treated as 0.
     :answer_b: Values outside of the range 0-255 are treated as 0.
     :answer_c: Values outside of the range 0-255 are treated as 255.

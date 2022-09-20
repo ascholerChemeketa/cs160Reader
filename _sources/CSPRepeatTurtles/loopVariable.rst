@@ -35,7 +35,7 @@ each value in the list that the loop is iterating over. This program shows using
 first one, the loop variable is called ``x`` and is used count from 0 to 4. In the second, the
 loop variable is called ``y`` and counts from 0 to 9.
 
-.. activecode:: for_var_ex1
+.. activecode:: csprepeatturtles_loopvariable1
 
     # x will be set to 0, 1, 2, 3, 4
     for x in range(5):
@@ -65,7 +65,7 @@ This version of ``range`` begins from the ``startValue``, increases by ``step`` 
 and stops when it hits ``stopValue`` (but does not actually include the ``stopValue``). If the
 ``step`` is negative, range will count down from ``startValue`` to ``stopValue``.
 
-.. activecode:: for_var_ex2
+.. activecode:: csprepeatturtles_loopvariable2
 
     # x will count from 0, by 2's and stop at 11 (10 will be last value)
     for x in range(0, 11, 2):
@@ -84,7 +84,7 @@ and stops when it hits ``stopValue`` (but does not actually include the ``stopVa
 
 **Check Your Understanding**
 
-.. mchoice:: 8_5_mc1
+.. mchoice:: csprepeatturtles_loopvariable3
     :answer_a: range(2, 11, 3)
     :answer_b: range(2, 12, 3)
     :answer_c: range(3, 12, 2)
@@ -113,7 +113,7 @@ The loop, ``for size in range(5, 60, 2):``, says to count by 2's from 5 to 59. T
 variable is called ``size`` and is used to control how far forward the turtle moves in
 each repetition.
 
-.. activecode:: stampex
+.. activecode:: csprepeatturtles_loopvariable4
     :nocodelens:
 
     from turtle import *
@@ -137,7 +137,7 @@ line, or to change her shape, etc...)
 
 **Mixed up program**
 
-.. parsonsprob:: 10_5_2_turtle-spiral
+.. parsonsprob:: csprepeatturtles_loopvariable5
     :numbered: left
     :adaptive:
 
@@ -176,7 +176,7 @@ line, or to change her shape, etc...)
 
 
 
-.. parsonsprob:: 10_5_1_turtle-squares
+.. parsonsprob:: csprepeatturtles_loopvariable6
     :numbered: left
     :adaptive:
 

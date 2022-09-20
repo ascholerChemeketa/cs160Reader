@@ -18,7 +18,7 @@ want to copy out just the summer months (June-August). We know those are months 
 means we need to use ``range(5, 8, 1)`` to loop through them. As we access each one,
 we will append it to the ``summerMonths`` list that starts out empty.
 
-.. codelens:: build_months_loop
+.. codelens:: cspcollectionscontinued_slices1
 
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -43,7 +43,7 @@ in the slice.
 
 That means a much easier way to get a list of the summer months would be:
 
-.. codelens:: build_months_slice
+.. codelens:: cspcollectionscontinued_slices2
 
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -62,7 +62,7 @@ second index, like ``[5:]``, it means "to the end of the list". If you use a neg
 it is counted from the end of the list. ``[-3:-1]`` means "the slice from the third to the
 last item up to but not including the last item". ``[-2:]`` would mean "the last two items".
 
-.. activecode:: slice_shortcuts
+.. activecode:: cspcollectionscontinued_slices3
 
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -75,7 +75,7 @@ last item up to but not including the last item". ``[-2:]`` would mean "the last
     lastThree = months[-3:]
     print(lastThree)
 
-.. mchoice:: slice_mc
+.. mchoice:: cspcollectionscontinued_slices4
     :multiple_answers:
     :answer_a: [9:]
     :answer_b: [8:12]

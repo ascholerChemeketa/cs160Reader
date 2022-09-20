@@ -54,7 +54,7 @@ columns of data:
       - Score of movie (1-100) on the Metacritic website
 
 
-.. activecode:: ch17_ex1
+.. activecode:: sqlintro_exercises1
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -72,7 +72,7 @@ columns of data:
     assert 99,1 == La Haine
 
 
-.. activecode:: ch17_ex2
+.. activecode:: sqlintro_exercises2
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -87,7 +87,7 @@ columns of data:
     assert 1,2 == Downfall
 
 
-.. activecode:: ch17_ex3
+.. activecode:: sqlintro_exercises3
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -101,7 +101,7 @@ columns of data:
     assert 4,2 == Inside Out
 
 
-.. activecode:: ch17_ex4
+.. activecode:: sqlintro_exercises4
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -116,7 +116,7 @@ columns of data:
     assert 2,2 == Alien
 
 
-.. activecode:: ch17_ex5
+.. activecode:: sqlintro_exercises5
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -130,7 +130,7 @@ columns of data:
     assert 4,2 == Butch Cassidy and the Sundance Kid
 
 
-.. activecode:: ch17_ex6
+.. activecode:: sqlintro_exercises6
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -145,7 +145,7 @@ columns of data:
     assert 0,0 == Schindler's List
     assert 3,1 == 1993
 
-.. activecode:: ch17_ex7
+.. activecode:: sqlintro_exercises7
     :language: sql
     :dburl: /_static/movies.db
     :practice: T

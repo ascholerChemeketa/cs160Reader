@@ -17,7 +17,7 @@ like a name of a friend, a verb, and a favorite game (for example), and those pi
 information get plugged into a story.  Since you don't know the story beforehand, you're
 surprised at what happens to your friend in the story.
 
-.. activecode:: Story1
+.. activecode:: cspnamestrings_madlib1
       
     firstName = "Pat"
     lastName = "Smith"
@@ -36,7 +36,7 @@ surprised at what happens to your friend in the story.
     print(ending)
 
 
-.. mchoice:: 3_4_2_Story1_Q1
+.. mchoice:: cspnamestrings_madlib2
     :answer_a: realEnding = firstName + " called the police who took the witch away."
     :answer_b: print(firstName + " called the police who took the witch away.")
     :answer_c: print("Pat called the police who took the witch away.")
@@ -55,7 +55,7 @@ surprised at what happens to your friend in the story.
 **You should really do this:** Run this program to see what gets generated, then change some of the variables to make different stories.  Try different names, different verbs.  
 
 
-.. activecode:: Story2
+.. activecode:: cspnamestrings_madlib3
    
    firstName = "Sofia"
    lastName = "Diaz"
@@ -73,7 +73,7 @@ surprised at what happens to your friend in the story.
    print(next3)
    print(ending)
    
-.. mchoice:: 3_4_4_Story2_Q1
+.. mchoice:: cspnamestrings_madlib4
    :answer_a: Yes
    :answer_b: No
    :correct: a
@@ -100,7 +100,7 @@ surprised at what happens to your friend in the story.
      ending = "But " + firstName + " was smart and avoided the wicked witch."
      print(ending)
      
-.. mchoice:: 3_4_3_StringVsVariableName
+.. mchoice:: cspnamestrings_madlib5
    :practice: T
    :answer_a: Mali is Mali
    :answer_b: Mali is 5
@@ -122,7 +122,7 @@ surprised at what happens to your friend in the story.
 .. Note::
    When you print a string (a sequence of characters in a pair of single, double, or triple quotes) in Python it will print the exact characters in the string.  When you print a variable it will print the value of that variable.
      
-.. parsonsprob:: 3_4_5_Poem
+.. parsonsprob:: cspnamestrings_madlib6
    :numbered: left
    :adaptive:
 
@@ -136,7 +136,7 @@ surprised at what happens to your friend in the story.
    =====
    print("And so is Sue.")
      
-.. parsonsprob:: 3_4_6_Story
+.. parsonsprob:: cspnamestrings_madlib7
    :numbered: left
    :adaptive:
 
@@ -160,7 +160,7 @@ surprised at what happens to your friend in the story.
            Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the
            story still works if you change the values of the variables!
            
-           .. activecode::  3_4_7_WSq
+           .. activecode:: cspnamestrings_madlib8
 
                 name = "Jesse"
                 month = "October"
@@ -171,7 +171,7 @@ surprised at what happens to your friend in the story.
         
             There are many possible stories, here is one:
             
-            .. activecode::  3_4_7_WSa
+            .. activecode:: cspnamestrings_madlib9
 
                 name = "Maria"
                 month = "October"

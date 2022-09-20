@@ -26,7 +26,7 @@ and "distance" refer to actual physical movement.
 This example does a random walk where each step involves moving 10 pixels forward in one of the
 cardinal directions (north, south, east, west). 
 
-.. activecode:: random_walk
+.. activecode:: cspdecisionssimulations_randomwalks1
     :nocodelens:
 
     def takeStep(turtleName):
@@ -50,7 +50,7 @@ that by 90. This guarantees that the only numbers we can pick are 0, 90, 180, an
 Try changing line 3 to ``direction = random.randrange(0, 360)`` and removing line 5. What
 is the result?
 
-.. mchoice:: 12_walk_test
+.. mchoice:: cspdecisionssimulations_randomwalks2
     :answer_a: The turtle still moves in the same was as before.
     :answer_b: The turtle's steps can go in any direction.
     :answer_c: The turtle goes in circles.
@@ -65,7 +65,7 @@ To simulate something like the stock market, we might want to do something like 
 Try running this program and think of the x dimension as time - the far left is day 0 and each
 step to the right is another day - and the y dimension as value - the price of a stock.
 
-.. activecode:: random_walk_progress
+.. activecode:: cspdecisionssimulations_randomwalks3
     :nocodelens:
 
     from turtle import *
@@ -92,7 +92,7 @@ One possible flaw with this program is that the change in stock prices uses a di
 distribution of random changes. Most days the price goes up or down by a very small amount.
 However, some days it climbs or drops by a lot more. Let's figure out that logic.
 
-.. parsonsprob:: 12_walk_parson
+.. parsonsprob:: cspdecisionssimulations_randomwalks4
     :numbered: left
     :adaptive:
 

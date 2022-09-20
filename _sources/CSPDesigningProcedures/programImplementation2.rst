@@ -18,7 +18,7 @@ draw a 300x200 rectangle.
 
 |turtle_ref|
 
-.. activecode:: program_implementation_2
+.. activecode:: cspdesigningprocedures_programimplementation21
     :nocodelens:
 
     def rectangle(turtle, width, height):
@@ -48,7 +48,7 @@ draw a 300x200 rectangle.
     steve.goto(-150, 50)
     drawWall(steve)                # test the drawWall procedure
 
-.. mchoice:: 5_implementation2_q2
+.. mchoice:: cspdesigningprocedures_programimplementation22
     :correct: c
     :answer_a: turtleName
     :answer_b: turtle

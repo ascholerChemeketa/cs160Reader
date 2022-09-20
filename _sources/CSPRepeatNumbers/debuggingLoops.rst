@@ -15,7 +15,7 @@ Debugging Loops
 
 Here is an attempt to sum up all the even numbers from 0 to 100 that has a bug:
 
-.. activecode:: Numbers_Sum_Even
+.. activecode:: csprepeatnumbers_debuggingloops1
 
     # STEP 1: INITIALIZE ACCUMULATOR 
     sum = 0  # Start out with nothing
@@ -47,7 +47,7 @@ Here are some things we could do to check our program:
 Use those techniques to figure out what is wrong with the code and try to fix it.
 
 
-.. mchoice:: 10_5_1_Numbers_Even_Q1
+.. mchoice:: csprepeatnumbers_debuggingloops2
     :answer_a: The loop starts too early (skips one or more numbers at the start)
     :answer_b: The loop goes too far (adds one or more extra numbers at the end)
     :answer_c: The loop stops too early (skips one or more numbers at the end)

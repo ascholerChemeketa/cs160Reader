@@ -28,7 +28,7 @@ Code is written to set up the list, add code to loop through the list using a ra
 and print each item from the list. Your output should have the full story, but with only one word appearing
 on each line.
 
-.. activecode:: madlib1
+.. activecode:: cspcollectionscontinued_madlib1
     :autograde: unittest
 
     Add the loop to output each word of the story.
@@ -54,7 +54,7 @@ on each line.
 Now let's identify which words are in ALL_CAPS. To do that, we need to call the ``isupper()`` function on each
 word. It returns ``True`` if the word is all upper case and ``False`` if it is not.
 
-.. activecode:: madlib2
+.. activecode:: cspcollectionscontinued_madlib2
     :autograde: unittest
 
     Modify your program, so instead of printing each word, you print True or False depending on if it is
@@ -80,7 +80,7 @@ those with user input. Because user input is slow to test, we will start by just
 of the upper case words with the text ``"INPUT"``. If we get that working, it will be one more
 simple step to use actual user input instead of ``"INPUT"``.
 
-.. activecode:: madlib3
+.. activecode:: cspcollectionscontinued_madlib3
     :autograde: unittest
 
     Modify your program to use the ``storyList[index].isupper()`` call in the condition of an if.
@@ -111,7 +111,7 @@ Don't worry about remembering ``join()`` - just recognize that it does the oppos
 of split - it turns a list into a string by joining together the items using the
 string as "glue" between each item.
 
-.. activecode:: madlib4
+.. activecode:: cspcollectionscontinued_madlib4
 
     Modify your program so that instead of setting the all caps items to ``= "INPUT"``, you set
     them to ``= input("Please enter " + storyList[index])``. You may need to change ``index`` to

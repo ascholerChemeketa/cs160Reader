@@ -15,7 +15,7 @@
 Chapter Exercises
 --------------------
 
-.. activecode:: ch7_ex1
+.. activecode:: cspnamefunctions_exercises1
     :autograde: unittest
     :practice: T
 
@@ -40,7 +40,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch7_ex2
+.. activecode:: cspnamefunctions_exercises2
     :autograde: unittest
     :practice: T
 
@@ -68,7 +68,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch7_ex3
+.. activecode:: cspnamefunctions_exercises3
     :autograde: unittest
     :practice: T
 
@@ -113,7 +113,7 @@ Chapter Exercises
 
 ..            Change the code below to create a function that calculates the cost of a trip.  It should take the ``miles``, ``milesPerGallon``, and ``pricePerGallon`` as parameters and should return the cost of the trip.
 
-..            .. activecode::  ch7ex11q
+            .. activecode:: cspnamefunctions_exercises4
 ..                 :nocodelens:
 
 ..                 miles = 500
@@ -132,7 +132,7 @@ Chapter Exercises
 
 ..            Change the code below to create a function to return the number of miles you can drive.  It will take as input (parameters) the ``tankCapacity``, ``theAmountLeft``, and the ``milesPerGallon``.
 
-..            .. activecode::  ch7ex13q
+            .. activecode:: cspnamefunctions_exercises5
 ..                 :nocodelens:
 
 ..                 tankCapacity = 10
@@ -152,7 +152,7 @@ Chapter Exercises
 
 ..             Complete and change the code to be a function with 2 parameters that returns the time taken to travel and call the function
 
-..             .. activecode::  ch7ex14q
+             .. activecode:: cspnamefunctions_exercises6
 ..                 :nocodelens:
 
 ..                 speed = 5
@@ -168,7 +168,7 @@ Chapter Exercises
 
 ..             Write a function that takes the current hour, current minute, an int to be added to the current hour, and an int to be added to the current minute, and return a string with the new hour and minute (standard 12 hour time; if minutes exceed 60, it should go to the hour) and call the function.
 
-..             .. activecode::  ch7ex20q
+             .. activecode:: cspnamefunctions_exercises7
 ..                 :nocodelens:
 
 

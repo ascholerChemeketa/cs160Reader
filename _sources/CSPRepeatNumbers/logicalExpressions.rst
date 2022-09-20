@@ -25,7 +25,7 @@ We can see that Python considers a **bool** to be different than a string (str)
 or integer (int) by using the ``type`` function to ask about the values stored
 in x, y, and z in the program below:
 
-.. activecode:: bool_1
+.. activecode:: csprepeatnumbers_logicalexpressions1
 
     x = True
     y = "True"
@@ -69,7 +69,7 @@ to that question: either True or False.
 
 Here is a sample of them in use:
 
-.. activecode:: expressions
+.. activecode:: csprepeatnumbers_logicalexpressions2
 
     age = 20
 
@@ -90,7 +90,7 @@ As the line of code actually runs, the first thing that happens is the evaluatio
 Since age is 20, the result is True. That value replaces the logical expression and we end up with
 ``isTwenty = True`` and so that is the value that gets used for ``isTwenty``.
 
-.. mchoice:: logical_expressions
+.. mchoice:: csprepeatnumbers_logicalexpressions3
     :correct: c
     :answer_a: x <= 50
     :answer_b: 10 > y

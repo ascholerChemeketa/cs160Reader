@@ -20,7 +20,7 @@ We then loop through the values and compare each to the highest value. If the cu
 higher than the largest we have seen (or smaller than the lowest), we change our tracking variable
 to hold that new "best" value.
 
-.. activecode:: find_max_list
+.. activecode:: cspcollectionsintro_listmax1
     :autograde: unittest
     :practice: T
 
@@ -77,7 +77,7 @@ Sometimes the max or min pattern might need to be modified to work with values c
 from each item. Here is an example of adapting the basic recipe to find the longest name
 in a list of names:
 
-.. activecode:: find_longest_name
+.. activecode:: cspcollectionsintro_listmax2
 
     names = ["Ray", "Jessie", "Brittany", "Flora", "David"]
 

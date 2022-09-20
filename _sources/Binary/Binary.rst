@@ -55,7 +55,7 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
 .. pseudo_h4:: Self Check
     :class: underlined
 
-.. mchoice:: questionbinary_1
+.. mchoice:: binary_binary1
     :answer_a: Binary means "containing a computer."
     :answer_b: Binary means "having only two states."
     :answer_c: Binary means "having a discrete number of values."
@@ -68,7 +68,7 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
 
     What does **binary** mean?
 
-.. mchoice:: questionbinary_2
+.. mchoice:: binary_binary2
     :answer_a: Binary devices are simple and easy to build.
     :answer_b: Binary signals are unambiguous.
     :answer_c: Binary devices are much faster than analog devices.

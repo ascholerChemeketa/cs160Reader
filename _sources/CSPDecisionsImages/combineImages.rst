@@ -32,7 +32,7 @@ First up, we need to have an ``isGreen`` function to identify which pixels are p
 green background. It will be very similar to the ``isRed`` from the last page, only we want
 to verify that the green is greater than the red or blue values.
 
-.. activecode:: isGreen
+.. activecode:: cspdecisionsimages_combineimages1
     :autograde: unittest
     :practice: T
 
@@ -74,7 +74,7 @@ two pictures, with the woman stored as ``img1`` and the beach as ``img2``. It th
 each pixel in ``img1`` and asks ``isGreen`` about it. If so, that pixel gets replaced with the
 pixel from ``img2`` that is at the same x, y.
 
-.. activecode:: Copy_Non_White
+.. activecode:: cspdecisionsimages_combineimages2
     :nocodelens:
 
     from image import *
@@ -106,7 +106,7 @@ pixel from ``img2`` that is at the same x, y.
     win = ImageWin(img1.getWidth(), img1.getHeight())
     img1.draw(win)
 
-.. mchoice:: 14_5_mc1
+.. mchoice:: cspdecisionsimages_combineimages3
     :answer_a: y < 110 and y > 10 and x > 70 and x < 200
     :answer_b: (y > 110 or y < 10) and (x < 70 or x > 200)
     :answer_c: y > 110 and y < 10 and x < 70 and x > 200

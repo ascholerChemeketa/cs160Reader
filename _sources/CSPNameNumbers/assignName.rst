@@ -51,7 +51,7 @@ To see it in context, run the program below. The first line sets a value for ``a
 produce any output we can see. The ``print`` command on the second line will show print out a value
 so we can see it. In this case, it prints ``4`` since that is the value stored in ``a``.
 
-.. activecode:: 2_1_2_ac1
+.. activecode:: cspnamenumbers_assignname1
     :nocodelens:
 
     a = 4

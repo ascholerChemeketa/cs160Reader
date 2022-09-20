@@ -26,7 +26,7 @@ If you run into troubles, here are some debugging tips:
   answer will be less reliable with fewer repetitions, so reset it to 10000 when you are
   done debugging.
 
-.. activecode:: 12_heads_in_row_full
+.. activecode:: cspdecisionssimulations_simulationbuild21
 
     import random
 
@@ -60,7 +60,7 @@ If you run into troubles, here are some debugging tips:
     percent = (successCounter / repetitions) * 100
     print(str(percent) + "%")
 
-.. fillintheblank:: 12_simulation_fb
+.. fillintheblank:: cspdecisionssimulations_simulationbuild22
 
     Change the program to check the odds of getting 6 heads in a row in 100 flips.
     Make sure to use 10,000 repetitions so your answer is reliable.

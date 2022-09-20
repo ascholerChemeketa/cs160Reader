@@ -74,7 +74,7 @@ Because the NOT rule applies to only one input, it can be applied to a single bi
     :class: underlined
 
 
-.. fillintheblank:: not_1
+.. fillintheblank:: logiccircuits_notandxorgate1
 
     What is the result of applying **NOT** to: |br|
     1110? |br|
@@ -86,7 +86,7 @@ Because the NOT rule applies to only one input, it can be applied to a single bi
       :x: Hint: flip each bit in the input pattern to its opposite.
 
 
-.. fillintheblank:: xor_1
+.. fillintheblank:: logiccircuits_notandxorgate2
 
     What is the result of applying **XOR** to: |br|
     0101 |br|

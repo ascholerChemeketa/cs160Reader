@@ -48,7 +48,7 @@ pass     raise    return   try      while    with
 yield    True     False    None
 ======== ======== ======== ======== ======== ========
 
-.. mchoice:: 2_2_1_mc
+.. mchoice:: cspnamenumbers_rulesfornames1
     :practice: T
     :answer_a: _a1
     :answer_b: my_name
@@ -64,7 +64,7 @@ yield    True     False    None
 
     Which of the following is *not* a legal variable name?
    
-.. mchoice:: 2_2_2_mc
+.. mchoice:: cspnamenumbers_rulesfornames2
     :practice: T
     :answer_a: _my_name
     :answer_b: my name
@@ -107,7 +107,7 @@ together by uppercasing the first letter of each new word like ``heightInInches`
 **mixed-case** or **camel-case** because the capitals look like the humps of a camel) or use
 underscores between words like ``height_in_inches`` (called **snake-case**).
 
-.. mchoice:: 2_2_3_mc
+.. mchoice:: cspnamenumbers_rulesfornames3
     :practice: T
     :answer_a: hireDate
     :answer_b: _hire_date

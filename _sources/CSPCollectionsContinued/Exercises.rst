@@ -15,7 +15,7 @@
 Chapter Exercises
 ---------------------
 
-.. activecode:: ch16_ex1
+.. activecode:: cspcollectionscontinued_exercises1
     :autograde: unittest
 
     Write code for the function ``printFirst``. It should print the first ``numberItems`` from
@@ -43,7 +43,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch16_ex2
+.. activecode:: cspcollectionscontinued_exercises2
     :autograde: unittest
 
     Improve your code for the ``printFirst`` you wrote in the previous exercise.
@@ -76,7 +76,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch16_ex3
+.. activecode:: cspcollectionscontinued_exercises3
     :autograde: unittest
 
     We have a list of numbers that are all supposed to be 8-bit values (0-255).
@@ -114,7 +114,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch16_ex4
+.. activecode:: cspcollectionscontinued_exercises4
     :autograde: unittest
 
     Write the code for ``middleThird()``. It should accept a ``list`` as its parameter and
@@ -164,7 +164,7 @@ Chapter Exercises
 
 ..             Complete the code on lines 4 and 5 so that the function returns the average of a list of integers.
 
-..             .. activecode::  ch16ex6q
+             .. activecode:: cspcollectionscontinued_exercises5
 ..                 :nocodelens:
 
 ..                 def gradeAverage(aList):
@@ -187,7 +187,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below so that it runs correctly.  It should loop and add the current value of ``source`` to ``soFar`` each time through the loop.  It should also print the value of ``soFar`` each time through the loop.
 
-..            .. activecode::  ch16ex7q
+            .. activecode:: cspcollectionscontinued_exercises6
 ..                 :nocodelens:
 
 ..                 source = ["This","is","a","list"]
@@ -206,7 +206,7 @@ Chapter Exercises
 
 ..             Fix the code so that the code prints "['hihi', 0, 0, 4]" .
 
-..             .. activecode::  ch16ex8q
+             .. activecode:: cspcollectionscontinued_exercises7
 ..                 :nocodelens:
 
 ..                 items = ["hi" 2, 3, 4]
@@ -225,7 +225,7 @@ Chapter Exercises
 
 ..            Fix 4 syntax errors in the code below.  After the code executes the list ``soFar`` should contain the reverse of the ``source`` list.
 
-..            .. activecode::  ch16ex9q
+            .. activecode:: cspcollectionscontinued_exercises8
 ..                 :nocodelens:
 
 ..                 # setup the source list
@@ -252,7 +252,7 @@ Chapter Exercises
 
 ..             The code below currently prints the reverse of a list. Change it so that it prints a mirrored version of the list. It should print "['list', 'a', 'is', 'This', 'This', 'is', 'a', 'list']".
 
-..             .. activecode::  ch16ex10q
+             .. activecode:: cspcollectionscontinued_exercises9
 ..                 :nocodelens:
 
 ..                 # setup the source list
@@ -278,7 +278,7 @@ Chapter Exercises
 
 ..            Change the following code into a function.  It should take the list and return a list of the values at the even indicies.
 
-..            .. activecode::  ch16ex11q
+            .. activecode:: cspcollectionscontinued_exercises10
 ..                 :nocodelens:
 
 ..                 numbers = [0,1,2,3,4,5,6,7,8,9,10]
@@ -300,7 +300,7 @@ Chapter Exercises
 
 ..             The following code creates and prints a list of even numbers. Change it and add to it so that it creates a list of all multiples of 5 from 0 to 50, inclusive.
 
-..             .. activecode::  ch16ex12q
+             .. activecode:: cspcollectionscontinued_exercises11
 ..                 :nocodelens:
 
 ..                 # initialize the variables
@@ -326,7 +326,7 @@ Chapter Exercises
 
 ..            Change the following into a procedure. It prints a countdown from 5 to 0.  Have it take the starting number for the countdown as a parameter.  Print each value till it gets to 0.
 
-..            .. activecode::  ch16ex13q
+            .. activecode:: cspcollectionscontinued_exercises12
 ..                 :nocodelens:
 
 ..                 for index in range(5, -1, -1):
@@ -345,7 +345,7 @@ Chapter Exercises
 
 ..             Fix the errors so that the code individually adds each item from ``source`` to ``newList``. Make the range decrement, so it starts from the end, but keep ``newList`` in the same order as ``source``.
 
-..             .. activecode::  ch16ex14q
+             .. activecode:: cspcollectionscontinued_exercises13
 ..                 :nocodelens:
 
 ..                 # initialize the variables
@@ -371,7 +371,7 @@ Chapter Exercises
 
 ..            Write a function that returns the values at the odd indices in a list.  The function should take the number list as a parameter.  If it is passed [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] for example, it should return [1, 3, 5, 7, 9].
 
-..            .. activecode::  ch16ex15q
+            .. activecode:: cspcollectionscontinued_exercises14
 ..                 :nocodelens:
 
 
@@ -385,7 +385,7 @@ Chapter Exercises
 
 ..             Write a function that takes a list of numbers as a parameter and adds 5 to each number and returns the list.
 
-..             .. activecode::  ch16ex16q
+             .. activecode:: cspcollectionscontinued_exercises15
 ..                 :nocodelens:
 
 
@@ -399,7 +399,7 @@ Chapter Exercises
 
 ..            Write a function that takes a list of numbers and returns the sum of the positive numbers in the list.
 
-..            .. activecode::  ch16ex17q
+            .. activecode:: cspcollectionscontinued_exercises16
 ..                 :nocodelens:
 
 
@@ -412,7 +412,7 @@ Chapter Exercises
 
 ..             Write a function that takes in a list of numbers as a parameter. The function should calculate the sum of all the positive numbers in the list, the absolute value of the sum of the negative numbers, and return the average of the two sums.
 
-..             .. activecode::  ch16ex18q
+             .. activecode:: cspcollectionscontinued_exercises17
 ..                 :nocodelens:
 
 
@@ -425,7 +425,7 @@ Chapter Exercises
 
 ..            Write a function to return the reverse of a list, but with only every other item from the original list starting at the end of the list.  So, if it is passed the list [0,1,2,3,4,5] for example, it should return the list [5, 3, 1].
 
-..            .. activecode::  ch16ex19q
+            .. activecode:: cspcollectionscontinued_exercises18
 ..                :nocodelens:
 
 
@@ -438,7 +438,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes an int as a parameter. The procedure should add every other odd number from 1 to the int parameter (inclusive) into a new list. The procedure should print the new list and the sum of the new list.
 
-..             .. activecode::  ch16ex20q
+             .. activecode:: cspcollectionscontinued_exercises19
 ..                 :nocodelens:
 
 

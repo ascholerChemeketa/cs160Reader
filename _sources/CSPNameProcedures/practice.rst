@@ -29,7 +29,7 @@ have tried writing the procedure on your own!
         Hint: To figure out the angle to turn while drawing a regular shape, you need to
         divide 360 by the number of sides. :math:`350 / 5 = 72`.
 
-        .. activecode::  5_5_2_WSq
+        .. activecode:: cspnameprocedures_practice1
             :nocodelens:
             
             # DEFINE THE PROCEDURE HERE
@@ -43,7 +43,7 @@ have tried writing the procedure on your own!
 
     .. tab:: Answer
         
-        .. activecode::  5_5_2_WSa
+        .. activecode:: cspnameprocedures_practice2
             :nocodelens:
             
             # DEFINE THE PROCEDURE

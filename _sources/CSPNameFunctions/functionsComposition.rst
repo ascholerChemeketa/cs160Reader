@@ -25,7 +25,7 @@ power and store the result as ``aSquared``. ``aSquared`` gets used as part of th
 to the ``math.sqrt`` function which produces our final answer ``sideC`` which gets passed to the
 ``print`` function.
 
-.. activecode:: Functions_7_1
+.. activecode:: cspnamefunctions_functionscomposition1
     
     import math
 
@@ -60,7 +60,7 @@ We can more directly specify to use the result of calling one function as the in
 function via **functional composition**. That is where we put one function call inside of another - 
 like how this version of the same program does ``float(input("Enter length of side A"))``.
 
-.. activecode:: Functions_7_2
+.. activecode:: cspnamefunctions_functionscomposition2
     
     import math
 
@@ -94,7 +94,7 @@ it and returns the answer.
     ``sqrt( pow(sideA, 2) + pow(sideB, 2) )``, it can be hard to figure out what part is not
     working as expected - the ``pow``, the ``+``, or the ``sqrt``.
 
-.. mchoice:: 7_2_1_Functions_Q1
+.. mchoice:: cspnamefunctions_functionscomposition3
     :practice: T
     :answer_a: 15
     :answer_b: 16
@@ -112,7 +112,7 @@ it and returns the answer.
     What do you think `print(int(abs(-16.789) + 1))`, prints?
 
 
-.. mchoice:: 7_2_1_Functions_Q2
+.. mchoice:: cspnamefunctions_functionscomposition4
     :practice: T
     :answer_a: Procedures always happen after functions.
     :answer_b: The procedure does not return anything. There will not be a value for the function to work with.

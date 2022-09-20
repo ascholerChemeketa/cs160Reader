@@ -34,7 +34,7 @@ in the image and inner one that iterates over all of the rows in that column. Th
 basic idea but just prints out the locations of pixels in the order they would be visited instead
 of doing actual work on an image.
 
-.. activecode:: Nested_Loops_rows_cols
+.. activecode:: csprepeatimages_changecolorloc1
     :nocodelens:
 
     imageWidth = 4
@@ -66,7 +66,7 @@ the rows in that column. Then we move to column 1, where we process all of its r
     loop and y changing in the inner loop.
 
 
-.. mchoice:: 9_5_mc1
+.. mchoice:: csprepeatimages_changecolorloc2
     :answer_a: 4, 9
     :answer_b: 5, 10
     :answer_c: 9, 4
@@ -92,7 +92,7 @@ side, where x is larger, we remove more and more of the color, getting closer an
 pure black. (Once we hit column 255, we could only get black as the starting red/green/blue
 values are all 255 at most.)
 
-.. activecode:: Nested_Loop_Clear_Red
+.. activecode:: csprepeatimages_changecolorloc3
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
@@ -128,7 +128,7 @@ pixel to a new location. This sample calculates a ``newY`` that is used as the y
 pixel when we put it back in the image. This ``newY`` is calculated as the height of the image
 minus one minus the y location of where we got the pixel.
 
-.. activecode:: Image_Location_Change
+.. activecode:: csprepeatimages_changecolorloc4
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 
@@ -155,7 +155,7 @@ minus one minus the y location of where we got the pixel.
     img.draw(win)
     
 
-.. mchoice:: 11_5_1_Image_YX_Q1
+.. mchoice:: csprepeatimages_changecolorloc5
     :answer_a: We rotated the image 90 degrees to the left and flipped it over.
     :answer_b: We mirrored the image around a horizontal line.
     :answer_c: We flipped the image horizontally.
@@ -181,7 +181,7 @@ that - it copies from ``imgSource`` to ``imgTarget`` and then draws ``imgTarget`
 ``imgSource`` never changes - to verify that, after running the program, try changing the last
 line to draw ``imgSource`` instead of ``imgTarget``.
 
-.. activecode:: 11_5_2_Image_Flip_Total
+.. activecode:: csprepeatimages_changecolorloc6
     :nocodelens:
 
     # STEP 1: USE THE IMAGE LIBRARY 

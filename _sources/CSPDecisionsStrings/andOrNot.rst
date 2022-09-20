@@ -30,14 +30,14 @@ is also less than 90. We can use ``and`` to combine ``grade >= 80`` and ``grade 
 both must be true for the overall condition to be true. Try changing grade to different values
 as you run this program: 
 
-.. activecode:: Example_With_And
+.. activecode:: cspdecisionsstrings_andornot1
 
     grade = 83
     if grade >= 80 and grade < 90:
         print ("You got a B")
     print ("All done")
 
-.. mchoice:: 12_5_1_and1
+.. mchoice:: cspdecisionsstrings_andornot2
     :practice: T
     :answer_a: 1 to 10
     :answer_b: 0 to 9
@@ -63,7 +63,7 @@ For example, maybe our program is going to ask the user if they have a bag to ch
 We want them to be able to answer either "yes" or just "y". If you input either answer when
 asked for an input by this program, it will tell you there will be an extra fee.
 
-.. activecode:: Example_With_Or
+.. activecode:: cspdecisionsstrings_andornot3
 
     answer = input("Do you have a bag to check? (yes/no)")
     if answer == "yes" or answer =="y":
@@ -71,7 +71,7 @@ asked for an input by this program, it will tell you there will be an extra fee.
     print ("All done")
 
 
-.. mchoice:: 12_5_1_or2
+.. mchoice:: cspdecisionsstrings_andornot4
     :practice: T
     :answer_a: 0 to 10
     :answer_b: 1 to 10
@@ -102,7 +102,7 @@ is used to reverse the result of ``isalnum``. If the user gives input that inclu
 ``isalnum`` will return ``False``, but the ``not`` will turn that into ``True`` which means
 that we will execute the line of code that asks them to try again.
 
-.. activecode:: Example_With_Not
+.. activecode:: cspdecisionsstrings_andornot5
 
     name = input("Please enter a username, make sure not to include special characters.")
     if not name.isalnum():

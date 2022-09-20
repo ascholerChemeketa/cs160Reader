@@ -25,7 +25,7 @@ you had a spreadsheet with an invoice for an office supply company.
 
 Here's a program to compute the total price for the invoice:
 
-.. activecode:: Invoice1
+.. activecode:: cspnamenumbers_invoice1
 
     quantity1 = 2
     unitPrice1 = 7.56
@@ -36,7 +36,7 @@ Here's a program to compute the total price for the invoice:
     invoiceTotal = total1 + total2
     print(invoiceTotal)
 
-.. mchoice:: 2_9_2_Invoice1_Q1
+.. mchoice:: cspnamenumbers_invoice2
     :answer_a: 7
     :answer_b: 6
     :answer_c: 5
@@ -51,7 +51,7 @@ Here's a program to compute the total price for the invoice:
 
 We don't really have to create new variables ``quantity2`` and ``unitPrice2``.  We only use those to compute the total for the line, and then we could reuse those variable names.
 
-.. codelens:: Invoice2
+.. codelens:: cspnamenumbers_invoice3
 
     quantity = 2
     unitPrice = 7.56
@@ -62,7 +62,7 @@ We don't really have to create new variables ``quantity2`` and ``unitPrice2``.  
     invoiceTotal = total1 + total2
     print(invoiceTotal)
 
-.. mchoice:: 2_9_4_Invoice2_Q1
+.. mchoice:: cspnamenumbers_invoice4
     :answer_a: 7
     :answer_b: 6
     :answer_c: 5
@@ -78,7 +78,7 @@ We don't really have to create new variables ``quantity2`` and ``unitPrice2``.  
 Let's say that apples are $0.40 apiece, and pears are $0.65 apiece.  Modify the program below
 to calculate the total cost (it should print 3.55).
 
-.. activecode:: Complete_Assignment
+.. activecode:: cspnamenumbers_invoice5
 
     numApples = 4
     numPears = 3
@@ -92,7 +92,7 @@ to calculate the total cost (it should print 3.55).
 You are welcome to try out the following answers by copying and pasting them into the program
 above before answering this question:
 
-.. mchoice:: 2_9_6_Make_An_Assignment_Q1
+.. mchoice:: cspnamenumbers_invoice6
     :answer_a: totalCost = numApples + numPears
     :answer_b: totalCost = (costPerApple * numApples) + (costPerPear * numPears)
     :answer_c: totalCost = (costPerApple * numPears) + (costPerPear * numApples)
@@ -112,14 +112,14 @@ above before answering this question:
 
         Write the code to calculate and print how many *paperclips* you can buy if each paperclip is $0.05 and you have $4.00 in your pocket.  It should print 80.
         
-        .. activecode::  2_9_7_WSq
+        .. activecode:: cspnamenumbers_invoice7
             :nocodelens:
 
     .. tab:: Answer - Don't click until you've had a go at creating your own solution.
     
         Create variables to hold each value.  Calculate ``numPaperclips`` as ``budget / costPerClip``.  Be sure to print the result.
         
-        .. activecode::  2_9_7_WSa
+        .. activecode:: cspnamenumbers_invoice8
             :nocodelens:
             
             # DECLARE VARIABLES AND ASSIGN VALUES

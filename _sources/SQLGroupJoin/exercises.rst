@@ -54,7 +54,7 @@ columns of data:
       - Score of movie (1-100) on the Metacritic website
 
 
-.. activecode:: ch18_ex1
+.. activecode:: sqlgroupjoin_exercises1
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -66,7 +66,7 @@ columns of data:
     assert 0,0 == 8.303999999999997
 
 
-.. activecode:: ch18_ex2
+.. activecode:: sqlgroupjoin_exercises2
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
@@ -81,7 +81,7 @@ columns of data:
     assert 0,0 == 8.9
 
 
-.. activecode:: ch18_ex3
+.. activecode:: sqlgroupjoin_exercises3
    :language: sql
    :dburl: /_static/movies.db
 
@@ -92,7 +92,7 @@ columns of data:
    assert 0,0 == 32
 
 
-.. activecode:: ch18_ex4
+.. activecode:: sqlgroupjoin_exercises4
     :language: sql
     :dburl: /_static/movies.db
 
@@ -112,7 +112,7 @@ columns of data:
     assert 1,0 == G
     assert 1,1 == 14
 
-.. activecode:: ch18_ex5
+.. activecode:: sqlgroupjoin_exercises5
     :language: sql
     :dburl: /_static/movies.db
 
@@ -129,7 +129,7 @@ columns of data:
     assert 1,0 == Francis Ford Coppola
     assert 1,1 == 9.2
 
-.. activecode:: ch18_ex6
+.. activecode:: sqlgroupjoin_exercises6
     :language: sql
     :dburl: /_static/movies.db
 
@@ -146,7 +146,7 @@ columns of data:
     assert 1,0 == Alfred Hitchcock
     assert 1,1 == 6
 
-.. activecode:: ch18_ex7
+.. activecode:: sqlgroupjoin_exercises7
     :language: sql
     :dburl: /_static/movies.db
 
@@ -185,7 +185,7 @@ in one record for each movie they appear in.
       - Name of the actor
 
 
-.. activecode:: ch18_ex8
+.. activecode:: sqlgroupjoin_exercises8
     :language: sql
     :dburl: /_static/movies.db
 
@@ -204,7 +204,7 @@ in one record for each movie they appear in.
     assert 1,6 == On the Waterfront
 
 
-.. activecode:: ch18_ex9
+.. activecode:: sqlgroupjoin_exercises9
     :language: sql
     :dburl: /_static/movies.db
 

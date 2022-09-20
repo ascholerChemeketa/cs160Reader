@@ -47,7 +47,7 @@ will return the distance between them:
 Let's start by writing that and testing it. We will make a function ``distance`` that has parameters for
 the x and y of two different points.        
 
-.. activecode:: triangle_area_1 
+.. activecode:: cspnamefunctions_functionscallingfunctions1
     :autograde: unittest
 
     This program has the function, and tests for ``sideA`` and ``sideB``. Try running it. Then

@@ -15,7 +15,7 @@ Chapter Exercises
 ----------------------
 
 
-.. activecode:: ch2_ex1q
+.. activecode:: cspnamenumbers_exercises1
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -44,7 +44,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: cs2_ex2
+.. activecode:: cspnamenumbers_exercises2
     :autograde: unittest
     :practice: T
 
@@ -64,7 +64,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode::  ch2_ex3q
+.. activecode:: cspnamenumbers_exercises3
     :nocodelens:
     :practice: T
 
@@ -87,7 +87,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch2_ex4q
+.. activecode:: cspnamenumbers_exercises4
     :autograde: unittest
     :practice: T
 
@@ -113,7 +113,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch2_ex5q
+.. activecode:: cspnamenumbers_exercises5
     :autograde: unittest
     :practice: T
 
@@ -142,7 +142,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch2_ex6q
+.. activecode:: cspnamenumbers_exercises6
     :autograde: unittest
     :practice: T
 
@@ -182,7 +182,7 @@ Chapter Exercises
 ..             If Sunday is represented by 1, Monday by 2, Tuesday by 3, etc., and today is Sunday, complete the code on line 4 (with a math expression) to show what day it will be 82 days from today (it should print 6 which represents Friday)
 
 
-..             .. activecode:: ch2_ex6q
+             .. activecode:: cspnamenumbers_exercises7
 ..                 :nocodelens:
 
 ..                 today = 1
@@ -202,7 +202,7 @@ Chapter Exercises
 
 ..            Complete the code on lines 4 and 5 to print how many miles you can drive on $25 if your car gets 40 miles per gallon and the price of gas is $3.65 a gallon.  It should print 273.97260274.
 
-..            .. activecode::  ch2_ex7q
+            .. activecode:: cspnamenumbers_exercises8
 ..                :nocodelens:
 
 ..                funds = 25
@@ -223,7 +223,7 @@ Chapter Exercises
 ..             Fix the syntax errors.
 
 
-..             .. activecode:: ch2_ex8q
+             .. activecode:: cspnamenumbers_exercises9
 ..                 :nocodelens:
 
 ..                 a Number = 12
@@ -241,7 +241,7 @@ Chapter Exercises
 
 ..            Complete the code on lines 3 and 7 to print the final cost for an item that is priced $68, but is 40% off the original price and you have a coupon to take an additional 20% of the sale price.  It should print 32.64.
 
-..            .. activecode::  ch2_ex9q
+            .. activecode:: cspnamenumbers_exercises10
 ..                 :nocodelens:
 
 ..                 price = 68
@@ -263,7 +263,7 @@ Chapter Exercises
 
 ..             Fix the syntax and semantic errors so that the answer is 1 instead of 3.5
 
-..             .. activecode:: ch2_ex10q
+             .. activecode:: cspnamenumbers_exercises11
 ..                 :nocodelens:
 
 ..                 7 = a
@@ -280,7 +280,7 @@ Chapter Exercises
 
 ..            Finish the code on lines 4 and 5 to print how many wings you can buy if you have 5 people and they each can spend $4 a person and the wings are $0.50 a wing. It should print 40.0.
 
-..            .. activecode::  ch2_ex11q
+            .. activecode:: cspnamenumbers_exercises12
 ..                 :nocodelens:
 
 ..                 numPeople = 5
@@ -300,7 +300,7 @@ Chapter Exercises
 ..             You're buying groceries and your sub-total is $73, but you have to pay 7% tax. Complete the code to find your total price. Total should be 78.11
 
 
-..             .. activecode:: ch2_ex14q
+             .. activecode:: cspnamenumbers_exercises13
 ..                 :nocodelens:
 
 ..                 subTotal =
@@ -319,7 +319,7 @@ Chapter Exercises
 
 ..            Fix the syntax errors in the code below so that it calculates and prints the number of hours you will need to work if you earn $8 an hour and want to earn $100.  It should print 12.5.
 
-..            .. activecode::  ch2_ex15q
+            .. activecode:: cspnamenumbers_exercises14
 ..                 :nocodelens:
 
 ..                 8 = payPerHour
@@ -338,7 +338,7 @@ Chapter Exercises
 
 ..             Complete the code to show how many minutes are in 1.3 days and how many seconds are in 1.3 days. It should print 1872.0 and 112320.0
 
-..             .. activecode:: ch2_ex16q
+             .. activecode:: cspnamenumbers_exercises15
 ..                 :nocodelens:
 
 ..                 totalDays =
@@ -359,7 +359,7 @@ Chapter Exercises
 
 ..            Finish lines 5 and 6 in the code below to print how many apples you can buy when apples cost 0.60 and you want to get 3 pears and they cost $1.2 each and you have $8.00.  It should print 7.33333333333.  Since you can't buy 7.333 apples can you also figure out how to make it print just 7?
 
-..            .. activecode::  ch2_ex17q
+            .. activecode:: cspnamenumbers_exercises16
 ..                 :nocodelens:
 
 ..                 pricePerApple = 0.6
@@ -382,7 +382,7 @@ Chapter Exercises
 ..             A car consumes fuel at a rate of 23 mpg. Someone fills the car up with 15 gallons of gas and drives 112 miles. Fill in the code to determine how many more gallons are left. The answer should be 10.13043478260869
 
 
-..             .. activecode:: ch2_ex18q
+             .. activecode:: cspnamenumbers_exercises17
 ..                 :nocodelens:
 
 ..                 gasRate = 23
@@ -403,7 +403,7 @@ Chapter Exercises
 
 ..            Write the code to calculate and print how many *miles* you can drive if your car holds 10 gallons and you have a quarter of a tank left and your car gets 32 miles per gallon.  It should print 80.
 
-..            .. activecode::  ch2_ex19q
+            .. activecode:: cspnamenumbers_exercises18
 ..                :nocodelens:
 
 
@@ -416,7 +416,7 @@ Chapter Exercises
 
 ..             A bullet is travelling 25 m/s. Write code to determine how many seconds it will take to travel 111 m. (It should be 4.44 seconds)
 
-..             .. activecode::  ch2_ex20q
+             .. activecode:: cspnamenumbers_exercises19
 ..                 :nocodelens:
 
 

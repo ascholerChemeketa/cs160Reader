@@ -113,7 +113,7 @@ Why would we want another base system? Large binary values are hard for people t
     :class: underlined
 
 
-.. fillintheblank:: hex_1
+.. fillintheblank:: datarepresentation_hexadecimal1
 
     What decimal value does the hexadecimal number 2A represent?
 
@@ -124,7 +124,7 @@ Why would we want another base system? Large binary values are hard for people t
       :x: Hint: Use the table from the top of the page
 
 
-.. fillintheblank:: hex_2
+.. fillintheblank:: datarepresentation_hexadecimal2
 
     What does hexadecimal 3FC look like in binary?
 

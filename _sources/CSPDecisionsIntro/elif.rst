@@ -12,7 +12,7 @@ Using elif for more options
 It can be tricky to specify multiple different levels or options with just ``if`` and ``else``.
 This problem provides a demonstration of the challenge:
 
-.. mchoice:: 11_6_3_Grade_Ifs
+.. mchoice:: cspdecisionsintro_elif1
    :practice: T
    :answer_a: B
    :answer_b: B C
@@ -44,7 +44,7 @@ We have used ``if`` and ``else`` to handle two possible options, but what could 
 you want more than two options?  What if you want to test if a value is negative, 0, or
 positive?  One way to do this using multiple ``if`` statements is shown below.
 
-.. activecode:: sd_three_options
+.. activecode:: cspdecisionsintro_elif2
 
     x = 8
     if x < 0:
@@ -87,7 +87,7 @@ to run.
 
 Here is the positive/negative check rewritten with elif:
 
-.. activecode:: sd_three_options_elif
+.. activecode:: cspdecisionsintro_elif3
 
     x = 8
     if x < 0:
@@ -107,7 +107,7 @@ calculation program. Because the if/elif/else makes the options exclusive, we ar
 to get only one answer. If the score is ``>= 90`` we will print A, and then skip all the
 rest of the tests.
 
-.. activecode:: grade_with_elif
+.. activecode:: cspdecisionsintro_elif4
 
      score = 83
      if score >= 90: 
@@ -123,7 +123,7 @@ rest of the tests.
 
 **Check Your Understanding**
 
-.. parsonsprob:: 11_4_1_string_elif
+.. parsonsprob:: cspdecisionsintro_elif5
    :numbered: left
    :adaptive:
 

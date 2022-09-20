@@ -20,7 +20,7 @@ Sometimes, we do not know all of the items in a list in advance - we want to bui
 list as the program is running. To do this, we can start with a blank list using ``[]``
 as our list. And then we can use ``append`` to add things to the end of the list.
 
-.. activecode:: append_demo
+.. activecode:: cspcollectionsintro_addremove1
     :autograde: unittest
     :practice: T
 
@@ -56,7 +56,7 @@ the ``insert`` function. To use it, we provide an index of where to insert the n
 the value we want to insert. Try running this sample with codelens:
 
 
-.. activecode:: insert_demo
+.. activecode:: cspcollectionsintro_addremove2
 
     numbers = [10, 20]
 
@@ -68,7 +68,7 @@ the value we want to insert. Try running this sample with codelens:
     numbers.insert(2, 15)
     print(numbers)
 
-.. mchoice:: list_add_remove_mc1
+.. mchoice:: cspcollectionsintro_addremove3
     :answer_a: The item just does not get added
     :answer_b: There is an error and the program stops
     :answer_c: The item is added to the end of the list
@@ -90,7 +90,7 @@ To remove items from a list, there are two main options:
 
 This sample shows all three methods:
 
-.. codelens:: remove_demo
+.. codelens:: cspcollectionsintro_addremove4
 
     names = ["Steve", "Charlie", "Naomi", "Darcy", "Charlie"]
 
@@ -104,7 +104,7 @@ This sample shows all three methods:
     names.pop(0)
 
 
-.. activecode:: add_and_remove_practice
+.. activecode:: cspcollectionsintro_addremove5
     :autograde: unittest
     :practice: T
 
@@ -132,7 +132,7 @@ This sample shows all three methods:
     myTests().main()
 
 
-.. parsonsprob:: build_discount_list
+.. parsonsprob:: cspcollectionsintro_addremove6
     :numbered: left
     :practice: T
     :adaptive:

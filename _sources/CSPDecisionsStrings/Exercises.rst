@@ -15,7 +15,7 @@
 Chapter Exercises
 ---------------------
 
-.. parsonsprob:: ch13ex1
+.. parsonsprob:: cspdecisionsstrings_exercises1
    :numbered: left
    :practice: T
 
@@ -37,7 +37,7 @@ Chapter Exercises
 
 
 
-.. parsonsprob:: ch13ex2
+.. parsonsprob:: cspdecisionsstrings_exercises2
     :numbered: left
     :practice: T
 
@@ -63,7 +63,7 @@ Chapter Exercises
         print("Your number does not fall in the given range")
 
 
-.. activecode:: ch13ex3
+.. activecode:: cspdecisionsstrings_exercises3
     :autograde: unittest
     :practice: T
 
@@ -101,7 +101,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch13ex4
+.. activecode:: cspdecisionsstrings_exercises4
     :autograde: unittest
     :practice: T
 
@@ -144,7 +144,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch13ex5
+.. activecode:: cspdecisionsstrings_exercises5
     :autograde: unittest
     :practice: T
 
@@ -195,7 +195,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code so that it prints "Less than 5" when a number is less than 5 and "Greater than or equal to 5" when it is greater than or equal to 5.
 
-..             .. activecode::  ch13ex2q
+             .. activecode:: cspdecisionsstrings_exercises6
 ..                 :nocodelens:
 
 ..                 x = 4
@@ -214,7 +214,7 @@ Chapter Exercises
 
 ..            Fix 6 errors in the code below so that it works correctly.
 
-..            .. activecode::  ch13ex3q
+            .. activecode:: cspdecisionsstrings_exercises7
 ..                 :nocodelens:
 
 ..                 print(You are in front of a creepy door in a hallway.")
@@ -240,7 +240,7 @@ Chapter Exercises
 
 ..             Complete the code to get user input, and make choices based off the input. The input should either be "in", "left", or "right"; make sure the user knows that.
 
-..             .. activecode::  ch13ex4q
+             .. activecode:: cspdecisionsstrings_exercises8
 ..                 :nocodelens:
 
 ..                 print("You are in front of a creepy door in a hallway.")
@@ -266,7 +266,7 @@ Chapter Exercises
 
 ..            Fix the code below to assign grades correctly using elif and else. You can assume the numbers are all correct.
 
-..            .. activecode::  ch13ex5q
+            .. activecode:: cspdecisionsstrings_exercises9
 ..                 :nocodelens:
 
 ..                 score = 80
@@ -293,7 +293,7 @@ Chapter Exercises
 
 ..             The following code prints both statements, change it so that it only prints the first one when the age is less than 6.
 
-..             .. activecode::  ch13ex6q
+             .. activecode:: cspdecisionsstrings_exercises10
 ..                 :nocodelens:
 
 ..                 age = 4
@@ -312,7 +312,7 @@ Chapter Exercises
 
 ..            Change the code below to use elif and else rather than several ifs.  Also fix it to print "Good job!" if the score is greater than 10 and less than or equal to 20 and "Amazing" if the score is over 20.
 
-..            .. activecode::  ch13ex7q
+            .. activecode:: cspdecisionsstrings_exercises11
 ..                 :nocodelens:
 
 ..                 score = 22
@@ -334,7 +334,7 @@ Chapter Exercises
 
 ..            Change the code below to use ``elif`` and ``else``.
 
-..            .. activecode::  ch13ex9q
+            .. activecode:: cspdecisionsstrings_exercises12
 ..                 :nocodelens:
 
 ..                 num = input ("Type a number from 1 to 5. Then click OK or press enter")
@@ -359,7 +359,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code and change it to use elif's and else so that if the user's score is greater than the high score, it prints "Good job!", if it's lower, print "Try again.", and if it's the same print "You tied the high score".
 
-..             .. activecode::  ch13ex10q
+             .. activecode:: cspdecisionsstrings_exercises13
 ..                 :nocodelens:
 
 ..                 highScore = 10
@@ -382,7 +382,7 @@ Chapter Exercises
 
 ..            Change the following code to use ``elif`` and ``else`` instead.
 
-..            .. activecode::  ch13ex11q
+            .. activecode:: cspdecisionsstrings_exercises14
 ..                 :nocodelens:
 
 ..                 team1 = 20
@@ -404,7 +404,7 @@ Chapter Exercises
 
 ..             Add statements to the code, so that if the user gives a number less than 5, you ask for the input again, and have another set of decision statements based off if the number is greater than, less than, or equal to 3.
 
-..             .. activecode::  ch13ex12q
+             .. activecode:: cspdecisionsstrings_exercises15
 ..                 :nocodelens:
 
 ..                 user = input("Give me a number")
@@ -431,7 +431,7 @@ Chapter Exercises
 
 ..            Change the code below to use only 1 ``if``, 1 ``elif``, and 1 ``else``.
 
-..            .. activecode::  ch13ex13q
+            .. activecode:: cspdecisionsstrings_exercises16
 ..                 :nocodelens:
 
 ..                 state = "Georgia"
@@ -454,7 +454,7 @@ Chapter Exercises
 
 ..             Fix the code and change the statements so there are three sets of if and else and 2 elifs.
 
-..             .. activecode::  ch13ex14q
+             .. activecode:: cspdecisionsstrings_exercises17
 ..                 :nocodelens:
 
 ..                 if bikes > people:
@@ -486,7 +486,7 @@ Chapter Exercises
 
 ..            Change the code below into a procedure that takes a number as a parameter and prints the quartile.  Be sure to test each quartile.
 
-..            .. activecode::  ch13ex15q
+            .. activecode:: cspdecisionsstrings_exercises18
 ..                 :nocodelens:
 
 ..                 x = .25
@@ -509,7 +509,7 @@ Chapter Exercises
 
 ..             Fix the code so that it prints only 1 thing for each age group and uses elif and else.
 
-..             .. activecode::  ch13ex16q
+             .. activecode:: cspdecisionsstrings_exercises19
 ..                 :nocodelens:
 
 ..                 age = 10
@@ -536,7 +536,7 @@ Chapter Exercises
 
 ..            Write a function that will take a number as input and return a fortune as a string.  Ask the user to pick a number to get the fortune before you call the function.  Have at least 5 different fortunes.  Use ``if``, ``elif``, and ``else``.
 
-..            .. activecode::  ch13ex17q
+            .. activecode:: cspdecisionsstrings_exercises20
 ..                 :nocodelens:
 
 
@@ -550,7 +550,7 @@ Chapter Exercises
 
 ..            Write a procedure to tell an interactive story and let the user choose one of at least 3 options.
 
-..            .. activecode::  ch13ex19q
+            .. activecode:: cspdecisionsstrings_exercises21
 ..                :nocodelens:
 
 
@@ -563,7 +563,7 @@ Chapter Exercises
 
 ..             Write code that iterates through number 1 - 20 and prints "Fizz" if it's a multiple of 3, "Buzz" if it's a multiple of 5, "FizzBuzz" if it's a multiple of 3 and 5, and the number if it's not a multiple of 3 or 5. It should only print one statement per number.
 
-..             .. activecode::  ch13ex20q
+             .. activecode:: cspdecisionsstrings_exercises22
 ..                 :nocodelens:
 
 

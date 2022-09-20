@@ -18,7 +18,7 @@ Even though you can manipulate a string to create a new string the original stri
 **immutable** which means that they never change.  Notice that after you execute the
 code below the string stored in the variable ``sentence`` hasn't changed.
   
-.. activecode:: String_Immutable
+.. activecode:: cspnamestrings_immutable1
       
    sentence = "THIS IS A TEST"
    better = sentence.lower()
@@ -30,7 +30,7 @@ code below the string stored in the variable ``sentence`` hasn't changed.
 While the strings themselves can't be changed you can change the value of a variable.
 This throws away the original string and sets the variable's value to the new string.
 
-.. activecode:: String_Reassign
+.. activecode:: cspnamestrings_immutable2
 
     sentence = "THIS IS A TEST"
     print(sentence)
@@ -43,7 +43,7 @@ We can reassign a variable to hold the result of calling a function on a string.
 the old value of ``sentance`` after it was changed to lower case.
 
 
-.. activecode:: String_Reassign_2
+.. activecode:: cspnamestrings_immutable3
 
     sentence = "THIS IS A TEST"
     print(sentence)
@@ -55,7 +55,7 @@ the old value of ``sentance`` after it was changed to lower case.
     We always do all the work on the right side of ``=`` and then store the result into
     the variable listed on the left side.
 
-.. mchoice:: 3_3_4_s1
+.. mchoice:: cspnamestrings_immutable4
     :practice: T
     :answer_a: xyz
     :answer_b: xyxyz
@@ -77,7 +77,7 @@ the old value of ``sentance`` after it was changed to lower case.
         s2 = s1
         s1 = s1 + s2 + "z"
 
-.. mchoice:: 3_3_5_s2
+.. mchoice:: cspnamestrings_immutable5
     :practice: T
     :answer_a: Hey
     :answer_b: hey

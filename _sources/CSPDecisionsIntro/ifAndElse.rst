@@ -61,7 +61,7 @@ the previous page.
 
 **Mixed up programs**
 
-.. parsonsprob:: 11_7_1_Even_Odd
+.. parsonsprob:: cspdecisionsintro_ifandelse1
    :numbered: left
    :adaptive:
 
@@ -76,7 +76,7 @@ the previous page.
    else: 
        print("x is odd")
 
-.. parsonsprob:: 11_7_1_Shipping
+.. parsonsprob:: cspdecisionsintro_ifandelse2
    :numbered: left
 
    The following function should calculate the shipping cost for an order. Orders over $50 ship free.

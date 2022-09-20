@@ -13,7 +13,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
 
 .. timed:: preTest
     
-    .. mchoice:: pre_1
+    .. mchoice:: cspteasers_pretest1
        :answer_a: x = 7, y = 5, z = 0
        :answer_b: x = 5, y = 7, z = 7
        :answer_c: x = 5, y = 7, z = 0
@@ -38,7 +38,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           y = z;
          
            
-    .. mchoice:: pre_2
+    .. mchoice:: cspteasers_pretest2
        :answer_a: Mere morals cannot divide by zero.
        :answer_b: 1000 / 4
        :answer_c: 250.0
@@ -61,7 +61,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           else:
               print (1000 / denominator)
            
-    .. mchoice:: pre_3
+    .. mchoice:: cspteasers_pretest3
        :answer_a: Normal
        :answer_b: Hypertensive Crisis
        :answer_c: High Blood Pressure A
@@ -111,7 +111,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
                   print ("Prehypertension")
 
            
-    .. mchoice:: pre_4
+    .. mchoice:: cspteasers_pretest4
        :answer_a: 10        [3, 1, -2]          -1
        :answer_b: 6          [3, 1, -2]          2
        :answer_c: 6          [3, 1, -2]         -1
@@ -135,7 +135,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           second[2] = second[2] + 1
           print (second[2])
            
-    .. mchoice:: pre_5
+    .. mchoice:: cspteasers_pretest5
        :answer_a: [-5, 5, 0]  [3, 1, 3, 5]
        :answer_b: [10, 5, 0]  [3, 1, 3, 100]
        :answer_c: [10, -5, 0]  [3, 1, 3, 5]
@@ -160,7 +160,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           second[3] = 100
           print (second)
           
-    .. mchoice:: pre_6
+    .. mchoice:: cspteasers_pretest6
        :answer_a: It will print "Hello Roger" 
        :answer_b: It will print "Hello name"
        :answer_c: It will print "Good-bye Roger"
@@ -183,7 +183,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
           greeting = hello+" "+name
           print (greeting)
           
-    .. mchoice:: pre_7
+    .. mchoice:: cspteasers_pretest7
        :answer_a: The printed result will be even and will have a decimal point.
        :answer_b: The printed result will be odd and will have a decimal point.
        :answer_c: The printed result will be even and will not have a decimal point.
@@ -206,7 +206,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
               sum = sum + number
           print (sum)
           
-    .. mchoice:: pre_8
+    .. mchoice:: cspteasers_pretest8
        :answer_a: The printed result will be even and will have a decimal point.
        :answer_b: The printed result will be odd and will have a decimal point.
        :answer_c: The printed result will be even and will not have a decimal point.
@@ -232,7 +232,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
 
 
           
-    .. mchoice:: pre_9
+    .. mchoice:: cspteasers_pretest9
        :answer_a: The printed result will only contain vowels.
        :answer_b: The printed result will only contain consonants.
        :answer_c: It will print the empty string.
@@ -256,7 +256,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
                   newString = newString + letter
           print (newString)
           
-    .. mchoice:: pre_10
+    .. mchoice:: cspteasers_pretest10
        :answer_a: The turtle in this example draws a pentagram.
        :answer_b: The turtle draws four lines of length 5, 11, 16, and 21
        :answer_c: The turtle draws a square.
@@ -281,7 +281,7 @@ You will not be able to change your answers after you hit the "Finish Exam" butt
               alisha.forward(100) 
               alisha.right(90)
               
-    .. mchoice:: pre_11
+    .. mchoice:: cspteasers_pretest11
        :answer_a: 29
        :answer_b: 182
        :answer_c: 153

@@ -15,7 +15,7 @@
 Chapter Exercises
 ---------------------
 
-.. activecode:: ch11ex1q
+.. activecode:: cspdecisionsintro_exercises1
     :autograde: unittest
     :practice: T
 
@@ -49,7 +49,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch11ex2q
+.. activecode:: cspdecisionsintro_exercises2
     :autograde: unittest
     :practice: T
 
@@ -84,7 +84,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch11ex3q
+.. activecode:: cspdecisionsintro_exercises3
     :autograde: unittest
     :practice: T
 
@@ -118,7 +118,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch11ex4q
+.. activecode:: cspdecisionsintro_exercises4
     :autograde: unittest
     :practice: T
 
@@ -169,7 +169,7 @@ Chapter Exercises
 
 ..             Fix 3 syntax errors in the code below so that it correctly prints "x is less than 3" and then "All done" when x is less than 3.
 
-..             .. activecode:: ch11ex1q
+             .. activecode:: cspdecisionsintro_exercises5
 ..                 :nocodelens:
 
 ..                 x = 0
@@ -187,7 +187,7 @@ Chapter Exercises
 
 ..             The code currently prints "Hello" when the number is less than 3. Change it so that it prints "Hello" when the number is equal to 3.
 
-..             .. activecode::  ch11ex2q
+             .. activecode:: cspdecisionsintro_exercises6
 ..                 :nocodelens:
 
 ..                 x = 3
@@ -204,7 +204,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below to use a price of 1.45 if the weight is less than 1 and a price of 1.15 otherwise.  There is also one syntax error.
 
-..            .. activecode::  ch11ex3q
+            .. activecode:: cspdecisionsintro_exercises7
 ..                 :nocodelens:
 
 ..                 weight = 0.5
@@ -227,7 +227,7 @@ Chapter Exercises
 
 ..             Fill in line 1 with a weight that will make the total equal 1, and fix the indentation errors.
 
-..             .. activecode::  ch11ex4q
+             .. activecode:: cspdecisionsintro_exercises8
 ..                 :nocodelens:
 
 ..                 weight =
@@ -249,7 +249,7 @@ Chapter Exercises
 
 ..            Fix 3 errors with indention in the code below to correctly set the price to 1.5 if the weight is less than 2 and otherwise set it to 1.3.
 
-..            .. activecode::  ch11ex5q
+            .. activecode:: cspdecisionsintro_exercises9
 ..                 :nocodelens:
 
 ..                 weight = 0.5
@@ -273,7 +273,7 @@ Chapter Exercises
 
 ..             The code currently does not do anything if the number is equal to 2. Fix it so that it prints "Hey" if the number is 2.
 
-..             .. activecode::  ch11ex6q
+             .. activecode:: cspdecisionsintro_exercises10
 ..                 :nocodelens:
 
 ..                 x = 2
@@ -292,7 +292,7 @@ Chapter Exercises
 
 ..            Fix 4 errors in the code below to print "x is a number from 	1 to 10" when x is greater than or equal to 1 and less than or equal to 10.
 
-..            .. activecode::  ch11ex7q
+            .. activecode:: cspdecisionsintro_exercises11
 ..                 :nocodelens:
 
 ..                 x = 3
@@ -310,7 +310,7 @@ Chapter Exercises
 
 ..             The following code prints "This is not 8" when the number is not 8. Change the if statement, so that it does the same thing but only uses one expression (No "and" or "or").
 
-..             .. activecode::  ch11ex8q
+             .. activecode:: cspdecisionsintro_exercises12
 ..                 :nocodelens:
 
 ..                 x = 8
@@ -329,7 +329,7 @@ Chapter Exercises
 
 ..            Finish the conditional on line 3 to print "You can go out!" if either cleanedRoom or finishedHomework is true (not 0). It should always print "All done" as well.
 
-..            .. activecode::  ch11ex9q
+            .. activecode:: cspdecisionsintro_exercises13
 ..                 :nocodelens:
 
 ..                 cleanedRoom = 1
@@ -348,7 +348,7 @@ Chapter Exercises
 
 ..             Complete the conditional and fix the errors so that it prints "Good job" when the number is between 1 and 10 (inclusive) or is 15 and "Fail" when it is not.
 
-..             .. activecode::  ch11ex10q
+             .. activecode:: cspdecisionsintro_exercises14
 ..                 :nocodelens:
 
 ..                 x = 8
@@ -365,7 +365,7 @@ Chapter Exercises
 
 ..            Fix 5 errors in the following code to set the price to 1.45 if the weight is less than or equal to 1 and otherwise set it to 1.15.
 
-..            .. activecode::  ch11ex11q
+            .. activecode:: cspdecisionsintro_exercises15
 ..                 :nocodelens:
 
 ..                 weight = 0.5
@@ -388,7 +388,7 @@ Chapter Exercises
 
 ..             Fix the indentation below, so that the code sets the price based off the weight, then checks if the total is greater than the amount in your wallet.
 
-..             .. activecode::  ch11ex12q
+             .. activecode:: cspdecisionsintro_exercises16
 ..                 :nocodelens:
 
 ..                 weight = 0.5
@@ -413,7 +413,7 @@ Chapter Exercises
 
 ..            Change 3 lines in the code below to correctly set the grade so that a 90 and above is an A, 80-89 is a B, 70 - 79 is a C, 60-69 is a D and below 60 is an E.
 
-..            .. activecode::  ch11ex13q
+            .. activecode:: cspdecisionsintro_exercises17
 ..                 :nocodelens:
 
 ..                 score = 93
@@ -439,7 +439,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code, and change it, so there's only 1 if statement. The code should print "The number is 5" when the number is 5, and should print "The number is NOT 5" when it is not.
 
-..             .. activecode::  ch11ex14q
+             .. activecode:: cspdecisionsintro_exercises18
 ..                 :nocodelens:
 
 ..                 x = 5
@@ -459,7 +459,7 @@ Chapter Exercises
 
 ..            Fix 5 errors in the following code to set price to 1.45 if weight is less than 1 and otherwise set it to 1.15.
 
-..            .. activecode::  ch11ex15q
+            .. activecode:: cspdecisionsintro_exercises19
 ..                 :nocodelens:
 
 ..                 weight = 0.5
@@ -482,7 +482,7 @@ Chapter Exercises
 
 ..             Complete and finish the code on lines 1 and 4 so that the code prints "Hi".
 
-..             .. activecode::  ch11ex16q
+             .. activecode:: cspdecisionsintro_exercises20
 ..                 :nocodelens:
 
 ..                 x =
@@ -503,7 +503,7 @@ Chapter Exercises
 
 ..             Write a procedure that takes 2 ints, total price, and amount in wallet. Print "You have enough money" if the difference between the wallet and price is 0 or greater; otherwise, print "Get more money"
 
-..             .. activecode::  ch11ex18q
+             .. activecode:: cspdecisionsintro_exercises21
 ..                 :nocodelens:
 
 
@@ -516,7 +516,7 @@ Chapter Exercises
 
 ..            Write a function that takes a number for a grade and returns a string grade.  It should return E for any value below 60, D for 61 to 69, C for 70 to 79, B for 80 to 89 and A for 90 and above.  Write code to test each grade range.
 
-..            .. activecode::  ch11ex19q
+            .. activecode:: cspdecisionsintro_exercises22
 ..                :nocodelens:
 
 
@@ -529,7 +529,7 @@ Chapter Exercises
 
 ..             Write code that prints "Fizz" when the number is divisible by 3, "Buzz" when it is divisible by 5, and "FizzBuzz" when it is divisible by 3 and 5  (If a number is divisible by 3 and 5, it should also print "Fizz" and "Buzz").
 
-..             .. activecode::  ch11ex20q
+             .. activecode:: cspdecisionsintro_exercises23
 ..                 :nocodelens:
 
 

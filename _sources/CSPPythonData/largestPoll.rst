@@ -33,7 +33,7 @@ logic, the string ``"2"`` is greater than the string ``"12"`` because 2 is great
 1. If we convert the strings to numbers, things will work as expected - ``2`` is smaller
 than ``12``. So we must use ``int()`` to convert the PM2.5 values to integer numbers.
 
-.. activecode:: max25
+.. activecode:: csppythondata_largestpoll1
     :nocodelens:
     
     inFile = open("uspoll.txt")
@@ -59,7 +59,7 @@ than ``12``. So we must use ``int()`` to convert the PM2.5 values to integer num
     # print the largest PM 2.5 value
     print("Highest pollution is", max25, "in", maxCity)
 
-.. mchoice:: 18_4_3_max10_max25_q
+.. mchoice:: csppythondata_largestpoll2
     :answer_a: The same city has the maximum value for both PM 2.5 and PM 10.
     :answer_b: Different cities have the maximums, but they are in the same state.
     :answer_c: Different cities in different states have the maximum values.
@@ -70,7 +70,7 @@ than ``12``. So we must use ``int()`` to convert the PM2.5 values to integer num
 
     Modify the code to find the city with the highest PM10 value. Which statement is true?
 
-.. fillintheblank:: 18_4_3_max10_max25_q2
+.. fillintheblank:: csppythondata_largestpoll3
 
     What PM10 value does the most polluted city have?
 

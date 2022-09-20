@@ -22,7 +22,7 @@ This is a definition for a function that accepts the lengths of the two legs (sh
 right triangle as its parameters and calculates the length of the hypotenuse (long side). The final
 value that it computes - ``sideC`` is what gets returned.
 
-.. activecode:: def_function
+.. activecode:: cspnamefunctions_definingfunctionshow1
 
     def hypotenuse_length(sideA, sideB):
         # sideA and sideB are our inputs
@@ -37,7 +37,7 @@ someone calls ``hypotenuse_length``. So let's add a call to the function. This w
 asks for the lengths of two sides from the user and then uses those two values ``a`` and ``b`` to
 call ``hypotenuse_length``.
 
-.. activecode:: def_function_and_call 
+.. activecode:: cspnamefunctions_definingfunctionshow2
 
     def hypotenuse_length(sideA, sideB):
         aSquared = math.pow(sideA, 2)
@@ -55,7 +55,7 @@ call ``hypotenuse_length``.
 
 **Check Your Understanding**
 
-.. fillintheblank:: 7_2_fb
+.. fillintheblank:: cspnamefunctions_definingfunctionshow3
 
     This function converts temperature in degrees F to degrees C. What code goes where the
     ______________ is to complete it correctly?

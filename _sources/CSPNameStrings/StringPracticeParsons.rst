@@ -9,7 +9,7 @@ You will be told if your solution is too short, has a block in the wrong order, 
 using the wrong block.  Some of the problems have an extra block that isn't needed in the
 correct solution.
 
-.. parsonsprob:: ch3ex1muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons1
    :adaptive:
    :noindent:
 
@@ -25,7 +25,7 @@ correct solution.
    print(Maria) #distractor
 
 
-.. parsonsprob:: ch3ex2muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons2
    :adaptive:
    :noindent:
 
@@ -40,7 +40,7 @@ correct solution.
    print("And so are you")
 
 
-.. parsonsprob:: ch3ex3muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons3
    :adaptive:
    :noindent:
 
@@ -56,7 +56,7 @@ correct solution.
    print(name, color) #distractor
 
 
-.. parsonsprob:: ch3ex4muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons4
    :adaptive:
    :noindent:
 
@@ -73,7 +73,7 @@ correct solution.
    print(part1 * part2) #distractor
 
 
-.. parsonsprob:: ch3ex5muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons5
    :adaptive:
    :noindent:
 
@@ -91,7 +91,7 @@ correct solution.
    print("Your name is " name) #distractor
 
 
-.. parsonsprob:: ch3ex6muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons6
    :adaptive:
    :noindent:
 
@@ -105,7 +105,7 @@ correct solution.
    =====
    place = sentence.slice("Tom") #distractor
 
-.. parsonsprob:: ch3ex7muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons7
    :adaptive:
    :noindent:
 
@@ -123,7 +123,7 @@ correct solution.
    =====
    print(initials) #distractor
 
-.. parsonsprob:: ch3ex8muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons8
    :adaptive:
    :noindent:
 
@@ -137,7 +137,7 @@ correct solution.
    =====
    print(Message) #distractor
 
-.. parsonsprob:: ch3ex9muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons9
    :adaptive:
    :noindent:
 
@@ -153,7 +153,7 @@ correct solution.
    =====
    part = message[0:4] #distractor
 
-.. parsonsprob:: ch3ex10muc
+.. parsonsprob:: cspnamestrings_stringpracticeparsons10
    :adaptive:
    :noindent:
 

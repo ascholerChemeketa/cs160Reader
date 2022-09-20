@@ -90,7 +90,7 @@ If we follow this algorithm to convert :math:`{1101}_{2}` into to a decimal valu
     
 As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple computer code. To demonstrate that, the algorithm is implemented in Python in the *codelens* below. You DO NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm above into code requires some changes, but the code shown follows the same process described above. See the "tips" box below the code lens for helping running the program.
     
-.. codelens:: Binary_Conversion
+.. codelens:: datarepresentation_binaryconversions21
     :caption: Convert "1101" to decimal
     
     number = "1101"           
@@ -115,7 +115,7 @@ As mentioned earlier, the advantage of this algorithm is that it very easily con
     :class: underlined
  
  
-.. mchoice:: binaryconversions2_1 
+.. mchoice:: datarepresentation_binaryconversions22
     :answer_a: 5
     :answer_b: 4
     :answer_c: 6

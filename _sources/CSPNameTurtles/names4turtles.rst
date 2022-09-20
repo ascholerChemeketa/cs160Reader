@@ -39,7 +39,7 @@ a ``space`` for a turtle object to draw on, creates a ``turtle`` object and name
 asks ``alex`` to go forward by 150 pixels, asks ``alex`` to turn left 90 degrees, and asks ``alex``
 to go forward 75 pixels.
 
-.. activecode:: Turtle_1_Again
+.. activecode:: cspnameturtles_names4turtles1
     :nocodelens:
 
     from turtle import *    # use the turtle library
@@ -49,7 +49,7 @@ to go forward 75 pixels.
     alex.left(90)           # turn left 90 degrees
     alex.forward(75)        # move forward by 75 units
 
-.. mchoice:: 4_1_2_Turtle_Dir_Q1
+.. mchoice:: cspnameturtles_names4turtles2
     :practice: T
     :answer_a: North
     :answer_b: South
@@ -82,7 +82,7 @@ it is currently facing North, it would end up facing West.
 
 **Mixed up programs**
 
-.. parsonsprob:: 4_1_3_Turtle_L
+.. parsonsprob:: cspnameturtles_names4turtles3
     :numbered: left
     :adaptive:
 
@@ -121,7 +121,7 @@ it is currently facing North, it would end up facing West.
     =====
     ella.go(75) #paired
 
-.. parsonsprob:: 4_1_4_Turtle_Check
+.. parsonsprob:: cspnameturtles_names4turtles4
     :numbered: left
     :adaptive:
 

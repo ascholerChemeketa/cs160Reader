@@ -144,7 +144,7 @@ You can play with the sliders below to explore how colors can be described as a 
 .. pseudo_h4:: Self Check
     :class: underlined
 
-.. mchoice:: hexcolors_1
+.. mchoice:: datarepresentation_hexcolors1
     :answer_a: A255A2
     :answer_b: 58B3B3
     :answer_c: 43C0C0
@@ -158,7 +158,7 @@ You can play with the sliders below to explore how colors can be described as a 
     Which of the following hex values describes a smoky-aqua color?
 
 
-.. fillintheblank:: hexcolors_2
+.. fillintheblank:: datarepresentation_hexcolors2
 
     What hex code specifies black?
 

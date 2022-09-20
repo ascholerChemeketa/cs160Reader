@@ -55,7 +55,7 @@ repeating... ah, six... OK, this must be a hexagon."
 We would like to rewrite our code to tell alex to repeat the ``forward`` and ``right`` steps 6
 times each instead of listing them six times. We can do so with a ``for`` **loop**: 
 
-.. activecode:: Turtle_For_Intro
+.. activecode:: csprepeatturtles_repetition1
     :nocodelens:
 
     from turtle import *
@@ -83,13 +83,13 @@ The list of items the ``for`` uses to determine how many times to repeat is crea
 ``range`` function. This is a function built into Python that can be used to generate a list of numbers.
 This example shows exactly what ``range(6)`` produces:
 
-.. activecode:: Range_demo
+.. activecode:: csprepeatturtles_repetition2
     :nocodelens:
 
     sides = list( range(6) )
     print(sides)
 
-.. mchoice:: 8_1_1
+.. mchoice:: csprepeatturtles_repetition3
     :answer_a: The list of numbers 0 to 6
     :answer_b: The list of numbers 1 to 6
     :answer_c: The list of numbers 1 to 5
@@ -125,7 +125,7 @@ of the values that range produces, we could modify the program to use ``side`` t
 them. In this program, for each value in the list produced by ``range``, we call the
 current item ``side``, print it out, then do the turtle commands.
 
-.. activecode:: Turtle_For_Intro_finals
+.. activecode:: csprepeatturtles_repetition4
     :nocodelens:
 
     from turtle import *

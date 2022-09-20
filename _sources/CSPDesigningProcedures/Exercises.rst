@@ -27,7 +27,7 @@ and then doing ``forward(0)`` to make a colored dot.
 
 |turtle_ref|
 
-.. activecode:: ch6ex1q
+.. activecode:: cspdesigningprocedures_exercises1
     :nocodelens:
 
     Use this space to describe the procedures you will write. Like in my design, don't worry about
@@ -37,7 +37,7 @@ and then doing ``forward(0)`` to make a colored dot.
     ~~~~
 
 
-.. activecode:: ch6ex2q
+.. activecode:: cspdesigningprocedures_exercises2
     :nocodelens:
 
     Now use this space to implement your program. 

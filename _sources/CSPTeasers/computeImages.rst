@@ -42,7 +42,7 @@ Pixels are quite small.  Even this small picture below has 200 columns and 300 r
 
     <img src="../_static/CSPImages/cat.jpg" id="cat.jpg" alt="A cat">
     
-.. mchoice:: 1_5_1_Image_Q1
+.. mchoice:: cspteasers_computeimages1
    :answer_a: From left to right
    :answer_b: From right to left
    :answer_c: From top to bottom
@@ -85,7 +85,7 @@ The lines that are important are under the comments (lines that start with a ``#
 all those pixels can take a few seconds.  
 
     
-.. activecode:: 1_5_2_Images_Q2
+.. activecode:: cspteasers_computeimages2
     :nocodelens:
 
     # MAKE USE OF IMAGE LIBRARY
@@ -105,7 +105,7 @@ all those pixels can take a few seconds.
     win = ImageWin(img.getWidth(),img.getHeight())
     img.draw(win)
     
-.. mchoice:: 1_5_3_Image_Black
+.. mchoice:: cspteasers_computeimages3
     :answer_a: You still see the picture, but it is all in shades of gray.  
     :answer_b: The picture is all white.
     :answer_c: The picture is all black.

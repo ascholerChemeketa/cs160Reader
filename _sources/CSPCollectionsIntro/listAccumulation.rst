@@ -17,7 +17,7 @@ of values and combine them all. This is a natural thing to do with our lists. Sa
 to total the points that were earned by a student on the quizzes. I might use the following
 program:
 
-.. activecode:: accumulation_1
+.. activecode:: cspcollectionsintro_listaccumulation1
 
     scores = [82, 95, 92, 76, 98, 84, 89, 92]
 
@@ -41,7 +41,7 @@ from the list by my accumulated value to get the new accumulated value. This is 
 the animation below, using ``product`` as the accumulator variable.
 
 
-.. codelens:: accumulation_2
+.. codelens:: cspcollectionsintro_listaccumulation2
 
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     # Pick an appropriate initial value
@@ -54,7 +54,7 @@ the animation below, using ``product`` as the accumulator variable.
 
     print(product)
 
-.. mchoice:: 7_3_2_Numbers_Product_Q1
+.. mchoice:: cspcollectionsintro_listaccumulation3
     :answer_a: 1
     :answer_b: 2
     :answer_c: 3
@@ -76,7 +76,7 @@ a list. I can use the accumulator pattern to build up one string with all of the
 My accumulator variable will need to start with an appropriate empty value for a string,
 which is ``""``.
 
-.. codelens:: accumulation_3
+.. codelens:: cspcollectionsintro_listaccumulation4
 
     words = ["Roses", "are", "red", "violets", "are", "dead"]
 
@@ -91,7 +91,7 @@ which is ``""``.
     print(poem)
 
 
-.. parsonsprob:: 7_3_4_Average
+.. parsonsprob:: cspcollectionsintro_listaccumulation5
     :numbered: left
     :adaptive:
 

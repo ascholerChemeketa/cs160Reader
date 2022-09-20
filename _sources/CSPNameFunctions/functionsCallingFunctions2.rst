@@ -28,7 +28,7 @@ the semi-perimeter.
 
 Below is the code for the final program but jumbled up - figure out the right order.
 
-.. parsonsprob:: 7_6_triangleArea
+.. parsonsprob:: cspnamefunctions_functionscallingfunctions21
     :numbered: left
     :adaptive:
 

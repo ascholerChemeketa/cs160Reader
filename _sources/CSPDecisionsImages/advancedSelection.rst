@@ -40,7 +40,7 @@ the blue values, it is "red". To express this as a conditional will look like
 To test out our recipe, we are going to make a function ``isRed``. It will accept values for
 ``r``, ``g``, and ``b`` and return ``True`` if they meet our criteria and false otherwise.
 
-.. activecode:: isRed
+.. activecode:: cspdecisionsimages_advancedselection1
 
     from image import *
 
@@ -82,7 +82,7 @@ Or this:
 
 Here is the final program:
 
-.. activecode:: Scooter_Color_Replace
+.. activecode:: cspdecisionsimages_advancedselection2
     :nocodelens:
 
     from image import *
@@ -123,7 +123,7 @@ Here is the final program:
 
 After running the program, try modifying it to answer the question below.
 
-.. mchoice:: 14_1_mc1
+.. mchoice:: cspdecisionsimages_advancedselection3
     :answer_a: Almost identical to the complex version.
     :answer_b: All of the white pixels become blue too!
     :answer_c: You get something that looks like a blue flame pattern.

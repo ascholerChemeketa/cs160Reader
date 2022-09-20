@@ -36,7 +36,7 @@ strings and turtles. There are also functions that work with numbers. The functi
 the absolute value of its input. The function ``int`` takes a decimal number as input and
 returns just the integer part. Try running this sample with the Codelens:
 
-.. activecode:: Functions_5_1
+.. activecode:: cspnameprocedures_namefandp1
 
     name = "jeff"
     upperName = name.upper()        # call upper function on the string called "name"

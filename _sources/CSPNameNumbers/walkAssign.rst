@@ -13,14 +13,14 @@ Walking through Assignment more Generally
 
 Let's explore assignment in general.  Try tracing this example.
 
-.. codelens:: Assign_Basic
+.. codelens:: cspnamenumbers_walkassign1
 
    a = 1
    b = 12.3
    c = "Fred"
    d = b
 
-.. mchoice:: 2_8_2_Assignment_Q1
+.. mchoice:: cspnamenumbers_walkassign2
     :answer_a: 1
     :answer_b: 12.3
     :answer_c: "b"
@@ -39,13 +39,13 @@ of relationship between the names, like in mathematics.  The variable ``a`` migh
 one point, and ``15`` at another. An assignment statement is an action that occurs once, and then
 is over with.    
 
-.. codelens:: Assign_Multiple
+.. codelens:: cspnamenumbers_walkassign3
 
     var1 = 45
     var1 = 17.3
     var2 = var1
 
-.. mchoice:: 2_8_4_Assignment_Multiple_Q1
+.. mchoice:: cspnamenumbers_walkassign4
     :answer_a: var1 is 45, var2 is 45
     :answer_b: var1 is 45, var2 is var1
     :answer_c: var1 is 17.3, var2 is 45
@@ -65,7 +65,7 @@ We can see values (including the values for named variables) by printing them.  
 way to see what's going on inside a program.  Try running this example where we're having the
 computer calculate the number of days in three weeks:
 
-.. activecode:: Assign_Days
+.. activecode:: cspnamenumbers_walkassign5
 
    daysInWeek = 7
    print(daysInWeek)
@@ -74,7 +74,7 @@ computer calculate the number of days in three weeks:
    numDays2 = daysInWeek * 3
    print(numDays2)
 
-.. mchoice:: 2_8_6_Assign_Days_Q1
+.. mchoice:: cspnamenumbers_walkassign6
     :answer_a: 7, 7*3, daysInWeek*3
     :answer_b: daysInWeek, numDays, numDays2
     :answer_c: 7, 21, 21
@@ -88,7 +88,7 @@ computer calculate the number of days in three weeks:
 
     What three values are printed when this program runs?
    
-.. parsonsprob:: 2_8_7_Per_Person_Cost
+.. parsonsprob:: cspnamenumbers_walkassign7
     :practice: T
     :numbered: left
     :adaptive:
@@ -116,7 +116,7 @@ computer calculate the number of days in three weeks:
         
         Create variables to hold each value.  Calculate ``bill`` as ``(appetizer + entree) * numPeople + dessert``.  Be sure to print the result.
 
-        .. activecode::  2_8_8_WSq
+        .. activecode:: cspnamenumbers_walkassign8
         
             # Fill in the missing values from the description above
             numPeople = ???
@@ -131,7 +131,7 @@ computer calculate the number of days in three weeks:
 
     .. tab:: Answer - Don't click until you've had a go at creating your own solution.
                 
-        .. activecode::  2_8_9_WSa
+        .. activecode:: cspnamenumbers_walkassign9
             
             numPeople = 10
             appetizer = 2

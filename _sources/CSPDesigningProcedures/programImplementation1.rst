@@ -47,7 +47,7 @@ tall rectangle. Try the code:
 
 |turtle_ref|
 
-.. activecode:: program_implementation_1
+.. activecode:: cspdesigningprocedures_programimplementation11
     :nocodelens:
 
     def rectangle(turtle, width, height):

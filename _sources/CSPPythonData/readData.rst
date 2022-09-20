@@ -77,7 +77,7 @@ Here is a sample of using those commands to open our file, read in all the data 
 called ``data``, and close the file. Once we have all the data, we can use a ``for in`` loop
 to iterate through all the lines in the file. Here we just print them out:
 
-.. activecode:: printFileData
+.. activecode:: csppythondata_readdata1
     :nocodelens:
 
     # Open the file for reading. The reference we will use to work with it will be inFile
@@ -108,7 +108,7 @@ value you give it. ``values = line.split(":")`` says to take the string called l
 split it at the ":" and to call the resulting list ``values``. We can then use that
 to get just the city name, or the PM 10 value, or the PM2.5 value.
 
-.. activecode:: printDataPieces
+.. activecode:: csppythondata_readdata2
     :autograde: unittest
 
     Currently, this program prints each city followed by its PM2.5 value.
@@ -157,7 +157,7 @@ to get just the city name, or the PM 10 value, or the PM2.5 value.
     myTests().main()
 
 
-.. parsonsprob:: 18_3_1_printInfoForCity
+.. parsonsprob:: csppythondata_readdata3
     :numbered: left
     :adaptive:
 

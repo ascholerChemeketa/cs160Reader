@@ -64,7 +64,7 @@ have this:
 
 
 
-.. fillintheblank:: 4_2_1_LetterC_fill
+.. fillintheblank:: cspnameturtles_funcandproc1
 
     What letter (like A, B, C, D, etc) will the program below draw in block style when you click
     on the Run button?
@@ -72,7 +72,7 @@ have this:
     - :^c$|^C$: Correct!
       :.*: Try to follow the directions as if you are the turtle
 
-.. activecode:: Turtle_C
+.. activecode:: cspnameturtles_funcandproc2
     :nocodelens:
 
     from turtle import *    # use the turtle library
@@ -87,7 +87,7 @@ have this:
 
 **Check Your Understanding**
 
-.. mchoice:: 4_2_3_FuncOrProc
+.. mchoice:: cspnameturtles_funcandproc3
    :practice: T
    :answer_a: function
    :answer_b: procedure
@@ -99,7 +99,7 @@ have this:
 
 **Mixed up programs**
 
-.. parsonsprob:: 4_2_4_Turtle-T
+.. parsonsprob:: cspnameturtles_funcandproc4
     :numbered: left
     :adaptive:
 
@@ -140,7 +140,7 @@ have this:
     =====
     jamal.forward(100 #distractor
 
-.. parsonsprob:: 4_2_2_Turtle-A
+.. parsonsprob:: cspnameturtles_funcandproc5
     :numbered: left
     :adaptive:
 

@@ -116,7 +116,7 @@ XOR gives a 1 if the two inputs are different (0 1 or 1 0). XNOR gives a 1 only 
 
 
 
-.. fillintheblank:: nor_1
+.. fillintheblank:: logiccircuits_negatedgates1
 
     What is the result of applying **NOR** to: |br|
     1101 |br|
@@ -129,7 +129,7 @@ XOR gives a 1 if the two inputs are different (0 1 or 1 0). XNOR gives a 1 only 
       :x: Hint: NOR only gives 1 if BOTH inputs are 0. Where does that happen?
 
 
-.. fillintheblank:: xnor_1
+.. fillintheblank:: logiccircuits_negatedgates2
 
     What is the result of applying **XNOR** to: |br|
     1101 |br|

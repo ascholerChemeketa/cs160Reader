@@ -75,7 +75,7 @@ Here is the result of applying the OR rule to the same two patterns:
     :class: underlined
 
 
-.. fillintheblank:: or_1
+.. fillintheblank:: logiccircuits_applyingrules1
 
     What is the result of applying **OR** to: |br|
     0101 |br|
@@ -88,7 +88,7 @@ Here is the result of applying the OR rule to the same two patterns:
       :x: Hint: Make sure to treat each column separately using OR
 
 
-.. fillintheblank:: and_1
+.. fillintheblank:: logiccircuits_applyingrules2
 
     What is the result of applying **AND** to: |br|
     1010 |br|

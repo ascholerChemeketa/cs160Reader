@@ -19,7 +19,7 @@ This time, we would like to get the average pollution level. To do that, we need
 to take every PM2.5 value and add them all together. As we do this, we need to keep
 a count of how many values we have seen, so we can compute an average.
 
-.. parsonsprob:: 18_6_1_avg25
+.. parsonsprob:: csppythondata_avgpoll1
     :numbered: left
     :adaptive:
 
@@ -57,7 +57,7 @@ There are a few lines that need to still be written,
 they are all marked with a ``TODO`` comment. Finish up the program so you can
 find the average PM10 level. 
 
-.. activecode:: average10
+.. activecode:: csppythondata_avgpoll2
     :nocodelens:
 
     inFile = open("uspoll.txt")

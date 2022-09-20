@@ -14,7 +14,7 @@ Turtle Art
 
 Below is a program to draw a simple house.
 
-.. activecode:: Turtle_House
+.. activecode:: cspnameturtles_turtleart1
     :nocodelens:
 
     from turtle import *
@@ -55,7 +55,7 @@ Now we want to add a "chimney" to the house that looks something like this:
 Modify the program above so that it draws a ``"red"`` chimney. You can either draw it before
 or after drawing the roof.
 
-.. .. parsonsprob:: 4_6_1_Turtle_House
+ .. parsonsprob:: cspnameturtles_turtleart2
 ..    :numbered: left
 ..    :adaptive:
 
@@ -112,7 +112,7 @@ or after drawing the roof.
 ..    :width: 120 px
 ..    :align: center
    
-.. .. parsonsprob:: 4_6_2_Turtle_House2
+ .. parsonsprob:: cspnameturtles_turtleart3
 ..    :numbered: left
 ..    :adaptive:
 

@@ -80,7 +80,7 @@ Try turning one line of code at a time back on by removing the ``#`` at the star
 program. Does the line seem to do its job? If so, go to the next line. If not, stop and try to fix
 that line before moving on. 
 
-.. activecode:: Turtle_Error1
+.. activecode:: cspnameturtles_debugging1
     :nocodelens:
 
     from turtle import *
@@ -100,7 +100,7 @@ The following example has 3 errors.  Can you fix the errors so that the code run
 to print a capital L? You may want to start by commenting out all the lines and turn them on
 one by one like we did in the last exercise.
 
-.. activecode:: Turtle_Error2
+.. activecode:: cspnameturtles_debugging2
     :nocodelens:
 
     from turtle import *    # use the turtle library
@@ -121,7 +121,7 @@ to print a capital C?
     line of code is not doing its job, and you are 100% certain it is right, you may have
     to go re-examine earlier lines of code that you thought were correct.
 
-.. activecode:: Turtle_Error3
+.. activecode:: cspnameturtles_debugging3
     :nocodelens:
 
     from turtle Import *    # use the turtle library
@@ -137,7 +137,7 @@ to print a capital C?
 
 Use the area below to try to draw a block letter or number.
 
-.. activecode:: Turtle_Letter_Own
+.. activecode:: cspnameturtles_debugging4
     :nocodelens:
 
 
@@ -147,7 +147,7 @@ Use the area below to try to draw a block letter or number.
 
 .. **Mixed up programs**
 
-.. .. parsonsprob:: 5_2_1_DrawZ
+ .. parsonsprob:: cspnameturtles_debugging5
 ..    :numbered: left
 ..    :adaptive:
 
@@ -183,7 +183,7 @@ Use the area below to try to draw a block letter or number.
 ..    alex.forward(50)
 
 
-.. .. parsonsprob:: 5_2_1_DrawN
+ .. parsonsprob:: cspnameturtles_debugging6
 ..    :numbered: left
 ..    :adaptive:
 

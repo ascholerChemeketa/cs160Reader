@@ -18,7 +18,7 @@
 Chapter Exercises
 ---------------------
 
-.. activecode:: ch9ex1t
+.. activecode:: csprepeatimages_exercises1
     :nocodelens:
 
     Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.
@@ -62,7 +62,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch9ex2t
+.. activecode:: csprepeatimages_exercises2
     :nocodelens:
 
     Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to 0.
@@ -97,7 +97,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch9ex3t
+.. activecode:: csprepeatimages_exercises3
     :nocodelens:
 
     Fill in the missing code on lines 9, 12, and 18 below to set the blue to half the original
@@ -137,7 +137,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch9ex4t
+.. activecode:: csprepeatimages_exercises4
     :nocodelens:
 
     Fix the indention below to correctly so that the red and green values for each pixel are set to be the
@@ -181,7 +181,7 @@ Chapter Exercises
 
 
 
-.. activecode:: ch9ex5t
+.. activecode:: csprepeatimages_exercises5
     :nocodelens:
 
     Write code that for each pixel, adds the ``y`` value of its location to the red. You will have to use the
@@ -222,7 +222,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch9ex6t
+.. activecode:: csprepeatimages_exercises6
     :nocodelens:
 
     Write code that blacks out the top half of the image by setting just the pixels in the top half to have
@@ -262,7 +262,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch9ex7t
+.. activecode:: csprepeatimages_exercises7
     :nocodelens:
 
     Write code top copy the top half of the image to the bottom half. You should use the same loops
@@ -306,7 +306,7 @@ Chapter Exercises
 
 ..     	    The code below makes the image have a green-blue tint. Change 1 thing in order to make it have a red tint instead.
 
-..             .. activecode::  ch11ex2q
+             .. activecode:: csprepeatimages_exercises8
 ..                 :nocodelens:
 
 ..                 # USE THE IMAGE LIBRARY
@@ -335,7 +335,7 @@ Chapter Exercises
 
 ..     	    Fix the 5 errors in the code, so that the Red pixels get the value of the green, the green get the value of blue, and the blue get the value of the red. (The cat should look purple and gray)
 
-..             .. activecode::  ch11ex4q
+             .. activecode:: csprepeatimages_exercises9
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -374,7 +374,7 @@ Chapter Exercises
 
 ..             Complete the code in order to set the blue value to an eighth of the green value plus an eighth of the red value.
 
-..             .. activecode::  ch11ex6q
+             .. activecode:: csprepeatimages_exercises10
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -406,7 +406,7 @@ Chapter Exercises
 
 ..            Fix the indention in the code below so that it correctly increases the red in each pixel in the picture by 1.5.
 
-..            .. activecode::  ch11ex7q
+            .. activecode:: csprepeatimages_exercises11
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -442,7 +442,7 @@ Chapter Exercises
 
 ..             This code is supposed to make the picture completely black; however, it is taking forever when it should only take a few seconds. Fix the code (without adding anything new) so that it runs in a few seconds.
 
-..             .. activecode::  ch11ex8q
+             .. activecode:: csprepeatimages_exercises12
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -477,7 +477,7 @@ Chapter Exercises
 
 ..            Fix the code below to correctly set the green and blue values to 0.75 times their current values.
 
-..            .. activecode::  ch11ex9q
+            .. activecode:: csprepeatimages_exercises13
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -512,7 +512,7 @@ Chapter Exercises
 
 ..     	    The code below sets all the pixels to half their original values with one for loop. Change the code so it uses 2 for loops that utilize the range function (1 for loop should be nested in the other).
 
-..             .. activecode::  ch11ex10q
+             .. activecode:: csprepeatimages_exercises14
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -546,7 +546,7 @@ Chapter Exercises
 
 ..            Change the following code to set the red to 0 for all pixels in the left half of the picture.
 
-..            .. activecode::  ch11ex11q
+            .. activecode:: csprepeatimages_exercises15
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -581,7 +581,7 @@ Chapter Exercises
 
 ..         	   The code below makes the whole image have a blue-green tint. Change the code so that it makes an only blue tint in the bottom left corner.
 
-..             .. activecode::  ch11ex12q
+             .. activecode:: csprepeatimages_exercises16
 ..                 :nocodelens:
 
 .. 		from image import *
@@ -610,7 +610,7 @@ Chapter Exercises
 
 ..            Change the code below to set the red value in the pixels in the bottom half of the picture to 0.
 
-..            .. activecode::  ch11ex13q
+            .. activecode:: csprepeatimages_exercises17
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -647,7 +647,7 @@ Chapter Exercises
 
 ..     	    The code below makes the whole image seem red. Change it, so that only every 5 pixels get changed, so that it will look like a red grid.
 
-..             .. activecode::  ch11ex14q
+             .. activecode:: csprepeatimages_exercises18
 ..                 :nocodelens:
 
 ..                 from image import *
@@ -678,7 +678,7 @@ Chapter Exercises
 
 ..            Change the following code into a procedure to keep only the green values in all pixels in a picture.
 
-..            .. activecode::  ch11ex15q
+            .. activecode:: csprepeatimages_exercises19
 ..                 :nocodelens:
 
 ..                 # STEP 1: USE THE IMAGE LIBRARY
@@ -713,7 +713,7 @@ Chapter Exercises
 
 ..             A grayscale picture is when the red, green, and blue value of a pixel are all equal to the average of the original pixel value. Write the code to turn the left half of an image into gray scale.
 
-..             .. activecode::  ch11ex16q
+             .. activecode:: csprepeatimages_exercises20
 ..                 :nocodelens:
 
 
@@ -727,7 +727,7 @@ Chapter Exercises
 
 ..            Define a procedure to negate an image.  See Image_Negate_Quarter from Chapter 11 section 7 for how to create a negative of an image.  Pass the image to the procedure.  Do the import, create the image, call the prodecure, and show the result.
 
-..            .. activecode::  ch11ex17q
+            .. activecode:: csprepeatimages_exercises21
 ..                 :nocodelens:
 
 
@@ -741,7 +741,7 @@ Chapter Exercises
 
 ..            Write a procedure to mirror an image from left to right around a vertical line in the middle of the image.  Pass the image to the procedure.  Do the import, create the image, call the prodecure, and show the result.
 
-..            .. activecode::  ch11ex19q
+            .. activecode:: csprepeatimages_exercises22
 ..                :nocodelens:
 
 
@@ -754,7 +754,7 @@ Chapter Exercises
 
 ..             Write code that flips the image across a horizontal line.
 
-..             .. activecode::  ch11ex20q
+             .. activecode:: csprepeatimages_exercises23
 ..                 :nocodelens:
 
 

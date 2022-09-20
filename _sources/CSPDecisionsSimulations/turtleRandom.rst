@@ -20,7 +20,7 @@ As a reminder, here are the turtle commands:
 
 |turtle_ref|
 
-.. activecode:: random_square
+.. activecode:: cspdecisionssimulations_turtlerandom1
     :nocodelens:
 
     def drawSquare(turtleName, size):
@@ -60,7 +60,7 @@ starting x location to be between -190 and 0 and the starting y to be between 0 
 So this version of the program uses ``goto(x, y)`` and random numbers to pick a random 
 starting location before drawing each square. We use a loop to draw 5 squares.
 
-.. activecode:: random_squares
+.. activecode:: cspdecisionssimulations_turtlerandom2
     :nocodelens:
 
     def drawSquare(turtleName, size):
@@ -92,7 +92,7 @@ you need to call ``becca.fillcolor(red, green, blue)`` where red/green/blue are 
 between 0-255. The ``drawSquare`` procedure has been changed to call ``begin_fill`` and ``end_fill``
 to fill in the squares.
 
-.. activecode:: random_color_squares
+.. activecode:: cspdecisionssimulations_turtlerandom3
     :nocodelens:
     :practice: T
     :autograde: unittest

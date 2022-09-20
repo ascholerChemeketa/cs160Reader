@@ -15,7 +15,7 @@ don't care about where they started, or which bike they were on, we just want to
 know how many such rides there were. 
 To ask for the total number of records a query finds, we can select ``COUNT(*)``.
 
-.. activecode:: bikeshare_count_star
+.. activecode:: sqlgroupjoin_aggregating1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -28,7 +28,7 @@ The ``AS`` keyword is used after ``COUNT(*)`` to give the data that is returned 
 leave it off, the "column" of data will just be labeled ``COUNT(*)``. Calling it ``number_rides``
 makes it much clearer what we are looking at.
 
-.. activecode:: bikeshare_trips_starting_and_ending_at_31111
+.. activecode:: sqlgroupjoin_aggregating2
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -56,7 +56,7 @@ But there are other ways we can aggregate data with SQL:
 
 For example, the query below calculates the minimum and maximum trip duration:
 
-.. activecode:: bikeshare_min_and_max_trip_duration
+.. activecode:: sqlgroupjoin_aggregating3
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -67,7 +67,7 @@ For example, the query below calculates the minimum and maximum trip duration:
      trip_data
 
 
-.. activecode:: bikeshare_station_mean_trip
+.. activecode:: sqlgroupjoin_aggregating4
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -82,7 +82,7 @@ You use ``WHERE`` filtering with aggregating functions. The
 query below calculates the longest trip duration just for trips made by Casual
 member type users.
 
-.. activecode:: bikeshare_max_duration_for_casual_member_type
+.. activecode:: sqlgroupjoin_aggregating5
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -94,7 +94,7 @@ member type users.
      member_type = 'Casual'
 
 
-.. activecode:: bikeshare_total_for_bike
+.. activecode:: sqlgroupjoin_aggregating6
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -116,7 +116,7 @@ with ``DISTINCT``. For example, the query below counts the number of bike
 numbers used.
 
 
-.. activecode:: bikeshare_count_distinct_bikes
+.. activecode:: sqlgroupjoin_aggregating7
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -125,7 +125,7 @@ numbers used.
     FROM
         trip_data
 
-.. activecode:: bikeshare_number_of_start_stations
+.. activecode:: sqlgroupjoin_aggregating8
     :language: sql
     :dburl: /_static/bikeshare.db
 

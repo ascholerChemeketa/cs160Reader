@@ -26,7 +26,7 @@ we need to describe the situation that means *"keep doing the loop"*. If we want
 the quotient is 0"* that is the same as *"keep going while the quotient is NOT 0."* Try running
 this version of the algorithm in codelens mode:
 
-.. activecode:: binary_10_4
+.. activecode:: csprepeatnumbers_whilegeneral1
 
     number = 11
     binary = ""     # this will hold our answer
@@ -54,7 +54,7 @@ this version of the algorithm in codelens mode:
     enters 0", turn it into **while** by reversing it - "Keep going while the user has NOT entered
     0".
 
-.. mchoice:: 10_4_while_cond
+.. mchoice:: csprepeatnumbers_whilegeneral2
     :answer_a: while balance >= 10000
     :answer_b: while balance < 10000
     :answer_c: while balance == 10000
@@ -74,7 +74,7 @@ accurate answer we can produce, without having to worry in advance about how man
 should ask for. Try running this program and changing ``number`` to smaller and larger values.
 Notice how the number of repetitions is different for different numbers.
 
-.. activecode:: 10_4_sqrt
+.. activecode:: csprepeatnumbers_whilegeneral3
 
     number = 110
     guess = number              # guess will store our most recent guess

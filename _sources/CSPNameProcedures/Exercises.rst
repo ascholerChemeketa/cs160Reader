@@ -12,7 +12,7 @@
 Chapter Exercises
 ============================
 
-.. activecode:: ch5ex1q
+.. activecode:: cspnameprocedures_exercises1
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -49,7 +49,7 @@ Chapter Exercises
 
     myTests().main()
 
-.. activecode:: ch5ex2q
+.. activecode:: cspnameprocedures_exercises2
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -91,7 +91,7 @@ Chapter Exercises
 
     myTests().main()
 
-.. activecode:: ch5ex3q
+.. activecode:: cspnameprocedures_exercises3
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -137,7 +137,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch5ex4q
+.. activecode:: cspnameprocedures_exercises4
     :autograde: unittest
     :nocodelens:
     :practice: T
@@ -205,7 +205,7 @@ Chapter Exercises
 
 ..             Change the code to take 3 parameters, a turtle, a size that tells it how far to go, and an angle it tells the turtle to turn.
 
-..             .. activecode::  ch6ex6q
+             .. activecode:: cspnameprocedures_exercises5
 ..                 :nocodelens:
 
 ..                 def move(turtle):
@@ -233,7 +233,7 @@ Chapter Exercises
 
 ..            The following code has three lines that need to be changed.  Fix the code to run correctly.
 
-..            .. activecode::  ch6ex7q
+            .. activecode:: cspnameprocedures_exercises6
 ..                 :nocodelens:
 
 ..                 def square(turtle,size):
@@ -266,7 +266,7 @@ Chapter Exercises
 
 ..            Create a procedure to draw a rectangle and call it.  Be sure to take the ``width`` and ``height`` of the rectangle as input to the procedure.
 
-..            .. activecode::  ch6ex15q
+            .. activecode:: cspnameprocedures_exercises7
 ..                 :nocodelens:
 
 
@@ -279,7 +279,7 @@ Chapter Exercises
 
 ..            Create a procedure to draw a triangle and call it.  Be sure to take the length of each side of the triangle as input to the procedure.
 
-..            .. activecode::  ch6ex17q
+            .. activecode:: cspnameprocedures_exercises8
 ..                 :nocodelens:
 
 
@@ -292,5 +292,5 @@ Chapter Exercises
 
 ..             Create a procedure that takes 7 paramters (turtle, distance, angle, and 4 color strings) and call the procedure to draw a square in 4 different colors.
 
-..             .. activecode::  ch6ex18q
+             .. activecode:: cspnameprocedures_exercises9
 ..                 :nocodelens:

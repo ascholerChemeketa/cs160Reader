@@ -66,7 +66,7 @@ Confused by how number systems determine the value of the digits in a number? Ch
     :class: underlined
 
 
-.. fillintheblank:: numbersystems_1
+.. fillintheblank:: datarepresentation_numbersystems1
 
     What decimal value does the binary number 1010 represent?
 
@@ -77,7 +77,7 @@ Confused by how number systems determine the value of the digits in a number? Ch
       :x: Hint: With 4 binary digits what columns will you be using?
 
 
-.. mchoice:: numbersystems_2
+.. mchoice:: datarepresentation_numbersystems2
     :answer_a: 1
     :answer_b: 5
     :answer_c: 6

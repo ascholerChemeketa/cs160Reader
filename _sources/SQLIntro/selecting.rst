@@ -44,7 +44,7 @@ Let's use a ``SELECT`` to get all the data from the ``trip_data`` table. The fol
 an example of how to do so. It asks the database to ``SELECT`` all columns (``*`` is a shorthand
 that means "all columns") ``FROM`` the table named ``trip_data``.
 
-.. activecode:: tracks_select
+.. activecode:: sqlintro_selecting1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -62,7 +62,7 @@ we would want to specify a list of columns we actually care about instead of usi
 To select just the ``start_date``, ``end_date``, and ``duration`` columns, the query
 would look like the following:
 
-.. activecode:: bikeshare_select_columns
+.. activecode:: sqlintro_selecting2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -81,7 +81,7 @@ Notice that we can specify the columns in any order - the order we ask for them 
 not have to match the order in the original table. Try changing the query so that
 duration is the first row that is returned.
 
-.. activecode:: bikeshare_select_start_and_end_stations
+.. activecode:: sqlintro_selecting3
     :language: sql
     :dburl: /_static/bikeshare.db
 

@@ -20,7 +20,7 @@ the comparison operators like ``==``, ``!=``, ``>``, etc... all work with string
 This program is something like we might have in part of a text based adventure game where the
 user is trying to navigate a maze:
 
-.. activecode:: csp_sd_story
+.. activecode:: cspdecisionsstrings_input1
     
     print("You are in front of a creepy door in a hallway.")
     print("What do you want to do?")
@@ -35,7 +35,7 @@ user is trying to navigate a maze:
         print("You choose to turn right.")
         print("A greenish light is visible in the distance.")
    
-.. mchoice:: 13_2_2_story1
+.. mchoice:: cspdecisionsstrings_input2
     :answer_a: The room is pitch black.
     :answer_b: A ghost appears at the end of the hall.
     :answer_c: A greenish light is visible in the distance.  
@@ -64,7 +64,7 @@ immediately see the result instead of having to type in all the inputs every tim
 Then, once you get the function working, you can remove the hardcoded values and start using
 real input.
 
-.. activecode:: 13_2_gpa
+.. activecode:: cspdecisionsstrings_input3
     :autograde: unittest
     :practice: T
 

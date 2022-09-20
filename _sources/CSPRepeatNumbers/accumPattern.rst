@@ -66,7 +66,7 @@ Here are the five steps in this pattern:
 
 What is the sum of all the numbers between 1 and 100?  We can answer that easily using our pattern.
 
-.. activecode:: Numbers_Sum
+.. activecode:: csprepeatnumbers_accumpattern1
 
     # STEP 1: INITIALIZE ACCUMULATOR 
     sum = 0  # Start out with nothing
@@ -82,7 +82,7 @@ Step 3 does not have to use ``+`` to build up our answer. We could use ``*`` in 
 pattern to build up the value of :math:`7!`. (:math:`7!` means the value you get by calculating
 :math:`7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1`)
 
-.. activecode:: Factorial_Accumulator
+.. activecode:: csprepeatnumbers_accumpattern2
 
     # STEP 1: INITIALIZE ACCUMULATOR 
     product = 1  # 0! is defined as 1... that is our starting point
@@ -98,7 +98,7 @@ One ingredient that is critical is that we do step 1 before the loop starts. If 
 initialize the accumulator in the loop we will just keep resetting it. Watch this failed
 attempt to add up the numbers from 1 to 5 run line by line to see why:
 
-.. codelens:: BadAcccumulator
+.. codelens:: csprepeatnumbers_accumpattern3
 
     # STEP 2: LOOP THROUGH THE DATA
     for number in range(6):
@@ -112,7 +112,7 @@ attempt to add up the numbers from 1 to 5 run line by line to see why:
 
 
 
-.. parsonsprob:: 10_5_3_Sum_100
+.. parsonsprob:: csprepeatnumbers_accumpattern4
     :numbered: left
     :adaptive:
 

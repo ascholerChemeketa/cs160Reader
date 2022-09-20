@@ -16,7 +16,7 @@ that in includes a "y" or "Y". First it changes the input to be all lowercase, t
 tests if there is a "y" in it. Try it with "Yes", "yeah", "yes please continue", "y", etc...
 they all should work.
 
-.. activecode:: 13_continue
+.. activecode:: cspdecisionsstrings_instring1
 
     continue = input("Do you wish to continue?")
     continue = continue.lower()   # change input to lower case
@@ -30,7 +30,7 @@ they all should work.
 We can combine ``in`` with other tricks like ``or`` or ``and`` to make more complex tests.
 Complete this mixed up code problem that tells the user what season a given month is part of:
 
-.. activecode:: 13_seasons
+.. activecode:: cspdecisionsstrings_instring2
     :autograde: unittest
     :practice: T
 
@@ -78,7 +78,7 @@ Another common need is to check how long a string is. The ``len()`` function can
 for the length of a string. It accepts a string as its parameter and returns the length of that
 string.
 
-.. activecode:: 13_len
+.. activecode:: cspdecisionsstrings_instring3
 
     name = "Daphne"
     nameLength = len(name)
@@ -87,7 +87,7 @@ string.
     fullName = "Daphne Smith"
     print("The full name is", len(fullName), "letters long.")
 
-.. mchoice:: 13_len_details
+.. mchoice:: cspdecisionsstrings_instring4
     :answer_a: 8
     :answer_b: 7
     :answer_c: 0

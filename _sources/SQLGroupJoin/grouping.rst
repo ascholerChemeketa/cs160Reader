@@ -28,7 +28,7 @@ The ``GROUP BY`` statement allows you to group data as you aggregate it.
 The following query counts the number of trips (``COUNT(*)``) for each member
 type (``GROUP BY member_type``).
 
-.. activecode:: bikeshare_count_trips_per_member_type
+.. activecode:: sqlgroupjoin_grouping1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -67,7 +67,7 @@ for each start station. Because we are grouping on ``start_station``, we ``SELEC
 which is selected from twice) have an aggregation function (``MAX`` or ``MIN`` in
 this case).
 
-.. activecode:: bikeshare_min_and_max_trip_duration_by_start_station
+.. activecode:: sqlgroupjoin_grouping2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -85,7 +85,7 @@ gets used to calculate the aggregated value. You just need to make sure to put t
 ``WHERE`` before teh ``GROUP BY``. For example, you can calculate the number
 of trips started from each station for just the bike 'W000001' with this query:
 
-.. activecode:: bikeshare_filter_and_group_by_different_columns
+.. activecode:: sqlgroupjoin_grouping3
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -99,7 +99,7 @@ of trips started from each station for just the bike 'W000001' with this query:
     GROUP BY
         start_station
 
-.. parsonsprob:: bikeshare_grouping_parsons
+.. parsonsprob:: sqlgroupjoin_grouping4
     :numbered: left
     :adaptive:
 
@@ -126,7 +126,7 @@ of trips started from each station for just the bike 'W000001' with this query:
     =====
         average_time DESC
 
-.. activecode:: bikeshare_bike_with_most_trips
+.. activecode:: sqlgroupjoin_grouping5
     :language: sql
     :dburl: /_static/bikeshare.db
 

@@ -18,7 +18,7 @@ can use this to create a column that tells you whether the duration is over one
 hour (3600 seconds).
 
 
-.. activecode:: bikeshare_count_trips_above_below_one_hour
+.. activecode:: sqlgroupjoin_ifs_and_cases1
    :language: sql
    :dburl: /_static/bikeshare.db
 
@@ -90,7 +90,7 @@ number of trips for different durations. The durations are grouped manually
 using the ``CASE`` structure.
 
 
-.. activecode:: bikeshare_count_trips_by_duration
+.. activecode:: sqlgroupjoin_ifs_and_cases2
    :language: sql
    :dburl: /_static/bikeshare.db
 

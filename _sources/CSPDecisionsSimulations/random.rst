@@ -29,7 +29,7 @@ the ``randrange`` function in the ``random`` library. To use it, we have to impo
 then call the function. Try running this program a few times to see that it does in fact generate
 a random number each time it runs:
 
-.. activecode:: 12_rand_1
+.. activecode:: cspdecisionssimulations_random1
 
      import random
 
@@ -41,7 +41,7 @@ and the ending value for the range (exclusive). So ``randrange(1, 5)`` picks an 
 range that starts at 1 and ends before 5. We can also call it with just an end value like
 ``randrange(5)``
 
-.. mchoice:: 12_rand_recipe
+.. mchoice:: cspdecisionssimulations_random2
     :answer_a: 0
     :answer_b: 10
     :answer_c: 19
@@ -54,7 +54,7 @@ range that starts at 1 and ends before 5. We can also call it with just an end v
 
     What is a value that the recipe ``random.randrange(12, 20)`` can produce?
 
-.. fillintheblank:: 12_rand_recipe_2
+.. fillintheblank:: cspdecisionssimulations_random3
 
     We want to make a random whole number between 2 and 4. Fill in the blank in this
     recipe: ``random.randrange(________________)``

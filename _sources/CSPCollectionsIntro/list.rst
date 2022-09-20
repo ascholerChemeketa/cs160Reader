@@ -32,7 +32,7 @@ The values in a list can be any type of data, and can even be a mix of types of 
 (though it is often best to avoid complicating things by mixing different types of
 data in one list).
 
-.. activecode:: list_samples
+.. activecode:: cspcollectionsintro_list1
 
     numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     print(numberList)
@@ -46,7 +46,7 @@ data in one list).
 Recall that the ``for`` loop will automatically repeat code for each value in a list. That means
 if I want to greet each name in the ``nameList`` I could do:
 
-.. activecode:: list_for_sample
+.. activecode:: cspcollectionsintro_list2
 
     nameList = ["Dora", "Rex", "Humberto", "Devon"]
 
@@ -59,7 +59,7 @@ Putting items into a list makes it easier to process them all in a similar way w
 chunks of code multiple times. Complete this algorithm for the problem discussed on the last page
 of finding the highest quiz score.
 
-.. parsonsprob:: list_basics_parson
+.. parsonsprob:: cspcollectionsintro_list3
     :numbered: left
     :practice: T
     :adaptive:

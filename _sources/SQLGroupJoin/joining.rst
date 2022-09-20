@@ -14,7 +14,7 @@ in a database.
 Imagine that we write a query on the ``trip_data`` table to find
 the station with the longest overall ride:
 
-.. activecode:: find_station_with_longest
+.. activecode:: sqlgroupjoin_joining1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -31,7 +31,7 @@ That query gives us the station id (31104), but what if we want its name?
 The name of each station is in the :ref:`bikeshare_stations` table. To get the name
 of station 31104, we could query it (notice the ``FROM`` clause):
 
-.. activecode:: bikeshare_rows_from_stations_table
+.. activecode:: sqlgroupjoin_joining2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -73,7 +73,7 @@ and ``bikeshare_stations`` as the second. In ``trip_data``, the station number i
 ``start_station``. In ``bikeshare_stations`` those same values are stored in the ``station_id``
 column.
 
-.. activecode:: bikeshare_joined
+.. activecode:: sqlgroupjoin_joining3
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -99,7 +99,7 @@ As another example, suppose you want to find the number of bikeshare trips that 
 *Van Ness Metro / UDC* station. You can join the ``end_station`` field from
 the ``trip_data`` table to the ``station_id`` field in the ``bikeshare_stations`` table.
 
-.. activecode:: bikeshare_trips_to_van_ness_metro_udc
+.. activecode:: sqlgroupjoin_joining4
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -116,7 +116,7 @@ Again, in the WHERE clause, we are being very specific. Because there is only
 one ``name`` column in the two tables, we could just say ``name``. But it never hurts
 to be clear about which table we are talking about once we start joining data.
 
-.. activecode:: bikeshare_number_of_trips_from_adams_mill_columbia
+.. activecode:: sqlgroupjoin_joining5
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -126,7 +126,7 @@ to be clear about which table we are talking about once we start joining data.
     ====
     0,0 == 9883
 
-.. activecode:: bikeshare_open_vs_closed_stations
+.. activecode:: sqlgroupjoin_joining6
     :language: sql
     :dburl: /_static/bikeshare.db
 

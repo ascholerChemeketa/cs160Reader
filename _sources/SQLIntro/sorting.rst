@@ -14,7 +14,7 @@ We can use SQL to specify how to sort the records that are retrieved by a query 
 an ``ORDER BY`` clause. For example, the following query returns bike trips ordered by
 duration:
 
-.. activecode:: bikeshare_order_by_duration
+.. activecode:: sqlintro_sorting1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -32,7 +32,7 @@ To make the order go from largest to smallest (**descending** order), we need to
 specify ``DESC`` after the column name we are ordering by. (If we want to be explicit
 about ascending order, we can say ``ASC``, but do not need to since that is the default.)
 
-.. activecode:: bikeshare_order_by_duration_desc
+.. activecode:: sqlintro_sorting2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -55,7 +55,7 @@ return:
 but to ``LIMIT`` the
 output to the first 10 rows.
 
-.. activecode:: bikeshare_order_by_duration_limit
+.. activecode:: sqlintro_sorting3
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -72,7 +72,7 @@ to do something like selecting just the start date, station and the duration for
 trips starting from station 31111, sorting them from longest to shortest, and only
 keeping the first (longest) 10:
 
-.. activecode:: bikeshare_order_by_duration_with_where_clause
+.. activecode:: sqlintro_sorting4
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -103,7 +103,7 @@ rows will be ordered by ``end_station``, then within each pair of
 ``start_station`` and ``end_station`` values, the rows will be ordered by
 ``duration``.
 
-.. activecode:: bikeshare_order_by_multiple_columns
+.. activecode:: sqlintro_sorting5
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -125,7 +125,7 @@ rows will be ordered by ``end_station``, then within each pair of
 
 Now try to write SQL queries that will answer the following questions.
 
-.. activecode:: bikeshare_most_recent_start_date
+.. activecode:: sqlintro_sorting6
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -142,7 +142,7 @@ Now try to write SQL queries that will answer the following questions.
     assert 0,0 == W00042
 
 
-.. activecode:: bikeshare_longest_ride_with_same_start_end
+.. activecode:: sqlintro_sorting7
     :language: sql
     :dburl: /_static/bikeshare.db
 

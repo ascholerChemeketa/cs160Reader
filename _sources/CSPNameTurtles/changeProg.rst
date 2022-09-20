@@ -21,7 +21,7 @@
 
 .. Run the following program.  
 
-.. .. activecode:: Turtle_Names4
+ .. activecode:: cspnameturtles_changeprog1
 ..     :nocodelens:
 
 ..     from turtle import * 	# use the turtle library
@@ -31,7 +31,7 @@
 ..     alex.left(90)       	# turn by 90 degrees
 ..     alex.forward(75)      	# tell alex to move forward by 75 units
 
-.. .. mchoice:: 5_6_1_Turtle_Names4_Q1
+ .. mchoice:: cspnameturtles_changeprog2
 ..    :answer_a: Change the 150 to 90
 ..    :answer_b: Change the 75 to 90
 ..    :answer_c: Change the 75 to 150
@@ -45,7 +45,7 @@
 
 .. **Slightly Harder Problem:** Now, let's connect the end point to the starting point.  The shape we'll create is a right triangle (a triangle that has a 90 degree interior angle).  The number 57 isn't guesswork -- it is roughly the square root of 40^2 + 40^2.  However, there is an error in this program and it won't work as intended.  **Can you fix it?**  
 
-.. .. activecode:: Turtle_Names5
+ .. activecode:: cspnameturtles_changeprog3
 ..     :nocodelens:
 	
 ..     from turtle import * 	# use the turtle library
@@ -58,7 +58,7 @@
 ..     alex.forward(57)      	# Close the triangle
 
 
-.. .. mchoice:: 5_6_2_Turtle_Names5_Q1
+ .. mchoice:: cspnameturtles_changeprog4
 ..    :answer_a: alex.left(45)
 ..    :answer_b: alex.left(90)
 ..    :answer_c: alex.left(135)

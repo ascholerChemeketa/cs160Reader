@@ -62,7 +62,7 @@ block after the ``if`` statement.
 Run the program below in codelens. Then change the first line so that it sets x to 4 and again
 run with codelens to see how the behavior differs if the test is True or False.
 
-.. activecode:: If_Structure
+.. activecode:: cspdecisionsintro_if1
 
     x = 0
     if x < 3:
@@ -88,7 +88,7 @@ then continues running.
 
     Figure 3: Flow of execution for an if statement
     
-.. mchoice:: 11_2_1_If_Structure
+.. mchoice:: cspdecisionsintro_if2
     :practice: T
     :answer_a: A
     :answer_b: B

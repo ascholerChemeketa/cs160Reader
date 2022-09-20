@@ -11,7 +11,7 @@
 Chapter Exercises
 --------------------
 
-.. activecode:: ch10ex1
+.. activecode:: csprepeatnumbers_exercises1
    :practice: T
 
     Complete the code to create a program that adds up all the numbers from 10 to 20. Make sure to
@@ -32,7 +32,7 @@ Chapter Exercises
 
     myTests().main()
 
-.. activecode:: ch10ex2
+.. activecode:: csprepeatnumbers_exercises2
    :practice: T
 
     Complete the code to calculate the sum of the squares of all numbers from 1-10 (inclusive). The sum of squares
@@ -59,7 +59,7 @@ Chapter Exercises
 
     myTests().main()
 
-.. parsonsprob:: ch10_ex3
+.. parsonsprob:: csprepeatnumbers_exercises3
     :numbered: left
     :practice: T
 
@@ -93,7 +93,7 @@ Chapter Exercises
     print("After", time, "seconds)
     print("the object is on the ground")
 
-.. activecode:: ch10ex4
+.. activecode:: csprepeatnumbers_exercises4
     :practice: T
 
     To count how many digits there are in a number, you can do the following:
@@ -133,7 +133,7 @@ Chapter Exercises
     myTests().main()
 
 
-.. activecode:: ch10ex5
+.. activecode:: csprepeatnumbers_exercises5
     :practice: T
 
     Below is the start of a program to calculate how long it will take to have at least $50,000 if
@@ -175,7 +175,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code so that it prints the sum of all the numbers 1 to 10.
 
-..             .. activecode::  ch10ex2q
+             .. activecode:: csprepeatnumbers_exercises6
 ..                 :nocodelens:
 
 ..                 sum = 0
@@ -194,7 +194,7 @@ Chapter Exercises
 
 ..            Change the code below into a function that returns the sum of a list of numbers.  Pass the list of numbers as a parameter and print the result of calling the function.
 
-..            .. activecode::  ch10ex3q
+            .. activecode:: csprepeatnumbers_exercises7
 ..                 :nocodelens:
 
 ..                 sum = 0  # Start out with nothing
@@ -214,7 +214,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code so that it prints the product of every 5th number between 5 and 25, inclusive. So, the product of 5, 10, 15, ..., 25.
 
-..             .. activecode::  ch10ex4q
+             .. activecode:: csprepeatnumbers_exercises8
 ..                 :nocodelens:
 
 ..                 product = 0
@@ -233,7 +233,7 @@ Chapter Exercises
 
 ..            Fill in the missing code on lines 3 and 4 to loop through the list of numbers and calculate the product.  Add a line at the end to print the value in ``product``.
 
-..            .. activecode::  ch10ex5q
+            .. activecode:: csprepeatnumbers_exercises9
 ..                 :nocodelens:
 
 ..                 product = 1  # Start out with nothing
@@ -252,7 +252,7 @@ Chapter Exercises
 
 ..             Fix the errors in the code so that it prints the sum of all the odd numbers 1 through 20.
 
-..             .. activecode::  ch10ex6q
+             .. activecode:: csprepeatnumbers_exercises10
 ..                 :nocodelens:
 
 ..                 sum = 1
@@ -271,7 +271,7 @@ Chapter Exercises
 
 ..            Modify the code below to create a function that calculates the product of a list of numbers and returns it. Have the function take a list of numbers as a parameter.  Call the function to test it and print the result of calling the function.
 
-..            .. activecode::  ch10ex7q
+            .. activecode:: csprepeatnumbers_exercises11
 ..                 :nocodelens:
 
 ..                 product = 1  # Start out with 1
@@ -290,7 +290,7 @@ Chapter Exercises
 
 ..             Fix the error in the code so that it takes each string in the list and prints out the sentence "I like to eat pizza".
 
-..             .. activecode::  ch10ex8q
+             .. activecode:: csprepeatnumbers_exercises12
 ..                 :nocodelens:
 
 ..                 aString = ""
@@ -309,7 +309,7 @@ Chapter Exercises
 
 ..            Fill in the code below on lines 2, 4, and 6 to correctly add up and print the sum of all the even numbers from 0 to 10 (inclusive).
 
-..            .. activecode::  ch10ex9q
+            .. activecode:: csprepeatnumbers_exercises13
 ..                 :nocodelens:
 
 ..                 # STEP 1: INITIALIZE ACCUMULATOR
@@ -333,7 +333,7 @@ Chapter Exercises
 
 ..             Write code that prints the square of each number 1 through 10 in the format "1 * 1 = 1", etc.
 
-..             .. activecode::  ch10ex10q
+             .. activecode:: csprepeatnumbers_exercises14
 ..                 :nocodelens:
 
 
@@ -346,7 +346,7 @@ Chapter Exercises
 
 ..            Define a function to calculate the sum of the even numbers from 0 to the passed number.  Return the sum from the function.  Call the function and print the result.
 
-..            .. activecode::  ch10ex11q
+            .. activecode:: csprepeatnumbers_exercises15
 ..                 :nocodelens:
 
 ..                 # STEP 1: INITIALIZE ACCUMULATOR
@@ -370,7 +370,7 @@ Chapter Exercises
 
 ..             Create a function that returns the factorial of a passed number and call the function and print the result.
 
-..             .. activecode::  ch10ex12q
+             .. activecode:: csprepeatnumbers_exercises16
 ..                 :nocodelens:
 
 
@@ -383,7 +383,7 @@ Chapter Exercises
 
 ..            Fix the code below to correctly calculate and return the product of all of the even numbers from 10 to 20.
 
-..            .. activecode::  ch10ex13q
+            .. activecode:: csprepeatnumbers_exercises17
 ..                 :nocodelens:
 
 ..                 # STEP 1: INITIALIZE ACCUMULATOR
@@ -407,7 +407,7 @@ Chapter Exercises
 
 ..             Create a list of all odd numbers from 1 to 20 and find the average. Then create a list of numbers from 1 to 100 using the average as the increment and print the product of those numbers.
 
-..             .. activecode::  ch10ex14q
+             .. activecode:: csprepeatnumbers_exercises18
 ..                 :nocodelens:
 
 
@@ -420,7 +420,7 @@ Chapter Exercises
 
 ..            Create a procedure to calculate and return the sum of all of the odd numbers from 1 to a passed last number (inclusive).  Call the function to test and it print the result.
 
-..            .. activecode::  ch10ex15q
+            .. activecode:: csprepeatnumbers_exercises19
 ..                 :nocodelens:
 
 
@@ -433,7 +433,7 @@ Chapter Exercises
 
 ..             Complete the code for a function that takes a list of letters and combines them into a word. It should print "Hi".
 
-..             .. activecode::  ch10ex16q
+             .. activecode:: csprepeatnumbers_exercises20
 ..                 :nocodelens:
 
 ..                 def letterCombiner( ):
@@ -455,7 +455,7 @@ Chapter Exercises
 
 ..            Create a function to calculate and return the product of all of the even numbers from 2 to the passed end number (inclusive).  Be sure to call the function to test it and print the result.
 
-..            .. activecode::  ch10ex17q
+            .. activecode:: csprepeatnumbers_exercises21
 ..                 :nocodelens:
 
 
@@ -468,7 +468,7 @@ Chapter Exercises
 
 ..             Write a function that takes two inputs, a start and stop for a range (inclusive). Find the product and the sum of all the numbers and return the average between those two numbers. make a call to the function where you print the result
 
-..             .. activecode::  ch10ex18q
+             .. activecode:: csprepeatnumbers_exercises22
 ..                 :nocodelens:
 
 
@@ -481,7 +481,7 @@ Chapter Exercises
 
 ..            Write a function that will take a list of numbers and return the average.  Remember that the average is the sum of all of the numbers in the list divided by the number of items in the list.  You can get the length of a list using the ``len(list)`` function.
 
-..            .. activecode::  ch10ex19q
+            .. activecode:: csprepeatnumbers_exercises23
 ..                :nocodelens:
 
 
@@ -494,5 +494,5 @@ Chapter Exercises
 
 ..             Create a function that takes one integer parameter and gets a list of all the odd numbers in that range and all the even numbers in that range. Find the product of all the even numbers, the sum of all the odd numbers, and then return the difference of the product by the sum and divide by the average of the two. Call the function and print the result.
 
-..             .. activecode::  ch10ex20q
+             .. activecode:: csprepeatnumbers_exercises24
 ..                 :nocodelens:

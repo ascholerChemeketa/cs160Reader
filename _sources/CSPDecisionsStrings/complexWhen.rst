@@ -18,7 +18,7 @@ ourselves.
 
 One sign that you may want to use an ``and`` to simplify things, is if you have a nested if:
 
-.. activecode:: nested_if_vs_and
+.. activecode:: cspdecisionsstrings_complexwhen1
 
     x = 8
     if x <= 10:
@@ -30,7 +30,7 @@ The inner print statement will only run if ``x >= 1`` is true. But the if statem
 for that is inside ``if x <= 10``. So it only runs if x is 10 or less. Thus to reach the message about
 ``x``, it must be both 10 or less and 1 or more. So why not just write it like this?
 
-.. activecode:: nested_if_vs_and2
+.. activecode:: cspdecisionsstrings_complexwhen2
 
     x = 8
     if x <= 10 and  x >= 1:
@@ -39,7 +39,7 @@ for that is inside ``if x <= 10``. So it only runs if x is 10 or less. Thus to r
 
 Similarly, we could write the back check logic from the last page using multiple ``if`` statements:
 
-.. activecode:: multiple_ors
+.. activecode:: cspdecisionsstrings_complexwhen3
 
     answer = input("Do you have a bag to check? (yes/no)")
     if answer == "yes":
@@ -51,7 +51,7 @@ Similarly, we could write the back check logic from the last page using multiple
 But that means repeating the print statement multiple times. So the version that used ``or``
 is better than this.
 
-.. mchoice:: 12_5_1_or3
+.. mchoice:: cspdecisionsstrings_complexwhen4
     :practice: T
     :answer_a: if age > 12 and age < 20:
     :answer_b: if age > 12 or age < 20:
@@ -73,7 +73,7 @@ It is fine to chain a bunch or and or or's together to make one large expression
 This program accepts four different answers - because all four expressions are combined with or,
 only one part needs to be true to make the whole thing true.
 
-.. activecode:: Example_With_MultipleOr
+.. activecode:: cspdecisionsstrings_complexwhen5
 
     answer = input("Do you have a bag to check? (yes/no)")
     if answer == "yes" or answer =="y" or answer == "Y" or answer == "YES":

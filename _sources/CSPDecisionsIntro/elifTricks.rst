@@ -32,7 +32,7 @@ or ``elif`` whose condition is true is the one that will run.
 In this version of the program, a score of 83 will NOT be a B. Can you see why? Try running
 it in codelens mode.
 
-.. activecode:: bad_grade_elif
+.. activecode:: cspdecisionsintro_eliftricks1
 
     score = 83
     if score >= 90:
@@ -51,7 +51,7 @@ highest to lowest, or from lowest to highest. The program below shows starting w
 lowest option and working our way up. Assumes x represents a percentile and we want to
 indicate which quartile it is in. 
 
-.. activecode:: sd_four_options
+.. activecode:: cspdecisionsintro_eliftricks2
 
     x = .25
     if x <= .25:
@@ -63,7 +63,7 @@ indicate which quartile it is in.
     else:
         print("x is in the fourth quartile - .75 < x <= 1")
 
-.. mchoice:: 11_4_2_elif1
+.. mchoice:: cspdecisionsintro_eliftricks3
    :answer_a: x is in the first quartile - x <= .25
    :answer_b: x is in the second quartile - .25 < x <= .5
    :answer_c: x is in the third quartile - .5 < x <= .75
@@ -76,7 +76,7 @@ indicate which quartile it is in.
 
    What would be printed if you moved lines 6-7 before lines 4-5 and set x equal to .5?
 
-.. activecode:: 11_4_elif_ac
+.. activecode:: cspdecisionsintro_eliftricks4
     :autograde: unittest
     :practice: T
 

@@ -17,7 +17,7 @@ one piece of information. For instance, the program below is designed to find ou
 a student has and if they have picked a major. If the student is in their first year and does
 not have a major, we want to recommend a First Year Experience class to them:
 
-.. activecode:: csp_no_or_and
+.. activecode:: cspdecisionsstrings_complex1
 
     credits = int(input("How many credits do you have?"))
     madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
@@ -70,7 +70,7 @@ Here is the same program written using ``and`` and ``or``. Hopefully you agree t
 simple and clear than what we started with. On the following page, we will look more closely at
 how ``and``, ``or``, and ``not`` work.
 
-.. activecode:: csp_or_and
+.. activecode:: cspdecisionsstrings_complex2
 
     credits = int(input("How many credits do you have?"))
     madeDecision = input("Have you decided on a major? (Y/N or Yes/No")

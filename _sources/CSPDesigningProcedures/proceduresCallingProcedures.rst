@@ -25,7 +25,7 @@ We notice that it consists of three rows. Each row consists of three squares. We
 how to write a procedure draw a square... lets use it to write a procedure to draw a row of
 squares:
 
-.. activecode:: procedure_composition_1
+.. activecode:: cspdesigningprocedures_procedurescallingprocedures1
     :nocodelens:
 
     def square(turtle, size):
@@ -63,7 +63,7 @@ any time we say ``turtle`` in the square procedure, we are going to be working w
 
 Now we can use the ``row`` to help write a ``grid`` procedure that makes the final picture:
 
-.. activecode:: procedure_composition_2
+.. activecode:: cspdesigningprocedures_procedurescallingprocedures2
     :nocodelens:
 
     def square(turtle, size):
@@ -119,7 +119,7 @@ it to ``row``, which calls it ``turtleName``, which passes it to ``square`` whic
 ``turtle``. Each of the functions has its own "nickname" for the turtle that they are all
 working with.
 
-.. parsonsprob:: 5_4_4_parameter_names
+.. parsonsprob:: cspdesigningprocedures_procedurescallingprocedures3
     :numbered: left
     :adaptive:
 

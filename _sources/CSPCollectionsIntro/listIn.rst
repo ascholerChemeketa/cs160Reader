@@ -16,7 +16,7 @@ In and Not In
 To check if an item is in a list, we can use the ``in`` operator. To check if something is
 not in a list, we can use ``not in``:
 
-.. activecode:: list_in
+.. activecode:: cspcollectionsintro_listin1
 
     inviteList = ["Dora", "Rex", "Humberto", "Devon"]
 
@@ -29,7 +29,7 @@ not in a list, we can use ``not in``:
 Because ``in`` and ``not in`` are opposites, we can often use just one or the other and
 handle the other case with else:
 
-.. activecode:: list_in_input
+.. activecode:: cspcollectionsintro_listin2
 
     inviteList = ["Dora", "Rex", "Humberto", "Devon"]
     name = input("Enter a name to check against the list:")

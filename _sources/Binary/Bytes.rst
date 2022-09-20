@@ -58,7 +58,7 @@ Fortunately, the values of the base 2 and base 10 systems are close enough that 
     :class: underlined
 
 
-.. fillintheblank:: bytes_1
+.. fillintheblank:: binary_bytes1
 
     How many bits are in 3 bytes?
 
@@ -69,7 +69,7 @@ Fortunately, the values of the base 2 and base 10 systems are close enough that 
       :x: Hint: each byte is 8 bits
 
 
-.. fillintheblank:: bytes_2
+.. fillintheblank:: binary_bytes2
 
     How many bytes are in 4KiB ?
 

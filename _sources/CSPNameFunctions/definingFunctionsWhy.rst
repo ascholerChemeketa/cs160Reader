@@ -32,7 +32,7 @@ one where I make the legs 12 and 8; etc... Looking at the results of these calcu
 I can see that my best option is to use lengths of 14 and 6 (which produces a hypotenuse
 just a bit closer to 15 than sides of 13 and 7).
 
-.. activecode:: function_why1
+.. activecode:: cspnamefunctions_definingfunctionswhy1
 
     def hypotenuse_length(sideA, sideB):
         # sideA and sideB are our inputs
@@ -64,7 +64,7 @@ just a bit closer to 15 than sides of 13 and 7).
 
 Now look below at a version of this program without a function. 
 
-.. activecode:: function_why2
+.. activecode:: cspnamefunctions_definingfunctionswhy2
 
     import math
     aSquared = math.pow(10, 2)
@@ -115,7 +115,7 @@ distracts them from the big picture of the problem we are really trying to solve
 
 **Check Your Understanding**
 
-.. fillintheblank:: 7_3_fb
+.. fillintheblank:: cspnamefunctions_definingfunctionswhy3
 
     We want to calculate the hypotenuse of a triangle with legs of 8 and 15 and then
     print out the result. Write the line of code that would go in the ______________

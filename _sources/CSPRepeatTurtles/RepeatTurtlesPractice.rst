@@ -15,7 +15,7 @@ This section provides more practice using repetition and turtles.
 
 **Mixed up program**
 
-.. parsonsprob:: 8_6_1_turtle-x
+.. parsonsprob:: csprepeatturtles_repeatturtlespractice1
     :numbered: left
     :adaptive:
 
@@ -65,7 +65,7 @@ This section provides more practice using repetition and turtles.
         nick.stamp()
         nick.forward(30)
 
-.. parsonsprob:: 8_6_2_turtle-squares
+.. parsonsprob:: csprepeatturtles_repeatturtlespractice2
     :numbered: left
     :adaptive:
 
@@ -121,7 +121,7 @@ This section provides more practice using repetition and turtles.
 
 
 
-.. activecode:: 8_6_polygons
+.. activecode:: csprepeatturtles_repeatturtlespractice3
     :autograde: unittest
     :nocodelens:
 

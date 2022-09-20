@@ -15,7 +15,7 @@ Below we have a program that draws a square of size 100. What if we want to draw
 square, like one with a side length of 50?  We could do that by changing each of the ``100``s into
 a ``50``. 
 
-.. activecode:: Function_Change_Size
+.. activecode:: cspnameprocedures_multipleparameters1
     :nocodelens:
 
     def square(turtle):
@@ -38,7 +38,7 @@ But, this means we have to change each of the four ``forward`` statements and we
 mistake and not set all of them to the same number.  Is there a better way?  What if we create
 a variable ``size`` and set its value to the amount to move forward?
 
-.. activecode:: Function_Add_Var
+.. activecode:: cspnameprocedures_multipleparameters2
     :nocodelens:
 
     def square(turtle):
@@ -102,7 +102,7 @@ Now that square has two parameters, any call to ``square`` must provide two argu
 We need to specify the name of the turtle to draw with, then the size of the square to draw.
 Something like ``square(grace, 100)`` or ``square(grace, 50)``.
 
-.. activecode:: Function_Call2
+.. activecode:: cspnameprocedures_multipleparameters3
     :nocodelens:
 
     def square(turtle, size):   # square now has two parameters
@@ -123,7 +123,7 @@ Something like ``square(grace, 100)`` or ``square(grace, 50)``.
     square(grace, 50)           # draw a square of size 50
     square(grace, 25)           # draw a square of size 25
 
-.. mchoice:: 5_4_2_Name_The_Shape_Q1
+.. mchoice:: cspnameprocedures_multipleparameters4
     :practice: T
     :answer_a: square
     :answer_b: rectangle
@@ -153,7 +153,7 @@ Something like ``square(grace, 100)`` or ``square(grace, 50)``.
         mystery(grace, 100)   	# draw something with size = 100
 
 
-.. mchoice:: 5_4_3_Name_Args_Q1
+.. mchoice:: cspnameprocedures_multipleparameters5
     :practice: T
     :answer_a: turtle and size
     :answer_b: grace and 25
@@ -182,7 +182,7 @@ Something like ``square(grace, 100)`` or ``square(grace, 50)``.
         imani = Turtle()    	# create a turtle named imani
         square(imani, 25)      # draw a square with size 25
 
-.. parsonsprob:: 5_4_4_Draw_Squares
+.. parsonsprob:: cspnameprocedures_multipleparameters6
     :numbered: left
     :adaptive:
 

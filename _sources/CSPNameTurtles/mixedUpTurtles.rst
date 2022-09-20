@@ -6,7 +6,7 @@ You will be told if your solution is too short, has a block in the wrong order, 
 are using the wrong block.  Some of the problems have an extra block that isn't needed
 in the correct solution.
 
-.. parsonsprob:: ch4ex1muc
+.. parsonsprob:: cspnameturtles_mixedupturtles1
    :numbered: left
    :practice: T
    :adaptive:
@@ -28,7 +28,7 @@ in the correct solution.
    =====
    ani.forward(100)
 
-.. parsonsprob:: ch4ex2muc
+.. parsonsprob:: cspnameturtles_mixedupturtles2
    :numbered: left
    :practice: T
    :adaptive:
@@ -59,7 +59,7 @@ in the correct solution.
 
 
 
-.. parsonsprob:: ch4ex3muc
+.. parsonsprob:: cspnameturtles_mixedupturtles3
    :numbered: left
    :practice: T
    :adaptive:
@@ -88,7 +88,7 @@ in the correct solution.
    chris.forward(100) #paired   
 
 
-.. parsonsprob:: ch4ex4muc
+.. parsonsprob:: cspnameturtles_mixedupturtles4
    :numbered: left
    :practice: T
    :adaptive:
@@ -115,7 +115,7 @@ in the correct solution.
    nic.forward(100)
 
 
-.. parsonsprob:: ch4ex5muc
+.. parsonsprob:: cspnameturtles_mixedupturtles5
    :numbered: left
    :practice: T
    :adaptive:
@@ -140,7 +140,7 @@ in the correct solution.
 
 
 
-.. .. parsonsprob:: ch4ex1muc
+ .. parsonsprob:: cspnameturtles_mixedupturtles6
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:
@@ -166,7 +166,7 @@ in the correct solution.
 ..    mindy.left(90)
 
 
-.. .. parsonsprob:: ch4ex4muc
+ .. parsonsprob:: cspnameturtles_mixedupturtles7
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:

@@ -38,7 +38,7 @@ There are lot of lines in the program below,
 
     If you do hit the button too many times, you can reload the browser window to stop the program.
 
-.. activecode:: Image_Remove_Red
+.. activecode:: csprepeatimages_repeatimages1
     :nocodelens:
 
     from image import *

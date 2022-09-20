@@ -111,7 +111,7 @@ are ready to draw again, use ``pendown()``. The example below draws a C and an S
     describe what each chunk does. The computer does not care about these things, but these
     tricks make it much easier for humans to understand what is happening.
 
-.. activecode:: Turtle_CandL
+.. activecode:: cspnameturtles_turtleprocedures1
     :nocodelens:
 
     from turtle import *

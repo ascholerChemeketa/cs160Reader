@@ -16,7 +16,7 @@ and to treat different strings in different ways. As a first example, here is a 
 prints a different message depending on how many item(s) a person orders. Try this program
 a few times and enter different values for the input.
 
-.. activecode:: csp_sd_invoice
+.. activecode:: cspdecisionsstrings_decisionstrings1
 
     numItems = int( input("How many items do you want?") )
 
@@ -40,7 +40,7 @@ the string ``"You ordered "`` with ``numItems`` a number. As we have seen before
 work, we need to call the ``str`` function to make a string out of the number that can be added
 to the other strings.
 
-.. mchoice:: 13_1_1_invoice_error
+.. mchoice:: cspdecisionsstrings_decisionstrings2
     :answer_a: It runs the same
     :answer_b: It sometimes produces the wrong answer because it is comparing a string to a number
     :answer_c: There is an error because we are comparing a string to a number

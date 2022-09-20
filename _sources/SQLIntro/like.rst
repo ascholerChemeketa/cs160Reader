@@ -28,7 +28,7 @@ both sides - ``'%Janice%'``
 This sample pulls from the ``bikeshare_stations`` table to search for all station names
 that include 'F St':
 
-.. activecode:: bikeshare_like
+.. activecode:: sqlintro_like1
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -48,7 +48,7 @@ in it"*. The space inside the string will make sure we don't match '17th'. This 
 will perform that search. Notice that to check if the name begins with '7th', we make sure
 not to put a ``%`` at the start of the string.
 
-.. activecode:: bikeshare_like_2
+.. activecode:: sqlintro_like2
     :language: sql
     :dburl: /_static/bikeshare.db
 
@@ -62,7 +62,7 @@ not to put a ``%`` at the start of the string.
         name LIKE '% 7th%'  --space in front of 7th
 
 
-.. fillintheblank:: like_fb
+.. fillintheblank:: sqlintro_like3
 
     Change the program above to find the number of records that end with NW. Write the number of records
     found in the box below.

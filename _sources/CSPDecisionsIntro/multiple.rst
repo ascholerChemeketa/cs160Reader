@@ -36,7 +36,7 @@ of ``weight`` that will result in an error?
     print(price)
     print(total)
 
-.. fillintheblank:: 11_6_1_brokenrange_fb
+.. fillintheblank:: cspdecisionsintro_multiple1
 
     In the program above, what value for weight will result in an error complaining that price
     is not defined?
@@ -51,7 +51,7 @@ Another way we could solve the problem would be to set a ``price`` as a *default
 that the weight if 1 or more. Then, we use an ``if`` to change change it only if the weight
 turns out to be less than 1.
 
-.. activecode:: Price_If_Default
+.. activecode:: cspdecisionsintro_multiple2
 
     weight = 0.5
     price = 1.45
@@ -64,7 +64,7 @@ turns out to be less than 1.
     print(price)
     print(total)
 
-.. mchoice:: 11_3_1_Price_If_Equivalent
+.. mchoice:: cspdecisionsintro_multiple3
     :answer_a: No, they're always the same.
     :answer_b: Yes, they're different if the weight is exactly 1 pound.
     :answer_c: Yes, they're different if the weight is under 1 pound.
@@ -81,7 +81,7 @@ turns out to be less than 1.
 
 **Check your understanding**
 
-.. parsonsprob:: 11_3_2_Price_By_Weight
+.. parsonsprob:: cspdecisionsintro_multiple4
     :practice: T
     :numbered: left
     :adaptive:
@@ -107,7 +107,7 @@ turns out to be less than 1.
     print(price)
     print(total)
 
-.. mchoice:: 11_6_4_Logic_Ifs
+.. mchoice:: cspdecisionsintro_multiple5
     :practice: T
     :answer_a: x will always equal 0 after this code executes for any value of x
     :answer_b: if x is greater than 2, the value in x will be doubled after this code executes

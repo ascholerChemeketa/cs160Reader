@@ -5,7 +5,7 @@ Mixed Up Code Practice
 
 Try to solve each of the following. Click the *Check* button to check each solution.  You will be told if your solution is too short, has a block in the wrong order, or you are using the wrong block.
 
-.. parsonsprob:: ch2ex1muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons1
    :numbered: left
    :practice: T
    :adaptive:
@@ -22,7 +22,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    print(pricePerShirt)
 
 
-.. parsonsprob:: ch2ex2muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons2
    :numbered: left
    :practice: T
    :adaptive:
@@ -44,7 +44,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    print(perpersoncost) #distractor
 
 
-.. parsonsprob:: ch2ex3muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons3
    :numbered: left
    :practice: T
    :adaptive:
@@ -64,7 +64,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    amountLeft = totalPunch / oInCup #distractor
 
 
-.. parsonsprob:: ch2ex4muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons4
    :numbered: left
    :practice: T
    :adaptive:
@@ -85,7 +85,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    total = sInDay / 5 #distractor
 
 
-.. parsonsprob:: ch2ex5muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons5
    :numbered: left
    :practice: T
    :adaptive:
@@ -105,7 +105,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    numWeeks = weeklyRate / goal #distractor
 
 
-.. parsonsprob:: ch2ex6muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons6
    :numbered: left
    :practice: T
    :adaptive:
@@ -126,7 +126,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    print(totalCost) #distractor
 
 
-.. parsonsprob:: ch2ex7muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons7
    :numbered: left
    :practice: T
    :adaptive:
@@ -147,7 +147,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    tankHolds = 26 #distractor
 
 
-.. parsonsprob:: ch2ex8muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons8
    :numbered: left
    :practice: T
    :adaptive:
@@ -165,7 +165,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    print(NumWings) #distractor
 
 
-.. parsonsprob:: ch2ex9muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons9
    :numbered: left
    :practice: T
    :adaptive:
@@ -185,7 +185,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    finalPrice = price - discount #distractor
 
 
-.. parsonsprob:: ch2ex10muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons10
    :numbered: left
    :practice: T
    :adaptive:
@@ -204,7 +204,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    itemPrice = priceForTwo / 2 #distractor
 
 
-.. parsonsprob:: ch2ex11muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons11
    :numbered: left
    :practice: T
    :adaptive:
@@ -224,7 +224,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    =====
    print("Michigan") #distractor
 
-.. parsonsprob:: ch2ex12muc
+.. parsonsprob:: cspnamenumbers_variablepracticeparsons12
    :numbered: left
    :practice: T
    :adaptive:

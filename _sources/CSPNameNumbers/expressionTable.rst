@@ -35,7 +35,7 @@ Here is a table summarizing the basic arithmetic operations:
     * - -1
       - Negation, the result is -1 
 
-.. mchoice:: 2_4_1_intDiv_Q1
+.. mchoice:: cspnamenumbers_expressiontable1
    :practice: T
    :answer_a: 0
    :answer_b: 1
@@ -50,7 +50,7 @@ Here is a table summarizing the basic arithmetic operations:
    What is the result of ``3 / 4``?
 
 
-.. mchoice:: 2_4_1_intDiv_Q2
+.. mchoice:: cspnamenumbers_expressiontable2
    :practice: T
    :answer_a: 2
    :answer_b: 1
@@ -65,7 +65,7 @@ Here is a table summarizing the basic arithmetic operations:
    What is the result of ``8 // 5``?
 
 
-.. mchoice:: 2_4_2_mod_Q1
+.. mchoice:: cspnamenumbers_expressiontable3
    :practice: T
    :answer_a: 0
    :answer_b: 1
@@ -79,7 +79,7 @@ Here is a table summarizing the basic arithmetic operations:
 
    What is the result of ``18 % 5``?
    
-.. mchoice:: 2_4_3_mod_Q2
+.. mchoice:: cspnamenumbers_expressiontable4
    :practice: T
    :answer_a: 0
    :answer_b: 1

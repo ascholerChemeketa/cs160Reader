@@ -32,7 +32,7 @@ as shown below.  **Concatenate** means to create a new string with all the chara
 first string followed by all of the characters in the second string.  This is also called
 **appending** strings together.  
 
-.. activecode:: String_Assign
+.. activecode:: cspnamestrings_assignnamestr1
     
     first = "Jorge"
     last = "Garcia"
@@ -41,7 +41,7 @@ first string followed by all of the characters in the second string.  This is al
    
 Now try running this slightly different example. 
    
-.. activecode:: String_Assign2
+.. activecode:: cspnamestrings_assignnamestr2
 
     first = 'Jorge'
     last = "Garcia"
@@ -56,7 +56,7 @@ Now try running this slightly different example.
    
 Try to run the example below.  It should give you errors.  Can you fix the errors?  
 
-.. activecode:: String_Assign3
+.. activecode:: cspnamestrings_assignnamestr3
 
     first = 'Jorge"
     last = 'Garcia"
@@ -92,7 +92,7 @@ containing whatever the user types. When the function **returns** a value, the f
 essentially is replaced by that value. The code ``input("What is your first name?")`` in the
 sample below will be replaced by whatever the user types - something like *"Anne"*.
 
-.. activecode:: String_Input
+.. activecode:: cspnamestrings_assignnamestr4
 
     first = input("What is your first name?")
     last = input("What is your last name?")
@@ -108,7 +108,7 @@ differently than the number ``5`` in computer memory, so to concatenate the numb
 string we need to convert the number into a string first.  The ``str(num)`` function will convert
 a number into a string.  
 
-.. activecode:: String_Convert
+.. activecode:: cspnamestrings_assignnamestr5
 
     Fred = 5
     print("Fred")
@@ -126,7 +126,7 @@ a number into a string.
 We can update our driving example to print out the cost of the trip with just one ``print``
 statement.
 
-.. activecode:: Trip_Calculator2
+.. activecode:: cspnamestrings_assignnamestr6
 
     distance = 924.7
     mpg = 35.5
@@ -143,7 +143,7 @@ with the string "Cost to get from Chicago to Dallas", they are just being printe
 Also notice that this version of print automatically adds a space between items that are printed.
 Here that causes a problem as it means there will be a space between the $ and the cost.
 
-.. activecode:: Trip_Calculator3
+.. activecode:: cspnamestrings_assignnamestr7
 
     distance = 924.7
     mpg = 35.5
@@ -154,7 +154,7 @@ Here that causes a problem as it means there will be a space between the $ and t
 
 **Check your understanding**
 
-.. mchoice:: 3_1_3_4_stringVsValue
+.. mchoice:: cspnamestrings_assignnamestr8
     :practice: T
     :answer_a: The address is street
     :answer_b: The address is 125 Main Street
@@ -172,7 +172,7 @@ Here that causes a problem as it means there will be a space between the $ and t
      street = "125 Main Street"
      print("The address is " + "street")
 
-.. mchoice:: 3_1_3_5_noSpace
+.. mchoice:: cspnamestrings_assignnamestr9
     :practice: T
     :answer_a: 125 Main Street, Atlanta, GA
     :answer_b: 125 Main Street,Atlanta, GA

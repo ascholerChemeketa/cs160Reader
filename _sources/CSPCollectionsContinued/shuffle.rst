@@ -30,7 +30,7 @@ The exercises below will guide you through writing the algorithm. In the first p
 we will just make one cut and reassemble the deck so the "top" and "bottom" halves are
 reversed.
 
-.. activecode:: list_shuffle_1
+.. activecode:: cspcollectionscontinued_shuffle1
     :autograde: unittest
 
     1. Make a variable called ``cutPoint`` and set it to a random value between 1 and
@@ -78,7 +78,7 @@ getting chopped up differently and become more and more jumbled.
 
 Let's test that.
 
-.. activecode:: list_shuffle_2
+.. activecode:: cspcollectionscontinued_shuffle2
     :autograde: unittest
 
     1. Put your existing code in a loop that repeats the whole process 10 times.
@@ -98,7 +98,7 @@ Let's test that.
     myTests().main()
 
 
-.. mchoice:: shuffle_mc_1
+.. mchoice:: cspcollectionscontinued_shuffle3
     :answer_a: Poorly. New cuts seem to "fix" previous cuts and not compound on each other.
     :answer_b: OK. Neighbor values like 4/5 or 7/8 tend to stay next to each other, but the deck is getting more mixed up.
     :answer_c: Really well.
@@ -119,7 +119,7 @@ won't do much, but maybe if we repeat it a bunch of times, it will work.
 
 The exercises below will guide you through writing the algorithm.
 
-.. activecode:: list_shuffle_3
+.. activecode:: cspcollectionscontinued_shuffle4
     :autograde: unittest
 
     1. Make a variable called ``selectIndex`` and set it to a random value between 0
@@ -163,7 +163,7 @@ Now we will repeat the process. Since we are only moving one card at a time, doi
 probably won't be enough. But let's start with that and see if the method looks like it is working
 before we scale it up to more repetitions.
 
-.. activecode:: list_shuffle_4
+.. activecode:: cspcollectionscontinued_shuffle5
     :autograde: unittest
 
     1. Put your existing code in a loop that repeats the whole process 10 times.
@@ -182,7 +182,7 @@ before we scale it up to more repetitions.
 
     myTests().main()
 
-.. mchoice:: shuffle_mc_2
+.. mchoice:: cspcollectionscontinued_shuffle6
     :answer_a: Poorly. Items seem to drift back to their initial positions after being moved.
     :answer_b: OK. But there are still really long runs of consecutive cards (like 2-6 all in order).
     :answer_c: Really well.

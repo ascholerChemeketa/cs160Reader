@@ -13,7 +13,7 @@ Turtle Practice
 
 Use the area below to try to draw a block letter or number.
 
-.. activecode:: Turtle_Letter
+.. activecode:: cspnameturtles_turtlepractice1
     :nocodelens:
 
 
@@ -23,7 +23,7 @@ Use the area below to try to draw a block letter or number.
 
 .. **Mixed up programs**
 
-.. .. parsonsprob:: 5_2_1_DrawZ
+ .. parsonsprob:: cspnameturtles_turtlepractice2
 ..    :numbered: left
 ..    :adaptive:
 
@@ -59,7 +59,7 @@ Use the area below to try to draw a block letter or number.
 ..    alex.forward(50)
 
 
-.. .. parsonsprob:: 5_2_1_DrawN
+ .. parsonsprob:: cspnameturtles_turtlepractice3
 ..    :numbered: left
 ..    :adaptive:
 

@@ -78,7 +78,7 @@ There is no way to exactly represent the answer, you can just come close. (The c
     :class: underlined
 
 
-.. fillintheblank:: fractions_1
+.. fillintheblank:: datarepresentation_fractionalvalues1
 
     What decimal value does the binary number 0.111 represent?
 
@@ -88,7 +88,7 @@ There is no way to exactly represent the answer, you can just come close. (The c
       :x: Use the blank table above. The 0 goes in the ones column.
 
 
-.. mchoice:: fractions_2
+.. mchoice:: datarepresentation_fractionalvalues2
     :answer_a: 0.00011
     :answer_b: 0.01010
     :answer_c: 0.00111

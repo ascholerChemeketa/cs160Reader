@@ -17,7 +17,7 @@ defined a procedure to make it easier to reuse the formula. But if we want to ap
 formula a whole bunch of times in a row, a loop makes sense. Try running this program with the
 Codelens:
 
-.. activecode:: Numbers_Repeat1
+.. activecode:: csprepeatnumbers_repeatnums1
 
     # Number to find square root of
     number = 110
@@ -36,7 +36,7 @@ representation of the answer as a decimal, so we have to settle for being correc
 significant number of digits). The for loop is initially set to
 repeat 4 times, which gets us pretty close to the true value of the square root - 10.48808848170152.
 
-.. fillintheblank:: 10_2_fb
+.. fillintheblank:: csprepeatnumbers_repeatnums2
 
     Modify the loop to repeat more times. What is the minimum number of repetitions you
     need to get an answer that is as acurate as possible? (One that displays as 10.48808848170152)

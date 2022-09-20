@@ -37,4 +37,4 @@ like the last one where the computer asks a question but then does not look at t
 but those do not count towards the three question minimum.) Try to come up with your own questions
 instead of just copying the samples above!
 
-.. activecode:: chatbot
+.. activecode:: cspdecisionsstrings_chatbot1

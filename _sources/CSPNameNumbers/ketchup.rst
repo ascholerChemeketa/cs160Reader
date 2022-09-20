@@ -24,7 +24,7 @@ speed of ketchup as .028 miles per hour.
 
     Figure 2: Ketchup dripping speed
 
-.. codelens:: Ketchup_Speed
+.. codelens:: cspnamenumbers_ketchup1
 
    dripMPH = .028
    FPM = 5280.0
@@ -48,7 +48,7 @@ The next type of problem is new.  It shows correct code in code blocks on the le
     :height: 480
     :align: center
 
-.. parsonsprob:: 2_7_3_Ketchup_Speed
+.. parsonsprob:: cspnamenumbers_ketchup2
    :practice: T
    :numbered: left
    :adaptive:

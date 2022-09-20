@@ -29,7 +29,7 @@ It also has a built in value for pi (:math:`{\pi}`) that can be accessed as ``ma
 To make use of these, we need to first ``import math`` to make the math library available to use
 in our program. We then can access things like ``math.sqrt`` and ``math.pi``.
 
-.. activecode:: area_of_circle
+.. activecode:: cspnamenumbers_mathlibrary1
 
     # make the math library functions and variable available
     import math
@@ -45,7 +45,7 @@ something with. Just like the line of code ``x * 2`` doesn't do anything unless 
 throw away the answer. We need to store the answer into a variable if we want to do anything
 with it.
 
-.. mchoice:: ch2_10
+.. mchoice:: cspnamenumbers_mathlibrary2
     :practice: T
     :answer_a: Nothing, it runs just the same
     :answer_b: The line that has math.sqrt reports an error that "name 'math' was not defined"

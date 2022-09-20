@@ -22,7 +22,7 @@ called. The program below tries to use the ``addFive`` function to add 5 to the 
 only the code in that function that actually does the math comes after the return and thus 
 never runs! Try running it in Codelens mode to see:
 
-.. activecode:: issue_early_return 
+.. activecode:: cspnamefunctions_commonissues1
 
     def addFive(x):
         return x 
@@ -51,7 +51,7 @@ of the program never learns about the changes that happened in ``addFive``.
 
 Again, try running in Codelens:
 
-.. activecode:: issue_change_param
+.. activecode:: cspnamefunctions_commonissues2
 
     def addFive(x):
         x = x + 5           #This never gets to run!
@@ -67,7 +67,7 @@ Again, try running in Codelens:
 
 **Check Your Understanding**
 
-.. parsonsprob:: 7_4_return
+.. parsonsprob:: cspnamefunctions_commonissues3
     :numbered: left
     :adaptive:
 
