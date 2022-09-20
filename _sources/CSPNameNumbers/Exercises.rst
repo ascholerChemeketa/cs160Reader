@@ -65,7 +65,7 @@ Chapter Exercises
 
 
 .. activecode:: cspnamenumbers_exercises3
-    :nocodelens:
+    :autograde: unittest
     :practice: T
 
     Add parentheses to ``x = 12 * 2 - 3 + 4 * 2`` so that it prints -4 instead of 29.

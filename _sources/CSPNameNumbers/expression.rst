@@ -23,7 +23,7 @@ expression will be stored in the variable.
 
     What will be printed when you click on the Run button in the code below? 
 
-    - :^4$: Correct. 2 times 2 plus 1 is 5
+    - :^5$: Correct. 2 times 2 plus 1 is 5
       :.*: Did you actually run the program?
  
 .. activecode:: cspnamenumbers_expression2
