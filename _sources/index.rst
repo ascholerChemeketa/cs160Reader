@@ -31,7 +31,7 @@ Exploring Programming
    :maxdepth: 1
    :numbered:
 
-   CSPrinTeasers/toctree.rst
+   CSPTeasers/toctree.rst
    CSPNameNumbers/toctree.rst
    CSPNameStrings/toctree.rst
    CSPNameTurtles/toctree.rst
