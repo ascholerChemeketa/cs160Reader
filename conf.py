@@ -321,5 +321,3 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 generate_component_labels = False
 
 setup.custom_css_files = ["theme-overrides.css"]
-
-setup.custom_js_files = ["instaLoadHistory.js"]
