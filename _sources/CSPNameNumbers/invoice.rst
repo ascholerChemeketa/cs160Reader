@@ -106,7 +106,7 @@ above before answering this question:
 
     Which line of code will compute the correct ``totalCost`` if put into the program above?
 
-.. tabbed:: 2_9_7_WSt
+.. tabbed:: cspnamenumbers_invoice_tab
 
     .. tab:: Question
 

@@ -201,7 +201,7 @@ The ``find(string)`` function takes a string as input and returns the index wher
      pos = str.find("is")
      print(pos)
 
-.. tabbed:: 3_2_5_WSt
+.. tabbed:: cspnamestrings_strobjects_tab0
 
     .. tab:: Question
 

@@ -28,7 +28,7 @@ the station with the longest overall ride:
         1
 
 That query gives us the station id (31104), but what if we want its name?
-The name of each station is in the :ref:`bikeshare_stations` table. To get the name
+The name of each station is in the :ref:`bike share stations table <bikesharestations>`. To get the name
 of station 31104, we could query it (notice the ``FROM`` clause):
 
 .. activecode:: sqlgroupjoin_joining2

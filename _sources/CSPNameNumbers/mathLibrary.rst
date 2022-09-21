@@ -16,7 +16,7 @@ Occaisionally while programming, we may need to do more complex mathematical wor
 basic math operators allow for. 
 
 .. index::
-    pair: math library
+    pair: library; math
 
 The `Python math library <https://docs.python.org/3/library/math.html>`__ has a wide assortment
 of functions and predefined variables we can use to do so.

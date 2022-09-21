@@ -17,6 +17,5 @@ Making Decisions
     ifAndElse.rst
     elif.rst
     elifTricks.rst
-    practice.rst
     summary.rst
     Exercises.rst

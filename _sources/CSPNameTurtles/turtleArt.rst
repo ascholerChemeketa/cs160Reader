@@ -55,7 +55,7 @@ Now we want to add a "chimney" to the house that looks something like this:
 Modify the program above so that it draws a ``"red"`` chimney. You can either draw it before
 or after drawing the roof.
 
- .. parsonsprob:: cspnameturtles_turtleart2
+.. .. parsonsprob:: cspnameturtles_turtleart2
 ..    :numbered: left
 ..    :adaptive:
 

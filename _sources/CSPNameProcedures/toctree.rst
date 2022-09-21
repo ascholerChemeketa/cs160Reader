@@ -13,7 +13,6 @@ Names for Procedures
     :maxdepth: 2
 
     nameFandP.rst
-    defining.rst
     definingWhy.rst
     definingHow.rst
     indentation.rst
@@ -22,4 +21,3 @@ Names for Procedures
     practice.rst
     summary.rst
     Exercises.rst
-    .. exam5a6.rst

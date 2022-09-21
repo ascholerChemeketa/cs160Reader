@@ -51,7 +51,7 @@ Range Recipes
 ----------------------------
 
 .. index:: 
-    pair: range
+    single: range
 
 That gives us a way to count through a series of numbers. But what if we want, like with the
 ``polygon`` example, to count from 6 down to 3? Or to count from 10 to 100 by 10's? To do these

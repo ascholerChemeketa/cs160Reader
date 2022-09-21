@@ -23,4 +23,3 @@ Names for Strings
     summary.rst
     StringPracticeParsons.rst
     Exercises.rst
-    exam3a4.rst

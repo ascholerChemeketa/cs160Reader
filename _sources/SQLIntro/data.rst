@@ -59,7 +59,7 @@ the columns available in the ``trip_data``:
 
     Don't worry about memorizing all of the columns, you can check back here as needed.
 
-.. _bikeshare_stations:
+.. _bikesharestations:
 
 Information about the stations is stored in a separate table called the ``bikeshare_stations``
 table. In that table, each record is the information about one particular station.

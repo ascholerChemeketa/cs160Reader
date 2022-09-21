@@ -16,7 +16,7 @@ possible outcome. There are two sides to a coin - *heads* and *tails* - so let's
 and tails *1*. If we make a random integer between 0 and 1, we can think of it as representing
 heads or tails on the coin:
 
-.. activeCode:: 12_rand_coin
+.. activeCode:: cspdecisionssimulations_usingrandom0a
 
     import random
 
@@ -30,7 +30,7 @@ By using the accumulator pattern and a loop, we could repeat a series of flips. 
 flips and count up how many are heads (0). Each time through the loop, we will pick a new
 random number. We will only add to our accumulator ``numHeads`` if the random value is 0.
 
-.. activeCode:: 12_rand_100
+.. activecode:: cspdecisionssimulations_usingrandom0b
 
     import random
 

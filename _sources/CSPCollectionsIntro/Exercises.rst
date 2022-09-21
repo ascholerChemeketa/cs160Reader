@@ -182,7 +182,7 @@ Chapter Exercises
 
 
 
- .. parsonsprob:: cspcollectionsintro_exercises6
+.. .. parsonsprob:: cspcollectionsintro_exercises6
 ..     :numbered: left
 ..     :practice: T
 ..     :adaptive:

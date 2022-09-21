@@ -22,7 +22,6 @@ Names for Turtles
     multTurtles.rst
     turtleCoordinates.rst
     turtleArt.rst
-    .. changeProg.rst
     summary.rst
     mixedUpTurtles.rst
     Exercises.rst

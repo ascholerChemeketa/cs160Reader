@@ -116,31 +116,31 @@ in the correct solution.
 
 
 .. parsonsprob:: cspnameturtles_mixedupturtles5
-   :numbered: left
-   :practice: T
-   :adaptive:
-   :noindent:
-  
-   The following program segment should turn turtle Bri south, then draw a green line.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
-   -----
-   from turtle import *
-   =====
-   space = Screen()
-   =====
-   bri = Turtle()
-   =====
-   bri.color("green")
-   bri.setheading(270)
-   =====
-   bri.color("green")
-   bri.setheading(90) #distractor
-   =====
-   bri.forward(100)
+    :numbered: left
+    :practice: T
+    :adaptive:
+    :noindent:
+
+    The following program segment should turn turtle Bri south, then draw a green line.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
+    -----
+    from turtle import *
+    =====
+    space = Screen()
+    =====
+    bri = Turtle()
+    =====
+    bri.color("green")
+    bri.setheading(270)
+    =====
+    bri.color("green")
+    bri.setheading(90) #distractor
+    =====
+    bri.forward(100)
 
 
 
 
- .. parsonsprob:: cspnameturtles_mixedupturtles6
+.. .. parsonsprob:: cspnameturtles_mixedupturtles6
 ..    :numbered: left
 ..    :practice: T
 ..    :adaptive:

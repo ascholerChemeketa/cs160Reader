@@ -132,7 +132,7 @@ This trick will come in very handy later when we write more complex logic
 for accessing all of the items in a list.
 
 .. index:: 
-    pair: len
+    single: len
 
 Finally, just like with a string, we can find the length of a list by using the ``len`` function. 
 We can either use it in the same way we would use any other numeric value

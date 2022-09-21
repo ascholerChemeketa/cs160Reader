@@ -17,7 +17,7 @@ have tried writing the procedure on your own!
 
 |turtle_ref|
 
-.. tabbed:: 5_5_2_WSt
+.. tabbed:: cspnameprocedures_practice_tab0
 
     .. tab:: Question
 

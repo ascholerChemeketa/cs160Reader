@@ -108,7 +108,7 @@ computer calculate the number of days in three weeks:
     =====
     print(perPersonCost)
 
-.. tabbed:: 2_8_8_WSt
+.. tabbed:: cspnamenumbers_walkassign_tab_0
 
     .. tab:: Question
 

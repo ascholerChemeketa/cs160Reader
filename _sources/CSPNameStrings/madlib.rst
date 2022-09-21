@@ -153,7 +153,7 @@ surprised at what happens to your friend in the story.
    =====
    print("So, " + name + " went home.")
 
-.. tabbed:: 3_4_7_WSt
+.. tabbed:: cspnamestrings_madlib_tab0
 
         .. tab:: Question
 

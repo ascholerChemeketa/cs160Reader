@@ -21,4 +21,3 @@ Names for Functions
     functionsCallingFunctions3.rst
     summary.rst
     Exercises.rst
-    .. exam5a6.rst

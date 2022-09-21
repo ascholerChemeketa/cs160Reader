@@ -17,4 +17,3 @@ Repeating Steps with Images
    changeData.rst
    summary.rst
    Exercises.rst
-   .. exam9t11.rst
