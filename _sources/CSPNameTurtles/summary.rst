@@ -9,10 +9,10 @@
 .. setup for automatic question numbering.
 
 
-Chapter 5 - Summary
+Chapter Summary
 ============================
 
-Chapter 5 included the following concepts from computing.
+This chapter included the following concepts from computing.
 
 ..	index::
     single: comment

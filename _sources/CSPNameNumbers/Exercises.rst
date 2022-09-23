@@ -121,11 +121,11 @@ Chapter Exercises
     not 24-hour time). The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder
     of 4 hours.
 
-    *Hint: rember that **%** is the modulo or remainder operator.*
+    Hint: Remember that ``%`` is the modulo or remainder operator.
 
     ~~~~
     currentTime = 10
-    newTime = 10 + 18
+    newTime = currentTime + 18
     clockTime =
     print(clockTime)
     =====
@@ -149,8 +149,8 @@ Chapter Exercises
     Finish the code on lines 2 and 3 in the code below to print how many hours and minutes
     you have been waiting when you have been waiting a total of 270 minutes. Remember that
     there are 60 minutes in an hour. It should print 4 and then 30.
-
-    *Hint: don't forget the difference between division and integer division.*
+    
+    Hint: Remember that ``%`` is the modulo or remainder operator.
 
     ~~~~
     totalMinutes = 270

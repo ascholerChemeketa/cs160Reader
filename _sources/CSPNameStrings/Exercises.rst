@@ -68,7 +68,13 @@ Chapter 3 Exercises
     :nocodelens:
     :practice: T
 
-    Use string slicing to set s1 to "giant alligator". The print will put \|'s around your output to
+    Use **string slicing** to get "giant alligator" from ``sentence`` and store it in
+    ``s1``. 
+    
+    You should not be typing the string "giant alligator" yourself, you should be
+    getting the right part of what is stored in ``sentence``.
+    
+    The print will put \|'s around your output to
     make it clear if you have a space at the start or end of s1.
     ~~~~
     sentence = "There is a giant alligator over there."
@@ -94,7 +100,9 @@ Chapter 3 Exercises
     Using the variables given, modify the print statement to print
     ``"A car travelling at 70 mph takes 2.0 hours to go 140 miles."``  
     Make sure to print the variables, not the values you know they contain.
-    If we changed ``milesPerHour`` and ``distanceTravelled`` your program should still print a correct message.
+    
+    If we were to change ``milesPerHour`` and ``distanceTravelled`` your program should still print a
+    mathematically correct message.
     ~~~~
     milesPerHour = 70
     distanceTravelled = 140
