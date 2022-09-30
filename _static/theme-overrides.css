@@ -23,6 +23,10 @@
 
 /*--------------Page Layout Tweaks-------------*/
 
+#navbar ul.navbar-right > li.dropdown.view-toggle {
+    display: none;
+}
+
 div.container section > iframe {
     margin-bottom: 10px; 
 }

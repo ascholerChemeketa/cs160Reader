@@ -45,7 +45,7 @@ extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + ['cs160']
 #,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode']
 
 # Add any paths that contain templates here, relative to this directory.
-#templates_path = ['_templates']
+templates_path = ['_templates']
 #templates_path = [pkg_resources.resource_filename('runestone', 'common/project_template/_templates')]
 
 # The suffix of source filenames.
@@ -216,8 +216,8 @@ html_theme_options = {
 #html_style = "style.css"
 
 # Add any paths that contain custom themes here, relative to this directory.
+html_theme_path = ["_templates", pkg_resources.resource_filename('runestone', 'common/project_template/_templates/plugin_layouts'), "_templates"]
 #html_theme_path = ["_templates/plugin_layouts"]
-html_theme_path = [pkg_resources.resource_filename('runestone', 'common/project_template/_templates/plugin_layouts')]
 
 
 # The name for this set of Sphinx documents.  If None, it defaults to
@@ -321,3 +321,4 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 generate_component_labels = False
 
 setup.custom_css_files = ["theme-overrides.css"]
+setup.custom_js_files = ["theme-overrides.js"]
