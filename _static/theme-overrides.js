@@ -14,4 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
             logo.href = brand.href;
         }
     }
+
+    
+    let warning = document.querySelector("#browser_warning");
+    if(warning)
+        warning.classList.add("red");
 });
