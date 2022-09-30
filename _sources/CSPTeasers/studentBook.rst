@@ -12,7 +12,7 @@
 
 .. include:: includes.rst
 
-About This Section of the Reader
+About This Section of the Book
 ===================================
 
 .. pseudo_h3:: Philosophy
