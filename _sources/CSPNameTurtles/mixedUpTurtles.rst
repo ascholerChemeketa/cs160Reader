@@ -15,9 +15,9 @@ in the correct solution.
    The following program segment should draw a red line.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
    -----
    from turtle import *
-   =====
    space = Screen()
    =====
+   from turtle import *
    space = screen() #paired
    =====
    ani = Turtle()
@@ -66,12 +66,14 @@ in the correct solution.
    :noindent:
   
    The following program segment should create two turtles, Ari and Chris. Ari should have a pensize of 20 and draw a line to the west, while Chris will have the standard pensize and draw a line to the east.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
+
+   Note that we could do the ari commands either before or after the chris commands. Assume we want to more ari first.
    -----
    from turtle import *
    =====
    space = Screen()
-   =====
    ari = Turtle()
+   chris = Turtle()
    =====
    ari.pensize(20)
    ari.left(180)
@@ -79,8 +81,6 @@ in the correct solution.
    =====
    ari.pensize(20)
    ari.forward(100) #paired
-   =====
-   chris = Turtle()
    =====
    chris.forward(100)
    =====
@@ -99,7 +99,6 @@ in the correct solution.
    from turtle import *
    =====
    space = Screen()
-   =====
    nic = Turtle()
    =====
    nic.color("red")
@@ -126,7 +125,6 @@ in the correct solution.
     from turtle import *
     =====
     space = Screen()
-    =====
     bri = Turtle()
     =====
     bri.color("green")
