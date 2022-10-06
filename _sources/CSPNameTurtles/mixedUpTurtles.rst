@@ -65,7 +65,7 @@ in the correct solution.
    :adaptive:
    :noindent:
   
-   The following program segment should create two turtles, Ari and Chris. Ari should have a pensize of 20 and draw a line to the east, while Chris will have the standard pensize and draw a line to the west.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
+   The following program segment should create two turtles, Ari and Chris. Ari should have a pensize of 20 and draw a line to the west, while Chris will have the standard pensize and draw a line to the east.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the *Check Me* button to check your solution.
    -----
    from turtle import *
    =====

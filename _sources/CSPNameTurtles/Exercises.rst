@@ -29,7 +29,7 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(alex.xcor(), 150, "Testing alex's x position." )
+            self.assertAlmostEqual(alex.xcor(), 150, 2, "Testing alex's x position." )
 
     myTests().main()
 
@@ -55,8 +55,8 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(alex.xcor(), 75, "Testing alex's x position." )
-            self.assertEqual(alex.ycor(), 150, "Testing alex's y position." )
+            self.assertAlmostEqual(alex.xcor(), 75, 2, "Testing alex's x position." )
+            self.assertAlmostEqual(alex.ycor(), 150, 2, "Testing alex's y position." )
 
     myTests().main()
 
