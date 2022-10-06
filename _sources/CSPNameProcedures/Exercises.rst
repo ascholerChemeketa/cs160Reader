@@ -54,8 +54,8 @@ Chapter Exercises
     :nocodelens:
     :practice: T
 
-    The following code has some syntax errors. There are two errors, but each is repeated multiple times debug
-    to the code author copy/pasting lines of code. Fix the errors so that the code runs.
+    The following code has some syntax errors. There are two errors, but each error is repeated multiple times
+    due to the author copy/pasting lines of code. Fix the errors so that the code runs and draws multiple squares.
     ~~~~
     def square(turtle, size):
         turtle.forward(Size)
