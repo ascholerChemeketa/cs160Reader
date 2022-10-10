@@ -10,14 +10,10 @@
 
     <a href="" class="turtle-ref" target="_blank">Turtle programming reference sheet</a>
     <script>
-        let loc = window.document.location.pathname;
-        loc = loc.slice(0, loc.indexOf("/CSP/")+ 5);
-        loc = loc + "CSPNameTurtles/turtleProcedures.html"
-        console.log(loc)
+        let loc = "../CSPNameTurtles/turtleProcedures.html"
         let links = document.getElementsByClassName("turtle-ref")
         for(let link of links) {
             link.href = loc;
-            console.log(link)
         }
     </script>
 
