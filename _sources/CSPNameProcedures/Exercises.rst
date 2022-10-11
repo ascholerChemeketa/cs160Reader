@@ -86,7 +86,7 @@ Chapter Exercises
             return len(matches)
 
         def testOne(self):
-            self.assertEqual(self.countCopies("square\(\s*dave\s*, "), 4, "Testing that you fixed the procedure calls")
+            self.assertEqual(self.countCopies("square\(\s*dave\s*,"), 4, "Testing that you fixed the procedure calls")
 
     myTests().main()
 
