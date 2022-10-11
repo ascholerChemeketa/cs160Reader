@@ -87,7 +87,6 @@ Chapter Exercises
 
         def testOne(self):
             self.assertEqual(self.countCopies("square\(\s*dave\s*, "), 4, "Testing that you fixed the procedure calls")
-            self.assertEqual(self.countCopies("forward\(\s*size "), 4, "Testing that you fixed the parameter usage")
 
     myTests().main()
 
@@ -144,8 +143,8 @@ Chapter Exercises
 
     Complete the body of the function ``colorRectangle(turtleName, width, colorValue)``.
 
-    It should draw a rectangle that has a width specified by the parameter and a height of 100.
-    It should be drawn with a color specified by the parameter colorValue.
+    It should draw a rectangle that has a width specified by the parameter ``width`` and a height of 100.
+    It should be drawn with a color specified by the parameter ``colorValue``.
     The turtle should end up in its original position and facing.
 
     Make sure to do ``pendown`` and ``color`` at the beginning of the procedure and then 
@@ -189,12 +188,12 @@ Chapter Exercises
             return len(matches)
 
         def testOne(self):
-            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you draw the right height twice.")
-            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*width\s*\)"), 2, "Testing that you draw the right width twice.")
-            self.assertEqual(self.countCopies("\s{4}turtleName.color\(colorValue\)"), 1, "Testing that you used the colorValue.")
-            self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(\90\)"), 4, "Testing that used four turns.")
-            self.assertEqual(self.countCopies("\s{4}turtleName.pendown\("), 1, "Testing that you put down the pen.")
-            self.assertEqual(self.countCopies("\s{4}turtleName.penup\("), 1, "Testing that you picked up the pen.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you told turtleName to move forward the right height twice.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*width\s*\)"), 2, "Testing that you turtleName to move forward the right width twice.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.color\(colorValue\)"), 1, "Testing that you told turtleName to use the colorValue.")
+            self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(\90\)"), 4, "Testing that told turtleName to use four turns.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.pendown\("), 1, "Testing that you told turtleName to put down the pen.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.penup\("), 1, "Testing that you told turtleName to pick up the pen.")
 
     myTests().main()
 
