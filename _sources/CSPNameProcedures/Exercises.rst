@@ -127,7 +127,7 @@ Chapter Exercises
             return len(matches)
 
         def testOne(self):
-            self.assertEqual(self.countCopies("def \w+\(\w+\):"), 1, "Testing that you defined a procedure with one parameter.")
+            self.assertEqual(self.countCopies("def \w+\s*\(\w+\)"), 1, "Testing that you defined a procedure with one parameter.")
             self.assertGreaterEqual(self.countCopies("\s{4}\w+\.(right|left)\(\d*\)"), 6, "Testing that used enough turns.")
             self.assertGreaterEqual(self.countCopies("\s{4}\w+\.(right|left)\(60\)"), 6, "Testing that each turn was the right amount.")
             self.assertEqual(self.countCopies("\s{4}\w+\.(backward|forward)\(\d*\)"), 6, "Testing that you moved enough times.")
