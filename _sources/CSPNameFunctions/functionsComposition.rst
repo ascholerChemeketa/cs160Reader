@@ -100,7 +100,7 @@ it and returns the answer.
     :answer_b: 16
     :answer_c: 17
     :answer_d: 18
-    :correct: d
+    :correct: c
     :feedback_a: Make sure to do the abs function first. Then add one.
     :feedback_b: Make sure to do the abs function first. Then add one.
     :feedback_c: Correct.

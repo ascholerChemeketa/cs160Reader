@@ -67,5 +67,5 @@ call ``hypotenuse_length``.
             tempC = (5 / 9) * tempF
             ______________
 
-    - :^returns\s+tempC$: Correct!
+    - :^return\s+tempC$: Correct!
       :.*: Make sure to use return and then the final value that was computed.
