@@ -12,7 +12,7 @@
 Program Implementation - 3
 =========================================
 
-You may have noticed that the ``drawWall`` and ``drawDoor`` functions do not worry about
+You may have noticed that the ``drawWall`` and ``drawDoor`` procedure do not worry about
 where the shape is being drawn. We could put a ``goto`` into them so that they handle
 jumping to the right location to draw their shape. But, that would make it so they can
 only draw in one location. We will want to call the ``drawWindow`` procedure twice to

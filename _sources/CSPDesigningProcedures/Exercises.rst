@@ -21,6 +21,7 @@ Here are some ideas:
 * The current year number as block-style digits on a colored background.
 * A multicolor flag on a flagpole.
 * A few trees and a sun shining on them.
+* A snowman with three part body and two arms.
 
 Remember that although we can't make curves, you can draw circles by setting a large ``pensize``
 and then doing ``forward(0)`` to make a colored dot.

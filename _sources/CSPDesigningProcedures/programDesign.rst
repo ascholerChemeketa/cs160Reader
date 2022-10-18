@@ -95,7 +95,7 @@ Now that I've broken everything down into manageable chunks, we are ready to sta
     to come after the low-level ``rectangle`` procedure. The highest-level procedure,
     ``drawHouse`` must come after all of the other procedures because it makes use of them.
     
-    Don't forget to indent the body of each function, even if it is not real code yet.
+    Don't forget to indent the body of each procedure, even if it is not real code yet.
     -----
     =====
     def rectangle(turtle, width, height): #tag:0; depends:;

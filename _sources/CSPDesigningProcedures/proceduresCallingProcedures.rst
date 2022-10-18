@@ -109,14 +109,14 @@ Now we can use the ``row`` to help write a ``grid`` procedure that makes the fin
 
 
 Our ``grid`` procedure, the parameter is called ``turtle``. Which is the same name that ``square``
-uses for its first parameter. It is OK for two different functions to use the same name for
+uses for its first parameter. It is OK for two different procedures to use the same name for
 their parameters. It can however be confusing... just because they have the same name, does not
 mean that they are always going to have the same value. Just like two people who both make a
 phone call to "Bob" may be calling the same person, or may not be.
 
 In this case, ``roger`` is passed to ``grid``, which calls the turtle ``turtle``, and passes
 it to ``row``, which calls it ``turtleName``, which passes it to ``square`` which calls it
-``turtle``. Each of the functions has its own "nickname" for the turtle that they are all
+``turtle``. Each of the procedures has its own "nickname" for the turtle that they are all
 working with.
 
 .. parsonsprob:: cspdesigningprocedures_procedurescallingprocedures3

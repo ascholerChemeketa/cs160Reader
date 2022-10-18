@@ -12,7 +12,7 @@
 Program Implementation - 2
 =========================================
 
-Now that ``rectangle`` is working, we can use it to write our next function. I will tackle
+Now that ``rectangle`` is working, we can use it to write our next procedure. I will tackle
 ``drawWall`` next. This procedure will take the name of the turtle, set a color, and then
 draw a 300x200 rectangle.
 
