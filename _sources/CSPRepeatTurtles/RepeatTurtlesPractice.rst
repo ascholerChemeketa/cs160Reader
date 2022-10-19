@@ -82,13 +82,8 @@ This section provides more practice using repetition and turtles.
     -----
     from turtle import *
     space = Screen()
-    =====
     nick = Turtle()
     nick.shape("turtle")
-    =====
-    nick = Turtle()
-    nick.shape("Turtle") #distractor
-    =====
     nick.penup()
     =====
     nick.goto(-150,-150)
@@ -131,6 +126,9 @@ This section provides more practice using repetition and turtles.
     draw everything from a 10 sided to a 3 sided polygon, counting down (10, 9, 8, ... 3). Each
     shape should have a size (side length) of 100.
 
+    If you are having trouble, try printing out the loop counter so you can see which numbers
+    your loop is counting through.
+
     |turtle_ref|
 
     ~~~~
@@ -151,9 +149,10 @@ This section provides more practice using repetition and turtles.
     lucia.goto(-50, -150)
     lucia.pendown()
 
-    # add your code here
-    for x in range(10, 2, -1):
-        polygon(lucia, x, 100)
+    # Add your code here to make a loop that counts down from 10 to 3 by -1
+    ____________________________
+        # Inside the loop - use your loop variable as the second parameter to control the number of sides
+        polygon(lucia, ____, 100)
     ====
 
     from unittest.gui import TestCaseGui
