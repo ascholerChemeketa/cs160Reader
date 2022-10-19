@@ -39,22 +39,31 @@ do both ``forward`` and ``right`` 4 times. So why not have a ``for`` loop repeat
     :numbered: left
     :adaptive:
 
-    The following program uses the stamp method to create two squares of turtle shapes as shown
-    below, but the lines are mixed up.  The program should do all necessary set-up, create the
-    turtle, set the shape to "turtle", and pick up the pen.  Draw the blue square before you draw
-    the green one.
+    The following program should define a procedure `triangle` that uses a loop
+    to help draw a triangle. The main part of the program calls that function twice
+    to draw two different triangles.
 
     Arrange and indent the blocks correctly. You will not need them all.
 
-    .. image:: Figures/TurtleStampDoubleSquare.png
-        :width: 150px
-        :align: center
     -----
+    def triangle(turtleName):
+    =====
+        for side in range(3):
+    =====
+            turtleName.forward(120)
+            turtleName.right(90)
+    =====
+            nick.forward(120)
+            nick.right(90)  #distractor
+    =====
+    #Start of main part of program
     from turtle import *
     space = Screen()
     =====
     nick = Turtle()
-    nick.shape("turtle")
+    triangle("nick")
+    nick.right(180)
+    triangle("nick")
 
 .. parsonsprob:: csprepeatturtles_repeatturtles3
     :numbered: left
