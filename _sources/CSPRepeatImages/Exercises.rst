@@ -70,7 +70,7 @@ Chapter Exercises
     from image import
 
     # CREATE AN IMAGE FROM A FILE
-    img = Image("mount_hood.jpg"
+    img = Image("mount_hood.jpg)
 
     # LOOP THROUGH THE PIXELS
     pixelList = img.getPixels()
@@ -100,8 +100,8 @@ Chapter Exercises
 .. activecode:: csprepeatimages_exercises3
     :nocodelens:
 
-    Fill in the missing code on lines 9, 12, and 18 below to set the blue to half the original
-    value in all pixels in the picture.
+    Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel ends up 1/2 of what it used to be.
+
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
@@ -114,10 +114,10 @@ Chapter Exercises
     for p
 
         # STEP 4: GET THE DATA
-        r = p.
+        b = p.
 
         # STEP 5: MODIFY THE COLOR
-        p.setBlue(r * 0.5);
+        p.setBlue(b * 0.5);
 
         # STEP 6: UPDATE THE IMAGE
         img.
@@ -131,7 +131,7 @@ Chapter Exercises
     class myTests(TestCaseGui):
         def testOne(self):
             testPixel = img.getPixel(3, 4)
-            self.assertEqual(testPixel.getRed(), 0, "Testing you set right red value for a particular pixel")
+            self.assertEqual(testPixel.getBlue(), 90, "Testing you set right blue value for a particular pixel")
 
     myTests().main()
 

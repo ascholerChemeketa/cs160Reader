@@ -49,7 +49,7 @@ a value of 1 becomes 254, 2 becomes 253, etc...).
             p.setGreen(255 - p.getGreen())
             
             # STEP 6: CHANGE THE PIXEL
-            img.setPixel(x, y, newPixel)
+            img.setPixel(x, y, p)
             
     # STEP 7: SHOW THE RESULT
     win = ImageWin(img.getWidth(), img.getHeight())
