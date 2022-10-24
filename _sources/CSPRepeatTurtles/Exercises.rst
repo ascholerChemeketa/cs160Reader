@@ -153,7 +153,11 @@ Chapter Exercises
     Below is a program with ``rectangle`` already defined. Add code that uses a for
     loop to call the procedure with the correct values for its parameters. Make sure
     that the 90 width and 10 height rectangle is the first one you draw. You should
-    only need one loop - it must count down from 90 to 10.
+    only need one loop - **it must count down from 90 to 10**.
+
+    Start by writing a loop that just prints out the values 90, 80, 70, ..., 10. Then
+    you can modify the code to use those values to draw rectangles of the appropriate
+    widths and heights.
 
     Hint: The values we use for width and height will
     always add to 100. So if we call one of them :math:`w`, the other must be :math:`100 - w`.
@@ -184,8 +188,8 @@ Chapter Exercises
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertRegex(self.getEditorText(), r"\nfor \w+ in range", "Testing you have a loop")
-            self.assertRegex(self.getEditorText(), r"range\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values. It must count from 90 down to 10.")
-            self.assertRegex(self.getEditorText(), r"range\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values")
+            self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values. It must count from 90 down to 10.")
+            self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values")
             self.assertRegex(self.getEditorText(), r"\n\s{4}rectangle\(\s*ralph", "Testing you call rectangle in the loop")
 
     myTests().main()
