@@ -16,7 +16,7 @@ Chapter Exercises
     :autograde: unittest
     :nocodelens:
 
-    The code currently draws a square. Change it so that it draws a triangle.
+    The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the turn that the turtle makes without modifying other code.
 
     |turtle_ref|
 
@@ -34,7 +34,8 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertRegex(self.getEditorText(), r"for \w+ in range(\s*3\s*):", "Testing that your new loop is correct")
+            self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*3\s*\):", "Testing that your new loop is correct")
+            self.assertRegex(self.getEditorText(), r"alisha\.right\(\s*120\s*\)", "Testing that your new turn is correct")
 
     myTests().main()
 
@@ -43,7 +44,9 @@ Chapter Exercises
     :autograde: unittest
     :nocodelens:
 
-    Fix the errors in the code so that it draws an octagon.
+    Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop based code. There are three issues to fix.
+
+    Remember that to make a complete shape, the turns must sum to 360 degrees.
 
     |turtle_ref|
 
@@ -60,9 +63,9 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertRegex(self.getEditorText(), r"for \w+ in range(\s*\d\s*):", "Testing for one fix")
-            self.assertRegex(self.getEditorText(), r"\s+steven.right(50)", "Testing for a second fix")
-            self.assertRegex(self.getEditorText(), r"for \w+ in range(\s*9\s*):", "Testing for a third fix")
+            self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*\d\s*\):", "Testing that the loop syntax is fixed")
+            self.assertRegex(self.getEditorText(), r"\s{4}steven\.right", "Testing that the indentation is cleaned up")
+            self.assertRegex(self.getEditorText(), r"steven\.right\(\s*45\s*\)", "Testing that the turn is now correct")
 
     myTests().main()
 
@@ -180,7 +183,7 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertRegex(self.getEditorText(), r"\nfor \w in range", "Testing you have a loop")
+            self.assertRegex(self.getEditorText(), r"\nfor \w+ in range", "Testing you have a loop")
             self.assertRegex(self.getEditorText(), r"range\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values. It must count from 90 down to 10.")
             self.assertRegex(self.getEditorText(), r"range\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values")
             self.assertRegex(self.getEditorText(), r"\n\s{4}rectangle\(\s*ralph", "Testing you call rectangle in the loop")
