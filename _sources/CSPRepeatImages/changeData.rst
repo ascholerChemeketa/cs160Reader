@@ -60,7 +60,7 @@ a value of 1 becomes 254, 2 becomes 253, etc...).
     :answer_a: Change line 12 to <code>for x in range(halfWidth, img.getWidth()):</code>
     :answer_b: Change line 13 to <code>for y in range(halfHeight, img.getHeight()):</code>
     :answer_c: Do both
-    :correct: c
+    :correct: a
     :feedback_a: Correct, that uses x coordinates from the half way point until the full width.
     :feedback_b: No, that is the lower-left quadrant. It uses y value that start halfway down and go until the bottom.
     :feedback_c: That would be the lower-right quadrant. For both x and y, it starts at the midpoint and goes until the right or bottom edge.
