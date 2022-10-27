@@ -22,6 +22,8 @@ Chapter Exercises
     :nocodelens:
 
     Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.
+    
+    |image_defs| 
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
@@ -66,6 +68,8 @@ Chapter Exercises
     :nocodelens:
 
     Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to 0.
+
+    |image_defs| 
     ~~~~
     from image import
 
@@ -101,6 +105,8 @@ Chapter Exercises
     :nocodelens:
 
     Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel ends up 1/2 of what it used to be.
+    
+    |image_defs| 
 
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
@@ -142,6 +148,8 @@ Chapter Exercises
 
     Fix the indention below to correctly so that the red and green values for each pixel are set to be the
     same as its blue value. This should make a black & white version of the image.
+    
+    |image_defs| 
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
@@ -187,6 +195,9 @@ Chapter Exercises
     Write code that for each pixel, adds the ``y`` value of its location to the red. You will have to use the
     nested-loop approach to iterating through all of the pixels so that you have access to the
     x and y coordinates of the pixel you are working with.
+    
+    |image_defs| 
+
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
@@ -230,6 +241,8 @@ Chapter Exercises
     top half. 
     
     Remember to use ``//`` when dividing the width or height so that you don't get a decimal (float) answer.
+    
+    |image_defs| 
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
@@ -270,6 +283,8 @@ Chapter Exercises
     the pixel that you get from **x, y** to **x, y + half the height of the image**.
 
     The image should end up with two copies of the top half.
+    
+    |image_defs| 
     ~~~~
     # STEP 1: USE THE IMAGE LIBRARY
     from image import *
