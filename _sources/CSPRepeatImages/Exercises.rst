@@ -278,11 +278,16 @@ Chapter Exercises
 .. activecode:: csprepeatimages_exercises7
     :nocodelens:
 
-    Write code top copy the top half of the image to the bottom half. You should use the same loops
-    as the previous problem to just visit each pixel in the top half. Then use ``setPixel`` to copy
-    the pixel that you get from **x, y** to **x, y + half the height of the image**.
+    Write code top copy the top half of the image to the bottom half. You should end
+    up with something that has two copies of the top of mount hood.
+    
+    You must use loops that track x and y locations to loop through all of the 
+    possible x,y pairs. Then use ``getPixel`` and ``setPixel`` to copy
+    from **x, y** to **x, y + half the height of the image**.
 
-    The image should end up with two copies of the top half.
+    Hint: You saw a program to make a mirror image of the top half of an image.
+    This is pretty similar...
+
     
     |image_defs| 
     ~~~~
