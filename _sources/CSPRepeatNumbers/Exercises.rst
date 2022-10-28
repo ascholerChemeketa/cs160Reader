@@ -12,7 +12,8 @@ Chapter Exercises
 --------------------
 
 .. activecode:: csprepeatnumbers_exercises1
-   :practice: T
+    :autograde: unittest
+    :practice: T
 
     Complete the code to create a program that adds up all the numbers from 10 to 20. Make sure to
     include both 10 and 20 in the sum.
@@ -33,7 +34,8 @@ Chapter Exercises
     myTests().main()
 
 .. activecode:: csprepeatnumbers_exercises2
-   :practice: T
+    :autograde: unittest
+    :practice: T
 
     Complete the code to calculate the sum of the squares of all numbers from 1-10 (inclusive). The sum of squares
     is the result of squaring each value before adding it to the sum. The sum of squares for the numbers
@@ -94,6 +96,7 @@ Chapter Exercises
     print("the object is on the ground")
 
 .. activecode:: csprepeatnumbers_exercises4
+    :autograde: unittest
     :practice: T
 
     To count how many digits there are in a number, you can do the following:
@@ -116,6 +119,9 @@ Chapter Exercises
         digits = 0
 
         # add code here!
+        #while the number is greater than 0
+        #    set the number to the number divided by 10 (use // to divide)
+        #    add one to the number of digits
         
         return digits
         
@@ -134,6 +140,7 @@ Chapter Exercises
 
 
 .. activecode:: csprepeatnumbers_exercises5
+    :autograde: unittest
     :practice: T
 
     Below is the start of a program to calculate how long it will take to have at least $50,000 if
@@ -153,7 +160,11 @@ Chapter Exercises
     invest_per_month = 300
     months = 0
     
-    # add code here
+    # TODO
+    # repeat WHILE the money is less than 50000
+    #    gain 0.5% interest to the money (set money to itself times 1.005)
+    #    add the invest_per_month to the money
+    #    increase the months by 1
 
     print(months)
     ====
