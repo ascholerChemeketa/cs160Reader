@@ -83,11 +83,6 @@ procedures and functions.
     * - fillcolor
       - colorname
       - This page has a `table of colors <https://trinket.io/docs/colors>`__
-    * - colormode
-      - mode
-      - If you pass 255 as the mode like ``turtleName.colormode(255)``, you
-        can then set colors using a list of red, green, blue values between 0-255
-        like: ``turtleName.color(255,255,0)`` or ``turtleName.fillcolor(0, 125, 200)``
     * - stamp
       - None
       - Stamps a copy of the turtle's icon at the current location.

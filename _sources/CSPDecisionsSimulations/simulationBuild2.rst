@@ -50,13 +50,18 @@ If you run into troubles, here are some debugging tips:
         else:
             return False
 
+    # ---------------------------------
     # main part of program
     repetitions = 10000
     successCounter = 0
     for run in range(repetitions):
-        result = checkHeadsInRow(100)
+        # use the function to see if we get the 5 heads in a row
+        result = checkHeadsInRow(5)
         # TODO if result is True increase successCounter by 1
 
+    print("The successCounter is", successCounter)
+    print("As a percent, that is:")
+        
     percent = (successCounter / repetitions) * 100
     print(str(percent) + "%")
 

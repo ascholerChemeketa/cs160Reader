@@ -32,7 +32,10 @@ As a reminder, here are the turtle commands:
     from turtle import *
     import random
     becca = Turtle()
+
+    # pick a random size
     squareSize = random.randrange(50, 200)
+    # draw a square using that size
     drawSquare(becca, squareSize)
 
 Note that although we want the size of the square to be random, it is important that all the
@@ -58,7 +61,7 @@ the point 0, 0 or it might go off screen. I am fine with it starting to the left
 that location, but I don't want it to start right at the edge of the screen. So I want the
 starting x location to be between -190 and 0 and the starting y to be between 0 and 190.
 So this version of the program uses ``goto(x, y)`` and random numbers to pick a random 
-starting location before drawing each square. We use a loop to draw 5 squares.
+starting location before drawing the square.
 
 .. activecode:: cspdecisionssimulations_turtlerandom2
     :nocodelens:
@@ -74,33 +77,50 @@ starting location before drawing each square. We use a loop to draw 5 squares.
     becca = Turtle()
     becca.speed(0)
 
-    for square in range(5):
-        becca.penup()
-        #pick a random starting location 
-        startX = random.randrange(-190, 1)
-        startY = random.randrange(0, 191)
-        becca.goto(startX, startY)
-        becca.pendown()
-        squareSize = random.randrange(50, 200)
-        drawSquare(becca, squareSize)
+    #pick a random starting location 
+    becca.penup()
+    startX = random.randrange(-190, 1)
+    startY = random.randrange(0, 191)
+    becca.goto(startX, startY)
+    becca.pendown()
+
+    #pick a random size and draw the square
+    squareSize = random.randrange(50, 200)
+    drawSquare(becca, squareSize)
 
 Try the program a few times. Each time you should get different squares. 
 
-Now let's make it a little more interesting by picking a random color inside the loop
-before we call ``drawSquare``. The ``colormode`` has been set to 255, so to pick a random color, 
-you need to call ``becca.fillcolor(red, green, blue)`` where red/green/blue are each a value
-between 0-255. The ``drawSquare`` procedure has been changed to call ``begin_fill`` and ``end_fill``
-to fill in the squares.
+Now let's make it a little more interesting by picking a random color each time the program runs.
+We have added a procedure called ``changeColor``. If you pass it the name of a turtle, and three
+numbers between 0-255 representing ``red``, ``green``, and ``blue`` values, it will make a hexadecimal
+color code that represents the color with that much red/green/blue. It will then use that to set
+the color of the turtle. Your task is to write code to pick three random numbers to use for the color
+values.
 
 .. activecode:: cspdecisionssimulations_turtlerandom3
     :nocodelens:
     :practice: T
     :autograde: unittest
 
-    In the location marked at line 20, add lines of code to make three random values that are
-    each 0-255 and name them ``red``, ``green``, and ``blue``. Then call 
-    ``becca.fillcolor(red, green, blue)`` to set a random color.
+    In the location marked ``TODO`` (line 38), add lines of code to make three random values that are
+    each 0-255 and name them ``red``, ``green``, and ``blue``.
     ~~~~
+    def changeColor(turtleName, red, green, blue):
+        # red, green, blue should all be values between 0 and 255
+        # changes them to a hexadecimal format like #FF3C28 and sets turtleName color with that
+        redPart = hex(red)          # will look like 0xFF
+        redPart = redPart[2:]       # only keep the FF part
+        bluePart = hex(blue)        # same for blue and green
+        bluePart = bluePart[2:] 
+        greenPart = hex(green)
+        greenPart = greenPart[2:] 
+
+        colorValue = "#" + redPart + greenPart + bluePart
+        print("colorValue is", colorValue)
+
+        turtleName.fillcolor(colorValue)
+
+
     def drawSquare(turtleName, size):
         turtleName.begin_fill()
         for side in range(4):
@@ -108,36 +128,39 @@ to fill in the squares.
             turtleName.right(90)
         turtleName.end_fill()
 
+    # -------------------------------------------------
     # main part of program
     from turtle import *
     import random
     becca = Turtle()
-    becca.colormode(255)
     becca.speed(0)
 
-    for square in range(5):
-        becca.penup()
-        #pick a random starting location 
-        startX = random.randrange(-190, 1)
-        startY = random.randrange(0, 191)
-        becca.goto(startX, startY)
-        becca.pendown()
-        #pick a random color here
-        squareSize = random.randrange(50, 200)
-        drawSquare(becca, squareSize)
+    #pick a random starting location 
+    becca.penup()
+    startX = random.randrange(-190, 1)
+    startY = random.randrange(0, 191)
+    becca.goto(startX, startY)
+    becca.pendown()
+
+    # TODO - Make red, green, blue be random values between 0 and 255
+
+    changeColor(becca, red, green, blue)
+
+    #pick a random size and draw square
+    squareSize = random.randrange(50, 200)
+    drawSquare(becca, squareSize)
     =====
 
     from unittest.gui import TestCaseGui
+    import re
 
     class myTests(TestCaseGui):
+        def countCopies(self, regex):
+            matches = re.findall(regex, self.getEditorText())
+            return len(matches)
+
         def testOne(self):
-            self.assertRegex(self.getEditorText(), r"random.randrange\(0, 25[56]\)", "Testing that you make a random number 0-255.")
-            self.assertRegex(self.getEditorText(), r"becca.fillcolor\([^,]+,[^,]+,[^,]+(,[^,]+)?\)", "Testing that you call becca.fillcolor.")
+            self.assertRegex(self.getEditorText(), r"random.randrange\(0, 25[56]\)", "Testing that you make a random number 0-255 using randrange.")
+            self.assertEqual(self.countCopies("random.randrange\(0, 25[56]\)"), 3, "Testing that you made three random numbers 0-255.")
 
     myTests().main()
-
-Optional experiment: If you want to make the squares partially transparent, you can change your
-call to fillcolor to look like ``becca.fillcolor(red, green, blue, 0.5)``. The 0.5 as the fourth
-parameter says to make the fill be 50% opaque. (Opaque is the opposite of transparent. 20% opaque
-means 80% transparent and 60% opaque means 40% transparent. The closer to 1.0 that fourth value is,
-the more solid the color. The closer to 0 it is, the more transparent it will be.)

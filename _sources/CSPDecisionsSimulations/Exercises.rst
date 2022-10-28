@@ -87,95 +87,74 @@ Chapter Exercises
 
 
 .. activecode:: cspdecisionssimulations_exercises3
-    :autograde: unittest
-    :practice: T
 
     Using the code below, write a program that simulates rolling a pair of six-sided dice (1-6)
     10000 times and counting up the number of times that an eight is rolled (the two dice
     add to 8).
 
-    Make sure to generate two seperate numbers between 1-6 for each roll. Then add those two
+    Make sure to generate two separate numbers between 1-6 for each roll. Then add those two
     numbers up and if they make eight, increment the ``numEights`` counter.
 
     If you have troubles, try reducing the range to something like 10 or 20 rolls and printing
-    out what you roll for each of the dice and the total them make. When you get it working,
-    make sure to reset the loop to 10000 trials or you won't pass the tests.
+    out what you roll for each of the dice and the total them make. 
 
-    **Note:** It is possible, but *extremely* unlikely that you will get really lucky or
-    unlucky and the tests will think your code is wrong even if it is right. If that happens,
-    just run it again. 
-
+    **Warning** 
+    There is no autograder for this problem. It is up to you to decide if your program is working.
+    For 10000 trials you should usually get an answer between 1300 and 1500. You may occasionally
+    get a result outside that range if you are really unlucky or really lucky.
 
     ~~~~
     import random
 
     numEights = 0
+
+    # While testing, you may want to change this loop to only to 10 trials
+    # To pass tests make sure to do 10000 trials and do not print anything inside the loop
     for roll in range(10000):
-        #code here
+        # YOUR CODE HERE
+        # Make two random numbers 1-6 (optionally, print them out to make sure code works)
+        # If they add to 8, add one to numEights 
+        # Optionally, print numEights out to see the change
 
-    print(numEights)
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertIn("range(10000)", self.getEditorText(), "Testing that you looped 10000 times.")
-            self.assertGreaterEqual(numEights, 1300, "Testing that you got a number that isn't too low.")
-            self.assertLessEqual(numEights, 1500, "Testing that you got a number that isn't too high.")
-
-    myTests().main()
+    # print number of eights rolled when loop is done
+    print("Number of eights was", numEights)
 
 
 .. activecode:: cspdecisionssimulations_exercises4
     :autograde: unittest
     :practice: T
 
-    Finish the function ``getOddsFor``. It should determine the odds of rolling ``targetNumber``
-    when rolling two six-sided dice (1-6). It should do so by using a loop to repeat ``TRIALS``
-    number of times rolling two dice and seeing how many times ``targetNumber`` is the total of
-    the two dice. Then return that number divided by ``TRIALS``.
+    A friend of yours likes a game that involves rolling dice to create their characters.
 
-    Your code from the previous problem should be a guide for most of the process. 
-    Just make sure to check if the
-    total you "roll" is the same as the ``targetNumber`` as opposed to always checking against 8.
+    Finish the program below to simulate rolling three dice (with sides 1-6) 6 different times
+    and keeping track of the highest total that you saw.
+    
+    For example:
+    Roll 1, 3, 5 - total is 9. The highest roll so far is now 9
+    Roll 4, 6, 3 - total is 13. The highest roll so far is now 3
+    Roll 2, 1, 5 - total is 8. The highest roll so far is still 13
+    Roll 6, 5, 5 - total is 16. The highest roll so far is now 16
+    Roll 3, 2, 5 - total is 10. The highest roll so far is still 16
+    Roll 4, 4, 3 - total is 11. The highest roll so far is still 16
 
-    Make sure to ``return`` your answer from the function, don't print it in the function!
-
-    You can change ``TRIALS`` while debugging so that you can print information and mange to read
-    it all. But make sure to change it back to 100000 (or a similar large number) for the final
-    run.
+    **Warning** 
+    There is no autograder for this problem. It is up to you to decide if your program is working.
 
     ~~~~
     import random
-    TRIALS = 100000
 
-    def getOddsFor(targetNumber):
-        # your code here
-        match = 0
-        for i in range(100000):
-            total = random.randrange(1,7) + random.randrange(1,7)
-            if total == targetNumber:
-                match = match + 1
-        return match / TRIALS
+    highestRoll = 0
 
-    # main program
-    print("Testing 8's, expect 0.13889", getOddsFor(8))
-    print("Testing 5's, expect 0.1111", getOddsFor(5))
-    print("Testing 12's, expect 0.0277", getOddsFor(12))
+    for roll in range(6):
+        # YOUR CODE HERE
+        # Make three random numbers that are 1-6 (optionally, print them out to make sure code works)
+        # Total them up
+        # If the total is more than the highestRoll, change highestRoll to match the total
+        # Optionally, print highestRoll to see if it looks correct
 
-    =====
+    # print the highest roll when done with loop
+    print("highestRoll was", highestRoll)
 
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertAlmostEqual(getOddsFor(8), 0.13888, 2, "Testing that you got about the right answer for 8.")
-            self.assertAlmostEqual(getOddsFor(5), 0.11111, 2, "Testing that you got about the right answer for 5.")
-            self.assertAlmostEqual(getOddsFor(12), 0.02777, 2, "Testing that you got about the right answer for 12.")
-
-    myTests().main()
 
 
 .. activecode:: cspdecisionssimulations_exercises5
@@ -199,7 +178,6 @@ Chapter Exercises
     import random
     drew = Turtle()
     drew.shape("circle")
-    drew.colormode(255)
 
     #set starting location
     drew.penup()
@@ -208,7 +186,7 @@ Chapter Exercises
 
     #set up the color and size
     drew.pensize(50)
-    drew.color(255, 200, 200)
+    drew.color("#ffc8c8")
 
     #draw the dot
     drew.forward(0)
@@ -221,6 +199,57 @@ Chapter Exercises
         def testOne(self):
             self.assertRegex(self.getEditorText(), r"random.randrange\(\s*-100,\s*10[01]\s*\)", "Testing that you make a random number between -100 and 100.")
             self.assertRegex(self.getEditorText(), r"random.randrange\(\s*50,\s*20[01]\s*\)", "Testing that you make a random number between 50 and 200.")
+
+    myTests().main()
+
+
+
+.. activecode:: cspdecisionssimulations_exercises6
+    :autograde: unittest
+    :practice: T
+
+    Challenge.
+
+    Finish the function ``getOddsFor``. It should determine the odds of rolling ``targetNumber``
+    when rolling two six-sided dice (1-6). It should do so by using a loop to repeat ``TRIALS``
+    number of times rolling two dice and seeing how many times ``targetNumber`` is the total of
+    the two dice. Then return that number divided by ``TRIALS``.
+
+    This is very similar to exercise 3 above...
+    Just make sure to check if the
+    total you "roll" is the same as the ``targetNumber`` as opposed to always checking against 8.
+
+    Make sure to ``return`` your answer from the function, don't print it in the function!
+
+    ~~~~
+    import random
+
+    def getOddsFor(targetNumber):
+        # matches will hold the number of times you "roll" the targetNumber
+        matches = 0
+
+        # TODO
+        # 10000 times:
+            # make two random numbers 1-6
+            # if they add to targetNumber, increase matches by 1
+
+        # calculate and return percent of time roll matched targetNumber
+        return matches / 10000
+
+    # main program
+    print("Testing 8's, expect 0.13889", getOddsFor(8))
+    print("Testing 5's, expect 0.1111", getOddsFor(5))
+    print("Testing 12's, expect 0.0277", getOddsFor(12))
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertAlmostEqual(getOddsFor(8), 0.13888, 2, "Testing that you got about the right answer for 8.")
+            self.assertAlmostEqual(getOddsFor(5), 0.11111, 2, "Testing that you got about the right answer for 5.")
+            self.assertAlmostEqual(getOddsFor(12), 0.02777, 2, "Testing that you got about the right answer for 12.")
 
     myTests().main()
 

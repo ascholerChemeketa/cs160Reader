@@ -99,15 +99,12 @@ answer. Making it into a function will make it easier to repeat the process over
     Arrange the code so that the ``checkHeadsInRow(desiredStreak)`` function works correctly.
     It will take a number as its parameter - the number of heads in a row we want to see. It
     will do 100 flips and see if we get that many in a row. If so, it returns True, otherwise False.
-    Using a parameter means we could use this same funciton to easily ask for 4 heads in a row,
+    Using a parameter means we could use this same function to easily ask for 4 heads in a row,
     or 6 heads.
 
     You will use all of the blocks. Make sure to put the import at the very top of the program
     and the main part of the program (the function call) after you define the function.
     -----
-    # import at top of program
-    import random
-    =====
     def checkHeadsInRow(desiredStreak):
         headsInARow = 0 #start with 0
     =====
@@ -131,6 +128,3 @@ answer. Making it into a function will make it easier to repeat the process over
         else:
     =====
             return False
-    =====
-    # main part of program
-    print( checkHeadsInRow(5) )
