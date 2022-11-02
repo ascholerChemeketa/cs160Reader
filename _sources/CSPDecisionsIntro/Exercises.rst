@@ -23,9 +23,9 @@ Chapter Exercises
     otherwise set it to 1.3. It then calculates the total be multiplying the weight by price.
 
     Fix 3 errors with indention in the code below so that it calculates the right total
-    for a weight of 0.5 (should be 0.75).
+    for a weight of 0.5 (the answer should be 0.75). You will not pass the tests yet.
 
-    Then change the weight to be 3 (leave numItems as 5).
+    Then change the weight to be 3 and run the program again to pass the tests (answer now should be 3.9).
 
     ~~~~
     weight = 0.5
@@ -41,9 +41,9 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(weight, 0.5, "Testing that weight is 0.5.")
-            self.assertEqual(price, 1.5, "Testing that price is correct.")
-            self.assertEqual(total, 0.75, "Testing the total is correct.")
+            self.assertEqual(weight, 3, "Testing that weight is 3.")
+            self.assertEqual(price, 1.3, "Testing that price is correct.")
+            self.assertEqual(total, 3.9, "Testing the total is correct.")
 
     myTests().main()
 
@@ -54,6 +54,10 @@ Chapter Exercises
 
     Write code to complete the ``isEven`` function. It should return ``True`` if ``number`` is
     even and ``False`` if it is odd.
+
+    Make sure to return ``False`` or ``True``, not ``"False"`` or ``"True"`` with quotes.
+    ``False`` in Python means False/no/0. ``"False"`` means *"the word False"*.
+    ``True`` in Python means True/yes/1. ``"True"`` means *"the word True"*.
 
     To check if a number is even, you can divide it by 2 and look at the remainder. (Remember
     that ``x % 2`` says "divide x by 2 and get the remainder".) If the remainder is 1, the number

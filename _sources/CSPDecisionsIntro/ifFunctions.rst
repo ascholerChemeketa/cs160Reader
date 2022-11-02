@@ -25,7 +25,8 @@ program below implements that logic.
 
         # Fix answer if it is not
         if numberPages > 30:
-            cost = 3 + numberPages * 0.05
+            pagesOver30 = numberPages - 30
+            cost = 3 + pagesOver30 * 0.05
 
         return cost
 
