@@ -43,7 +43,7 @@ Chapter Exercises
         def testOne(self):
             self.assertEqual(weight, 3, "Testing that weight is 3.")
             self.assertEqual(price, 1.3, "Testing that price is correct.")
-            self.assertEqual(total, 3.9, "Testing the total is correct.")
+            self.assertAlmostEqual(total, 3.9, 2, "Testing the total is correct.")
 
     myTests().main()
 
