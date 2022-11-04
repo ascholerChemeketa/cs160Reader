@@ -121,7 +121,6 @@ Chapter Exercises
 
 
 .. activecode:: cspdecisionssimulations_exercises4
-    :autograde: unittest
     :practice: T
 
     A friend of yours likes a game that involves rolling dice to create their characters.

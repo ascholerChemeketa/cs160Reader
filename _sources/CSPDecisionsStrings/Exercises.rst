@@ -41,26 +41,28 @@ Chapter Exercises
     :numbered: left
     :practice: T
 
-    The following program segment should ask the user to first input two numbers which will serve
-    as boundaries, then ask for a third number and determine whether it falls within the range of
-    the first two numbers. 
+    The following program segment should ask the user for three numbers and say whether they
+    are in order. The numbers can be either ascending (going up) or descending (going down).
+
+    For example, if the inputs are ``10 15 20``, the answer should be "yes, in order". Same if
+    the inputs were ``6 5 1``. But if the inputs were ``3 5 4``, the answer would be "no, not in order".
     
     The blocks have been mixed up and include extra blocks that aren't needed in the solution. 
     Drag the needed blocks from the left and put them in the correct order on the right.  
     -----
-    first = int( input("Enter the first number parameter: ") )
-    second = int( input("Enter the second number parameter: ") )
-    num = input("Enter a number: ")
+    first = int( input("Enter the first number: ") )
+    second = int( input("Enter the second number: ") )
+    third = int( input("Enter the third number: ") )
     =====
-    if (num > first and num < second) or (num < first and num > second):
+    if (second > first and second < third) or (third < second and second < first):
     =====
-    if (num > first or num < second) and (num < first or num > second): #distractor
+    if (second > first or second < third) and (third < second or second < first): #distractor
     =====
-        print("Your number falls in the given range")
+        print("yes, in order")
     =====
     else:
     =====
-        print("Your number does not fall in the given range")
+        print("no, not in order")
 
 
 .. activecode:: cspdecisionsstrings_exercises3
@@ -75,6 +77,11 @@ Chapter Exercises
     string ``"to go"`` anywhere in it, the total cost should be just the meal price. Otherwise,
     it should be the price + 8% (1.08 times the meal price).
 
+    Remember that you can use ``in`` to check if one string appears inside another.
+
+    Note that when you run it, you can enter whatever values you want. The tests for your program
+    will automatically try a collection of different inputs and don't depend on what you type in.
+
     ~~~~
     def getTotalCost(price, location):
         # your code here - make sure to return an answer!
@@ -83,6 +90,13 @@ Chapter Exercises
     # main program
     mealPrice = int(input("What is the base meal price?"))
     mealLocation = input("Are you dining in or taking it to go?")
+
+    # For easier testing of your function, comment out the input lines above
+    # and uncomment these two lines so you don't have to type input while
+    # running the program.
+    #mealPrice = 10
+    #mealLocation = "I want it to go please"
+
     cost = getTotalCost(mealPrice, mealLocation)
 
     print(cost)
@@ -102,49 +116,6 @@ Chapter Exercises
 
 
 .. activecode:: cspdecisionsstrings_exercises4
-    :autograde: unittest
-    :practice: T
-
-    The program below is supposed to calculate the final bill for a meal at a fast food resteraunt 
-    in a state where meals taken to go are not taxed, but meals eaten in the resteraunt are.
-
-    Your job is to write the ``getTotalCost`` function. It should use the initial meal ``price``
-    and the ``location`` it is being eaten to calculate the final cost. If ``location`` has the
-    string ``"to go"`` anywhere in it, the total cost should be just the meal price. Otherwise,
-    it should be the price + 8% (1.08 times the meal price).
-
-    ~~~~
-    def getTotalCost(price, location):
-        # your code here - make sure to return an answer!
-        
-
-    # main program
-    mealPrice = int(input("What is the base meal price?"))
-    mealLocation = input("Are you dining in or taking it to go?")
-
-    # For easier testing of your function, comment out the inputs above
-    # and uncomment these lines so you don't have to type inputs while running:
-    #mealPrice = 10.00
-    #mealLocation = "eat here"
-
-    cost = getTotalCost(mealPrice, mealLocation)
-    print(cost)
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertAlmostEqual(getTotalCost(10.00, "dining in"), 10.80, 2, "Testing $10.00, 'dining in'")
-            self.assertAlmostEqual(getTotalCost(20.00, "to go"), 20.00, 2, "Testing $20.00, 'to go'")
-            self.assertAlmostEqual(getTotalCost(10.00, "I'll take it to go"), 10.00, 2, "Testing $10.00, 'I'll take it to go'")
-            self.assertAlmostEqual(getTotalCost(20.00, "I'll eat in"), 21.60, 2, "Testing $20.00, 'I'll eat in'")
-
-    myTests().main()
-
-
-.. activecode:: cspdecisionsstrings_exercises5
     :autograde: unittest
     :practice: T
 
@@ -184,6 +155,49 @@ Chapter Exercises
             self.assertEqual(getTicketCost(32), 15, "Testing age 32")
             self.assertEqual(getTicketCost(65), 0, "Testing age 65")
             self.assertEqual(getTicketCost(80), 0, "Testing age 80")
+
+    myTests().main()
+
+
+.. activecode:: cspdecisionsstrings_exercises5
+    :autograde: unittest
+    :practice: T
+
+    To graduate from a particular high school, a student needs 22 or more
+    total credits and at least 3 math credits. (They also need some other
+    specific subjects, but we will ignore them.)
+
+    Finish the ``canGraduate`` function. It accepts an number of ``totalCredits``
+    earned and a number of ``mathCredits``. It should return ``True`` 
+    (without any quotes!!!) if someone with that number of credits is ready
+    to graduate. Otherwise return ``False``.
+
+    You can modify the code in the main part of the program to test out 
+    different numbers of credits. The tests will not use what you do there,
+    they will just test your function.
+
+    ~~~~
+    def canGraduate(totalCredits, mathCredits):
+        # your code here - make sure to return an answer!
+        
+
+    # main program
+    isReady = canGraduate(24, 4)
+    print(isReady)
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(canGraduate(24, 4), True, "Testing 24, 4")
+            self.assertEqual(canGraduate(24, 3), True, "Testing 24, 3")
+            self.assertEqual(canGraduate(24, 2), False, "Testing 24, 2")
+            self.assertEqual(canGraduate(23, 4), True, "Testing 23, 4")
+            self.assertEqual(canGraduate(22, 4), True, "Testing 22, 4")
+            self.assertEqual(canGraduate(21, 4), False, "Testing 21, 4")
+            self.assertEqual(canGraduate(20, 1), False, "Testing 20, 1")
 
     myTests().main()
 
