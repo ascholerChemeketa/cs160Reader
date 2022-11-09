@@ -18,10 +18,10 @@ they all should work.
 
 .. activecode:: cspdecisionsstrings_instring1
 
-    continue = input("Do you wish to continue?")
-    continue = continue.lower()   # change input to lower case
+    answer = input("Do you wish to continue?")
+    answer = answer.lower()   # change input to lower case
 
-    if "y" in continue:
+    if "y" in answer:
         print("Great, let's continue")
     else:
         print("Bye!")
@@ -55,7 +55,7 @@ Complete this mixed up code problem that tells the user what season a given mont
     def getSeason(monthName):
         monthName = monthName.lower()
         season = ""
-        if "dec" in monthName or "fan" in monthName or "feb" in monthName:
+        if "dec" in monthName or "jan" in monthName or "feb" in monthName:
             season = "Winter"
         # add code for other seasons
         # mar, apr, may are Spring
@@ -79,7 +79,7 @@ Complete this mixed up code problem that tells the user what season a given mont
             self.assertEqual(getSeason("nov"), "Fall", "Testing nov.")
             self.assertEqual(getSeason("February"), "Winter", "Testing February.")
             self.assertEqual(getSeason("june"), "Summer", "Testing june.")
-            self.assertEqual(getSeason("???"), "???", "Testing nonsense month.")
+            self.assertEqual(getSeason("thermidor"), "???", "Testing default.")
 
     myTests().main()
 
