@@ -70,7 +70,7 @@ Complete this mixed up code problem that tells the user what season a given mont
             self.assertEqual(getSeason("nov"), "Fall", "Testing nov.")
             self.assertEqual(getSeason("February"), "Winter", "Testing February.")
             self.assertEqual(getSeason("june"), "Summer", "Testing june.")
-            self.assertEqual(getSeason("???"), "Fall", "Testing nonesense month.")
+            self.assertEqual(getSeason("???"), "???", "Testing nonsense month.")
 
     myTests().main()
 
