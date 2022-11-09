@@ -42,6 +42,15 @@ Complete this mixed up code problem that tells the user what season a given mont
     Code for the Winter months is already there, write code for the other seasons. If
     there is no logical match for the ``monthName``, we will want to return "???" as the
     season.
+
+    *Hints:*  
+
+    1. There are a couple of ways to make sure that ``"???"`` gets returned as the
+    default value for season.  
+
+    2. To make a bunch of exclusive options, remember that it
+    works better to use if/elif/elif/else instead of if/if/if/if
+
     ~~~~
     def getSeason(monthName):
         monthName = monthName.lower()
