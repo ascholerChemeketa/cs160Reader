@@ -23,6 +23,7 @@ In this chapter, we will focus on algorithms for searching a list and sorting on
     InsertionSort2.rst
     Efficiency.rst
     BigO.rst
+    EfficiencyTesting.rst
     SearchBigO.rst
     SortBigO.rst
     BigOEstimation.rst
@@ -30,7 +31,5 @@ In this chapter, we will focus on algorithms for searching a list and sorting on
     MergeSort2.rst
     MergeSortEfficiency.rst
     MergeSortEfficiency2.rst
-    
-
 
     
