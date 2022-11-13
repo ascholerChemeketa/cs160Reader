@@ -49,7 +49,7 @@ become one of a few specific options.
             self.assertEqual(posterize(20), 0, "posterize(20)")
             self.assertEqual(posterize(49), 0, "posterize(49)")
             self.assertEqual(posterize(50), 125, "posterize(50)")
-            self.assertEqual(posterize(124), 1125, "posterize(124)")
+            self.assertEqual(posterize(124), 125, "posterize(124)")
             self.assertEqual(posterize(200), 255, "posterize(200)")
 
     myTests().main()
