@@ -92,7 +92,7 @@ Try watching the algorithm run on various values. Note that items that have turn
               - ((list[i] + 1) / max) * h, unitWidth, ((list[i] + 1) / max) * h);
             fill(0, 102, 153); 
             text(list[i], (i +0.5) * unitWidth+ 22, height - 22 - ((list[i] + 1) / max) * h); 
-            text((i+1), (i +0.5) * unitWidth+ 22, height - 5); 
+            text((i), (i +0.5) * unitWidth+ 22, height - 5); 
           }
 
           text("index", 5, height - 5); 
@@ -107,9 +107,9 @@ Try watching the algorithm run on various values. Note that items that have turn
           if (isKeySet) {
             fill(#677915);
             text("Search for key " + keyInUse, 10, 15); 
-            text("Current low index:  " + (low+1), 10, 30); 
-            text("Current high index: " + (high+1), 10, 45); 
-            text("Current mid index:  (" + (low+1) + " + " + (high+1) + ") / 2 rounded down = " + (mid+1), 10, 75); 
+            text("Current low index:  " + (low), 10, 30); 
+            text("Current high index: " + (high), 10, 45); 
+            text("Current mid index:  (" + (low) + " + " + (high) + ") / 2 rounded down = " + (mid), 10, 75); 
             if(low > high)
                 text("Low index is higher than high index - value is not present!", 10, 90); 
             else {
@@ -193,8 +193,8 @@ Below are the main steps of the binary search algorithm, expressed in pseudocode
 .. faux_code::
 
     \     *Note: assume that list and key are already set*
-    1   set ``lowIndex`` = 1
-    2   set ``highIndex`` = length of ``list``
+    1   set ``lowIndex`` = 0
+    2   set ``highIndex`` = length of ``list`` - 1
     3   repeat until ``lowIndex`` is larger than ``highIndex``
     4       set ``middleIndex`` = (``lowIndex`` + ``highIndex``)/2   *round down*
     5       set ``middleValue`` = ``list[middleIndex]``

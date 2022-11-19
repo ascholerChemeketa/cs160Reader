@@ -18,8 +18,8 @@ Assume a list called ``list``, filled with integers. Each integer in the list ha
 .. faux_code::
 
     \     *Note: assume that list and key are already set*
-    1   set ``location`` = 1
-    2   repeat until ``location`` > (length of the ``list``)
+    1   set ``location`` = 0
+    2   repeat while ``location`` < (length of the ``list``)
     3       if ``list[location]`` == ``key`` 
     4           print "Found at " + ``location``
     5           end program
@@ -107,7 +107,7 @@ You can try doing a linear search below. Type the number you wish to search for 
             fill(0, 102, 153); 
             text(numbers[i], (i +0.5) * unitWidth+ 22,
               height - ((numbers[i] + 1) / max) * h - 7); 
-            text(i + 1, (i +0.5) * unitWidth+ 22, height - 5); 
+            text(i, (i +0.5) * unitWidth+ 22, height - 5); 
           }
 
           text("index", 5, height - 5); 
@@ -115,7 +115,7 @@ You can try doing a linear search below. Type the number you wish to search for 
           fill(#677915);
           if (isKeySet) {
             text("Search for key " + keyInUse, 10, 15); 
-            text("location: " + (coloredBarIndex+1), 10, 30); 
+            text("location: " + (coloredBarIndex), 10, 30); 
           }
          
           fill(#96c170); 

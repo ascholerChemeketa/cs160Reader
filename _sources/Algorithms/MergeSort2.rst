@@ -15,8 +15,8 @@ So how does merging help us sort? Well, with it we can define Merge Sort (for a 
 .. faux_code::
 
     1   **How to MergeSort a list**
-    2       if ``list`` has length = 1
-    3           *A list of one thing is already sorted!*
+    2       if ``list`` has length <= 1
+    3           *A list of one thing or no things is already sorted!*
     4           Do nothing
     5       else 
     6           ``listA`` = first half of ``list``
@@ -152,7 +152,7 @@ The animation below allows you to step through the process on a randomly generat
             rect(i * unitWidth + xstart, starth - boxSize, unitWidth, boxSize + 1) ;
             fill(0, 102, 153);
             text(list[i], xstart + (i + 0.5) * unitWidth, starth - boxSize - 15); 
-            text((i+1), xstart+ (i + 0.5 ) * unitWidth, starth + 5); 
+            text((i), xstart+ (i + 0.5 ) * unitWidth, starth + 5); 
             }
           }
           text("index", xstart - 10, starth + 5); 
@@ -219,7 +219,7 @@ The animation below allows you to step through the process on a randomly generat
               fill(0, 102, 153);
               if(tempList[i]> 0)
                 text(tempList[i],  (i + .5) * unitWidth + xstart, starth - boxSize - 35); 
-              text((i+1), (i + .5) * unitWidth + xstart, starth - 15); 
+              text((i), (i + .5) * unitWidth + xstart, starth - 15); 
           }
           text("index", xstart - 10, starth - 15); 
           if(! isSplitting && !isCopying) {
