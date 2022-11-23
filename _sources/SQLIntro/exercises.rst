@@ -58,6 +58,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select the year and title of each movie (put them in that order, so that
     the year appears first).
@@ -76,6 +77,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select all of the columns of the movies that were released in 2004.
     ~~~~
@@ -91,6 +93,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select all of the columns of the movies that have a rating of ``"PG"``
     or ``"PG-13"``.
@@ -105,6 +108,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select all of the columns of the movies that are in the genre ``"Sci-Fi"``.
     Many movies have multiple genres, we want to include every movie where Sci-Fi is anywhere
@@ -120,6 +124,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select all of the columns of the movies that have a runtime of between
     110 and  120 minutes. 
@@ -134,6 +139,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to select just the title, year, and IMDB score (in that order)
     of all the movies. Order the results so that the highest IMDB scores come first.
@@ -149,6 +155,7 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to find just the title and year of release (in that order)
     for movies with a Metacritic score
