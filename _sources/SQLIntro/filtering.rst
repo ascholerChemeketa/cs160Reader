@@ -88,15 +88,15 @@ For example to look at bike trips which are 60 minutes or more and the
     :language: sql
     :dburl: /_static/bikeshare.db
 
-    Write a query to find the ending station and duration of all of trips by bike
-    number W00153 that lasted over 8 hours (remember that duration is measured in
+    Write a query to find the ending station and duration (in that order) of all of trips by bike
+    number ``'W00153'`` that lasted over 8 hours (remember that duration is measured in
     seconds, you will have to figure out how many seconds are in 8 hours).
 
-    The bike number W00153 is a string, so make sure to use quotes around it in your query.
+    The bike number - 'W00153' - is not really a number, it is a string, so make sure to use quotes around it in your query.
     ~~~~
 
     ====
     assert 0,0 == 31606
     assert 0,1 == 40791
-    assert 2,0 == 31703
-    assert 2,1 == 40820
+    assert 1,0 == 31703
+    assert 1,1 == 40820
