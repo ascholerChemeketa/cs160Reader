@@ -92,13 +92,13 @@ columns of data:
     :dburl: /_static/movies.db
     :practice: T
 
-    Write a query to select all of the columns of the movies that have a rating of "PG"
-    or "PG-13".
+    Write a query to select all of the columns of the movies that have a rating of ``"PG"``
+    or ``"PG-13"``.
     ~~~~
 
     ====
-    assert 1,2 == Casablanca
-    assert 4,2 == Inside Out
+    assert 1,2 == A Beautiful Mind
+    assert 5,2 == Back to the Future
 
 
 .. activecode:: sqlintro_exercises4
@@ -106,9 +106,9 @@ columns of data:
     :dburl: /_static/movies.db
     :practice: T
 
-    Write a query to select all of the columns of the movies that are in the genre 'Sci-Fi'.
+    Write a query to select all of the columns of the movies that are in the genre ``"Sci-Fi"``.
     Many movies have multiple genres, we want to include every movie where Sci-Fi is anywhere
-    in the list of genres.
+    in the list of genres - you will have to use ``LIKE``.
     ~~~~
 
     ====
@@ -136,23 +136,27 @@ columns of data:
     :practice: T
 
     Write a query to select just the title, year, and IMDB score (in that order)
-    of all the movies sorted so that the highest IMDB scores come first.
+    of all the movies. Order the results so that the highest IMDB scores come first.
     ~~~~
 
     ====
-    assert 0,0 == The Godfather
-    assert 0,1 == 1972
-    assert 0,0 == Schindler's List
-    assert 3,1 == 1993
+    assert 1,0 == The Godfather
+    assert 1,1 == 1972
+    assert 6,0 == Schindler's List
+    assert 6,1 == 1993
 
 .. activecode:: sqlintro_exercises7
     :language: sql
     :dburl: /_static/movies.db
     :practice: T
 
-    Write a query to find just the year of release for movies with a Metacritic score
+    Write a query to find just the title and year of release (in that order)
+    for movies with a Metacritic score
     of 95 or above. Order the results so that the most recent movie comes first.
     ~~~~
 
     ====
-    assert 0,0 == 2013
+    assert 0,0 == 12 Years a Slave
+    assert 0,1 == 2013
+    assert 5,0 == Toy Story
+    assert 5,1 == 1995

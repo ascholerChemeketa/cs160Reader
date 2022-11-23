@@ -138,6 +138,8 @@ columns of data:
 
     Display the director's name and the number of films. Don't sort the results.
 
+    Hint: Remember that you have to use ``HAVING`` to filter grouped results.
+
     ~~~~
 
     ====
@@ -150,18 +152,22 @@ columns of data:
     :language: sql
     :dburl: /_static/movies.db
 
-    Write a query to get the total number of films on the list made by each director.
-    But only retrieve the data for directors with at least 2 films.
+    Write a query to get the total number of films on the list made by each director
+    that have an IMDB rating of 8.5 or higher.
 
-    Display the director's name and the number of films. Don't sort the results.
+    Display the director's name and the number of films. Sort the results so the directors
+    with the most high rated files are first.
+    
+    Hint: Here you want to filter the movies by IMDB rating before they are aggregated,
+    so you need a ``WHERE`` not a ``HAVING``.
 
     ~~~~
 
     ====
-    assert 0,0 == Akira Kurosawa
-    assert 0,1 == 5
-    assert 1,0 == Alfred Hitchcock
-    assert 1,1 == 6
+    assert 0,0 == Peter Jackson
+    assert 0,1 == 3
+    assert 1,0 == Christopher Nolan
+    assert 1,1 == 3
 
 The following problems will also make use of the ``actors`` table. It consists of records that
 match a movie to a particular actor. If an actor appears in multiple movies, they will appear
