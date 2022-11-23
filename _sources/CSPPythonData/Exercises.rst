@@ -199,6 +199,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises1
     :nocodelens:
+    :autograde: unittest
 
     Below is the start of a program to read in the ``"stocks.txt"`` file and run code
     on each line in the file.
@@ -232,6 +233,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises2
     :nocodelens:
+    :autograde: unittest
 
     Modify your program to print out the highest value the Dow Jones reached. (This should be the
     largest of the monthly high values.) 
@@ -264,6 +266,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises3
     :nocodelens:
+    :autograde: unittest
 
     Modify your program from question 1 to only print the dates from a specific year specified by
     a variable ``desiredYear``. If ``desiredYear`` is 96, you would only print out values where
@@ -296,6 +299,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises4
     :nocodelens:
+    :autograde: unittest
 
     Combine your solutions from problems 2 and 3 and make your program find the largest highest value
     from the records indicated by the variable ``desiredYear``. I.e. if ``desiredYear`` is "96",
@@ -329,6 +333,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises5
     :nocodelens:
+    :autograde: unittest
 
     Turn your code from question 4 into a function so we can easily check the max value in
     multiple years. The function should be called ``maxHighForYear``. It should take the
@@ -380,6 +385,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises6
     :nocodelens:
+    :autograde: unittest
 
     Write the function ``avgVolumeForYear``. It should take the ``desiredYear`` and the ``data``
     as parameters and return the average of the "volume" value
