@@ -130,7 +130,7 @@ numbers used.
 
 .. activecode:: sqlgroupjoin_aggregating8
     :language: sql
-   :autograde: unittest
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query to get the number of unique start locations there are in the table.
