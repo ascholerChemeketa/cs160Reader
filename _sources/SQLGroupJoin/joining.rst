@@ -118,6 +118,7 @@ to be clear about which table we are talking about once we start joining data.
 
 .. activecode:: sqlgroupjoin_joining5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query to find out how many trips were started at ``'Adams Mill & Columbia Rd NW'``?
@@ -127,7 +128,8 @@ to be clear about which table we are talking about once we start joining data.
     0,0 == 9883
 
 .. activecode:: sqlgroupjoin_joining6
-    :language: sql
+    :language: sql   
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query to find the average duration of trips that started at stations that are

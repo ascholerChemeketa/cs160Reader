@@ -128,6 +128,7 @@ of trips started from each station for just the bike 'W000001' with this query:
 
 .. activecode:: sqlgroupjoin_grouping5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Display the bike number and the total trip count for each of the bikes. Display

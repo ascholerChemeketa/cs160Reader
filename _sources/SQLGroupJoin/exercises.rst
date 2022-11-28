@@ -56,6 +56,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises1
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
 
@@ -68,6 +69,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises2
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
 
@@ -83,6 +85,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises3
    :language: sql
+   :autograde: unittest
    :dburl: /_static/movies.db
 
    Write a query to display the total number of 'PG-13' movies in the database.
@@ -94,6 +97,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises4
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     Use ``GROUP BY`` to write a query to display the total number of movies in each rating category.
@@ -114,6 +118,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     Write a query to get the highest rated movie according to IMDB score for each director.
@@ -131,6 +136,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises6
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     Write a query to get the total number of films on the list made by each director.
@@ -150,6 +156,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises7
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     Write a query to get the total number of films on the list made by each director
@@ -193,6 +200,7 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises8
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     We would like to know which movies Marlon Brando acted in.
@@ -212,6 +220,7 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises9
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
 
     Display the highest Metacritic score for the movies each actor appeared in.

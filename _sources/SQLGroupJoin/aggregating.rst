@@ -30,6 +30,7 @@ makes it much clearer what we are looking at.
 
 .. activecode:: sqlgroupjoin_aggregating2
    :language: sql
+   :autograde: unittest
    :dburl: /_static/bikeshare.db
 
    How many trips started at station 31111?
@@ -69,6 +70,7 @@ For example, the query below calculates the minimum and maximum trip duration:
 
 .. activecode:: sqlgroupjoin_aggregating4
    :language: sql
+   :autograde: unittest
    :dburl: /_static/bikeshare.db
 
    Write a query to calculates the mean duration (average) of all trips.
@@ -96,6 +98,7 @@ member type users.
 
 .. activecode:: sqlgroupjoin_aggregating6
    :language: sql
+   :autograde: unittest
    :dburl: /_static/bikeshare.db
 
    Write a query to get the total duration (sum) of all trips taken on bike W01274.
@@ -127,6 +130,7 @@ numbers used.
 
 .. activecode:: sqlgroupjoin_aggregating8
     :language: sql
+   :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query to get the number of unique start locations there are in the table.
