@@ -74,6 +74,6 @@ than ``12``. So we must use ``int()`` to convert the PM2.5 values to integer num
 
     What PM10 value does the most polluted city have?
 
-    - :^\s*70\s*$: Correct!
+    - :^\s*74\s*$: Correct!
       :^\s*\d+\s*$: That is not the right value.
       :.*: Make sure to give your answer as a number
