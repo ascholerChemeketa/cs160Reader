@@ -160,3 +160,19 @@ columns of data:
     assert 0,1 == 2013
     assert 5,0 == Toy Story
     assert 5,1 == 1995
+
+.. activecode:: sqlintro_exercises7b
+    :language: sql
+    :dburl: /_static/movies.db
+    :practice: T
+
+    Write a query to find just the title and year of release (in that order)
+    for movies with a Metacritic score
+    of 95 or above. Order the results so that the most recent movie comes first.
+    ~~~~
+
+    ====
+    assert 0,0 == 12 Years a Slave
+    assert 0,1 == 2013
+    assert 5,0 == Toy Story
+    assert 5,1 == 1995
