@@ -127,6 +127,7 @@ Now try to write SQL queries that will answer the following questions.
 
 .. activecode:: sqlintro_sorting6
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     On what bike number was the most recent (by start date) trip?
@@ -144,6 +145,7 @@ Now try to write SQL queries that will answer the following questions.
 
 .. activecode:: sqlintro_sorting7
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query using ``ORDER BY`` to find the starting station and duration of

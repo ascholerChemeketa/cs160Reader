@@ -83,6 +83,7 @@ duration is the first row that is returned.
 
 .. activecode:: sqlintro_selecting3
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
 
     Write a query to select the start and end stations for all trips. 

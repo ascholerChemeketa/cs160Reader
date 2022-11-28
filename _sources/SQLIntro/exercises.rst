@@ -57,6 +57,7 @@ columns of data:
 .. activecode:: sqlintro_exercises1
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select the year and title of each movie (put them in that order, so that
@@ -75,6 +76,7 @@ columns of data:
 .. activecode:: sqlintro_exercises2
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select all of the columns of the movies that were released in 2004.
@@ -90,6 +92,7 @@ columns of data:
 .. activecode:: sqlintro_exercises3
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select all of the columns of the movies that have a rating of ``"PG"``
@@ -104,6 +107,7 @@ columns of data:
 .. activecode:: sqlintro_exercises4
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select all of the columns of the movies that are in the genre ``"Sci-Fi"``.
@@ -119,6 +123,7 @@ columns of data:
 .. activecode:: sqlintro_exercises5
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select all of the columns of the movies that have a runtime of between
@@ -133,6 +138,7 @@ columns of data:
 .. activecode:: sqlintro_exercises6
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to select just the title, year, and IMDB score (in that order)
@@ -148,22 +154,7 @@ columns of data:
 .. activecode:: sqlintro_exercises7
     :language: sql
     :dburl: /_static/movies.db
-    :practice: T
-
-    Write a query to find just the title and year of release (in that order)
-    for movies with a Metacritic score
-    of 95 or above. Order the results so that the most recent movie comes first.
-    ~~~~
-
-    ====
-    assert 0,0 == 12 Years a Slave
-    assert 0,1 == 2013
-    assert 5,0 == Toy Story
-    assert 5,1 == 1995
-
-.. activecode:: sqlintro_exercises7b
-    :language: sql
-    :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
 
     Write a query to find just the title and year of release (in that order)
