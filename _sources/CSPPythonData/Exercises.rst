@@ -238,7 +238,7 @@ To see all of the data, you can use a loop to print out each line.
     Tip: When you get the high value, you will need to convert it from a string to a float to work
     with it as a decimal number. This should look like: ``float(values[??])``.
 
-    The final version of your program should only print out the highest value, but you should
+    The final version of your program should only print out the one highest value, but you should
     work your way up to that. Start by printing out all of the monthly high values, then worry
     about finding the highest one.
 
@@ -446,8 +446,8 @@ To see all of the data, you can use a loop to print out each line.
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(avgVolumeForYear("91", data), 2964.3625, "Testing answer returned for \"91\".")
-            self.assertEqual(avgVolumeForYear("00", data), 10688.0425, "Testing answer returned for \"00\".")
+            self.assertAlmostEqual(avgVolumeForYear("91", data), 2964.3625, 3, "Testing answer returned for \"91\".")
+            self.assertAlmostEqual(avgVolumeForYear("00", data), 10688.0425, 3, "Testing answer returned for \"00\".")
 
     myTests().main()
 
