@@ -56,6 +56,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises1
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
     :autograde: unittest
@@ -69,6 +70,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises2
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
     :autograde: unittest
@@ -85,6 +87,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises3
    :language: sql
+   :autograde: unittest
    :dburl: /_static/movies.db
   :autograde: unittest
 
@@ -97,6 +100,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises4
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 
@@ -118,6 +122,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 
@@ -136,6 +141,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises6
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 
@@ -156,6 +162,7 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises7
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 
@@ -200,6 +207,7 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises8
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 
@@ -220,6 +228,7 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises9
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :autograde: unittest
 

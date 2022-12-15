@@ -86,6 +86,7 @@ For example to look at bike trips which are 60 minutes or more and the
 
 .. activecode:: sqlintro_filtering3
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
     :autograde: unittest
 

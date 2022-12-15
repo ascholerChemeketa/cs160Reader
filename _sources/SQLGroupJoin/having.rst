@@ -49,6 +49,7 @@ used immediately following the ``GROUP BY`` clause.
 
 .. activecode:: sqlgroupjoin_having2
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
     :autograde: unittest
 

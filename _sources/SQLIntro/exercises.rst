@@ -57,6 +57,7 @@ columns of data:
 .. activecode:: sqlintro_exercises1
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -76,6 +77,7 @@ columns of data:
 .. activecode:: sqlintro_exercises2
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -92,6 +94,7 @@ columns of data:
 .. activecode:: sqlintro_exercises3
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -107,6 +110,7 @@ columns of data:
 .. activecode:: sqlintro_exercises4
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -123,6 +127,7 @@ columns of data:
 .. activecode:: sqlintro_exercises5
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -138,6 +143,7 @@ columns of data:
 .. activecode:: sqlintro_exercises6
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 
@@ -154,6 +160,7 @@ columns of data:
 .. activecode:: sqlintro_exercises7
     :language: sql
     :dburl: /_static/movies.db
+    :autograde: unittest
     :practice: T
     :autograde: unittest
 

@@ -118,6 +118,7 @@ to be clear about which table we are talking about once we start joining data.
 
 .. activecode:: sqlgroupjoin_joining5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
     :autograde: unittest
 
@@ -128,7 +129,8 @@ to be clear about which table we are talking about once we start joining data.
     0,0 == 9883
 
 .. activecode:: sqlgroupjoin_joining6
-    :language: sql
+    :language: sql   
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
     :autograde: unittest
 

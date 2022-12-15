@@ -132,6 +132,7 @@ numbers used.
 
 .. activecode:: sqlgroupjoin_aggregating8
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
     :autograde: unittest
 
