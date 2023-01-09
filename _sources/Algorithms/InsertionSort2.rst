@@ -14,12 +14,12 @@ Once again, taking the algorithm from something appropriate for a human to compu
 .. faux_code::
 
     \     *Note: assume that list already exists*
-    1   ``i`` = 2                                   *i marks start of unsorted cards*
-    2   repeat until (``i`` > length of the ``list``):
+    1   ``i`` = 1                                   *i marks start of unsorted cards*
+    2   repeat until (``i`` >= length of the ``list``):
     3       ``j`` = ``i``                              *j is location of current card*
     4       
     5       *Note: swap current card left until it finds a home*
-    6       repeat until (``j`` == 1) or (``list[j]`` > ``list[j - 1]``)
+    6       repeat until (``j`` == 0) or (``list[j]`` > ``list[j - 1]``)
     7           *Note: Swap card to the left"*
     8           ``temp`` = ``list[j]``
     9           ``list[j]`` = ``list[j - 1]``
@@ -39,8 +39,8 @@ Like before, do not worry about memorizing the algorithm, instead use it and the
     <script type="text/processing" data-processing-target="InsertionSort">
         int[] list = new int[10];
 
-        int curi = -1;
-        int curj = -1;
+        int curi = 1;
+        int curj = 1;
 
         // Setup the Processing Canvas
         void setup() {
@@ -93,15 +93,15 @@ Like before, do not worry about memorizing the algorithm, instead use it and the
             fill(0, 102, 153); 
             text(list[i], (i + .5) * unitWidth + 22,
               height - ((list[i] + 1) / max) * h - 7); 
-            text((i+1), (i + .5) * unitWidth + 22, height - 5); 
+            text((i), (i + .5) * unitWidth + 22, height - 5); 
           }
 
           text("index", 5, height - 5); 
           
           drawSingleBars();
                     fill(#677915);
-           text("i = " + (curi + 1) + " (current item starting location)", 10, 15); 
-           text("j = " + (curj + 1) + " (current item current location)", 10, 30); 
+           text("i = " + (curi) + " (current item starting location)", 10, 15); 
+           text("j = " + (curj) + " (current item current location)", 10, 30); 
         }
 
         void drawSingleBars() {
@@ -136,8 +136,8 @@ Like before, do not worry about memorizing the algorithm, instead use it and the
 
         void reset() {
           shuffleList();
-          curi = -1;
-          curj = -1;
+          curi = 1;
+          curj = 1;
           swapping = false;
                 movingToNext = false;
 
@@ -149,8 +149,8 @@ Like before, do not worry about memorizing the algorithm, instead use it and the
         void resetMostlySorted() {
 
           list = {1, 3, 4, 2, 5, 7, 8, 6, 9, 10};
-          curi = -1;
-          curj = -1;
+          curi = 1;
+          curj = 1;
           swapping = false;
                 movingToNext = false;
 

@@ -18,14 +18,14 @@ Don't worry about memorizing the algorithm, but do refer to it as you use the an
 .. faux_code::
 
     \     *Note: assume that list already exists*
-    1   ``i`` = 1                                    *i marks start of unsorted cards*
-    2   repeat (length of the ``list``) times:
+    1   ``i`` = 0                                    *i marks start of unsorted cards*
+    2   repeat (length of the ``list`` - 1) times:
     3       ``currentMinIndex`` = ``i``                 *curentMinIndex is the "left hand"*
     4       ``currentMin`` = ``list[currentMinIndex]``  *smallest value seen so far*
     5       ``j`` = ``i``                               *j is the "right hand"*
     6       
     7       *Note: find smallest remaining card*
-    8       repeat while ``j`` <= (length of ``list``)
+    8       repeat while ``j`` < (length of ``list``)
     9           if ``list[j]`` < ``currentMin``
     10              *Note: New smallest card - move "left hand"*
     11              ``currentMinIndex`` = ``j``
@@ -106,19 +106,19 @@ The animation below allows you to step through a selection sort. Each step eithe
             fill(0, 102, 153); 
             text(list[i], (i + .5) * unitWidth + 22,
               height - ((list[i] + 1) / max) * h - 7); 
-            text((i+1), (i + .5) * unitWidth + 22, height - 5); 
+            text((i), (i + .5) * unitWidth + 22, height - 5); 
           }
 
           text("index", 5, height - 5); 
           
           drawSingleBars();
                     fill(#b1841d);
-           text("i = " + (curi + 1) , 10, 15); 
+           text("i = " + (curi) , 10, 15); 
                     fill(#ee2222);
-           text("j = " + (curj + 1) , 10, 30); 
+           text("j = " + (curj) , 10, 30); 
                     fill(#677915);
            text("currentMin = " + currentMin , 10, 45); 
-           text("currentMinIndex = " + (currentMinIndex + 1) , 10, 60); 
+           text("currentMinIndex = " + (currentMinIndex) , 10, 60); 
         }
 
         void drawSingleBars() {
@@ -128,7 +128,7 @@ The animation below allows you to step through a selection sort. Each step eithe
           int max = getMax(list);
           
           if(curj == list.length - 1 && curi < list.length - 1) {
-                text("Smallest value is = " + currentMin + " Swap it to location " + (curi + 1), 200, 15); 
+                text("Smallest value is = " + currentMin + " Swap it to location " + (curi), 200, 15); 
                   stroke(#b1841d); 
                   noFill();
                     rect(curi * unitWidth + 30, height

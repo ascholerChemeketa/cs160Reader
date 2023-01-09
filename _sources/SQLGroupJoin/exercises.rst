@@ -59,6 +59,7 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to find the average IMDB score for all the movies.
     ~~~~
@@ -72,6 +73,7 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to find the highest IMDB score for any movie that was 
     directed at least partially by Quentin Tarantino. (Hint: A movie can have
@@ -87,6 +89,7 @@ columns of data:
    :language: sql
    :autograde: unittest
    :dburl: /_static/movies.db
+  :autograde: unittest
 
    Write a query to display the total number of 'PG-13' movies in the database.
    ~~~~
@@ -99,6 +102,7 @@ columns of data:
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Use ``GROUP BY`` to write a query to display the total number of movies in each rating category.
     Make sure to select the rating and the total count like:
@@ -120,6 +124,7 @@ columns of data:
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Write a query to get the highest rated movie according to IMDB score for each director.
     (It is OK to treat a list of directors as a "separate director"). 
@@ -138,6 +143,7 @@ columns of data:
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Write a query to get the total number of films on the list made by each director.
     But only retrieve the data for directors with at least 2 films.
@@ -158,6 +164,7 @@ columns of data:
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Write a query to get the total number of films on the list made by each director
     that have an IMDB rating of 8.5 or higher.
@@ -202,6 +209,7 @@ in one record for each movie they appear in.
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     We would like to know which movies Marlon Brando acted in.
 
@@ -222,6 +230,7 @@ in one record for each movie they appear in.
     :language: sql
     :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Display the highest Metacritic score for the movies each actor appeared in.
 

@@ -129,6 +129,7 @@ Now try to write SQL queries that will answer the following questions.
     :language: sql
     :autograde: unittest
     :dburl: /_static/bikeshare.db
+    :autograde: unittest
 
     On what bike number was the most recent (by start date) trip?
 
@@ -147,6 +148,7 @@ Now try to write SQL queries that will answer the following questions.
     :language: sql
     :autograde: unittest
     :dburl: /_static/bikeshare.db
+    :autograde: unittest
 
     Write a query using ``ORDER BY`` to find the starting station and duration of
     the longest ride that started and ended at the same station.

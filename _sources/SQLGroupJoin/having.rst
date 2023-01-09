@@ -51,6 +51,7 @@ used immediately following the ``GROUP BY`` clause.
     :language: sql
     :autograde: unittest
     :dburl: /_static/bikeshare.db
+    :autograde: unittest
 
     Below is a query to find the total time each bike was ridden. Add a ``HAVING``
     clause to select only the bikes that were used for less than 1000 minutes.
