@@ -43,7 +43,11 @@ Chapter 3 Exercises
     :practice: T
 
     You will get an error if you try to run the following code.  Fix the code to print correctly
-    without errors.  It should print, "Your name is Carly and your age is 19."
+    without errors.  It should print, *"Your name is Carly and your age is 19."*
+
+    Note: Don't forget that to turn an **int** into a string you do something like ``str(x)`` where
+    ``x`` is the **int** you want to turn into a string.
+
     ~~~~
     age = 14 + 5
     name = 'Carly'
