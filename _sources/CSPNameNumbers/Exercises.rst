@@ -92,7 +92,11 @@ Chapter Exercises
     :practice: T
 
     Complete the code on lines 3 and 5 below to print the cost of a car trip of 500 miles 
-    when the car gets 26 miles per gallon and gas costs 3.45 a gallon.  It should print 66.34615384615385.
+    when the car gets 26 miles per gallon and gas costs 3.45 a gallon.  
+    
+    The answer you get should be 66.34615384615385. But make sure you calculate it, as opposed
+    to hardcoding that value into your program!
+    
     ~~~~
     miles = 500
     milesPerGallon = 26
@@ -117,11 +121,12 @@ Chapter Exercises
     :autograde: unittest
     :practice: T
 
-    It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (12-hour time,
-    not 24-hour time). The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder
-    of 4 hours.
-
-    Hint: Remember that ``%`` is the modulo or remainder operator.
+    It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (using 12-hour time,
+    not 24-hour time). Use the ``%`` (modulo or remainder operator) to calculate the correct value for **clockTime**
+    based on the **newTime** value that is already calculated. 
+    
+    The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder of 4. But make sure not
+    to hardcode the answer - you need to calculate the value, not just type it in.
 
     ~~~~
     currentTime = 10
@@ -136,7 +141,7 @@ Chapter Exercises
 
         def testOne(self):
             self.assertEqual(clockTime, 4, "Testing that clockTime has the correct value." )
-            self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+            self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer. Make sure to calculate it!")
 
     myTests().main()
 
@@ -147,10 +152,13 @@ Chapter Exercises
     :practice: T
 
     Finish the code on lines 2 and 3 in the code below to print how many hours and minutes
-    you have been waiting when you have been waiting a total of 270 minutes. Remember that
-    there are 60 minutes in an hour. It should print 4 and then 30.
+    you have been waiting when you have been waiting a total of 270 minutes. 
     
-    Hint: Remember that ``%`` is the modulo or remainder operator.
+    Use the ``%`` (modulo or remainder operator) and the integer division operator ``//`` to
+    calculate the correct values for **numHours** and **numMinutes** based on the **totalMinutes** value.
+    
+    The correct answers should be 4 for **numHours** and 30 for **numMinutes**. But make
+    sure to calculate those values - don't hardcode them!
 
     ~~~~
     totalMinutes = 270
