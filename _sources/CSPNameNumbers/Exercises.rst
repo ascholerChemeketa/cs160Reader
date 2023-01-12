@@ -111,8 +111,8 @@ Chapter Exercises
     class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(float(self.getOutput().strip()), 66.34615384615385, "Testing that output has the correct value." )
-            self.assertNotIn("66.34615384615385", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+            self.assertAlmostEqual(float(self.getOutput().strip()), 66.34615384615385, 7, "Testing that output has the correct value." )
+            self.assertNotIn("66.346153", self.getEditorText(), "Testing that you didn't hardcode the answer.")
 
     myTests().main()
 
