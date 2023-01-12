@@ -56,8 +56,10 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises1
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to find the average IMDB score for all the movies.
     ~~~~
@@ -68,8 +70,10 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises2
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
     :practice: T
+    :autograde: unittest
 
     Write a query to find the highest IMDB score for any movie that was 
     directed at least partially by Quentin Tarantino. (Hint: A movie can have
@@ -83,7 +87,9 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises3
    :language: sql
+   :autograde: unittest
    :dburl: /_static/movies.db
+  :autograde: unittest
 
    Write a query to display the total number of 'PG-13' movies in the database.
    ~~~~
@@ -94,7 +100,9 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises4
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Use ``GROUP BY`` to write a query to display the total number of movies in each rating category.
     Make sure to select the rating and the total count like:
@@ -114,7 +122,9 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises5
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Write a query to get the highest rated movie according to IMDB score for each director.
     (It is OK to treat a list of directors as a "separate director"). 
@@ -131,12 +141,16 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises6
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Write a query to get the total number of films on the list made by each director.
     But only retrieve the data for directors with at least 2 films.
 
     Display the director's name and the number of films. Don't sort the results.
+
+    Hint: Remember that you have to use ``HAVING`` to filter grouped results.
 
     ~~~~
 
@@ -148,20 +162,26 @@ columns of data:
 
 .. activecode:: sqlgroupjoin_exercises7
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
-    Write a query to get the total number of films on the list made by each director.
-    But only retrieve the data for directors with at least 2 films.
+    Write a query to get the total number of films on the list made by each director
+    that have an IMDB rating of 8.5 or higher.
 
-    Display the director's name and the number of films. Don't sort the results.
+    Display the director's name and the number of films. Sort the results so the directors
+    with the most high rated files are first.
+    
+    Hint: Here you want to filter the movies by IMDB rating before they are aggregated,
+    so you need a ``WHERE`` not a ``HAVING``.
 
     ~~~~
 
     ====
-    assert 0,0 == Akira Kurosawa
-    assert 0,1 == 5
-    assert 1,0 == Alfred Hitchcock
-    assert 1,1 == 6
+    assert 0,0 == Peter Jackson
+    assert 0,1 == 3
+    assert 1,0 == Christopher Nolan
+    assert 1,1 == 3
 
 The following problems will also make use of the ``actors`` table. It consists of records that
 match a movie to a particular actor. If an actor appears in multiple movies, they will appear
@@ -187,7 +207,9 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises8
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     We would like to know which movies Marlon Brando acted in.
 
@@ -206,7 +228,9 @@ in one record for each movie they appear in.
 
 .. activecode:: sqlgroupjoin_exercises9
     :language: sql
+    :autograde: unittest
     :dburl: /_static/movies.db
+    :autograde: unittest
 
     Display the highest Metacritic score for the movies each actor appeared in.
 

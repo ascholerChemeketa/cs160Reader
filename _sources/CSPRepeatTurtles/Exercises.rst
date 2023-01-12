@@ -17,6 +17,8 @@ Chapter Exercises
     :nocodelens:
 
     The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the turn that the turtle makes without modifying other code.
+    
+    Remember that to make a complete shape, the turns must sum to 360 degrees.
 
     |turtle_ref|
 
@@ -127,7 +129,9 @@ Chapter Exercises
 .. fillintheblank:: csprepeatturtles_exercises5
 
     Write the correct recipe to fill in the ____________ in the code below to generate the pattern
-    5, 25, 45, ... 105. Use the smallest possible value for your stopValue. (Don't include "range"
+    5, 25, 45, ... 105. Use the smallest possible value for your stopValue. 
+    
+    Just write what would replace the blank below. (Don't include "range"
     or the parentheses in your answer; do include commas).
 
     ``range(____________)``

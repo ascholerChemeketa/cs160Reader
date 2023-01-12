@@ -29,18 +29,19 @@ leave it off, the "column" of data will just be labeled ``COUNT(*)``. Calling it
 makes it much clearer what we are looking at.
 
 .. activecode:: sqlgroupjoin_aggregating2
-   :language: sql
-   :dburl: /_static/bikeshare.db
+  :language: sql
+  :dburl: /_static/bikeshare.db
+  :autograde: unittest
 
-   How many trips started at station 31111?
+  How many trips started at station 31111?
 
-   Hint: Build your way to the final query. Start by selecting all the data (``*``) for all the
-   trips. Then write a ``WHERE`` to only select ones that start from 31111. Finally, instead of selecting
-   all of the columns, select just the count of the number of records.
-   ~~~~
+  Hint: Build your way to the final query. Start by selecting all the data (``*``) for all the
+  trips. Then write a ``WHERE`` to only select ones that start from 31111. Finally, instead of selecting
+  all of the columns, select just the count of the number of records.
+  ~~~~
 
-   ====
-   assert 0,0 == 92
+  ====
+  assert 0,0 == 92
 
 ``COUNT`` is one of the aggregation functions provided by SQL. **Aggregation** is the process
 of combining data and ``COUNT`` combines all the records and tells us how many there are. 
@@ -68,14 +69,16 @@ For example, the query below calculates the minimum and maximum trip duration:
 
 
 .. activecode:: sqlgroupjoin_aggregating4
-   :language: sql
-   :dburl: /_static/bikeshare.db
+  :language: sql
+  :dburl: /_static/bikeshare.db
+  :autograde: unittest
 
-   Write a query to calculates the mean duration (average) of all trips.
-   ~~~~
 
-   ====
-   assert 0,0 == 31620
+  Write a query to calculates the mean duration (average) of all trips.
+  ~~~~
+
+  ====
+  assert 0,0 == 31620
 
 
 You use ``WHERE`` filtering with aggregating functions. The
@@ -95,14 +98,16 @@ member type users.
 
 
 .. activecode:: sqlgroupjoin_aggregating6
-   :language: sql
-   :dburl: /_static/bikeshare.db
+  :language: sql
+  :dburl: /_static/bikeshare.db
+  :autograde: unittest
 
-   Write a query to get the total duration (sum) of all trips taken on bike W01274.
-   ~~~~
 
-   ====
-   assert 0,0 == 5009
+  Write a query to get the total duration (sum) of all trips taken on bike W01274.
+  ~~~~
+
+  ====
+  assert 0,0 == 5009
 
 
 Counting Unique Values
@@ -127,7 +132,10 @@ numbers used.
 
 .. activecode:: sqlgroupjoin_aggregating8
     :language: sql
+    :autograde: unittest
     :dburl: /_static/bikeshare.db
+    :autograde: unittest
+
 
     Write a query to get the number of unique start locations there are in the table.
     ~~~~

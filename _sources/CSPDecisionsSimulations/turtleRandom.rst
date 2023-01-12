@@ -160,7 +160,7 @@ values.
             return len(matches)
 
         def testOne(self):
-            self.assertRegex(self.getEditorText(), r"random.randrange\(0, 25[56]\)", "Testing that you make a random number 0-255 using randrange.")
-            self.assertEqual(self.countCopies("random.randrange\(0, 25[56]\)"), 3, "Testing that you made three random numbers 0-255.")
+            self.assertRegex(self.getEditorText(), r"random.randrange\(\s*0\s*,\s*25[56]\s*\)", "Testing that you make a random number 0-255 using randrange.")
+            self.assertEqual(self.countCopies("random.randrange\(\s*0\s*,\s*25[56]\s*\)"), 3, "Testing that you made three random numbers 0-255.")
 
     myTests().main()

@@ -23,6 +23,9 @@ Chapter Exercises
     :nocodelens:
 
     Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.
+
+    Hint: If your program runs out of time while it is running, it is probably because you are redrawing the
+    window as you change each pixel. You should only draw the window one time!
     
     |image_defs| 
     ~~~~

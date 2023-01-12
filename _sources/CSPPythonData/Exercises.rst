@@ -28,16 +28,11 @@ The values on the line are separated by commas and are the following (in order):
 * Close value for month
 * Volume - number of shares traded
 
-If you want to see this data click on the *Show* button below. Once it appears, you can hide
-it again by clicking on the *Hide* button.
+To see all of the data, you can use a loop to print out each line.
 
-.. reveal:: stock_data_file
-   :showtitle: Show
-   :hidetitle: Hide
+.. |STOCK_DATA| raw:: html
 
-   .. raw:: html
-
-      <pre id="stocks.txt">
+      <pre id="stocks.txt" style="display: none">
       3-Dec-01,9848.93,10220.78,9651.87,10021.57
       1-Nov-01,9087.45,10054.58,8987.61,9851.56
       1-Oct-01,8845.97,9626.54,8659.9,9075.14
@@ -196,9 +191,9 @@ it again by clicking on the *Hide* button.
       3-Jan-89,2168.39,2350.18,2127.14,2342.32
       </pre>
 
-
 .. activecode:: csppythondata_exercises1
     :nocodelens:
+    :autograde: unittest
 
     Below is the start of a program to read in the ``"stocks.txt"`` file and run code
     on each line in the file.
@@ -211,6 +206,9 @@ it again by clicking on the *Hide* button.
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing. Feel free to use extra ones while writing your code and Then
     remove them or comment them out when everything is working.
+
+    |STOCK_DATA|
+
     ~~~~
     inFile = open("stocks.txt")
     data = inFile.read().splitlines()
@@ -232,6 +230,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises2
     :nocodelens:
+    :autograde: unittest
 
     Modify your program to print out the highest value the Dow Jones reached. (This should be the
     largest of the monthly high values.) 
@@ -239,12 +238,16 @@ it again by clicking on the *Hide* button.
     Tip: When you get the high value, you will need to convert it from a string to a float to work
     with it as a decimal number. This should look like: ``float(values[??])``.
 
-    The final version of your program should only print out the highest value, but you should
+    The final version of your program should only print out the one highest value, but you should
     work your way up to that. Start by printing out all of the monthly high values, then worry
     about finding the highest one.
 
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing.
+
+    |STOCK_DATA|
+
+    
     ~~~~
     inFile = open("stocks.txt")
     data = inFile.read().splitlines()
@@ -264,6 +267,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises3
     :nocodelens:
+    :autograde: unittest
 
     Modify your program from question 1 to only print the dates from a specific year specified by
     a variable ``desiredYear``. If ``desiredYear`` is 96, you would only print out values where
@@ -275,6 +279,10 @@ it again by clicking on the *Hide* button.
 
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing.
+
+    |STOCK_DATA|
+
+    
     ~~~~
     inFile = open("stocks.txt")
     data = inFile.read().splitlines()
@@ -296,6 +304,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises4
     :nocodelens:
+    :autograde: unittest
 
     Combine your solutions from problems 2 and 3 and make your program find the largest highest value
     from the records indicated by the variable ``desiredYear``. I.e. if ``desiredYear`` is "96",
@@ -308,6 +317,10 @@ it again by clicking on the *Hide* button.
 
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing.
+
+    |STOCK_DATA|
+
+    
     ~~~~
     inFile = open("stocks.txt")
     data = inFile.read().splitlines()
@@ -329,6 +342,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises5
     :nocodelens:
+    :autograde: unittest
 
     Turn your code from question 4 into a function so we can easily check the max value in
     multiple years. The function should be called ``maxHighForYear``. It should take the
@@ -341,6 +355,10 @@ it again by clicking on the *Hide* button.
 
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing.
+
+    |STOCK_DATA|
+
+    
     ~~~~
     def maxHighForYear(desiredYear, data):
         # your code here
@@ -380,6 +398,7 @@ it again by clicking on the *Hide* button.
 
 .. activecode:: csppythondata_exercises6
     :nocodelens:
+    :autograde: unittest
 
     Write the function ``avgVolumeForYear``. It should take the ``desiredYear`` and the ``data``
     as parameters and return the average of the "volume" value
@@ -392,6 +411,10 @@ it again by clicking on the *Hide* button.
 
     You can't use codelens with file reading problems, but you can use print statements to check
     what your code is doing.
+
+    |STOCK_DATA|
+
+    
     ~~~~
     def avgVolumeForYear(desiredYear, data):
         # your code here
@@ -423,8 +446,8 @@ it again by clicking on the *Hide* button.
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(avgVolumeForYear("91", data), 2964.3625, "Testing answer returned for \"91\".")
-            self.assertEqual(avgVolumeForYear("00", data), 10688.0425, "Testing answer returned for \"00\".")
+            self.assertAlmostEqual(avgVolumeForYear("91", data), 2964.3625, 3, "Testing answer returned for \"91\".")
+            self.assertAlmostEqual(avgVolumeForYear("00", data), 10688.0425, 3, "Testing answer returned for \"00\".")
 
     myTests().main()
 

@@ -71,7 +71,7 @@ Chapter Exercises
     =====
         flip = random.randrange(0, 2)
     =====
-        if flip == 0:
+        if flip == 0: #got a heads
     =====
             headsInARow = headsInARow + 1
     =====
@@ -79,7 +79,7 @@ Chapter Exercises
     =====
                 longestStreak = headsInARow
     =====
-        else:
+        else: #got a tails
     =====
             headsInARow = 0
     =====

@@ -90,7 +90,7 @@ real input.
 
     totalPoints = getGPAPoints(letter1) + getGPAPoints(letter2) + getGPAPoints(letter3)
     gpa = totalPoints / 3
-    print("Your GPA is", totalPoints)
+    print("Your GPA is", gpa)
 
     =====
 

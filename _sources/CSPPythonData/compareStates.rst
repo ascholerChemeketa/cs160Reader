@@ -80,7 +80,7 @@ states:
     print anything other than the state codes.
 
     ~~~~
-    stateList = ["MD", "AK", "NJ", "AR", "WV", "MI"]
+    stateList = ["MD", "AK", "NJ", "AR", "WV", "MS"]
 
     # Your code here
     =====
