@@ -127,12 +127,12 @@ Chapter Exercises
 
     The number of credits someone has determines what class level they are at a University.
     A Senior has taken 135 or more credits. A Junior hasn't taken that many, but has taken
-    at least 90 credits. A Sophomore has taken at least 45. A Freshman is anyone who has
+    at least 90 credits. A Sophomore has taken at least 45. A First Year is anyone who has
     taken 45 or less.
 
     Write code to complete the ``getClass`` function. Your code should use ``credits`` and
     the above logic to change ``classLevel`` to the appropriate value: either ``"Senior"``,
-    ``"Junior"``, ``"Sophomore"``, or ``"Freshman"``.
+    ``"Junior"``, ``"Sophomore"``, or ``"First Year"``.
 
     Make sure to change the variable, not just print out the answer!
 
@@ -160,7 +160,7 @@ Chapter Exercises
             self.assertEqual(getClass(120), "Junior", "Testing getClass(120).")
             self.assertEqual(getClass(90), "Junior", "Testing getClass(90).")
             self.assertEqual(getClass(85), "Sophomore", "Testing getClass(85).")
-            self.assertEqual(getClass(25), "Freshman", "Testing getClass(25).")
+            self.assertEqual(getClass(25), "First Year", "Testing getClass(25).")
 
     myTests().main()
 
