@@ -115,5 +115,5 @@ all those pixels can take a few seconds.
     :feedback_c: Black is the absence of light so setting all colors to 0 results in an all
         black image since there is no light.
 
-    What do you think happens when you set all the colors to 0?  Try adding ``p.setBlue(0)`` and
-    ``p.setGreen(0)`` to the program above after the ``p.setRed(0)`` and run it to check.
+    What do you think happens when you set all the colors to 0?  Try adding lines that say
+    ``p.setBlue(0)`` and ``p.setGreen(0)`` to the program after the ``p.setRed(0)`` (but before ``img.updatePixel(p)``) and run it to check. You will have to make sure the lines are indented just like ``p.setRed(0)`` is.  
