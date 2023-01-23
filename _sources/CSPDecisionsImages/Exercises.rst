@@ -58,7 +58,7 @@ Chapter Exercises
     Write a program below to change all the greenish pixels in this image to the color:
     red 30, green 100, blue 150 (a slightly grayish blue). 
     
-    Hint: The greenish pixels are not a pure green they have almost as much red as they
+    Hint: The greenish pixels are not a pure green. They have almost as much red as they
     do green. A sample color value might be: 111 red, 115 green, 65 blue. However, they
     are not all exactly the same color. You will need to figure out a recipe to select
     the right colors from the image.
@@ -100,13 +100,16 @@ Chapter Exercises
     :autograde: unittest
     :practice: T
 
-    Write a program below that inverts all the colors in the right half of the image.
-    To invert a color, set its value to be 255 minus the old value - something like
-    ``pixel.red = 255 - pixel.red``. The image is 300x300, so any pixel at an x
-    value of 150+ is on the right hand side.
+    Write a program below that makes the white pixels in the right half of the image
+    below turn black. The left half of the image should stay the same.
 
-    Hint: start by inverting all of the pixels to pass the first test. Then add a
-    condition to only apply the changes to the right half.
+    Although perfect white is (255, 255, 255), the pixels in the image are not all
+    perfectly white. Write your code to turn any pixel that has red, green, and blue
+    values of above 230 to black (0, 0, 0).
+
+    Hint: Start by trying to make all the white pixels in the image turn black. then
+    add a condition to check the x value of the pixel to see if it is in the right half
+    of the image (more than half the image's width).
 
     .. raw:: html
 
@@ -136,8 +139,8 @@ Chapter Exercises
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(str(img.getPixel(280, 190)), '[159,191,196]', "Testing one of the pixels that was supposed to change")
-            self.assertEqual(str(img.getPixel(65, 45)), '[98,64,56]', "Testing one of the pixels that was supposed to stay the same")
+            self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing one of the pixels that was supposed to change")
+            self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing one of the pixels that was supposed to stay the same")
 
     myTests().main()
 
@@ -152,6 +155,10 @@ Chapter Exercises
 
     Once you write the function, it will be used to turn the goal keeper's jersey from yellow to
     aqua by swapping the red and blue values.
+
+    Hint: Start by writing a function that returns ``True`` always. That will let you run the
+    program but will change every pixel. Then add a condition to say ``True`` or ``False`` based
+    on the ``r, g, b`` values passed in.
 
     .. raw:: html
 
@@ -176,10 +183,10 @@ Chapter Exercises
             g = p.getGreen()
             b = p.getBlue()
 
-            # IS IT RED?
+            # IS IT YELLOW?
             if isYellow(r, g, b):
 
-                # CHANGE THE COLOR
+                # CHANGE THE COLOR TO SWAP RED AND BLUE
                 newPixel = Pixel(b, g, r)
 
                 # UPDATE THE IMAGE
