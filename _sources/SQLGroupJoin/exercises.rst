@@ -88,7 +88,7 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Write a query to display the total number of 'PG-13' movies in the database.
+    Write a query to display the total number of ``'PG-13'`` movies in the database.
     ~~~~
 
     ====
@@ -100,8 +100,8 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Use ``GROUP BY`` to write a query to display the total number of movies in each rating category.
-    Make sure to select the rating and the total count like:
+    Use ``GROUP BY`` to write a query to display the total number of movies in each ``rating`` category.
+    Make sure to select the rating and the total count. Your output should look like:
 
     .. faux_code::
 
@@ -140,7 +140,7 @@ columns of data:
     :dburl: /_static/movies.db
 
     Write a query to get the total number of films on the list made by each director.
-    But only retrieve the data for directors with at least 2 films.
+    But **only** retrieve the data for directors with at least 2 films.
 
     Display the director's name and the number of films. Don't sort the results.
 
@@ -203,11 +203,12 @@ in one record for each movie they appear in.
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    We would like to know which movies Marlon Brando acted in.
+    We would like to know the title of all the movies Marlon Brando acted in.
 
-    Write a query that displays all of the data that we get from joining the ``actors`` table
-    with the ``movies`` table (so that ``actors.movie_id`` matches with ``movies.id``) and
-    selecting the actor whose name is ``'Marlon Brando'``.
+    Write a query that gets just the ``movie.title`` from the results of
+    joining the ``actors`` table with the ``movies`` table 
+    (so that ``actors.movie_id`` matches with ``movies.id``) and
+    selecting rows in which the ``actors.name`` is ``'Marlon Brando'``.
 
     ~~~~
 
