@@ -26,8 +26,6 @@ Tips:
 Notice we have commented out the tests for the doors and windows. There is no need to run
 that code while you are working on the roof.
 
-|turtle_ref|
-
 .. activecode:: cspdesigningprocedures_programimplementation41
     :nocodelens:
 

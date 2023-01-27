@@ -16,8 +16,6 @@ Now that ``rectangle`` is working, we can use it to write our next procedure. I 
 ``drawWall`` next. This procedure will take the name of the turtle, set a color, and then
 draw a 300x200 rectangle.
 
-|turtle_ref|
-
 .. activecode:: cspdesigningprocedures_programimplementation21
     :nocodelens:
 

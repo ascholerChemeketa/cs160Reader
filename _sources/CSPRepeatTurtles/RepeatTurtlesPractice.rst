@@ -129,7 +129,7 @@ This section provides more practice using repetition and turtles.
     If you are having trouble, try printing out the loop counter so you can see which numbers
     your loop is counting through.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     def polygon(turtleName, sides, size):

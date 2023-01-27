@@ -5,19 +5,6 @@
     :linenothreshold: 4
 
 
-.. This is ugly, find a better way...
-.. |turtle_ref| raw:: html
-
-    <a href="" class="turtle-ref" target="_blank">Turtle programming reference sheet</a>
-    <script>
-        let loc = "../CSPNameTurtles/turtleProcedures.html"
-        let links = document.getElementsByClassName("turtle-ref")
-        for(let link of links) {
-            link.href = loc;
-        }
-    </script>
-
-
 .. |image_defs| raw:: html
 
     <style>

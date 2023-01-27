@@ -26,7 +26,7 @@ Here are some ideas:
 Remember that although we can't make curves, you can draw circles by setting a large ``pensize``
 and then doing ``forward(0)`` to make a colored dot.
 
-|turtle_ref|
+:ref:`Turtle reference`
 
 .. activecode:: cspdesigningprocedures_exercises1
     :nocodelens:

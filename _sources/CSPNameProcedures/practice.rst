@@ -15,7 +15,7 @@ Time for a little practice - try writing your own procedure.
 There is an answer available, but don't look at it until you
 have tried writing the procedure on your own!
 
-|turtle_ref|
+:ref:`Turtle reference`
 
 .. tabbed:: cspnameprocedures_practice_tab0
 

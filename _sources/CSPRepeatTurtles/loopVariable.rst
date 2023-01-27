@@ -107,7 +107,7 @@ The program below will use the ``stamp`` procedure to leave a copy of itself on 
 that will remain after the turtle has moved somewhere else. It also uses the ``shape``
 procedure to change the turtle's icon from the default triangle to an actual turtle.
 
-|turtle_ref|
+:ref:`Turtle reference`
 
 The loop, ``for size in range(5, 60, 2):``, says to count by 2's from 5 to 59. The loop
 variable is called ``size`` and is used to control how far forward the turtle moves in

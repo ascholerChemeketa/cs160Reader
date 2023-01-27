@@ -20,7 +20,7 @@ Chapter Exercises
     
     Remember that to make a complete shape, the turns must sum to 360 degrees.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     from turtle import *
@@ -50,7 +50,7 @@ Chapter Exercises
 
     Remember that to make a complete shape, the turns must sum to 360 degrees.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     from turtle import *
@@ -79,7 +79,7 @@ Chapter Exercises
 
     Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     from turtle import *
@@ -169,7 +169,7 @@ Chapter Exercises
     The autograder will not verify everything about your program. It is up to you to
     determine if your program is correct or not.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     def rectangle(turtleName, width, height):

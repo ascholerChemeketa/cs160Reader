@@ -45,8 +45,6 @@ I'll also write some code to test it. I will try to use my procedure to draw a f
 rectangles - first a 50x50 rectangle (a square), followed by a 10x100 narrow But
 tall rectangle. Try the code:
 
-|turtle_ref|
-
 .. activecode:: cspdesigningprocedures_programimplementation11
     :nocodelens:
 

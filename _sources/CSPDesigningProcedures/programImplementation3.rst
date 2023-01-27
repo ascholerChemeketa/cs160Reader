@@ -22,8 +22,6 @@ location to do its drawing.
 This version of the program has ``drawWindow`` defined. But, it is not tested yet. Add
 a test of the procedure to the end of the main part of the program.
 
-|turtle_ref|
-
 .. activecode:: cspdesigningprocedures_programimplementation31
     :autograde: unittest
     :nocodelens:

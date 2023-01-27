@@ -16,9 +16,7 @@ below will pick a random number between 50 and 199 and call it ``squareSize``. T
 gets passed to the ``drawSquare`` function as the size of the square to draw. Each time you
 run the program, the square should be a different size.
 
-As a reminder, here are the turtle commands:
-
-|turtle_ref|
+As a reminder, here are the turtle commands: :ref:`Turtle reference`
 
 .. activecode:: cspdecisionssimulations_turtlerandom1
     :nocodelens:

@@ -106,7 +106,7 @@ Chapter Exercises
     easier to debug. Once you are drawing a hexagon, change it back to ``range(1, 7)`` to see the
     final pattern the program is supposed to make.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
     ~~~~
     # define hexagon here
 
@@ -155,7 +155,7 @@ Chapter Exercises
     get your procedure working, you can comment it out and uncomment the last 4 lines of the program
     to make a cool pattern.
 
-    |turtle_ref|
+    :ref:`Turtle reference`
     ~~~~
     def colorRectangle(turtleName, width, colorValue):
         # height will always be 100

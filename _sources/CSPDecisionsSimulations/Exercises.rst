@@ -170,7 +170,7 @@ Chapter Exercises
     verify you used the random numbers you make in the correct spots. You are responsible for
     checking that yourself!
 
-    |turtle_ref|
+    :ref:`Turtle reference`
 
     ~~~~
     from turtle import *

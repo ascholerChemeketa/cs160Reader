@@ -18,6 +18,8 @@ procedures and functions.
 .. index::
     pair: procedure list; turtle
 
+.. _Turtle reference:
+
 .. list-table:: Turtle procedures
     :widths: 10 10 90
     :header-rows: 1
