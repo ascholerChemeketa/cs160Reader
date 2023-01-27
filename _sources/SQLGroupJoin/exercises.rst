@@ -205,7 +205,7 @@ in one record for each movie they appear in.
 
     We would like to know the title of all the movies Marlon Brando acted in.
 
-    Write a query that gets just the ``movie.title`` from the results of
+    Write a query that gets just the ``movies.title`` from the results of
     joining the ``actors`` table with the ``movies`` table 
     (so that ``actors.movie_id`` matches with ``movies.id``) and
     selecting rows in which the ``actors.name`` is ``'Marlon Brando'``.
@@ -213,10 +213,9 @@ in one record for each movie they appear in.
     ~~~~
 
     ====
-    assert 0,3 == Marlon Brando
-    assert 0,6 == Apocalypse Now
-    assert 1,3 == Marlon Brando
-    assert 1,6 == On the Waterfront
+    assert 0,0 == Apocalypse Now
+    assert 1,0 == On the Waterfront
+    assert 2,0 == The Godfather
 
 
 .. activecode:: sqlgroupjoin_exercises9
