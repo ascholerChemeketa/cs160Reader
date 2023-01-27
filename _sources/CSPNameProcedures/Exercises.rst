@@ -97,14 +97,12 @@ Chapter Exercises
     :practice: T
 
     Define a function ``hexagon`` that has a turtle's name as its parameter.
-    Your procedure should draw a hexagon (6 sides) and the turtle should end up in its original position and facing.
+    Your procedure should draw a hexagon (6 sides) where each side has a length of 50.
+    The turtle should end up in its original position and facing.
     Remember the turns required (exterior angles) for a regular shape are :math:`360 / numSides`. 
-    Make your sides have a length of 50.
 
-    While you are developing your procedure, you may want to change the code that says ``range(1, 7)``
-    to ``range(1, 2)``. That will make the program call your procedure just once, which will make it
-    easier to debug. Once you are drawing a hexagon, change it back to ``range(1, 7)`` to see the
-    final pattern the program is supposed to make.
+    While you are developing your procedure, we will call the ``hexagon`` procedure just once.
+    When you are done, uncomment the code at the bottom of the program to draw 5 more hexagons.
 
     :ref:`Turtle reference`
     ~~~~
@@ -114,9 +112,14 @@ Chapter Exercises
     space = Screen()
     brittany = Turtle()
     brittany.speed(10)
-    for i in range(1, 7):
-        hexagon(brittany)
-        brittany.right(60)
+
+    #Draw one hexagon
+    hexagon(brittany)
+
+    ##For fun once hexagon is working - draw 5 more hexagons
+    #for i in range(5):
+    #    brittany.right(60)
+    #    hexagon(brittany)
     ====
 
     from unittest.gui import TestCaseGui
@@ -145,7 +148,7 @@ Chapter Exercises
     Complete the body of the function ``colorRectangle(turtleName, width, colorValue)``.
 
     It should draw a rectangle that has a width specified by the parameter ``width`` and a height of 100.
-    It should be drawn with a color specified by the parameter ``colorValue``.
+    The turtle should be told to draw with a ``color`` specified by the parameter ``colorValue``.
     The turtle should end up in its original position and facing.
 
     Make sure to do ``pendown`` and ``color`` at the beginning of the procedure and then 
@@ -189,10 +192,10 @@ Chapter Exercises
             return len(matches)
 
         def testOne(self):
-            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you told turtleName to move forward the right height twice.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you told turtleName to move forward 100 twice (for the height).")
             self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*width\s*\)"), 2, "Testing that you turtleName to move forward the right width twice.")
-            self.assertEqual(self.countCopies("\s{4}turtleName.color\(colorValue\)"), 1, "Testing that you told turtleName to use the colorValue.")
             self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(\90\)"), 4, "Testing that told turtleName to use four turns.")
+            self.assertEqual(self.countCopies("\s{4}turtleName.color\s*\(\s*colorValue\s*\)"), 1, "Testing that you told turtleName to use color colorValue.")
             self.assertEqual(self.countCopies("\s{4}turtleName.pendown\("), 1, "Testing that you told turtleName to put down the pen.")
             self.assertEqual(self.countCopies("\s{4}turtleName.penup\("), 1, "Testing that you told turtleName to pick up the pen.")
 
