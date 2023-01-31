@@ -62,7 +62,7 @@ call ``hypotenuse_length``.
 
     .. code::
 
-        def hypotenuse_length(tempF):
+        def convertFtoC(tempF):
             tempF = tempF - 32
             tempC = (5 / 9) * tempF
             ______________
