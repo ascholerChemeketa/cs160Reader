@@ -150,7 +150,7 @@ Chapter Exercises
     :practice: T
 
     Write the function ``isYellow`` that accepts red, green, and blue values as its parameters
-    and returns ``True`` if both the green and red values are at least 40 more than the red value.
+    and returns ``True`` if both the green and red values are at least 40 more than the blue value.
     If the blue value is close to, or above, either the green or red, it should return ``False``.
 
     Once you write the function, it will be used to turn the goal keeper's jersey from yellow to
