@@ -88,7 +88,6 @@ For example to look at bike trips which are 60 minutes or more and the
     :language: sql
     :autograde: unittest
     :dburl: /_static/bikeshare.db
-    :autograde: unittest
 
     Write a query to find the ending station and duration (in that order) of all of trips by bike
     number ``'W00153'`` that lasted over 8 hours (remember that duration is measured in

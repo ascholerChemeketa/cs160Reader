@@ -134,7 +134,6 @@ numbers used.
     :language: sql
     :autograde: unittest
     :dburl: /_static/bikeshare.db
-    :autograde: unittest
 
 
     Write a query to get the number of unique start locations there are in the table.
