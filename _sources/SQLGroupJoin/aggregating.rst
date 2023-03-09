@@ -41,7 +41,7 @@ makes it much clearer what we are looking at.
   ~~~~
 
   ====
-  assert 0,0 == 92
+  assert 0,0 == 5575
 
 ``COUNT`` is one of the aggregation functions provided by SQL. **Aggregation** is the process
 of combining data and ``COUNT`` combines all the records and tells us how many there are. 
@@ -78,7 +78,7 @@ For example, the query below calculates the minimum and maximum trip duration:
   ~~~~
 
   ====
-  assert 0,0 == 31620
+  assert 0,0 == 1174.9783650671766
 
 
 You use ``WHERE`` filtering with aggregating functions. The
