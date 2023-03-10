@@ -39,7 +39,7 @@ function attachLinter() {
             let currentCode = codeMirror.CodeMirror.getValue();
             var data = new FormData();
             data.append('code', currentCode);
-            fetch('http://157.230.167.85:4242/test', {
+            fetch('https://computerscience.chemeketa.edu:8443/test', {
                 method: 'POST',
                 body: JSON.stringify(currentCode)
             })
