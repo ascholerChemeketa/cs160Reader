@@ -518,6 +518,10 @@ div.highlight-default {
     overflow: scroll;
 } */
 
+div.ac_output pre.lint-results {
+    background: #f2dede;
+}
+
 /* This is for Codelens areas - no cleaner way to select them */
 
 iframe[height*="500"] {

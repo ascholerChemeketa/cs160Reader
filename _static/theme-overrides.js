@@ -33,24 +33,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 let currentCode = codeMirror.CodeMirror.getValue();
                 var data = new FormData();
                 data.append('code', currentCode);
-                fetch('https://postman-echo.com/post', {
+                fetch('http://157.230.167.85:4242/test', {
                     method: 'POST',
-                    body: JSON.stringify(currentCode),
-                    mode: 'no-cors'
+                    body: JSON.stringify(currentCode)
                 })
                 .then((response) => {
                     console.log(response);
-                    const stdOutPre = acItem.querySelector("div.ac_output pre");
-                    stdOutPre.insertAdjacentHTML("afterbegin", "")
-                    //response.json();
+                    return response.text();
                 })
-                // .then((jsonData) => {
-                //     console.log(jsonData);
-                // })
+                .then((data) => {
+                    let lintPre = acItem.querySelector("div.ac_output pre.lint-results");
+                    if( lintPre == null ) {
+                        const stdOutPre = acItem.querySelector("div.ac_output pre");
+                        stdOutPre.insertAdjacentHTML("beforebegin", '<pre class="lint-results"></pre>');
+                        lintPre = acItem.querySelector("div.ac_output pre.lint-results");
+                    }
+                    if(data.trim() !== '') {
+                        lintPre.classList.remove("hidden");
+                        lintPre.innerHTML = "Syntax warnings:\n" + data;
+                    } else {
+                        lintPre.classList.add("hidden");
+                    }
+                })
                 .catch(err => {
                     console.log("Error w/ajax");
                 });
             });
         });
-    }, 2000);
+    }, 1000);
 });
