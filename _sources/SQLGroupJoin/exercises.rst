@@ -88,7 +88,8 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Write a query to display the total number of ``'PG-13'`` movies in the database.
+    Write a query to display the total number of movies with a ``rating`` of ``'PG-13'``
+    in the database.
     ~~~~
 
     ====
@@ -100,8 +101,8 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Use ``GROUP BY`` to write a query to display the total number of movies in each ``rating`` category.
-    Make sure to select the rating and the total count. Your output should look like:
+    Use ``GROUP BY`` to write a query to display each ``rating`` category with the
+    number of movies in that category.  Your output should look like:
 
     .. faux_code::
 
@@ -121,10 +122,19 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Write a query to get the highest rated movie according to IMDB score for each director.
-    (It is OK to treat a list of directors as a "separate director"). 
-    Display the director's name and the IMDB score achieved. Order the output so the directors
-    with the highest scores come first.
+    Write a query to list each ``director`` with the highest (``MAX``) ``imdb_score`` that director's 
+    movies have earned. Order the output so the directors with the highest ``imdb_score`` come first.
+
+    Hint: You will need to use both ``GROUP BY`` and ``ORDER BY```.
+
+    Your output should look like:
+
+    .. faux_code::
+
+        director              | score
+        Frank Darabont	      | 9.3
+        Francis Ford Coppola  | 9.2
+        ...
 
     ~~~~
 
@@ -139,12 +149,22 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Write a query to get the total number of films on the list made by each director.
+    Write a query to list each ``director`` with the ``COUNT`` of the number of films they have made. 
     But **only** retrieve the data for directors with at least 2 films.
 
-    Display the director's name and the number of films. Don't sort the results.
+    The results should be sorted by director's name (but that should be the default,
+    you should not have to use ``ORDER BY``).
 
     Hint: Remember that you have to use ``HAVING`` to filter grouped results.
+
+    Your output should look like:
+
+    .. faux_code::
+
+        director              | num_films
+        Akira Kurosawa        | 5
+        Alfred Hitchcock      | 6
+        ...
 
     ~~~~
 
@@ -159,14 +179,24 @@ columns of data:
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Write a query to get the total number of films on the list made by each director
-    that have an IMDB rating of 8.5 or higher.
-
-    Display the director's name and the number of films. Sort the results so the directors
-    with the most high rated files are first.
+    Write a query to list each ``director`` with the number of movies they have made that
+    have an ``imdb_score`` of 8.5 or higher.
+    
+    Sort the results so the directors with the greatest number of highly rated files 
+    are first.
     
     Hint: Here you want to filter the movies by IMDB rating before they are aggregated,
     so you need a ``WHERE`` not a ``HAVING``.
+
+    Your output should look like:
+
+    .. faux_code::
+
+        director              | high_rated_films
+        Peter Jackson         | 3
+        Christopher Nolan     | 3
+        Steven Spielberg      | 2
+        ...
 
     ~~~~
 
@@ -208,7 +238,16 @@ in one record for each movie they appear in.
     Write a query that gets just the ``movies.title`` from the results of
     joining the ``actors`` table with the ``movies`` table 
     (so that ``actors.movie_id`` matches with ``movies.id``) and
-    selecting rows in which the ``actors.name`` is ``'Marlon Brando'``.
+    selecting rows in which the ``actors.name`` is ``"Marlon Brando"``.
+
+    Your output should look like:
+
+    .. faux_code::
+
+        title
+        Apocalypse Now
+        On the Waterfront
+        The Godfather
 
     ~~~~
 
@@ -223,13 +262,24 @@ in one record for each movie they appear in.
     :autograde: unittest
     :dburl: /_static/movies.db
 
-    Display the highest Metacritic score for the movies each actor appeared in.
-
-    Display the actor's name and the highest score (we won't know what movie it is for).
+    Write a query that displays each ``actor.name`` with the highest ``metacritic_score``
+    of any movie that actor has been in (we won't know what movie the score is from).
 
     You will have to join ``actors`` and ``movies`` so that you have access to all the
-    needed data. You will also have to ``GROUP BY``. The ``GROUP BY`` should come after the
+    needed data. You will also have to use ``GROUP BY``. The ``GROUP BY`` should come after the
     ``JOIN``.
+
+    Your output should look like:
+
+    .. faux_code::
+
+        name                     | max_metacritic
+        A.B. Lane                | 0
+        A.J. O'Connor            | 0
+        A.K. Hangal              | 84
+        A.R. Haysel              | 87
+        A.S. Duggal              | 67
+        ...
 
     ~~~~
 

@@ -125,7 +125,7 @@ to be clear about which table we are talking about once we start joining data.
     ~~~~
 
     ====
-    0,0 == 9883
+    assert 0,0 == 9883
 
 .. activecode:: sqlgroupjoin_joining6
     :language: sql   
