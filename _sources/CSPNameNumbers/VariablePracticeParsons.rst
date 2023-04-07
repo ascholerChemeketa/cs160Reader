@@ -158,7 +158,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    cost = 0.6
    money = 3.5
    =====
-   numWings = cost / money
+   numWings = money / cost
    =====
    print(numWings)
    =====
