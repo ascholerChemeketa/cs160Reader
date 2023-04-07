@@ -43,10 +43,13 @@ a way to draw to the screen, etc... The ``turtle`` library will handle these det
     single: import
 
 To use a library, we need to tell Python we want to use the library with an **import** statement.
-In the program below, we start with ``from turtle import *`` to tell Python we want to make use
-of the **turtle** library. Then it creates a **Screen**, a space on the page for the turtle to
-move in and draw on (``space = Screen()``).  Next it creates a turtle named ``alex``
-(``alex = Turtle()``). The turtles that we make are  **objects** that have behaviors we can access
+In the program below, we start with ``import turtle`` to tell Python we want to make use
+of the **turtle** library. To use commands from the library, we use dot notation: we type the
+name of the library, then a dot `.`, then the command. 
+The line ``alex = turtle.Turtle()`` calls the `Turtle()` command from the `turtle` library to
+make a new turtle - we name that turtle `alex`.
+
+The turtles that we make are  **objects** that have behaviors we can access
 with dot-notation. We use these to tell the turtle ``alex`` to move around on the screen using
 commands like: ``alex.forward(150)``. As the turtle moves around it draws a line behind itself. 
 
@@ -55,9 +58,8 @@ Try clicking the |runbutton| button below to see what the following program does
 .. activecode:: cspteasers_computeturtles1
     :nocodelens:
     
-    from turtle import *    # use the turtle library
-    space = Screen()        # create a turtle space
-    alex = Turtle()         # create a turtle named alex
+    import turtle           # use the turtle library
+    alex = turtle.Turtle()  # create a turtle named alex
     alex.forward(150)       # move forward by 150 units
     alex.left(90)           # turn by 90 degrees
     alex.forward(75)        # move forward by 75 units 
@@ -78,12 +80,11 @@ Try clicking the |runbutton| button below to see what the following program does
    
    :: 
    
-        from turtle import * 
-        space = Screen() 
-        alex = Turtle()
+        import turtle 
+        alex = turtle.Turtle()
         alex.forward(100)  
 
-Just by going forward, backward, left, and right, we can have a turtle draw a shape.  
+Just by going forward, backward, left, and right, we can have a turtle draw a shape:  
 
 .. fillintheblank:: cspteasers_computeturtles3
 
@@ -91,9 +92,8 @@ Just by going forward, backward, left, and right, we can have a turtle draw a sh
     
     :: 
 
-        from turtle import *    # use the turtle library
-        space = Screen()        # create a turtle screen (space)
-        zari = Turtle()         # create a turtle named zari
+        import turtle    # use the turtle library
+        zari = turtle.Turtle()         # create a turtle named zari
         zari.setheading(90)     # Point due north
         zari.forward(100)       # tell zari to move forward by 100 units
         zari.right(90)          # turn by 90 degrees

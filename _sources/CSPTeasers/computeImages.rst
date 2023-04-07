@@ -77,8 +77,7 @@ Let's remove the red from this picture.  The program below does that.
 
 In Python, images are another example of an **object**. To work with them, we will make use of
 another **library**, this one called ``image``. That library will allow us to make an ``Image``
-that holds the data from an image and an ``ImageWin`` which draws that image to the screen after
-we have modified the data.
+that holds the data from an image and an ``ImageWin`` where we can draw the image to.
   
 The lines that are important are under the comments (lines that start with a ``#``). Press the
 |runbutton| button to run the program and show the changed image.  Please note that processing
@@ -89,22 +88,22 @@ all those pixels can take a few seconds.
     :nocodelens:
 
     # MAKE USE OF IMAGE LIBRARY
-    from image import *
+    import image
     
-    # CREATE AN IMAGE FROM A FILE
-    img = Image("cat.jpg")
+    # CREATE AN IMAGE FROM A FILE AND CALL IT catPic
+    catPic = image.Image("cat.jpg")
 
     # LOOP THROUGH ALL THE PIXELS
-    pixels = img.getPixels()
+    pixels = catPic.getPixels()
     for p in pixels:
         # CLEAR THE RED
         p.setRed(0)
-        img.updatePixel(p)
+        catPic.updatePixel(p)
            
-    # SHOW THE CHANGED IMAGE 
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
-    
+    # SHOW THE CHANGED IMAGE IN A 400x400 WINDOW
+    win = image.ImageWin(400, 400)
+    catPic.draw(win)
+
 .. mchoice:: cspteasers_computeimages3
     :answer_a: You still see the picture, but it is all in shades of gray.  
     :answer_b: The picture is all white.
