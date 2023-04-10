@@ -95,7 +95,7 @@ have this:
    :feedback_a: Does it return a value?
    :feedback_b: The right procedure will cause the turtle to turn right by the specified number of degrees and doesn't return any value so it is a procedure.
 
-   Is ``forward(75)`` a function or procedure?
+   Is ``right(75)`` a function or procedure?
 
 **Mixed up programs**
 
