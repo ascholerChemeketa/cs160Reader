@@ -81,7 +81,7 @@ Chapter Exercises
 
         def testOne(self):
             self.assertEqual(x, -4, "Testing that x has the correct value." )
-            self.assertRegex(self.getEditorText(), r"x = 12[()\s]*\*[()\s]*2[()\s]*-[()\s]*3[()\s]*\+[()\s]*4[()\s]*\*[()\s]*2", "Testing that you still have all the original pieces.")
+            self.assertRegex(self.getEditorText(), r"x = [()\s]*12[()\s]*\*[()\s]*2[()\s]*-[()\s]*3[()\s]*\+[()\s]*4[()\s]*\*[()\s]*2[()\s]*", "Testing that you still have all the original pieces.")
 
     myTests().main()
 
