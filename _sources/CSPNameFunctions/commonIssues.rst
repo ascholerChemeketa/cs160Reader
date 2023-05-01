@@ -84,7 +84,7 @@ Again, try running in Codelens:
         celsiusValue = (9 / 5) * celsiusValue
         celsiusValue = celsiusValue + 32  #distractor
     =====
-        return newtemp
+        return newTemp
     =====
         return todaysTempF #distractor
     =====

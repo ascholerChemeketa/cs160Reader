@@ -106,11 +106,10 @@ This example shows exactly what ``range(6)`` produces:
     single: iteration
 
 For now, we don't need to worry about exactly what values ``range`` produces. What is
-important for now is that ``range(6)`` makes a list that has 6 values. When that list is
-used in a ``for`` statement, it will cause the code to repeat 6 times.
-For each value in the list produced by ``range``, the ``for`` loop will repeat the
-indented statements that come after it. Each of these repetition is called an
-**iteration**. To **iterate** is to go through items one at a time.
+important is that ``range(6)`` makes a list that has 6 values. When that list is
+used in a ``for`` statement, it will cause the code to repeat 6 times. Each repetition
+is called an **iteration** and will repeat all of the code indented past the ``for``.
+*(To **iterate** is to go through items one at a time.)*
 
 That just leaves the variable **side** in the for statement to explain:
 
@@ -118,12 +117,12 @@ That just leaves the variable **side** in the for statement to explain:
 
     for ``side`` in range(6):
 
-It is the name we will use for each item as we iterate through them. For now we will not
-need to us the names of the items very often. We mostly care that ``range`` produces a
-certain number of values, not what those values are. But if we wanted to print out each
-of the values that range produces, we could modify the program to use ``side`` to name
-them. In this program, for each value in the list produced by ``range``, we call the
-current item ``side``, print it out, then do the turtle commands.
+It is the name we will use for each item as we iterate through the the values ``range``
+produces. Right now we don't really need to name those values - we don't make use of them.
+But if we wanted to print out each of the values that range produces, we would use ``side``
+to refer to **"the value for the current iteration"**. The program below does exactly that.
+In the loop, in addition to doing the turtle commands, it prints out ``side`` to tell
+us when it starts each side of the shape.
 
 .. activecode:: csprepeatturtles_repetition4
     :nocodelens:
