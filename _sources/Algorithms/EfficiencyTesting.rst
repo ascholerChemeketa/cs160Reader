@@ -83,7 +83,7 @@ procedureA takes approximately ~0.6 more seconds. That steady growth means proce
     :feedback_b: For that to be true, increasing the size should consistently increase the time. That should not be the case here.
     :feedback_c: Correct. Going from 2 to 4 increases the time. But going from 4 to 6 increases it even more. And going from 6 to 8 increases it even more than that.
     
-    Try testing procedureB for inputs of size 2, 4, 6, 8 and identify what kind of algorithm it is.
+    Try testing procedureC for inputs of size 2, 4, 6, 8 and identify what kind of algorithm it is.
     (Change line 6 to say ``procedureC(2)`` and then run it, then change to ``procedureC(2)``...)
 
 .. activecode:: algorithms_efficiency_testing
