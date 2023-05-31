@@ -55,9 +55,8 @@ used immediately following the ``GROUP BY`` clause.
     Below is a query to find the total time each bike was ridden. Add a ``HAVING``
     clause to select only the bikes that were used for less than 1000 minutes.
     ~~~~
-
     SELECT
-        start_station,
+        bike_number,
         SUM(duration) AS total_time
     FROM
         trip_data
