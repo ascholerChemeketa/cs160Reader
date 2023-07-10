@@ -144,8 +144,9 @@ It may sound a little complex, but remember it is the same idea as scientific no
             $("#meaning").append("&= " + sign + expValueDecimal + " \\cdot " + mantissaVal + " \\cr ");
             $("#meaning").append("&= " + sign + expValueDecimal * mantissaVal + " \\end{align*} \\]");
 
+            const node = document.getElementById('result');
+            MathJax.typesetPromise([node]);
 
-            MathJax.Hub.Queue(["Typeset",MathJax.Hub,"result"]);
         });
 
         $("#digits input#digit0").trigger("change"); //trigger initial parse
