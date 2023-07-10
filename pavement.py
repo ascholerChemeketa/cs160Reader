@@ -20,6 +20,8 @@ project_name = 'welcomecs'
 serving_dir = './built/welcomecs'
 dest = './published'
 
+dynamic_pages = True
+
 options(
     sphinx = Bunch(docroot=".",),
 
@@ -38,7 +40,7 @@ options(
             'downloads_enabled': 'false',
             'enable_chatcodes': 'false',
             'allow_pairs': 'false',
-            'dynamic_pages': True,
+            'dynamic_pages': dynamic_pages,
             'use_services': 'true',
             'basecourse': project_name,
             'course_id': project_name,
