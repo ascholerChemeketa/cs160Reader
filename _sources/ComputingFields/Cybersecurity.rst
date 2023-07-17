@@ -6,7 +6,7 @@ Cybersecurity
 =====================================
 
 **Cybersecurity** is a cross-disciplinary field that is concerned with preventing
-missuses of computational devices and data. It is a relatively new discipline that arose
+misuse of computational devices and data. It is a relatively new discipline that arose
 out of a realization that a system is only as secure as its weakest link - and thus
 keeping systems secure requires a comprehensive approach.
 
@@ -17,7 +17,7 @@ they interact. These are cybersecurity professionals.
 
 Cybersecurity jobs from the technical (cryptography, network defense) to business and management
 (setting organization policy and training users). Even within the more technical jobs, there
-are a wide variety of specialization that may require advanced skills in programming, networking,
+are a wide variety of specializations that may require advanced skills in programming, networking,
 system administration, or mathematics.
 
 **Typical careers:**
@@ -29,19 +29,19 @@ system administration, or mathematics.
 Because Cybersecurity is a cross-disciplinary field, there are a variety of educational paths.
 
 Most Cybersecurity degrees focus on an IT skill set and then add specific advanced training in
-security related topics. These programs exist both as two-year Associate's degrees and as four-year
+security-related topics. These programs exist both as two-year Associate's degrees and as four-year
 Bachelor's degrees.
 
-However, there are also IS related jobs in Cybersecurity - management focused roles
+However, there are also IS-related jobs in Cybersecurity - management focused roles
 that require more business knowledge and have less of a technical focus. 
 
-And for Cybersecurity careers focusing on cryptography or advanced software based security (malware analysis),
+And for Cybersecurity careers focusing on cryptography or advanced software-based security (malware analysis),
 a specialized background in CS or SE may be required. Some computer science programs offer tracks
 in cybersecurity that would be appropriate for these kinds of careers.
 
 **Knowledge Domains:**
 
-This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount. In addition to these knowledge areas, a cybersecurity professional will often need
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while a 1 represents a minimal amount. In addition to these knowledge areas, a cybersecurity professional will often need
 specialized knowledge in one or more other areas as well (computer networks, programming, etc...). 
  
 .. raw:: html

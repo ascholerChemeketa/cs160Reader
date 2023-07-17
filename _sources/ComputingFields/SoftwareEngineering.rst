@@ -12,7 +12,7 @@ capable of working in teams on large software systems.
 
 There is significant overlap in the skills required in SE and CS - both require a strong foundation in
 programming fundamentals and some knowledge of computational theory. Where the two disciplines differ
-is their focus after that. While Computer Science is concerned about learning how to use computation to solve
+is their focus after that. While Computer Science is concerned with learning how to use computation to solve
 new problems in many different areas, Software Engineering is more concerned with mastering a specific
 set of skills required to design and develop reliable software projects. If you need someone to design
 a new way for computers to render more complex graphics in video games or solve new problems in computational
@@ -27,9 +27,9 @@ engineer.
 **Education:**
 
 A Software Engineering degree will have many of the same programming courses as a CS degree along with
-the same basic theory classes and supporting math. However, the junior and senior years, while a CS student might
+the same basic theory classes and supporting math. However, during the junior and senior years, while a CS student might
 take a wider range of more theoretical classes, a SE student will have coursework focused more
-narrowly on topics like designing and testing software, managing projects, and using industry standard tools.
+narrowly on topics like designing and testing software, managing projects, and using industry-standard tools.
 
 Although some schools offer degrees specifically in Software Engineering, at most schools it exists as a specialization
 within the computer science department. Someone who knows they want to become a working software developer thus would
@@ -37,7 +37,7 @@ earn a CS degree, but focus on the Software Engineering related courses instead 
 
 **Knowledge Domains:**
 
-This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while a 1 represents a minimal amount.
  
 .. raw:: html
 

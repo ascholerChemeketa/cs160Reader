@@ -5,11 +5,11 @@
 Information Systems
 =====================================
  
-In some ways **Information Systems** attacks the same basic problem as Information Technology,
+In some ways **Information Systems** attacks the same basic problems as Information Technology
 in that it is focused on making computer technology work for people and organizations.
 
 However, while IT is more concerned with the technology itself, Information Systems focuses
-more on business related issues. They are interested in questions like: "What information
+more on business-related issues. They are interested in questions like: "What information
 does the enterprise need?", "How is that information generated?", "Is it delivered to the people
 who need it? Is it presented to them in ways that permit them to use it readily?"
 
@@ -29,11 +29,11 @@ degree than IT jobs.
 An Information Systems degree will combine technical knowledge and business knowledge in different degrees. Some IS programs
 have a more technical focus, with a core of technical skills like an IT professional. Other programs are much
 more business focused and have technical courses that don't focus on developing practical skills, but instead focus
-on understanding how technologies are used so that the IS practitioner can manage people with the more applied skills.
+on understanding how technologies are used so that the IS practitioner can manage people with more applied skills.
 
 **Knowledge Domains:**
 
-This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while a 1 represents a minimal amount.
  
 .. raw:: html
 

@@ -15,12 +15,12 @@ C\ **omputer Engineers** research, design, develop and test computer chips, circ
 **Education:**
 
 To work in this field you need a Bachelor's degree in Computer Engineering. At some schools, instead of a separate Computer Engineering degree, students specialize in that field while earning a degree in Electrical Engineering. 
-In addition to deep knowledge of computer hardware and some programming knowledge, Computer Engineers
-need to do significant course work in general engineering principles, physics, and math. 
+In addition to a deep knowledge of computer hardware and some programming knowledge, Computer Engineers
+need to do significant coursework in general engineering principles, physics, and math. 
 
 **Knowledge Domains:**
 
-This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while a 1 represents a minimal amount.
  
 .. raw:: html
 

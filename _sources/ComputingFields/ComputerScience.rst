@@ -8,7 +8,7 @@ Computer Science
 Despite its name, much of **computer science** is not focused on the study of computers themselves. 
 Instead, computer scientists are more concerned with understanding what problems can be solved with
 computation and how we can most efficiently and appropriately solve those problems with *algorithms*. 
-(An algorithm is simply a step by step process for solving a problem.) 
+(An algorithm is simply a step-by-step process for solving a problem.) 
 
 Computer science tends to have a more theoretical focus than other computing disciplines. There is a 
 core to the discipline that is closely related to ideas in math and logic. But the discipline also 
@@ -24,11 +24,11 @@ to graphics, to simulations, and many others.
 **Education:**
 
 * Working as a software developer requires a Bachelor's degree
-* Working as a research scientist requires a graduate degree (Master's of PhD).
+* Working as a research scientist requires a graduate degree (Master's or Ph.D.).
 
 The first year of study generally focuses on programming - the essential skill needed to solve problems using a computer. Courses in the following years tend to be more focused on the theory of why software and hardware work and how to build software.
 
-During their Jr and Sr years students usually can chose from classes to concentrate in a specific area
+During their Jr and Sr years students usually can choose from classes to concentrate in a specific area
 (graphics, databases, artificial intelligence, computational biology, software development). For students who
 intend to become software developers, this is an important opportunity to take courses on software engineering
 and applied programming skills.
@@ -39,7 +39,7 @@ their CS coursework.
 
 **Knowledge Domains:**
 
-This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while 1 represents a minimal amount.
+This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of required expertise while a 1 represents a minimal amount.
  
 .. raw:: html
 

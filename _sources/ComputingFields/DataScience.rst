@@ -14,11 +14,11 @@ make forecasts, and communicate information. To do this, they will write compute
 apply various mathematical techniques from statistics, calculus, and linear algebra, and
 make use of advanced tools like machine learning algorithms.
 
-Although there are a general set of skills used by all data scientists, an individuals
-data scientist often focuses in a particular domain. They may specialize in working with
-data from biological sciences, or business and marketing, or sports management, or 
+Although there are a general set of skills used by all data scientists, an individual
+data scientist often focuses on a particular domain. They may specialize in working with
+data from biological sciences, business and marketing, sports management, 
 geology, or in any other domain where large amounts of data exist. To effectively work
-in one of these domains, a data scientist often needs field specific knowledge in addition
+in one of these domains, a data scientist often needs field-specific knowledge in addition
 to their general data science skills.
 
 
@@ -29,7 +29,7 @@ to their general data science skills.
 **Education:**
 
 Working as a data analyst or scientist generally requires a Bachelor's degree or graduate
-degree (Master's or PhD).
+degree (Master's or Ph.D.).
 
 Because Data Science is a cross-disciplinary field, degrees in data science can be found 
 in many different programs. Some Data Science degrees are offered by math departments, others
