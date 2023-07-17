@@ -21,9 +21,9 @@ Although the simplest microprocessors (like those inside simple electronic devic
 
 .. sidebar:: \*nix
 
-    UNIX is an operating system developed in the 1970s at AT&T. It became the most common operating system for computers in academia and industry. To this day, UNIX based computers remain popular in environments where developers want unfettered control over how the operating system works.
+    UNIX is an operating system developed in the 1970s at AT&T. It became the most common operating system for computers in academia and industry. To this day, UNIX-based computers remain popular in environments where developers want unfettered control over how the operating system works.
 
-    There are many "flavors" of UNIX and operating systems based on UNIX (sometimes referred to as "\*nixes"). Apple's OSX is related to a UNIX based operating system. Linux is a free Unix-like operating system.
+    There are many "flavors" of UNIX and operating systems based on UNIX (sometimes referred to as "\*nixes"). Apple's OSX is related to a UNIX-based operating system. Linux is a free Unix-like operating system.
 
 
 Operating systems that solve similar problems on similar hardware tend to themselves be similar. Windows, OSX, and Linux desktops all provide similar ways to view files, and interact with programs because they are used on personal computers with mice and keyboards. Phone operating systems like Android and iOS are similar because they generally operate on devices with smaller screens that are touch-sensitive.
@@ -41,7 +41,7 @@ You are probably most familiar with the kind of operating system that runs on a 
 
 .. note:: **What's the deal with Linux?**
 
-    You may or may not have tried working with a PC running Linux - it is an alternative to Windows or Mac OSX for powering personal computers. But it also the operating system that powers many of the electrical devices in your home, the majority of web servers in the world as well as most big scientific computers.
+    You may or may not have tried working with a PC running Linux - it is an alternative to Windows or Mac OSX for powering personal computers. But it also is the operating system that powers many of the electrical devices in your home, the majority of web servers in the world as well as most big scientific computers.
 
     Where did it come from? Why is it so popular? This video tells the quick version of the story of Linux and free, open-source software:
 

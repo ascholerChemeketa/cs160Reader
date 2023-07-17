@@ -5,7 +5,7 @@
 Memory Management
 =================================
 
-Modern PC processors often have memory addresses `given by 48 bits <http://en.wikipedia.org/wiki/X86-64#Virtual_address_space_details>`__. That means they can store address :math:`2^{48}` (256TB - over 200 trillion) different byte location. On the other hand, a nice personal computer may only have 8 GB (or ~8 billion bytes) of actual main memory (RAM). In other words, a program may think it can store information in 200 trillion different locations but there are only 8 billion actual places where a byte can go in memory.
+Modern PC processors often have memory addresses `given by 48 bits <http://en.wikipedia.org/wiki/X86-64#Virtual_address_space_details>`__. That means they can specify :math:`2^{48}` (256TB - over 200 trillion) different memory locations. On the other hand, a nice personal computer may only have 8 GB (or ~8 billion bytes) of actual main memory (RAM). In other words, a program may think it can store information in 200 trillion different locations but there are only 8 billion actual places where a byte can go in memory.
 
 Not only are there significantly more addresses that a program is allowed to use than actually exist, every program that is running thinks it gets to use nearly the entire memory space. Two programs may both decide to store a piece of information at byte address #100000 - the operating system needs to make sure that neither program destroys the other's information and that they can both get to what they stored.
 
@@ -33,14 +33,14 @@ Below is an illustration of how the virtual memory trick works:
 
         When Process A asks the operating system for "memory location 1" because it wants to access the data **A1**, the operating system looks up where that memory is really stored, finds the data in location 3 and then gives that back to the process. Process A will never know that what it thinks of as "memory location 1" is actually physically stored in location 3.
 
-        If Process B asks for "memory location 1", the operating system will give it the memory that is actually stored at location 6. If it asked for "memory location 2", it would get the data that is actually stored in location 1.
+        If Process B asks for "memory location 1", the operating system will give it the memory that is stored at location 6. If it asked for "memory location 2", it would get the data that is stored in location 1.
 
     .. tab:: 2
 
         .. image:: Images/VirtualMemory-Page-2.png
             :class: virtual-mem
 
-        The gray blocks are blocks that are not currently in RAM. They are sitting on the hard drive, which is being used as backup storage for the RAM since there is too much total information to all fit in main memory at the same time.
+        The gray blocks are blocks that are not currently in RAM. They are sitting on the hard drive, which is being used as backup storage for the RAM since there is too much total information to fit in main memory all at the same time.
 
     .. tab:: 3
 
@@ -51,7 +51,7 @@ Below is an illustration of how the virtual memory trick works:
         
         That memory block is not currently in RAM, it is on the hard drive. So, the operating system needs to move it back into RAM (the hard drive is too slow to work from directly). 
         
-        To do that, the operating system needs to make room by evicting some other memory block. It may chose to do this based on which block has been used the least or used the least recently. We will assume it choses the block at location 5, "A3".
+        To do that, the operating system needs to make room by evicting some other memory block. It may choose to do this based on which block has been used the least or used the least recently. We will assume it chooses the block at location 5, "A3".
 
     .. tab:: 4
 
@@ -66,9 +66,9 @@ Below is an illustration of how the virtual memory trick works:
             :class: virtual-mem
 
 
-        Finally now, the operating system can complete the request by giving Process B the memory block "B8".
+        Finally, the operating system can complete the request by giving Process B the memory block "B8".
 
-        Process A doesn't know that "A3" is no longer actually in main memory. If it goes to access it, the operating will use the same procedure  to restore it from the hard drive by evicting some other block of memory.
+        Process A doesn't know that "A3" is no longer actually in main memory. If it goes to access it, the operating will use the same procedure to restore it from the hard drive by evicting some other block of memory.
 
 
 .. pseudo_h4:: Self Check

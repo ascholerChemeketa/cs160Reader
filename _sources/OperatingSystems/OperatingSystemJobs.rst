@@ -17,14 +17,14 @@ When a computer is turned on, the hardware loads code from a set location in per
 .. pseudo_h3:: Hardware Allocation
     :class: underlined
     
-Most of the hardware resources a computer has are **scarce**, meaning they are in limited supply: The CPU can only do so much work at any given time. There is a physical limit to how much information can fit into main memory (RAM). Only one program can be printing to a printer at any given time.
+Most of the hardware resources a computer has are **scarce**, meaning they are in limited supply: The CPU can only do so much work at any given time. There is a physical limit to how much information can fit into the main memory (RAM). Only one program can be printing to a given printer at any given time.
 
 The operating system is in charge of **allocating** this scarce hardware -  deciding who gets what when and preventing any one program from monopolizing the hardware resources.
 
 .. pseudo_h3:: Hardware Abstraction
     :class: underlined
 
-Computer hardware is diverse and complicated. There are many different kind of storage drives that can be hooked up to a computer - flash, hard drive, CD drive, SSD, etc... and of those styles of drive comes in thousands of makes and models.  Each of those different drives stores information in different ways, often scattered pieces of information across the drive. 
+Computer hardware is diverse and complicated. There are many different kinds of storage drives that can be hooked up to a computer - flash, hard drive, CD drive, SSD, etc... and each of those styles of drive comes in thousands of makes and models.  Each of those different drives stores information in different ways, often scattered pieces of information across the drive. 
 
 Imagine you are writing a program and want to read a document from a drive. Without an operating system, you would have to write code to talk to a drive, track down all the chunks of information and assemble them into one block in memory. Then you would have to make sure that code worked with thousands of different kinds of drives.
 
@@ -33,7 +33,7 @@ Instead of that nightmare situation, the operating system provides an **abstract
 .. pseudo_h3:: Common Interface
     :class: underlined
 
-Related to the job of hardware abstraction is providing tools to other programs to interact with users in a consistent and effective manner. Operating systems provide application programming interfaces (APIs) that include tools for doing things like drawing windows. Rather than each application designer deciding what windows should look like, what font to use in the title bar, where to put the close button, etc... the operating system provides code that takes care of those details. Not only does this makes programming an application easier, it also helps enforce a consistent experience for the user.
+Related to the job of hardware abstraction is providing tools to other programs to interact with users in a consistent and effective manner. Operating systems provide application programming interfaces (APIs) that include tools for doing things like drawing windows. Rather than each application designer deciding what windows should look like, what font to use in the title bar, where to put the close button, etc... the operating system provides code that takes care of those details. Not only does this makes programming an application easier, but it also helps enforce a consistent experience for the user.
 
 
-We could fill books with all the ways that operating systems provide allocation of and abstraction for computer hardware, but on the following pages we will foucs on two fundamental resources: processors and main memory.
+We could fill books with all the ways that operating systems provide allocations of and abstractions for computer hardware, but on the following pages, we will focus on two fundamental resources: processors and main memory.
