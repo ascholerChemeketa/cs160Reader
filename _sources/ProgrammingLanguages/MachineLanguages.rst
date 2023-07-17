@@ -28,12 +28,12 @@ The figure below shows how an imaginary computer might interpret an instruction.
     
     How a computer might interpret the instruction 0001110001001011.
 
-Computers usually support only a small number of machine code instructions; a few dozen to a few hundred very simple instructions like "add two numbers" or "store a value to memory". The list of available instruction and the format for specifying them make up a **machine language**. Machine languages were the first programming languages - the earliest electronically programmable computers had to be programmed by feeding in a program as a list of 0s and 1s that specified what the computer was to do. (Before that the program had to be set physically with switches or patch cords.) 
+Computers usually support only a small number of machine code instructions; a few dozen to a few hundred very simple instructions like "add two numbers" or "store a value to memory". The list of available instructions and the format for specifying them make up a **machine language**. Machine languages were the first programming languages - the earliest electronically programmable computers had to be programmed by feeding in a program as a list of 0s and 1s that specified what the computer was to do. (Before that the program had to be set physically with switches or patch cords.) 
 
 .. important::
-    Because these are the only instructions a computer actually can understand and perform, at some point every program a computer runs must be converted to machine instructions. 
+    Because these are the only instructions a computer actually can understand and perform, at some point, every program a computer runs must be converted to machine instructions. 
 
     
-You can probably see the difficulties of working in machine language. While it might be very appropriate for a computer, it is extremely confusing for a computer programmer. They are also are restricted to very low level commands. There is no way to say something like "open a connection to google.com" or "draw this image on the screen" in a machine language - instead you would have to break those tasks down into much lower level commands that would accomplish your goal.
+You can probably see the difficulties of working in machine language. While it might be very appropriate for a computer, it is extremely confusing for a computer programmer. They are also restricted to very low-level commands. There is no way to say something like "open a connection to google.com" or "draw this image on the screen" in a machine language - instead you would have to break those tasks down into much lower-level commands that would accomplish your goal.
 
 .. quick_attribution:: VT

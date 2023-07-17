@@ -18,6 +18,6 @@ The image above shows an imaginary list of machine instructions, along with what
 
 Although assembly is much easier to read than machine code, you probably noticed that it is still very low level. A job as simple as "add 2 and 5" took many instructions to express. For this reason, most programmers do not work in assembly most of the time. 
 
-However, assembly is the way that machine code is displayed in human-readable format. Since all programs at some point become machine code, that means when a programmer is debugging a program at a low level, they will often be looking at assembly. There are also times, typically when working on an **embedded processor** (the kind of simple processor built into an electric device) when a programmer has to interact with the hardware at a very low level - in that situation assembly is the tool they use.
+However, assembly is the way that machine code is displayed in a human-readable format. Since all programs at some point become machine code, that means when a programmer is debugging a program at a low level, they will often be looking at assembly. There are also times, typically when working on an **embedded processor** (the kind of simple processor built into an electric device) when a programmer has to interact with the hardware at a very low level - in that situation assembly is the tool they use.
 
 .. quick_attribution:: VT
