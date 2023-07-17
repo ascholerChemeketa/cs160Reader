@@ -16,11 +16,11 @@ The Processor, cont.
     :width: 185
     :alt: Control Unit
 
-The control unit is the true "brains" of the CPU and is responsible for controlling much of the operation of the rest of the processor. It does this by issuing control signals to the other areas of the processor, instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control unit can be broken down further for easier understanding. Two key sub-components are the decoder and clock:
+The control unit is the true "brain" of the CPU and is responsible for controlling much of the operation of the rest of the processor. It does this by issuing control signals to the other areas of the processor, instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control unit can be broken down further for easier understanding. Two key sub-components are the decoder and clock:
 
 .. pseudo_h4:: Decoder
 
-Like everything else the computer works with, instructions are represented as sequences of 0s and 1s. The decoder is the logic that examines those bits and determine in what actions must be taken to execute the instruction they represent. The control unit uses this information to send the appropriate series of messages to the ALU, memory, and registers.
+Like everything else the computer works with, instructions are represented as sequences of 0s and 1s. The decoder is the logic that examines those bits and determines what actions must be taken to execute the instruction they represent. The control unit uses this information to send the appropriate series of messages to the ALU, memory, and registers.
 
 .. pseudo_h4:: Timer or clock
 

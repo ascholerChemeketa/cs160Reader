@@ -6,7 +6,7 @@
 The Processor
 =================================
 
-This basic model of a computer as a processing unit that takes input, communicates with a memory and produces output is known as the **von Nuemann architecture** after the early computer scientist :ref:`John von Neumann <vonNeumann>`. In this architecture, the processor itself consists of multiple specialized parts:
+This basic model of a computer as a processing unit that takes some input, communicates with a memory, and produces output, is known as the **von Neumann architecture** after the early computer scientist :ref:`John von Neumann <vonNeumann>`. In this architecture, the processor itself consists of multiple specialized parts:
 
 .. figure:: Images/cpustructuremap.gif
     :figclass: align-right
@@ -14,7 +14,7 @@ This basic model of a computer as a processing unit that takes input, communicat
     
     
 * The **arithmetic logic unit** (ALU) - the central processing unit that can perform mathematical and logic operations.
-* The **control unit** that directs the movement of instructions in and out of the processor and sends control signals to the ALU to make it perform the correct operation at any given point in time.
+* The **control unit** directs the movement of instructions in and out of the processor and sends control signals to the ALU to make it perform the correct operation at any given point in time.
 * The processor **registers** - small special-purpose storage areas used to store the information the ALU is working with.
 * The memory unit - not part of the processor - holds both data and instructions (program). To be used, this information must be transferred to registers. 
 
@@ -31,7 +31,7 @@ Modern computers add many layers of complexity to this basic model. One such mod
     :alt: ALU
 
     
-The arithmetic logic unit is the circuits that can do math and logic. Early processors could only do very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via simpler operations that the ALU can do directly. Instead of multiplying two numbers, a very simple computer would have to add them repeatedly. 
+The arithmetic logic unit is a collection of circuits that can do math and logic. Early processors could only do very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via simpler operations that the ALU can do directly. Instead of multiplying two numbers, a very simple computer would have to add them repeatedly. 
 
 As components became smaller, more and more logic could be built into ALUs - from circuits to do multiplication, to circuits to work with floating-point decimals or process text. Nowadays, almost every processor has multiple ALUs that work in parallel and are often specialized for specific jobs.
 

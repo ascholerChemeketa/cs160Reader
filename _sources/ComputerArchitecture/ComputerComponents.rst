@@ -13,11 +13,11 @@ You may already be familiar with the basic parts of a computer. Below is a pictu
     
     Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse
     
-Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for expansion cards; a server may be installed without its own monitor; a smart phone (which is really a computer that can happen to make phone calls) does not come with an optical disk drive. 
+Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is really just a computer that can happen to make phone calls) does not come with an optical disk drive. 
 
 .. index:: CPU, RAM, bus, main memory
 
-But there are basic features that just about every modern computer do share. There is a processor, sometimes called the **CPU** (Central Processing Unit), that is responsible for running programs. There is a memory unit, generally referred to as the **RAM** (Random Access Memory) or **Main Memory**, that is responsible for storing the information the computer is working with and the programs it is running. Finally, there are **input** and **output** devices - the devices like keyboards and network interfaces that get information into the computer and printers and monitors that display the results of calculations. Finally, these devices need to talk to each other - they do so over electrical circuits called **busses**.
+But there are basic features that just about every modern computer does share. There is a processor, sometimes called the **CPU** (Central Processing Unit), that is responsible for running programs. There is a memory unit, generally referred to as the **RAM** (Random Access Memory) or **Main Memory**, that is responsible for storing the information the computer is working with and the programs it is running. Finally, there are **input** and **output** devices - the devices like keyboards and network interfaces that get information into the computer and printers and monitors that display the results of calculations. Finally, these devices need to talk to each other - they do so over electrical circuits called **busses**.
 
 .. figure:: Images/vonNeumannData.png
     :width: 80%
@@ -27,4 +27,4 @@ But there are basic features that just about every modern computer do share. The
     
     ..
 
-This description leaves out many important parts of a computer - from relatively simple things like the cord or battery that supply electricity to complex devices like the storage (hard drives, DVD drives, flash drives) that provide long term backup for main memory. But the basic functionality of the modern computer can be understood in term of a processor, memory and input/output.
+This description leaves out many important parts of a computer - from relatively simple things like the cord or battery that supply electricity to complex devices like the storage (hard drives, DVD drives, flash drives) that provide long-term backup for main memory. But the basic functionality of the modern computer can be understood in terms of a processor, memory and input/output.
