@@ -102,7 +102,7 @@ columns of data:
     :dburl: /_static/movies.db
 
     Use ``GROUP BY`` to write a query to display each ``rating`` category with the
-    number of movies in that category.  Your output should look like:
+    number of movies in that category.  Your output should look like this:
 
     .. faux_code::
 
@@ -127,7 +127,7 @@ columns of data:
 
     Hint: You will need to use both ``GROUP BY`` and ``ORDER BY```.
 
-    Your output should look like:
+    Your output should look like this:
 
     .. faux_code::
 
@@ -157,7 +157,7 @@ columns of data:
 
     Hint: Remember that you have to use ``HAVING`` to filter grouped results.
 
-    Your output should look like:
+    Your output should look like this:
 
     .. faux_code::
 
@@ -188,7 +188,7 @@ columns of data:
     Hint: Here you want to filter the movies by IMDB rating before they are aggregated,
     so you need a ``WHERE`` not a ``HAVING``.
 
-    Your output should look like:
+    Your output should look like this:
 
     .. faux_code::
 
@@ -240,7 +240,7 @@ in one record for each movie they appear in.
     (so that ``actors.movie_id`` matches with ``movies.id``) and
     selecting rows in which the ``actors.name`` is ``"Marlon Brando"``.
 
-    Your output should look like:
+    Your output should look like this:
 
     .. faux_code::
 
@@ -269,7 +269,7 @@ in one record for each movie they appear in.
     needed data. You will also have to use ``GROUP BY``. The ``GROUP BY`` should come after the
     ``JOIN``.
 
-    Your output should look like:
+    Your output should look like this:
 
     .. faux_code::
 

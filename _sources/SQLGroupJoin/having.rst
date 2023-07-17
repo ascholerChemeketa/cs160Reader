@@ -7,8 +7,8 @@
 Filtering with Aggregated Results
 ========================================
 
-If we want to answer the question *"which stations were the starting point for
-10,000 or more rides?"*, it would seem like we want to write something like:
+If we want to answer the question *"Which stations were the starting point for
+10,000 or more rides?"*, it would seem like we want to write something like this:
 
 .. code:: sql
 

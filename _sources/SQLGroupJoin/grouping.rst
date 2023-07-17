@@ -42,7 +42,7 @@ type (``GROUP BY member_type``).
     ORDER BY
         n_trips DESC
 
-The result of this query has one rows for each distinct ``member_type``, and the
+The result of this query has one row for each distinct ``member_type``, and the
 column named ``n_trips`` counts the number of rows for each type. Recall that
 ``AS _______`` gives a name to a calculated value - any time we do an aggregation,
 it will be helpful to name the result so we know what we are seeing in the output.
@@ -103,9 +103,7 @@ of trips started from each station for just the bike 'W000001' with this query:
     :numbered: left
     :adaptive:
 
-    The following code will calculate the mean trip duration for trips by each
-    member type and sort the results so that the member type with longest average
-    trip is displayed first. 
+    The following code will calculate the mean trip duration for trips by each member type and sort the results so that the member type with the longest average trip is displayed first. 
 
     Put the instructions in the right order and indentation. You will use all of the blocks.
     -----
@@ -131,7 +129,7 @@ of trips started from each station for just the bike 'W000001' with this query:
     :autograde: unittest
     :dburl: /_static/bikeshare.db
 
-    Display the bike number and the total trip count for each of the bikes. Display
+    For each bike, display the bike number and the total trip count. Sort
     the results so that the most used bikes come first.
 
     Hints:

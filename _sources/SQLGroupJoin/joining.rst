@@ -53,8 +53,8 @@ However, when we want to join records from two tables, we don't want to join the
 We want to make sure that records that talk about station 31104 in ``trip_data`` are
 joined with the records that talk about that same station number in ``bikeshare_stations``.
 To specify how to ``JOIN`` tables, we must use an ``ON`` clause that specifies which column
-in the first table to match which which column in the second table. To name the columns, we
-use **dot** syntax: ``table_name.column_name``. The full syntax for a ``JOIN`` looks like:
+in the first table to match with which column in the second table. To name the columns, we
+use **dot** syntax: ``table_name.column_name``. The full syntax for a ``JOIN`` looks like this:
 
 .. code:: sql
 
@@ -89,7 +89,7 @@ column.
         1
 
 Try the query - notice that it has all the columns from both tables. Which is really
-more than we want. We just want the the station name. So change the ``*`` to ``name``
+more than we want. We just want the station name. So change the ``*`` to ``name``
 so that we just get that column. If we want to be really clear about what column we
 are talking about (or if both tables had a column called ``name`` so we had to be
 more specific), we could write it as ``bikeshare_stations.name`` because it is the

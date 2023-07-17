@@ -74,7 +74,7 @@ For example, the query below calculates the minimum and maximum trip duration:
   :autograde: unittest
 
 
-  Write a query to calculates the mean duration (average) of all trips.
+  Write a query to calculate the mean duration (average) of all trips.
   ~~~~
 
   ====
@@ -113,7 +113,7 @@ member type users.
 Counting Unique Values
 ---------------------------------
 
-It is often helpful to not only count the number of rows, but count the number
+It is often helpful to not only count the number of rows but also to count the number
 of unique values of a column. You can do this using the ``DISTINCT`` keyword.
 
 To count the distinct values of a column, you can simply use ``COUNT`` along
