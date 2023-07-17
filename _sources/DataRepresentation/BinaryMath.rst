@@ -72,7 +72,7 @@ For multi-digit numbers, simple work from right to left, adding each column and 
     :class: underlined
 
 
-.. sidebar:: Real world overflow
+.. sidebar:: Real-world overflow
 
     Real software can have bugs when the developers do not use enough bits to represent numbers. Youtube engineers had to `add more bits to the storage <https://www.wired.com/2014/12/gangnam-style-youtube-math/>`_ for view counts of the video Gangnam Style when the view counter for the video was threatening to overflow the 32 bits they had originally used.
 
@@ -89,7 +89,7 @@ One thing we do have to watch out for any time we have a fixed number of bits to
     \ Keep only the last 4 bits:
     \  0010   (2 !?!)
 
-9 + 9 gave us just 2 because we can not store the bit that should represent 16. This is an overflow error. Circuits in computers have to detect when there is a carry out of the last digit so it can signal an error and software developers have to be careful to watch for these errors. Computers use many more than 4-bits to store each number, but any fixed representation will have limits to how big a value can be stored.
+9 + 9 gave us just 2 because we can not store the bit that should represent 16. This is an overflow error. Circuits in computers have to detect when there is a carry-out of the last digit so it can signal an error and software developers have to be careful to watch for these errors. Computers use many more than 4 bits to store each number, but any fixed representation will have limits to how big a value can be stored.
 
 .. rst-class:: clear
 

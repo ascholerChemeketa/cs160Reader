@@ -7,7 +7,7 @@
 Floating Point Numbers
 =======================================
 
-Computers generally store data in fixed-sized chunks. Hardware can more efficiently handle data if it is assumed that integers are represented with 32-bits, doubles with 64-bits and so on. But with a fixed number of bits to store decimal values, we are left with a hard choice: how many bits should we have on either side of the binary point?
+Computers generally store data in fixed-sized chunks. Hardware can more efficiently handle data if it is assumed that numbers are represented with exactly 32 or 64 bits. But with a fixed number of bits to store fractional values, we are left with a hard choice: how many bits should we have on either side of the binary point?
 
 Imagine we are only using 8 bits to store decimal numbers. If we do not worry about negative values and assume that there are always 4 digits on each side of the decimal - something like 1010.0110 - that means that the largest value we can represent is 15.9375 (1111.1111). The smallest non-zero value would be 0.0625 (0000.0001). If we use only 2 bits to represent integers and 6 to represent fractional values - like 10.101101 - we could represent smaller values. With 00.000001 we could represent 0.015625; but with this scheme, the largest value we could now represent would be 3.984375 (11.111111).
 

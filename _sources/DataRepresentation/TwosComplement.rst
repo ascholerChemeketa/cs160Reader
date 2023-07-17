@@ -9,11 +9,11 @@ Negative Values - Two's Complement
 
 To represent negative numbers, we must use the same tool we do for everything else: 0s and 1s.
 
-The most simple possible scheme would be to use one bit to represent the sign - say 0 for positive and 1 for negative. If we did that, then the number 0010 and 1010 would mean +2 (0 = positive, 010 = 2) and -2 (1 = negative, 010 = 2). But if we tried to add those numbers using the normal process, we would get 0010 + 1010 = 1100. That says +2 + -2 = -4! (1 = negative, 100 = 3) The normal addition rules do not work with this simple scheme.
+The most simple possible scheme would be to use one bit to represent the sign - say 0 for positive and 1 for negative. If we did that, then the numbers 0010 and 1010 would mean +2 (0 = positive, 010 = 2) and -2 (1 = negative, 010 = 2). But if we tried to add those numbers using the normal process, we would get 0010 + 1010 = 1100. That says +2 + -2 = -4! (1 = negative, 100 = 3) The normal addition rules do not work with this simple scheme.
 
 Rather than design new rules for doing math, early computer designers figured out a slightly different way to represent signed numbers called **two's complement notation**. In this scheme, the first bit indicates sign - 0 for positive and 1 for negative. Positive numbers are treated as normal. So 0100 still means 4.
 
-A number that starts with 1 is negative. Its value is defined by the following rule: take the other bits and flip them (0s become 1s and 1s become 0s) then add one to the value they represent. Thus 1011 would be interpreted as negative because of the leading 1, then we would take the other bits 011 and flip each one to get 100, 100 is 4, we add one to that to get 5, so 1011 means -5.
+A number that starts with 1 is negative. Its value is defined by the following rule: take the other bits and flip them (0s become 1s and 1s become 0s) then add one to the value they represent. Thus 1011 would be interpreted as negative because of the leading 1, then we would take the other bits - 011 - and flip each bit to get 100, 100 is 4 and we add one to that to get 5, so 1011 means -5.
 
 .. topic:: Two's Complement Interpretation
 
@@ -99,7 +99,7 @@ It also works for two negative numbers. Here is -2 + (-2):
 
 Take only the last 4 bits and we get 1100. The leading 1 means negative. So flip the last three bits from 100 to 011. That means 3. Add one and get 4. So -2 + (-2) = -4.
 
-It is also easy to find the inverse of a number. To turn a negative into a positive or vice verse, invert all the bits and add one. If there is a carry past the last digit, ignore it.
+It is also easy to find the inverse of a number. To turn a negative into a positive or vice versa, invert all the bits and add one. If there is a carry past the last digit, ignore it.
 
 .. topic:: Two's Complement Conversion
 
@@ -190,6 +190,6 @@ Normally integers are stored as 32-bit values. This gives a range of approximate
          :correct: 6
          :feedback1: ('0110', 'That is the correct binary value. What is the decimal value?')
          :feedback2: ('10110', 'You must chop off the first digit to get down to 4 bits and then figure out the decimal value.')
-         :feedback3: ('.*', 'Hint: The largest possible positive number you can represent with 4 bit twos complement is 7.')
+         :feedback3: ('.*', 'Hint: The largest possible positive number you can represent with 4-bit twos complement is 7.')
 
-         If you add the 4-bit two's complement number 1011 (-5) to itself, the result should be -10. But you can not write -10 as a 4-bit two's complement number - there will be overflow that turns your negative value back into a positive one. |br| Do the math to add 1011 + 1011 (don't forget to only keep the last four digits of the answer) and then give the decimal value your answer represents. |br|
+         If you add the 4-bit two's complement number 1011 (-5) to itself, the result should be -10. But you can not write -10 as a 4-bit two's complement number - there will be an overflow that turns your negative value back into a positive one. |br| Do the math to add 1011 + 1011 (don't forget to only keep the last four digits of the answer) and then give the decimal value your answer represents. |br|

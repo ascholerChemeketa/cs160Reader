@@ -14,9 +14,9 @@ Almost always, there is more than one possible algorithm to solve a problem; con
 Binary to Decimal
 ---------------------
 
-To convert a binary value to a decimal one, start with a table of binary column values. The rightmost digits of the number should be in the "ones" column, each additional column to the left should be twice the value of the previous column. Write your number in the columns - its decimal value is the sum of each of the columns with a 1.
+To convert a binary value to a decimal one, start with a table of binary column values. The rightmost digits of the number should be in the "ones" column and each additional column to the left should be twice the value of the previous column: ... 64, 32, 16, 8, 4, 2, 1. Write your number in the columns so the last digit is in the "ones" column. The decimal value of your number is the sum of each of the columns that has a 1 bit in it.
 
-For example, I want to convert :math:`{11010}_{2}` to decimal - I will need at least five columns and they will be 1s, 2s, 4s, 8s, 16s. If I make those columns and write my number it looks like:
+For example, I want to convert :math:`{11010}_{2}` to decimal. I will need at least five columns to hold the five bits. They will be numbered: 1s, 2s, 4s, 8s, 16s. When I write those columns in descending order and write my number it looks like this:
 
 .. rst-class:: place-values
 

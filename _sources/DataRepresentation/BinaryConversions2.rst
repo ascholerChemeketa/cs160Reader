@@ -66,7 +66,7 @@ To convert a binary number to its decimal value, we can use almost the same tric
      Step 4: If ``number`` has no more digits, you are done
      \         Otherwise, go back to step 2
 
-If we follow this algorithm to convert :math:`{1101}_{2}` into to a decimal value, it would look like:  
+If we follow this algorithm to convert :math:`{1101}_{2}` into a decimal value, it would look like this:  
 
 .. faux_code::
 
@@ -88,7 +88,7 @@ If we follow this algorithm to convert :math:`{1101}_{2}` into to a decimal valu
     \          ``number`` is now "" (empty) and ``answer`` is 13 
     Step 4: ``number`` is empty. We are done, the answer is 13.
     
-As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple computer code. To demonstrate that, the algorithm is implemented in Python in the *codelens* below. You DO NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm above into code requires some changes, but the code shown follows the same process described above. See the "tips" box below the code lens for helping running the program.
+As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple computer code. To demonstrate that, the algorithm is implemented in Python in the *codelens* below. You DO NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm above into code requires some changes, but the code shown follows the same process described above. See the "tips" box below the code lens for help running the program.
     
 .. codelens:: datarepresentation_binaryconversions21
     :caption: Convert "1101" to decimal

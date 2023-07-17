@@ -47,7 +47,7 @@ We have a one in the columns representing 1/4th and 1/16th. So we have 0.25 + 0.
 
 .. pseudo_h2:: Limits of Fractional Representation
 
-Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call . the **decimal point**. In base 2 it is the **binary point**. The generic term for it is **radix point**.) Try using this table and a calculator or some scratch paper and see what you come up with for a value for 0.6:
+Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call '.' the **decimal point**. In base 2 it is the **binary point**. The generic term for it is **radix point**.) Try using this table and a calculator or some scratch paper and see if you can figure out how to represent the value 0.6:
 
 .. rst-class:: place-values
 
@@ -58,7 +58,9 @@ Say I ask you to make 0.6 using just 4 places to the right of the binary point (
     |
     ==============  ==============  ==============  ==============  ==============
 
-There is no way to exactly represent the answer, you can just come close. (The closest you can come is 0.625). This is not a problem unique to binary, this is just a fact of trying to represent a value using a limited number of digits. Say I ask you to represent 2/3 as a decimal with only 2 decimal places... you could use 0.66, or 0.67, but could not accurately represent the simple value 2/3. The only difference with the 0.6 example is that some values that are easy to represent in decimal, like 6/10\ :superscript:`ths` are harder to represent in binary.
+It is a trick question. There is no way to exactly represent 0.6 given that set of options. (The closest you can come is 0.625).
+
+Difficulties in representing exact fractional values with a fixed number of digits are not unique to binary numbers. Say I ask you to represent 2/3 as a decimal with only 2 decimal places... you could use 0.66, or 0.67, but could not exactly represent 2/3. Each number system will have different values that are tricky to represent - although 0.6 is easy to represent in decimal - 6/10\ :superscript:`ths` - it happens to be harder to represent in binary.
 
 
 .. important::

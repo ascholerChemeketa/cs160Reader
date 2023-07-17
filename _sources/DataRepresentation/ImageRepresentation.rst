@@ -32,7 +32,7 @@ Representing that image takes 72 bits - a 6x6 grid of pixels each of which requi
 
     *A pattern of bits only has the meaning we assign to it.*
 
-    32 bits could represent a 4x8 image of 1-bit pixels, or a 4x4 image of 2-bit pixels, or a sequence of 4 ASCII letters, or a really large binary number, or nearly anything else.
+    32 bits could represent a 4x8 image of 1-bit pixels, a 4x4 image of 2-bit pixels, a sequence of 4 ASCII letters, a really large binary number, or nearly anything else.
 
 What about colors? Remember, bits only have the meaning we assign to them. We could interpret the 2 bits per pixel to mean:
 
@@ -48,9 +48,9 @@ And end up with this image:
     :width: 80%
     :align: center
 
-If we want more than 4 colors, we just need more than 2 bits. With 8 bits per pixel, we can represent :math:`2^8 = 256` different colors or shades of gray. This is sufficient for a black and white photograph but does not allow for subtle shades of color in a photograph. For full color images, 24 bits are usually used per pixel, allowing for :math:`2^{24} = 16,777,216` different colors.
+If we want more than 4 colors, we just need more than 2 bits. With 8 bits per pixel, we can represent :math:`2^8 = 256` different colors or shades of gray. This is sufficient for a black and white photograph but does not allow for subtle shades of color in a photograph. For full-color images, 24 bits are usually used per pixel, allowing for :math:`2^{24} = 16,777,216` different colors.
 
-Real images, of course, use a much greater number of pixels than we have seen here. For example, a 12-megapixel camera takes images that measure about 4000x3000 pixels. If each of those pixels is stored as a 24-bit value, that image would consist of 4000 x 3000 x 24 = **288,000,000 bits of information**! That is 36,000,000 bytes or approximately 34.3 MiB. However, if you were to look at an image file produced by this camera, you would find it to be much smaller than 34 MiB even though the file stored extra information beyond the contents of each pixel (the dimensions of the image, how may bits per pixel, etc...). This is because the image has been compressed - most common image formats (gif, jpeg, png) include some form of compression to reduce the space needed to store their information... a topic we will learn more about later.
+Real images, of course, use a much greater number of pixels than we have seen here. For example, a 12-megapixel camera takes images that measure about 4000x3000 pixels. If each of those pixels is stored as a 24-bit value, that image would consist of 4000 x 3000 x 24 = **288,000,000 bits of information**! That is 36,000,000 bytes or approximately 34.3 MiB. However, if you were to look at an image file produced by this camera, you would find it to be much smaller than 34 MiB even though the file stored extra information beyond the contents of each pixel (the dimensions of the image, how many bits per pixel, etc...). This is because the image has been compressed - most common image formats (gif, jpeg, png) include some form of compression to reduce the space needed to store their information... a topic we will learn more about later.
 
 
 .. pseudo_h4:: Self Check

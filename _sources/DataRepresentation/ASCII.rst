@@ -66,9 +66,9 @@ Representing Letters with ASCII
 
     And then there is asciimation, which `needs to be seen <http://www.asciimation.co.nz/>`_ to be believed.
 
-To represent things other than integers, we need to find a way to map the data we wish to represent onto binary strings. These mappings can be completely arbitrary. If we want to represent a choice between apples, bananas, oranges, and pears (perhaps as the fruit choices in a menu) we could recognize that it requires 2 bits to represent 4 things (as :math:`2^2 = 4`) and pick one two-bit pattern for each item. Perhaps we would declare that 00 : apples, 01 : bananas, 10 : oranges, and 11 : pears. We could also pick any other assignments, as long as we were consistent about it and everyone agreed to use the same system, it would not matter if 00 meant apples or bananas.
+To represent things other than integers, we need to find a way to map the data we wish to represent onto binary strings. These mappings can be completely arbitrary. If we want to represent a choice between apples, bananas, oranges, and pears (perhaps as the fruit choices in a menu) we could recognize that it requires 2 bits to represent 4 things (as :math:`2^2 = 4`) and pick one two-bit pattern for each item. Perhaps we would declare that 00: apples, 01: bananas, 10: oranges, and 11: pears. We could also pick any other assignments, as long as we were consistent about it and everyone agreed to use the same system, it would not matter if 00 meant apples or bananas.
 
-**ASCII** is such a system for mapping text, like the letter 'a', onto a binary number, like the value 01100001. In order for different programs to be able to read each others files, they must agree on what this 01100001 means. That is the point of ASCII - a common system for representing text as binary values, used by almost every program that works with text. When you make a plain text file in a simple text editing program like Notepad, you are working with ASCII text. (More complex programs like Word that feature different formatting options are not ASCII based). It should not matter if you save a text file with a program on a Macintosh and open it with a different program on a Windows machine; as long as they both "speak" ASCII, they will agree on what the file contains.
+**ASCII** is such a system for mapping text, like the letter 'a', onto a binary number, like the value 01100001. For different programs to be able to read each other's files, they must agree on what this 01100001 means. That is the point of ASCII - a common system for representing text as binary values, used by almost every program that works with text. When you make a plain text file in a simple text editing program like Notepad, you are working with ASCII text. (More complex programs like Word that feature different formatting options are not ASCII based). It should not matter if you save a text file with a program on a Macintosh and open it with a different program on a Windows machine; as long as they both "speak" ASCII, they will agree on what the file contains.
 
 ASCII needs to represent all the common symbols used in text files: letters (capital and lower case), punctuation, digits, and special control symbols like "tab". An `ASCII table <http://www.ascii-code.com/>`_ shows all the mappings of numbers to characters. You can use the slider below to view various parts of the ASCII table.
 
@@ -117,7 +117,7 @@ ASCII needs to represent all the common symbols used in text files: letters (cap
 
     * The codes from 0-31 (00000000-00011111) are all invisible symbols like "tab" or "end of line".
     * The capital letters range from 65-90 (01000001-01011010)
-    * The lower case letters start at 97 (01100001). That means a computer often thinks 'A' is less than 'a'.
+    * The lowercase letters start at 97 (01100001). That means a computer often thinks 'A' is less than 'a'.
     * Originally, the ASCII codes only covered 7 bits (up to 127). All the codes above 127 were added later, and there are multiple versions of what they mean. Often they are used for things like accented characters.
 
 
