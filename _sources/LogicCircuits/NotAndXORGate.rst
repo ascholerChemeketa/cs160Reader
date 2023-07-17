@@ -27,9 +27,9 @@ The exclusive or gate, known as **XOR** describes a gate that only outputs a 1 o
         1               1               0
         =============   =============   =============
 
-It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents "the first number negative" and input 2 represents "the second number is negative", then **XOR**'s output would tell us "is the answer negative". If either one of the two numbers, but not both of them, were negative, then the answer will be negative.
+It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents "the first number negative" and input 2 represents "the second number is negative", then **XOR**'s output would tell us "Is the answer negative". If either one of the two numbers, but not both of them, were negative, then the answer will be negative.
 
-Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one or the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts true). In this case, *or* means logical **OR** - if either part is true, the answer is true.
+Watch out for **XOR** and **OR** - in English we often use the word "or" to mean both things. The statement "Entrées come with fries *or* a salad" probably means you can get one or the other, but not both. In that statement, *or* means the **XOR** rule. On the other hand, imagine a class syllabus that states: "If you turn in copied work, *or* the wrong assignment, you will get a 0". You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts are true). In this case, *or* means logical **OR** - if either part is true, the answer is true.
 
 |br|
 
@@ -52,9 +52,9 @@ The **NOT** gate is special in that it only has one input. The output is always 
         1               0
         =============   =============
 
-The NOT operation is what we use if we have a truth value like "it is raining" but want to have the value for "it is not raining". Anytime we want to say "we do not have X" we can say "NOT X".
+The NOT operation is what we use if we have a truth value like "it is raining" but want to have the value for "it is not raining". Anytime we want to say "We do not have X" we can say "NOT X".
 
-Because the NOT rule applies to only one input, it can be applied to a single bit pattern like 0101. To figure out the answer, simply "flip" every bit from 1 to 0 or vice verse:
+Because the NOT rule applies to only one input, it can be applied to a single-bit pattern like 0101. To figure out the answer, simply "flip" every bit from 1 to 0 or vice verse:
 
 .. rst-class:: result-table
 
@@ -67,7 +67,7 @@ Because the NOT rule applies to only one input, it can be applied to a single bi
 
 .. note::
 
-    People refer to a AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in every other case. Similarly, a NOR is an OR followed by a NOT and an XNOR (or ENOR) is a NOT after an XOR. You are not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what they are.
+    People refer to an AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in every other case. Similarly, a NOR is an OR followed by a NOT and an XNOR (or ENOR) is a NOT after an XOR. You are not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what they are.
 
 
 .. pseudo_h4:: Self Check

@@ -4,7 +4,7 @@
 Applying Logic Rules
 ============================
 
-Computers generally work with bit patterns like 01011100 to represent information. That means that often times, we need to apply a rule like AND or OR to not just two-bits, but to two-bit patterns. To apply a rule like AND to two-bit patterns like 1010 and 1110, we simply apply the rule to each successive pair of bits in the two patterns as shown in the diagram below:
+Computers generally work with bit patterns like 01011100 to represent information. That means that often we need to apply a rule like AND or OR to not just two-bits, but to two longer patterns of bits. To apply a rule like AND to two-bit patterns like 1010 and 1110, we simply apply the rule to each successive pair of bits in the two patterns as shown in the diagram below:
 
 .. raw:: html
 

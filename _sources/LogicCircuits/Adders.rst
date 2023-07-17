@@ -32,9 +32,9 @@ To do mathematics, a computer needs to think of the problem as a set of Boolean 
         ]
     }
 
-Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the logical question "Are both the inputs ON?" (AND gate) - if so, we should have indicate that the answer has a 2 in it. The 1s output answers the question "Is only one of the inputs ON?" (EOR gate - remember EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions does the same work as counting the number of inputs that are on and expressing the answer as a binary number!
+Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the logical question "Are both the inputs ON?" (AND gate) - if so, we should have indicated that the answer has a 2 in it. The 1s output answers the question "Is only one of the inputs ON?" (EOR gate - remember EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions does the same work as counting the number of inputs that are on and expressing the answer as a binary number!
 
-The truth table for this circuit would have two output columns and look like the one shown below. Notice that there are two ways to get the output 01 (the number 1) - either have the first input on and second off or vice verse.
+The truth table for this circuit would have two output columns and look like the one shown below. Notice that there are two ways to get an output 01 (the number 1) - either have the first input on and second input off or vice versa.
 
 .. raw:: html
     
@@ -81,7 +81,7 @@ The truth table for this circuit would have two output columns and look like the
 
     Everything a computer does is in terms of answering logical questions. Doing math, modifying an image, recognizing speech, playing music, etc... all at some level are represented as logical questions the computer can process using logic gates.
     
-The circuit shown above is known as a **half adder**. To add larger numbers, we need a **full adder** - a full adder is two half adders merged together with an OR gate. The circuit takes three inputs - two of the inputs are current values being added (A and B); the third input indicates whether or not there is a carry coming in from the previous column. The two outputs indicate the answers to the questions "does this column have a 1 in the answer?" and "do we need to carry a 1 to the next column?". 
+The circuit shown above is known as a **half adder**. To add larger numbers, we need a **full adder** - a full adder is two half adders merged together with an OR gate. The circuit takes three inputs - two of the inputs are current values being added (A and B); the third input indicates whether or not there is a carry coming in from the previous column. The two outputs indicate the answers to the questions "Does this column have a 1 in the answer?" and "Do we need to carry a 1 to the next column?". 
 
 .. simcir::
 
@@ -131,7 +131,7 @@ The circuit shown above is known as a **half adder**. To add larger numbers, we 
         
 To add large numbers, multiple full adders are chained together - one full adder is used for each binary digit in the number. An abstracted view of adding two 3-digit binary numbers using three full adders is shown below.
 
-Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the inputs - one adder handles A1 & B1, another adder handles A2 & B2, etc... It inputs representing the two digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs two answers: "what is the sum in this column?" (the S output) and "do we carry a 1 into the next column's full adder?" (the Cout output). 
+Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the inputs - one adder handles A1 & B1, another adder handles A2 & B2, etc... It inputs representing the two digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs two answers: "What is the sum in this column?" (the S output) and "Do we carry a 1 into the next column's full adder?" (the Cout output). 
 
 Try adding 3 to 2 by setting the A inputs to 101 and the B inputs to 010.
 

@@ -82,7 +82,7 @@ More complex circuits can have more than 2 inputs or more than one output. Here 
         ]
     }
         
-To write the truth table for that circuit, we need to have very possible state for the three inputs. For 3 inputs, each with 2 possible states, there are :math:`2^3 = 8` possible combinations (000, 001, 010, 011, 100, 101, 110, 111). Thus, the truth table needs eight rows to show the possible inputs. If we try out each possibility, we can determine the outputs that go with each of the eight possible inputs:
+To write the truth table for that circuit, we need to have every possible state for the three inputs. For 3 inputs, each with 2 possible states, there are :math:`2^3 = 8` possible combinations (000, 001, 010, 011, 100, 101, 110, 111). Thus, the truth table needs eight rows to show the possible inputs. If we try out each possibility, we can determine the outputs that go with each of the eight possible inputs:
 
 .. rst-class:: truth-table
     
