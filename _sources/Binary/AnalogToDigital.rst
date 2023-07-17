@@ -16,7 +16,7 @@ If we ignore all the changes in the signal except for where it crosses the thres
     :alt: A threshold applied
     :class: padded
    
-Even if the electrical circuit that is trying to represent this pattern has a lot of noise, we should be able to distinguish the intended values. In the image below, the red line indicates the signal we are trying to represent, the grey line indicates the electrical signal that is actually measured. 
+Even if the electrical circuit that is trying to represent this pattern has a lot of noise, we should be able to distinguish the intended values. In the image below, the red line indicates the signal we are trying to represent, and the grey line indicates the electrical signal that is measured. 
 
 .. image:: Images/binary_w_noise.gif
     :alt: Noise in a digital signal

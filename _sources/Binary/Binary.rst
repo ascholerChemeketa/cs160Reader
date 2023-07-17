@@ -7,7 +7,7 @@
 Binary and Its Advantages
 ============================
 
-B\ **inary** means "two states." The two states are sometimes called "1" and "0", or called "true" and "false", or called "on" and "off". The essential characteristic is that a *single binary device can be in just one of two possible states*.
+B\ **inary** means "two states." The two states are alternatively called "1" and "0", "true" and "false", or "on" and "off". But no matter what we call them, the essential characteristic is that a *single binary device can be in just one of two possible states*.
 
 A good example is a toggle switch, such as a light switch. You can turn it on or off but not (in normal operation) anything else. A light switch holds one bit of information.
 
@@ -35,7 +35,7 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
 #. Binary devices are Simple and easy to build
     An on/off switch is simple and easy to build. An on/off switch moves two pieces of metal together or moves them apart. A light dimmer must gradually and smoothly change the current that reaches the light. It has more components that an on/off switch and must be carefully assembled. An accurate dimmer (where 25% means exactly 25%) is even harder to build.
 
-    The same is true for the tiny devices inside of a silicon chip. On/off switches are relatively easy to fabricate. The devices are cheap, small, and reliable, and millions of them fit into a small area.
+    The same is true for the tiny devices inside a silicon chip. On/off switches are relatively easy to fabricate. The devices are cheap, small, and reliable, and millions of them fit into a small area.
 
 #. Binary signals are Unambiguous (which gives them noise immunity)
     It is easy to look at a digital signal that is only supposed to be on or off and decide which it is supposed to be. Even if there is a bit of noise, we should be able to clearly tell what the signal is supposed to be
@@ -79,6 +79,6 @@ There are many advantages to binary. Here are four (somewhat overlapping) import
     :feedback_c:  There is nothing inherently faster about a binary signal than an analog one.
     :feedback_d:  This is true.
 
-    Which of the following are advantages of building computers out of binary devices?
+    Which of the following are some advantages of building computers out of binary devices?
 
 .. quick_attribution:: ICSJava

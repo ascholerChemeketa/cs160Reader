@@ -56,8 +56,7 @@ To form the list of patterns for 4 bits, we can use the same trick. Make two cop
 
 This trick can be repeated as many times as you like. Adding one more bit doubles the number of patterns. The table shows the number of patterns for 1, 2, 3 and 4 bits.
 
-Number of Bits	Number of Patterns	Number of Patterns
-as power of two:
+Number of Bits	Number of Patterns	Number of Patterns as a power of two:
 
 .. rst-class:: maintable
 
