@@ -16,7 +16,7 @@ C\ **harles Babbage**, an English mechanical engineer and polymath, originated t
 
 .. index:: Analytical Engine
    
-Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer. Input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of `feeding a program into a computer <https://www.youtube.com/watch?v=KG2M4ttzBnY>`__ until the 1970's.
+Whereas the Difference Engine could only calculate the values of polynomial functions, the new **Analytical Engine** would be able to do any calculation. The Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first design for a general-purpose computer. The input of both programs and data was to be provided to the machine via punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards were to remain the dominant way of `feeding a program into a computer <https://www.youtube.com/watch?v=KG2M4ttzBnY>`__ until the 1970's.
  
        
 .. figure:: https://upload.wikimedia.org/wikipedia/commons/8/8f/IBM_026_card_code.png
@@ -48,7 +48,7 @@ Babbage was a man ahead of his time - manufacturing the fine clockwork mechanism
 .. index:: 
     single: Hollerith, Herman
     
-The 1880 census had taken seven years to process and it was estimated that the 1890 census would take approximately 13 years to complete. Since the U.S. Constitution mandates a census every ten years, that meant the data would be obsolete before the results were available. **Herman Hollerith** invented a machine that could be used to tabulate data on punchcards, that could then easily be sorted or tallied mechanically. Using this machine, the 1890's census was completed in just one year. This success sparked a revolution in business data processing - the company that Hollerith founded would merge with three other companies to become International Business Machines (IBM).
+The 1880 census had taken seven years to process and it was estimated that the 1890 census would take approximately 13 years to complete. Since the U.S. Constitution mandates a census every ten years, that meant the data would be obsolete before the results were available. **Herman Hollerith** invented a machine that could be used to tabulate data on punch cards, which could then easily be sorted or tallied mechanically. Using this machine, the 1890's census was completed in just one year. This success sparked a revolution in business data processing - the company that Hollerith founded would merge with three other companies to become International Business Machines (IBM).
 
 .. figure:: https://upload.wikimedia.org/wikipedia/commons/3/3f/1902_Hollerith_electric_tabulating_machine.jpg
    :alt: Hollerith Desk

@@ -17,7 +17,7 @@ Devices have been used to aid computation for thousands of years. The earliest k
    Counting stones
    
    
-By about 2500 BC, counting devices had been abstracted away from counting a particular thing and abacuses first appeared in Sumeria. These devices rely on the user moving beads or stones to represent numbers and to do arithmetic on them. Since then, many other forms of reckoning boards or tables have been invented. In a medieval European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to certain rules, as an aid to calculating sums of money.
+By about 2500 BC, counting devices had been abstracted away from counting a particular thing and abacuses first appeared in ancient Sumer. These devices rely on the user moving beads or stones to represent numbers and to do arithmetic on them. Since then, many other forms of reckoning boards or tables have been invented. In a medieval European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to certain rules, as an aid to calculating sums of money.
 
 .. figure:: https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg
    :alt: Abacus
