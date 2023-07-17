@@ -26,9 +26,9 @@ Obviously, :math:`n^2` grows much faster than :math:`n·log_2(n)`. Looking at th
     ==================================      ==============  ==============  ==============  ==============  ==============  ===============
        
 
-Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving small problems it may actually take more time to run than Insertion Sort due to this. But we know that as **n** grows larger the basic pattern is going to hold - :math:`O(n^2)` is going to grow faster than :math:`O(n·log_2(n))`, so Merge Sort will certainly be faster out for large values of **n**. 
+Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving small problems it may take more time to run than Insertion Sort due to this. But we know that as **n** grows larger the basic pattern is going to hold - :math:`O(n^2)` is going to grow faster than :math:`O(n·log_2(n))`, so Merge Sort will certainly be faster out for large values of **n**. 
 
-Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half second to run? At what point does Merges Sort start taking more than a half second?
+Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half-second to run? At what point does Merges Sort start taking more than a half-second?
 
 .. image:: Images/working.gif
     :class: hidden

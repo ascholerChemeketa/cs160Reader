@@ -12,11 +12,11 @@ Algorithm Efficiency
     :width: 125
     
 When it comes time to put an algorithm to work or choose between competing algorithms, we need a way to measure and compare algorithms. There are many different things we could measure about an algorithm: the number of lines of code to express, how much time it takes to program and debug, the amount of memory used while running, and the time taken to run are all things we might care about. But in general, the most important metric is usually 
-*"how much work does it require for a problem of size n"*?
+*"How much work does it require for a problem of size n"*?
 
-As users of a computer, what we usually care about is "how quick do I get my answer". A search for a file on your computer that shows results in 0.2 seconds is great; a search that takes 20 minutes would be so slow it would only be useful if you really needed that file. But the time to do something depends on many factors - how fast is the computer? how many other things is it trying to do? how big is the problem (how many files are there to search)? These factors will change depending on who is running the program and when; the fact that you are running a program on a faster computer and it takes less time than when I run it does not tell us anything interesting about the algorithm the program uses. 
+As users of a computer, what we usually care about is "How quickly do I get my answer". A search for a file on your computer that shows results in 0.2 seconds is great; a search that takes 20 minutes would be so slow it would only be much less useful. But the time to do something depends on many factors - how fast is the computer? how many other things is it trying to do? how big is the problem (how many files are there to search)? These factors will change depending on who is running the program and when; the fact that you are running a program on a faster computer and it takes less time than when I run it does not tell us anything interesting about the algorithm the program uses. 
 
-So instead of actually measuring time when measuring algorithms, we usually think in terms of work required. The work required to perform a particular algorithm does not generally change when it is executed on different machines or under different conditions. So what exactly is "work"? Let's try to come up with some descriptions of how much work two different algorithms take. First, we will consider this DrawSquare algorithm:
+So instead of measuring time when measuring algorithms, we usually think in terms of the work required. The work required to perform a particular algorithm does not generally change when it is executed on different machines or under different conditions. So what exactly is "work"? Let's try to come up with some descriptions of how much work two different algorithms take. First, we will consider this DrawSquare algorithm:
 
 .. faux_code:: 
 

@@ -18,7 +18,7 @@ Once again, taking the algorithm from something appropriate for a human to compu
     2   repeat until (``i`` >= length of the ``list``):
     3       ``j`` = ``i``                              *j is location of current card*
     4       
-    5       *Note: swap current card left until it finds a home*
+    5       *Note: swap the current card left until it finds a home*
     6       repeat until (``j`` == 0) or (``list[j]`` > ``list[j - 1]``)
     7           *Note: Swap card to the left"*
     8           ``temp`` = ``list[j]``
@@ -26,7 +26,7 @@ Once again, taking the algorithm from something appropriate for a human to compu
     10          ``currentMin`` = ``list[j]``
     11          ``j`` = ``j`` - 1                      *current card has moved*
     12       
-    13      *Move the marker showing start of unsorted portion*
+    13      *Move the marker showing start of the unsorted portion*
     14      ``i`` = ``i`` + 1  
       
        

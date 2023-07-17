@@ -4,7 +4,7 @@
 Sorting Efficiency
 =================================
 
-To figure out how efficient selection sort is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This video works through how much work there is for a Selection Sort on a list of 4 items:
+To figure out how efficient the Selection Sort algorithm is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This video works through how much work there is for a Selection Sort on a list of 4 items:
 
 .. youtube:: zm75IhDgO-Y
    :height: 315
@@ -35,7 +35,7 @@ The total comparisons would be 99 + 98 + 97 + ... + 3 + 2 + 1 or :math:`(n - 1) 
 
 .. image:: Images/summation.png
 
-Since there were :math:`n - 1` numbers to start with, there will be :math:`\frac{n - 1}{2}` pairs, each of which add to :math:`n`. Multiplying the number of pairs by the sum of each pair gives us the total: :math:`\frac{n - 1}{2} \cdot n = \frac{n^2 - n}{2} = \frac{n^2}{2} - \frac{n}{2}`.
+Since there were :math:`n - 1` numbers to start with, there will be :math:`\frac{n - 1}{2}` pairs, each of which adds to :math:`n`. Multiplying the number of pairs by the sum of each pair gives us the total: :math:`\frac{n - 1}{2} \cdot n = \frac{n^2 - n}{2} = \frac{n^2}{2} - \frac{n}{2}`.
 
 Overall, our work will be given by:
 

@@ -13,7 +13,7 @@ Computers spend lots of time working with large lists of data. One of the fundam
 
 What is the simplest method for searching a list of elements? Check the first item, then the second item, and so on until you find the target item or reach the end of the list. Because we progress in a straight line through the list items, it is known as a **linear search**. Of course, to be an effective algorithm, we have to specify it in terms of operations a computer can do.
 
-Assume a list called ``list``, filled with integers. Each integer in the list has a unique location in the list - called its **index**. The task is to search for the location of a particular value - often called the ``key``. Here's how to search for the location of key in list:
+Assume a list called ``list``, filled with integers. Each integer in the list has a unique location in the list - called its **index**. The task is to search for the location of a particular value - often called the ``key``. Here's how to do the search:
 
 .. faux_code::
 
@@ -183,5 +183,5 @@ You can try doing a linear search below. Type the number you wish to search for 
     </div>
     <br/>
 
-Linear search is pretty easy, but it does have one big weakness - you potentially have to look at every item in the list. Imagine finding someone's number in a phone book with linear search! While linear search works fine for small jobs, it does not scale well to larger problems.
+Linear search is pretty easy, but it does have one big weakness - you potentially have to look at every item in the list. Imagine finding someone's number in a phone book with a linear search! While linear search works fine for small jobs, it does not scale well to larger problems.
    

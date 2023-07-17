@@ -19,21 +19,22 @@ three patterns:
 * If each time we increase the input size by 2, it produces a similar increase in the time the procedure takes,
   it is **Linear** or :math:`O(n)`. 
   
-  For example: we try input size 4, and that takes 0.8 seconds; we try input size 6
+  For example, we try input size 4 and that takes 0.8 seconds; we try input size 6
   and that takes 1.12 seconds; we try input size 8 and that takes 1.39 seconds. Each time we increase the input
   by 2, the time increases by ~0.3 seconds. This is linear growth.
   
-  Again, you should not expect the pattern to be absolutely perfect.
-  Going up by 0.32 one time, and 0.27 the next, and maybe 0.29 the next would be considered linear growth.
+  Again, you should not expect the pattern to be perfect.
+  Going up by 0.32 one time, 0.27 the next, and maybe 0.29 the next would be considered linear growth. Those values
+  are all about 0.3 and are not increasing in a consistent pattern.
 * If each time we increase the input by size 2, the time increases by more and more and more, we are looking at a
   **Quadratic** or :math:`O(n^2)` algorithm. (To be precise, if you calculate the increase from one step to the next,
-  it should increse at a fairly steady rate).
+  it should increase at a fairly steady rate).
 
-  For example: we try input size 4, and that takes 0.8 seconds; we try input size 6
-  and that takes 1.4 seconds; we try input size 8 and that takes 2.61 seconds; we try input size 10 and
-  that takes 4.39 seconds. The first increase in size increased the time by 0.8 seconds. The next increase
+  An example of this would be if an input size 4 takes 0.8 seconds; an input size 6
+  takes 1.4 seconds; an input size of 8 takes 2.61 seconds; and an input size of 10 
+  takes 4.39 seconds. The first increase in size increased the time by 0.8 seconds. The next increase
   the time by 1.21 seconds. The third increased the time by 1.78 seconds. The rate of increase keeps increasing
-  (in this case it goes up by about 0.6 seconds each time), that is quadratic growth.
+  (in this case, it goes up by about 0.6 seconds each time), that is quadratic growth.
 
 -----------------------------------
 

@@ -22,7 +22,7 @@ Put into an algorithm for a human to sort a hand of playing cards, it might look
     7       Advance the marker to the right one card
     8   Stop
 
-To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate step of the algorithm will be highlighted in the bottom left panel of the animation. To divide the sorted and unsorted sections of our hand, we use a black vertical bar. On each loop through steps 4-7 we will keep track of the current cards we are comparing by pointing to them with a pair of human hands. The left hand will point to the smallest card seen far, and the right hand will point to the card currently being considered.
+To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate step of the algorithm will be highlighted in the bottom left panel of the animation. To divide the sorted and unsorted sections of our hand, we use a black vertical bar. On each loop through steps 4-7, we will keep track of the current cards we are comparing by pointing to them with a pair of human hands. The left hand will point to the smallest card seen far, and the right hand will point to the card currently being considered.
 
 .. youtube:: TfOBNNNZPbM
    :height: 315

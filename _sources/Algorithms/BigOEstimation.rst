@@ -60,7 +60,7 @@ Solving for **time for job 2** gives:
 .. pseudo_h4:: Sample Problem 2
     :class: underlined
 
-I have timed linear search on 10,000,000 items and it takes 8.12 seconds (call this job 1). I want to estimate the time it will take to use binary search instead (job 2). The problem sizes are the same for both jobs: 10,000,000 items. However, the algorithms will require different amounts of work. Linear search is a :math:`O(n)` algorithm, so the work for job 1 will be 10,000,000. For job 2, we are using a :math:`O(log_2(n))` algorithm so the work will be :math:`log_2(10000000)`
+I have timed a linear search on 10,000,000 items and it takes 8.12 seconds (call this job 1). I want to estimate the time it will take to use binary search instead (job 2). The problem sizes are the same for both jobs: 10,000,000 items. However, the algorithms will require different amounts of work. Linear search is a :math:`O(n)` algorithm, so the work for job 1 will be 10,000,000. For job 2, we are using a :math:`O(log_2(n))` algorithm so the work will be :math:`log_2(10000000)`
     
 .. rst-class:: center
 

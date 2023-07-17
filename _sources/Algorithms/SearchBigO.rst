@@ -7,12 +7,12 @@
 Search Efficiencies
 =================================
 
-We already have discusses the fact that binary search is much more efficient than linear search, but let us quantify the difference in terms of Big-O. We will count items checked as the unit of work for searching - taking one item in a list and comparing it to what we are looking for will count as one unit.
+We already have discussed the fact that binary search is much more efficient than linear search, but let us quantify the difference in terms of Big-O. We will count items checked as the unit of work for searching - taking one item in a list and comparing it to what we are looking for will count as one unit.
 
 .. pseudo_h3:: Linear Search
     :class: underlined
     
-Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In the best case, that paper might be at the top of the pile - it would only take one unit of work. In the worst case, if we go through the pile from top to bottom, it would be the bottom paper in the pile - we would have to look at every single paper. This worst case would also apply if the paper was not even in the stack - we would have to check every paper to figure that out. The average would be somewhere between those two: sometimes we get lucky and find it early, sometimes we are less lucky - in general, we would have to look at half of the papers.
+Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In the best case, that paper might be at the top of the pile - it would only take one unit of work. In the worst case, if we go through the pile from top to bottom, it would be the bottom paper in the pile - we would have to look at every single paper. This worst case would also apply if the paper was not even in the stack - we would have to check every paper to figure that out. The average would be somewhere between those two: sometimes we get lucky and find it early, and sometimes we are less lucky - in general, we would have to look at half of the papers.
 
 Here are those three scenarios summarized:
 
@@ -28,7 +28,7 @@ Here are those three scenarios summarized:
     ===============================     ===============================     ===============================
 
 
-Note that in terms of Big-O, :math:`f(n) = \frac{n}{2}` is the same as :math:`f(n) = n` - they are both linear functions. While it is true that in the best case, the algorithm takes 1 unit of time regardless of the number of papers, we can't count on always having the one we want at the top of the pile. Basing our rating of this algorithm on this rare exception would be misleading. So instead we will say Linear Search is :math:`O(n)`. Kind of makes sense that linear search is a linear algorithm!
+Note that in terms of Big-O :math:`f(n) = \frac{n}{2}` is the same as :math:`f(n) = n` - they are both linear functions. While it is true that in the best case, the algorithm takes 1 unit of time regardless of the number of papers, we can't count on always having the one we want at the top of the pile. Basing our rating of this algorithm on this rare exception would be misleading. So instead we will say Linear Search is :math:`O(n)`. Kind of makes sense that linear search is a linear algorithm!
 
 .. important::
     **Linear Search** is :math:`O(n)` - **Linear**
@@ -77,7 +77,7 @@ Imagine we are searching in a list that is 1000 items long. If we assume we have
     
         <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
         
-Instead of counting how many times we divide the starting number by 2 we can calculate that number. Using a logarithm. Taking the base 2 logarithm of a number asks *"How many times do I have to divide this number by 2 in order to reach 1?"* Calculating :math:`log_2(1000)` gives 9.96. Since we can't do .96 units of work (each unit is checking one paper... hard to see how we can check 0.96 papers), we will round that up to 10. Since this function gives us the answer to how much work binary search requires, we will say Binary Search is :math:`O(log(n))`.
+Instead of counting how many times we divide the starting number by 2, we can calculate that number. Using a logarithm. Taking the base 2 logarithm of a number asks *"How many times do I have to divide this number by 2 to reach 1?"* Calculating :math:`log_2(1000)` gives 9.96. Since we can't do .96 units of work (each unit is checking one paper... hard to see how we can check 0.96 papers), we will round that up to 10. Since this function gives us the answer to how much work binary search requires, we will say Binary Search is :math:`O(log(n))`.
 
 .. important::
     :class: clear

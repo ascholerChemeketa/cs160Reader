@@ -79,7 +79,7 @@ The table below shows this and the pattern for the rest of the level:
     </table>
 
 
-Note that each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can say each level takes :math:`O(n)` work.
+Note that at each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can say each level takes :math:`O(n)` work.
 
 The only other thing we need to figure out is "how many levels are required?" The table above skips a few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like::
 
@@ -95,7 +95,7 @@ That is 10 levels of merging to group 1024 single items into one list of 1024.
     
         <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:100%" name="i"></input></form></div>
 
-Like we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined by the mathematical function :math:`log_2(n)`. :math:`log_2(1024) = 10`. Using that, we could calculate the number of levels of merges required to do a Merge Sort on a list of 100,000 items: :math:`log_2(100,000) ≈ 16.61`. (Since we can't do 16.61 merges levels, we would call that 17.)
+As we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined by the mathematical function :math:`log_2(n)`. :math:`log_2(1024) = 10`. Using that, we could calculate the number of levels of merges required to do a Merge Sort on a list of 100,000 items: :math:`log_2(100,000) ≈ 16.61`. (Since we can't do 16.61 merges levels, we would call that 17.)
 
 The formula also allows us to write a general formula for the overall work required for a Merge Sort. Starting with:
 
