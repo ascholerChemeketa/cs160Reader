@@ -17,7 +17,7 @@ from a particular location. Or rides the have a certain duration.
 To filter data with SQL, we use the ``WHERE`` keyword. You can
 append ``WHERE column_condition`` to any SQL query, and the result will be
 filtered only to rows that satisfy the column condition. For example, you might
-want to look only at bike trips which are at least one hour (3600 seconds):
+want to look only at bike trips that are at least one hour (3600 seconds):
 
 .. activecode:: sqlintro_filtering1
     :language: sql
@@ -64,7 +64,7 @@ and we get an error about the ``WHERE``.
     the ``;`` entirely in which case your program is assumed to be all one statement.
 
 It is also possible to filter by multiple criteria by using ``AND`` or ``OR``. 
-For example to look at bike trips which are 60 minutes or more and the 
+For example, to look at bike trips that are 60 minutes or more and the 
 ``member_type`` is ``MEMBER``, the query would be as below.
 
 
@@ -89,11 +89,11 @@ For example to look at bike trips which are 60 minutes or more and the
     :autograde: unittest
     :dburl: /_static/bikeshare.db
 
-    Write a query to find the ending station and duration (in that order) of all of trips by bike
+    Write a query to find the ending station and duration (in that order) of all trips by bike
     number ``'W00153'`` that lasted over 8 hours (remember that duration is measured in
     seconds, you will have to figure out how many seconds are in 8 hours).
 
-    The bike number - 'W00153' - is not really a number, it is a string, so make sure to use quotes around it in your query.
+    The bike "number" - 'W00153' - is not really a number, it is a string, so make sure to use quotes around it in your query.
     ~~~~
 
     ====

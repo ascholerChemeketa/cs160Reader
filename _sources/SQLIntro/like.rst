@@ -18,11 +18,11 @@ which would not include 'Janice Jones'.
     pair: SQL; LIKE
 
 The ``LIKE`` comparison allows us to specify strings using **wildcards**. **Wildcards**
-are symbols that can match anything. In SQL ``LIKE`` comparisons, ``%`` is a wildcards
-that means "any text can go here". So ``'Janice%''`` says "Look for string that start with
+are symbols that can match anything. In SQL ``LIKE`` comparisons, ``%`` is a wildcard
+that means "any text can go here". So ``'Janice%''`` says "Look for strings that start with
 Janice, and then have anything after that (including nothing else)". While ``'%Janice'``
-says "look for string that end in Janice and may have anything before that". If we are
-want to allow for extra text to be on either side of 'Janice', we would use use ``%`` on
+says "look for strings that end in Janice and may have anything before that". If we
+want to allow for extra text to be on either side of 'Janice', we would use ``%`` on
 both sides - ``'%Janice%'``
 
 This sample pulls from the ``bikeshare_stations`` table to search for all station names
@@ -44,7 +44,7 @@ to look for anything that includes '7th' and examine the results.
 
 The pattern ``'%7th%'`` matches way too many things. To get just 7th (and not 17th or 27th)
 we would need to state something like *"where the name starts with 7th or the name has ' 7th'
-in it"*. The space inside the string will make sure we don't match '17th'. This query
+within it"*. The space inside the string will make sure we don't match '17th'. This query
 will perform that search. Notice that to check if the name begins with '7th', we make sure
 not to put a ``%`` at the start of the string.
 

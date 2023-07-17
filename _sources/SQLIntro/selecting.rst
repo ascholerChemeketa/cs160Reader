@@ -21,7 +21,7 @@ instruction in programming is known as a statement). The general format of a ``S
 
 In SQL **keywords** like ``SELECT`` are generally written using all **upper case**, while
 **column names and table names** use **lower case**. This is a convention to make statements
-easier for  people to read - it is also valid to use lower case for the keywords.
+easier for people to read - it is also valid to use lowercase for the keywords.
 
 It is also common to break the statement up across multiple lines - as statements get
 more and more complex, this too makes them easier to read:
@@ -58,7 +58,7 @@ As we do a ``SELECT``, it might not make sense to ask for all of the columns in 
 table. If we want to answer a question about the length of rides, we probably do not need
 the information about station numbers or bike numbers. To simplify the data we get,
 and reduce the amount of information that must be sent from the database to our program,
-we would want to specify a list of columns we actually care about instead of using ``*``.
+we would want to specify a list of columns we care about instead of using ``*``.
 To select just the ``start_date``, ``end_date``, and ``duration`` columns, the query
 would look like the following:
 
@@ -87,7 +87,7 @@ duration is the first row that is returned.
     :dburl: /_static/bikeshare.db
 
     Write a query to select the start and end stations for all trips. 
-    Make sure that the start station is the first column retrieved and end
+    Make sure that the start station is the first column retrieved and the end
     station is the second.
 
     Hint: check the previous page to check the column names you need to use

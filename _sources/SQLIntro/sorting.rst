@@ -27,7 +27,7 @@ duration:
 
 The column name after the ``ORDER BY`` clause specifies which column to use as
 the sorting key, in this case ``duration``. The shortest trips are listed first and the longest
-trips listed last. This increasing, or **ascending** order is the default.
+trips are listed last. This increasing, or **ascending** order is the default.
 To make the order go from largest to smallest (**descending** order), we need to
 specify ``DESC`` after the column name we are ordering by. (If we want to be explicit
 about ascending order, we can say ``ASC``, but do not need to since that is the default.)
@@ -68,7 +68,7 @@ output to the first 10 rows.
     LIMIT 10
 
 We can combine ``ORDER BY`` and ``LIMIT`` with the other clauses we have learned about
-to do something like selecting just the start date, station and the duration for only
+to do something like selecting just the start date, station, and the duration for only
 trips starting from station 31111, sorting them from longest to shortest, and only
 keeping the first (longest) 10:
 
