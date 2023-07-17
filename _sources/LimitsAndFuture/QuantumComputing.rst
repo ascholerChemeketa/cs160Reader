@@ -5,15 +5,15 @@
 Quantum Computing
 =========================================
 
-Modern physics has two separate models for how the universe works: **general relativity** which predicts how large scale objects interact and **quantum mechanics** which predicts the actions of sub-atomic particles. When we start working on the scale of single atoms, we leave the realm of physics that we are used to and enter the quantum world where things work in some mind bending ways:
+Modern physics has two separate models for how the universe works: **general relativity** which predicts how large scale objects interact and **quantum mechanics** which predicts the actions of sub-atomic particles. When we start working on the scale of single atoms, we leave the realm of physics that we are used to and enter the quantum world where things work in some mind-bending ways:
 
-* Quantum objects can be in a `superposition <http://en.wikipedia.org/wiki/Quantum_superposition>`__ of states: they simultaneous exist in multiple possible states (like both on and off) until that state is observed at which point they "collapse" into just one state.
+* Quantum objects can be in a `superposition <http://en.wikipedia.org/wiki/Quantum_superposition>`__ of states: they simultaneously exist in multiple possible states (like both on and off) until that state is observed at which point they "collapse" into just one state.
 
 * Quantum objects can be `entangled <http://en.wikipedia.org/wiki/Quantum_entanglement>`__: when an action is taken on one particle of an entangled pair it instantly can affect the other particle, even if they are on opposite sides of the universe.
 
 * Quantum objects can `tunnel <http://en.wikipedia.org/wiki/Quantum_tunnelling>`__: passing through materials that are theoretically solid.
 
-Scientists are working to exploited these behaviors to produce a new kind of computer, the **Quantum computer** (video set to stop at 1:43, feel free to watch the rest if you want):
+Scientists are working on exploiting these behaviors to produce a new kind of computer, the **Quantum computer** (video set to stop at 1:43, feel free to watch the rest if you want):
 
 .. youtube:: CMdHDHEuOUE
     :height: 315
@@ -22,7 +22,7 @@ Scientists are working to exploited these behaviors to produce a new kind of com
     :end: 103
 
     
-So how exactly do they work and why are they more powerful? By entangling particles that are in a superposition of two possible states, we can make a system that test many states at one time:
+So how exactly do they work and why are they more powerful? By entangling particles that are in a superposition of two possible states, we can make a system that tests many states at one time:
 
 .. youtube:: g_IaVepNDT4
     :height: 315
