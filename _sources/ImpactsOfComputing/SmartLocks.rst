@@ -22,7 +22,7 @@ In my first source, the smart locks are being used on an apartment building.
 **B. According to your sources, how does the technology use computation?**
 
 The exact data is not described well.
-The user has a smart phone app that they use to control the technology.
+The user has a smartphone app that they use to control the technology.
 The lock must receive some kind of information that allows it to see what device is sending the
 signal to open and only admit residents—so there must be some kind of unique ID for
 each resident.
@@ -30,7 +30,7 @@ each resident.
 **C. How is this use of computation beneficial and who benefits?**
 
 The building does not have to worry about replacing locks if keys are lost or stolen.
-The privacy policy of the company who made the locks says it could use people's location
+The privacy policy of the company that made the locks says it could use people's location
 data for marketing purposes.
 
 **D. How is this use of computation harmful and who is harmed?**

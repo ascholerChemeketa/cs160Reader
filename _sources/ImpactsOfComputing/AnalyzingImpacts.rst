@@ -4,7 +4,7 @@ Analyzing Impacts
 =========================================
 
 In this class, you will be asked on several assignments to find one or
-more articles about some aspect of computing, and use them to describe
+more articles about some aspect of computing and use them to describe
 it as well as its positive and negative impacts.  You will do this by
 answering a series of four questions. They are listed below as questions
 A–D.  Below each question is a series of prompts to consider. You do
@@ -41,7 +41,7 @@ B. According to your sources, how does the technology use computation?
     * All computation makes use of data. What data is involved?
     * How does the technology process the data? What are the inputs and
       outputs? What happens in between? (Don't worry about trying to describe
-      the actual low-level steps of the algorithm involved, just the high level
+      the actual low-level steps of the algorithm involved, just the high-level
       process.)
     * If you are going to describe a bug or unintended problem with a
       technology, be sure to describe how its input, output, or computation
@@ -68,7 +68,7 @@ D. How is this use of computation harmful and who is harmed?
     * What harm is there to people excluded from using the technology?
     * What harm is there to society?
     * If you are describing a bug, unintended harmful side effect, or
-      intentional misuse of technology, this is where to get into to the
+      intentional misuse of technology, this is where to get into the
       nature and extent of the harm.
     * Even for a technology you want everybody to accept, “nobody is harmed” is
       not an adequate analysis. Think creatively about consequences that you
