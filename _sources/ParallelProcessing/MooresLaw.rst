@@ -15,7 +15,7 @@ Moore's Law
     
 In the 1960s, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a circuit would double every two years. This prediction came to be called **Moore's Law**. Although Moore was focused on the number of transistors on a chip, others have expanded his idea into a prediction for overall performance increases. The combined benefits of increased complexity and speed in chips have resulted in processing power doubling every 18 months. Thus the term "Moore's Law" is used to refer to this idea that overall processing power doubles every year and a half.
 
-Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (Which helps explain why computers need to be upgraded so frequently.) 
+Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (This helps explain why computers need to be upgraded so frequently.) 
 
 ================    ========    ========    ========    ========    ========    ========    ======== 
 Years               1.5         3           4.5         6           7.5         ...         15          

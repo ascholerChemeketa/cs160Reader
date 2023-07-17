@@ -18,7 +18,7 @@ For any given task, there are likely parts that are **serial** (ones that must b
 
 Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles, communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the "looking" phase down to 1/100th of the original time, but that won't help me type the information we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be sped up.
 
-The figure below on the left shows how the total time depends on how much work can be split up and how many workers we have. The one on the right compares total time on a hypothetical job for 1-5 workers. Notice that although more workers means less time on the parallel part, the serial part always takes the same time.
+The figure below on the left shows how the total time depends on how much work can be split up and how many workers we have. The one on the right compares the total time on a hypothetical job done by 1-5 workers. Notice that although more workers means less time on the parallel part, the serial part always takes the same time.
 
 .. container:: inlinegroup
 
@@ -52,7 +52,7 @@ Say 60% of a job can be made parallel and we use 2 processors. Substituting .60 
 
 We would see a speedup of 1.43 times. 40% of the work needs to be done in serial. The other 60% is split into two equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original time, or 1.43x faster.
 
-Lets say we use 3 workers on the same job:
+Let's say we use 3 workers on the same job:
 
 :math:`\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} =  \frac{1}{0.40 + 0.20} = \frac{1}{0.60} = 1.67`
 
@@ -71,10 +71,10 @@ The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% p
 
 Amdahl's Law makes it clear that parallel processing is best on tasks that are **embarrassingly parallel** - where only a tiny fraction of the work is serial. For other problems, there is a hard limit to the gains possible.
 
-In fact, Amdahl's law is too optimistic! In general, each worker (core) you add increases the total amount of work to do. Thinking back to the earlier example of organizing notes cards, imagine the difference between managing 4 helpers and 99. It would take significantly more time to split up and distribute work to 99 people. If the pile of cards was large enough, we would probably still come out ahead, but at some point adding more workers will actually start to slow us down. There are many such ways in which adding workers can increase the work that needs to be done:
+In fact, Amdahl's law is too optimistic! In general, each worker (core) you add increases the total amount of work to do. Thinking back to the earlier example of organizing note cards, imagine the difference between managing 4 helpers and 99. It would take significantly more time to split up and distribute work to 99 people. If the pile of cards was large enough, we would probably still come out ahead, but at some point adding more workers will start to slow us down. There are many such ways in which adding workers can increase the work that needs to be done:
 
-* Time to think how to divide the problem up 
-* Time to hand out small “work units” to workers 
+* Time to divide the problem up into chunks 
+* Time to hand out chunks of work to workers 
 * All workers may not work equally fast
 * Some workers may flake out (crash). The more there are the more likely this is
 * There may be contention for shared resources 

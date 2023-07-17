@@ -42,9 +42,9 @@ One solution to synchronization issues is to add **locks** to certain resources 
 
     A worker trying to access an already locked resource must wait for the existing lock to be released
 
-In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step 3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step 5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command "check and acquire lock" that can be done as one **atomic** action - in other words, there is no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between step 1 and 2 there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.
+In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step 3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step 5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command "check and acquire lock" that can be done as one **atomic** action - in other words, there is no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2 there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.
 
-Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked resource is serial - only one worker can do anything with the resource at a time. The more time code spends working within locks, the less able workers are to run in parallel. Second, we introduce the possibility for **deadlock**. Say we have two workers that both need to use two locked resources, X and Y to complete their work. We could end up in a situation where each is waiting for the other to release a lock it needs:
+Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked resource is serial - only one worker can do anything with the resource at a time. The more time code spends working within locks, the less able workers are to run in parallel. Second, we introduce the possibility for a **deadlock**. Say we have two workers that both need to use two locked resources, X and Y to complete their work. We could end up in a situation where each is waiting for the other to release a lock it needs:
 
 .. figure:: Images/deadlocked.png
 
@@ -60,7 +60,7 @@ Deadlock depends on three criteria being met:
     We might be able to avoid deadlock if in step 4 both workers had to release their existing lock and start over trying to acquire a lock on both X and Y. (To avoid going right back to step 1 every time, we might make each Worker wait a small random amount of time before trying for the locks).
 * No Preemption
     No one can be forced to give up their lock. 
-    We could say that Worker A can make B give up a lock if it wants. Or we could say that anyone who has the lock on X can make someone else give up their lock on X.
+    We could say that Worker A can make B give up a lock if they want. Or we could say that anyone who has the lock on X can make someone else give up their lock on X.
     
-None of the possible fixes mentioned to the conditions for deadlock are without their own issues. We can very easily end up "starving" one worker who is forced to wait all the time for their resources. It is also notoriously hard to figure out in advance exactly who needs to lock what resources for how long and how conflicts should be resolved - even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or data corruption.
+None of the possible fixes mentioned to the conditions for deadlock are without issue. We can very easily end up "starving" one worker who is forced to wait all the time for their resources. It is also notoriously hard to figure out in advance exactly who needs to lock what resources for how long and how conflicts should be resolved - even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or data corruption.
 
