@@ -1,0 +1,91 @@
+<section xml:id="parallel-processing_multi-processing">
+        <title>Multi Processing</title>
+        <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Image &#169; Intel Corporation</caption><image source="ParallelProcessing/Images/quad-core.jpg" width="200%"/><legend>
+                <p>Multiple processing cores on one chip</p>
+            </legend></figure>
+        <p>In the year 2002, Intel&#8217;s flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU clock ticks 3 billion times per second). The architecture of this processor was supposed to scale up to 10 GHz, but by 2005, Intel had to abandon the architecture as the power density of the chips was becoming unmanageable. Intel shifted to a new strategy and architecture called the Core architecture.</p>
+        <p>These new chips were not clocked as fast as the ones they replaced, but they featured multiple processing cores.  Chip designers had figured out that by reducing the clock speed by say 20%, they could also reduce the voltage, cutting the power required by the processor nearly in half. The chip might not be quite as fast, but because processors were getting smaller anyway, you could fit two or more on the same chip. The two processing cores would thus use the same amount of power as one faster chip, but spread the power out over twice the area, making it easier to manage. Each of these processing cores can work independently - assuming they each can process 80% of what one higher speed chip could, that means a total increase in processing power of 60%.</p>
+        <table><tabular>
+            
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            
+                        </cell>
+                        <cell>
+                            1 Fast Core
+                        </cell>
+                        <cell>
+                            2 Cores
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            <term>Speed</term>
+                        </cell>
+                        <cell>
+                            100%
+                        </cell>
+                        <cell>
+                            80%
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <term>Power</term>
+                        </cell>
+                        <cell>
+                            100%
+                        </cell>
+                        <cell>
+                            100% (50% each)
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <term>Area</term>
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                        <cell>
+                            2
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <term>Power Density</term>
+                        </cell>
+                        <cell>
+                            100%/1 = 100%
+                        </cell>
+                        <cell>
+                            100%/2 = 50%
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <term>Instruction Processing Power</term>
+                        </cell>
+                        <cell>
+                            100%
+                        </cell>
+                        <cell>
+                            160%
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+        <p>Nowadays, just about every computer processor is <term>multi-core</term>. Personal computers routinely come with four or more processing cores. Computer graphics cards have thousands of processing units (though they are optimized to perform very specific types of work). Supercomputers, like <url href="https://www.youtube.com/watch?v=FC3IryWr4c8" visual="https://www.youtube.com/watch?v=FC3IryWr4c8">IBM&#8217;s Watson computer that beat the best human Jeopardy players</url>, combine thousands of processors into room-sized devices.</p>
+        <p>Unfortunately, adding processing cores greatly complicates programming a computer. It is not the case that we can add a second core and magically run every program twice as fast. The following pages introduce some of the issues we encounter with multi-core systems.</p>
+        <important>
+            <p>The move to parallel computation is a road to more powerful computers, but it is plan B for how to get there. If system designers and programmers had their choice, we would still be focused on cranking up the speed of single processors instead of increasing power by adding cores.</p>
+        </important>
+    </section>
+

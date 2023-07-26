@@ -1,0 +1,89 @@
+<section xml:id="csp-decisions-simulations_random-numbers id1">
+        <title>Random Numbers</title>
+        <p>When creating a simulation, we need a way to simulate unpredictable events. Is the driver of
+            a car going to choose to turn at a certain intersection? What will the weather be like in an
+            hour? We may have some idea of what answers are reasonable for these questions, and how likely
+            each answer is, but at some point we will have to resort to trying to pick an answer randomly
+            while obeying what we believe the odds of different outcomes are.</p>
+        
+        
+        <p xml:id="csp-decisions-simulations_index-0">In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we use
+            the <c>randrange</c> function in the <c>random</c> library. To use it, we have to import the library,
+            then call the function. Try running this program a few times to see that it does in fact generate
+            a random number each time it runs:</p>
+
+    <program xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
+        <input>
+import random
+
+x = random.randrange(1, 5)  # pick a number from 1-4
+print(x)
+        </input>
+    </program>
+        <p>As shown above, the <c>randrange</c> function takes can be called with a starting value (inclusive)
+            and the ending value for the range (exclusive). So <c>randrange(1, 5)</c> picks an integer from the
+            range that starts at 1 and ends before 5. We can also call it with just an end value like
+            <c>randrange(5)</c></p>
+
+    <exercise label="cspdecisionssimulations_random2">
+        <statement>
+
+        <p>What is a value that the recipe <c>random.randrange(12, 20)</c> can produce?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    <p>12 is the lowest value that will be selected</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>10</p>
+                </statement>
+                <feedback>
+                    <p>12 is the lowest value that will be selected</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>19</p>
+                </statement>
+                <feedback>
+                    <p>Correct.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>20</p>
+                </statement>
+                <feedback>
+                    <p>The range is exclusive of the second value. 20 will not be picked</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+        <exercise label="cspdecisionssimulations_random3">
+            <statement>
+    <p>We want to make a random whole number between 2 and 4. Fill in the blank in this
+recipe: <c>random.randrange(________________)</c> <var/>  </p></statement><setup><var><condition string="^\s*^\s*2\s*,\s*5\s*$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*^\s*2\s*,\s*4\s*$\s*$"><feedback><p>That would not include 4 as a possible option</p></feedback></condition><condition string="^\s*^[^,]+$\s*$"><feedback><p>Make sure to give two numbers separated by a comma</p></feedback></condition><condition string="^\s*\d+\s*,\s*\d+\s*$"><feedback><p>Those numbers aren&#8217;t right</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Make sure to give two numbers separated by a comma (and nothing else)</p></feedback></condition></var></setup></exercise>        <note>
+            <p>Computers can&#8217;t usually generate truly random numbers without measuring something that is
+                random (like static noise on radio frequencies). If they don&#8217;t have access to something like
+                that, they must rely on generating <term>pseudorandom</term> numbers - numbers that look random even
+                though they are created using some mathematical recipe.
+                Python takes the system time as a starting point (since it is always changing) and then
+                uses a mathematical recipe to &#8220;pick&#8221; the next random number each time we ask for one.</p>
+            <p>When these <term>pseudorandom</term> generators aren&#8217;t coded well, they can cause issues with
+                simulations or cryptography that rely on their results.</p>
+        </note>
+    </section>
+

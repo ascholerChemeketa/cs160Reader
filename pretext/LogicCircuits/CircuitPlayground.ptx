@@ -1,0 +1,37 @@
+<section xml:id="logic-circuits_circuit-playground">
+        <title>Circuit Playground</title>
+        <p>Here is a circuit you can edit.</p>
+        <raw format="html" xml:space="preserve">
+            &lt;script src="../_static/simcir/simcir.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir.css" /&gt;
+            &lt;script src="../_static/simcir/simcir-basicset.js"&gt;&lt;/script&gt;
+            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir-basicset.css" /&gt;
+            &lt;script src="../_static/simcir/simcir-library.js"&gt;&lt;/script&gt;
+            &lt;script src="../_static/simcir/misc/simcir-altfulladder.js"&gt;&lt;/script&gt;
+            &lt;div class="simcir"&gt;{    "width":600,    "height":500,    "showToolbox":true,    "toolbox":[    {"type":"DC"},    {"type":"LED"},    {"type":"Toggle"},    {"type":"NOT"},    {"type":"AND"},    {"type":"OR"},    {"type":"XOR"},    {"type":"Joint"}    ],    "devices":[    {"type":"Toggle","id":"dev0","x":120,"y":96,"label":"Input1","state":{"on":false}},    {"type":"DC","id":"dev1","x":40,"y":160,"label":"DC"},    {"type":"Toggle","id":"dev2","x":120,"y":216,"label":"Input2","state":{"on":false}}    ],    "connectors":[    {"from":"dev0.in0","to":"dev1.out0"},    {"from":"dev2.in0","to":"dev1.out0"}    ]}&lt;/div&gt;</raw>
+        <p>Instructions:</p>
+        <p><ul>
+            <li>
+                <p>To add a component, drag it into the circuit area.</p>
+            </li>
+            <li>
+                <p>To delete a component, drag it from the circuit area back to the component palette.</p>
+            </li>
+            <li>
+                <p>To connect two components, click on the yellow (input) circle of one component and drag to the white (output) circle of another component, then release.</p>
+            </li>
+            <li>
+                <p>To disconnect two components, click the yellow circle where the connecting line ends and release.</p>
+            </li>
+            <li>
+                <p>Double-click the label of a component to rename it.</p>
+            </li>
+            <li>
+                <p>Make sure to start your circuit with DC - connect it to Toggles to be your inputs.</p>
+            </li>
+            <li>
+                <p>Control-Click switches between visual mode and a text version of your circuit. To save a circuit, switch to text mode, then copy the text and save it in a text file on your computer. To load the circuit, make sure the circuit is in text mode, paste in your saved text, then switch back to visual mode.</p>
+            </li>
+        </ul></p>
+    </section>
+

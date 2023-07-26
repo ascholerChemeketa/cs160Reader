@@ -1,0 +1,146 @@
+<section xml:id="csp-name-turtles_turtle-coordinates">
+        <title>Turtle Coordinates</title>
+        <p>The space that the turtle draws in is 400 by 400 pixels.  The center of the space is at x=0, y=0.</p>
+        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">The coordinates for the drawing space.  Note that the center is x = 0 and y = 0.</caption><image source="CSPNameTurtles/Figures/spaceCoord.png" width="400px%" alt="the space coordinate system"/></figure>
+        <p>The program below draws a snowman on a blue background by drawing 4 circles. It positions each of
+            the circles using <c>goto(x,y)</c> to move the turtle to exactly where we want it centered. To draw
+            a circle, we use a trick: we use <c>pensize</c> to make a really big (circular) pen, then do
+            <c>forward(0)</c> to make a dot of the current <c>color</c>.</p>
+
+    <program xml:id="cspnameturtles_turtlecoordinates1" interactive="activecode" language="python">
+        <input>
+from turtle import *
+space = Screen()
+mario = Turtle()
+
+# Background
+mario.color("sky blue")
+mario.pensize(800)
+mario.forward(0)                # Draw a blue dot that covers the screen
+
+# Base - a 200px circle centered at 0, -160
+mario.color("white")
+mario.penup()                   # Pick up the pen so we don't draw when we goto
+mario.goto(0, -160)             # Jump directly to x = 0, y = -160
+mario.pendown()
+mario.pensize(200)
+mario.forward(0)                # Draw a dot at the current pensize
+
+# Body - a 150px circle centered at 0, 0
+mario.penup()
+mario.goto(0, 0)
+mario.pendown()
+mario.pensize(150)
+mario.forward(0)
+
+# Head - a 100px circle centered at 0, 120
+mario.penup()
+mario.goto(0, 120)
+mario.pendown()
+mario.pensize(100)
+mario.forward(0)
+        </input>
+    </program>
+        <p>The program below uses the <c>goto(x,y)</c> to move to the top left corner before drawing a square
+            that nearly fills the drawing space. It uses <c>fillcolor</c>, <c>begin_fill</c>, and <c>end_fill</c> to fill in the
+            shape as it draws it.</p>
+
+    <program xml:id="cspnameturtles_turtlecoordinates2" interactive="activecode" language="python">
+        <input>
+from turtle import *
+space = Screen()
+anu = Turtle()
+
+anu.penup()                         # Pick up the pen so we don't draw when we goto
+anu.goto(-150, 150)                 # Jump directly to x = -150, y = 150
+
+# Setup to draw the square
+anu.pendown()
+anu.color("purple")                 # Set the line color
+anu.pensize(4)                      # Draw with a pen that is 4 pixels in size
+anu.fillcolor("pink")               # Set the fill color
+
+# Do the drawing
+anu.begin_fill()                    # Shade inside the area we cover
+anu.forward(300)
+anu.right(90)
+anu.forward(300)
+anu.right(90)
+anu.forward(300)
+anu.right(90)
+anu.forward(300)
+anu.end_fill()                      # Stop filling as we move
+
+# Goto the center without drawing as we move
+anu.penup()
+anu.goto(0, 0)
+        </input>
+    </program>
+        <p><term>Mixed up programs</term></p>
+<exercise label="cspnameturtles_turtlecoordinates3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses a turtle to draw a capital F as shown below, but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle.  It should draw the lines in the order shown by the numbers in the picture on the left.</p>
+        <p>Drag the needed blocks of statements from the left column to the right column and put them in the right order.  There may be extra blocks that are not needed in a correct solution.  Then click on <em>Check</em> to see if you are right.</p>
+        <image source="CSPNameTurtles/Figures/DrawFwGT.png" width="200px%"/>
+</statement>
+<blocks><block order="3">
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+<cline>anu = Turtle()</cline>
+</block><block order="5">
+<cline>anu.left(90)</cline>
+<cline>anu.forward(100)</cline>
+</block><block order="6">
+<cline>anu.right(90)</cline>
+<cline>anu.forward(50)</cline>
+</block><block order="9" correct="no">
+<cline>anu.left(90)</cline>
+<cline>anu.forward(50) </cline>
+</block><block order="7">
+<cline>anu.penup()</cline>
+</block><block order="11" correct="no">
+<cline>anu.penUp() </cline>
+</block><block order="1">
+<cline>anu.goto(0,60)</cline>
+</block><block order="8" correct="no">
+<cline>anu.goTo(0,60) </cline>
+</block><block order="4">
+<cline>anu.pendown()</cline>
+</block><block order="10" correct="no">
+<cline>anu.penDown() </cline>
+</block><block order="2">
+<cline>anu.forward(50)</cline>
+</block></blocks></exercise><exercise label="cspnameturtles_turtlecoordinates4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses a turtle to draw a capital A as shown below, but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle.  It should draw the lines in the order shown by the numbers in the picture on the left. Drag the needed blocks of statements from the left column to the right column and put them in the right order. There may be additional blocks that are not needed in a correct solution. Then click on <em>Check</em> to see if you are right.</p>
+        <image source="CSPNameTurtles/Figures/DrawABig.png" width="200px%"/>
+</statement>
+<blocks><block order="1">
+<cline>from turtle import *</cline>
+</block><block order="5">
+<cline>space = Screen()</cline>
+</block><block order="3" correct="no">
+<cline>space = screen() </cline>
+</block><block order="9">
+<cline>ella = Turtle()</cline>
+</block><block order="10" correct="no">
+<cline>ella = Turtle </cline>
+</block><block order="8">
+<cline>ella.left(60)</cline>
+<cline>ella.forward(100)</cline>
+</block><block order="6" correct="no">
+<cline>ella.left(60)</cline>
+<cline>ella.forward() </cline>
+</block><block order="4">
+<cline>ella.right(120)</cline>
+<cline>ella.forward(100)</cline>
+</block><block order="7">
+<cline>ella.penup()</cline>
+<cline>ella.goto(30,50)</cline>
+<cline>ella.pendown()</cline>
+</block><block order="11">
+<cline>ella.left(60)</cline>
+<cline>ella.forward(40)</cline>
+</block><block order="2" correct="no">
+<cline>ella.Left(60)</cline>
+<cline>ella.forward(40) </cline>
+</block></blocks></exercise>    </section>
+

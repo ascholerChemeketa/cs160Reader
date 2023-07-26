@@ -1,0 +1,236 @@
+<section xml:id="csp-name-strings_making-a-madlib-story">
+        <title>Making a MadLib story</title>
+        <p>You might have done MadLib stories when you were a kid.  You provide some pieces of information,
+            like a name of a friend, a verb, and a favorite game (for example), and those pieces of
+            information get plugged into a story.  Since you don&#8217;t know the story beforehand, you&#8217;re
+            surprised at what happens to your friend in the story.</p>
+
+    <program xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
+        <input>
+firstName = "Pat"
+lastName = "Smith"
+gender = "girl"
+address = "65 Elm Street"
+verb = "eat"
+start = "Once there was a " + gender + " named " + firstName + "."
+next1 = "A good " + gender + " living at " + address + "."
+next2 = "One day, a wicked witch came to the " + lastName + " house."
+next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
+ending = "But " + firstName + " was smart and avoided the wicked witch."
+print(start)
+print(next1)
+print(next2)
+print (next3)
+print(ending)
+        </input>
+    </program>
+
+    <exercise label="cspnamestrings_madlib2">
+        <statement>
+
+        <p>Now you want to add more to the story. You want it to say: &#8220;Pat called the police who took the
+            witch away.&#8221;  Adding which of these lines to the end of the program will make that happen?
+            (Hint: It is okay to <em>try</em> each one!)</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>realEnding = firstName + " called the police who took the witch away."</p>
+                </statement>
+                <feedback>
+                    <p>This would only work if you also put <code>print(realEnding)</code> after this line.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>print(firstName + " called the police who took the witch away.")</p>
+                </statement>
+                <feedback>
+                    <p>This is a good way to do this since the line that is printed will have the correct
+first name.  You could also make a string named <code>realEnding</code> first, and then print it.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>print("Pat called the police who took the witch away.")</p>
+                </statement>
+                <feedback>
+                    <p>This <i>would</i> work.  But if you changed the <code>firstName</code> variable,
+this line would not change.  A different answer is better.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p><term>You should really do this:</term> Run this program to see what gets generated, then change some of the variables to make different stories.  Try different names, different verbs.</p>
+
+    <program xml:id="cspnamestrings_madlib3" interactive="activecode" language="python">
+        <input>
+firstName = "Sofia"
+lastName = "Diaz"
+gender = "girl"
+address = "1600 Pennsylvania Avenue"
+verb = "burp at"
+start = "Once there was a " + gender + " named " + firstName + "."
+next1 = "A good " + gender + " living at " + address + "."
+next2 = "One day, a wicked witch came to the " + lastName + " house."
+next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
+ending = "But " + firstName + " was smart and avoided the wicked witch."
+print(start)
+print(next1)
+print(next2)
+print(next3)
+print(ending)
+        </input>
+    </program>
+
+    <exercise label="cspnamestrings_madlib4">
+        <statement>
+
+        <p>Would the following code print the same story as shown above?</p>
+        <program language="python"><input>
+firstName = "Sofia"
+lastName = "Diaz"
+gender = "girl"
+address = "1600 Pennsylvania Avenue"
+verb = "burp at"
+start = "Once there was a " + gender + " named " + firstName + "."
+print(start)
+next1 = "A good " + gender + " living at " + address + "."
+print(next1)
+next2 = "One day, a wicked witch came to the " + lastName + " house."
+print(next2)
+next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
+print(next3)
+ending = "But " + firstName + " was smart and avoided the wicked witch."
+print(ending)
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>Yes</p>
+                </statement>
+                <feedback>
+                    <p>The only thing that is different is when the lines are printed, but the lines are the same.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>No</p>
+                </statement>
+                <feedback>
+                    <p>Did you try it?  Copy the code into the program area above and run it.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamestrings_madlib5">
+        <statement>
+
+        <p>What would the following code print?</p>
+        <program language="python"><input>
+Mali = 5
+print("Mali" + " is " + str(Mali))
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Mali is Mali</p>
+                </statement>
+                <feedback>
+                    <p>There are no double quotes around the last Mali so it will use the value of the variable Mali.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>Mali is 5</p>
+                </statement>
+                <feedback>
+                    <p>The first Mali is in double quotes so it will print the string Mali and the second Mali is not in double quotes so it will print the value of the variable Mali.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>5 is Mali</p>
+                </statement>
+                <feedback>
+                    <p>The first Mali is in double quotes and the second is not.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>5 is 5</p>
+                </statement>
+                <feedback>
+                    <p>The first Mali is in double quotes so it is a string and the characters in the string will be printed.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <note>
+            <p>When you print a string (a sequence of characters in a pair of single, double, or triple quotes) in Python it will print the exact characters in the string.  When you print a variable it will print the value of that variable.</p>
+        </note>
+<exercise label="cspnamestrings_madlib6" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Put the blocks below into the correct order to print a twist on a famous poem.</p>
+</statement>
+<blocks><block order="3">
+<cline>print("Roses are red.")</cline>
+</block><block order="1">
+<cline>print("Violets are blue.)</cline>
+</block><block order="4">
+<cline>print("Sugar is sweet.")</cline>
+</block><block order="2">
+<cline>print("And so is Sue.")</cline>
+</block></blocks></exercise><exercise label="cspnamestrings_madlib7" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Put the blocks below into the correct order to declare the variables and then print the following story. One day Jay went shopping.  He wanted to buy shoes.  But, he didn&#8217;t like any.  So, Jay went home.</p>
+</statement>
+<blocks><block order="2">
+<cline>name = "Jay"</cline>
+<cline>item = "shoes"</cline>
+</block><block order="4">
+<cline>print("One day " + name + " went shopping.")</cline>
+</block><block order="5">
+<cline>print("He wanted to buy " + item + ".")</cline>
+</block><block order="3">
+<cline>print("But, he didn't like any.")</cline>
+</block><block order="1">
+<cline>print("So, " + name + " went home.")</cline>
+</block></blocks></exercise>        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+                There are many possible stories, here is one:
+
+    <program xml:id="cspnamestrings_madlib9" language="python">
+        <input>
+name = "Maria"
+month = "October"
+place = "Portland"
+activity = "sailing"
+start = month + " is " + name + "'s favorite month for " + activity + "."
+print(start)
+end = "This year " + name + " decided that she would go " + activity + " in " + place + "."
+print(end)
+        </input>
+    </program>
+            
+                <p>There are many possible stories, here is one:</p>
+
+    
+            </solution></exercise>
+    </section>
+

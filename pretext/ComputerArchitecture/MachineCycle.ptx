@@ -1,0 +1,46 @@
+<section xml:id="computer-architecture_the-machine-cycle">
+        <title>The Machine Cycle</title>
+        <p>When software is installed onto a computer (by downloading it from the Internet or installing it from a disk), the program and any associated files are stored in secondary memory. The program&#8217;s code is stored as a series of bits that represent machine instructions. The code remains there until the user chooses to execute the program in question, at which point sections of the code are loaded into the computer&#8217;s memory.</p>
+        <image source="ComputerArchitecture/Images/execution.gif" width="50%" alt="Execution"/>
+        <p>To actually run the code, the processor then needs to retrieve instructions one by one from memory so it can run them. This process consists of three stages: fetching the instruction, decoding the instruction, and executing the instruction - these three steps are known as the <term>machine cycle</term>. A processor spends all of its time in this cycle, endlessly retrieving the next instruction, decoding it, and running it.</p>
+        <image source="ComputerArchitecture/Images/instructioncycle.gif" width="50%" alt="Instruction Cycle"/>
+        <p><ul>
+            <li>
+                <dl>
+                    <li>
+                        <title>Fetch</title>
+                        
+                            <p>In the fetch cycle, the control unit looks at the program counter register (PC) to get the memory address of the next instruction. It then requests this instruction from the main memory and places it in the instruction register (IR).</p>
+                        
+                    </li>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <li>
+                        <title>Decode</title>
+                        
+                            <p>Here, the control unit checks the instruction that is now stored within the instruction register (IR). It looks at the instruction - which is just a sequence of 0s and 1s and decides what needs to be done. Does the instruction say to add two numbers? Does it say to load a value from memory? Where in memory? The control unit interprets the binary instruction to answer questions like these.</p>
+                        
+                    </li>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <li>
+                        <title>Execute</title>
+                        
+                            <p>Now the control unit sends the signals that tell the ALU, memory, and other components signals to cause them to perform the correct work.</p>
+                        
+                    </li>
+                </dl>
+            </li>
+        </ul></p>
+        <p>The video below demonstrates a simple program running on a computer. This imaginary computer shown uses special registers to hold memory address (MAR) and data that just came in from memory (MBR). It also uses registers called AL and BL to hold values temporarily. Don&#8217;t worry about the details of those other registers, focus on the fetch/decode/execute cycle and how the PC and IR are used.</p>
+
+    <video xml:id="jcHuWnIt6eI" youtube="jcHuWnIt6eI" width="560"/>
+            <raw format="html" xml:space="preserve">
+&lt;div class="attribution"&gt;Materials on this page adapted with permission from:&lt;br /&gt;
+&lt;a href='http://www.eastaughs.fsnet.co.uk/'&gt;Microprocessor Tutorial&lt;/a&gt; by Matthew Eastaugh&lt;/div&gt;</raw>
+    </section>
+

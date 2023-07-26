@@ -1,0 +1,90 @@
+<section xml:id="csp-designing-procedures_program-implementation-1">
+        <title>Program Implementation - 1</title>
+        <p>Now we want to start building and testing the actual code. We will start with the
+            low-level procedures that do not depend on anything else. Then once we are sure
+            they are working, we will build higher-level procedures that depend on them. This
+            strategy is known as <term>bottom up implementation</term>.</p>
+        <p>A critical part of successfully building a program is testing as we go. We need
+            to make sure that each of our procedures actually does its job before we try
+            to use it to do something more complicated.</p>
+        <warning>
+            <p>Remember, debugging code is often harder than writing it in the first place.
+                It is much easier to find and fix errors in small blocks of code than in a giant
+                program.</p>
+        </warning>
+        <p>My lowest-level procedure was <c>rectangle</c>, so let&#8217;s start building that. In the sample
+            below, I have attempted to write the procedure.</p>
+        
+        
+        <p xml:id="csp-designing-procedures_index-0">I have done a few things to make it easier to use the rectangle procedure. First,
+            I have it put the pen down and do <c>begin_fill</c> at the start and pick the pen back up
+            and <c>end_fill</c> at the end. This means my procedure does not depend on other code having
+            already having set up the pen. Second left a comment at the start of the procedure reminding
+            myself of assumptions I have made - in this case that the turtle is facing East. An
+            assumption that is made by a procedure is known as a <term>precondition</term> to the procedure -
+            it is something that must already be true when we start for the procedure to work correctly.</p>
+        <p>I&#8217;ll also write some code to test it. I will try to use my procedure to draw a few different
+            rectangles - first a 50x50 rectangle (a square), followed by a 10x100 narrow But
+            tall rectangle. Try the code:</p>
+
+    <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
+        <input>
+def rectangle(turtle, width, height):
+    # Assumes turtle faces East to start with
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.end_fill()
+    turtle.penup()
+
+from turtle import *
+space = Screen()
+steve = Turtle()
+steve.speed(10)
+steve.fillcolor("light blue")
+rectangle(steve, 50, 50)                # try to draw a 50x50 rectangle
+rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
+        </input>
+    </program>
+        <p>It looks like there is a bug! The square seemed to work, but not the narrow/tall
+            rectangle.</p>
+        <p>See if you can fix the <c>rectangle</c> code. You might want to comment out or
+            remove the line that says <c>rectangle(steve, 50, 50)</c> so you can focus just
+            on the case that is causing problems - the 10x100 rectangle. If you get stuck,
+            you can peek ahead at the next page. (Hint: you should need to change two lines.)</p>
+        <raw format="html" xml:space="preserve">            &lt;h2 &gt;
+               Discussion
+            &lt;/h2&gt;
+            </raw>
+        <p>Once you fix my bug, the procedure works just fine. But we could improve it. Here
+            some ideas that would arguably make it better:</p>
+        <p><ul>
+            <li>
+                <p>It could take the color to draw as a parameter and then do <c>fill_color</c> to set
+                    the color inside <c>rectangle</c>. This way, the caller could just say
+                    <c>rectangle(steve, 50, 50, "light blue")</c> and not worry about doing the
+                    <c>fill_color</c> step itself.</p>
+            </li>
+            <li>
+                <p>Turtle&#8217;s have a <c>setheading</c> command. Instead of assuming a <term>precondition</term>
+                    that the turtle is facing East, we could have <c>rectangle</c> use to face the
+                    turtle East at the start of the procedure.</p>
+            </li>
+        </ul></p>
+        <p>The reason most programmers would see these as improvements is they make the
+            procedure easier to use correctly (by removing a precondition), or they make it
+            more powerful (having it take care of the fill color). But, it is possible to
+            overcomplicate a procedure by trying to make it too general.</p>
+        <p>Designing good code is often a balancing act. There is never one right design for a complex
+            problem. But there are designs that are better and designs that are worse. We
+            seek designs that are the best possible combination of flexible, simple, and
+            robust.</p>
+    </section>
+

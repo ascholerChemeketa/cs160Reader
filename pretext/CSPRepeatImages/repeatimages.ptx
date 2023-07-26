@@ -1,0 +1,56 @@
+<section xml:id="csp-repeat-images_using-repetition-with-images">
+        <title>Using Repetition with Images</title>
+        <p>In Python, the line of code <c>img = Image("cat.jpg")</c> creates an Image object in the
+            program that has all of the data from the image cat.jpg and names it with the variable
+            <c>img</c>. Once we have done that, we can draw the entire image using lines of code like this:</p>
+        <program language="python"><input>
+win = ImageWin(img.getWidth(), img.getHeight())  # Make a window to hold the image
+img.draw(win)                                    # draw it in that window
+</input></program>
+        <p>To modify the colors in an image, we need to modify all of its pixels one by one. In
+            an image with 60,000 pixels, we would not want to write a separate line of code for
+            each pixel. What we would like to do is specify what code to run for each of the pixels.</p>
+        <p>That is exactly what a <c>for</c> loop does - it takes a list of values and some instructions
+            and runs the instructions for each one of the values. We can get a list of all the pixels
+            with the procedure <c>img.getPixels()</c>.</p>
+        <p>The program below modifies the cat image to remove all the red from each of its pixels.
+            There are lot of lines in the program below,</p>
+        <warning>
+            <p>Be patient with program that modify images, they can take a little while to produce their results.
+                Don&#8217;t press the &#8220;Save and Run&#8221; button multiple times or you will just have to wait longer.</p>
+            <p>If you do hit the button too many times, you can reload the browser window to stop the program.</p>
+        </warning>
+
+    <program xml:id="csprepeatimages_repeatimages1" interactive="activecode" language="python">
+        <input>
+from image import *
+
+# Create an image from a file. This file must be part of the webpage.
+# Store that image in the variable img
+img = Image("cat.jpg")
+
+# Get a list of the pixels and store it in pixelList
+pixelList = img.getPixels()
+
+for p in pixelList:                 #Loop through each pixel in the list and call it p
+    # set the red value of p to 0
+    p.setRed(300)
+
+    # p is a copy of a pixel from the image
+    # we need to tell the image to use the updated version of p
+    img.updatePixel(p)
+
+# show the image
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+        </input>
+    </program>
+        <p>There are <m>200 \times 300 = 60,000</m> pixels in the <c>pixelList</c>. Our for loop takes that giant
+            list of pixels and one by one, calls the current one <c>p</c> and then does the body of the loop
+            with it. After the loop is done, we make a window to display the image in and draw it - but
+            don&#8217;t worry too much about that code - we want to focus on the loop and what it does to each
+            pixel. This program changes the red value of each pixel to 0 - essentially it removes all the
+            red from the image, making it look like we are looking through blue-green glass at it.</p>
+        
+    </section>
+    

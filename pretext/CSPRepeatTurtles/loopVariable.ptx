@@ -1,0 +1,207 @@
+<section xml:id="csp-repeat-turtles_using-the-loop-variable">
+        <title>Using the Loop Variable</title>
+        <p>In previous pages, we have seen examples that are repetitive, but where each line has a slight
+            change, like this sequence of calls to <c>polygon</c>:</p>
+        <program language="python"><input>
+...
+polygon(mia, 6, 100)
+polygon(mia, 5, 100)
+polygon(mia, 4, 100)
+polygon(mia, 3, 100)
+</input></program>
+        <p>In situations like that, it would be nice to use a loop to repeat the lines instead of typing
+            them out one by one. But to do so, we need to use a variable for the value that changes. Something
+            like <c>polygon(mia, sides, 100)</c> where <c>sides</c> is set to the values 6, 5, 4, 3 in successive
+            calls.</p>
+        
+        
+        <p xml:id="csp-repeat-turtles_index-0">We can do this by making use of the <term>loop variable</term>. It is the variable that is used to store
+            each value in the list that the loop is iterating over. This program shows using two loops. In the
+            first one, the loop variable is called <c>x</c> and is used count from 0 to 4. In the second, the
+            loop variable is called <c>y</c> and counts from 0 to 9.</p>
+
+    <program xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
+        <input>
+# x will be set to 0, 1, 2, 3, 4
+for x in range(5):
+    print("x is ", x)
+
+print("--------------------------------------")
+
+# y will be set to 0, 1, 2, 3, 4, ... 9
+for y in range(10):
+    print("y is ", y)
+        </input>
+    </program>
+        <subsection xml:id="csp-repeat-turtles_range-recipes">
+            <title>Range Recipes</title>
+            
+            
+            <p xml:id="csp-repeat-turtles_index-1">That gives us a way to count through a series of numbers. But what if we want, like with the
+                <c>polygon</c> example, to count from 6 down to 3? Or to count from 10 to 100 by 10&#8217;s? To do these
+                tasks, we can use a three-parameter version of <c>range</c>:</p>
+            <program language="python"><input>
+range(startValue, stopValue, step)
+</input></program>
+            <p>This version of <c>range</c> begins from the <c>startValue</c>, increases by <c>step</c> with each value,
+                and stops when it hits <c>stopValue</c> (but does not actually include the <c>stopValue</c>). If the
+                <c>step</c> is negative, range will count down from <c>startValue</c> to <c>stopValue</c>.</p>
+
+    <program xml:id="csprepeatturtles_loopvariable2" interactive="activecode" language="python">
+        <input>
+# x will count from 0, by 2's and stop at 11 (10 will be last value)
+for x in range(0, 11, 2):
+    print("x is ", x)
+
+print("--------------------------------------")
+
+# y will be start at 6 and count down by 1. It stops at 2 (3 is last value)
+for y in range(6, 2, -1):
+    print("y is ", y)
+        </input>
+    </program>
+            <note>
+                <p>The one-parameter range recipe <c>range(10)</c> is the same as the three-parameter recipe
+                    <c>range(0, 10, 1)</c>.</p>
+            </note>
+            <p><term>Check Your Understanding</term></p>
+
+    <exercise label="csprepeatturtles_loopvariable3">
+        <statement>
+
+            <p>Which is range recipe would generate the sequence: 2, 5, 8, 11?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>range(2, 11, 3)</p>
+                </statement>
+                <feedback>
+                    <p>If the stopValue is 11, it will not actually generate 11.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>range(2, 12, 3)</p>
+                </statement>
+                <feedback>
+                    <p>This will not cause an error.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>range(3, 12, 2)</p>
+                </statement>
+                <feedback>
+                    <p>The startValue is the first parameter. This recipe would start with 3.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>range(2, 3, 11)</p>
+                </statement>
+                <feedback>
+                    <p>This recipe starts at 2, counts by 11, and stops at 3. It would only include 2.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        </subsection>
+        <subsection xml:id="csp-repeat-turtles_range-recipes-with-turtles">
+            <title>Range Recipes With Turtles</title>
+            <p>We can now use the complex version of range to write a turtle program that repeats
+                steps but uses a different value for a variable during each repetition.</p>
+            <p>The program below will use the <c>stamp</c> procedure to leave a copy of itself on the screen
+                that will remain after the turtle has moved somewhere else. It also uses the <c>shape</c>
+                procedure to change the turtle&#8217;s icon from the default triangle to an actual turtle.</p>
+            <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+            <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2&#8217;s from 5 to 59. The loop
+                variable is called <c>size</c> and is used to control how far forward the turtle moves in
+                each repetition.</p>
+
+    <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
+        <input>
+from turtle import *
+space = Screen()
+tess = Turtle()
+tess.color("blue")
+tess.shape("turtle")
+tess.penup()
+
+# size counts by 2's from 5, stop at 60
+for size in range(5, 60, 2):
+    tess.stamp()              # leave a copy of turtle at current location
+    tess.forward(size)
+    tess.right(24)
+        </input>
+    </program>
+            <p>All except one of the shapes you see on the screen here are copies of the turtle shape
+                created by <c>stamp</c>. But the program still only has <em>one</em> turtle instance &#8212; can you
+                figure out which one is the real tess?  (Hint: if you&#8217;re not sure, write a new line
+                of code after the <c>for</c> loop to change tess&#8217; color, or to put her pen down and draw a
+                line, or to change her shape, etc&#8230;)</p>
+            <p><term>Mixed up program</term></p>
+<exercise label="csprepeatturtles_loopvariable5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+            <p>The following program creates a square spiral as shown below. To do so, we must draw sides
+                of length 0, 5, 10, 15, &#8230; 195. After drawing each side, we will turn to get ready for
+                the next side.</p>
+            <p>Arrange and indent the blocks correctly. You will not use them all.</p>
+            <image source="CSPRepeatTurtles/Figures/TurtleSpiral.png" width="150px%"/>
+</statement>
+<blocks><block order="9">
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+<cline>nikea = Turtle()</cline>
+<cline>nikea.color("blue")</cline>
+</block><block order="8">
+<choice correct="yes"><cline>for x in range(0, 200, 5):</cline>
+</choice><choice><cline>for x in range(0, 195, 5): </cline>
+</choice></block><block order="4">
+<cline>for x in range(0, 205, 5): </cline>
+</block><block order="1">
+<choice correct="yes"><cline>    nikea.forward(x)</cline>
+</choice><choice><cline>    nikea.forward(size) </cline>
+</choice></block><block order="10">
+<cline>    nikea.forward(195) </cline>
+</block><block order="6">
+<choice correct="yes"><cline>    nikea.right(90)</cline>
+</choice><choice><cline>    nikea.right(x) </cline>
+</choice></block><block order="3">
+<cline>    nikea.right(size) </cline>
+</block></blocks></exercise><exercise label="csprepeatturtles_loopvariable6" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+            <p>The following program defines a <c>square</c> procedure and then uses it to draw squares of size
+                20, 40, 60, 80, and 100.</p>
+            <p>Arrange and indent the blocks correctly. You will not use them all.</p>
+            <image source="CSPRepeatTurtles/Figures/TurtleSquares.png" width="150px%"/>
+</statement>
+<blocks><block order="4">
+<cline>def square(turtleName, size):</cline>
+</block><block order="3">
+<choice correct="yes"><cline>    for side in range(4):</cline>
+</choice><choice><cline>    for side in range(size): </cline>
+</choice></block><block order="2">
+<choice correct="yes"><cline>        turtleName.forward(size)</cline>
+<cline>        turtleName.right(90)</cline>
+</choice><choice><cline>        turtleName.forward(x)</cline>
+<cline>        turtleName.right(90) </cline>
+</choice></block><block order="8">
+<cline># main program</cline>
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+<cline>jose = Turtle()</cline>
+<cline>jose.speed(10)</cline>
+</block><block order="10">
+<choice correct="yes"><cline>for x in range(20, 101, 20):</cline>
+</choice><choice><cline>for x in range(20, 100, 20): </cline>
+</choice></block><block order="6">
+<choice correct="yes"><cline>    square(jose, x)</cline>
+</choice><choice><cline>    square(jose, size) </cline>
+</choice></block></blocks></exercise>        </subsection>
+    </section>
+

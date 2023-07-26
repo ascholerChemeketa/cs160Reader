@@ -1,0 +1,38 @@
+<section xml:id="csp-repeat-numbers_chapter-summary">
+        <title>Chapter Summary</title>
+        <p>This chapter included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>Accumulator Pattern</term> - The accumulator pattern is a set of steps that processes a list
+                    of values.  One example of an accumulator pattern is the code to sum a list of numbers.</p>
+            </li>
+            <li>
+                <p><term>Comparison Operators</term> - The symbols like <c>==</c> or <c>&lt;</c> used to compare values and
+                    come up with a True or False answer .</p>
+            </li>
+            <li>
+                <p><term>Logical Expression</term> - An expression that produces a Boolean True/False value.</p>
+            </li>
+            <li>
+                <p><term>While Loop</term> - A loop that continues as long as a logical expression is true. While
+                    loops are used when we want to say &#8220;do these steps as long as&#8230;&#8221; instead of &#8220;do these
+                    steps for each of these values&#8221; (which is a for loop).</p>
+            </li>
+        </ul></p>
+        <subsection xml:id="csp-repeat-numbers_summary-of-python-keywords-and-functions">
+            <title>Summary of Python Keywords and Functions</title>
+            <p><ul>
+                <li>
+                    <p><term>while</term> - Used with a logical expression as <c>while expression:</c> to construct a
+                        loop that continues as long as the expression is true.</p>
+                </li>
+                <li>
+                    <p><term>True/False</term> - The literal values that can be used to represent a logical true or
+                        false value.</p>
+                </li>
+            </ul></p>
+        </subsection>
+    </section>
+

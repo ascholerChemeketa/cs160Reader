@@ -1,0 +1,137 @@
+<exercises xml:id="csp-name-functions_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="cspnamefunctions_exercises1">
+    <statement>
+        <p>Fix the errors so it runs and returns the perimeter of a rectangle.</p>
+
+    </statement>
+    <program xml:id="cspnamefunctions_exercises1_editor" interactive="activecode" language="python">
+        <input>
+def recPerimeter(length, width):
+perimeter = 2 * (length + width)
+Return recPerimeter
+
+# Main program
+result = recPerimeter(2, 4)
+print(result)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(result, 12, "Testing that result has the correct value." )
+        self.assertNotIn("12", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamefunctions_exercises2">
+    <statement>
+        <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and
+            height of a triangle to calculate the area for. Modify the function so that it has parameters
+            for base and height and works to calculate the area of different triangles.</p>
+
+    </statement>
+    <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
+        <input>
+def areaTriangle():
+    base = 5
+    height = 4
+    return (5 * 4) / 2
+
+# Main program. Do not modify lines below
+print(areaTriangle(5, 4))
+print(areaTriangle(6, 3))
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(self.getOutput().strip(), "10.0\n9.0", "Testing that your program prints the right answers." )
+        self.assertRegex(self.getEditorText(), r"\nprint\(areaTriangle\(5, 4\)\)\nprint\(areaTriangle\(6, 3\)\)", "Testing that you still have the starter main program")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamefunctions_exercises3">
+    <statement>
+        <p>The mathemetician Newton invented a method to approximate the square root of a number.
+            Take the number <term>N</term> you want the square root for and a guess <term>G</term> and then
+            calculate <m>1/2(N/G + G)</m>. You will get a rough approximation. If you use the
+            answer as a new guess and repeat the process, you will get a closer approximation. You
+            can keep repeating the process to make your approcimation closer and closer to the real
+            value.</p>
+        <p>Write an <c>approximateSqrt</c> function that takes a number and guess as its parameters
+            and then uses Newton&#8217;s formula to estimate the square root of the number.</p>
+        <p>There is already code provided to use your function to calculate the square root of 150.</p>
+
+    </statement>
+    <program xml:id="cspnamefunctions_exercises3_editor" interactive="activecode" language="python">
+        <input>
+# Your code here
+
+# Main program. Do not modify lines below
+number = 150            #number to figure out the square root of
+guess1 = 10             #initial guess
+guess2 = approximateSqrt(number, guess1)
+guess3 = approximateSqrt(number, guess2)
+guess4 = approximateSqrt(number, guess3)
+print(guess4)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertAlmostEqual(guess4, 12.2474489, 3, "Testing that you got the right value for guess4.")
+        self.assertNotRegex(self.getEditorText(), r"12\.24", "Testing that you did not hard code the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

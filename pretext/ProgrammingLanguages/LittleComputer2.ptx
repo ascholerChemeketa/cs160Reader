@@ -1,0 +1,33 @@
+<section xml:id="programming-languages_the-little-computer-branching">
+        <title>The Little Computer - Branching</title>
+        <p>Normally, a computer works its way through the instructions in memory in order. After instruction 1, it runs instruction 2, then 3, etc&#8230; A <term>branch</term> instruction can change that. A branch might tell the computer <em>&#8220;skip ahead to memory location number 20 and execute that&#8221;</em> or <em>&#8220;go back and execute the instruction at location 1 again&#8221;</em>.</p>
+        <raw format="html" xml:space="preserve">            &lt;h3 class="underlined"&gt;
+               Decisions
+            &lt;/h3&gt;
+            </raw>
+        <p>Branch instructions are how a computer can make decisions. In high level languages, we generally use &#8220;if&#8221; statements to make decisions about which instructions to execute. At a low level, those decisions are usually implemented as branches to skip certain instructions.</p>
+        <p>In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch.</p>
+        <p><ul>
+            <li>
+                <p>A 6XX instruction says to always branch (jump) to the instruction at memory location XX instead of advancing to the next one.</p>
+            </li>
+            <li>
+                <p>The 7XX and 8XX instructions tell the computer to look at the accumulator value - if it is 0 (for 7XX) or greater than or equal to 0 (8XX), then the computer will take the branch. If the accumulator does not have the right value, the branch is ignored and the computer moves to the next instruction.</p>
+            </li>
+        </ul></p>
+        <p>This video demonstrates a Little Computer program that makes a decision based on the input it gets:</p>
+
+    <video xml:id="povKvhOyif0" youtube="povKvhOyif0" width="560"/>
+            <p>You can test that program using the link below. Since it behaves differently if you enter a positive or negative number, make sure to test it with both:</p>
+        <p><url href="../_static/littleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000" visual="../_static/littleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000">Launch the Little Computer branch program</url>  <em>(Control or Command click to open in a new window)</em></p>
+        <raw format="html" xml:space="preserve">            &lt;h3 class="underlined"&gt;
+               Looping
+            &lt;/h3&gt;
+            </raw>
+        <p>The target of a branch does not need to be later in the program - it is perfectly legal to branch to an earlier instruction. This is how we make a computer &#8220;loop&#8221; or repeat a series of instructions. This video demonstrates a Little Computer program that uses a branch instruction to loop through a series of instructions.</p>
+
+    <video xml:id="bLSVhz3j5xQ" youtube="bLSVhz3j5xQ" width="560"/>
+            <p>You can test that program using the link below. As you do, pay attention to each output - the program outputs more than one value, so the behavior is best described by the pattern of the output, <em>&#8220;It counts down from 1 to 0&#8221;</em>, than its final output. We would not say that this program just <em>&#8220;outputs 0&#8221;</em>.</p>
+        <p><url href="../_static/littleComputer/littleComputer.html?program=510/902/211/801/000//////004/001" visual="../_static/littleComputer/littleComputer.html?program=510/902/211/801/000//////004/001">Launch the Little Computer loop program</url>  <em>(Control or Command click to open in a new window)</em></p>
+    </section>
+

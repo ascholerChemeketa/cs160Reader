@@ -1,0 +1,83 @@
+<section xml:id="csp-repeat-turtles_using-repetition-with-turtles">
+        <title>Using Repetition with Turtles</title>
+        <p>While learning how to draw with the turtle, we have found many reasons to repeat ourselves in
+            ways that a loop can make easier. A simple example is a <c>square</c> procedure - it needs to
+            do both <c>forward</c> and <c>right</c> 4 times. So why not have a <c>for</c> loop repeat those for us:</p>
+
+    <program xml:id="csprepeatturtles_repeatturtles1" interactive="activecode" language="python">
+        <input>
+def square(turtleName, size):
+    for side in range(4):              # repeat the indented lines 4 times
+        turtleName.forward(size)
+        turtleName.right(90)
+
+from turtle import *
+space = Screen()
+alisha = Turtle()
+square(alisha, 10)
+alisha.forward(10)
+square(alisha, 20)
+alisha.forward(20)
+square(alisha, 30)
+alisha.forward(30)
+        </input>
+    </program>
+<exercise label="csprepeatturtles_repeatturtles2" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program should define a procedure <title_reference>triangle</title_reference> that uses a loop
+            to help draw a triangle. The main part of the program calls that function twice
+            to draw two different triangles.</p>
+        <p>Arrange and indent the blocks correctly. You will not need them all.</p>
+</statement>
+<blocks><block order="5">
+<cline>def triangle(turtleName):</cline>
+</block><block order="4">
+<cline>    for side in range(3):</cline>
+</block><block order="3">
+<cline>        turtleName.forward(120)</cline>
+<cline>        turtleName.right(90)</cline>
+</block><block order="2" correct="no">
+<cline>        nick.forward(120)</cline>
+<cline>        nick.right(90)  </cline>
+</block><block order="6">
+<cline>#Start of main part of program</cline>
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+</block><block order="1">
+<cline>nick = Turtle()</cline>
+<cline>triangle("nick")</cline>
+<cline>nick.right(180)</cline>
+<cline>triangle("nick")</cline>
+</block></blocks></exercise><exercise label="csprepeatturtles_repeatturtles3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses a turtle to draw a 175x150 rectangle as shown below, but the lines
+            are mixed up. We want to define a <c>rectangle</c> procedure that repeats twice the process to draw
+            half of a rectangle: draw a line for the width, then turn, draw a line for the height, and
+            turn again.</p>
+        <p>Arrange the blocks into the correct solution and indent them properly.
+            You will not use all of the blocks.</p>
+        <image source="CSPRepeatTurtles/Figures/TurtleRect.png" width="150px%"/>
+</statement>
+<blocks><block order="4">
+<cline>def rectangle(turtle, width, height):</cline>
+</block><block order="9">
+<choice correct="yes"><cline>    # repeat 2 times</cline>
+<cline>    for i in range(2):</cline>
+</choice><choice><cline>    # repeat 2 times</cline>
+<cline>    for i in range(2) </cline>
+</choice></block><block order="1">
+<choice correct="yes"><cline>        turtle.forward(width)</cline>
+<cline>        turtle.right(90)</cline>
+</choice><choice><cline>        carlos.forward(width)</cline>
+<cline>        carlos.right(90) </cline>
+</choice></block><block order="3">
+<choice correct="yes"><cline>        turtle.forward(height)</cline>
+<cline>        turtle.right(90)</cline>
+</choice><choice><cline>        turtle.forward(150)</cline>
+<cline>        turtle.right(90) </cline>
+</choice></block><block order="6">
+<cline>from turtle import *</cline>
+</block><block order="5">
+<cline>space = Screen()</cline>
+<cline>carlos = Turtle()</cline>
+<cline>rectangle(carlos, 175, 150)</cline>
+</block></blocks></exercise>    </section>
+

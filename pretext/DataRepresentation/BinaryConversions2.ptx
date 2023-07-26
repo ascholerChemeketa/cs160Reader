@@ -1,0 +1,168 @@
+<section xml:id="data-representation_binary-conversions-multiplication-division-method">
+  <title>Binary Conversions - Multiplication/Division Method</title>
+  <p>The biggest issue with the &#8220;table method&#8221; shown on the previous page is that it is hard to translate
+    into an algorithm that a machine could run. The multiplication/division methods shown on this page are much easier
+    to express in simple terms as they rely on mathematics instead of looking at a table and making a decision.</p>
+  <subsection xml:id="data-representation_decimal-to-binary-1">
+    <title>Decimal to Binary</title>
+    <p>The following algorithm converts a decimal number to a binary one:</p>
+    <pre>
+Step 1: Start with a blank <c>answer</c> and the <c>number</c> you are converting
+Step 2: Divide your <c>number</c> by 2 to make a <c>quotient</c> and a <c>remainder</c>
+Step 3: Place your <c>remainder</c> on the <term>left</term> side of your <c>answer</c>
+Step 4: If your <c>quotient</c> is 0, you are done
+        Otherwise, make the <c>quotient</c> your new <c>number</c> and go back to step 2
+</pre>
+    <p>Here is an example of running the algorithm to convert <m>{11}_{10}</m> to binary:</p>
+
+    <video xml:id="TaagNvZCbjo" youtube="TaagNvZCbjo" width="100%" />
+    <p>
+      <em>Animation used by permission of Virginia Tech</em>
+    </p>
+
+    <p>So the decimal number 11 in binary is <m>{1011}_{2}</m>.</p>
+  </subsection>
+  <subsection xml:id="data-representation_binary-to-decimal-2">
+    <title>Binary to Decimal</title>
+    <p>To convert a binary number to its decimal value, we can use almost the same trick, but in reverse:</p>
+    <program language="none">
+      <input>
+<p>Step 1: Start with the <em>number</em> your are converting and the <c>answer</c> of 0
+Step 2: Multiply your <c>answer</c> by 2
+Step 3: Remove the leftmost digit of <c>number</c> and add it to your <c>answer</c>
+Step 4: If <c>number</c> has no more digits, you are done
+        Otherwise, go back to step 2</p>
+</input>
+    </program>
+    <p>If we follow this algorithm to convert <m>{1101}_{2}</m> into a decimal value, it would look like this:</p>
+    <program language="none">
+      <input>
+<p>Step 1: <c>number</c> is 1101 and <c>answer</c> is 0
+Step 2: <c>answer</c> is multiplied by 2 - it becomes 0
+Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
+         <c>number</c> is now 101 and <c>answer</c> is 1
+Step 4: <c>number</c> still has digits, go back to step 2
+Step 2: <c>answer</c> is multiplied by 2 - it becomes 2
+Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
+         <c>number</c> is now 01 and <c>answer</c> is 3
+Step 4: <c>number</c> still has digits, go back to step 2
+Step 2: <c>answer</c> is multiplied by 2 - it becomes 6
+Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
+         <c>number</c> is now 1 and <c>answer</c> is 6
+Step 4: <c>number</c> still has digits, go back to step 2
+Step 2: <c>answer</c> is multiplied by 2 - it becomes 12
+Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
+         <c>number</c> is now "" (empty) and <c>answer</c> is 13
+Step 4: <c>number</c> is empty. We are done, the answer is 13.</p>
+</input>
+    </program>
+    <p>As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple
+      computer code. To demonstrate that, the algorithm is implemented in Python in the <em>codelens</em> below. You DO
+      NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm
+      above into code requires some changes, but the code shown follows the same process described above. See the
+      &#8220;tips&#8221; box below the code lens for help running the program.</p>
+
+
+      <program interactive="activecode" language="python">
+        <input>
+        for i in range(10):
+            print(i)
+        </input>
+    </program>
+
+      <exercises>
+        <title>CodeLens</title>
+
+        <p>A steppable Python program.</p>
+
+        <listing xml:id="program-codelens-python">
+            <caption>A Python program, stepable with CodeLens</caption>
+            <program xml:id="python-hello-world-code-lens" interactive="codelens" language="python">
+                <input>
+                print('Hello, World!')
+                </input>
+            </program>
+        </listing>
+    </exercises>
+
+
+    <program xml:id="datarepresentation_binaryconversions21" interactive="codelens" language="python">
+      <input>
+number = "1101"
+answer = 0
+while len(number) &gt; 0:                  #do next 3 lines until length of number is 0
+    answer = answer * 2                 #multiply answer by 2
+    answer = answer + int(number[0])    #add leftmost digit to answer
+    number = number[1:]                 #remove leftmost digit
+    </input>
+    </program>
+    <note>
+      <p>
+        <term>How to use the &#8220;codelens&#8221;</term>
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>You can click the &#8220;forward&#8221; button to watch the code run line by line.</p>
+          </li>
+          <li>
+            <p>The blue area that appears below the buttons will show you the current values of <c>number</c> and <c>
+              answer</c>.</p>
+          </li>
+          <li>
+            <p>Use can use the large scroll bar to scroll the code to the right - at the end of each line of code is an
+              explanation of what that line &#8220;says&#8221;</p>
+          </li>
+        </ul>
+      </p>
+    </note>
+
+    <exercise label="datarepresentation_binaryconversions22">
+      <statement>
+
+        <p>If you use the division method to convert 49 to binary, how many times do you have to do step 2?</p>
+
+      </statement>
+      <choices>
+
+        <choice>
+          <statement>
+            <p>5</p>
+          </statement>
+          <feedback>
+            <p>You are dividing by 2 until you reach 0. 5 divisions won't get you there</p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>4</p>
+          </statement>
+          <feedback>
+            <p>You are dividing by 2 until you reach 0. 4 divisions won't get you there</p>
+          </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>6</p>
+          </statement>
+          <feedback>
+            <p />
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>49</p>
+          </statement>
+          <feedback>
+            <p>You are dividing by 2 until you reach 0. don't need that many divisions</p>
+          </feedback>
+        </choice>
+      </choices>
+
+    </exercise>
+  </subsection>
+</section>
+

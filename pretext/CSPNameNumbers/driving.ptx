@@ -1,0 +1,156 @@
+<section xml:id="csp-name-numbers_driving-from-chicago-to-dallas">
+        <title>Driving from Chicago to Dallas</title>
+        
+        
+        <p xml:id="csp-name-numbers_index-0">As an example, imagine that you were planning to drive from Chicago to Dallas. If you know how
+            many miles-per-gallon your car gets, and how many miles it is, you can estimate the number of
+            gallons it will take.</p>
+        <p>Use the <em>CodeLens</em> below to trace through what it would look like for a computer to execute
+            this program:</p>
+        <p><ul>
+            <li>
+                <p>Press <image source="CSPNameNumbers/Figures/codelens-forward.png" width="50%" alt="forward (next) button" height="20px"/> to go forward executing a single line of the program.</p>
+            </li>
+            <li>
+                <p>Press <image source="CSPNameNumbers/Figures/codelens-last.png" width="50%" alt="move to last button" height="20px"/> to execute all the lines of the program.</p>
+            </li>
+        </ul></p>
+
+<program xml:id="cspnamenumbers_driving1" interactive="codelens" language="python">
+    <input>
+distance = 924.7
+mpg = 35.5
+gallons = distance / mpg
+    </input>
+</program>
+        
+        
+        <p xml:id="csp-name-numbers_index-1">Now, if we know the average cost of a gallon of gas, we can figure out the cost of the trip
+            from Chicago to Dallas in your car.</p>
+        <warning>
+            <p>Notice that in the code below that we are using <term>camel case</term> variable names like
+                <c>costPerGallon</c> and <c>costTrip</c>. When using this style, you have to be careful about
+                capitalization - <c>costperGallon</c> is a different name than <c>costPerGallon</c>. Try changing
+                just the first copy of <c>costPerGallon</c> below to <c>costpergallon</c> and then run the code
+                to see what happens.</p>
+        </warning>
+
+<program xml:id="cspnamenumbers_driving2" interactive="codelens" language="python">
+    <input>
+distance = 924.7
+mpg = 35.5
+gallons = distance / mpg
+costPerGallon = 3.65
+costTrip = gallons * costPerGallon
+    </input>
+</program>
+        
+        
+        <p xml:id="csp-name-numbers_index-2">What we&#8217;re doing above is <term>tracing</term> a program.  Normally, we <term>run</term> a program &#8211; tell the
+            computer to execute each step of the program as fast as possible. When we do that, we don&#8217;t see
+            individual variable values, as we can above.  However, we can check values (including the values for
+            variables) by printing them.</p>
+        <p>The function <c>print</c> can take an <em>input</em> (a variable name inside
+            of parentheses) whose value will be displayed. The <c>print</c> function can also print a <term>string</term>
+            (like <c>"Cost to get from Chicago to Dallas"</c>) which is a sequence of characters inside a pair of
+            double quotes as seen in line 8.  It will print the exact contents of the string.  This is useful
+            for explaining the values that you are printing.</p>
+        <p>You can also print multiple things on one line by putting them all inside the parentheses after
+            <c>print</c>, separated by commas. You can see this on line 12.</p>
+        <p>Press the <image source="CSPNameNumbers/Figures/run-button.png" width="50%" alt="run button" height="20px"/> below to see this program run at full speed.</p>
+
+    <program xml:id="cspnamenumbers_driving3" interactive="activecode" language="python">
+        <input>
+distance = 924.7
+mpg = 35.5
+gallons = distance / mpg
+costPerGallon = 3.65
+costTrip = gallons * costPerGallon
+
+#Use print to print out a description of costTrip, then the value
+print("Cost to get from Chicago to Dallas")
+print(costTrip)
+
+#Print the description and value on the same line
+print("Cost to get from Chicago to Dallas", costTrip)
+        </input>
+    </program>
+        <p>Try editing the program above and running it to answer this question:</p>
+
+    <exercise label="cspnamenumbers_driving4">
+        <statement>
+
+        <p>If the cost per gallon drops to $3.45, can we drive from Chicago to Dallas for less than $90 in gas?</p>
+
+        </statement>
+<choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>Yes</p>
+                </statement>
+                <feedback>
+                    <p>Yes, the cost would be $89.86 (which you knew by editing the program above and running it)</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>No</p>
+                </statement>
+                <feedback>
+                    <p>Try it -- it's just under $90.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>We should fly instead.</p>
+                </statement>
+                <feedback>
+                    <p>You might be right, but figure out the cost by editing the above program</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamenumbers_driving5">
+        <statement>
+
+        <p>What would be printed by <c>print("costPerGallon")</c> if this line was added to the end of the program?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>3.45</p>
+                </statement>
+                <feedback>
+                    <p>This would be true if it was printing the value of original variable.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>3.65</p>
+                </statement>
+                <feedback>
+                    <p>This would be true if it was printing the value of the variable after you changed it to figure out the previous question.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>costPerGallon</p>
+                </statement>
+                <feedback>
+                    <p>Since <code>costPerGallon</code> is in double quotes it is a string, and it will print out those exact characters.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

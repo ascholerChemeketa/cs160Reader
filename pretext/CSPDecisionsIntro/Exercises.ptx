@@ -1,0 +1,355 @@
+<exercises xml:id="csp-decisions-intro_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="cspdecisionsintro_exercises1">
+    <statement>
+        <p>The code below is supposed to set the price to 1.5 if the weight is less than 2 and
+            otherwise set it to 1.3. It then calculates the total be multiplying the weight by price.</p>
+        <p>Fix 3 errors with indention in the code below so that it calculates the right total
+            for a weight of 0.5 (the answer should be 0.75). You will not pass the tests yet.</p>
+        <p>Then change the weight to be 3 and run the program again to pass the tests (answer now should be 3.9).</p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_exercises1_editor" interactive="activecode" language="python">
+        <input>
+weight = 0.5
+if weight &lt; 2:
+price = 1.50
+if weight &gt;= 2:
+price = 1.30
+    total = weight * price
+print(total)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(weight, 3, "Testing that weight is 3.")
+        self.assertEqual(price, 1.3, "Testing that price is correct.")
+        self.assertAlmostEqual(total, 3.9, 2, "Testing the total is correct.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspdecisionsintro_exercises2">
+    <statement>
+        <p>Write code to complete the <c>isEven</c> function. It should return <c>True</c> if <c>number</c> is
+            even and <c>False</c> if it is odd.</p>
+        <p>Make sure to return <c>False</c> or <c>True</c>, not <c>"False"</c> or <c>"True"</c> with quotes.
+            <c>False</c> in Python means False/no/0. <c>"False"</c> means <em>&#8220;the word False&#8221;</em>.
+            <c>True</c> in Python means True/yes/1. <c>"True"</c> means <em>&#8220;the word True&#8221;</em>.</p>
+        <p>To check if a number is even, you can divide it by 2 and look at the remainder. (Remember
+            that <c>x % 2</c> says &#8220;divide x by 2 and get the remainder&#8221;.) If the remainder is 1, the number
+            is odd. If the remainder is 0, it is even.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_exercises2_editor" interactive="activecode" language="python">
+        <input>
+def isEven(number):
+    # Your code here
+
+# main part of program
+print( isEven(3) )
+print( isEven(9) )
+print( isEven(11) )
+print( isEven(131) )
+print( isEven(12) )
+print( isEven(8) )
+print( isEven(126) )
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(isEven(31), False, "Testing a mystery odd number.")
+        self.assertEqual(isEven(6), True, "Testing a mystery even number.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspdecisionsintro_exercises3">
+    <statement>
+        <p>Write code to complete the <c>calculatePay</c> function. It takes in a number of hours
+            worked and an hourly pay. If the hours worked is less than 40, it should just return
+            the hours times the hourly pay. If more than 40 hours were worked, the person should
+            earn normal pay for 40 hours and 1.5 times the normal pay for the hours over 40.
+            So if someone worked 50 hours, at $18 per hour they would recieve
+            <m>40 \cdot 18 + ((50 - 40) \cdot 18) \cdot 1.5</m></p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_exercises3_editor" interactive="activecode" language="python">
+        <input>
+def calculatePay(hours, hourlyPay):
+    # Your code here
+
+# main part of program
+print( calculatePay(30, 15) )
+print( calculatePay(40, 12) )
+print( calculatePay(50, 18) )
+print( calculatePay(60, 20) )
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(calculatePay(30, 15), 450.0, "Testing calculatePay(30, 15).")
+        self.assertEqual(calculatePay(40, 12), 480.0, "Testing calculatePay(40, 12).")
+        self.assertEqual(calculatePay(50, 18), 990.0, "Testing calculatePay(50, 18).")
+        self.assertEqual(calculatePay(60, 20), 1400.0, "Testing calculatePay(60, 20).")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspdecisionsintro_exercises4">
+    <statement>
+        <p>The number of credits someone has determines what class level they are at a University.
+            A Senior has taken 135 or more credits. A Junior hasn&#8217;t taken that many, but has taken
+            at least 90 credits. A Sophomore has taken at least 45. A First Year is anyone who has
+            taken 45 or less.</p>
+        <p>Write code to complete the <c>getClass</c> function. Your code should use <c>credits</c> and
+            the above logic to change <c>classLevel</c> to the appropriate value: either <c>"Senior"</c>,
+            <c>"Junior"</c>, <c>"Sophomore"</c>, or <c>"First Year"</c>.</p>
+        <p>Make sure to change the variable, not just print out the answer!</p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_exercises4_editor" interactive="activecode" language="python">
+        <input>
+def getClass(credits):
+    classLevel = "Unknown"
+    # Your code here
+    return classLevel
+
+# main part of program
+print( getClass(150) )
+print( getClass(135) )
+print( getClass(120) )
+print( getClass(90) )
+print( getClass(85) )
+print( getClass(25) )
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(getClass(150), "Senior", "Testing getClass(150).")
+        self.assertEqual(getClass(135), "Senior", "Testing getClass(135).")
+        self.assertEqual(getClass(120), "Junior", "Testing getClass(120).")
+        self.assertEqual(getClass(90), "Junior", "Testing getClass(90).")
+        self.assertEqual(getClass(85), "Sophomore", "Testing getClass(85).")
+        self.assertEqual(getClass(25), "First Year", "Testing getClass(25).")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

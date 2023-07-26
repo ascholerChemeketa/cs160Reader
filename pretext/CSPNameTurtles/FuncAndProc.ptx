@@ -1,0 +1,159 @@
+<section xml:id="csp-name-turtles_procedures-and-functions">
+        <title>Procedures and Functions</title>
+        <p><term>Functions</term> are code recipes that do some work and return a value. We have seen string
+            <term>functions</term> like <c>lower()</c> which returns a new string with all lowercase
+            characters. <term>Functions</term> return a value.  The <c>Screen()</c> and <c>Turtle()</c> in the code below
+            both create objects and return them, so they are functions.</p>
+        <p><term>Procedures</term> are similar to functions in that they do some work. However, unlike functions,
+            they do not return a value when they are done. The turtle behaviors <c>forward(75)</c> and
+            <c>left(90)</c> below are both procedures since they do an action, but don&#8217;t return any kind
+            of answer when they are done.</p>
+        <p>When we execute a <term>function</term>, also known as <term>calling</term> the function, we have to make
+            sure to do something with the result. As we discussed in a previous chapter, you can
+            picture the function call as turning into the returned value. In the line of code below,
+            the <c>Turtle()</c> command turns into a new turtle object for us to use in the rest of the
+            program. We need to give that turtle a name by storing it into a variable - in this case
+            that variable is <c>alex</c>:</p>
+        <program language="python"><input>
+alex = Turtle()
+</input></program>
+        <p>However, when we execute a <term>procedure</term>, there is no value that is returned. So the
+            procedure call does not turn into anything. There is nothing to store. It would not make
+            sense to write:</p>
+        <program language="python"><input>
+newDirection = alex.left(90)  # NO NO NO!
+</input></program>
+        <p><c>alex.left(90)</c> just changes the direction of the turtle. It does not give us a result;
+            it does not turn into anything. Thus, when it is done executing, we essentially would
+            have this:</p>
+        <program language="python"><input>
+newDirection =                # Done turning left, there is nothing left!!!
+</input></program>
+        <note>
+            <p>Some programmers don&#8217;t make a distinction between procedures and functions and will call
+                both of these functions.  In this book we are using <term>function</term> for named code that
+                returns a value and <term>procedure</term> for named code that doesn&#8217;t return a value.</p>
+            <p>It is a difference worth paying attention to because of the difference in how we use them -
+                whether we need to worry about doing something with the returned value or not.</p>
+        </note>
+
+        <exercise label="cspnameturtles_funcandproc1">
+            <statement>
+    <p>What letter (like A, B, C, D, etc) will the program below draw in block style when you click
+on the Run button? <var/>  </p></statement><setup><var><condition string="^\s*^c$|^C$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try to follow the directions as if you are the turtle</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
+        <input>
+from turtle import *    # use the turtle library
+space = Screen()        # create a turtle space
+alex = Turtle()         # create a turtle named alex
+alex.left(180)          # turn alex by 180 degrees
+alex.forward(75)        # move forward by 75 units
+alex.left(90)           # turn left 90 degrees
+alex.forward(100)       # more forward by 100 units
+alex.left(90)           # turn left 90 degrees
+alex.forward(75)        # move forward by 75 units
+        </input>
+    </program>
+        <p><term>Check Your Understanding</term></p>
+
+    <exercise label="cspnameturtles_funcandproc3">
+        <statement>
+
+        <p>Is <c>right(75)</c> a function or procedure?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>function</p>
+                </statement>
+                <feedback>
+                    <p>Does it return a value?</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>procedure</p>
+                </statement>
+                <feedback>
+                    <p>The right procedure will cause the turtle to turn right by the specified number of degrees and doesn't return any value so it is a procedure.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p><term>Mixed up programs</term></p>
+<exercise label="cspnameturtles_funcandproc4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses a turtle to draw a capital T as shown below but the lines are mixed
+            up.  The program should do all necessary set-up: import the turtle module, get the space to
+            draw on, and create the turtle.  After that the turtle should draw the lines in the numbered
+            order as shown in the picture on the left. Drag the needed blocks of statements from the left
+            column to the right column and put them in the right order.  Then click on <em>Check</em> to see if
+            you are right.</p>
+        <p><term>You will not use all the blocks.</term></p>
+        <image source="CSPNameTurtles/Figures/TurtleT1.png" width="200px%"/>
+</statement>
+<blocks><block order="1">
+<cline>from turtle import *</cline>
+</block><block order="7">
+<cline>space = Screen()</cline>
+<cline>jamal = Turtle()</cline>
+</block><block order="10">
+<cline>jamal.left(90)</cline>
+</block><block order="11" correct="no">
+<cline>jamal.Left(90) </cline>
+</block><block order="2">
+<cline>jamal.forward(150)</cline>
+</block><block order="4" correct="no">
+<cline>jamal.Forward(150) </cline>
+</block><block order="8">
+<cline>jamal.left(90)</cline>
+<cline>jamal.forward(50)</cline>
+</block><block order="3">
+<cline>jamal.right(180)</cline>
+</block><block order="6" correct="no">
+<cline>jamal.turn(180) </cline>
+</block><block order="5">
+<cline>jamal.forward(100)</cline>
+</block><block order="9" correct="no">
+<cline>jamal.forward(100 </cline>
+</block></blocks></exercise><exercise label="cspnameturtles_funcandproc5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses a turtle to draw a capital A as shown below, but the lines are mixed
+            up.  The program should do all necessary set-up: import the turtle module, get the space to draw
+            on, and create the turtle.  After that the turtle should draw the lines in the numbered order
+            as shown in the picture on the left. Drag the needed blocks of statements from the left column
+            to the right column and put them in the right order.  Then click on <em>Check</em> to see if you are right.</p>
+        <p><term>You will not use all the blocks.</term></p>
+        <image source="CSPNameTurtles/Figures/turtleA2.png" width="200px%"/>
+</statement>
+<blocks><block order="8">
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+</block><block order="9">
+<cline>jamal = Turtle()</cline>
+</block><block order="11" correct="no">
+<cline>jamal = Turtle </cline>
+</block><block order="1">
+<cline>jamal.left(70)</cline>
+</block><block order="10" correct="no">
+<cline>jamal.left(90) </cline>
+</block><block order="4">
+<cline>jamal.forward(100)</cline>
+<cline>jamal.right(135)</cline>
+</block><block order="3">
+<cline>jamal.forward(100)</cline>
+</block><block order="5" correct="no">
+<cline>jamal.forward(100 </cline>
+</block><block order="2">
+<cline>jamal.right(180)</cline>
+<cline>jamal.forward(50)</cline>
+</block><block order="7" correct="no">
+<cline>jamal.right(180)</cline>
+<cline>jamal.Forward(50) </cline>
+</block><block order="6">
+<cline>jamal.left(65)</cline>
+<cline>jamal.forward(45)</cline>
+</block></blocks></exercise>    </section>
+

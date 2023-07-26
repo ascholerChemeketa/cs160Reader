@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>.. Copyright (C)  Google, Runestone Interactive LLC</title>
+        <xi:include href='./introduction.ptx' />
+        <xi:include href='./data.ptx' />
+        <xi:include href='./selecting.ptx' />
+        <xi:include href='./filtering.ptx' />
+        <xi:include href='./like.ptx' />
+        <xi:include href='./sorting.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./exercises.ptx' />
+    </chapter>

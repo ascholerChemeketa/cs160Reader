@@ -1,0 +1,49 @@
+<section xml:id="algorithms_estimating-with-big-o">
+        <title>Estimating With Big-O</title>
+        <p>We can use Big-O categories to do an estimation of how long a problem will take to solve based on a
+            smaller version of the problem. We simply need to set up a proportion like the one below and solve it:</p>
+        <p classes="center"><m>\frac{\textrm{work for job 1}}{\textrm{work for job 2}} = \frac{\textrm{time for job 1}}{\textrm{time for job 2}}</m></p>
+        <p>The key is to remember that the work does not necessarily equal the size of the problem. Instead, we have to use the size of the problem and the Big-O of the algorithm we are applying to calculate the approximate amount of work.</p>
+        <p>For example, say we have a list of 1000 things&#8230;</p>
+        <p><ul>
+            <li>
+                <p>If we want to do a Binary Search, the Big-O is <m>O(log_2(n))</m>. That means the estimated work would be <m>log_2(1000)</m> or ~9.9657 units of work.</p>
+            </li>
+            <li>
+                <p>If we want to do a Linear Search, the Big-O is <m>O(n)</m>. That means the estimated work would just be 1,000 units of work.</p>
+            </li>
+            <li>
+                <p>If we want to do a Selection Sort, the Big-O is <m>O(n^2)</m>. That means the estimated work would be <m>{1000}^2</m> or 1,000,000 units of work.</p>
+            </li>
+        </ul></p>
+        <note>
+            <p>You can use <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha website</url> to calculate log base 2 by typing something like &#8220;log2(1024)&#8221;. Try it below.</p>
+            <raw format="html" xml:space="preserve">&lt;div style="text-align: center;"&gt;&lt;form action="https://www.wolframalpha.com/input/"&gt;&lt;input type="text" id="input" style="width:100%" name="i"&gt;&lt;/input&gt;&lt;/form&gt;&lt;/div&gt;</raw>
+        </note>
+        <raw format="html" xml:space="preserve">            &lt;h4 &gt;
+               Sample Problem 1
+            &lt;/h4&gt;
+            </raw>
+        <p>I have timed selection sort on 10,000 items and it takes 0.243 seconds. I want to estimate the time it will take to sort 50,000 items. Because selection sort is an <m>O(n^2)</m> algorithm, I know I need to square the problem sizes to estimate the amount of work required for each of the two jobs. So I can set up the proportion like this:</p>
+        <p classes="center"><m>\frac{ 10000^2 }{ 50000^2 } = \frac{0.243\textrm{ seconds}}{\textrm{time for job 2}}</m></p>
+        <p>So&#8230;</p>
+        <p classes="center"><m>\frac{100000000}{2500000000} = \frac{0.243\textrm{ seconds}}{\textrm{time for job 2}}</m></p>
+        <p>Cross multiplying gives:</p>
+        <p classes="center"><m>100000000(\textrm{time for job 2}) = 0.243\textrm{ seconds} \cdot {2500000000}</m></p>
+        <p>Solving for <term>time for job 2</term> gives:</p>
+        <p classes="center"><m>\textrm{time for job 2} = 6.075\textrm{ seconds}</m></p>
+        <raw format="html" xml:space="preserve">            &lt;h4 class="underlined"&gt;
+               Sample Problem 2
+            &lt;/h4&gt;
+            </raw>
+        <p>I have timed a linear search on 10,000,000 items and it takes 8.12 seconds (call this job 1). I want to estimate the time it will take to use binary search instead (job 2). The problem sizes are the same for both jobs: 10,000,000 items. However, the algorithms will require different amounts of work. Linear search is a <m>O(n)</m> algorithm, so the work for job 1 will be 10,000,000. For job 2, we are using a <m>O(log_2(n))</m> algorithm so the work will be <m>log_2(10000000)</m></p>
+        <p classes="center"><m>\frac{10000000}{log_2(10000000)} = \frac{8.12\textrm{ seconds}}{\textrm{time for job 2}}</m></p>
+        <p>So&#8230;</p>
+        <p classes="center"><m>\frac{10000000}{23.25} = \frac{8.12\textrm{ seconds}}{\textrm{time for job 2}}</m></p>
+        <p>Cross multiplying gives:</p>
+        <p classes="center"><m>10000000(\textrm{time for job 2}) = 8.12\textrm{ seconds} \cdot 23.25</m></p>
+        <p>Solving for <term>time for job 2</term> gives:</p>
+        <p classes="center"><m>\textrm{time for job 2} = 0.000019\textrm{ seconds}</m></p>
+        <p>Significantly faster!</p>
+    </section>
+

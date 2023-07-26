@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Working with Lists</title>
+        <xi:include href='./workColls.ptx' />
+        <xi:include href='./list.ptx' />
+        <xi:include href='./listIn.ptx' />
+        <xi:include href='./listIndexes.ptx' />
+        <xi:include href='./addRemove.ptx' />
+        <xi:include href='./listAccumulation.ptx' />
+        <xi:include href='./listMax.ptx' />
+        <xi:include href='./rainfall.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

@@ -1,0 +1,43 @@
+<section xml:id="history-of-computers_the-third-generation">
+  <title>The Third Generation</title>
+  <sidebar>
+    <title>Integrated Circuit</title>
+    <figure align="" xml:id="the-third-generatio-img1">
+      <caption>Kimmo Palosaari, Public domain, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/Three_IC_circuit_chips.JPG" width="50%"
+        alt="Integrated Circuit" />
+    </figure>
+    <p>Integrated circuits combine multiple transistors into one compact package.</p>
+  </sidebar>
+  <p>Jack Kilby of Texas Instruments invented the <term>integrated circuit</term> in 1958. Integrated circuits (ICs)
+    combine many transistors into a single package; compared to individual transistors, they consume less power and can
+    be packed in much tighter. Early ICs consisted of only a handful of transistors, but now days integrated circuits
+    can be made with billions of transistors in the space of a fingernail.</p>
+
+
+  <p xml:id="the-third-generation_index-1">The ability to pack more computational power into less space heralded a new
+    generation of computers. Computers of the <term>Third Generation</term>, built with integrated circuits, were even
+    smaller more powerful and cheaper than the Second Generation. Instead of building all the logic for a computer in
+    terms of individual transistors, integrated circuits allowed designers to work with more abstract logical building
+    blocks. A new class of computer, the minicomputer, was created. Though still large by today&#8217;s standards,
+    minicomputers were significantly less expensive than the large mainframe computers previously available and brought
+    computers into even more businesses.</p>
+  <p>This generation also saw the introduction of many features we now take for granted. Keyboards and displays were
+    developed during this period to facilitate real-time interaction with computers - prior machines had to be fed a job
+    and left to run it with little in the way of feedback provided until the job was complete. <xref
+      ref="../OperatingSystems/OperatingSystems#operatingsystems" /> were developed that allowed multiple programs and
+    users to interact with the machine at once.</p>
+  <figure align="" xml:id="the-third-generatio-img2">
+    <caption>Doug Letterman, CC BY 2.0, via Wikimedia Commons</caption>
+    <image source="HistoryOfComputers/Images/PDP-8.jpg" width="50%"
+      alt="PDP-8" />
+    <legend>
+      <p>The PDP machines of the third generation were enormously influential - much early computer science was done on
+        these machines</p>
+    </legend>
+  </figure>
+  <remark> Materials on this page adapted with permission from <url
+      href="http://en.wikipedia.org/">Wikipedia</url> (<url
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
+</section>
+

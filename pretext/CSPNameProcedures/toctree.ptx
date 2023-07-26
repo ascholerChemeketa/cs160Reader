@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Names for Procedures</title>
+        <xi:include href='./nameFandP.ptx' />
+        <xi:include href='./definingWhy.ptx' />
+        <xi:include href='./definingHow.ptx' />
+        <xi:include href='./indentation.ptx' />
+        <xi:include href='./parameters.ptx' />
+        <xi:include href='./multipleParameters.ptx' />
+        <xi:include href='./practice.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

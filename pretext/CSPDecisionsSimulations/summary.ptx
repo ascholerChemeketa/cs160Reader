@@ -1,0 +1,23 @@
+<section xml:id="csp-decisions-simulations_chapter-summary">
+        <title>Chapter Summary</title>
+        <p>This chapter included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>simulation</term> - The use of a computer to model or recreate some real life situation.
+                    An important technique for using computers to solve scientific problems as well as
+                    to train or entertain users.</p>
+            </li>
+        </ul></p>
+        <subsection xml:id="csp-decisions-simulations_summary-of-python-keywords-and-functions">
+            <title>Summary of Python Keywords and Functions</title>
+            <p><ul>
+                <li>
+                    <p><term>random</term> - The random library provides tools for generating random values.
+                        <c>randrange(start, end)</c> is the function it provides to pick a random integer.</p>
+                </li>
+            </ul></p>
+        </subsection>
+    </section>
+

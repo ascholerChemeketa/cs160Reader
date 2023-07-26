@@ -1,0 +1,147 @@
+<section xml:id="impacts-of-computing_analyzing-impacts">
+        <title>Analyzing Impacts</title>
+        <p>In this class, you will be asked on several assignments to find one or
+            more articles about some aspect of computing and use them to describe
+            it as well as its positive and negative impacts.  You will do this by
+            answering a series of four questions. They are listed below as questions
+            A&#8211;D.  Below each question is a series of prompts to consider. You do
+            not necessarily need to address each prompt&#8212;they are simply guides of
+            things you should consider while answering that question.  You should
+            generally be able to answer each question in a few sentences.</p>
+        <subsection xml:id="impacts-of-computing_choosing-a-technology">
+            <title>Choosing a Technology</title>
+            <p>You will be given a list of general themes to explore, like &#8220;machine
+                learning&#8221; or &#8220;software bugs&#8221;.  However, those themes are too
+                broad to analyze in this format&#8212;you are expected to choose a single,
+                concrete algorithm or technology, such as &#8220;Microsoft&#8217;s chatbot that
+                learned to be racist&#8221; or &#8220;the Ariane 5 rocket that exploded&#8221;.</p>
+            <p>As part of choosing a technology, find one or more sources that tell you
+                enough information about it to answer questions A&#8211;D. Include a list
+                of your sources (with links when possible) along with your answers.</p>
+        </subsection>
+        <subsection xml:id="impacts-of-computing_describing-the-technology">
+            <title>Describing the Technology</title>
+            <p><ol label="A">
+                <li>
+                    <dl>
+                        <li>
+                            <title>According to your sources, what is the purpose/use of the technology?</title>
+                            
+                                <p><ul>
+                                    <li>
+                                        <p>What problems was it designed to solve?</p>
+                                    </li>
+                                    <li>
+                                        <p>In what contexts is it or was it actually used?</p>
+                                    </li>
+                                    <li>
+                                        <p>Even if your sources focus on an error or misuse of technology,
+                                            remember that all technology exists because someone thought it would
+                                            be a good idea to make it. Don&#8217;t try to describe the &#8220;intent&#8221; of a bug
+                                            or get into the intent behind misuse; describe the original intent of
+                                            the technology itself.</p>
+                                    </li>
+                                </ul></p>
+                            
+                        </li>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <li>
+                            <title>According to your sources, how does the technology use computation?</title>
+                            
+                                <p><ul>
+                                    <li>
+                                        <p>All computation makes use of data. What data is involved?</p>
+                                    </li>
+                                    <li>
+                                        <p>How does the technology process the data? What are the inputs and
+                                            outputs? What happens in between? (Don&#8217;t worry about trying to describe
+                                            the actual low-level steps of the algorithm involved, just the high-level
+                                            process.)</p>
+                                    </li>
+                                    <li>
+                                        <p>If you are going to describe a bug or unintended problem with a
+                                            technology, be sure to describe how its input, output, or computation
+                                            are affected.</p>
+                                    </li>
+                                    <li>
+                                        <p>If you cannot get specific about input, output, or computation, you
+                                            might not have chosen a concrete enough topic, or your sources might
+                                            be inadequate.</p>
+                                    </li>
+                                </ul></p>
+                            
+                        </li>
+                    </dl>
+                </li>
+            </ol></p>
+        </subsection>
+        <subsection xml:id="impacts-of-computing_describing-the-impacts">
+            <title>Describing the Impacts</title>
+            <p><ol label="A">
+                <li>
+                    <dl>
+                        <li>
+                            <title>How is this use of computation beneficial and who benefits?</title>
+                            
+                                <p><ul>
+                                    <li>
+                                        <p>How do users of the technology benefit from it?</p>
+                                    </li>
+                                    <li>
+                                        <p>How does society as a whole benefit from the existence of the technology?</p>
+                                    </li>
+                                    <li>
+                                        <p>If you are describing a bug that has no benefit, focus on the benefit
+                                            that a working system should have provided.</p>
+                                    </li>
+                                    <li>
+                                        <p>Even when technology is causing unacceptable harm, &#8220;nobody benefits&#8221; is
+                                            not an adequate analysis. Think creatively about who wants the
+                                            technology, even if you don&#8217;t think they should.</p>
+                                    </li>
+                                </ul></p>
+                            
+                        </li>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <li>
+                            <title>How is this use of computation harmful and who is harmed?</title>
+                            
+                                <p><ul>
+                                    <li>
+                                        <p>What harm is there to the user?</p>
+                                    </li>
+                                    <li>
+                                        <p>What harm is there to people targeted by the technology?</p>
+                                    </li>
+                                    <li>
+                                        <p>What harm is there to people excluded from using the technology?</p>
+                                    </li>
+                                    <li>
+                                        <p>What harm is there to society?</p>
+                                    </li>
+                                    <li>
+                                        <p>If you are describing a bug, unintended harmful side effect, or
+                                            intentional misuse of technology, this is where to get into the
+                                            nature and extent of the harm.</p>
+                                    </li>
+                                    <li>
+                                        <p>Even for a technology you want everybody to accept, &#8220;nobody is harmed&#8221; is
+                                            not an adequate analysis. Think creatively about consequences that you
+                                            wouldn&#8217;t otherwise have thought of.</p>
+                                    </li>
+                                </ul></p>
+                            
+                        </li>
+                    </dl>
+                </li>
+            </ol></p>
+            <p>The following pages will show you some example answers that analyze computing impacts.</p>
+        </subsection>
+    </section>
+

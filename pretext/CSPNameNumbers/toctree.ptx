@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Names for Numbers</title>
+        <xi:include href='./assignName.ptx' />
+        <xi:include href='./rulesForNames.ptx' />
+        <xi:include href='./expression.ptx' />
+        <xi:include href='./expressionTable.ptx' />
+        <xi:include href='./orderOfOperations.ptx' />
+        <xi:include href='./driving.ptx' />
+        <xi:include href='./ketchup.ptx' />
+        <xi:include href='./walkAssign.ptx' />
+        <xi:include href='./invoice.ptx' />
+        <xi:include href='./mathLibrary.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./VariablePracticeParsons.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

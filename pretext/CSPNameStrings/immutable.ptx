@@ -1,0 +1,151 @@
+<section xml:id="csp-name-strings_strings-are-immutable">
+        <title>Strings are Immutable</title>
+        
+        
+        <p xml:id="csp-name-strings_index-0">Even though you can manipulate a string to create a new string the original string is
+            <term>immutable</term> which means that they never change.  Notice that after you execute the
+            code below the string stored in the variable <c>sentence</c> hasn&#8217;t changed.</p>
+
+    <program xml:id="cspnamestrings_immutable1" interactive="activecode" language="python">
+        <input>
+sentence = "THIS IS A TEST"
+better = sentence.lower()
+print(better)
+short = sentence[0:4]
+print(short)
+print(sentence)          # Still what it was on line 1
+        </input>
+    </program>
+        <p>While the strings themselves can&#8217;t be changed you can change the value of a variable.
+            This throws away the original string and sets the variable&#8217;s value to the new string.</p>
+
+    <program xml:id="cspnamestrings_immutable2" interactive="activecode" language="python">
+        <input>
+sentence = "THIS IS A TEST"
+print(sentence)
+sentence = "Hi there"
+print(sentence)
+        </input>
+    </program>
+        <p>We can reassign a variable to hold the result of calling a function on a string. On line
+            3 of the example below, we make the new value of <c>sentence</c> be the result of changing
+            the old value of <c>sentance</c> after it was changed to lower case.</p>
+
+    <program xml:id="cspnamestrings_immutable3" interactive="activecode" language="python">
+        <input>
+sentence = "THIS IS A TEST"
+print(sentence)
+sentence = sentence.lower()     # Changes the value of sentence
+print(sentence)
+        </input>
+    </program>
+        <note>
+            <p>We always do all the work on the right side of <c>=</c> and then store the result into
+                the variable listed on the left side.</p>
+        </note>
+
+    <exercise label="cspnamestrings_immutable4">
+        <statement>
+
+        <p>Given the following code segment, what is the value of the string s1 after these are executed?</p>
+        <program language="python"><input>
+s1 = "xy"
+s2 = s1
+s1 = s1 + s2 + "z"
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>xyz</p>
+                </statement>
+                <feedback>
+                    <p>s1 will equal "xy" plus another "xy" then z at the end.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>xyxyz</p>
+                </statement>
+                <feedback>
+                    <p>s1 contains the original value, plus itself, plus "z"</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>xy xy z</p>
+                </statement>
+                <feedback>
+                    <p>No spaces are added during concatenation.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>xy z</p>
+                </statement>
+                <feedback>
+                    <p>No spaces are added during concatenation, and an additional "xy" should be included at the beginning.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>z</p>
+                </statement>
+                <feedback>
+                    <p>s1 was set to "xy" initially, so the final answer will be "xyxyz"</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamestrings_immutable5">
+        <statement>
+
+        <p>What is the value of s1 after the following code executes?</p>
+        <program language="python"><input>
+s1 = "HEY"
+s2 = s1.lower()
+s3 = s2.capitalize()
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Hey</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if we had asked what the value of s3 was. What is the value of s1?</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>hey</p>
+                </statement>
+                <feedback>
+                    <p>This would be true if we asked what the value of s2 was after the code executes.  What is the value of s1?</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>HEY</p>
+                </statement>
+                <feedback>
+                    <p>Strings are immutable, meaning they don't change.  Any function that changes a string returns a new string.  So s1 never changes unless you set it to a different string.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

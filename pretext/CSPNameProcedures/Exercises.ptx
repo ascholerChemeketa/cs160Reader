@@ -1,0 +1,251 @@
+<exercises xml:id="csp-name-procedures_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="cspnameprocedures_exercises1">
+    <statement>
+        <p>There are errors in the indention in the following code.  Fix it to work correctly without errors.</p>
+
+    </statement>
+    <program xml:id="cspnameprocedures_exercises1_editor" interactive="activecode" language="python">
+        <input>
+def square(turtle):
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+
+from turtle import *
+space = Screen()
+malik = Turtle()
+    square(malik)           # draw a square with malik
+====
+
+from unittest.gui import TestCaseGui
+import re
+
+class myTests(TestCaseGui):
+    def countCopies(self, regex):
+        matches = re.findall(regex, self.getEditorText())
+        return len(matches)
+
+    def testOne(self):
+        self.assertEqual(self.countCopies("def square\(\s*turtle\s*\)"), 1, "Testing that you have the procedure")
+        self.assertEqual(self.countCopies("\nsquare\(\s*malik\s*\)"), 1, "Testing that you used the procedure")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnameprocedures_exercises2">
+    <statement>
+        <p>The following code has some syntax errors. There are two errors, but each error is repeated multiple times
+            due to the author copy/pasting lines of code. Fix the errors so that the code runs and draws multiple squares.</p>
+
+    </statement>
+    <program xml:id="cspnameprocedures_exercises2_editor" interactive="activecode" language="python">
+        <input>
+def square(turtle, size):
+    turtle.forward(Size)
+    turtle.right(90)
+    turtle.forward(Size)
+    turtle.right(90)
+    turtle.forward(Size)
+    turtle.right(90)
+    turtle.forward(Size)
+    turtle.right(90)
+
+
+from turtle import *
+space = Screen()
+dave = Turtle()
+square(100)             # draw a square of size 100
+square(75)              # draw a square of size 75
+square(50)              # draw a square of size 50
+square(25)              # draw a square of size 25
+====
+
+from unittest.gui import TestCaseGui
+import re
+
+class myTests(TestCaseGui):
+    def countCopies(self, regex):
+        matches = re.findall(regex, self.getEditorText())
+        return len(matches)
+
+    def testOne(self):
+        self.assertEqual(self.countCopies("square\(\s*dave\s*,"), 4, "Testing that you pass dave to the square function.")
+        self.assertEqual(self.countCopies("forward\s*\(\s*size\s*\)"), 4, "Testing that you fix size/Size issues.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnameprocedures_exercises3">
+    <statement>
+        <p>Define a function <c>hexagon</c> that has a turtle&#8217;s name as its parameter.
+            Your procedure should draw a hexagon (6 sides) where each side has a length of 50.
+            The turtle should end up in its original position and facing.
+            Remember the turns required (exterior angles) for a regular shape are <m>360 / numSides</m>.</p>
+        <p>While you are developing your procedure, we will call the <c>hexagon</c> procedure just once.
+            When you are done, uncomment the code at the bottom of the program to draw 5 more hexagons.</p>
+        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+
+    </statement>
+    <program xml:id="cspnameprocedures_exercises3_editor" interactive="activecode" language="python">
+        <input>
+# define hexagon here
+
+from turtle import *
+space = Screen()
+brittany = Turtle()
+brittany.speed(10)
+
+#Draw one hexagon
+hexagon(brittany)
+
+##For fun once hexagon is working - draw 5 more hexagons
+#for i in range(5):
+#    brittany.right(60)
+#    hexagon(brittany)
+====
+
+from unittest.gui import TestCaseGui
+import re
+
+class myTests(TestCaseGui):
+    def countCopies(self, regex):
+        matches = re.findall(regex, self.getEditorText())
+        return len(matches)
+
+    def testOne(self):
+        self.assertEqual(self.countCopies("def \w+\s*\(\w+\)"), 1, "Testing that you defined a procedure with one parameter.")
+        self.assertGreaterEqual(self.countCopies("\s{4}\w+\.(right|left)\(\d*\)"), 6, "Testing that used enough turns.")
+        self.assertGreaterEqual(self.countCopies("\s{4}\w+\.(right|left)\(60\)"), 6, "Testing that each turn was the right amount.")
+        self.assertEqual(self.countCopies("\s{4}\w+\.(backward|forward)\(\d*\)"), 6, "Testing that you moved enough times.")
+        self.assertEqual(self.countCopies("\s{4}\w+\.(backward|forward)\(50\)"), 6, "Testing that each move was the right length.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnameprocedures_exercises4">
+    <statement>
+        <p>Complete the body of the function <c>colorRectangle(turtleName, width, colorValue)</c>.</p>
+        <p>It should draw a rectangle that has a width specified by the parameter <c>width</c> and a height of 100.
+            The turtle should be told to draw with a <c>color</c> specified by the parameter <c>colorValue</c>.
+            The turtle should end up in its original position and facing.</p>
+        <p>Make sure to do <c>pendown</c> and <c>color</c> at the beginning of the procedure and then
+            do <c>penup</c> at the end of the procedure.</p>
+        <p>There is code in the main part of the program to draw two different color rectangles. Once you
+            get your procedure working, you can comment it out and uncomment the last 4 lines of the program
+            to make a cool pattern.</p>
+        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+
+    </statement>
+    <program xml:id="cspnameprocedures_exercises4_editor" interactive="activecode" language="python">
+        <input>
+def colorRectangle(turtleName, width, colorValue):
+    # height will always be 100
+    # your code here
+
+
+from turtle import *
+space = Screen()
+stu = Turtle()
+stu.speed(0)
+
+# test - comment these 3 lines out when done testing
+colorRectangle(stu, 50, "light blue")
+stu.goto(-100, 0)
+colorRectangle(stu, 50, "red")
+
+# fun design - uncomment these lines when done testing
+#for i in range(127, 0, -1):
+#    hexValue = format(i * 2, '02x')            # change i * 2 into a hexadecimal number
+#    colorString = "#" + "00" + (2 * hexValue)  # make a #XXXXXX formatted hex color using no red and two copies  of i*2
+#    colorRectangle(stu, i, colorString)
+
+====
+
+from unittest.gui import TestCaseGui
+import re
+
+class myTests(TestCaseGui):
+    def countCopies(self, regex):
+        matches = re.findall(regex, self.getEditorText())
+        return len(matches)
+
+    def testOne(self):
+        self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you told turtleName to move forward 100 twice (for the height).")
+        self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*width\s*\)"), 2, "Testing that you turtleName to move forward the right width twice.")
+        self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(\90\)"), 4, "Testing that told turtleName to use four turns.")
+        self.assertEqual(self.countCopies("\s{4}turtleName.color\s*\(\s*colorValue\s*\)"), 1, "Testing that you told turtleName to use color colorValue.")
+        self.assertEqual(self.countCopies("\s{4}turtleName.pendown\("), 1, "Testing that you told turtleName to put down the pen.")
+        self.assertEqual(self.countCopies("\s{4}turtleName.penup\("), 1, "Testing that you told turtleName to pick up the pen.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

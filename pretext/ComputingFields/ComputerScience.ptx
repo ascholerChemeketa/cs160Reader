@@ -1,0 +1,78 @@
+<section xml:id="computing-fields_computer-science">
+  <title>Computer Science</title>
+
+  <p>Despite its name, much of <term>computer science</term> is not focused on the study of computers themselves.
+    Instead, computer scientists are more concerned with understanding what problems can be solved with computation and
+    how we can most efficiently and appropriately solve those problems with <em>algorithms</em>. (An algorithm is simply
+    a step-by-step process for solving a problem.)</p>
+  <p>Computer science tends to have a more theoretical focus than other computing disciplines. There is a core to the
+    discipline that is closely related to ideas in math and logic. But the discipline also applies those theoretical
+    tools to solve specific problems in areas from artificial intelligence, to graphics, to simulations, and many
+    others.</p>
+
+  <subsection xml:id="cs-careers">
+    <title>Typical careers</title>
+    <ol>
+      <li>
+        <p>
+          <url
+            href="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">Software
+            Developer</url>
+        </p>
+      </li>
+      <li>
+        <p>
+          <url
+            href="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm">Computer
+            Research Scientist</url>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="cs-education">
+    <title>Education</title>
+    <ul>
+      <li>
+        <p>Working as a software developer requires a Bachelor&#8217;s degree</p>
+      </li>
+      <li>
+        <p>Working as a research scientist requires a graduate degree (Master&#8217;s or Ph.D.).</p>
+      </li>
+    </ul>
+    <p>The first year of study generally focuses on programming - the essential skill needed to solve problems using a
+      computer. Courses in the following years tend to be more focused on the theory of why software and hardware work
+      and how to build software.</p>
+    <p>During their Jr and Sr years students usually can choose from classes to concentrate in a specific area
+      (graphics, databases, artificial intelligence, computational biology, software development). For students who
+      intend to become software developers, this is an important opportunity to take courses on software engineering and
+      applied programming skills.</p>
+    <p>Computer science students generally need a strong core of mathematics to support the theoretical parts of their
+      CS coursework.</p>
+  </subsection>
+
+  <subsection xml:id="cs-knowledge">
+    <title>Knowledge Domains</title>
+    <p>This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+      required expertise while a 1 represents a minimal amount.</p>
+    <figure xml:id="computer-science-discipline-chart">
+      <caption>Computer science knowledge domains.</caption>
+      <interactive xml:id="interactive-computer-science-discipline-chart" platform="javascript"
+        aspect="3:2"
+        source="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js ComputingFields/code/CSViz.js"
+        preview="ComputingFields/images/discipline-cs.jpg">
+        <slate xml:id="disciplines-cs" surface="canvas" />
+        <instructions>
+          <p>Click a discipline label to enable or disable it in the visualization.</p>
+        </instructions>
+      </interactive>
+    </figure>
+  </subsection>
+
+  <remark> Materials on this page adapted from <url
+    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+
+</section>
+

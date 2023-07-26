@@ -1,0 +1,21 @@
+<section xml:id="csp-designing-procedures_chapter-summary">
+        <title>Chapter Summary</title>
+        <p>This chapter included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>Bottom up implementation</term> - The process of building a program by first building small low-level,
+                    simple procedures and then using those to help build more complex procedures.</p>
+            </li>
+            <li>
+                <p><term>Precondition</term> - Something that the code in a procedure assumes to be true. The caller of a
+                    procedure is responsible for making sure the Precondition is true before calling it.</p>
+            </li>
+            <li>
+                <p><term>Top down design</term> - The process of breaking a complex task into smaller problems that are
+                    easier to solve.</p>
+            </li>
+        </ul></p>
+    </section>
+

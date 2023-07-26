@@ -1,0 +1,61 @@
+<section xml:id="csp-repeat-images_understanding-image-representation">
+        <title>Understanding Image Representation</title>
+        <p>In everyday life, we can often work at multiple levels of abstraction when thinking about a
+            topic or talking about it. We might refer to a particular thing as a <em>&#8220;car&#8221;</em>. That is
+            sufficient to communicate a lot of important information - that it probably has four wheels,
+            that it is used for transportation, etc&#8230; But as we describe a problem we are having
+            with the car, we might need to refer to its parts - say its <em>&#8220;engine&#8221;</em>. A &#8220;car&#8221; is really
+            just a collection of parts that work together. And the &#8220;engine&#8221; itself is an abstraction -
+            the engine is made up of a collection of parts and we could get even more detailed by talking
+            about those parts.</p>
+        <p>In computer science, we often work with similar stacks of abstractions. We build high-level
+            abstractions to more easily describe collections of lower-level data. Images are a great
+            example of this.</p>
+        
+        
+        <p><ol label="1">
+            <li>
+                <p>An <term>image</term> is a picture that we can draw or modify.</p>
+            </li>
+            <li>
+                <dl>
+                    <li>
+                        <title>An image contains a grid of little squares known as <term>pixels</term>, for <em>picture</em> (pix)</title>
+                        
+                            <p><em>elements</em> (els). The pixels are laid out on a grid, from left to right (horizontal or <term>x</term> dimension)
+                                and top to bottom (vertical or <term>y</term> dimension).</p>
+                            <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A grid with horizontal (x) and vertical (y) dimensions</caption><image source="CSPRepeatImages/Figures/grid.png" width="50%" alt="A grid with horizontal (x) and vertical (y) dimensions"/></figure>
+                            <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
+                            <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;</raw>
+                        
+                    </li>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <li>
+                        <title>Each pixel has a <term>color</term> value that is specified as three values: the amount of red</title>
+                        
+                            <p>the amount of blue, and the amount of green. Each of those values is a number between
+                                0 and 255. <xref ref="../DataRepresentation/HexColors#hex-colors"/></p>
+                        
+                    </li>
+                </dl>
+            </li>
+            <li>
+                <p>Those color values are each stored as 8 bits (<m>2^8 = 256</m> possible values or 0-255).</p>
+            </li>
+        </ol></p>
+        <p>Depending on what we are doing with the image, we will need to work with different levels of the
+            abstraction. We can draw the image without talking about the grid of pixels. To crop the image,
+            we would need to change the size of its pixel grid, but we would not need to worry about colors.
+            If we want to make the image a little brighter, we will have to talk about the image in terms
+            of the colors of its pixels.</p>
+        
+        
+        <note xml:id="csp-repeat-images_index-1">
+            <p>This way of representing images is known as a <term>bitmap</term>. There are other ways to represent
+                images, but <term>bitmaps</term> are the most common scheme, especially for photographs.</p>
+        </note>
+    </section>
+

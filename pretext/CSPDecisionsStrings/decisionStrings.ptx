@@ -1,0 +1,71 @@
+<section xml:id="csp-decisions-strings_using-decisions-with-strings">
+        <title>Using Decisions with Strings</title>
+        <p>We can use conditional statements in code to produce different strings for different situations
+            and to treat different strings in different ways. As a first example, here is a program that
+            prints a different message depending on how many item(s) a person orders. Try this program
+            a few times and enter different values for the input.</p>
+
+    <program xml:id="cspdecisionsstrings_decisionstrings1" interactive="activecode" language="python">
+        <input>
+numItems = int( input("How many items do you want?") )
+
+if numItems &gt; 1:
+    message = "You ordered " + str(numItems) + " items"
+elif numItems == 1:
+    message = "You ordered 1 item"
+else:
+    message = "That is not a valid number to order!"
+
+print(message)
+        </input>
+    </program>
+        <p>In the program, notice that we have to use the <c>int</c> function to turn the input from a string
+            into an integer. Anytime we use <c>input</c> to get some input from the user, it will be read as
+            a string. If the user types <c>20</c>, that will be stored by Python as the string <c>"20"</c> and not
+            as the numeric value 20. Any time we get input, if we want to work with it as a number and not
+            as a string (a piece of text that may have digits in it) we will need to use this trick.</p>
+        <p>Similarly, when we go to construct the string that is the elif response, we are trying to combine
+            the string <c>"You ordered "</c> with <c>numItems</c> a number. As we have seen before, to make this
+            work, we need to call the <c>str</c> function to make a string out of the number that can be added
+            to the other strings.</p>
+
+    <exercise label="cspdecisionsstrings_decisionstrings2">
+        <statement>
+
+        <p>What will happen if you change the first line to remove the <c>int</c> function by making it
+            <c>numItems = input("How many items do you want?")</c>?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>It runs the same</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>It sometimes produces the wrong answer because it is comparing a string to a number</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>There is an error because we are comparing a string to a number</p>
+                </statement>
+                <feedback>
+                    <p>Correct. You are not allowed to compare a string to a number. Even if the string is something like "2" that looks like a number.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

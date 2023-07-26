@@ -1,0 +1,85 @@
+<section xml:id="csp-name-numbers_how-expressions-are-evaluated">
+        <title>How Expressions are Evaluated</title>
+        <p>The order that expressions are executed is the same as it is in math. You probably learned this
+            ordering as <term>PEMDAS</term> (Parentheses, Exponents, Multiply/Divide, Add/Subtract) and is shown in the table
+            below from highest precedence to lowest. If two symbols have the same precedence they are evaluated from left to right.</p>
+        <table><tabular>
+            
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Operator
+                        </cell>
+                        <cell>
+                            Name
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            -x
+                        </cell>
+                        <cell>
+                            Negation
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            x ** y
+                        </cell>
+                        <cell>
+                            Exponentiation
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            x * y
+                            x / y
+                            x % y
+                        </cell>
+                        <cell>
+                            Multiplication, Division, and Modulo
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            x + y
+                            x - y
+                        </cell>
+                        <cell>
+                            Addition and Subtraction
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+
+        <exercise label="cspnamenumbers_orderofoperations1">
+            <statement>
+    <p>What is printed when you click on the Run button in the code below?
+Try evaluating it by hand before running the program to check yourself. <var/>  </p></statement><setup><var><condition string="^\s*^13$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Did you actually run the program?</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnamenumbers_orderofoperations2" interactive="activecode" language="python">
+        <input>
+result = 4 ** 2 + -1 * 3
+print(result)
+        </input>
+    </program>
+        <p>You can change the default order by adding parentheses around part of an expression. Whatever
+            math is inside the parentheses is done (using the same order of operations) before any operations
+            outside the parentheses are done.</p>
+
+        <exercise label="cspnamenumbers_orderofoperations3">
+            <statement>
+    <p>What is printed when you click on the Run button in the code below?
+Try evaluating it by hand before running the program to check yourself. <var/>  </p></statement><setup><var><condition string="^\s*^-12$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Did you actually run the program</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnamenumbers_orderofoperations4" interactive="activecode" language="python">
+        <input>
+result = 4 ** (2 + -1) * -3
+print(result)
+        </input>
+    </program>
+    </section>
+

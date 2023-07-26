@@ -1,0 +1,51 @@
+<section xml:id="computing-fields_computer-engineering">
+  <title>Computer Engineering</title>
+
+  <p><term>Computer Engineers</term> research, design, develop and test computer chips, circuit boards, computer
+    systems, and related equipment. They need to understand computer programming, as they are the ones who design the
+    hardware that runs programs, but in general, their work is more focused on the hardware itself.</p>
+
+  <subsection xml:id="ce-careers">
+    <title>Typical careers</title>
+    <ol>
+      <li>
+        <p>
+          <url
+            href="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm"
+            visual="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm">Computer
+            engineer</url>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="ce-education">
+    <title>Education</title>
+    <p>To work in this field you need a Bachelor&#8217;s degree in Computer Engineering. At some schools, instead of a
+      separate Computer Engineering degree, students specialize in that field while earning a degree in Electrical
+      Engineering. In addition to a deep knowledge of computer hardware and some programming knowledge, Computer
+      Engineers need to do significant coursework in general engineering principles, physics, and math.</p>
+  </subsection>
+
+  <subsection xml:id="ce-knowledge">
+    <title>Knowledge Domains</title>
+    <p>This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+      required expertise while a 1 represents a minimal amount.</p>
+    <figure xml:id="computer-engineering-discipline-chart">
+      <caption>Computer science knowledge domains.</caption>
+      <interactive xml:id="interactive-computer-engineering-discipline-chart" platform="javascript"
+        aspect="3:2"
+        source="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js ComputingFields/code/CEViz.js"
+        preview="ComputingFields/images/discipline-ce.jpg">
+        <slate xml:id="disciplines-ce" surface="canvas" />
+        <instructions>
+          <p>Click a discipline label to enable or disable it in the visualization.</p>
+        </instructions>
+      </interactive>
+    </figure>
+  </subsection>
+
+  <remark> Materials on this page adapted from <url
+    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+</section>
+

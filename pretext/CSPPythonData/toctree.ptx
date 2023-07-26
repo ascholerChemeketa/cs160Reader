@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Working with Data in Python</title>
+        <xi:include href='./pythonData.ptx' />
+        <xi:include href='./pollData.ptx' />
+        <xi:include href='./readData.ptx' />
+        <xi:include href='./largestPoll.ptx' />
+        <xi:include href='./avgPoll.ptx' />
+        <xi:include href='./datastates.ptx' />
+        <xi:include href='./findPollState.ptx' />
+        <xi:include href='./compareStates.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

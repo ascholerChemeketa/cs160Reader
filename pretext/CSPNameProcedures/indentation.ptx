@@ -1,0 +1,152 @@
+<section xml:id="csp-name-procedures_order-and-indentation">
+        <title>Order and Indentation</title>
+        <p>A function or procedure must be defined before you call it. So, like on the previous page, we will
+            typically first define our procedures, then write the main part of our program. Remember that a
+            function definition tells Python <term>how</term> to do a job. It won&#8217;t actually do the job until it is
+            told to do the job with a procedure call.</p>
+        <p>Try running the program below.</p>
+
+    <program xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
+        <input>
+# main part of our program
+from turtle import *
+space = Screen()
+hector = Turtle()
+hector.forward(10)
+hop(hector)
+hector.forward(10)
+
+# define HOW to hop
+def hop(turtleName):
+    turtleName.penup()
+    turtleName.forward(10)
+    turtleName.pendown()
+        </input>
+    </program>
+        <p>You will get an error because <c>hop</c> is undefined when we reach it on line 6. Python has not
+            been told yet how to hop. Fix the program by moving the definition code (including the body)
+            up above the main part of the program.</p>
+        <subsection xml:id="csp-name-procedures_indentation">
+            <title>Indentation</title>
+            <p>Indentation shows Python (and humans) what code is contained inside other code. The instructions
+                that make up the body of a procedure <term>must</term> all be indented. Then, when we are done providing the
+                body, we stop indenting:</p>
+
+    <program xml:id="cspnameprocedures_indentation2" interactive="activecode" language="python">
+        <input>
+def square(turtleName):
+    turtleName.forward(100)         # These are all indented to show they are inside square
+    turtleName.right(90)
+    turtleName.forward(100)
+    turtleName.right(90)
+    turtleName.forward(100)
+    turtleName.right(90)
+    turtleName.forward(100)
+    turtleName.right(90)            # This is the last indented line for square
+
+def hop(turtleName):                # This is not indented. The hop definition is not a part of square
+    turtleName.penup()              # Indented - it is a part of hop
+    turtleName.forward(10)
+    turtleName.pendown()            # Last line of hop
+
+# These are NOT indented. They are not part of either procedure. This is the main part of the program.
+from turtle import *
+space = Screen()
+malik = Turtle()
+square(malik)
+hop(malik)
+        </input>
+    </program>
+            <p>When Python reads that program it does something like this:</p>
+            <p><ul>
+                <li>
+                    <p>Ahhh&#8230; a definition for square, it must have some lines inside of its body, look for indented
+                        code. But don&#8217;t run that code yet!</p>
+                </li>
+                <li>
+                    <p>The next 8 lines are indented, they are the body for square.</p>
+                </li>
+                <li>
+                    <p>Oh, another definition. Look for a body for this function. Don&#8217;t do it yet.</p>
+                </li>
+                <li>
+                    <p>The next three lines are indented, they are the body for hop.</p>
+                </li>
+                <li>
+                    <p><c>from turtle import *</c> - not indented run this now</p>
+                </li>
+                <li>
+                    <p>Next two lines - same - not indented run this now</p>
+                </li>
+                <li>
+                    <p><c>square(malik)</c> - not indented - run this now. Now it is time to go do the square. When we
+                        are done with it, come back to this point and continue running.</p>
+                </li>
+                <li>
+                    <p><c>hop(malik)</c> - not indented - run this now. Now it is time to go do the hop. When we
+                        are done with it, come back to this point and continue running.</p>
+                </li>
+            </ul></p>
+        </subsection>
+        <subsection xml:id="csp-name-procedures_indentation-rules">
+            <title>Indentation Rules</title>
+            <p>In Python, indentation is a syntax rule. It is not optional. If you do not indent correctly,
+                Python will not understand your code.</p>
+            <p>When a line of code in this book is indented, we indent it using <term>4 spaces</term>. Python will
+                let you use as many spaces as you want to indent, but once you start a function, you must use
+                the same amount of indentation for each line. You can&#8217;t use 2 spaces on one line, then 3 on
+                the next. It is best to pick one distance and use that for all of your indentation.</p>
+            <hint>
+                <p>Pressing the <term>tab</term> key while on a line will shift it right 4 spaces. Pressing <term>shift-tab</term>
+                    will move the line left 4 spaces. You can also select multiple lines of code and use <term>tab</term>
+                    or <term>shift-tab</term> to move all the lines at once.</p>
+            </hint>
+            <p>See the video below for a hint on how to solve the next mixed up code problem.</p>
+            
+
+    <video xml:id="yt_3oYHEHTt2hM" youtube="3oYHEHTt2hM" width="640"/>
+    <exercise label="cspnameprocedures_indentation3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+            <p>The following code should define a procedure that draws a triangle, but it may be mixed up <em>and may contain extra (unused) code</em>.  Drag the needed code to the right side in the correct order.  <term>Remember that the statements in the procedure must be indented!</term>  To indent a block drag it further right.</p>
+</statement>
+<blocks><block order="3">
+<cline>def triangle(turtle):</cline>
+</block><block order="1">
+<cline>    turtleName.left(60)</cline>
+<cline>    turtleName.forward(100)</cline>
+<cline>    turtleName.right(120)</cline>
+<cline>    turtleName.forward(100)</cline>
+<cline>    turtleName.right(120)</cline>
+<cline>    turtleName.forward(100)</cline>
+<cline>    turtleName.right(120)</cline>
+</block><block order="2">
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+<cline>bianca = Turtle()</cline>
+<cline>triangle(bianca)</cline>
+</block><block order="4" correct="no">
+<cline>    endDef </cline>
+</block></blocks></exercise>            <p>Now fix the indentation in this code sample so it works correctly. Try using <term>tab</term> and
+                <term>shift-tab</term> to move lines right or left. A good trick for fixing a line is to move it
+                all the way left and then move it back to the right if it needs to be indented.</p>
+
+    <program xml:id="cspnameprocedures_indentation4" interactive="activecode" language="python">
+        <input>
+# define HOW to draw a T
+def drawT(turtleName):
+turtleName.left(90)
+    turtleName.forward(100)
+    turtleName.right(90)
+     turtleName.forward(50)
+    turtleName.right(180)
+turtleName.forward(100)
+
+    # make a turtle and do the drawT procedure with it
+    from turtle import *
+space = Screen()
+arnold = Turtle()
+  drawT(arnold)
+        </input>
+    </program>
+        </subsection>
+    </section>
+

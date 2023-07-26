@@ -1,0 +1,208 @@
+<section xml:id="data-representation_binary-conversions-table-method">
+  <title>Binary Conversions - Table Method</title>
+  <p>Almost always, there is more than one possible algorithm to solve a problem; converting numbers from Binary to
+    Decimal and back is no exception. We are going to look at two different approaches: <term>use of a table of powers
+    of 2</term> and <term>repeated multiplication/division by 2</term>. Although the table method shown on this page is
+    the most straightforward method, the division/multiplication method shown on the next page is important to
+    understand because it is easier to express as an algorithm that a computer can execute.</p>
+  <subsection xml:id="data-representation_binary-to-decimal">
+    <title>Binary to Decimal</title>
+    <p>To convert a binary value to a decimal one, start with a table of binary column values. The rightmost digits of
+      the number should be in the &#8220;ones&#8221; column and each additional column to the left should be twice the
+      value of the previous column: &#8230; 64, 32, 16, 8, 4, 2, 1. Write your number in the columns so the last digit
+      is in the &#8220;ones&#8221; column. The decimal value of your number is the sum of each of the columns that has a
+      1 bit in it.</p>
+    <p>For example, I want to convert <m>{11010}_{2}</m> to decimal. I will need at least five columns to hold the five
+      bits. They will be numbered: 1s, 2s, 4s, 8s, 16s. When I write those columns in descending order and write my
+      number it looks like this:</p>
+    <table>
+      <title>"11010" base 2</title>
+      <tabular halign="center">
+
+        <row header="yes" bottom="medium">
+          <cell> 16s </cell>
+          <cell> 8s </cell>
+          <cell> 4s </cell>
+          <cell> 2s </cell>
+          <cell> 1s </cell>
+        </row>
+
+        <row>
+          <cell> 1 </cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+        </row>
+
+      </tabular>
+    </table>
+    <p>That tells me I need to add 16, 8 and 2. So <m>{11010}_{2} = 16 + 8 + 2 = {26}_{10}</m></p>
+  </subsection>
+  <subsection xml:id="data-representation_decimal-to-binary">
+    <title>Decimal to Binary</title>
+    <p>The first way to convert a decimal number to a binary one is with a table like the one below (if needed you can
+      add more columns - each new column to the left should be twice the value of the preceding one). Then, working from
+      left to right, decide if you need that column&#8217;s value to make your number. The value for any column you use
+      should be subtracted from the value you are trying to make.</p>
+    <table>
+
+      <title>"10011011" base 2</title>
+      <tabular halign="center">
+
+        <row header="yes" bottom="medium">
+          <cell> 128s </cell>
+          <cell> 64s </cell>
+          <cell> 32s </cell>
+          <cell> 16s </cell>
+          <cell> 8s </cell>
+          <cell> 4s </cell>
+          <cell> 2s </cell>
+          <cell> 1s </cell>
+        </row>
+
+        <row>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+          <cell>?</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>For example, I want to write 155 as a binary number. Here is what my thought process might look like:</p>
+    <program language="none">
+      <input>
+Do I need 128? Yes, that is less than 155. 
+               155 - 128 = 27: that is what we have left to make
+Do I need 64? No - I only have 27 left
+Do I need 32? No - I only have 27 left
+Do I need 16? Yes, that is less than 27. 
+              27 - 16 = 11: that is now what we have left
+Do I need 8? Yes, that is less than 11.
+             11 - 8 = 3
+Do I need 4? No - I only have 3 left
+Do I need 2? Yes. 
+             3 - 2 = 1 
+Do I need 1? Yes. 
+             1 - 1 = 0 left - we are done!
+</input>
+    </program>
+    <p>If we think of each column we used as representing a 1 and each column we didn&#8217;t as a 0, we get this:</p>
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell> 128s </cell>
+          <cell> 64s </cell>
+          <cell> 32s </cell>
+          <cell> 16s </cell>
+          <cell> 8s </cell>
+          <cell> 4s </cell>
+          <cell> 2s </cell>
+          <cell> 1s </cell>
+        </row>
+        <row>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+          <cell> 1 </cell>
+        </row>
+      </tabular>
+    </table>
+    <p>Or written without a table: <m>{10011011}_{2}</m>.</p>
+    <p>Just like with decimal numbers, leading zeros do not modify the value of a number. So <m>{00000101}_{2}</m> is
+      the same as <m>{101}_{2}</m>.</p>
+    <exercise label="datarepresentation_binaryconversions1">
+      <statement>
+        <p>What decimal value does the binary number 111100 represent? <var />
+        </p>
+      </statement>
+      <setup>
+        <var>
+          <condition number="[60, 60]">
+            <feedback>
+              <p>Correct!</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*[^\d]+\s*$">
+            <feedback>
+              <p>Your answer should be a number</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*.{1}\s*$">
+            <feedback>
+              <p>That is not enough digits</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*.{4}\s*$">
+            <feedback>
+              <p>Hint: With 6 binary digits the largest column you should use is 32</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*.{3,}\s*$">
+            <feedback>
+              <p>Too many digits</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*x\s*$">
+            <feedback>
+              <p>We are looking for a base ten number</p>
+            </feedback>
+          </condition>
+        </var>
+      </setup>
+    </exercise>
+    <exercise label="datarepresentation_binaryconversions2">
+      <statement>
+        <p>How many columns do you need to represent 125?</p>
+      </statement>
+      <choices>
+
+        <choice correct="yes">
+          <statement>
+            <p>7</p>
+          </statement>
+          <feedback>
+            <p />
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>8</p>
+          </statement>
+          <feedback>
+            <p>The 8th column would be 128... we don't need that</p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>32</p>
+          </statement>
+          <feedback>
+            <p>32 bits can represent over 4 billion</p>
+          </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>128</p>
+          </statement>
+          <feedback>
+            <p />
+          </feedback>
+        </choice>
+      </choices>
+
+    </exercise>
+  </subsection>
+</section>
+

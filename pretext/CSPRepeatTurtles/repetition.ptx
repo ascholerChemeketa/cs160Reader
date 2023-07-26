@@ -1,0 +1,168 @@
+<section xml:id="csp-repeat-turtles_repeating-steps-range">
+        <title>Repeating Steps &amp; Range</title>
+        
+        
+        <p xml:id="csp-repeat-turtles_index-0"><em>Learning Objectives:</em></p>
+        <p><ul>
+            <li>
+                <p>Use a <c>for</c> loop to repeat steps with turtles.</p>
+            </li>
+        </ul></p>
+        <p>Often times we have to repeat steps in a process. If you are making a cake the recipe might say add
+            an ingredient and then stir it 50 times or until the batter is smooth. The recipe would not say
+            the word &#8220;stir&#8221; 50 times. It instead would instruct you to &#8220;stir 50 times&#8221; or &#8220;stir until smooth&#8221;.</p>
+        <p>When our programs need to repeat a step or series of steps, we want to use this same trick to make
+            the programs easier to write and read.
+            While writing turtle programs, we have seen many examples of steps repeated. Here is our recipe
+            for a turtle <c>alex</c> to draw a hexagon:</p>
+        <program language="python"><input>
+alex.forward(100)
+alex.right(60)
+alex.forward(100)
+alex.right(60)
+alex.forward(100)
+alex.right(60)
+alex.forward(100)
+alex.right(60)
+alex.forward(100)
+alex.right(60)
+alex.forward(100)
+alex.right(60)
+</input></program>
+        <p>There are six repetitions of the <c>forward</c> and <c>right</c> commands. Although copy/paste can save
+            us from having to type the lines six times, it is still not ideal. Remember that there is a general
+            rule in programming: <term>DRY - don&#8217;t repeat yourself</term>. Repeating ourselves in this case makes for a
+            long chunk of code that is awkward to read - you have to stop and think &#8220;OK, how many times is this
+            repeating&#8230; ah, six&#8230; OK, this must be a hexagon.&#8221;</p>
+        
+        
+        <p xml:id="csp-repeat-turtles_index-1">We would like to rewrite our code to tell alex to repeat the <c>forward</c> and <c>right</c> steps 6
+            times each instead of listing them six times. We can do so with a <c>for</c> <term>loop</term>:</p>
+
+    <program xml:id="csprepeatturtles_repetition1" interactive="activecode" language="python">
+        <input>
+from turtle import *
+space = Screen()
+alex = Turtle()
+for side in range(6):       # repeat the indented lines 6 times
+    alex.forward(100)
+    alex.right(60)
+
+print("Done with program")
+        </input>
+    </program>
+        <p>A <term>loop</term> in a program is anything that causes lines of code to get executed multiple times
+            in a row. A <c>for</c> loop is a specific kind of loop in Python that uses a list of values and
+            a series of steps and repeats all of the steps for each item in the list.</p>
+        <p>In this case, the steps that are repeated are the <c>forward</c> and <c>right</c> commands that
+            are indented after the <c>for</c>. Notice that the <c>print</c>, which is not indented, only happens
+            one time, after we have repeated the <c>forward</c> and <c>right</c> commands.</p>
+        <subsection xml:id="csp-repeat-turtles_range">
+            <title>Range</title>
+            <p>The list of items the <c>for</c> uses to determine how many times to repeat is created by the
+                <c>range</c> function. This is a function built into Python that can be used to generate a list of numbers.
+                This example shows exactly what <c>range(6)</c> produces:</p>
+
+    <program xml:id="csprepeatturtles_repetition2" interactive="activecode" language="python">
+        <input>
+sides = list( range(6) )
+print(sides)
+        </input>
+    </program>
+
+    <exercise label="csprepeatturtles_repetition3">
+        <statement>
+
+            <p>What is the list produced by <c>range(6)</c></p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>The list of numbers 0 to 6</p>
+                </statement>
+                <feedback>
+                    <p>Try running the program...</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>The list of numbers 1 to 6</p>
+                </statement>
+                <feedback>
+                    <p>Try running the program...</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>The list of numbers 1 to 5</p>
+                </statement>
+                <feedback>
+                    <p>Try running the program...</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>The list of numbers 0 to 5</p>
+                </statement>
+                <feedback>
+                    <p>Correct</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+            
+            
+            <p xml:id="csp-repeat-turtles_index-2">For now, we don&#8217;t need to worry about exactly what values <c>range</c> produces. What is
+                important is that <c>range(6)</c> makes a list that has 6 values. When that list is
+                used in a <c>for</c> statement, it will cause the code to repeat 6 times. Each repetition
+                is called an <term>iteration</term> and will repeat all of the code indented past the <c>for</c>.
+                <em>(To **iterate*</em> is to go through items one at a time.)*</p>
+            <p>That just leaves the variable <term>side</term> in the for statement to explain:</p>
+            <program language="python"><input>
+<p>for <c>side</c> in range(6):</p>
+</input></program>
+            <p>It is the name we will use for each item as we iterate through the the values <c>range</c>
+                produces. Right now we don&#8217;t really need to name those values - we don&#8217;t make use of them.
+                But if we wanted to print out each of the values that range produces, we would use <c>side</c>
+                to refer to <term>&#8220;the value for the current iteration&#8221;</term>. The program below does exactly that.
+                In the loop, in addition to doing the turtle commands, it prints out <c>side</c> to tell
+                us when it starts each side of the shape.</p>
+
+    <program xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
+        <input>
+from turtle import *
+space = Screen()
+alex = Turtle()
+for side in range(6):                       # repeat the indented lines 6 times
+    print("side is currently", side)        # print current value of side
+
+    alex.forward(100)
+    alex.right(60)
+
+print("Done with program")
+        </input>
+    </program>
+            
+            
+            <p xml:id="csp-repeat-turtles_index-3">The <term>body</term> of a loop is the part that gets repeated. It is the lines of code after the
+                <c>for</c> that are indented past the <c>for</c> itself. (Like how the body of a procedure is
+                indented after <c>def</c>).</p>
+            <p>Notice that a blank line does not &#8220;end&#8221; the body of the <c>for</c>. Both <c>print("side is currently", side)</c>
+                and the <c>alex.forward</c> and <c>alex.right</c> are part of the body and get repeated. The loop
+                body ends at the first line that is indented to the same level as the <c>for</c>. In this case,
+                the <c>print("Done with program")</c> is indented to the same level as <c>for</c>, so at that
+                point the loop body is done and the line is not part of the loop. That last print will only
+                happen one time.</p>
+            <note>
+                <p>The code that is the body of a loop must be indented one step past the loop. The loop
+                    body ends at the first line that is indented the same (or fewer) spaces.</p>
+            </note>
+        </subsection>
+    </section>
+

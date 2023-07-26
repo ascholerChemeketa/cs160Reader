@@ -1,0 +1,93 @@
+<section xml:id="csp-name-numbers_expressions">
+        <title>Expressions</title>
+        
+        
+        <p xml:id="csp-name-numbers_index-0">The <em>right hand</em> side of the assignment statement doesn&#8217;t have to be a value.  It can be <em>an
+                arithmetic expression</em>, like <c>2 * 2</c>. The expression will be evaluated and the result from the
+            expression will be stored in the variable.</p>
+
+        <exercise label="cspnamenumbers_expression1">
+            <statement>
+    <p>What will be printed when you click on the Run button in the code below? <var/>  </p></statement><setup><var><condition string="^\s*^5$\s*$"><feedback><p>Correct. 2 times 2 plus 1 is 5</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Did you actually run the program?</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnamenumbers_expression2" interactive="activecode" language="python">
+        <input>
+result = 2 * 2 + 1
+print(result)
+        </input>
+    </program>
+        <subsection xml:id="csp-name-numbers_operations">
+            <title>Operations</title>
+            <p>You can use all the standard mathematical operations, you just have to know the right symbols
+                to use: <c>/</c> means divsion; <c>*</c> means times; <c>**</c> means &#8220;to the power of&#8221;.</p>
+
+        <exercise label="cspnamenumbers_expression3">
+            <statement>
+    <p>What will be printed when you click on the Run button in the code below? <var/>  </p></statement><setup><var><condition string="^\s*^0.3333333333333333$\s*$"><feedback><p>Correct!  The computer can only store a certain number of digits for
+a fractional amount that repeats.</p></feedback></condition><condition string="^\s*^0.3{1,15}$\s*$"><feedback><p>Close, but that is not the number of digits you will actually get.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Did you actually run the program?</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnamenumbers_expression4" interactive="activecode" language="python">
+        <input>
+result = 1 / 3
+print(result)
+        </input>
+    </program>
+        </subsection>
+        <subsection xml:id="csp-name-numbers_division-and-integer-division">
+            <title>Division and Integer Division</title>
+            
+            
+            <p xml:id="csp-name-numbers_index-1">This book is using Python 3 which returns a decimal value - 1.66666666666667 - from a calculation like
+                <c>5 / 3</c>.  If we executed <c>5 / 3</c> in many programming languages (or older version so Python)
+                it would result in just 1 because we can only divide 5 by 3 one whole time. This form of
+                division is known as <term>integer division</term> and is what you probably learned in elementary school
+                before you learned long division.</p>
+            <p>There are times when we want to do integer division as part of solving a problem. If I want to figure out how many
+                whole feet are in 37 inches, I would divide 37 by 12. From it, I want an answer of just 3,
+                not 3.083333333333333. To do integer division in Python, we use <c>//</c>. Compare the two results
+                in the code sample below. The first is done using normal (decimal) division. The second is
+                from doing integer division:</p>
+
+    <program xml:id="cspnamenumbers_expression5" interactive="activecode" language="python">
+        <input>
+result1 = 37 / 3
+print(result1)
+result2 = 37 // 3
+print(result2)
+        </input>
+    </program>
+            <note>
+                <p>Integer division always just ignores the remainder - it does not round the answer.
+                    <c>5 // 3</c> is just 1.</p>
+            </note>
+        </subsection>
+        <subsection xml:id="csp-name-numbers_modulo">
+            <title>Modulo</title>
+            
+            
+            <p xml:id="csp-name-numbers_index-2">If you are doing integer division, you may also care about the remainder. When I divide
+                do <c>37/12</c> to figure out the number of feet in 37 inches, I get 3. But maybe I also
+                want to know that there is one inch left over.</p>
+            <p>You may not be familiar with the <term>modulo</term> (remainder) operator <c>%</c>.  It returns the remainder
+                when you divide the first number by the second.  In the case of <c>4 % 2</c>, <c>2</c> goes
+                into <c>4</c> two times with a remainder
+                of <c>0</c>.  The result of <c>5 % 2</c> would be <c>1</c> since <c>2</c> goes into <c>5</c>, two times with a
+                remainder of <c>1</c>.</p>
+            <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Division showing the whole number result and the remainder</caption><image source="CSPNameNumbers/Figures/mod-py.png" width="150px%"/></figure>
+
+        <exercise label="cspnamenumbers_expression6">
+            <statement>
+    <p>What will be printed when you click on the Run button in the code below? <var/>  </p></statement><setup><var><condition string="^\s*^2$\s*$"><feedback><p>Correct!  The 11 is evenly divisible by 3 with a remainder of 2.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Did you actually run the program?</p></feedback></condition></var></setup></exercise>
+    <program xml:id="cspnamenumbers_expression7" interactive="activecode" language="python">
+        <input>
+x = 11 % 3
+print(x)
+        </input>
+    </program>
+            <note>
+                <p>The result of <c>x % y</c> when <c>x</c> is smaller than <c>y</c> is always <c>x</c>.  The value <c>y</c>
+                    can&#8217;t go into <c>x</c> at all, since <c>x</c> is smaller than <c>y</c>, so the result is just <c>x</c>.
+                    So if you see <c>2 % 3</c> the result is <c>2</c>.  Edit the code above to try this for yourself.
+                    Change the code to <c>result = 2 % 3</c> and see what that prints when it is run.</p>
+            </note>
+        </subsection>
+    </section>
+

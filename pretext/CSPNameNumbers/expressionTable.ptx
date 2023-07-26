@@ -1,0 +1,267 @@
+<section xml:id="csp-name-numbers_summary-of-expression-types">
+        <title>Summary of Expression Types</title>
+        <p>Here is a table summarizing the basic arithmetic operations:</p>
+        <table><tabular>
+            
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Expression
+                        </cell>
+                        <cell>
+                            Arithmetic meaning
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            1 + 2
+                        </cell>
+                        <cell>
+                            Addition, the result is 3
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            3 * 4
+                        </cell>
+                        <cell>
+                            Multiplication, the result is 12
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            4 / 3
+                        </cell>
+                        <cell>
+                            Division, the result is 1.333333333333
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            4 // 3
+                        </cell>
+                        <cell>
+                            Integer Division, the result is 1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            16 % 3
+                        </cell>
+                        <cell>
+                            Modulo (remainder), the result is 1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            2 ** 3
+                        </cell>
+                        <cell>
+                            Power, 2 to the 3rd power - result is 8
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            -1
+                        </cell>
+                        <cell>
+                            Negation, the result is -1
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+
+    <exercise label="cspnamenumbers_expressiontable1">
+        <statement>
+
+        <p>What is the result of <c>3 / 4</c>?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    <p>In some languages, this would be correct. But, this book is using Python 3 so you get a decimal result.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    <p>No, try again.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>0.75</p>
+                </statement>
+                <feedback>
+                    <p>Correct.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>0.25</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code></p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamenumbers_expressiontable2">
+        <statement>
+
+        <p>What is the result of <c>8 // 5</c>?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>You will get an integer answer, but that is not it.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    <p>Correct. // does integer division.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>1.6</p>
+                </statement>
+                <feedback>
+                    <p>Remember that // does <em>integer division</em></p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>0.25</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code></p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamenumbers_expressiontable3">
+        <statement>
+
+        <p>What is the result of <c>18 % 5</c>?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was <code>18 % 2</code>, but what is the remainder of 18 divided by 5?</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was <code>18 % 17</code>, since 17 goes into 18 one time and the remainder is 18 - 17 = 1.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>What is the highest multiple of 5 that is less than or equal to 18? The remainder is 18 - that number.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>3</p>
+                </statement>
+                <feedback>
+                    <p>The reminder is 3 since 5 goes into 18 three times (15) and 18 - 15 = 3.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+    <exercise label="cspnamenumbers_expressiontable4">
+        <statement>
+
+        <p>What is the result of <c>2 % 6</c>?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>0</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was <code>6 % 2</code>.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    <p>This would be correct if it was some odd number divided by 2, but it is not.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>6 goes into 2 zero times with 2 left over.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>6</p>
+                </statement>
+                <feedback>
+                    <p>If you have a smaller number divided by a larger number the remainder is always the smaller number.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

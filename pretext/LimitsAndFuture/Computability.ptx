@@ -1,0 +1,101 @@
+<section xml:id="limits-and-future_computability">
+        <title>Computability</title>
+        <p>Before the first modern computer was even built, <term>Alan Turing</term> had proven that there are some problems that are unsolvable with any conceivable mechanical calculation device - these functions are said to be <term>uncomputable</term> as opposed to <term>computable</term> problems that can be solved by an algorithm in some finite number of steps.</p>
+        <note>
+            <p>Chapter 10 of <em>Nine Algorithms that Changed the Future</em> describes the basic idea of the proof.</p>
+        </note>
+        <p>But even in the realm of functions that are theoretically computable, there are problems that are so complex to solve via computation that they are <term>practically uncomputable</term>. We may be able to solve simple versions of the problem, but as the input size grows, the time it takes to find a solution grows so fast that it rapidly becomes unusable.</p>
+        
+        
+        <p xml:id="limits-and-future_index-1">Problems that have this characteristic are described as <term>non-polynomial</term> problems. This is a way of saying that the Big-O function that governs their behavior is something that can not be written as a polynomial (a function where every term consists of a constant power of <term>n</term>). Instead, the Big-O is something like <m>O(2^n)</m> where <term>n</term> is the exponent or <m>O(n! \times)</m> (n! = 1 &#215; 2 &#215; 3 &#215; &#8230; &#215; n). The relative growth of some polynomial functions (<m>n</m> and <m>n^2</m>) and non-polynomial ones (<m>2^n</m> and <m>n!</m>) can be seen below.</p>
+        <table><tabular>
+            
+                
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            <m>n</m>
+                        </cell>
+                        <cell>
+                            <m>n^2</m>
+                        </cell>
+                        <cell>
+                            <m>2^n</m>
+                        </cell>
+                        <cell>
+                            <m>n!</m>
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            1
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                        <cell>
+                            2
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            10
+                        </cell>
+                        <cell>
+                            100
+                        </cell>
+                        <cell>
+                            1,024
+                        </cell>
+                        <cell>
+                            3,628,800
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            100
+                        </cell>
+                        <cell>
+                            10,000
+                        </cell>
+                        <cell>
+                            1.27 x <m>{10}^{30}</m>
+                        </cell>
+                        <cell>
+                            9.33 x <m>{10}^{157}</m>
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+        <p>If we are solving a problem with a list of 100 items, a <m>O(n^2)</m> algorithm like Insertion Sort is doable. ~10,000 units of work will take a fraction of a second for a computer to process. On the other hand, assuming the computer can do 10 billion units of work per second, solving a problem using an algorithm that is <m>O(n!)</m> will take ~4,000,000,000,000 years - you probably will not have the patience to wait around to find out the answer.</p>
+        <p>So what kinds of problems are non-polynomial? Many very practical problems have no known polynomial time algorithm. <term>Prime Factorization</term> is one example - there is no known algorithm for standard computers for taking a large number and finding its prime factors in polynomial time. Much of modern cryptography and web security is based on the fact that this particular problem is so hard to solve. Should a polynomial time algorithm be found, codes that are considered uncrackable would become easy to defeat. This is one of the reasons for interest in quantum computing&#8230; there are quantum prime factorization algorithms that run in polynomial time.</p>
+        <p>Many optimization problems are also non-polynomial. The traveling salesman problem is to find the most efficient route to visit every city on a map. The brute force approach to solving this problem (try every possible route) is <m>O(n!)</m>. The knapsack problem involves selecting the best subset of items from a list to maximize the value of items placed into a backpack with a limited capacity - it too has no polynomial time solution. Both of these problems relate closely to all kinds of optimization problems we would like to use computers to solve.</p>
+        <container classes="inlinegroup">
+            <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image by Jeremy Kubica" refuri="http://computationaltales.blogspot.com/2011/08/traveling-salesmans-problem-part-6-of.html">Image by Jeremy Kubica</reference> <raw format="html" xml:space="preserve">&lt;br /&gt;</raw> <reference name="Creative Commons CC BY SA 3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</reference></caption><image source="LimitsAndFuture/Images/TSP2.jpg" width="50%"/><legend>
+                    <p>Traveling Salesman: Is this the best possible route?</p>
+                </legend></figure>
+            <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image via Wikipedia Commons" refuri="http://en.wikipedia.org/wiki/Knapsack_problem#mediaviewer/File:Knapsack.svg">Image via Wikipedia Commons</reference> <raw format="html" xml:space="preserve">&lt;br /&gt;</raw> <reference name="Creative Commons CC BY SA 3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</reference></caption><image source="LimitsAndFuture/Images/Knapsack.png" width="50%"/><legend>
+                    <p>Knapsack Problem: What collection of items is optimal?</p>
+                </legend></figure>
+        </container>
+        <p><raw format="html" xml:space="preserve">&lt;br /&gt;</raw></p>
+        <sidebar>
+            <title>P = NP?</title>
+            <p>One of the greatest problems in theoretical computer science is to prove or disprove that the class of polynomial problems (P) is distinct from those for which solutions can be checked in polynomial time but finding those solutions is harder (the class of problems called NP).</p>
+            <p>Writers of the Simpsons and Futurama have even <url href="https://www.youtube.com/watch?v=dJUEkjxylBw" visual="https://www.youtube.com/watch?v=dJUEkjxylBw">snuck the debate into their shows</url>.</p>
+        </sidebar>
+        <p>Faced with a problem that is non-polynomial, instead of looking for a perfect answer that will take too long to find, we must instead do things like try to develop algorithms that look for a &#8220;pretty good&#8221; answer in a tractable amount of time or that can efficiently solve some special subset of the hard problems.</p>
+        <p>This video does an <term>amazing</term> job of explaining the relationship between polynomial functions (the class known as P) and those problems that we believe to be fundamentally harder. It goes into more detail than we are worried about learning for this class, so do not worry about absorbing every detail. Instead, focus on the explanations of how polynomial functions are different, why Moore&#8217;s Law can&#8217;t help us with harder problems, and what this all means:</p>
+
+    <video xml:id="YX40hbAHx3s" youtube="YX40hbAHx3s" width="356"/>
+        </section>
+

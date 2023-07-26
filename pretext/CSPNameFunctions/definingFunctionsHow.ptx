@@ -1,0 +1,56 @@
+<section xml:id="csp-name-functions_defining-functions-how">
+        <title>Defining Functions - How</title>
+        
+        
+        <p xml:id="csp-name-functions_index-0">The same syntax we use to name procedures can be used to define new functions. The only difference
+            is that a function will <term>return</term> a value. To return a value from a function use the Python
+            keyword <c>return</c> followed by the value to return. The value can be a literal value like <c>3.14</c>
+            or <c>"Hello there"</c>, but will generally be a variable that we calculated within the function.</p>
+        <p>This is a definition for a function that accepts the lengths of the two legs (shorter sides) of a
+            right triangle as its parameters and calculates the length of the hypotenuse (long side). The final
+            value that it computes - <c>sideC</c> is what gets returned.</p>
+
+    <program xml:id="cspnamefunctions_definingfunctionshow1" interactive="activecode" language="python">
+        <input>
+def hypotenuse_length(sideA, sideB):
+    # sideA and sideB are our inputs
+    aSquared = math.pow(sideA, 2)
+    bSquared = math.pow(sideB, 2)
+    sideC = math.sqrt(aSquared + bSquared)       # this is the final answer
+    return sideC                                 # we return it
+        </input>
+    </program>
+        <p>Of course, running it right now does nothing. Just like a procedure definition, a function definition
+            does not cause anything to happen on its own. It is only the instructions for what to do when
+            someone calls <c>hypotenuse_length</c>. So let&#8217;s add a call to the function. This working program
+            asks for the lengths of two sides from the user and then uses those two values <c>a</c> and <c>b</c> to
+            call <c>hypotenuse_length</c>.</p>
+
+    <program xml:id="cspnamefunctions_definingfunctionshow2" interactive="activecode" language="python">
+        <input>
+def hypotenuse_length(sideA, sideB):
+    aSquared = math.pow(sideA, 2)
+    bSquared = math.pow(sideB, 2)
+    sideC = math.sqrt(aSquared + bSquared)
+    return sideC
+
+# main part of program
+import math
+a = float(input("Enter side a"))
+b = float(input("Enter side b"))
+c = hypotenuse_length(a, b)
+print("The length of side c is", c)
+        </input>
+    </program>
+        <p><term>Check Your Understanding</term></p>
+
+        <exercise label="cspnamefunctions_definingfunctionshow3">
+            <statement>
+    <p>This function converts temperature in degrees F to degrees C. What code goes where the
+______________ is to complete it correctly? <var/>  </p></statement><setup><var><program language="python"><input>
+def convertFtoC(tempF):
+    tempF = tempF - 32
+    tempC = (5 / 9) * tempF
+    ______________
+</input></program><condition string="^\s*^return\s+tempC$\s*$"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise>    </section>
+

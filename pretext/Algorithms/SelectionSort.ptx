@@ -1,0 +1,23 @@
+<section xml:id="algorithms_selection-sort">
+        <title>Selection Sort</title>
+        <p>S<term>election sort</term> works by splitting a list into two portions - a sorted part and an unsorted part. Initially, everything is in the unsorted part, but one card at a time, we select the smallest remaining unsorted item and move it to the beginning of the unsorted portion, thereby making it sorted.</p>
+        <p>Put into an algorithm for a human to sort a hand of playing cards, it might look like this:</p>
+        <program language="none"><input>
+<p>1   Get a hand of unsorted cards
+2   Set a marker for the unsorted section at the front of the hand
+3   Repeat 4-7 until one card remains in the unsorted section
+4       Compare all unsorted cards
+5       Select the smallest unsorted card
+6       Swap this number with the first card in the unsorted section
+7       Advance the marker to the right one card
+8   Stop</p>
+</input></program>
+        <p>To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate step of the algorithm will be highlighted in the bottom left panel of the animation. To divide the sorted and unsorted sections of our hand, we use a black vertical bar. On each loop through steps 4-7, we will keep track of the current cards we are comparing by pointing to them with a pair of human hands. The left hand will point to the smallest card seen far, and the right hand will point to the card currently being considered.</p>
+
+    <video xml:id="TfOBNNNZPbM" youtube="TfOBNNNZPbM" width="560"/>
+            <p><em>Animation used by permission of Virginia Tech</em></p>
+        <raw format="html" xml:space="preserve">
+&lt;div class="attribution"&gt;Materials on this page adapted with permission from from:&lt;br /&gt;
+&lt;a href='http://courses.cs.vt.edu/csonline/'&gt;Online Interactive Modules for Teaching Computer Science&lt;/a&gt; by Osman Balci et al.&lt;/div&gt;</raw>
+    </section>
+

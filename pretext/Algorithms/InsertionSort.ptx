@@ -1,0 +1,22 @@
+<section xml:id="algorithms_insertion-sort">
+        <title>Insertion Sort</title>
+        <p>While <term>Selection sort</term> gets the job done, it is not the only algorithm that can be used for sorting a list. <term>Insertion sort</term> is another relatively straightforward algorithm. It too divides the list into a sorted and unsorted portion, but it sorts cards by shifting each one to the left until it is larger than its neighbor - &#8220;inserting&#8221; one card at a time into the correct location.</p>
+        <p>Here is a &#8220;human algorithm&#8221; for using it to sort cards:</p>
+        <program language="none"><input>
+<p>1   Get a hand of unsorted cards
+2   Set a marker for the sorted section after the first card of the hand
+3   Repeat steps 4 through 6 until the unsorted section is empty
+4       Select the first unsorted card
+5       Swap this card to the left until it arrives at the correct sorted position
+6       Advance the marker to the right one card
+7   Stop</p>
+</input></program>
+        <p>To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion is built up. Cards keep swapping until they &#8220;find&#8221; their resting spot - they do not jump directly to it. Also, note that the sorted portion in this algorithm does not always have the smallest values, just the values that are known to be sorted relative to each other.</p>
+
+    <video xml:id="zDPNARGL9kY" youtube="zDPNARGL9kY" width="560"/>
+            <p><em>Animation used by permission of Virginia Tech</em></p>
+        <raw format="html" xml:space="preserve">
+&lt;div class="attribution"&gt;Materials on this page adapted with permission from from:&lt;br /&gt;
+&lt;a href='http://courses.cs.vt.edu/csonline/'&gt;Online Interactive Modules for Teaching Computer Science&lt;/a&gt; by Osman Balci et al.&lt;/div&gt;</raw>
+    </section>
+

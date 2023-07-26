@@ -1,0 +1,145 @@
+<section xml:id="csp-repeat-turtles_more-turtle-repetition-practice">
+        <title>More Turtle Repetition Practice</title>
+        <p>This section provides more practice using repetition and turtles.</p>
+        <p><term>Mixed up program</term></p>
+<exercise label="csprepeatturtles_repeatturtlespractice1" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses the stamp method to create an X of turtle shapes as shown below, but
+            the lines are mixed up.  The program should do all necessary set-up, create the turtle, set the
+            shape to &#8220;turtle&#8221;, and pick up the pen. Stamp the blue turtles before you stamp the green ones.</p>
+        <p>Arrange and indent the blocks correctly. You will not need them all.</p>
+        <image source="CSPRepeatTurtles/Figures/TurtleStampX.png" width="150px%"/>
+</statement>
+<blocks><block order="2">
+<cline>from turtle import *</cline>
+</block><block order="7">
+<cline>space = Screen()</cline>
+</block><block order="9" correct="no">
+<cline>space = screen() </cline>
+</block><block order="11">
+<cline>nick = Turtle()</cline>
+<cline>nick.shape("turtle")</cline>
+</block><block order="5">
+<cline>nick.penup()</cline>
+</block><block order="8" correct="no">
+<cline>nick.penUp() </cline>
+</block><block order="4">
+<cline>nick.goto(-150,-150)</cline>
+<cline>nick.left(45)</cline>
+</block><block order="10" correct="no">
+<cline>nick.goto(-150,-150)</cline>
+<cline>nick.left(90) </cline>
+</block><block order="13">
+<cline>nick.color("blue")</cline>
+<cline>for num in range(15):</cline>
+<cline>    nick.stamp()</cline>
+<cline>    nick.forward(30)</cline>
+</block><block order="12">
+<cline>nick.goto(150,-150)</cline>
+<cline>nick.left(90)</cline>
+</block><block order="1" correct="no">
+<cline>nick.goto(150,-150)</cline>
+<cline>nick.left(45) </cline>
+</block><block order="6">
+<cline>nick.color("green")</cline>
+<cline>for num in range(14):</cline>
+</block><block order="3">
+<cline>    nick.stamp()</cline>
+<cline>    nick.forward(30)</cline>
+</block></blocks></exercise><exercise label="csprepeatturtles_repeatturtlespractice2" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program uses the stamp method to create two squares of turtle shapes as shown
+            below, but the lines are mixed up.  The program should do all necessary set-up, create the
+            turtle, set the shape to &#8220;turtle&#8221;, and pick up the pen.  Draw the blue square before you draw
+            the green one.</p>
+        <p>Arrange and indent the blocks correctly. You will not need them all.</p>
+        <image source="CSPRepeatTurtles/Figures/TurtleStampDoubleSquare.png" width="150px%"/>
+</statement>
+<blocks><block order="4">
+<cline>from turtle import *</cline>
+<cline>space = Screen()</cline>
+<cline>nick = Turtle()</cline>
+<cline>nick.shape("turtle")</cline>
+<cline>nick.penup()</cline>
+</block><block order="5">
+<cline>nick.goto(-150,-150)</cline>
+<cline>nick.left(90)</cline>
+</block><block order="3" correct="no">
+<cline>nick.goto(-150,-150)</cline>
+<cline>nick.right(90) </cline>
+</block><block order="10">
+<cline>nick.color("blue")</cline>
+<cline>for count in range(4):</cline>
+<cline>    for num in range(5):</cline>
+<cline>        nick.stamp()</cline>
+<cline>        nick.forward(30)</cline>
+<cline>    nick.right(90)</cline>
+</block><block order="2">
+<cline>nick.goto(-120,-120)</cline>
+<cline>nick.color("green")</cline>
+<cline>for count in range(4):</cline>
+</block><block order="8">
+<cline>    for num in range(3):</cline>
+</block><block order="1" correct="no">
+<cline>    for num in range(2): </cline>
+</block><block order="7">
+<cline>        nick.stamp()</cline>
+<cline>        nick.forward(30)</cline>
+</block><block order="9">
+<cline>    nick.right(90)</cline>
+</block><block order="6" correct="no">
+<cline>    nick.left(90) </cline>
+</block></blocks></exercise>
+<exercise label="csprepeatturtles_repeatturtlespractice3">
+    <statement>
+        <p>In the program below, we want to draw a series of polygons, from 10 sides down to 3 sides,
+            each with a side length of 100. The <c>polygon</c> procedure is provided as is starter code for
+            the main part of the program. Add a loop and use it to call polygon. Make sure that you
+            draw everything from a 10 sided to a 3 sided polygon, counting down (10, 9, 8, &#8230; 3). Each
+            shape should have a size (side length) of 100.</p>
+        <p>If you are having trouble, try printing out the loop counter so you can see which numbers
+            your loop is counting through.</p>
+        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+
+    </statement>
+    <program xml:id="csprepeatturtles_repeatturtlespractice3_editor" interactive="activecode" language="python">
+        <input>
+def polygon(turtleName, sides, size):
+    turtleName.begin_fill()
+    for s in range(sides):
+        turtleName.forward(size)
+        turtleName.left(360 / sides)
+    turtleName.end_fill()
+
+# main program
+from turtle import *
+space = Screen()
+lucia = Turtle()
+lucia.speed(0)
+lucia.penup()
+lucia.fillcolor("lavender")
+lucia.goto(-50, -150)
+lucia.pendown()
+
+# Add your code here to make a loop that counts down from 10 to 3 by -1
+____________________________
+    # Inside the loop - use your loop variable as the second parameter to control the number of sides
+    polygon(lucia, ____, 100)
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertRegex(self.getEditorText(), r"for \w+ in range.*:", "Testing that you created a loop.")
+        self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*2\s*", "Testing that your loop stops at the right value.")
+        self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*\d+\s*,\s*-1\s*", "Testing that your loop counts down.")
+        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia", "Testing that you call polygon with lucia")
+        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+", "Testing that you use the loop variable in the call")
+        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+\s*,\s*100\s*\)", "Testing that you specify size 100")
+
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+    </section>
+

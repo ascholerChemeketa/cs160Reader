@@ -1,0 +1,89 @@
+<section xml:id="sql-intro_selecting">
+        <title>Selecting</title>
+        
+        
+        <p xml:id="sql-intro_index-0">Instructions to retrieve information from a database are known as <term>queries</term>.
+            To make a query using SQL, we generally write a <term>SELECT</term> statement (recall that a complete
+            instruction in programming is known as a statement). The general format of a <c>SELECT</c> is:</p>
+        <program language="sql"><input>
+SELECT columns FROM table;
+</input></program>
+        <p>In SQL <term>keywords</term> like <c>SELECT</c> are generally written using all <term>upper case</term>, while
+            <term>column names and table names</term> use <term>lower case</term>. This is a convention to make statements
+            easier for people to read - it is also valid to use lowercase for the keywords.</p>
+        <p>It is also common to break the statement up across multiple lines - as statements get
+            more and more complex, this too makes them easier to read:</p>
+        <program language="sql"><input>
+--Still all one statement:
+SELECT
+    columns
+FROM
+    table;
+</input></program>
+        <p>In Python, each statement goes on its own line and must be indented in a particular way.
+            SQL does not care about indentation. You are free to indent lines however you like. And a
+            statement does not automatically end at the end of a line. It ends at the <c>;</c> symbol.
+            A final difference is how we make a comment. In Python, we use <c>#</c> to make a comment in
+            the code. In SQL, we use <c>--</c> to tell the computer to ignore the rest of the line.</p>
+        <p>Let&#8217;s use a <c>SELECT</c> to get all the data from the <c>trip_data</c> table. The following SQL query is
+            an example of how to do so. It asks the database to <c>SELECT</c> all columns (<c>*</c> is a shorthand
+            that means &#8220;all columns&#8221;) <c>FROM</c> the table named <c>trip_data</c>.</p>
+
+    <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql">
+        <input>
+SELECT
+    *
+FROM
+    trip_data;
+        </input>
+    </program>
+        <p>As we do a <c>SELECT</c>, it might not make sense to ask for all of the columns in a
+            table. If we want to answer a question about the length of rides, we probably do not need
+            the information about station numbers or bike numbers. To simplify the data we get,
+            and reduce the amount of information that must be sent from the database to our program,
+            we would want to specify a list of columns we care about instead of using <c>*</c>.
+            To select just the <c>start_date</c>, <c>end_date</c>, and <c>duration</c> columns, the query
+            would look like the following:</p>
+
+    <program xml:id="sqlintro_selecting2" interactive="activecode" language="sql">
+        <input>
+SELECT
+    start_date,
+    end_date,
+    duration
+FROM
+    trip_data;
+        </input>
+    </program>
+        <p>The column names must match the names of the columns in the data table and be separated
+            by commas. Because SQL does not care about line breaks, it would be
+            fine to list all the columns on one line like: <c>start_date, end_date, duration</c>.</p>
+        <p>Notice that we can specify the columns in any order - the order we ask for them does
+            not have to match the order in the original table. Try changing the query so that
+            duration is the first row that is returned.</p>
+
+<exercise label="sqlintro_selecting3">
+    <statement>
+        <p>Write a query to select the start and end stations for all trips.
+            Make sure that the start station is the first column retrieved and the end
+            station is the second.</p>
+        <p>Hint: check the previous page to check the column names you need to use
+            of first select <c>*</c> and look at the returned data to find the column
+            names you care about.</p>
+
+    </statement>
+    <program xml:id="sqlintro_selecting3_editor" interactive="activecode" language="sql">
+        <input>
+
+====
+assert 0,0 == 31104
+assert 0,1 == 31200
+assert 1,0 == 31230
+assert 1,1 == 31620
+assert 99,0 == 31224
+assert 99,1 == 31221
+        </input>
+    </program>
+</exercise>
+    </section>
+

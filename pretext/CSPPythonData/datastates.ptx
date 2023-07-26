@@ -1,0 +1,118 @@
+<section xml:id="csp-python-data_most-populated-and-least-populated-states">
+        <title>Most Populated and Least Populated States</title>
+        <p>If we want to dig into patterns in pollution, there are many hypotheses we might want to
+            test:</p>
+        <p><ul>
+            <li>
+                <p>Maybe bigger states have more <em>stuff</em> and that leads to more pollution?</p>
+            </li>
+            <li>
+                <p>Maybe smaller states have more things crammed into a smaller place, and
+                    that leads to more pollution?</p>
+            </li>
+            <li>
+                <p>Maybe richer states have more industry, and that leads to more pollution?</p>
+            </li>
+            <li>
+                <p>Maybe poorer states are home to more polluting industries like coal
+                    powered factories and that leads to more pollution?</p>
+            </li>
+            <li>
+                <p>Maybe more populous states have more people (so more cars and houses&#8230;)
+                    and that leads to more pollution?</p>
+            </li>
+        </ul></p>
+        <p>To try to answer these questions, we need to calculate average pollution for a specific state.</p>
+        <p>We will also need some data about which states are large and small and which are richer and
+            poorer. The top three largest states in population are:</p>
+        <table><tabular>
+            
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            State
+                        </cell>
+                        <cell>
+                            Population
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            California
+                        </cell>
+                        <cell>
+                            38,332,521
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            Texas
+                        </cell>
+                        <cell>
+                            26,448,193
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            New York
+                        </cell>
+                        <cell>
+                            19,651,127
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+        <p>And the three smallest are:</p>
+        <table><tabular>
+            
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            State
+                        </cell>
+                        <cell>
+                            Population
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            District of Columbia
+                        </cell>
+                        <cell>
+                            646,449
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            Vermont
+                        </cell>
+                        <cell>
+                            626,630
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            Wyoming
+                        </cell>
+                        <cell>
+                            582,658
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+        <p>The three largest states in land area are Alaska, Texas, and California.
+            The three smallest are Connecticut, Delaware, and Rhode Island.</p>
+        <p>The three <em>richest</em> states (by per capita income) are Maryland, Alaska, and New Jersey.
+            The three poorest are Arkansas, West Virginia, and Mississippi.</p>
+    </section>
+

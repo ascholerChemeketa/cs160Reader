@@ -1,0 +1,82 @@
+<section xml:id="csp-designing-procedures_program-implementation-2">
+        <title>Program Implementation - 2</title>
+        <p>Now that <c>rectangle</c> is working, we can use it to write our next procedure. I will tackle
+            <c>drawWall</c> next. This procedure will take the name of the turtle, set a color, and then
+            draw a 300x200 rectangle.</p>
+
+    <program xml:id="cspdesigningprocedures_programimplementation21" interactive="activecode" language="python">
+        <input>
+def rectangle(turtle, width, height):
+    # Assumes turtle faces East to start with
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.end_fill()
+    turtle.penup()
+
+def drawWall(turtleName):
+    turtleName.fillcolor("tan")
+    rectangle(turtleName, 300, 200)
+
+from turtle import *
+space = Screen()
+steve = Turtle()
+steve.speed(10)
+steve.penup()
+steve.goto(-150, 50)
+drawWall(steve)                # test the drawWall procedure
+        </input>
+    </program>
+
+    <exercise label="cspdesigningprocedures_programimplementation22">
+        <statement>
+
+        <p>We want to write the code for the <c>drawDoor</c> procedure. Below is the code for it.</p>
+        <program language="none"><input>
+def drawDoor(currentTurtle):
+    ______________.fillcolor("black")
+    rectangle(______________, 50, 100)
+</input></program>
+        <p>What name belongs in the ______________?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>turtleName</p>
+                </statement>
+                <feedback>
+                    <p>drawWall calls its parameter turtleName. But there is nothing named "turtle" in drawDoor.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>turtle</p>
+                </statement>
+                <feedback>
+                    <p>rectangle calls its parameter turtle. But there is nothing named "turtle" in drawDoor.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>currentTurtle</p>
+                </statement>
+                <feedback>
+                    <p>Correct.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

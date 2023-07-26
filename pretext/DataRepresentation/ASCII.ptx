@@ -1,0 +1,121 @@
+<section xml:id="data-representation_representing-letters-with-ascii ascii">
+        <title>Representing Letters with ASCII</title>
+        <sidebar>
+            <title>ASCII Art</title>
+            <p>ASCII art is images drawn only using the ASCII characters. Shading is created by using characters like @ for dark areas and - for lighter ones. Below is the Mona Lisa as ASCII Art; the font size it 2 point to make the image more apparent, but if you zoom in you will see the individual characters.</p>
+            <raw format="html" xml:space="preserve">&lt;pre style="font-size: 3pt; text-align: center;"&gt;
+i`it)v|[[[[(//s+)`(-\\/JJgbdd@@@@@@@dmKK(c!(/-[2=/cct/!-v\!_L\)|
+]-!/(!-)\L\)v|c5(!,!Ldd@@@@@@@@@@@@@@@@@@@dK/]!c\\\v|i\/cT\v((c-
+]!`/v\//(-|t\VvcL!m@@@@@M@@@@@@@@@@@@@@@@@@@@bLt\\|)c/2-vv)/it\.
+--/-,\,\v\,|)/v/m@@@@@@K@@@@@@@@@@@@@@@@@@@@@@@bK!v!-( )-!.[/cT
+//.\--'--|-/c(e@@@@@@@DD@@@@@@@@@@@@@@@@@@@@@@@@@@s\\\\-||/v!c\.
+-,-|\`||\-\/id@@@@@@@@N@@@@@@@@@@@@@@@@@@@@@@@@@@@@b.),`-,-/c-`i
+!,\!-!-!'!-!d@@@@@@@P[+~**AAA@@@@@@@@@@@@@@@@@@@@@@@b/./`c-/.\7-
+--'.-- -/,id@@@*P!`          \'Z8@@@@@@@@@@@@@@@@@@@@@i.\\'.\.c
+',`,`\'-,-J@@5`-           -- `-iYA@@@@@@@@@@b@@@@@@@@@_\-|-\c-
+'. -.,`/.G@@K- `               - )7KM@@@@@@@@@@@@@@@@@@@c-----/
+- `-  --i@@Ai                    -!ZZ@@@@@@@@@@@@@@@@@@@b! \`|-`
+ `-,'- G@@@[,                    '.D8K@@@@@@@@@@@@@@@@@@@[/-,-/.
+-` .-/v@@@A)                      -)ZdMd@@@@@@@@@@@@@@@@@@\' _\
+- ` ,iVJ@@@!                     '-!(K5K@@@@@@@@@@@@@@@@@@[(/s[.
+  - i\G@@@Z-                    ' ! -i55ZZ@@@@@@@@@@@@@@@@@)(4)`
+ , -|b@@@@!\                     '  ` |-tYG@@@@@@@@@@@@@@@@XNYZ-
+   tt@@@@A-,                        '  `)(d@@@@@@@@@@@@@@@@D)8A[
+   )8@@@@@\                         ,-'-/Kd@@@@@@@@@@@@@@@@@KD@[
+  ]]Z@@@@d|-              ,ii.c,, -.icLZKK@@@@@@8@K@@@@@@@@@(@8[
+  KN8@@@@@( .i!vGG_      J4Kb8ZKb@bbK@d@88@@@@@@@b@@@@@@@@@@dK@-
+ )/8K@@@K@b@dP~~~T4(    Jd@@7`___s@M@@@@MM8d@@@d@@@@@@@@@@@@LM8[
+\!48@K@@@@8@@d*@@@bVi   bAKLY~~@@@@@@*ff/\NM8@@@@@@@@@@@@@@@db@[
+,\\Kb@@@d@.~t` !*~!`.  -MA)    '~'.).` `,'K@@@@@@@@@@@@@@@@@AKb[
+,`8M@@@@@@ -`,,gvZ``    A//-  ..c\+\`    i]d@@@@@@M@@@@@@@@@@@8[
+i\@8@K@@@D              \!'             !iZ8@@@8A@@@@@8d@b@@@8M[
+e8d5@@@@@@             '!-             '-)8@@@@@@@@@@@@@@@@@@M8i
+8dZ8@M@@@@-             v  ,          ,\tK@@@@@@@@@@@@A@@@@@@Z2|
+@b@AK@@@b@[              //           cctbA@@@AK@@d@@d@@@K@@@bmi
+@@8@M@8@@@P-            -=/.         /iD8d@@@@@@@@@@@@@@A@@@d@@[
+@8@@@MA@@@@\-      .   _)g2i        -((dKK@@@@@d@@@@d@@K@@@@@@K[
+@@@bAK@@K@@)i     'c,,Kb@@bK       )X)Kb@M@@d@@@Mb@@A@d@@@@@@8@[
+@K@b@@@@A@AA/i-     ~M@@@@Mc    .,\c=)D8d@@b@@@d@@@@@@@@@@8d@@A[
+@@@@Mb@@@@@@('c\`     PPK((,i]v|-\-v)8XNAdMK@@@@@@@b@@MK@A@@@@@[
+@@8@@MK@d@A@L!--c)s_, ,(ZsbLb@\`- .-N]/KM@@@@@@@d@@@A@@@@@@@@d@[
+@@Kb@@@K@b@@@/-  !''~~Vff*N5f -` -,\))KK@@@@@@@MK@@d@@@M8d@b@@@[
+@b@@@KAK@@@@@@2--    ,,_JJ/i)/- |/v)NK@8d@@@@@@@@@@8@@@@@@@@M@K[
+@@8d@K@@@b@@@@@d!,   'VV\)\\)\7(-)4Jb@8@A@@@K@d@@@@@@@8@@@@@@@@[
+M@@@@8@@K@Kb@@@d@v.       `-\\/v)88b@M@A@K@@M@@@A@@M@8@@A@d@8@M[
+Zb@d@M@K@@@@@@@@@@m       -)!/stbb@b@@A@b@@@@@Kb@@@@@@@b@@@K@@@[
+K@@d@@@@@d@M@8@@@@@Ks   ,-/vJD@@8d@K@@@@@@8@@@@@@@@@@MK@@@b@@M@[
+tN@b@@d@d@M@@@@@@@@@@LL4JKd@A@@d@@K@@@@MK@@@@8@@@@@@@@@@@b@@@@@[
+)NM@8b@@A@@@A@@@@@@@@@@@@@@A@@A@@8@@K@d@@@@M@@K@@K@A@@@8@@M@@@@[
+(tMM@@@d@@M8@@@@A@@@@A@@@A@@@@@@@@@A@@@@8b@@8d@@@@@@@@@@@@@@@@M[
+tNZ@@K@@@d@@@@A@@@@@8@@@/4N@@8@b@@d@@M@8@MK@M8@K@@@@@@d@@@@@@@@[
+M/KA8@@@MA@@@M@@@@@@@@@@[|t*Z@N@@@@8@@M8ZAZZ@M@@@A@d@@@@@K@@@d@[
+bYJ4M@@@@@@A@@@@@@@@@@@@D.\'(YKKZD@8dK@5A84YZ@dM@@@@@@@@@@@@d@@[
+K5dM8@8d@d@@@@@@@@8@@@@@@..-!/))ZK5AK4)AY(/XY/Z@@@A@@@d@@@M@@@@[
+Y8dNA@@AK@@d@@@b@@@@@@@@@L,-,\!]]\X(5)Z/7c\\t5/K@@@@@@@@b@@@@@@[
+8M8@@@A@@@A@@8@@@@@@@@@KDLt! !,-|t'(-\\!,\/,\!ZJG@@@d@Md@@@G@@@[&lt;/pre&gt;</raw>
+            <p>And then there is asciimation, which <url href="http://www.asciimation.co.nz/" visual="http://www.asciimation.co.nz/">needs to be seen</url> to be believed.</p>
+        </sidebar>
+        <p>To represent things other than integers, we need to find a way to map the data we wish to represent onto binary strings. These mappings can be completely arbitrary. If we want to represent a choice between apples, bananas, oranges, and pears (perhaps as the fruit choices in a menu) we could recognize that it requires 2 bits to represent 4 things (as <m>2^2 = 4</m>) and pick one two-bit pattern for each item. Perhaps we would declare that 00: apples, 01: bananas, 10: oranges, and 11: pears. We could also pick any other assignments, as long as we were consistent about it and everyone agreed to use the same system, it would not matter if 00 meant apples or bananas.</p>
+        <p><term>ASCII</term> is such a system for mapping text, like the letter &#8216;a&#8217;, onto a binary number, like the value 01100001. For different programs to be able to read each other&#8217;s files, they must agree on what this 01100001 means. That is the point of ASCII - a common system for representing text as binary values, used by almost every program that works with text. When you make a plain text file in a simple text editing program like Notepad, you are working with ASCII text. (More complex programs like Word that feature different formatting options are not ASCII based). It should not matter if you save a text file with a program on a Macintosh and open it with a different program on a Windows machine; as long as they both &#8220;speak&#8221; ASCII, they will agree on what the file contains.</p>
+        <p>ASCII needs to represent all the common symbols used in text files: letters (capital and lower case), punctuation, digits, and special control symbols like &#8220;tab&#8221;. An <url href="http://www.ascii-code.com/" visual="http://www.ascii-code.com/">ASCII table</url> shows all the mappings of numbers to characters. You can use the slider below to view various parts of the ASCII table.</p>
+        <raw format="html" xml:space="preserve">&lt;script&gt;
+window.addEventListener("load", function() {
+var s = $('#ascii-slider').slider({
+  min: 3,
+  max: 253,
+  value: 68,
+  slide: function( event, ui ) {
+    var pad = "00000000"
+    var temp = ui.value ;
+    var output = "&lt;table class='place-values table' style='width:600px; margin:0 auto;'&gt;";
+    var headers = "&lt;thead&gt;&lt;tr&gt;&lt;th class='header'&gt;Binary&lt;/th&gt;";
+    var decs = "&lt;tr&gt;&lt;th class='header'&gt;Decimal&lt;/th&gt;";
+    var values = "&lt;tr&gt;&lt;td class='header'&gt;Character&lt;/td&gt;"
+    for(var i = temp - 3; i &lt; temp + 3; i++) {
+        var binString = Number(i).toString(2);
+        headers += "&lt;th&gt;" +  pad.substring(0, pad.length - binString.length) + binString + "&lt;/th&gt;";
+        decs += "&lt;th&gt;" +  i + "&lt;/th&gt;";
+        values += "&lt;td&gt;" +  String.fromCharCode(i) +  "&lt;/td&gt;";
+    }
+    decs += "&lt;/tr&gt;";
+    headers += "&lt;/tr&gt;" + decs + "&lt;/thead&gt;";
+    values += "&lt;/tr&gt;"
+    output += headers + values + "&lt;/table&gt;";
+    $( "#ascii-target" ).html(output);
+  }
+});
+s.slider("option", "slide").call(s, null, { value: s.slider("value") });
+});
+&lt;/script&gt;
+&lt;p class="clear" &gt;
+    &lt;b&gt;Scroll me:&lt;/b&gt;
+      &lt;div id="ascii-slider" style="width:600px; margin-bottom: 10px; margin-top: 10px;"&gt;&lt;/div&gt;
+  &lt;div id="ascii-target"&gt;
+  &lt;/div&gt;
+&lt;/p&gt;</raw>
+        <note>
+            <p>Some key things about ASCII codes:</p>
+            <p><ul>
+                <li>
+                    <p>The codes from 0-31 (00000000-00011111) are all invisible symbols like &#8220;tab&#8221; or &#8220;end of line&#8221;.</p>
+                </li>
+                <li>
+                    <p>The capital letters range from 65-90 (01000001-01011010)</p>
+                </li>
+                <li>
+                    <p>The lowercase letters start at 97 (01100001). That means a computer often thinks &#8216;A&#8217; is less than &#8216;a&#8217;.</p>
+                </li>
+                <li>
+                    <p>Originally, the ASCII codes only covered 7 bits (up to 127). All the codes above 127 were added later, and there are multiple versions of what they mean. Often they are used for things like accented characters.</p>
+                </li>
+            </ul></p>
+        </note>
+        
+
+        <exercise label="datarepresentation_ascii1">
+            <statement>
+    <p>What letter or symbol does 01100110 map to on the ASCII table? <var/>  </p></statement><setup><var><condition string="^\s*f\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.{1}\s*$"><feedback><p>The answer is a letter&#8230; try using the table above</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>The answer should only have one character</p></feedback></condition></var></setup></exercise>
+        <exercise label="datarepresentation_ascii2">
+            <statement>
+    <p>What binary number corresponds to the plus symbol on the ASCII table? <var/>  </p></statement><setup><var><condition string="^\s*00101011\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.{1,7}\s*$"><feedback><p>The answer should have 8 digit</p></feedback></condition><condition string="^\s*.{9,}\s*$"><feedback><p>The answer should have 8 digit</p></feedback></condition><condition string="^\s*[^01]+\s*$"><feedback><p>The answer should be just 0s and 1s</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Try looking it up on the table above</p></feedback></condition></var></setup></exercise>    </section>
+

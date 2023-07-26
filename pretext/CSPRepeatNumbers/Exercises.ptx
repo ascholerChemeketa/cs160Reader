@@ -1,0 +1,322 @@
+<exercises xml:id="csp-repeat-numbers_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="csprepeatnumbers_exercises1">
+    <statement>
+        <p>Complete the code to create a program that adds up all the numbers from 10 to 20. Make sure to
+            include both 10 and 20 in the sum.</p>
+
+    </statement>
+    <program xml:id="csprepeatnumbers_exercises1_editor" interactive="activecode" language="python">
+        <input>
+sum = _____________
+for number in _____________:
+    sum = sum + _____________
+print(sum)
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(sum, 165, "Testing that you got the right sum")
+        self.assertNotRegex(self.getEditorText(), "165", "Testing that you did not hard code the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="csprepeatnumbers_exercises2">
+    <statement>
+        <p>Complete the code to calculate the sum of the squares of all numbers from 1-10 (inclusive). The sum of squares
+            is the result of squaring each value before adding it to the sum. The sum of squares for the numbers
+            1-4 would be <m>1 * 1 + 2 * 2 + 3 * 3 + 4 * 4 = 30</m>.</p>
+        <p>It might help to calculate each square and print it out before adding it to the sum to make sure you are
+            using the right values.</p>
+
+    </statement>
+    <program xml:id="csprepeatnumbers_exercises2_editor" interactive="activecode" language="python">
+        <input>
+sum = _____________
+
+# More code here
+
+print(sum)
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(sum, 385, "Testing that you got the right sum")
+        self.assertNotRegex(self.getEditorText(), "385", "Testing that you did not hard code the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+<exercise label="csprepeatnumbers_exercises3" numbered="yes" indentation="show" language="python"><statement>
+        <p>The following program calculates the height of an object as it falls from 1000 feet. The
+            program should use a loop to print out the current height, then update the time by one second and
+            calculate a new height. It should stop looping once the object reaches the ground (height 0)
+            and then print out the final number of seconds.</p>
+        <p>Put the blocks in the right order and indentation. As usual, you will
+            not use all the blocks.</p>
+</statement>
+<blocks/></exercise>
+<exercise label="csprepeatnumbers_exercises4">
+    <statement>
+        <p>To count how many digits there are in a number, you can do the following:</p>
+        <pre>while the number is greater than 0
+    set the number to the number divided by 10 (ignore any remainder)
+    add one to the number of digits</pre>
+        <p>Below is a function <c>digitsIn</c> that is supposed to calculate the number of digits in A
+            given number. You need to write the logic to calculate that.</p>
+        <p>Hint: when you divide <c>number</c> by 10, make sure to use <c>//</c> to do whole number division.</p>
+        <p>Remember the debugging tricks you used - use codelens or print out values to make sure your
+            work is correct.</p>
+
+    </statement>
+    <program xml:id="csprepeatnumbers_exercises4_editor" interactive="activecode" language="python">
+        <input>
+def digitsIn(number):
+    digits = 0
+
+    # add code here!
+    #while the number is greater than 0
+    #    set the number to the number divided by 10 (use // to divide)
+    #    add one to the number of digits
+
+    return digits
+
+print( "Should be 3 digits in 294", digitsIn(294) )
+print( "Should be 5 digits in 83163", digitsIn(83163) )
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(digitsIn(8), 1, "Testing digitsIn(8) is equal to 1")
+        self.assertEqual(digitsIn(294), 3, "Testing digitsIn(294) is equal to 3")
+        self.assertEqual(digitsIn(1234), 4, "Testing digitsIn(1234) is equal to 4")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="csprepeatnumbers_exercises5">
+    <statement>
+        <p>Below is the start of a program to calculate how long it will take to have at least $50,000 if
+            you invest $300 per month at 0.5% interest per month (approximately 6% per year).</p>
+        <p>You should add code to continue doing the following until money reaches 50000:</p>
+        <p><ul>
+            <li>
+                <p>Increase the existing money by 0.5% (multiply it by 1.005). (This is interest earned on all money
+                    already invested.)</p>
+            </li>
+            <li>
+                <p>Add the monthly investment amount to money. (This is another month of investment.)</p>
+            </li>
+            <li>
+                <p>Increase the months count by 1</p>
+            </li>
+        </ul></p>
+        <p>Remember the debugging tricks you used - use codelens or print out values to make sure your
+            work is correct.</p>
+
+    </statement>
+    <program xml:id="csprepeatnumbers_exercises5_editor" interactive="activecode" language="python">
+        <input>
+money = 0
+invest_per_month = 300
+months = 0
+
+# TODO
+# repeat WHILE the money is less than 50000
+#    gain 0.5% interest to the money (set money to itself times 1.005)
+#    add the invest_per_month to the money
+#    increase the months by 1
+
+print(months)
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(months, 122, "Testing you calculated the right answer.")
+        self.assertNotRegex(self.getEditorText(), "122", "Testing that you did not hard code the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+
