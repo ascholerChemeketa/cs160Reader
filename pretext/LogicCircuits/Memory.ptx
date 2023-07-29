@@ -1,29 +1,44 @@
 <section xml:id="logic-circuits_remembering-things">
-        <title>Remembering Things</title>
-        <p>In previous circuits we have seen, every path has gone strictly left to right. But we can take the output of a gate and feed it back in as the inputs to earlier gates. This is the secret behind building a &#8220;memory&#8221; circuit: feeding the output back into the circuit produces a loop that &#8220;remembers&#8221; a value.  The circuit below uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes right after an OR). Notice how the output of each NOR gate feeds back as an input to the other gate.</p>
-        <raw format="html" xml:space="preserve">
-            &lt;script src="../_static/simcir/simcir.js"&gt;&lt;/script&gt;
-            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir.css" /&gt;
-            &lt;script src="../_static/simcir/simcir-basicset.js"&gt;&lt;/script&gt;
-            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir-basicset.css" /&gt;
-            &lt;script src="../_static/simcir/simcir-library.js"&gt;&lt;/script&gt;
-            &lt;script src="../_static/simcir/misc/simcir-altfulladder.js"&gt;&lt;/script&gt;
-            &lt;div class="simcir"&gt;{    "width":600,    "height":250,    "showToolbox":false,    "devices":[    {"type":"DC","id":"dev0","x":88,"y":96,"label":"DC"},    {"type":"Toggle","id":"dev1","x":168,"y":56,"label":"Input1","state":{"on":false}},    {"type":"Toggle","id":"dev2","x":168,"y":120,"label":"Input2","state":{"on":false}},    {"type":"NOT","id":"dev3","x":336,"y":48,"label":"NOT"},    {"type":"OR","id":"dev4","x":256,"y":48,"label":"OR"},    {"type":"OR","id":"dev5","x":256,"y":128,"label":"OR"},    {"type":"NOT","id":"dev6","x":336,"y":128,"label":"NOT"},    {"type":"Joint","id":"dev7","x":384,"y":56,"label":"Joint","state":{"direction":0}},    {"type":"LED","id":"dev8","x":456,"y":128,"label":"Memory"},    {"type":"Joint","id":"dev9","x":384,"y":104,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev10","x":384,"y":136,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev11","x":384,"y":176,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev12","x":224,"y":48,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":240,"y":104,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev14","x":240,"y":144,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev15","x":224,"y":176,"label":"Joint","state":{"direction":2}}    ],    "connectors":[    {"from":"dev1.in0","to":"dev0.out0"},    {"from":"dev2.in0","to":"dev0.out0"},    {"from":"dev3.in0","to":"dev4.out0"},    {"from":"dev4.in0","to":"dev12.out0"},    {"from":"dev4.in1","to":"dev1.out0"},    {"from":"dev5.in0","to":"dev2.out0"},    {"from":"dev5.in1","to":"dev14.out0"},    {"from":"dev6.in0","to":"dev5.out0"},    {"from":"dev7.in0","to":"dev3.out0"},    {"from":"dev8.in0","to":"dev10.out0"},    {"from":"dev9.in0","to":"dev7.out0"},    {"from":"dev10.in0","to":"dev6.out0"},    {"from":"dev11.in0","to":"dev10.out0"},    {"from":"dev12.in0","to":"dev15.out0"},    {"from":"dev13.in0","to":"dev9.out0"},    {"from":"dev14.in0","to":"dev13.out0"},    {"from":"dev15.in0","to":"dev11.out0"}    ]}&lt;/div&gt;</raw>
-        <p>With that circuit (known as an SR Flip Flop), try the following experiments</p>
-        <p><ul>
-            <li>
-                <p>Turn on Input 1 - this <term>Sets</term> the memory to 1.</p>
-            </li>
-            <li>
-                <p>Turn off Input 1. Notice that the memory stays on even though both switches are off.</p>
-            </li>
-            <li>
-                <p>Turn on Input 2 - this <term>Resets</term> the memory to 0.</p>
-            </li>
-            <li>
-                <p>Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.</p>
-            </li>
-        </ul></p>
-        <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we want to remember <term>1</term>, we flip <term>Input1</term> on briefly. To remember <term>0</term>, we flip <term>Input2</term> on briefly. There are many other circuits that can &#8220;remember&#8221; a value, but they all use this same basic idea of feeding outputs back in as inputs. To remember more than one bit, we would simply need to make multiple copies of this circuit, one for each bit we need to store.</p>
-    </section>
+  <title>Remembering Things</title>
+  <p>In previous circuits we have seen, every path has gone strictly left to right. But we can take the output of a gate
+    and feed it back in as the inputs to earlier gates. This is the secret behind building a &#8220;memory&#8221;
+    circuit: feeding the output back into the circuit produces a loop that &#8220;remembers&#8221; a value. The circuit
+    below uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes right after an OR). Notice how the
+    output of each NOR gate feeds back as an input to the other gate.</p>
+  <p>
+    <raw format="html" xml:space="preserve">
+            <script src="external/LogicCircuits/simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="external/LogicCircuits/simcir/simcir.css" />
+            <script src="external/LogicCircuits/simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="external/LogicCircuits/simcir/simcir-basicset.css" />
+            <script src="external/LogicCircuits/simcir/simcir-library.js"></script>
+            <script src="external/LogicCircuits/simcir/misc/simcir-altfulladder.js"></script>
+            <div class="simcir">{    "width":600,    "height":250,    "showToolbox":false,    "devices":[    {"type":"DC","id":"dev0","x":88,"y":96,"label":"Power"},    {"type":"Toggle","id":"dev1","x":168,"y":56,"label":"Input1","state":{"on":false}},    {"type":"Toggle","id":"dev2","x":168,"y":120,"label":"Input2","state":{"on":false}},    {"type":"NOT","id":"dev3","x":336,"y":48,"label":"NOT"},    {"type":"OR","id":"dev4","x":256,"y":48,"label":"OR"},    {"type":"OR","id":"dev5","x":256,"y":128,"label":"OR"},    {"type":"NOT","id":"dev6","x":336,"y":128,"label":"NOT"},    {"type":"Joint","id":"dev7","x":384,"y":56,"label":"Joint","state":{"direction":0}},    {"type":"LED","id":"dev8","x":456,"y":128,"label":"Memory"},    {"type":"Joint","id":"dev9","x":384,"y":104,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev10","x":384,"y":136,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev11","x":384,"y":176,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev12","x":224,"y":48,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":240,"y":104,"label":"Joint","state":{"direction":2}},    {"type":"Joint","id":"dev14","x":240,"y":144,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev15","x":224,"y":176,"label":"Joint","state":{"direction":2}}    ],    "connectors":[    {"from":"dev1.in0","to":"dev0.out0"},    {"from":"dev2.in0","to":"dev0.out0"},    {"from":"dev3.in0","to":"dev4.out0"},    {"from":"dev4.in0","to":"dev12.out0"},    {"from":"dev4.in1","to":"dev1.out0"},    {"from":"dev5.in0","to":"dev2.out0"},    {"from":"dev5.in1","to":"dev14.out0"},    {"from":"dev6.in0","to":"dev5.out0"},    {"from":"dev7.in0","to":"dev3.out0"},    {"from":"dev8.in0","to":"dev10.out0"},    {"from":"dev9.in0","to":"dev7.out0"},    {"from":"dev10.in0","to":"dev6.out0"},    {"from":"dev11.in0","to":"dev10.out0"},    {"from":"dev12.in0","to":"dev15.out0"},    {"from":"dev13.in0","to":"dev9.out0"},    {"from":"dev14.in0","to":"dev13.out0"},    {"from":"dev15.in0","to":"dev11.out0"}    ]}</div></raw>
+    (<xref ref="circuit-tips" text="title" />) </p>
+  <p>With that circuit (known as an SR Flip Flop), try the following experiments</p>
+  <p>
+    <ul>
+      <li>
+        <p>Turn on Input 1 - this <term>Sets</term> the memory to 1. (Setting this input to on does nothing if the
+          memory is already 1.)</p>
+      </li>
+      <li>
+        <p>Turn off Input 1. Notice that the memory stays on even though both switches are off.</p>
+      </li>
+      <li>
+        <p>Turn on Input 2 - this <term>Resets</term> the memory to 0. (Setting this input to on does nothing if the
+          memory is already 0.)</p>
+      </li>
+      <li>
+        <p>Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we
+    want to remember <term>1</term>, we flip <term>Input1</term> on briefly. To remember <term>0</term>, we flip <term>
+    Input2</term> on briefly.</p>
+  <p> There are many other circuits that can &#8220;remember&#8221; a value, but they all use this same basic idea of
+    feeding outputs back in as inputs. To remember more than one bit, we would simply need to make multiple copies of
+    this circuit, one for each bit we need to store.</p>
+</section>
 

@@ -62,56 +62,33 @@ Step 4: <c>number</c> is empty. We are done, the answer is 13.</p>
       above into code requires some changes, but the code shown follows the same process described above. See the
       &#8220;tips&#8221; box below the code lens for help running the program.</p>
 
-
-      <program interactive="activecode" language="python">
-        <input>
-        for i in range(10):
-            print(i)
-        </input>
-    </program>
-
-      <exercises>
-        <title>CodeLens</title>
-
-        <p>A steppable Python program.</p>
-
-        <listing xml:id="program-codelens-python">
-            <caption>A Python program, stepable with CodeLens</caption>
-            <program xml:id="python-hello-world-code-lens" interactive="codelens" language="python">
-                <input>
-                print('Hello, World!')
-                </input>
-            </program>
-        </listing>
-    </exercises>
-
-
     <program xml:id="datarepresentation_binaryconversions21" interactive="codelens" language="python">
       <input>
 number = "1101"
 answer = 0
-while len(number) &gt; 0:                  #do next 3 lines until length of number is 0
+while len(number) > 0:               #do next 3 lines until length of number is 0
     answer = answer * 2                 #multiply answer by 2
     answer = answer + int(number[0])    #add leftmost digit to answer
     number = number[1:]                 #remove leftmost digit
+
+print("The final value of answer is", answer)
     </input>
     </program>
     <note>
       <p>
         <term>How to use the &#8220;codelens&#8221;</term>
-      </p>
+      </p> 
       <p>
         <ul>
           <li>
             <p>You can click the &#8220;forward&#8221; button to watch the code run line by line.</p>
           </li>
           <li>
-            <p>The blue area that appears below the buttons will show you the current values of <c>number</c> and <c>
-              answer</c>.</p>
+            <p>Use can use the large gray scroll bar beneath the code to scroll the code to the right - at the end of each line of code is an
+              explanation of what that line &#8220;says&#8221;</p>
           </li>
           <li>
-            <p>Use can use the large scroll bar to scroll the code to the right - at the end of each line of code is an
-              explanation of what that line &#8220;says&#8221;</p>
+            <p>The blue &#8220;Global frame&#8221; area that appears at the bottom will display the current value of <c>number</c> and <c>answer</c>.</p>
           </li>
         </ul>
       </p>

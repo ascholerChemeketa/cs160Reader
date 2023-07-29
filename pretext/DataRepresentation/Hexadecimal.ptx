@@ -1,359 +1,293 @@
 <section xml:id="data-representation_hexadecimal">
-        <title>Hexadecimal</title>
-        <p>H<term>exadecimal</term> is base 16. Much like base 10 uses digits that represent powers of 10 and binary uses digits that represent powers of 2, hexadecimal uses digits that represent powers of 16. Here is how we would interpret <m>{2047}_{16}</m>:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            4096s
-                        </cell>
-                        <cell>
-                            256s
-                        </cell>
-                        <cell>
-                            16s
-                        </cell>
-                        <cell>
-                            1s
-                        </cell>
-                    </row>
-                    <row header="yes">
-                        <cell>
-                            <m>{16}^3</m>
-                        </cell>
-                        <cell>
-                            <m>{16}^2</m>
-                        </cell>
-                        <cell>
-                            <m>{16}^1</m>
-                        </cell>
-                        <cell>
-                            <m>{16}^0</m>
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            2
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                            4
-                        </cell>
-                        <cell>
-                            7
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>So <m>{2047}_{16}</m> = <term>2</term> * 4096 + <term>0</term> * 256 + <term>4</term> * 16 + <term>7</term> * 1 = <m>{8263}_{10}</m>.</p>
-        <p>Using this scheme, <m>{10}_{16}</m> = <term>1</term> * 16 + <term>0</term> * 1 = <m>{16}_{10}</m>. Which raises the question &#8220;how do we represent ten in hexadecimal?&#8221; A 1 in the second column indicates a 16, so we can&#8217;t use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F to indicate 9-15:</p>
-        <raw format="html" xml:space="preserve">&lt;style&gt;
-    table.hex1 { width: auto; text-align: center; }
-    table.hex1 thead&gt;tr&gt;th, table.hex1 tbody&gt;tr&gt;td { padding: 0px; text-align: center; }
-&lt;/style&gt;</raw>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Decimal
-                        </cell>
-                        <cell>
-                            Hexadecimal
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            10
-                        </cell>
-                        <cell>
-                            A
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            11
-                        </cell>
-                        <cell>
-                            B
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            12
-                        </cell>
-                        <cell>
-                            C
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            13
-                        </cell>
-                        <cell>
-                            D
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            14
-                        </cell>
-                        <cell>
-                            E
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            15
-                        </cell>
-                        <cell>
-                            F
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Thus in the hexadecimal number <m>{1\textrm{EA}}_{16}</m> the E means means 14 copies of the second digit (16). The A means 10 copies of the rightmost digit (1):</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            256s
-                        </cell>
-                        <cell>
-                            16s
-                        </cell>
-                        <cell>
-                            1s
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            14 (E)
-                        </cell>
-                        <cell>
-                            10 (A)
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>So <m>{1\textrm{EA}}_{16}</m> = <term>1</term> * 256 + <term>14</term> * 16 + <term>10</term> * 1 = <m>{490}_{10}</m>.</p>
-        <raw format="html" xml:space="preserve">            &lt;h3 class="underlined"&gt;
-               Conversion To and From Binary
-            &lt;/h3&gt;
-            </raw>
-        <p>In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same number of values using 4 bits: 0000-1111 (0-15). What that means, is that each hex digit represents the same information as four binary digits - there is a direct mapping between a hex digit and a four-bit pattern:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Binary
-                        </cell>
-                        <cell>
-                            Hexadecimal
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            Binary
-                        </cell>
-                        <cell>
-                            Hexadecimal
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            0000
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1000
-                        </cell>
-                        <cell>
-                            8
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0001
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1001
-                        </cell>
-                        <cell>
-                            9
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0010
-                        </cell>
-                        <cell>
-                            2
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1010
-                        </cell>
-                        <cell>
-                            A
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0011
-                        </cell>
-                        <cell>
-                            3
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1011
-                        </cell>
-                        <cell>
-                            B
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0100
-                        </cell>
-                        <cell>
-                            4
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1100
-                        </cell>
-                        <cell>
-                            C
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0101
-                        </cell>
-                        <cell>
-                            5
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1101
-                        </cell>
-                        <cell>
-                            D
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0110
-                        </cell>
-                        <cell>
-                            6
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1110
-                        </cell>
-                        <cell>
-                            E
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            0111
-                        </cell>
-                        <cell>
-                            7
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                            1111
-                        </cell>
-                        <cell>
-                            F
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>To convert binary to hex, simply break up the number into groups of 4 digits and convert each group:</p>
-        <program language="none"><input>
-<p>011011000011    (1731 in decimal)
-<inline classes="red">0110</inline><inline classes="blue">1100</inline><inline classes="red">0011</inline>
-<inline classes="red">6</inline>   <inline classes="blue">C</inline>   <inline classes="red">3</inline>
-6C3             (1731 in decimal)</p>
-</input></program>
-        <p>To convert hex to binary, we can just turn each hex digit into one group of four binary digits:</p>
-        <program language="none"><input>
-<p>A1              (161 in decimal)
-<inline classes="red">A</inline>   <inline classes="blue">1</inline>
-<inline classes="red">1010</inline><inline classes="blue">0001</inline>
-10100001        (161 in decimal)</p>
-</input></program>
-        <p>This video reviews how hexadecimal works and provides a few more examples:</p>
+  <title>Hexadecimal</title>
+  <p><term>Hexadecimal</term> is base 16. Much like base 10 uses digits that represent powers of 10 and binary uses
+    digits that represent powers of 2, hexadecimal uses digits that represent powers of 16. Here is how we would
+    interpret <m>{2047}_{16}</m>:</p>
+  <table>
+    <title>Powers of 16 place values</title>
 
-    <video xml:id="m1JtWKuTLR0" youtube="m1JtWKuTLR0" width="560"/>
-            <p><url href="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163" visual="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163">Closed Caption Version</url></p>
-        <p><raw format="html" xml:space="preserve">&lt;br /&gt;</raw></p>
-        <raw format="html" xml:space="preserve">            &lt;h3 class="underlined"&gt;
-               Why Hexadecimal
-            &lt;/h3&gt;
-            </raw>
-        <p>Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same. Those two binary strings listed above look like this in hex: <m>{3976}_{16}</m> and <m>{3966}_{16}</m> - it is a little easier to say the values and to see where the difference is, isn&#8217;t it? Because changing switching from binary to hex is so easy, hexadecimal is used to display binary values in a more human-readable form. You will see an example of where this is used in web page design on the next page.</p>
-        
+    <tabular halign="center">
+      <row header="yes">
+        <cell> 4096s </cell>
+        <cell> 256s </cell>
+        <cell> 16s </cell>
+        <cell> 1s </cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>{16}^3</m>
+        </cell>
+        <cell>
+          <m>{16}^2</m>
+        </cell>
+        <cell>
+          <m>{16}^1</m>
+        </cell>
+        <cell>
+          <m>{16}^0</m>
+        </cell>
+      </row>
+      <row>
+        <cell> 2 </cell>
+        <cell> 0 </cell>
+        <cell> 4 </cell>
+        <cell> 7 </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>So <m>{2047}_{16}</m> = <term>2</term> * 4096 + <term>0</term> * 256 + <term>4</term> * 16 + <term>7</term> * 1 = <m>
+    {8263}_{10}</m>.</p>
+  <p>Using this scheme, <m>{10}_{16}</m> = <term>1</term> * 16 + <term>0</term> * 1 = <m>{16}_{10}</m>. Which raises the
+    question &#8220;how do we represent ten in hexadecimal?&#8221; A 1 in the second column indicates a 16, so we
+    can&#8217;t use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F
+    to indicate 9-15:</p>
+  <table>
+    <title>Hexadecimal representation of values 10-15</title>
 
-        <exercise label="datarepresentation_hexadecimal1">
-            <statement>
-    <p>What decimal value does the hexadecimal number 2A represent? <var/>  </p></statement><setup><var><condition number="[42, 42]"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*[^\d]+\s*$"><feedback><p>Your answer should be a number</p></feedback></condition><condition string="^\s*.{1}\s*$"><feedback><p>Not enough digits</p></feedback></condition><condition string="^\s*.{3,}\s*$"><feedback><p>Too many digits</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Hint: Use the table from the top of the page</p></feedback></condition></var></setup></exercise>
-        <exercise label="datarepresentation_hexadecimal2">
-            <statement>
-    <p>What does hexadecimal 3FC look like in binary? <var/>  </p></statement><setup><var><condition string="^\s*0*11\s*1111\s*1100\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*[^0-1\s+]+\s*$"><feedback><p>Your answer should only consist of 1s and 0s</p></feedback></condition><condition string="^\s*.{1,9}\s*$"><feedback><p>Not enough digits</p></feedback></condition><condition string="^\s*.{15,}\s*$"><feedback><p>Too many digits</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Hint: Convert each digit separately</p></feedback></condition></var></setup></exercise>    </section>
+    <tabular>
+      <row header="yes">
+        <cell> Decimal </cell>
+        <cell> Hexadecimal </cell>
+      </row>
+
+      <row>
+        <cell> 10 </cell>
+        <cell> A </cell>
+      </row>
+      <row>
+        <cell> 11 </cell>
+        <cell> B </cell>
+      </row>
+      <row>
+        <cell> 12 </cell>
+        <cell> C </cell>
+      </row>
+      <row>
+        <cell> 13 </cell>
+        <cell> D </cell>
+      </row>
+      <row>
+        <cell> 14 </cell>
+        <cell> E </cell>
+      </row>
+      <row>
+        <cell> 15 </cell>
+        <cell> F </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Thus in the hexadecimal number <m>{\textrm{1EA}}_{16}</m> the E means means 14 copies of the second digit (16). The
+    A means 10 copies of the rightmost digit (1):</p>
+  <table>
+    <tabular halign="center">
+
+      <row header="yes" bottom="medium">
+        <cell> 256s </cell>
+        <cell> 16s </cell>
+        <cell> 1s </cell>
+      </row>
+
+      <row>
+        <cell> 1 </cell>
+        <cell> 14 (E) </cell>
+        <cell> 10 (A) </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>So <m>{1\textrm{EA}}_{16}</m> = <term>1</term> * 256 + <term>14</term> * 16 + <term>10</term> * 1 = <m>{490}_{10}</m>
+    .</p>
+
+  <subsection xml:id="hexadecimal-conversion">
+    <title>Hexadecimal Conversion To and From Binary</title>
+
+    <p>In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same
+      number of values using 4 bits: 0000-1111 (0-15). What that means, is that each hex digit represents the same
+      information as four binary digits - there is a direct mapping between a hex digit and a four-bit pattern:</p>
+    <table>
+      <title>Hexadecimal - Binary Comparison</title>
+
+      <tabular halign="center">
+
+        <row header="yes">
+          <cell> Binary </cell>
+          <cell> Hexadecimal </cell>
+          <cell> </cell>
+          <cell> Binary </cell>
+          <cell> Hexadecimal </cell>
+        </row>
+
+        <row>
+          <cell> 0000 </cell>
+          <cell> 0 </cell>
+          <cell> </cell>
+          <cell> 1000 </cell>
+          <cell> 8 </cell>
+        </row>
+        <row>
+          <cell> 0001 </cell>
+          <cell> 1 </cell>
+          <cell> </cell>
+          <cell> 1001 </cell>
+          <cell> 9 </cell>
+        </row>
+        <row>
+          <cell> 0010 </cell>
+          <cell> 2 </cell>
+          <cell> </cell>
+          <cell> 1010 </cell>
+          <cell> A </cell>
+        </row>
+        <row>
+          <cell> 0011 </cell>
+          <cell> 3 </cell>
+          <cell> </cell>
+          <cell> 1011 </cell>
+          <cell> B </cell>
+        </row>
+        <row>
+          <cell> 0100 </cell>
+          <cell> 4 </cell>
+          <cell> </cell>
+          <cell> 1100 </cell>
+          <cell> C </cell>
+        </row>
+        <row>
+          <cell> 0101 </cell>
+          <cell> 5 </cell>
+          <cell> </cell>
+          <cell> 1101 </cell>
+          <cell> D </cell>
+        </row>
+        <row>
+          <cell> 0110 </cell>
+          <cell> 6 </cell>
+          <cell> </cell>
+          <cell> 1110 </cell>
+          <cell> E </cell>
+        </row>
+        <row>
+          <cell> 0111 </cell>
+          <cell> 7 </cell>
+          <cell> </cell>
+          <cell> 1111 </cell>
+          <cell> F </cell>
+        </row>
+
+      </tabular>
+    </table>
+    <p>To convert binary to hex, simply break up the number into groups of 4 digits and convert each group:</p>
+    <p>
+      <raw format="html" xml:space="preserve">
+        <style>.red {color: red} .blue {color: blue}</style>
+        011011000011    (1731 in decimal)<br />
+        <inline class="red">0110</inline><inline class="blue">1100</inline><inline class="red">0011</inline><br />
+        <inline class="red">6</inline>   <inline class="blue">C</inline>   <inline class="red">3</inline><br />
+        6C3             (1731 in decimal)
+      </raw>
+    </p>
+    <p>To convert hex to binary, we can just turn each hex digit into one group of four binary digits:</p>
+    <p>
+      <raw format="html" xml:space="preserve">
+        A1              (161 in decimal)<br />
+        <inline class="red">A</inline>   <inline class="blue">1</inline><br />
+        <inline class="red">1010</inline><inline class="blue">0001</inline><br />
+        10100001        (161 in decimal)
+      </raw>
+    </p>
+    <p>This video reviews how hexadecimal works and provides a few more examples:</p>
+
+    <video xml:id="m1JtWKuTLR0" youtube="m1JtWKuTLR0" width="100%" />
+    <p>
+      <url href="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163"
+        visual="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163">Closed Caption
+        Version</url>
+    </p>
+
+  </subsection>
+
+  <subsection>
+    <title>Why Hexadecimal?</title>
+
+  </subsection>
+
+  <p>Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try
+    it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same.</p>
+  <p>Those two binary strings look like this in hex: <m>{3976}_{16}</m> and <m>{3966}_{16}</m>. In that format, it is a
+    little easier to say the values and to see where the difference is, isn&#8217;t it? Because changing switching from
+    binary to hex is so easy, hexadecimal is used to display binary values in a more human-readable form. You will see
+    an example of where this is used in web page design on the next page.</p>
+
+  <exercise label="datarepresentation_hexadecimal1">
+    <statement>
+      <p>What decimal value does the hexadecimal number 2A represent? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[42, 42]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^\d]+\s*$">
+          <feedback>
+            <p>Your answer should be a number</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{3,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: Use the table from the top of the page</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="datarepresentation_hexadecimal2">
+    <statement>
+      <p>What does hexadecimal 3FC look like in binary? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*0*11\s*1111\s*1100\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^0-1\s+]+\s*$">
+          <feedback>
+            <p>Your answer should only consist of 1s and 0s</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1,9}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{15,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: Convert each digit separately</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
 

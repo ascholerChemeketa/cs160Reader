@@ -2,7 +2,7 @@
         <title>Sorting Efficiency</title>
         <p>To figure out how efficient the Selection Sort algorithm is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This video works through how much work there is for a Selection Sort on a list of 4 items:</p>
 
-    <video xml:id="zm75IhDgO-Y" youtube="zm75IhDgO-Y" width="560"/>
+    <video xml:id="zm75IhDgO-Y" youtube="zm75IhDgO-Y" width="100%"/>
             <p><em>Animation used by permission of Virginia Tech</em></p>
         <p>If we did the same work for a selection sort on a list of 100 things (<m>n = 100</m>), it would look like:</p>
         <table><tabular>

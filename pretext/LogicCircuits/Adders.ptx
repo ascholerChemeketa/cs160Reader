@@ -1,61 +1,88 @@
 <section xml:id="logic-circuits_adding-numbers-with-logic">
-        <title>Adding Numbers with Logic</title>
-        <p>To do mathematics, a computer needs to think of the problem as a set of Boolean outputs and inputs. For example, if a computer is adding two 1-bit binary numbers, there are two inputs (each of the bits). The answer in binary can be 0, 1, or <m>10_2</m> (two) - it will thus take two bits to represent. The circuit below &#8220;adds&#8221; the two inputs and produces either 00, 01, or 10 as appropriate:</p>
-        <raw format="html" xml:space="preserve">
-            &lt;script src="../_static/simcir/simcir.js"&gt;&lt;/script&gt;
-            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir.css" /&gt;
-            &lt;script src="../_static/simcir/simcir-basicset.js"&gt;&lt;/script&gt;
-            &lt;link rel="stylesheet" type="text/css" href="../_static/simcir/simcir-basicset.css" /&gt;
-            &lt;script src="../_static/simcir/simcir-library.js"&gt;&lt;/script&gt;
-            &lt;script src="../_static/simcir/misc/simcir-altfulladder.js"&gt;&lt;/script&gt;
-            &lt;div class="simcir"&gt;{"width":600,"height":250,"showToolbox":false,"devices":[{"type":"DC","id":"dev0","x":120,"y":120,"label":"DC"},{"type":"Toggle","id":"dev1","x":200,"y":80,"label":"InputA","state":{"on":false}},{"type":"XOR","id":"dev2","x":280,"y":136,"label":"XOR"},{"type":"AND","id":"dev3","x":280,"y":88,"label":"AND"},{"type":"LED","id":"dev4","x":432,"y":48,"label":"1s bit"},{"type":"LED","id":"dev5","x":368,"y":48,"label":"2s bit"},{"type":"Toggle","id":"dev6","x":200,"y":144,"label":"InputB","state":{"on":false}}],"connectors":[{"from":"dev1.in0","to":"dev0.out0"},{"from":"dev2.in0","to":"dev1.out0"},{"from":"dev2.in1","to":"dev6.out0"},{"from":"dev3.in0","to":"dev1.out0"},{"from":"dev3.in1","to":"dev6.out0"},{"from":"dev4.in0","to":"dev2.out0"},{"from":"dev5.in0","to":"dev3.out0"},{"from":"dev6.in0","to":"dev0.out0"}    ]}&lt;/div&gt;</raw>
-        <p>Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the logical question &#8220;Are both the inputs ON?&#8221; (AND gate) - if so, we should have indicated that the answer has a 2 in it. The 1s output answers the question &#8220;Is only one of the inputs ON?&#8221; (EOR gate - remember EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions does the same work as counting the number of inputs that are on and expressing the answer as a binary number!</p>
-        <p>The truth table for this circuit would have two output columns and look like the one shown below. Notice that there are two ways to get an output 01 (the number 1) - either have the first input on and second input off or vice versa.</p>
-        <raw format="html" xml:space="preserve">&lt;table border="0" class="truth-table table"&gt;
-&lt;colgroup&gt;
-&lt;col width="25%"&gt;
-&lt;col width="25%"&gt;
-&lt;col width="25%"&gt;
-&lt;col width="25%"&gt;
-&lt;/colgroup&gt;
-&lt;thead valign="bottom"&gt;
-&lt;tr class="row-odd"&gt;&lt;th class="head"&gt;Input 1&lt;/th&gt;
-&lt;th class="head"&gt;Input 2&lt;/th&gt;
-&lt;th class="head"&gt;2s&lt;/th&gt;
-&lt;th class="head"&gt;1s&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr class="row-even"&gt;&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td class="output"&gt;0&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="row-odd"&gt;&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td class="output"&gt;0&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="row-even"&gt;&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td class="output"&gt;0&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class="row-odd"&gt;&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td class="output"&gt;1&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</raw>
-        <important>
-            <p>Everything a computer does is in terms of answering logical questions. Doing math, modifying an image, recognizing speech, playing music, etc&#8230; all at some level are represented as logical questions the computer can process using logic gates.</p>
-        </important>
-        <p>The circuit shown above is known as a <term>half adder</term>. To add larger numbers, we need a <term>full adder</term> - a full adder is two half adders merged together with an OR gate. The circuit takes three inputs - two of the inputs are current values being added (A and B); the third input indicates whether or not there is a carry coming in from the previous column. The two outputs indicate the answers to the questions &#8220;Does this column have a 1 in the answer?&#8221; and &#8220;Do we need to carry a 1 to the next column?&#8221;.</p>
-        <raw format="html" xml:space="preserve">&lt;div class="simcir"&gt;{    "width":600,    "height":250,    "showToolbox":false,    "devices":[    {"type":"DC","id":"dev0","x":24,"y":80,"label":"DC"},    {"type":"XOR","id":"dev1","x":184,"y":96,"label":"XOR"},    {"type":"AND","id":"dev2","x":184,"y":48,"label":"AND"},    {"type":"AND","id":"dev3","x":296,"y":128,"label":"AND"},    {"type":"Toggle","id":"dev4","x":104,"y":40,"label":"InputA","state":{"on":false}},    {"type":"Toggle","id":"dev5","x":104,"y":104,"label":"InputB","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":104,"y":184,"label":"Carry In","state":{"on":false}},    {"type":"XOR","id":"dev7","x":296,"y":176,"label":"XOR"},    {"type":"OR","id":"dev8","x":352,"y":64,"label":"OR"},    {"type":"LED","id":"dev9","x":464,"y":32,"label":"Carry Out"},    {"type":"LED","id":"dev10","x":552,"y":32,"label":"Sum"},    {"type":"Joint","id":"dev11","x":528,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev12","x":512,"y":184,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":440,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev14","x":424,"y":72,"label":"Joint","state":{"direction":0}}    ],    "connectors":[    {"from":"dev1.in0","to":"dev4.out0"},    {"from":"dev1.in1","to":"dev5.out0"},    {"from":"dev2.in0","to":"dev4.out0"},    {"from":"dev2.in1","to":"dev5.out0"},    {"from":"dev3.in0","to":"dev1.out0"},    {"from":"dev3.in1","to":"dev6.out0"},    {"from":"dev4.in0","to":"dev0.out0"},    {"from":"dev5.in0","to":"dev0.out0"},    {"from":"dev6.in0","to":"dev0.out0"},    {"from":"dev7.in0","to":"dev1.out0"},    {"from":"dev7.in1","to":"dev6.out0"},    {"from":"dev8.in0","to":"dev2.out0"},    {"from":"dev8.in1","to":"dev3.out0"},    {"from":"dev9.in0","to":"dev13.out0"},    {"from":"dev10.in0","to":"dev11.out0"},    {"from":"dev11.in0","to":"dev12.out0"},    {"from":"dev12.in0","to":"dev7.out0"},    {"from":"dev13.in0","to":"dev14.out0"},    {"from":"dev14.in0","to":"dev8.out0"}    ]}&lt;/div&gt;</raw>
-        <p>To add large numbers, multiple full adders are chained together - one full adder is used for each binary digit in the number. An abstracted view of adding two 3-digit binary numbers using three full adders is shown below.</p>
-        <p>Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the inputs - one adder handles A1 &amp; B1, another adder handles A2 &amp; B2, etc&#8230; It inputs representing the two digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs two answers: &#8220;What is the sum in this column?&#8221; (the S output) and &#8220;Do we carry a 1 into the next column&#8217;s full adder?&#8221; (the Cout output).</p>
-        <p>Try adding 3 to 2 by setting the A inputs to 101 and the B inputs to 010.</p>
-        <raw format="html" xml:space="preserve">&lt;div class="simcir"&gt;{    "width":600,    "height":450,    "showToolbox":false,    "devices":[    {"type":"AltFullAdder","id":"dev0","x":408,"y":240,"label":"AltFullAdder"},    {"type":"AltFullAdder","id":"dev1","x":184,"y":240,"label":"AltFullAdder"},    {"type":"AltFullAdder","id":"dev2","x":296,"y":240,"label":"AltFullAdder"},    {"type":"Toggle","id":"dev3","x":200,"y":64,"label":"A3","state":{"on":false}},    {"type":"Toggle","id":"dev4","x":312,"y":64,"label":"A2","state":{"on":false}},    {"type":"Toggle","id":"dev5","x":424,"y":64,"label":"A1","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":168,"y":120,"label":"B3","state":{"on":false}},    {"type":"Toggle","id":"dev7","x":280,"y":120,"label":"B2","state":{"on":false}},    {"type":"Toggle","id":"dev8","x":392,"y":120,"label":"B1","state":{"on":false}},    {"type":"DC","id":"dev9","x":88,"y":16,"label":"DC"},    {"type":"Joint","id":"dev10","x":152,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev11","x":184,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev12","x":296,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":264,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev14","x":408,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev15","x":376,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"LED","id":"dev16","x":120,"y":368,"label":"Sum4"},    {"type":"LED","id":"dev17","x":216,"y":368,"label":"Sum3"},    {"type":"LED","id":"dev18","x":328,"y":368,"label":"Sum2"},    {"type":"LED","id":"dev19","x":440,"y":368,"label":"Sum1"},    {"type":"Joint","id":"dev20","x":120,"y":264,"label":"Joint","state":{"direction":2}}    ],    "connectors":[    {"from":"dev0.in1","to":"dev8.out0"},    {"from":"dev0.in2","to":"dev5.out0"},    {"from":"dev1.in0","to":"dev2.out0"},    {"from":"dev1.in1","to":"dev6.out0"},    {"from":"dev1.in2","to":"dev3.out0"},    {"from":"dev2.in0","to":"dev0.out0"},    {"from":"dev2.in1","to":"dev7.out0"},    {"from":"dev2.in2","to":"dev4.out0"},    {"from":"dev3.in0","to":"dev11.out0"},    {"from":"dev4.in0","to":"dev12.out0"},    {"from":"dev5.in0","to":"dev14.out0"},    {"from":"dev6.in0","to":"dev10.out0"},    {"from":"dev7.in0","to":"dev13.out0"},    {"from":"dev8.in0","to":"dev15.out0"},    {"from":"dev10.in0","to":"dev9.out0"},    {"from":"dev11.in0","to":"dev10.out0"},    {"from":"dev12.in0","to":"dev13.out0"},    {"from":"dev13.in0","to":"dev11.out0"},    {"from":"dev14.in0","to":"dev15.out0"},    {"from":"dev15.in0","to":"dev12.out0"},    {"from":"dev16.in0","to":"dev20.out0"},    {"from":"dev17.in0","to":"dev1.out1"},    {"from":"dev18.in0","to":"dev2.out1"},    {"from":"dev19.in0","to":"dev0.out1"},    {"from":"dev20.in0","to":"dev1.out0"}    ]}&lt;/div&gt;</raw>
-    </section>
+  <title>Adding Numbers with Logic</title>
+  <p>To do mathematics, a computer needs to think of the problem as a set of Boolean outputs and inputs. For example, if
+    a computer is adding two 1-bit binary numbers, there are two inputs (each of the bits). The answer in binary can be
+    0, 1, or <m>10_2</m> (two) - it will thus take two bits to represent. The circuit below &#8220;adds&#8221; the two
+    inputs and produces either 00, 01, or 10 as appropriate:</p>
+    <p>
+      
+  <raw format="html" xml:space="preserve">
+            <script src="external/LogicCircuits/simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="external/LogicCircuits/simcir/simcir.css" />
+            <script src="external/LogicCircuits/simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="external/LogicCircuits/simcir/simcir-basicset.css" />
+            <script src="external/LogicCircuits/simcir/simcir-library.js"></script>
+            <script src="external/LogicCircuits/simcir/misc/simcir-altfulladder.js"></script>
+            <div class="simcir">{"width":600,"height":250,"showToolbox":false,"devices":[{"type":"DC","id":"dev0","x":120,"y":120,"label":"Power"},{"type":"Toggle","id":"dev1","x":200,"y":80,"label":"InputA","state":{"on":false}},{"type":"XOR","id":"dev2","x":280,"y":136,"label":"XOR"},{"type":"AND","id":"dev3","x":280,"y":88,"label":"AND"},{"type":"LED","id":"dev4","x":432,"y":48,"label":"1s bit"},{"type":"LED","id":"dev5","x":368,"y":48,"label":"2s bit"},{"type":"Toggle","id":"dev6","x":200,"y":144,"label":"InputB","state":{"on":false}}],"connectors":[{"from":"dev1.in0","to":"dev0.out0"},{"from":"dev2.in0","to":"dev1.out0"},{"from":"dev2.in1","to":"dev6.out0"},{"from":"dev3.in0","to":"dev1.out0"},{"from":"dev3.in1","to":"dev6.out0"},{"from":"dev4.in0","to":"dev2.out0"},{"from":"dev5.in0","to":"dev3.out0"},{"from":"dev6.in0","to":"dev0.out0"}    ]}</div></raw>  (<xref ref="circuit-tips" text="title" />) 
+          </p>
+  <p>Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the
+    logical question &#8220;Are both the inputs ON?&#8221; (AND gate) - if so, we should have indicated that the answer
+    has a 2 in it. The 1s output answers the question &#8220;Is only one of the inputs ON?&#8221; (EOR gate - remember
+    EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions does the same
+    work as counting the number of inputs that are on and expressing the answer as a binary number!</p>
+  <p>The truth table for this circuit would have two output columns and look like the one shown below. Notice that there
+    are two ways to get an output 01 (the number 1) - either have the first input on and second input off or vice versa.</p>
+
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell> Input 1 </cell>
+        <cell right="minor"> Input 2 </cell>
+        <cell > 2s Output </cell>
+        <cell> 1s Output </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+      </row>
+    </tabular>
+
+  <important>
+    <p>Everything a computer does is in terms of answering logical questions. Doing math, modifying an image,
+      recognizing speech, playing music, etc&#8230; all at some level are represented as logical questions the computer
+      can process using logic gates.</p>
+  </important>
+
+  <p>The circuit shown above is known as a <term>half adder</term>. To add larger numbers, we need a <term>full adder</term>
+    - a full adder is two half adders merged together with an OR gate. The circuit takes three inputs - two of the
+    inputs are current values being added (A and B); the third input indicates whether or not there is a carry coming in
+    from the previous column. The two outputs indicate the answers to the questions &#8220;Does this column have a 1 in
+    the answer?&#8221; and &#8220;Do we need to carry a 1 to the next column?&#8221;.</p>
+    <p>
+      
+  <raw format="html" xml:space="preserve"><div class="simcir">{    "width":600,    "height":250,    "showToolbox":false,    "devices":[    {"type":"DC","id":"dev0","x":24,"y":80,"label":"Power"},    {"type":"XOR","id":"dev1","x":184,"y":96,"label":"XOR"},    {"type":"AND","id":"dev2","x":184,"y":48,"label":"AND"},    {"type":"AND","id":"dev3","x":296,"y":128,"label":"AND"},    {"type":"Toggle","id":"dev4","x":104,"y":40,"label":"InputA","state":{"on":false}},    {"type":"Toggle","id":"dev5","x":104,"y":104,"label":"InputB","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":104,"y":184,"label":"Carry In","state":{"on":false}},    {"type":"XOR","id":"dev7","x":296,"y":176,"label":"XOR"},    {"type":"OR","id":"dev8","x":352,"y":64,"label":"OR"},    {"type":"LED","id":"dev9","x":464,"y":32,"label":"Carry Out"},    {"type":"LED","id":"dev10","x":552,"y":32,"label":"Sum"},    {"type":"Joint","id":"dev11","x":528,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev12","x":512,"y":184,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":440,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev14","x":424,"y":72,"label":"Joint","state":{"direction":0}}    ],    "connectors":[    {"from":"dev1.in0","to":"dev4.out0"},    {"from":"dev1.in1","to":"dev5.out0"},    {"from":"dev2.in0","to":"dev4.out0"},    {"from":"dev2.in1","to":"dev5.out0"},    {"from":"dev3.in0","to":"dev1.out0"},    {"from":"dev3.in1","to":"dev6.out0"},    {"from":"dev4.in0","to":"dev0.out0"},    {"from":"dev5.in0","to":"dev0.out0"},    {"from":"dev6.in0","to":"dev0.out0"},    {"from":"dev7.in0","to":"dev1.out0"},    {"from":"dev7.in1","to":"dev6.out0"},    {"from":"dev8.in0","to":"dev2.out0"},    {"from":"dev8.in1","to":"dev3.out0"},    {"from":"dev9.in0","to":"dev13.out0"},    {"from":"dev10.in0","to":"dev11.out0"},    {"from":"dev11.in0","to":"dev12.out0"},    {"from":"dev12.in0","to":"dev7.out0"},    {"from":"dev13.in0","to":"dev14.out0"},    {"from":"dev14.in0","to":"dev8.out0"}    ]}</div></raw>
+  (<xref ref="circuit-tips" text="title" />) 
+</p>
+  <p>To add large numbers, multiple full adders are chained together - one full adder is used for each binary digit in
+    the number. An abstracted view of adding two 3-digit binary numbers using three full adders is shown below.</p>
+  <p>Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the
+    inputs - one adder handles A1 &amp; B1, another adder handles A2 &amp; B2, etc&#8230; It inputs representing the two
+    digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs two
+    answers: &#8220;What is the sum in this column?&#8221; (the S output) and &#8220;Do we carry a 1 into the next
+    column&#8217;s full adder?&#8221; (the Cout output).</p>
+  <p>Try adding 3 to 2 by setting the A inputs to 101 and the B inputs to 010.</p>
+  <p>
+  <raw format="html" xml:space="preserve"><div class="simcir">{    "width":600,    "height":450,    "showToolbox":false,    "devices":[    {"type":"AltFullAdder","id":"dev0","x":408,"y":240,"label":"AltFullAdder"},    {"type":"AltFullAdder","id":"dev1","x":184,"y":240,"label":"AltFullAdder"},    {"type":"AltFullAdder","id":"dev2","x":296,"y":240,"label":"AltFullAdder"},    {"type":"Toggle","id":"dev3","x":200,"y":64,"label":"A3","state":{"on":false}},    {"type":"Toggle","id":"dev4","x":312,"y":64,"label":"A2","state":{"on":false}},    {"type":"Toggle","id":"dev5","x":424,"y":64,"label":"A1","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":168,"y":120,"label":"B3","state":{"on":false}},    {"type":"Toggle","id":"dev7","x":280,"y":120,"label":"B2","state":{"on":false}},    {"type":"Toggle","id":"dev8","x":392,"y":120,"label":"B1","state":{"on":false}},    {"type":"DC","id":"dev9","x":88,"y":16,"label":"Power"},    {"type":"Joint","id":"dev10","x":152,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev11","x":184,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev12","x":296,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":264,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev14","x":408,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev15","x":376,"y":24,"label":"Joint","state":{"direction":0}},    {"type":"LED","id":"dev16","x":120,"y":368,"label":"Sum4"},    {"type":"LED","id":"dev17","x":216,"y":368,"label":"Sum3"},    {"type":"LED","id":"dev18","x":328,"y":368,"label":"Sum2"},    {"type":"LED","id":"dev19","x":440,"y":368,"label":"Sum1"},    {"type":"Joint","id":"dev20","x":120,"y":264,"label":"Joint","state":{"direction":2}}    ],    "connectors":[    {"from":"dev0.in1","to":"dev8.out0"},    {"from":"dev0.in2","to":"dev5.out0"},    {"from":"dev1.in0","to":"dev2.out0"},    {"from":"dev1.in1","to":"dev6.out0"},    {"from":"dev1.in2","to":"dev3.out0"},    {"from":"dev2.in0","to":"dev0.out0"},    {"from":"dev2.in1","to":"dev7.out0"},    {"from":"dev2.in2","to":"dev4.out0"},    {"from":"dev3.in0","to":"dev11.out0"},    {"from":"dev4.in0","to":"dev12.out0"},    {"from":"dev5.in0","to":"dev14.out0"},    {"from":"dev6.in0","to":"dev10.out0"},    {"from":"dev7.in0","to":"dev13.out0"},    {"from":"dev8.in0","to":"dev15.out0"},    {"from":"dev10.in0","to":"dev9.out0"},    {"from":"dev11.in0","to":"dev10.out0"},    {"from":"dev12.in0","to":"dev13.out0"},    {"from":"dev13.in0","to":"dev11.out0"},    {"from":"dev14.in0","to":"dev15.out0"},    {"from":"dev15.in0","to":"dev12.out0"},    {"from":"dev16.in0","to":"dev20.out0"},    {"from":"dev17.in0","to":"dev1.out1"},    {"from":"dev18.in0","to":"dev2.out1"},    {"from":"dev19.in0","to":"dev0.out1"},    {"from":"dev20.in0","to":"dev1.out0"}    ]}</div></raw>
+  (<xref ref="circuit-tips" text="title" />) 
+</p>
+</section>
 

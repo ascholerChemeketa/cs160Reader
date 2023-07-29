@@ -1,82 +1,105 @@
 <section xml:id="parallel-processing_synchronization">
-        <title>Synchronization</title>
-        <p>When two or more workers are doing tasks that can affect the results of each other, synchronizing their actions can become critical. Say two processing cores try to do these two jobs (assume that <c>x</c> refers to a location in memory where the value 5 is stored):</p>
-        <container classes="inlinegroup">
-            <program language="none"><input>
+  <title>Synchronization</title>
+  <p>When two or more workers are doing tasks that can affect the results of each other, synchronizing their actions can
+    become critical. Say two processing cores try to do these two jobs (assume that <c>x</c> refers to a location in
+    memory where the value 5 is stored):</p>
+  <sidebyside>
+    <program language="none">
+      <input>
 <p>    <term>Worker A's Task</term>
 1   get <c>x</c> from memory
 2   add 10
 3   store total to <c>x</c> in memory</p>
-</input></program>
-            <program language="none"><input>
+</input>
+    </program>
+    <program language="none">
+      <input>
 <p>    <term>Worker B's Task</term>
 1   get <c>x</c> from memory
 2   add 1
 3   store total to <c>x</c> in memory</p>
-</input></program>
-        </container>
-        <p><raw format="html" xml:space="preserve">&lt;br /&gt;</raw></p>
-        <p>Depending on the timing, we could end up with 15, 6 or 16 stored as the value for <c>x</c>! How? Well, we know that each worker will do their three steps in order, but we have no guarantee on the relative ordering between the two workers.</p>
-        <p><ul>
-            <li>
-                <p>A finishes completely (<c>x</c> now 15) and then B goes (<c>x</c> now 16)</p>
-            </li>
-            <li>
-                <p>B finishes completely (<c>x</c> now 6) and then A goes (<c>x</c> now 16)</p>
-            </li>
-            <li>
-                <p>A1 runs, program A gets 5. B1 runs, B gets 5. B finishes steps 2 and 3, (<c>x</c> now is 6). Then A finishes steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 15)</p>
-            </li>
-            <li>
-                <p>A1 runs, program A gets 5. B1 runs, B gets 5. A finishes steps 2 and 3, (<c>x</c> now is 15). Then B finishes steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 6)</p>
-            </li>
-        </ul></p>
-        <p>The potential for different results depending on which worker acts first is called a <term>race condition</term> and leads to nasty bugs in programs (you likely only see the error occasionally, making it very hard to track down).</p>
-        <raw format="html" xml:space="preserve">            &lt;h3 class="underlined"&gt;
-               Locks and Deadlock
-            &lt;/h3&gt;
-            </raw>
-        <p>One solution to synchronization issues is to add <term>locks</term> to certain resources (like pieces of memory or hardware). Before using a locked resource, a worker has to check if anyone else already has locked it. If not, the worker <em>acquires a lock</em> - marking that resource as in use. When it is locked, anyone else who wishes to use it must wait until the lock is released.</p>
-        <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A worker trying to access an already locked resource must wait for the existing lock to be released</caption><image source="ParallelProcessing/Images/lock.png" width="50%"/></figure>
-        <p>In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step 3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step 5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command &#8220;check and acquire lock&#8221; that can be done as one <term>atomic</term> action - in other words, there is no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2 there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.</p>
-        <p>Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked resource is serial - only one worker can do anything with the resource at a time. The more time code spends working within locks, the less able workers are to run in parallel. Second, we introduce the possibility for a <term>deadlock</term>. Say we have two workers that both need to use two locked resources, X and Y to complete their work. We could end up in a situation where each is waiting for the other to release a lock it needs:</p>
-        <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Once we reach step 4 both A and B will be stuck waiting for the other one to finish.</caption><image source="ParallelProcessing/Images/deadlocked.png" width="50%"/></figure>
-        <p>Deadlock depends on three criteria being met:</p>
-        <p><ul>
-            <li>
-                <dl>
-                    <li>
-                        <title>Mutual Exclusion</title>
-                        
-                            <p>Only one worker can access a resource at a time.
-                                Any time we allow locks, this will be met. Only by allowing both workers to access the resource at the same time can we avoid this.</p>
-                        
-                    </li>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <li>
-                        <title>Hold and wait</title>
-                        
-                            <p>A worker can hold onto a lock while they wait on another resource.
-                                We might be able to avoid deadlock if in step 4 both workers had to release their existing lock and start over trying to acquire a lock on both X and Y. (To avoid going right back to step 1 every time, we might make each Worker wait a small random amount of time before trying for the locks).</p>
-                        
-                    </li>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <li>
-                        <title>No Preemption</title>
-                        
-                            <p>No one can be forced to give up their lock.
-                                We could say that Worker A can make B give up a lock if they want. Or we could say that anyone who has the lock on X can make someone else give up their lock on X.</p>
-                        
-                    </li>
-                </dl>
-            </li>
-        </ul></p>
-        <p>None of the possible fixes mentioned to the conditions for deadlock are without issue. We can very easily end up &#8220;starving&#8221; one worker who is forced to wait all the time for their resources. It is also notoriously hard to figure out in advance exactly who needs to lock what resources for how long and how conflicts should be resolved - even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or data corruption.</p>
-    </section>
+</input>
+    </program>
+  </sidebyside>
+  <p>Depending on the timing, we could end up with 15, 6 or 16 stored as the value for <c>x</c>! How? Well, we know that
+    each worker will do their three steps in order, but we have no guarantee on the relative ordering between the two
+    workers.</p>
+  <p>
+    <ul>
+      <li>
+        <p>A finishes completely (<c>x</c> now 15) and then B goes (<c>x</c> now 16)</p>
+      </li>
+      <li>
+        <p>B finishes completely (<c>x</c> now 6) and then A goes (<c>x</c> now 16)</p>
+      </li>
+      <li>
+        <p>A1 runs, program A gets 5. B1 runs, B gets 5. B finishes steps 2 and 3, (<c>x</c> now is 6). Then A finishes
+          steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 15)</p>
+      </li>
+      <li>
+        <p>A1 runs, program A gets 5. B1 runs, B gets 5. A finishes steps 2 and 3, (<c>x</c> now is 15). Then B finishes
+          steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 6)</p>
+      </li>
+    </ul>
+  </p>
+  <p>The potential for different results depending on which worker acts first is called a <term>race condition</term>
+    and leads to nasty bugs in programs (you likely only see the error occasionally, making it very hard to track down).</p>
+  <subsection xml:id="synchronization-deadlock">
+    <title>Locks and Deadlock</title>
+    <p>One solution to synchronization issues is to add <term>locks</term> to certain resources (like pieces of memory
+      or hardware). Before using a locked resource, a worker has to check if anyone else already has locked it. If not,
+      the worker <em>acquires a lock</em> - marking that resource as in use. When it is locked, anyone else who wishes
+      to use it must wait until the lock is released.</p>
+    <figure>
+      <caption>A worker trying to access an already locked resource must wait for the existing lock to be released</caption>
+      <image source="ParallelProcessing/Images/lock.png" width="100%" />
+    </figure>
+    <p>In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step
+      3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step
+      5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command
+      &#8220;check and acquire lock&#8221; that can be done as one <term>atomic</term> action - in other words, there is
+      no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2
+      there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.</p>
+    <p>Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked
+      resource is serial - only one worker can do anything with the resource at a time. The more time code spends
+      working within locks, the less able workers are to run in parallel. Second, we introduce the possibility for a <term>
+      deadlock</term>. Say we have two workers that both need to use two locked resources, X and Y to complete their
+      work. We could end up in a situation where each is waiting for the other to release a lock it needs:</p>
+    <figure>
+      <caption>Once we reach step 4 both A and B will be stuck waiting for the other one to finish.</caption>
+      <image source="ParallelProcessing/Images/deadlocked.png" width="100%" />
+    </figure>
+    <p>Deadlock depends on three criteria being met:</p>
+    <p>
+      <dl>
+        <li>
+          <title>Mutual Exclusion</title>
+
+          <p>Only one worker can access a resource at a time. Any time we allow locks, this will be met. Only by
+            allowing both workers to access the resource at the same time can we avoid this.</p>
+        </li>
+        <li>
+          <title>Hold and wait</title>
+
+          <p>A worker can hold onto a lock while they wait on another resource. We might be able to avoid deadlock if in
+            step 4 both workers had to release their existing lock and start over trying to acquire a lock on both X and
+            Y. (To avoid going right back to step 1 every time, we might make each Worker wait a small random amount of
+            time before trying for the locks).</p>
+        </li>
+        <li>
+          <title>No Preemption</title>
+
+          <p>No one can be forced to give up their lock. We could say that Worker A can make B give up a lock if they
+            want. Or we could say that anyone who has the lock on X can make someone else give up their lock on X.</p>
+        </li>
+      </dl>
+    </p>
+    <p>None of the possible fixes mentioned to the conditions for deadlock are without issue. We can very easily end up
+      &#8220;starving&#8221; one worker who is forced to wait all the time for their resources. It is also notoriously
+      hard to figure out in advance exactly who needs to lock what resources for how long and how conflicts should be
+      resolved - even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or
+      data corruption.</p>
+  </subsection>
+
+</section>
 

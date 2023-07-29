@@ -1,97 +1,66 @@
 <section xml:id="algorithms_merge-sort-compared">
-        <title>Merge Sort Compared</title>
-        <p>We have established that the Merge Sort algorithm requires <m>O(n&#183;log_2(n))</m> work to sort a list of size <term>n</term>. How does that compare to Insertion and Selection sort that are <m>O(n^2)</m>?</p>
-        <p>Below is a graph of the growth of <m>n^2</m> and <m>n&#183;log_2(n)</m>:</p>
-        <figure align="" xml:id=""><image source="Algorithms/Images/Sorts.svg" width="50%"/></figure>
-        <p>Obviously, <m>n^2</m> grows much faster than <m>n&#183;log_2(n)</m>. Looking at the table below, we can see that sorting 500 items with Insertion Sort (<m>O(n^2)</m>) would take somewhere around 250,000 units of work. Doing the same task with Merge Sort would only take around 4,483 units of work!</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            <term>Problem size</term>
-                        </cell>
-                        <cell>
-                            10
-                        </cell>
-                        <cell>
-                            100
-                        </cell>
-                        <cell>
-                            500
-                        </cell>
-                        <cell>
-                            1,000
-                        </cell>
-                        <cell>
-                            10,000
-                        </cell>
-                        <cell>
-                            100,000
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <m>n \cdot log_2(n)</m>
-                        </cell>
-                        <cell>
-                            33
-                        </cell>
-                        <cell>
-                            664
-                        </cell>
-                        <cell>
-                            4,483
-                        </cell>
-                        <cell>
-                            9,966
-                        </cell>
-                        <cell>
-                            132,877
-                        </cell>
-                        <cell>
-                            1,660,964
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            <m>n^2</m>
-                        </cell>
-                        <cell>
-                            100
-                        </cell>
-                        <cell>
-                            10,000
-                        </cell>
-                        <cell>
-                            250,000
-                        </cell>
-                        <cell>
-                            1,000,000
-                        </cell>
-                        <cell>
-                            100,000,000
-                        </cell>
-                        <cell>
-                            10,000,000,000
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving small problems it may take more time to run than Insertion Sort due to this. But we know that as <term>n</term> grows larger the basic pattern is going to hold - <m>O(n^2)</m> is going to grow faster than <m>O(n&#183;log_2(n))</m>, so Merge Sort will certainly be faster out for large values of <term>n</term>.</p>
-        <p>Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half-second to run? At what point does Merges Sort start taking more than a half-second?</p>
-        <image source="Algorithms/Images/working.gif" width="50%"/>
-        <raw format="html" xml:space="preserve">&lt;style&gt;
+  <title>Merge Sort Compared</title>
+  <p>We have established that the Merge Sort algorithm requires <m>O(n&#183;log_2(n))</m> work to sort a list of size <term>
+    n</term>. How does that compare to Insertion and Selection sort that are <m>O(n^2)</m>?</p>
+  <p>Below is a graph of the growth of <m>n^2</m> and <m>n&#183;log_2(n)</m>:</p>
+
+  <image source="Algorithms/Images/Sorts.svg" />
+
+  <p>Obviously, <m>n^2</m> grows much faster than <m>n&#183;log_2(n)</m>. Looking at the table below, we can see that
+    sorting 500 items with Insertion Sort (<m>O(n^2)</m>) would take somewhere around 250,000 units of work. Doing the
+    same task with Merge Sort would only take around 4,483 units of work!</p>
+
+  <tabular halign="center">
+
+    <row header="yes" bottom="minor">
+      <cell>
+        <term>Problem size</term>
+      </cell>
+      <cell> 10 </cell>
+      <cell> 100 </cell>
+      <cell> 500 </cell>
+      <cell> 1,000 </cell>
+      <cell> 10,000 </cell>
+      <cell> 100,000 </cell>
+    </row>
+
+    <row>
+      <cell right="minor">
+        <m>n \cdot log_2(n)</m>
+      </cell>
+      <cell> 33 </cell>
+      <cell> 664 </cell>
+      <cell> 4,483 </cell>
+      <cell> 9,966 </cell>
+      <cell> 132,877 </cell>
+      <cell> 1,660,964 </cell>
+    </row>
+    <row>
+      <cell right="minor">
+        <m>n^2</m>
+      </cell>
+      <cell> 100 </cell>
+      <cell> 10,000 </cell>
+      <cell> 250,000 </cell>
+      <cell> 1,000,000 </cell>
+      <cell> 100,000,000 </cell>
+      <cell> 10,000,000,000 </cell>
+    </row>
+
+  </tabular>
+  <p>Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring
+    constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic
+    overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving
+    small problems it may take more time to run than Insertion Sort due to this. But we know that as <term>n</term>
+    grows larger the basic pattern is going to hold - <m>O(n^2)</m> is going to grow faster than <m>O(n&#183;log_2(n))</m>,
+    so Merge Sort will certainly be faster out for large values of <term>n</term>.</p>
+  <p>Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can
+    use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort
+    sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half-second to run? At
+    what point does Merges Sort start taking more than a half-second?</p>
+    <p>
+  <raw format="html" xml:space="preserve">
+  <style>
   #sorterBox {
     width: 600px;
     border: 1px solid #ccc;
@@ -128,8 +97,9 @@
     width: 120px;
     margin-right: 15px;
   }
-  &lt;/style&gt;
-  &lt;script&gt;
+  </style>
+  <script>
+    <![CDATA[
   function hexFromRGB(r, g, b) {
     var hex = [
       r.toString( 16 ),
@@ -154,7 +124,7 @@
     n /= 51324;     //misc tuning constant
     n *= (1.05 - Math.random() / 10); //+- 5% variability
     var places = 5 - Math.floor(getBaseLog(n,10));
-    if(places &lt; 0) places = 0;
+    if(places < 0) places = 0;
     setTimeout(function() {
         $("#insertSorting").text( (n / 1000.0).toFixed(places) + " seconds");
         $( "#goNSqButton" ).removeAttr('disabled');
@@ -165,7 +135,7 @@
      nStr += '';
      x = nStr.split('.');
      x1 = x[0];
-     x2 = x.length &gt; 1 ? '.' + x[1] : '';
+     x2 = x.length > 1 ? '.' + x[1] : '';
      var rgx = /(\d+)(\d{3})/;
      while (rgx.test(x1)) {
            x1 = x1.replace(rgx, '$1' + ',' + '$2');
@@ -180,7 +150,7 @@
     n += 0.00234;     //misc tuning constant - make merge sort come in slower on small list
     n *= (1.05 - Math.random() / 10); //+- 5% variability
     var places = 5 - Math.floor(getBaseLog(n,10));
-    if(places &lt; 0) places = 0;
+    if(places < 0) places = 0;
     setTimeout(function() {
         $("#mergeSorting").text( (n / 1000.0).toFixed(places) + " seconds");
         $( "#goNLogNButton" ).removeAttr('disabled');
@@ -192,7 +162,7 @@
     $("#probSizeText").val( addCommas(Math.pow(10,n)) );
   }
 
-  document.addEventListener('DOMContentLoaded', (event) =&gt; {
+  document.addEventListener('DOMContentLoaded', (event) => {
     $( "#probSize" ).slider({
       orientation: "horizontal",
       min: 1,
@@ -205,36 +175,37 @@
     $( "#goNSqButton" ).click( function() {
         var temp = $("#probSizeText").val().split(",").join("");
         var n = parseInt(temp);
-        $( "#insertSorting" ).html("Sorting... &lt;img src='../_images/working.gif'&gt;");
+        $( "#insertSorting" ).html("Sorting... <img src='external/Algorithms/Images/working.gif'>");
         $( "#goNSqButton" ).attr('disabled','disabled');
         simulateNSqWork(n);
     });
     $( "#goNLogNButton" ).click( function() {
         var temp = $("#probSizeText").val().split(",").join("");
         var n = parseInt(temp);
-        $( "#mergeSorting" ).html("Sorting... &lt;img src='../_images/working.gif'&gt;");
+        $( "#mergeSorting" ).html("Sorting... <img src='external/Algorithms/Images/working.gif'>");
         $( "#goNLogNButton" ).attr('disabled','disabled');
         simulateNLogNWork(n);
     });
   });
-  &lt;/script&gt;
+  ]]>
+  </script>
 
-&lt;fieldset id="sorterBox"&gt;
-    &lt;legend&gt;Sort Timer&lt;/legend&gt;
-    &lt;div id="sizeBox"&gt;
-        &lt;span id="probSizeEntry"&gt;&lt;strong&gt;List Length:&lt;/strong&gt;&lt;/span&gt;
-        &lt;div id="inputBox"&gt;
-            &lt;input type="text" class="work" id="probSizeText" readonly="true" /&gt;
-            &lt;div type="text" id="probSize"&gt; &lt;/div&gt;
-         &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="sortRow"&gt;
-        &lt;button id="goNSqButton" class="sortButton"&gt;Insertion Sort&lt;/button&gt;&lt;span id="insertSorting"&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class="sortRow"&gt;
-        &lt;button id="goNLogNButton" class="sortButton"&gt;Merge Sort&lt;/button&gt;&lt;span id="mergeSorting"&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/fieldset&gt;
-&lt;br/&gt;</raw>
-    </section>
+<fieldset id="sorterBox">
+    <legend>Sort Timer</legend>
+    <div id="sizeBox">
+        <span id="probSizeEntry"><strong>List Length:</strong></span>
+        <div id="inputBox">
+            <input type="text" class="work" id="probSizeText" readonly="true" />
+            <div type="text" id="probSize"> </div>
+         </div>
+    </div>
+    <div class="sortRow">
+        <button id="goNSqButton" class="sortButton">Insertion Sort</button><span id="insertSorting"></span>
+    </div>
+    <div class="sortRow">
+        <button id="goNLogNButton" class="sortButton">Merge Sort</button><span id="mergeSorting"></span>
+    </div>
+</fieldset></raw>
+</p>
+</section>
 

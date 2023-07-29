@@ -1,111 +1,86 @@
 <section xml:id="parallel-processing_moore-s-law">
-        <title>Moore&#8217;s Law</title>
-        <sidebar>
-            <title>Gordon Moore</title>
-            <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Image &#169; Intel Corporation</caption><image source="ParallelProcessing/Images/Moore.jpg" width="50%"/></figure>
-        </sidebar>
-        <p>In the 1960s, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a circuit would double every two years. This prediction came to be called <term>Moore&#8217;s Law</term>. Although Moore was focused on the number of transistors on a chip, others have expanded his idea into a prediction for overall performance increases. The combined benefits of increased complexity and speed in chips have resulted in processing power doubling every 18 months. Thus the term &#8220;Moore&#8217;s Law&#8221; is used to refer to this idea that overall processing power doubles every year and a half.</p>
-        <p>Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (This helps explain why computers need to be upgraded so frequently.)</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                    <row>
-                        <cell>
-                            Years
-                        </cell>
-                        <cell>
-                            1.5
-                        </cell>
-                        <cell>
-                            3
-                        </cell>
-                        <cell>
-                            4.5
-                        </cell>
-                        <cell>
-                            6
-                        </cell>
-                        <cell>
-                            7.5
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                        <cell>
-                            15
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            Doublings
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            2
-                        </cell>
-                        <cell>
-                            3
-                        </cell>
-                        <cell>
-                            4
-                        </cell>
-                        <cell>
-                            5
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                        <cell>
-                            10
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            Relative Power
-                        </cell>
-                        <cell>
-                            x2
-                        </cell>
-                        <cell>
-                            x4
-                        </cell>
-                        <cell>
-                            x8
-                        </cell>
-                        <cell>
-                            x16
-                        </cell>
-                        <cell>
-                            x32
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                        <cell>
-                            x1024
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>This continuous doubling and redoubling of computing power in chips has held steady for the past 40+ years. To put this kind of growth into perspective: If Moore&#8217;s Law applied to the air travel industry, a flight from New York to Paris that took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a penny.</p>
-        <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Wikimedia Commons" refuri="http://en.wikipedia.org/wiki/Moore's_law#mediaviewer/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg">Wikimedia Commons</reference> - <reference name="CC-BY-SA-3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</reference></caption><image source="ParallelProcessing/Images/TransistorCounts.png" width="50%"/><legend>
-                <p>Transistor count of various processors over the past 40 years. Note that the y-axis is a logarithmic scale - the straight line represents exponential growth.</p>
-            </legend></figure>
-        <p>Unfortunately, the &#8220;free ride&#8221; of increased power that computer programmers and users have enjoyed has hit some speed bumps. Partly, this is the necessity of squeezing transistors into ever-smaller spaces. Currently, features on chips occupy ~20 nanometers, a span of fewer than 100 atoms, we do not have too much longer before the size of atoms becomes a barrier to making chips smaller.</p>
-        <p>Equally importantly, making chips run faster requires more power. Power running through a chip results in waste heat that must be dissipated - only so much power can be used (and thus heat generated) before a chip becomes uncontrollably hot. The image below shows the path chip designers were on in the early 2000s&#8230; an unsustainable path in terms of how much power draw was being packed into ever-smaller spaces.</p>
-        <figure align="" xml:id="id3"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Image from <reference name="Beauty and Joy of Computing by University of California" refuri="http://bjc.berkeley.edu/">Beauty and Joy of Computing by University of California</reference> - <reference name="CC-BY-SA-3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</reference></caption><image source="ParallelProcessing/Images/power.png" width="50%"/><legend>
-                <p>Projected power density growth through the early 2000s. Red dots show the predicted path.</p>
-            </legend></figure>
-    </section>
+  <title>Moore&#8217;s Law</title>
+  <p>In the 1960s, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more
+    complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a
+    circuit would double every two years. This prediction came to be called <term>Moore&#8217;s Law</term>. Although
+    Moore was focused on the number of transistors on a chip, others have expanded his idea into a prediction for
+    overall performance increases. The combined benefits of increased complexity and speed in chips have resulted in
+    processing power doubling every 18 months. Thus the term &#8220;Moore&#8217;s Law&#8221; is used to refer to this
+    idea that overall processing power doubles every year and a half.</p>
+    
+  <sidebar>
+    <title>Gordon Moore</title>
+    <figure>
+      <caption>Gordon Moore - Image &#169; Intel Corporation</caption>
+      <image source="ParallelProcessing/Images/Moore.jpg" width="30%" />
+    </figure>
+  </sidebar>
+
+  <p>Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x
+    more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (This helps explain why
+    computers need to be upgraded so frequently.)</p>
+
+    <tabular halign="center">
+
+      <row header="yes" bottom="medium">
+        <cell header="yes"> Years </cell>
+        <cell> 1.5 </cell>
+        <cell> 3 </cell>
+        <cell> 4.5 </cell>
+        <cell> 6 </cell>
+        <cell> 7.5 </cell>
+        <cell> &#8230; </cell>
+        <cell> 15 </cell>
+      </row>
+      <row>
+        <cell header="yes"> Doublings </cell>
+        <cell> 1 </cell>
+        <cell> 2 </cell>
+        <cell> 3 </cell>
+        <cell> 4 </cell>
+        <cell> 5 </cell>
+        <cell> &#8230; </cell>
+        <cell> 10 </cell>
+      </row>
+      <row>
+        <cell header="yes"> Relative Power </cell>
+        <cell> x2 </cell>
+        <cell> x4 </cell>
+        <cell> x8 </cell>
+        <cell> x16 </cell>
+        <cell> x32 </cell>
+        <cell> &#8230; </cell>
+        <cell> x1024 </cell>
+      </row>
+
+    </tabular>
+  <p>This continuous doubling and redoubling of computing power in chips has held steady for the past 40+ years. To put
+    this kind of growth into perspective: If Moore&#8217;s Law applied to the air travel industry, a flight from New
+    York to Paris that took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a
+    penny.</p>
+  <figure>
+    <caption>Transistor count of various processors over the past 40 years. Note that the y-axis is a logarithmic scale -
+      the straight line represents exponential growth. <url
+        name="Wikimedia Commons"
+        refuri="http://en.wikipedia.org/wiki/Moore's_law#mediaviewer/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg">Wikimedia
+      Commons</url> - <url name="CC-BY-SA-3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0">
+      CC-BY-SA-3.0</url></caption>
+    <image source="ParallelProcessing/Images/TransistorCounts.png" width="100%" />
+  </figure>
+  <p>Unfortunately, the &#8220;free ride&#8221; of increased power that computer programmers and users have enjoyed has
+    hit some speed bumps. Partly, this is the necessity of squeezing transistors into ever-smaller spaces. Currently,
+    features on chips occupy ~20 nanometers, a span of fewer than 100 atoms, we do not have too much longer before the
+    size of atoms becomes a barrier to making chips smaller.</p>
+  <p>Equally importantly, making chips run faster requires more power. Power running through a chip results in waste
+    heat that must be dissipated - only so much power can be used (and thus heat generated) before a chip becomes
+    uncontrollably hot. The image below shows the path chip designers were on in the early 2000s&#8230; an unsustainable
+    path in terms of how much power draw was being packed into ever-smaller spaces.</p>
+  <figure>
+    <caption >Projected power density growth through the early 2000s. Red dots show the predicted path. Image from <reference
+        name="Beauty and Joy of Computing by University of California" refuri="http://bjc.berkeley.edu/">Beauty and Joy
+      of Computing by University of California</reference> - <reference name="CC-BY-SA-3.0"
+        refuri="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</reference></caption>
+    <image source="ParallelProcessing/Images/power.png" width="80%" />
+  </figure>
+</section>
 

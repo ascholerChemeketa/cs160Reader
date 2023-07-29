@@ -1,10 +1,21 @@
-<section xml:id="logic-circuits_logic-gates-circuits">
-        <title>Logic Gates &amp; Circuits</title>
-        <p>Computers represent all information as bits - values that can be thought of as 1/0, on/off, or true/false. To process information, a computer manipulates these bits according to the rules of a system called Boolean logic. This chapter will introduce you to that logic and the kinds of basic circuits computers use to do things like add numbers and store information.</p>
-        <raw format="html" xml:space="preserve">            &lt;h2 &gt;
-               Chapter Topics:
-            &lt;/h2&gt;
-            </raw>
-        [COMPOUND]
-    </section>
+<chapter xml:id="logic-circuits_logic-gates-circuits" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Logic Gates &amp; Circuits</title>
+  <introduction>
+    <p>Computers represent all information as bits - values that can be thought of as 1/0, on/off, or true/false. To
+      process information, a computer manipulates these bits according to the rules of a system called Boolean logic.
+      This chapter will introduce you to that logic and the kinds of basic circuits computers use to do things like add
+      numbers and store information.</p>
+  </introduction>
+
+  <xi:include href='./OrGate.ptx' />
+  <xi:include href='./AndGate.ptx' />
+  <xi:include href='./ApplyingRules.ptx' />
+  <xi:include href='./NotAndXORGate.ptx' />
+  <xi:include href='./Circuits.ptx' />
+  <xi:include href='./ComplexCircuits.ptx' />
+  <xi:include href='./Memory.ptx' />
+  <xi:include href='./Adders.ptx' />
+  <xi:include href='./CircuitPlayground.ptx' />
+
+</chapter>
 

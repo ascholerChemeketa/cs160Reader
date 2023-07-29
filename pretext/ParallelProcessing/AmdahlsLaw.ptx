@@ -1,61 +1,113 @@
 <section xml:id="parallel-processing_parallel-vs-serial-performance">
-        <title>Parallel vs Serial Performance</title>
-        <p>Having multiple core computers is wonderful if you want to do multiple jobs at one time. But it does not necessarily improve our ability to do any one particular job faster. That is because normal algorithms do not always divide up into equal-sized chunks of work.</p>
-        <p>For any given task, there are likely parts that are <term>serial</term> (ones that must be done in order) and parts that are <term>parallel</term> (that can be done at the same time or even out of order). Say I have a giant pile of index cards with definitions written on them. I want to find one with information about Amdahl&#8217;s Law and add facts from it to this page but the cards are all jumbled up. Fortunately, I have 4 friends with me. I could divide up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile. Once someone finds the right card, they can announce it and give it back for me to use. This program might look like:</p>
-        <program language="none"><input>
+  <title>Parallel vs Serial Performance</title>
+  <p>Having multiple core computers is wonderful if you want to do multiple jobs at one time. But it does not
+    necessarily improve our ability to do any one particular job faster. That is because normal algorithms do not always
+    divide up into equal-sized chunks of work.</p>
+  <p>For any given task, there are likely parts that are <term>serial</term> (ones that must be done in order) and parts
+    that are <term>parallel</term> (that can be done at the same time or even out of order). Say I have a giant pile of
+    index cards with definitions written on them. I want to find one with information about Amdahl&#8217;s Law and add
+    facts from it to this page but the cards are all jumbled up. Fortunately, I have 4 friends with me. I could divide
+    up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile.
+    Once someone finds the right card, they can announce it and give it back for me to use. This program might look
+    like:</p>
+  <program language="none">
+    <input>
 <p>Divide pile up into 5 stacks                                        <c>Serial</c>
 Hand out one stack to each person and announce what to look for     <c>Serial</c>
 Everyone look for the card                                          <c>Parallel</c>
 Give the card to me                                                 <c>Serial</c>
 Add fact to page                                                    <c>Serial</c></p>
-</input></program>
-        <p>Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles, communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the &#8220;looking&#8221; phase down to 1/100th of the original time, but that won&#8217;t help me type the information we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be sped up.</p>
-        <p>The figure below on the left shows how the total time depends on how much work can be split up and how many workers we have. The one on the right compares the total time on a hypothetical job done by 1-5 workers. Notice that although more workers means less time on the parallel part, the serial part always takes the same time.</p>
-        <container classes="inlinegroup">
-            <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Effect of splitting the parallel part of a job in 5.</caption><image source="ParallelProcessing/Images/amdahl1.png" width="50%"/></figure>
-            <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Going from 1 to 2 workers has more effect than going from 4 to 5.</caption><image source="ParallelProcessing/Images/amdahl2.png" width="50%"/></figure>
-        </container>
-        <p><raw format="html" xml:space="preserve">&lt;br /&gt;</raw></p>
-        
-        
-        <p xml:id="parallel-processing_index-0">This feature of diminishing returns from extra workers due to a serial portion of problems is captured by a formula known as <term>Amdahl&#8217;s Law</term>. It predicts the speedup possible given: <term>P</term>: the percentage of the total work that is parallel (expressed as a decimal) and <term>N</term>: the number of ways we split the work.</p>
-        <figure align="" xml:id=""><image source="ParallelProcessing/Images/AmdahlFormula.png" width="50%"/></figure>
-        <p>The bottom of the fraction represents the percent of the original time we will take - this equals the serial part plus one share of the parallel part. Dividing 1 by that gives us how many times faster we are working.</p>
-        <p>Say 60% of a job can be made parallel and we use 2 processors. Substituting .60 for <term>P</term> and 2 for <term>N</term> into the formula gives:</p>
-        <p><m>\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{2}} =  \frac{1}{0.40 + 0.30} = \frac{1}{0.70} = 1.43</m></p>
-        <p>We would see a speedup of 1.43 times. 40% of the work needs to be done in serial. The other 60% is split into two equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original time, or 1.43x faster.</p>
-        <p>Let&#8217;s say we use 3 workers on the same job:</p>
-        <p><m>\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} =  \frac{1}{0.40 + 0.20} = \frac{1}{0.60} = 1.67</m></p>
-        <p>40% of the work still must be done in serial. The 60% that is parallel will only take 20% or the original total time. Thus, the work gets done in 60% of the original time or a speedup of 1.67 times.</p>
-        <p>Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that formula it predicts a total speedup of only 2.43x over one worker! Even an infinite number of workers would only speed things up by a factor 2.5 times&#8230; because 40% of the job is serial it can never be done in less time than that.</p>
-        <p>The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions.</p>
-        <figure align="" xml:id="id3"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Wikimedia Commons" refuri="http://en.wikipedia.org/wiki/Amdahl's_law#mediaviewer/File:AmdahlsLaw.svg">Wikimedia Commons</reference> - <reference name="CC-BY-SA-3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</reference></caption><image source="ParallelProcessing/Images/AmdahlsLaw.png" width="50%"/><legend>
-                <p>Even on a problem that is 95% parallel, we can never see more than a 20x speedup no matter how many processors we have.</p>
-            </legend></figure>
-        <p>Amdahl&#8217;s Law makes it clear that parallel processing is best on tasks that are <term>embarrassingly parallel</term> - where only a tiny fraction of the work is serial. For other problems, there is a hard limit to the gains possible.</p>
-        <p>In fact, Amdahl&#8217;s law is too optimistic! In general, each worker (core) you add increases the total amount of work to do. Thinking back to the earlier example of organizing note cards, imagine the difference between managing 4 helpers and 99. It would take significantly more time to split up and distribute work to 99 people. If the pile of cards was large enough, we would probably still come out ahead, but at some point adding more workers will start to slow us down. There are many such ways in which adding workers can increase the work that needs to be done:</p>
-        <p><ul>
-            <li>
-                <p>Time to divide the problem up into chunks</p>
-            </li>
-            <li>
-                <p>Time to hand out chunks of work to workers</p>
-            </li>
-            <li>
-                <p>All workers may not work equally fast</p>
-            </li>
-            <li>
-                <p>Some workers may flake out (crash). The more there are the more likely this is</p>
-            </li>
-            <li>
-                <p>There may be contention for shared resources</p>
-            </li>
-            <li>
-                <p>You may have to wait until the last worker returns to proceed (the slowest / weakest link problem)</p>
-            </li>
-            <li>
-                <p>It may take time to merge results from different workers</p>
-            </li>
-        </ul></p>
-    </section>
+</input>
+  </program>
+  <p>Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles,
+    communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the
+    &#8220;looking&#8221; phase down to 1/100th of the original time, but that won&#8217;t help me type the information
+    we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be
+    sped up.</p>
+  <p>The figure below on the left shows how the total time depends on how much work can be split up and how many workers
+    we have. The one on the right compares the total time on a hypothetical job done by 1-5 workers. Notice that
+    although more workers means less time on the parallel part, the serial part always takes the same time.</p>
+  <sidebyside>
+    <figure>
+      <caption>Effect of splitting the parallel
+        part of a job in 5.</caption>
+      <image source="ParallelProcessing/Images/amdahl1.png" width="50%" />
+    </figure>
+    <figure align="" xml:id="id2">
+      <caption>Going from 1 to 2 workers has
+        more effect than going from 4 to 5.</caption>
+      <image source="ParallelProcessing/Images/amdahl2.png" width="50%" />
+    </figure>
+  </sidebyside>
+
+  <p xml:id="parallel-processing_index-0">This feature of diminishing returns from extra workers due to a serial portion
+    of problems is captured by a formula known as <term>Amdahl&#8217;s Law</term>. It predicts the speedup possible
+    given: <term>P</term>: the percentage of the total work that is parallel (expressed as a decimal) and <term>N</term>:
+    the number of ways we split the work.</p>
+
+    <image source="ParallelProcessing/Images/AmdahlFormula.png" width="80%" />
+
+  <p>The bottom of the fraction represents the percent of the original time we will take - this equals the serial part
+    plus one share of the parallel part. Dividing 1 by that gives us how many times faster we are working.</p>
+  <p>Say 60% of a job can be made parallel and we use 2 processors. Substituting .60 for <term>P</term> and 2 for <term>
+    N</term> into the formula gives:</p>
+  <p>
+    <md><mrow>\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{2}} = \frac{1}{0.40 + 0.30}
+      = \frac{1}{0.70} = 1.43</mrow></md>
+  </p>
+  <p>We would see a speedup of 1.43 times. 40% of the work needs to be done in serial. The other 60% is split into two
+    equal parts, so instead of taking 60% of the time only takes 30%. So we can get the work done in 70% of the original
+    time, or 1.43x faster.</p>
+  <p>Let&#8217;s say we use 3 workers on the same job:</p>
+  <p>
+    <md><mrow>\\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} = \frac{1}{0.40 + 0.20}
+      = \frac{1}{0.60} = 1.67</mrow></md>
+  </p>
+  <p>40% of the work still must be done in serial. The 60% that is parallel will only take 20% or the original total
+    time. Thus, the work gets done in 60% of the original time or a speedup of 1.67 times.</p>
+  <p>Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the
+    process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that
+    formula it predicts a total speedup of only 2.43x over one worker! Even an infinite number of workers would only
+    speed things up by a factor 2.5 times&#8230; because 40% of the job is serial it can never be done in less time than
+    that.</p>
+  <p>The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions.</p>
+  <figure>
+    <caption>Even on a problem that is 95% parallel, we can never see more than a 20x speedup no matter how many processors
+      we have. <url
+        name="Wikimedia Commons" refuri="http://en.wikipedia.org/wiki/Amdahl's_law#mediaviewer/File:AmdahlsLaw.svg">Wikimedia
+      Commons</url> - <url name="CC-BY-SA-3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0">
+      CC-BY-SA-3.0</url></caption>
+    <image source="ParallelProcessing/Images/AmdahlsLaw.png" width="80%" />
+  </figure>
+  <p>Amdahl&#8217;s Law makes it clear that parallel processing is best on tasks that are <term>embarrassingly parallel</term>
+    - where only a tiny fraction of the work is serial. For other problems, there is a hard limit to the gains possible.</p>
+  <p>In fact, Amdahl&#8217;s law is too optimistic! In general, each worker (core) you add increases the total amount of
+    work to do. Thinking back to the earlier example of organizing note cards, imagine the difference between managing 4
+    helpers and 99. It would take significantly more time to split up and distribute work to 99 people. If the pile of
+    cards was large enough, we would probably still come out ahead, but at some point adding more workers will start to
+    slow us down. There are many such ways in which adding workers can increase the work that needs to be done:</p>
+  <p>
+    <ul>
+      <li>Time to divide the problem up into chunks
+      </li>
+      <li>Time to hand out chunks of work to workers
+      </li>
+      <li>
+        All workers may not work equally fast
+      </li>
+      <li>
+        Some workers may flake out (crash). The more there are the more likely this is
+      </li>
+      <li>
+        There may be contention for shared resources
+      </li>
+      <li>
+        You may have to wait until the last worker returns to proceed (the slowest / weakest link problem)
+      </li>
+      <li>
+        It may take time to merge results from different workers
+      </li>
+    </ul>
+  </p>
+</section>
 

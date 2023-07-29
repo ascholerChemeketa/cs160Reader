@@ -1,10 +1,20 @@
-<section xml:id="computer-architecture_computer-architecture-the-machine-cycle">
-        <title>Computer Architecture &amp; The Machine Cycle</title>
-        <p>Computers are built as a sequence of abstractions. Logical gates hide the messy details of electrical signals behind clean Boolean logic; logic gates in turn are used to construct circuits that perform functions like &#8220;add number <term>a</term> to <term>b</term>&#8221; or &#8220;remember the last value input&#8221;; these circuit are in turn used to build the higher-level components that programs interact with - things like the processor, the main memory and input and output devices.</p>
-        <raw format="html" xml:space="preserve">            &lt;h2 &gt;
-               Chapter Topics:
-            &lt;/h2&gt;
-            </raw>
-        [COMPOUND]
-    </section>
+<chapter xml:id="computer-architecture_computer-architecture-the-machine-cycle"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Computer Architecture &amp; The Machine Cycle</title>
+  <introduction>
+    <p>Computers are built as a sequence of abstractions. Logical gates hide the messy details of electrical signals
+      behind clean Boolean logic; logic gates in turn are used to construct circuits that perform functions like
+      &#8220;add number <term>a</term> to <term>b</term>&#8221; or &#8220;remember the last value input&#8221;; these
+      circuit are in turn used to build the higher-level components that programs interact with - things like the
+      processor, the main memory and input and output devices.</p>
+  </introduction>
+
+  <xi:include href='./ComputerComponents.ptx' />
+  <xi:include href='./Processor.ptx' />
+  <xi:include href='./Processor2.ptx' />
+  <xi:include href='./Memory.ptx' />
+  <xi:include href='./MemoryHeirarchy.ptx' />
+  <xi:include href='./MachineCycle.ptx' />
+  
+</chapter>
 

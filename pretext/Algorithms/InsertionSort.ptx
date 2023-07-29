@@ -13,10 +13,9 @@
 </input></program>
         <p>To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion is built up. Cards keep swapping until they &#8220;find&#8221; their resting spot - they do not jump directly to it. Also, note that the sorted portion in this algorithm does not always have the smallest values, just the values that are known to be sorted relative to each other.</p>
 
-    <video xml:id="zDPNARGL9kY" youtube="zDPNARGL9kY" width="560"/>
+    <video xml:id="zDPNARGL9kY" youtube="zDPNARGL9kY" width="100%"/>
             <p><em>Animation used by permission of Virginia Tech</em></p>
-        <raw format="html" xml:space="preserve">
-&lt;div class="attribution"&gt;Materials on this page adapted with permission from from:&lt;br /&gt;
-&lt;a href='http://courses.cs.vt.edu/csonline/'&gt;Online Interactive Modules for Teaching Computer Science&lt;/a&gt; by Osman Balci et al.&lt;/div&gt;</raw>
+            <remark> Materials on this page adapted with permission from <url
+              href="http://courses.cs.vt.edu/csonline/">Online Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</remark>
     </section>
 

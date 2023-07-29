@@ -1,16 +1,42 @@
 <section xml:id="computer-architecture_computer-components">
-        <title>Computer Components</title>
-        <p>You may already be familiar with the basic parts of a computer. Below is a picture of a desktop PC with some of the key components labeled:</p>
-        <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image via Wikipedia Commons" refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image via Wikipedia Commons</reference> - <reference name="Creative Commons CC BY 2.5" refuri="http://creativecommons.org/licenses/by/2.5">Creative Commons CC BY 2.5</reference></caption><image source="ComputerArchitecture/Images/Personal_computer.png" width="60%%" alt="A personal computer"/><legend>
-                <p>Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse</p>
-            </legend></figure>
-        <p>Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is really just a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
-        
-        
-        <p xml:id="computer-architecture_index-0">But there are basic features that just about every modern computer does share. There is a processor, sometimes called the <term>CPU</term> (Central Processing Unit), that is responsible for running programs. There is a memory unit, generally referred to as the <term>RAM</term> (Random Access Memory) or <term>Main Memory</term>, that is responsible for storing the information the computer is working with and the programs it is running. Finally, there are <term>input</term> and <term>output</term> devices - the devices like keyboards and network interfaces that get information into the computer and printers and monitors that display the results of calculations. Finally, these devices need to talk to each other - they do so over electrical circuits called <term>busses</term>.</p>
-        <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image via Wikipedia Commons" refuri="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image via Wikipedia Commons</reference> - <reference name="Creative Commons CC BY SA 3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</reference></caption><image source="ComputerArchitecture/Images/vonNeumannData.png" width="80%%" alt="Data Flow in a Computer"/><legend>
-                
-            </legend></figure>
-        <p>This description leaves out many important parts of a computer - from relatively simple things like the cord or battery that supply electricity to complex devices like the storage (hard drives, DVD drives, flash drives) that provide long-term backup for main memory. But the basic functionality of the modern computer can be understood in terms of a processor, memory and input/output.</p>
-    </section>
+  <title>Computer Components</title>
+  <p>You may already be familiar with the basic parts of a computer. Below is a picture of a desktop PC with some of the
+    key components labeled:</p>
+  <figure>
+    <caption>
+      <p>Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power
+        supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse </p>
+        <p>
+          <url
+            name="Image via Wikipedia Commons"
+            refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
+        via Wikipedia Commons</url> - <url name="Creative Commons CC BY 2.5"
+            refuri="http://creativecommons.org/licenses/by/2.5">Creative Commons CC BY 2.5</url></p>
+    </caption>
+    <image source="ComputerArchitecture/Images/Personal_computer.png" width="60%" alt="A personal computer" />
+  </figure>
+  <p>Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for
+    expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is
+    really just a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
+
+  <p>But there are basic features that just about every modern computer does share. There is a processor, sometimes
+    called the <term>CPU</term> (Central Processing Unit), that is responsible for running programs. There is a memory
+    unit, generally referred to as the <term>RAM</term> (Random Access Memory) or <term>Main Memory</term>, that is
+    responsible for storing the information the computer is working with and the programs it is running. Finally, there
+    are <term>input</term> and <term>output</term> devices - the devices like keyboards and network interfaces that get
+    information into the computer and printers and monitors that display the results of calculations. Finally, these
+    devices need to talk to each other - they do so over electrical circuits called <term>busses</term>.</p>
+  <figure>
+    <caption><url
+        name="Image via Wikipedia Commons"
+        refuri="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image
+      via Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
+        refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</url></caption>
+    <image source="ComputerArchitecture/Images/vonNeumannData.png" width="80%" alt="Data Flow in a Computer" />
+  </figure>
+  <p>This description leaves out many important parts of a computer - from relatively simple things like the cord or
+    battery that supply electricity to complex devices like the storage (hard drives, DVD drives, flash drives) that
+    provide long-term backup for main memory. But the basic functionality of the modern computer can be understood in
+    terms of a processor, memory and input/output.</p>
+</section>
 

@@ -1,21 +1,21 @@
-<section xml:id="data-representation_data-representation" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <title>Data Representation</title>
-        <introduction>
-          <p>Because computers represent everything as patterns of 1s and 0s, we need to come up with conventions for how different kinds of information will be represented. This chapter explores the representation and manipulation of data in a computer.</p>
-        </introduction>
-            <xi:include href='./NumberSystems.ptx' />
-            <xi:include href='./BinaryConversions.ptx' />
-            <xi:include href='./BinaryConversions2.ptx' />
-
-            <!--
-            <xi:include href='./BinaryMath.ptx' />
-            <xi:include href='./BinaryMath2.ptx' />
-            <xi:include href='./TwosComplement.ptx' />
-            <xi:include href='./FractionalValues.ptx' />
-            <xi:include href='./FloatingPointNumbers.ptx' />
-            <xi:include href='./ASCII.ptx' />
-            <xi:include href='./ImageRepresentation.ptx' />
-            <xi:include href='./Hexadecimal.ptx' />
-            <xi:include href='./HexColors.ptx' /> -->
-    </section>
+<chapter xml:id="data-representation_data-representation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Data Representation</title>
+  <introduction>
+    <p>Because computers represent everything as patterns of 1s and 0s, we need to come up with conventions for how
+      different kinds of information will be represented. This chapter explores the representation and manipulation of
+      data in a computer.</p>
+  </introduction>
+  <xi:include href='./NumberSystems.ptx' />
+  <xi:include href='./BinaryConversions.ptx' />
+  <xi:include href='./BinaryConversions2.ptx' />
+  <xi:include href='./BinaryMath.ptx' />
+  <xi:include href='./BinaryMath2.ptx' />
+  <xi:include href='./TwosComplement.ptx' />
+  <xi:include href='./FractionalValues.ptx' />
+  <xi:include href='./FloatingPointNumbers.ptx' />
+  <xi:include href='./ASCII.ptx' />
+  <xi:include href='./ImageRepresentation.ptx' />
+  <xi:include href='./Hexadecimal.ptx' />
+  <xi:include href='./HexColors.ptx' />
+</chapter>
 

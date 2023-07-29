@@ -1,29 +1,64 @@
 <section xml:id="computer-architecture_memory-hierarchy">
-        <title>Memory Hierarchy</title>
-        <p>In an ideal, simple computer there would only be one memory - the main memory. That memory would be instantaneously accessible, allow permanent storage, require minimal energy, and be compact and cheap. Unfortunately, no technology offers all those features. Real-world constraints force computer engineers to use multiple different technologies, using each for the kind of thing it is best suited for. These different technologies form the <term>memory hierarchy</term> - a series of layers from small and fast to large and slow.</p>
-        <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image via teachbook.com.au" refuri="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image via teachbook.com.au</reference></caption><image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg" width="50%" alt="Memory Hierarchy"/></figure>
-        <raw format="html" xml:space="preserve">            &lt;h4 &gt;
-               Registers
-            &lt;/h4&gt;
-            </raw>
-        <p>The small memory location on the CPU itself. Because the memory is right on the CPU, and because of the way it is engineered, it provides instant access to the information it contains. But because the space on the CPU is limited, the real estate there is very valuable and there is generally not much room for registers. At any time, only the most important set of information (current instruction and a few pieces of data) is in the registers.</p>
-        <raw format="html" xml:space="preserve">            &lt;h4 &gt;
-               Cache
-            &lt;/h4&gt;
-            </raw>
-        <p>This special memory is smaller and faster than the normal main memory and is housed closer to the CPU. It maintains a copy of parts of the main memory, allowing quicker access to some information. As far as the logic of a program goes, the cache doesn&#8217;t exist&#8230; we always request information from the main memory (RAM). The cache just makes it so that sometimes those memory requests come back extra fast. Lots of engineering goes into figuring out how the computer should decide what is important enough to get cached.</p>
-        <raw format="html" xml:space="preserve">            &lt;h4 &gt;
-               RAM - Main Memory (Physical Memory)
-            &lt;/h4&gt;
-            </raw>
-        <p>The &#8220;normal&#8221; main memory that we saw on the previous page. It generally runs significantly slower than the CPU - oftentimes hundreds of times slower. Thus each time the CPU has to access the main memory, it can represent a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off, it forgets the information it is storing.</p>
-        <figure align="" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image via Wikipedia Commons" refuri="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image via Wikipedia Commons</reference> - <reference name="Creative Commons CC BY SA 3.0" refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</reference></caption><image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg" width="50%" alt="RAM"/><legend>
-                <p>A stick of RAM memory that might go in a laptop computer.</p>
-            </legend></figure>
-        <raw format="html" xml:space="preserve">            &lt;h4 &gt;
-               Secondary Memory
-            &lt;/h4&gt;
-            </raw>
-        <p>Because main memory is generally built with circuits that need power, it cannot store information while the computer is off. Secondary memory is the general term for things like solid-state drives, hard drives, CD drives, flash drives, etc&#8230; that can store information long-term. (Bottom two levels of the pyramid above). Not only can they retain information without power, but they also generally provide better density - you can store more information in less space and with less cost. Unfortunately, these technologies are all slower than main memory. Information stored in secondary memory must be loaded into main memory (RAM) before the processor can access it - when you wait for a program to start up, a big part of what you are waiting on is the needed information to be transferred from a slower hard drive to the fast RAM that the processor can talk to.</p>
-    </section>
+  <title>Memory Hierarchy</title>
+  <p>In an ideal, simple computer there would only be one memory - the main memory. That memory would be instantaneously
+    accessible, allow permanent storage, require minimal energy, and be compact and cheap. Unfortunately, no technology
+    offers all those features. Real-world constraints force computer engineers to use multiple different technologies,
+    using each for the kind of thing it is best suited for. These different technologies form the <term>memory hierarchy</term>
+    - a series of layers from small and fast to large and slow.</p>
+  <figure>
+    <caption>
+      <url name="Image via teachbook.com.au"
+        refuri="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image via teachbook.com.au</url>
+    </caption>
+    <image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg" width="100%" alt="Memory Hierarchy" />
+  </figure>
+
+  <subsection xml:id="memory-hierarchy-registers">
+    <title>Registers</title>
+    <p>The small memory location on the CPU itself. Because the memory is right on the CPU, and because of the way it is
+      engineered, it provides instant access to the information it contains. But because the space on the CPU is
+      limited, the real estate there is very valuable and there is generally not much room for registers. At any time,
+      only the most important set of information (current instruction and a few pieces of data) is in the registers.</p>
+  </subsection>
+
+  <subsection xml:id="memory-hierarchy-cache">
+    <title>Cache</title>
+    <p>This special memory is smaller and faster than the normal main memory and is housed closer to the CPU. It
+      maintains a copy of parts of the main memory, allowing quicker access to some information. As far as the logic of
+      a program goes, the cache doesn&#8217;t exist&#8230; we always request information from the main memory (RAM). The
+      cache just makes it so that sometimes those memory requests come back extra fast. Lots of engineering goes into
+      figuring out how the computer should decide what is important enough to get cached.</p>
+  </subsection>
+
+  <subsection xml:id="memory-hierarchy-main">
+    <title>RAM - Main Memory (Physical Memory)</title>
+    <p>The &#8220;normal&#8221; main memory that we saw on the previous page. It generally runs significantly slower
+      than the CPU - oftentimes hundreds of times slower. Thus each time the CPU has to access the main memory, it can
+      represent a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off,
+      it forgets the information it is storing.</p>
+    <figure>
+      <caption>A stick of RAM memory that might go in a laptop computer.<url
+          name="Image via Wikipedia Commons"
+          refuri="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image via
+        Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
+          refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</url></caption>
+      <image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg" width="50%" alt="RAM" />
+
+    </figure>
+
+  </subsection>
+
+  <subsection xml:id="memory-hierarchy-secondary">
+    <title>Secondary Memory</title>
+    <p>Because main memory is generally built with circuits that need power, it cannot store information while the
+      computer is off. Secondary memory is the general term for things like solid-state drives, hard drives, CD drives,
+      flash drives, etc&#8230; that can store information long-term. (Bottom two levels of the pyramid above). Not only
+      can they retain information without power, but they also generally provide better density - you can store more
+      information in less space and with less cost. Unfortunately, these technologies are all slower than main memory.
+      Information stored in secondary memory must be loaded into main memory (RAM) before the processor can access it -
+      when you wait for a program to start up, a big part of what you are waiting on is the needed information to be
+      transferred from a slower hard drive to the fast RAM that the processor can talk to.</p>
+  </subsection>
+
+</section>
 

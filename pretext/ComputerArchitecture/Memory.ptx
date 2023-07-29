@@ -1,28 +1,55 @@
 <section xml:id="computer-architecture_main-memory">
-        <title>Main Memory</title>
-        <figure align="" xml:id=""><image source="ComputerArchitecture/Images/memory.png" width="50%" alt="Main Memory"/><legend>
-                <p>Main memory is a sequence of bytes, each with a unique address.</p>
-            </legend></figure>
-        <p>Main memory consists of a very long list of bytes (groups of 8 bits). When the computer&#8217;s power is on, every byte contains some pattern or other, even those bytes not being used for anything. (Remember the nature of binary: when a binary device is working it is either &#8220;on&#8221; or &#8220;off&#8221;, never in-between.)</p>
-        <p>The meaning of the bits in memory depends completely on how the running program decides to treat them. Without knowing how they are being used, we have no idea what they mean. Each byte might be part of the instructions a program is running, part of a number representing a color being drawn on the screen, or part of a number being calculated.</p>
-        <p>If a processor wants to work with a value larger than 8 bits (say a 32-bit integer), that value will be stored across multiple bytes. Thus in the image shown above, address 0x00 might refer to a single byte (01001010) that represents something like a character, or it might be the first part of a 4-byte sequence(01001010 10111010 01011111 00100100) that spans addresses 0x00-0x03 and represents one large 32-bit value. Keeping track of how the bytes of memory are being used and what they represent is a critical job of the software running on a computer.</p>
-        <p>The processor can only do two fundamental things with main memory:</p>
-        <p><ul>
-            <li>
-                <p>It can write to a byte at a given memory location. The previous bit pattern in that location will be destroyed.</p>
-            </li>
-            <li>
-                <p>It can read a byte from a given location. The processor gets the bit pattern stored at that location and the contents of that location are NOT changed.</p>
-            </li>
-        </ul></p>
-        <p>Each byte has an address that is used to locate it. These addresses, like everything a computer works with, are just binary numbers themselves, but when humans have to deal with these addresses, they are usually displayed as hexadecimal values.</p>
-        <p>Addresses start from 0 and count up - this is shown in the picture above. The first byte is byte 0 (<m>{0000000}_{2}</m> or <m>{00}_{16}</m>), the next byte 1 (<m>{01}_{16}</m>) and so on up to byte 254 (<m>{11111110}_{2}</m> or <m>{FE}_{16}</m>) and byte 255 (<m>{FF}_{16}</m>).</p>
-        <note>
-            <p>A 0x written in front of a number is an alternative way to say &#8220;This is hexadecimal&#8221;. This is a popular convention in programming languages and tools where you can&#8217;t write a subscript <m>_{16}</m> after values.</p>
-        </note>
-        <p>The highest possible address depends on both the computer&#8217;s hardware and operating system. Although the picture to the right only shows addresses that consist of 2 hex digits (which correspond to 8 bits) and thus only go up to 255, most computers use addresses that are much longer, often 32 or 64 bits long (8 or 16 hexadecimal digits) and thus can address billions of different bytes.</p>
-        <raw format="html" xml:space="preserve">
-&lt;div class="attribution"&gt;Materials on this page adapted with permission from from:&lt;br /&gt;
-&lt;a href='http://chortle.ccsu.edu/java5/index.html'&gt;Introduction to Computer Science using Java&lt;/a&gt; by &lt;a href='http://chortle.ccsu.edu/'&gt;Bradley Kjell&lt;/a&gt; (&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"&gt;CC BY-NC 3.0&lt;/a&gt;)&lt;/div&gt;</raw>
-    </section>
+  <title>Main Memory</title>
+  <figure>
+    <caption>
+      <p>Main memory is a sequence of bytes, each with a unique address.</p>
+    </caption>
+    <image source="ComputerArchitecture/Images/memory.png" width="30%" alt="Main Memory" />
+  </figure>
+  <p>Main memory consists of a very long list of bytes (groups of 8 bits). When the computer&#8217;s power is on, every
+    byte contains some pattern or other, even those bytes not being used for anything. (Remember the nature of binary:
+    when a binary device is working it is either &#8220;on&#8221; or &#8220;off&#8221;, never in-between.)</p>
+  <p>The meaning of the bits in memory depends completely on how the running program decides to treat them. Without
+    knowing how they are being used, we have no idea what they mean. Each byte might be part of the instructions a
+    program is running, part of a number representing a color being drawn on the screen, or part of a number being
+    calculated.</p>
+  <p>If a processor wants to work with a value larger than 8 bits (say a 32-bit integer), that value will be stored
+    across multiple bytes. Thus in the image shown above, address 0x00 might refer to a single byte (01001010) that
+    represents something like a character, or it might be the first part of a 4-byte sequence(01001010 10111010 01011111
+    00100100) that spans addresses 0x00-0x03 and represents one large 32-bit value. Keeping track of how the bytes of
+    memory are being used and what they represent is a critical job of the software running on a computer.</p>
+  <p>The processor can only do two fundamental things with main memory:</p>
+  <p>
+    <ul>
+      <li>
+        <p>It can write to a byte at a given memory location. The previous bit pattern in that location will be
+          destroyed.</p>
+      </li>
+      <li>
+        <p>It can read a byte from a given location. The processor gets the bit pattern stored at that location and the
+          contents of that location are NOT changed.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Each byte has an address that is used to locate it. These addresses, like everything a computer works with, are
+    just binary numbers themselves, but when humans have to deal with these addresses, they are usually displayed as
+    hexadecimal values.</p>
+  <p>Addresses start from 0 and count up - this is shown in the picture above. The first byte is byte 0 (<m>
+    {0000000}_{2}</m> or <m>{00}_{16}</m>), the next byte 1 (<m>{01}_{16}</m>) and so on up to byte 254 (<m>
+    {11111110}_{2}</m> or <m>{FE}_{16}</m>) and byte 255 (<m>{FF}_{16}</m>).</p>
+  <note>
+    <p>A 0x written in front of a number is an alternative way to say &#8220;This is hexadecimal&#8221;. This is a
+      popular convention in programming languages and tools where you can&#8217;t write a subscript <m>_{16}</m> after
+      values.</p>
+  </note>
+  <p>The highest possible address depends on both the computer&#8217;s hardware and operating system. Although the
+    picture to the right only shows addresses that consist of 2 hex digits (which correspond to 8 bits) and thus only go
+    up to 255, most computers use addresses that are much longer, often 32 or 64 bits long (8 or 16 hexadecimal digits)
+    and thus can address billions of different bytes.</p>
+
+  <remark> Materials on this page adapted with permission from <url
+      href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley Kjell
+    (<url
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
+</section>
 

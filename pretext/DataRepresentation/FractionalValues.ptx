@@ -1,366 +1,304 @@
 <section xml:id="data-representation_fractional-values">
-        <title>Fractional Values</title>
-        <p>We have learned to interpret binary numbers using place values based on powers of two. The value 1011 means 8 + 2 + 1 or 11 as we can see in this table:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Eights
-                        </cell>
-                        <cell>
-                            Fours
-                        </cell>
-                        <cell>
-                            Twos
-                        </cell>
-                        <cell>
-                            Ones
-                        </cell>
-                    </row>
-                    <row header="yes">
-                        <cell>
-                            <m>2^3</m>
-                        </cell>
-                        <cell>
-                            <m>2^2</m>
-                        </cell>
-                        <cell>
-                            <m>2^1</m>
-                        </cell>
-                        <cell>
-                            <m>2^0</m>
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Normally we think of this table as starting from the ones and extending to the left, with each new column representing one larger power of two than the preceding column - making each column twice as large as the column to its right. If we want to move from left to right, we must divide the current column&#8217;s value by 2 to calculate the next column. If we do this to the Ones column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>2^{-2}</m>), then <m>1/8</m> (<m>2^{-3}</m>), etc&#8230;</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            1s
-                        </cell>
-                        <cell>
-                            1/2s
-                        </cell>
-                        <cell>
-                            1/4s
-                        </cell>
-                        <cell>
-                            1/8s
-                        </cell>
-                        <cell>
-                            1/16s
-                        </cell>
-                        <cell>
-                            1/32s
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                    </row>
-                    <row header="yes">
-                        <cell>
-                            <m>2^0</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-1}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-2}</m>
-                        </cell>
-                        <cell>
-                            <m>2{^-3}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-4}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-5}</m>
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <line_block>
-                                <line/>
-                            </line_block>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>These are the binary columns smaller than 1 that we have to work with: <m>1/2</m>, <m>1/4</m>, <m>1/8</m>,&#8230; Any fractional value we want to represent, we must build using these fractions. Much like the decimal number <m>{0.34}_{10}</m> means 3 tenths and 4 one-hundredths, the binary number <m>{0.11}_2</m> means <m>1/2 + 1/4 = {0.75}_{10}</m></p>
-        <p>Say I have the binary value <m>{0.0101}_2</m>. We can use the &#8220;table&#8221; method to convert the fractional value - we just need to line up the bits to the table so that the &#8220;.&#8221; falls on the line between 1 and 1/2:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            1s
-                        </cell>
-                        <cell>
-                            1/2s
-                        </cell>
-                        <cell>
-                            1/4s
-                        </cell>
-                        <cell>
-                            1/8s
-                        </cell>
-                        <cell>
-                            1/16s
-                        </cell>
-                        <cell>
-                            1/32s
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                    </row>
-                    <row header="yes">
-                        <cell>
-                            <m>2^0</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-1}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-2}</m>
-                        </cell>
-                        <cell>
-                            <m>2{^-3}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-4}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-5}</m>
-                        </cell>
-                        <cell>
-                            &#8230;
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <p><ol label="1">
-                                <li>
-                                </li>
-                            </ol></p>
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                            1
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                        <cell>
-                            0
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>We have a one in the columns representing 1/4th and 1/16th. So we have 0.25 + 0.0625 or 0.3125.</p>
-        <p><m>{0.0101}_2 = {0.3125}_{10}</m></p>
-        <raw format="html" xml:space="preserve">            &lt;h2 &gt;
-               Limits of Fractional Representation
-            &lt;/h2&gt;
-            </raw>
-        <p>Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call &#8216;.&#8217; the <term>decimal point</term>. In base 2 it is the <term>binary point</term>. The generic term for it is <term>radix point</term>.) Try using this table and a calculator or some scratch paper and see if you can figure out how to represent the value 0.6:</p>
-        <table><tabular>
-            
-                
-                
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            1s
-                        </cell>
-                        <cell>
-                            1/2s
-                        </cell>
-                        <cell>
-                            1/4s
-                        </cell>
-                        <cell>
-                            1/8s
-                        </cell>
-                        <cell>
-                            1/16s
-                        </cell>
-                    </row>
-                    <row header="yes">
-                        <cell>
-                            <m>2^0</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-1}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-2}</m>
-                        </cell>
-                        <cell>
-                            <m>2{^-3}</m>
-                        </cell>
-                        <cell>
-                            <m>2^{-4}</m>
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            <line_block>
-                                <line/>
-                            </line_block>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                        <cell>
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>It is a trick question. There is no way to exactly represent 0.6 given that set of options. (The closest you can come is 0.625).</p>
-        <p>Difficulties in representing exact fractional values with a fixed number of digits are not unique to binary numbers. Say I ask you to represent 2/3 as a decimal with only 2 decimal places&#8230; you could use 0.66, or 0.67, but could not exactly represent 2/3. Each number system will have different values that are tricky to represent - although 0.6 is easy to represent in decimal - 6/10<superscript>ths</superscript> - it happens to be harder to represent in binary.</p>
-        <important>
-            <p>Often times when computers represent decimal fractions as binary numbers, the value stored is only an approximation of the true value. On the line below I have inserted code to have your web browser calculate the answer to 3 + .01 + .01:</p>
-            <raw format="html" xml:space="preserve">&lt;p&gt;&lt;script&gt;document.writeln(3 + 0.01 + 0.01);&lt;/script&gt;&lt;/p&gt;</raw>
-            <p>Notice any issues?</p>
-            <p>Computers can be programmed to store numbers as decimal values (encoding each decimal digit as 4 binary ones), but that is much less efficient and is not necessarily more accurate (as the decimal system still has that it has trouble representing - like 1/3). But, if you are writing say financial software that needs to get exactly $3.02 when it adds two pennies to $3, you probably would be willing to use the less efficient representation!</p>
-        </important>
-        
+  <title>Fractional Values</title>
+  <p>We have learned to interpret binary numbers using place values based on powers of two. The value 1011 means 8 + 2 +
+    1 or 11 as we can see in this table:</p>
+  <table>
+    <tabular halign="center">
 
-        <exercise label="datarepresentation_fractionalvalues1">
-            <statement>
-    <p>What decimal value does the binary number 0.111 represent? <var/>  </p></statement><setup><var><condition string="^\s*0?\.875\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*[^0-9\.]+\s*$"><feedback><p>Your answer should be a number</p></feedback></condition><condition string="^\s*1.*\s*$"><feedback><p>Your answer should start with 0.</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Use the blank table above. The 0 goes in the ones column.</p></feedback></condition></var></setup></exercise>
-    <exercise label="datarepresentation_fractionalvalues2">
+      <row header="yes">
+        <cell> Eights </cell>
+        <cell> Fours </cell>
+        <cell> Twos </cell>
+        <cell> Ones </cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>2^3</m>
+        </cell>
+        <cell>
+          <m>2^2</m>
+        </cell>
+        <cell>
+          <m>2^1</m>
+        </cell>
+        <cell>
+          <m>2^0</m>
+        </cell>
+      </row>
+
+      <row>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Normally we think of this table as starting from the ones and extending to the left, with each new column
+    representing one larger power of two than the preceding column - making each column twice as large as the column to
+    its right. If we want to move from left to right, we must divide the current column&#8217;s value by 2 to calculate
+    the next column. If we do this to the Ones column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>
+    2^{-2}</m>), then <m>1/8</m> (<m>2^{-3}</m>), etc&#8230;</p>
+  <table>
+    <tabular halign="center">
+
+      <row header="yes">
+        <cell> 1s </cell>
+        <cell> 1/2s </cell>
+        <cell> 1/4s </cell>
+        <cell> 1/8s </cell>
+        <cell> 1/16s </cell>
+        <cell> 1/32s </cell>
+        <cell> &#8230; </cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>2^0</m>
+        </cell>
+        <cell>
+          <m>2^{-1}</m>
+        </cell>
+        <cell>
+          <m>2^{-2}</m>
+        </cell>
+        <cell>
+          <m>2{^-3}</m>
+        </cell>
+        <cell>
+          <m>2^{-4}</m>
+        </cell>
+        <cell>
+          <m>2^{-5}</m>
+        </cell>
+        <cell> &#8230; </cell>
+      </row>
+
+      <row>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>These are the binary columns smaller than 1 that we have to work with: <m>1/2</m>, <m>1/4</m>, <m>1/8</m>,&#8230;
+    Any fractional value we want to represent, we must build using these fractions. Much like the decimal number <m>
+    {0.34}_{10}</m> means 3 tenths and 4 one-hundredths, the binary number <m>{0.11}_2</m> means <m>1/2 + 1/4 =
+    {0.75}_{10}</m></p>
+  <p>Say I have the binary value <m>{0.0101}_2</m>. We can use the &#8220;table&#8221; method to convert the fractional
+    value - we just need to line up the bits to the table so that the &#8220;.&#8221; falls on the line between 1 and
+    1/2:</p>
+  <table>
+    <tabular halign="center">
+
+      <row header="yes">
+        <cell> 1s </cell>
+        <cell> 1/2s </cell>
+        <cell> 1/4s </cell>
+        <cell> 1/8s </cell>
+        <cell> 1/16s </cell>
+        <cell> 1/32s </cell>
+        <cell> &#8230; </cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>2^0</m>
+        </cell>
+        <cell>
+          <m>2^{-1}</m>
+        </cell>
+        <cell>
+          <m>2^{-2}</m>
+        </cell>
+        <cell>
+          <m>2{^-3}</m>
+        </cell>
+        <cell>
+          <m>2^{-4}</m>
+        </cell>
+        <cell>
+          <m>2^{-5}</m>
+        </cell>
+        <cell> &#8230; </cell>
+      </row>
+
+      <row>
+        <cell> 0. </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>We have a one in the columns representing 1/4th and 1/16th. So we have 0.25 + 0.0625 or 0.3125.</p>
+  <p>
+    <m>{0.0101}_2 = {0.3125}_{10}</m>
+  </p>
+
+  <subsection xml:id="fractional-values-limits">
+    <title>Limits of Fractional Representation</title>
+
+    <p>Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call
+      &#8216;.&#8217; the <term>decimal point</term>. In base 2 it is the <term>binary point</term>. The generic term
+      for it is <term>radix point</term>.) Try using this table and a calculator or some scratch paper and see if you
+      can figure out how to represent the value 0.6:</p>
+    <table>
+      <tabular halign="center">
+
+        <row header="yes">
+          <cell> 1s </cell>
+          <cell> 1/2s </cell>
+          <cell> 1/4s </cell>
+          <cell> 1/8s </cell>
+          <cell> 1/16s </cell>
+        </row>
+        <row bottom="medium">
+          <cell>
+            <m>2^0</m>
+          </cell>
+          <cell>
+            <m>2^{-1}</m>
+          </cell>
+          <cell>
+            <m>2^{-2}</m>
+          </cell>
+          <cell>
+            <m>2{^-3}</m>
+          </cell>
+          <cell>
+            <m>2^{-4}</m>
+          </cell>
+        </row>
+
+        <row>
+          <cell>
+            <line_block>
+              <line />
+            </line_block>
+          </cell>
+          <cell> </cell>
+          <cell> </cell>
+          <cell> </cell>
+          <cell> </cell>
+        </row>
+
+      </tabular>
+    </table>
+    <p>It is a trick question. There is no way to exactly represent 0.6 given that set of options. (The closest you can
+      come is 0.625).</p>
+    <p>Difficulties in representing exact fractional values with a fixed number of digits are not unique to binary
+      numbers. Say I ask you to represent 2/3 as a decimal with only 2 decimal places&#8230; you could use 0.66, or
+      0.67, but could not exactly represent 2/3. Each number system will have different values that are tricky to
+      represent - although 0.6 is easy to represent in decimal - 6/10<superscript>ths</superscript> - it happens to be
+      harder to represent in binary.</p>
+    <important>
+      <p>Often times when computers represent decimal fractions as binary numbers, the value stored is only an
+        approximation of the true value. On the line below I have inserted code to have your web browser calculate the
+        answer to 3 + .01 + .01:</p>
+        <p>
+      <raw format="html" xml:space="preserve"><script>document.writeln(3 + 0.01 + 0.01)</script></raw>
+        </p>
+      <p>Notice any issues? It turns out that 0.01 is hard to represent perfectly in binary.</p>
+      <p>Computers can be programmed to store numbers as decimal values (encoding each decimal digit as 4 binary ones),
+        but that is much less efficient and is not necessarily more accurate (as the decimal system still has trouble representing values like 1/3). But, if you are writing say financial software that needs to get exactly
+        $3.02 when it adds two pennies to $3, you probably would be willing to use the less efficient representation!</p>
+    </important>
+
+  </subsection>
+
+  <exercise label="datarepresentation_fractionalvalues1">
+    <statement>
+      <p>What decimal value does the binary number 0.111 represent? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*0?\.875\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^0-9\.]+\s*$">
+          <feedback>
+            <p>Your answer should be a number</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*1.*\s*$">
+          <feedback>
+            <p>Your answer should start with 0.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Use the blank table above. The 0 goes in the ones column.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="datarepresentation_fractionalvalues2">
+    <statement>
+
+      <p>What of the following is the binary representation of the decimal value 0.40625</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>What of the following is the binary representation of the decimal value 0.40625</p>
-
+          <p>0.00011</p>
         </statement>
-<choices>
+        <feedback>
+          <p>That is 0.09375</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>0.00011</p>
-                </statement>
-                <feedback>
-                    <p>That is 0.09375</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>0.01010</p>
+        </statement>
+        <feedback>
+          <p>That is 0.3125</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>0.01010</p>
-                </statement>
-                <feedback>
-                    <p>That is 0.3125</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>0.00111</p>
+        </statement>
+        <feedback>
+          <p>That is 0.21875</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>0.00111</p>
-                </statement>
-                <feedback>
-                    <p>That is 0.21875</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>0.01101</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>0.01101</p>
-                </statement>
-                <feedback>
-                    <p/>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>0.11001</p>
+        </statement>
+        <feedback>
+          <p>That is 0.78125</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>0.11001</p>
-                </statement>
-                <feedback>
-                    <p>That is 0.78125</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
+  </exercise>
+</section>
 

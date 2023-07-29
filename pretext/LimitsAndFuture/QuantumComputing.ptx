@@ -1,41 +1,78 @@
 <section xml:id="limits-and-future_quantum-computing">
-        <title>Quantum Computing</title>
-        <p>Modern physics has two separate models for how the universe works: <term>general relativity</term> which predicts how large scale objects interact and <term>quantum mechanics</term> which predicts the actions of sub-atomic particles. When we start working on the scale of single atoms, we leave the realm of physics that we are used to and enter the quantum world where things work in some mind-bending ways:</p>
-        <p><ul>
-            <li>
-                <p>Quantum objects can be in a <url href="http://en.wikipedia.org/wiki/Quantum_superposition" visual="http://en.wikipedia.org/wiki/Quantum_superposition">superposition</url> of states: they simultaneously exist in multiple possible states (like both on and off) until that state is observed at which point they &#8220;collapse&#8221; into just one state.</p>
-            </li>
-            <li>
-                <p>Quantum objects can be <url href="http://en.wikipedia.org/wiki/Quantum_entanglement" visual="http://en.wikipedia.org/wiki/Quantum_entanglement">entangled</url>: when an action is taken on one particle of an entangled pair it instantly can affect the other particle, even if they are on opposite sides of the universe.</p>
-            </li>
-            <li>
-                <p>Quantum objects can <url href="http://en.wikipedia.org/wiki/Quantum_tunnelling" visual="http://en.wikipedia.org/wiki/Quantum_tunnelling">tunnel</url>: passing through materials that are theoretically solid.</p>
-            </li>
-        </ul></p>
-        <p>Scientists are working on exploiting these behaviors to produce a new kind of computer, the <term>Quantum computer</term> (video set to stop at 1:43, feel free to watch the rest if you want):</p>
+  <title>Quantum Computing</title>
+  <p>Modern physics has two separate models for how the universe works: <term>general relativity</term> which predicts
+    how large scale objects interact and <term>quantum mechanics</term> which predicts the actions of sub-atomic
+    particles. When we start working on the scale of single atoms, we leave the realm of physics that we are used to and
+    enter the quantum world where things work in some mind-bending ways:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Quantum objects can be in a <url href="http://en.wikipedia.org/wiki/Quantum_superposition"
+            visual="http://en.wikipedia.org/wiki/Quantum_superposition">superposition</url> of states: they
+          simultaneously exist in multiple possible states (like both on and off) until that state is observed at which
+          point they &#8220;collapse&#8221; into just one state.</p>
+      </li>
+      <li>
+        <p>Quantum objects can be <url href="http://en.wikipedia.org/wiki/Quantum_entanglement"
+            visual="http://en.wikipedia.org/wiki/Quantum_entanglement">entangled</url>: when an action is taken on one
+          particle of an entangled pair it instantly can affect the other particle, even if they are on opposite sides
+          of the universe.</p>
+      </li>
+      <li>
+        <p>Quantum objects can <url href="http://en.wikipedia.org/wiki/Quantum_tunnelling"
+            visual="http://en.wikipedia.org/wiki/Quantum_tunnelling">tunnel</url>: passing through materials that are
+          theoretically solid.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Scientists are working on exploiting these behaviors to produce a new kind of computer, the <term>Quantum computer</term>
+    (video set to stop at 1:43, feel free to watch the rest if you want):</p>
 
-    <video xml:id="CMdHDHEuOUE" youtube="CMdHDHEuOUE" width="560"/>
-            <p>So how exactly do they work and why are they more powerful? By entangling particles that are in a superposition of two possible states, we can make a system that tests many states at one time:</p>
+  <video xml:id="CMdHDHEuOUE" youtube="CMdHDHEuOUE" width="100%" end="103"/>
+  <p>So how exactly do they work and why are they more powerful? By entangling particles that are in a superposition of
+    two possible states, we can make a system that tests many states at one time:</p>
 
-    <video xml:id="g_IaVepNDT4" youtube="g_IaVepNDT4" width="560"/>
-            <p>Say you are trying to solve an optimization problem that looks like the picture below. Since there are 6 switches, there are <m>2^6 = 64</m> possible states that a classical computer would have to check one by one. A quantum computer with 6 qubits exists in every possible configuration of the switches at one time. If there were 200 switches in the problem, a classical computer would have to check <m>2^{200} = 1.61 \times {10}^{60}</m> possible states one by one. A quantum computer with 200 qubits could check all those states simultaneously.</p>
-        <figure align="" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"><reference name="Image by D-Wave Systems" refuri="http://www.dwavesys.com/tutorials/background-reading-series/quantum-computing-primer">Image by D-Wave Systems</reference></caption><image source="LimitsAndFuture/Images/tut-intro-lightswitcheshandj.png" width="50%"/><legend>
-                <p>Lightswitch optimization problem. Each switch can be on (1) or off (-1). A score is computed by:</p>
-                <p><ol label="1">
-                    <li>
-                        <p>Multiplying each switch by its red or blue multiplier</p>
-                    </li>
-                    <li>
-                        <p>Multiplying each green or orange circle by the value of the switches it connects</p>
-                    </li>
-                    <li>
-                        <p>Adding up the value from steps 1 and 2</p>
-                    </li>
-                </ol></p>
-            </legend></figure>
-        <p>Quantum computers are probabilistic - each time you run a simulation of a problem, you get an answer that may be correct. &#8220;Programming&#8221; a quantum computer involves setting up the quantum system so that the correct answer is the one most likely to appear. But since there is a chance that any particular run of the system produces an incorrect answer, obtaining confidence in your answer requires running multiple simulations until the pattern of results makes it statistically clear which answer is the correct one. But even if the simulation must be run dozens or hundreds of times, it has th potential to be much faster than a classical computer checking trillions of trillions of possible answers.</p>
-        <p>This final video is about one of the earliest quantum computations - the factoring of 15 into 3 x 5 and getting the correct answer 48% of the time. While that may not sound too impressive, it is the first step on the road that might make cryptography algorithms like RSA easy to crack. (Video set to play only a segment from the middle, but feel free to watch the rest.)</p>
+  <video xml:id="g_IaVepNDT4" youtube="g_IaVepNDT4" width="100%" />
+  <p>Say you are trying to solve an optimization problem that looks like the picture below. Since there are 6 switches,
+    there are <m>2^6 = 64</m> possible states that a classical computer would have to check one by one. A quantum
+    computer with 6 qubits exists in every possible configuration of the switches at one time. If there were 200
+    switches in the problem, a classical computer would have to check <m>2^{200} = 1.61 \times {10}^{60}</m> possible
+    states one by one. A quantum computer with 200 qubits could check all those states simultaneously.</p>
+  <figure>
+    <caption>
+      <url name="Image by D-Wave Systems"
+        refuri="http://www.dwavesys.com/tutorials/background-reading-series/quantum-computing-primer">Image by D-Wave
+        Systems</url>
+      <p>Lightswitch optimization problem. Each switch can be on (1) or off (-1). A score is computed by:</p>
+      <p>
+        <ol>
+          <li>
+            <p>Multiplying each switch by its red or blue multiplier</p>
+          </li>
+          <li>
+            <p>Multiplying each green or orange circle by the value of the switches it connects</p>
+          </li>
+          <li>
+            <p>Adding up the value from steps 1 and 2</p>
+          </li>
+        </ol>
+      </p>
+    </caption>
+    <image source="LimitsAndFuture/Images/tut-intro-lightswitcheshandj.png" width="50%" />
 
-    <video xml:id="Yl3o236gdp8" youtube="Yl3o236gdp8" width="560"/>
-        </section>
+  </figure>
+  <p>Quantum computers are probabilistic - each time you run a simulation of a problem, you get an answer that may be
+    correct. &#8220;Programming&#8221; a quantum computer involves setting up the quantum system so that the correct
+    answer is the one most likely to appear. But since there is a chance that any particular run of the system produces
+    an incorrect answer, obtaining confidence in your answer requires running multiple simulations until the pattern of
+    results makes it statistically clear which answer is the correct one. But even if the simulation must be run dozens
+    or hundreds of times, it has th potential to be much faster than a classical computer checking trillions of
+    trillions of possible answers.</p>
+  <p>This final video is about one of the earliest quantum computations - the factoring of 15 into 3 x 5 and getting the
+    correct answer 48% of the time. While that may not sound too impressive, it is the first step on the road that might
+    make cryptography algorithms like RSA easy to crack. (Video set to play only a segment from the middle, but feel
+    free to watch the rest.)</p>
+
+  <video xml:id="Yl3o236gdp8" youtube="Yl3o236gdp8" width="100%" start="249" end="480" />
+</section>
 
