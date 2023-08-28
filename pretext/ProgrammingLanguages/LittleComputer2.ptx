@@ -8,7 +8,7 @@
   <subsection xml:id="the-little-computer-branching-decisions">
     <title>Decisions</title>
 
-    <p>Branch instructions are how a computer can make decisions. In high level languages, we generally use
+    <p>Branch instructions are how a computer can make decisions. In high-level languages, we generally use
       &#8220;if&#8221; statements to make decisions about which instructions to execute. At a low level, those decisions
       are usually implemented as branches to skip certain instructions.</p>
     <p>In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch.</p>

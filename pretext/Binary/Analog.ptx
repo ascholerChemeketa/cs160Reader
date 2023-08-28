@@ -11,7 +11,7 @@
     impossible to tell whether we were looking at 3.00000 volts or 3.00001 volts.</p>
 
 
-  <p xml:id="binary_index-1">That is one of the reasons computers are built as <term>digital</term> devices. A digital
+  <p>That is one of the reasons computers are built as <term>digital</term> devices. A digital
     signal is only allowed to take on a limited number of possible values. Often, the only two states allowed are
     &#8220;on&#8221; and &#8220;off&#8221;. A digital signal with only two states plotted over time thus looks like
     this:</p>

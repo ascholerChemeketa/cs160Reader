@@ -13,7 +13,6 @@
   <xi:include href='./LittleComputer3.ptx' />
   <xi:include href='./HighLevelLanguages.ptx' />
   <xi:include href='./SyntaxAndVariety.ptx' />
-  <!-- 
-  -->
+  
 </chapter>
 

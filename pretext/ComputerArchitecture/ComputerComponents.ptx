@@ -6,12 +6,12 @@
     <caption>
       <p>Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power
         supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse </p>
-        <p>
-          <url
-            name="Image via Wikipedia Commons"
-            refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
+      <p>
+        <url
+          name="Image via Wikipedia Commons"
+          refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
         via Wikipedia Commons</url> - <url name="Creative Commons CC BY 2.5"
-            refuri="http://creativecommons.org/licenses/by/2.5">Creative Commons CC BY 2.5</url></p>
+          refuri="http://creativecommons.org/licenses/by/2.5">Creative Commons CC BY 2.5</url></p>
     </caption>
     <image source="ComputerArchitecture/Images/Personal_computer.png" width="60%" alt="A personal computer" />
   </figure>

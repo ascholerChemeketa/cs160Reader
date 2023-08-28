@@ -28,7 +28,7 @@
               
               <input>
               To calculate the total amount owed,
-              first multiply the total price
+              first, multiply the total price
               of the meal by 0.15. This gives you
               the tip for the meal. 
               
@@ -38,7 +38,7 @@
             </program>
       </li>
       <li>
-        <title>High Level Language</title>
+        <title>High-Level Language</title>
         <program language="python">
           <input>
   tip = mealCost * 0.15
@@ -74,7 +74,7 @@
       </li>
     </dl>
 
-  <p>Note that the high level language is much more compact than the assembly or machine code and, even more important,
+  <p>Note that the high-level language is much more compact than the assembly or machine code and, even more important,
     it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about
     LOADing and STOREing values into registers, we can express commands that look more like normal calculations: <c>tip = mealCost * 0.15</c>.</p>
 

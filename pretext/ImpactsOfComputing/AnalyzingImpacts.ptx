@@ -18,7 +18,7 @@
     <p>You will be asked to answer four questions. The first two focus on <em>describing the technology</em> and the
       second two focus on <em>describing its impacts</em>.</p>
     <p>
-      <ol label="A">
+      <ol marker="A">
         <li>
           <term>According to your sources, what problems was the technology designed to solve?</term>
           <ul>

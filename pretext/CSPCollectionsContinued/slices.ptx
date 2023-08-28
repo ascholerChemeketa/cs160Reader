@@ -23,7 +23,7 @@ print(summerMonths)
 </program>
         
         
-        <p xml:id="csp-collections-continued_index-0">But, rather than do that work ourselves, there is syntax in Python for asking for part of a list.
+        <p>But, rather than do that work ourselves, there is syntax in Python for asking for part of a list.
             Part of a list is known as a <term>slice</term>. We ask for a slice in a similar way to asking for a single
             item. To get a single item from a list, say the item at index 4, we say <c>list[4]</c>. To ask for
             a slice of <c>list</c> we would say something like: <c>list[4:10]</c> which says &#8220;I want a copy of items

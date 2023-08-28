@@ -18,7 +18,7 @@
   <image source="LogicCircuits/Images/switchesOr3.png" width="50%" />
 
 
-  <p xml:id="logic-circuits_index-2">These switches are demonstrating the Boolean logic rule of <term>OR</term>. The OR
+  <p>These switches are demonstrating the Boolean logic rule of <term>OR</term>. The OR
     rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a <term>truth
     table</term>. A truth table shows each possible set of input and the output those inputs produces.</p>
   <p>For the circuit shown above, we can think of the top switch as Input 1 and the bottom switch as Input 2. We will

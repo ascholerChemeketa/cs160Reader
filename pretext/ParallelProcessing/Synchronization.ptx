@@ -6,18 +6,18 @@
   <sidebyside>
     <program language="none">
       <input>
-<p>    <term>Worker A's Task</term>
-1   get <c>x</c> from memory
+    Worker A's Task
+1   get x from memory
 2   add 10
-3   store total to <c>x</c> in memory</p>
+3   store total to x in memory
 </input>
     </program>
     <program language="none">
       <input>
-<p>    <term>Worker B's Task</term>
-1   get <c>x</c> from memory
+    Worker B's Task
+1   get x from memory
 2   add 1
-3   store total to <c>x</c> in memory</p>
+3   store total to x in memory
 </input>
     </program>
   </sidebyside>
