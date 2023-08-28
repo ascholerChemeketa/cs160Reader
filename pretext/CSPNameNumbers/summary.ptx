@@ -1,0 +1,47 @@
+<section xml:id="csp-name-numbers_chapter-summary">
+        <title>Chapter Summary</title>
+        <p>Chapter 2 included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>Arithmetic Expression</term> - An arithmetic expression contains a mathematical
+                    operator like <c>-</c> for subtraction or <c>*</c> for multiplication.</p>
+            </li>
+            <li>
+                <p><term>Assignment</term> -  Assignment means setting a variable&#8217;s value.  For example, <c>x = 5</c> assigns
+                    the value of 5 to a variable called <c>x</c>.</p>
+            </li>
+            <li>
+                <p><term>Assignment Dyslexia</term> - Assignment Dyslexia is putting the variable name on the right and the
+                    value on the left as in <c>5 = x</c>.  This is not a legal statement.</p>
+            </li>
+            <li>
+                <p><term>Camel-Case</term> - Camel-case is when the first letter of each additional word is uppercased when
+                    you create variable names that have several words in them like <c>firstName</c>.</p>
+            </li>
+            <li>
+                <p><term>Integer Division</term> - Integer division is when you divide one integer by another. In some
+                    languages this will only give you an integer result, but in Python 3 it returns a decimal value.</p>
+            </li>
+            <li>
+                <p><term>Mixed-Case</term> - Mixed-case means using upper and lower case letters in a variable name like
+                    <c>"HiThere"</c>.  One way to do this is to use camel-case.</p>
+            </li>
+            <li>
+                <p><term>Modulo</term> - The modulo, or remainder operator, <c>%</c>, returns the remainder after you divide
+                    one value by another.  For example the remainder of <c>3 % 2</c> is 1 since 2 goes into 3 one
+                    time with a remainder of 1.</p>
+            </li>
+            <li>
+                <p><term>Tracing</term> - Tracing a program means keeping track of the variables in the program and how
+                    their values change as the statements are executed.  We used a Code Lens tool to do this
+                    in this chapter.</p>
+            </li>
+            <li>
+                <p><term>Variable</term> -  A variable is a name associated with computer memory that can hold a value and
+                    that value can change or vary. One example of a variable is the score in a game.</p>
+            </li>
+        </ul></p>
+    </section>
+

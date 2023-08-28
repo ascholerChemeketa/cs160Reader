@@ -1,0 +1,239 @@
+<section xml:id="data-representation_hex-data-colors">
+  <title>Hex Data &amp; Colors</title>
+  <p>Hexadecimal is used to display large binary values for people to read. Although all data is stored as binary, for
+    many pieces of data a computer works with, the 1s and 0s have a meaning defined by their data type; the computer
+    interprets a sequence of 1s and 0s as a signed integer, or an ASCII character, or a floating-point decimal. But some
+    pieces of information do not have a natural type. Things like memory addresses in a computer are just binary
+    sequences (00000, 00001, etc&#8230;). When a computer has to display data that does not have a &#8220;type&#8221; or
+    for which the type is unknown, the raw information is typically shown in hexadecimal.</p>
+  <figure align="">
+    <image source="DataRepresentation/Images/hexaddress.png" width="50%" alt="Hex display of data" />
+    <legend>
+      <p>A programmer&#8217;s view of two pieces of information in a program.</p>
+    </legend>
+  </figure>
+  <p>The image above shows a screenshot of looking at data while debugging a computer program. <term>x</term> is known
+    to be an integer (int) - so the bits that store its value (00000000000000000000000000000111) are interpreted as the
+    decimal number 7. <term>memory_address</term> is a memory address for an unknown type (void *) - so its bits
+    (001010001111111010111000) are displayed in hex as 28feb8.</p>
+
+  <p xml:id="data-representation_index-0">The first place many people encounter hexadecimal is learning about specifying
+    colors for websites. Colors are generally specified as 24-bit numbers - 8 bits each to represent how much red, green
+    and blue. These 8 bits are enough to give values of <m>{0-255}_{10}</m> (<m>{00000000-11111111}_{2}</m>) for each of
+    the three primary colors. To make different colors, we mix different amounts of the three primaries. 255 red, 0
+    green, and 140 blue makes a <inline classes="pink">nice pink</inline>. To specify this color, a website designer can
+    write the 24 binary digits as 6 hex digits (remember that 4 binary digits correspond to one hex digit). 255 is FF in
+    hex. 0 is 00 in hex. 140 is 8C in hex. So <inline classes="pink">this shade of pink</inline> can be written as
+    FF008C - a website designer would type something like &#8220;color: #FF008D;&#8221; to specify that some text should
+    be pink.</p>
+  <p>You can play with the sliders below to explore how colors can be described as a mix of red, green and blue. Move
+    the sliders to change the amount of each color. The current value is displayed in both decimal and hexadecimal. By
+    writing the hex digits for each color as one 6-digit number (red/green/blue), you can determine the hex code for the
+    color - which is shown below the color swatch.</p>
+  <raw format="html">
+    <style>
+    <![CDATA[
+    .colorbar {
+      float: left;
+      width: 400px;
+      clear: left;
+    }
+    .colorVal {
+          width: 80px;
+          text-align: center;
+          margin-top: 2px;
+          vertical-align: top;
+          border: 1px solid #ccc;
+          background: #f6f6f6;
+    }
+    #colorLabel {
+      clear: both;
+      text-align: right;
+  
+    }
+    #colorName {
+      width: 118px;
+      margin: 0px;
+      margin-left: 10px;
+      text-align: center;
+          border: 1px solid #ccc;
+          background: #f6f6f6
+    }
+    .colorpicker {
+      width: 520px;
+      margin: 15px auto;
+    }
+    #red, #green, #blue {
+      width: 250px;
+      margin: 5px 15px;
+      display: inline-block;
+    }
+    #swatchblock {
+      width: 120px;
+      margin-top: 0px;
+      margin-left: 400px;
+      margin-bottom: 15px;
+    }
+    #swatch {
+      width: 120px;
+      height: 90px;
+      margin-top: 0px;
+      background-image: none;
+    }
+    #red .ui-slider-range { background: #ef2929; }
+    #red .ui-slider-handle { border-color: #ef2929; }
+    #green .ui-slider-range { background: #8ae234; }
+    #green .ui-slider-handle { border-color: #8ae234; }
+    #blue .ui-slider-range { background: #729fcf; }
+    #blue .ui-slider-handle { border-color: #729fcf; }
+    #outputBlock {
+      clear: both;
+    } ]]>
+    </style>
+    <script>
+      <![CDATA[
+    function hexFromRGB(r, g, b) {
+      var hex = [
+        r.toString( 16 ),
+        g.toString( 16 ),
+        b.toString( 16 )
+      ];
+      $.each( hex, function( nr, val ) {
+        if ( val.length === 1 ) {
+          hex[ nr ] = "0" + val;
+        }
+      });
+      return hex.join( "" ).toUpperCase();
+    }
+    function refreshSwatch() {
+      var red = $( "#red" ).slider( "value" ),
+        green = $( "#green" ).slider( "value" ),
+        blue = $( "#blue" ).slider( "value" ),
+        hex = hexFromRGB( red, green, blue );
+      $( "#swatch" ).css( "background-color", "#" + hex );
+      $("#redVal").val( red + " (" + hex.substring(0,2) + ")"  );
+      $("#greenVal").val( green + " (" + hex.substring(2,4) + ")"  );
+      $("#blueVal").val( blue + " (" + hex.substring(4,6) + ")"  );
+      $("#colorName").val( hex.substring(0,6) );
+    }
+    window.addEventListener("load", function() {
+      $( "#red, #green, #blue" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        max: 255,
+        value: 127,
+        slide: refreshSwatch,
+        change: refreshSwatch
+      });
+      $( "#red" ).slider( "value", 255 );
+      $( "#green" ).slider( "value", 0 );
+      $( "#blue" ).slider( "value", 140 );
+    });
+    ]]>
+    </script>
+
+    <div class="colorpicker">
+      <div class="colorbar">
+        <div id="red"></div>
+        <input type="text" class="colorVal" id="redVal" readonly="true" />
+      </div>
+      <div class="colorbar">
+        <div id="green"></div>
+        <input type="text" class="colorVal" id="greenVal" readonly="true" />
+      </div>
+      <div class="colorbar">
+        <div id="blue"></div>
+        <input type="text" class="colorVal" id="blueVal" readonly="true" />
+      </div>
+
+      <div id="swatchblock">
+        <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+      </div>
+      <div id="colorLabel">Hex color code:<input type="text" id="colorName" readonly="true" /></div>
+    </div>
+  </raw>
+
+  <exercise label="datarepresentation_hexcolors1">
+    <statement>
+
+      <p>Which of the following hex values describes a smoky-aqua color?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>A255A2</p>
+        </statement>
+        <feedback>
+          <p>Try reproducing the color with the tool above</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>58B3B3</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>43C0C0</p>
+        </statement>
+        <feedback>
+          <p>Try reproducing the color with the tool above</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>777777</p>
+        </statement>
+        <feedback>
+          <p>Try reproducing the color with the tool above</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="datarepresentation_hexcolors2">
+    <statement>
+      <p>What hex code specifies black? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[0, 0]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^0-9A-Fa-f]+\s*$">
+          <feedback>
+            <p>Your answer should consist of hex digits: 0-9, A, B, C, D, E, F</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1,5}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{7,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: Try reproducing the color with the tool above</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
+

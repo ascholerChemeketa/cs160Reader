@@ -1,0 +1,80 @@
+<section xml:id="computer-architecture_the-processor-cont">
+  <title>The Processor, cont.</title>
+
+  <subsection xml:id="computer-architecture-alu">
+    <title>The ALU</title>
+    <image source="ComputerArchitecture/Images/cpustructuremap-alu.gif" width="35%" alt="ALU" />
+    <p>The arithmetic logic unit is a collection of circuits that can do math and logic. Early processors could only do
+      very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic
+      (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via
+      simpler operations that the ALU can do directly. Instead of multiplying two numbers, a very simple computer would
+      have to add them repeatedly.</p>
+    <p>As components became smaller, more and more logic could be built into ALUs - from circuits to do multiplication,
+      to circuits to work with floating-point decimals or process text. Nowadays, almost every processor has multiple
+      ALUs that work in parallel and are often specialized for specific jobs.</p>
+  </subsection>
+
+  <subsection xml:id="computer-architecture-control-unit">
+    <title>The Control Unit</title>
+    <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif" width="35%" alt="Control Unit" />
+
+    <p>The control unit is the true &#8220;brain&#8221; of the CPU and is responsible for controlling much of the
+      operation of the rest of the processor. It does this by issuing control signals to the other areas of the
+      processor, instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control
+      unit can be broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
+
+  <subsubsection xml:id="computer-architecture-decoder">
+    <title>The Decoder</title>
+    <p>Like everything else the computer works with, instructions are represented as sequences of 0s and 1s. The decoder
+      is the logic that examines those bits and determines what actions must be taken to execute the instruction they
+      represent. The control unit uses this information to send the appropriate series of messages to the ALU, memory,
+      and registers.</p>
+  </subsubsection>
+
+  <subsubsection xml:id="computer-architecture-clock">
+    <title>The Clock (or Timer)</title>
+    <p>The timer or clock ensures that all processes and instructions are carried out and completed at the right time.
+      If one component of the computer tries to read a signal before another component has sent the message it might see
+      an older message or complete gibberish. Pulses are sent to the other areas of the CPU at regular intervals and
+      actions only occur when a pulse is detected.</p>
+  </subsubsection>
+</subsection>
+
+  <subsection xml:id="computer-architecture-registers">
+    <title>The Registers</title>
+    <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif" width="35%" alt="Registers" />
+    <p>A register is a memory location within the CPU itself, designed to be quickly accessed for purposes of fast data
+      retrieval. These contain instructions, data and other values that are needed by the ALU and control unit. On the
+      timescale processors work at (billionths of a second) the trip to main memory can be too slow to wait for during
+      the middle of an instruction. So the CPU needs some high-speed memory right inside the CPU to store the
+      information it is currently working with. Here are some examples of kinds of registers a CPU will often have:</p>
+
+    <subsubsection xml:id="computer-architecture-instruction-register">
+      <title>Instruction Register (IR)</title>
+      <p>This is used to hold the current instruction in the processor while it is being decoded and executed. As each
+        instruction that is to be executed is fetched from memory it is placed here for quick reference.</p>
+    </subsubsection>
+
+    <subsubsection xml:id="computer-architecture-pc">
+      <title>Program Counter (PC)</title>
+      <p>This register is used to hold the memory address of the instruction being executed. This is how the CPU keeps
+        track of where it is in the program (&#8220;I am on instruction 010101&#8221;). Normally, each time an
+        instruction is executed, the PC is increased by one to move to the next instruction. Sometimes, however, an
+        instruction will modify the PC to make the program jump to a completely different instruction.</p>
+    </subsubsection>
+
+    <subsubsection xml:id="computer-architecture-acc">
+      <title>General Purpose Registers</title>
+      <p>A simple computer might have one Accumulator (ACC) that is used to hold the result of operations performed by
+        the ALU. (We will see an example of such a machine in <xref
+          ref="../ProgrammingLanguages/LittleComputer1#little-computer" />). Modern processors have anywhere from a few
+        to dozens of these registers for storing the results of work directly in the CPU. The names of these
+        general-purpose registers will differ from one machine to another, but no matter what they are called, they
+        simply are very fast, very temporary storage for the CPU.</p>
+    </subsubsection>
+  </subsection>
+
+  <remark> Materials on this page adapted with permission from <url
+      href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
+</section>
+

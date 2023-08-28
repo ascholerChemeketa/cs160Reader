@@ -1,0 +1,24 @@
+<chapter xml:id="impacts-of-computing_impacts-of-computing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Impacts of Computing</title>
+  <introduction>
+    <p>Computing has fundamentally reshaped society, particularly in recent decades as computing devices have become
+      ubiquitous and the Internet has connected all of those devices.</p>
+    <p>These changes wrought by computing have had effects on society and individuals both positive and negative. This
+      is the nature of tools&#8212;almost every invention can be put to use for good or evil. Even if we all agreed on
+      which uses of a technology were positive and which were negative (which we often don&#8217;t), avoiding the
+      negative consequences of a technology can be challenging. Sometimes trying to prevent misuse of technology is
+      impossible without preventing any use of it. Sometimes the negative effects are side effects of the positive uses
+      of a technology&#8212;a necessary cost of getting some benefit.</p>
+    <p>Given this, it is important for us to think critically about who benefits from a use of technology and who is
+      harmed by it, and how. It is important to understand clearly understand the tradeoffs as we make use of or try to
+      limit the use of a new tool.</p>
+    <p>This chapter expands on this idea and provides a framework for you to explore technologies we are learning about
+      to consider their impacts.</p>
+  </introduction>
+  
+  <xi:include href='./B2B.ptx' />
+  <xi:include href='./AnalyzingImpacts.ptx' />
+  <xi:include href='./SmartLocks.ptx' />
+  <xi:include href='./StreetMaps.ptx' />
+</chapter>
+

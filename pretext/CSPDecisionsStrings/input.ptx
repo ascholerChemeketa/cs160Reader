@@ -1,0 +1,132 @@
+<section xml:id="csp-decisions-strings_comparing-strings">
+        <title>Comparing Strings</title>
+        
+        
+        <p xml:id="csp-decisions-strings_index-0">We can also work with user input directly in string form. If the user is supposed to enter
+            a word or other piece of text, it makes no sense to try to convert that to a number. Fortunately,
+            the comparison operators like <c>==</c>, <c>!=</c>, <c>&gt;</c>, etc&#8230; all work with strings.</p>
+        <p>This program is something like we might have in part of a text based adventure game where the
+            user is trying to navigate a maze:</p>
+
+    <program xml:id="cspdecisionsstrings_input1" interactive="activecode" language="python">
+        <input>
+print("You are in front of a creepy door in a hallway.")
+print("What do you want to do?")
+action = input("Type: in, left, or right. Then click OK or press enter")
+if action == "in":
+    print("You choose to go in.")
+    print("The room is pitch black.")
+elif action == "left":
+    print("You choose to turn left.")
+    print("A ghost appears at the end of the hall.")
+elif action == "right":
+    print("You choose to turn right.")
+    print("A greenish light is visible in the distance.")
+        </input>
+    </program>
+
+    <exercise label="cspdecisionsstrings_input2">
+        <statement>
+
+        <p>What is the printed if the user answer something other than in, left, or right?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>The room is pitch black.</p>
+                </statement>
+                <feedback>
+                    <p>This line will be printed when the user enters in.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A ghost appears at the end of the hall.</p>
+                </statement>
+                <feedback>
+                    <p>This line will printed when the user enters left.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>A greenish light is visible in the distance.</p>
+                </statement>
+                <feedback>
+                    <p>This line will printed when the user enters right.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>None of the above is printed.</p>
+                </statement>
+                <feedback>
+                    <p>None of the conditions will be true if the user enters something other than in, left, or right so none of these will be printed.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        
+        
+        <p xml:id="csp-decisions-strings_index-1">Now it is your turn to write a program that makes decisions with strings. In the program below, you job
+            is to write the function that will turn a letter grade like &#8220;A&#8221; into the GPA points it is
+            worth: 4. That function will be used to calculate the GPA of someone who took three classes.</p>
+        <p>Notice that there is some commented out code that <term>hardcodes</term> in three input values.
+            <term>Hardcoded</term> values are ones that are written into a program instead of coming from outside
+            as the program runs (like from user input). Sometimes, <term>hardcoding</term> some values makes
+            it easier to test a function like the one you need to write - you can run the program and
+            immediately see the result instead of having to type in all the inputs every time you run it.
+            Then, once you get the function working, you can remove the hardcoded values and start using
+            real input.</p>
+
+<exercise label="cspdecisionsstrings_input3">
+    <statement>
+        <p>Write the code for the <c>getGPAPoints</c> function. It should <term>return</term> the GPA points for the
+            given <c>letterGrade</c>. An <c>"A"</c> should result in 4, a <c>"B"</c> in 3, a <c>"C"</c> in 2,
+            a <c>"D"</c> in 1, and an &#8220;F&#8221; in 0.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsstrings_input3_editor" interactive="activecode" language="python">
+        <input>
+def getGPAPoints(letterGrade):
+    #write funciton code here
+
+# Main part of program
+
+letter1 = input("Enter your first grade")
+letter2 = input("Enter your second grade")
+letter3 = input("Enter your third grade")
+
+# Hard coded values to test with. You can comment out the lines above
+# and uncomment these three lines to make it easier to test your code.
+# letter1 = "A"
+# letter2 = "C"
+# letter3 = "A"
+
+totalPoints = getGPAPoints(letter1) + getGPAPoints(letter2) + getGPAPoints(letter3)
+gpa = totalPoints / 3
+print("Your GPA is", gpa)
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(getGPAPoints("A"), 4, "Testing output for A.")
+        self.assertEqual(getGPAPoints("B"), 3, "Testing output for B.")
+        self.assertEqual(getGPAPoints("C"), 2, "Testing output for C.")
+        self.assertEqual(getGPAPoints("D"), 1, "Testing output for D.")
+        self.assertEqual(getGPAPoints("F"), 0, "Testing output for F.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+    </section>
+

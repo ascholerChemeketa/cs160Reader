@@ -1,0 +1,287 @@
+<exercises xml:id="csp-collections-continued_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="cspcollectionscontinued_exercises1">
+    <statement>
+        <p>Write code for the function <c>printFirst</c>. It should print the first <c>numberItems</c> from
+            <c>list</c> with one item appearing on each line.</p>
+        <p>The tests for you code will check the output - make sure not to print anything extra or
+            remove anything from the main program.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_exercises1_editor" interactive="activecode" language="python">
+        <input>
+def printFirst(numberItems, list):
+    #Your code here to print the first numberItems in list
+
+# Main program - Do not modify
+values1 = [5, 2, 3, 8, 9, 1, 4]
+printFirst(2, values1)
+print("------------------")
+printFirst(4, values1)
+=====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(self.getOutput().split("\n")[0:2], ["5", "2"], "Testing that printFirst(2, values1) worked")
+        self.assertEqual(self.getOutput().split("\n")[3:7], ["5", "2", "3", "8"], "Testing that printFirst(4, values1) worked")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspcollectionscontinued_exercises2">
+    <statement>
+        <p>Improve your code for the <c>printFirst</c> you wrote in the previous exercise.</p>
+        <p>Before printing, make sure that <c>numberItems</c> is not greater than the length of the list.
+            If <c>numberItems</c> is OK, do the printing. If not, just print <c>"Invalid numItems"</c>.</p>
+        <p>The tests for you code will check the output - make sure not to print anything extra or
+            remove anything from the main program.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_exercises2_editor" interactive="activecode" language="python">
+        <input>
+def printFirst(numberItems, list):
+    #Your code here to print the first numberItems in list
+
+# Main program - Do not modify
+values1 = [5, 2, 3, 8, 9, 1, 4]
+printFirst(2, values1)
+print("------------------")
+printFirst(4, values1)
+print("------------------")
+printFirst(10, values1)
+=====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(self.getOutput().split("\n")[0:2], ["5", "2"], "Testing that printFirst(2, values1) worked")
+        self.assertEqual(self.getOutput().split("\n")[3:7], ["5", "2", "3", "8"], "Testing that printFirst(4, values1) worked")
+        self.assertEqual(self.getOutput().split("\n")[-2], "Invalid numItems", 'Testing that printFirst(10, values1) resulted in "Invalid numItems"')
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspcollectionscontinued_exercises3">
+    <statement>
+        <p>We have a list of numbers that are all supposed to be 8-bit values (0-255).</p>
+        <p>Write code for the <c>fixNumbers</c> function. It should go through the <c>list</c>
+            that is passed as a parameter and change any value above 255 to 255 and any value
+            below 0 to 0.</p>
+        <p>You may want to just worry about the either fixing just the &#8220;too high&#8221; or just
+            the &#8220;too low&#8221; values first, then worry about the other category once that is working.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_exercises3_editor" interactive="activecode" language="python">
+        <input>
+def fixNumbers(list):
+    #Your code here to limit the list values to 0-255
+
+# Main program
+values1 = [-10, 100, 300]
+fixNumbers(values1)
+print(values1)
+values2 = [127, 216, 280, 250, 50, 0, -3, 20]
+fixNumbers(values2)
+print(values2)
+=====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        values1 = [-10, 100, 300]
+        fixNumbers(values1)
+        self.assertEqual(values1, [0, 100, 255], "Testing that your function code works on values1.")
+        values2 = [127, 216, 280, 250, 50, 0, -3, 20]
+        fixNumbers(values2)
+        self.assertEqual(values2, [127, 216, 255, 250, 50, 0, 0, 20], "Testing that your function code works on values2.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspcollectionscontinued_exercises4">
+    <statement>
+        <p>Write the code for <c>middleThird()</c>. It should accept a <c>list</c> as its parameter and
+            then slice the list into three equal parts (first third, middle third, last third) and
+            return the middle third.</p>
+        <p>You can assume the <c>list</c> will always be of a size that evenly divides by 3.</p>
+        <p>Hint: Indexes you use in a list slice must be integers. You can&#8217;t ask for a slice
+            <c>[2.0:4.0]</c>, just <c>[2:4]</c>. When you do division, use <c>//</c>
+            to get an integer answer instead of <c>/</c> which gives a decimal answer.</p>
+        <p>If you are having issues, first calculate the indexes you will use to make the slice
+            and print them out.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_exercises4_editor" interactive="activecode" language="python">
+        <input>
+def middleThird(list):
+    # slice the list into three equal parts
+    # return just the middle third
+
+# Main program
+values1 = [10, 20, 30]
+print( middleThird(values1) )
+values2 = [10, 20, 30, 40, 50, 60]
+print( middleThird(values2) )
+values3 = list(range(1, 31)) # Makes a list out of the range. Will have 1-30
+print( middleThird(values3) )
+=====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        values1 = [10, 20, 30]
+        values2 = [10, 20, 30, 40, 50, 60]
+        values3 = list(range(1, 31))
+        self.assertEqual(middleThird(values1), [20], "Testing that your function code works on values1.")
+        self.assertEqual(middleThird(values2), [30, 40], "Testing that your function code works on values2.")
+        self.assertEqual(middleThird(values3), list(range(11, 21)), "Testing that your function code works on values3.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

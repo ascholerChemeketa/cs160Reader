@@ -1,0 +1,60 @@
+<section xml:id="computing-fields_information-systems">
+  <title>Information Systems</title>
+
+  <p>In some ways <term>Information Systems</term> attacks the same basic problems as Information Technology in that it
+    is focused on making computer technology work for people and organizations.</p>
+  <p>However, while IT is more concerned with the technology itself, Information Systems focuses more on
+    business-related issues. They are interested in questions like: &#8220;What information does the enterprise
+    need?&#8221;, &#8220;How is that information generated?&#8221;, &#8220;Is it delivered to the people who need it? Is
+    it presented to them in ways that permit them to use it readily?&#8221;</p>
+  <p>Information Systems degrees generally have a blend of courses in technology, business, and communications. IS
+    professionals must understand both technical and organizational factors so they can serve as a bridge between the
+    technical and management groups in an organization.</p>
+
+  <subsection xml:id="information-systems-careers">
+    <title>Typical careers</title>
+    <ol>
+      <li>
+        <p>
+          <url href="http://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm">Computer
+            Systems Analyst</url>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="information-systems-education">
+    <title>Education</title>
+    <p>Because IS jobs tend to have significant business and management responsibilities, they are more likely to
+      require a Bachelor&#8217;s degree than IT jobs.</p>
+    <p>An Information Systems degree will combine technical knowledge and business knowledge in different degrees. Some
+      IS programs have a more technical focus, with a core of technical skills like an IT professional. Other programs
+      are much more business focused and have technical courses that don&#8217;t focus on developing practical skills,
+      but instead focus on understanding how technologies are used so that the IS practitioner can manage people with
+      more applied skills.</p>
+  </subsection>
+
+  <subsection xml:id="information-systems-knowledge">
+    <title>Knowledge Domains</title>
+    <p>This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+      required expertise while a 1 represents a minimal amount.</p>
+    <figure xml:id="information-systems-discipline-chart">
+      <caption>Computer science knowledge domains.</caption>
+      <interactive xml:id="interactive-information-systems-discipline-chart" platform="javascript"
+        aspect="3:2"
+        source="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js ComputingFields/code/ISViz.js"
+        preview="ComputingFields/images/discipline-is.jpg">
+        <slate xml:id="disciplines-is" surface="canvas" />
+        <instructions>
+          <p>Click a discipline label to enable or disable it in the visualization.</p>
+        </instructions>
+      </interactive>
+    </figure>
+  </subsection>
+
+
+  <remark> Materials on this page adapted from <url
+    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+</section>
+

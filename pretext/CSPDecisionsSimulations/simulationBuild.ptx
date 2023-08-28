@@ -1,0 +1,146 @@
+<section xml:id="csp-decisions-simulations_building-a-simulation id1">
+        <title>Building a Simulation</title>
+        <p>Let&#8217;s use what we have learned about random numbers and if statements to build a simulation.
+            We want to know the answer to <em>&#8220;If you flip a coin 100 times, what are the chances you get
+                5 heads in a row at some point?&#8221;</em></p>
+        <p>This is a complex problem. We need to flip a coin 100 times and figure out if we get at
+            least 5 heads in a row - that is slightly different than what we have done so far. We will
+            also need to repeat that a bunch of times - if we want to know the chances of something
+            happening, we will need to do it say 10000 times and see what percent of the time we
+            get the right result.</p>
+        <p>So let&#8217;s start with the basics - how do we see if we got 5 heads in a row? Well, each time
+            we flip a coin, if it is a heads, we need to add one to <c>headsInARow</c>. If it is a tails,
+            that means we now have seen 0 <c>headsInARow</c>:</p>
+
+    <program xml:id="cspdecisionssimulations_simulationbuild1" interactive="activecode" language="python">
+        <input>
+import random
+
+headsInARow = 0
+for i in range(100):
+    flip = random.randrange(0, 2)  # pick a number from 0-1
+    print(flip)                                    # testing code
+    if flip == 0:
+        headsInARow = headsInARow + 1
+    else:
+        headsInARow = 0
+    print("We have seen", headsInARow, "in a row") # testing code
+        </input>
+    </program>
+        <p>Try running the program. Does it appear to work correctly? Once you have verified that
+            the code appears to work, we need to modify it so it produces just one answer - true
+            or false - yes we got at least 5 heads in a row or no we did not.</p>
+        <p>To do this, we will use <c>break</c> to stop the loop if we see 5 heads in a row. The
+            <c>break</c> command is a way to stop a loop - it &#8220;breaks&#8221; us out of the loop and continues
+            with the rest of the program. In this case, if <c>headsInARow</c> hits 5, we can stop
+            the loop early - we know that we got 5 heads and we don&#8217;t want to keep going and flip a
+            tails and then &#8220;forget&#8221; that we had 5 in a row.</p>
+
+    <program xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">
+        <input>
+import random
+
+headsInARow = 0
+for i in range(100):
+    flip = random.randrange(0, 2)  # pick a number from 0-1
+    print(flip)                                    # testing code
+    if flip == 0:
+        headsInARow = headsInARow + 1
+    else:
+        headsInARow = 0
+    print("We have seen", headsInARow, "in a row") # testing code
+
+    if headsInARow == 5:
+        break
+
+if headsInARow &gt;= 5:
+    print(True)
+else:
+    print(False)
+        </input>
+    </program>
+
+    <exercise label="cspdecisionssimulations_simulationbuild3">
+        <statement>
+
+        <p>I decide that I want to try to get 7 heads in a row. Which lines would I need to change in the program?
+            (Use the history slider to go back to the original version if you made changes to it.)</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>4, 13, 16</p>
+                </statement>
+                <feedback>
+                    <p>We don't need to change the loop - we still want 100 flips.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>13, 16</p>
+                </statement>
+                <feedback>
+                    <p>Correct.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>7, 13, 16</p>
+                </statement>
+                <feedback>
+                    <p>We don't need to change how flips work. A 0 is still heads.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>4, 7, 13, 16</p>
+                </statement>
+                <feedback>
+                    <p>We don't need to change the loop - we still want 100 flips.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>Now, we want to turn the code into a function that returns True or False instead of printing the
+            answer. Making it into a function will make it easier to repeat the process over and over.</p>
+<exercise label="cspdecisionssimulations_simulationbuild4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Arrange the code so that the <c>checkHeadsInRow(desiredStreak)</c> function works correctly.
+            It will take a number as its parameter - the number of heads in a row we want to see. It
+            will do 100 flips and see if we get that many in a row. If so, it returns True, otherwise False.
+            Using a parameter means we could use this same function to easily ask for 4 heads in a row,
+            or 6 heads.</p>
+        <p>You will use all of the blocks. Make sure to put the import at the very top of the program
+            and the main part of the program (the function call) after you define the function.</p>
+</statement>
+<blocks><block order="7">
+<cline>def checkHeadsInRow(desiredStreak):</cline>
+<cline>    headsInARow = 0 #start with 0</cline>
+</block><block order="6">
+<cline>    for i in range(100):</cline>
+</block><block order="5">
+<cline>        flip = random.randrange(0, 2)</cline>
+</block><block order="2">
+<cline>        if flip == 0:</cline>
+<cline>            headsInARow = headsInARow + 1</cline>
+<cline>        else:</cline>
+<cline>            headsInARow = 0</cline>
+</block><block order="3">
+<cline>        if headsInARow == desiredStreak:</cline>
+<cline>            break</cline>
+</block><block order="8">
+<cline>    # Make final decision</cline>
+<cline>    if headsInARow &gt;= desiredStreak:</cline>
+</block><block order="1">
+<cline>        return True</cline>
+</block><block order="9">
+<cline>    else:</cline>
+</block><block order="4">
+<cline>        return False</cline>
+</block></blocks></exercise>    </section>
+

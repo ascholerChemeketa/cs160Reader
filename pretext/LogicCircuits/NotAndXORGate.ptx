@@ -1,0 +1,186 @@
+<section xml:id="logic-circuits_xor-and-not-gates">
+  <title>XOR and NOT Gates</title>
+  <p>We can combine two inputs to produce an output using many rules other than <term>AND</term> or <term>OR</term>. We
+    won&#8217;t worry about what the switches would look like for the new rules below&#8230; we would have to make our
+    simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer
+    scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.</p>
+    <subsection xml:id="xor-and-not-gate-xor">
+      <title> XOR Gates</title>
+  <p>The exclusive or gate, known as <term>XOR</term> describes a gate that only outputs a 1 only if one of the inputs
+    is 1 and the other is 0. In other words, we can have either input on, but not both on.</p>
+  <table xml:id="xort-truth-table">
+    <title>Truth table for XOR</title>
+    <tabular halign="center">
+
+      <row header="yes" bottom="minor">
+        <cell> Input 1 </cell>
+        <cell right="minor"> Input 2 </cell>
+        <cell> Output </cell>
+      </row>
+
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 0 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents
+    &#8220;the first number negative&#8221; and input 2 represents &#8220;the second number is negative&#8221;, then <term>
+    XOR</term>&#8217;s output would tell us &#8220;Is the answer negative&#8221;. If either one of the two numbers, but
+    not both of them, were negative, then the answer will be negative.</p>
+  <p>Watch out for <term>XOR</term> and <term>OR</term> - in English we often use the word &#8220;or&#8221; to mean both
+    things. The statement &#8220;Entr&#233;es come with fries <em>or</em> a salad&#8221; probably means you can get one
+    or the other, but not both. In that statement, <em>or</em> means the <term>XOR</term> rule. On the other hand,
+    imagine a class syllabus that states: &#8220;If you turn in copied work, <em>or</em> the wrong assignment, you will
+    get a 0&#8221;. You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts
+    are true). In this case, <em>or</em> means logical <term>OR</term> - if either part is true, the answer is true.</p>
+</subsection>
+<subsection xml:id="xor-and-not-gate-not">
+  <title>NOT Gates</title>
+  <p>The <term>NOT</term> gate is special in that it only has one input. The output is always the opposite of the input:</p>
+  <table xml:id="not-truth-table">
+    <title>Truth table for NOT</title>
+    <tabular halign="center">
+
+      <row header="yes" bottom="minor">
+        <cell right="minor">Input </cell>
+        <cell> Output </cell>
+      </row>
+
+      <row>
+        <cell right="minor"> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell right="minor"> 1 </cell>
+        <cell> 0 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>The NOT operation is what we use if we have a truth value like &#8220;it is raining&#8221; but want to have the
+    value for &#8220;it is not raining&#8221;. Anytime we want to say &#8220;We do not have X&#8221; we can say
+    &#8220;NOT X&#8221;.</p>
+  <p>Because the NOT rule applies to only one input, it can be applied to a single-bit pattern like 0101. To figure out
+    the answer, simply &#8220;flip&#8221; every bit from 1 to 0 or vice verse:</p>
+  <table xml:id="logic-circuits_id3">
+    <title>NOT of 0101</title>
+    <tabular row-headers="yes" halign="center">
+      <row bottom="minor">
+        <cell right="minor">Input pattern</cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell right="minor">NOT result</cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  
+</subsection>
+  <note>
+    <p>People refer to an AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate
+      produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in
+      every other case. Similarly, a NOR is an OR followed by a NOT and an XNOR (or ENOR) is a NOT after an XOR. You are
+      not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what
+      they are.</p>
+  </note>
+
+  <exercise label="logiccircuits_notandxorgate1">
+    <statement>
+      <p>What is the result of applying <term>NOT</term> to: <raw format="html" xml:space="preserve"><br/></raw> 1110? <raw
+          format="html" xml:space="preserve"><br/></raw> <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*0001\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^01]+\s*$">
+          <feedback>
+            <p>Your answer should be just 1s and 0s</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1,3}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{5,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: flip each bit in the input pattern to its opposite.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="logiccircuits_notandxorgate2">
+    <statement>
+      <p>What is the result of applying <term>XOR</term> to: <raw format="html" xml:space="preserve"><br/></raw> 0101 <raw
+          format="html" xml:space="preserve"><br/></raw> 0011? <raw format="html" xml:space="preserve"><br/></raw> <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*0110\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^01]+\s*$">
+          <feedback>
+            <p>Your answer should be just 1s and 0s</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1,3}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{5,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: apply XOR to each column of bits. XOR reports 1 if one (and only one) of the bits is 1.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
+

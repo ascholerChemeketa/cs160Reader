@@ -1,0 +1,59 @@
+<section xml:id="programming-languages_machine-languages">
+  <title>Machine Languages</title>
+  <p>Suppose for a moment that you were asked to perform a task and were given the following list of instructions to
+    perform:</p>
+  <p>
+    <ol>
+      <li>
+        <p>0001 0011 0011 1011</p>
+      </li>
+      <li>
+        <p>1101 0111 0001 1001</p>
+      </li>
+      <li>
+        <p>1111 0001 1101 1111</p>
+      </li>
+      <li>
+        <p>0000 1100 0101 1101</p>
+      </li>
+      <li>
+        <p>0001 0011 0011 1011</p>
+      </li>
+    </ol>
+  </p>
+  <p>These instructions have no real meaning to you, but they are exactly the kind of instructions that a computer
+    expects. It only knows how to deal with 0s and 1s, so all of its instructions must be written in binary format. A
+    processor&#8217;s control unit has a format it expects each such instruction to be in: typically a instruction will
+    be a set length, say 16 or 32 or 64 bits and the first few bits will specify what kind of instruction it is. These
+    first few bits, known as the <term>opcode</term> (operation code), say what general task is to be done - something
+    like &#8220;store a number&#8221; or &#8220;add two numbers&#8221;. The rest of the instruction will contain <term>
+    operands</term>, the extra information needed to understand the instruction - things like where to store the number
+    or which two numbers to add.</p>
+  <p>The figure below shows how an imaginary computer might interpret an instruction. The first 4 bits are the opcode -
+    in this case, we are assuming 0001 means &#8220;add two values&#8221;. The next 6 bits specify the memory address of
+    the first number we are adding and the last 6 bits specify the memory address of the second number.</p>
+  <figure>
+    <image source="ProgrammingLanguages/Images/MachineInstruction.png" alt="A machine instruction" />
+    <caption>How a computer might interpret the instruction 0001110001001011.
+    </caption>
+  </figure>
+  <p>Computers usually support only a small number of machine code instructions; a few dozen to a few hundred very
+    simple instructions like &#8220;add two numbers&#8221; or &#8220;store a value to memory&#8221;. The list of
+    available instructions and the format for specifying them make up a <term>machine language</term>. Machine languages
+    were the first programming languages - the earliest electronically programmable computers had to be programmed by
+    feeding in a program as a list of 0s and 1s that specified what the computer was to do. (Before that the program had
+    to be set physically with switches or patch cords.)</p>
+  <important>
+    <p>Because these are the only instructions a computer actually can understand and perform, at some point, every
+      program a computer runs must be converted to machine instructions.</p>
+  </important>
+  <p>You can probably see the difficulties of working in machine language. While it might be very appropriate for a
+    computer, it is extremely confusing for a computer programmer. They are also restricted to very low-level commands.
+    There is no way to say something like &#8220;open a connection to google.com&#8221; or &#8220;draw this image on the
+    screen&#8221; in a machine language - instead you would have to break those tasks down into much lower-level
+    commands that would accomplish your goal.</p>
+
+<remark> Materials on this page adapted with permission from <url
+  href="http://courses.cs.vt.edu/csonline/">Online Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</remark>
+</section>
+

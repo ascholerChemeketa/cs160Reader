@@ -1,0 +1,173 @@
+<section xml:id="csp-name-numbers_mixed-up-code-practice">
+        <title>Mixed Up Code Practice</title>
+        <p>Try to solve each of the following. Click the <em>Check</em> button to check each solution.  You will be told if your solution is too short, has a block in the wrong order, or you are using the wrong block.</p>
+<exercise label="cspnamenumbers_variablepracticeparsons1" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print out the cost for each shirt if they are to buy 2 and get the third free but were originally $45 each.  The blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>price = 45</cline>
+</block><block order="3">
+<cline>totalCost = price * 2</cline>
+</block><block order="1">
+<cline>pricePerShirt = totalCost / 3</cline>
+</block><block order="4">
+<cline>print(pricePerShirt)</cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons2" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print out the cost per person for a dinner including the tip. But the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="1">
+<cline>bill = 89.23</cline>
+</block><block order="5">
+<cline>tip = bill * 0.20</cline>
+</block><block order="6">
+<cline>total = bill + tip</cline>
+</block><block order="4">
+<cline>numPeople = 3</cline>
+<cline>perPersonCost = total / numPeople</cline>
+</block><block order="3">
+<cline>print(perPersonCost)</cline>
+</block><block order="2" correct="no">
+<cline>print(perpersoncost) </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons3" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print the amount of punch left in a two gallon punch bowl if 12oz is poured into as many cups as possible. One gallon contains 128oz and the punch bowl is full. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>oInGallon = 128</cline>
+<cline>oInCup = 12</cline>
+</block><block order="1">
+<cline>totalPunch = 2 * oInGallon</cline>
+</block><block order="5">
+<cline>amountLeft = totalPunch % oInCup</cline>
+</block><block order="4">
+<cline>print(amountLeft)</cline>
+</block><block order="3" correct="no">
+<cline>amountLeft = totalPunch / oInCup </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons4" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print the number of seconds in 5 days. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="3">
+<cline>sInMin = 60</cline>
+<cline>mInHour = 60</cline>
+<cline>hInDay = 24</cline>
+</block><block order="1">
+<cline>sInDay = sInMin * mInHour * hInDay</cline>
+</block><block order="4">
+<cline>total = sInDay * 5</cline>
+</block><block order="5">
+<cline>print(total)</cline>
+</block><block order="2" correct="no">
+<cline>total = sInDay / 5 </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons5" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print the number of months it would take you to save 500 if you make 50 a week. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>weeklyRate = 50</cline>
+<cline>goal = 500</cline>
+</block><block order="5">
+<cline>numWeeks = goal / weeklyRate</cline>
+</block><block order="3">
+<cline>numMonths = numWeeks / 4</cline>
+</block><block order="1">
+<cline>print(numMonths)</cline>
+</block><block order="4" correct="no">
+<cline>numWeeks = weeklyRate / goal </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons6" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print the cost of a trip that is 200 miles when the price of gas is 2.20 and the miles per gallon is 42. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="4">
+<cline>miles = 200</cline>
+<cline>price = 2.20</cline>
+<cline>mpg = 42</cline>
+</block><block order="2">
+<cline>numGalls = miles / mpg</cline>
+</block><block order="3">
+<cline>cost = numGalls * price</cline>
+</block><block order="1">
+<cline>print(cost)</cline>
+</block><block order="5" correct="no">
+<cline>print(totalCost) </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons7" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print how many miles you can go on half a tank of gas if the miles per gallon is 26 and your tank holds 15 gallons. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="1">
+<cline>mpg = 26</cline>
+<cline>tankHolds = 15</cline>
+</block><block order="4">
+<cline>numGalls = tankHolds / 2</cline>
+</block><block order="3">
+<cline>miles = numGalls * mpg</cline>
+</block><block order="5">
+<cline>print(miles)</cline>
+</block><block order="2" correct="no">
+<cline>mpg = 15</cline>
+<cline>tankHolds = 26 </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons8" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print how many chicken wings you can buy with $3.50 if the wings are $.60 each. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="3">
+<cline>cost = 0.6</cline>
+<cline>money = 3.5</cline>
+</block><block order="1">
+<cline>numWings = money / cost</cline>
+</block><block order="4">
+<cline>print(numWings)</cline>
+</block><block order="2" correct="no">
+<cline>print(NumWings) </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons9" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print how much you will have to pay for an item that is 60% off the original price of $52.99. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="1">
+<cline>price = 52.99</cline>
+<cline>discount = 0.6</cline>
+</block><block order="3">
+<cline>savings = price * discount</cline>
+</block><block order="2">
+<cline>finalPrice = price - savings</cline>
+</block><block order="4">
+<cline>print(finalPrice)</cline>
+</block><block order="5" correct="no">
+<cline>finalPrice = price - discount </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons10" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should print how much each pair of shorts cost when they are buy 2 and get the third free.  The shorts are originally $39.99 each. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>price = 39.99</cline>
+</block><block order="1">
+<cline>priceForTwo = price * 2</cline>
+</block><block order="3">
+<cline>itemPrice = priceForTwo / 3</cline>
+</block><block order="5">
+<cline>print(itemPrice)</cline>
+</block><block order="4" correct="no">
+<cline>itemPrice = priceForTwo / 2 </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons11" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>Arrange the code so the following is printed in order: 55, &#8220;computer science&#8221;, 0. The blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="1">
+<cline>apple = "computer science"</cline>
+<cline>number = 55</cline>
+<cline>Michigan = 0</cline>
+</block><block order="5">
+<cline>print(number)</cline>
+</block><block order="3">
+<cline>print(apple)</cline>
+</block><block order="2">
+<cline>print(Michigan)</cline>
+</block><block order="4" correct="no">
+<cline>print("Michigan") </cline>
+</block></blocks></exercise><exercise label="cspnamenumbers_variablepracticeparsons12" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following program segment should swap the values of x and y after val1 and val 2 are assigned to x and y, respectively. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <c>Check</c> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>x = val1</cline>
+<cline>y = val2</cline>
+</block><block order="3">
+<cline>temp = x</cline>
+</block><block order="5">
+<cline>x = y</cline>
+</block><block order="4">
+<cline>y = temp</cline>
+</block><block order="1" correct="no">
+<cline>temp = y </cline>
+</block></blocks></exercise>    </section>
+

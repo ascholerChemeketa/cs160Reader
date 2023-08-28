@@ -1,0 +1,243 @@
+<section xml:id="data-representation_number-systems-binary">
+  <title>Number Systems &amp; Binary</title>
+  <p>You have been using the decimal number system for so long that you probably no longer often stop to think about
+    what the individual digits mean. You see 134 and recognize it as &#8220;one hundred thirty-four&#8221;. 134 has that
+    value because each digit in the number represents a multiple of some power of 10:</p>
+  <table>
+    <title>"134" base 10</title>
+    
+    <tabular halign="center">
+      <row bottom="minor">
+        <cell header="yes">Place value</cell>
+        <cell> 100s </cell>
+        <cell> 10s </cell>
+        <cell> 1s </cell>
+      </row>
+      <row bottom="medium">
+        <cell header="yes">Power of 10</cell>
+        <cell>
+          <m>{10}^2</m>
+        </cell>
+        <cell>
+          <m>{10}^1</m>
+        </cell>
+        <cell>
+          <m>{10}^0</m>
+        </cell>
+      </row>
+      <row>
+        <cell header="yes">Digit</cell>
+        <cell> 1 </cell>
+        <cell> 3 </cell>
+        <cell> 4 </cell>
+      </row>
+
+
+    </tabular>
+  </table>
+  <p>Or <term>1</term> * 100 + <term>3</term> * 10 + <term>4</term> * 1 = 134</p>
+  <p>The <term>binary number</term> system is the same idea - each digit has a value based on the column it is in. The
+    two differences are:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Each digit can only be a 1 or a 0</p>
+      </li>
+      <li>
+        <p>Each column represents a power of 2 instead of a power of 10</p>
+      </li>
+    </ul>
+  </p>
+  <table>
+    <title>"101" base 2</title>
+    <tabular halign="center">
+      <row header="yes">
+        <cell>Fours</cell>
+        <cell>Twos</cell>
+        <cell>Ones</cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>2^2</m>
+        </cell>
+        <cell>
+          <m>2^1</m>
+        </cell>
+        <cell>
+          <m>2^0</m>
+        </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+    </tabular>
+  </table>
+  <p><term>101</term> in binary means <term>1</term> * 4 + <term>0</term> * 2 + <term>1</term> * 1 = 5</p>
+  <p>Notice that since each digit can only be a 1 or a 0, we don&#8217;t actually need to multiply. A 1 indicates we
+    have the value for that column and a 0 indicates we don&#8217;t. So <term>101</term> in binary simply means 4 + 1 =
+    5 because the first 1 is in the &#8220;fours&#8221; column and the second 1 is in the &#8220;ones&#8221; column.</p>
+  <p>Because things can get confusing when we are talking about different bases (does &#8220;101&#8221; mean the binary
+    number that represents 5 or the decimal number 101?), we often use a subscript to indicate the base of the number
+    being represented. Thus <m>101_{10}</m> indicates the decimal number 101 and <m>101_{2}</m> indicates a binary
+    number with the value 5.</p>
+  <p>If you think about it for a minute, you can probably see that the largest value that we can represent with 3 binary
+    digits is 7. With three decimal digits, we can express values up to 999. Binary numbers take more digits to express
+    large numbers.</p>
+  <p>With 8 bits, we can express values up to 255; to decode them, we need to add more columns to our table - each new
+    column will be twice the value of the last column. Here is what <m>10110011_{2}</m> represents:</p>
+  <table>
+    <title>"10110011" base 2</title>
+    <tabular halign="center">
+      <row header="yes">
+        <cell> 128s </cell>
+        <cell> 64s </cell>
+        <cell> 32s </cell>
+        <cell> 16s </cell>
+        <cell> 8s </cell>
+        <cell> 4s </cell>
+        <cell> 2s </cell>
+        <cell> 1s </cell>
+      </row>
+      <row bottom="medium">
+        <cell>
+          <m>2^7</m>
+        </cell>
+        <cell>
+          <m>2^6</m>
+        </cell>
+        <cell>
+          <m>2^5</m>
+        </cell>
+        <cell>
+          <m>2^4</m>
+        </cell>
+        <cell>
+          <m>2^3</m>
+        </cell>
+        <cell>
+          <m>2^2</m>
+        </cell>
+        <cell>
+          <m>2^1</m>
+        </cell>
+        <cell>
+          <m>2^0</m>
+        </cell>
+      </row>
+
+
+      <row>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 1 </cell>
+        <cell> 0 </cell>
+        <cell> 0 </cell>
+        <cell> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+
+
+    </tabular>
+  </table>
+  <p><m>{10110011}_{2}</m> means 128 + 32 + 16 + 2 + 1 or 179</p>
+  <p>Confused by how number systems determine the value of the digits in a number? Check out this video for a more
+    detailed explanation:</p>
+
+  <video xml:id="ry1hpm1GXVI" youtube="ry1hpm1GXVI" width="100%" />
+
+
+  <exercise label="datarepresentation_numbersystems1">
+    <statement>
+      <p>What decimal value does the binary number 1010 represent? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[10, 10]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[\D]+\s*$">
+          <feedback>
+            <p>The answer should be a number</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1}\s*$">
+          <feedback>
+            <p>Not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{3,}\s*$">
+          <feedback>
+            <p>Too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: With 4 binary digits what columns will you be using?</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="datarepresentation_numbersystems2">
+    <statement>
+
+      <p>What is the minimum number of bits required to represent the number 45?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>1</p>
+        </statement>
+        <feedback>
+          <p>That only gets you 0 or 1!!!</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>5</p>
+        </statement>
+        <feedback>
+          <p>With 5 bits you can make up to 11111 base 2 or 31</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>6</p>
+        </statement>
+        <feedback>
+          <p>101101 base 2 = 45</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>7</p>
+        </statement>
+        <feedback>
+          <p>The 7th column would represent 2 to the 6th power or 64... we don't need that</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>8</p>
+        </statement>
+        <feedback>
+          <p>With 8 bits we can represent up to 255</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+</section>
+

@@ -1,0 +1,110 @@
+<section xml:id="algorithms_merge-sort-efficiency">
+  <title>Merge Sort Efficiency</title>
+  <p>So how efficient is Merge Sort? Well, for starters, remember that merging <term>n</term> items takes <m>O(n)</m>
+    work. In other words, merging 5 items takes ~5 units of work, merging 20 items, takes ~20 units of work, etc&#8230;
+    Now let&#8217;s do a rough analysis of how long it takes to do a merge sort on a list of length 1024.</p>
+  <p>All the hard work takes place as we merge the lists back together:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The first merge for a list of 1024 things would be to merge 1024 single items into 512 lists of length two.
+          Each merge would take ~2 units of work since there are two items in the new lists. 512 lists times 2 units of
+          work = ~1024 units of work.</p>
+      </li>
+      <li>
+        <p>The next level would be to merge those 512 lists of size 2 into 256 lists of size 4. Each merge in that level
+          would take ~4 units of work. 256 lists times 4 units of work = 1024 units of work again.</p>
+      </li>
+    </ul>
+  </p>
+  <p>The table below shows this and the pattern for the rest of the level:</p>
+
+  <tabular halign="center">
+    <row header="yes">
+      <cell>Level</cell>
+      <cell>Description</cell>
+      <cell>Number of Lists</cell>
+      <cell>Size of Each List</cell>
+      <cell>Amount of Work</cell>
+    </row>
+    <row>
+      <cell>1</cell>
+      <cell><line>Merge 1024 lists of size 1</line><line>
+      into 512 lists of size 2</line></cell>
+      <cell>512</cell>
+      <cell>2</cell>
+      <cell>512 &#183; 2 = <strong>1024</strong></cell>
+    </row>
+    <row>
+      <cell>2</cell>
+      <cell><line>Merge 512 lists of size 2</line><line>
+      into 256 lists of size 4</line></cell>
+      <cell>256</cell>
+      <cell>4</cell>
+      <cell>256 &#183; 4 = <strong>1024</strong></cell>
+    </row>
+    <row>
+      <cell>3</cell>
+      <cell><line>Merge 256 lists of size 4</line><line>
+      into 128 lists of size 8</line></cell>
+      <cell>128</cell>
+      <cell>8</cell>
+      <cell>128 &#183; 8 = <strong>1024</strong></cell>
+    </row>
+    <row>
+      <cell>...</cell>
+      <cell>...</cell>
+      <cell>...</cell>
+      <cell>...</cell>
+      <cell>...</cell>
+    </row>
+    <row>
+      <cell>???</cell>
+      <cell><line>Merge 2 lists of size 512</line><line>
+      into 1 lists of size 11024</line></cell>
+      <cell>1</cell>
+      <cell>1024</cell>
+      <cell>1 &#183; 1024 = <strong>1024</strong></cell>
+    </row>
+  </tabular>
+
+  <p>Note that at each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can
+    say each level takes <m>O(n)</m> work.</p>
+  <p>The only other thing we need to figure out is &#8220;how many levels are required?&#8221; The table above skips a
+    few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like:</p>
+  <program language="none">
+    <input>
+1024 &#8594; 512 &#8594; 256 &#8594; 128 &#8594; 64 &#8594; 32 &#8594; 16 &#8594; 8 &#8594; 4 &#8594; 2 &#8594; 1
+</input>
+  </program>
+  <p>That is 10 levels of merging to group 1024 single items into one list of 1024.</p>
+  <sidebar>
+    <title>Wolfram Alpha</title>
+    <p>You can use <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha website</url>
+      to calculate log base 2 by typing something like &#8220;log2(1024)&#8221;. Try it below:</p>
+      <raw format="html" xml:space="preserve">
+          <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
+          <button type="submit">Submit</button></form></div>
+        </raw>
+  </sidebar>
+  <p>As we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined
+    by the mathematical function <m>log_2(n)</m>. <m>log_2(1024) = 10</m>. Using that, we could calculate the number of
+    levels of merges required to do a Merge Sort on a list of 100,000 items: <m>log_2(100,000) &#8776; 16.61</m>. (Since
+    we can&#8217;t do 16.61 merges levels, we would call that 17.)</p>
+  <p>The formula also allows us to write a general formula for the overall work required for a Merge Sort. Starting
+    with:</p>
+  <p>
+    <md><mrow>\textrm{total work} = \textrm{work per level} &#183; \textrm{number of levels}</mrow></md>
+  </p>
+  <p>We know that sorting <term>n</term> items will require <m>log_2(n)</m> levels and each level will take <term>n</term>
+    work:</p>
+  <p>
+    <md><mrow>\textrm{total work} = \textrm{n work} &#183; log_2(n) \textrm{ levels}</mrow></md>
+  </p>
+  <p>Or:</p>
+  <p>
+    <md><mrow>\textrm{total work} = n&#183;log_2(n)</mrow></md>
+  </p>
+  <p>Merge Sort requires <m>O(n&#183;log_2(n))</m> work to sort a list of size <term>n</term>.</p>
+</section>
+

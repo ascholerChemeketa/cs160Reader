@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Using Decisions with Images</title>
+        <xi:include href='./decImages.ptx' />
+        <xi:include href='./advancedSelection.ptx' />
+        <xi:include href='./combineImages.ptx' />
+        <xi:include href='./posterize.ptx' />
+        <xi:include href='./locationConditions.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

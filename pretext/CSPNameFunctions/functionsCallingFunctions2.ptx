@@ -1,0 +1,49 @@
+<section xml:id="csp-name-functions_functions-calling-functions-2">
+        <title>Functions Calling Functions - 2</title>
+        <p>Now that we have written and tested <c>distance</c>, we can use it to help write <c>triangle_area</c>.
+            This function will take all six coordinates and return the area.</p>
+        <program language="python"><input>
+def triangleArea(x1, y1, x2, y2, x3, y3):
+    Do work to calculate area - use distance function to help
+    return area
+</input></program>
+        <p>Recall that the formula we need to use is: <m>\sqrt{s (s - a) (s - b) (s - c)}</m></p>
+        <p>The work for this function will involve calling the distance function three times to calculate
+            the lengths of the three sides (<term>a</term>, <term>b</term>, <term>c</term>). We then need to use those to calculate <term>s</term>,
+            the semi-perimeter.</p>
+        <p>Below is the code for the final program but jumbled up - figure out the right order.</p>
+<exercise label="cspnamefunctions_functionscallingfunctions21" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Put the blocks in the right order and indentation. <term>You will use all of the blocks.</term></p>
+</statement>
+<blocks><block order="6">
+<cline>def distance(x1, y1, x2, y2):</cline>
+<cline>    xDifference = x2 - x1</cline>
+<cline>    yDifference = y2 - y1</cline>
+<cline>    distance = math.sqrt( xDifference ** 2 + yDifference ** 2 )</cline>
+<cline>    return distance</cline>
+</block><block order="7">
+<cline>def triangle_area(x1, y1, x2, y2, x3, y3):</cline>
+</block><block order="2">
+<cline>    a = distance(x1, y1, x2, y2)</cline>
+<cline>    b = distance(x2, y2, x3, y3)</cline>
+<cline>    c = distance(x1, y1, x3, y3)</cline>
+</block><block order="3">
+<cline>    perimeter = a + b + c</cline>
+</block><block order="4">
+<cline>    s = perimeter / 2                   #semi-perimeter</cline>
+</block><block order="1">
+<cline>    area = math.sqrt(s * (s - a) * (s - b) * (s - c))</cline>
+</block><block order="5">
+<cline>    return area</cline>
+</block><block order="8">
+<cline># Main program</cline>
+<cline>import math</cline>
+<cline>p1x = 0</cline>
+<cline>p1y = 0</cline>
+<cline>p2x = 3</cline>
+<cline>p2y = 1</cline>
+<cline>p3x = 2</cline>
+<cline>p3y = 6</cline>
+<cline>testArea = triangle_area(p1x, p1y, p2x, p2y, p3x, p3y)</cline>
+</block></blocks></exercise>    </section>
+

@@ -1,0 +1,58 @@
+<section xml:id="logic-circuits_the-and-gate">
+  <title>The AND Gate</title>
+  <p>By changing the way wires run between our switches (the inputs) and the light (output), we can perform different
+    Boolean operations. The circuit below demonstrates the Boolean rule <term>AND</term>. Notice that because there is
+    one pathway through both switches from the battery to the light bulb, both switches must be in the on position to
+    light the bulb:</p>
+  <image source="LogicCircuits/Images/switchesAnd3.png" width="50%" />
+  <p>If either switch is off, that stops the current and the output is 0 (off):</p>
+  <container classes="inlinegroup">
+    <image source="LogicCircuits/Images/switchesAnd1.png" width="45%" />
+    <image source="LogicCircuits/Images/switchesAnd2.png" width="45%" />
+  </container>
+  <p>What happens if both switches are off? If the first switch is off, the current is stopped there - it doesn&#8217;t
+    really matter what state the second one is in, we know the output will be 0. Once again we can express this as a
+    truth table. Note that we have the same four possible sets of inputs that we had for the OR gate: 00, 01, 10, or 11
+    - any truth table describing a two-input circuit will always have those four possible inputs. What is different for
+    the AND gate is the outputs produced by each input - it outputs a 1 only when both inputs are 1:</p>
+  <table xml:id="and-truth-table">
+    <title>Truth table for AND</title>
+    <tabular halign="center">
+
+      <row header="yes"  bottom="minor">
+        <cell> Input 1 </cell>
+        <cell right="minor"> Input 2 </cell>
+        <cell> Output </cell>
+      </row>
+
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Once again, the 1&#8217;s and 0&#8217;s can represent any Boolean (true/false) information. For instance, we could
+    express the logic for determining whether or not a student got a B with this rule: &#8220;If your grade is greater
+    than or equal to 80 AND your grade is less than 90, then you have a B&#8221;. The AND combines two true/false ideas
+    (&#8220;your grade is > or = to 80&#8221;, &#8220;your grade is &lt; 90&#8221;) into one result (&#8220;you have
+    a B&#8221;). If either of the two facts is false (your grade is less 80 or it is 90 or above), then you do not have
+    a B.</p>
+</section>
+

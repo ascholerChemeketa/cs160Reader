@@ -1,0 +1,76 @@
+<section xml:id="logic-circuits_the-or-gate">
+  <title>The OR Gate</title>
+  <p>The basic building block of computers is the switch - in modern computers a transistor - able to turn a signal on
+    or off. A computer does all its work with these switches, manipulating the binary information that represents data.
+    These switches are combined in various ways to produce what are known as <term>logic gates</term>. Logic gates take
+    one or more input signals and produce an output based on the current input.</p>
+  <p>As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to
+    a light bulb if either switch is on. <em>(Note that this is a highly simplified version of how electrical circuits
+    really work)</em> In the figure below, the electricity is being routed through the top switch that is on. The fact
+    that the bottom switch is off does not change the fact that power can reach the bulb.</p>
+  <image source="LogicCircuits/Images/switchesOr1.png" width="50%" />
+  <p>If only the bottom switch is on, or if both switches are on, the power can still reach the bulb to light it:</p>
+  <container classes="inlinegroup">
+    <image source="LogicCircuits/Images/switchesOr2.png" width="45%" />
+    <image source="LogicCircuits/Images/switchesOr4.png" width="45%" />
+  </container>
+  <p>The only way the light bulb will not be on is if both switches are in the off position:</p>
+  <image source="LogicCircuits/Images/switchesOr3.png" width="50%" />
+
+
+  <p xml:id="logic-circuits_index-2">These switches are demonstrating the Boolean logic rule of <term>OR</term>. The OR
+    rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a <term>truth
+    table</term>. A truth table shows each possible set of input and the output those inputs produces.</p>
+  <p>For the circuit shown above, we can think of the top switch as Input 1 and the bottom switch as Input 2. We will
+    call on &#8220;1&#8221; and off &#8220;0&#8221;. There are four possible sets of inputs for the two switches: 00 -
+    both off, 10 - top on, 01 - bottom on, 11 - both on. In every situation but 00, the output is on (1). The truth
+    table below shows those four possibilities:</p>
+  <table xml:id="or-truth-table">
+    <title>Truth table for OR</title>
+    <tabular halign="center">
+
+      <row header="yes" bottom="minor">
+        <cell> Input 1 </cell>
+        <cell right="minor"> Input 2 </cell>
+        <cell> Output </cell>
+      </row>
+
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 0 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell right="minor"> 1 </cell>
+        <cell> 1 </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Although the computer will only think in terms of 1 and 0, those can stand for any piece of information that has a
+    true/false or yes/no answer. For example, maybe our two inputs represent &#8220;Is it raining right now?&#8221; and
+    &#8220;Is rain forecast for later?&#8221; and our output represents &#8220;Bring an umbrella&#8221;. The logical
+    rule <term>OR</term> is appropriate to decide if we need to have an umbrella with us. If it is raining now, or if it
+    is expected to rain later (or if it is raining now and is expected to rain later) then we need an umbrella.</p>
+
+    
+  <sidebar xml:id="logic-circuits_index-1">
+    <title>George Boole</title>
+    <p><url href="http://en.wikipedia.org/wiki/George_Boole" visual="http://en.wikipedia.org/wiki/George_Boole">George
+      Boole</url> invented the rules of logic that computers use in the 1800s. The term <term>Boolean</term> logic gets
+      its name from him.</p>
+    <image source="LogicCircuits/Images/George_Boole_color.jpg" width="50%" />
+  </sidebar>
+</section>
+

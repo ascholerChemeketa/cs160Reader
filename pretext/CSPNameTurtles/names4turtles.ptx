@@ -1,0 +1,150 @@
+<section xml:id="csp-name-turtles_turtles-as-objects">
+        <title>Turtles as Objects</title>
+        
+        
+        <p xml:id="csp-name-turtles_index-0">Strings are just one kind of <term>object</term>.  <term>Objects</term> in programming are constructs that combine
+            <term>state</term> - a collection of data (attributes) - with behaviors that it can be done
+            with/to that data.</p>
+        <p>A string&#8217;s data is a list of characters like &#8220;h e l l o   t h e r e&#8221;; its data are the functions
+            like <c>length()</c> or <c>lower()</c> or even the slice behavior <c>[3:6]</c> that allow us to work with
+            that list of characters.</p>
+        <p>While strings are <term>immutable</term> (they never change once created), most objects are <term>mutable</term> -
+            they can mutate or change. In mutable objects, when we use the behavior of the object, it will
+            make some kind of permanent changes.</p>
+        <p>The <term>turtles</term> we learned about in Chapter 1 are an example of a mutable object. Each turtle
+            object keeps track of the state of a turtle - its location and the direction it is facing. They
+            have behaviors to do things like move <c>forward()</c> or turn <c>left()</c>. Asking a turtle to execute
+            one of these behaviors, will change the location or direction of that turtle.</p>
+        <p>We have seen the example below once before.  It allows us to use the <c>turtle</c> library, creates
+            a <c>space</c> for a turtle object to draw on, creates a <c>turtle</c> object and names it <c>alex</c>,
+            asks <c>alex</c> to go forward by 150 pixels, asks <c>alex</c> to turn left 90 degrees, and asks <c>alex</c>
+            to go forward 75 pixels.</p>
+
+    <program xml:id="cspnameturtles_names4turtles1" interactive="activecode" language="python">
+        <input>
+from turtle import *    # use the turtle library
+space = Screen()        # create a turtle space
+alex = Turtle()         # create a turtle named alex
+alex.forward(150)       # move forward by 150 units
+alex.left(90)           # turn left 90 degrees
+alex.forward(75)        # move forward by 75 units
+        </input>
+    </program>
+
+    <exercise label="cspnameturtles_names4turtles2">
+        <statement>
+
+        <p>Which way does a turtle face when it is first created?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>North</p>
+                </statement>
+                <feedback>
+                    <p>The turtles in some of the examples faced north because of the <code>setheading(90)</code> instruction. Which way does alex move first?</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>South</p>
+                </statement>
+                <feedback>
+                    <p>Which way does alex first move in the example above?  North is at the top of the page.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>East</p>
+                </statement>
+                <feedback>
+                    <p>Turtles start off facing east which is toward the right side of the page.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>West</p>
+                </statement>
+                <feedback>
+                    <p>Which way does the turtle first move in the example above?   North is at the top of the page.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <subsection xml:id="csp-name-turtles_what-does-a-left-turn-of-90-mean">
+            <title>What does a left turn of 90 mean?</title>
+            <p>Turn instructions are always relative to the turtle&#8217;s current direction. The instruction
+                <c>alex.left(90)</c> tells the turtle named alex to make a quarter circle turn to its left -
+                or counter-clockwise. If alex is currently facing East, it would end up facing North. If
+                it is currently facing North, it would end up facing West.</p>
+            <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">The amount of turn for specified degrees for left and right turns. These diagrams assume the
+                    turtle is currently pointing East (to the right of your screen).</caption><image source="CSPNameTurtles/Figures/turnDegrees.png" width="400px%" alt="shows what a turn of each degrees means for left and right turns"/></figure>
+            <p><term>Mixed up programs</term></p>
+<exercise label="cspnameturtles_names4turtles3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+            <p>The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle.  The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and draw a line that is 75 pixels long.</p>
+            <p>Drag the needed blocks of statements from the left column to the right column and put them in the right
+                order.  The numbers listed are <term>NOT</term> the correct order - do not assume block 1 comes first. <term>In this
+                    problem there are extra blocks you will not use.</term> You will only use 1a or 1b, not both.
+                Same with 2a/2b, 4a/4b, etc&#8230;</p>
+            <p>When you think you are done, click on <em>Check</em> to see if you are right.</p>
+            <image source="CSPNameTurtles/Figures/TurtleL4.png" width="200px%"/>
+</statement>
+<blocks><block order="9">
+<choice correct="yes"><cline>from turtle import *</cline>
+</choice><choice><cline>from turtle Import * </cline>
+</choice></block><block order="6">
+<choice correct="yes"><cline>space = Screen()</cline>
+</choice><choice><cline>space = screen() </cline>
+</choice></block><block order="10">
+<cline>ella = Turtle()</cline>
+</block><block order="1">
+<choice correct="yes"><cline>ella.right(90)</cline>
+</choice><choice><cline>ella.turn(90) </cline>
+</choice></block><block order="7">
+<cline>ella.forward(150)</cline>
+</block><block order="11">
+<cline>ella.left(90)</cline>
+</block><block order="5">
+<choice correct="yes"><cline>ella.forward(75)</cline>
+</choice><choice><cline>ella.go(75) </cline>
+</choice></block></blocks></exercise><exercise label="cspnameturtles_names4turtles4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+            <image source="CSPNameTurtles/Figures/checkMark.png" width="200px%"/>
+            <p>The following program uses a turtle to draw a checkmark as shown below but the lines are mixed
+                up. The program should do all necessary set-up: import the turtle module, get the space to draw
+                on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75
+                pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have
+                added a compass to the picture to indicate the directions north, south, west, and east.
+                Northeast is between north and east. Southeast is between south and east.</p>
+            <p>Drag the needed blocks of statements from the left column to the right column and put them in
+                the right order.  The numbers listed are <term>NOT</term> the correct order - do not assume block 1
+                comes first. <term>Like last time, you will not use all the blocks.</term> You will only use 1a or 1b, not both.
+                Same with 2a/2b, 4a/4b, etc&#8230;</p>
+            <p>When you think you are done, click on <em>Check</em> to see if you are right.</p>
+</statement>
+<blocks><block order="11">
+<cline>from turtle import *</cline>
+</block><block order="7">
+<cline>space = Screen()</cline>
+</block><block order="6">
+<choice correct="yes"><cline>maria = Turtle()</cline>
+</choice><choice><cline>maria = Turtle </cline>
+</choice></block><block order="3">
+<choice correct="yes"><cline>maria.right(45)</cline>
+</choice><choice><cline>maria.left(45) </cline>
+</choice></block><block order="2">
+<choice correct="yes"><cline>maria.forward(75)</cline>
+</choice><choice><cline>maria.Forward(75) </cline>
+</choice></block><block order="4">
+<choice correct="yes"><cline>maria.left(90)</cline>
+</choice><choice><cline>maria.right(90) </cline>
+</choice></block><block order="5">
+<cline>maria.forward(150)</cline>
+</block></blocks></exercise>        </subsection>
+    </section>
+

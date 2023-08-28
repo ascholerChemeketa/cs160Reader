@@ -1,0 +1,651 @@
+<exercises xml:id="csp-decisions-images_chapter-exercises">
+        <title>Chapter Exercises</title>
+<exercise label="cspdecisionsimages_exercises1" numbered="yes" indentation="show" language="python"><statement>
+        <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/fr-flag.gif" id="fr-flag.gif"&gt;</raw>
+        <p>The code below is supposed to change the white in the French flag to aqua (Aqua is made
+            by mixing blue and green with no red). Arrange and indent the blocks to make a correct
+            program. You will not use them all.</p>
+</statement>
+<blocks><block order="6">
+<cline>from image import *</cline>
+<cline>img = Image("fr-flag.gif")</cline>
+</block><block order="4">
+<cline>for x in range(img.getWidth()):</cline>
+<cline>    for y in range(img.getHeight()):</cline>
+</block><block order="3">
+<cline>        p = img.getPixel(x, y)</cline>
+<cline>        r = p.getRed()</cline>
+<cline>        g = p.getGreen()</cline>
+<cline>        b = p.getBlue()</cline>
+</block><block order="5">
+<choice correct="yes"><cline>        if r &gt; 250 and g &gt; 250 and b &gt; 250:</cline>
+</choice><choice><cline>        if r &lt; 250 and g &lt; 250 and b &lt; 250: </cline>
+</choice></block><block order="2">
+<cline>            newPixel = Pixel(0, 250, 250)</cline>
+</block><block order="8">
+<cline>            img.setPixel(x, y, newPixel)</cline>
+</block><block order="7">
+<cline>win = ImageWin(img.getWidth(),img.getHeight())</cline>
+<cline>img.draw(win)</cline>
+</block></blocks></exercise>
+<exercise label="cspdecisionsimages_exercises2">
+    <statement>
+        <p>Write a program below to change all the greenish pixels in this image to the color:
+            red 30, green 100, blue 150 (a slightly grayish blue).</p>
+        <p>Hint: The greenish pixels are not a pure green. They have almost as much red as they
+            do green. A sample color value might be: 111 red, 115 green, 65 blue. However, they
+            are not all exactly the same color. You will need to figure out a recipe to select
+            the right colors from the image.</p>
+        <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;</raw>
+
+    </statement>
+    <program xml:id="cspdecisionsimages_exercises2_editor" interactive="activecode" language="python">
+        <input>
+from image import *
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("logo.jpg")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        p = img.getPixel(x, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(str(img.getPixel(100, 100)), '[30,100,150]', "Testing one of the pixels that was supposed to change")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspdecisionsimages_exercises3">
+    <statement>
+        <p>Write a program below that makes the white pixels in the right half of the image
+            below turn black. The left half of the image should stay the same.</p>
+        <p>Although perfect white is (255, 255, 255), the pixels in the image are not all
+            perfectly white. Write your code to turn any pixel that has red, green, and blue
+            values of above 230 to black (0, 0, 0).</p>
+        <p>Hint: Start by trying to make all the white pixels in the image turn black. then
+            add a condition to check the x value of the pixel to see if it is in the right half
+            of the image (more than half the image&#8217;s width).</p>
+        <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;</raw>
+
+    </statement>
+    <program xml:id="cspdecisionsimages_exercises3_editor" interactive="activecode" language="python">
+        <input>
+from image import *
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("logo.jpg")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        p = img.getPixel(x, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing one of the pixels that was supposed to change")
+        self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing one of the pixels that was supposed to stay the same")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspdecisionsimages_exercises4">
+    <statement>
+        <p>Write the function <c>isYellow</c> that accepts red, green, and blue values as its parameters
+            and returns <c>True</c> if both the green and red values are at least 40 more than the blue value.
+            If the blue value is close to, or above, either the green or red, it should return <c>False</c>.</p>
+        <p>Once you write the function, it will be used to turn the goal keeper&#8217;s jersey from yellow to
+            aqua by swapping the red and blue values.</p>
+        <p>Hint: Start by writing a function that returns <c>True</c> always. That will let you run the
+            program but will change every pixel. Then add a condition to say <c>True</c> or <c>False</c> based
+            on the <c>r, g, b</c> values passed in.</p>
+        <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg"&gt;</raw>
+
+    </statement>
+    <program xml:id="cspdecisionsimages_exercises4_editor" interactive="activecode" language="python">
+        <input>
+
+from image import *
+
+# Write isYellow here!!!
+
+# Main part of program
+# CREATE AN IMAGE FROM A FILE
+img = Image("goalkeeper.jpg")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        # GET CURRENT COLOR VALUES
+        p = img.getPixel(x, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # IS IT YELLOW?
+        if isYellow(r, g, b):
+
+            # CHANGE THE COLOR TO SWAP RED AND BLUE
+            newPixel = Pixel(b, g, r)
+
+            # UPDATE THE IMAGE
+            img.setPixel(x, y, newPixel)
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(isYellow(80, 70, 29), True, "Testing if 80,70,29 is considered Yellow")
+        self.assertEqual(isYellow(70, 80, 29), True, "Testing if 70,80,29 is considered Yellow")
+        self.assertEqual(isYellow(60, 70, 29), False, "Testing if 60,70,29 is considered Yellow")
+        self.assertEqual(isYellow(70, 60, 29), False, "Testing if 70,60,29 is considered Yellow")
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

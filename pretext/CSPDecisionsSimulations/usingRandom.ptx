@@ -1,0 +1,96 @@
+<section xml:id="csp-decisions-simulations_using-random-numbers">
+        <title>Using Random Numbers</title>
+        <p>If we want to simulate something like flipping a coin, we can assign a different number to each
+            possible outcome. There are two sides to a coin - <em>heads</em> and <em>tails</em> - so let&#8217;s call heads <em>0</em>
+            and tails <em>1</em>. If we make a random integer between 0 and 1, we can think of it as representing
+            heads or tails on the coin:</p>
+
+    <program xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
+        <input>
+import random
+
+flip = random.randrange(0, 2)  # pick a number from 0-1
+if flip == 0:
+    print("heads")
+else:
+    print("tails")
+        </input>
+    </program>
+        <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let&#8217;s do 100
+            flips and count up how many are heads (0). Each time through the loop, we will pick a new
+            random number. We will only add to our accumulator <c>numHeads</c> if the random value is 0.</p>
+
+    <program xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">
+        <input>
+import random
+
+numHeads = 0    # how many heads we have flipped
+for i in range(100):
+    flip = random.randrange(0, 2)  # pick a number from 0-1
+    #print(flip)                                    # commented out testing code
+    if flip == 0:
+        numHeads = numHeads + 1
+        #print("Heads! We now have", numHeads)      # commented out testing code
+
+print("We got", numHeads, "heads.")
+        </input>
+    </program>
+        <p>Try running the program a few times. You usually won&#8217;t get exactly 50, but it will usually
+            be pretty close to that number since we flip 100 coins. Determining if this program is working
+            correctly is a bit of a challenge - it would take too long to use Codelens to watch the whole
+            execution. To sanity check it, try the following:</p>
+        <p><ul>
+            <li>
+                <p>Change the number of iterations of the loop from 100 to 10. That will be a lot easier to
+                    deal with.</p>
+            </li>
+            <li>
+                <p>Uncomment the two print lines that are commented out. The first will print each of the flips.
+                    The second will print each one that was determined to be a <em>head</em> and how many we have seen
+                    so far.</p>
+            </li>
+            <li>
+                <p>Now you can verify that:</p>
+                <p><ul>
+                    <li>
+                        <p>We generate 10 0&#8217;s and 1&#8217;s</p>
+                    </li>
+                    <li>
+                        <p>We call each 0 a &#8220;head&#8221;</p>
+                    </li>
+                    <li>
+                        <p>The <c>numHeads</c> count goes up by 1 each time</p>
+                    </li>
+                </ul></p>
+            </li>
+        </ul></p>
+        <note>
+            <p>Remember that while debugging we should simplify things as much as possible and use print
+                statements to &#8220;see&#8221; what is happening as our code runs.</p>
+        </note>
+        <p><term>Mixed up programs</term></p>
+<exercise label="cspdecisionssimulations_usingrandom1" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program should roll 10 dice (that have sides from 1-6). We want to count
+            print the number of dice that show a 6. Drag the blocks from
+            the left and place them in the correct order on the right.  Be sure to also indent correctly!
+            You will not use all of the blocks.</p>
+</statement>
+<blocks><block order="1">
+<cline>import random</cline>
+<cline>numSixes = 0</cline>
+</block><block order="5">
+<cline>for i in range(10):</cline>
+</block><block order="6">
+<choice correct="yes"><cline>    # pick a number from 1-6</cline>
+<cline>    die = random.randrange(1, 7)</cline>
+</choice><choice><cline>    # pick a number from 1-6 </cline>
+<cline>    die = random.randrange(1, 6)</cline>
+</choice></block><block order="3">
+<cline>    if die == 6:</cline>
+</block><block order="4">
+<choice correct="yes"><cline>        numSixes = numSixes + 1</cline>
+</choice><choice><cline>        numSixes + 1 </cline>
+</choice></block><block order="8">
+<cline>print("We got", numSixes, "6's.")</cline>
+</block></blocks></exercise>    </section>
+

@@ -1,0 +1,103 @@
+<section xml:id="programming-languages_high-level-programming-languages">
+  <title>High Level Programming Languages</title>
+  <p>It is rare for programmers to write programs directly in machine language or assembly. The executable files for
+    most applications contain hundreds of thousands or even millions of machine language instructions. It would be very
+    hard to create something like that from scratch.</p>
+  <p><term>High-level programming</term> languages were invented to abstract away the details of machine code and help
+    programmers to concentrate on problem-solving. While it might take 3 or 4 lines of code to add two numbers using
+    assembly language, this task could be accomplished with a single instruction in a high-level programming language
+    like C++, Java or Python. With a high-level language, a programmer creates a program using powerful,
+    &#8220;big&#8221; operations which will later be converted into many little machine operations.</p>
+
+  <p>Programs written in a high-level language must be converted into machine
+    code to run. This is either done ahead of time by converting a whole program to machine code with a <term>compiler</term>
+    program (compiling the code), or line by line as the program runs by an <term>interpreter</term>. One line in a
+    higher-level programming language might turn into anywhere from one to dozens or more machine instructions. Not only
+    does that mean there is less code to type, but it also means there is less code to debug - when something goes
+    wrong, it is often easier to track down.</p>
+    <image source="ProgrammingLanguages/Images/compiling.png" width="80%" />
+  <p>The samples below show what code might look like in various language levels. Imagine we are designing software for the
+    sales terminal in a restaurant; we are going to look at the part of the code that might calculate the 15% tip that
+    is automatically added to large groups. <em>(Note: all the languages are made up samples of a particular level -
+    don&#8217;t worry about the details of any of them.)</em></p>
+
+    <dl>
+      <li>
+        <title>English</title>
+            <program>
+              
+              <input>
+              To calculate the total amount owed,
+              first multiply the total price
+              of the meal by 0.15. This gives you
+              the tip for the meal. 
+              
+              Then, add the tip amount to the price
+              of the meal to find the total bill.
+              </input>
+            </program>
+      </li>
+      <li>
+        <title>High Level Language</title>
+        <program language="python">
+          <input>
+  tip = mealCost * 0.15
+  bill = mealCost + tip
+          </input>
+        </program>
+      </li>
+      <li>
+        <title>Assembly</title>
+        <program language="none">
+          <input>
+  LOAD    MealCost
+  MULT    TIPRATE
+  STORE   Tip
+  LOAD    MealCost
+  ADD     Tip
+  STORE   Bill
+  </input>
+        </program>
+      </li>
+      <li>
+        <title>Machine Code</title>
+        <program language="none">
+          <input>
+  0101010111100101
+  1111011010101110
+  1101101010010101
+  0101110110001111
+  0001010101111100
+  1101101010111111
+  </input>
+        </program>
+      </li>
+    </dl>
+
+  <p>Note that the high level language is much more compact than the assembly or machine code and, even more important,
+    it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about
+    LOADing and STOREing values into registers, we can express commands that look more like normal calculations: <c>tip = mealCost * 0.15</c>.</p>
+
+    
+  <sidebar>
+    <title>FORTRAN</title>
+    <p>The first high-level language, Fortran (FORmula TRANslating system) was designed in 1954. Like many developments
+      in computation, it came from someone looking to get out of doing tedious work. Its creator, John Backus, said <em>&#8220;Much
+      of my work has come from being lazy&#8230; and so when I was working on the IBM 701, writing programs for
+      computing missile trajectories, I started work on a programming system to make it easier to write programs.&#8221;</em></p>
+  </sidebar>
+
+  <remark> Materials on this page adapted with permission from: <ol>
+      <li>
+        <url
+          href="http://courses.cs.vt.edu/csonline/">Online Interactive Modules for Teaching Computer Science</url> by
+    Osman Balci et al. of Virginia Tech </li>
+      <li>
+        <url
+          href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley
+    Kjell (<url
+          href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</url>) </li>
+    </ol>
+  </remark>
+</section>
+

@@ -1,0 +1,151 @@
+<section xml:id="csp-name-numbers_math-library-functions">
+        <title>Math Library Functions</title>
+        <p>Occaisionally while programming, we may need to do more complex mathematical work than the
+            basic math operators allow for.</p>
+        
+        
+        <p xml:id="csp-name-numbers_index-0">The <url href="https://docs.python.org/3/library/math.html" visual="https://docs.python.org/3/library/math.html">Python math library</url> has a wide assortment
+            of functions and predefined variables we can use to do so.</p>
+        <p>For instance, say we want to figure out the radius of a circle with an area of 100 sq. inches.
+            The formula to calculate this is <m>radius = \sqrt{\frac{area}{\pi}}</m>. The math library has
+            a <c>math.sqrt(number)</c> function that will give us the square root of whatever value we give.
+            It also has a built in value for pi (<m>{\pi}</m>) that can be accessed as <c>math.pi</c>.</p>
+        <p>To make use of these, we need to first <c>import math</c> to make the math library available to use
+            in our program. We then can access things like <c>math.sqrt</c> and <c>math.pi</c>.</p>
+
+    <program xml:id="cspnamenumbers_mathlibrary1" interactive="activecode" language="python">
+        <input>
+# make the math library functions and variable available
+import math
+
+area = 100
+radius = math.sqrt(area / math.pi)
+print("Radius is", radius)
+print("The value we used for pi was", math.pi)
+        </input>
+    </program>
+        <p>An important detail to notice is that <c>math.sqrt</c> <term>returns</term> an answer to us that we must do
+            something with. Just like the line of code <c>x * 2</c> doesn&#8217;t do anything unless we store the result,
+            (something like <c>y = x * 2</c>), writing <c>math.sqrt(area / math.pi)</c> would do the math, but then
+            throw away the answer. We need to store the answer into a variable if we want to do anything
+            with it.</p>
+
+    <exercise label="cspnamenumbers_mathlibrary2">
+        <statement>
+
+        <p>If you delete the line that says <c>import math</c>, what happens when you run the code?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>Nothing, it runs just the same</p>
+                </statement>
+                <feedback>
+                    <p>Did you try it?</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>The line that has math.sqrt reports an error that "name 'math' was not defined"</p>
+                </statement>
+                <feedback>
+                    <p>Correct</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>The line that has math.sqrt reports an error that "library 'math' was not included"</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>The program runs and silently fails without displaying anything.</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>You do not need to worry about memorizing these, we will introduce them again in later chapters
+            as needed. But here are some more examples of math library functions.</p>
+        <table xml:id="csp-name-numbers_id1"><tabular>
+            <title>Math functions</title>
+            
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Name
+                        </cell>
+                        <cell>
+                            Input
+                        </cell>
+                        <cell>
+                            Description
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            math.ceil
+                        </cell>
+                        <cell>
+                            number
+                        </cell>
+                        <cell>
+                            Returns the smallest integer (whole number) that is greator than or equal to the number.
+                                <c>math.ceil(4.2)</c> would give 5.
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            math.floor
+                        </cell>
+                        <cell>
+                            number
+                        </cell>
+                        <cell>
+                            Returns the largest integer (whole number) that is less than or equal to the number.
+                                <c>math.floor(4.9)</c> would give 4.
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            math.fabs
+                        </cell>
+                        <cell>
+                            number
+                        </cell>
+                        <cell>
+                            Returns the absolute value of the number.
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            math.log
+                        </cell>
+                        <cell>
+                            number, base
+                        </cell>
+                        <cell>
+                            Returns <m>\log_{number} base</m>. Example: <c>math.log(16, 2)</c> returns 4 (<m>\log_2 16</m>)
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+    </section>
+

@@ -1,0 +1,195 @@
+<section xml:id="data-representation_binary-addition">
+  <title>Binary Addition</title>
+  <p>With slight modifications can use our normal algorithms for doing binary math. Take addition for example. We are
+    familiar with adding base ten numbers column by column, carrying to the next column any time we get a value of 10 or
+    more in the present column. In base two, each column can only store a 0 or a 1. So any value over 1 means we have to
+    carry. 2 (<m>{10}_2</m>) means &#8220;zero in this column, carry a 1&#8221;, 3 (<m>{11}_2</m>) means &#8220;one in
+    this column.</p>
+
+  <p> Below is shown the process of adding 15 (<m>{1111}_2</m>) to 6 (<m>{0110}_2</m>). </p>
+
+  <video xml:id="CDURJ_E4ALA" youtube="CDURJ_E4ALA" width="100%" />
+  <p>
+    <em>Animation used by permission of Virginia Tech</em>
+  </p>
+
+  <table>
+    <title>Adding in base 2</title>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell>Carries</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>1</cell>
+        <cell>1</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>First number</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>1</cell>
+        <cell>1</cell>
+        <cell>1</cell>
+        <cell>1</cell>
+      </row>
+
+      <row bottom="medium">
+        <cell>Second number</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+      </row>
+
+      <row>
+        <cell>Sum</cell>
+        <cell></cell>
+        <cell></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <subsection xml:id="binary-addition-overflow">
+    <title>Overflow</title>
+
+    <p>One thing we do have to watch out for any time we have a fixed number of bits to represent numbers is <term>
+      overflow</term>. That is when a value becomes too large to store in the bits we have. When we are doing math on
+      paper, we can add as many digits as we need. But when an electric circuit is doing math, there are a fixed number
+      of digits that can be represented. For example, say we are using 4-bit numbers and we try to add 9 + 9 (<m>
+      {1001}_2</m> + <m>{1001}_2</m>) - any bits past 4 need to be discarded.</p>
+    <program language="none">
+      <input>
+  <p><inline classes="red">1  1</inline>    (Carries)
+   1001   (9)
+  <inline classes="underlined">+1001</inline>   (9)
+  10010   (18)
+  Keep only the last 4 bits:
+   0010   (2 !?!)</p>
+  </input>
+    </program>
+    <p>9 + 9 gave us just 2 because we can not store the bit that should represent 16. This is an overflow error.
+      Circuits in computers have to detect when there is a carry-out of the last digit so it can signal an error and
+      software developers have to be careful to watch for these errors. Computers use many more than 4 bits to store
+      each number, but any fixed representation will have limits to how big a value can be stored.</p>
+
+    <sidebar>
+      <title>Real-world overflow</title>
+      <p>Real software can have bugs when the developers do not use enough bits to represent numbers. Youtube engineers
+        had to <url href="https://www.wired.com/2014/12/gangnam-style-youtube-math/"
+          visual="https://www.wired.com/2014/12/gangnam-style-youtube-math/">add more bits to the storage</url> for view
+        counts of the video Gangnam Style when the view counter for the video was threatening to overflow the 32 bits
+        they had originally used.</p>
+      <p>You can also <url
+          href="http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone"
+          visual="http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone">see an overflow bug at
+        work in the game Hearthstone.</url>.</p>
+    </sidebar>
+  </subsection>
+
+  <exercise label="datarepresentation_binarymath1">
+    <statement>
+
+      <p>What is binary 1011 + 0001?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>1102</p>
+        </statement>
+        <feedback>
+          <p>There are no 2's in binary!</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>1010</p>
+        </statement>
+        <feedback>
+          <p>Forget to carry?</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>1000</p>
+        </statement>
+        <feedback>
+          <p>Forget to carry?</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>1100</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="datarepresentation_binarymath2">
+    <statement>
+
+      <p>What is binary 0110 + 0101?</p>
+
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>1011</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>0111</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>1111</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>1001</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+</section>
+

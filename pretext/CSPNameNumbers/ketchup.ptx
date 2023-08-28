@@ -1,0 +1,44 @@
+<section xml:id="csp-name-numbers_following-the-ketchup-ooze">
+        <title>Following the Ketchup Ooze</title>
+        <p>Let&#8217;s compute how long it would take ketchup to ooze down a table.  Imagine that you tilted a four
+            foot table, and poured ketchup at the top.  How long would it take to get to the bottom of the
+            table?  We&#8217;re going to ignore physics and the angle of the table, and just start from the average
+            speed of ketchup as .028 miles per hour.</p>
+        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Ketchup dripping speed</caption><image source="CSPNameNumbers/Figures/ketchup.jpg" width="200px%" alt="A picture of ketchup dripping from a bottle"/></figure>
+
+<program xml:id="cspnamenumbers_ketchup1" interactive="codelens" language="python">
+    <input>
+dripMPH = .028
+FPM = 5280.0
+dripFPH = dripMPH * FPM
+MPH = 60
+dripFPM = dripFPH / MPH
+print("Ketchup speed in feet per minute:")
+print(dripFPM)
+print("Time to move 4 feet in minutes:")
+print(4 / dripFPM)
+    </input>
+</program>
+        <p>The next type of problem is new.  It shows correct code in code blocks on the left side, but the order is mixed up.  You need to drag the blocks to the right side in the right order.  Please watch the video below for a demonstration.</p>
+        <p><term>Click on the right arrow below to play the following video.</term></p>
+        
+
+    <video xml:id="X5SCf9AV_oo" youtube="X5SCf9AV_oo" width="640"/>
+    <exercise label="cspnamenumbers_ketchup2" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program figures out the ketchup speed in feet per <em>seconds</em>.  Drag the blocks from the left and put them in the correct order on the right.  Click the <em>Check</em> button to check your solution.</p>
+</statement>
+<blocks><block order="2">
+<cline>dripMPH = .028</cline>
+<cline>FPM= 5280.0</cline>
+<cline>dripFPH = dripMPH * FPM</cline>
+</block><block order="3">
+<cline>MPH = 60</cline>
+<cline>dripFPM = dripFPH / MPH</cline>
+</block><block order="1">
+<cline>SPM = 60</cline>
+<cline>dripFPS = dripFPM / SPM</cline>
+</block><block order="4">
+<cline>print("Ketchup speed:")</cline>
+<cline>print(dripFPS)</cline>
+</block></blocks></exercise>    </section>
+

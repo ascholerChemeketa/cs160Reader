@@ -1,0 +1,65 @@
+<section xml:id="sql-group-join_filtering-with-aggregated-results">
+        <title>Filtering with Aggregated Results</title>
+        <p>If we want to answer the question <em>&#8220;Which stations were the starting point for
+                10,000 or more rides?&#8221;</em>, it would seem like we want to write something like this:</p>
+        <program language="sql"><input>
+SELECT
+  start_station,
+  COUNT(*) AS n_trips
+FROM
+  trip_data
+WHERE
+  n_trips &gt; 10000
+GROUP BY
+  start_station
+</input></program>
+        <p>Unfortunately, you can never include an aggregating function or result within the <c>WHERE</c> clause.
+            Trying to do so will give an error. However, there is a <c>HAVING</c> clause that can be used
+            just like a <c>WHERE</c> to filter data, only it works with aggregations. To ask about the
+            stations with over 10000 trips we would write:</p>
+
+    <program xml:id="sqlgroupjoin_having1" interactive="activecode" language="sql">
+        <input>
+SELECT
+    start_station,
+    COUNT(*) AS n_trips     -- call results of aggregation n_trips
+FROM
+    trip_data
+GROUP BY
+    start_station
+HAVING
+    n_trips &gt; 10000         -- filter the results using the COUNTs calculated
+ORDER BY n_trips DESC
+        </input>
+    </program>
+        <p>As with the <c>ORDER BY</c> clause, <c>HAVING</c> is an operation on the results.
+            While <c>WHERE</c> filters the data being queried, <c>HAVING</c> filters the results
+            based on the value of an aggregating function. The <c>HAVING</c> clause can only be
+            used immediately following the <c>GROUP BY</c> clause.</p>
+
+<exercise label="sqlgroupjoin_having2">
+    <statement>
+        <p>Below is a query to find the total time each bike was ridden. Add a <c>HAVING</c>
+            clause to select only the bikes that were used for less than 1000 minutes.</p>
+
+    </statement>
+    <program xml:id="sqlgroupjoin_having2_editor" interactive="activecode" language="sql">
+        <input>
+SELECT
+    bike_number,
+    SUM(duration) AS total_time
+FROM
+    trip_data
+GROUP BY
+    bike_number
+ORDER BY total_time DESC
+====
+assert 0,0 == W01236
+assert 0,1 == 925
+assert 1,0 == W00053
+assert 1,1 == 537
+        </input>
+    </program>
+</exercise>
+    </section>
+

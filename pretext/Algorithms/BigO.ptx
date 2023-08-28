@@ -1,0 +1,107 @@
+<section xml:id="algorithms_big-o">
+  <title>Big-O</title>
+  <p>As we saw one the last page, the exact way in which we count units of work in an algorithm is not as important as
+    the degree to which the algorithm depends on the size of its input. An algorithm that always involves the same
+    amount of work is more efficient than one where the work grows as a function of the input size (at least once we
+    pass a certain problem size).</p>
+  <p>We can further divide the algorithms where work grows as a function of input size into categories based on what
+    kind of function determines the growth. This is the idea behind what is known as <term>Big-O</term> classification:
+    assigning algorithms to a class of functions that describe their growth. Some common categories are <term>Constant</term>
+    , <term>Linear</term>, <term>Logarithmic</term> and <term>Quadratic</term>; their relative growths are shown in the
+    figure below.</p>
+    <p>
+    <image source="Algorithms/Images/CommonBigOs.svg" />
+    </p>
+  <p>To write that an algorithm is in a particular class, we say that it is <m>O(n)</m> or <m>O(log(n))</m>. Spoken, we
+    would say something like: <em>&#8220;Oh of n&#8221;</em> or <em>&#8220;Oh of log n&#8221;</em>.</p>
+  <p>
+    <dl>
+      <li>
+            <title>Constant</title>
+            <classifier>
+              <m>O(1)</m>
+            </classifier>
+
+            <p>Any algorithm that takes a constant amount of work. It could be 4 steps or 100 steps, the important thing
+              is that the amount of work does not depend on the input to the algorithm.</p>
+            <p>Examples:</p>
+            <p>
+              <ul>
+                <li>
+                  <p>DrawSquare of size n.</p>
+                </li>
+                <li>
+                  <p>Looking at a class roster and deciding if there are any students enrolled - I can say
+                    &#8220;Yes&#8221; or &#8220;No&#8221; in the same amount of time whether there are 0 names, 3 names
+                    or 100 names on the roster.</p>
+                </li>
+              </ul>
+            </p>
+
+      </li>
+      <li>
+            <title>Logarithmic</title>
+            <classifier>
+              <m>O(log(n))</m>
+            </classifier>
+
+            <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described
+              by a logarithmic function. It could be <m>f(n) = log_2(n)</m> or <m>f(n) = 3 \cdot log_{10}(n)</m>. Note
+              that we don&#8217;t actually care what base the logarithm is.</p>
+            <p>We will see an example of this category soon&#8230;</p>
+
+      </li>
+      <li>
+            <title>Linear</title>
+            <classifier>
+              <m>O(n)</m>
+            </classifier>
+
+            <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described
+              by a linear function. It could be <m>f(n) = \frac{n}{2} - 4</m> or <m>f(n) = 5n + 100</m>.</p>
+            <p>Examples:</p>
+            <p>
+              <ul>
+                <li>
+                  <p>DrawShape with n sides.</p>
+                </li>
+                <li>
+                  <p>Looking for the highest score in a stack of tests - if the stack gets twice as big, it will take me
+                    twice as long to look through them all.</p>
+                </li>
+              </ul>
+            </p>
+
+      </li>
+      <li>
+            <title>Quadratic</title>
+            <classifier>
+              <m>O(n^2)</m>
+            </classifier>
+
+            <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is given by
+              quadratic function like <m>f(n) = 5n^2 + 2</m>.</p>
+            <p>Examples:</p>
+            <p>
+              <ul>
+                <li>
+                  <p>Given a number <term>n</term>, laying out a <term>n</term> by <term>n</term> grid of cones. (If <term>
+                    n</term> is 5 there are 25 cones to layout, if <term>n</term> = 10 there are 100 cones to place). In
+                    that case n doubled, but the work (number of cones to place) increased by 4x!</p>
+                </li>
+                <li>
+                  <p>Or sorting a stack of papers alphabetically - if the size of the stack doubles, sorting them is
+                    going to take me more than double the time.</p>
+                </li>
+              </ul>
+            </p>
+
+      </li>
+    </dl>
+  </p>
+  <p>If the function that describes the work for an algorithm has multiple terms, we classify it only according to its
+    fastest-growing term. <m>f(n) = n^2 + 2n</m> would be considered <term>Quadratic</term> because for large values of <term>
+    n</term> the <m>n^2</m> will dominate. Say <term>n</term> is 100: <m>n^2 = 10,000</m> and <m>2n = 200</m>&#8230; the
+    extra 200 hardly even matters compared to the 10,000.</p>
+</section>
+

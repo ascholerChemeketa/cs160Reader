@@ -1,0 +1,19 @@
+<chapter xml:id="history-of-computers_history-of-computers" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>History of Computers</title>
+
+  <introduction>
+    <p>There is no one person who can claim to be the inventor of the computer - many people contributed to the
+      development of the modern computer:</p>
+
+    <video xml:id="d1pvc9Zh7Tg" youtube="d1pvc9Zh7Tg" width="auto" />
+  </introduction>
+
+  <xi:include href='./Prehistory.ptx' />
+  <xi:include href='./DawnOfComputers.ptx' />
+  <xi:include href='./Generation1.ptx' />
+  <xi:include href='./Generation2.ptx' />
+  <xi:include href='./Generation3.ptx' />
+  <xi:include href='./Generation4.ptx' />
+  <xi:include href='./ModernComputers.ptx' />
+
+</chapter>

@@ -1,0 +1,36 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="algorithms_algorithms">
+  <title>Algorithms</title>
+  <introduction>
+    <p>It would perhaps be more accurate to call the field of computer science &#8220;algorithm science&#8221;. <term>
+      Algorithms</term>, step-by-step instructions to solve a problem, are the heart of computer programming and
+      computer science. Any time someone sets out to answer a question that starts &#8220;How can I get the computer
+      to&#8230;&#8221;, that answer will be in the form of an algorithm. Part of learning computer science is learning
+      to think in terms of these algorithms - to recognize common patterns that can be solved with known algorithms and
+      how to express new ones.</p>
+    <p>In this chapter, we will focus on algorithms for searching a list and sorting one. In addition to being basic
+      useful algorithms, searches and sorts are studied in computer science because they are a relatively simple way to
+      start learning about how to analyze the efficiency of different algorithms. Computer scientists and programmers
+      need to be concerned about not just what is theoretically possible, but how fast different approaches are and what
+      ones are possible in a practical sense (ones that will finish in a reasonable amount of time).</p>
+  </introduction>
+
+  <xi:include href='./AlgorithmsIntro.ptx' />
+  <xi:include href='./LinearSearch.ptx' />
+  <xi:include href='./BinarySearch.ptx' />
+  <xi:include href='./Sorts.ptx' />
+  <xi:include href='./SelectionSort.ptx' />
+  <xi:include href='./SelectionSort2.ptx' />
+  <xi:include href='./InsertionSort.ptx' />
+  <xi:include href='./InsertionSort2.ptx' />
+  <xi:include href='./Efficiency.ptx' />
+  <xi:include href='./BigO.ptx' />
+  <xi:include href='./EfficiencyTesting.ptx' />
+  <xi:include href='./SearchBigO.ptx' />
+  <xi:include href='./SortBigO.ptx' />
+  <xi:include href='./BigOEstimation.ptx' />
+  <xi:include href='./MergeSort.ptx' />
+  <xi:include href='./MergeSort2.ptx' />
+  <xi:include href='./MergeSortEfficiency.ptx' />
+  <xi:include href='./MergeSortEfficiency2.ptx' />
+</chapter>
+

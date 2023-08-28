@@ -1,0 +1,122 @@
+<section xml:id="algorithms_sorting-efficiency">
+        <title>Sorting Efficiency</title>
+        <p>To figure out how efficient the Selection Sort algorithm is, we will analyze the worst case. For units of work, we will consider comparisons and swaps - the two key operations in a sort. This video works through how much work there is for a Selection Sort on a list of 4 items:</p>
+
+    <video xml:id="zm75IhDgO-Y" youtube="zm75IhDgO-Y" width="100%"/>
+            <p><em>Animation used by permission of Virginia Tech</em></p>
+        <p>If we did the same work for a selection sort on a list of 100 things (<m>n = 100</m>), it would look like:</p>
+        <table><tabular>
+            
+                
+                
+                
+                
+                    <row header="yes">
+                        <cell>
+                            Step
+                        </cell>
+                        <cell>
+                            Comparisons
+                        </cell>
+                        <cell>
+                            Swaps
+                        </cell>
+                    </row>
+                
+                
+                    <row>
+                        <cell>
+                            1
+                        </cell>
+                        <cell>
+                            99
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            2
+                        </cell>
+                        <cell>
+                            98
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            3
+                        </cell>
+                        <cell>
+                            97
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            &#8230;
+                        </cell>
+                        <cell>
+                            &#8230;
+                        </cell>
+                        <cell>
+                            &#8230;
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            97
+                        </cell>
+                        <cell>
+                            3
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            98
+                        </cell>
+                        <cell>
+                            2
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            99
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                        <cell>
+                            1
+                        </cell>
+                    </row>
+                
+            
+        </tabular></table>
+        <p>The total swaps would be 99 steps times 1 swap each = 99. Expressed in terms of <m>n</m> we could say it is <m>n - 1</m> swaps.</p>
+        <p>The total comparisons would be 99 + 98 + 97 + &#8230; + 3 + 2 + 1 or <m>(n - 1) + (n - 2) + (n - 3) + ... + 3 + 2 + 1</m>. So what does that equal? There is a trick to find out - pair up the first item and the last, then the second item and next to last and so on. Each pair of items sums to <m>n</m>:</p>
+        <image source="Algorithms/Images/summation.png" width="50%"/>
+        <p>Since there were <m>n - 1</m> numbers to start with, there will be <m>\frac{n - 1}{2}</m> pairs, each of which adds to <m>n</m>. Multiplying the number of pairs by the sum of each pair gives us the total: <m>\frac{n - 1}{2} \cdot n = \frac{n^2 - n}{2} = \frac{n^2}{2} - \frac{n}{2}</m>.</p>
+        <p>Overall, our work will be given by:</p>
+        <p><m>\text{Total work} = \text{Comparisons} + \text{Swaps}</m></p>
+        <p>Or:</p>
+        <p><m>\textrm{Total work} = (\frac{n^2}{2} - \frac{n}{2}) + (n-1) = \frac{n^2}{2} + \frac{n}{2} - 1</m></p>
+        
+        
+        <p xml:id="algorithms_index-0">Since for Big-O purposes, all we care about is the class of the dominant term, in this case <m>\frac{n^2}{2}</m>, we will say that Selection Sort is <m>O(n^2)</m> (Quadratic). A similar process can be used to show that so is Insertion Sort.</p>
+        <important>
+            <p><term>Selection</term> and <term>Insertion Sort</term> are <term>Quadratic</term> - <m>O(n^2)</m>.</p>
+        </important>
+    </section>
+

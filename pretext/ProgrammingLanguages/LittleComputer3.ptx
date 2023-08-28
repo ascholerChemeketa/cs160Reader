@@ -1,0 +1,18 @@
+<section xml:id="programming-languages_the-little-computer-assembly">
+  <title>The Little Computer - Assembly</title>
+  <p>The Little Computer supports an <xref ref="Assembly#assembly-languages" /> that makes can make it easier for humans
+    to write and read programs. In addition to replacing numeric commands like &#8220;1XX&#8221; or &#8220;902&#8221;
+    with abbreviated English commands like &#8220;ADD&#8221; or &#8220;OUT&#8221;, Little Computer assembly allows us to
+    think at a slightly more abstract level. Instead of remembering specific memory addresses so we can say <em>&#8220;add
+    the value from location 10&#8221;</em>, we can name memory locations and then say things like <em>&#8220;add
+    X&#8221;</em>. This video introduces it:</p>
+
+  <video xml:id="gg4siPI0sdk" youtube="gg4siPI0sdk" width="100%" />
+  <p>You can try the assembler here: <url href="external/LittleComputer/littleComputerAssembler.html"
+      visual="external/LittleComputer/littleComputerAssembler.html">Launch the Little Computer assembler</url>  <em>(Control
+    or Command click to open in a new window)</em></p>
+  <p>To test out a program after assembling it, use the Little Computer: <url
+      href="external/LittleComputer/littleComputer.html" visual="external/LittleComputer/littleComputer.html">Launch the
+    Little Computer</url>  </p>
+</section>
+

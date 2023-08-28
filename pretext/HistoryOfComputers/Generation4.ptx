@@ -1,0 +1,39 @@
+<section xml:id="history-of-computers_the-fourth-generation">
+  <title>The Fourth Generation</title>
+  <sidebar>
+    <title>Microprocessors</title>
+    <figure align="" xml:id="the-fouth-generation-img1">
+      <caption>Thomas Nguyen, CC BY-SA 4.0, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/Intel_D4004.jpg" width="50%"
+        alt="Intel 4004 Microprocessor" />
+    </figure>
+    <p>The Intel 4004: the first commercial microprocessor consisted of 2,300 transistors</p>
+  </sidebar>
+  <p>The next major advance in fundamental computer technology was the <term>microprocessor</term>. These devices are
+    integrated circuits that combine thousands of transistors that perform the logic needed to run a computer into one
+    chip. In 1971, Intel released the 4004 microprocessor and the <term>Fourth Generation</term> of computers had begun.</p>
+  <p>In the late 1970&#8217;s computers like the Altair, Apple and Commodore were the first computers widely sold to
+    individual users. In 1981 IBM released the first PC and the personal computer revolution had begun. Although the
+    machines we use are millions of times more powerful than those early personal computers they are direct descendants
+    of these machines.</p>
+  <container classes="inlinegroup">
+    <figure align="" xml:id="the-fouth-generation-img2">
+      <caption>Ed Uthman, CC BY-SA 2.0, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/Apple_I_Computer.jpg" width="50%" alt="Apple I" />
+      <legend>
+        <p>The Apple I computer was sold as a kit for which people had to build their own case</p>
+      </legend>
+    </figure>
+    <figure align="" xml:id="the-fouth-generation-img3">
+      <caption>Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/Ibm_pc_5150.jpg" width="50%" alt="IBM 5150" />
+      <legend>
+        <p>The first IBM PC was the 5150</p>
+      </legend>
+    </figure>
+  </container>
+  <remark> Materials on this page adapted with permission from <url
+      href="http://en.wikipedia.org/">Wikipedia</url> (<url
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
+</section>
+

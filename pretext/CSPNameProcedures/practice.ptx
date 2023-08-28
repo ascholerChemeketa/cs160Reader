@@ -1,0 +1,37 @@
+<section xml:id="csp-name-procedures_practice-write-a-procedure">
+        <title>Practice - Write a Procedure</title>
+        <p>Time for a little practice - try writing your own procedure.
+            There is an answer available, but don&#8217;t look at it until you
+            have tried writing the procedure on your own!</p>
+        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+
+    <program xml:id="cspnameprocedures_practice2" language="python">
+        <input>
+# DEFINE THE PROCEDURE
+def pentagon(turtle, size):
+    turtle.forward(size)
+    turtle.right(72)
+    turtle.forward(size)
+    turtle.right(72)
+    turtle.forward(size)
+    turtle.right(72)
+    turtle.forward(size)
+    turtle.right(72)
+    turtle.forward(size)
+    turtle.right(72)
+
+# Main part of program
+from turtle import *
+space = Screen()
+emily = Turtle()
+# CALL THE PROCEDURE
+pentagon(emily, 100)
+        </input>
+    </program>
+            
+
+    
+            </solution></exercise>
+    </section>
+

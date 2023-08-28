@@ -1,0 +1,209 @@
+<section xml:id="csp-name-numbers_figuring-out-an-invoice">
+        <title>Figuring out an Invoice</title>
+        <p>We can use variables to solve problems like those we might solve in a spreadsheet.  Imagine that
+            you had a spreadsheet with an invoice for an office supply company.</p>
+        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A spreadsheet with order information</caption><image source="CSPNameNumbers/Figures/invoice.png" width="600px%" alt="a spreadsheet"/></figure>
+        <p>Here&#8217;s a program to compute the total price for the invoice:</p>
+
+    <program xml:id="cspnamenumbers_invoice1" interactive="activecode" language="python">
+        <input>
+quantity1 = 2
+unitPrice1 = 7.56
+total1 = quantity1 * unitPrice1
+quantity2 = 4
+unitPrice2 = 4.71
+total2 = quantity2 * unitPrice2
+invoiceTotal = total1 + total2
+print(invoiceTotal)
+        </input>
+    </program>
+
+    <exercise label="cspnamenumbers_invoice2">
+        <statement>
+
+        <p>How many variables are in this program?</p>
+
+        </statement>
+<choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>7</p>
+                </statement>
+                <feedback>
+                    <p>Yes, quantity1, unitPrice1, total1, quantity2, unitPrice2, total2, invoiceTotal.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>6</p>
+                </statement>
+                <feedback>
+                    <p>There are three variables per line, two lines, and one total.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>5</p>
+                </statement>
+                <feedback>
+                    <p>There are three variables per line, two lines, and one total.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>There are three variables per line, two lines, and one total.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>We don&#8217;t really have to create new variables <c>quantity2</c> and <c>unitPrice2</c>.  We only use those to compute the total for the line, and then we could reuse those variable names.</p>
+
+<program xml:id="cspnamenumbers_invoice3" interactive="codelens" language="python">
+    <input>
+quantity = 2
+unitPrice = 7.56
+total1 = quantity * unitPrice
+quantity = 4
+unitPrice = 4.71
+total2 = quantity * unitPrice
+invoiceTotal = total1 + total2
+print(invoiceTotal)
+    </input>
+</program>
+
+    <exercise label="cspnamenumbers_invoice4">
+        <statement>
+
+        <p>How many variables are in this program?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>7</p>
+                </statement>
+                <feedback>
+                    <p>We have two fewer variables now.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>6</p>
+                </statement>
+                <feedback>
+                    <p>We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>5</p>
+                </statement>
+                <feedback>
+                    <p>The variables are quantity, unitPrice, total1, total2, and invoiceTotal.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>Let&#8217;s say that apples are $0.40 apiece, and pears are $0.65 apiece.  Modify the program below
+            to calculate the total cost (it should print 3.55).</p>
+
+    <program xml:id="cspnamenumbers_invoice5" interactive="activecode" language="python">
+        <input>
+numApples = 4
+numPears = 3
+
+costPerApple =
+costPerPear =
+
+totalCost =
+print(totalCost)
+        </input>
+    </program>
+        <p>You are welcome to try out the following answers by copying and pasting them into the program
+            above before answering this question:</p>
+
+    <exercise label="cspnamenumbers_invoice6">
+        <statement>
+
+        <p>Which line of code will compute the correct <c>totalCost</c> if put into the program above?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>totalCost = numApples + numPears</p>
+                </statement>
+                <feedback>
+                    <p>That does not consider the cost of the apples or pears.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>totalCost = (costPerApple * numApples) + (costPerPear * numPears)</p>
+                </statement>
+                <feedback>
+                    <p>We need to multiply the cost per apple times the number of apples and add it to
+the cost per pear times the number of pears.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>totalCost = (costPerApple * numPears) + (costPerPear * numApples)</p>
+                </statement>
+                <feedback>
+                    <p>That gets the costs backwards</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>totalCost = (0.4 * numApples) + (0.65 + numPears)</p>
+                </statement>
+                <feedback>
+                    <p>That would work, but giving names to numbers makes code easier to understand.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><TabNode tabname="Answer - Don't click until you've had a go at creating your own solution." tabnode_options="{'subchapter': 'invoice', 'chapter': 'CSPNameNumbers', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': &quot;Answer - Don't click until you've had a go at creating your own solution.&quot;}">
+                <p>Create variables to hold each value.  Calculate <c>numPaperclips</c> as <c>budget / costPerClip</c>.  Be sure to print the result.</p>
+
+    <program xml:id="cspnamenumbers_invoice8" interactive="activecode" language="python">
+        <input>
+# DECLARE VARIABLES AND ASSIGN VALUES
+costPerClip = .05
+budget = 4.00
+# 2. CREATE FORMULA
+numPaperclips = budget / costPerClip
+# 3. PRINT RESULT
+print(numPaperclips)
+        </input>
+    </program>
+            </TabNode></exercise>
+    </section>
+

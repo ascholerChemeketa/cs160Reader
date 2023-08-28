@@ -1,0 +1,44 @@
+<section xml:id="csp-collections-intro_chapter-concept-summary">
+        <title>Chapter Concept Summary</title>
+        <p>This chapter included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>Append</term> - To append means to add something to the end</p>
+            </li>
+            <li>
+                <p><term>List</term> - A list holds items in order.  An example of a list is <c>[1, "hi", 3]</c>.
+                    Lists in Python can hold any type of data.</p>
+            </li>
+            <li>
+                <p><term>Index</term> - The index is the position of the item in a list or string.  In Python the
+                    first item is at index 0.</p>
+            </li>
+        </ul></p>
+        <subsection xml:id="csp-collections-intro_summary-of-python-keywords-and-functions">
+            <title>Summary of Python Keywords and Functions</title>
+            <p><ul>
+                <li>
+                    <p><term>len</term> - The <c>len</c> (length) function returns the number of items in a collection (a string or
+                        a list). It is used like: <c>len(list)</c></p>
+                </li>
+                <li>
+                    <p><term>append</term> - Adds an item to the end of a list: <c>list.append(item)</c></p>
+                </li>
+                <li>
+                    <p><term>insert</term> - Adds an item to the specified position of a list: <c>list.insert(0, item)</c> adds the
+                        item at the start of the list.</p>
+                </li>
+                <li>
+                    <p><term>pop</term> - Removes an item from the specified position of a list: <c>list.pop(1)</c> removes the
+                        second item (index 1). When called without an index, <c>list.pop()</c>, it removes the last thing.</p>
+                </li>
+                <li>
+                    <p><term>remove</term> - Removes the first copy of the specified item from the list. <c>list.remove("A")</c>
+                        would remove the first &#8220;A&#8221; from the list.</p>
+                </li>
+            </ul></p>
+        </subsection>
+    </section>
+

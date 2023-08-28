@@ -1,0 +1,112 @@
+<section xml:id="csp-collections-continued_iterating-with-indexes">
+        <title>Iterating with Indexes</title>
+        <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c>
+            syntax. But there are limitation to that approach. What if we want to iterate through only
+            part of the list? What if we want to iterate through the list in reverse order? What
+            if we want to change items in the list? The <c>for value in list:</c> can&#8217;t do any of these.</p>
+        <p>Perhaps most surprising is that the <c>for value in list:</c> can&#8217;t change values in a list.
+            This is because when <c>value</c> is naming a value in the list, making a change just changes
+            what <c>value</c> is naming - it does not change the list itself. Watch this codelens program
+            that attempts to set each item in a list to 0 to see how it does not work:</p>
+
+<program xml:id="cspcollectionscontinued_rangeloop1" interactive="codelens" language="python">
+    <input>
+list = [5, 10, 15]
+for value in list:
+    value = 0
+
+print(list)
+    </input>
+</program>
+        <p><c>value</c> takes on the value of each item in <c>list</c>, but it is essentially working with
+            a copy of the data. Changing <c>value</c> does nothing to the actual list!</p>
+        <p>To make this work, or to change the order we iterate through the list. We could try to
+            do that with something like:</p>
+        <pre>index[0] = 0 &lt;- first item
+index[1] = 0 &lt;- second item
+index[2] = 0 &lt;- third item</pre>
+        <p>But we don&#8217;t want to type out each line separately and we want to make sure we do not
+            use too many or too few indexes. We want to use a counting loop that will automatically
+            generate all the needed indexes. This can be created by using the <c>range</c> function and
+            asking it to generate <c>range( len(list) )</c>. That syntax says: &#8220;Get the length of the
+            list. Then generate the range of numbers from 0 to one less than the length.&#8221; Which is
+            exactly what we need. For the example above, <c>range( len(list) )</c> would generate
+            <c>0, 1, 2</c>, which are the indexes of the three values.</p>
+        <p>Here is the final version of the more complex loop.</p>
+
+<program xml:id="cspcollectionscontinued_rangeloop2" interactive="codelens" language="python">
+    <input>
+list = [5, 10, 15]
+for index in range( len(list) ):
+    print("index is", index)
+    print("item in list is", list[index])
+    </input>
+</program>
+        <p>Notice that the variable from the <c>for</c> loop, <c>index</c>, is holding the <term>index</term> of
+            the current item. To work with the &#8220;current item&#8221;, we need to index into the list using
+            that index: <c>list[index]</c> will give us the current value.</p>
+        <p>A common habit among programmer is to use the variable name <c>i</c> to stand for &#8220;index&#8221;.
+            Although this seems to violate the general rule of &#8220;use meaningful names&#8221;, because all
+            programmers know that <c>i</c> probably means &#8220;index&#8221; when used in a loop, <c>i</c> does in
+            fact have meaning.</p>
+        <p>This program uses <c>i</c> as the index variable. In it, we have a list of names that
+            need to be capitalized. To do this, we loop through the indexes 0-3, access the
+            value at that index (<c>names[i]</c>), call <c>capitalize()</c> on it, and then store it
+            back to the same location in the list <c>names[i] = ...</c>:</p>
+
+<program xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
+    <input>
+names = ["vu", "reggie", "dana", "serena"]
+for i in range( len(names) ):
+    names[i] = names[i].capitalize()
+
+print(names)
+    </input>
+</program>
+
+<exercise label="cspcollectionscontinued_rangeloop4">
+    <statement>
+        <p>Write an indexed based loop and use it to double each item in the list called <c>numbers</c>.
+            You will need to get the existing value, multiply it by two, and store that value back
+            into the list.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_rangeloop4_editor" interactive="activecode" language="python">
+        <input>
+numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
+
+# Your code here
+=====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(numbers[0], 6, "Testing numbers[0]")
+        self.assertEqual(numbers[5], 10, "Testing numbers[5]")
+        self.assertEqual(numbers[9], 18, "Testing numbers[9]")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+<exercise label="cspcollectionscontinued_rangeloop5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program should loop through all the items in <c>list</c>. Any values
+            that are negative should be changed to be 0. After the negative items have been
+            replaced, we want to print the list.</p>
+        <p>Arrange and indent the blocks correctly. You will not use them all.</p>
+</statement>
+<blocks><block order="7">
+<cline>list = [-2, 5, 3, -6, 4, 1]</cline>
+</block><block order="8">
+<choice correct="yes"><cline>for i in range( len(list) ):</cline>
+</choice><choice><cline>for i in list: </cline>
+</choice></block><block order="4">
+<choice correct="yes"><cline>    if list[i] &lt; 0:</cline>
+</choice><choice><cline>    if i &lt; 0: </cline>
+</choice></block><block order="1">
+<choice correct="yes"><cline>        list[i] = 0</cline>
+</choice><choice><cline>        i = 0 </cline>
+</choice></block><block order="3">
+<cline>print(list)</cline>
+</block></blocks></exercise>    </section>
+

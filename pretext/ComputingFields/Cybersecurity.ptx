@@ -1,0 +1,61 @@
+<section xml:id="computing-fields_cybersecurity">
+  <title>Cybersecurity</title>
+
+  <p><term>Cybersecurity</term> is a cross-disciplinary field that is concerned with preventing misuse of computational
+    devices and data. It is a relatively new discipline that arose out of a realization that a system is only as secure
+    as its weakest link - and thus keeping systems secure requires a comprehensive approach.</p>
+  <p>While every technical professional should be concerned with security - developers should write secure code, network
+    administrators should configure systems to be resilient to attack, etc&#8230; - there is a need for individuals that
+    can think about all of these potential issues and how they interact. These are cybersecurity professionals.</p>
+  <p>Cybersecurity jobs from the technical (cryptography, network defense) to business and management (setting
+    organization policy and training users). Even within the more technical jobs, there are a wide variety of
+    specializations that may require advanced skills in programming, networking, system administration, or mathematics.</p>
+
+  <subsection xml:id="cyber-careers">
+    <title>Typical careers</title>
+    <ol>
+      <li>
+        <p>
+          <url href="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">Information
+            Security Analyst</url>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="cyber-education">
+    <title>Education</title>
+    <p>Because Cybersecurity is a cross-disciplinary field, there are a variety of educational paths.</p>
+    <p>Most Cybersecurity degrees focus on an IT skill set and then add specific advanced training in security-related
+      topics. These programs exist both as two-year Associate&#8217;s degrees and as four-year Bachelor&#8217;s degrees.</p>
+    <p>However, there are also IS-related jobs in Cybersecurity - management focused roles that require more business
+      knowledge and have less of a technical focus.</p>
+    <p>And for Cybersecurity careers focusing on cryptography or advanced software-based security (malware analysis), a
+      specialized background in CS or SE may be required. Some computer science programs offer tracks in cybersecurity
+      that would be appropriate for these kinds of careers.</p>
+  </subsection>
+
+  <subsection xml:id="cyber-knowledge">
+    <title>Knowledge Domains</title>
+    <p>This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+      required expertise while a 1 represents a minimal amount.</p>
+    <figure xml:id="cyber-discipline-chart">
+      <caption>Computer science knowledge domains.</caption>
+      <interactive xml:id="interactive-cybersecurity-discipline-chart" platform="javascript"
+        aspect="3:2"
+        source="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js ComputingFields/code/CyberViz.js"
+        preview="ComputingFields/images/discipline-cyber.jpg">
+        <slate xml:id="disciplines-cyber" surface="canvas" />
+        <instructions>
+          <p>Click a discipline label to enable or disable it in the visualization.</p>
+        </instructions>
+      </interactive>
+    </figure>
+  </subsection>
+
+
+  <remark> Materials on this page adapted from <url
+    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+</section>
+

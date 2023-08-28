@@ -1,0 +1,11 @@
+<chapter xml:id="csp-teasers" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <title>An introduction to programming</title>
+  <xi:include href='./studentBook.ptx' />
+  <!-- 
+  <xi:include href='./computeNumbers.ptx' />
+  <xi:include href='./computeWords.ptx' />
+  <xi:include href='./computeTurtles.ptx' />
+  <xi:include href='./computeImages.ptx' />
+  <xi:include href='./ch1_summary.ptx' />
+  -->
+</chapter>

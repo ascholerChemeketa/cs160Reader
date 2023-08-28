@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Changing and Chopping up Lists</title>
+        <xi:include href='./rangeLoop.ptx' />
+        <xi:include href='./rangeChange.ptx' />
+        <xi:include href='./madLib.ptx' />
+        <xi:include href='./slices.ptx' />
+        <xi:include href='./shuffle.ptx' />
+        <xi:include href='./summary.ptx' />
+        <xi:include href='./Exercises.ptx' />
+    </chapter>

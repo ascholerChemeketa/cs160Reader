@@ -1,0 +1,152 @@
+<section xml:id="csp-decisions-intro_using-elif-correctly">
+        <title>Using elif correctly</title>
+        <p>In the grade printing program on the previous page, the program checked each possible grade
+            starting with the highest (&#8220;A&#8221;) and working down to the lowest option (&#8220;F&#8221;):</p>
+        <blockquote>
+            <pre>if score &gt;= 90:
+    print("A")
+elif score &gt;= 80:
+    print("B")
+elif score &gt;= 70:
+    print("C")
+elif score &gt;= 60:
+    print("D")
+else:
+    print("F")</pre>
+        </blockquote>
+        <p>This ordering is important, because in an if/elif/else chain, Python will not skip ahead
+            to &#8220;the correct&#8221; option. If we put the various grades in a mixed up order, the first <c>if</c>
+            or <c>elif</c> whose condition is true is the one that will run.</p>
+        <p>In this version of the program, a score of 83 will NOT be a B. Can you see why? Try running
+            it in codelens mode.</p>
+
+    <program xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
+        <input>
+score = 83
+if score &gt;= 90:
+    print("A")
+elif score &gt;= 60:
+    print("D")
+elif score &gt;= 70:
+    print("C")
+elif score &gt;= 80:
+    print("B")
+else:
+    print("F")
+        </input>
+    </program>
+        <p>To avoid issues like that, we always need to put the <c>if</c>/<c>elif</c> options in order from
+            highest to lowest, or from lowest to highest. The program below shows starting with the
+            lowest option and working our way up. Assumes x represents a percentile and we want to
+            indicate which quartile it is in.</p>
+
+    <program xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
+        <input>
+x = .25
+if x &lt;= .25:
+    print("x is in the first quartile - x &lt;= .25")
+elif x &lt;= .5:
+    print("x is in the second quartile - .25 &lt; x &lt;= .5")
+elif x &lt;= .75:
+    print("x is in the third quartile - .5 &lt; x &lt;= .75")
+else:
+    print("x is in the fourth quartile - .75 &lt; x &lt;= 1")
+        </input>
+    </program>
+
+    <exercise label="cspdecisionsintro_eliftricks3">
+        <statement>
+
+        <p>What would be printed if you moved lines 6-7 before lines 4-5 and set x equal to .5?</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>x is in the first quartile - x &lt;= .25</p>
+                </statement>
+                <feedback>
+                    <p>This will only print if x is less then or equal to .25.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>x is in the second quartile - .25 &lt; x &lt;= .5</p>
+                </statement>
+                <feedback>
+                    <p>This will print if the other if's were not true, and if x is less than or equal to .5.  By moving lines 6-7 before lines 4-5 this will never print.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>x is in the third quartile - .5 &lt; x &lt;= .75</p>
+                </statement>
+                <feedback>
+                    <p>This will print if the other if's are not true and if x is less than or equal to .75.  So, moving lines 6-7 before lines 4-5 messes up what this code is intended to do and incorrectly prints that .5 is in the third quartile.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>x is in the fourth quartile - .75 &lt; x &lt;= 1</p>
+                </statement>
+                <feedback>
+                    <p>This will only print if all of the other if's were false.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+
+<exercise label="cspdecisionsintro_eliftricks4">
+    <statement>
+        <p>Write the code for the function <c>tempDescription</c>. It should take <c>temp</c> as a parameter
+            that represents a temperature in degrees F. It should return the string <c>"Hot"</c> if the temp
+            is above 80, <c>"Warm"</c> if it is not above 80 but is above 70, <c>"Cool"</c> if it is not above 70
+            but is above 60, and <c>"Cold"</c> otherwise (below 60).</p>
+        <p>Hint: You don&#8217;t have to solve it all at once. You can start with just an <c>if</c> that only
+            handles temp&#8217;s greater than 80. Then add an <c>elif</c> to handle the Warm temps.
+            Then add one for Cool&#8230;</p>
+        <p>Make sure to <c>return</c> the answers and not just <c>print</c> them.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_eliftricks4_editor" interactive="activecode" language="python">
+        <input>
+def tempDescription(temp):
+    # Your code here
+
+# main part of program
+description1 = tempDescription(85)
+print( description1 )
+description2 = tempDescription(75)
+print( description2 )
+description3 = tempDescription(65)
+print( description3 )
+description4 = tempDescription(42)
+print( description4 )
+description5 = tempDescription(70)
+print( description5 ) # should be Cool
+description6 = tempDescription(80)
+print( description6 ) # should be Warm
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(tempDescription(85), "Hot", "Testing that you return \"Hot\" for 85.")
+        self.assertEqual(tempDescription(75), "Warm", "Testing that you return \"Warm\" for 75.")
+        self.assertEqual(tempDescription(65), "Cool", "Testing that you return \"Cool\" for 65.")
+        self.assertEqual(tempDescription(42), "Cold", "Testing that you return \"Cold\" for 42.")
+        self.assertEqual(tempDescription(70), "Cool", "Testing that you return \"Cool\" for 70.")
+        self.assertEqual(tempDescription(80), "Warm", "Testing that you return \"Warm\" for 80.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+    </section>
+

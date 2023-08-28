@@ -1,0 +1,238 @@
+<exercises xml:id="csp-name-strings_chapter-3-exercises">
+        <title>Chapter 3 Exercises</title>
+
+<exercise label="cspnamestrings_exercises1">
+    <statement>
+        <p>There are 3 syntax errors in the following code.  Fix it to print correctly without errors.
+            It will print, &#8220;Your name is Carly and your favorite color is red.&#8221;.</p>
+
+    </statement>
+    <program xml:id="cspnamestrings_exercises1_editor" interactive="activecode" language="python">
+        <input>
+color = "red'
+name = 'Carly'
+print("Your name is " + name + and your favorite color is" + color + ".")
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(color, "red", "Testing that color has the correct value." )
+        self.assertEqual(name, "Carly", "Testing that name has the correct value." )
+        self.assertEqual(self.getOutput().strip(), "Your name is Carly and your favorite color is red.", "Testing output. Make sure you have spaces in all the right places!")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamestrings_exercises2">
+    <statement>
+        <p>You will get an error if you try to run the following code.  Fix the code to print correctly
+            without errors.  It should print, <em>&#8220;Your name is Carly and your age is 19.&#8221;</em></p>
+        <p>Note: Don&#8217;t forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where
+            <c>x</c> is the <term>int</term> you want to turn into a string.</p>
+
+    </statement>
+    <program xml:id="cspnamestrings_exercises2_editor" interactive="activecode" language="python">
+        <input>
+age = 14 + 5
+name = 'Carly'
+print("Your name is" + name + "and your age is" + age + ".")
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(age, 19, "Testing that age has the correct value." )
+        self.assertEqual(name, "Carly", "Testing that name has the correct value." )
+        self.assertEqual(self.getOutput().strip(), "Your name is Carly and your age is 19.", "Testing that you have the right output - make sure your spaces are correct!")
+        self.assertNotIn("19", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamestrings_exercises3">
+    <statement>
+        <p>Use <term>string slicing</term> to get &#8220;giant alligator&#8221; from <c>sentence</c> and store it in
+            <c>s1</c>.</p>
+        <p>You should not be typing the string &#8220;giant alligator&#8221; yourself, you should be
+            getting the right part of what is stored in <c>sentence</c>.</p>
+        <p>The print will put |&#8217;s around your output to
+            make it clear if you have a space at the start or end of s1.</p>
+
+    </statement>
+    <program xml:id="cspnamestrings_exercises3_editor" interactive="activecode" language="python">
+        <input>
+sentence = "There is a giant alligator over there."
+s1 =
+print("|" + s1 + "|")
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(s1, "giant alligator", "Testing that s1 has the correct value. Make sure you don't have an extra space at the start or end!" )
+        self.assertNotIn("alligator", self.getEditorText().split("\n")[1], "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamestrings_exercises4">
+    <statement>
+        <p>Using the variables given, modify the print statement to print
+            <c>"A car travelling at 70 mph takes 2.0 hours to go 140 miles."</c>
+            Make sure to print the variables, not the values you know they contain.</p>
+        <p>If we were to change <c>milesPerHour</c> and <c>distanceTravelled</c> your program should still print a
+            mathematically correct message.</p>
+
+    </statement>
+    <program xml:id="cspnamestrings_exercises4_editor" interactive="activecode" language="python">
+        <input>
+milesPerHour = 70
+distanceTravelled = 140
+timeTaken = distanceTravelled / milesPerHour
+print("A car travelling at...")
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(self.getOutput().strip(), "A car travelling at 70 mph takes 2.0 hours to go 140 miles.", "Testing your output. Make sure you have spaces in the right places!" )
+        self.assertRegex("".join(self.getEditorText().split("\n")[2:]), r"\D*", "Testing that you used the variables and did not just type numbers.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamestrings_exercises5">
+    <statement>
+        <p>Write code below to get at least 3 values from the user using the <c>input</c> function and output
+            a mad lib (which will use the input to tell a silly story).</p>
+        <p>This problem is not automatically checked. Make sure you are using variables to build your output
+            and that the story uses the values you type in as input. Try giving different inputs and make sure
+            that the story uses them.</p>
+
+    </statement>
+    <program xml:id="cspnamestrings_exercises5_editor" interactive="activecode" language="python">
+        <input>
+
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+

@@ -1,0 +1,149 @@
+<section xml:id="sql-group-join_aggregating-data">
+        <title>Aggregating Data</title>
+        
+        
+        <p xml:id="sql-group-join_index-0">Say we want data about how many rides lasted longer than an hour. At this point we
+            don&#8217;t care about where they started, or which bike they were on, we just want to
+            know how many such rides there were.
+            To ask for the total number of records a query finds, we can select <c>COUNT(*)</c>.</p>
+
+    <program xml:id="sqlgroupjoin_aggregating1" interactive="activecode" language="sql">
+        <input>
+SELECT
+    COUNT (*) AS number_rides
+FROM
+    trip_data
+        </input>
+    </program>
+        <p>The <c>AS</c> keyword is used after <c>COUNT(*)</c> to give the data that is returned a name. If we
+            leave it off, the &#8220;column&#8221; of data will just be labeled <c>COUNT(*)</c>. Calling it <c>number_rides</c>
+            makes it much clearer what we are looking at.</p>
+
+<exercise label="sqlgroupjoin_aggregating2">
+    <statement>
+        <p>How many trips started at station 31111?</p>
+        <p>Hint: Build your way to the final query. Start by selecting all the data (<c>*</c>) for all the
+            trips. Then write a <c>WHERE</c> to only select ones that start from 31111. Finally, instead of selecting
+            all of the columns, select just the count of the number of records.</p>
+
+    </statement>
+    <program xml:id="sqlgroupjoin_aggregating2_editor" interactive="activecode" language="sql">
+        <input>
+
+====
+assert 0,0 == 5575
+        </input>
+    </program>
+</exercise>
+        <p><c>COUNT</c> is one of the aggregation functions provided by SQL. <term>Aggregation</term> is the process
+            of combining data and <c>COUNT</c> combines all the records and tells us how many there are.
+            But there are other ways we can aggregate data with SQL:</p>
+        <p><ul>
+            <li>
+                <p><c>COUNT</c> counts the rows</p>
+            </li>
+            <li>
+                <p><c>SUM</c> adds the values of a numeric column</p>
+            </li>
+            <li>
+                <p><c>MIN</c> calculates the minimum of a numeric column</p>
+            </li>
+            <li>
+                <p><c>MAX</c> calculates the maximum of a numeric column</p>
+            </li>
+            <li>
+                <p><c>AVG</c> calculates the mean of a numeric column</p>
+            </li>
+            <li>
+                <p><c>MEDIAN</c> calculates the median (middle value) of a numeric column</p>
+            </li>
+            <li>
+                <p><c>MODE</c> calculates the mode (most common value) of a numeric column</p>
+            </li>
+        </ul></p>
+        <p>For example, the query below calculates the minimum and maximum trip duration:</p>
+
+    <program xml:id="sqlgroupjoin_aggregating3" interactive="activecode" language="sql">
+        <input>
+SELECT
+  MIN(duration) AS minimum_duration,
+  MAX(duration) AS maximum_duration
+FROM
+  trip_data
+        </input>
+    </program>
+
+<exercise label="sqlgroupjoin_aggregating4">
+    <statement>
+        <p>Write a query to calculate the mean duration (average) of all trips.</p>
+
+    </statement>
+    <program xml:id="sqlgroupjoin_aggregating4_editor" interactive="activecode" language="sql">
+        <input>
+
+====
+assert 0,0 == 1174.9783650671766
+        </input>
+    </program>
+</exercise>
+        <p>You use <c>WHERE</c> filtering with aggregating functions. The
+            query below calculates the longest trip duration just for trips made by Casual
+            member type users.</p>
+
+    <program xml:id="sqlgroupjoin_aggregating5" interactive="activecode" language="sql">
+        <input>
+SELECT
+  MAX(duration)
+FROM
+  trip_data
+WHERE
+  member_type = 'Casual'
+        </input>
+    </program>
+
+<exercise label="sqlgroupjoin_aggregating6">
+    <statement>
+        <p>Write a query to get the total duration (sum) of all trips taken on bike W01274.</p>
+
+    </statement>
+    <program xml:id="sqlgroupjoin_aggregating6_editor" interactive="activecode" language="sql">
+        <input>
+
+====
+assert 0,0 == 5009
+        </input>
+    </program>
+</exercise>
+        <subsection xml:id="sql-group-join_counting-unique-values">
+            <title>Counting Unique Values</title>
+            <p>It is often helpful to not only count the number of rows but also to count the number
+                of unique values of a column. You can do this using the <c>DISTINCT</c> keyword.</p>
+            <p>To count the distinct values of a column, you can simply use <c>COUNT</c> along
+                with <c>DISTINCT</c>. For example, the query below counts the number of bike
+                numbers used.</p>
+
+    <program xml:id="sqlgroupjoin_aggregating7" interactive="activecode" language="sql">
+        <input>
+SELECT
+    COUNT(DISTINCT bike_number) AS n_distinct_bikes
+FROM
+    trip_data
+        </input>
+    </program>
+
+<exercise label="sqlgroupjoin_aggregating8">
+    <statement>
+            <p>Write a query to get the number of unique start locations there are in the table.</p>
+
+    </statement>
+    <program xml:id="sqlgroupjoin_aggregating8_editor" interactive="activecode" language="sql">
+        <input>
+
+====
+assert 0,0 == 140
+        </input>
+    </program>
+</exercise>
+        </subsection>
+    </section>
+

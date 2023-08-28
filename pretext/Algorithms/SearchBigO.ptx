@@ -1,0 +1,215 @@
+<section xml:id="algorithms_search-efficiencies">
+  <title>Search Efficiencies</title>
+  <p>We already have discussed the fact that binary search is much more efficient than linear search, but let us
+    quantify the difference in terms of Big-O. We will count items checked as the unit of work for searching - taking
+    one item in a list and comparing it to what we are looking for will count as one unit.</p>
+  <subsection xml:id="algorithms_search-efficiencies-linear">
+    <title>Linear Search Efficency</title>
+
+    <p>Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In
+      the best case, that paper might be at the top of the pile - it would only take one unit of work. In the worst
+      case, if we go through the pile from top to bottom, it would be the bottom paper in the pile - we would have to
+      look at every single paper. This worst case would also apply if the paper was not even in the stack - we would
+      have to check every paper to figure that out. The average would be somewhere between those two: sometimes we get
+      lucky and find it early, and sometimes we are less lucky - in general, we would have to look at half of the
+      papers.</p>
+    <p>Here are those three scenarios summarized:</p>
+    <table>
+      <title>Linear Search Big-O</title>
+      
+      <tabular>
+
+        <row header="yes">
+          <cell> Model </cell>
+          <cell> Work for <m>n</m> papers </cell>
+          <cell> Big-O </cell>
+        </row>
+
+        <row>
+          <cell>
+            <term>Best Case</term>
+          </cell>
+          <cell>
+            <m>f(n) = 1</m>
+          </cell>
+          <cell>
+            <m>O(1)</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>Average Case</term>
+          </cell>
+          <cell>
+            <m>f(n) = \frac{n}{2}</m>
+          </cell>
+          <cell>
+            <m>O(n)</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <term>Worst Case</term>
+          </cell>
+          <cell>
+            <m>f(n) = n</m>
+          </cell>
+          <cell>
+            <m>O(n)</m>
+          </cell>
+        </row>
+
+      </tabular>
+    </table>
+    <p>Note that in terms of Big-O <m>f(n) = \frac{n}{2}</m> is the same as <m>f(n) = n</m> - they are both linear
+      functions. While it is true that in the best case, the algorithm takes 1 unit of time regardless of the number of
+      papers, we can&#8217;t count on always having the one we want at the top of the pile. Basing our rating of this
+      algorithm on this rare exception would be misleading. So instead we will say Linear Search is <m>O(n)</m>. Kind of
+      makes sense that linear search is a linear algorithm!</p>
+    <important>
+      <p><term>Linear Search</term> is <m>O(n)</m> - <term>Linear</term></p>
+    </important>
+    <note>
+      <p>This demonstrates a common pattern when describing work for an algorithm: The best case normally does not tell
+        us much - it is too rare. The average case and worst case are often (though not always) the same.</p>
+    </note>
+
+  </subsection>
+  <subsection xml:id="algorithms_search-efficiencies-binary">
+    <title>Binary Search Efficency</title>
+    <p>Remember that binary search relies on jumping to the middle of the list of unchecked items and, if it is not what
+      we want, throwing out half of the remaining items based on what we learned.</p>
+    <p>In the best case, we jump to the middle of the pile and find what we are looking for - this would only take 1
+      unit of work. But once again, that is a rare event. Instead, we will consider the worst case.</p>
+    <p>Imagine we are searching in a list that is 1000 items long. If we assume we have to get down to just 1 possible
+      item and then check that one, the process would look like:</p>
+
+      <tabular halign="true">
+        <row header="yes">
+          <cell> Items Left to Search </cell>
+          <cell> Comparisons So Far </cell>
+        </row>
+
+        <row>
+          <cell> 1000 </cell>
+          <cell> 0 </cell>
+        </row>
+        <row>
+          <cell> 500 </cell>
+          <cell> 1 </cell>
+        </row>
+        <row>
+          <cell> 250 </cell>
+          <cell> 2 </cell>
+        </row>
+        <row>
+          <cell> 125 </cell>
+          <cell> 3 </cell>
+        </row>
+        <row>
+          <cell> 62 </cell>
+          <cell> 4 </cell>
+        </row>
+        <row>
+          <cell> 31 </cell>
+          <cell> 5 </cell>
+        </row>
+        <row>
+          <cell> 15 </cell>
+          <cell> 6 </cell>
+        </row>
+        <row>
+          <cell> 7 </cell>
+          <cell> 7 </cell>
+        </row>
+        <row>
+          <cell> 3 </cell>
+          <cell> 8 </cell>
+        </row>
+        <row>
+          <cell> 1 </cell>
+          <cell> 9 </cell>
+        </row>
+        <row>
+          <cell> 0 </cell>
+          <cell> 10 </cell>
+        </row>
+
+      </tabular>
+
+    <p>Instead of counting how many times we divide the starting number by 2, we can calculate that number. Using a
+      logarithm. Taking the base 2 logarithm of a number asks <em>&#8220;How many times do I have to divide this number
+      by 2 to reach 1?&#8221;</em> Calculating <m>log_2(1000)</m> gives 9.96. Since we can&#8217;t do .96 units of work
+      (each unit is checking one paper&#8230; hard to see how we can check 0.96 papers), we will round that up to 10.
+      Since this function gives us the answer to how much work binary search requires, we will say Binary Search is <m>
+      O(log(n))</m>.</p>
+    <important classes="clear">
+      <p><term>Binary Search</term> is <m>O(log(n))</m> - <term>Logarithmic</term></p>
+    </important>
+
+    <sidebar>
+      <title>Wolfram Alpha</title>
+      <p>You can use the <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha
+        website</url> to calculate log base 2 by typing something like &#8220;log2(1024)&#8221;. Try it below.</p>
+      <raw format="html" xml:space="preserve">
+        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
+        <button type="submit">Submit</button></form></div>
+      </raw>
+    </sidebar>
+    
+  </subsection>
+  <subsection xml:id="algorithms_search-efficiencies-comparison">
+    <title>Comparison</title>
+    
+    
+    <p>We have established that <term>Binary Search</term> is <m>O(log(n))</m> and <term>Linear Search</term> is <m>O(n)</m>,
+      so how do those compare?</p>
+    <p>This table makes the difference pretty clear:</p>
+    <table>
+      <title>Worst Case Work for Searches</title>
+      <tabular>
+
+        <row header="yes">
+          <cell> List Size </cell>
+          <cell> Linear Search </cell>
+          <cell> Binary Search </cell>
+        </row>
+
+        <row>
+          <cell>
+            <term>10,000</term>
+          </cell>
+          <cell> 10,000 </cell>
+          <cell> 14 </cell>
+        </row>
+        <row>
+          <cell>
+            <term>100,000</term>
+          </cell>
+          <cell> 100,000 </cell>
+          <cell> 17 </cell>
+        </row>
+        <row>
+          <cell>
+            <term>1,000,000</term>
+          </cell>
+          <cell> 1,000,000 </cell>
+          <cell> 20 </cell>
+        </row>
+        <row>
+          <cell>
+            <term>1,000,000,000</term>
+          </cell>
+          <cell> 1,000,000,000 </cell>
+          <cell> 30 </cell>
+        </row>
+
+      </tabular>
+    </table>
+    <p>Comparing the graphs tells the same story. In relation to a Linear graph, a Logarithmic one appears to not be
+      growing at all:</p>
+    <image source="Algorithms/Images/Searches.svg" />
+
+  </subsection>
+</section>
+

@@ -1,0 +1,143 @@
+<section xml:id="binary_bits">
+  <title>Bits</title>
+  <p>A <term>bit</term> (short for &#8220;BInary digiT&#8221;) is a single on/off value. Only these two values are
+    possible, though the two values may go by different names, such as true/false, or 1/0. There are many ways in which
+    a bit can be implemented. Here are some ways that bits are implemented:</p>
+  <p>
+    <ul>
+      <li>
+        <p>A mechanical electrical switch (like a light switch.)</p>
+      </li>
+      <li>
+        <p>Voltage on a wire.</p>
+      </li>
+      <li>
+        <p>A light bulb being on or off.</p>
+      </li>
+      <li>
+        <p>The state of a single transistor.</p>
+      </li>
+      <li>
+        <p>The magnetic charge on a tiny part of the surface of a disk.</p>
+      </li>
+      <li>
+        <p>The presence or absence of a hole punched in a card.</p>
+      </li>
+      <li>
+        <p>A tiny part of the light-reflecting surface of a CD.</p>
+      </li>
+      <li>
+        <p>Part of a radio signal.</p>
+      </li>
+    </ul>
+  </p>
+
+  <sidebar>
+    <title>Bits</title>
+    <image source="Binary/Images/punchcard.jpg" width="20%" alt="Punchcard" />
+    <p>Each hole (or spot where there is no hole punched) in this card represents a bit of information.</p>
+  </sidebar>
+  <p>Computers do all of their processing in terms of bits - any piece of information a computer stores or manipulates
+    is stored as a sequence of these on/off values. For different purposes, a computer may use any of the mechanisms
+    listed above (or many others) to represent those bits.</p>
+
+  <exercise label="binary_bits1">
+    <statement>
+
+      <p>What is a <term>bit</term>?</p>
+
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>A single on/off value.</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>A value of "one."</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>A large section of computer memory.</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>Enough memory to store a character.</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="binary_bits2">
+    <statement>
+
+      <p>Which one of the following statements is FALSE?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>The method used to implement a bit does not affect the information it represents</p>
+        </statement>
+        <feedback>
+          <p>A light bulb that is "Off" represents the same thing as an "Off" represented by a hole that is not punched</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>A bit may be implemented as a small part of a magnetic disk.</p>
+        </statement>
+        <feedback>
+          <p>This is how hard drives store information</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>Copying a bit from one medium to another does not affect the information it represents.</p>
+        </statement>
+        <feedback>
+          <p>Computers do this all the time - turn an electrical signal in a circuit into a magnetic field on a disk. Or
+            turn a hole into a punch card into an electrical signal</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>A bit is always implemented as something electrical.</p>
+        </statement>
+        <feedback>
+          <p />
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+  <remark> Materials on this page adapted with permission from <url
+      href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley Kjell
+    (<url
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
+</section>
+

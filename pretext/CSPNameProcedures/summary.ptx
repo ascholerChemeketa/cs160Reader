@@ -1,0 +1,54 @@
+<section xml:id="csp-name-procedures_chapter-summary">
+        <title>Chapter Summary</title>
+        <p>This chapter included the following concepts from computing.</p>
+        
+        
+        <p><ul>
+            <li>
+                <p><term>Abstraction</term> - Abstractions in code are things that allow us to focus on the big picture -
+                    like <c>drawSquare</c> instead of the details required to actually do the job.</p>
+            </li>
+            <li>
+                <p><term>Argument</term> - An actual parameter is a value passed into a procedure or function
+                    when it is called.  In <c>forward(50)</c> the actual parameter is 50.  This is also called an
+                    <term>actual parameter</term>.</p>
+            </li>
+            <li>
+                <p><term>Call</term> - You can call or run a procedure or function by using the name of the procedure or
+                    function followed by values to pass into the procedure or function.  An example is
+                    <c>forward(50)</c>.  This is also known as <term>executing</term> or <term>running</term> a procedure or function.</p>
+            </li>
+            <li>
+                <p><term>Define</term> - You can define a new procedure or function in Python using the <c>def</c> keyword.</p>
+            </li>
+            <li>
+                <p><term>Execute</term> - Execute means to <term>run</term> or <term>call</term> a procedure or function.</p>
+            </li>
+            <li>
+                <p><term>Formal Parameter</term> - A formal parameter is named input in the definition of a procedure
+                    or function.  This is also called a <term>parameter</term>.</p>
+            </li>
+            <li>
+                <p><term>Function</term> - A function is a named set of instructions that <em>returns a result</em>.  An example
+                    is the <c>abs(num)</c> which returns the absolute value of the num.</p>
+            </li>
+            <li>
+                <p><term>Library</term> - A library is a named group of related procedures and functions.  An example
+                    is the Turtle library.</p>
+            </li>
+            <li>
+                <p><term>Parameter</term> - A parameter is input to a procedure or function that is named when you define
+                    the procedure or function. It will be assigned a value when you call the procedure or function.
+                    This is also called a <term>formal parameter</term>.</p>
+            </li>
+            <li>
+                <p><term>Procedure</term> - A procedure is a named set of instructions that <em>does not return a result</em>,
+                    but can cause something to happen like the turtle <c>forward(amount)</c> procedure.</p>
+            </li>
+            <li>
+                <p><term>Run</term> - To run a procedure or function use the name of the procedure or function in your
+                    program.  This is also known as <term>calling</term> or <term>executing</term> a procedure or function.</p>
+            </li>
+        </ul></p>
+    </section>
+

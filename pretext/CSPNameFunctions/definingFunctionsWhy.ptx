@@ -1,0 +1,117 @@
+<section xml:id="csp-name-functions_defining-functions-why">
+        <title>Defining Functions - Why</title>
+        <p>We define functions for the same reasons we define procedures:</p>
+        <p><ul>
+            <li>
+                <p>To reuse code without having to type it multiple times or copy/paste it</p>
+            </li>
+            <li>
+                <p>To make abstractions that allow us to focus on the big picture while solving
+                    a problem. These abstractions also make it easier for others to get some
+                    bit of work done without worrying about the details of how it works.</p>
+            </li>
+        </ul></p>
+        <p>Our program on the last page to calculate the length of side c of a triangle did not really
+            benefit from making use of a function. We only did the calculation one time and the work
+            we were doing in the main part of the program was not all that complex. We could have just
+            calculated the length of the missing side by doing all the calculations in the main
+            part of the program.</p>
+        <p>Here is a program that shows off why a function can be useful. I am trying to use 20 feet
+            of material to make two sides of a right triangle. I want the length of the long side to be
+            as close to 15 feet as I can make it. So I decide to calculate the length of the hypotenuse
+            for different triangles - one where I make both legs 10; one where I make the legs 11 and 9;
+            one where I make the legs 12 and 8; etc&#8230; Looking at the results of these calculations,
+            I can see that my best option is to use lengths of 14 and 6 (which produces a hypotenuse
+            just a bit closer to 15 than sides of 13 and 7).</p>
+
+    <program xml:id="cspnamefunctions_definingfunctionswhy1" interactive="activecode" language="python">
+        <input>
+def hypotenuse_length(sideA, sideB):
+    # sideA and sideB are our inputs
+    aSquared = math.pow(sideA, 2)
+    bSquared = math.pow(sideB, 2)
+    sideC = math.sqrt(aSquared + bSquared)          # this is the final answer
+    return sideC                                    # we return it
+
+
+# main part of program
+import math
+hypotenuse1 = hypotenuse_length(10, 10)
+print("The length of side hypotenuse1 is", hypotenuse1)
+
+hypotenuse2 = hypotenuse_length(11, 9)
+print("The length of side hypotenuse2 is", hypotenuse2)
+
+hypotenuse3 = hypotenuse_length(12, 8)
+print("The length of side hypotenuse3 is", hypotenuse3)
+
+hypotenuse4 = hypotenuse_length(13, 7)
+print("The length of side hypotenuse4 is", hypotenuse4)
+
+hypotenuse5 = hypotenuse_length(14, 6)
+print("The length of side hypotenuse5 is", hypotenuse5)
+
+hypotenuse6 = hypotenuse_length(15, 5)
+print("The length of side hypotenuse6 is", hypotenuse6)
+        </input>
+    </program>
+        <p>Now look below at a version of this program without a function.</p>
+
+    <program xml:id="cspnamefunctions_definingfunctionswhy2" interactive="activecode" language="python">
+        <input>
+import math
+aSquared = math.pow(10, 2)
+bSquared = math.pow(10, 2)
+hypotenuse1 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse1 is", hypotenuse1)
+
+aSquared = math.pow(11, 2)
+bSquared = math.pow(9, 2)
+hypotenuse2 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse2 is", hypotenuse2)
+
+aSquared = math.pow(12, 2)
+bSquared = math.pow(8, 2)
+hypotenuse3 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse3 is", hypotenuse3)
+
+aSquared = math.pow(13, 2)
+bSquared = math.pow(7, 2)
+hypotenuse4 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse4 is", hypotenuse4)
+
+aSquared = math.pow(14, 2)
+bSquared = math.pow(6, 2)
+hypotenuse5 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse5 is", hypotenuse5)
+
+aSquared = math.pow(15, 2)
+bSquared = math.pow(7, 2)
+hypotenuse6 = math.sqrt(aSquared + bSquared)
+print("The length of side hypotenuse6 is", hypotenuse6)
+        </input>
+    </program>
+        <p>Not only did writing it involve retyping lines like <c>aSquared = math.pow(___, ___)</c>
+            over and over, and it is harder to read and understand.
+            A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see
+            <em>&#8220;Oh, that is just where we are going to calcualte the hypotenuse.&#8221;</em>. When there is no function,
+            the reader has to slog through things like this:</p>
+        <program language="python"><input>
+aSquared = math.pow(10, 2)
+bSquared = math.pow(10, 2)
+hypotenuse1 = math.sqrt(aSquared + bSquared)
+</input></program>
+        <p>As they do so, they must come to their own conclusion <em>&#8220;Oh, I think
+                I see what is going on, we are doing all the math to calculate a hypotenuse&#8221;</em>. Doing this
+            distracts them from the big picture of the problem we are really trying to solve.</p>
+        <p><term>Check Your Understanding</term></p>
+
+        <exercise label="cspnamefunctions_definingfunctionswhy3">
+            <statement>
+    <p>We want to calculate the hypotenuse of a triangle with legs of 8 and 15 and then
+print out the result. Write the line of code that would go in the ______________
+to use the <c>hypotenuse_length</c> function defined above to do the math. <var/>  </p></statement><setup><var><program language="python"><input>
+______________
+print(answer)
+</input></program><condition string="^\s*answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*\w+\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$"><feedback><p>Make sure you use the same variable name the second line is using.</p></feedback></condition><condition string="^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$"><feedback><p>Make sure you store the result of function call.</p></feedback></condition></var></setup></exercise>    </section>
+

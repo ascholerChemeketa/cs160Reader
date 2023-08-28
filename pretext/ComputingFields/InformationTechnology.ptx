@@ -1,0 +1,74 @@
+<section xml:id="computing-fields_information-technology">
+  <title>Information Technology</title>
+
+  <p>Although the term <term>Information Technology</term> is sometimes used to describe any career involving computers,
+    in the education world it has a more specific meaning - the skill set required to put computers to work in a
+    business or other organization.</p>
+  <p>IT professionals have the responsibility for installing and maintaining hardware and software products as well as
+    integrating those products to meet organizational needs. They often work directly with non-technical users of
+    complex technology to support those users and fix issues.</p>
+  <p>A broad range of basic knowledge is required for an IT professional - they need to understand the basics of
+    networking, programming, operating systems, computer hardware, and security. On top of this base layer of knowledge,
+    many IT professionals develop more extensive expertise in a particular area such as database administration, system
+    administration, or cybersecurity.</p>
+
+  <subsection xml:id="information-technology-careers">
+    <title>Typical careers</title>
+    <ol>
+      <li>
+        <p>
+          <url href="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">Computer
+            Support Specialist</url>
+        </p>
+      </li>
+      <li>
+        <p>
+          <url
+            href="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">Network
+            and Systems Administrator</url>
+        </p>
+      </li>
+      <li>
+        <p>
+          <url href="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm"
+            visual="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm">Database
+            Administrator</url>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="information-technology-education">
+    <title>Education</title>
+    <p>Many entry-level jobs in IT are open to anyone with a certificate or two-year degree Associate&#8217;s. However,
+      advanced jobs in specific areas often require advanced training or certification in that field. For example, to
+      become a network administrator, you would need significant specialized knowledge in installing and configuring
+      computer networks on top of the base level of knowledge expected from all IT professionals.</p>
+    <p>Positions with more business or management responsibility may require a Bachelor&#8217;s degree.</p>
+  </subsection>
+
+  <subsection xml:id="information-technology-knowledge">
+    <title>Knowledge Domains</title>
+    <p>This diagram illustrates the knowledge areas required in this field. A 5 represents a very high degree of
+      required expertise while a 1 represents a minimal amount.</p>
+    <figure xml:id="information-technology-discipline-chart">
+      <caption>Computer science knowledge domains.</caption>
+      <interactive xml:id="interactive-information-technology-discipline-chart" platform="javascript"
+        aspect="3:2"
+        source="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js ComputingFields/code/ITViz.js"
+        preview="ComputingFields/images/discipline-it.jpg">
+        <slate xml:id="disciplines-it" surface="canvas" />
+        <instructions>
+          <p>Click a discipline label to enable or disable it in the visualization.</p>
+        </instructions>
+      </interactive>
+    </figure>
+  </subsection>
+
+
+  <remark> Materials on this page adapted from <url
+    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+</section>
+

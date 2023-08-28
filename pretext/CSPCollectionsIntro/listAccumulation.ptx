@@ -1,0 +1,142 @@
+<section xml:id="csp-collections-intro_list-accumulation">
+        <title>List Accumulation</title>
+        
+        
+        <p xml:id="csp-collections-intro_index-0">We have already encountered the <term>accumulator</term> pattern - where we loop through a list
+            of values and combine them all. This is a natural thing to do with our lists. Say I want
+            to total the points that were earned by a student on the quizzes. I might use the following
+            program:</p>
+
+    <program xml:id="cspcollectionsintro_listaccumulation1" interactive="activecode" language="python">
+        <input>
+scores = [82, 95, 92, 76, 98, 84, 89, 92]
+
+# Pick an appropriate initial value
+total = 0
+
+# Loop through the values
+for score in scores:
+    #Add each one to the total, store the result back into the total
+    total = total + score
+
+print(total)
+        </input>
+    </program>
+        <p>The key steps are described with comments. We always need to start with some initial value
+            as our &#8220;accumulation variable&#8221;, loop through the items, and combine each value with the
+            accumulation variable.</p>
+        <p>If I wanted to multiple a group of numbers together, my accumulator variable would need to
+            start with 1 (the multiplicative identity). At each step, I would multiply the current value
+            from the list by my accumulated value to get the new accumulated value. This is shown in
+            the animation below, using <c>product</c> as the accumulator variable.</p>
+
+<program xml:id="cspcollectionsintro_listaccumulation2" interactive="codelens" language="python">
+    <input>
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Pick an appropriate initial value
+product = 1
+
+# Loop through the values
+for n in numbers:
+    # Multiply each one into the product
+    product = product * n
+
+print(product)
+    </input>
+</program>
+
+    <exercise label="cspcollectionsintro_listaccumulation3">
+        <statement>
+
+        <p>What is the value of number at the end of the 3rd time through the loop?
+            If you want, you can indent the <c>print</c> statement so that it prints the product
+            each time through the loop instead of just once at the end.</p>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>1</p>
+                </statement>
+                <feedback>
+                    <p>That's the value the first time through the loop</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>That's the value the second time through the loop</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>3</p>
+                </statement>
+                <feedback>
+                    <p>That's the value the third time through the loop</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>4</p>
+                </statement>
+                <feedback>
+                    <p>That's the value the fourth time through the loop</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>10</p>
+                </statement>
+                <feedback>
+                    <p>That's the value the last time through the loop</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+        <p>We can &#8220;accumulate&#8221; other types of data as well. Say I have a series of words stored in
+            a list. I can use the accumulator pattern to build up one string with all of the words.
+            My accumulator variable will need to start with an appropriate empty value for a string,
+            which is <c>""</c>.</p>
+
+<program xml:id="cspcollectionsintro_listaccumulation4" interactive="codelens" language="python">
+    <input>
+words = ["Roses", "are", "red", "violets", "are", "dead"]
+
+# Pick an appropriate initial value
+poem = ""
+
+# Loop through the values
+for item in words:
+    # Add each to the poem with space in front
+    poem = poem + " " + item
+
+print(poem)
+    </input>
+</program>
+<exercise label="cspcollectionsintro_listaccumulation5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>The following program should calculate the average of some numbers by adding them all up
+            before dividing by the number of values there are and printing out the answer.
+            Put the blocks in the correct order and indentation. You will not need them all.</p>
+</statement>
+<blocks><block order="3">
+<cline>numbers = [90, 80, 75, 90, 83]</cline>
+<cline>sum = 0</cline>
+</block><block order="4">
+<cline>for number in numbers:</cline>
+</block><block order="5">
+<choice correct="yes"><cline>    sum = sum + number</cline>
+</choice><choice><cline>    sum = sum + numbers </cline>
+</choice></block><block order="1">
+<cline>average = sum / len(numbers)</cline>
+<cline>print(average)</cline>
+</block></blocks></exercise>    </section>
+

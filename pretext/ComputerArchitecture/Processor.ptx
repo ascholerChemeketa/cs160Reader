@@ -1,0 +1,42 @@
+<section xml:id="computer-architecture_the-processor">
+  <title>The Processor</title>
+  <p>This basic model of a computer as a processing unit that takes some input, communicates with a memory, and produces
+    output, is known as the <term>von Neumann architecture</term> after the early computer scientist <xref
+      ref="../HistoryOfComputers/Generation1#vonneumann" />. In this architecture, the processor itself consists of
+    multiple specialized parts:</p>
+  <figure>
+    <caption>Important logical components of a computer</caption>
+    <image source="ComputerArchitecture/Images/cpustructuremap.gif" width="50%" alt="CPU Structure" />
+  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>The <term>arithmetic logic unit</term> (ALU) - the central processing unit that can perform mathematical and
+          logic operations.</p>
+      </li>
+      <li>
+        <p>The <term>control unit</term> directs the movement of instructions in and out of the processor and sends
+          control signals to the ALU to make it perform the correct operation at any given point in time.</p>
+      </li>
+      <li>
+        <p>The processor <term>registers</term> - small special-purpose storage areas used to store the information the
+          ALU is working with.</p>
+      </li>
+      <li>
+        <p>The memory unit - not part of the processor - holds both data and instructions (program). To be used, this
+          information must be transferred to registers.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Modern computers add many layers of complexity to this basic model. One such modification seen in the picture above
+    is multiple busses - in the diagram on the previous page and the original von Neumann architecture, there is only
+    one system bus that can carry messages from one component to another. This means that the processor and memory would
+    have to take turns talking: &#8220;CPU: Please send me the data at address 1 in memory&#8221;; &#8220;Memory: OK,
+    the data at 00001 is 01010111.&#8221;; &#8220;CPU: Please send me the data at address 2 in memory&#8221;&#8230;
+    Having multiple busses avoids this bottleneck by allowing the CPU communicate the next address it wants at the same
+    time memory sends data back to the CPU.</p>
+
+    <remark> Materials on this page adapted with permission from <url
+      href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
+</section>
+

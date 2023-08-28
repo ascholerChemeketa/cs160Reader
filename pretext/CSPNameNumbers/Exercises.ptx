@@ -1,0 +1,302 @@
+<exercises xml:id="csp-name-numbers_chapter-exercises">
+        <title>Chapter Exercises</title>
+
+<exercise label="cspnamenumbers_exercises1">
+    <statement>
+        <p><c>==</c> is an operator that checks for equality. If the value on the left side is equal
+            to the value on the right side, it gives <c>True</c>. Otherwise it gives <c>False</c>.</p>
+        <p>Insert the correct operators in place of the <c>#</c>&#8217;s so each line prints <c>True</c>. Don&#8217;t change any
+            of the numbers.</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises1_editor" interactive="activecode" language="python">
+        <input>
+print((7 # 2) # 10 == 35)
+print(2 # 4 == 0.5)
+print(5 # 2 # 3 == -1)
+print(3 # 2 # 1 == 7)
+print(16 # 7 == 2)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertNotIn("False", self.getOutput(), "Testing that you have no False's.")
+        self.assertNotIn("True", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+        self.assertRegex(self.getOutput(), r"(True[\s\n]*){5}", "Testing that you produced 5 True's.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamenumbers_exercises2">
+    <statement>
+        <p>Add a set of parentheses to the expression  <c>x = 6 * 1 - 2</c> so that the code below prints -6 instead of 4.</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises2_editor" interactive="activecode" language="python">
+        <input>
+x = 6 * 1 - 2
+print(x)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(x, -6, "Testing that x has the correct value." )
+        self.assertNotIn("-6", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamenumbers_exercises3">
+    <statement>
+        <p>Add parentheses to <c>x = 12 * 2 - 3 + 4 * 2</c> so that it prints -4 instead of 29.</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises3_editor" interactive="activecode" language="python">
+        <input>
+x = 12 * 2 - 3 + 4 * 2
+print(x)
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(x, -4, "Testing that x has the correct value." )
+        self.assertRegex(self.getEditorText(), r"x = [()\s]*12[()\s]*\*[()\s]*2[()\s]*-[()\s]*3[()\s]*\+[()\s]*4[()\s]*\*[()\s]*2[()\s]*", "Testing that you still have all the original pieces.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamenumbers_exercises4">
+    <statement>
+        <p>Complete the code on lines 3 and 5 below to print the cost of a car trip of 500 miles
+            when the car gets 26 miles per gallon and gas costs 3.45 a gallon.</p>
+        <p>The answer you get should be 66.34615384615385. But make sure you calculate it, as opposed
+            to hardcoding that value into your program!</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises4_editor" interactive="activecode" language="python">
+        <input>
+miles = 500
+milesPerGallon = 26
+numGallons =
+pricePerGallon = 3.45
+total =
+print(total)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertAlmostEqual(float(self.getOutput().strip()), 66.34615384615385, 7, "Testing that output has the correct value." )
+        self.assertNotIn("66.346153", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamenumbers_exercises5">
+    <statement>
+        <p>It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (using 12-hour time,
+            not 24-hour time). Use the <c>%</c> (modulo or remainder operator) to calculate the correct value for <term>clockTime</term>
+            based on the <term>newTime</term> value that is already calculated.</p>
+        <p>The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder of 4. But make sure not
+            to hardcode the answer - you need to calculate the value, not just type it in.</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises5_editor" interactive="activecode" language="python">
+        <input>
+currentTime = 10
+newTime = currentTime + 18
+clockTime =
+print(clockTime)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(clockTime, 4, "Testing that clockTime has the correct value." )
+        self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer. Make sure to calculate it!")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+
+<exercise label="cspnamenumbers_exercises6">
+    <statement>
+        <p>Finish the code on lines 2 and 3 in the code below to print how many hours and minutes
+            you have been waiting when you have been waiting a total of 270 minutes.</p>
+        <p>Use the <c>%</c> (modulo or remainder operator) and the integer division operator <c>//</c> to
+            calculate the correct values for <term>numHours</term> and <term>numMinutes</term> based on the <term>totalMinutes</term> value.</p>
+        <p>The correct answers should be 4 for <term>numHours</term> and 30 for <term>numMinutes</term>. But make
+            sure to calculate those values - don&#8217;t hardcode them!</p>
+
+    </statement>
+    <program xml:id="cspnamenumbers_exercises6_editor" interactive="activecode" language="python">
+        <input>
+totalMinutes = 270
+numHours =
+numMinutes =
+print(numHours)
+print(numMinutes)
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(numHours, 4, "Testing that numHours has the correct value." )
+        self.assertEqual(numMinutes, 30, "Testing that numHours has the correct value." )
+        self.assertNotIn("30", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+        self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+
+myTests().main()
+        </input>
+    </program>
+</exercise>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </exercises>
+
