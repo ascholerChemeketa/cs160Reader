@@ -1,2 +1,87 @@
-<raw format="html" xml:space="preserve"/>
-    
+<section xml:id="csp-teasers_about-this-section-of-the-book">
+    <title>About This Section of the Book</title>
+    <subsection xml:id="csp-teasers-philosophy">
+        <title>Philosophy</title>
+
+        <p>This text is intended for students who haven&#8217;t programmed before and for students
+            who may not be intending on a career in software development. It uses the programming
+            language <term>Python</term>, which is considered one of the easier programming
+            languages to learn, but is powerful enough to be used by companies like Google and
+            Pixar.</p>
+        <p>Learning to write code is a little like learning to write English. You can&#8217;t hope
+            to sit down and write something if you do not understand the language. You have to start
+            by learning to read the language. In reading, you learn not just how the language works,
+            but how skilled writers use language to communicate. However, progressing from reader to
+            writer requires additional work. It is one thing to read a well-crafted essay, another
+            thing entirely to write one. The same is true of programming. You need to learn how to
+            read and understand code to be able to write it. But then, you need to practice writing
+            code to learn the art of building new programs.</p>
+        <p>Thus, this text uses the following sequence to introduce programming as a whole and
+            individual topics:</p>
+        <p>
+            <ul>
+                <li>
+                    <p>Rather than having you write lots of code right away, we will ask you to <em>
+                        read</em> a lot of code <em>examples</em>.</p>
+                </li>
+                <li>
+                    <p>We ask you to <em>use</em> what you are learning from the examples in some
+                        simple <em>practice</em> exercises. These exercises are meant to be short
+                        and easy.</p>
+                </li>
+                <li>
+                    <p>Eventually you will build to writing your own interesting programs.</p>
+                </li>
+            </ul>
+        </p>
+        <p>This first chapter introduces the approach used in this book and offers some quick
+            &#8220;teasers&#8221; of things we&#8217;ll be doing later. <term>Don&#8217;t worry if
+            you don&#8217;t understand the code (programs - instructions that a computer can
+            understand) that you see in this chapter</term>. We&#8217;ll go through things much more
+            slowly in the next few chapters.</p>
+    </subsection>
+
+    <subsection xml:id="csp-teasers_license">
+        <title>License</title>
+        <p>The programming portion of this text is based on the book <url
+                href="https://github.com/RunestoneInteractive/StudentCSP"
+                visual="https://github.com/RunestoneInteractive/StudentCSP">StudentCSP</url> and is
+            used under the following license:</p>
+        <p>Mark Guzdial and Barbara Ericson <url href="mailto://ericson@cc.gatech.edu"
+                visual="mailto://ericson@cc.gatech.edu">ericson@cc.gatech.edu</url> January, 2014</p>
+        <p>All rights reserved.</p>
+        <p>Redistribution and use in source and binary forms, with or without
+            modification, are permitted provided that the following conditions are met:</p>
+        <p>
+            <ul>
+                <li>
+                    Redistributions of source code must retain the above copyright notice, this list
+                    of
+                    conditions and the following disclaimer.
+                </li>
+                <li>
+                    Redistributions in binary form must reproduce the above copyright notice, this
+                    list of conditions and the following disclaimer in the
+                    documentation and/or other materials provided with the distribution.
+                </li>
+                <li>
+                    Neither the name of the &lt;organization&gt; nor the names of its contributors
+                    may be used to endorse or promote products
+                    derived from this software without specific prior written permission.
+                </li>
+            </ul>
+        </p>
+        <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221;
+            AND
+            ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+            WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+            DISCLAIMED. IN NO EVENT SHALL Mark Guzdial and Barbara Ericson BE LIABLE FOR ANY
+            DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+            (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+            LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+            ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+            (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+            SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+    </subsection>
+</section>
+

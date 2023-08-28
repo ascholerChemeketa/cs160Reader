@@ -1,14 +1,13 @@
 <section xml:id="csp-repeat-numbers_repeating-calculations">
-        <title>Repeating Calculations</title>
-        <p>While calculating an approximate square root with Newton&#8217;s method, we often want to use the
-            formula <m>1/2((N/G) + G)</m> multiple times to keep improving our approximation. Earlier, we
-            defined a procedure to make it easier to reuse the formula. But if we want to apply the
-            formula a whole bunch of times in a row, a loop makes sense. Try running this program with the
-            Codelens:</p>
+  <title>Repeating Calculations</title>
+  <p>While calculating an approximate square root with Newton&#8217;s method, we often want to use the formula <m>1/2((N/G)
+    + G)</m> multiple times to keep improving our approximation. Earlier, we defined a procedure to make it easier to
+    reuse the formula. But if we want to apply the formula a whole bunch of times in a row, a loop makes sense. Try
+    running this program with the Codelens:</p>
 
-    <program xml:id="csprepeatnumbers_repeatnums1" interactive="activecode" language="python">
-        <input>
-# Number to find square root of
+  <program xml:id="csprepeatnumbers_repeatnums1" interactive="activecode" language="python">
+    <input>
+# Number to find the square root of
 number = 110
 # Our first (obviously incorrect guess)
 guess = number
@@ -19,21 +18,53 @@ for iteration in range(5):
 print("The square root of ", number, "is approximately:")
 print(guess)
         </input>
-    </program>
-        <p>Each time we pass through the loop, we update the guess and it becomes a little closer to
-            the truest value for the square root we can represent (we can never write a perfect
-            representation of the answer as a decimal, so we have to settle for being correct to a
-            significant number of digits). The for loop is initially set to
-            repeat 4 times, which gets us pretty close to the true value of the square root - 10.48808848170152.</p>
+  </program>
+  <p>Each time we pass through the loop, we update the guess and it becomes a little closer to the truest value for the
+    square root we can represent (we can never write a perfect representation of the answer as a decimal, so we have to
+    settle for being correct to a significant number of digits). The for loop is initially set to repeat 4 times, which
+    gets us pretty close to the true value of the square root - 10.48808848170152.</p>
 
-        <exercise label="csprepeatnumbers_repeatnums2">
-            <statement>
-    <p>Modify the loop to repeat more times. What is the minimum number of repetitions you
-need to get an answer that is as acurate as possible? (One that displays as 10.48808848170152) <var/>  </p></statement><setup><var><condition string="^\s*^8$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*^9$\s*$"><feedback><p>That is more repetitions than needed</p></feedback></condition><condition string="^\s*\d{2}\s*$"><feedback><p>That is more repetitions than needed</p></feedback></condition><condition string="^\s*\d\s*$"><feedback><p>The answer is still changing after that many repetitions</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Make sure to give your answer as a number</p></feedback></condition></var></setup></exercise>        <p>The number of repetitions needed to get the most accurate possible square root for a given
-            number is not always the same. If you change <c>number</c> to be 2, it would only take 5 iterations
-            of the loop to find the best possible guess for the square root. Without experimenting, we
-            don&#8217;t really know how many repetitions are needed to get the best possible answer. Currently
-            our program says something like <em>&#8220;repeat this calculation 5 times&#8221;</em>. What we would like to say
-            is something more like <em>&#8220;repeat this calculation while it keeps producing a new value&#8221;</em>.</p>
-    </section>
+  <exercise label="csprepeatnumbers_repeatnums2">
+    <statement>
+      <p>Modify the loop to repeat more times. What is the minimum number of repetitions you need to get an answer that
+        is as accurate as possible? (One that displays as 10.48808848170152) <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*^8$\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*^9$\s*$">
+          <feedback>
+            <p>That is more repetitions than needed</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*\d{2}\s*$">
+          <feedback>
+            <p>That is more repetitions than needed</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*\d\s*$">
+          <feedback>
+            <p>The answer is still changing after that many repetitions</p>
+          </feedback> 
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Make sure to give your answer as a number</p>
+          </feedback>
+        </condition> 
+      </var>
+    </setup>
+  </exercise> 
+  <p>The number of repetitions needed to get the most accurate possible square root for a given number is not always the
+    same. If you change <c>number</c> to 2, it would only take 5 iterations of the loop to find the best possible guess for
+    the square root. Without experimenting, we don&#8217;t really know how many repetitions are needed to get the best
+    possible answer. Currently our program says something like <em>&#8220;repeat this calculation 5 times&#8221;</em>.
+    What we would like to say is something more like <em>&#8220;repeat this calculation while it keeps producing a new
+    value&#8221;</em>.</p>
+</section>
 

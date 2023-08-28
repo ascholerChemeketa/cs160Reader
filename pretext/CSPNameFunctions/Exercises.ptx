@@ -1,13 +1,13 @@
 <exercises xml:id="csp-name-functions_chapter-exercises">
-        <title>Chapter Exercises</title>
+  <title>Chapter Exercises</title>
 
-<exercise label="cspnamefunctions_exercises1">
+  <exercise label="cspnamefunctions_exercises1">
     <statement>
-        <p>Fix the errors so it runs and returns the perimeter of a rectangle.</p>
+      <p>Fix the errors so it runs and returns the perimeter of a rectangle.</p>
 
     </statement>
     <program xml:id="cspnamefunctions_exercises1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def recPerimeter(length, width):
 perimeter = 2 * (length + width)
 Return recPerimeter
@@ -27,23 +27,23 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspnamefunctions_exercises2">
+  <exercise label="cspnamefunctions_exercises2">
     <statement>
-        <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and
-            height of a triangle to calculate the area for. Modify the function so that it has parameters
-            for base and height and works to calculate the area of different triangles.</p>
+      <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and height of a triangle to
+        calculate the area for. Modify the function so that it has parameters for base and height and works to calculate
+        the area of different triangles.</p>
 
     </statement>
     <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def areaTriangle():
     base = 5
     height = 4
     return (5 * 4) / 2
 
-# Main program. Do not modify lines below
+# Main program. Do not modify the lines below
 print(areaTriangle(5, 4))
 print(areaTriangle(6, 3))
 =====
@@ -58,23 +58,22 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspnamefunctions_exercises3">
+  <exercise label="cspnamefunctions_exercises3">
     <statement>
-        <p>The mathemetician Newton invented a method to approximate the square root of a number.
-            Take the number <term>N</term> you want the square root for and a guess <term>G</term> and then
-            calculate <m>1/2(N/G + G)</m>. You will get a rough approximation. If you use the
-            answer as a new guess and repeat the process, you will get a closer approximation. You
-            can keep repeating the process to make your approcimation closer and closer to the real
-            value.</p>
-        <p>Write an <c>approximateSqrt</c> function that takes a number and guess as its parameters
-            and then uses Newton&#8217;s formula to estimate the square root of the number.</p>
-        <p>There is already code provided to use your function to calculate the square root of 150.</p>
+      <p>The mathemetician Newton invented a method to approximate the square root of a number. Take the number <term>N</term>
+        you want the square root for and a guess <term>G</term> and then calculate <m>1/2(N/G + G)</m>. You will get a
+        rough approximation. If you use the answer as a new guess and repeat the process, you will get a closer
+        approximation. You can keep repeating the process to make your approximation closer and closer to the real
+        value.</p>
+      <p>Write an <c>approximateSqrt</c> function that takes a number and a guess as its parameters and then uses Newton&#8217;s formula
+        to estimate the square root of the number.</p>
+      <p>There is already code provided to use your function to calculate the square root of 150.</p>
 
     </statement>
     <program xml:id="cspnamefunctions_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 # Your code here
 
 # Main program. Do not modify lines below
@@ -96,42 +95,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

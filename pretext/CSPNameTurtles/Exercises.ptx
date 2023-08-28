@@ -1,13 +1,13 @@
 <exercises xml:id="csp-name-turtles_chapter-exercises">
-        <title>Chapter Exercises</title>
+  <title>Chapter Exercises</title>
 
-<exercise label="cspnameturtles_exercises1">
+  <exercise label="cspnameturtles_exercises1">
     <statement>
-        <p>There are 3 syntax errors in the following code.  Fix it to work correctly without errors.</p>
+      <p>There are 3 syntax errors in the following code. Fix it to work correctly without errors.</p>
 
     </statement>
     <program xml:id="cspnameturtles_exercises1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = screen()
 alex = Turtle
@@ -23,16 +23,16 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspnameturtles_exercises2">
+  <exercise label="cspnameturtles_exercises2">
     <statement>
-        <p>The code below is supposed to make alex move North 150 pixels and then move East 75, but the
-            lines are in the wrong order. Fix it so that it runs properly.</p>
+      <p>The code below is supposed to make alex move North 150 pixels and then move East 75, but the lines are in the
+        wrong order. Fix it so that it runs properly.</p>
 
     </statement>
     <program xml:id="cspnameturtles_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 alex = Turtle()
 alex.forward(150)
 alex.right(90)
@@ -52,184 +52,38 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspnameturtles_exercises3">
+  <exercise label="cspnameturtles_exercises3">
     <statement>
-        <p>Use the area below to draw to draw your initials in block style using different
-            colors for each letter.</p>
-        <p>This problem is not auto-checked, you will have to decide if it is correct or not.</p>
+      <p>Use the area below to draw your initials in block style using different colors for each letter.</p>
+      <p>This problem is not auto-checked, you will have to decide if it is correct or not.</p>
 
     </statement>
     <program xml:id="cspnameturtles_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = Screen()
 jessica = Turtle()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspnameturtles_exercises4">
+  <exercise label="cspnameturtles_exercises4">
     <statement>
-        <p>Create a drawing that uses a  mix of straight lines (possibly filled in) and one or more
-            circles created by making large dots.</p>
-        <p>This problem is not auto-checked, you will have to decide if it is correct or not.</p>
+      <p>Create a drawing that uses a mix of straight lines (possibly filled in) and one or more circles created by
+        making large dots.</p>
+      <p>This problem is not auto-checked, you will have to decide if it is correct or not.</p>
 
     </statement>
     <program xml:id="cspnameturtles_exercises4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = Screen()
 antonio = Turtle()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

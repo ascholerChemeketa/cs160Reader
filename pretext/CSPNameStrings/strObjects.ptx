@@ -1,12 +1,11 @@
 <section xml:id="csp-name-strings_strings-are-objects">
-        <title>Strings are Objects</title>
-        
-        
-        <p xml:id="csp-name-strings_index-0">Strings are objects in Python which means that there is a set of built-in functions that you can
-            use to manipulate strings.  You use <term>dot-notation</term> to invoke the functions on a string object
-            such as <c>sentence.lower()</c>.  The function <c>lower()</c> returns a new string with all of the
-            characters in the original string set to lowercase.  The function <c>capitalize()</c> will return
-            a new string with the first letter of the string capitalized.</p>
+    <title>Strings are Objects</title>
+
+    <p>Strings are objects in Python which means that there is a set of built-in
+        functions that you can use to manipulate strings. You use <term>dot-notation</term> to invoke the functions on a
+        string object such as <c>sentence.lower()</c>. The function <c>lower()</c> returns a new string with all of the characters in the
+        original string set to lowercase. The function <c>capitalize()</c> will return a new string with the first letter of the
+        string capitalized.</p>
 
     <program xml:id="cspnamestrings_strobjects1" interactive="activecode" language="python">
         <input>
@@ -17,20 +16,23 @@ betterStill = better.capitalize() + "."
 print(betterStill)
         </input>
     </program>
-        <subsection xml:id="csp-name-strings_getting-part-of-a-string">
-            <title>Getting Part of a String</title>
-            
-            
-            <p xml:id="csp-name-strings_index-1">A string has characters in a sequence.  Each character is at a position or <term>index</term> which starts
-                with 0 as shown below.  An <term>index</term> is the term for a number associated with a position in a
-                collection of values like a string.</p>
-            <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A string with the position (index) shown above each character</caption><image source="CSPNameStrings/Figures/stringIndicies.png" width="400px%" alt="a string with the position (index) shown above each character"/></figure>
-            <p>A <term>slice</term> is a way to get part of a string.  One way to use a <term>slice</term> is to do
-                <title_reference>stringName[num]`</title_reference>.  This will return a new string with just the character at that position in
-                the string.</p>
+    <subsection xml:id="csp-name-strings_getting-part-of-a-string">
+        <title>Getting Part of a String</title>
 
-    <program xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">
-        <input>
+        <p>A string has characters in a sequence. Each character is at a position or <term>
+            index</term> which starts with 0 as shown below. An <term>index</term> is the term for a number associated
+            with a position in a collection of values like a string.</p>
+        <figure align="center">
+            <caption>A string with the position (index) shown above each character</caption>
+            <image source="CSPNameStrings/Figures/stringIndicies.png" width="100%"
+                alt="a string with the position (index) shown above each character" />
+        </figure>
+        <p>A <term>slice</term> is a way to get part of a string. One way to use a <term>slice</term> is to do <title_reference>
+            stringName[num]`</title_reference>. This will return a new string with just the character at that position
+            in the string.</p>
+
+        <program xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">
+            <input>
 sentence = "This is a test"
 s1 = sentence[1]
 print(s1)
@@ -41,13 +43,12 @@ print(s3)
 s4 = sentence[10]
 print(s4)
         </input>
-    </program>
-            <figure align="center" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A string with the position (index) shown above each character</caption><image source="CSPNameStrings/Figures/stringIndicies.png" width="400px%" alt="a string with the position (index) shown above each character"/></figure>
-            <p>A <term>slice</term> with two values separated with a <c>:</c> between them returns a new string with the
-                characters from the given start position to the one before the given end position.</p>
+        </program>
+        <p>A <term>slice</term> with two values separated with a <c>:</c> between them returns a new string with the
+            characters from the given start position to the one before the given end position.</p>
 
-    <program xml:id="cspnamestrings_strobjects3" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_strobjects3" interactive="activecode" language="python">
+            <input>
 sentence = "This is a test"
 s1 = sentence[1:3]
 print(s1)
@@ -58,103 +59,113 @@ print(s3)
 s4 = sentence[10:14]
 print(s4)
         </input>
-    </program>
-            <p><term>Check Your Understanding</term></p>
+        </program>
+        <p>
+            <term>Check Your Understanding</term>
+        </p>
 
-    <exercise label="cspnamestrings_strobjects4">
-        <statement>
+        <exercise label="cspnamestrings_strobjects4">
+            <statement>
 
-            <p>What will be printed when the following executes?</p>
-            <program language="python"><input>
+                <p>What will be printed when the following executes?</p>
+                <program language="python">
+                    <input>
 str = "This is the end"
 str = str[1:4]
 print(str)
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>This is the end</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if we were printing the value of str and we hand't changed it on line 2.</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>This is the end</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if we were printing the value of str and we hand't changed it on line 2.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>This</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if the first position was 1 and the substring included the character at the end position, but the first character in a string is at position 0 and the substring won't include the character at the last position.</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>This</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if the first position was 1 and the substring included the character at
+                            the end position, but the first character in a string is at position 0 and the substring
+                            won't include the character at the last position.</p>
+                    </feedback>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>his</p>
-                </statement>
-                <feedback>
-                    <p>This will return a string that starts at position 1 and ends at position 3.</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>his</p>
+                    </statement>
+                    <feedback>
+                        <p>This will return a string that starts at position 1 and ends at position 3.</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
+        </exercise>
 
-    <exercise label="cspnamestrings_strobjects5">
-        <statement>
+        <exercise label="cspnamestrings_strobjects5">
+            <statement>
 
-            <p>What will be printed when the following executes?</p>
-            <program language="python"><input>
+                <p>What will be printed when the following executes?</p>
+                <program language="python">
+                    <input>
 str = "This is the end"
 str = str[5]
 print(str)
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>i</p>
-                </statement>
-                <feedback>
-                    <p>This will print the character at position 5 in the string which is i.  Remember that the first character is at position 0.</p>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>i</p>
+                    </statement>
+                    <feedback>
+                        <p>This will print the character at position 5 in the string which is i. Remember that the first
+                            character is at position 0.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>s</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if the first character was at position 1 instead of 0.</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>s</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if the first character was at position 1 instead of 0.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>is the end</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if it returned from the given position to the end of the string, but that isn't what it does.</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>is the end</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if it returned from the given position to the end of the string, but that
+                            isn't what it does.</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
-        </subsection>
-        <subsection xml:id="csp-name-strings_some-other-string-functions">
-            <title>Some Other String Functions</title>
-            
-            
-            <p xml:id="csp-name-strings_index-2">The <c>len(string)</c> function takes a string as input and returns the number of characters in the string including spaces.</p>
+        </exercise>
+    </subsection>
+    <subsection xml:id="csp-name-strings_some-other-string-functions">
+        <title>Some Other String Functions</title>
 
-    <program xml:id="cspnamestrings_strobjects6" interactive="activecode" language="python">
-        <input>
+        <p>The <c>len(string)</c> function takes a string as input and returns the number of
+            characters in the string including spaces.</p>
+
+        <program xml:id="cspnamestrings_strobjects6" interactive="activecode" language="python">
+            <input>
 sentence = "This is a test"
 length = len(sentence)
 print(length)
@@ -162,123 +173,138 @@ sentence = "Hi"
 length = len(sentence)
 print(length)
         </input>
-    </program>
-            
-            
-            <p xml:id="csp-name-strings_index-3">The <c>find(string)</c> function takes a string as input and returns the index where that string is found in the current string. If the string isn&#8217;t found it returns -1.</p>
+        </program>
 
-    <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
-        <input>
+        <p>The <c>find(string)</c> function takes a string as input and returns the index where
+            that string is found in the current string. If the string isn&#8217;t found it returns -1.</p>
+
+        <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
+            <input>
 sentence = "This is a test"
 pos = sentence.find("is")
 print(pos)
 pos = sentence.find("love")
 print(pos)
         </input>
-    </program>
-            <note>
-                <p>The <c>find</c> function will return the first position it finds the given string in.  Notice that above it printed 2 which means it found the &#8220;is&#8221; in &#8220;This&#8221; first.</p>
-                <p><term>Check your understanding</term></p>
-            </note>
+        </program>
+        <note>
+            <p>The <c>find</c> function will return the first position it finds the given string in. Notice that above it
+                printed 2 which means it found the &#8220;is&#8221; in &#8220;This&#8221; first.</p>
+            <p>
+                <term>Check your understanding</term>
+            </p>
+        </note>
 
-    <exercise label="cspnamestrings_strobjects8">
-        <statement>
+        <exercise label="cspnamestrings_strobjects8">
+            <statement>
 
-            <p>Given the following code segment, what will be printed?</p>
-            <program language="python"><input>
+                <p>Given the following code segment, what will be printed?</p>
+                <program language="python">
+                    <input>
 street = "125 Main Street"
 print(len(street))
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>13</p>
-                </statement>
-                <feedback>
-                    <p>Don't forget to include the spaces in the count.</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>13</p>
+                    </statement>
+                    <feedback>
+                        <p>Don't forget to include the spaces in the count.</p>
+                    </feedback>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>15</p>
-                </statement>
-                <feedback>
-                    <p>The len function returns the number of elements in the string including spaces.</p>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>15</p>
+                    </statement>
+                    <feedback>
+                        <p>The len function returns the number of elements in the string including spaces.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>10</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if the len function only returned the number of alphabetic characters, but it includes all including spaces.</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>10</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if the len function only returned the number of alphabetic characters, but
+                            it includes all including spaces.</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
+        </exercise>
 
-    <exercise label="cspnamestrings_strobjects9">
-        <statement>
+        <exercise label="cspnamestrings_strobjects9">
+            <statement>
 
-            <p>What will be printed when the following executes?</p>
-            <program language="python"><input>
+                <p>What will be printed when the following executes?</p>
+                <program language="python">
+                    <input>
 str = "His shirt is red"
 pos = str.find("is")
 print(pos)
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>1</p>
-                </statement>
-                <feedback>
-                    <p>The find function returns the index of the first position that contains the given string.</p>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>1</p>
+                    </statement>
+                    <feedback>
+                        <p>The find function returns the index of the first position that contains the given string.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>9</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if it was pos = str.find(" is").</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>9</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if it was pos = str.find(" is").</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>10</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if it was pos = str.find(" is") and the first position was 1, but it is 0.</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>10</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if it was pos = str.find(" is") and the first position was 1, but it is 0.</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
-            <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
-
-    <program xml:id="cspnamestrings_strobjects11" language="python">
-        <input>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Write the code to evaluate the length of the string "I like green eggs" and print it. It should print "The length is 17".</p>
+            <program xml:id="cspnamestrings_strobjects10" interactive="activecode" language="python">
+              <input>
+      sentence = 'I like green eggs'
+              </input>
+            </program>
+          </statement>
+          <answer>
+              <program xml:id="cspnamestrings_strobjects11" language="python">
+                  <input>
 # DECLARE VARIABLES
 sentence = 'I like green eggs'
 # PRINT RESULT
 print('The length is ' + str(len(sentence)))
-        </input>
-    </program>
-                
+      </input>
+              </program>
 
-    
-                </solution></exercise>
-        </subsection>
-    </section>
+          </answer>
+        </exercise>
+    </subsection>
+</section>
 

@@ -1,22 +1,23 @@
 <section xml:id="csp-name-turtles_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Comment</term> - A comment describes one or more lines of code.  Comments are ignored by the computer.
-                    A comment in Python starts with <c>#</c>.  The computer will ignore everything from the start of the
-                    comment to the end of that line.</p>
-            </li>
-            <li>
-                <p><term>Function</term> - A function returns a value. An example of a function is <c>Screen()</c> which creates
-                    and returns a screen (drawing space) object.</p>
-            </li>
-            <li>
-                <p><term>Procedure</term> - A procedure does an action, but doesn&#8217;t return a value.  An example of a procedure
-                    is <c>forward(100)</c> which makes the turtle go forward by 100 pixels.</p>
-            </li>
-        </ul></p>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Comment</term> - A comment describes one or more lines of code. Comments are ignored by the computer. A
+          comment in Python starts with <c>#</c>. The computer will ignore everything from the start of the comment to
+          the end of that line.</p>
+      </li>
+      <li>
+        <p><term>Function</term> - A function returns a value. An example of a function is <c>Screen()</c> which creates and
+          returns a screen (drawing space) object.</p>
+      </li>
+      <li>
+        <p><term>Procedure</term> - A procedure does an action, but doesn&#8217;t return a value. An example of a
+          procedure is <c>forward(100)</c> which makes the turtle go forward by 100 pixels.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

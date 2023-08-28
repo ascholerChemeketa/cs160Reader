@@ -1,9 +1,9 @@
 <section xml:id="csp-repeat-numbers_debugging-loops">
-        <title>Debugging Loops</title>
-        <p>Here is an attempt to sum up all the even numbers from 0 to 100 that has a bug:</p>
+  <title>Debugging Loops</title>
+  <p>Here is an attempt to sum up all the even numbers from 0 to 100 that has a bug:</p>
 
-    <program xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
+    <input>
 # STEP 1: INITIALIZE ACCUMULATOR
 sum = 0  # Start out with nothing
 # STEP 2: LOOP THROUGH THE DATA
@@ -14,85 +14,82 @@ for number in range(0, 100, 2):
 # STEP 4: PROCESS RESULT
 print(sum)
         </input>
-    </program>
-        <p>If you don&#8217;t already know what the correct answer should be, it is hard to tell that
-            this program does not work correctly.  How do we know what&#8217;s really going on in this
-            program? If we had wrote it, what could we do to verify it?</p>
-        <p>Here are some things we could do to check our program:</p>
-        <p><ol label="1">
-            <li>
-                <p>Verify the algorithm on a smaller set of data that we can check by hand. Change
-                    the program to use <c>range(0, 10, 2)</c> and try to sum up the even numbers from 0-10.
-                    This answer is small enough to check by hand.</p>
-            </li>
-            <li>
-                <p>Try running the program using Codelens one step at a time to check what it is doing.
-                    This is much easier if you have already modified the program to work on a smaller
-                    range of data.</p>
-            </li>
-            <li>
-                <p>Try printing out each number that we iterate through. Try adding this line to the
-                    start of the loop body (line 5): <c>print("number is", number)</c>. This works
-                    with the full original range, but the output will be easier to read if you work
-                    with a smaller range of data.</p>
-            </li>
-        </ol></p>
-        <p>Use those techniques to figure out what is wrong with the code and try to fix it.</p>
+  </program>
+  <p>If you don&#8217;t already know what the correct answer should be, it is hard to tell that this program does not
+    work correctly. How do we know what&#8217;s really going on in this program? If we had written it, what could we do to
+    verify it?</p>
+  <p>Here are some things we could do to check our program:</p>
+  <p>
+    <ol>
+      <li>
+        <p>Verify the algorithm on a smaller set of data that we can check by hand. Change the program to use <c>range(0, 10, 2)</c>
+          and try to sum up the even numbers from 0-10. This answer is small enough to be checked by hand.</p>
+      </li>
+      <li>
+        <p>Try running the program using Codelens one step at a time to check what it is doing. This is much easier if
+          you have already modified the program to work on a smaller range of data.</p>
+      </li>
+      <li>
+        <p>Try printing out each number that we iterate through. Try adding this line to the start of the loop body
+          (line 5): <c>print("number is", number)</c>. This works with the full original range, but the output will be easier to read if you work
+          with a smaller range of data.</p>
+      </li>
+    </ol>
+  </p>
+  <p>Use those techniques to figure out what is wrong with the code and try to fix it.</p>
 
-    <exercise label="csprepeatnumbers_debuggingloops2">
+  <exercise label="csprepeatnumbers_debuggingloops2">
+    <statement>
+
+      <p>What is the flaw in the original program?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>What is the flaw in the original program?</p>
-
+          <p>The loop starts too early (skips one or more numbers at the start)</p>
         </statement>
-<choices>
+        <feedback>
+          <p>We would want to include 100.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>The loop starts too early (skips one or more numbers at the start)</p>
-                </statement>
-                <feedback>
-                    <p>We would want to include 100.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>The loop goes too far (adds one or more extra numbers at the end)</p>
+        </statement>
+        <feedback>
+          <p>If we stop BEFORE 101, we include 100.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>The loop goes too far (adds one or more extra numbers at the end)</p>
-                </statement>
-                <feedback>
-                    <p>If we stop BEFORE 101, we include 100.</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The loop stops too early (skips one or more numbers at the end)</p>
+        </statement>
+        <feedback>
+          <p>Correct. To read 100, we need the upper bound of the range to be 101 or 102.</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The loop stops too early (skips one or more numbers at the end)</p>
-                </statement>
-                <feedback>
-                    <p>Correct. To read 100, we need the upper bound of the range to be 101 or 102.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>The loop is not actually iterating through even numbers</p>
+        </statement>
+        <feedback>
+          <p>Try using one of the strategies... You should see only even numbers</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>The loop is not actually iterating through even numbers</p>
-                </statement>
-                <feedback>
-                    <p>Try using one of the strategies... you should see only even numbers</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        <p>A common feature of these techniques is that
-            If you are writing a program that is going to calculate the GPA for 10,000 students,
-            test it on just a few students and fix all the bugs you can.</p>
-        <note>
-            <p>Whenever possible, debug on as small a problem as possible. Debugging is hard. You
-                can make it easier by limiting your debugging to small chunks of code (by testing
-                parts of your program as you go) and debugging on small sets of data (testing your
-                algorithm on just a few values instead of on the large program you want to solve.)</p>
-        </note>
-    </section>
+  </exercise>
+  <p>A common feature of these techniques is that If you are writing a program that is going to calculate the GPA for
+    10,000 students, test it on just a few students and fix all the bugs you can.</p>
+  <note>
+    <p>Whenever possible, debug on as small a problem as possible. Debugging is hard. You can make it easier by limiting
+      your debugging to small chunks of code (by testing parts of your program as you go) and debugging on small sets of
+      data (testing your algorithm on just a few values instead of on the large program you want to solve.)</p>
+  </note>
+</section>
 

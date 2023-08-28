@@ -1,16 +1,15 @@
 <section xml:id="csp-name-functions_common-function-issues">
-        <title>Common Function Issues</title>
-        <p>There are a few common mistakes you should watch out for while writing functions.</p>
-        <subsection xml:id="csp-name-functions_returning-ends-a-function">
-            <title>Returning Ends a Function</title>
-            <p>One common mistake when writing functions is to try to do work after a return statement.
-                When Python hits a <c>return</c>, it does just that: it returns to the place the function was
-                called. The program below tries to use the <c>addFive</c> function to add 5 to the score
-                only the code in that function that actually does the math comes after the return and thus
-                never runs! Try running it in Codelens mode to see:</p>
+  <title>Common Function Issues</title>
+  <p>There are a few common mistakes you should watch out for while writing functions.</p>
+  <subsection xml:id="csp-name-functions_returning-ends-a-function">
+    <title>Returning Ends a Function</title>
+    <p>One common mistake when writing functions is to try to do work after a return statement. When Python hits a <c>return</c>,
+      it does just that: it returns to the place the function was called. The program below tries to use the <c>addFive</c>
+      function to add 5 to the score only the code in that function that actually does the math comes after the return
+      and thus never runs! Try running it in Codelens mode to see:</p>
 
     <program xml:id="cspnamefunctions_commonissues1" interactive="activecode" language="python">
-        <input>
+      <input>
 def addFive(x):
     return x
     x = x + 5           #This never gets to run!
@@ -21,23 +20,22 @@ score = addFive(score)
 print(score)
         </input>
     </program>
-            <warning>
-                <p>A <c>return</c> ends a function immediately when it is hit.</p>
-            </warning>
-        </subsection>
-        <subsection xml:id="csp-name-functions_trying-to-change-a-parameter">
-            <title>Trying to Change a Parameter</title>
-            <p>The parameters for a function are variables that only exist inside of that function. You can
-                make changes to their values, but doing so has no effect on the rest of the program.</p>
-            <p>This version of the program does not work correctly either. <c>score</c> is passed as the argument
-                from the main part of the program into <c>addFive</c>. That means <c>addFive</c> uses a <term>copy</term> of
-                <c>score</c>&#8217;s value as its value for <c>x</c>. But <c>x</c> and <c>score</c> are not actually linked. A change
-                to <c>x</c> does nothing to change the value of <c>score</c>. Nothing is ever returned, so the rest
-                of the program never learns about the changes that happened in <c>addFive</c>.</p>
-            <p>Again, try running in Codelens:</p>
+    <warning>
+      <p>A <c>return</c> ends a function immediately when it is hit.</p>
+    </warning>
+  </subsection>
+  <subsection xml:id="csp-name-functions_trying-to-change-a-parameter">
+    <title>Trying to Change a Parameter</title>
+    <p>The parameters for a function are variables that only exist inside of that function. You can make changes to
+      their values, but doing so has no effect on the rest of the program.</p>
+    <p>This version of the program does not work correctly either. <c>score</c> is passed as the argument from the main part
+      of the program into <c>addFive</c>. That means <c>addFive</c> uses a <term>copy</term> of <c>score</c>&#8217;s value as its value for <c>x</c>.
+      But <c>x</c> and <c>score</c> are not actually linked. A change to <c>x</c> does nothing to change the value of <c>score</c>.
+      Nothing is ever returned, so the rest of the program never learns about the changes that happened in <c>addFive</c>.</p>
+    <p>Again, try running in Codelens:</p>
 
     <program xml:id="cspnamefunctions_commonissues2" interactive="activecode" language="python">
-        <input>
+      <input>
 def addFive(x):
     x = x + 5           #This never gets to run!
 
@@ -47,31 +45,42 @@ addFive(score)
 print(score)
         </input>
     </program>
-            <warning>
-                <p>The only way to get information (new values) out of a function is to return them.</p>
-            </warning>
-            <p><term>Check Your Understanding</term></p>
-<exercise label="cspnamefunctions_commonissues3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-            <p>The following program is supposed to convert a Celsius temp into Fahrenheight.</p>
-            <p>Put the blocks in the right order and indentation. As usual, you will
-                not use all the blocks.</p>
-</statement>
-<blocks><block order="6">
-<cline>def convertCtoF(celsiusValue):</cline>
-</block><block order="3">
-<cline>    newTemp = (9 / 5) * celsiusValue</cline>
-<cline>    newTemp = newTemp + 32</cline>
-</block><block order="1" correct="no">
-<cline>    celsiusValue = (9 / 5) * celsiusValue</cline>
-<cline>    celsiusValue = celsiusValue + 32  </cline>
-</block><block order="5">
-<cline>    return newTemp</cline>
-</block><block order="4" correct="no">
-<cline>    return todaysTempF </cline>
-</block><block order="2">
-<cline>todaysTempCelsius = 16</cline>
-<cline>todaysTempF = convertCtoF(todaysTempCelsius)</cline>
-<cline>print(todaysTempF)</cline>
-</block></blocks></exercise>        </subsection>
-    </section>
+    <warning>
+      <p>The only way to get information (new values) out of a function is to return them.</p>
+    </warning>
+    <p>
+      <term>Check Your Understanding</term>
+    </p>
+    <exercise label="cspnamefunctions_commonissues3" numbered="yes" adaptive="yes" indentation="show" language="python">
+      <statement>
+        <p>The following program is supposed to convert a Celsius temp into Fahrenheit.</p>
+        <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
+      </statement>
+      <blocks>
+        <block order="6">
+          <cline>def convertCtoF(celsiusValue):</cline>
+        </block>
+        <block order="3">
+          <cline> newTemp = (9 / 5) * celsiusValue</cline>
+          <cline> newTemp = newTemp + 32</cline>
+        </block>
+        <block order="1" correct="no">
+          <cline> celsiusValue = (9 / 5) * celsiusValue</cline>
+          <cline> celsiusValue = celsiusValue + 32 </cline>
+        </block>
+        <block order="5">
+          <cline> return newTemp</cline>
+        </block>
+        <block order="4" correct="no">
+          <cline> return todaysTempF </cline>
+        </block>
+        <block order="2">
+          <cline>todaysTempCelsius = 16</cline>
+          <cline>todaysTempF = convertCtoF(todaysTempCelsius)</cline>
+          <cline>print(todaysTempF)</cline>
+        </block>
+      </blocks>
+    </exercise>
+  </subsection>
+</section>
 

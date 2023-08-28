@@ -1,53 +1,57 @@
 <exercises xml:id="csp-designing-procedures_chapter-exercises">
-        <title>Chapter Exercises</title>
-        <p>Design your own drawing using turtle graphics. You should use multiple colors, and your
-            design must be complicated enough to features multiple procedures, including at least one procedure
-            that calls other procedures you have written.</p>
-        <p>Here are some ideas:</p>
-        <p><ul>
-            <li>
-                <p>The current year number as block-style digits on a colored background.</p>
-            </li>
-            <li>
-                <p>A multicolor flag on a flagpole.</p>
-            </li>
-            <li>
-                <p>A few trees and a sun shining on them.</p>
-            </li>
-            <li>
-                <p>A snowman with three part body and two arms.</p>
-            </li>
-        </ul></p>
-        <p>Remember that although we can&#8217;t make curves, you can draw circles by setting a large <c>pensize</c>
-            and then doing <c>forward(0)</c> to make a colored dot.</p>
-        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+  <title>Chapter Exercises</title>
+  <p>Design your own drawing using turtle graphics. You should use multiple colors, and your design must be complicated
+    enough to features multiple procedures, including at least one procedure that calls other procedures you have
+    written.</p>
+  <p>Here are some ideas:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The current year number as block-style digits on a colored background.</p>
+      </li>
+      <li>
+        <p>A multicolor flag on a flagpole.</p>
+      </li>
+      <li>
+        <p>A few trees and a sun shining on them.</p>
+      </li>
+      <li>
+        <p>A snowman with three part body and two arms.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Remember that although we can&#8217;t make curves, you can draw circles by setting a large <c>pensize</c> and then doing <c>forward(0)</c>
+    to make a colored dot.</p>
+  <p>
+    <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
+  </p>
 
-<exercise label="cspdesigningprocedures_exercises1">
+  <exercise label="cspdesigningprocedures_exercises1">
     <statement>
-        <p>Use this space to describe the procedures you will write. Like in my design, don&#8217;t worry about
-            writing code yet, just describe the parts of the task. Try to make sure that each one is simple enough
-            to do in about ~10 lines of code. If it sounds more complex than that, break it down further
-            and design procedures that will do the various sub-problems.</p>
+      <p>Use this space to describe the procedures you will write. Like in my design, don&#8217;t worry about writing
+        code yet, just describe the parts of the task. Try to make sure that each one is simple enough to do in about
+        ~10 lines of code. If it sounds more complex than that, break it down further and design procedures that will do
+        the various sub-problems.</p>
 
     </statement>
     <program xml:id="cspdesigningprocedures_exercises1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspdesigningprocedures_exercises2">
+  <exercise label="cspdesigningprocedures_exercises2">
     <statement>
-        <p>Now use this space to implement your program.</p>
-        <p>Write one procedure at a time and test as you go!</p>
+      <p>Now use this space to implement your program.</p>
+      <p>Write one procedure at a time and test as you go!</p>
 
     </statement>
     <program xml:id="cspdesigningprocedures_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 
         </input>
     </program>
-</exercise>
-    </exercises>
+  </exercise>
+</exercises>
 

@@ -1,20 +1,18 @@
 <section xml:id="csp-name-functions_functions-and-composition">
-        <title>Functions and Composition</title>
-        <p>So far we have focused on writing <term>procedures</term> - problem solving recipes that do part of
-            a job and return no answer. Now we will shift our attention to <term>functions</term> - problem
-            solving recipes that are designed to calculate some value and return it to the code that
-            calls the function so we can do more work with the result.</p>
-        <p>In the sample below, we can see the importance of returning results from functions so
-            that we can string together a number of steps. Line 3 calls the <c>input</c> function to get
-            a string like <c>"4"</c> from the user and store it as <c>sideAText</c>.
-            Then on line 5 we use the <c>float</c> function to turn that string  into a numeric value
-            <c>4.0</c> and store that in <c>sideA</c>. We then use <c>math.pow</c> to raise that value to the second
-            power and store the result as <c>aSquared</c>. <c>aSquared</c> gets used as part of the input
-            to the <c>math.sqrt</c> function which produces our final answer <c>sideC</c> which gets passed to the
-            <c>print</c> function.</p>
-
-    <program xml:id="cspnamefunctions_functionscomposition1" interactive="activecode" language="python">
-        <input>
+  <title>Functions and Composition</title>
+  <p>So far we have focused on writing <term>procedures</term> - problem-solving recipes that do part of a job and
+    return no answer. Now we will shift our attention to <term>functions</term> - problem-solving recipes that are
+    designed to calculate some value and return it to the code that calls the function so we can do more work with the
+    result.</p>
+  <p>In the sample below, we can see the importance of returning results from functions so that we can string together a
+    number of steps. Line 3 calls the <c>input</c> function to get a string like <c>"4"</c> from the user and store it as <c>sideAText</c>.
+    Then on line 5, we use the <c>float</c> function to turn that string into a numeric value <c>4.0</c> and store that in <c>sideA</c>.
+    We then use <c>math.pow</c> to raise that value to the second power and store the result as <c>aSquared</c>. <c>aSquared</c> gets used as
+    part of the input to the <c>math.sqrt</c> function which produces our final answer <c>sideC</c> which gets passed to the <c>print</c>
+    function.</p>
+ 
+  <program xml:id="cspnamefunctions_functionscomposition1" interactive="activecode" language="python">
+    <input>
 import math
 
 sideAText = input("Enter length of side A")
@@ -28,24 +26,21 @@ sideC = math.sqrt(aSquared + bSquared)
 
 print("The length of side C is", sideC)
         </input>
-    </program>
-        <p>The fact that every function (other than <c>print</c>) returns a value is what allows to chain this
-            work together and use the result of one function as the input to the next function. We take the
-            returned value (the output of the function) and store it into a variable so we can pass it on
-            to the next as input.</p>
-        <p>Note that just like with procedures, some functions like <c>input</c> are standalone and are called
-            on their own. Other functions are part of a library or object and must be called with dot notation
-            like <c>math.pow</c>.</p>
-        
-        
-        <subsection xml:id="csp-name-functions_function-composition">
-            <title>Function Composition</title>
-            <p>We can more directly specify to use the result of calling one function as the input to another
-                function via <term>functional composition</term>. That is where we put one function call inside of another -
-                like how this version of the same program does <c>float(input("Enter length of side A"))</c>.</p>
+  </program>
+  <p>The fact that every function (other than <c>print</c>) returns a value is what allows to chain this work together and
+    use the result of one function as the input to the next function. We take the returned value (the output of the
+    function) and store it into a variable so we can pass it on to the next as input.</p>
+  <p>Note that just like with procedures, some functions like <c>input</c> are standalone and are called on their own. Other
+    functions are part of a library or object and must be called with dot notation like <c>math.pow</c>.</p>
+
+  <subsection xml:id="csp-name-functions_function-composition">
+    <title>Function Composition</title>
+    <p>We can more directly specify to use the result of calling one function as the input to another function via <term>functional
+      composition</term>. That is where we put one function call inside of another - like how this version of the same
+      program does <c>float(input("Enter the length of side A"))</c>.</p>
 
     <program xml:id="cspnamefunctions_functionscomposition2" interactive="activecode" language="python">
-        <input>
+      <input>
 import math
 
 sideA = float( input("Enter length of side A") )
@@ -56,115 +51,112 @@ sideC = math.sqrt( math.pow(sideA, 2) + math.pow(sideB, 2) )
 print("The length of side C is", sideC)
         </input>
     </program>
-            <p>Like when doing math, we always do work inside of parentheses before worrying about the work
-                outside of them. In this case, that means we start with the <c>"Enter length of side A"</c>. It is
-                just a string, so there is nothing special to do with it other than use it as the argument to
-                <c>input()</c>. Then the <c>input</c> function runs and does its job to get input from the user. It
-                returns a string with whatever the user typed. Recall that the mental model you should use forget
-                function calls is that they are replaced by the value they return. So
-                <c>input("Enter length of side A")</c> ends up just becoming something like <c>"4"</c>. That value
-                is what gets used as the argument for <c>float()</c>.</p>
-            <p>When <c>sqrt(pow(sideA, 2) + pow(sideB, 2))</c> is evaluated, we have to start with the inner functions
-                and get answers for <c>pow(sideA, 2)</c> and <c>pow(sideA, 2)</c>. Then we can add those answer to get
-                one number. That one number ends up being the argument for <c>sqrt</c> which takes the square root of
-                it and returns the answer.</p>
-            <warning>
-                <p>Writing code using functional composition in this style can make programs look shorter, but
-                    it tends to make them harder to debug. In the first version of this program, we could add a
-                    <c>print</c> call after any line to see what value a function produced and check if it is
-                    correct. If something isn&#8217;t working right in a line of code like
-                    <c>sqrt( pow(sideA, 2) + pow(sideB, 2) )</c>, it can be hard to figure out what part is not
-                    working as expected - the <c>pow</c>, the <c>+</c>, or the <c>sqrt</c>.</p>
-            </warning>
+    <p>Like when doing math, we always do work inside of parentheses before worrying about the work outside of them. In
+      this case, that means we start with the <c>"Enter length of side A"</c>. It is just a string, so there is nothing special to do with it
+      other than use it as the argument to <c>input()</c>. Then the <c>input</c> function runs and does its job to get input from
+      the user. It returns a string with whatever the user typed. Recall that the mental model you should use forget
+      function calls is that they are replaced by the value they return. So <c>input("Enter length of side A")</c> ends up just becoming something like <c>"4"</c>.
+      That value is what gets used as the argument for <c>float()</c>.</p>
+    <p>When <c>sqrt(pow(sideA, 2) + pow(sideB, 2))</c> is evaluated, we have to start with the inner functions and get answers for <c>pow(sideA, 2)</c> and <c>pow(sideA, 2)</c>.
+      Then we can add those answers to get one number. That one number ends up being the argument for <c>sqrt</c> which takes
+      the square root of it and returns the answer.</p>
+    <warning>
+      <p>Writing code using functional composition in this style can make programs look shorter, but it tends to make
+        them harder to debug. In the first version of this program, we could add a <c>print</c> call after any line to see
+        what value a function produced and check if it is correct. If something isn&#8217;t working right in a line of
+        code like <c>sqrt( pow(sideA, 2) + pow(sideB, 2) )</c>, it can be hard to figure out what part is not working as expected - the <c>pow</c>, the <c>+</c>,
+        or the <c>sqrt</c>.</p>
+    </warning>
 
     <exercise label="cspnamefunctions_functionscomposition3">
-        <statement>
+      <statement>
 
-            <p><c>int()</c> takes a number and returns just the whole number part (without rounding).
-                <c>int(3.9)</c> would return 3. <c>abs()</c> takes one number and returns it as a positive value.</p>
-            <p>What do you think <title_reference>print(int(abs(-16.789) + 1))</title_reference>, prints?</p>
+        <p><c>int()</c> takes a number and returns just the whole number part (without rounding). <c>int(3.9)</c> would return 3. <c>abs()</c>
+          takes one number and returns it as a positive value.</p>
+        <p>What do you think <title_reference>print(int(abs(-16.789) + 1))</title_reference>, prints?</p>
 
-        </statement>
-<choices>
+      </statement>
+      <choices>
 
-            <choice>
-                <statement>
-                    <p>15</p>
-                </statement>
-                <feedback>
-                    <p>Make sure to do the abs function first. Then add one.</p>
-                </feedback>
-            </choice>
+        <choice>
+          <statement>
+            <p>15</p>
+          </statement>
+          <feedback>
+            <p>Make sure to do the abs function first. Then add one.</p>
+          </feedback>
+        </choice>
 
-            <choice>
-                <statement>
-                    <p>16</p>
-                </statement>
-                <feedback>
-                    <p>Make sure to do the abs function first. Then add one.</p>
-                </feedback>
-            </choice>
+        <choice>
+          <statement>
+            <p>16</p>
+          </statement>
+          <feedback>
+            <p>Make sure to do the abs function first. Then add one.</p>
+          </feedback>
+        </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>17</p>
-                </statement>
-                <feedback>
-                    <p>Correct.</p>
-                </feedback>
-            </choice>
+        <choice correct="yes">
+          <statement>
+            <p>17</p>
+          </statement>
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </choice>
 
-            <choice>
-                <statement>
-                    <p>18</p>
-                </statement>
-                <feedback>
-                    <p>The int function will not round the value up. It just removes the decimal part.</p>
-                </feedback>
-            </choice>
-</choices>
+        <choice>
+          <statement>
+            <p>18</p>
+          </statement>
+          <feedback>
+            <p>The int function will not round the value up. It just removes the decimal part.</p>
+          </feedback>
+        </choice>
+      </choices>
 
     </exercise>
 
     <exercise label="cspnamefunctions_functionscomposition4">
-        <statement>
+      <statement>
 
-            <p>It would not make sense to put a procedure call like <c>alex.forward(50)</c> inside a function
-                call to make something like <c>int(alex.forward(50))</c>.</p>
-            <p>Why does it not make sense to put a procedure call inside of a function?</p>
+        <p>It would not make sense to put a procedure call like <c>alex.forward(50)</c> inside a function call to make something like <c>int(alex.forward(50))</c>
+          .</p>
+        <p>Why does it not make sense to put a procedure call inside of a function?</p>
 
-        </statement>
-<choices>
+      </statement>
+      <choices>
 
-            <choice>
-                <statement>
-                    <p>Procedures always happen after functions.</p>
-                </statement>
-                <feedback>
-                    <p>No, Python always evaluates the innermost function or procedure first if there are composed call.</p>
-                </feedback>
-            </choice>
+        <choice>
+          <statement>
+            <p>Procedures always happen after functions.</p>
+          </statement>
+          <feedback>
+            <p>No, Python always evaluates the innermost function or procedure first if there are composed call.</p>
+          </feedback>
+        </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The procedure does not return anything. There will not be a value for the function to work with.</p>
-                </statement>
-                <feedback>
-                    <p>Correct.</p>
-                </feedback>
-            </choice>
+        <choice correct="yes">
+          <statement>
+            <p>The procedure does not return anything. There will not be a value for the function to work with.</p>
+          </statement>
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </choice>
 
-            <choice>
-                <statement>
-                    <p>You can't mix functions and procedures.</p>
-                </statement>
-                <feedback>
-                    <p>No. You can mix functions and procedures. We have seen the int function called inside of the print procedure.</p>
-                </feedback>
-            </choice>
-</choices>
+        <choice>
+          <statement>
+            <p>You can't mix functions and procedures.</p>
+          </statement>
+          <feedback>
+            <p>No. You can mix functions and procedures. We have seen the int function called inside of the print
+              procedure.</p>
+          </feedback>
+        </choice>
+      </choices>
 
     </exercise>
-        </subsection>
-    </section>
+  </subsection>
+</section>
 

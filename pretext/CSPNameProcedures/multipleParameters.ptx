@@ -1,11 +1,10 @@
 <section xml:id="csp-name-procedures_multiple-parameters">
-        <title>Multiple Parameters</title>
-        <p>Below we have a program that draws a square of size 100. What if we want to draw a different size
-            square, like one with a side length of 50?  We could do that by changing each of the <c>100``s into
-a ``50</c>.</p>
+  <title>Multiple Parameters</title>
+  <p>Below we have a program that draws a square of size 100. What if we want to draw a different size square, like one
+    with a side length of 50? We could do that by changing each of the <c>100s into a 50</c>.</p>
 
-    <program xml:id="cspnameprocedures_multipleparameters1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspnameprocedures_multipleparameters1" interactive="activecode" language="python">
+    <input>
 def square(turtle):
     turtle.forward(100)
     turtle.right(90)
@@ -22,13 +21,13 @@ space = Screen()
 grace = Turtle()
 square(grace)
         </input>
-    </program>
-        <p>But, this means we have to change each of the four <c>forward</c> statements and we could make a
-            mistake and not set all of them to the same number.  Is there a better way?  What if we create
-            a variable <c>size</c> and set its value to the amount to move forward?</p>
+  </program>
+  <p>But, this means we have to change each of the four <c>forward</c> statements and we could make a mistake and not set all
+    of them to the same number. Is there a better way? What if we create a variable <c>size</c> and set its value to the
+    amount to move forward?</p>
 
-    <program xml:id="cspnameprocedures_multipleparameters2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspnameprocedures_multipleparameters2" interactive="activecode" language="python">
+    <input>
 def square(turtle):
     size = 50
     turtle.forward(size)
@@ -46,14 +45,14 @@ space = Screen()
 grace = Turtle()
 square(grace)
         </input>
-    </program>
-        <p>Now the program is easier to change since we only have one line to change - <c>size = 50</c> -
-            to draw another size square. Once we change the <c>size</c> variable, all of the <c>forward</c>
-            commands will use that new value.</p>
-        <p>But, the procedure can still only draw a square of one particular size. We can&#8217;t use it
-            to draw two different size squares. If we want <c>grace</c> to draw a small square and then
-            a large square, we would need two different procedures:</p>
-        <program language="python"><input>
+  </program>
+  <p>Now the program is easier to change since we only have one line to change - <c>size = 50</c> - to draw another size square.
+    Once we change the <c>size</c> variable, all of the <c>forward</c> commands will use that new value.</p>
+  <p>But, the procedure can still only draw a square of one particular size. We can&#8217;t use it to draw two different
+    size squares. If we want <c>grace</c> to draw a small square and then a large square, we would need two different
+    procedures:</p>
+  <program language="python">
+    <input>
 def square(turtle):
     size = 50
     turtle.forward(size)
@@ -75,19 +74,19 @@ def largesSquare(turtle):
     turtle.right(90)
     turtle.forward(size)
     turtle.right(90)
-</input></program>
-        <p>Yuck. How repetitive. Now imagine we want to make squares of size 75 and 25 as well. We would
-            need 4 different procedures that all basically look the same! Remember that if you find
-            yourself writing the same code multiple times, there is probably a better way to do things.</p>
-        <p>In this case, we can add an additional parameter to the procedure that specifies the size
-            of the square. Recall that a procedure can have as many parameters (inputs) as we like -
-            just separate the names for the parameters with a comma like: <c>(turtle, size)</c>.</p>
-        <p>Now that square has two parameters, any call to <c>square</c> must provide two arguments.
-            We need to specify the name of the turtle to draw with, then the size of the square to draw.
-            Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.</p>
+</input>
+  </program>
+  <p>Yuck. How repetitive. Now imagine we want to make squares of size 75 and 25 as well. We would need 4 different
+    procedures that all basically look the same! Remember that if you find yourself writing the same code multiple
+    times, there is probably a better way to do things.</p>
+  <p>In this case, we can add an additional parameter to the procedure that specifies the size of the square. Recall
+    that a procedure can have as many parameters (inputs) as we like - just separate the names for the parameters with a
+    comma like: <c>(turtle, size)</c>.</p>
+  <p>Now that square has two parameters, any call to <c>square</c> must provide two arguments. We need to specify the name of
+    the turtle to draw with, then the size of the square to draw. Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.</p>
 
-    <program xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
+    <input>
 def square(turtle, size):   # square now has two parameters
     turtle.forward(size)
     turtle.right(90)
@@ -106,13 +105,14 @@ square(grace, 75)           # draw a square of size 75
 square(grace, 50)           # draw a square of size 50
 square(grace, 25)           # draw a square of size 25
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspnameprocedures_multipleparameters4">
-        <statement>
+  <exercise label="cspnameprocedures_multipleparameters4">
+    <statement>
 
-        <p>What shape would the following code draw?</p>
-        <program language="python"><input>
+      <p>What shape would the following code draw?</p>
+      <program language="python">
+        <input>
 def mystery(turtle,size):
     turtle.forward(size)
     turtle.right(90)
@@ -127,46 +127,49 @@ from turtle import *    # use the turtle library
 space = Screen()        # create a turtle screen (space)
 grace = Turtle()        # create a turtle named grace
 mystery(grace, 100)     # draw something with size = 100
-</input></program>
+</input>
+      </program>
 
-        </statement>
-<choices>
+    </statement>
+    <choices>
 
-            <choice>
-                <statement>
-                    <p>square</p>
-                </statement>
-                <feedback>
-                    <p>Check the 2nd and 4th forwards.  How much do they move forward by?</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>rectangle</p>
-                </statement>
-                <feedback>
-                    <p>This will draw a rectangle with two sides with the specified size and two sides half that size.  Copy this code into the area above and run it.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>triangle</p>
-                </statement>
-                <feedback>
-                    <p>A triangle has 3 sides.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise label="cspnameprocedures_multipleparameters5">
+      <choice>
         <statement>
+          <p>square</p>
+        </statement>
+        <feedback>
+          <p>Check the 2nd and 4th forwards. How much do they move forward by?</p>
+        </feedback>
+      </choice>
 
-        <p>In the following code what are the arguments?</p>
-        <program language="python"><input>
+      <choice correct="yes">
+        <statement>
+          <p>rectangle</p>
+        </statement>
+        <feedback>
+          <p>This will draw a rectangle with two sides with the specified size and two sides half that size. Copy this
+            code into the area above and run it.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>triangle</p>
+        </statement>
+        <feedback>
+          <p>A triangle has 3 sides.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="cspnameprocedures_multipleparameters5">
+    <statement>
+
+      <p>In the following code what are the arguments?</p>
+      <program language="python">
+        <input>
 def square(turtle,size):
     turtle.forward(size)
     turtle.right(90)
@@ -181,57 +184,69 @@ from turtle import *    # use the turtle library
 space = Screen()        # create a turtle screen (space)
 imani = Turtle()        # create a turtle named imani
 square(imani, 25)      # draw a square with size 25
-</input></program>
+</input>
+      </program>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>turtle and size</p>
         </statement>
-<choices>
+        <feedback>
+          <p>These are the names of the parameters (formal parameters).</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>turtle and size</p>
-                </statement>
-                <feedback>
-                    <p>These are the names of the parameters (formal parameters).</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>grace and 25</p>
+        </statement>
+        <feedback>
+          <p>Look again at the code above. Is that the name of this turtle?</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>grace and 25</p>
-                </statement>
-                <feedback>
-                    <p>Look again at the code above.  Is that the name of this turtle?</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>imani and 25</p>
+        </statement>
+        <feedback>
+          <p>The turtle is named imani and the size is 25 in the code: square(imani, 25).</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>imani and 25</p>
-                </statement>
-                <feedback>
-                    <p>The turtle is named imani and the size is 25 in the code: square(imani, 25).</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-<exercise label="cspnameprocedures_multipleparameters6" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following code assumes that a procedure square has been defined that takes a size.
-            The code should create a turtle and then use it to draw a square, move forward, and draw
-            a second square as shown below, but the lines are mixed up.</p>
-        <image source="CSPNameProcedures/Figures/SquareForwardSquare.png" width="150px%"/>
-</statement>
-<blocks><block order="6">
-<cline>from turtle import *</cline>
-</block><block order="2">
-<cline>space = Screen()</cline>
-</block><block order="1">
-<cline>imani = Turtle()</cline>
-</block><block order="5">
-<cline>square(imani, 75)</cline>
-</block><block order="3">
-<cline>imani.forward(100)</cline>
-</block><block order="4">
-<cline>square(imani, 50)</cline>
-</block></blocks></exercise>    </section>
+  </exercise>
+  <exercise label="cspnameprocedures_multipleparameters6" numbered="yes" adaptive="yes" indentation="show"
+    language="python">
+    <statement>
+      <p>The following code assumes that a procedure square has been defined that takes a size. The code should create a
+        turtle and then use it to draw a square, move forward, and draw a second square as shown below, but the lines
+        are mixed up.</p>
+      <image source="CSPNameProcedures/Figures/SquareForwardSquare.png" width="100%" />
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>from turtle import *</cline>
+      </block>
+      <block order="2">
+        <cline>space = Screen()</cline>
+      </block>
+      <block order="1">
+        <cline>imani = Turtle()</cline>
+      </block>
+      <block order="5">
+        <cline>square(imani, 75)</cline>
+      </block>
+      <block order="3">
+        <cline>imani.forward(100)</cline>
+      </block>
+      <block order="4">
+        <cline>square(imani, 50)</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>
 

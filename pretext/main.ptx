@@ -24,7 +24,9 @@
                 <xi:include href="./LimitsAndFuture/index.ptx" />
                 <xi:include href="./ImpactsOfComputing/index.ptx" />
             </part>
-                <!-- 
+            <part xml:id="part-programming">
+                <title>Programming</title>
+                <xi:include href="./CSPTeasers/toctree.ptx" />
                 <xi:include href="./CSPNameNumbers/toctree.ptx" />
                 <xi:include href="./CSPNameStrings/toctree.ptx" />
                 <xi:include href="./CSPNameTurtles/toctree.ptx" />
@@ -32,22 +34,20 @@
                 <xi:include href="./CSPDesigningProcedures/toctree.ptx" />
                 <xi:include href="./CSPNameFunctions/toctree.ptx" />
                 <xi:include href="./CSPRepeatTurtles/toctree.ptx" />
-                <xi:include href="./CSPRepeatImages/toctree.ptx" />
+                <!-- <xi:include href="./CSPRepeatImages/toctree.ptx" /> -->
                 <xi:include href="./CSPRepeatNumbers/toctree.ptx" />
                 <xi:include href="./CSPDecisionsIntro/toctree.ptx" />
-                <xi:include href="./CSPDecisionsSimulations/toctree.ptx" />
-                <xi:include href="./CSPDecisionsStrings/toctree.ptx" />
-                <xi:include href="./CSPDecisionsImages/toctree.ptx" />
-                <xi:include href="./CSPCollectionsIntro/toctree.ptx" />
-                <xi:include href="./CSPCollectionsContinued/toctree.ptx" />
-                <xi:include href="./SQLIntro/toctree.ptx" />
-                <xi:include href="./SQLGroupJoin/toctree.ptx" />
-                <xi:include href="./CSPPythonData/toctree.ptx" />
-                <xi:include href="./CSPWhatsNext/index.ptx" /> -->
-            <part xml:id="part-programming">
-                <title>Programming</title>
-                <xi:include href="./CSPTeasers/toctree.ptx" />
             </part>
+            <!-- 
+            <xi:include href="./CSPDecisionsSimulations/toctree.ptx" />
+            <xi:include href="./CSPDecisionsStrings/toctree.ptx" />
+            <xi:include href="./CSPDecisionsImages/toctree.ptx" />
+            <xi:include href="./CSPCollectionsIntro/toctree.ptx" />
+            <xi:include href="./CSPCollectionsContinued/toctree.ptx" />
+            <xi:include href="./SQLIntro/toctree.ptx" />
+            <xi:include href="./SQLGroupJoin/toctree.ptx" />
+            <xi:include href="./CSPPythonData/toctree.ptx" />
+            <xi:include href="./CSPWhatsNext/index.ptx" /> -->
             <backmatter>
                 <index>
                     <index-list/>

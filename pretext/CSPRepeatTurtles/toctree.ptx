@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Repeating Steps with Turtles</title>
-        <xi:include href='./repetition.ptx' />
-        <xi:include href='./repeatturtles.ptx' />
-        <xi:include href='./turtleGeom.ptx' />
-        <xi:include href='./patterns.ptx' />
-        <xi:include href='./loopVariable.ptx' />
-        <xi:include href='./RepeatTurtlesPractice.ptx' />
-        <xi:include href='./summary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <title>Repeating Steps with Turtles</title>
+  <xi:include href='./repetition.ptx' />
+  <xi:include href='./repeatturtles.ptx' />
+  <xi:include href='./turtleGeom.ptx' />
+  <xi:include href='./patterns.ptx' />
+  <xi:include href='./loopVariable.ptx' />
+  <xi:include href='./RepeatTurtlesPractice.ptx' />
+  <xi:include href='./summary.ptx' />
+  <xi:include href='./Exercises.ptx' />
+</chapter>

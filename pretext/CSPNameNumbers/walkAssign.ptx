@@ -1,23 +1,25 @@
 <section xml:id="csp-name-numbers_walking-through-assignment-more-generally">
-        <title>Walking through Assignment more Generally</title>
-        <p>Let&#8217;s explore assignment in general.  Try tracing this example.</p>
+    <title>Walking through Assignment more Generally</title>
+    <p>Let&#8217;s explore assignment in general. Try tracing this example.</p>
 
-<program xml:id="cspnamenumbers_walkassign1" interactive="codelens" language="python">
-    <input>
+    <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing1"> </listing>
+    <program xml:id="cspnamenumbers_walkassign1" interactive="codelens" language="python">
+        <input>
 a = 1
 b = 12.3
 c = "Fred"
 d = b
     </input>
-</program>
+    </program>
 
     <exercise label="cspnamenumbers_walkassign2">
         <statement>
 
-        <p>What is the value of variable <c>d</c> when this program is finished running?</p>
+            <p>What is the value of variable <c>d</c> when <xref
+                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing1" /> is finished running?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -33,8 +35,8 @@ d = b
                     <p>12.3</p>
                 </statement>
                 <feedback>
-                    <p>The variable d is set to a copy of the value in variable b.
-The variable b still holds the value 12.3 as well.</p>
+                    <p>The variable d is set to a copy of the value in variable b. The variable b still holds the value
+                        12.3 as well.</p>
                 </feedback>
             </choice>
 
@@ -55,37 +57,39 @@ The variable b still holds the value 12.3 as well.</p>
                     <p>The variable d gets its value from the variable b.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>The <em>sequence</em> of statements in a program is very important.  Assignment doesn&#8217;t create some kind
-            of relationship between the names, like in mathematics.  The variable <c>a</c> might equal <c>12</c> at
-            one point, and <c>15</c> at another. An assignment statement is an action that occurs once, and then
-            is over with.</p>
+    <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn&#8217;t create some kind of
+        relationship between the names, like in mathematics. The variable <c>a</c> might equal <c>12</c> at one point, and <c>15</c>
+        at another. An assignment statement is an action that occurs once, and then is over with.</p>
 
-<program xml:id="cspnamenumbers_walkassign3" interactive="codelens" language="python">
-    <input>
+    <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing2">
+        <program xml:id="cspnamenumbers_walkassign3" interactive="codelens" language="python">
+            <input>
 var1 = 45
 var1 = 17.3
 var2 = var1
     </input>
-</program>
+        </program>
+    </listing>
 
     <exercise label="cspnamenumbers_walkassign4">
         <statement>
 
-        <p>What are the values in <c>var1</c> and <c>var2</c> after this program runs?</p>
+            <p>What are the values in <c>var1</c> and <c>var2</c> after <xref
+                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing2" /> runs?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
                     <p>var1 is 45, var2 is 45</p>
                 </statement>
                 <feedback>
-                    <p>The variable var1 was set to 45, but that gets changed in line 2, before
-var2 gets set to any value at all.</p>
+                    <p>The variable var1 was set to 45, but that gets changed in line 2, before var2 gets set to any
+                        value at all.</p>
                 </feedback>
             </choice>
 
@@ -94,8 +98,7 @@ var2 gets set to any value at all.</p>
                     <p>var1 is 45, var2 is var1</p>
                 </statement>
                 <feedback>
-                    <p>Both variables contain numeric values, because those are the only values in
-this program.</p>
+                    <p>Both variables contain numeric values, because those are the only values in this program.</p>
                 </feedback>
             </choice>
 
@@ -113,19 +116,20 @@ this program.</p>
                     <p>var1 is 17.3, var2 is 17.3</p>
                 </statement>
                 <feedback>
-                    <p>The variable var1 is first set to 45 and then changed to 17.3, and then,
-var2 gets the value from var1.</p>
+                    <p>The variable var1 is first set to 45 and then changed to 17.3, and then, var2 gets the value from
+                        var1.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>We can see values (including the values for named variables) by printing them.  It&#8217;s a useful
-            way to see what&#8217;s going on inside a program.  Try running this example where we&#8217;re having the
-            computer calculate the number of days in three weeks:</p>
+    <p>We can see values (including the values for named variables) by printing them. It&#8217;s a useful way to see
+        what&#8217;s going on inside a program. Try running this example where we&#8217;re having the computer calculate
+        the number of days in three weeks:</p>
 
-    <program xml:id="cspnamenumbers_walkassign5" interactive="activecode" language="python">
-        <input>
+    <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing3">
+        <program xml:id="cspnamenumbers_walkassign5" interactive="activecode" language="python">
+            <input>
 daysInWeek = 7
 print(daysInWeek)
 numDays = 7 * 3
@@ -133,15 +137,17 @@ print(numDays)
 numDays2 = daysInWeek * 3
 print(numDays2)
         </input>
-    </program>
+        </program>
+    </listing>
 
     <exercise label="cspnamenumbers_walkassign6">
         <statement>
 
-        <p>What three values are printed when this program runs?</p>
+            <p>What three values are printed when <xref
+                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing3" /> runs?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -166,8 +172,8 @@ print(numDays2)
                     <p>7, 21, 21</p>
                 </statement>
                 <feedback>
-                    <p>The first print will print the value of daysInWeek (7), the second
-the value of numDays (21), and the third the value of numDays2 (21).</p>
+                    <p>The first print will print the value of daysInWeek (7), the second the value of numDays (21), and
+                        the third the value of numDays2 (21).</p>
                 </feedback>
             </choice>
 
@@ -179,39 +185,60 @@ the value of numDays (21), and the third the value of numDays2 (21).</p>
                     <p>The value for daysInWeek will be computed and assigned.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-<exercise label="cspnamenumbers_walkassign7" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following program should figure out the cost per person for a dinner including the tip.
-            But the blocks have been mixed up.  Drag the blocks from the left and put them in the correct
-            order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="1">
-<cline>bill = 89.23</cline>
-</block><block order="2">
-<cline>tip = bill * 0.20</cline>
-</block><block order="5">
-<cline>total = bill + tip</cline>
-</block><block order="4">
-<cline>numPeople = 3</cline>
-<cline>perPersonCost = total / numPeople</cline>
-</block><block order="3">
-<cline>print(perPersonCost)</cline>
-</block></blocks></exercise>        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><TabNode tabname="Answer - Don't click until you've had a go at creating your own solution." tabnode_options="{'subchapter': 'walkAssign', 'chapter': 'CSPNameNumbers', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': &quot;Answer - Don't click until you've had a go at creating your own solution.&quot;}">
+    <exercise label="cspnamenumbers_walkassign7" numbered="yes" adaptive="yes" indentation="show" language="python">
+        <statement>
+            <p>The following program should figure out the cost per person for a dinner including the tip. But the
+                blocks have been mixed up. Drag the blocks from the left and put them in the correct order on the right.
+                Click the <em>Check Me</em> button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="1">
+                <cline>bill = 89.23</cline>
+            </block>
+            <block order="2">
+                <cline>tip = bill * 0.20</cline>
+            </block>
+            <block order="5">
+                <cline>total = bill + tip</cline>
+            </block>
+            <block order="4">
+                <cline>numPeople = 3</cline>
+                <cline>perPersonCost = total / numPeople</cline>
+            </block>
+            <block order="3">
+                <cline>print(perPersonCost)</cline>
+            </block>
+        </blocks>
+    </exercise>
 
-    <program xml:id="cspnamenumbers_walkassign9" interactive="activecode" language="python">
-        <input>
-numPeople = 10
-appetizer = 2
-entree = 9.89
-dessert = 7.99
+    <exercise>
+        <statement>
+            <p> 10 people went to a restaurant for dinner. Each guest ate 1 appetizer and 1 entree. The whole party
+                shared 1 dessert. Write the code to calculate and print the total <c>bill</c> if each appetizer costs $2.00,
+                each entree costs $9.89, and dessert costs $7.99. It should print 126.89. Create variables to hold each
+                value. Calculate <c>bill</c> as <c>(appetizer + entree) * numPeople + dessert</c>. Be sure to print the result.</p>
+            <p> There is a hint available below. It doesn't give the full answer, you will have to replace all of the <c>???</c>'s
+                in it with different values. </p>
+        </statement>
+        <hint>
+            <pre>
+numPeople = ???
+appetizer = ???
+entree = ???
+dessert = ???
+bill = ??? * (??? + ???) *  + 1 * ???
 
-bill = (appetizer + entree) * numPeople + dessert
+print (bill)</pre>
+        </hint>
+        <program xml:id="cspnamenumbers_walkassign9" interactive="activecode" language="python">
+            <input>
 
-print (bill)
-        </input>
-    </program>
-            </TabNode></exercise>
-    </section>
+
+                </input>
+        </program>
+    </exercise>
+</section>
 

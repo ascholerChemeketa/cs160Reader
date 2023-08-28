@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Names for Strings</title>
-        <xi:include href='./assignNameStr.ptx' />
-        <xi:include href='./strObjects.ptx' />
-        <xi:include href='./immutable.ptx' />
-        <xi:include href='./madlib.ptx' />
-        <xi:include href='./summary.ptx' />
-        <xi:include href='./StringPracticeParsons.ptx' />
-        <xi:include href='./Exercises.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Names for Strings</title>
+
+    <xi:include href='./assignNameStr.ptx' />
+    <xi:include href='./strObjects.ptx' />
+    <xi:include href='./immutable.ptx' />
+    <xi:include href='./madlib.ptx' />
+    <xi:include href='./summary.ptx' />
+    <xi:include href='./StringPracticeParsons.ptx' />
+    <xi:include href='./Exercises.ptx' />
+    
+</chapter>

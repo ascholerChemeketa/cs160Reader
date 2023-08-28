@@ -1,133 +1,243 @@
 <section xml:id="csp-name-strings_mixed-up-code-practice">
-        <title>Mixed Up Code Practice</title>
-        <p>Try to solve each of the following. Click the <em>Check Me</em> button to check each solution.
-            You will be told if your solution is too short, has a block in the wrong order, or you are
-            using the wrong block.  Some of the problems have an extra block that isn&#8217;t needed in the
-            correct solution.</p>
-<exercise label="cspnamestrings_stringpracticeparsons1" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print Maria&#8217;s first name on one line and her last name on the next line.  But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="3">
-<cline>firstName = "Maria"</cline>
-<cline>lastName = "Hernandez"</cline>
-</block><block order="4">
-<cline>print(firstName)</cline>
-</block><block order="2">
-<cline>print(lastName)</cline>
-</block><block order="1" correct="no">
-<cline>print(Maria) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons2" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the words to a famous poem. But the blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="4">
-<cline>print("Roses are red")</cline>
-</block><block order="3">
-<cline>print("Violets are blue")</cline>
-</block><block order="2">
-<cline>print("Sugar is sweet")</cline>
-</block><block order="1">
-<cline>print("And so are you")</cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons3" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print a sentence about Marcus&#8217; favorite color on one line. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="2">
-<cline>name = "Marcus"</cline>
-<cline>color = "Blue"</cline>
-</block><block order="3">
-<cline>sentence = name + " likes " + color + "."</cline>
-</block><block order="1">
-<cline>print(sentence)</cline>
-</block><block order="4" correct="no">
-<cline>print(name, color) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons4" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the first 2 characters of the message followed by the last 2 characters of the message. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="4">
-<cline>message = "I hope this works"</cline>
-<cline>length = len(message)</cline>
-</block><block order="3">
-<cline>part1 = message[0:2]</cline>
-<cline>part2 = message[length - 2: length]</cline>
-</block><block order="1">
-<cline>print(part1 + part2)</cline>
-</block><block order="2" correct="no">
-<cline>print(part1 * part2) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons5" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the name in upper case letters on one line followed by the age on the next line. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="3">
-<cline>name = "Layla"</cline>
-<cline>age = "16"</cline>
-</block><block order="1">
-<cline>nameUp = name.upper()</cline>
-</block><block order="5">
-<cline>print("Your name is " + nameUp)</cline>
-</block><block order="2">
-<cline>print("Your age is " + age)</cline>
-</block><block order="4" correct="no">
-<cline>print("Your name is " name) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons6" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print out the index of the name Tom in a sentence. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="2">
-<cline>sentence = "Karl gave Tom the new bike lock this morning"</cline>
-</block><block order="1">
-<cline>place = sentence.find("Tom")</cline>
-</block><block order="4">
-<cline>print(place)</cline>
-</block><block order="3" correct="no">
-<cline>place = sentence.slice("Tom") </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons7" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the initials in lowercase letters. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="3">
-<cline>first = "Gerald"</cline>
-<cline>middle = "Foster"</cline>
-<cline>last= "Jones"</cline>
-</block><block order="5">
-<cline>initials = first[0:1] + middle[0:1] + last[0:1]</cline>
-</block><block order="4">
-<cline>lowerInitials = initials.lower()</cline>
-</block><block order="2">
-<cline>print(lowerInitials)</cline>
-</block><block order="1" correct="no">
-<cline>print(initials) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons8" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the message in all uppercase letters. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="2">
-<cline>message = "Don't Pokemon and drive!"</cline>
-</block><block order="3">
-<cline>upperMessage = message.upper()</cline>
-</block><block order="4">
-<cline>print(upperMessage)</cline>
-</block><block order="1" correct="no">
-<cline>print(Message) </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons9" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the first 3 letters of message in uppercase letters. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="4">
-<cline>message = "Have a nice day!"</cline>
-</block><block order="5">
-<cline>part = message[0:3]</cline>
-</block><block order="3">
-<cline>upper = part.upper()</cline>
-</block><block order="1">
-<cline>print(upper)</cline>
-</block><block order="2" correct="no">
-<cline>part = message[0:4] </cline>
-</block></blocks></exercise><exercise label="cspnamestrings_stringpracticeparsons10" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following code should print the part of the message starting with the word &#8220;nice&#8221;.  But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.  Click the <em>Check Me</em> button to check your solution.</p>
-</statement>
-<blocks><block order="1">
-<cline>message = "Have a nice day!"</cline>
-</block><block order="3">
-<cline>pos = message.find("nice")</cline>
-<cline>end = len(message)</cline>
-</block><block order="4">
-<cline>print(message[pos:end])</cline>
-</block><block order="2" correct="no">
-<cline>pos = message.find("Nice")</cline>
-<cline>end = len(message) </cline>
-</block></blocks></exercise>    </section>
+    <title>Mixed Up Code Practice</title>
+    <p>Try to solve each of the following. Click the <em>Check Me</em> button to check each solution. You will be told
+        if your solution is too short, has a block in the wrong order, or you are using the wrong block. Some of the
+        problems have an extra block that isn&#8217;t needed in the correct solution.</p>
+    <exercise label="cspnamestrings_stringpracticeparsons1" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print Maria&#8217;s first name on one line and her last name on the next line.
+                But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution.
+                Drag the blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em>
+                button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="3">
+                <cline>firstName = "Maria"</cline>
+                <cline>lastName = "Hernandez"</cline>
+            </block>
+            <block order="4">
+                <cline>print(firstName)</cline>
+            </block>
+            <block order="2">
+                <cline>print(lastName)</cline>
+            </block>
+            <block order="1" correct="no">
+                <cline>print(Maria) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons2" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the words to a famous poem. But the blocks have been mixed up. Drag the
+                blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em> button
+                to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="4">
+                <cline>print("Roses are red")</cline>
+            </block>
+            <block order="3">
+                <cline>print("Violets are blue")</cline>
+            </block>
+            <block order="2">
+                <cline>print("Sugar is sweet")</cline>
+            </block>
+            <block order="1">
+                <cline>print("And so are you")</cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons3" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print a sentence about Marcus&#8217; favorite color on one line. But, the
+                blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the
+                needed blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em>
+                button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="2">
+                <cline>name = "Marcus"</cline>
+                <cline>color = "Blue"</cline>
+            </block>
+            <block order="3">
+                <cline>sentence = name + " likes " + color + "."</cline>
+            </block>
+            <block order="1">
+                <cline>print(sentence)</cline>
+            </block>
+            <block order="4" correct="no">
+                <cline>print(name, color) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons4" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the first 2 characters of the message followed by the last 2 characters
+                of the message. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in
+                the solution. Drag the needed blocks from the left and put them in the correct order on the right. Click
+                the <em>Check Me</em> button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="4">
+                <cline>message = "I hope this works"</cline>
+                <cline>length = len(message)</cline>
+            </block>
+            <block order="3">
+                <cline>part1 = message[0:2]</cline>
+                <cline>part2 = message[length - 2: length]</cline>
+            </block>
+            <block order="1">
+                <cline>print(part1 + part2)</cline>
+            </block>
+            <block order="2" correct="no">
+                <cline>print(part1 * part2) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons5" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the name in upper case letters on one line followed by the age on the
+                next line. But, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the
+                solution. Drag the needed blocks from the left and put them in the correct order on the right. Click the <em>Check
+                Me</em> button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="3">
+                <cline>name = "Layla"</cline>
+                <cline>age = "16"</cline>
+            </block>
+            <block order="1">
+                <cline>nameUp = name.upper()</cline>
+            </block>
+            <block order="5">
+                <cline>print("Your name is " + nameUp)</cline>
+            </block>
+            <block order="2">
+                <cline>print("Your age is " + age)</cline>
+            </block>
+            <block order="4" correct="no">
+                <cline>print("Your name is " name) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons6" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print out the index of the name Tom in a sentence. But, the blocks have been
+                mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks from
+                the left and put them in the correct order on the right. Click the <em>Check Me</em> button to check
+                your solution.</p>
+        </statement>
+        <blocks>
+            <block order="2">
+                <cline>sentence = "Karl gave Tom the new bike lock this morning"</cline>
+            </block>
+            <block order="1">
+                <cline>place = sentence.find("Tom")</cline>
+            </block>
+            <block order="4">
+                <cline>print(place)</cline>
+            </block>
+            <block order="3" correct="no">
+                <cline>place = sentence.slice("Tom") </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons7" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the initials in lowercase letters. But, the blocks have been mixed up and
+                include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks from the left and
+                put them in the correct order on the right. Click the <em>Check Me</em> button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="3">
+                <cline>first = "Gerald"</cline>
+                <cline>middle = "Foster"</cline>
+                <cline>last= "Jones"</cline>
+            </block>
+            <block order="5">
+                <cline>initials = first[0:1] + middle[0:1] + last[0:1]</cline>
+            </block>
+            <block order="4">
+                <cline>lowerInitials = initials.lower()</cline>
+            </block>
+            <block order="2">
+                <cline>print(lowerInitials)</cline>
+            </block>
+            <block order="1" correct="no">
+                <cline>print(initials) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons8" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the message in all uppercase letters. But, the blocks have been mixed up
+                and include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks from the left
+                and put them in the correct order on the right. Click the <em>Check Me</em> button to check your
+                solution.</p>
+        </statement>
+        <blocks>
+            <block order="2">
+                <cline>message = "Don't Pokemon and drive!"</cline>
+            </block>
+            <block order="3">
+                <cline>upperMessage = message.upper()</cline>
+            </block>
+            <block order="4">
+                <cline>print(upperMessage)</cline>
+            </block>
+            <block order="1" correct="no">
+                <cline>print(Message) </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons9" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the first 3 letters of message in uppercase letters. But, the blocks have
+                been mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks
+                from the left and put them in the correct order on the right. Click the <em>Check Me</em> button to
+                check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="4">
+                <cline>message = "Have a nice day!"</cline>
+            </block>
+            <block order="5">
+                <cline>part = message[0:3]</cline>
+            </block>
+            <block order="3">
+                <cline>upper = part.upper()</cline>
+            </block>
+            <block order="1">
+                <cline>print(upper)</cline>
+            </block>
+            <block order="2" correct="no">
+                <cline>part = message[0:4] </cline>
+            </block>
+        </blocks>
+    </exercise>
+    <exercise label="cspnamestrings_stringpracticeparsons10" adaptive="yes" indentation="hide" language="python">
+        <statement>
+            <p>The following code should print the part of the message starting with the word &#8220;nice&#8221;. But,
+                the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution. Drag
+                the needed blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em>
+                button to check your solution.</p>
+        </statement>
+        <blocks>
+            <block order="1">
+                <cline>message = "Have a nice day!"</cline>
+            </block>
+            <block order="3">
+                <cline>pos = message.find("nice")</cline>
+                <cline>end = len(message)</cline>
+            </block>
+            <block order="4">
+                <cline>print(message[pos:end])</cline>
+            </block>
+            <block order="2" correct="no">
+                <cline>pos = message.find("Nice")</cline>
+                <cline>end = len(message) </cline>
+            </block>
+        </blocks>
+    </exercise>
+</section>
 

@@ -1,11 +1,15 @@
 <section xml:id="csp-name-numbers_figuring-out-an-invoice">
-        <title>Figuring out an Invoice</title>
-        <p>We can use variables to solve problems like those we might solve in a spreadsheet.  Imagine that
-            you had a spreadsheet with an invoice for an office supply company.</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A spreadsheet with order information</caption><image source="CSPNameNumbers/Figures/invoice.png" width="600px%" alt="a spreadsheet"/></figure>
-        <p>Here&#8217;s a program to compute the total price for the invoice:</p>
+    <title>Figuring out an Invoice</title>
+    <p>We can use variables to solve problems like those we might solve in a spreadsheet. Imagine that you had a
+        spreadsheet with an invoice for an office supply company.</p>
+    <figure align="center">
+        <caption>A spreadsheet with order information</caption>
+        <image source="CSPNameNumbers/Figures/invoice.png" width="100%" alt="a spreadsheet" />
+    </figure>
+    <p>Here&#8217;s a program to compute the total price for the invoice:</p>
 
-    <program xml:id="cspnamenumbers_invoice1" interactive="activecode" language="python">
+    <listing  xml:id="cspnamenumbers_invoice1"> 
+    <program interactive="activecode" language="python">
         <input>
 quantity1 = 2
 unitPrice1 = 7.56
@@ -17,14 +21,15 @@ invoiceTotal = total1 + total2
 print(invoiceTotal)
         </input>
     </program>
+</listing>
 
     <exercise label="cspnamenumbers_invoice2">
         <statement>
 
-        <p>How many variables are in this program?</p>
+            <p>How many variables are in <xref ref="cspnamenumbers_invoice1"/>?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice correct="yes">
                 <statement>
@@ -61,13 +66,15 @@ print(invoiceTotal)
                     <p>There are three variables per line, two lines, and one total.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>We don&#8217;t really have to create new variables <c>quantity2</c> and <c>unitPrice2</c>.  We only use those to compute the total for the line, and then we could reuse those variable names.</p>
+    <p>We don&#8217;t really have to create new variables <c>quantity2</c> and <c>unitPrice2</c>. We only use those to compute the total
+        for the line, and then we could reuse those variable names.</p>
 
-<program xml:id="cspnamenumbers_invoice3" interactive="codelens" language="python">
-    <input>
+        <listing  xml:id="cspnamenumbers_invoice3"> 
+    <program xml:id="cspnamenumbers_invoice3cl" interactive="codelens" language="python">
+        <input>
 quantity = 2
 unitPrice = 7.56
 total1 = quantity * unitPrice
@@ -77,15 +84,16 @@ total2 = quantity * unitPrice
 invoiceTotal = total1 + total2
 print(invoiceTotal)
     </input>
-</program>
+    </program>
+        </listing>
 
     <exercise label="cspnamenumbers_invoice4">
         <statement>
 
-        <p>How many variables are in this program?</p>
+            <p>How many variables are in <xref ref="cspnamenumbers_invoice3"/></p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -122,11 +130,11 @@ print(invoiceTotal)
                     <p>We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <p>Let&#8217;s say that apples are $0.40 apiece, and pears are $0.65 apiece.  Modify the program below
-            to calculate the total cost (it should print 3.55).</p>
+    <p>Let&#8217;s say that apples are $0.40 apiece, and pears are $0.65 apiece. Modify the program below to calculate
+        the total cost (it should print 3.55).</p>
 
     <program xml:id="cspnamenumbers_invoice5" interactive="activecode" language="python">
         <input>
@@ -140,16 +148,16 @@ totalCost =
 print(totalCost)
         </input>
     </program>
-        <p>You are welcome to try out the following answers by copying and pasting them into the program
-            above before answering this question:</p>
+    <p>You are welcome to try out the following answers by copying and pasting them into the program above before
+        answering this question:</p>
 
     <exercise label="cspnamenumbers_invoice6">
         <statement>
 
-        <p>Which line of code will compute the correct <c>totalCost</c> if put into the program above?</p>
+            <p>Which line of code will compute the correct <c>totalCost</c> if put into the program above?</p>
 
         </statement>
-<choices>
+        <choices>
 
             <choice>
                 <statement>
@@ -165,8 +173,8 @@ print(totalCost)
                     <p>totalCost = (costPerApple * numApples) + (costPerPear * numPears)</p>
                 </statement>
                 <feedback>
-                    <p>We need to multiply the cost per apple times the number of apples and add it to
-the cost per pear times the number of pears.</p>
+                    <p>We need to multiply the cost per apple times the number of apples and add it to the cost per pear
+                        times the number of pears.</p>
                 </feedback>
             </choice>
 
@@ -187,23 +195,32 @@ the cost per pear times the number of pears.</p>
                     <p>That would work, but giving names to numbers makes code easier to understand.</p>
                 </feedback>
             </choice>
-</choices>
+        </choices>
 
     </exercise>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><TabNode tabname="Answer - Don't click until you've had a go at creating your own solution." tabnode_options="{'subchapter': 'invoice', 'chapter': 'CSPNameNumbers', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': &quot;Answer - Don't click until you've had a go at creating your own solution.&quot;}">
-                <p>Create variables to hold each value.  Calculate <c>numPaperclips</c> as <c>budget / costPerClip</c>.  Be sure to print the result.</p>
-
-    <program xml:id="cspnamenumbers_invoice8" interactive="activecode" language="python">
-        <input>
-# DECLARE VARIABLES AND ASSIGN VALUES
-costPerClip = .05
-budget = 4.00
-# 2. CREATE FORMULA
-numPaperclips = budget / costPerClip
+    <exercise>
+        <statement><p>Write the code to calculate and print how many paperclips you can buy if each paperclip is $0.05 and you have $4.00 in your pocket. It should print 80.</p>
+            <p>Create variables to hold each value. Calculate <c>numPaperclips</c> as <c>budget / costPerClip</c>. Be sure to print the result.</p>
+            <p>
+                There is a hint available below. It doesn't give the full answer, you will have to replace all of the <c>???</c>'s in it with different values.
+            </p>
+        </statement>
+        <hint><pre>
+# 1. DECLARE VARIABLES AND ASSIGN VALUES
+costPerClip = ???
+budget = ???
+# 2. CALCULATE RESULT
+numPaperclips = ??? / ???
 # 3. PRINT RESULT
-print(numPaperclips)
-        </input>
-    </program>
-            </TabNode></exercise>
-    </section>
+print(???)</pre>
+            </hint>
+            
+        <program xml:id="cspnamenumbers_invoice7" interactive="activecode" language="python">
+            <input>
+
+
+                </input>
+        </program>
+    </exercise>
+</section>
 

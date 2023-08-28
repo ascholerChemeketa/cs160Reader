@@ -1,11 +1,19 @@
 <chapter xml:id="csp-teasers" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-  <title>An introduction to programming</title>
-  <xi:include href='./studentBook.ptx' />
-  <!-- 
-  <xi:include href='./computeNumbers.ptx' />
-  <xi:include href='./computeWords.ptx' />
-  <xi:include href='./computeTurtles.ptx' />
-  <xi:include href='./computeImages.ptx' />
-  <xi:include href='./ch1_summary.ptx' />
-  -->
+    <title>An introduction to programming</title>
+    <introduction>
+        <p>
+            This chapter contains some teasers of the kinds of things you will learn to do with
+            programming. The goal is to expose you to what is possible, not to learn any particular
+            skills. So don't worry about all of the details of how each program works - you aren't
+            expected to learn that all at once. Instead, focus on the big ideas. Later chapters will
+            help you master what is going on in each of the programs.
+        </p>
+    </introduction>
+    <xi:include href='./studentBook.ptx' />
+    <xi:include href='./computeNumbers.ptx' />
+    <xi:include href='./computeWords.ptx' />
+    <xi:include href='./computeTurtles.ptx' />
+    <xi:include href='./computeImages.ptx' />
+    <xi:include href='./ch1_summary.ptx' />
+    
 </chapter>
