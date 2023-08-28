@@ -11,7 +11,7 @@ Although it is hard to overestimate the degree to which computation has changed 
 
     \ `This cool animation <https://htwins.net/scale2/>`__ allows you to explore the microscopic world. (Hint: you'll find transistors at about :math:`{10}^{-7}` meters)
 
-Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly shrinking the size of computational components we have been able to build more complex and faster processors. But the exponential growth of computer power predicted by Moore's Law may be close to an end. Modern transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At this scale, the gate in a transistor the blocks or allows current is only about 50 atoms wide.
+Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly shrinking the size of computational components we have been able to build more complex and faster processors. But the exponential growth of computer power predicted by Moore's Law may be close to an end. Modern transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At this scale, the gate in a transistor that blocks or allows current to flow is only about 50 atoms wide.
 
 .. figure:: Images/nanoscale.jpg
 
