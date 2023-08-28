@@ -52,5 +52,25 @@ options(
     ),
 )
 
+template_args={
+    'login_required':'false',
+    'loglevel': 10,
+    'course_title': project_name,
+    'python3': 'true',
+    'dburl': '',
+    'default_ac_lang': 'python',
+    'downloads_enabled': 'false',
+    'enable_chatcodes': 'false',
+    'allow_pairs': 'false',
+    'dynamic_pages': dynamic_pages,
+    'use_services': 'true',
+    'basecourse': project_name,
+    'course_id': project_name,
+    # These are used for non-dynamic books.
+    'appname': project_name,
+    'course_url': master_url,
+    'minimal_outside_links': False,
+}
+
 version = pkg_resources.require("runestone")[0].version
 options.build.template_args['runestone_version'] = version
