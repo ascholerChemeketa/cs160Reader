@@ -6,16 +6,16 @@
   <p>What is the simplest method for searching a list of elements? Check the first item, then the second item, and so on until you find the target item or reach the end of the list. Because we progress in a straight line through the list items, it is known as a <term>linear search</term>. Of course, to be an effective algorithm, we have to specify it in terms of operations a computer can do.</p>
   <p>Assume a list called <c>list</c>, filled with integers. Each integer in the list has a unique location in the list - called its <term>index</term>. The task is to search for the location of a particular value - often called the <c>key</c>. Here’s how to do the search:</p>
   <program language="none"><input>
-<p>    <em>Note: assume that list and key are already set</em>
-1   set <c>location</c> = 0
-2   repeat while <c>location</c> &lt; (length of the <c>list</c>)
-3       if <c>list[location]</c> == <c>key</c>
-4           print "Found at " + <c>location</c>
+    Note: assume that list and key are already set
+1   set location = 0
+2   repeat while location &lt; (length of the list)
+3       if list[location] == key
+4           print "Found at " + location
 
 5           end program
-6       set <c>location</c> = <c>location</c> + 1     <em>advance to next location</em>
+6       set location = location + 1     advance to next location
 7
-8   print "Value not found"</p>
+8   print "Value not found"
 </input></program>
   <p>Note that <c>location</c> here is a variable that stores the index we are currently looking at in the list. <c>list[location]</c> is the standard way of saying “the value in <c>list</c> at <c>location</c>”.</p>
   <p>You can try doing a linear search below. Type the number you wish to search for in the text box, then step through the search. Each “Step” in the animation takes you through the repeat loop one time. Try following the algorithm above step by step as you watch the animation.</p>

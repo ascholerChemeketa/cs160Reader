@@ -114,7 +114,7 @@
         <p><m>\textrm{Total work} = (\frac{n^2}{2} - \frac{n}{2}) + (n-1) = \frac{n^2}{2} + \frac{n}{2} - 1</m></p>
         
         
-        <p xml:id="algorithms_index-0">Since for Big-O purposes, all we care about is the class of the dominant term, in this case <m>\frac{n^2}{2}</m>, we will say that Selection Sort is <m>O(n^2)</m> (Quadratic). A similar process can be used to show that so is Insertion Sort.</p>
+        <p>Since for Big-O purposes, all we care about is the class of the dominant term, in this case <m>\frac{n^2}{2}</m>, we will say that Selection Sort is <m>O(n^2)</m> (Quadratic). A similar process can be used to show that so is Insertion Sort.</p>
         <important>
             <p><term>Selection</term> and <term>Insertion Sort</term> are <term>Quadratic</term> - <m>O(n^2)</m>.</p>
         </important>

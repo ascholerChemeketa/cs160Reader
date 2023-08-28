@@ -19,12 +19,12 @@
     of how much work two different algorithms take. First, we will consider this DrawSquare algorithm:</p>
   <program language="none">
     <input>
-<p><term>DrawSquare of size (n)</term>
+DrawSquare of size (n)
 Pen Down
 Repeat 4 times:
     Move (n)
     Turn Clockwise (90)
-Pen Up</p>
+Pen Up
 </input>
   </program>
   <p>We might say it requires 10 &#8220;units&#8221; of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it
@@ -37,12 +37,12 @@ Pen Up</p>
   <p>Compare that to the following algorithm:</p>
   <program language="none">
     <input>
-<p><term>DrawShape with (n) sides</term>
+DrawShape with (n) sides
 Pen Down
 Repeat (n) times:
     Move 100
     Turn Clockwise ( 360 / (n) )
-Pen Up</p>
+Pen Up
 </input>
   </program>
   <p>If we use it to draw a square and stick to our original accounting method, it takes 10 &#8220;units&#8221; of work.
@@ -62,7 +62,7 @@ Pen Up</p>
 
     <figure>
       <image source="Algorithms/Images/DrawAlgorithms.svg" />
-      <caption> Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
+      <caption>Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
         Shape (Gold) </caption>
     </figure>
   </p>
