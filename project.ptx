@@ -10,32 +10,41 @@
     <target name="web">
       <format>html</format>
       <source>pretext/main.ptx</source>
-      <publication>pretext/publication-runestone.xml</publication>
+      <publication>pretext/publication-html.xml</publication>
       <output-dir>output/web</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
+      <stringparam key="html.css.extra" value="external/overrides.css"/> 
     </target>
-    <target name="print" pdf-method="xelatex">
+    <target name="runestone">
+      <format>html</format>
+      <source>pretext/main.ptx</source>
+      <publication>pretext/publication-runestone.xml</publication>
+      <output-dir>output/welcomecs</output-dir>
+      <xsl>pretext/welcomecs-pretext.xsl</xsl>
+      <stringparam key="html.css.extra" value="external/overrides.css"/> 
+    </target>
+    <!-- <target name="print" pdf-method="xelatex">
       <format>pdf</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/print</output-dir>
-    </target>
-    <target name="print-latex">
+    </target> -->
+    <!-- <target name="print-latex">
       <format>latex</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/print-latex</output-dir>
-    </target>
-    <target name="subset">
-      <!-- Usage: to build starting at XMLID, -->
-      <!-- pretext build subset -x XMLID      -->
-      <!-- or use <xml-root>XMLID</xml-root>  -->
+    </target> -->
+    <!-- <target name="subset">
+      <!  Usage: to build starting at XMLID,  >
+      <!  pretext build subset -x XMLID       >
+      <!  or use <xml-root>XMLID</xml-root>   >
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/subset</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>
-    </target>
+    </target> -->
   </targets>
   <executables>
     <latex>latex</latex>
