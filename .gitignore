@@ -4,6 +4,9 @@ built/*
 build_info
 sphinx-enki-info.txt
 sphinx_settings.json
+pretext/generated
+output
+.vscode
 
 *.bak
 
