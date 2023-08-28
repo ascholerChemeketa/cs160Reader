@@ -4,8 +4,8 @@
             <!-- the other option is "long" which will produce an -->
             <!-- entire front matter section with more headings   -->
             <!-- <author-biographies length="short" /> -->
-            <document-id edition="2">welcomecs</document-id>
-            <blurb shelf="Welcome To CS">A CS0 / AP CS Principles level text intended for students new to computer science.</blurb>
+            <document-id edition="2">welcomecs2</document-id>
+            <blurb shelf="Intro to Computer Science">A CS0 / AP CS Principles level text intended for students new to computer science.</blurb>
         </docinfo>
         <book xml:id= "welcomecs" permid="cs1">
             <title>Welcome to CS</title>
