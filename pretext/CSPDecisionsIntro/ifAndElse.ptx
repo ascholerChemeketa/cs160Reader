@@ -2,7 +2,7 @@
         <title>Using if and else</title>
         
         
-        <p xml:id="csp-decisions-intro_index-0">The first program we saw on the last page is a bit repetitive. It compares
+        <p>The first program we saw on the last page is a bit repetitive. It compares
             <c>weight</c> to the number 1 twice, once to see if it is below that number,
             once to see if it is not below that number:</p>
         <program language="python"><input>
@@ -32,7 +32,7 @@ print(total)
     </program>
         <p>Using an <c>if</c> with an <c>else</c> makes sure that <em>either</em> the <c>if</c> block is executed <em>or</em> the
             <c>else</c> block is executed, but <term>never</term> both.</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Flow of execution for both an if and else</caption><image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%" alt="Flowchart for both an if and else" height="350px"/></figure>
+        <figure align="center" ><caption >Flow of execution for both an if and else</caption><image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%" alt="Flowchart for both an if and else"/></figure>
         <p>We never <term>have</term> to use an <c>else</c>. We can always write two seperate <c>if</c> statements. But
             using <c>else</c> can help avoid bugs where there is a &#8220;gap&#8221; between the two options like we saw on
             the previous page.</p>

@@ -2,7 +2,7 @@
         <title>List Accumulation</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">We have already encountered the <term>accumulator</term> pattern - where we loop through a list
+        <p>We have already encountered the <term>accumulator</term> pattern - where we loop through a list
             of values and combine them all. This is a natural thing to do with our lists. Say I want
             to total the points that were earned by a student on the quizzes. I might use the following
             program:</p>

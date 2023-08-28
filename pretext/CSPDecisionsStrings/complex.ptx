@@ -30,7 +30,7 @@ if credits is between 0 and 45:
 </input></program>
         
         
-        <p xml:id="csp-decisions-strings_index-0">To express ideas kind of like those while making decisions, we can use the keywords <c>and</c>, <c>or</c>, and <c>not</c>.
+        <p>To express ideas kind of like those while making decisions, we can use the keywords <c>and</c>, <c>or</c>, and <c>not</c>.
             An <c>and</c> used to join two expressions is only true if <em>both</em> expressions are
             true. An <c>or</c> joining two logical expressions means that if <em>either or both</em> of the expressions is true, the whole
             expression is true.   A <c>not</c> negates the logical value that follows it.  If it was true, then a <c>not</c>

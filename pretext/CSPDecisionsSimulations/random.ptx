@@ -7,7 +7,7 @@
             while obeying what we believe the odds of different outcomes are.</p>
         
         
-        <p xml:id="csp-decisions-simulations_index-0">In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we use
+        <p>In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we use
             the <c>randrange</c> function in the <c>random</c> library. To use it, we have to import the library,
             then call the function. Try running this program a few times to see that it does in fact generate
             a random number each time it runs:</p>
