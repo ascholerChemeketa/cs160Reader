@@ -34,7 +34,7 @@
                 <xi:include href="./CSPDesigningProcedures/toctree.ptx" />
                 <xi:include href="./CSPNameFunctions/toctree.ptx" />
                 <xi:include href="./CSPRepeatTurtles/toctree.ptx" />
-                <!-- <xi:include href="./CSPRepeatImages/toctree.ptx" /> -->
+                <xi:include href="./CSPRepeatImages/toctree.ptx" />
                 <xi:include href="./CSPRepeatNumbers/toctree.ptx" />
                 <xi:include href="./CSPDecisionsIntro/toctree.ptx" />
             </part>
