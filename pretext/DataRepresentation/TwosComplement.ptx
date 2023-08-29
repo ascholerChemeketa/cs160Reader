@@ -67,17 +67,17 @@
     ignore extra bits. Say we have:</p>
   <program language="none">
     <input>
-<p> 0110
-+1110</p>
+ 0110
++1110
 </input>
   </program>
   <p>That means 6 + (-2). If we add them using the normal rules we would get:</p>
   <program language="none">
     <input>
-<p><inline classes="red">111</inline>     (Carries)
+111     (Carries)
  0110   (6)
-<inline classes="underlined">+1110</inline>   (-2)
-10100</p>
++1110   (-2)
+10100
 </input>
   </program>
   <p>Since we started with 4 bits, we should only keep the last four bits of the answer: 0100 or 4. That means 6 + (-2)
@@ -85,10 +85,10 @@
   <p>It also works for two negative numbers. Here is -2 + (-2):</p>
   <program language="none">
     <input>
-<p><inline classes="red">111</inline>     (Carries)
+111     (Carries)
  1110   (-2)
-<inline classes="underlined">+1110</inline>   (-2)
-11100</p>
++1110   (-2)
+11100
 </input>
   </program>
   <p>Take only the last 4 bits and we get 1100. The leading 1 means negative. So flip the last three bits from 100 to
@@ -102,23 +102,21 @@
   <p>For example, here is converting 5 to -5:</p>
   <program language="none">
     <input>
-<p> 0101   (+5)
+ 0101   (+5)
  1010   (flip bits)
-<raw format="html" xml:space="preserve">&amp;nbsp;</raw>
  1010   (now add one)
-<inline classes="underlined">+   1</inline>
- 1011   (-5)</p>
++   1
+ 1011   (-5)
 </input>
   </program>
   <p>And from -5 back to 5:</p>
   <program language="none">
     <input>
-<p> 1011   (-5)
+ 1011   (-5)
  0100   (flip bits)
-<raw format="html" xml:space="preserve">&amp;nbsp;</raw>
  0100   (now add one)
-<inline classes="underlined">+   1</inline>
- 0101   (+5)</p>
++   1
+ 0101   (+5)
 </input>
   </program>
 </subsection>
@@ -132,10 +130,10 @@
     complement with four bits is 0111 or 7. Now say I add 5 + 5 (0101 + 0101):</p>
   <program language="none">
     <input>
-<p> <inline classes="red">1 1</inline>   (Carries)
+ 1 1   (Carries)
  0101   (5)
-<inline classes="underlined">+0101</inline>   (5)
- 1010   (-6 in two's complement)</p>
++0101   (5)
+ 1010   (-6 in two's complement)
 </input>
   </program>
   <p>As an unsigned number, 1010 would mean ten. But in two&#8217;s complement, that means -6! The same thing can happen

@@ -25,7 +25,7 @@
 
 <exercise label="cspcollectionscontinued_shuffle1">
     <statement>
-            <p><ol label="1">
+            <p><ol>
                 <li>
                     <p>Make a variable called <c>cutPoint</c> and set it to a random value between 1 and
                         the one less than the length of the deck.</p>
@@ -86,7 +86,7 @@ myTests().main()
 
 <exercise label="cspcollectionscontinued_shuffle2">
     <statement>
-            <p><ol label="1">
+            <p><ol>
                 <li>
                     <p>Put your existing code in a loop that repeats the whole process 10 times.</p>
                 </li>
@@ -158,7 +158,7 @@ myTests().main()
 
 <exercise label="cspcollectionscontinued_shuffle4">
     <statement>
-            <p><ol label="1">
+            <p><ol>
                 <li>
                     <p>Make a variable called <c>selectIndex</c> and set it to a random value between 0
                         and 2 less than the length of the deck. (Since the last card is length - 1
@@ -216,7 +216,7 @@ myTests().main()
 
 <exercise label="cspcollectionscontinued_shuffle5">
     <statement>
-            <p><ol label="1">
+            <p><ol>
                 <li>
                     <p>Put your existing code in a loop that repeats the whole process 10 times.</p>
                 </li>

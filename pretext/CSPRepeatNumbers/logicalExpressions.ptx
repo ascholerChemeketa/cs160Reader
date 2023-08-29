@@ -1,18 +1,16 @@
 <section xml:id="csp-repeat-numbers_booleans-and-logical-expressions">
-        <title>Booleans and Logical Expressions</title>
-        
-        
-        <p xml:id="csp-repeat-numbers_index-0">When writing a while loop, the logical expression can be anything that has a
-            <term>Boolean</term> value. A <term>Boolean</term>, or <term>bool</term> is a value that is either <c>True</c>
-            or <c>False</c>. Those are the only two <term>Boolean</term> values.</p>
-        <p>Much like how Python considers the string <c>"12"</c> to be a different type than
-            the number <c>12</c>, <c>True</c> is something different than the string <c>"True"</c></p>
-        <p>We can see that Python considers a <term>bool</term> to be different than a string (str)
-            or integer (int) by using the <c>type</c> function to ask about the values stored
-            in x, y, and z in the program below:</p>
+  <title>Booleans and Logical Expressions</title>
 
-    <program xml:id="csprepeatnumbers_logicalexpressions1" interactive="activecode" language="python">
-        <input>
+  <p>When writing a while loop, the logical expression can be anything that has a <term> Boolean</term> value. A <term>
+    Boolean</term>, or <term>bool</term> is a value that is either <c>True</c> or <c>False</c>. Those are the only two <term>
+    Boolean</term> values.</p>
+  <p>Much like how Python considers the string <c>"12"</c> to be a different type than the number <c>12</c>, <c>True</c> is
+    something different than the string <c>"True"</c></p>
+  <p>We can see that Python considers a <term>bool</term> to be different than a string (str) or integer (int) by using
+    the <c>type</c> function to ask about the values stored in x, y, and z in the program below:</p>
+
+  <program xml:id="csprepeatnumbers_logicalexpressions1" interactive="activecode" language="python">
+    <input>
 x = True
 y = "True"
 z = 1
@@ -20,86 +18,55 @@ print( "x is a ", type(x) )
 print( "y is a ", type(y) )
 print( "z is a ", type(z) )
         </input>
-    </program>
-        
-        
-        <p xml:id="csp-repeat-numbers_index-1">The usual way to produce <term>Boolean</term> values is with a <term>logical expression</term>. Much
-            like a numeric expression like <m>4 * (3 - 2)</m> evaluates to a number, a logical expression
-            evaluates to a logical or True/False value. Logical expressions are built with
-            <term>comparison operators</term> that compare values to produce a True/False answer.</p>
-        <p><term>Comparison Operators</term></p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
-                            Expression
-                        </cell>
-                        <cell>
-                            Logical meaning
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &lt; b
-                        </cell>
-                        <cell>
-                            True if a is less than b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &lt;= b
-                        </cell>
-                        <cell>
-                            True if a is less than or equal to b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &gt; b
-                        </cell>
-                        <cell>
-                            True if a is greater than b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &gt;= b
-                        </cell>
-                        <cell>
-                            True if a is greater than or equal to b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a == b
-                        </cell>
-                        <cell>
-                            True if a is equal to b.
-                                (Two equals signs, to distinguish it from assignment)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a != b
-                        </cell>
-                        <cell>
-                            True if a is <em>not</em> equal to b.
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>The best way to think about an expression like <c>a &gt; b</c> is that it asks the question,
-            <em>&#8220;is a greater than b&#8221;</em>. The value we get by evaluating the expression is the answer
-            to that question: either True or False.</p>
-        <p>Here is a sample of them in use:</p>
+  </program>
 
-    <program xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
-        <input>
+  <p>The usual way to produce <term>Boolean</term> values is with a <term>logical expression</term>. Much like a numeric
+    expression like <m>4 * (3 - 2)</m> evaluates to a number, a logical expression evaluates to a logical or True/False
+    value. Logical expressions are built with <term>comparison operators</term> that compare values to produce a
+    True/False answer.</p>
+  <p>
+    <term>Comparison Operators</term>
+  </p>
+  <table>
+    <tabular>
+
+      <row>
+        <cell> Expression </cell>
+        <cell> Logical meaning </cell>
+      </row>
+      <row>
+        <cell> a &lt; b </cell>
+        <cell> True if a is less than b </cell>
+      </row>
+      <row>
+        <cell> a &lt;= b </cell>
+        <cell> True if a is less than or equal to b </cell>
+      </row>
+      <row>
+        <cell> a &gt; b </cell>
+        <cell> True if a is greater than b </cell>
+      </row>
+      <row>
+        <cell> a &gt;= b </cell>
+        <cell> True if a is greater than or equal to b </cell>
+      </row>
+      <row>
+        <cell> a == b </cell>
+        <cell> True if a is equal to b. (Two equals signs, to distinguish it from assignment) </cell>
+      </row>
+      <row>
+        <cell> a != b </cell>
+        <cell> True if a is <em>not</em> equal to b. </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>The best way to think about an expression like <c>a &gt; b</c> is that it asks the question, <em>&#8220;is a greater than
+    b&#8221;</em>. The value we get by evaluating the expression is the answer to that question: either True or False.</p>
+  <p>Here is a sample of them in use:</p>
+
+  <program xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
+    <input>
 age = 20
 
 canVote = age &gt;= 18
@@ -110,64 +77,66 @@ print( "canVote is ", canVote )
 print( "canDrink is ", canDrink )
 print( "isTwenty is ", isTwenty )
         </input>
-    </program>
-        <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean
-            &#8220;equals&#8221; it is an <term>assignment</term>. And assignment always happens after all expressions are
-            evaluated. A good translation for that line of code would be <em>&#8220;isTwenty gets assigned the value
-                that we get by evaluating &#8216;is age equal to 20?&#8217;&#8221;</em></p>
-        <p>As the line of code actually runs, the first thing that happens is the evaluation of <c>age == 20</c>.
-            Since age is 20, the result is True. That value replaces the logical expression and we end up with
-            <c>isTwenty = True</c> and so that is the value that gets used for <c>isTwenty</c>.</p>
+  </program>
+  <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean &#8220;equals&#8221; it is an <term>
+    assignment</term>. And assignment always happens after all expressions are evaluated. A good translation for that
+    line of code would be <em>&#8220;isTwenty gets assigned the value that we get by evaluating &#8216;is age equal to
+    20?&#8217;&#8221;</em></p>
+  <p>As the line of code actually runs, the first thing that happens is the evaluation of <c>age == 20</c>. Since age is 20, the
+    result is True. That value replaces the logical expression and we end up with <c>isTwenty = True</c> and so that is the value that
+    gets used for <c>isTwenty</c>.</p>
 
-    <exercise label="csprepeatnumbers_logicalexpressions3">
-        <statement>
+  <exercise label="csprepeatnumbers_logicalexpressions3">
+    <statement>
 
-        <p>Given these values, which is the only logical expression that would evaluate to False?</p>
-        <program language="python"><input>
+      <p>Given these values, which is the only logical expression that would evaluate to False?</p>
+      <program language="python">
+        <input>
 x = 30
 y = 2
-</input></program>
+</input>
+      </program>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>x &lt;= 50</p>
         </statement>
-<choices>
+        <feedback>
+          <p>30 is less than or equal to 50</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>x &lt;= 50</p>
-                </statement>
-                <feedback>
-                    <p>30 is less than or equal to 50</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>10 &gt; y</p>
+        </statement>
+        <feedback>
+          <p>10 is greater than 2</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>10 &gt; y</p>
-                </statement>
-                <feedback>
-                    <p>10 is greater than 2</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>30 &gt; x</p>
+        </statement>
+        <feedback>
+          <p>Correct. 30 is not greater than x, they are the same. So this is false.</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>30 &gt; x</p>
-                </statement>
-                <feedback>
-                    <p>Correct. 30 is not greater than x, they are the same. So this is false.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>y != 5</p>
+        </statement>
+        <feedback>
+          <p>2 is not equal to 5, so this is true</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>y != 5</p>
-                </statement>
-                <feedback>
-                    <p>2 is not equal to 5, so this is true</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
+  </exercise>
+</section>
 

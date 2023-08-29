@@ -2,7 +2,7 @@
         <title>The Need for Lists</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">Up until now, most of the data we have worked with we have thought about as single values:
+        <p>Up until now, most of the data we have worked with we have thought about as single values:
             The number 34.2, or the word &#8220;Hello&#8221;, or a Turtle, or an Image. We have used multiple pieces of
             data in programs - we might work with a first and last name, or an hours_worked and pay_rate -
             but those pieces of data were usually given separate names.</p>

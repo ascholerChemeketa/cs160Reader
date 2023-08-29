@@ -71,12 +71,12 @@
       {1001}_2</m> + <m>{1001}_2</m>) - any bits past 4 need to be discarded.</p>
     <program language="none">
       <input>
-  <p><inline classes="red">1  1</inline>    (Carries)
+  1  1    (Carries)
    1001   (9)
-  <inline classes="underlined">+1001</inline>   (9)
+  +1001   (9)
   10010   (18)
   Keep only the last 4 bits:
-   0010   (2 !?!)</p>
+   0010   (2 !?!)
   </input>
     </program>
     <p>9 + 9 gave us just 2 because we can not store the bit that should represent 16. This is an overflow error.

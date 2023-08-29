@@ -1,18 +1,18 @@
 <section xml:id="csp-repeat-turtles_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Loop Body</term> - The statement or statements that are repeated in a loop.  In Python indention
-                    is used to show the statements that are part of the body of a loop.</p>
-            </li>
-            <li>
-                <p><term>Range</term> - In Python, <c>range(startValue, stopValue, step)</c> is used to define a list of values
-                    that count from startValue to stopValue by step that includes the startValue but does not include
-                    the stopValue.</p>
-            </li>
-        </ul></p>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Loop Body</term> - The statement or statements that are repeated in a loop. In Python indention is used
+          to show the statements that are part of the body of a loop.</p>
+      </li>
+      <li>
+        <p><term>Range</term> - In Python, <c>range(startValue, stopValue, step)</c> is used to define a list of values that count from startValue to
+          stopValue by step that includes the startValue but does not include the stopValue.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

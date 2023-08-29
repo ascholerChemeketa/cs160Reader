@@ -1,12 +1,12 @@
 <section xml:id="csp-repeat-turtles_a-regular-polygon-recipe">
-        <title>A Regular Polygon Recipe</title>
-        <p>You undoubtedly have recognized that there are some similarities to drawing shapes like the
-            square or hexagon. It turns out there is a general pattern to drawing any regular (all sides are
-            the same length and all angles are the same size) geometric shape.</p>
-        <p>Let&#8217;s look at a few more examples. Here&#8217;s a triangle:</p>
+  <title>A Regular Polygon Recipe</title>
+  <p>You undoubtedly have recognized that there are some similarities to drawing shapes like the square or hexagon. It
+    turns out there is a general pattern to drawing any regular (all sides are the same length and all angles are the
+    same size) geometric shape.</p>
+  <p>Let&#8217;s look at a few more examples. Here&#8217;s a triangle:</p>
 
-    <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 avery = Turtle()
@@ -18,11 +18,11 @@ for side in range(3):
 
 avery.end_fill()
         </input>
-    </program>
-        <p>And here&#8217;s a pentagon:</p>
+  </program>
+  <p>And here&#8217;s a pentagon:</p>
 
-    <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 will = Turtle()
@@ -34,19 +34,18 @@ for side in range(5):
 
 will.end_fill()
         </input>
-    </program>
-        <p>Notice that the only code that is &#8220;inside&#8221; the <c>for</c> loop (indented after it) are the
-            parts we want to repeat. We only want to <c>end_fill</c> once, so it is not indented. It is
-            not part of the code that is repeated.</p>
-        <p>The only two things that are different between the two programs are the number of repetitions
-            in the loop, and the angle that the turtle turns.</p>
-        <p>Any time we want to make a regular polygon, we need the turns to all sum up to <m>360</m>.
-            In the triangle example <m>3 * 120 = 360</m> and in the pentagon example <m>5 * 72 = 360</m>.</p>
-        <p>Change the <c>??</c> in line 7 below to the amount to turn each time to draw a 12 sided polygon
-            (called a dodecagon).  If you get it right the turtle will draw a 12 sided closed polygon.</p>
+  </program>
+  <p>Notice that the only code that is &#8220;inside&#8221; the <c>for</c> loop (indented after it) are the parts we want
+    to repeat. We only want to <c>end_fill</c> once, so it is not indented. It is not part of the code that is repeated.</p>
+  <p>The only two things that are different between the two programs are the number of repetitions in the loop, and the
+    angle that the turtle turns.</p>
+  <p>Any time we want to make a regular polygon, we need the turns to all sum up to <m>360</m>. In the triangle example <m>3
+    * 120 = 360</m> and in the pentagon example <m>5 * 72 = 360</m>.</p>
+  <p>Change the <c>??</c> in line 7 below to the amount to turn each time to draw a 12 sided polygon (called a dodecagon).
+    If you get it right the turtle will draw a 12 sided closed polygon.</p>
 
-    <program xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 mia = Turtle()
@@ -58,87 +57,106 @@ for sides in range(12):
 
 mia.end_fill()
         </input>
-    </program>
+  </program>
 
-    <exercise label="csprepeatturtles_turtlegeom4">
+  <exercise label="csprepeatturtles_turtlegeom4">
+    <statement>
+
+      <p>How much does <c>mia</c> need turn in the program above to create a closed dodecagon (12-sided figure)? Only one
+        of these works.</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>How much does <c>mia</c> need turn in the program above to create a closed dodecagon
-            (12-sided figure)?  Only one of these works.</p>
-
+          <p>15</p>
         </statement>
-<choices>
+        <feedback>
+          <p>This one will not close</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>15</p>
-                </statement>
-                <feedback>
-                    <p>This one will not close</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>30</p>
+        </statement>
+        <feedback>
+          <p>Exactly! 12 * 30 = 360</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>30</p>
-                </statement>
-                <feedback>
-                    <p>Exactly! 12 * 30 = 360</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>12</p>
+        </statement>
+        <feedback>
+          <p>No, 12 * 12 is 144, which is not a multiple of 360</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>12</p>
-                </statement>
-                <feedback>
-                    <p>No, 12 * 12 is 144, which is not a multiple of 360</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>90</p>
+        </statement>
+        <feedback>
+          <p>This one will generate a square, three times. 12 * 90 = 1080 = 360 * 3</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>90</p>
-                </statement>
-                <feedback>
-                    <p>This one will generate a square, three times. 12 * 90 = 1080 = 360 * 3</p>
-                </feedback>
-            </choice>
-</choices>
+  </exercise>
+  <p>Now that we have identified a pattern, it is a bit silly to write separate functions like <c>square</c> and <c>dodecagon</c> for
+    all the shapes. They are all basically the same and we don&#8217;t like repeating ourselves.</p>
+  <p>In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure that can draw any <c>polygon</c>.
+    It will take parameters to control how many sides there are and how long to make each side.</p>
+  <exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
+      <p>Arrange the blocks in the correct order and indentation to make the <c>polygon</c> procedure. This procedure will use <c>begin_fill</c>
+        and <c>end_fill</c> to make the shapes be colored.</p>
+      <p>Those commands do not need to be repeated - we only want to use each one once - so make sure they are not</p>
+      <p>You will not need to use all of them.</p>
+    </statement>
+    <blocks>
+      <block order="5">
+        <cline>def polygon(turtleName, sides, size)</cline>
+      </block>
+      <block order="3">
+        <cline> turtleName.begin_fill()</cline>
+      </block>
+      <block order="7">
+        <choice correct="yes">
+          <cline> for s in range(sides):</cline>
+        </choice>
+        <choice>
+          <cline> for s in range(size) </cline>
+        </choice>
+      </block>
+      <block order="4">
+        <choice correct="yes">
+          <cline> turtleName.forward(size)</cline>
+        </choice>
+        <choice>
+          <cline> turtleName.forward(sides) </cline>
+        </choice>
+      </block>
+      <block order="9">
+        <choice correct="yes">
+          <cline> turtleName.left(360 / sides)</cline>
+        </choice>
+        <choice>
+          <cline> turtleName.turn(sides / 360) </cline>
+        </choice>
+      </block>
+      <block order="8">
+        <cline> turtleName.end_fill()</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <p>Once you have figured out the procedure, add it to the program below:</p>
 
-    </exercise>
-        <p>Now that we have identified a pattern, it is a bit silly to write separate functions
-            like <c>square</c> and <c>dodecagon</c> for all the shapes. They are all basically the same and
-            we don&#8217;t like repeating ourselves.</p>
-        <p>In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure
-            that can draw any <c>polygon</c>. It will take parameters to control how many sides there
-            are and how long to make each side.</p>
-<exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>Arrange the blocks in the correct order and indentation to make the <c>polygon</c> procedure.
-            This procedure will use <c>begin_fill</c> and <c>end_fill</c> to make the shapes be colored.</p>
-        <p>Those commands do not need to be repeated - we only want to use each one once - so make
-            sure they are not</p>
-        <p>You will not need to use all of them.</p>
-</statement>
-<blocks><block order="5">
-<cline>def polygon(turtleName, sides, size)</cline>
-</block><block order="3">
-<cline>    turtleName.begin_fill()</cline>
-</block><block order="7">
-<choice correct="yes"><cline>    for s in range(sides):</cline>
-</choice><choice><cline>    for s in range(size) </cline>
-</choice></block><block order="4">
-<choice correct="yes"><cline>        turtleName.forward(size)</cline>
-</choice><choice><cline>        turtleName.forward(sides) </cline>
-</choice></block><block order="9">
-<choice correct="yes"><cline>        turtleName.left(360 / sides)</cline>
-</choice><choice><cline>        turtleName.turn(sides / 360) </cline>
-</choice></block><block order="8">
-<cline>    turtleName.end_fill()</cline>
-</block></blocks></exercise>        <p>Once you have figured out the procedure, add it to the program below:</p>
-
-    <program xml:id="csprepeatturtles_turtlegeom6" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatturtles_turtlegeom6" interactive="activecode" language="python">
+    <input>
 # DEFINE THE PROCEDURE HERE
 
 # Main program
@@ -152,6 +170,6 @@ polygon(mia, 5, 100)
 polygon(mia, 4, 100)
 polygon(mia, 3, 100)
         </input>
-    </program>
-    </section>
+  </program>
+</section>
 

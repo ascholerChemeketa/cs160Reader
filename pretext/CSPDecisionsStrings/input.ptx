@@ -2,7 +2,7 @@
         <title>Comparing Strings</title>
         
         
-        <p xml:id="csp-decisions-strings_index-0">We can also work with user input directly in string form. If the user is supposed to enter
+        <p>We can also work with user input directly in string form. If the user is supposed to enter
             a word or other piece of text, it makes no sense to try to convert that to a number. Fortunately,
             the comparison operators like <c>==</c>, <c>!=</c>, <c>&gt;</c>, etc&#8230; all work with strings.</p>
         <p>This program is something like we might have in part of a text based adventure game where the
@@ -73,7 +73,7 @@ elif action == "right":
     </exercise>
         
         
-        <p xml:id="csp-decisions-strings_index-1">Now it is your turn to write a program that makes decisions with strings. In the program below, you job
+        <p>Now it is your turn to write a program that makes decisions with strings. In the program below, you job
             is to write the function that will turn a letter grade like &#8220;A&#8221; into the GPA points it is
             worth: 4. That function will be used to calculate the GPA of someone who took three classes.</p>
         <p>Notice that there is some commented out code that <term>hardcodes</term> in three input values.

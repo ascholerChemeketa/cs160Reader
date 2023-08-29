@@ -11,7 +11,7 @@
     </line_block>
   </blockquote>
   <figure xml:id="bit-patterns-demo-app">
-    <caption> Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.</caption>
+    <caption>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.</caption>
   </figure>
   <raw format="html" xml:space="preserve">
   <div class="figure" style="max-width: 300px;">

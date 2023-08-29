@@ -1,45 +1,43 @@
 <section xml:id="impacts-of-computing_example-smart-locks">
   <title>Example: Smart Locks</title>
   <p>This example analyzes the impact of using smart door locks for the shared door on an apartment building.</p>
-  <p>Sources:
-<ul>
-  <li>
-    <url
-      href="https://www.cnet.com/home/smart-home/tenants-win-rights-to-physical-keys-over-smart-locks-from-landlords/"
-      visual="https://www.cnet.com/home/smart-home/tenants-win-rights-to-physical-keys-over-smart-locks-from-landlords/">CNET
-      - Tenants win as settlement orders landlords give physical keys over smart locks</url>
-  </li>
-  <li>
-    <url href="https://www.lifewire.com/smart-locks-4159894" visual="https://www.lifewire.com/smart-locks-4159894">What
-      is a Smart Lock and Why Would You Want One</url>
-  </li>
-</ul>
+  <p>Sources: <ul>
+      <li>
+        <url
+          href="https://www.cnet.com/home/smart-home/tenants-win-rights-to-physical-keys-over-smart-locks-from-landlords/"
+          visual="https://www.cnet.com/home/smart-home/tenants-win-rights-to-physical-keys-over-smart-locks-from-landlords/">CNET
+    - Tenants win as settlement orders landlords give physical keys over smart locks</url>
+      </li>
+      <li>
+        <url href="https://www.lifewire.com/smart-locks-4159894" visual="https://www.lifewire.com/smart-locks-4159894">What
+    is a Smart Lock and Why Would You Want One</url>
+      </li>
+    </ul>
   </p>
 
-  <p>Answers to questions:
-    <ol label="A">
+  <p>Answers to questions: <ol marker="A">
       <li>
         <term>According to your sources, what problems was the technology designed to solve?</term>
         <p>Smart locks are locks that use a cell phone app or numeric code to open a door instead of a key. In my first
-          source, the smart locks are being used on an apartment building.</p>
+    source, the smart locks are being used on an apartment building.</p>
       </li>
       <li>
         <term>According to your sources, how does the technology use computation?</term>
         <p>The exact data is not described well. The user has a smartphone app that they use to control the technology.
-          The lock must receive some kind of information that allows it to see what device is sending the signal to open
-          and only admit residents&#8212;so there must be some kind of unique ID for each resident.</p>
+    The lock must receive some kind of information that allows it to see what device is sending the signal to open and
+    only admit residents&#8212;so there must be some kind of unique ID for each resident.</p>
       </li>
       <li>
         <term>How is this use of computation beneficial and who benefits?</term>
         <p>The building does not have to worry about replacing locks if keys are lost or stolen. The privacy policy of
-          the company that made the locks says it could use people&#8217;s location data for marketing purposes.</p>
+    the company that made the locks says it could use people&#8217;s location data for marketing purposes.</p>
       </li>
       <li>
         <term>How is this use of computation harmful and who is harmed?</term>
         <p>Residents who were forced to use the system lost privacy&#8212;both the building and a third party would have
-          records of their coming and going. And residents who lacked a working cell phone were potentially locked out
-          of their building&#8212;having your cell phone run out of battery before getting home is a lot more frequent
-          for many people than losing their keys.</p>
+    records of their coming and going. And residents who lacked a working cell phone were potentially locked out of
+    their building&#8212;having your cell phone run out of battery before getting home is a lot more frequent for many
+    people than losing their keys.</p>
       </li>
     </ol>
   </p>

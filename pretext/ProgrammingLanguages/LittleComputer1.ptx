@@ -1,6 +1,6 @@
 <section xml:id="programming-languages_the-little-computer">
   <title>The Little Computer</title>
-  <p>The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine level languages
+  <p>The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine-level languages
     work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that
     data.</p>
   <p>The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three <xref

@@ -1,263 +1,178 @@
 <section xml:id="csp-name-turtles_turtle-procedures">
-        <title>Turtle Procedures</title>
-        <p>Turtles can do more than go forward, turn left, and turn right. The table below lists more turtle
-            procedures and functions.</p>
-        
-        
-        
-        <table xml:id="csp-name-turtles_id1 turtle-reference"><tabular>
-            <title>Turtle procedures</title>
-            
-                
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Name
-                        </cell>
-                        <cell>
-                            Input
-                        </cell>
-                        <cell>
-                            Description
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            backward
-                        </cell>
-                        <cell>
-                            amount
-                        </cell>
-                        <cell>
-                            Moves the turtle backward by the specified amount. If the pen is down, draws a line.
-                                A move of 0 makes a dot if the pen is down.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            forward
-                        </cell>
-                        <cell>
-                            amount
-                        </cell>
-                        <cell>
-                            Moves the turtle forward by the specified amount. If the pen is down, draws a line.
-                                A move of 0 makes a dot if the pen is down.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            goto
-                        </cell>
-                        <cell>
-                            x, y
-                        </cell>
-                        <cell>
-                            Moves the turtle to position x, y. Note you must put a comma between the
-                                two values.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            left
-                        </cell>
-                        <cell>
-                            angle
-                        </cell>
-                        <cell>
-                            Turns the turtle counter clockwise by the specified angle
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            right
-                        </cell>
-                        <cell>
-                            angle
-                        </cell>
-                        <cell>
-                            Turns the turtle clockwise by the specified angle
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            setheading
-                        </cell>
-                        <cell>
-                            angle
-                        </cell>
-                        <cell>
-                            Turns the turtle to face the given heading. East is 0, north is 90, west is 180, and south is 270.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            speed
-                        </cell>
-                        <cell>
-                            number
-                        </cell>
-                        <cell>
-                            How fast to move the turtle. Should be a value from 1-10 (1 is slow, 10 is fast),
-                                or 0 which means &#8220;as fast as possible&#8221;.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            xcor
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            A function - returns the current x position of the turtle.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            ycor
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            A function - returns the current y position of the turtle.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            hideturtle
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Hides the turtle (the triangle icon)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            pendown
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Puts down the turtle&#8217;s pen so that it draws when it moves
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            penup
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Picks up the turtle&#8217;s pen so that it doesn&#8217;t draw when it moves
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            pensize
-                        </cell>
-                        <cell>
-                            width
-                        </cell>
-                        <cell>
-                            Sets the width of the pen for drawing
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            color
-                        </cell>
-                        <cell>
-                            colorname
-                        </cell>
-                        <cell>
-                            Sets the color for drawing. Use <term>strings</term> - like &#8216;red&#8217;, &#8216;black&#8217;, etc&#8230;
-                                This page has a <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">table of colors</url>
-                                Make sure to put quotation marks around the name of the color!
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            begin_fill
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Tells the turtle to start painting inside the shape it draws
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            end_fill
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Tells the turtle to stop painting inside the shape it draws
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            fillcolor
-                        </cell>
-                        <cell>
-                            colorname
-                        </cell>
-                        <cell>
-                            This page has a <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">table of colors</url>
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            stamp
-                        </cell>
-                        <cell>
-                            None
-                        </cell>
-                        <cell>
-                            Stamps a copy of the turtle&#8217;s icon at the current location.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            shape
-                        </cell>
-                        <cell>
-                            shapeName
-                        </cell>
-                        <cell>
-                            Changes the icon used to represent the turtle. <c>shapeName</c> should be set
-                                to one of the following: &#8220;arrow&#8221;, &#8220;turtle&#8221;, &#8220;circle&#8221;, &#8220;square&#8221;, &#8220;triangle&#8221;, &#8220;classic&#8221;.
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <note>
-            <p>You can find this table easily by look for &#8220;turtle - procedure list&#8221; in the book index.</p>
-        </note>
-        <p>To draw more than one letter you can use the <c>penup()</c> procedure after drawing the first
-            letter to pick up the pen before moving to where you want to start the next letter. Once you
-            are ready to draw again, use <c>pendown()</c>. The example below draws a C and an S.</p>
-        <note>
-            <p>In the sample we use blank lines to break up the code into logical chunks and comments to
-                describe what each chunk does. The computer does not care about these things, but these
-                tricks make it much easier for humans to understand what is happening.</p>
-        </note>
+  <title>Turtle Procedures</title>
+  <p>Turtles can do more than go forward, turn left, and turn right. The table below lists more turtle procedures and
+    functions.</p>
 
-    <program xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
-        <input>
+  <table xml:id="turtle-reference">
+    <tabular row-headers="yes">
+      <title>Turtle procedures</title>
+      <col width="20%"/>
+      <col width="20%"/>
+      <col width="60%"/>
+
+      <row header="yes" bottom="medium">
+        <cell> Name </cell>
+        <cell> Input </cell>
+        <cell> Description</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell> backward </cell>
+        <cell> amount </cell>
+        <cell>
+          <p>Moves the turtle backward by the specified amount. If the pen is down, it draws a line. A move of 0 makes a
+            dot if the pen is down.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> forward </cell>
+        <cell> amount </cell>
+        <cell>
+          <p>Moves the turtle forward by the specified amount. If the pen is down, it draws a line. A move of 0 makes a dot
+            if the pen is down.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> goto </cell>
+        <cell> x, y </cell>
+        <cell>
+          <p>Moves the turtle to position x, y. Note you must put a comma between the two values.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> left </cell>
+        <cell> angle </cell>
+        <cell>
+          <p>Turns the turtle counter-clockwise by the specified angle</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> right </cell>
+        <cell> angle </cell>
+        <cell>
+          <p>Turns the turtle clockwise by the specified angle</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> setheading </cell>
+        <cell> angle </cell>
+        <cell>
+          <p>Turns the turtle to face the given heading. East is 0, north is 90, west is 180, and south is 270.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> speed </cell>
+        <cell> number </cell>
+        <cell>
+          <p>How fast to move the turtle. Should be a value from 1-10 (1 is slow, 10 is fast), or 0 which means
+            &#8220;as fast as possible&#8221;.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> xcor </cell>
+        <cell> None </cell>
+        <cell>
+          <p>A function - returns the current x position of the turtle.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> ycor </cell>
+        <cell> None </cell>
+        <cell>
+          <p>A function - returns the current y position of the turtle.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> hideturtle </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Hides the turtle (the triangle icon)</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> pendown </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Puts down the turtle&#8217;s pen so that it draws when it moves</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> penup </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Picks up the turtle&#8217;s pen so that it doesn&#8217;t draw when it moves</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> pensize </cell>
+        <cell> width </cell>
+        <cell>
+          <p>Sets the width of the pen for drawing</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> color </cell>
+        <cell> colorname </cell>
+        <cell>
+          <p>Sets the color for drawing. Use <term>strings</term> - like &#8216;red&#8217;, &#8216;black&#8217;,
+            etc&#8230; This page has a <url href="https://trinket.io/docs/colors"
+              visual="https://trinket.io/docs/colors">table of colors</url> Make sure to put quotation marks around the
+            name of the color!</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> begin_fill </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Tells the turtle to start painting inside the shape it draws </p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> end_fill </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Tells the turtle to stop painting inside the shape it draws</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> fillcolor </cell>
+        <cell> colorname </cell>
+        <cell>
+          <p>This page has a <url href="https://trinket.io/docs/colors"
+              visual="https://trinket.io/docs/colors">table of colors</url></p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> stamp </cell>
+        <cell> None </cell>
+        <cell>
+          <p>Stamps a copy of the turtle&#8217;s icon at the current location.</p>
+        </cell>
+      </row>
+      <row bottom="minor">
+        <cell> shape </cell>
+        <cell> shapeName </cell>
+        <cell>
+          <p>Changes the icon used to represent the turtle. <c>shapeName</c> should be set to one of the following:
+            &#8220;arrow&#8221;, &#8220;turtle&#8221;, &#8220;circle&#8221;, &#8220;square&#8221;,
+            &#8220;triangle&#8221;, &#8220;classic&#8221;.</p>
+        </cell>
+      </row>
+
+    </tabular>
+  </table>
+
+  <p>To draw more than one letter you can use the <c>penup()</c> procedure after drawing the first letter to pick up the pen
+    before moving to where you want to start the next letter. Once you are ready to draw again, use <c>pendown()</c>. The example
+    below draws a C and an S.</p>
+  <note>
+    <p>In the sample we use blank lines to break up the code into logical chunks and comments to describe what each
+      chunk does. The computer does not care about these things, but these tricks make it much easier for humans to
+      understand what is happening.</p>
+  </note>
+
+  <program xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 ji = Turtle()         # create a turtle named ji
@@ -291,20 +206,22 @@ ji.forward(50)
 ji.right(90)
 ji.forward(75)
         </input>
-    </program>
-        <p>Try some experiments on the code:</p>
-        <p><ul>
-            <li>
-                <p>Change the speed to a different value (1-10)</p>
-            </li>
-            <li>
-                <p>Try <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">looking up some other colors</url> and change what color
-                    the turtle draws with.</p>
-            </li>
-            <li>
-                <p>Try commenting out the code in the section called <c># Draw the S</c> to see how the turtle is
-                    repositioned after the C so it can start the S.</p>
-            </li>
-        </ul></p>
-    </section>
+  </program>
+  <p>Try some experiments on the code:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Change the speed to a different value (1-10)</p>
+      </li>
+      <li>
+        <p>Try <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">looking up some other
+          colors</url> and change what color the turtle draws with.</p>
+      </li>
+      <li>
+        <p>Try commenting out the code in the section called <c># Draw the S</c> to see how the turtle is repositioned after the C
+          so it can start the S.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

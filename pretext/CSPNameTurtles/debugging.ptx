@@ -1,85 +1,92 @@
 <section xml:id="csp-name-turtles_errors-in-programs">
-        <title>Errors in Programs</title>
-        
-        
-        <p xml:id="csp-name-turtles_index-0">Below are some programs that have errors you need to fix. Errors in programs fall into two
-            major categories. <term>Syntax errors</term> are errors in code that violate the rules of the language.
-            Syntax errors will either prevent the program from running or prevent a particular line
-            from running correctly. <term>Logic errors</term> are pieces of code that follow the rules of the
-            language correctly, but do not do what the programmer actually wants.</p>
-        <p>Here are some examples of the two types of errors as we might see them in turtle programs:</p>
-        <p><term>Syntax errors:</term></p>
-        <p><ul>
-            <li>
-                <p>Case matters in Python so <c>screen</c> is not the same as <c>Screen</c></p>
-            </li>
-            <li>
-                <p>open and close parentheses <c>()</c> are required after every function and procedure call, even
-                    if it doesn&#8217;t take any input.</p>
-            </li>
-            <li>
-                <p>Spelling matters. <c>froward</c> is not the same as <c>forward</c>.</p>
-            </li>
-        </ul></p>
-        <p>Look back at previous programs if you need an example of correct syntax for a particular
-            function or procedure.</p>
-        <p><term>Logic errors:</term></p>
-        <p><ul>
-            <li>
-                <p>If instructions are in the wrong order, or missing, the turtle will not draw what we intended.</p>
-            </li>
-            <li>
-                <p>If a procedure call like <c>left(90)</c> leaves out the angle - <c>left</c> - or uses the wrong
-                    angle, the turtle will not draw what we intend.</p>
-            </li>
-        </ul></p>
-        <subsection xml:id="csp-name-turtles_debugging-programs">
-            <title>Debugging Programs</title>
-            
-            
-            <p xml:id="csp-name-turtles_index-1">A major part of writing programs is <term>debugging</term> them - finding and fixing <term>bugs</term>, or errors,
-                in the code. Debugging code is often time harder than writing it in the first place. It is easy
-                for a human to read code and mentally fill in gaps - to make assumptions about how the code will
-                work that are not actually true.</p>
-            <p>So how do you debug a program?</p>
-            <p><ul>
-                <li>
-                    <p>Read carefully. Slow down, read each line out loud.</p>
-                </li>
-                <li>
-                    <p>Think about what each line is trying to do. Try to explain each line in English and think about
-                        what it is trying to accomplish.</p>
-                </li>
-                <li>
-                    <p>Make sure each line of code is doing what you intended. To do this, you can:</p>
-                    <p><ul>
-                        <li>
-                            <p>Use a tool like the Codelens to run the program one line at a time. Examine all of the variables
-                                before and after each line runs. (Unfortunately, Codelens does not work for turtle programs.)</p>
-                        </li>
-                        <li>
-                            <p>If you are working with strings or numbers, add <c>print()</c> commands to print out the result of
-                                each line of code. Instead of doing a bunch of calculations and then printing out the final
-                                answer, print out the result of each step.</p>
-                        </li>
-                    </ul></p>
-                </li>
-            </ul></p>
-            <p>Related to the idea of verifying each line is the idea you should focus your attention on one small
-                part of the program at a time. Do your best to isolate one part of the code from everything else
-                so there is less to worry about. One way to do this is by <term>commenting out</term> code. Commenting out
-                code means putting a <c>#</c> at the start of one or more lines of code to turn them into comments so
-                the computer ignores them.</p>
-            <p>In the program below, we have commented out lines 5-7. Try running the program - it won&#8217;t try
-                to do anything after the <c>alex.forward(150)</c>. Because it successfully creates the turtle and
-                does the move forward, we are pretty sure those lines are working correctly.</p>
-            <p>The full program is supposed to draw a square, but there are some bugs.
-                Try turning one line of code at a time back on by removing the <c>#</c> at the start. Then run the
-                program. Does the line seem to do its job? If so, go to the next line. If not, stop and try to fix
-                that line before moving on.</p>
+  <title>Errors in Programs</title>
+
+  <p>Below are some programs that have errors you need to fix. Errors in programs fall
+    into two major categories. <term>Syntax errors</term> are errors in code that violate the rules of the language.
+    Syntax errors will either prevent the program from running or prevent a particular line from running correctly. <term>Logic
+    errors</term> are pieces of code that follow the rules of the language correctly but do not do what the programmer
+    actually wants.</p>
+  <p>Here are some examples of the two types of errors as we might see them in turtle programs:</p>
+  <p>
+    <term>Syntax errors:</term>
+  </p>
+  <p>
+    <ul>
+      <li>
+        <p>Case matters in Python so <c>screen</c> is not the same as <c>Screen</c></p>
+      </li>
+      <li>
+        <p>open and close parentheses <c>()</c> are required after every function and procedure call, even if it
+          doesn&#8217;t take any input.</p>
+      </li>
+      <li>
+        <p>Spelling matters. <c>froward</c> is not the same as <c>forward</c>.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Look back at previous programs if you need an example of correct syntax for a particular function or procedure.</p>
+  <p>
+    <term>Logic errors:</term>
+  </p>
+  <p>
+    <ul>
+      <li>
+        <p>If instructions are in the wrong order, or missing, the turtle will not draw what we intended.</p>
+      </li>
+      <li>
+        <p>If a procedure call like <c>left(90)</c> leaves out the angle - <c>left</c> - or uses the wrong angle, the turtle will
+          not draw what we intend.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="csp-name-turtles_debugging-programs">
+    <title>Debugging Programs</title>
+
+    <p>A major part of writing programs is <term>debugging</term> them - finding and
+      fixing <term>bugs</term>, or errors, in the code. Debugging code is often time harder than writing it in the first
+      place. It is easy for a human to read code and mentally fill in gaps - and to make assumptions about how the code will
+      work that are not actually true!</p>
+    <p>So how do you debug a program?</p>
+    <p>
+      <ul>
+        <li>
+          <p>Read carefully. Slow down and read each line out loud.</p>
+        </li>
+        <li>
+          <p>Think about what each line is trying to do. Try to explain each line in English and think about what it is
+            trying to accomplish.</p>
+        </li>
+        <li>
+          <p>Make sure each line of code is doing what you intended. To do this, you can:</p>
+          <p>
+            <ul>
+              <li>
+                <p>Use a tool like the Codelens to run the program one line at a time. Examine all of the variables
+                  before and after each line runs. (Unfortunately, Codelens does not work for turtle programs.)</p>
+              </li>
+              <li>
+                <p>If you are working with strings or numbers, add <c>print()</c> commands to print out the result of each line
+                  of code. Instead of doing a bunch of calculations and then printing out the final answer, print out
+                  the result of each step.</p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>Related to the idea of verifying each line is the idea you should focus your attention on one small part of the
+      program at a time. Do your best to isolate one part of the code from everything else so there is less to worry
+      about. One way to do this is by <term>commenting out</term> code. Commenting out code means putting a <c>#</c> at
+      the start of one or more lines of code to turn them into comments so the computer ignores them.</p>
+    <p>In the program below, we have commented out lines 5-7. Try running the program - it won&#8217;t try to do
+      anything after the <c>alex.forward(150)</c>. Because it successfully creates the turtle and does the move forward, we are pretty
+      sure those lines are working correctly.</p>
+    <p>The full program is supposed to draw a square, but there are some bugs. Try turning one line of code at a time
+      back on by removing the <c>#</c> at the start. Then run the program. Does the line seem to do its job? If so, go to
+      the next line. If not, stop and try to fix that line before moving on.</p>
 
     <program xml:id="cspnameturtles_debugging1" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = Screen()
 alex = Turtle()
@@ -93,12 +100,12 @@ alex.forward(150)        # This is the last active line of code
 #alex.left(90)
         </input>
     </program>
-            <p>The following example has 3 errors.  Can you fix the errors so that the code runs correctly
-                to print a capital L? You may want to start by commenting out all the lines and turn them on
-                one by one like we did in the last exercise.</p>
+    <p>The following example has 3 errors. Can you fix the errors so that the code runs correctly to print a capital L?
+      You may want to start by commenting out all the lines and then turn them back on one by one like we did in the last
+      exercise.</p>
 
     <program xml:id="cspnameturtles_debugging2" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *    # use the turtle library
 space = screen()        # create a turtle space
 alisha = Turtle()       # create a turtle named alisha
@@ -108,17 +115,15 @@ alisha.left(90)         # turn to face east
 alisha.Forward(75)      # move forward by 75 units
         </input>
     </program>
-            <p>The following example has 4 errors.  Can you fix the errors so that the code runs correctly
-                to print a capital C?</p>
-            <danger>
-                <p>One of the errors in this one is tricky. It won&#8217;t cause an immediate problem, but will
-                    cause future lines to misbehave. Errors like this are especially hard to debug. If a
-                    line of code is not doing its job, and you are 100% certain it is right, you may have
-                    to go re-examine earlier lines of code that you thought were correct.</p>
-            </danger>
+    <p>The following example has 4 errors. Can you fix the errors so that the code runs correctly to print a capital C?</p>
+    <danger>
+      <p>One of the errors in this one is tricky. It won&#8217;t cause an immediate problem, but will cause future lines
+        to misbehave. Errors like this are especially hard to debug. If a line of code is not doing its job, and you are
+        100% certain it is right, you may have to re-examine earlier lines of code that you thought were correct.</p>
+    </danger>
 
     <program xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle Import *    # use the turtle library
 space = Screen()        # create a turtle space
 Alex = Turtle           # create a turtle named alex
@@ -130,77 +135,15 @@ alex.left(90)           # turn left 90 degrees
 alex.forward            # move forward by 75 units
         </input>
     </program>
-            <p>Use the area below to try to draw a block letter or number.</p>
+    <p>Use the area below to try to draw a block letter or number.</p>
 
     <program xml:id="cspnameturtles_debugging4" interactive="activecode" language="python">
-        <input>
+      <input>
 
 
         </input>
     </program>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </subsection>
-    </section>
+
+  </subsection>
+</section>
 

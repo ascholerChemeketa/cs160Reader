@@ -1,54 +1,69 @@
 <section xml:id="csp-repeat-numbers_infinite-loops">
-        <title>Infinite Loops</title>
-        <p>In the last section, we saw what happens if a loop&#8217;s control variable is never updated.
-            It will run forever.</p>
+  <title>Infinite Loops</title>
+  <p>In the last section, we saw what happens if a loop&#8217;s control variable is never updated. It will run forever.</p>
 
-<program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
+  <program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
     <input>
 counter = 1
 while counter &lt;= 10:
     print(counter)
     </input>
-</program>
-        <p>Getting a computer to repeat a set of statements is simple. Sometimes it can be tricky to get
-            it to <em>stop</em>.  Remember that a while loop will execute as long as the logical expression is true.
-            What happens if the logical expression is <em>always</em> true?</p>
+  </program>
+  <p>Getting a computer to repeat a set of statements is simple. Sometimes it can be tricky to get it to <em>stop</em>.
+    Remember that a while loop will execute as long as the logical expression is true. What happens if the logical
+    expression is <em>always</em> true?</p>
 
-<program xml:id="csprepeatnumbers_infinite2" interactive="codelens" language="python">
+  <program xml:id="csprepeatnumbers_infinite2" interactive="codelens" language="python">
     <input>
 while 1 == 1:
     print("Looping")
     print("Forever")
     </input>
-</program>
-        
-        
-        <p xml:id="csp-repeat-numbers_index-0">Since <c>1</c> will always be equal to <c>1</c>, the two <c>print</c> statements will just be repeated
-            over and over and over again and the logical expression will never be false.  We call that an
-            <term>infinite loop</term>, which means a loop that continues forever or until it is forced to stop.</p>
-        <p>In that program, it is obvious that the loop will be infinite. It is not always so clear.
-            Maybe we don&#8217;t update the loop control variable. Or maybe we don&#8217;t write the logical expression
-            in a way that it will ever become false. Look at this next program. Can you tell why it
-            has an infinite loop?</p>
-        <p>Try running it. The problem will freeze up and eventually your browser tab will likely crash!
-            To stop the program you will have to close the browser tab and reopen the page (copy the page
-            address from the address bar of your browser before closing it).</p>
+  </program>
 
-    <program xml:id="csprepeatnumbers_infinite3" interactive="activecode" language="python">
-        <input>
+  <p>Since <c>1</c> will always be equal to <c>1</c>, the two <c>print</c> statements will just be repeated over and over and
+    over again and the logical expression will never be false. We call that an <term>infinite loop</term>, which means a
+    loop that continues forever or until it is forced to stop.</p>
+  <p>In that program, it is obvious that the loop will be infinite. It is not always so clear. Maybe we don&#8217;t
+    update the loop control variable. Or maybe we don&#8217;t write the logical expression in a way that it will ever
+    become false. Look at this next program. Can you tell why it has an infinite loop?</p>
+  <p>Try running it. The problem will freeze up and eventually, your browser tab will likely crash! To stop the program
+    you will have to close the browser tab and reopen the page (copy the page address from the address bar of your
+    browser before closing it).</p>
+
+  <program xml:id="csprepeatnumbers_infinite3" interactive="activecode" language="python">
+    <input>
 counter = 1
 while counter != 10:
     print(counter)
     counter = counter + 2
         </input>
-    </program>
-        <p>If you run in Codelens mode, there will be an error displayed that tells you Codelens stopped
-            the run after 1000 lines of execution. You can watch the program run and see what it is doing
-            up until that point. Try doing so. The loop says to keep going as long as the counter is not
-            10. The counter never hits 10 - it skips directly from 9 to 11!</p>
+  </program>
+  <p>If you run in Codelens mode, there will be an error displayed that tells you Codelens stopped the run after 1000
+    lines of execution. You can watch the program run and see what it is doing up until that point. Try doing so. The
+    loop says to keep going as long as the counter is not 10. The counter never hits 10 - it skips directly from 9 to
+    11!</p>
 
-        <exercise label="csprepeatnumbers_infinite4">
-            <statement>
-    <p>The program was supposed to display the numbers 1,3,5,7,9. What operator should have been
-used in <c>while counter ______ 10:</c> instead of <c>!=</c>? <var/>  </p></statement><setup><var><condition string="^\s*^&lt;=?$\s*$"><feedback><p>Correct. &lt; or &lt;= both would work.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again. Make sure to just type the operator: <c>&gt;</c>, <c>&gt;=</c>, <c>&lt;</c>, <c>&lt;=</c>, <c>!=</c>, or <c>==</c></p></feedback></condition></var></setup></exercise>    </section>
+  <exercise label="csprepeatnumbers_infinite4">
+    <statement>
+      <p>The program was supposed to display the numbers 1,3,5,7,9. What operator should have been used in <c>while counter ______ 10:</c>
+        instead of <c>!=</c>? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*^&lt;=?$\s*$">
+          <feedback>
+            <p>Correct. &lt; or &lt;= both would work.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.*\s*$">
+          <feedback>
+            <p>Try again. Make sure to just type the operator: <c>&gt;</c>, <c>&gt;=</c>, <c>&lt;</c>, <c>&lt;=</c>, <c>!=</c>, or <c>==</c></p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
 

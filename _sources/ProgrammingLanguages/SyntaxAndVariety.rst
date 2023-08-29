@@ -6,7 +6,7 @@
 Variety and Syntax
 =================================
 
-Since the first high level language, FORTRAN, there have been hundreds of programming languages developed. Each new language builds on ideas found in earlier programming languages. Sometimes they are designed just to test a particular idea or just for fun, but usually, a new language includes features designed to make some particular task easier to accomplish.
+Since the first high-level language, FORTRAN, there have been hundreds of programming languages developed. Each new language builds on ideas found in earlier programming languages. Sometimes they are designed just to test a particular idea or just for fun, but usually, a new language includes features designed to make some particular task easier to accomplish.
 
 .. figure:: Images/history-poster20.gif
     :target: http://cdn.oreillystatic.com/news/graphics/prog_lang_poster.pdf

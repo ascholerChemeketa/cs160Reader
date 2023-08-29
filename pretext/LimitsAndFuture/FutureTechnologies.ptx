@@ -2,7 +2,7 @@
   <title>End of Moore&#8217;s Law?</title>
   <p>Although it is hard to overestimate the degree to which computation has changed modern life, there are limits to
     what we can do with modern computers and new barriers to progress on the horizon. We have discussed problems that
-    are proven to be unsolvable by any computer, and those that have no polynomial time solution and thus are unsolvable
+    are proven to be unsolvable by any computer and those that have no polynomial time solution and thus are unsolvable
     in practical terms on a modern computer. In addition to those algorithmic limits, physical limits are increasingly
     affecting our ability to build faster computers.</p>
   <sidebar>
@@ -14,7 +14,7 @@
     relentlessly shrinking the size of computational components we have been able to build more complex and faster
     processors. But the exponential growth of computer power predicted by Moore&#8217;s Law may be close to an end.
     Modern transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At
-    this scale, the gate in a transistor the blocks or allows current is only about 50 atoms wide.</p>
+    this scale, the gate in a transistor that blocks or allows current is only about 50 atoms wide.</p>
   <figure>
     <caption>A transistor is ~10 nm or 1/10,000th the size of a human hair.
       <url name="Image by US Dept. of Energy" refuri="http://www.nano.gov/nanotech-101/what/nano-size">Image by US
@@ -24,7 +24,7 @@
   </figure>
   <p>We are nearing the end of our ability to continue shrinking existing silicon microchips. As the scale of components
     decreases, they become harder to build and harder to make reliable. Every attempt to reduce the size of chips
-    requires increasingly complex new processes. The fabrication facilities used to make cutting edge processors cost
+    requires increasingly complex new processes. The fabrication facilities used to make cutting-edge processors cost
     billions of dollars - only three companies in the world are actively pursuing commercial manufacturing at smaller
     and smaller scales. And as features shrink to a few dozen atoms, quantum effects mean they start behaving
     differently. We can&#8217;t just build the same kinds of chips much smaller than we already do. For these reasons, <url

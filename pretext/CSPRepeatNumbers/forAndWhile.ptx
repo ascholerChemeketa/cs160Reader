@@ -1,28 +1,27 @@
 <section xml:id="csp-repeat-numbers_introducing-the-while-loop">
-        <title>Introducing the While Loop</title>
-        
-        
-        <p xml:id="csp-repeat-numbers_index-0">Recall that a <c>for</c> loop is designed to repeat steps for every value in a list. The <c>range</c>
-            function in the code below is designed to generate a list that looks like [0, 1, 2, 3, 4] and
-            thus causes the loop to repeat 5 times. By forcing us to provide that list of values, the <c>for</c>
-            loop requires us to specify the number of iterations there will be before we begin looping.</p>
-        <program language="python"><input>
+  <title>Introducing the While Loop</title>
+  <p>Recall that a <c>for</c> loop is designed to repeat steps for every value in a
+    list. The <c>range</c> function in the code below is designed to generate a list that looks like [0, 1, 2, 3, 4] and thus
+    causes the loop to repeat 5 times. By forcing us to provide that list of values, the <c>for</c> loop requires us to
+    specify the number of iterations there will be before we begin looping.</p>
+  <program language="python">
+    <input>
 for iteration in range(5):
     guess = 1/2 * ((number / guess) + guess)
-</input></program>
-        <p>However, there is another way to repeat statements: the <c>while</c> loop.  It will repeat the
-            <term>body</term> of the loop as long as some <term>logical expression</term> is true. Just like with a for loop,
-            the <term>body</term> of a while loop is the lines of code after <c>while</c> that are indented. A <term>logical
-                expression</term> is one that is either true or false like <c>x &lt; 5</c>. (We will talk more about them
-            later.)</p>
-        <p><c>While</c> loops are typically used when you don&#8217;t know how many times to execute the loop. they
-            allow us to say <em>&#8220;keep repeating this while we don&#8217;t have an answer&#8221;</em>. One reason we might not
-            know in advance how many times to repeat is if we are getting input from outside the program.
-            The code below will keep asking you to enter numbers. It will do so until you enter a number
-            that isn&#8217;t negative. It will print out the sum and average of all of the numbers you have entered.</p>
+</input>
+  </program>
+  <p>However, there is another way to repeat statements: the <c>while</c> loop. It will repeat the <term>body</term> of the
+    loop as long as some <term>logical expression</term> is true. Just like with a for loop, the <term>body</term> of a
+    while loop is the lines of code after <c>while</c> that are indented. A <term>logical expression</term> is one that is
+    either true or false like <c>x &lt; 5</c>. (We will talk more about them later.)</p>
+  <p><c>While</c> loops are typically used when you don&#8217;t know how many times to execute the loop. they allow us to say <em>&#8220;keep
+    repeating this while we don&#8217;t have an answer&#8221;</em>. One reason we might not know in advance how many
+    times to repeat is if we are getting input from outside the program. The code below will keep asking you to enter
+    numbers. It will do so until you enter a number that isn&#8217;t negative. It will print out the sum and average of
+    all of the numbers you have entered.</p>
 
-    <program xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
+    <input>
 sum = 0
 count = 0
 message = "Enter an integer. Enter 0 or less to stop."
@@ -35,94 +34,98 @@ while int(value) &gt; 0:
 
 print("The sum is: " + str(sum) + " the average is: " + str(sum / count))
         </input>
-    </program>
-        <p>The loop in this sample takes your input, which is stored in <c>value</c> as a string like &#8220;12&#8221;, and
-            turns that into an integer like 12. It checks to see if that value is greater than 0. If so, it
-            does the loop body, if not, we skip over the loop body and continue with the rest of the program.</p>
+  </program>
+  <p>The loop in this sample takes your input, which is stored in <c>value</c> as a string like &#8220;12&#8221;, and turns
+    that into an integer like 12. It checks to see if that value is greater than 0. If so, it does the loop body, if
+    not, we skip over the loop body and continue with the rest of the program.</p>
 
-    <exercise label="csprepeatnumbers_forandwhile2">
+  <exercise label="csprepeatnumbers_forandwhile2">
+    <statement>
+
+      <p>How many lines are in the body of the <c>while</c> loop in while_input above?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>How many lines are in the body of the <c>while</c> loop in while_input above?</p>
-
+          <p>3</p>
         </statement>
-<choices>
+        <feedback>
+          <p>All the statements that are indented 4 spaces to the right of the <code>while</code> are part of the body
+            of the loop.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>3</p>
-                </statement>
-                <feedback>
-                    <p>All the statements that are indented 4 spaces to the right of the <code>while</code> are part of the body of the loop.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>4</p>
-                </statement>
-                <feedback>
-                    <p>There are four statements that are indented 4 spaces to the right of the <code>while</code> statement, so there are four statements in the body of this loop.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>5</p>
-                </statement>
-                <feedback>
-                    <p>Is the <code>print(message)</code> line indented 4 spaces to the right of the <code>while</code>? If not it is not part of the body of the loop.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>6</p>
-                </statement>
-                <feedback>
-                    <p>While line 11 is indented this is just to allow the print statement to take up more than one line.  The print statement is not indented so the body of the loop contains just 4 lines.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise label="csprepeatnumbers_forandwhile3">
+      <choice correct="yes">
         <statement>
-
-        <p>What happens if you enter a negative number as the first input to the code above?</p>
-
+          <p>4</p>
         </statement>
-<choices>
+        <feedback>
+          <p>There are four statements that are indented 4 spaces to the right of the <code>while</code> statement, so
+            there are four statements in the body of this loop.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>It prints the sum is 0 and the average is 0.</p>
-                </statement>
-                <feedback>
-                    <p>Do you see code to do this in the program?</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>5</p>
+        </statement>
+        <feedback>
+          <p>Is the <code>print(message)</code> line indented 4 spaces to the right of the <code>while</code>? If not it
+            is not part of the body of the loop.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>It prints a message that it can't divide by 0.</p>
-                </statement>
-                <feedback>
-                    <p>This might be nice, but is that what happens?</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>6</p>
+        </statement>
+        <feedback>
+          <p>While line 11 is indented this is just to allow the print statement to take up more than one line. The
+            print statement is not indented so the body of the loop contains just 4 lines.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>There is an error.</p>
-                </statement>
-                <feedback>
-                    <p>You will get a ZeroDivisionError since you can't divide by zero.</p>
-                </feedback>
-            </choice>
-</choices>
+  </exercise>
 
-    </exercise>
-    </section>
+  <exercise label="csprepeatnumbers_forandwhile3">
+    <statement>
+
+      <p>What happens if you enter a negative number as the first input to the code above?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>It prints the sum is 0 and the average is 0.</p>
+        </statement>
+        <feedback>
+          <p>Do you see code to do this in the program?</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>It prints a message that it can't divide by 0.</p>
+        </statement>
+        <feedback>
+          <p>This might be nice, but is that what happens?</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>There is an error.</p>
+        </statement>
+        <feedback>
+          <p>You will get a ZeroDivisionError since you can't divide by zero.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+</section>
 

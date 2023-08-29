@@ -1,16 +1,19 @@
 <section xml:id="csp-name-functions_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Composition</term> - Using one function inside of another. Also known as <term>functional composition</term>.</p>
-            </li>
-            <li>
-                <p><term>Return</term> - The <term>return</term> keyword is used inside a function to specify a value that will be passed back
-                    to the location the function was called from. At that location the returned value is substituted for the function.</p>
-            </li>
-        </ul></p>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Composition</term> - Using one function inside of another. Also known as <term>functional composition</term>
+          .</p>
+      </li>
+      <li>
+        <p><term>Return</term> - The <term>return</term> keyword is used inside a function to specify a value that will
+          be passed back to the location the function was called from. At that location the returned value is
+          substituted for the function.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

@@ -10,7 +10,7 @@
 The Little Computer
 ================================= 
 
-The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine level languages work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that data. 
+The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine-level languages work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that data. 
 
 The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three :ref:`registers <registers>`: a program counter, an instruction register, and an accumulator. The CPU supports a very basic set of operations: it can get input and output, it can store data to memory and load it from memory, it can do addition and subtraction, and it can branch (or jump) to a different instruction if certain conditions are met. 
 

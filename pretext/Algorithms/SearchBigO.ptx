@@ -84,7 +84,7 @@
     <p>Imagine we are searching in a list that is 1000 items long. If we assume we have to get down to just 1 possible
       item and then check that one, the process would look like:</p>
 
-      <tabular halign="true">
+      <tabular halign="center">
         <row header="yes">
           <cell> Items Left to Search </cell>
           <cell> Comparisons So Far </cell>

@@ -3,17 +3,17 @@
   <p>So how does merging help us sort? Well, with it we can define Merge Sort (for a human) as the following:</p>
   <program language="none">
     <input>
-<p>1   <term>How to MergeSort a list</term>
-2       if <c>list</c> has length &lt;= 1
-3           <em>A list of one thing or no things is already sorted!</em>
+1   How to MergeSort a list
+2       if list has length &lt;= 1
+3           A list of one thing or no things is already sorted!
 4           Do nothing
 5       else
-6           <c>listA</c> = first half of <c>list</c>
-7           <c>listB</c> = second half of <c>list</c>
-8           <em>We split the lists, now sort each half by doing MergeSort on them</em>
-9           Do MergeSort on <c>listA</c>
-10          Do MergeSort on <c>listB</c>
-11          Do <term>Merge</term> on <c>listA</c>, <c>listB</c> back into <c>list</c></p>
+6           listA = first half of list
+7           listB = second half of list
+8           We split the lists, now sort each half by doing MergeSort on them
+9           Do MergeSort on listA
+10          Do MergeSort on listB
+11          Do Merge on listA, listB back into list
 </input>
   </program>
 

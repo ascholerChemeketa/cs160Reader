@@ -2,7 +2,7 @@
         <title>Adding and Removing Items</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">Sometimes, we do not know all of the items in a list in advance - we want to build up A
+        <p>Sometimes, we do not know all of the items in a list in advance - we want to build up A
             list as the program is running. To do this, we can start with a blank list using <c>[]</c>
             as our list. And then we can use <c>append</c> to add things to the end of the list.</p>
 
@@ -38,7 +38,7 @@ myTests().main()
 </exercise>
         
         
-        <p xml:id="csp-collections-intro_index-1">It is also possible to add items to locations other than the end of the list by using
+        <p>It is also possible to add items to locations other than the end of the list by using
             the <c>insert</c> function. To use it, we provide an index of where to insert the new value with
             the value we want to insert. Try running this sample with codelens:</p>
 

@@ -4,8 +4,13 @@ built/*
 build_info
 sphinx-enki-info.txt
 sphinx_settings.json
-
-*.bak
-
+output
 .vscode
+pretext/generated
+pretext/_old
+*.bak
 Thumbs.db
+output
+build
+cli.log
+.error_schema.log

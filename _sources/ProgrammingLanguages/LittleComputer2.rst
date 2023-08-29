@@ -11,7 +11,7 @@ Normally, a computer works its way through the instructions in memory in order. 
 .. pseudo_h3:: Decisions   
     :class: underlined     
    
-Branch instructions are how a computer can make decisions. In high level languages, we generally use "if" statements to make decisions about which instructions to execute. At a low level, those decisions are usually implemented as branches to skip certain instructions.
+Branch instructions are how a computer can make decisions. In high-level languages, we generally use "if" statements to make decisions about which instructions to execute. At a low level, those decisions are usually implemented as branches to skip certain instructions.
 
 In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch. 
 

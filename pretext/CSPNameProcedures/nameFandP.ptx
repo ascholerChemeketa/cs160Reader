@@ -1,26 +1,23 @@
-<section xml:id="csp-name-procedures_stand-alone-procedures-and-functions">
-        <title>Stand Alone Procedures and Functions</title>
-        <p>We&#8217;ve already seen how we can use names to represent numbers (both integers like <c>3</c> and
-            <c>-325</c> and decimal numbers like <c>2.4</c> and <c>-322.9392</c>), strings (like <c>"Hi There"</c>),
-            turtles, and images.  When we do calculations using the names, the computer will look up the
-            value for each name, and then use the value in the calculation.</p>
-        
-        
-        
-        
-        <p xml:id="csp-name-procedures_index-1">We can also name a sequence of statements and then ask the computer to run that sequence whenever
-            we use that name. In programming there are two different terms used for a named sequence of
-            statements: <term>procedure</term> and <term>function</term>.  As we have already learned, <term>procedure</term>
-            accomplishes some task or makes something happen, but doesn&#8217;t return anything. A <term>function</term>
-            returns a result.</p>
-        <p>Many procedures and functions are built directly into Python or libraries that we can import.
-            We have seen a number of them that work with
-            strings and turtles. There are also functions that work with numbers. The function <c>abs</c> returns
-            the absolute value of its input. The function <c>int</c> takes a decimal number as input and
-            returns just the integer part. Try running this sample with the Codelens:</p>
+<section
+  xml:id="csp-name-procedures_stand-alone-procedures-and-functions">
+  <title>Stand Alone Procedures and Functions</title>
+  <p>We&#8217;ve already seen how we can use names to represent numbers (both integers like <c>3</c> and <c>-325</c> and
+    decimal numbers like <c>2.4</c> and <c>-322.9392</c>), strings (like <c>"Hi There"</c>), turtles, and images. When we do calculations
+    using the names, the computer will look up the value for each name, and then use the value in the calculation.</p>
 
-    <program xml:id="cspnameprocedures_namefandp1" interactive="activecode" language="python">
-        <input>
+  <p>We can also name a sequence of statements and then ask the computer to run
+    that sequence whenever we use that name. In programming there are two different terms used for a named sequence of
+    statements: <term>procedure</term> and <term>function</term>. As we have already learned, <term>procedure</term>
+    accomplishes some task or makes something happen, but doesn&#8217;t return anything. A <term>function</term> returns
+    a result.</p>
+  <p>Many procedures and functions are built directly into Python or libraries that we can import. We have seen a number
+    of them that work with strings and turtles. There are also functions that work with numbers. The function <c>abs</c>
+    returns the absolute value of its input. The function <c>int</c> takes a decimal number as input and returns just the
+    integer part. Try running this sample with the Codelens:</p>
+
+  <program xml:id="cspnameprocedures_namefandp1"
+    interactive="activecode" language="python">
+    <input>
 name = "jeff"
 upperName = name.upper()        # call upper function on the string called "name"
 
@@ -28,18 +25,15 @@ x = -12.6
 wholePart = int(x)              # call the "int" function and use the variable x as input
 positiveValue = abs(x)          # call the "abs" function and use the variable x as input
         </input>
-    </program>
-        <p>Notice that functions like <c>abs</c> and <c>int</c> are called differently than the ones we use for
-            strings and turtles. The procedures <c>left</c> and <c>forward</c> are part of the turtle object. So when
-            we use them, we need to specify which turtle should run them using dot notation:
-            <c>alex.left(90)</c>.  The function <c>upper</c> is part of a string object. So when we want to convert
-            a string to upper case, we need to say which string is going to do the upper function:
-            <c>name.upper()</c>. In constrast, <c>abs</c> and <c>int</c> are not part of any object - they are stand
-            alone functions that are not part of any object. So we call them without using dot notation to
-            specify a particular object.</p>
-        <p>In this book we will focus on writing these stand alone procedures and functions. These are not
-            part of any particular object and thus are not called using dot notation. However, as we will
-            see over the next few pages, they can still work with objects as long as those objects are
-            provided to the procedure or function as input.</p>
-    </section>
+  </program>
+  <p>Notice that functions like <c>abs</c> and <c>int</c> are called differently than the ones we use for strings and turtles.
+    The procedures <c>left</c> and <c>forward</c> are part of the turtle object. So when we use them, we need to specify which
+    turtle should run them using dot notation: <c>alex.left(90)</c>. The function <c>upper</c> is part of a string object. So when we want
+    to convert a string to upper case, we need to say which string is going to do the upper function: <c>name.upper()</c>. In
+    constrast, <c>abs</c> and <c>int</c> are not part of any object - they are stand alone functions that are not part of any
+    object. So we call them without using dot notation to specify a particular object.</p>
+  <p>In this book we will focus on writing these stand alone procedures and functions. These are not part of any
+    particular object and thus are not called using dot notation. However, as we will see over the next few pages, they
+    can still work with objects as long as those objects are provided to the procedure or function as input.</p>
+</section>
 

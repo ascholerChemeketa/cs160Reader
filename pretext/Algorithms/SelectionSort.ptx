@@ -6,14 +6,14 @@
   <p>Put into an algorithm for a human to sort a hand of playing cards, it might look like this:</p>
   <program language="none">
     <input>
-<p>1   Get a hand of unsorted cards
+1   Get a hand of unsorted cards
 2   Set a marker for the unsorted section at the front of the hand
 3   Repeat 4-7 until one card remains in the unsorted section
 4       Compare all unsorted cards
 5       Select the smallest unsorted card
 6       Swap this number with the first card in the unsorted section
 7       Advance the marker to the right one card
-8   Stop</p>
+8   Stop
 </input>
   </program>
   <p>To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate

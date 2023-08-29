@@ -4,7 +4,7 @@
     answers.</p>
 
   <p>Answers to questions: 
-    <ol label="A">
+    <ol marker="A">
       <li>
         <term>According to your sources, what problems was the technology designed to solve?</term>
         <p>Street map software, such as the original <url href="https://en.wikipedia.org/wiki/MapQuest"

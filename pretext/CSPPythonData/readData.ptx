@@ -388,7 +388,7 @@ Yuma,AZ:14:9
         </hint>
         
         
-        <p xml:id="csp-python-data_index-0">This data is contained in a file called <c>"uspoll.txt"</c>. A <term>text file</term> is of course
+        <p>This data is contained in a file called <c>"uspoll.txt"</c>. A <term>text file</term> is of course
             actually binary - everything a computer stores is stored as binary data. But in a
             <term>text file</term>, all of the information is stored as a series of ASCII encoded characters.
             Thus in the file, the number 250 would be stored as &#8220;250&#8221; which would be stored by the

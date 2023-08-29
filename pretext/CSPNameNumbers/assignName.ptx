@@ -1,28 +1,28 @@
 <section xml:id="csp-name-numbers_assigning-a-name">
-        <title>Assigning a Name</title>
-        
-        
-        <p xml:id="csp-name-numbers_index-0">A computer can associate a name with a value.  It does this by creating a <term>variable</term>, which is
-            space in computer memory that can represent a value. An example of a <term>variable</term> is a score in a
-            computer game.  The score usually starts at 0 and increases as you play the game.  The score can
-            change or <em>vary</em> during the game, which is why we call it a <term>variable</term>.</p>
-        <p>Think of a variable as a box that has a label on it and you can store a value in the box.  The
-            value can be anything that can be represented on a computer and stored in a computer&#8217;s memory.
-            A computer&#8217;s memory is only made up of numbers (really, just patterns of voltages, but we can
-            think about them as numbers).  Everything that a computer can remember in its memory is translated
-            into these numbers &#8211; but don&#8217;t worry about how this works right now.</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Creating a variable and setting its value in memory.</caption><image source="CSPNameNumbers/Figures/assignA.png" width="60%"/></figure>
-        
-        
-        <p xml:id="csp-name-numbers_index-1">In programming languages, setting a variable&#8217;s value is also called <term>assignment</term>.  A statement
-            like <c>a = 4</c> means that the symbol <c>a</c> refers to space (in the computer&#8217;s memory) that is
-            assigned the value <c>4</c>.  When we use the symbol <c>a</c> in a program the computer will substitute
-            the value <c>4</c>.</p>
+    <title>Assigning a Name</title>
 
-    <video xml:id="tULT-Nqunlc" youtube="tULT-Nqunlc" width="640"/>
-            <p>To see it in context, run the program below. The first line sets a value for <c>a</c>, but does not
-            produce any output we can see. The <c>print</c> command on the second line will show print out a value
-            so we can see it. In this case, it prints <c>4</c> since that is the value stored in <c>a</c>.</p>
+    <p>A computer can associate a name with a value. It does this by creating a <term>
+        variable</term>, which is space in computer memory that can represent a value. An example of a <term>variable</term>
+        is a score in a computer game. The score usually starts at 0 and increases as you play the game. The score can
+        change or <em>vary</em> during the game, which is why we call it a <term>variable</term>.</p>
+
+    <p>Think of a variable as a box that has a label on it and you can store a value in the box. The value can be
+        anything that can be represented on a computer and stored in a computer&#8217;s memory. A computer&#8217;s
+        memory is only made up of numbers (really, just patterns of voltages, but we can think about them as numbers).
+        Everything that a computer can remember in its memory is translated into these numbers &#8211; but don&#8217;t
+        worry about how this works right now.</p>
+
+    <p>In programming languages, setting a variable&#8217;s value is also called <term>
+        assignment</term>. A statement like <c>a = 4</c> means that the symbol <c>a</c> refers to space (in the
+        computer&#8217;s memory) that is assigned the value <c>4</c>. When we use the symbol <c>a</c> in a program the
+        computer will substitute the value <c>4</c>.</p>
+    <figure align="center">
+        <caption>Creating a variable and setting its value in memory.</caption>
+        <image source="CSPNameNumbers/Figures/assignA.png" width="20%" />
+    </figure>
+    <p>To see it in context, run the program below. The first line sets a value for <c>a</c>, but does not produce any
+        output we can see. The <c>print</c> command on the second line will show print out a value so we can see it. In this
+        case, it prints <c>4</c> since that is the value stored in <c>a</c>.</p>
 
     <program xml:id="cspnamenumbers_assignname1" interactive="activecode" language="python">
         <input>
@@ -30,19 +30,21 @@ a = 4
 print(a)
         </input>
     </program>
-        <p>If we later change the value stored at <c>a</c>, say by doing <c>a = 7.2</c> then we say that the
-            variable <c>a</c> now has the value <c>7.2</c> meaning that the value in the box (memory) associated
-            with the name <c>a</c> is changed to <c>7.2</c>.</p>
-        <figure align="center" xml:id="id2"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Changing the value of a variable in memory.</caption><image source="CSPNameNumbers/Figures/changeA.png" width="60%"/></figure>
-        <p>Try modifying the code above. Add a new line of code, after <c>a = 4</c> and before <c>print(a)</c>,
-            that sets a to <c>7.2</c>. If you do so correctly, the program will print 7.2 when it runs.</p>
-        <warning>
-            <p>Although we use the <c>=</c> symbol to do assignment, you should not think of it as &#8220;equals&#8221;.
-                Most programmers will pronounce <c>a = 4</c> as &#8220;a <em>gets</em> 4&#8221; or &#8220;a <em>is assigned the value</em> 4&#8221;.
-                Assignment <term>always</term> takes the value of the right side of the <c>=</c> and stores it into
-                the variable named on the left hand side. It is actually an error to switch the order and
-                try to write <c>4 = a</c> - that says &#8220;4 <em>is assigned the value</em> a&#8221; which does not make
-                sense&#8230; we can&#8217;t change the value of 4.</p>
-        </warning>
-    </section>
+    <p>If we later change the value stored at <c>a</c>, say by doing <c>a = 7.2</c> then we say that the variable <c>a</c> now
+        has the value <c>7.2</c> meaning that the value in the box (memory) associated with the name <c>a</c> is changed to <c>7.2</c>
+        .</p>
+    <p>Try modifying the code above. Add a new line of code, after <c>a = 4</c> and before <c>print(a)</c>, that sets a to <c>7.2</c>.
+        If you do so correctly, the program will print 7.2 when it runs.</p>
+
+    <video xml:id="tULT-Nqunlc" youtube="tULT-Nqunlc" width="100%" />
+
+    <warning>
+        <p>Although we use the <c>=</c> symbol to do assignment, you should not think of it as &#8220;equals&#8221;. Most
+            programmers will pronounce <c>a = 4</c> as &#8220;a <em>gets</em> 4&#8221; or &#8220;a <em>is assigned the value</em>
+            4&#8221;. Assignment <term>always</term> takes the value of the right side of the <c>=</c> and stores it into
+            the variable named on the left hand side. It is actually an error to switch the order and try to write <c>4 = a</c>
+            - that says &#8220;4 <em>is assigned the value</em> a&#8221; which does not make sense&#8230; we can&#8217;t
+            change the value of 4.</p>
+    </warning>
+</section>
 

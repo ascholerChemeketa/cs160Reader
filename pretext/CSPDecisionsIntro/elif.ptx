@@ -79,7 +79,7 @@ if x &gt; 0:
             number, and 0 to check that it works correctly.</p>
         
         
-        <p xml:id="csp-decisions-intro_index-0">Although that approach works, it doesn&#8217;t really guarantee that only one option will be chosen. If
+        <p>Although that approach works, it doesn&#8217;t really guarantee that only one option will be chosen. If
             the first if said <c>x &lt;= 0</c>, we would print both &#8220;x is negative&#8221; and &#8220;x is 0&#8221;. To guarantee that
             only one option is chosen, we can use <c>elif</c> (short for &#8220;<term>el**se **if</term>&#8221;). <c>elif</c> is used
             after an <c>if</c> or another <c>elif</c> to specify something to try if the previous conditions were not True:</p>

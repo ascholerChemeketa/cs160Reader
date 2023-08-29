@@ -1,21 +1,19 @@
 <section xml:id="csp-designing-procedures_program-implementation-3">
-        <title>Program Implementation - 3</title>
-        <p>You may have noticed that the <c>drawWall</c> and <c>drawDoor</c> procedure do not worry about
-            where the shape is being drawn. We could put a <c>goto</c> into them so that they handle
-            jumping to the right location to draw their shape. But, that would make it so they can
-            only draw in one location. We will want to call the <c>drawWindow</c> procedure twice to
-            draw two different windows. That will not work if <c>drawWindow</c> always jumps to a fixed
-            location to do its drawing.</p>
-        <p>This version of the program has <c>drawWindow</c> defined. But, it is not tested yet. Add
-            a test of the procedure to the end of the main part of the program.</p>
+  <title>Program Implementation - 3</title>
+  <p>You may have noticed that the <c>drawWall</c> and <c>drawDoor</c> procedure do not worry about where the shape is being drawn. We
+    could put a <c>goto</c> into them so that they handle jumping to the right location to draw their shape. But, that would
+    make it so they can only draw in one location. We will want to call the <c>drawWindow</c> procedure twice to draw two
+    different windows. That will not work if <c>drawWindow</c> always jumps to a fixed location to do its drawing.</p>
+  <p>This version of the program has <c>drawWindow</c> defined. But, it is not tested yet. Add a test of the procedure to the end
+    of the main part of the program.</p>
 
-<exercise label="cspdesigningprocedures_programimplementation31">
+  <exercise label="cspdesigningprocedures_programimplementation31">
     <statement>
-        <p>Test <c>drawWindow</c> by drawing a window at -100, 0</p>
+      <p>Test <c>drawWindow</c> by drawing a window at -100, 0</p>
 
     </statement>
     <program xml:id="cspdesigningprocedures_programimplementation31_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with
     turtle.pendown()
@@ -79,6 +77,6 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

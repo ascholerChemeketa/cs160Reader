@@ -2,7 +2,7 @@
         <title>In and Not In</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">To check if an item is in a list, we can use the <c>in</c> operator. To check if something is
+        <p>To check if an item is in a list, we can use the <c>in</c> operator. To check if something is
             not in a list, we can use <c>not in</c>:</p>
 
     <program xml:id="cspcollectionsintro_listin1" interactive="activecode" language="python">

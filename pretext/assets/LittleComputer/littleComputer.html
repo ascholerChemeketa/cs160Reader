@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+h1 {
+	font-family: sans-serif;
+	font-size: 30pt;
+	margin: 20px;
+	text-align: center;
+}
+
+#content {
+	margin: 0px auto;
+	width: 950px;
+	display: grid;
+	grid-template-columns: 200px 350px 300px;
+	grid-column-gap: 50px;
+	column-gap: 50px;
+	font-family: sans-serif;
+	font-size: 14pt;
+}
+
+#leftPane {
+	text-align: center;
+}
+
+#rightPane {
+	text-align: center;
+}
+
+#cpuBox input[type="text"], #inputBox input[type="text"] {
+	text-align: center;
+	font-size: 18pt;
+	width: calc(100% - 20px);
+	margin: 00px 10px;
+}
+
+#inputBox, #outputBox, #controlBox, #cpuBox, #messageBox {
+	margin-bottom: 40px;
+}
+
+#message {
+	padding: 10px;
+	border: 1px solid #888;
+	font-style: italic;
+	color: #888;
+	min-height: 50px;
+}
+
+#message.error {
+	color: black;
+	background-color: #da6464;
+}
+
+#controlBox button {
+	width: calc(50% - 20px);
+	margin: 0px 5px;
+	font-size: 18pt;
+	background-color: #649ada;
+	color: white;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#controlBox button:active {
+	background-color: #598abb;
+}
+
+#inputBox img {
+	height: 200px;
+	object-position: 0 -50px;
+	margin-bottom: -50px;
+}
+
+.componentLabel {
+	font-size: 120%;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+#instructions {
+    border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+
+.note {
+	font-style: italic;
+	color: #888;
+}
+
+#instructions td {
+	border: 1px solid #888;
+	padding: 2px 10px;
+}
+#instructions tr td:last-child {
+	text-align: left;
+}
+
+#inputBox input[type="text"]:disabled {
+	background-color: #f4f4f4; 
+}
+
+#memBox, #cpuBox {
+	text-align: center;
+	border: 1px solid #333;
+	padding: 20px 20px;
+	background-color: #f4f4f4;
+}
+
+.partLabel {
+	margin-bottom: 5px;
+}
+
+
+#memLeft {
+	display: inline-block;
+	width: auto;
+	vertical-align: top;
+	text-align: center;
+}
+#memRight {
+	display: inline-block;
+	width: 80px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: -6px;
+}
+
+#memoryAddresses {
+	font-style: italic;
+	font-weight: bold;
+	color: #777;
+}
+
+#memoryBody, #memoryAddresses {
+	resize: none;
+	background-image: linear-gradient(transparent, transparent 1.4em, #ccc 1.5em);
+	border: solid thin #ccc;
+    background-size: 100% 1.5em;
+	background-position-y: 1px;
+    line-height: 1.5em;
+	padding: 0px;
+	font-size: 14pt;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#memoryBody {
+	color: #649ada;
+}
+
+#memLeft {
+	position: relative;
+}
+
+#memHighlight {
+	margin-top: 1.2em;
+    content:"";
+	position: absolute;
+    top: 0;
+    left: 1px;
+	font-size: 14pt;
+    line-height: 1.5em;
+    height: 1.5em;
+	width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 0, 0, .1);
+}
+
+#monitor {
+	background-image:url('monitor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	height: 150px;
+}
+
+#monitor input {
+	border: none;
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+	background: transparent;
+	font-size: 24pt;
+}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+      window.addEventListener('load', (event) => {
+		  	//Create memory addresses
+			var addressesText = "00";
+			for (var i = 1; i < 100; i++) {      
+				var cellNumber = (i < 10) ?  "0" + i : "" + i;
+			//	$("#memory tbody").append("<tr class='memcell'><td id='mem" + cellNumber + "'>" + cellNumber + "</td></tr>");
+				addressesText +=  "\n" + cellNumber;
+			}
+			$('#memoryAddresses').text(addressesText);
+			
+			
+			$('#memoryBody').on('keypress', function(e) {
+			    if((e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt()) && e.which != '\r'.charCodeAt()) {
+			        e.preventDefault();
+			    }
+				
+				if(e.which =='\r'.charCodeAt()) {
+					//Update query string with program
+					var program = $('#memoryBody').val();
+					program = program.replace(/\n/g, "\/");
+					var pageUrl = '?program=' + program;
+					window.history.replaceState('', '', pageUrl);
+				}
+			}); 
+			
+			
+		  	//Handle memory paste
+            $('td.memcell input').on('paste', null, function (e) {
+                $txt = $(this);
+                setTimeout(function () {
+                    var values = $txt.val().split(/\s+/);
+                    var currentRowIndex = $txt.parent().parent().index();
+                    var totalRows = $('#memory tbody tr').length;
+					var count = 0;
+                    for (var j = currentRowIndex; j < totalRows; j++) {                           
+                        var value = values[count++];
+                        var inp = $('#memory tbody tr td.memcell').eq(j).find('input');
+                        inp.val(value);
+                    }
+
+
+                }, 0);
+            });
+			
+			
+			//step
+            $('#Input').on('keypress', function(e) {
+			    if( (e.which < '0'.charCodeAt() || e.which > '9'.charCodeAt() ) && e.which != '-'.charCodeAt() ) {
+			        e.preventDefault();
+			    }
+				if(e.which == '\r'.charCodeAt())
+					doStep();
+			}); 
+			
+			
+			//step
+            $('#stepButton').on('click', null, function (e) {
+				doStep();
+			});
+			
+			
+			//reset
+            $('#resetButton').on('click', null, function (e) {
+				$('#PC').val(0);
+				$('#ACC').val(0);
+				getInstruction();
+				$('#Input').prop('disabled', true);
+				$('#Output').val("");
+				$('#memHighlight').css('margin-top', '1.2em');
+            });
+			
+			
+			//Initial state
+			var url = window.location.href;
+			if(url.indexOf('?program=') != -1) {
+				var program = url.slice(window.location.href.indexOf('?program=')+9);
+				program = program.replace(/\//g, "\n");
+				$('#memoryBody').val(program);
+			}
+			getInstruction();
+        });
+		
+		
+		function doStep() {
+			var PCVal = parseInt($('#PC').val());
+			var instruction = getInstruction();
+			
+			//still running
+			var tookBranch = false; 
+			
+			if(instruction > 999) {
+				return;
+			}
+			
+			var opCode = Math.floor(instruction / 100);
+			var operand = instruction % 100;
+			
+			switch(opCode) {
+				case 0:
+					return;
+					break;
+				case 1:
+				 	var addValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(addValue)))
+						$('#ACC').val(parseInt($('#ACC').val()) + parseInt(addValue));
+					else  {
+						return;
+					}
+					break;
+				case 2:
+				 	var addValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(addValue)))
+						$('#ACC').val(parseInt($('#ACC').val()) - parseInt(addValue));
+					else  {
+						return;
+					}
+					break;
+				case 3:
+					if(!isNaN(parseInt(operand)))
+						modifyMemory(operand, parseInt($('#ACC').val()));
+					else  {
+						return;
+					}
+					break;
+				case 5:
+				 	var loadValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(loadValue)))
+						$('#ACC').val(parseInt(loadValue));
+					else  {
+						return;
+					}
+					break;
+				case 7:
+					if ($('#ACC').val() != 0)
+						break;
+				case 8:
+					if ($('#ACC').val() < 0)
+						break;
+				case 6:
+					tookBranch = true;
+					PCVal = operand;
+					break;
+				case 9:
+					if(operand == 1) {
+					 	//var inputValue = prompt("Enter a number:");
+						var inputValue = $('#Input').val();
+						//do we already have an input?
+						if(isNaN(parseInt(inputValue))) {
+							//No? prompt the user for an input.
+							setMessage("Waiting for some input...", false);
+							$('#Input').val('');
+							$('#Input').prop('disabled', false);
+							$('#Input').focus();
+							return;  //for now 
+						} else {
+							//Yes? Grab it
+							$('#Input').prop('disabled', true);
+							$('#ACC').val(parseInt(inputValue));
+				$('#Input').val('');
+							break;
+						}
+					}
+					else if(operand == 2) {
+					 	var outputValue = $('#ACC').val();
+						$('#Output').val(outputValue);
+					}
+					else {
+						return;
+					}
+					break;
+				default:
+					return;
+			}
+			
+			if(!tookBranch)
+				PCVal++;
+				
+			$('#PC').val(PCVal);
+			$('#stepButton').focus(); //make enter run next step
+			getInstruction();
+			setHighlight();
+		}
+		
+		function setMessage(message, isError) {
+			$('#message').text(message);
+			if(isError) 
+				$('#message').addClass("error");
+			else {
+				$('#message').removeClass("error");
+			}
+		}
+	
+		
+		function setHighlight() {
+			var PCVal = parseInt($('#PC').val());
+			var offset = 1.2;
+			if(!isNaN(PCVal))
+				offset += 1.5 * PCVal;
+			$('#memHighlight').css('margin-top', offset + 'em');
+		}
+		
+		function getMemoryAt(location) {
+			var memLines = $('#memoryBody').val().split('\n');
+			if(memLines.length > location) {
+				return memLines[location];
+			}
+			return 0;
+		}
+		
+		function modifyMemory(address, value) {
+			var memLines = $('#memoryBody').val().split('\n');
+			//pad with 0s
+			for(var i = memLines.length; i <= address; i++) {
+				memLines.push("");
+			}
+			memLines[address] = value;
+			$('#memoryBody').val(memLines.join('\n'));
+		}
+		
+		function getInstruction() {
+			var instruction = getMemoryAt(parseInt($('#PC').val()));
+			$('#IR').val(instruction);
+			
+			var opCode = Math.floor(instruction / 100);
+			var operand = instruction % 100;
+			
+			switch(opCode) {
+				case 0:
+					//instruction == 0 already handled
+					if(operand != 0)
+						setMessage("Invalid instruction", true);
+					else
+						setMessage("Halting", false);
+					break;
+				case 1:
+				 	var addValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(addValue)))
+						setMessage(instruction + " : add the value stored at memory location " 
+									+ operand + " to the accumulator.", false);
+					else  {
+						setMessage("Invalid instruction", true);
+					}
+					break;
+				case 2:
+				 	var addValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(addValue)))
+						setMessage(instruction + " : subtract the value stored at memory location " 
+									+ operand + " from the accumulator.", false);
+					else  {
+						setMessage("Invalid instruction", true);
+					}
+					break;
+				case 3:
+					if(!isNaN(parseInt(operand)))
+						setMessage(instruction + " : store the value in the accumulator " 
+									+ " to memory location " + operand, false);
+					else  {
+						setMessage("Invalid instruction", true);
+					}
+					break;
+				case 5:
+				 	var loadValue = getMemoryAt(operand);
+					if(!isNaN(parseInt(loadValue)))
+						setMessage(instruction + " : load the value stored at memory location " 
+									+ operand + " into the accumulator.", false);
+					else  {
+						setMessage("Invalid instruction", true);
+					}
+					break;
+				case 7:
+					if ($('#ACC').val() != 0)
+						setMessage(instruction + " : since the accumulator is not 0, ignore.", false);
+					else
+						setMessage(instruction + " : since the accumulator is = 0, branch (skip) to the instruction stored at memory location " 
+									+ operand, false);
+					break;
+				case 8:
+					if ($('#ACC').val() < 0)
+						setMessage(instruction + " : since the accumulator is not 0 or greater, ignore.", false);
+					else
+						setMessage(instruction + " : since the accumulator is >= 0, branch (skip) to the instruction stored at memory location " 
+									+ operand, false);
+				case 6:
+					setMessage(instruction + " : branch (skip) to the instruction stored at memory location " 
+								+ operand, false);
+					break;
+				case 9:
+					if(operand == 1) {
+						setMessage(instruction + " : ask for input and put it in the accumulator.", false);
+					}
+					else if(operand == 2) {
+						setMessage(instruction + " : take what is in the accumulator and output it.", false);
+					}
+					else {
+						setMessage("Invalid instruction", true);
+					}
+					break;
+				default:
+					setMessage("Invalid instruction", true);
+			}
+			
+			return instruction;
+		}
+	</script>
+</head>
+<body>
+	<h1>The Little Computer</h1>
+	<div id="content">
+	<div id="leftPane">
+		<div id="memBox">
+			<p class='componentLabel'>Memory:</p>
+			<div id="memLeft">
+				Address <br>
+				<div id="memHighlight"></div>
+				<textarea id="memoryAddresses" readonly="true" rows="100" cols="3"></textarea>
+			 <!-- <table id="memory" cellspacing="0">
+		        <tbody>
+		        </tbody>
+		    </table> -->
+			</div>
+			<div id="memRight">
+				Value <br>
+				<textarea id="memoryBody" rows="100" cols="3">
+901
+105
+902
+000
+000
+007
+</textarea>
+			</div>
+		</div>
+	</div>
+	
+	<div id="centerPane">
+		<div id="cpuBox">
+			<p class='componentLabel'>CPU:</p>
+			<p class='partLabel'>Accumulator (ACC)</p>
+			<input type="text" id='ACC' value="0" readonly="true">
+			<p class='partLabel'>Program Counter (PC)</p>
+			<input type="text" id='PC' value="0" readonly="true">
+			<p class='partLabel'>Instruction Register (IR)</p>
+			<input type="text" id='IR' readonly="true">
+		</div>
+		
+		<div id="messageBox">
+			<p class='componentLabel'>What is about to happen:</p>
+			<div id="message">
+			</div>
+		</div>
+		
+		<div id="instructionBox">
+			<p class='componentLabel'>Instruction Guide:</p>
+			<table id="instructions">
+				<tr style="background-color: #fff;">
+					<th>Machine Code</th>
+					<th>Instruction</th>
+				</tr>
+				<tr style="background-color: #d8cee8;"> 
+					<td>000</td>
+					<td>Halt</td>
+				</tr>
+				<tr style="background-color: #ced6e8;">
+					<td>1XX</td>
+					<td>Add location XX</td>
+				</tr>
+				<tr style="background-color: #ced6e8;">
+					<td>2XX</td>
+					<td>Subtract location XX</td>
+				</tr>
+				<tr style="background-color: #e8dfce;">
+					<td>3XX</td>
+					<td>Store to XX</td>
+				</tr>
+				<tr style="background-color: #e8dfce;">
+					<td>5XX</td>
+					<td>Load from XX</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>6XX</td>
+					<td>Branch always to XX</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>7XX</td>
+					<td>Branch if == 0 to XX</td>
+				</tr>
+				<tr style="background-color: #cee8e7;">
+					<td>8XX</td>
+					<td>Branch if >= 0 to XX</td>
+				</tr>
+				<tr style="background-color: #cee8d1;">
+					<td>901</td>
+					<td>Get input</td>
+				</tr>
+				<tr style="background-color: #cee8d1;">
+					<td>902</td>
+					<td>Output</td>
+				</tr>
+			</table>
+			<p class="note">XX indicates a two-digit memory address</p>
+		</div>
+	</div>
+
+	<div id="rightPane">
+		<div id="controlBox">
+			<p class='componentLabel'>Controls:</p>
+			<button type="button" id='stepButton'>Step</button>
+			<button type="button" id='resetButton'>Reset</button>
+		</div>
+		<div id="inputBox">
+			<p class='componentLabel'>Input:</p>
+			<img src="keyboard.png">
+			<input type="text" id='Input' disabled='true'>
+		</div>
+		<div id="outputBox">
+			<p class='componentLabel'>Output:</p>
+			<div id="monitor">
+				<input type="text" id='Output' readonly="true">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

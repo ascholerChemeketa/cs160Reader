@@ -1,42 +1,42 @@
 <section xml:id="csp-name-procedures_parameters">
-        <title>Parameters</title>
-        
-        
-        <p xml:id="csp-name-procedures_index-0">The formal name for an input to a function is <term>parameter</term>:</p>
-        <program language="python"><input>
+  <title>Parameters</title>
+
+  <p>The formal name for an input to a function is <term>parameter</term>:</p>
+  <program language="python">
+    <input>
 def hop(turtleName):        # turtleName is a parameter
     ...
-</input></program>
-        <p>One of the trickiest parts to learning how to write and use procedures and functions is developing
-            an accurate understanding of how parameters work. Think of parameters as variables in a procedure
-            that are set by the procedure call. Just like any variable, parameters can hold any value. And,
-            just like any other variable, when you use the name of a parameter, you are accessing the value
-            that the parameter is holding.</p>
-        
-        
-        <p xml:id="csp-name-procedures_index-1">When we call (use) a procedure, we must provide values for each of the parameters that it has.
-            The values that we provide are known as the <term>arguments</term>.</p>
-        <program language="python"><input>
-...
-hop(sue)                    # a procedure call using the sue turtle as the argument
-</input></program>
-        <p>When this procedure call happens, all the code from <c>hop</c> will be executed. Any time we
-            encounter the parameter <c>turtleName</c>, we will actually use the argument - <c>sue</c> in its
-            place. This process of giving the procedure information by specifying arguments is known
-            as <term>passing parameters</term> to the procedure.</p>
-        <p>This system allows the procedure to work with any turtle. We can call <c>hop(buster)</c> to
-            run <c>hop</c> and when we do so, <c>turtleName</c> will mean the turtle named <c>buster</c>.</p>
-        <note>
-            <p>Some people call <term>parameters</term> the <term>formal parameters</term> and <term>arguments</term> the
-                <term>actual parameters</term>. We will stick to <term>parameters</term> and <term>arguments</term> to avoid
-                confusion about what we mean when we just say <em>&#8220;parameters&#8221;</em>.</p>
-        </note>
-        <p>Try running this program below. It defines the <c>hop</c> procedure. Then, the main part of
-            the program makes two turtles, has them mark their starting location, then has them each
-            do a hop before doing a forward movement.</p>
+</input>
+  </program>
+  <p>One of the trickiest parts to learning how to write and use procedures and functions is developing an accurate
+    understanding of how parameters work. Think of parameters as variables in a procedure that are set by the procedure
+    call. Just like any variable, parameters can hold any value. And, just like any other variable, when you use the
+    name of a parameter, you are accessing the value that the parameter is holding.</p>
 
-    <program xml:id="cspnameprocedures_parameters1" interactive="activecode" language="python">
-        <input>
+  <p>When we call (use) a procedure, we must provide values for each of the
+    parameters that it has. The values that we provide are known as the <term>arguments</term>.</p>
+  <program language="python">
+    <input>
+...
+hop(sue)     # a procedure call using the sue turtle as the argument
+</input>
+  </program>
+  <p>When this procedure call happens, all the code from <c>hop</c> will be executed. Any time we encounter the parameter <c>turtleName</c>,
+    we will actually use the argument - <c>sue</c> in its place. This process of giving the procedure information by
+    specifying arguments is known as <term>passing parameters</term> to the procedure.</p>
+  <p>This system allows the procedure to work with any turtle. We can call <c>hop(buster)</c> to run <c>hop</c> and when we do so, <c>turtleName</c>
+    will mean the turtle named <c>buster</c>.</p>
+  <note>
+    <p>Some people call <term>parameters</term> the <term>formal parameters</term> and <term>arguments</term> the <term>actual
+      parameters</term>. We will stick to <term>parameters</term> and <term>arguments</term> to avoid confusion about
+      what we mean when we just say <em> &#8220;parameters&#8221;</em>.</p>
+  </note>
+  <p>Try running this program below. It defines the <c>hop</c> procedure. Then, the main part of the program makes two
+    turtles, has them mark their starting location, then has them each do a hop before doing a forward movement.</p>
+
+  <program xml:id="cspnameprocedures_parameters1"
+    interactive="activecode" language="python">
+    <input>
 def hop(turtleName):                # turtleName is the parameter
     turtleName.penup()              # turtleName means whatever turtle was passed to the procedure
     turtleName.forward(20)
@@ -57,61 +57,63 @@ buster.left(90)
 hop(buster)                         # call hop with buster as the argument
 buster.forward(50)
         </input>
-    </program>
-        <warning>
-            <p>The only variables you can use in a procedure are its parameters or new ones you create inside
-                the procedures. It is an error to use variables from the main part of the program while
-                writing the body of a procedure.</p>
-            <p>Think of each procedure as a self contained world. All that is known inside that world is
-                what is passed into it as parameters.</p>
-        </warning>
-        <p><term>Check Your Understanding</term></p>
+  </program>
+  <warning>
+    <p>The only variables you can use in a procedure are its parameters or new ones you create inside the procedures. It
+      is an error to use variables from the main part of the program while writing the body of a procedure.</p>
+    <p>Think of each procedure as a self contained world. All that is known inside that world is what is passed into it
+      as parameters.</p>
+  </warning>
+  <p>
+    <term>Check Your Understanding</term>
+  </p>
 
-    <exercise label="cspnameprocedures_parameters2">
+  <exercise label="cspnameprocedures_parameters2">
+    <statement>
+
+      <p>Which turtle made the line going North (up)?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>Which turtle made the line going North (up)?</p>
-
+          <p>turtleName</p>
         </statement>
-<choices>
+        <feedback>
+          <p>There is no one turtle named <b>turtleName</b>. It will be used to name both sue during the first call to
+            hop and buster during the second call to hop.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>turtleName</p>
-                </statement>
-                <feedback>
-                    <p>There is no one turtle named <b>turtleName</b>. It will be used to name both
-sue during the first call to hop and buster during the second call to hop.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>sue</p>
-                </statement>
-                <feedback>
-                    <p>No. That turtle goes to the East.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>buster</p>
-                </statement>
-                <feedback>
-                    <p>Correct.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise label="cspnameprocedures_parameters3">
+      <choice>
         <statement>
+          <p>sue</p>
+        </statement>
+        <feedback>
+          <p>No. That turtle goes to the East.</p>
+        </feedback>
+      </choice>
 
-        <p>This code sample makes a turtle called ray and then calls the spin procedure. What belongs
-            in the blank to make the program work?</p>
-        <program language="python"><input>
+      <choice correct="yes">
+        <statement>
+          <p>buster</p>
+        </statement>
+        <feedback>
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="cspnameprocedures_parameters3">
+    <statement>
+
+      <p>This code sample makes a turtle called ray and then calls the spin procedure. What belongs in the blank to make
+        the program work?</p>
+      <program language="python">
+        <input>
 def spin(who):
     ________.left(180)
 
@@ -121,41 +123,41 @@ space = Screen()
 ray = Turtle()
 
 spin(ray)
-</input></program>
+</input>
+      </program>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>ray</p>
         </statement>
-<choices>
+        <feedback>
+          <p>ray is the argument. To talk about the argument inside the procedure, we have to use the parameter's name.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>ray</p>
-                </statement>
-                <feedback>
-                    <p>ray is the argument. To talk about the argument inside the procedure, we have
-to use the parameter's name.</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>who</p>
+        </statement>
+        <feedback>
+          <p>Correct. Inside this procedure, <b>who</b> will be the name we use for whatever turtle is the argument in
+            the function call.</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>who</p>
-                </statement>
-                <feedback>
-                    <p>Correct. Inside this procedure, <b>who</b> will be the name we use for whatever
-turtle is the argument in the function call.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>turtleName</p>
+        </statement>
+        <feedback>
+          <p>The parameter for this function is not called turtleName.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>turtleName</p>
-                </statement>
-                <feedback>
-                    <p>The parameter for this function is not called turtleName.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
+  </exercise>
+</section>
 

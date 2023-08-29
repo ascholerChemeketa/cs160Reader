@@ -2,13 +2,13 @@
         <title>Working with Indexes</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">Sometimes, we don&#8217;t want to access all of the items in a list one at a time in order.
+        <p>Sometimes, we don&#8217;t want to access all of the items in a list one at a time in order.
             To access individual items in a collection (a list or a string), we can use an <term>index</term>.
             Each item in a collection has a number associated with it &#8211; think of it as the item&#8217;s address in
             the collection.  The first item in a collection has index <c>0</c>, the next one <c>1</c>, and so on.
             See the image below for a view of two lists with the <em>index</em> for each list item shown at the top
             of each yellow box and the <em>value</em> for that index shown at the bottom of each yellow box.</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Lists and their indices</caption><image source="CSPCollectionsIntro/Figures/listIndices.png" width="400px%"/></figure>
+        <figure align="center" ><caption >Lists and their indices</caption><image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%"/></figure>
         <p>We use square brackets to access items of the list, e.g., <c>myList[0]</c> will access the first
             item in the list. <c>myList[1]</c> will access the second item in the list.</p>
         <warning>
@@ -209,7 +209,7 @@ print( items[itemNum] )
             for accessing all of the items in a list.</p>
         
         
-        <p xml:id="csp-collections-intro_index-1">Finally, just like with a string, we can find the length of a list by using the <c>len</c> function.
+        <p>Finally, just like with a string, we can find the length of a list by using the <c>len</c> function.
             We can either use it in the same way we would use any other numeric value
             by doing more work with it or giving the value a name to work with later:</p>
 

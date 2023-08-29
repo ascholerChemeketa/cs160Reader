@@ -1,111 +1,107 @@
 <section xml:id="csp-name-strings_assign-a-name-to-a-string">
-        <title>Assign a Name to a String</title>
-        
-        
-        <subsection xml:id="csp-name-strings_concatenating-appending-strings">
-            <title>Concatenating (Appending) Strings</title>
-            <p>Computers can use names to represent <em>anything</em>.  In the last chapter we saw that we can name
-                numbers (declare a variable and set its value to a number) and then do calculations using the
-                names for the numbers.  We can also name <term>strings</term> and do calculations with their names, too.
-                A <term>string</term> is a sequence of characters enclosed in a pair of single, double, or triple quotes
-                like <c>'Hi'</c>, <c>"How are you?"</c>, or <c>'''Why can't you do that?'''</c>.  What does it mean to
-                do a calculation on a string?  Well, Python uses the <c>+</c> symbol to <term>concatenate</term> strings
-                as shown below.  <term>Concatenate</term> means to create a new string with all the characters in the
-                first string followed by all of the characters in the second string.  This is also called
-                <term>appending</term> strings together.</p>
+    <title>Assign a Name to a String</title>
 
-    <program xml:id="cspnamestrings_assignnamestr1" interactive="activecode" language="python">
-        <input>
+    <subsection xml:id="csp-name-strings_concatenating-appending-strings">
+        <title>Concatenating (Appending) Strings</title>
+        <p>Computers can use names to represent <em>anything</em>. In the last chapter, we saw that we can name numbers
+            (declare a variable and set its value to a number) and then do calculations using the names for the numbers.
+            We can also name <term>strings</term> and do calculations with their names, too. A <term>string</term> is a
+            sequence of characters enclosed in a pair of single, double, or triple quotes like <c>'Hi'</c>, <c>"How are you?"</c>, or <c>'''Why can't you do that?'''</c>.
+            What does it mean to do a calculation on a string? Well, Python uses the <c>+</c> symbol to <term>concatenate</term>
+            strings. <term>Concatenate</term> means to create a new string with all the characters in the
+            first string followed by all of the characters in the second string. This is also called <term>appending</term>
+            strings together.</p>
+            <p>The code sample below concatenates the strings <c>first</c> and <c>last</c> into <c>fullName</c>:</p>
+
+        <program xml:id="cspnamestrings_assignnamestr1" interactive="activecode" language="python">
+            <input>
 first = "Jorge"
 last = "Garcia"
 fullName = first + " " + last
 print(fullName)
         </input>
-    </program>
-            <p>Now try running this slightly different example.</p>
+        </program>
+        <p>Now try running this slightly different example.</p>
 
-    <program xml:id="cspnamestrings_assignnamestr2" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_assignnamestr2" interactive="activecode" language="python">
+            <input>
 first = 'Jorge'
 last = "Garcia"
 fullName = first + last
 print(fullName)
         </input>
-    </program>
-            <note>
-                <p>Blank spaces are not automatically added when you append two strings.  If you want a blank
-                    space in between two strings then put it there explicitly using a string with just a space
-                    in it <c>" "</c> as shown in ActiveCode1.</p>
-            </note>
-            <p>Try to run the example below.  It should give you errors.  Can you fix the errors?</p>
+        </program>
+        <note>
+            <p>Blank spaces are not automatically added when you append two strings. If you want a blank space in
+                between two strings then put it there explicitly using a string with just a space in it <c>" "</c> as shown
+                in ActiveCode1.</p>
+        </note>
+        <p>Try to run the example below. It should give you errors. Can you fix the errors?</p>
 
-    <program xml:id="cspnamestrings_assignnamestr3" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_assignnamestr3" interactive="activecode" language="python">
+            <input>
 first = 'Jorge"
 last = 'Garcia"
 fullName = first " " last
 print(fullName)
         </input>
-    </program>
-            <note>
-                <p>A string is a sequence of characters enclosed in a pair of single, double, or triple quotes.
-                    If you start a string with a single quote you must end it with a single quote.  If you start a
-                    string with a double quote you must end it with a double quote.  You must use the <c>+</c>
-                    operator to append strings together.</p>
-            </note>
-        </subsection>
-        <subsection xml:id="csp-name-strings_inputting-strings">
-            <title>Inputting Strings</title>
-            <p>We can use the <c>input</c> <term>function</term> in Python to get your first and last name and then print
-                your full name.  The <term>input</term> function is used like this:</p>
-            <p><c>input("What is your first name?")</c></p>
-            
-            
-            <p xml:id="csp-name-strings_index-1">The string inside of the paranteheses (<em>&#8220;What is your first name?&#8221;</em>) is called a <term>paramter</term>.
-                It tells the function how to do its job. In this case, it tells <c>input</c> what to print in
-                order to prompt the user of the program to type something.</p>
-            <p>When the function is done getting the input from the user, it <term>returns</term> the string
-                containing whatever the user types. When the function <term>returns</term> a value, the function is
-                essentially is replaced by that value. The code <c>input("What is your first name?")</c> in the
-                sample below will be replaced by whatever the user types - something like <em>&#8220;Anne&#8221;</em>.</p>
+        </program>
+        <note>
+            <p>A string is a sequence of characters enclosed in a pair of single, double, or triple quotes. If you start
+                a string with a single quote you must end it with a single quote. If you start a string with a double
+                quote you must end it with a double quote. You must use the <c>+</c> operator to append strings together.</p>
+        </note>
+    </subsection>
+    <subsection xml:id="csp-name-strings_inputting-strings">
+        <title>Inputting Strings</title>
+        <p>We can use the <c>input</c> <term>function</term> in Python to get your first and last name and then print your
+            full name. The <term>input</term> function is used like this:</p>
+        <p>
+            <c>input("What is your first name?")</c>
+        </p>
 
-    <program xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
-        <input>
+        <p>The string inside of the paranteheses (<em>&#8220;What is your first
+            name?&#8221;</em>) is called a <term>paramter</term>. It tells the function how to do its job. In this case,
+            it tells <c>input</c> what to print in order to prompt the user of the program to type something.</p>
+        <p>When the function is done getting the input from the user, it <term>returns</term> the string containing
+            whatever the user types. When the function <term>returns</term> a value, the function is essentially is
+            replaced by that value. The code <c>input("What is your first name?")</c> in the sample below will be replaced by whatever the user types -
+            something like <em>&#8220;Anne&#8221;</em>.</p>
+
+        <program xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
+            <input>
 first = input("What is your first name?")
 last = input("What is your last name?")
 fullName = first + " " + last
 print("Your full name is " + fullName)
         </input>
-    </program>
-        </subsection>
-        <subsection xml:id="csp-name-strings_concatenating-strings-and-numbers">
-            <title>Concatenating Strings and Numbers</title>
-            <p>You can print both strings and numbers, and you can concatenate strings using <c>+</c>, but if you
-                try to concatenate a string and a number you will get an error. The string <c>"5"</c> is stored very
-                differently than the number <c>5</c> in computer memory, so to concatenate the number <c>5</c> and a
-                string we need to convert the number into a string first.  The <c>str(num)</c> function will convert
-                a number into a string.</p>
+        </program>
+    </subsection>
+    <subsection xml:id="csp-name-strings_concatenating-strings-and-numbers">
+        <title>Concatenating Strings and Numbers</title>
+        <p>You can print both strings and numbers, and you can concatenate strings using <c>+</c>, but if you try to
+            concatenate a string and a number you will get an error. The string <c>"5"</c> is stored very differently than
+            the number <c>5</c> in computer memory, so to concatenate the number <c>5</c> and a string we need to convert
+            the number into a string first. The <c>str(num)</c> function will convert a number into a string.</p>
 
-    <program xml:id="cspnamestrings_assignnamestr5" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_assignnamestr5" interactive="activecode" language="python">
+            <input>
 Fred = 5
 print("Fred")
 print(Fred)
 print("Fred" + " is " + str(Fred))
         </input>
-    </program>
-            <note>
-                <p>Notice how printing the string <c>"Fred"</c> prints something different than printing the value
-                    of the variable <c>Fred</c>. Printing the string <c>"Fred"</c> prints the exact characters in that
-                    string. Remember that strings are enclosed in pairs of double or single quotes and when they
-                    are printed it will print the exact characters in the string. When you print a variable it
-                    will print the <em>value</em> of that variable.</p>
-            </note>
-            <p>We can update our driving example to print out the cost of the trip with just one <c>print</c>
-                statement.</p>
+        </program>
+        <note>
+            <p>Notice how printing the string <c>"Fred"</c> prints something different than printing the value of the variable <c>Fred</c>.
+                Printing the string <c>"Fred"</c> prints the exact characters in that string. Remember that strings are
+                enclosed in pairs of double or single quotes and when they are printed it will print the exact
+                characters in the string. When you print a variable it will print the <em>value</em> of that variable.</p>
+        </note>
+        <p>We can update our driving example to print out the cost of the trip with just one <c>print</c> statement.</p>
 
-    <program xml:id="cspnamestrings_assignnamestr6" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_assignnamestr6" interactive="activecode" language="python">
+            <input>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
@@ -113,16 +109,16 @@ costPerGallon = 3.65
 costTrip = gallons * costPerGallon
 print("Cost to get from Chicago to Dallas: $" + str(costTrip))
         </input>
-    </program>
-            <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that
-                we form with concatenation, we can give it a list of values separated by commas. Using this version
-                of print, we don&#8217;t have to convert <c>costTrip</c> to a string because it is not being concatenated
-                with the string &#8220;Cost to get from Chicago to Dallas&#8221;, they are just being printed one after another.
-                Also notice that this version of print automatically adds a space between items that are printed.
-                Here that causes a problem as it means there will be a space between the $ and the cost.</p>
+        </program>
+        <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that we form with
+            concatenation, we can give it a list of values separated by commas. Using this version of print, we
+            don&#8217;t have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
+            &#8220;Cost to get from Chicago to Dallas&#8221;, they are just being printed one after another. Also notice
+            that this version of print automatically adds a space between items that are printed. Here that causes a
+            problem as it means there will be a space between the $ and the cost.</p>
 
-    <program xml:id="cspnamestrings_assignnamestr7" interactive="activecode" language="python">
-        <input>
+        <program xml:id="cspnamestrings_assignnamestr7" interactive="activecode" language="python">
+            <input>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
@@ -130,93 +126,100 @@ costPerGallon = 3.65
 costTrip = gallons * costPerGallon
 print("Cost to get from Chicago to Dallas: $", costTrip)
         </input>
-    </program>
-            <p><term>Check your understanding</term></p>
+        </program>
+        <p>
+            <term>Check your understanding</term>
+        </p>
 
-    <exercise label="cspnamestrings_assignnamestr8">
-        <statement>
+        <exercise label="cspnamestrings_assignnamestr8">
+            <statement>
 
-            <p>Given the following code segment, what will be printed?</p>
-            <program language="python"><input>
+                <p>Given the following code segment, what will be printed?</p>
+                <program language="python">
+                    <input>
 street = "125 Main Street"
 print("The address is " + "street")
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The address is street</p>
-                </statement>
-                <feedback>
-                    <p>Since street is in double quotes it will print the string street rather than the value of the variable street.</p>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>The address is street</p>
+                    </statement>
+                    <feedback>
+                        <p>Since street is in double quotes it will print the string street rather than the value of the
+                            variable street.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>The address is 125 Main Street</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if it was print("The address is " + street)</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>The address is 125 Main Street</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if it was print("The address is " + street)</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>It won't execute</p>
-                </statement>
-                <feedback>
-                    <p>While this isn't printing what we probably want it to, it will print something.</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>It won't execute</p>
+                    </statement>
+                    <feedback>
+                        <p>While this isn't printing what we probably want it to, it will print something.</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
+        </exercise>
 
-    <exercise label="cspnamestrings_assignnamestr9">
-        <statement>
+        <exercise label="cspnamestrings_assignnamestr9">
+            <statement>
 
-            <p>What will be printed when the following executes?</p>
-            <program language="python"><input>
+                <p>What will be printed when the following executes?</p>
+                <program language="python">
+                    <input>
 street = "125 Main Street"
 cityState = "Atlanta, GA"
 print(street + "," + cityState)
-</input></program>
+</input>
+                </program>
 
-        </statement>
-<choices>
+            </statement>
+            <choices>
 
-            <choice>
-                <statement>
-                    <p>125 Main Street, Atlanta, GA</p>
-                </statement>
-                <feedback>
-                    <p>This would be true if it was street + ", ".</p>
-                </feedback>
-            </choice>
+                <choice>
+                    <statement>
+                        <p>125 Main Street, Atlanta, GA</p>
+                    </statement>
+                    <feedback>
+                        <p>This would be true if it was street + ", ".</p>
+                    </feedback>
+                </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>125 Main Street,Atlanta, GA</p>
-                </statement>
-                <feedback>
-                    <p>There isn't a space after the comma and one isn't added automatically.</p>
-                </feedback>
-            </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>125 Main Street,Atlanta, GA</p>
+                    </statement>
+                    <feedback>
+                        <p>There isn't a space after the comma and one isn't added automatically.</p>
+                    </feedback>
+                </choice>
 
-            <choice>
-                <statement>
-                    <p>125 Main Street Atlanta, GA</p>
-                </statement>
-                <feedback>
-                    <p>What about the comma?</p>
-                </feedback>
-            </choice>
-</choices>
+                <choice>
+                    <statement>
+                        <p>125 Main Street Atlanta, GA</p>
+                    </statement>
+                    <feedback>
+                        <p>What about the comma?</p>
+                    </feedback>
+                </choice>
+            </choices>
 
-    </exercise>
-        </subsection>
-    </section>
+        </exercise>
+    </subsection>
+</section>
 

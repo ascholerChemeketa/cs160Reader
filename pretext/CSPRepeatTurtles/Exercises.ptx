@@ -1,15 +1,18 @@
 <exercises xml:id="csp-repeat-turtles_chapter-exercises">
-        <title>Chapter Exercises</title>
+  <title>Chapter Exercises</title>
 
-<exercise label="csprepeatturtles_exercises1">
+  <exercise label="csprepeatturtles_exercises1">
     <statement>
-        <p>The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the turn that the turtle makes without modifying other code.</p>
-        <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+      <p>The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the
+        turn that the turtle makes without modifying other code.</p>
+      <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
+      <p>
+        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
+      </p>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = Screen()
 alisha = Turtle()
@@ -29,17 +32,20 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="csprepeatturtles_exercises2">
+  <exercise label="csprepeatturtles_exercises2">
     <statement>
-        <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop based code. There are three issues to fix.</p>
-        <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+      <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop based code.
+        There are three issues to fix.</p>
+      <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
+      <p>
+        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
+      </p>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 space = Screen()
 steven = Turtle()
@@ -59,17 +65,19 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="csprepeatturtles_exercises3">
+  <exercise label="csprepeatturtles_exercises3">
     <statement>
-        <p>Fix the indention in the code below to correctly draw 20 pentagons (5 sided polygons).</p>
-        <p>Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).</p>
-        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+      <p>Fix the indention in the code below to correctly draw 20 pentagons (5 sided polygons).</p>
+      <p>Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).</p>
+      <p>
+        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
+      </p>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 from turtle import *
 import sys
 sys.setExecutionLimit(50000)
@@ -100,82 +108,108 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-    <exercise label="csprepeatturtles_exercises4">
-        <statement>
-
-        <p>Which is range recipe would generate the sequence: 10, 8, 6, &#8230; 2</p>
-
-        </statement>
-<choices>
-
-            <choice correct="yes">
-                <statement>
-                    <p>range(10, 0, -2)</p>
-                </statement>
-                <feedback>
-                    <p>Correct</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(10, 1, 2)</p>
-                </statement>
-                <feedback>
-                    <p>That counts up by 2's</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(10, 2, -2)</p>
-                </statement>
-                <feedback>
-                    <p>That recipe would not generate 2 because it is the stop value</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>range(10, 3, 2)</p>
-                </statement>
-                <feedback>
-                    <p>This recipe counts up by 2's</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-        <exercise label="csprepeatturtles_exercises5">
-            <statement>
-    <p>Write the correct recipe to fill in the ____________ in the code below to generate the pattern
-5, 25, 45, &#8230; 105. Use the smallest possible value for your stopValue. <var/>  </p></statement><setup><var><p>Just write what would replace the blank below. (Don&#8217;t include &#8220;range&#8221;
-or the parentheses in your answer; do include commas).</p><p><c>range(____________)</c></p><condition string="^\s*^\s*5\s*,\s*106\s*,\s*20\s*$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*20\s*$\s*$"><feedback><p>Wrong startValue</p></feedback></condition><condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*\d+\s*$\s*$"><feedback><p>Wrong step</p></feedback></condition></var></setup></exercise>
-<exercise label="csprepeatturtles_exercises6">
+  <exercise label="csprepeatturtles_exercises4">
     <statement>
-        <p>We want to make a series of rectangles such that the first one is 10x90, the next
-            is 20x80, the next is 30x70, &#8230; until we draw one that is 90x10. Doing so will
-            make a &#8220;staircase grid&#8221; like the one shown below:</p>
-        <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="150px%"/>
-        <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for
-            loop to call the procedure with the correct values for its parameters. Make sure
-            that the 90 width and 10 height rectangle is the first one you draw. You should
-            only need one loop - <term>it must count down from 90 to 10</term>.</p>
-        <p>Start by writing a loop that just prints out the values 90, 80, 70, &#8230;, 10. Then
-            you can modify the code to use those values to draw rectangles of the appropriate
-            widths and heights.</p>
-        <p>Hint: The values we use for width and height will
-            always add to 100. So if we call one of them <m>w</m>, the other must be <m>100 - w</m>.</p>
-        <p>The autograder will not verify everything about your program. It is up to you to
-            determine if your program is correct or not.</p>
-        <p><xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+
+      <p>Which is range recipe would generate the sequence: 10, 8, 6, &#8230; 2</p>
+
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>range(10, 0, -2)</p>
+        </statement>
+        <feedback>
+          <p>Correct</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>range(10, 1, 2)</p>
+        </statement>
+        <feedback>
+          <p>That counts up by 2's</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>range(10, 2, -2)</p>
+        </statement>
+        <feedback>
+          <p>That recipe would not generate 2 because it is the stop value</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>range(10, 3, 2)</p>
+        </statement>
+        <feedback>
+          <p>This recipe counts up by 2's</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="csprepeatturtles_exercises5">
+    <statement>
+      <p>Write the correct recipe to fill in the ____________ in the code below to generate the pattern 5, 25, 45,
+        &#8230; 105. Use the smallest possible value for your stopValue. <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <p>Just write what would replace the blank below. (Don&#8217;t include &#8220;range&#8221; or the parentheses in
+          your answer; do include commas).</p>
+        <p>
+          <c>range(____________)</c>
+        </p>
+        <condition string="^\s*^\s*5\s*,\s*106\s*,\s*20\s*$\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*20\s*$\s*$">
+          <feedback>
+            <p>Wrong startValue</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*\d+\s*$\s*$">
+          <feedback>
+            <p>Wrong step</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="csprepeatturtles_exercises6">
+    <statement>
+      <p>We want to make a series of rectangles such that the first one is 10x90, the next is 20x80, the next is 30x70,
+        &#8230; until we draw one that is 90x10. Doing so will make a &#8220;staircase grid&#8221; like the one shown
+        below:</p>
+      <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%" />
+      <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for loop to call the procedure with the
+        correct values for its parameters. Make sure that the 90 width and 10 height rectangle is the first one you
+        draw. You should only need one loop - <term>it must count down from 90 to 10</term>.</p>
+      <p>Start by writing a loop that just prints out the values 90, 80, 70, &#8230;, 10. Then you can modify the code
+        to use those values to draw rectangles of the appropriate widths and heights.</p>
+      <p>Hint: The values we use for width and height will always add to 100. So if we call one of them <m>w</m>, the
+        other must be <m>100 - w</m>.</p>
+      <p>The autograder will not verify everything about your program. It is up to you to determine if your program is
+        correct or not.</p>
+      <p>
+        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
+      </p>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises6_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def rectangle(turtleName, width, height):
     for x in range(2):
         turtleName.forward(width)
@@ -203,187 +237,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

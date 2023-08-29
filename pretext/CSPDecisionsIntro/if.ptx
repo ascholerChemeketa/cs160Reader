@@ -2,7 +2,7 @@
         <title>The if Statement</title>
         
         
-        <p xml:id="csp-decisions-intro_index-0">In Python, we test data and execute instructions if the test is true using an <c>if</c> statement
+        <p>In Python, we test data and execute instructions if the test is true using an <c>if</c> statement
             which takes the form:</p>
         <program language="python"><input>
 if TEST:
@@ -100,13 +100,13 @@ print ("All done")
     </program>
         
         
-        <p xml:id="csp-decisions-intro_index-2">The figure below is called a <term>flowchart</term>.  It shows the execution paths for a program.
+        <p>The figure below is called a <term>flowchart</term>.  It shows the execution paths for a program.
             The diamond shape contains the <term>logical expression</term> and shows the path that the execution
             takes if the logical expression is true as well as the path if the logical expression is
             false.  Notice that it will only execute the statements in the indented block if the
             logical expression was true. Regardless if the indented code is executed, the program
             then continues running.</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Flow of execution for an if statement</caption><image source="CSPDecisionsIntro/Figures/decision.png" width="50%" alt="Flowchart for an if statement" height="350px"/></figure>
+        <figure align="center" ><caption >Flow of execution for an if statement</caption><image source="CSPDecisionsIntro/Figures/decision.png" width="50%" alt="Flowchart for an if statement"/></figure>
 
     <exercise label="cspdecisionsintro_if2">
         <statement>

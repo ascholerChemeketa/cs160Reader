@@ -17,7 +17,7 @@
     decimal number 7. <term>memory_address</term> is a memory address for an unknown type (void *) - so its bits
     (001010001111111010111000) are displayed in hex as 28feb8.</p>
 
-  <p xml:id="data-representation_index-0">The first place many people encounter hexadecimal is learning about specifying
+  <p>The first place many people encounter hexadecimal is learning about specifying
     colors for websites. Colors are generally specified as 24-bit numbers - 8 bits each to represent how much red, green
     and blue. These 8 bits are enough to give values of <m>{0-255}_{10}</m> (<m>{00000000-11111111}_{2}</m>) for each of
     the three primary colors. To make different colors, we mix different amounts of the three primaries. 255 red, 0

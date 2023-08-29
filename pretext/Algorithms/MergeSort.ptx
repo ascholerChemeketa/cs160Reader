@@ -13,18 +13,18 @@
     about computer pseudocode for this process, but here is human pseudocode:</p>
   <program language="none">
     <input>
-<p>1   <term>How to Merge listA and listB into sortedList</term>
-1   repeat until <c>listA</c> is empty AND <c>listB</c> is empty
-2       if <c>listA</c> is empty
-3           move first item from <c>listB</c> to end of <c>sortedList</c>
-4       else if <c>listB</c> is empty
-5           move first item from <c>listA</c> to end of <c>sortedList</c>
+1   How to Merge listA and listB into sortedList
+1   repeat until listA is empty AND listB is empty
+2       if listA is empty
+3           move first item from listB to end of sortedList
+4       else if listB is empty
+5           move first item from listA to end of sortedList
 6       else
-7           <em>Note: Items left in both A and B, pick smallest</em>
-8           if (first item from <c>listA</c>) &lt;= (first item from <c>listB</c>)
-9               move first item from <c>listA</c> to end of <c>sortedList</c>
+7           Note: Items left in both A and B, pick smallest
+8           if (first item from listA) &lt;= (first item from listB)
+9               move first item from listA to end of sortedList
 10          else
-11              move first item from <c>listB</c> to end of <c>sortedList</c></p>
+11              move first item from listB to end of sortedList
 </input>
   </program>
   <p>The first three minutes of the video below demonstrates the process:</p>

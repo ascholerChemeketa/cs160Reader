@@ -1,8 +1,7 @@
 <section xml:id="computer-architecture_main-memory">
   <title>Main Memory</title>
   <figure>
-    <caption>
-      <p>Main memory is a sequence of bytes, each with a unique address.</p>
+    <caption>Main memory is a sequence of bytes, each with a unique address.
     </caption>
     <image source="ComputerArchitecture/Images/memory.png" width="30%" alt="Main Memory" />
   </figure>

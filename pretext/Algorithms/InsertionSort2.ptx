@@ -8,21 +8,21 @@
     gives us the index to its left.)</p>
   <program language="none">
     <input>
-<p>    <em>Note: assume that list already exists</em>
-1   <c>i</c> = 1                                   <em>i marks start of unsorted cards</em>
-2   repeat until (<c>i</c> >= length of the <c>list</c>):
-3       <c>j</c> = <c>i</c>                              <em>j is location of current card</em>
+    Note: assume that list already exists
+1   i = 1                                   i marks start of unsorted cards
+2   repeat until (i >= length of the list):
+3       j = i                              j is location of current card
 4
-5       <em>Note: swap the current card left until it finds a home</em>
-6       repeat until (<c>j</c> == 0) or (<c>list[j]</c> > <c>list[j - 1]</c>)
-7           <em>Note: Swap card to the left"</em>
-8           <c>temp</c> = <c>list[j]</c>
-9           <c>list[j]</c> = <c>list[j - 1]</c>
-10          <c>currentMin</c> = <c>list[j]</c>
-11          <c>j</c> = <c>j</c> - 1                      <em>current card has moved</em>
+5       Note: swap the current card left until it finds a home
+6       repeat until (j == 0) or (list[j] > list[j - 1])
+7           Note: Swap card to the left"
+8           temp = list[j]
+9           list[j] = list[j - 1]
+10          currentMin = list[j]
+11          j = j - 1                      current card has moved
 12
-13      <em>Move the marker showing start of the unsorted portion</em>
-14      <c>i</c> = <c>i</c> + 1</p>
+13      Move the marker showing start of the unsorted portion
+14      i = i + 1
 </input>
   </program>
   <p>Like before, do not worry about memorizing the algorithm, instead use it and the animation below until you can

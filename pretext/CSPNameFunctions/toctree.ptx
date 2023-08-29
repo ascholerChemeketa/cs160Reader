@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Names for Functions</title>
-        <xi:include href='./functionsComposition.ptx' />
-        <xi:include href='./definingFunctionsHow.ptx' />
-        <xi:include href='./definingFunctionsWhy.ptx' />
-        <xi:include href='./commonIssues.ptx' />
-        <xi:include href='./functionsCallingFunctions.ptx' />
-        <xi:include href='./functionsCallingFunctions2.ptx' />
-        <xi:include href='./functionsCallingFunctions3.ptx' />
-        <xi:include href='./summary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <title>Names for Functions</title>
+  <xi:include href='./functionsComposition.ptx' />
+  <xi:include href='./definingFunctionsHow.ptx' />
+  <xi:include href='./definingFunctionsWhy.ptx' />
+  <xi:include href='./commonIssues.ptx' />
+  <xi:include href='./functionsCallingFunctions.ptx' />
+  <xi:include href='./functionsCallingFunctions2.ptx' />
+  <xi:include href='./functionsCallingFunctions3.ptx' />
+  <xi:include href='./summary.ptx' />
+  <xi:include href='./Exercises.ptx' />
+</chapter>

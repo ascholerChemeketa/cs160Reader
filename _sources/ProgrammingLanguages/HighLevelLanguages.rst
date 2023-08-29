@@ -28,9 +28,9 @@ The tabs below show what code might look like in various language levels. Imagin
 
     .. tab:: English
 
-        To calculate the total amount owed, first multiply the total price of the meal by 0.15. This gives you the tip for the meal. Then, add that to the price of the meal to find the total bill.
+        To calculate the total amount owed, first, multiply the total price of the meal by 0.15. This gives you the tip for the meal. Then, add that to the price of the meal to find the total bill.
 
-    .. tab:: High Level Language
+    .. tab:: High-Level Language
     
         ::
 
@@ -61,7 +61,7 @@ The tabs below show what code might look like in various language levels. Imagin
             0001010101111100
             1101101010111111
             
-Note that the high level language is much more compact than the assembly or machine code and, even more important, it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about LOADing and STOREing values into registers, we can express commands that look more like normal calculations: ``tip = mealCost * 0.15``.
+Note that the high-level language is much more compact than the assembly or machine code and, even more important, it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about LOADing and STOREing values into registers, we can express commands that look more like normal calculations: ``tip = mealCost * 0.15``.
 
 
 .. quick_attribution:: VT ICSJava

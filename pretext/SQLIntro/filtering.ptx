@@ -5,7 +5,7 @@
             from a particular location. Or rides the have a certain duration.</p>
         
         
-        <p xml:id="sql-intro_index-0">To filter data with SQL, we use the <c>WHERE</c> keyword. You can
+        <p>To filter data with SQL, we use the <c>WHERE</c> keyword. You can
             append <c>WHERE column_condition</c> to any SQL query, and the result will be
             filtered only to rows that satisfy the column condition. For example, you might
             want to look only at bike trips that are at least one hour (3600 seconds):</p>

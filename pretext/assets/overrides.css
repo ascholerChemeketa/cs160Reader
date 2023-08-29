@@ -1,0 +1,12 @@
+.ptx-runestone-container pre.program,
+.ptx-runestone-container pre.code-block {
+    background-color: var(--background);
+}
+.ptx-runestone-container pre.program:before,
+.ptx-runestone-container pre.code-block:before {
+    content: none
+}
+
+.blockquote {
+  font-style: oblique;
+}

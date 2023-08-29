@@ -6,13 +6,15 @@
   <subsection xml:id="data-representation_decimal-to-binary-1">
     <title>Decimal to Binary</title>
     <p>The following algorithm converts a decimal number to a binary one:</p>
-    <pre>
-Step 1: Start with a blank <c>answer</c> and the <c>number</c> you are converting
-Step 2: Divide your <c>number</c> by 2 to make a <c>quotient</c> and a <c>remainder</c>
-Step 3: Place your <c>remainder</c> on the <term>left</term> side of your <c>answer</c>
-Step 4: If your <c>quotient</c> is 0, you are done
-        Otherwise, make the <c>quotient</c> your new <c>number</c> and go back to step 2
-</pre>
+    <program>
+      <input>
+        Step 1: Start with a blank answer and the number you are converting
+        Step 2: Divide your number by 2 to make a quotient and a remainder
+        Step 3: Place your remainder on the left side of your answer
+        Step 4: If your quotient is 0, you are done
+                Otherwise, make the quotient your new number and go back to step 2
+      </input>
+    </program>
     <p>Here is an example of running the algorithm to convert <m>{11}_{10}</m> to binary:</p>
 
     <video xml:id="TaagNvZCbjo" youtube="TaagNvZCbjo" width="100%" />
@@ -27,33 +29,33 @@ Step 4: If your <c>quotient</c> is 0, you are done
     <p>To convert a binary number to its decimal value, we can use almost the same trick, but in reverse:</p>
     <program language="none">
       <input>
-<p>Step 1: Start with the <em>number</em> your are converting and the <c>answer</c> of 0
-Step 2: Multiply your <c>answer</c> by 2
-Step 3: Remove the leftmost digit of <c>number</c> and add it to your <c>answer</c>
-Step 4: If <c>number</c> has no more digits, you are done
-        Otherwise, go back to step 2</p>
+Step 1: Start with the number your are converting and the answer of 0
+Step 2: Multiply your answer by 2
+Step 3: Remove the leftmost digit of number and add it to your answer
+Step 4: If number has no more digits, you are done
+        Otherwise, go back to step 2
 </input>
     </program>
     <p>If we follow this algorithm to convert <m>{1101}_{2}</m> into a decimal value, it would look like this:</p>
     <program language="none">
       <input>
-<p>Step 1: <c>number</c> is 1101 and <c>answer</c> is 0
-Step 2: <c>answer</c> is multiplied by 2 - it becomes 0
-Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
-         <c>number</c> is now 101 and <c>answer</c> is 1
-Step 4: <c>number</c> still has digits, go back to step 2
-Step 2: <c>answer</c> is multiplied by 2 - it becomes 2
-Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
-         <c>number</c> is now 01 and <c>answer</c> is 3
-Step 4: <c>number</c> still has digits, go back to step 2
-Step 2: <c>answer</c> is multiplied by 2 - it becomes 6
-Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
-         <c>number</c> is now 1 and <c>answer</c> is 6
-Step 4: <c>number</c> still has digits, go back to step 2
-Step 2: <c>answer</c> is multiplied by 2 - it becomes 12
-Step 3: Remove leftmost digit of <c>number</c> and add to <c>answer</c>
-         <c>number</c> is now "" (empty) and <c>answer</c> is 13
-Step 4: <c>number</c> is empty. We are done, the answer is 13.</p>
+Step 1: number is 1101 and answer is 0
+Step 2: answer is multiplied by 2 - it becomes 0
+Step 3: Remove leftmost digit of number and add to answer
+         number is now 101 and answer is 1
+Step 4: number still has digits, go back to step 2
+Step 2: answer is multiplied by 2 - it becomes 2
+Step 3: Remove leftmost digit of number and add to answer
+         number is now 01 and answer is 3
+Step 4: number still has digits, go back to step 2
+Step 2: answer is multiplied by 2 - it becomes 6
+Step 3: Remove leftmost digit of number and add to answer
+         number is now 1 and answer is 6
+Step 4: number still has digits, go back to step 2
+Step 2: answer is multiplied by 2 - it becomes 12
+Step 3: Remove leftmost digit of number and add to answer
+         number is now "" (empty) and answer is 13
+Step 4: number is empty. We are done, the answer is 13.
 </input>
     </program>
     <p>As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple

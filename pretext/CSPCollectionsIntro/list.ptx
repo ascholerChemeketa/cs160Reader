@@ -2,11 +2,11 @@
         <title>What is a List?</title>
         
         
-        <p xml:id="csp-collections-intro_index-0">A <term>list</term> is just an ordered collection of items - you probably use <term>lists</term> all the time.
+        <p>A <term>list</term> is just an ordered collection of items - you probably use <term>lists</term> all the time.
             People often  make a list before they go shopping or a list of things to do.  Although they
             may not explicitly number the items, there is always a first thing in a list, and a second,
             and so on:</p>
-        <figure align="center" xml:id="id1"><caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A shopping list</caption><image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" height="250px"/></figure>
+        <figure align="center" ><caption >A shopping list</caption><image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" height="250px"/></figure>
         <p>A <term>list</term> in Python is a collection of values. We can write a list by enclosed values in
             <c>[</c> and <c>]</c> and separating them by commas, like <c>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</c>.
             The values in a list can be any type of data, and can even be a mix of types of data

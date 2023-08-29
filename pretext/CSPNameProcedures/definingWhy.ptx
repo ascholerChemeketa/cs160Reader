@@ -1,32 +1,34 @@
-<section xml:id="csp-name-procedures_defining-procedures-why">
-        <title>Defining Procedures - Why</title>
-        
-        
-        <p xml:id="csp-name-procedures_index-0">How does Python know what to do when we call functions like <c>abs</c> or procedures like
-            <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedures or
-            function, associates a name with a name with a sequence of steps.</p>
-        <p>Why do we make new procedures or functions? There are two primary reasons:</p>
-        <p><ul>
-            <li>
-                <p><term>Code reuse</term> -
-                    A golden rule in programming is <term>DRY - don&#8217;t repeat yourself</term>. If you find yourself
-                    typing the same code over and over (or copy/pasting), there is probably a better way
-                    to solve the problem. By defining a function or procedure, we can easily reuse a
-                    sequence of instructions without typing the entire sequence over and over again.</p>
-            </li>
-            <li>
-                <p><term>Forming abstractions</term> - By defining a function or procedure, we can hide the messy details
-                    of solving a particular problem. We can then use the function or procedure to do the job
-                    without stopping to worry about all of the details. If someone else defined the function,
-                    we may not even know how all of the details work. But we can still use the function to do
-                    a job. The function is an <term>abstraction</term> - something that allows us to think about our
-                    problem at a higher level and get more done with each line of code we write.</p>
-            </li>
-        </ul></p>
-        <p>Examine the program below. Can you easily tell what it does? Click <em>Run</em> and see what happens.</p>
+<section
+  xml:id="csp-name-procedures_defining-procedures-why">
+  <title>Defining Procedures - Why</title>
 
-    <program xml:id="cspnameprocedures_definingwhy1" interactive="activecode" language="python">
-        <input>
+  <p>How does Python know what to do when we call functions like <c>abs</c> or
+    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedures or
+    function, associates a name with a name with a sequence of steps.</p>
+  <p>Why do we make new procedures or functions? There are two primary reasons:</p>
+  <p>
+    <ul>
+      <li>
+        <p><term>Code reuse</term> - A golden rule in programming is <term>DRY - don&#8217;t repeat yourself</term>. If
+          you find yourself typing the same code over and over (or copy/pasting), there is probably a better way to
+          solve the problem. By defining a function or procedure, we can easily reuse a sequence of instructions without
+          typing the entire sequence over and over again.</p>
+      </li>
+      <li>
+        <p><term>Forming abstractions</term> - By defining a function or procedure, we can hide the messy details of
+          solving a particular problem. We can then use the function or procedure to do the job without stopping to
+          worry about all of the details. If someone else defined the function, we may not even know how all of the
+          details work. But we can still use the function to do a job. The function is an <term>abstraction</term> -
+          something that allows us to think about our problem at a higher level and get more done with each line of code
+          we write.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Examine the program below. Can you easily tell what it does? Click <em>Run</em> and see what happens.</p>
+
+  <program xml:id="cspnameprocedures_definingwhy1"
+    interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 malik = Turtle()
@@ -57,14 +59,15 @@ malik.right(90)
 malik.forward(20)
 malik.right(90)
         </input>
-    </program>
-        <p>It is not easy to glance at that program and easily tell that it will draw three squares in a row.
-            We could make it easier to understand by adding some comments, and some blank lines to break it
-            into logical sections, but it would still not be fun to read. It also represents a lot of typing.</p>
-        <p>Now compare that program to this one.</p>
+  </program>
+  <p>It is not easy to glance at that program and easily tell that it will draw three squares in a row. We could make it
+    easier to understand by adding some comments, and some blank lines to break it into logical sections, but it would
+    still not be fun to read. It also represents a lot of typing.</p>
+  <p>Now compare that program to this one.</p>
 
-    <program xml:id="cspnameprocedures_definingwhy2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspnameprocedures_definingwhy2"
+    interactive="activecode" language="python">
+    <input>
 from turtle import *
 space = Screen()
 yessenia = Turtle()
@@ -78,14 +81,13 @@ yessenia.forward(20)
 square(yessenia)            # draws a square with yessenia
 yessenia.forward(20)
         </input>
-    </program>
-        <p>It is much easier to read this program and quickly understand what it is doing. It requires
-            less typing (or copy/pasting) to make this program. And you could modify this program to draw a
-            fourth square without even understanding how the squares are drawn - <c>square</c> is an abstraction
-            that lets you draw a square without worrying about how to actually accomplish that task.</p>
-        <p>However, this new program doesn&#8217;t work yet. Try running it if you have not already. You will get
-            an error message that <em>&#8220;&#8216;square&#8217; is not defined on line 5&#8221;</em>. Python has no idea what is meant
-            by <c>square</c>. Before we can run this code, we need to <term>define</term> how the <c>square</c> procedure
-            works.</p>
-    </section>
+  </program>
+  <p>It is much easier to read this program and quickly understand what it is doing. It requires less typing (or
+    copy/pasting) to make this program. And you could modify this program to draw a fourth square without even
+    understanding how the squares are drawn - <c>square</c> is an abstraction that lets you draw a square without worrying
+    about how to actually accomplish that task.</p>
+  <p>However, this new program doesn&#8217;t work yet. Try running it if you have not already. You will get an error
+    message that <em>&#8220;&#8216;square&#8217; is not defined on line 5&#8221;</em>. Python has no idea what is meant
+    by <c>square</c>. Before we can run this code, we need to <term>define</term> how the <c>square</c> procedure works.</p>
+</section>
 

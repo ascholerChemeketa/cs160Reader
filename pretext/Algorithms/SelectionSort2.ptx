@@ -10,26 +10,26 @@
   <p>Don’t worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
   <program language="none">
     <input>
-<p>    <em>Note: assume that list already exists</em>
-1   <c>i</c> = 0                                    <em>i marks start of unsorted cards</em>
-2   repeat (length of the <c>list</c> - 1) times:
-3       <c>currentMinIndex</c> = <c>i</c>                 <em>curentMinIndex is the "left hand"</em>
-4       <c>currentMin</c> = <c>list[currentMinIndex]</c>  <em>smallest value seen so far</em>
-5       <c>j</c> = <c>i</c>                               <em>j is the "right hand"</em>
+    Note: assume that list already exists
+1   i = 0                                    i marks start of unsorted cards
+2   repeat (length of the list - 1) times:
+3       currentMinIndex = i                 curentMinIndex is the "left hand"
+4       currentMin = list[currentMinIndex]  smallest value seen so far
+5       j = i                               j is the "right hand"
 6
-7       <em>Note: find smallest remaining card</em>
-8       repeat while <c>j</c> &lt; (length of <c>list</c>)
-9           if <c>list[j]</c> &lt; <c>currentMin</c>
-10              <em>Note: New smallest card - move "left hand"</em>
-11              <c>currentMinIndex</c> = <c>j</c>
-12              <c>currentMin</c> = <c>list[j]</c>
-13          <c>j</c> = <c>j</c> + 1                       <em>shift "right hand"</em>
+7       Note: find smallest remaining card
+8       repeat while j &lt; (length of list)
+9           if list[j] &lt; currentMin
+10              Note: New smallest card - move "left hand"
+11              currentMinIndex = j
+12              currentMin = list[j]
+13          j = j + 1                       shift "right hand"
 14
-15      <em>Swap smallest unsorted with first unsorted</em>
-16      <c>list[currentMinIndex]</c> = <c>list[i]</c>
-17      <c>list[i]</c> = <c>currentMin</c>
+15      Swap smallest unsorted with first unsorted
+16      list[currentMinIndex] = list[i]
+17      list[i] = currentMin
 18
-19      <c>i</c> = <c>i</c> + 1                           <em>move start of unsorted one to right</em></p>
+19      i = i + 1                           move start of unsorted one to right
 </input>
   </program>
   <p>The animation below allows you to step through a selection sort. Each step either advances the “right hand” or does

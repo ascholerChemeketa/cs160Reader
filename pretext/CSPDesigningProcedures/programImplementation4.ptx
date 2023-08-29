@@ -1,31 +1,31 @@
 <section xml:id="csp-designing-procedures_program-implementation-4">
-        <title>Program Implementation - 4</title>
-        <p>We are finally ready to add a roof! This version of the program has added a <c>drawRoof</c>, but
-            the procedure is missing its body. Try writing the body of <c>drawRoof</c>.</p>
-        <p>Tips:</p>
-        <p><ul>
-            <li>
-                <p>If you make the roof a 30, 120, 30 triangle, the two upper sides should be 173 long.</p>
-            </li>
-            <li>
-                <p>Make sure to use <c>begin_fill</c> and <c>end_fill</c> in your procedure. Without them, the triangle
-                    will not get filled in.</p>
-            </li>
-            <li>
-                <p>You don&#8217;t actually have to draw the bottom edge of the roof since there is already
-                    a line there.</p>
-            </li>
-        </ul></p>
-        <p>Notice we have commented out the tests for the doors and windows. There is no need to run
-            that code while you are working on the roof.</p>
+  <title>Program Implementation - 4</title>
+  <p>We are finally ready to add a roof! This version of the program has added a <c>drawRoof</c>, but the procedure is missing
+    its body. Try writing the body of <c>drawRoof</c>.</p>
+  <p>Tips:</p>
+  <p>
+    <ul>
+      <li>
+        <p>If you make the roof a 30, 120, 30 triangle, the two upper sides should be 173 long.</p>
+      </li>
+      <li>
+        <p>Make sure to use <c>begin_fill</c> and <c>end_fill</c> in your procedure. Without them, the triangle will not get filled in.</p>
+      </li>
+      <li>
+        <p>You don&#8217;t actually have to draw the bottom edge of the roof since there is already a line there.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Notice we have commented out the tests for the doors and windows. There is no need to run that code while you are
+    working on the roof.</p>
 
-<exercise label="cspdesigningprocedures_programimplementation41">
+  <exercise label="cspdesigningprocedures_programimplementation41">
     <statement>
-        <p>Implement the <c>drawRoof</c> procedure</p>
+      <p>Implement the <c>drawRoof</c> procedure</p>
 
     </statement>
     <program xml:id="cspdesigningprocedures_programimplementation41_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with
     turtle.pendown()
@@ -88,6 +88,6 @@ steve.goto(-150, 50)
 drawRoof(steve)                # test the drawRoof procedure
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

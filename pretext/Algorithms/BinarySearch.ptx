@@ -195,25 +195,25 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
     animation above shows.</p>
   <program language="none">
     <input>
-<p>    <em>Note: assume that list and key are already set</em>
-1   set <c>lowIndex</c> = 0
-2   set <c>highIndex</c> = length of <c>list</c> - 1
-3   repeat until <c>lowIndex</c> is larger than <c>highIndex</c>
-4       set <c>middleIndex</c> = (<c>lowIndex</c> + <c>highIndex</c>)/2   <em>round down</em>
-5       set <c>middleValue</c> = <c>list[middleIndex]</c>
-6       if <c>middleValue</c> == <c>key</c>
-7           print "Found at " + <c>middleIndex</c>
+    Note: assume that list and key are already set
+1   set lowIndex = 0
+2   set highIndex = length of list - 1
+3   repeat until lowIndex is larger than highIndex
+4       set middleIndex = (lowIndex + highIndex)/2   round down
+5       set middleValue = list[middleIndex]
+6       if middleValue == key
+7           print "Found at " + middleIndex
 8           end program
 9
-10      <em>Note: We didn't find, it check to see if too high or too low:</em>
-11      if <c>middleValue</c> > <c>key</c> then
-12          <em>Note: Too high, change the upper bound</em>
-13          <c>highIndex</c> = <c>middleIndex</c> - 1
+10      Note: We didn't find, it check to see if too high or too low:
+11      if middleValue > key then
+12          Note: Too high, change the upper bound
+13          highIndex = middleIndex - 1
 14      else
-15          <em>Note: Too low, change the lower bound</em>
-16          <c>lowIndex</c> = <c>middleIndex</c> + 1
+15          Note: Too low, change the lower bound
+16          lowIndex = middleIndex + 1
 17
-18  print "Value not found"</p>
+18  print "Value not found"
 </input>
   </program>
   <p>Although binary search is more complex than linear search and depends on the items being in order, it can be

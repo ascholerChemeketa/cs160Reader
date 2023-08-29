@@ -2,7 +2,7 @@
         <title>Tables of Records</title>
         
         
-        <p xml:id="sql-intro_index-0">Say you are conducting research about bike sharing for an
+        <p>Say you are conducting research about bike sharing for an
             internship in Washington D.C. You are given the Capital Bike Sharing dataset,
             contains information on Washington D.C.&#8217;s bike share program for 2011. The database
             has hundreds of thousands of records about every ride that anyone took and you would
@@ -103,7 +103,7 @@
         
         <p xml:id="sql-intro_bikesharestations" names="bikesharestations">Information about the stations is stored in a separate table called the <c>bikeshare_stations</c>
             table. In that table, each record is the information about one particular station.</p>
-        <figure align="center" xml:id=""><image source="SQLIntro/figures/bikeshare_stations_table.png" width="50%" alt="The bikeshare_stations table from the bike dataset."/></figure>
+        <figure align="center"><image source="SQLIntro/figures/bikeshare_stations_table.png" width="50%" alt="The bikeshare_stations table from the bike dataset."/></figure>
         <p>It has these columns:</p>
         <table xml:id="sql-intro_bikeshare-stations-table"><tabular>
             

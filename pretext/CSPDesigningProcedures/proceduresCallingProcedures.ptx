@@ -1,17 +1,15 @@
 <section xml:id="csp-designing-procedures_procedures-that-call-procedures">
-        <title>Procedures that Call Procedures</title>
-        <p>Once we start writing procedures, we may want to make use of our new abstractions to build
-            even more complex new procedures. We have actually already used this idea - our procedures
-            like <c>square</c> make use of existing turtle procedures like <c>forward</c>. But we can also
-            use our own existing procedures to write other new procedures.</p>
-        <p>Say we want to draw this shape:</p>
-        <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%"/>
-        <p>We notice that it consists of three rows. Each row consists of three squares. We already know
-            how to write a procedure draw a square&#8230; lets use it to write a procedure to draw a row of
-            squares:</p>
+  <title>Procedures that Call Procedures</title>
+  <p>Once we start writing procedures, we may want to make use of our new abstractions to build even more complex new
+    procedures. We have actually already used this idea - our procedures like <c>square</c> make use of existing turtle
+    procedures like <c>forward</c>. But we can also use our own existing procedures to write other new procedures.</p>
+  <p>Say we want to draw this shape:</p>
+  <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%" />
+  <p>We notice that it consists of three rows. Each row consists of three squares. We already know how to write a
+    procedure draw a square&#8230; lets use it to write a procedure to draw a row of squares:</p>
 
-    <program xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
+    <input>
 def square(turtle, size):
     turtle.forward(size)
     turtle.right(90)
@@ -35,19 +33,16 @@ roger = Turtle()
 roger.speed(10)
 row(roger)                      # do the row procedure with roger
         </input>
-    </program>
-        <p>The <c>row</c> procedure has one parameter - <c>turtleName</c>. Whatever turtle is specified as the
-            argument in the procedure call to <c>row</c> will be called <c>turtleName</c> inside <c>row</c>. So
-            because we call <c>row(roger)</c>, <c>turtleName</c> will mean <c>roger</c>.</p>
-        <p>Inside the <c>row</c> procedure, we call the <c>square</c> procedure: <c>square(turtleName, 10)</c>.
-            Because <c>turtleName</c> refers to <c>roger</c> at this point, that is the same as
-            <c>square(roger, 10)</c>. Because the first parameter of square is <c>turtle</c>, that means
-            any time we say <c>turtle</c> in the square procedure, we are going to be working with
-            <c>roger</c>.</p>
-        <p>Now we can use the <c>row</c> to help write a <c>grid</c> procedure that makes the final picture:</p>
+  </program>
+  <p>The <c>row</c> procedure has one parameter - <c>turtleName</c>. Whatever turtle is specified as the argument in the procedure
+    call to <c>row</c> will be called <c>turtleName</c> inside <c>row</c>. So because we call <c>row(roger)</c>, <c>turtleName</c> will mean <c>roger</c>.</p>
+  <p>Inside the <c>row</c> procedure, we call the <c>square</c> procedure: <c>square(turtleName, 10)</c>. Because <c>turtleName</c> refers to <c>roger</c> at this
+    point, that is the same as <c>square(roger, 10)</c>. Because the first parameter of square is <c>turtle</c>, that means any time we say <c>turtle</c>
+    in the square procedure, we are going to be working with <c>roger</c>.</p>
+  <p>Now we can use the <c>row</c> to help write a <c>grid</c> procedure that makes the final picture:</p>
 
-    <program xml:id="cspdesigningprocedures_procedurescallingprocedures2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdesigningprocedures_procedurescallingprocedures2" interactive="activecode" language="python">
+    <input>
 def square(turtle, size):
     turtle.forward(size)
     turtle.right(90)
@@ -89,70 +84,81 @@ roger = Turtle()
 roger.speed(10)
 grid(roger)                     # do the grid procedure with roger
         </input>
-    </program>
-        <p>Our <c>grid</c> procedure, the parameter is called <c>turtle</c>. Which is the same name that <c>square</c>
-            uses for its first parameter. It is OK for two different procedures to use the same name for
-            their parameters. It can however be confusing&#8230; just because they have the same name, does not
-            mean that they are always going to have the same value. Just like two people who both make a
-            phone call to &#8220;Bob&#8221; may be calling the same person, or may not be.</p>
-        <p>In this case, <c>roger</c> is passed to <c>grid</c>, which calls the turtle <c>turtle</c>, and passes
-            it to <c>row</c>, which calls it <c>turtleName</c>, which passes it to <c>square</c> which calls it
-            <c>turtle</c>. Each of the procedures has its own &#8220;nickname&#8221; for the turtle that they are all
-            working with.</p>
-<exercise label="cspdesigningprocedures_procedurescallingprocedures3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following code is supposed to draw a picture consisting of four &#8220;lines&#8221;; each &#8220;line&#8221;
-            has three squares.</p>
-        <p>Put the blocks in the right order and indentation. As usual, you will
-            not use all the blocks.</p>
-</statement>
-<blocks><block order="4">
-<cline>def square(turtle, size):</cline>
-<cline>    turtle.forward(size)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    turtle.forward(size)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    turtle.forward(size)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    turtle.forward(size)</cline>
-<cline>    turtle.right(90)</cline>
-</block><block order="6">
-<cline>def line(turtleName):</cline>
-</block><block order="5">
-<cline>    square(turtleName)</cline>
-<cline>    turtleName.forward(10)</cline>
-<cline>    square(turtleName)</cline>
-<cline>    turtleName.forward(10)</cline>
-<cline>    square(turtleName)</cline>
-<cline>    turtleName.backward(20)</cline>
-</block><block order="8" correct="no">
-<cline>    square(turtle)</cline>
-<cline>    turtle.forward(10)</cline>
-<cline>    square(turtle)</cline>
-<cline>    turtle.forward(10)</cline>
-<cline>    square(turtle)</cline>
-<cline>    turtle.backward(20) </cline>
-</block><block order="3">
-<cline>def picture(turtle):</cline>
-</block><block order="2">
-<cline>    line(turtle)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    line(turtle)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    line(turtle)</cline>
-<cline>    turtle.right(90)</cline>
-<cline>    line(turtle)</cline>
-</block><block order="7" correct="no">
-<cline>    line(turtleName)</cline>
-<cline>    turtleName.right(90)</cline>
-<cline>    line(turtleName)</cline>
-<cline>    turtleName.right(90)</cline>
-<cline>    line(turtleName)</cline>
-<cline>    turtleName.right(90)</cline>
-<cline>    line(turtleName) </cline>
-</block><block order="1">
-<cline>from turtle import *</cline>
-<cline>space = Screen()</cline>
-<cline>becca = Turtle()</cline>
-<cline>picture(becca)</cline>
-</block></blocks></exercise>    </section>
+  </program>
+  <p>Our <c>grid</c> procedure, the parameter is called <c>turtle</c>. Which is the same name that <c>square</c> uses for its first
+    parameter. It is OK for two different procedures to use the same name for their parameters. It can however be
+    confusing&#8230; just because they have the same name, does not mean that they are always going to have the same
+    value. Just like two people who both make a phone call to &#8220;Bob&#8221; may be calling the same person, or may
+    not be.</p>
+  <p>In this case, <c>roger</c> is passed to <c>grid</c>, which calls the turtle <c>turtle</c>, and passes it to <c>row</c>, which calls
+    it <c>turtleName</c>, which passes it to <c>square</c> which calls it <c>turtle</c>. Each of the procedures has its own
+    &#8220;nickname&#8221; for the turtle that they are all working with.</p>
+  <exercise label="cspdesigningprocedures_procedurescallingprocedures3" numbered="yes" adaptive="yes" indentation="show"
+    language="python">
+    <statement>
+      <p>The following code is supposed to draw a picture consisting of four &#8220;lines&#8221;; each
+        &#8220;line&#8221; has three squares.</p>
+      <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
+    </statement>
+    <blocks>
+      <block order="4">
+        <cline>def square(turtle, size):</cline>
+        <cline> turtle.forward(size)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> turtle.forward(size)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> turtle.forward(size)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> turtle.forward(size)</cline>
+        <cline> turtle.right(90)</cline>
+      </block>
+      <block order="6">
+        <cline>def line(turtleName):</cline>
+      </block>
+      <block order="5">
+        <cline> square(turtleName)</cline>
+        <cline> turtleName.forward(10)</cline>
+        <cline> square(turtleName)</cline>
+        <cline> turtleName.forward(10)</cline>
+        <cline> square(turtleName)</cline>
+        <cline> turtleName.backward(20)</cline>
+      </block>
+      <block order="8" correct="no">
+        <cline> square(turtle)</cline>
+        <cline> turtle.forward(10)</cline>
+        <cline> square(turtle)</cline>
+        <cline> turtle.forward(10)</cline>
+        <cline> square(turtle)</cline>
+        <cline> turtle.backward(20) </cline>
+      </block>
+      <block order="3">
+        <cline>def picture(turtle):</cline>
+      </block>
+      <block order="2">
+        <cline> line(turtle)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> line(turtle)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> line(turtle)</cline>
+        <cline> turtle.right(90)</cline>
+        <cline> line(turtle)</cline>
+      </block>
+      <block order="7" correct="no">
+        <cline> line(turtleName)</cline>
+        <cline> turtleName.right(90)</cline>
+        <cline> line(turtleName)</cline>
+        <cline> turtleName.right(90)</cline>
+        <cline> line(turtleName)</cline>
+        <cline> turtleName.right(90)</cline>
+        <cline> line(turtleName) </cline>
+      </block>
+      <block order="1">
+        <cline>from turtle import *</cline>
+        <cline>space = Screen()</cline>
+        <cline>becca = Turtle()</cline>
+        <cline>picture(becca)</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>
 
