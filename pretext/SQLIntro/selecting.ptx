@@ -2,7 +2,7 @@
         <title>Selecting</title>
         
         
-        <p xml:id="sql-intro_index-0">Instructions to retrieve information from a database are known as <term>queries</term>.
+        <p>Instructions to retrieve information from a database are known as <term>queries</term>.
             To make a query using SQL, we generally write a <term>SELECT</term> statement (recall that a complete
             instruction in programming is known as a statement). The general format of a <c>SELECT</c> is:</p>
         <program language="sql"><input>

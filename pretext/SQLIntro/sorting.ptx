@@ -2,7 +2,7 @@
         <title>Sorting</title>
         
         
-        <p xml:id="sql-intro_index-0">We can use SQL to specify how to sort the records that are retrieved by a query using
+        <p>We can use SQL to specify how to sort the records that are retrieved by a query using
             an <c>ORDER BY</c> clause. For example, the following query returns bike trips ordered by
             duration:</p>
 

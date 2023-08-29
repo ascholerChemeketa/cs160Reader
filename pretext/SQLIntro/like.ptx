@@ -8,7 +8,7 @@
             which would not include &#8216;Janice Jones&#8217;.</p>
         
         
-        <p xml:id="sql-intro_index-0">The <c>LIKE</c> comparison allows us to specify strings using <term>wildcards</term>. <term>Wildcards</term>
+        <p>The <c>LIKE</c> comparison allows us to specify strings using <term>wildcards</term>. <term>Wildcards</term>
             are symbols that can match anything. In SQL <c>LIKE</c> comparisons, <c>%</c> is a wildcard
             that means &#8220;any text can go here&#8221;. So <c>'Janice%''</c> says &#8220;Look for strings that start with
             Janice, and then have anything after that (including nothing else)&#8221;. While <c>'%Janice'</c>
