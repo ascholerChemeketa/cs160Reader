@@ -4,7 +4,7 @@
   <p>Instructions to retrieve information from a database are known as <term>queries</term>. To make a query using SQL,
     we generally write a <term>SELECT</term> statement (recall that a complete instruction in programming is known as a
     statement). The general format of a <c>SELECT</c> is:</p>
-  <program language="sql">
+  <program language="sql" database="SQL/bikeshare.db">
     <input>
 SELECT columns FROM table;
 </input>
@@ -14,7 +14,7 @@ SELECT columns FROM table;
     to read - it is also valid to use lowercase for the keywords.</p>
   <p>It is also common to break the statement up across multiple lines - as statements get more and more complex, this
     too makes them easier to read:</p>
-  <program language="sql">
+  <program language="sql" database="SQL/bikeshare.db">
     <input>
 --Still all one statement:
 SELECT
@@ -31,7 +31,7 @@ FROM
     to do so. It asks the database to <c>SELECT</c> all columns (<c>*</c> is a shorthand that means &#8220;all columns&#8221;) <c>FROM</c>
     the table named <c>trip_data</c>.</p>
 
-  <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql"  database="SQLIntro/bikeshare.db">
+  <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <input>
 SELECT
     *
@@ -45,7 +45,7 @@ FROM
     program, we would want to specify a list of columns we care about instead of using <c>*</c>. To select just the <c>start_date</c>
     , <c>end_date</c>, and <c>duration</c> columns, the query would look like the following:</p>
 
-  <program xml:id="sqlintro_selecting2" interactive="activecode" language="sql"  datafile="SQLIntro/bikeshare.db">
+  <program xml:id="sqlintro_selecting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <input>
 SELECT
     start_date,
@@ -68,7 +68,7 @@ FROM
         returned data to find the column names you care about.</p>
 
     </statement>
-    <program xml:id="sqlintro_selecting3_editor" interactive="activecode" language="sql" datafile="SQLIntro/bikeshare.db">
+    <program xml:id="sqlintro_selecting3_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
 
 ====

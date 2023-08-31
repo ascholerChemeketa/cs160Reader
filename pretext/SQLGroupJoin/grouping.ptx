@@ -1,41 +1,41 @@
 <section xml:id="sql-group-join_grouping">
-        <title>Grouping</title>
-        <p>In the last chapter, we learned how to aggregate data across all of the records
-            retrieved by a query - to find the last (MAX) date of a ride taken, or the
-            total number (COUNT) of rides taken at a particular station. As a refresher,
-            here are the common aggregations:</p>
-        <p><ul>
-            <li>
-                <p><c>COUNT</c> counts the rows. We can also do COUNT(DISTINCT column_name) to get the number of different value that appear in a column.</p>
-            </li>
-            <li>
-                <p><c>SUM</c> adds the values of a numeric column</p>
-            </li>
-            <li>
-                <p><c>MIN</c> calculates the minimum of a numeric column</p>
-            </li>
-            <li>
-                <p><c>MAX</c> calculates the maximum of a numeric column</p>
-            </li>
-            <li>
-                <p><c>AVG</c> calculates the mean of a numeric column</p>
-            </li>
-            <li>
-                <p><c>MEDIAN</c> calculates the median (middle value) of a numeric column</p>
-            </li>
-            <li>
-                <p><c>MODE</c> calculates the mode (most common value) of a numeric column</p>
-            </li>
-        </ul></p>
-        <p>Sometimes while aggregating data, you want to aggregate records in groups. Maybe
-            you want to find the longest trip that was taken at each individual station. Or
-            maybe you want to find the number of trips taken on each bike.</p>
-        <p>The <c>GROUP BY</c> statement allows you to group data as you aggregate it.
-            The following query counts the number of trips (<c>COUNT(*)</c>) for each member
-            type (<c>GROUP BY member_type</c>).</p>
+  <title>Grouping</title>
+  <p>In the last chapter, we learned how to aggregate data across all of the records retrieved by a query - to find the
+    last (MAX) date of a ride taken, or the total number (COUNT) of rides taken at a particular station. As a refresher,
+    here are the common aggregations:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>COUNT</c> counts the rows. We can also do COUNT(DISTINCT column_name) to get the number of different values that
+          appear in a column.</p>
+      </li>
+      <li>
+        <p><c>SUM</c> adds the values of a numeric column</p>
+      </li>
+      <li>
+        <p><c>MIN</c> calculates the minimum of a numeric column</p>
+      </li>
+      <li>
+        <p><c>MAX</c> calculates the maximum of a numeric column</p>
+      </li>
+      <li>
+        <p><c>AVG</c> calculates the mean of a numeric column</p>
+      </li>
+      <li>
+        <p><c>MEDIAN</c> calculates the median (middle value) of a numeric column</p>
+      </li>
+      <li>
+        <p><c>MODE</c> calculates the mode (most common value) of a numeric column</p>
+      </li>
+    </ul>
+  </p>
+  <p>Sometimes while aggregating data, you want to aggregate records in groups. Maybe you want to find the longest trip
+    that was taken from each station. Or maybe you want to find the number of trips taken on each bike.</p>
+  <p>The <c>GROUP BY</c> statement allows you to group data as you aggregate it. The following query counts the number of trips
+    (<c>COUNT(*)</c>) for each member type (<c>GROUP BY member_type</c>).</p>
 
-    <program xml:id="sqlgroupjoin_grouping1" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_grouping1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     member_type,
     COUNT(*) AS n_trips
@@ -46,30 +46,25 @@ GROUP BY
 ORDER BY
     n_trips DESC
         </input>
-    </program>
-        <p>The result of this query has one row for each distinct <c>member_type</c>, and the
-            column named <c>n_trips</c> counts the number of rows for each type. Recall that
-            <c>AS _______</c> gives a name to a calculated value - any time we do an aggregation,
-            it will be helpful to name the result so we know what we are seeing in the output.
-            By giving the aggregated value a name, we can use it in the <c>ORDER BY</c> to sort
-            by the total number of trips we calculated.</p>
-        <p>Once you start grouping records, it only makes sense to talk about aggregated data.
-            You can&#8217;t group the records by <c>member_type</c> and try to select the <c>start_date</c>.
-            There is no one start date for all of those records. You would instead have to ask
-            about the <c>MIN(start_station)</c> or <c>MODE(start_station)</c> or <c>COUNT(DISTINCT start_station)</c>.</p>
-        <warning>
-            <p>You must include the <c>GROUP BY</c> column(s) in your <c>SELECT</c> clause.</p>
-            <p>All columns that are not in the <c>GROUP BY</c> clause must be selected using an
-                aggregating function.</p>
-        </warning>
-        <p>The query below calculates the minimum and maximum trip duration
-            for each start station. Because we are grouping on <c>start_station</c>, we <c>SELECT</c>
-            <c>start_station</c>. All the other columns we are selecting data from (<c>duration</c>
-            which is selected from twice) have an aggregation function (<c>MAX</c> or <c>MIN</c> in
-            this case).</p>
+  </program>
+  <p>The result of this query has one row for each distinct <c>member_type</c>, and the column named <c>n_trips</c> counts the number of
+    rows for each type. Recall that <c>AS _______</c> gives a name to a calculated value - any time we do an aggregation, it will
+    be helpful to name the result so we know what we are seeing in the output. By giving the aggregated value a name, we
+    can use it in the <c>ORDER BY</c> to sort by the total number of trips we calculated.</p>
+  <p>Once you start grouping records, it only makes sense to talk about aggregated data. You can&#8217;t group the
+    records by <c>member_type</c> and try to select the <c>start_date</c>. There is no one start date for all of those records. You would
+    instead have to ask about the <c>MIN(start_station)</c> or <c>MODE(start_station)</c> or <c>COUNT(DISTINCT start_station)</c>.</p>
+  <warning>
+    <p>You must include the <c>GROUP BY</c> column(s) in your <c>SELECT</c> clause.</p>
+    <p>All columns that are not in the <c>GROUP BY</c> clause must be selected using an aggregating function.</p>
+  </warning>
+  <p>The query below calculates the minimum and maximum trip duration for each start station. Because we are grouping on <c>start_station</c>,
+    we <c>SELECT</c>
+            <c>start_station</c>. All the other columns we are selecting data from (<c>duration</c> which is selected from twice) have an
+    aggregation function (<c>MAX</c> or <c>MIN</c> in this case).</p>
 
-    <program xml:id="sqlgroupjoin_grouping2" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_grouping2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     start_station,
     MIN(duration) AS minimum_duration,
@@ -79,14 +74,13 @@ FROM
 GROUP BY
     start_station
         </input>
-    </program>
-        <p>You can still use other columns that you are not selecting to filter the data that
-            gets used to calculate the aggregated value. You just need to make sure to put the
-            <c>WHERE</c> before teh <c>GROUP BY</c>. For example, you can calculate the number
-            of trips started from each station for just the bike &#8216;W000001&#8217; with this query:</p>
+  </program>
+  <p>You can still use other columns that you are not selecting to filter the data that gets used to calculate the
+    aggregated value. You just need to make sure to put the <c>WHERE</c> before the <c>GROUP BY</c>. For example, you can calculate
+    the number of trips started from each station for just the bike &#8216;W000001&#8217; with this query:</p>
 
-    <program xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     start_station,
     COUNT(*) AS trips_started
@@ -97,55 +91,69 @@ WHERE
 GROUP BY
     start_station
         </input>
-    </program>
-<exercise label="sqlgroupjoin_grouping4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following code will calculate the mean trip duration for trips by each member type and sort the results so that the member type with the longest average trip is displayed first.</p>
-        <p>Put the instructions in the right order and indentation. You will use all of the blocks.</p>
-</statement>
-<blocks><block order="2">
-<cline>SELECT</cline>
-</block><block order="7">
-<cline>    member_type,</cline>
-<cline>    AVG(duration) AS average_time</cline>
-</block><block order="1">
-<cline>FROM</cline>
-</block><block order="5">
-<cline>    trip_data</cline>
-</block><block order="6">
-<cline>GROUP BY</cline>
-</block><block order="4">
-<cline>    member_type</cline>
-</block><block order="3">
-<cline>ORDER BY</cline>
-</block><block order="8">
-<cline>    average_time DESC</cline>
-</block></blocks></exercise>
-<exercise label="sqlgroupjoin_grouping5">
+  </program>
+  <exercise label="sqlgroupjoin_grouping4" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
-        <p>For each bike, display the bike number and the total trip count. Sort
-            the results so that the most used bikes come first.</p>
-        <p>Hints:</p>
-        <p><ul>
-            <li>
-                <p>You need to group the data by bikes.</p>
-            </li>
-            <li>
-                <p>You need to find the count of trips made.</p>
-            </li>
-            <li>
-                <p>You need to order the results.</p>
-            </li>
-        </ul></p>
+      <p>The following code will calculate the mean trip duration for trips by each member type and sort the results so
+        that the member type with the longest average trip is displayed first.</p>
+      <p>Put the instructions in the right order and indentation. You will use all of the blocks.</p>
+    </statement>
+    <blocks>
+      <block order="2">
+        <cline>SELECT</cline>
+      </block>
+      <block order="7">
+        <cline> member_type,</cline>
+        <cline> AVG(duration) AS average_time</cline>
+      </block>
+      <block order="1">
+        <cline>FROM</cline>
+      </block>
+      <block order="5">
+        <cline> trip_data</cline>
+      </block>
+      <block order="6">
+        <cline>GROUP BY</cline>
+      </block>
+      <block order="4">
+        <cline> member_type</cline>
+      </block>
+      <block order="3">
+        <cline>ORDER BY</cline>
+      </block>
+      <block order="8">
+        <cline> average_time DESC</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="sqlgroupjoin_grouping5">
+    <statement>
+      <p>For each bike, display the bike number and the total trip count. Sort the results so that the most used bikes
+        come first.</p>
+      <p>Hints:</p>
+      <p>
+        <ul>
+          <li>
+            <p>You need to group the data by bikes.</p>
+          </li>
+          <li>
+            <p>You need to find the count of trips made.</p>
+          </li>
+          <li>
+            <p>You need to order the results.</p>
+          </li>
+        </ul>
+      </p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_grouping5_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_grouping5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 
 ====
 assert 0,0 == W00069
 assert 0,1 == 705
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

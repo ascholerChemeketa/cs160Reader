@@ -1,212 +1,155 @@
 <section xml:id="sql-group-join_chapter-exercises">
-        <title>Chapter Exercises</title>
-        <p>The exercises for this chapter use a different database than the rest of the chapter. The
-            <term>movies</term> database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c>
-            table (so queries will look like <c>SELECT * from movies</c>). It features the following
-            columns of data:</p>
-        <table xml:id="sql-group-join_movie-table"><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Column Name
-                        </cell>
-                        <cell>
-                            Description
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            id
-                        </cell>
-                        <cell>
-                            A unique number for each record
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_id
-                        </cell>
-                        <cell>
-                            The id of the movie in the Internet Movie DataBase (IMDB)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            title
-                        </cell>
-                        <cell>
-                            Title fo  the movie
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            director
-                        </cell>
-                        <cell>
-                            Name of the director
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            year
-                        </cell>
-                        <cell>
-                            Year (number) the movie was released
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            rating
-                        </cell>
-                        <cell>
-                            Rating (R, PG, etc&#8230;)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            genre
-                        </cell>
-                        <cell>
-                            Comma separated list of genres
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            runtime
-                        </cell>
-                        <cell>
-                            Length in minutes
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            country
-                        </cell>
-                        <cell>
-                            Comma separated list of countries it was released in
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            language
-                        </cell>
-                        <cell>
-                            Comma separated list of languages it was released in
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_score
-                        </cell>
-                        <cell>
-                            Score of movie (1-10) in IMDB
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_votes
-                        </cell>
-                        <cell>
-                            Number of ratings for the movie in the IMDB
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            metacritic_score
-                        </cell>
-                        <cell>
-                            Score of movie (1-100) on the Metacritic website
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
+  <title>Chapter Exercises</title>
+  <p>The exercises for this chapter use a different database than the rest of the chapter. The <term>movies</term>
+    database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c> table (so queries will look like <c>SELECT * from movies</c>).
+    It features the following columns of data:</p>
+  <table xml:id="sql-group-join_movie-table">
+    <tabular>
 
-<exercise label="sqlgroupjoin_exercises1">
+      <row header="yes">
+        <cell> Column Name </cell>
+        <cell> Description </cell>
+      </row>
+
+      <row>
+        <cell> id </cell>
+        <cell> A unique number for each record </cell>
+      </row>
+      <row>
+        <cell> imdb_id </cell>
+        <cell> The id of the movie in the Internet Movie DataBase (IMDB) </cell>
+      </row>
+      <row>
+        <cell> title </cell>
+        <cell> Title fo the movie </cell>
+      </row>
+      <row>
+        <cell> director </cell>
+        <cell> Name of the director </cell>
+      </row>
+      <row>
+        <cell> year </cell>
+        <cell> Year (number) the movie was released </cell>
+      </row>
+      <row>
+        <cell> rating </cell>
+        <cell> Rating (R, PG, etc&#8230;) </cell>
+      </row>
+      <row>
+        <cell> genre </cell>
+        <cell> Comma-separated list of genres </cell>
+      </row>
+      <row>
+        <cell> runtime </cell>
+        <cell> Length in minutes </cell>
+      </row>
+      <row>
+        <cell> country </cell>
+        <cell> Comma separated list of countries it was released in </cell>
+      </row>
+      <row>
+        <cell> language </cell>
+        <cell> Comma separated list of languages it was released in </cell>
+      </row>
+      <row>
+        <cell> imdb_score </cell>
+        <cell> Score of the movie (1-10) in IMDB </cell>
+      </row>
+      <row>
+        <cell> imdb_votes </cell>
+        <cell> Number of ratings for the movie in the IMDB </cell>
+      </row>
+      <row>
+        <cell> metacritic_score </cell>
+        <cell> Score of the movie (1-100) on the Metacritic website </cell>
+      </row>
+
+    </tabular>
+  </table>
+
+  <exercise label="sqlgroupjoin_exercises1">
     <statement>
-        <p>Write a query to find the average IMDB score for all the movies.</p>
+      <p>Write a query to find the average IMDB score for all the movies.</p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises1_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises1_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 8.303999999999997
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises2">
+  <exercise label="sqlgroupjoin_exercises2">
     <statement>
-        <p>Write a query to find the highest IMDB score for any movie that was
-            directed at least partially by Quentin Tarantino. (Hint: A movie can have
-            multiple directors, so you will need to use <c>director LIKE '%Quentin Tarantino%'</c>
-            to identify movies where Quentin Tarantino is in the list of directors.)</p>
+      <p>Write a query to find the highest IMDB score for any movie that was directed at least partially by Quentin
+        Tarantino. (Hint: A movie can have multiple directors, so you will need to use <c>director LIKE '%Quentin Tarantino%'</c> to identify movies where
+        Quentin Tarantino is in the list of directors.)</p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises2_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises2_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 8.9
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises3">
+  <exercise label="sqlgroupjoin_exercises3">
     <statement>
-        <p>Write a query to display the total number of movies with a <c>rating</c> of <c>'PG-13'</c>
-            in the database.</p>
+      <p>Write a query to display the total number of movies with a <c>rating</c> of <c>'PG-13'</c> in the database.</p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises3_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises3_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 32
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises4">
+  <exercise label="sqlgroupjoin_exercises4">
     <statement>
-        <p>Use <c>GROUP BY</c> to write a query to display each <c>rating</c> category with the
-            number of movies in that category.  Your output should look like this:</p>
-        <pre><p>...
+      <p>Use <c>GROUP BY</c> to write a query to display each <c>rating</c> category with the number of movies in that category. Your
+        output should look like this:</p>
+      <pre><p>...
 PG    | 43
 PG-13 | 32
 ...</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises4_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises4_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 1,0 == G
 assert 1,1 == 14
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises5">
+  <exercise label="sqlgroupjoin_exercises5">
     <statement>
-        <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director&#8217;s
-            movies have earned. Order the output so the directors with the highest <c>imdb_score</c> come first.</p>
-        <p>Hint: You will need to use both <c>GROUP BY</c> and <c>ORDER BY`</c>.</p>
-        <p>Your output should look like this:</p>
-        <pre><p>director              | score
+      <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director&#8217;s movies have earned.
+        Order the output so the directors with the highest <c>imdb_score</c> come first.</p>
+      <p>Hint: You will need to use both <c>GROUP BY</c> and <c>ORDER BY`</c>.</p>
+      <p>Your output should look like this:</p>
+      <pre><p>director              | score
 Frank Darabont        | 9.3
 Francis Ford Coppola  | 9.2
 ...</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises5_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises5_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == Frank Darabont
@@ -215,24 +158,25 @@ assert 1,0 == Francis Ford Coppola
 assert 1,1 == 9.2
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises6">
+  <exercise label="sqlgroupjoin_exercises6">
     <statement>
-        <p>Write a query to list each <c>director</c> with the <c>COUNT</c> of the number of films they have made.
-            But <term>only</term> retrieve the data for directors with at least 2 films.</p>
-        <p>The results should be sorted by director&#8217;s name (but that should be the default,
-            you should not have to use <c>ORDER BY</c>).</p>
-        <p>Hint: Remember that you have to use <c>HAVING</c> to filter grouped results.</p>
-        <p>Your output should look like this:</p>
-        <pre><p>director              | num_films
+      <p>Write a query to list each <c>director</c> with the <c>COUNT</c> of the number of films they have made. But <term>only</term>
+        retrieve the data for directors with at least 2 films.</p>
+      <p>The results should be sorted by director&#8217;s name (but that should be the default, you should not have to
+        use <c>ORDER BY</c>).</p>
+      <p>Hint: Remember that you have to use <c>HAVING</c> to filter grouped results.</p>
+      <p>Your output should look like this:</p>
+      <pre><p>director              | num_films
 Akira Kurosawa        | 5
 Alfred Hitchcock      | 6
 ...</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises6_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises6_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == Akira Kurosawa
@@ -241,26 +185,26 @@ assert 1,0 == Alfred Hitchcock
 assert 1,1 == 6
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises7">
+  <exercise label="sqlgroupjoin_exercises7">
     <statement>
-        <p>Write a query to list each <c>director</c> with the number of movies they have made that
-            have an <c>imdb_score</c> of 8.5 or higher.</p>
-        <p>Sort the results so the directors with the greatest number of highly rated files
-            are first.</p>
-        <p>Hint: Here you want to filter the movies by IMDB rating before they are aggregated,
-            so you need a <c>WHERE</c> not a <c>HAVING</c>.</p>
-        <p>Your output should look like this:</p>
-        <pre><p>director              | high_rated_films
+      <p>Write a query to list each <c>director</c> with the number of movies they have made that have an <c>imdb_score</c> of 8.5 or
+        higher.</p>
+      <p>Sort the results so the directors with the greatest number of highly rated files are first.</p>
+      <p>Hint: Here you want to filter the movies by IMDB rating before they are aggregated, so you need a <c>WHERE</c> not a <c>HAVING</c>
+        .</p>
+      <p>Your output should look like this:</p>
+      <pre><p>director              | high_rated_films
 Peter Jackson         | 3
 Christopher Nolan     | 3
 Steven Spielberg      | 2
 ...</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises7_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises7_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == Peter Jackson
@@ -269,77 +213,53 @@ assert 1,0 == Christopher Nolan
 assert 1,1 == 3
         </input>
     </program>
-</exercise>
-        <p>The following problems will also make use of the <c>actors</c> table. It consists of records that
-            match a movie to a particular actor. If an actor appears in multiple movies, they will appear
-            in one record for each movie they appear in.</p>
-        <table xml:id="sql-group-join_actor-table"><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Column Name
-                        </cell>
-                        <cell>
-                            Description
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            id
-                        </cell>
-                        <cell>
-                            A unique number for each record
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            movie_id
-                        </cell>
-                        <cell>
-                            The id of the movie the actor appears in. This will match the <c>id</c> field in the <c>movies</c> table.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_id
-                        </cell>
-                        <cell>
-                            ID of the actor on the IMDB website
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            name
-                        </cell>
-                        <cell>
-                            Name of the actor
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
+  </exercise>
+  <p>The following problems will also make use of the <c>actors</c> table. It consists of records that match a movie to a
+    particular actor. If an actor appears in multiple movies, they will appear in one record for each movie they appear
+    in.</p>
+  <table xml:id="sql-group-join_actor-table">
+    <tabular>
 
-<exercise label="sqlgroupjoin_exercises8">
+      <row header="yes">
+        <cell> Column Name </cell>
+        <cell> Description </cell>
+      </row>
+
+      <row>
+        <cell> id </cell>
+        <cell> A unique number for each record </cell>
+      </row>
+      <row>
+        <cell> movie_id </cell>
+        <cell> The id of the movie the actor appears in. This will match the <c>id</c> field in the <c>movies</c> table. </cell>
+      </row>
+      <row>
+        <cell> imdb_id </cell>
+        <cell> ID of the actor on the IMDB website </cell>
+      </row>
+      <row>
+        <cell> name </cell>
+        <cell> Name of the actor </cell>
+      </row>
+
+    </tabular>
+  </table>
+
+  <exercise label="sqlgroupjoin_exercises8">
     <statement>
-        <p>We would like to know the title of all the movies Marlon Brando acted in.</p>
-        <p>Write a query that gets just the <c>movies.title</c> from the results of
-            joining the <c>actors</c> table with the <c>movies</c> table
-            (so that <c>actors.movie_id</c> matches with <c>movies.id</c>) and
-            selecting rows in which the <c>actors.name</c> is <c>"Marlon Brando"</c>.</p>
-        <p>Your output should look like this:</p>
-        <pre><p>title
+      <p>We would like to know the title of all the movies Marlon Brando acted in.</p>
+      <p>Write a query that gets just the <c>movies.title</c> from the results of joining the <c>actors</c> table with the <c>movies</c> table
+        (so that <c>actors.movie_id</c> matches with <c>movies.id</c>) and selecting rows in which the <c>actors.name</c> is <c>"Marlon Brando"</c>.</p>
+      <p>Your output should look like this:</p>
+      <pre><p>title
 Apocalypse Now
 On the Waterfront
 The Godfather</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises8_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises8_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == Apocalypse Now
@@ -347,17 +267,16 @@ assert 1,0 == On the Waterfront
 assert 2,0 == The Godfather
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_exercises9">
+  <exercise label="sqlgroupjoin_exercises9">
     <statement>
-        <p>Write a query that displays each <c>actor.name</c> with the highest <c>metacritic_score</c>
-            of any movie that actor has been in (we won&#8217;t know what movie the score is from).</p>
-        <p>You will have to join <c>actors</c> and <c>movies</c> so that you have access to all the
-            needed data. You will also have to use <c>GROUP BY</c>. The <c>GROUP BY</c> should come after the
-            <c>JOIN</c>.</p>
-        <p>Your output should look like this:</p>
-        <pre><p>name                     | max_metacritic
+      <p>Write a query that displays each <c>actor.name</c> with the highest <c>metacritic_score</c> of any movie that actor has been in (we
+        won&#8217;t know what movie the score is from).</p>
+      <p>You will have to join <c>actors</c> and <c>movies</c> so that you have access to all the needed data. You will also have to
+        use <c>GROUP BY</c>. The <c>GROUP BY</c> should come after the <c>JOIN</c>.</p>
+      <p>Your output should look like this:</p>
+      <pre><p>name                     | max_metacritic
 A.B. Lane                | 0
 A.J. O'Connor            | 0
 A.K. Hangal              | 84
@@ -366,8 +285,9 @@ A.S. Duggal              | 67
 ...</p></pre>
 
     </statement>
-    <program xml:id="sqlgroupjoin_exercises9_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_exercises9_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == A.B. Lane
@@ -376,6 +296,6 @@ assert 2,0 == A.K. Hangal
 assert 2,1 == 84
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

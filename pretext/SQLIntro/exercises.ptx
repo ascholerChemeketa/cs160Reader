@@ -1,140 +1,80 @@
 <section xml:id="sql-intro_chapter-exercises">
-        <title>Chapter Exercises</title>
-        <p>The exercises for this chapter use a different database than the rest of the chapter. The
-            <term>movies</term> database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c>
-            table (so queries will look like <c>SELECT * from movies</c>). It features the following
-            columns of data:</p>
-        <table xml:id="sql-intro_movie-table"><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Column Name
-                        </cell>
-                        <cell>
-                            Description
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            id
-                        </cell>
-                        <cell>
-                            A unique number for each record
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_id
-                        </cell>
-                        <cell>
-                            The id of the movie in the Internet Movie DataBase (IMDB)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            title
-                        </cell>
-                        <cell>
-                            Title fo  the movie
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            director
-                        </cell>
-                        <cell>
-                            Name of the director
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            year
-                        </cell>
-                        <cell>
-                            Year (number) the movie was released
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            rating
-                        </cell>
-                        <cell>
-                            Rating (R, PG, etc&#8230;)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            genre
-                        </cell>
-                        <cell>
-                            Comma separated list of genres
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            runtime
-                        </cell>
-                        <cell>
-                            Length in minutes
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            country
-                        </cell>
-                        <cell>
-                            Comma separated list of countries it was released in
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            language
-                        </cell>
-                        <cell>
-                            Comma separated list of languages it was released in
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_score
-                        </cell>
-                        <cell>
-                            Score of movie (1-10) in IMDB
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            imdb_votes
-                        </cell>
-                        <cell>
-                            Number of ratings for the movie in the IMDB
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            metacritic_score
-                        </cell>
-                        <cell>
-                            Score of movie (1-100) on the Metacritic website
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
+  <title>Chapter Exercises</title>
+  <p>The exercises for this chapter use a different database than the rest of the chapter. The <term>movies</term>
+    database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c> table (so queries will look like <c>SELECT * from movies</c>).
+    It features the following columns of data:</p>
+  <table xml:id="sql-intro_movie-table">
+    <tabular>
 
-<exercise label="sqlintro_exercises1">
+      <row header="yes">
+        <cell> Column Name </cell>
+        <cell> Description </cell>
+      </row>
+      <row>
+        <cell> id </cell>
+        <cell> A unique number for each record </cell>
+      </row>
+      <row>
+        <cell> imdb_id </cell>
+        <cell> The id of the movie in the Internet Movie DataBase (IMDB) </cell>
+      </row>
+      <row>
+        <cell> title </cell>
+        <cell> Title fo the movie </cell>
+      </row>
+      <row>
+        <cell> director </cell>
+        <cell> Name of the director </cell>
+      </row>
+      <row>
+        <cell> year </cell>
+        <cell> Year (number) the movie was released </cell>
+      </row>
+      <row>
+        <cell> rating </cell>
+        <cell> Rating (R, PG, etc&#8230;) </cell>
+      </row>
+      <row>
+        <cell> genre </cell>
+        <cell> Comma separated list of genres </cell>
+      </row>
+      <row>
+        <cell> runtime </cell>
+        <cell> Length in minutes </cell>
+      </row>
+      <row>
+        <cell> country </cell>
+        <cell> Comma separated list of countries it was released in </cell>
+      </row>
+      <row>
+        <cell> language </cell>
+        <cell> Comma separated list of languages it was released in </cell>
+      </row>
+      <row>
+        <cell> imdb_score </cell>
+        <cell> Score of movie (1-10) in IMDB </cell>
+      </row>
+      <row>
+        <cell> imdb_votes </cell>
+        <cell> Number of ratings for the movie in the IMDB </cell>
+      </row>
+      <row>
+        <cell> metacritic_score </cell>
+        <cell> Score of movie (1-100) on the Metacritic website </cell>
+      </row>
+
+    </tabular>
+  </table>
+
+  <exercise label="sqlintro_exercises1">
     <statement>
-        <p>Write a query to select the year and title of each movie (put them in that order, so that
-            the year appears first).</p>
+      <p>Write a query to select the year and title of each movie (put them in that order, so that the year appears
+        first).</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises1_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises1_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 1957
@@ -145,15 +85,16 @@ assert 99,0 == 1995
 assert 99,1 == La Haine
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises2">
+  <exercise label="sqlintro_exercises2">
     <statement>
-        <p>Write a query to select all of the columns of the movies that were released in 2004.</p>
+      <p>Write a query to select all of the columns of the movies that were released in 2004.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises2_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises2_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 26
@@ -162,65 +103,67 @@ assert 1,0 == 55
 assert 1,2 == Downfall
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises3">
+  <exercise label="sqlintro_exercises3">
     <statement>
-        <p>Write a query to select all of the columns of the movies that have a rating of <c>"PG"</c>
-            or <c>"PG-13"</c>.</p>
+      <p>Write a query to select all of the columns of the movies that have a rating of <c>"PG"</c> or <c>"PG-13"</c>.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises3_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises3_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 1,2 == A Beautiful Mind
 assert 5,2 == Back to the Future
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises4">
+  <exercise label="sqlintro_exercises4">
     <statement>
-        <p>Write a query to select all of the columns of the movies that are in the genre <c>"Sci-Fi"</c>.
-            Many movies have multiple genres, we want to include every movie where Sci-Fi is anywhere
-            in the list of genres - you will have to use <c>LIKE</c>.</p>
+      <p>Write a query to select all of the columns of the movies that are in the genre <c>"Sci-Fi"</c>. Many movies have
+        multiple genres, we want to include every movie where Sci-Fi is anywhere in the list of genres - you will have
+        to use <c>LIKE</c>.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises4_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises4_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,2 == 2001: A Space Odyssey
 assert 2,2 == Alien
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises5">
+  <exercise label="sqlintro_exercises5">
     <statement>
-        <p>Write a query to select all of the columns of the movies that have a runtime of between
-            110 and  120 minutes.</p>
+      <p>Write a query to select all of the columns of the movies that have a runtime of between 110 and 120 minutes.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises5_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises5_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,2 == Alien
 assert 4,2 == Butch Cassidy and the Sundance Kid
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises6">
+  <exercise label="sqlintro_exercises6">
     <statement>
-        <p>Write a query to select just the title, year, and IMDB score (in that order)
-            of all the movies. Order the results so that the highest IMDB scores come first.</p>
+      <p>Write a query to select just the title, year, and IMDB score (in that order) of all the movies. Order the
+        results so that the highest IMDB scores come first.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises6_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises6_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 1,0 == The Godfather
@@ -229,17 +172,17 @@ assert 6,0 == Schindler's List
 assert 6,1 == 1993
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlintro_exercises7">
+  <exercise label="sqlintro_exercises7">
     <statement>
-        <p>Write a query to find just the title and year of release (in that order)
-            for movies with a Metacritic score
-            of 95 or above. Order the results so that the most recent movie comes first.</p>
+      <p>Write a query to find just the title and year of release (in that order) for movies with a Metacritic score of
+        95 or above. Order the results so that the most recent movie comes first.</p>
 
     </statement>
-    <program xml:id="sqlintro_exercises7_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_exercises7_editor" interactive="activecode" language="sql"
+      database="SQL/movies.db">
+      <input>
 
 ====
 assert 0,0 == 12 Years a Slave
@@ -248,6 +191,6 @@ assert 5,0 == Toy Story
 assert 5,1 == 1995
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

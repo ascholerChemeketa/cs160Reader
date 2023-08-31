@@ -1,12 +1,10 @@
-<section xml:id="sql-group-join_joining joining-sql">
-        <title>Joining</title>
-        <p>It is frequently the case that the data we need is spread across multiple tables
-            in a database.</p>
-        <p>Imagine that we write a query on the <c>trip_data</c> table to find
-            the station with the longest overall ride:</p>
+<section xml:id="sql-group-join_joining">
+  <title>Joining</title>
+  <p>It is frequently the case that the data we need is spread across multiple tables in a database.</p>
+  <p>Imagine that we write a query on the <c>trip_data</c> table to find the station with the longest overall ride:</p>
 
-    <program xml:id="sqlgroupjoin_joining1" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_joining1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     start_station
 FROM
@@ -16,13 +14,13 @@ ORDER BY
 LIMIT
     1
         </input>
-    </program>
-        <p>That query gives us the station id (31104), but what if we want its name?
-            The name of each station is in the <xref ref="../SQLIntro/data#bikesharestations"/>. To get the name
-            of station 31104, we could query it (notice the <c>FROM</c> clause):</p>
+  </program>
+  <p>That query gives us the station id (31104), but what if we want its name? The name of each station is in the <xref
+      ref="../SQLIntro/data#bikesharestations" />. To get the name of station 31104, we could query it (notice the <c>FROM</c>
+    clause):</p>
 
-    <program xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     *
 FROM
@@ -30,20 +28,19 @@ FROM
 WHERE
     station_id == 31104
         </input>
-    </program>
-        <p>We need the name that is a part of that table, but to find the right station, we
-            need to use the duration that is a part of the other <c>trip_data</c> table. Rather
-            than do the first query and then write the second based on the answer we get, we would
-            like to write one query that works on both tables. In SQL, when you need to join data
-            across multiple spreadsheets, you use the <c>JOIN</c> keyword.
-            <c>JOIN</c> is used to merge the columns in one table with the columns in another table.</p>
-        <p>However, when we want to join records from two tables, we don&#8217;t want to join them randomly.
-            We want to make sure that records that talk about station 31104 in <c>trip_data</c> are
-            joined with the records that talk about that same station number in <c>bikeshare_stations</c>.
-            To specify how to <c>JOIN</c> tables, we must use an <c>ON</c> clause that specifies which column
-            in the first table to match with which column in the second table. To name the columns, we
-            use <term>dot</term> syntax: <c>table_name.column_name</c>. The full syntax for a <c>JOIN</c> looks like this:</p>
-        <program language="sql"><input>
+  </program>
+  <p>We need the name that is a part of that table, but to find the right station, we need to use the duration that is a
+    part of the other <c>trip_data</c> table. Rather than do the first query and then write the second based on the answer we
+    get, we would like to write one query that works on both tables. In SQL, when you need to join data across multiple
+    spreadsheets, you use the <c>JOIN</c> keyword. <c>JOIN</c> is used to merge the columns in one table with the columns in
+    another table.</p>
+  <p>However, when we want to join records from two tables, we don&#8217;t want to join them randomly. We want to make
+    sure that records that talk about station 31104 in <c>trip_data</c> are joined with the records that talk about that same
+    station number in <c>bikeshare_stations</c>. To specify how to <c>JOIN</c> tables, we must use an <c>ON</c> clause that specifies which
+    column in the first table to match with which column in the second table. To name the columns, we use <term>dot</term>
+    syntax: <c>table_name.column_name</c>. The full syntax for a <c>JOIN</c> looks like this:</p>
+  <program language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     *  -- or whatever
 FROM first_table
@@ -53,14 +50,13 @@ ON
     -- match the value in column_B in the second table
     first_table.column_A == second_table.column_B
 -- WHERE or ORDER BY if we want
-</input></program>
-        <p>So to merge the two queries we did earlier, we will have <c>trip_data</c> as the first table
-            and <c>bikeshare_stations</c> as the second. In <c>trip_data</c>, the station number is stored as
-            <c>start_station</c>. In <c>bikeshare_stations</c> those same values are stored in the <c>station_id</c>
-            column.</p>
+</input>
+  </program>
+  <p>So to merge the two queries we did earlier, we will have <c>trip_data</c> as the first table and <c>bikeshare_stations</c> as the second. In <c>trip_data</c>,
+    the station number is stored as <c>start_station</c>. In <c>bikeshare_stations</c> those same values are stored in the <c>station_id</c> column.</p>
 
-    <program xml:id="sqlgroupjoin_joining3" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_joining3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     *
 FROM trip_data
@@ -72,19 +68,16 @@ ORDER BY
 LIMIT
     1
         </input>
-    </program>
-        <p>Try the query - notice that it has all the columns from both tables. Which is really
-            more than we want. We just want the station name. So change the <c>*</c> to <c>name</c>
-            so that we just get that column. If we want to be really clear about what column we
-            are talking about (or if both tables had a column called <c>name</c> so we had to be
-            more specific), we could write it as <c>bikeshare_stations.name</c> because it is the
-            <c>name</c> column from <c>bikeshare_stations</c>.</p>
-        <p>As another example, suppose you want to find the number of bikeshare trips that end at the
-            <em>Van Ness Metro / UDC</em> station. You can join the <c>end_station</c> field from
-            the <c>trip_data</c> table to the <c>station_id</c> field in the <c>bikeshare_stations</c> table.</p>
+  </program>
+  <p>Try the query - notice that it has all the columns from both tables. Which is really more than we want. We just
+    want the station name. So change the <c>*</c> to <c>name</c> so that we just get that column. If we want to be really
+    clear about what column we are talking about (or if both tables had a column called <c>name</c> so we had to be more
+    specific), we could write it as <c>bikeshare_stations.name</c> because it is the <c>name</c> column from <c>bikeshare_stations</c>.</p>
+  <p>As another example, suppose you want to find the number of bikeshare trips that end at the <em>Van Ness Metro / UDC</em>
+    station. You can join the <c>end_station</c> field from the <c>trip_data</c> table to the <c>station_id</c> field in the <c>bikeshare_stations</c> table.</p>
 
-    <program xml:id="sqlgroupjoin_joining4" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlgroupjoin_joining4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     COUNT(*) AS num_trips
 FROM trip_data
@@ -94,56 +87,55 @@ ON
 WHERE
     bikeshare_stations.name = "Van Ness Metro / UDC"
         </input>
-    </program>
-        <p>Again, in the WHERE clause, we are being very specific. Because there is only
-            one <c>name</c> column in the two tables, we could just say <c>name</c>. But it never hurts
-            to be clear about which table we are talking about once we start joining data.</p>
+  </program>
+  <p>Again, in the WHERE clause, we are being very specific. Because there is only one <c>name</c> column in the two tables,
+    we could just say <c>name</c>. But it never hurts to be clear about which table we are talking about once we start
+    joining data.</p>
 
-<exercise label="sqlgroupjoin_joining5">
+  <exercise label="sqlgroupjoin_joining5">
     <statement>
-        <p>Write a query to find out how many trips were started at <c>'Adams Mill &amp; Columbia Rd NW'</c>?</p>
+      <p>Write a query to find out how many trips were started at <c>'Adams Mill &amp; Columbia Rd NW'</c>?</p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_joining5_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_joining5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 
 ====
 assert 0,0 == 9883
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="sqlgroupjoin_joining6">
+  <exercise label="sqlgroupjoin_joining6">
     <statement>
-        <p>Write a query to find the average duration of trips that started at stations that are
-            now listed as closed.</p>
-        <p>Hints:</p>
-        <p><ul>
-            <li>
-                <p><c>duration</c> is in bikeshare_stations. You will want to use <c>AVG()</c> to find the
-                    average of all the values retrieved.</p>
-            </li>
-            <li>
-                <p>Open/closed is stored as <c>status</c> in <c>bikeshare_stations</c>. It is stored as a
-                    string, so use <c>'closed'</c> as the value you search for.</p>
-            </li>
-            <li>
-                <p>Build your way to the final solution. Start by just joining the tables so that
-                    the start_station is being batched with the station_id and selecting
-                    all columns.
-                    Then add a WHERE to get just closed stations.
-                    Then try to average the duration.</p>
-            </li>
-        </ul></p>
+      <p>Write a query to find the average duration of trips that started at stations that are now listed as closed.</p>
+      <p>Hints:</p>
+      <p>
+        <ul>
+          <li>
+            <p><c>duration</c> is in bikeshare_stations. You will want to use <c>AVG()</c> to find the average of all the values
+              retrieved.</p>
+          </li>
+          <li>
+            <p>Open/closed is stored as <c>status</c> in <c>bikeshare_stations</c>. It is stored as a string, so use <c>'closed'</c> as the value you
+              search for.</p>
+          </li>
+          <li>
+            <p>Build your way to the final solution. Start by just joining the tables so that the start_station is being
+              batched with the station_id and select all columns. Then add a WHERE to get just closed stations. Then
+              try to average the duration.</p>
+          </li>
+        </ul>
+      </p>
 
     </statement>
-    <program xml:id="sqlgroupjoin_joining6_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlgroupjoin_joining6_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 
 ====
 assert 0,0 == 1268.9547619047619
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

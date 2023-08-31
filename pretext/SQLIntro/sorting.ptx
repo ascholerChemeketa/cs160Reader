@@ -1,13 +1,11 @@
 <section xml:id="sql-intro_sorting">
-        <title>Sorting</title>
-        
-        
-        <p>We can use SQL to specify how to sort the records that are retrieved by a query using
-            an <c>ORDER BY</c> clause. For example, the following query returns bike trips ordered by
-            duration:</p>
+  <title>Sorting</title>
 
-    <program xml:id="sqlintro_sorting1" interactive="activecode" language="sql">
-        <input>
+  <p>We can use SQL to specify how to sort the records that are retrieved by a query using an <c>ORDER BY</c> clause. For
+    example, the following query returns bike trips ordered by duration:</p>
+
+  <program xml:id="sqlintro_sorting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     *
 FROM
@@ -15,16 +13,15 @@ FROM
 ORDER BY
     duration
         </input>
-    </program>
-        <p>The column name after the <c>ORDER BY</c> clause specifies which column to use as
-            the sorting key, in this case <c>duration</c>. The shortest trips are listed first and the longest
-            trips are listed last. This increasing, or <term>ascending</term> order is the default.
-            To make the order go from largest to smallest (<term>descending</term> order), we need to
-            specify <c>DESC</c> after the column name we are ordering by. (If we want to be explicit
-            about ascending order, we can say <c>ASC</c>, but do not need to since that is the default.)</p>
+  </program>
+  <p>The column name after the <c>ORDER BY</c> clause specifies which column to use as the sorting key, in this case <c>duration</c>.
+    The shortest trips are listed first and the longest trips are listed last. This increasing, or <term>ascending</term>
+    order is the default. To make the order go from largest to smallest (<term>descending</term> order), we need to
+    specify <c>DESC</c> after the column name we are ordering by. (If we want to be explicit about ascending order, we can
+    say <c>ASC</c>, but do not need to since that is the default.)</p>
 
-    <program xml:id="sqlintro_sorting2" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlintro_sorting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     *
 FROM
@@ -32,18 +29,16 @@ FROM
 ORDER BY
     duration DESC
         </input>
-    </program>
-        <subsection xml:id="sql-intro_limit">
-            <title>LIMIT</title>
-            <p>That query returns over 400,000 records (the environment we use will only show us 100
-                of those to prevent the web page from being overwhelmed with data). If we only want to
-                see the 10 longest trips, we can use <c>LIMIT</c> to specify the maximum number of rows to
-                return:</p>
-            <p>but to <c>LIMIT</c> the
-                output to the first 10 rows.</p>
+  </program>
+  <subsection xml:id="sql-intro_limit">
+    <title>LIMIT</title>
+    <p>That query returns over 400,000 records (the environment we use will only show us 100 of those to prevent the web
+      page from being overwhelmed with data). If we only want to see the 10 longest trips, we can use <c>LIMIT</c> to specify
+      the maximum number of rows to return:</p>
+    <p>but to <c>LIMIT</c> the output to the first 10 rows.</p>
 
-    <program xml:id="sqlintro_sorting3" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_sorting3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 SELECT
     *
 FROM
@@ -53,13 +48,12 @@ ORDER BY
 LIMIT 10
         </input>
     </program>
-            <p>We can combine <c>ORDER BY</c> and <c>LIMIT</c> with the other clauses we have learned about
-                to do something like selecting just the start date, station, and the duration for only
-                trips starting from station 31111, sorting them from longest to shortest, and only
-                keeping the first (longest) 10:</p>
+    <p>We can combine <c>ORDER BY</c> and <c>LIMIT</c> with the other clauses we have learned about to do something like selecting
+      just the start date, station, and the duration for only trips starting from station 31111, sorting them from
+      longest to shortest, and only keeping the first (longest) 10:</p>
 
-    <program xml:id="sqlintro_sorting4" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_sorting4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 SELECT
     start_date,
     start_station,
@@ -73,22 +67,18 @@ ORDER BY
 LIMIT 10
         </input>
     </program>
-            <p>The ordering of the clauses is important. The <c>WHERE</c> must come before the <c>ORDER BY</c>
-                which should come before the <c>LIMIT</c>.</p>
-        </subsection>
-        <subsection xml:id="sql-intro_multiple-sorts">
-            <title>Multiple Sorts</title>
-            <p>In SQL, you can also order by multiple columns. In this case, the resulting rows
-                will be ordered by the values in the specified columns, ordered by the first
-                specified column, then the second specified column, and so forth. For example,
-                if you <c>ORDER BY start_station, end_station, duration</c>, the rows will first
-                be sorted by <c>start_station</c>, then within each value of <c>start_station</c> the
-                rows will be ordered by <c>end_station</c>, then within each pair of
-                <c>start_station</c> and <c>end_station</c> values, the rows will be ordered by
-                <c>duration</c>.</p>
+    <p>The ordering of the clauses is important. The <c>WHERE</c> must come before the <c>ORDER BY</c> which should come before the <c>LIMIT</c>
+      .</p>
+  </subsection>
+  <subsection xml:id="sql-intro_multiple-sorts">
+    <title>Multiple Sorts</title>
+    <p>In SQL, you can also order by multiple columns. In this case, the resulting rows will be ordered by the values in
+      the specified columns, ordered by the first specified column, then the second specified column, and so forth. For
+      example, if you <c>ORDER BY start_station, end_station, duration</c>, the rows will first be sorted by <c>start_station</c>, then within each value of <c>start_station</c> the rows will
+      be ordered by <c>end_station</c>, then within each pair of <c>start_station</c> and <c>end_station</c> values, the rows will be ordered by <c>duration</c>.</p>
 
-    <program xml:id="sqlintro_sorting5" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_sorting5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+      <input>
 SELECT
     start_station,
     end_station,
@@ -106,48 +96,47 @@ ORDER BY
     duration DESC       -- then by duration
         </input>
     </program>
-            <p>Now try to write SQL queries that will answer the following questions.</p>
+    <p>Now try to write SQL queries that will answer the following questions.</p>
 
-<exercise label="sqlintro_sorting6">
-    <statement>
-            <p>On what bike number was the most recent (by start date) trip?</p>
-            <p>Select just the column that has the bike number, and sort the results so that
-                the most recently started trip is first. It is easiest to begin by selecting all
-                data (<c>*</c>) while you get the query logic correct so you can see if the data is
-                sorted correctly. Once you get it working, select just the column with the bike number.
-                and limit the results to one record.</p>
+    <exercise label="sqlintro_sorting6">
+      <statement>
+        <p>On what bike number was the most recent (by start date) trip?</p>
+        <p>Select just the column that has the bike number, and sort the results so that the most recently started trip
+          is first. It is easiest to begin by selecting all data (<c>*</c>) while you get the query logic correct so you
+          can see if the data is sorted correctly. Once you get it working, select just the column with the bike number.
+          and limit the results to one record.</p>
 
-    </statement>
-    <program xml:id="sqlintro_sorting6_editor" interactive="activecode" language="sql">
+      </statement>
+      <program xml:id="sqlintro_sorting6_editor" interactive="activecode" language="sql"
+        database="SQL/bikeshare.db">
         <input>
 
 ====
 assert 0,0 == W00042
         </input>
-    </program>
-</exercise>
+      </program>
+    </exercise>
 
-<exercise label="sqlintro_sorting7">
-    <statement>
-            <p>Write a query using <c>ORDER BY</c> to find the starting station and duration of
-                the longest ride that started and ended at the same station.</p>
-            <p>Again, start simple and build your way to the correct query. Start by selecting
-                all columns so you can see what data you are getting as you work on the <c>WHERE</c> and
-                <c>ORDER BY</c>.</p>
-            <p>Hint: both sides of the WHERE&#8217;s condition can be column names. If I wanted to find
-                a record where the start and end date were the same I could do:
-                <c>WHERE start_date == end_date</c></p>
+    <exercise label="sqlintro_sorting7">
+      <statement>
+        <p>Write a query using <c>ORDER BY</c> to find the starting station and duration of the longest ride that started and
+          ended at the same station.</p>
+        <p>Again, start simple and build your way to the correct query. Start by selecting all columns so you can see
+          what data you are getting as you work on the <c>WHERE</c> and <c>ORDER BY</c>.</p>
+        <p>Hint: both sides of the WHERE&#8217;s condition can be column names. If I wanted to find a record where the
+          start and end date were the same I could do: <c>WHERE start_date == end_date</c></p>
 
-    </statement>
-    <program xml:id="sqlintro_sorting7_editor" interactive="activecode" language="sql">
+      </statement>
+      <program xml:id="sqlintro_sorting7_editor" interactive="activecode" language="sql"
+        database="SQL/bikeshare.db">
         <input>
 
 ====
 assert 0,0 == 31617
 assert 0,1 == 85666
         </input>
-    </program>
-</exercise>
-        </subsection>
-    </section>
+      </program>
+    </exercise>
+  </subsection>
+</section>
 

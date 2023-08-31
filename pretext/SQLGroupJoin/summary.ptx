@@ -1,14 +1,14 @@
 <section xml:id="sql-group-join_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>JOIN</term> -  Databases are designed so that data is split between different tables. When a
-                    query needs to access data that is on multiple tables, we do a JOIN to merge the data from
-                    the tables.</p>
-            </li>
-        </ul></p>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>JOIN</term> - Databases are designed so that data is split between different tables. When a query needs
+          to access data that is on multiple tables, we do a JOIN to merge the data from the tables.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

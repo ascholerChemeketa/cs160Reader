@@ -1,17 +1,14 @@
 <section xml:id="sql-intro_filtering">
-        <title>Filtering</title>
-        <p>Filtering data is the process of restricting a query to a subset of rows
-            based on some column condition. Maybe we only want to consider trips that start
-            from a particular location. Or rides the have a certain duration.</p>
-        
-        
-        <p>To filter data with SQL, we use the <c>WHERE</c> keyword. You can
-            append <c>WHERE column_condition</c> to any SQL query, and the result will be
-            filtered only to rows that satisfy the column condition. For example, you might
-            want to look only at bike trips that are at least one hour (3600 seconds):</p>
+  <title>Filtering</title>
+  <p>Filtering data is the process of restricting a query to a subset of rows based on some column condition. Maybe we
+    only want to consider trips that start from a particular location. Or rides that have a certain duration.</p>
 
-    <program xml:id="sqlintro_filtering1" interactive="activecode" language="sql">
-        <input>
+  <p>To filter data with SQL, we use the <c>WHERE</c> keyword. You can append <c>WHERE column_condition</c> to any SQL query, and the result will
+    be filtered only to rows that satisfy the column condition. For example, you might want to look only at bike trips
+    that are at least one hour (3600 seconds):</p>
+
+  <program xml:id="sqlintro_filtering1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     member_type,
     start_date,
@@ -21,39 +18,37 @@ FROM
 WHERE
     duration &gt;= 3600;
         </input>
-    </program>
-        <p>Try running this and examining the duration column&#8230; the records that are
-            returned by the <c>SELECT</c> should now all be ones with a duration of at least 3600.</p>
-        <p>When writing <c>WHERE</c> clauses, we use the same kinds of comparison operators that
-            we do in Python: <c>==</c>, <c>!=</c>, <c>&gt;</c>, <c>&gt;=</c>, &#8230; Just like in Python, we write numbers
-            without commas like <c>3600</c>. Also like in Python, if we want to write something that
-            is a string, we have to put quotes around it (either single <c>'</c> or double <c>"</c> quotes
-            work). To select the records where <c>member_type</c> was <term>Member</term> we would write:</p>
-        <program language="sql"><input>
+  </program>
+  <p>Try running this and examining the duration column&#8230; the records that are returned by the <c>SELECT</c> should now
+    all be ones with a duration of at least 3600.</p>
+  <p>When writing <c>WHERE</c> clauses, we use the same kinds of comparison operators that we do in Python: <c>==</c>, <c>!=</c>, <c>&gt;</c>
+    , <c>&gt;=</c>, &#8230; Just like in Python, we write numbers without commas like <c>3600</c>. Also like in Python, if we
+    want to write something that is a string, we have to put quotes around it (either single <c>'</c> or double <c>"</c>
+    quotes work). To select the records where <c>member_type</c> was <term>Member</term> we would write:</p>
+  <program language="sql" database="SQL/bikeshare.db">
+    <input>
 ...
 WHERE
     member_type == "Member"
     --Use quotes around Member because it is a string
-</input></program>
-        <p>Finally, notice that the <c>WHERE</c> clause is part of the query as the <c>;</c> does not
-            appear until after the WHERE. If there was a <c>;</c> at the end of the <c>FROM trip_data</c>,
-            the statement would end there and the <c>WHERE</c> would not be considered to
-            be part of the rest of the query. Try putting a <c>;</c> after <c>trip_data</c> and
-            running the program. In the modified program, the <c>SELECT</c> is still valid and returns the 3 desired
-            columns, but does it for trips of all durations. Then, SQL tries to interpret
-            <c>WHERE duration &gt;= 3600</c> on its own, which makes no sense (what does it apply to???)
-            and we get an error about the <c>WHERE</c>.</p>
-        <warning>
-            <p>For the simple programs we write, there will always just be one query. You should
-                only ever have one <c>;</c> at the end of your program. You also can just leave off
-                the <c>;</c> entirely in which case your program is assumed to be all one statement.</p>
-        </warning>
-        <p>It is also possible to filter by multiple criteria by using <c>AND</c> or <c>OR</c>.
-            For example, to look at bike trips that are 60 minutes or more and the
-            <c>member_type</c> is <c>MEMBER</c>, the query would be as below.</p>
+</input>
+  </program>
+  <p>Finally, notice that the <c>WHERE</c> clause is part of the query as the <c>;</c> does not appear until after the WHERE.
+    If there was a <c>;</c> at the end of the <c>FROM trip_data</c>, the statement would end there and the <c>WHERE</c> would not be
+    considered to be part of the rest of the query. Try putting a <c>;</c> after <c>trip_data</c> and running the program. In the
+    modified program, the <c>SELECT</c> is still valid and returns the 3 desired columns, but does it for trips of all
+    durations. Then, SQL tries to interpret <c>WHERE duration &gt;= 3600</c> on its own, which makes no sense (what does it apply to???) and we
+    get an error about the <c>WHERE</c>.</p>
+  <warning>
+    <p>For the simple programs we write, there will always just be one query. You should only ever have one <c>;</c> at
+      the end of your program. You also can just leave off the <c>;</c> entirely in which case your program is assumed to
+      be all one statement.</p>
+  </warning>
+  <p>It is also possible to filter by multiple criteria by using <c>AND</c> or <c>OR</c>. For example, to look at bike trips
+    that are 60 minutes or more and the <c>member_type</c> is <c>MEMBER</c>, the query would be as below.</p>
 
-    <program xml:id="sqlintro_filtering2" interactive="activecode" language="sql">
-        <input>
+  <program xml:id="sqlintro_filtering2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <input>
 SELECT
     member_type,
     start_date,
@@ -65,18 +60,20 @@ WHERE
     AND
     member_type == 'Member'
         </input>
-    </program>
+  </program>
 
-<exercise label="sqlintro_filtering3">
+  <exercise label="sqlintro_filtering3">
     <statement>
-        <p>Write a query to find the ending station and duration (in that order) of all trips by bike
-            number <c>'W00153'</c> that lasted over 8 hours (remember that duration is measured in
-            seconds, you will have to figure out how many seconds are in 8 hours).</p>
-        <p>The bike &#8220;number&#8221; - &#8216;W00153&#8217; - is not really a number, it is a string, so make sure to use quotes around it in your query.</p>
+      <p>Write a query to find the ending station and duration (in that order) of all trips by bike number <c>'W00153'</c> that
+        lasted over 8 hours (remember that duration is measured in seconds, you will have to figure out how many seconds
+        are in 8 hours).</p>
+      <p>The bike &#8220;number&#8221; - &#8216;W00153&#8217; - is not really a number, it is a string, so make sure to
+        use quotes around it in your query.</p>
 
     </statement>
-    <program xml:id="sqlintro_filtering3_editor" interactive="activecode" language="sql">
-        <input>
+    <program xml:id="sqlintro_filtering3_editor" interactive="activecode" language="sql"
+      database="SQL/bikeshare.db">
+      <input>
 
 ====
 assert 0,0 == 31606
@@ -85,6 +82,6 @@ assert 1,0 == 31703
 assert 1,1 == 40820
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

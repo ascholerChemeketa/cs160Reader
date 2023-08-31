@@ -2,9 +2,8 @@
   <title>Introduction</title>
 
   <p>The goal of a programming language like Python is to be <term>general-purpose</term>. A general-purpose programming
-    language is designed to enable the programmer to write any program that they like. Python can be used to
-    make a video game, a program to analyze data in a spreadsheet, a web server, or just about anything else you can
-    imagine.</p>
+    language is designed to enable the programmer to write any program that they like. Python can be used to make a
+    video game, a program to analyze data in a spreadsheet, a web server, or just about anything else you can imagine.</p>
 
   <p>The problem with a language being general is that its <term>syntax</term>, or rules, have to support all kinds of
     different tasks. It can&#8217;t be optimized to focus on one particular job. When there is a critical job that we
