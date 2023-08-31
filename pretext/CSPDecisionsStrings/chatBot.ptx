@@ -1,16 +1,15 @@
 <section xml:id="csp-decisions-strings_making-a-chatbot">
-        <title>Making a Chatbot</title>
-        <p>Chatbots are programs that are designed to have conversations with people. Many
-            chatbots are designed for the amusement of people playing a game or interacting with others
-            in an online forum. However, they also are increasingly used as digital assistants - Google
-            developed a <url href="https://www.youtube.com/watch?v=ijwHj2HaOT0" visual="https://www.youtube.com/watch?v=ijwHj2HaOT0">technology called Duplex that uses AI to call resteraunts and make reservations
-                by talking to the host</url>.</p>
-        <p>Making a full fledged AI that can respond to unexpected responses and questions is a
-            profoundly compex task. But if our goals are more limited, we can try to make a program
-            that seems smart by forcing the conversation. If we ask questions that require specific
-            answers, and count on the user to respond in a logical way, basic conditional code can
-            handle generating our responses.</p>
-        <pre><p>Computer: Hello, what is your name?
+  <title>Making a Chatbot</title>
+  <p>Chatbots are programs that are designed to have conversations with people. Many chatbots are designed for the
+    amusement of people playing a game or interacting with others in an online forum. However, they also are
+    increasingly used as digital assistants - Google developed a <url href="https://www.youtube.com/watch?v=ijwHj2HaOT0"
+      visual="https://www.youtube.com/watch?v=ijwHj2HaOT0">technology called Duplex that uses AI to call restaurants and
+    make reservations by talking to the host</url>.</p>
+  <p>Making a full-fledged AI that can respond to unexpected responses and questions is a profoundly complex task. But if
+    our goals are more limited, we can try to make a program that seems smart by forcing the conversation. If we ask
+    questions that require specific answers and count on the user to respond logically, basic conditional code
+    can handle generating our responses.</p>
+  <pre><p>Computer: Hello, what is your name?
 User: Greg
 Computer: Hello Greg. Nice to meet you. Where do you go to school?
 User: Chemeketa
@@ -23,17 +22,16 @@ User: I like "Rushmore"?
 Computer: Oh, that is a pretty good one. I like "The Matrix",
           I just wish it had a happy ending.
 <em>Ask another question...</em></p></pre>
-        <p>Write a chatbot that asks the user at least three questions and then uses the user&#8217;s
-            input to build its answer or make a decision about what to say. (You can add extra questions
-            like the last one where the computer asks a question but then does not look at the response,
-            but those do not count towards the three question minimum.) Try to come up with your own questions
-            instead of just copying the samples above!</p>
+  <p>Write a chatbot that asks the user at least three questions and then uses the user&#8217;s input to build its
+    answer or make a decision about what to say. (You can add extra questions like the last one where the computer asks
+    a question but then does not look at the response, but those do not count towards the three-question minimum.) Try
+    to come up with your own questions instead of just copying the samples above!</p>
 
-    <program xml:id="cspdecisionsstrings_chatbot1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsstrings_chatbot1" interactive="activecode" language="python">
+    <input>
 
 
         </input>
-    </program>
-    </section>
+  </program>
+</section>
 

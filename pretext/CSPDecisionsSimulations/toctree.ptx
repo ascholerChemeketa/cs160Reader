@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-        <title>Decisions, Randomness, and Simulations</title>
-        <xi:include href='./simulations.ptx' />
-        <xi:include href='./random.ptx' />
-        <xi:include href='./usingRandom.ptx' />
-        <xi:include href='./simulationBuild.ptx' />
-        <xi:include href='./simulationBuild2.ptx' />
-        <xi:include href='./turtleRandom.ptx' />
-        <xi:include href='./randomWalks.ptx' />
-        <xi:include href='./summary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" 
+xml:id="csp-decisions-simulations"
+xml:lang="en-US">
+  <title>Decisions, Randomness, and Simulations</title>
+  <xi:include href='./simulations.ptx' />
+  <xi:include href='./random.ptx' />
+  <xi:include href='./usingRandom.ptx' />
+  <xi:include href='./simulationBuild.ptx' />
+  <xi:include href='./simulationBuild2.ptx' />
+  <xi:include href='./turtleRandom.ptx' />
+  <xi:include href='./randomWalks.ptx' />
+  <xi:include href='./summary.ptx' />
+  <xi:include href='./Exercises.ptx' />
+</chapter>

@@ -39,19 +39,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 <xsl:import href="./core/pretext-html.xsl"/>
 
-
-<!-- Default implementations of specialized templates -->
+<!-- Dump some raw html blocks into output until ported to something better -->
 <xsl:template match="raw">
+  <xsl:message>==========================raw========================</xsl:message>
     <xsl:copy-of select="node()"/>
 </xsl:template>
-<!-- Miscellaneous -->
 
+<!-- Comment out xrefs until conversion is done -->
 <xsl:template match="xref">
+  <xsl:message>=========================xref========================</xsl:message>
   <xsl:comment>
     <xsl:copy-of select="node()"/>
   </xsl:comment>
 </xsl:template>
 
+<!-- Generate items that are hidden on the page -->
+<xsl:template match="hidden">
+  <xsl:message>=========================hidden========================</xsl:message>
+  <div class="hidden">
+    <xsl:apply-templates select="*" />
+  </div>
+</xsl:template>
 
 <!-- Sometimes this template is useful to see which    -->
 <!-- templates are not implemented at all in some new  -->
@@ -60,11 +68,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- apply-templates) and/or maybe a lower priority    -->
 <!-- will work better.                                 -->
 
-<!--
-<xsl:template match="*" priority="0">
+<!-- <xsl:template match="*" priority="0">
     <xsl:message>[<xsl:value-of select="local-name(.)"/>]</xsl:message>
     <xsl:apply-templates/>
-</xsl:template>
--->
+</xsl:template> -->
 
 </xsl:stylesheet>

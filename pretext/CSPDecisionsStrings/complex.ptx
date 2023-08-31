@@ -1,12 +1,12 @@
 <section xml:id="csp-decisions-strings_complex-conditionals">
-        <title>Complex Conditionals</title>
-        <p>Sometimes, the decisions we need to make in a program are complex - they depend on more than
-            one piece of information. For instance, the program below is designed to find out how many credits
-            a student has and if they have picked a major. If the student is in their first year and does
-            not have a major, we want to recommend a First Year Experience class to them:</p>
+  <title>Complex Conditionals</title>
+  <p>Sometimes, the decisions we need to make in a program are complex - they depend on more than one piece of
+    information. For instance, the program below is designed to find out how many credits a student has and if they have
+    picked a major. If the student is in their first year and does not have a major, we want to recommend a First Year
+    Experience class to them:</p>
 
-    <program xml:id="cspdecisionsstrings_complex1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsstrings_complex1" interactive="activecode" language="python">
+    <input>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
 
@@ -17,79 +17,64 @@ if credits &gt; 0:
         if madeDecision == "No":
             print("You should sign up for a FYE class")
         </input>
-    </program>
-        <p>The code as written works, but is awkward. We repeat statements (like the print message) and
-            do a lot of nesting of if statements that make it tricky to parse the exact situation the messages
-            will be displayed in.</p>
-        <p>What we want to express is something more like this version that avoids duplication and makes
-            the structure more simple.</p>
-        <program language="python"><input>
+  </program>
+  <p>The code as written works, but is awkward. We repeat statements (like the print message) and do a lot of nesting of
+    if statements that make it tricky to parse the exact situation the messages will be displayed in.</p>
+  <p>What we want to express is something more like this version that avoids duplication and makes the structure more
+    simple.</p>
+  <program language="python">
+    <input>
 if credits is between 0 and 45:
     if madeDecision is "N" or "No":
         print("You should sign up for a FYE class")
-</input></program>
-        
-        
-        <p>To express ideas kind of like those while making decisions, we can use the keywords <c>and</c>, <c>or</c>, and <c>not</c>.
-            An <c>and</c> used to join two expressions is only true if <em>both</em> expressions are
-            true. An <c>or</c> joining two logical expressions means that if <em>either or both</em> of the expressions is true, the whole
-            expression is true.   A <c>not</c> negates the logical value that follows it.  If it was true, then a <c>not</c>
-            changes the result to false. If it was false, the <c>not</c> changes the result to true.</p>
-        <table><tabular>
-            
-                
-                
-                
-                    <row header="yes">
-                        <cell>
-                            Expression
-                        </cell>
-                        <cell>
-                            Meaning
-                        </cell>
-                    </row>
-                
-                
-                    <row>
-                        <cell>
-                            (a &lt; b) or (c &lt; d)
-                        </cell>
-                        <cell>
-                            The whole expression is true if a is less than b or c is less than d (or both parts are true).
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            (a &lt; b) and (c &lt; d)
-                        </cell>
-                        <cell>
-                            The whole expression is true if a is less than b  and also c is less than d.
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            not a &lt; b
-                        </cell>
-                        <cell>
-                            Only true if a is actually greater than or equal to b. The logical expression <c>not a &lt; b</c> is the same as <c>a &gt;= b</c>.
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Here is the same program written using <c>and</c> and <c>or</c>. Hopefully you agree that it is more
-            simple and clear than what we started with. On the following page, we will look more closely at
-            how <c>and</c>, <c>or</c>, and <c>not</c> work.</p>
+</input>
+  </program>
 
-    <program xml:id="cspdecisionsstrings_complex2" interactive="activecode" language="python">
-        <input>
+  <p>To express ideas kind of like those while making decisions, we can use the keywords <c>and</c>, <c>or</c>, and <c>not</c>.
+    An <c>and</c> used to join two expressions is only true if <em>both</em> expressions are true. An <c>or</c> joining two
+    logical expressions means that if <em>either or both</em> of the expressions is true, the whole expression is true.
+    A <c>not</c> negates the logical value that follows it. If it was true, then a <c>not</c> changes the result to false. If
+    it was false, the <c>not</c> changes the result to true.</p>
+  <table>
+    <tabular>
+
+      <row header="yes">
+        <cell> Expression </cell>
+        <cell> Meaning </cell>
+      </row>
+
+      <row>
+        <cell> (a &lt; b) or (c &lt; d) </cell>
+        <cell> The whole expression is true if a is less than b or c is less than d (or both parts are true). </cell>
+      </row>
+      <row>
+        <cell> (a &lt; b) and (c &lt; d) </cell>
+        <cell> The whole expression is true if a is less than b and also, c is less than d. </cell>
+      </row>
+      <row>
+        <cell> not a &lt; b </cell>
+        <cell> Only true if a is actually greater than or equal to b. The logical expression <c>not a &lt; b</c> is the same as <c>a &gt;= b</c>
+          .
+                        </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Here is the same program written using <c>and</c> and <c>or</c>. Hopefully, you agree that it is more simple and clear
+    than what we started with. On the following page, we will look more closely at how <c>and</c>, <c>or</c>, and <c>not</c>
+    work.</p>
+
+  <program xml:id="cspdecisionsstrings_complex2" interactive="activecode" language="python">
+    <input>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
 
 if credits &gt; 0 and credits &lt; 45:
     if madeDecision == "N" or madeDecision == "No":
         print("You should sign up for a FYE class")
+    else:
+        print("You should NOT sign up for a FYE class")
         </input>
-    </program>
-    </section>
+  </program>
+</section>
 

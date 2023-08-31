@@ -1,11 +1,11 @@
 <section xml:id="csp-decisions-simulations_simulations">
-        <title>Simulations</title>
-        
-        
-        <p>Computer powered simulations have a wide variety of uses. Simulations are used to train people
-            in professions ranging from pilots to surgeons. They are used to provide entertainment in the
-            form of managing a virtual soccer team or driving a race car. And they are used to test out
-            scientific theories and make predictions from them.</p>
-        <figure align="center" ><caption >A truck driving simulator.</caption><image source="CSPDecisionsSimulations/Figures/simulation.jpg" width="50%" height="400px"/></figure>
-    </section>
+  <title>Simulations</title>
 
+  <p>Computer-powered simulations have a wide variety of uses. Simulations are used to train people in professions
+    ranging from pilots to surgeons. They are used to provide entertainment in the form of managing a virtual soccer
+    team or driving a race car. And they are used to test out scientific theories and make predictions from them.</p>
+  <figure align="center">
+    <caption>A truck driving simulator.</caption>
+    <image source="CSPDecisionsSimulations/Figures/simulation.jpg" width="50%" height="400px" />
+  </figure>
+</section>

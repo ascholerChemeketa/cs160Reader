@@ -1,58 +1,86 @@
 <exercises xml:id="csp-decisions-strings_chapter-exercises">
-        <title>Chapter Exercises</title>
-<exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="show" language="python"><statement>
-        <p>The following program segment should ask whether the user wants to terminate the program and print out the appropriate statement based on the user&#8217;s response. The blocks have been mixed up and include extra blocks that aren&#8217;t needed in the solution.  Drag the needed blocks from the left and put them in the correct order on the right.</p>
-</statement>
-<blocks><block order="6">
-<cline>response = input("Would you like to terminate the program? (Y/N)")</cline>
-</block><block order="2">
-<choice correct="yes"><cline>if response == "Y":</cline>
-</choice><choice><cline>if input = "Y": </cline>
-</choice></block><block order="7">
-<cline>    print("The program is now ending.")</cline>
-</block><block order="1">
-<choice correct="yes"><cline>elif response == "N":</cline>
-</choice><choice><cline>elif input = "N": </cline>
-</choice></block><block order="4">
-<cline>    print("The program will continue to run.")</cline>
-</block></blocks></exercise><exercise label="cspdecisionsstrings_exercises2" numbered="yes" indentation="show" language="python"><statement>
-        <p>The following program segment should ask the user for three numbers and say whether they
-            are in order. The numbers can be either ascending (going up) or descending (going down).</p>
-        <p>For example, if the inputs are <c>10 15 20</c>, the answer should be &#8220;yes, in order&#8221;. Same if
-            the inputs were <c>6 5 1</c>. But if the inputs were <c>3 5 4</c>, the answer would be &#8220;no, not in order&#8221;.</p>
-        <p>The blocks have been mixed up and include extra blocks that aren&#8217;t needed in the solution.
-            Drag the needed blocks from the left and put them in the correct order on the right.</p>
-</statement>
-<blocks><block order="6">
-<cline>first = int( input("Enter the first number: ") )</cline>
-<cline>second = int( input("Enter the second number: ") )</cline>
-<cline>third = int( input("Enter the third number: ") )</cline>
-</block><block order="5">
-<cline>if (second &gt; first and second &lt; third) or (third &lt; second and second &lt; first):</cline>
-</block><block order="3" correct="no">
-<cline>if (second &gt; first or second &lt; third) and (third &lt; second or second &lt; first): </cline>
-</block><block order="4">
-<cline>    print("yes, in order")</cline>
-</block><block order="1">
-<cline>else:</cline>
-</block><block order="2">
-<cline>    print("no, not in order")</cline>
-</block></blocks></exercise>
-<exercise label="cspdecisionsstrings_exercises3">
+  <title>Chapter Exercises</title>
+  <exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="show" language="python">
     <statement>
-        <p>The program below is supposed to calculate the final bill for a meal at a fast food resteraunt
-            in a state where meals taken to go are not taxed, but meals eaten in the resteraunt are.</p>
-        <p>Your job is to write the <c>getTotalCost</c> function. It should use the initial meal <c>price</c>
-            and the <c>location</c> it is being eaten to calculate the final cost. If <c>location</c> has the
-            string <c>"to go"</c> anywhere in it, the total cost should be just the meal price. Otherwise,
-            it should be the price + 8% (1.08 times the meal price).</p>
-        <p>Remember that you can use <c>in</c> to check if one string appears inside another.</p>
-        <p>Note that when you run it, you can enter whatever values you want. The tests for your program
-            will automatically try a collection of different inputs and don&#8217;t depend on what you type in.</p>
+      <p>The following program segment should ask whether the user wants to terminate the program and print out the
+        appropriate statement based on the user&#8217;s response. The blocks have been mixed up and include extra blocks
+        that aren&#8217;t needed in the solution. Drag the needed blocks from the left and put them in the correct order
+        on the right.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>response = input("Would you like to terminate the program? (Y/N)")</cline>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline>if response == "Y":</cline>
+        </choice>
+        <choice>
+          <cline>if input = "Y": </cline>
+        </choice>
+      </block>
+      <block order="7">
+        <cline> print("The program is now ending.")</cline>
+      </block>
+      <block order="1">
+        <choice correct="yes">
+          <cline>elif response == "N":</cline>
+        </choice>
+        <choice>
+          <cline>elif input = "N": </cline>
+        </choice>
+      </block>
+      <block order="4">
+        <cline> print("The program will continue to run.")</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="cspdecisionsstrings_exercises2" numbered="yes" indentation="show" language="python">
+    <statement>
+      <p>The following program segment should ask the user for three numbers and say whether they are in order. The
+        numbers can be either ascending (going up) or descending (going down).</p>
+      <p>For example, if the inputs are <c>10 15 20</c>, the answer should be &#8220;yes, in order&#8221;. Same if the inputs
+        were <c>6 5 1</c>. But if the inputs were <c>3 5 4</c>, the answer would be &#8220;no, not in order&#8221;.</p>
+      <p>The blocks have been mixed up and include extra blocks that aren&#8217;t needed in the solution. Drag the
+        needed blocks from the left and put them in the correct order on the right.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>first = int( input("Enter the first number: ") )</cline>
+        <cline>second = int( input("Enter the second number: ") )</cline>
+        <cline>third = int( input("Enter the third number: ") )</cline>
+      </block>
+      <block order="5">
+        <cline>if (second &gt; first and second &lt; third) or (third &lt; second and second &lt; first):</cline>
+      </block>
+      <block order="3" correct="no">
+        <cline>if (second &gt; first or second &lt; third) and (third &lt; second or second &lt; first): </cline>
+      </block>
+      <block order="4">
+        <cline> print("yes, in order")</cline>
+      </block>
+      <block order="1">
+        <cline>else:</cline>
+      </block>
+      <block order="2">
+        <cline> print("no, not in order")</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="cspdecisionsstrings_exercises3">
+    <statement>
+      <p>The program below is supposed to calculate the final bill for a meal at a fast-food restaurant in a state where
+        meals that are taken to go are not taxed, but meals eaten in the restaurant are.</p>
+      <p>Your job is to write the <c>getTotalCost</c> function. It should use the initial meal <c>price</c> and the <c>location</c> it is being
+        eaten to calculate the final cost. If <c>location</c> has the string <c>"to go"</c> anywhere in it, the total cost should be
+        just the meal price. Otherwise, it should be the price + 8% (1.08 times the meal price).</p>
+      <p>Remember that you can use <c>in</c> to check if one string appears inside another.</p>
+      <p>Note that when you run it, you can enter whatever values you want. The tests for your program will
+        automatically try a collection of different inputs and don&#8217;t depend on what you type in.</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def getTotalCost(price, location):
     # your code here - make sure to return an answer!
 
@@ -85,20 +113,18 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspdecisionsstrings_exercises4">
+  <exercise label="cspdecisionsstrings_exercises4">
     <statement>
-        <p>The program below is supposed to figure out the cost of a ticket for a customer to a
-            museum. Anyone who is over 65 or younger than 12 gets in free. Anyone who is 12 to 17
-            gets in for $8. Everyone else is $15.</p>
-        <p>Your job is to write the <c>getTicketCost</c> function. It should use <c>age</c> parameter
-            to decide on the right cost and then return that value. (Just return a number like
-            0, 8, or 15, don&#8217;t include $).</p>
+      <p>The program below is supposed to figure out the cost of a ticket for a customer to a museum. Anyone who is over
+        65 or younger than 12 gets in free. Anyone who is 12 to 17 gets in for $8. Everyone else is $15.</p>
+      <p>Your job is to write the <c>getTicketCost</c> function. It should use the <c>age</c> parameter to decide on the right cost and then
+        return that value. (Just return a number like 0, 8, or 15, don&#8217;t include $).</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def getTicketCost(age):
     # your code here - make sure to return an answer!
 
@@ -130,24 +156,20 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspdecisionsstrings_exercises5">
+  <exercise label="cspdecisionsstrings_exercises5">
     <statement>
-        <p>To graduate from a particular high school, a student needs 22 or more
-            total credits and at least 3 math credits. (They also need some other
-            specific subjects, but we will ignore them.)</p>
-        <p>Finish the <c>canGraduate</c> function. It accepts an number of <c>totalCredits</c>
-            earned and a number of <c>mathCredits</c>. It should return <c>True</c>
-            (without any quotes!!!) if someone with that number of credits is ready
-            to graduate. Otherwise return <c>False</c>.</p>
-        <p>You can modify the code in the main part of the program to test out
-            different numbers of credits. The tests will not use what you do there,
-            they will just test your function.</p>
+      <p>To graduate from a particular high school, a student needs 22 or more total credits and at least 3 math
+        credits. (They also need some other specific subjects, but we will ignore them.)</p>
+      <p>Finish the <c>canGraduate</c> function. It accepts the number of <c>totalCredits</c> earned and the number of <c>mathCredits</c>. It should return <c>True</c>
+        (without any quotes!!!) if someone with that number of credits is ready to graduate. Otherwise, return <c>False</c>.</p>
+      <p>You can modify the code in the main part of the program to test out different numbers of credits. The tests
+        will not use what you do there, they will just test your function.</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises5_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def canGraduate(totalCredits, mathCredits):
     # your code here - make sure to return an answer!
 
@@ -173,232 +195,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

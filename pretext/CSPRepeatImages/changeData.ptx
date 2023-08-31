@@ -1,54 +1,139 @@
-<p>
-  <raw format="html" xml:space="preserve">&lt;style&gt;
-    .flexgrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .flexgrid div {
-        flex: 1 200px;
-    }
-    .flexgrid .img-title {
-        text-align: cetner;
-    }
-&lt;/style&gt;
-&lt;div class="flexgrid hidden"&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg"&gt;
-    &lt;div class="img-title"&gt;mount_hood.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/graduates.jpg" id="graduates.jpg"&gt;
-    &lt;div class="img-title"&gt;graduates.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg"&gt;
-    &lt;div class="img-title"&gt;goalkeeper.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student1.jpg" id="student1.jpg"&gt;
-    &lt;div class="img-title"&gt;student1.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student2.jpg" id="student2.jpg"&gt;
-    &lt;div class="img-title"&gt;student2.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg"&gt;
-    &lt;div class="img-title"&gt;green_screen.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/scooter.jpg" id="scooter.jpg"&gt;
-    &lt;div class="img-title"&gt;scooter.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;
-    &lt;div class="img-title"&gt;logo.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;
-    &lt;div class="img-title"&gt;cat.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</raw>
-</p>
-    
+<section xml:id="csp-repeat-images_changing-which-data-we-use">
+  <title>Changing which data we use</title>
+  <p>Now that we are using coordinates to iterate through all of the pixels, we can also change which
+      part of the picture we read and manipulate. Instead of writing a loop that visits every possible
+      x and y, we can chose to only visit some of the coordinate pairs.</p>
+  <p>This program changes only the upper-left 1/4 of the image. To do so, it uses loops that
+      only go up to 1/2 the width and 1/2 the height. At each location, it gets the existing pixel
+      and then inverts each color channel (subtracts it from 255 so that a value of 0 becomes 255,
+      a value of 1 becomes 254, 2 becomes 253, etc&#8230;).</p>
+
+<program xml:id="csprepeatimages_changedata1" interactive="activecode" language="python">
+  <input>
+# STEP 1: USE THE IMAGE LIBRARY
+from image import *
+
+# STEP 2: PICK THE IMAGE
+img = Image("scooter.jpg")
+
+# STEP 3: SELECT THE DATA
+# Calculate the midpoint for x and y. Make sure answer is changed to a whole number (int)
+halfWidth = img.getWidth() // 2
+halfHeight = img.getHeight() // 2
+
+for x in range(halfWidth):
+    for y in range(halfHeight):
+
+        # STEP 4: GET THE DATA
+        p = img.getPixel(x, y)
+
+        # STEP 5: CREATE THE COLOR
+        p.setRed(255 - p.getRed())
+        p.setBlue(255 - p.getBlue())
+        p.setGreen(255 - p.getGreen())
+
+        # STEP 6: CHANGE THE PIXEL
+        img.setPixel(x, y, p)
+
+# STEP 7: SHOW THE RESULT
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+  </input>
+</program>
+
+<exercise label="csprepeatimages_changedata2">
+  <statement>
+
+  <p>Which of the following changes would invert the upper-right quadrent instead of the upper-left?</p>
+
+  </statement>
+<choices>
+
+      <choice correct="yes">
+          <statement>
+              <p>Change line 12 to <code>for x in range(halfWidth, img.getWidth()):</code></p>
+          </statement>
+          <feedback>
+              <p>Correct, that uses x coordinates from the half way point until the full width.</p>
+          </feedback>
+      </choice>
+
+      <choice>
+          <statement>
+              <p>Change line 13 to <code>for y in range(halfHeight, img.getHeight()):</code></p>
+          </statement>
+          <feedback>
+              <p>No, that is the lower-left quadrant. It uses y value that start halfway down and go until the bottom.</p>
+          </feedback>
+      </choice>
+
+      <choice>
+          <statement>
+              <p>Do both</p>
+          </statement>
+          <feedback>
+              <p>That would be the lower-right quadrant. For both x and y, it starts at the midpoint and goes until the right or bottom edge.</p>
+          </feedback>
+      </choice>
+</choices>
+
+</exercise>
+  <p>You may have noticed that we used <c>// 2</c> to divide by two in that sample. Why?
+      <c>range</c> only works with whole numbers. And <c>/ 2</c> produces a decimal value (also known as a
+      <c>float</c> for &#8220;floating decimal point&#8221;).  Try this example and note the error you get.</p>
+
+<program xml:id="csprepeatimages_changedata3" interactive="activecode" language="python">
+  <input>
+max = 11 / 2
+print(max)
+for x in range(max):           # error here!!! range wants an integer
+print(x)
+  </input>
+</program>
+  <p>Change the first line to set <c>max</c> to <c>10 / 2</c>. It is the same problem - <c>/</c> produces a decimal
+      even for whole numbers and range does not want that. Then try changing the first line to set <c>max</c>
+      to <c>11 // 2</c>. Recall that the <c>//</c> operator does integer division and drops the decimal part of
+      the answer. So using <c>//</c> ensures that we always get a whole number (or <c>int</c> for integer).</p>
+  <p>We could even use two sets of loops to visit two different parts of the image. This program
+      has two copies of the code for steps 3-6. The first one visits the top 30 rows. The second
+      copy visits the last 30 rows. In each of those locations, we don&#8217;t even both accessing
+      the existing color. Instead we use the <c>Pixel(red, green, blue)</c> function to make a new
+      red pixel (255 red, 0 green and blue) and store it into the image at the current location.</p>
+
+<program xml:id="csprepeatimages_changedata4" interactive="activecode" language="python">
+  <input>
+# STEP 1: USE THE IMAGE LIBRARY
+from image import *
+
+# STEP 2: PICK THE IMAGE
+img = Image("scooter.jpg")
+
+# STEP 3: SELECT THE DATA - TOP
+for x in range(img.getWidth()):
+for y in range(30):
+  # STEP 5: CREATE THE COLOR
+  newPixel = Pixel(255, 0, 0)
+
+  # STEP 6: CHANGE THE PIXEL
+  img.setPixel(x, y, newPixel)
+
+# STEP 3: SELECT THE DATA - BOTTOM
+for x in range(img.getWidth()):
+for y in range(img.getHeight() - 30, img.getHeight()):
+  # STEP 5: CREATE THE COLOR
+  newPixel = Pixel(255, 0, 0)
+
+  # STEP 6: CHANGE THE PIXEL
+  img.setPixel(x, y, newPixel)
+
+# STEP 7: SHOW THE RESULT
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+  </input>
+</program>
+  <p>Try modifying the program so that the red bars are on the left and right side of the image. To
+      do so, you will have to &#8220;fix&#8221; <c>for y...</c> loops AND change the <c>for x</c> loops to only cover
+      a limited distance. The first <c>for x</c> should cover a range from 0 to 30. The second one
+      should start at the width - 30 and continue until it hits the full width.</p>
+</section>
+

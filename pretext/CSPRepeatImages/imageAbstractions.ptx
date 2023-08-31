@@ -9,31 +9,6 @@
     more detailed by talking about those parts.</p>
   <p>In computer science, we often work with similar stacks of abstractions. We build high-level abstractions to
     describe collections of lower-level data more easily. Images are a great example of this.</p>
-
-
-    
-    <program xml:id="TESTING123" interactive="activecode" language="python">
-      <input>
-          # MAKE USE OF IMAGE LIBRARY
-          import image
-
-          # CREATE AN IMAGE FROM A FILE AND CALL IT catPic
-          catPic = image.Image("cat.jpg")
-
-          # LOOP THROUGH ALL THE PIXELS
-          pixels = catPic.getPixels()
-          for p in pixels:
-              # CLEAR THE RED
-              p.setRed(0)
-              catPic.updatePixel(p)
-
-          # SHOW THE CHANGED IMAGE IN A 400x400 WINDOW
-          win = image.ImageWin(400, 400)
-          catPic.draw(win)
-      </input>
-  </program>
-
-
   <p>
     <ol>
       <li>
@@ -51,9 +26,6 @@
               <image source="CSPRepeatImages/Figures/grid.png" width="50%"
                 alt="A grid with horizontal (x) and vertical (y) dimensions" />
             </figure>
-            <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
-            <raw format="html" xml:space="preserve">&lt;img class="center-block" src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;</raw>
-
           </li>
         </dl>
       </li>
@@ -73,7 +45,7 @@
       </li>
     </ol>
   </p>
-  <p>Depending on what we are doing with the image, we will need to work with different levels of the abstraction. We
+  <p>Depending on what we are doing with the image, we will need to work with different levels of abstraction. We
     can draw the image without talking about the grid of pixels. To crop the image, we would need to change the size of
     its pixel grid, but we would not need to worry about colors. If we want to make the image a little brighter, we will
     have to talk about the image in terms of the colors of its pixels.</p>

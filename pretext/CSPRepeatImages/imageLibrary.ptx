@@ -1,0 +1,106 @@
+<section xml:id="csp-repeat-images_a-library-of-image">
+  <title>A Library of Images</title>
+
+  <p>The images we work with in this book must be built into the webpage - you can’t use an image from your own
+    computer. Below are some images that are built into the web pages in this chapter.</p>
+
+  <figure xml:id="csp-image-library">
+    <caption>Images available in this book</caption>
+    <sbsgroup>
+      <sidebyside width="30%">
+        <figure>
+          <caption>mount_hood.jpg</caption>
+          <image source="CSP/Images/mount_hood.jpg"/>
+        </figure>
+        <figure>
+          <caption>graduates.jpg</caption>
+          <image source="CSP/Images/graduates.jpg"/>
+        </figure>
+        <figure>
+          <caption>goalkeeper.jpg</caption>
+          <image source="CSP/Images/goalkeeper.jpg"/>
+        </figure>
+      </sidebyside>
+      <sidebyside width="30%">
+        <figure>
+          <caption>green_screen.jpg</caption>
+          <image source="CSP/Images/green_screen.jpg"/>
+        </figure>
+        <figure>
+          <caption>cat.jpg</caption>
+          <image source="CSP/Images/cat.jpg"/>
+        </figure>
+        <figure>
+          <caption>student1.jpg</caption>
+          <image source="CSP/Images/student1.jpg"/>
+        </figure>
+      </sidebyside>
+      <sidebyside width="30%">
+        <figure>
+          <caption>student2.jpg</caption>
+          <image source="CSP/Images/student2.jpg"/>
+        </figure>
+        <figure>
+          <caption>scooter.jpg</caption>
+          <image source="CSP/Images/scooter.jpg"/>
+        </figure>
+        <figure>
+          <caption>logo.jpg</caption>
+          <image source="CSP/Images/logo.jpg"/>
+        </figure>
+      </sidebyside>
+    </sbsgroup>
+  </figure>
+
+  <hidden>
+    <!-- cat.jpg is elsewhere -->
+    <datafile label="mount_hood" filename="mount_hood.jpg">
+      <image source="CSP/Images/mount_hood.jpg"/>
+    </datafile>
+    <datafile label="graduates" filename="graduates.jpg">
+      <image source="CSP/Images/graduates.jpg"/>
+    </datafile>
+    <datafile label="goalkeeper" filename="goalkeeper.jpg">
+      <image source="CSP/Images/goalkeeper.jpg"/>
+    </datafile>
+    <datafile label="green_screen" filename="green_screen.jpg">
+      <image source="CSP/Images/green_screen.jpg"/>
+    </datafile>
+    <datafile label="student1" filename="student1.jpg">
+      <image source="CSP/Images/student1.jpg"/>
+    </datafile>
+    <datafile label="student2" filename="student2.jpg">
+      <image source="CSP/Images/student2.jpg"/>
+    </datafile>
+    <datafile label="scooter" filename="scooter.jpg">
+      <image source="CSP/Images/scooter.jpg"/>
+    </datafile>
+    <datafile label="logo" filename="logo.jpg">
+      <image source="CSP/Images/logo.jpg"/>
+    </datafile>
+  </hidden>
+
+  <p>To use a particular image, change the line of code that creates an image object so that it specifies the desired
+    image name in quotes. Like <c>img = Image("student1.jpg")</c> to use <c>student1.jpg</c>. Try out one or more of these images by changing line 4 in the
+    program below.</p>
+
+  <program xml:id="csprepeatimages_library-of-images1" interactive="activecode" language="python">
+    <input>
+    from image import *
+    
+    # CREATE THE IMAGE OBJECT
+    img = Image("student1.jpg")
+
+    # DISPLAY THE IMAGE
+    win = ImageWin(img.getWidth(), img.getHeight())
+    img.draw(win)
+      </input>
+  </program>
+
+  <note>
+    <p>It is also possible to use an image that is on another web page if you know its full address. Doing this would
+      look like:</p>
+    <c>img = Image("https://shorturl.at/dNUX7")</c>
+    <p>If you try this, make sure to stick to small images or your program will take a very long time to run.</p>
+  </note>
+</section> 

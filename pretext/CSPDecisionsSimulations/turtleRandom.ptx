@@ -1,13 +1,12 @@
 <section xml:id="csp-decisions-simulations_turtles-and-randomness">
-        <title>Turtles And Randomness</title>
-        <p>We can use random numbers to make the results of turtle drawings unpredictable. The program
-            below will pick a random number between 50 and 199 and call it <c>squareSize</c>. That number
-            gets passed to the <c>drawSquare</c> function as the size of the square to draw. Each time you
-            run the program, the square should be a different size.</p>
-        <p>As a reminder, here are the turtle commands: <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference"/></p>
+  <title>Turtles And Randomness</title>
+  <p>We can use random numbers to make the results of turtle drawings unpredictable. The program below will pick a
+    random number between 50 and 199 and call it <c>squareSize</c>. That number gets passed to the <c>drawSquare</c> function as the size of
+    the square to draw. Each time you run the program, the square should be a different size.</p>
+  <p>As a reminder, here are the turtle commands: <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" /></p>
 
-    <program xml:id="cspdecisionssimulations_turtlerandom1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionssimulations_turtlerandom1" interactive="activecode" language="python">
+    <input>
 def drawSquare(turtleName, size):
     for side in range(4):
         turtleName.forward(size)
@@ -23,25 +22,26 @@ squareSize = random.randrange(50, 200)
 # draw a square using that size
 drawSquare(becca, squareSize)
         </input>
-    </program>
-        <p>Note that although we want the size of the square to be random, it is important that all the
-            sides of the square are the same size. That is why we pick the random number in the main
-            part of the program. If we picked a random number on line 3 as we draw each side, each side
-            would be a different length! Try changing line 3 to read <c>turtleName.forward(random.randrange(50, 200))</c>
-            to see for yourself.</p>
-        <p>We can also pick a random location for the turtle to start in. Remember that the turtle uses this
-            coordinate system:</p>
-        <figure align="center" ><caption >The coordinates for the drawing space.  Note that the center is x = 0 and y = 0.</caption><image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%" alt="the space coordinate system"/></figure>
-        <p>Because the square procedure is going to make a square up to 200 wide and tall extending
-            to the right and down from where we start, I don&#8217;t want it to start to the right or below
-            the point 0, 0 or it might go off screen. I am fine with it starting to the left of or above
-            that location, but I don&#8217;t want it to start right at the edge of the screen. So I want the
-            starting x location to be between -190 and 0 and the starting y to be between 0 and 190.
-            So this version of the program uses <c>goto(x, y)</c> and random numbers to pick a random
-            starting location before drawing the square.</p>
+  </program>
+  <p>Note that although we want the size of the square to be random, it is important that all the sides of the square
+    are the same size. That is why we pick the random number in the main part of the program. If we picked a random
+    number on line 3 as we draw each side, each side would be a different length! Try changing line 3 to read <c>turtleName.forward(random.randrange(50, 200))</c> to
+    see for yourself.</p>
+  <p>We can also pick a random location for the turtle to start in. Remember that the turtle uses this coordinate
+    system:</p>
+  <figure align="center">
+    <caption>The coordinates for the drawing space. Note that the center is x = 0 and y = 0.</caption>
+    <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%" alt="the space coordinate system" />
+  </figure>
+  <p>Because the square procedure is going to make a square up to 200 wide and tall extending to the right and down from
+    where we start, I don&#8217;t want it to start to the right or below the point 0, 0 or it might go off screen. I am
+    fine with it starting to the left of or above that location, but I don&#8217;t want it to start right at the edge of
+    the screen. So I want the starting x location to be between -190 and 0 and the starting y to be between 0 and 190.
+    So this version of the program uses <c>goto(x, y)</c> and random numbers to pick a random starting location before drawing the
+    square.</p>
 
-    <program xml:id="cspdecisionssimulations_turtlerandom2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionssimulations_turtlerandom2" interactive="activecode" language="python">
+    <input>
 def drawSquare(turtleName, size):
     for side in range(4):
         turtleName.forward(size)
@@ -64,23 +64,22 @@ becca.pendown()
 squareSize = random.randrange(50, 200)
 drawSquare(becca, squareSize)
         </input>
-    </program>
-        <p>Try the program a few times. Each time you should get different squares.</p>
-        <p>Now let&#8217;s make it a little more interesting by picking a random color each time the program runs.
-            We have added a procedure called <c>changeColor</c>. If you pass it the name of a turtle, and three
-            numbers between 0-255 representing <c>red</c>, <c>green</c>, and <c>blue</c> values, it will make a hexadecimal
-            color code that represents the color with that much red/green/blue. It will then use that to set
-            the color of the turtle. Your task is to write code to pick three random numbers to use for the color
-            values.</p>
+  </program>
+  <p>Try the program a few times. Each time you should get different squares.</p>
+  <p>Now let&#8217;s make it a little more interesting by picking a random color each time the program runs. We have
+    added a procedure called <c>changeColor</c>. If you pass it the name of a turtle, and three numbers between 0-255 representing <c>red</c>
+    , <c>green</c>, and <c>blue</c> values, it will make a hexadecimal color code that represents the color with that much
+    red/green/blue. It will then use that to set the color of the turtle. Your task is to write code to pick three
+    random numbers to use for the color values.</p>
 
-<exercise label="cspdecisionssimulations_turtlerandom3">
+  <exercise label="cspdecisionssimulations_turtlerandom3">
     <statement>
-        <p>In the location marked <c>TODO</c> (line 38), add lines of code to make three random values that are
-            each 0-255 and name them <c>red</c>, <c>green</c>, and <c>blue</c>.</p>
+      <p>In the location marked <c>TODO</c> (line 38), add lines of code to make three random values that are each 0-255 and
+        name them <c>red</c>, <c>green</c>, and <c>blue</c>.</p>
 
     </statement>
     <program xml:id="cspdecisionssimulations_turtlerandom3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def changeColor(turtleName, red, green, blue):
     # red, green, blue should all be values between 0 and 255
     # changes them to a hexadecimal format like #FF3C28 and sets turtleName color with that
@@ -142,6 +141,6 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

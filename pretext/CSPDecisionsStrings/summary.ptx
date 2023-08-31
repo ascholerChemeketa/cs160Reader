@@ -1,53 +1,67 @@
 <section xml:id="csp-decisions-strings_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Boolean Expression</term> - A Boolean expression is one that is either true or false.  This is also called a <term>logical expression</term>.</p>
-            </li>
-            <li>
-                <p><term>Condition</term> - A condition is something that is either true or false.  This is also called a <term>Boolean expression</term> or a <term>logical expression</term>.</p>
-            </li>
-            <li>
-                <p><term>Conditional Execution</term> - Conditional execution means that one or more statements are executed only when a condition (<term>logical expression</term>) is true.  This is also called a <term>conditional</term>.  The statements that are executed when the condition is true are called the <term>body</term>.</p>
-            </li>
-            <li>
-                <p><term>Decision</term> - A decision is a choice between at least two choices.</p>
-            </li>
-            <li>
-                <p><term>Input</term> - The <c>input</c> function returns a value that the user enters.</p>
-            </li>
-            <li>
-                <p><term>Logical Expression</term> - A logical expression is one that is either true or false, like <c>x == 3</c>.  This is also called a <term>Boolean expression</term>.</p>
-            </li>
-        </ul></p>
-        <subsection xml:id="csp-decisions-strings_summary-of-python-keywords-and-functions">
-            <title>Summary of Python Keywords and Functions</title>
-            <p><ul>
-                <li>
-                    <p><term>And</term> - The keyword <c>and</c> is used to join two logical expressions and then both of the logical expressions must be true for the joined expression to be true.</p>
-                </li>
-                <li>
-                    <p><term>Else</term> - The keyword <c>else</c> is used to execute one or more statements in a block following the <c>else</c> when the condition in the <c>if</c> part of the statement is false.  An <c>else</c> must always have an <c>if</c> statement before it.</p>
-                </li>
-                <li>
-                    <p><term>Elif</term> - The keyword <c>elif</c> is used when you want to have a conditional with 3 or more possibile options.  Add as many <c>elif</c> statements as you need after an <c>if</c> and before a <c>else</c>.</p>
-                </li>
-                <li>
-                    <p><term>If</term> - The Python keyword <c>if</c> is used to start a condition. It is followed by a Boolean expression and then has one or more statements in the body of the loop that are executed only if the Boolean expression is true.</p>
-                </li>
-                <li>
-                    <p><term>Not</term> - The keyword <c>not</c> is used to negate a <term>logical expression</term>.  If the original expression is true the negated expression is false and if the original expression is false the negated expression is true.</p>
-                </li>
-                <li>
-                    <p><term>Str</term> - The function <c>str</c> turns a number into a string so that it can be appended to a string.</p>
-                </li>
-            </ul></p>
-            <note>
-                <p>This is the end of chapter 13.   We would love it if you could give us some feedback on this chapter at <url href="https://www.surveymonkey.com/r/ch13-student-fb" visual="https://www.surveymonkey.com/r/ch13-student-fb">https://www.surveymonkey.com/r/ch13-student-fb</url>.  You might want to open this link in a new tab to make it easier for you to return to your place in this ebook.</p>
-            </note>
-        </subsection>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Boolean Expression</term> - A Boolean expression is one that is either true or false. This is also
+          called a <term>logical expression</term>.</p>
+      </li>
+      <li>
+        <p><term>Condition</term> - A condition is something that is either true or false. This is also called a <term>Boolean
+          expression</term> or a <term>logical expression</term>.</p>
+      </li>
+      <li>
+        <p><term>Conditional Execution</term> - Conditional execution means that one or more statements are executed
+          only when a condition (<term>logical expression</term>) is true. This is also called a <term>conditional</term>.
+          The statements that are executed when the condition is true are called the <term>body</term>.</p>
+      </li>
+      <li>
+        <p><term>Decision</term> - A decision is a choice between at least two choices.</p>
+      </li>
+      <li>
+        <p><term>Input</term> - The <c>input</c> function returns a value that the user enters.</p>
+      </li>
+      <li>
+        <p><term>Logical Expression</term> - A logical expression is one that is either true or false, like <c>x == 3</c>.
+          This is also called a <term>Boolean expression</term>.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="csp-decisions-strings_summary-of-python-keywords-and-functions">
+    <title>Summary of Python Keywords and Functions</title>
+    <p>
+      <ul>
+        <li>
+          <p><term>And</term> - The keyword <c>and</c> is used to join two logical expressions and then both of the logical
+            expressions must be true for the joined expression to be true.</p>
+        </li>
+        <li>
+          <p><term>Else</term> - The keyword <c>else</c> is used to execute one or more statements in a block following the <c>else</c>
+            when the condition in the <c>if</c> part of the statement is false. An <c>else</c> must always have an <c>if</c>
+            statement before it.</p>
+        </li>
+        <li>
+          <p><term>Elif</term> - The keyword <c>elif</c> is used when you want to have a conditional with 3 or more
+            possibile options. Add as many <c>elif</c> statements as you need after an <c>if</c> and before a <c>else</c>.</p>
+        </li>
+        <li>
+          <p><term>If</term> - The Python keyword <c>if</c> is used to start a condition. It is followed by a Boolean
+            expression and then has one or more statements in the body of the loop that are executed only if the Boolean
+            expression is true.</p>
+        </li>
+        <li>
+          <p><term>Not</term> - The keyword <c>not</c> is used to negate a <term>logical expression</term>. If the original
+            expression is true the negated expression is false and if the original expression is false the negated
+            expression is true.</p>
+        </li>
+        <li>
+          <p><term>Str</term> - The function <c>str</c> turns a number into a string so that it can be appended to a
+            string.</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>
 

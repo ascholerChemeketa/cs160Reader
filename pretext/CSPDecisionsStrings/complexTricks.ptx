@@ -1,66 +1,64 @@
 <section xml:id="csp-decisions-strings_complex-conditional-dangers">
-        <title>Complex Conditional Dangers</title>
-        <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would
-            in English or in math class.</p>
-        <p>In natural (human) languages, if I want to say that the color of a car can be blue or green,
-            I would only mention the car once: &#8220;The car can be blue or green.&#8221; If you try to do that in Python
-            your program will not work as expected:</p>
+  <title>Complex Conditional Dangers</title>
+  <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would in English or in math
+    class.</p>
+  <p>In natural (human) languages, if I want to say that the color of a car can be blue or green, I would only mention
+    the car once: &#8220;The car can be blue or green.&#8221; If you try to do that in Python your program will not work
+    as expected:</p>
 
-    <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
+    <input>
 color = "red"
 if color == "blue" or "green":
     print("That is a valid color.")
 print("Done")
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspdecisionsstrings_complextricks2">
+  <exercise label="cspdecisionsstrings_complextricks2">
+    <statement>
+
+      <p>What does the code sample above do?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>What does the code sample above do?</p>
-
+          <p>Produces an error message</p>
         </statement>
-<choices>
+        <feedback>
+          <p>Try running it!</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>Produces an error message</p>
-                </statement>
-                <feedback>
-                    <p>Try running it!</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Prints "That is a valid color." then "Done"</p>
+        </statement>
+        <feedback>
+          <p>Correct</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>Prints "That is a valid color." then "Done"</p>
-                </statement>
-                <feedback>
-                    <p>Correct</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>Prints "Done"</p>
+        </statement>
+        <feedback>
+          <p>Try running it!</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>Prints "Done"</p>
-                </statement>
-                <feedback>
-                    <p>Try running it!</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-        <p>Why does that happen? In English, we would think of &#8220;color equals&#8221; as talking about
-            &#8220;blue or green&#8221;. But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>. Each
-            of those is evaluated on their own. Does <c>color == "blue"</c>? No that is False. How about
-            <c>"green"</c>. Is that True or False???</p>
-        <p>It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered
-            True in Python. So <c>green</c> counts as <c>True</c>. Since the value on the left of <c>or</c> is <c>False</c>,
-            and the value on the right is <c>True</c> (according to Python), the final value of the expression
-            is <c>True</c>.</p>
-        <raw format="html" xml:space="preserve">&lt;table class="table center"&gt;
+  </exercise>
+  <p>Why does that happen? In English, we would think of &#8220;color equals&#8221; as talking about &#8220;blue or
+    green&#8221;. But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>. Each of those is evaluated on its own. Does <c>color == "blue"</c>?
+    No that is False. How about <c>"green"</c>. Is that True or False???</p>
+  <p>It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered True in Python. So <c>green</c>
+    counts as <c>True</c>. Since the value on the left of <c>or</c> is <c>False</c>, and the value on the right is <c>True</c>
+    (according to Python), the final value of the expression is <c>True</c>.</p>
+  <raw format="html" xml:space="preserve">&lt;table class="table center"&gt;
     &lt;tr&gt;
         &lt;td width="33%"&gt;color == "blue"&lt;/td&gt;
         &lt;td width="33%"&gt;or&lt;/td&gt;
@@ -75,22 +73,20 @@ print("Done")
         &lt;td colspan="3"&gt;True&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</raw>
-        <p>The only way to get the logic we want, is to make sure both the left and right side of the <c>or</c>
-            are expressions that make sense on their own as logical expressions. We have to repeat the
-            <c>color == `` part so that ``"green"</c> is not evaluated on its own:</p>
+  <p>The only way to get the logic we want, is to make sure both the left and right sides of the <c>or</c> are expressions
+    that make sense on their own as logical expressions. We have to repeat the <c>color == `` part so that ``"green"</c> is not evaluated on its own:</p>
 
-    <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
+    <input>
 color = "red"
 if color == "blue" or color == "green":
     print("That is a valid color.")
 print("Done")
         </input>
-    </program>
-        <warning>
-            <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False).
-                You can&#8217;t have something that looks like <c>... or "blue"</c> or <c>... and 10</c> or that part
-                will just count as True.</p>
-        </warning>
-    </section>
+  </program>
+  <warning>
+    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can&#8217;t have
+      something that looks like <c>... or "blue"</c> or <c>... and 10</c> or that part will just count as True.</p>
+  </warning>
+</section>
 
