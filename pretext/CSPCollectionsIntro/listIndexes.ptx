@@ -1,122 +1,122 @@
 <section xml:id="csp-collections-intro_working-with-indexes">
-        <title>Working with Indexes</title>
-        
-        
-        <p>Sometimes, we don&#8217;t want to access all of the items in a list one at a time in order.
-            To access individual items in a collection (a list or a string), we can use an <term>index</term>.
-            Each item in a collection has a number associated with it &#8211; think of it as the item&#8217;s address in
-            the collection.  The first item in a collection has index <c>0</c>, the next one <c>1</c>, and so on.
-            See the image below for a view of two lists with the <em>index</em> for each list item shown at the top
-            of each yellow box and the <em>value</em> for that index shown at the bottom of each yellow box.</p>
-        <figure align="center" ><caption >Lists and their indices</caption><image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%"/></figure>
-        <p>We use square brackets to access items of the list, e.g., <c>myList[0]</c> will access the first
-            item in the list. <c>myList[1]</c> will access the second item in the list.</p>
-        <warning>
-            <p>In programming, we often count from 0 instead of from 1. It will take some getting used to,
-                but when you see a list of things, remember that the first one it item 0. The last item
-                will always have an index one less than the number of items - the last item in a list with
-                10 values is index 9.</p>
-        </warning>
+  <title>Working with Indexes</title>
 
-    <exercise label="cspcollectionsintro_listindexes1">
+  <p>Sometimes, we don&#8217;t want to access all of the items in a list one at a time in order. To access individual
+    items in a collection (a list or a string), we can use an <term>index</term>. Each item in a collection has a number
+    associated with it &#8211; think of it as the item&#8217;s address in the collection. The first item in a collection
+    has index <c>0</c>, the next one <c>1</c>, and so on. See the image below for a view of two lists with the <em>index</em>
+    for each list item shown at the top of each yellow box and the <em>value</em> for that index shown at the bottom of
+    each yellow box.</p>
+  <figure align="center">
+    <caption>Lists and their indices</caption>
+    <image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%" />
+  </figure>
+  <p>We use square brackets to access items of the list, e.g., <c>myList[0]</c> will access the first item in the list. <c>myList[1]</c>
+    will access the second item in the list.</p>
+  <warning>
+    <p>In programming, we often count from 0 instead of from 1. It will take some getting used to, but when you see a
+      list of things, remember that the first one it item 0. The last item will always have an index one less than the
+      number of items - the last item in a list with 10 values is index 9.</p>
+  </warning>
+
+  <exercise label="cspcollectionsintro_listindexes1">
+    <statement>
+
+      <p>What is the last index for the list <c>myFirstList</c>?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>What is the last index for the list <c>myFirstList</c>?</p>
-
+          <p>0</p>
         </statement>
-<choices>
+        <feedback>
+          <p>This is the index of the first item in the list.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>0</p>
-                </statement>
-                <feedback>
-                    <p>This is the index of the first item in the list.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>1</p>
-                </statement>
-                <feedback>
-                    <p>This is the index of the second item in the list.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>2</p>
-                </statement>
-                <feedback>
-                    <p>This is the index of the last item in this list since it contains 3 items and the first index is 0.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>3</p>
-                </statement>
-                <feedback>
-                    <p>The length of this list is 3, but the first index is 0 so the 3rd item is at index 2.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-    <exercise label="cspcollectionsintro_listindexes2">
+      <choice>
         <statement>
-
-        <p>What is the value of the item at index 3 in mySecondList?</p>
-
+          <p>1</p>
         </statement>
-<choices>
+        <feedback>
+          <p>This is the index of the second item in the list.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>12</p>
-                </statement>
-                <feedback>
-                    <p>This is the value at index 0.</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
+          <p>This is the index of the last item in this list since it contains 3 items and the first index is 0.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>"ape"</p>
-                </statement>
-                <feedback>
-                    <p>This is the value at index 1.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+          <p>The length of this list is 3, but the first index is 0 so the 3rd item is at index 2.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>13</p>
-                </statement>
-                <feedback>
-                    <p>This is the value at index 2.</p>
-                </feedback>
-            </choice>
+  </exercise>
 
-            <choice correct="yes">
-                <statement>
-                    <p>321.4</p>
-                </statement>
-                <feedback>
-                    <p>This is the value at index 3.</p>
-                </feedback>
-            </choice>
-</choices>
+  <exercise label="cspcollectionsintro_listindexes2">
+    <statement>
 
-    </exercise>
-        <p>You can read and write the values of individual items of a list just like they were variables.
-            Using <c>list[index]</c> on the right side of an assignment returns the value at that index in the
-            list. Using <c>list[index]</c> on the left side of an assignment statement changes the value at
-            that index in the list.</p>
+      <p>What is the value of the item at index 3 in mySecondList?</p>
 
-<program xml:id="cspcollectionsintro_listindexes3" interactive="codelens" language="python">
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>12</p>
+        </statement>
+        <feedback>
+          <p>This is the value at index 0.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>"ape"</p>
+        </statement>
+        <feedback>
+          <p>This is the value at index 1.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>13</p>
+        </statement>
+        <feedback>
+          <p>This is the value at index 2.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>321.4</p>
+        </statement>
+        <feedback>
+          <p>This is the value at index 3.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+  <p>You can read and write the values of individual items of a list just like they were variables. Using <c>list[index]</c> on the
+    right side of an assignment returns the value at that index in the list. Using <c>list[index]</c> on the left side of an
+    assignment statement changes the value at that index in the list.</p>
+
+  <program xml:id="cspcollectionsintro_listindexes3" interactive="codelens" language="python">
     <input>
 items = [2, 4, 6, 8]
 
@@ -132,63 +132,63 @@ items[3] = items[2] + 1
 
 print(items)
     </input>
-</program>
+  </program>
 
-    <exercise label="cspcollectionsintro_listindexes4">
-        <statement>
+  <exercise label="cspcollectionsintro_listindexes4">
+    <statement>
 
-        <p>What would the following code print?</p>
-        <pre>values = [3, 2, 1]
+      <p>What would the following code print?</p>
+      <pre>values = [3, 2, 1]
 values[0] = values[1]
 values[2] = values[2] + 1
 print(values)</pre>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>[3, 2, 1]</p>
         </statement>
-<choices>
+        <feedback>
+          <p>That is the original contents of <code>values</code>, but the contents are changed.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>[3, 2, 1]</p>
-                </statement>
-                <feedback>
-                    <p>That is the original contents of <code>values</code>, but the contents are changed.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>[2, 0, 2]</p>
+        </statement>
+        <feedback>
+          <p>When you set <code>values[0]</code> to <code>values[1]</code> it makes a copy of the value and doesn't zero
+            it out.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>[2, 0, 2]</p>
-                </statement>
-                <feedback>
-                    <p>When you set <code>values[0]</code> to <code>values[1]</code> it makes a copy of the value and doesn't zero it out.</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>[2, 2, 2]</p>
+        </statement>
+        <feedback>
+          <p>The value at index 0 is set to a copy of the value at index 1 and the value at index 2 is incremented.</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>[2, 2, 2]</p>
-                </statement>
-                <feedback>
-                    <p>The value at index 0 is set to a copy of the value at index 1 and the value at index 2 is incremented.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>[2, 2, 1]</p>
+        </statement>
+        <feedback>
+          <p>Notice that we do change the value at index 2. It is incremented by 1.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>[2, 2, 1]</p>
-                </statement>
-                <feedback>
-                    <p>Notice that we do change the value at index 2.  It is incremented by 1.</p>
-                </feedback>
-            </choice>
-</choices>
+  </exercise>
+  <p>We can even use a variable that names a number as the index for an item. This sample uses <c>itemNum</c> to identify which
+    value we want from the list. As we change <c>itemNum</c>, the item we access by using it as an index changes as well:</p>
 
-    </exercise>
-        <p>We can even use a variable that names a number as the index for an item. This sample uses
-            <c>itemNum</c> to identify which value we want from the list. As we change <c>itemNum</c>, the
-            item we access by using it as an index changes as well:</p>
-
-<program xml:id="cspcollectionsintro_listindexes5" interactive="codelens" language="python">
+  <program xml:id="cspcollectionsintro_listindexes5" interactive="codelens" language="python">
     <input>
 items = [2, 4, 6, 8]
 
@@ -204,16 +204,14 @@ itemNum = itemNum + 2
 print( items[itemNum] )
 # prints items[2]
     </input>
-</program>
-        <p>This trick will come in very handy later when we write more complex logic
-            for accessing all of the items in a list.</p>
-        
-        
-        <p>Finally, just like with a string, we can find the length of a list by using the <c>len</c> function.
-            We can either use it in the same way we would use any other numeric value
-            by doing more work with it or giving the value a name to work with later:</p>
+  </program>
+  <p>This trick will come in very handy later when we write more complex logic for accessing all of the items in a list.</p>
 
-<program xml:id="cspcollectionsintro_listindexes6" interactive="codelens" language="python">
+  <p>Finally, just like with a string, we can find the length of a list by using the <c>len</c> function. We can either use
+    it in the same way we would use any other numeric value by doing more work with it or giving the value a name to
+    work with later:</p>
+
+  <program xml:id="cspcollectionsintro_listindexes6" interactive="codelens" language="python">
     <input>
 items = [2, 4, 6, 8]
 
@@ -223,6 +221,6 @@ numberOfItems = len(items)
 print( numberOfItems )
 print("The last item is at index", numberOfItems - 1 )
     </input>
-</program>
-    </section>
+  </program>
+</section>
 

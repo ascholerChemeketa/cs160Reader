@@ -1,16 +1,16 @@
 <exercises xml:id="csp-collections-continued_chapter-exercises">
-        <title>Chapter Exercises</title>
+  <title>Chapter Exercises</title>
 
-<exercise label="cspcollectionscontinued_exercises1">
+  <exercise label="cspcollectionscontinued_exercises1">
     <statement>
-        <p>Write code for the function <c>printFirst</c>. It should print the first <c>numberItems</c> from
-            <c>list</c> with one item appearing on each line.</p>
-        <p>The tests for you code will check the output - make sure not to print anything extra or
-            remove anything from the main program.</p>
+      <p>Write code for the function <c>printFirst</c>. It should print the first <c>numberItems</c> from <c>list</c> with one item appearing on
+        each line.</p>
+      <p>The tests for your code will check the output - make sure not to print anything extra or remove anything from
+        the main program.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def printFirst(numberItems, list):
     #Your code here to print the first numberItems in list
 
@@ -30,19 +30,19 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionscontinued_exercises2">
+  <exercise label="cspcollectionscontinued_exercises2">
     <statement>
-        <p>Improve your code for the <c>printFirst</c> you wrote in the previous exercise.</p>
-        <p>Before printing, make sure that <c>numberItems</c> is not greater than the length of the list.
-            If <c>numberItems</c> is OK, do the printing. If not, just print <c>"Invalid numItems"</c>.</p>
-        <p>The tests for you code will check the output - make sure not to print anything extra or
-            remove anything from the main program.</p>
+      <p>Improve your code for the <c>printFirst</c> you wrote in the previous exercise.</p>
+      <p>Before printing, make sure that <c>numberItems</c> is not greater than the length of the list. If <c>numberItems</c> is OK, do the
+        printing. If not, just print <c>"Invalid numItems"</c>.</p>
+      <p>The tests for you code will check the output - make sure not to print anything extra or remove anything from
+        the main program.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def printFirst(numberItems, list):
     #Your code here to print the first numberItems in list
 
@@ -65,20 +65,18 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionscontinued_exercises3">
+  <exercise label="cspcollectionscontinued_exercises3">
     <statement>
-        <p>We have a list of numbers that are all supposed to be 8-bit values (0-255).</p>
-        <p>Write code for the <c>fixNumbers</c> function. It should go through the <c>list</c>
-            that is passed as a parameter and change any value above 255 to 255 and any value
-            below 0 to 0.</p>
-        <p>You may want to just worry about the either fixing just the &#8220;too high&#8221; or just
-            the &#8220;too low&#8221; values first, then worry about the other category once that is working.</p>
-
+      <p>We have a list of numbers that are all supposed to be 8-bit values (0-255).</p>
+      <p>Write code for the <c>fixNumbers</c> function. It should go through the <c>list</c> that is passed as a parameter and change
+        any value above 255 to 255 and any value below 0 to 0.</p>
+      <p>You may want to first focus on either fixing just the &#8220;too high&#8221; or just the &#8220;too
+        low&#8221; values first, and then worry about the other category once that is working.</p>
     </statement>
     <program xml:id="cspcollectionscontinued_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def fixNumbers(list):
     #Your code here to limit the list values to 0-255
 
@@ -104,23 +102,20 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionscontinued_exercises4">
+  <exercise label="cspcollectionscontinued_exercises4">
     <statement>
-        <p>Write the code for <c>middleThird()</c>. It should accept a <c>list</c> as its parameter and
-            then slice the list into three equal parts (first third, middle third, last third) and
-            return the middle third.</p>
-        <p>You can assume the <c>list</c> will always be of a size that evenly divides by 3.</p>
-        <p>Hint: Indexes you use in a list slice must be integers. You can&#8217;t ask for a slice
-            <c>[2.0:4.0]</c>, just <c>[2:4]</c>. When you do division, use <c>//</c>
-            to get an integer answer instead of <c>/</c> which gives a decimal answer.</p>
-        <p>If you are having issues, first calculate the indexes you will use to make the slice
-            and print them out.</p>
+      <p>Write the code for <c>middleThird()</c>. It should accept a <c>list</c> as its parameter and then slice the list into three
+        equal parts (first third, middle third, last third) and return the middle third.</p>
+      <p>You can assume the <c>list</c> will always be of a size that evenly divides by 3.</p>
+      <p>Hint: Indexes you use in a list slice must be integers. You can&#8217;t ask for a slice <c>[2.0:4.0]</c>, just <c>[2:4]</c>.
+        When you do division, use <c>//</c> to get an integer answer instead of <c>/</c> which gives a decimal answer.</p>
+      <p>If you are having issues, first calculate the indexes you will use to make the slice and print them out.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def middleThird(list):
     # slice the list into three equal parts
     # return just the middle third
@@ -147,141 +142,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

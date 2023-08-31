@@ -1,42 +1,54 @@
 <exercises xml:id="csp-collections-intro_chapter-exercises">
-        <title>Chapter Exercises</title>
-<exercise label="cspcollectionsintro_exercises1" numbered="yes" indentation="show" language="python"><statement>
-        <p>The following program segment should iterate through the list <c>terms</c> and then add each item
-            to the list <c>vocab</c> if it is not already in <c>vocab</c>. If the word is already in <c>vocab</c>,
-            then the program should add 1 to the variable <c>duplicates</c>.</p>
-        <p>Arrange and indent the blocks correctly. You will not use them all.</p>
-</statement>
-<blocks><block order="7">
-<cline>terms = ["accent", "vertigo",</cline>
-<cline>         "libra", "illusion"]</cline>
-<cline>vocab = ["hereditary", "illusion",</cline>
-<cline>         "vertigo", "velocity", "fallacy"]</cline>
-<cline>duplicates = 0</cline>
-</block><block order="5">
-<cline>for word in terms:</cline>
-</block><block order="4">
-<cline>    if word not in vocab:</cline>
-</block><block order="3" correct="no">
-<cline>    if word not in terms: </cline>
-</block><block order="8">
-<cline>        vocab.append(word)</cline>
-</block><block order="2" correct="no">
-<cline>        word.append(vocab) </cline>
-</block><block order="6">
-<cline>    elif word in vocab:</cline>
-</block><block order="1">
-<cline>        duplicates = duplicates + 1</cline>
-</block><block order="9" correct="no">
-<cline>        duplicates + 1 </cline>
-</block></blocks></exercise>
-<exercise label="cspcollectionsintro_exercises2">
+  <title>Chapter Exercises</title>
+  <exercise label="cspcollectionsintro_exercises1" numbered="yes" indentation="show" language="python">
     <statement>
-        <p>Write code to change the first item to &#8220;February&#8221;, to add &#8220;April&#8221; between
-            &#8220;March&#8221; and &#8220;May&#8221;, and to remove &#8220;August&#8221;.</p>
+      <p>The following program segment should iterate through the list <c>terms</c> and then add each item to the list <c>vocab</c>
+        if it is not already in <c>vocab</c>. If the word is already in <c>vocab</c>, then the program should add 1 to the
+        variable <c>duplicates</c>.</p>
+      <p>Arrange and indent the blocks correctly. You will not use them all.</p>
+    </statement>
+    <blocks>
+      <block order="7">
+        <cline>terms = ["accent", "vertigo",</cline>
+        <cline> "libra", "illusion"]</cline>
+        <cline>vocab = ["hereditary", "illusion",</cline>
+        <cline> "vertigo", "velocity", "fallacy"]</cline>
+        <cline>duplicates = 0</cline>
+      </block>
+      <block order="5">
+        <cline>for word in terms:</cline>
+      </block>
+      <block order="4">
+        <cline> if word not in vocab:</cline>
+      </block>
+      <block order="3" correct="no">
+        <cline> if word not in terms: </cline>
+      </block>
+      <block order="8">
+        <cline> vocab.append(word)</cline>
+      </block>
+      <block order="2" correct="no">
+        <cline> word.append(vocab) </cline>
+      </block>
+      <block order="6">
+        <cline> elif word in vocab:</cline>
+      </block>
+      <block order="1">
+        <cline> duplicates = duplicates + 1</cline>
+      </block>
+      <block order="9" correct="no">
+        <cline> duplicates + 1 </cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="cspcollectionsintro_exercises2">
+    <statement>
+      <p>Write code to change the first item to &#8220;February&#8221;, to add &#8220;April&#8221; between
+        &#8220;March&#8221; and &#8220;May&#8221;, and to remove &#8220;August&#8221;.</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 months = ["asdf", "March", "May", "June", "August"] #do not change
 
 # your code here
@@ -55,22 +67,21 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionsintro_exercises3">
+  <exercise label="cspcollectionsintro_exercises3">
     <statement>
-        <p>Write code for the function <c>getRange</c>. It should take a list of numbers and
-            return the range (the maximum value minus the minimum value). If we have the
-            list [10, 8, 13, 20, 15], the range would be calculated as 20 - 8 and would
-            be 12.</p>
-        <p>Hint: First just worry about finding the maximum and minimum values. Once that
-            is working, getting the range will be easy.</p>
-        <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
-        <p>Use codelens and print statements for debugging!</p>
+      <p>Write code for the function <c>getRange</c>. It should take a list of numbers and return the range (the maximum value
+        minus the minimum value). If we have the list [10, 8, 13, 20, 15], the range would be calculated as 20 - 8 and
+        would be 12.</p>
+      <p>Hint: First just worry about finding the maximum and minimum values. Once that is working, getting the range
+        will be easy.</p>
+      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
+      <p>Use codelens and print statements for debugging!</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def getRange(numbers):
     # your code here
     # return the range
@@ -91,20 +102,19 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionsintro_exercises4">
+  <exercise label="cspcollectionsintro_exercises4">
     <statement>
-        <p>Write code for the function <c>freezeDays</c>. It should take a list of temperatures
-            <c>temps</c> (in degrees F) and return the number of days that were below 32 degrees.</p>
-        <p>Hint: You may want to start by printing out each temperature and a &#8220;freeze&#8221; or &#8220;no&#8221;
-            message to make sure you can identify the right temperatures. Then worry about
-            counting how many there were.</p>
-        <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
+      <p>Write code for the function <c>freezeDays</c>. It should take a list of temperatures <c>temps</c> (in degrees F) and return
+        the number of days that were below 32 degrees.</p>
+      <p>Hint: You may want to start by printing out each temperature and a &#8220;freeze&#8221; or &#8220;no&#8221;
+        message to make sure you can identify the right temperatures. Then worry about counting how many there were.</p>
+      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def freezeDays(temps):
     # your code here
     # return the final value
@@ -123,24 +133,22 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
+  </exercise>
 
-<exercise label="cspcollectionsintro_exercises5">
+  <exercise label="cspcollectionsintro_exercises5">
     <statement>
-        <p>Write code for the function <c>getGPA</c>. It should figure out the GPA for a list
-            of <c>grades</c> that looks like [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;].</p>
-        <p>To calculate the GPA, you need to add up the values of all the grades.
-            An A is 4, a B is 3, a C is 2, a D is 1, and an F is 0. Then divide by the number
-            of grades in the list.</p>
-        <p>Hint: Work on part of the problem at a time. First write some if logic that just
-            prints the correct value for each grade (4, 4, 2 for [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;]). Then worry about
-            getting the total of them. Once that is working, worry about dividing by
-            the number of items.</p>
-        <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
+      <p>Write code for the function <c>getGPA</c>. It should figure out the GPA for a list of <c>grades</c> that looks like
+        [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;].</p>
+      <p>To calculate the GPA, you need to add up the values of all the grades. An A is 4, a B is 3, a C is 2, a D is 1,
+        and an F is 0. Then divide by the number of grades in the list.</p>
+      <p>Hint: Work on part of the problem at a time. First write some if logic that just prints the correct value for
+        each grade (4, 4, 2 for [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;]). Then worry about getting the total
+        of them. Once that is working, worry about dividing by the number of items.</p>
+      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises5_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 def getGPA(grades):
     # your code here
     # return the final value
@@ -161,274 +169,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </exercises>
+  </exercise>
+
+</exercises>
 

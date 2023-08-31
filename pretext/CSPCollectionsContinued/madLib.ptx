@@ -1,26 +1,25 @@
 <section xml:id="csp-collections-continued_making-a-madlib-story">
-        <title>Making a MadLib Story</title>
-        <p>Let&#8217;s use the ranged based loop of a list to create a MadLib program. MadLibs are stories where
-            the &#8220;player&#8221; is asked to provide some words that are then incorporated into the story in
-            the hopes of creating something amusingly silly.</p>
-        <p>Our program will start with a story where some placeholder words are in ALL_CAPS. Those are
-            ones we will ask the user to fill in.</p>
-        <p>It is much easier to start with our story as one big string. But to loop through the words, looking
-            for the ones in ALL_CAPS, it will be easier to have it stored as a list where each word is an item
-            in the list. To turn the string into a list, we will use a new string function: <c>split(pattern)</c>. You
-            don&#8217;t have to worry about using it on your own, just recognize that it chops up a string into a list
-            by making cuts everywhere <c>pattern</c> is. So <c>split(" ")</c> breaks up a string at each space.</p>
-        <p>Code is written to set up the list, add code to loop through the list using a range based loop
-            and print each item from the list. Your output should have the full story, but with only one word appearing
-            on each line.</p>
+  <title>Making a MadLib Story</title>
+  <p>Let&#8217;s use the range-based loop of a list to create a MadLib program. MadLibs are stories where the
+    &#8220;player&#8221; is asked to provide some words that are then incorporated into the story in the hopes of
+    creating something amusingly silly.</p>
+  <p>Our program will start with a story where some placeholder words are in ALL_CAPS. Those are the ones we will ask the
+    user to fill in.</p>
+  <p>It is much easier to start with our story as one big string. But to loop through the words, looking for the ones in
+    ALL_CAPS, it will be easier to have it stored as a list where each word is an item in the list. To turn the string
+    into a list, we will use a new string function: <c>split(pattern)</c>. You don&#8217;t have to worry about using it on your own,
+    just recognize that it chops up a string into a list by making cuts everywhere <c>pattern</c> is. So <c>split(" ")</c> breaks up a
+    string at each space.</p>
+  <p>Code is written to set up the list, add code to loop through the list using a range-based loop and print each item
+    from the list. Your output should have the full story but with only one word appearing on each line.</p>
 
-<exercise label="cspcollectionscontinued_madlib1">
+  <exercise label="cspcollectionscontinued_madlib1">
     <statement>
-        <p>Add the loop to output each word of the story.</p>
+      <p>Add the loop to output each word of the story.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 # This string is our story
 story = "We just got back from a pizza party in TOWN where everyone got to choose their own toppings. NAME made FOOD and THING_PLURAL pizza. Kind of weird if you ask me."
 
@@ -28,7 +27,7 @@ story = "We just got back from a pizza party in TOWN where everyone got to choos
 storyList = story.split(" ")
 
 # Your code here to print out each item from storyList
-# Make sure to use a range based loop
+# Make sure to use a range-based loop
 =====
 from unittest.gui import TestCaseGui
 
@@ -40,20 +39,20 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        <p>Now let&#8217;s identify which words are in ALL_CAPS. To do that, we need to call the <c>isupper()</c> function on each
-            word. It returns <c>True</c> if the word is all upper case and <c>False</c> if it is not.</p>
+  </exercise>
+  <p>Now let&#8217;s identify which words are in ALL_CAPS. To do that, we need to call the <c>isupper()</c> function on each
+    word. It returns <c>True</c> if the word is all upper case and <c>False</c> if it is not.</p>
 
-<exercise label="cspcollectionscontinued_madlib2">
+  <exercise label="cspcollectionscontinued_madlib2">
     <statement>
-        <p>Modify your program, so instead of printing each word, you print True or False depending on if it is
-            ALL_CAPS. Do so by calling <c>isupper()</c> on each list item and printing out the result. Because each
-            item in the list is a string, you can call isupper on it by doing something like:
-            <c>storyList[index].isupper()</c>. Your output will look like a long list of FALSE, FALSE, FALSE, TRUE, etc&#8230;</p>
+      <p>Modify your program, so instead of printing each word, you print True or False depending on if it is ALL_CAPS.
+        Do so by calling <c>isupper()</c> on each list item and printing out the result. Because each item in the list is a
+        string, you can call isupper on it by doing something like: <c>storyList[index].isupper()</c>. Your output will look like a long list of
+        FALSE, FALSE, FALSE, TRUE, etc&#8230;</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib2_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 # Your code here
 =====
 from unittest.gui import TestCaseGui
@@ -67,23 +66,21 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        <p>Now we are ready to do something special each time we find an all caps word. We want to replace
-            those with user input. Because user input is slow to test, we will start by just replacing all
-            of the upper case words with the text <c>"INPUT"</c>. If we get that working, it will be one more
-            simple step to use actual user input instead of <c>"INPUT"</c>.</p>
+  </exercise>
+  <p>Now we are ready to do something special each time we find an all-caps word. We want to replace those with user
+    input. Because user input is slow to test, we will start by just replacing all of the upper case words with the text <c>"INPUT"</c>.
+    If we get that working, it will be one more simple step to use actual user input instead of <c>"INPUT"</c>.</p>
 
-<exercise label="cspcollectionscontinued_madlib3">
+  <exercise label="cspcollectionscontinued_madlib3">
     <statement>
-        <p>Modify your program to use the <c>storyList[index].isupper()</c> call in the condition of an if.
-            If <c>isupper()</c> results in True, change storyList[index] <c>"INPUT"</c>. (If <c>isupper()</c> results
-            in False, no change is needed.)</p>
-        <p>If you get stuck changing the item, look back at the mixed up code problem on the first page of this
-            chapter. It uses an if statement to decide which items to change.</p>
+      <p>Modify your program to use the <c>storyList[index].isupper()</c> call in the condition of an if. If <c>isupper()</c> results in True, change
+        storyList[index] <c>"INPUT"</c>. (If <c>isupper()</c> results in False, no change is needed.)</p>
+      <p>If you get stuck changing the item, look back at the mixed-up code problem on the first page of this chapter.
+        It uses an if statement to decide which items to change.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib3_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 # Your code here
 =====
 from unittest.gui import TestCaseGui
@@ -97,24 +94,21 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        <p>Now you should be ready to actually make your program interactive! This version
-            is not automatically checked, so make sure to run it and test it by entering
-            information. This starter code adds two lines that need to  go after your code.
-            They will turn the list back into a string using <c>string.join(list)</c> and print it out.
-            Don&#8217;t worry about remembering <c>join()</c> - just recognize that it does the opposite
-            of split - it turns a list into a string by joining together the items using the
-            string as &#8220;glue&#8221; between each item.</p>
+  </exercise>
+  <p>Now you should be ready to actually make your program interactive! This version is not automatically checked, so
+    make sure to run it and test it by entering information. This starter code adds two lines that need to go after your
+    code. They will turn the list back into a string using <c>string.join(list)</c> and print it out. Don&#8217;t worry about remembering <c>join()</c>
+    - just recognize that it does the opposite of split - it turns a list into a string by joining together the items
+    using the string as &#8220;glue&#8221; between each item.</p>
 
-<exercise label="cspcollectionscontinued_madlib4">
+  <exercise label="cspcollectionscontinued_madlib4">
     <statement>
-        <p>Modify your program so that instead of setting the all caps items to <c>= "INPUT"</c>, you set
-            them to <c>= input("Please enter " + storyList[index])</c>. You may need to change <c>index</c> to
-            <c>i</c> or something else to match the variable you are using in your loop.</p>
+      <p>Modify your program so that instead of setting the all-caps items to <c>= "INPUT"</c>, you set them to <c>= input("Please enter " + storyList[index])</c>. You may
+        need to change <c>index</c> to <c>i</c> or something else to match the variable you are using in your loop.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib4_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 # Your code here
 
 # Add these lines below your code
@@ -124,6 +118,6 @@ story = " ".join(storyList)
 print(story)
         </input>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

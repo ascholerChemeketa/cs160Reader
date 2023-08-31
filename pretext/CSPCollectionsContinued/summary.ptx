@@ -1,22 +1,20 @@
 <section xml:id="csp-collections-continued_chapter-concept-summary">
-        <title>Chapter Concept Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Index Based List Iteration</term> - To modify items in a look as we iterate through
-                    them, we need to use a counting loop where we iterate through the indexes of all
-                    of the items in the list. Given the index, we can access items to read them or
-                    to modify them.</p>
-            </li>
-            <li>
-                <p><term>List Slice</term> - We can copy part of a list by making a slice using the syntax
-                    <c>list[startIndex:endIndex]</c> The slice will be a list that contains all the
-                    item from <c>startIndex</c> up to but not including <c>endIndex</c>.
-                    We can leave <c>endIndex</c> blank to select until the end of the list.
-                    The original list will not be modfied.</p>
-            </li>
-        </ul></p>
-    </section>
+  <title>Chapter Concept Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Index Based List Iteration</term> - To modify items in a look as we iterate through them, we need to
+          use a counting loop where we iterate through the indexes of all of the items in the list. Given the index, we
+          can access items to read them or to modify them.</p>
+      </li>
+      <li>
+        <p><term>List Slice</term> - We can copy part of a list by making a slice using the syntax <c>list[startIndex:endIndex]</c> The slice
+          will be a list that contains all the item from <c>startIndex</c> up to but not including <c>endIndex</c>. We can leave <c>endIndex</c>
+          blank to select until the end of the list. The original list will not be modified.</p>
+      </li>
+    </ul>
+  </p>
+</section>
 

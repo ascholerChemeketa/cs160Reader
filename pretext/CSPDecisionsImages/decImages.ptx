@@ -1,54 +1,140 @@
-<p>
-  <raw format="html" xml:space="preserve">&lt;style&gt;
-    .flexgrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .flexgrid div {
-        flex: 1 200px;
-    }
-    .flexgrid .img-title {
-        text-align: cetner;
-    }
-&lt;/style&gt;
-&lt;div class="flexgrid hidden"&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg"&gt;
-    &lt;div class="img-title"&gt;mount_hood.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/graduates.jpg" id="graduates.jpg"&gt;
-    &lt;div class="img-title"&gt;graduates.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg"&gt;
-    &lt;div class="img-title"&gt;goalkeeper.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student1.jpg" id="student1.jpg"&gt;
-    &lt;div class="img-title"&gt;student1.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student2.jpg" id="student2.jpg"&gt;
-    &lt;div class="img-title"&gt;student2.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg"&gt;
-    &lt;div class="img-title"&gt;green_screen.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/scooter.jpg" id="scooter.jpg"&gt;
-    &lt;div class="img-title"&gt;scooter.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;
-    &lt;div class="img-title"&gt;logo.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;
-    &lt;div class="img-title"&gt;cat.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</raw>
-</p>
-    
+<section xml:id="csp-decisions-images_using-decisions-with-images">
+  <title>Using Decisions with Images</title>
+  <p>We can create image effects by conditionally executing code on pixels that meet particular criteria. In the code
+    below, we will try to change the French flag (the image on top), into the flag of Chad (bottom).</p>
+
+  <hidden>
+    <datafile label="fr-flag" filename="fr-flag.gif">
+      <image source="CSP/Images/fr-flag.gif" />
+    </datafile>
+    <datafile label="be-flag" filename="be-flag.gif">
+      <image source="CSP/Images/fr-flag.gif" />
+    </datafile>
+    <datafile label="cd-flag" filename="cd-flag.gif">
+      <image source="CSP/Images/cd-flag.gif" />
+    </datafile>
+  </hidden>
+
+  <image source="CSP/Images/fr-flag.gif" width="20%" />
+  <image source="CSP/Images/cd-flag.gif" width="20%" />
+
+  <p>To do this, we need to change just the white pixels in the image and make them yellow. This means we need a way to
+    answer the question &#8220;is this pixel white?&#8221;. A pure white pixel has red, green, and blue values all of
+    255. A not-quite-pure white may not have 255 for each of the three values, but they will all be high, and they will
+    all be very similar to each other. In comparison, a blue pixel is going to have a high blue value and low red and
+    green (potentially 0 for a &#8220;perfect&#8221; blue). A red pixel will have a high red value and low blue and
+    green ones.</p>
+  <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not always going to be
+    the right number to use, it just represents a value that is pretty close to maxed out without counting on all three
+    colors being exactly 255.</p>
+  <p>All of the white pixels need to be changed to yellow. A yellow will always have a relatively high green and red
+    value and a low blue value. A good value for the yellow in the flag is 254 red, 242 green, and 0 blue.</p>
+
+  <program xml:id="cspdecisionsimages_decimages1" interactive="activecode" language="python">
+    <input>
+from image import *
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("fr-flag.gif")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        # GET CURRENT COLOR VALUES
+        p = img.getPixel(x, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # IS IT WHITE?
+        if r &gt; 250 and g &gt; 250 and b &gt; 250:
+            # CREATE A NEW PIXEL
+            newPixel = Pixel(254, 242, 0)
+            # CHANGE THE IMAGE
+            img.setPixel(x, y, newPixel)
+
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+      </input>
+  </program>
+  <p>The Belgian flag is very similar to the Chad flag. See if you can turn the Chad flag into the Belgian one by
+    turning the blue pixels into black ones. Hint: the blue pixels are not perfect blue. An approximate color value is
+    (red = 0, green = 100, blue = 180), but you should not count on pixels having exactly those values - come up with a
+    recipee using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones.</p>
+
+  <image source="CSP/Images/be-flag.gif" width="20%" />
+
+  <program xml:id="cspdecisionsimages_decimages2" interactive="activecode" language="python">
+    <input>
+from image import *
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("cd-flag.gif")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        # GET CURRENT COLOR VALUES
+        p = img.getPixel(x, y)
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # YOUR CODE HERE
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+      </input>
+  </program>
+
+  <exercise label="cspdecisionsimages_decimages3">
+    <statement>
+
+      <p>Which recipe is reasonable for checking for &#8220;is it a blue pixel&#8221; for the flag of Chad?</p>
+
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>red &lt; 20 and green &gt; 80 and blue &gt; 150</p>
+        </statement>
+        <feedback>
+          <p>Correct, that works to select the blue but not the red or yellow.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>red &lt; 20 and green &lt; 20 and blue &gt; 200</p>
+        </statement>
+        <feedback>
+          <p>The blue in the flag has a higher green value than 20</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>red &lt; 20 and green &gt; 20 and blue &gt; 200</p>
+        </statement>
+        <feedback>
+          <p>The blue in the flag isn't actually that blue</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>red &lt; 20 and green &lt; 80 and blue &gt; 150</p>
+        </statement>
+        <feedback>
+          <p>The blue in the flag has a higher green value than 80</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+</section>
+

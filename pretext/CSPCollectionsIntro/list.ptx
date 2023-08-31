@@ -1,20 +1,19 @@
 <section xml:id="csp-collections-intro_what-is-a-list">
-        <title>What is a List?</title>
-        
-        
-        <p>A <term>list</term> is just an ordered collection of items - you probably use <term>lists</term> all the time.
-            People often  make a list before they go shopping or a list of things to do.  Although they
-            may not explicitly number the items, there is always a first thing in a list, and a second,
-            and so on:</p>
-        <figure align="center" ><caption >A shopping list</caption><image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" height="250px"/></figure>
-        <p>A <term>list</term> in Python is a collection of values. We can write a list by enclosed values in
-            <c>[</c> and <c>]</c> and separating them by commas, like <c>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</c>.
-            The values in a list can be any type of data, and can even be a mix of types of data
-            (though it is often best to avoid complicating things by mixing different types of
-            data in one list).</p>
+  <title>What is a List?</title>
 
-    <program xml:id="cspcollectionsintro_list1" interactive="activecode" language="python">
-        <input>
+  <p>A <term>list</term> is just an ordered collection of items - you probably use <term>lists</term> all the time.
+    People often make a list before they go shopping or a list of things to do. Although they may not explicitly number
+    the items, there is always a first thing in a list, and a second, and so on:</p>
+  <figure align="center">
+    <caption>A shopping list</caption>
+    <image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" height="250px" />
+  </figure>
+  <p>A <term>list</term> in Python is a collection of values. We can write a list by enclosed values in <c>[</c> and <c>]</c>
+    and separating them by commas, like <c>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</c>. The values in a list can be any type of data, and can even be a mix of
+    types of data (though it is often best to avoid complicating things by mixing different types of data in one list).</p>
+
+  <program xml:id="cspcollectionsintro_list1" interactive="activecode" language="python">
+    <input>
 numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(numberList)
 
@@ -24,12 +23,12 @@ print(nameList)
 randomList = [42, "hello", 3.14]
 print(randomList)
         </input>
-    </program>
-        <p>Recall that the <c>for</c> loop will automatically repeat code for each value in a list. That means
-            if I want to greet each name in the <c>nameList</c> I could do:</p>
+  </program>
+  <p>Recall that the <c>for</c> loop will automatically repeat code for each value in a list. That means if I want to greet
+    each name in the <c>nameList</c> I could do:</p>
 
-    <program xml:id="cspcollectionsintro_list2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspcollectionsintro_list2" interactive="activecode" language="python">
+    <input>
 nameList = ["Dora", "Rex", "Humberto", "Devon"]
 
 # Iterate through the values and call each one name
@@ -37,26 +36,35 @@ for name in nameList:
     # Do stuff with that name
     print("Greetings", name)
         </input>
-    </program>
-        <p>Putting items into a list makes it easier to process them all in a similar way without repeating
-            chunks of code multiple times. Complete this algorithm for the problem discussed on the last page
-            of finding the highest quiz score.</p>
-<exercise label="cspcollectionsintro_list3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following program should loop through all the scores and compare them to the highest
-            score we have seen so far. (When we start, the highest score we have seen is 0.) If a
-            score is higher than the highest score we have seen, we need to update the highest value.
-            When we are done looping through the scores, we will print the highest value we saw.</p>
-</statement>
-<blocks><block order="3">
-<cline>scores = [82, 95, 92, 76, 98, 84, 89, 92]</cline>
-<cline>highest = 0</cline>
-</block><block order="1">
-<cline>for score in scores:</cline>
-</block><block order="5">
-<cline>    if score &gt; highest:</cline>
-</block><block order="4">
-<cline>        highest = score</cline>
-</block><block order="2">
-<cline>print("The highest score was", highest)</cline>
-</block></blocks></exercise>    </section>
+  </program>
+  <p>Putting items into a list makes it easier to process them all without repeating chunks of code
+    multiple times. Complete this algorithm for the problem discussed on the last page of finding the highest quiz
+    score.</p>
+  <exercise label="cspcollectionsintro_list3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <statement>
+      <p>The following program should loop through all the scores and compare them to the highest score we have seen so
+        far. (When we start, the highest score we have seen is 0.) If a score is higher than the highest score we have
+        seen, we need to update the highest value. When we are done looping through the scores, we will print the
+        highest value we saw.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>scores = [82, 95, 92, 76, 98, 84, 89, 92]</cline>
+        <cline>highest = 0</cline>
+      </block>
+      <block order="1">
+        <cline>for score in scores:</cline>
+      </block>
+      <block order="5">
+        <cline> if score &gt; highest:</cline>
+      </block>
+      <block order="4">
+        <cline> highest = score</cline>
+      </block>
+      <block order="2">
+        <cline>print("The highest score was", highest)</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>
 

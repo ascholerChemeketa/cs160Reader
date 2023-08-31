@@ -1,30 +1,27 @@
 <section xml:id="csp-collections-intro_rainfall-problem">
-        <title>Rainfall Problem</title>
-        <p>Let&#8217;s imagine that you have a list that contains amounts of rainfall for each day, collected
-            by a meteorologist. We want to figure out the average rainfall from the list. However, her
-            rain gathering equipment occasionally makes a mistake and reports a negative amount for that
-            day. We have to ignore those.</p>
-        <p>We will build the program gradually in the following steps:</p>
-        <subsection xml:id="csp-collections-intro_rainfall-step-1">
-            <title>Rainfall Step 1</title>
+  <title>Rainfall Problem</title>
+  <p>Let&#8217;s imagine that you have a list that contains amounts of rainfall for each day, collected by a
+    meteorologist. We want to figure out the average rainfall from the list. However, her rain-gathering equipment
+    occasionally makes a mistake and reports a negative amount for that day. We have to ignore those.</p>
+  <p>We will build the program gradually in the following steps:</p>
+  <subsection xml:id="csp-collections-intro_rainfall-step-1">
+    <title>Rainfall Step 1</title>
 
-<exercise label="cspcollectionsintro_rainfall1">
-    <statement>
-            <p>First, lets not worry about filtering out the bad values or finding the average.
-                Let&#8217;s just calculate the total of the values in the list.</p>
-            <p>We will write the code in a function <c>getRealAvg</c> so that it is easier to test
-                with different possible lists of data - we will get a different list for each month of data,
-                so we need our program to work correctly for any list it is given. This function
-                should add all of the values in <c>rainList</c> to the variable <c>sumRain</c> which will be
-                the answer it returns.</p>
-            <p>Right now that name is not accurate because we are not calculating the average yet, but
-                it will be an appropriate name when we complete the program.</p>
-            <p>While working on the program, you may want to use codelens or print out information
-                so you can see what is happening as the code runs. You can also comment out one
-                of the two tests to focus on the other one.</p>
+    <exercise label="cspcollectionsintro_rainfall1">
+      <statement>
+        <p>First, let's not worry about filtering out the bad values or finding the average. Let&#8217;s just calculate
+          the total of the values in the list.</p>
+        <p>We will write the code in a function <c>getRealAvg</c> so that it is easier to test with different possible lists of
+          data - we will get a different list for each month of data, so we need our program to work correctly for any
+          list it is given. This function should add all of the values in <c>rainList</c> to the variable <c>sumRain</c> which will be
+          the answer it returns.</p>
+        <p>Right now that name is not accurate because we are not calculating the average yet, but it will be an
+          appropriate name when we complete the program.</p>
+        <p>While working on the program, you may want to use codelens or print out information so you can see what is
+          happening as the code runs. You can also comment out one of the two tests to focus on the other one.</p>
 
-    </statement>
-    <program xml:id="cspcollectionsintro_rainfall1_editor" interactive="activecode" language="python">
+      </statement>
+      <program xml:id="cspcollectionsintro_rainfall1_editor" interactive="activecode" language="python">
         <input>
 def getRealAvg(rainList):
     sumRain = 0
@@ -53,25 +50,24 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</exercise>
-        </subsection>
-        <subsection xml:id="csp-collections-intro_rainfall-step-2">
-            <title>Rainfall Step 2</title>
+      </program>
+    </exercise>
+  </subsection>
+  <subsection xml:id="csp-collections-intro_rainfall-step-2">
+    <title>Rainfall Step 2</title>
 
-<exercise label="cspcollectionsintro_rainfall2">
-    <statement>
-            <p>Now, let&#8217;s worry about about ONLY adding the values of the numbers that aren&#8217;t negative
-                to the total. You can copy your code from part 1 and use it to get started here. Then
-                add logic so that you only add each value to <c>sumRain</c> if it is 0 or more.</p>
-            <p>Hint: The if condition needs to be checked for each value in the list. You must nest
-                the <c>if</c> inside the <c>for</c>.</p>
-            <p>Again, use codelens or print statements to understand what your code is doing. You may
-                want to print each value that you add to the list so you can see if the right ones are
-                being included.</p>
+    <exercise label="cspcollectionsintro_rainfall2">
+      <statement>
+        <p>Now, let&#8217;s worry about about ONLY adding the values of the numbers that aren&#8217;t negative to the
+          total. You can copy your code from part 1 and use it to get started here. Then add logic so that you only add
+          each value to <c>sumRain</c> if it is 0 or more.</p>
+        <p>Hint: The if condition needs to be checked for each value in the list. You must nest the <c>if</c> inside the <c>for</c>
+          .</p>
+        <p>Again, use codelens or print statements to understand what your code is doing. You may want to print each
+          value that you add to the list so you can see if the right ones are being included.</p>
 
-    </statement>
-    <program xml:id="cspcollectionsintro_rainfall2_editor" interactive="activecode" language="python">
+      </statement>
+      <program xml:id="cspcollectionsintro_rainfall2_editor" interactive="activecode" language="python">
         <input>
 def getRealAvg(rainList):
     sumRain = 0
@@ -99,27 +95,26 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</exercise>
-        </subsection>
-        <subsection xml:id="csp-collections-intro_rainfall-step-3">
-            <title>Rainfall Step 3</title>
+      </program>
+    </exercise>
+  </subsection>
+  <subsection xml:id="csp-collections-intro_rainfall-step-3">
+    <title>Rainfall Step 3</title>
 
-<exercise label="cspcollectionsintro_rainfall3">
-    <statement>
-            <p>To get the average, we need to know how many values we have added up. If we were using
-                all of the values, we could simply do <c>len(rainList)</c>. But since we only are going
-                to use some of the values, we need to calculate how many there are.</p>
-            <p>We will make a variable <c>count</c> and use that to keep track of the number of items.
-                Add the code you have written so far to the program below. Then add code so that each
-                time you add a value to <c>sumRain</c>, you add 1 to count.</p>
-            <p>For now, we will just return the <c>count</c> so we can see if this new code is working
-                correctly. Leave the code for <c>sumRain</c> there, once we are sure the count is correct
-                we will use both values to get the average.</p>
-            <p>Again, use codelens or print statements to understand what your code is doing.</p>
+    <exercise label="cspcollectionsintro_rainfall3">
+      <statement>
+        <p>To get the average, we need to know how many values we have added up. If we were using all of the values, we
+          could simply do <c>len(rainList)</c>. But since we only are going to use some of the values, we need to calculate how many
+          there are.</p>
+        <p>We will make a variable <c>count</c> and use that to keep track of the number of items. Add the code you have
+          written so far to the program below. Then add code so that each time you add a value to <c>sumRain</c>, you add 1 to
+          count.</p>
+        <p>For now, we will just return the <c>count</c> so we can see if this new code is working correctly. Leave the code
+          for <c>sumRain</c> there, once we are sure the count is correct we will use both values to get the average.</p>
+        <p>Again, use codelens or print statements to understand what your code is doing.</p>
 
-    </statement>
-    <program xml:id="cspcollectionsintro_rainfall3_editor" interactive="activecode" language="python">
+      </statement>
+      <program xml:id="cspcollectionsintro_rainfall3_editor" interactive="activecode" language="python">
         <input>
 def getRealAvg(rainList):
     sumRain = 0
@@ -148,20 +143,19 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</exercise>
-        </subsection>
-        <subsection xml:id="csp-collections-intro_rainfall-finished">
-            <title>Rainfall Finished</title>
+      </program>
+    </exercise>
+  </subsection>
+  <subsection xml:id="csp-collections-intro_rainfall-finished">
+    <title>Rainfall Finished</title>
 
-<exercise label="cspcollectionsintro_rainfall4">
-    <statement>
-            <p>Now that we know we have the right sum and count, you can finish the function by returning
-                the average from the function. Use the code you have already written, but write new code
-                to calculate and return the average.</p>
+    <exercise label="cspcollectionsintro_rainfall4">
+      <statement>
+        <p>Now that we know we have the right sum and count, you can finish the function by returning the average from
+          the function. Use the code you have already written, but write new code to calculate and return the average.</p>
 
-    </statement>
-    <program xml:id="cspcollectionsintro_rainfall4_editor" interactive="activecode" language="python">
+      </statement>
+      <program xml:id="cspcollectionsintro_rainfall4_editor" interactive="activecode" language="python">
         <input>
 def getRealAvg(rainList):
     sumRain = 0
@@ -190,8 +184,8 @@ class myTests(TestCaseGui):
 
 myTests().main()
         </input>
-    </program>
-</exercise>
-        </subsection>
-    </section>
+      </program>
+    </exercise>
+  </subsection>
+</section>
 

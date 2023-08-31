@@ -1,54 +1,99 @@
-<p>
-  <raw format="html" xml:space="preserve">&lt;style&gt;
-    .flexgrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .flexgrid div {
-        flex: 1 200px;
-    }
-    .flexgrid .img-title {
-        text-align: cetner;
-    }
-&lt;/style&gt;
-&lt;div class="flexgrid hidden"&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg"&gt;
-    &lt;div class="img-title"&gt;mount_hood.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/graduates.jpg" id="graduates.jpg"&gt;
-    &lt;div class="img-title"&gt;graduates.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg"&gt;
-    &lt;div class="img-title"&gt;goalkeeper.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student1.jpg" id="student1.jpg"&gt;
-    &lt;div class="img-title"&gt;student1.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student2.jpg" id="student2.jpg"&gt;
-    &lt;div class="img-title"&gt;student2.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg"&gt;
-    &lt;div class="img-title"&gt;green_screen.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/scooter.jpg" id="scooter.jpg"&gt;
-    &lt;div class="img-title"&gt;scooter.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;
-    &lt;div class="img-title"&gt;logo.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;
-    &lt;div class="img-title"&gt;cat.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</raw>
-</p>
+<section xml:id="csp-decisions-images_location-based-conditions">
+  <title>Location based Conditions</title>
+  <p>We can also use conditionals and the x and y coordinates of pixels to make decisions about what pixels to process.
+    One popular graphic design technique is to make parts of an image black and white, only leaving color in the parts we
+    want to highlight. We will do this to make the graduates' faces stand out from the background in this image:</p>
     
+  <image source="CSP/Images/graduates.jpg" width="40%" /> 
+    
+  <p>First, we need to make some procedures that we will use to make a pixel gray and darken it. These procedures
+    will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an
+    existing object, there will be no new value to return. We will just update the colors of the pixel and those changes
+    will persist when the procedure is done. (Similar to how when we write a procedure that moves a turtle there is no
+    new answer to return. Changing the turtle&#8217;s location or direction in a function permanently changes it.)</p>
+  <p>Below, the code for <c>makeGray</c> is already written. Your task is to write the code for <c>darken</c> that will be used to
+    make pixels darker:</p>
+
+  <exercise label="cspdecisionsimages_locationconditions1">
+    <statement>
+      <p>Write code to implement <c>darken</c>. It should reduce all three color values (red, green, blue) of the <c>pixel</c> by
+        the parameter <c>amount</c>. But, if a color would end up with A value below 0, set it to 0 instead.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
+      <input>
+from image import *
+
+def makeGray(pixel):
+    #get the average of the three colors
+    average = (pixel.red + pixel.green + pixel.blue) / 3
+    #use that for all three colors
+    pixel.red = average
+    pixel.green = average
+    pixel.blue = average
+
+def darken(pixel, amount):
+    #Your code here to reduce each color by amount.
+    #If a color ends up less than 0, set it to 0
+    pass # &lt;--- Replace this with your code
+
+# Main part of program
+testPixel = Pixel(120, 0, 0)
+makeGray(testPixel)
+print("testPixel after makeGray:", testPixel, "should be 40,40,40")
+
+testPixel2 = Pixel(60, 40, 50)
+darken(testPixel2, 30)
+print("testPixel2 after darken by 30:", testPixel2, "should be 30,10,20")
+
+testPixel3 = Pixel(60, 40, 50)
+darken(testPixel3, 50)
+print("testPixel3 after darken by 50:", testPixel3, "should be 10,0,0")
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works")
+        self.assertEqual(str(testPixel3), "[10,0,0]", "Test that darken won't make colors negative")
+
+myTests().main()
+  </input>
+    </program>
+  </exercise>
+  <p>Now we can use a conditional to apply those only to particular pixels in the image. Start by copy/pasting <c>darken</c>
+    and <c>makeGray</c> from the program above into this program. Then examine the code inside the loop. Notice that we use a
+    conditional to apply the functions only to pixels that have a Y value of 110 or more.</p>
+
+  <program xml:id="cspdecisionsimages_locationconditions2" interactive="activecode" language="python">
+    <input>
+from image import *
+
+# PUT THE makeGray AND darken PROCEDURES HERE
+
+# Main program
+# CREATE THE IMAGES
+img1 = Image("graduates.jpg")
+
+# LOOP THROUGH ALL THE PIXELS IN IMG1
+for x in range(img1.getWidth()):
+    for y in range(img1.getHeight()):
+        currentPixel = img1.getPixel(x, y)
+
+        # TEST IF THIS PIXEL GETS CHANGED
+        if y &gt;= 110:
+            # CHANGE PIXEL AND UPDATE IMAGE
+            makeGray(currentPixel)
+            darken(currentPixel, 20)
+            img1.setPixel(x, y, currentPixel)
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img1.getWidth(), img1.getHeight())
+img1.draw(win)
+  </input>
+  </program>
+  <p>Try modifying the condition so it only leaves a rectangle of color around the students&#8217; heads and turns the rest to
+    gray. You want to say something like &#8220;if y is less than 110 or x is less than 70 or x is more than 200&#8221;.</p>
+</section>
+

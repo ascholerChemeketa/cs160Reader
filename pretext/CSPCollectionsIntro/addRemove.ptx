@@ -1,19 +1,18 @@
-<section xml:id="csp-collections-intro_adding-and-removing-items list-add-remove">
-        <title>Adding and Removing Items</title>
-        
-        
-        <p>Sometimes, we do not know all of the items in a list in advance - we want to build up A
-            list as the program is running. To do this, we can start with a blank list using <c>[]</c>
-            as our list. And then we can use <c>append</c> to add things to the end of the list.</p>
+<section xml:id="csp-collections-intro_adding-and-removing-items">
+  <title>Adding and Removing Items</title>
 
-<exercise label="cspcollectionsintro_addremove1">
+  <p>Sometimes, we do not know all of the items in a list in advance - we want to build up a list as the program is
+    running. To do this, we can start with a blank list using <c>[]</c> as our list. And then we can use <c>append</c> to add
+    things to the end of the list.</p>
+
+  <exercise label="cspcollectionsintro_addremove1">
     <statement>
-        <p>This program adds two strings to the list <c>words</c>. Add code to add the word &#8220;Carrot&#8221;
-            to the list after &#8220;Banana&#8221; but before &#8220;Date&#8221;</p>
-
+      <p>This program adds two strings to the list <c>words</c>. Add code to add the word &#8220;Carrot&#8221; to the list
+        after &#8220;Banana&#8221; but before &#8220;Date&#8221;</p>
     </statement>
+    
     <program xml:id="cspcollectionsintro_addremove1_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 words = []
 
 words.append("Apple")
@@ -35,15 +34,14 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-        
-        
-        <p>It is also possible to add items to locations other than the end of the list by using
-            the <c>insert</c> function. To use it, we provide an index of where to insert the new value with
-            the value we want to insert. Try running this sample with codelens:</p>
+  </exercise>
 
-    <program xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
-        <input>
+  <p>It is also possible to add items to locations other than the end of the list by using the <c>insert</c> function. To use
+    it, we provide an index of where to insert the new value with the value we want to insert. Try running this sample
+    with codelens:</p>
+
+  <program xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
+    <input>
 numbers = [10, 20]
 
 # Add the value 5 at location 0 (start)
@@ -54,70 +52,72 @@ print(numbers)
 numbers.insert(2, 15)
 print(numbers)
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspcollectionsintro_addremove3">
+  <exercise label="cspcollectionsintro_addremove3">
+    <statement>
+
+      <p>What happens if you use an index that does not exist to insert? Change the last insert in the sample above
+        to insert at location 200 instead of 2. What happens?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-        <p>What happens if you use an index that does not exist to insert at? Change the last insert
-            in the sample above to insert at location 200 instead of 2. What happens?</p>
-
+          <p>The item just does not get added</p>
         </statement>
-<choices>
+        <feedback>
+          <p>Try it!</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>The item just does not get added</p>
-                </statement>
-                <feedback>
-                    <p>Try it!</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>There is an error and the program stops</p>
+        </statement>
+        <feedback>
+          <p>Try it!</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>There is an error and the program stops</p>
-                </statement>
-                <feedback>
-                    <p>Try it!</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The item is added to the end of the list</p>
+        </statement>
+        <feedback>
+          <p>Correct</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The item is added to the end of the list</p>
-                </statement>
-                <feedback>
-                    <p>Correct</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>The list is extended to be long enough that there is an item index 200</p>
+        </statement>
+        <feedback>
+          <p>Try it!</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>The list is extended to be long enough that there is an item index 200</p>
-                </statement>
-                <feedback>
-                    <p>Try it!</p>
-                </feedback>
-            </choice>
-</choices>
+  </exercise>
+  <p>To remove items from a list, there are two main options:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>pop()</c> removes an item from the end of a list. (It &#8220;pops&#8221; the item off.)</p>
+      </li>
+      <li>
+        <p><c>pop(index)</c> removes an item from the specified index.</p>
+      </li>
+      <li>
+        <p><c>remove(value)</c> removes the first copy of the specified value from the list.</p>
+      </li>
+    </ul>
+  </p>
+  <p>This sample shows all three methods:</p>
 
-    </exercise>
-        <p>To remove items from a list, there are two main options:</p>
-        <p><ul>
-            <li>
-                <p><c>pop()</c> removes an item from the end of a list. (It &#8220;pops&#8221; the item off.)</p>
-            </li>
-            <li>
-                <p><c>pop(index)</c> removes an item from the specified index.</p>
-            </li>
-            <li>
-                <p><c>remove(value)</c> removes the first copy of the specified value from the list.</p>
-            </li>
-        </ul></p>
-        <p>This sample shows all three methods:</p>
-
-<program xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
+  <program xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
     <input>
 names = ["Steve", "Charlie", "Naomi", "Darcy", "Charlie"]
 
@@ -130,17 +130,18 @@ names.pop()
 #remove the first item
 names.pop(0)
     </input>
-</program>
+  </program>
 
-<exercise label="cspcollectionsintro_addremove5">
+  <exercise label="cspcollectionsintro_addremove5">
     <statement>
-        <p>We want the list called alphabet to contain the letters &#8220;A&#8221;, &#8220;B&#8221;, &#8220;C&#8221;, &#8220;D&#8221; in that order.
-            Use a combination of append, insert, remove, and pop to make it have the right values.</p>
-        <p>(Do not use <c>letters[index]</c> to change the existing items.)</p>
+      <p>We want the list called alphabet to contain the letters &#8220;A&#8221;, &#8220;B&#8221;, &#8220;C&#8221;,
+        &#8220;D&#8221; in that order. Use a combination of append, insert, remove, and pop to make it have the right
+        values.</p>
+      <p>(Do not use <c>letters[index]</c> to change the existing items.)</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_addremove5_editor" interactive="activecode" language="python">
-        <input>
+      <input>
 letters = ["A", "F", "C", "Q", "C"] #don't change this
 
 # your code here
@@ -159,29 +160,38 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-</exercise>
-<exercise label="cspcollectionsintro_addremove6" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
-        <p>The following program should make the <c>discounts</c> list contain the values of all the items
-            from <c>price_list</c> after they have been discounted by 50%. To do so, we need to loop
-            through the original prices, calculate the discounted price, then append it to the discount
-            list.</p>
-        <p>Put the blocks in the right order and indent them correctly.
-            There are some blocks you will not use.</p>
-</statement>
-<blocks><block order="3">
-<cline>price_list = [21.99, 25.99, 19.99, 10.99, 15.99]</cline>
-<cline>discounts = []</cline>
-</block><block order="2">
-<cline>for price in price_list:</cline>
-</block><block order="1">
-<cline>    new_price = price * .50</cline>
-</block><block order="7">
-<cline>    discounts.append(new_price)</cline>
-</block><block order="4">
-<cline>print(discounts)</cline>
-</block><block order="5" correct="no">
-<cline>for price in discounts: </cline>
-</block><block order="6" correct="no">
-<cline>    price.append(price_list) </cline>
-</block></blocks></exercise>    </section>
+  </exercise>
+  <exercise label="cspcollectionsintro_addremove6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>The following program should make the <c>discounts</c> list contain the values of all the items from <c>price_list</c> after they
+        have been discounted by 50%. To do so, we need to loop through the original prices, calculate the discounted
+        price, then append it to the discount list.</p>
+      <p>Put the blocks in the right order and indent them correctly. There are some blocks you will not use.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>price_list = [21.99, 25.99, 19.99, 10.99, 15.99]</cline>
+        <cline>discounts = []</cline>
+      </block>
+      <block order="2">
+        <cline>for price in price_list:</cline>
+      </block>
+      <block order="1">
+        <cline> new_price = price * .50</cline>
+      </block>
+      <block order="7">
+        <cline> discounts.append(new_price)</cline>
+      </block>
+      <block order="4">
+        <cline>print(discounts)</cline>
+      </block>
+      <block order="5" correct="no">
+        <cline>for price in discounts: </cline>
+      </block>
+      <block order="6" correct="no">
+        <cline> price.append(price_list) </cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>
 

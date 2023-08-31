@@ -1,54 +1,129 @@
-<p>
-  <raw format="html" xml:space="preserve">&lt;style&gt;
-    .flexgrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .flexgrid div {
-        flex: 1 200px;
-    }
-    .flexgrid .img-title {
-        text-align: cetner;
-    }
-&lt;/style&gt;
-&lt;div class="flexgrid hidden"&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/mount_hood.jpg" id="mount_hood.jpg"&gt;
-    &lt;div class="img-title"&gt;mount_hood.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/graduates.jpg" id="graduates.jpg"&gt;
-    &lt;div class="img-title"&gt;graduates.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/goalkeeper.jpg" id="goalkeeper.jpg"&gt;
-    &lt;div class="img-title"&gt;goalkeeper.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student1.jpg" id="student1.jpg"&gt;
-    &lt;div class="img-title"&gt;student1.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/student2.jpg" id="student2.jpg"&gt;
-    &lt;div class="img-title"&gt;student2.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/green_screen.jpg" id="green_screen.jpg"&gt;
-    &lt;div class="img-title"&gt;green_screen.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/scooter.jpg" id="scooter.jpg"&gt;
-    &lt;div class="img-title"&gt;scooter.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/logo.jpg" id="logo.jpg"&gt;
-    &lt;div class="img-title"&gt;logo.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;img src="../_static/CSPImages/cat.jpg" id="cat.jpg"&gt;
-    &lt;div class="img-title"&gt;cat.jpg&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</raw>
-</p>
-    
+<section xml:id="csp-decisions-images_posterizing">
+  <title>Posterizing</title>
+  <p>The process of changing an image so it only uses a small number of colors is known as <term>posterizing</term> (old
+    posters had to be printed with a small number of colors - the technology didn&#8217;t let one make complex blends).</p>
+  <p>This time, we need to make a function that will force a color value between 0 and 255 to become one of a few
+    specific options.</p>
+
+  <exercise label="cspdecisionsimages_posterize1">
+    <statement>
+      <p>Write code to return 0 if <c>colorValue</c> is less than 50, 125 if it is 50-124, and 255 otherwise.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode" language="python">
+      <input>
+from image import *
+
+def posterize(colorValue):
+    #Write your logic here
+
+# Main part of program
+print( posterize(20) )
+print( posterize(49) )
+print( posterize(50) )
+print( posterize(124) )
+print( posterize(200) )
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(posterize(20), 0, "posterize(20)")
+        self.assertEqual(posterize(49), 0, "posterize(49)")
+        self.assertEqual(posterize(50), 125, "posterize(50)")
+        self.assertEqual(posterize(124), 125, "posterize(124)")
+        self.assertEqual(posterize(200), 255, "posterize(200)")
+
+myTests().main()
+  </input>
+    </program>
+  </exercise>
+  <p>Now that you have that function, add it to this program to see it in action:</p>
+
+  <program xml:id="cspdecisionsimages_posterize2" interactive="activecode" language="python">
+    <input>
+from image import *
+
+# ADD YOUR FUNCTION HERE
+
+# CREATE AN IMAGE FROM A FILE
+img = Image("mount_hood.jpg")
+
+# LOOP THROUGH ALL PIXELS
+for x in range(img.getWidth()):
+    for y in range(img.getHeight()):
+        p = img.getPixel(x, y)
+
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # VALUES FOR THE NEW COLOR
+        r = posterize(r)
+        g = posterize(g)
+        b = posterize(b)
+
+        # CREATE THE COLOR
+        newPixel = Pixel(r,g,b)
+
+        # CHANGE THE IMAGE
+        img.setPixel(x, y, newPixel)
+
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
+  </input>
+  </program>
+  <p>Rewrite the code for posterizing an image using if and else rather than multiple if&#8217;s. Test that it still
+    works correctly.</p>
+
+  <exercise label="cspdecisionsimages_posterize3">
+    <statement>
+
+      <p>How many different colors are possible in our image after we posterize it using this function?</p>
+
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>8</p>
+        </statement>
+        <feedback>
+          <p>Two possible values of each of red, green, and blue (3 colors) is 2 raised to 3rd power combinations which
+            is 8.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+          <p>Two values of each of red, green, and blue is more than 3.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>120</p>
+        </statement>
+        <feedback>
+          <p>Far fewer</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>16,777,216 (= 256 * 256 * 256)</p>
+        </statement>
+        <feedback>
+          <p>That's the total number of colors possible if each channel can be 0-255. But this code reduces that.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+</section>
+
