@@ -21,7 +21,7 @@
       <publication>pretext/publication-runestone.xml</publication>
       <output-dir>published/welcomecs2</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
-      <xsl:param name="html.css.server" select="'https://computerscience.chemeketa.edu/ascholer/pretext-css" />
+      <stringparam name="html.css.server" select="'https://computerscience.chemeketa.edu/ascholer/pretext-css" />
       <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     <!-- <target name="print" pdf-method="xelatex">
