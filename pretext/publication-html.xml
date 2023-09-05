@@ -41,14 +41,15 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
   </common>
 
   <html>
-      <!-- <platform host="runestone" /> -->
-      <!-- knowled checkpoints interfere with ActiveCode problems -->
-      <knowl exercise-inline="no" example="no" listing="no" />
+    <!-- <platform host="runestone" /> -->
+    <!-- knowled checkpoints interfere with ActiveCode problems -->
+    <knowl exercise-inline="no" example="no" listing="no" />
 
-      <!-- Choices at https://github.com/PreTeXtBook/CSS_core -->
-      <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
-      darkmartiansands -->
-      <!-- <css colors="bluegreen_grey" toc="crc" banner="crc" navbar="crc" shell="crc" /> -->
+    <!-- Choices at https://github.com/PreTeXtBook/CSS_core -->
+    <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
+    darkmartiansands -->
+    <!-- <css colors="bluegreen_grey" toc="crc" banner="crc" navbar="crc" shell="crc" /> -->
+    <css colors="bluegreen_grey" style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
   </html>
 
 </publication>

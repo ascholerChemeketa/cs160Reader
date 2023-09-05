@@ -13,7 +13,7 @@
       <publication>pretext/publication-html.xml</publication>
       <output-dir>output/web</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
-      <stringparam key="html.css.extra" value="external/overrides.css"/> 
+      <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     <target name="runestone">
       <format>html</format>
@@ -21,7 +21,8 @@
       <publication>pretext/publication-runestone.xml</publication>
       <output-dir>published/welcomecs2</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
-      <stringparam key="html.css.extra" value="external/overrides.css"/> 
+      <xsl:param name="html.css.server" select="'https://computerscience.chemeketa.edu/ascholer/pretext-css" />
+      <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     <!-- <target name="print" pdf-method="xelatex">
       <format>pdf</format>
