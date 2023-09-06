@@ -22,66 +22,57 @@
     procedures, just like the turtle, string, or image objects we have seen before. Here are the functions and
     procedures that can be used to open and close files.</p>
 
-  <table xml:id="csp-python-data_filemethods1a">
-    <tabular>
+    <list xml:id="csp-python-data_filemethods1a">
+      <title>File Methods</title>
+      <dl >
+        <li>
+            <title>open</title>
+            <c>fileReference = open("filename")</c>
+            <p>Open a file called filename and use it for reading. This will return a reference to a file object. We can
+              use that reference to ask for data to be read, or to close the file.</p>
+        </li>
+        <li>
+            <title>splitlines</title>
+            <c>data = fileReference.read().splitlines()</c>
+            <p>This is actually two commands, but we will always use them together like this. <c>read</c> will read in the
+              entire file of data into one big string. <c>splitlines</c> takes that and splits it into a list - each item in the list
+              is a string that has the text of one line from the file.</p>
+        </li>
+        <li>
+            <title>close</title>
+            <c>fileReference.close()</c>
+            <p>Closes a file.</p>
+        </li>
+    </dl>
+  </list>
 
-      <row header="yes">
-        <cell> Name </cell>
-        <cell> Use </cell>
-        <cell> Explanation </cell>
-      </row>
-
-      <row>
-        <cell> open </cell>
-        <cell>
-          <c>fileReference = open("filename")</c>
-        </cell>
-        <cell> Open a file called filename and use it for reading. This will return a reference to a file object. We can
-          use that reference to ask for data to be read, or to close the file. </cell>
-      </row>
-      <row>
-        <cell> read().splitlines() </cell>
-        <cell>
-          <c>data = fileReference.read().splitlines()</c>
-        </cell>
-        <cell> This is actually two commands, but we will always use them together like this. <c>read</c> will read in the
-          entire file of data into one big string. <c>splitlines</c> takes that and splits it into a list - each item in the list
-          is a string that has the text of one line from the file. </cell>
-      </row>
-      <row>
-        <cell> close </cell>
-        <cell>
-          <c>fileReference.close()</c>
-        </cell>
-        <cell> Close a file. </cell>
-      </row>
-
-    </tabular>
-  </table>
   <p>Here is a sample of using those commands to open our file, read all the data into a list called <c>data</c>, and
     close the file. Once we have all the data, we can use a <c>for in</c> loop to iterate through all the lines in the file.
     Here we just print them out:</p>
 
   <program xml:id="csppythondata_readdata1" interactive="activecode" language="python">
     <input>
-# Open the file for reading. The reference we will use to work with it will be inFile
-inFile = open("uspoll.txt")
+      # Open the file for reading. The reference we will use to work with it will be inFile
+      inFile = open("uspoll.txt")
 
-# get all the lines of data
-data = inFile.read().splitlines()
+      # get all the lines of data
+      data = inFile.read().splitlines()
 
-# Print out the full array of data
-print(data)
-print("-------------------------------------------")
+      # Print out the full array of data
+      print(data)
+      print("-------------------------------------------")
 
-# close the file
-inFile.close()
+      # close the file
+      inFile.close()
 
-# Now process all the data by looping through the lines
-for line in data:
-    print(line)
-        </input>
+      # Now process all the data by looping through the lines
+      for line in data:
+          print(line)
+    </input>
   </program>
+
+  <note><xref ref="csp-python-data_poll-data-file" text="custom">Click here to review the uspoll.txt data file</xref>.</note>
+
   <p>To do any real work with the lines of the file, we need to break up the lines into three parts. We want to
     turn <c>"Aberdeen, SD :13 :8"</c> into a list that looks like <c>["Aberdeen, SD", "13", "8"]</c>. That will make it easier to get the location - <c>values[0]</c>, or the
     PM10 value - <c>values[1]</c>, or the PM2.5 value - <c>values[2]</c>.</p>
@@ -94,7 +85,8 @@ for line in data:
     <statement>
       <p>Currently, this program prints each city followed by its PM2.5 value. After you run it, try modifying it so it
         prints out the PM10 values instead of the PM2.5. Your output should look like this:</p>
-      <pre><p>Aberdeen, SD
+      <pre><p>
+Aberdeen, SD
  PM10: 8
 Adrian, MI
  PM10: 9
@@ -103,37 +95,37 @@ Adrian, MI
     </statement>
     <program xml:id="csppythondata_readdata2_editor" interactive="activecode" language="python">
       <input>
-# open the file for reading
-inFile = open("uspoll.txt")
+        # open the file for reading
+        inFile = open("uspoll.txt")
 
-# get all the lines of data
-data = inFile.read().splitlines()
+        # get all the lines of data
+        data = inFile.read().splitlines()
 
-# close the file
-inFile.close()
+        # close the file
+        inFile.close()
 
-# Now process all the data by looping through the lines
-for line in data:
+        # Now process all the data by looping through the lines
+        for line in data:
 
-    # create a list by splitting at the :
-    values = line.split(":")
+            # create a list by splitting at the :
+            values = line.split(":")
 
-    # get the city from the list
-    city = values[0]
+            # get the city from the list
+            city = values[0]
 
-    print(city)
-    print("  PM2.5:", values[2])
-</input>
+            print(city)
+            print("  PM2.5:", values[2])
+      </input>
       <tests>
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertIn("PM10: 13", self.getOutput().split("\n")[1], "Testing that you printed the right value for Aberdeen")
-        self.assertIn("PM10: 19", self.getOutput().split("\n")[21], "Testing that you printed the right value for Altoona")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertIn("PM10: 13", self.getOutput().split("\n")[1], "Testing that you printed the right value for Aberdeen")
+                self.assertIn("PM10: 19", self.getOutput().split("\n")[21], "Testing that you printed the right value for Altoona")
 
-myTests().main()
-        </tests>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <exercise label="csppythondata_readdata3" numbered="yes" adaptive="yes" indentation="show" language="python">

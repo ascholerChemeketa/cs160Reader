@@ -1,34 +1,34 @@
 <section xml:id="csp-python-data_chapter-concept-summary">
-        <title>Chapter Concept Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Text Files</term> - Files in which data is stored as ASCII text. Thus even numbers are stored as
-                    strings. These files are easy for humans to work with, but less efficient for computers.</p>
-            </li>
-            <li>
-                <p><term>Binary Files</term> - Files in which data is stored in its raw binary form. This is more efficient
-                    for computers to work with, but very difficult for humans to work with unless they use
-                    special tools.</p>
-            </li>
-        </ul></p>
-        <subsection xml:id="csp-python-data_summary-of-python-keywords-and-functions">
-            <title>Summary of Python Keywords and Functions</title>
-            <p><ul>
-                <li>
-                    <p><term>Close</term> - The <c>close</c> procedure closes a file after you are done processing it.</p>
-                </li>
-                <li>
-                    <p><term>Open</term> - The <c>open</c> procedure opens the passed file for either reading or writing.</p>
-                </li>
-                <li>
-                    <p><term>Split</term> - The <c>split</c> function can be called on a string to break it up at a specified
-                        character into a list of strings. For example, if <c>message = "Nora,Jones,15"</c>
-                        then <c>message.split(",")</c> would return <c>['Nora', 'Jones', '15']</c>.</p>
-                </li>
-            </ul></p>
-        </subsection>
-    </section>
+  <title>Chapter Concept Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+  <p>
+    <ul>
+      <li>
+        <p><term>Text Files</term> - Files in which data is stored as ASCII text. Thus even numbers are stored as
+          strings. These files are easy for humans to work with, but less efficient for computers.</p>
+      </li>
+      <li>
+        <p><term>Binary Files</term> - Files in which data is stored in its raw binary form. This is more efficient for
+          computers to work with, but very difficult for humans to work with unless they use special tools.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="csp-python-data_summary-of-python-keywords-and-functions">
+    <title>Summary of Python Keywords and Functions</title>
+    <p>
+      <ul>
+        <li>
+          <p><term>Close</term> - The <c>close</c> procedure closes a file after you are done processing it.</p>
+        </li>
+        <li>
+          <p><term>Open</term> - The <c>open</c> procedure opens the passed file for either reading or writing.</p>
+        </li>
+        <li>
+          <p><term>Split</term> - The <c>split</c> function can be called on a string to break it up at a specified character
+            into a list of strings. For example, if <c>message = "Nora,Jones,15"</c> then <c>message.split(",")</c> would return <c>['Nora', 'Jones', '15']</c>.</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>
 

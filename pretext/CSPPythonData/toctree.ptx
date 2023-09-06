@@ -4,14 +4,11 @@
   <xi:include href='./pythonData.ptx' />
   <xi:include href='./pollData.ptx' />
   <xi:include href='./readData.ptx' />
-
-  <!--
   <xi:include href='./largestPoll.ptx' />
   <xi:include href='./avgPoll.ptx' />
-  <xi:include href='./datastates.ptx' />
+  <xi:include href='./dataStates.ptx' />
   <xi:include href='./findPollState.ptx' />
   <xi:include href='./compareStates.ptx' />
   <xi:include href='./summary.ptx' />
   <xi:include href='./Exercises.ptx' />
-  -->
 </chapter>

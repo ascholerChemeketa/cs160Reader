@@ -8,7 +8,7 @@
     with a 13% increased risk of heart attacks.</p>
   <p>We will use just the US data. It is in a large text file that looks like this:</p>
 
-  <datafile filename="uspoll.txt" label="uspoll.txt">
+  <datafile filename="uspoll.txt" label="uspoll.txt" xml:id="csp-python-data_poll-data-file">
     <pre source="CSP/datafiles/uspoll.txt"/>
   </datafile>
 
