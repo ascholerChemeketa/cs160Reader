@@ -207,7 +207,8 @@ inFile.close()
 
 for line in data:
     #Your code here
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -217,7 +218,7 @@ class myTests(TestCaseGui):
         self.assertEqual(self.getOutput().split("\n")[66], "3-Jun-96", "Testing a mystery line.")
 
 myTests().main()
-        </input>
+</tests>
     </program>
 </exercise>
 
@@ -399,7 +400,8 @@ data = inFile.read().splitlines()
 inFile.close()
 
 #Your code here
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -408,7 +410,7 @@ class myTests(TestCaseGui):
         self.assertNotIn(self.getEditorText(), "11908.5", "Testing that you did not hard code answer.")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
 </exercise>
 
@@ -591,7 +593,8 @@ inFile.close()
 desiredYear = "92"
 
 #Your code here
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -600,7 +603,7 @@ class myTests(TestCaseGui):
         self.assertEqual(self.getOutput().split("\n")[9], "2-Mar-92", "Testing the tenth line.")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
 </exercise>
 
@@ -784,7 +787,8 @@ inFile.close()
 desiredYear = "96"
 
 #Your code here
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -793,7 +797,7 @@ class myTests(TestCaseGui):
         self.assertNotIn(self.getEditorText(), "6623.96", "Testing that you did not hard code answer.")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
 </exercise>
 
@@ -995,7 +999,8 @@ for yearNum in range(1989, 2002):
     yearsMax = maxHighForYear(year, data)
     print("Max value for", year, "was", yearsMax)
 
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -1004,7 +1009,7 @@ class myTests(TestCaseGui):
         self.assertEqual(maxHighForYear("00", data), 11908.5, "Testing answer returned for \"00\".")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
 </exercise>
 
@@ -1206,7 +1211,8 @@ for yearNum in range(1989, 2002):
     yearsMax = avgVolumeForYear(year, data)
     print("Max value for", year, "was", yearsMax)
 
-=====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -1215,7 +1221,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(avgVolumeForYear("00", data), 10688.0425, 3, "Testing answer returned for \"00\".")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
 </exercise>
         
