@@ -82,24 +82,25 @@ print("Total is", total)
     </statement>
     <program xml:id="cspcollectionscontinued_rangechange3_editor" interactive="activecode" language="python">
       <input>
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-listLength = len(numbers)
-halfway = listLength // 2   # // is integer division
+        listLength = len(numbers)
+        halfway = listLength // 2   # // is integer division
 
-for i in range(0, halfway, 1):
-    print("i is", i, "- Value at i is", numbers[i])
+        for i in range(0, halfway, 1):
+            print("i is", i, "- Value at i is", numbers[i])
 
-=====
-from unittest.gui import TestCaseGui
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(self.getOutput().split("\n")[0], "i is 4 - Value at i is 5", "Testing first line of output")
-        self.assertEqual(self.getOutput().split("\n")[3], "i is 7 - Value at i is 8", "Testing last line of output")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(self.getOutput().split("\n")[0], "i is 4 - Value at i is 5", "Testing first line of output")
+                self.assertEqual(self.getOutput().split("\n")[3], "i is 7 - Value at i is 8", "Testing last line of output")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 </section>

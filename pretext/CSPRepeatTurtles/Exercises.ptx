@@ -13,24 +13,25 @@
     </statement>
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-space = Screen()
-alisha = Turtle()
-alisha.setheading(90)
-for sides in range(4):
-    alisha.forward(100)
-    alisha.right(90)
-====
+        from turtle import *
+        space = Screen()
+        alisha = Turtle()
+        alisha.setheading(90)
+        for sides in range(4):
+            alisha.forward(100)
+            alisha.right(90)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*3\s*\):", "Testing that your new loop is correct")
-        self.assertRegex(self.getEditorText(), r"alisha\.right\(\s*120\s*\)", "Testing that your new turn is correct")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*3\s*\):", "Testing that your new loop is correct")
+                self.assertRegex(self.getEditorText(), r"alisha\.right\(\s*120\s*\)", "Testing that your new turn is correct")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -46,24 +47,25 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-space = Screen()
-steven = Turtle()
-for sides in range(8)
-    steven.forward(45)
-steven.right(50)
-====
+        from turtle import *
+        space = Screen()
+        steven = Turtle()
+        for sides in range(8)
+            steven.forward(45)
+        steven.right(50)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*\d\s*\):", "Testing that the loop syntax is fixed")
-        self.assertRegex(self.getEditorText(), r"\s{4}steven\.right", "Testing that the indentation is cleaned up")
-        self.assertRegex(self.getEditorText(), r"steven\.right\(\s*45\s*\)", "Testing that the turn is now correct")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"for \w+ in range\(\s*\d\s*\):", "Testing that the loop syntax is fixed")
+                self.assertRegex(self.getEditorText(), r"\s{4}steven\.right", "Testing that the indentation is cleaned up")
+                self.assertRegex(self.getEditorText(), r"steven\.right\(\s*45\s*\)", "Testing that the turn is now correct")
 
-myTests().main()
-        </input>
+        myTests().main()
+              </tests>
     </program>
   </exercise>
 
@@ -78,35 +80,36 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatturtles_exercises3_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-import sys
-sys.setExecutionLimit(50000)
-space = Screen()
-zoe = Turtle()
-zoe.speed(0)
+        from turtle import *
+        import sys
+        sys.setExecutionLimit(50000)
+        space = Screen()
+        zoe = Turtle()
+        zoe.speed(0)
 
-for repeats in range(20):
-zoe.forward(10)
-zoe.right(18)
+        for repeats in range(20):
+        zoe.forward(10)
+        zoe.right(18)
 
-for sides in range(5):
-zoe.forward(50)
-zoe.right(72)
-====
+        for sides in range(5):
+        zoe.forward(50)
+        zoe.right(72)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"\nfor repeats", "Testing line 8")
-        self.assertRegex(self.getEditorText(), r"\n\s{4}zoe.forward\(10", "Testing line 9")
-        self.assertRegex(self.getEditorText(), r"\n\s{4}zoe.right\(18", "Testing line 10")
-        self.assertRegex(self.getEditorText(), r"\n\s{4}for sides", "Testing line 12")
-        self.assertRegex(self.getEditorText(), r"\n\s{8}zoe.forward\(50", "Testing line 13")
-        self.assertRegex(self.getEditorText(), r"\n\s{8}zoe.right\(72", "Testing line 14")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"\nfor repeats", "Testing line 8")
+                self.assertRegex(self.getEditorText(), r"\n\s{4}zoe.forward\(10", "Testing line 9")
+                self.assertRegex(self.getEditorText(), r"\n\s{4}zoe.right\(18", "Testing line 10")
+                self.assertRegex(self.getEditorText(), r"\n\s{4}for sides", "Testing line 12")
+                self.assertRegex(self.getEditorText(), r"\n\s{8}zoe.forward\(50", "Testing line 13")
+                self.assertRegex(self.getEditorText(), r"\n\s{8}zoe.right\(72", "Testing line 14")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -210,32 +213,33 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatturtles_exercises6_editor" interactive="activecode" language="python">
       <input>
-def rectangle(turtleName, width, height):
-    for x in range(2):
-        turtleName.forward(width)
-        turtleName.left(90)
-        turtleName.forward(height)
-        turtleName.left(90)
+        def rectangle(turtleName, width, height):
+            for x in range(2):
+                turtleName.forward(width)
+                turtleName.left(90)
+                turtleName.forward(height)
+                turtleName.left(90)
 
-from turtle import *
-space = Screen()
-ralph = Turtle()
-ralph.speed(10)
+        from turtle import *
+        space = Screen()
+        ralph = Turtle()
+        ralph.speed(10)
 
-#Your code here
+        #Your code here
 
-====
-from unittest.gui import TestCaseGui
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"\nfor \w+ in range", "Testing you have a loop")
-        self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values. It must count from 90 down to 10.")
-        self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values")
-        self.assertRegex(self.getEditorText(), r"\n\s{4}rectangle\(\s*ralph", "Testing you call rectangle in the loop")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"\nfor \w+ in range", "Testing you have a loop")
+                self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values. It must count from 90 down to 10.")
+                self.assertRegex(self.getEditorText(), r"range\s*\(\s*90\s*,\s*\d\s*,\s*-10\s*\)", "Testing your loop generates the right values")
+                self.assertRegex(self.getEditorText(), r"\n\s{4}rectangle\(\s*ralph", "Testing you call rectangle in the loop")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 

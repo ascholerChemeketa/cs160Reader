@@ -45,20 +45,21 @@ ORDER BY n_trips DESC
     </statement>
     <program xml:id="sqlgroupjoin_having2_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
-SELECT
-    bike_number,
-    SUM(duration) AS total_time
-FROM
-    trip_data
-GROUP BY
-    bike_number
-ORDER BY total_time DESC
-====
-assert 0,0 == W01236
-assert 0,1 == 925
-assert 1,0 == W00053
-assert 1,1 == 537
-        </input>
+        SELECT
+            bike_number,
+            SUM(duration) AS total_time
+        FROM
+            trip_data
+        GROUP BY
+            bike_number
+        ORDER BY total_time DESC
+      </input>
+      <tests>
+        assert 0,0 == W01236
+        assert 0,1 == 925
+        assert 1,0 == W00053
+        assert 1,1 == 537
+      </tests>
     </program>
   </exercise>
 </section>

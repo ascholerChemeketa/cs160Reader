@@ -8,20 +8,21 @@
     </statement>
     <program xml:id="cspnameturtles_exercises1_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-space = screen()
-alex = Turtle
-alex.Forward(150)
-====
+        from turtle import *
+        space = screen()
+        alex = Turtle
+        alex.Forward(150)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(alex.xcor(), 150, 2, "Testing alex's x position." )
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(alex.xcor(), 150, 2, "Testing alex's x position." )
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -33,24 +34,25 @@ myTests().main()
     </statement>
     <program xml:id="cspnameturtles_exercises2_editor" interactive="activecode" language="python">
       <input>
-alex = Turtle()
-alex.forward(150)
-alex.right(90)
-from turtle import *
-alex.left(90)
-space = Screen()
-alex.forward(75)
-====
+        alex = Turtle()
+        alex.forward(150)
+        alex.right(90)
+        from turtle import *
+        alex.left(90)
+        space = Screen()
+        alex.forward(75)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(alex.xcor(), 75, 2, "Testing alex's x position." )
-        self.assertAlmostEqual(alex.ycor(), 150, 2, "Testing alex's y position." )
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(alex.xcor(), 75, 2, "Testing alex's x position." )
+                self.assertAlmostEqual(alex.ycor(), 150, 2, "Testing alex's y position." )
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -62,10 +64,10 @@ myTests().main()
     </statement>
     <program xml:id="cspnameturtles_exercises3_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-space = Screen()
-jessica = Turtle()
-        </input>
+        from turtle import *
+        space = Screen()
+        jessica = Turtle()
+      </input>
     </program>
   </exercise>
 
@@ -78,10 +80,10 @@ jessica = Turtle()
     </statement>
     <program xml:id="cspnameturtles_exercises4_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-space = Screen()
-antonio = Turtle()
-        </input>
+        from turtle import *
+        space = Screen()
+        antonio = Turtle()
+      </input>
     </program>
   </exercise>
 

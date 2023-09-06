@@ -81,37 +81,38 @@
     </statement>
     <program xml:id="cspdecisionsstrings_exercises3_editor" interactive="activecode" language="python">
       <input>
-def getTotalCost(price, location):
-    # your code here - make sure to return an answer!
+        def getTotalCost(price, location):
+            # your code here - make sure to return an answer!
 
 
-# main program
-mealPrice = int(input("What is the base meal price?"))
-mealLocation = input("Are you dining in or taking it to go?")
+        # main program
+        mealPrice = int(input("What is the base meal price?"))
+        mealLocation = input("Are you dining in or taking it to go?")
 
-# For easier testing of your function, comment out the input lines above
-# and uncomment these two lines so you don't have to type input while
-# running the program.
-#mealPrice = 10
-#mealLocation = "I want it to go please"
+        # For easier testing of your function, comment out the input lines above
+        # and uncomment these two lines so you don't have to type input while
+        # running the program.
+        #mealPrice = 10
+        #mealLocation = "I want it to go please"
 
-cost = getTotalCost(mealPrice, mealLocation)
+        cost = getTotalCost(mealPrice, mealLocation)
 
-print(cost)
+        print(cost)
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(getTotalCost(10.00, "dining in"), 10.80, 2, "Testing $10.00, 'dining in'")
-        self.assertAlmostEqual(getTotalCost(20.00, "to go"), 20.00, 2, "Testing $20.00, 'to go'")
-        self.assertAlmostEqual(getTotalCost(10.00, "I'll take it to go"), 10.00, 2, "Testing $10.00, 'I'll take it to go'")
-        self.assertAlmostEqual(getTotalCost(20.00, "I'll eat in"), 21.60, 2, "Testing $20.00, 'I'll eat in'")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(getTotalCost(10.00, "dining in"), 10.80, 2, "Testing $10.00, 'dining in'")
+                self.assertAlmostEqual(getTotalCost(20.00, "to go"), 20.00, 2, "Testing $20.00, 'to go'")
+                self.assertAlmostEqual(getTotalCost(10.00, "I'll take it to go"), 10.00, 2, "Testing $10.00, 'I'll take it to go'")
+                self.assertAlmostEqual(getTotalCost(20.00, "I'll eat in"), 21.60, 2, "Testing $20.00, 'I'll eat in'")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -125,36 +126,37 @@ myTests().main()
     </statement>
     <program xml:id="cspdecisionsstrings_exercises4_editor" interactive="activecode" language="python">
       <input>
-def getTicketCost(age):
-    # your code here - make sure to return an answer!
+        def getTicketCost(age):
+            # your code here - make sure to return an answer!
 
 
-# main program
-customerAge = int(input("How old are you?"))
+        # main program
+        customerAge = int(input("How old are you?"))
 
-# For easier testing of your function, comment out the input above
-# and uncomment this line so you don't have to type input while running:
-#customerAge = 11
+        # For easier testing of your function, comment out the input above
+        # and uncomment this line so you don't have to type input while running:
+        #customerAge = 11
 
-cost = getTicketCost(customerAge)
-print("Ticket costs", cost)
+        cost = getTicketCost(customerAge)
+        print("Ticket costs", cost)
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getTicketCost(6), 0, "Testing age 6")
-        self.assertEqual(getTicketCost(11), 0, "Testing age 11")
-        self.assertEqual(getTicketCost(13), 8, "Testing age 13")
-        self.assertEqual(getTicketCost(17), 8, "Testing age 17")
-        self.assertEqual(getTicketCost(32), 15, "Testing age 32")
-        self.assertEqual(getTicketCost(65), 0, "Testing age 65")
-        self.assertEqual(getTicketCost(80), 0, "Testing age 80")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(getTicketCost(6), 0, "Testing age 6")
+                self.assertEqual(getTicketCost(11), 0, "Testing age 11")
+                self.assertEqual(getTicketCost(13), 8, "Testing age 13")
+                self.assertEqual(getTicketCost(17), 8, "Testing age 17")
+                self.assertEqual(getTicketCost(32), 15, "Testing age 32")
+                self.assertEqual(getTicketCost(65), 0, "Testing age 65")
+                self.assertEqual(getTicketCost(80), 0, "Testing age 80")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -170,30 +172,31 @@ myTests().main()
     </statement>
     <program xml:id="cspdecisionsstrings_exercises5_editor" interactive="activecode" language="python">
       <input>
-def canGraduate(totalCredits, mathCredits):
-    # your code here - make sure to return an answer!
+        def canGraduate(totalCredits, mathCredits):
+            # your code here - make sure to return an answer!
 
 
-# main program
-isReady = canGraduate(24, 4)
-print(isReady)
+        # main program
+        isReady = canGraduate(24, 4)
+        print(isReady)
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(canGraduate(24, 4), True, "Testing 24, 4")
-        self.assertEqual(canGraduate(24, 3), True, "Testing 24, 3")
-        self.assertEqual(canGraduate(24, 2), False, "Testing 24, 2")
-        self.assertEqual(canGraduate(23, 4), True, "Testing 23, 4")
-        self.assertEqual(canGraduate(22, 4), True, "Testing 22, 4")
-        self.assertEqual(canGraduate(21, 4), False, "Testing 21, 4")
-        self.assertEqual(canGraduate(20, 1), False, "Testing 20, 1")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(canGraduate(24, 4), True, "Testing 24, 4")
+                self.assertEqual(canGraduate(24, 3), True, "Testing 24, 3")
+                self.assertEqual(canGraduate(24, 2), False, "Testing 24, 2")
+                self.assertEqual(canGraduate(23, 4), True, "Testing 23, 4")
+                self.assertEqual(canGraduate(22, 4), True, "Testing 22, 4")
+                self.assertEqual(canGraduate(21, 4), False, "Testing 21, 4")
+                self.assertEqual(canGraduate(20, 1), False, "Testing 20, 1")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 

@@ -75,12 +75,13 @@ WHERE
       database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 31606
-assert 0,1 == 40791
-assert 1,0 == 31703
-assert 1,1 == 40820
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 31606
+        assert 0,1 == 40791
+        assert 1,0 == 31703
+        assert 1,1 == 40820
+      </tests>
     </program>
   </exercise>
 </section>

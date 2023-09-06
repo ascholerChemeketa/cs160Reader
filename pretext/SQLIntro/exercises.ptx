@@ -76,14 +76,15 @@
       database="SQL/movies.db">
       <input>
 
-====
-assert 0,0 == 1957
-assert 0,1 == 12 Angry Men
-assert 1,0 == 2013
-assert 1,1 == 12 Years a Slave
-assert 99,0 == 1995
-assert 99,1 == La Haine
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 1957
+        assert 0,1 == 12 Angry Men
+        assert 1,0 == 2013
+        assert 1,1 == 12 Years a Slave
+        assert 99,0 == 1995
+        assert 99,1 == La Haine
+      </tests>
     </program>
   </exercise>
 
@@ -96,12 +97,13 @@ assert 99,1 == La Haine
       database="SQL/movies.db">
       <input>
 
-====
-assert 0,0 == 26
-assert 0,2 == Before Sunset
-assert 1,0 == 55
-assert 1,2 == Downfall
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 26
+        assert 0,2 == Before Sunset
+        assert 1,0 == 55
+        assert 1,2 == Downfall
+      </tests>
     </program>
   </exercise>
 
@@ -114,10 +116,11 @@ assert 1,2 == Downfall
       database="SQL/movies.db">
       <input>
 
-====
-assert 1,2 == A Beautiful Mind
-assert 5,2 == Back to the Future
-        </input>
+      </input>
+      <tests>
+        assert 1,2 == A Beautiful Mind
+        assert 5,2 == Back to the Future
+      </tests>
     </program>
   </exercise>
 
@@ -132,10 +135,11 @@ assert 5,2 == Back to the Future
       database="SQL/movies.db">
       <input>
 
-====
-assert 0,2 == 2001: A Space Odyssey
-assert 2,2 == Alien
-        </input>
+      </input>
+      <tests>
+        assert 0,2 == 2001: A Space Odyssey
+        assert 2,2 == Alien
+      </tests>
     </program>
   </exercise>
 
@@ -148,10 +152,11 @@ assert 2,2 == Alien
       database="SQL/movies.db">
       <input>
 
-====
-assert 0,2 == Alien
-assert 4,2 == Butch Cassidy and the Sundance Kid
-        </input>
+      </input>
+      <tests>
+        assert 0,2 == Alien
+        assert 4,2 == Butch Cassidy and the Sundance Kid
+      </tests>
     </program>
   </exercise>
 
@@ -165,12 +170,13 @@ assert 4,2 == Butch Cassidy and the Sundance Kid
       database="SQL/movies.db">
       <input>
 
-====
-assert 1,0 == The Godfather
-assert 1,1 == 1972
-assert 6,0 == Schindler's List
-assert 6,1 == 1993
-        </input>
+      </input>
+      <tests>
+        assert 1,0 == The Godfather
+        assert 1,1 == 1972
+        assert 6,0 == Schindler's List
+        assert 6,1 == 1993
+      </tests>
     </program>
   </exercise>
 
@@ -184,12 +190,13 @@ assert 6,1 == 1993
       database="SQL/movies.db">
       <input>
 
-====
-assert 0,0 == 12 Years a Slave
-assert 0,1 == 2013
-assert 5,0 == Toy Story
-assert 5,1 == 1995
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 12 Years a Slave
+        assert 0,1 == 2013
+        assert 5,0 == Toy Story
+        assert 5,1 == 1995
+      </tests>
     </program>
   </exercise>
 </section>

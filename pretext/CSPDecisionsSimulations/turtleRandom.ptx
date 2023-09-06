@@ -80,66 +80,67 @@ drawSquare(becca, squareSize)
     </statement>
     <program xml:id="cspdecisionssimulations_turtlerandom3_editor" interactive="activecode" language="python">
       <input>
-def changeColor(turtleName, red, green, blue):
-    # red, green, blue should all be values between 0 and 255
-    # changes them to a hexadecimal format like #FF3C28 and sets turtleName color with that
-    redPart = hex(red)          # will look like 0xFF
-    redPart = redPart[2:]       # only keep the FF part
-    bluePart = hex(blue)        # same for blue and green
-    bluePart = bluePart[2:]
-    greenPart = hex(green)
-    greenPart = greenPart[2:]
+        def changeColor(turtleName, red, green, blue):
+            # red, green, blue should all be values between 0 and 255
+            # changes them to a hexadecimal format like #FF3C28 and sets turtleName color with that
+            redPart = hex(red)          # will look like 0xFF
+            redPart = redPart[2:]       # only keep the FF part
+            bluePart = hex(blue)        # same for blue and green
+            bluePart = bluePart[2:]
+            greenPart = hex(green)
+            greenPart = greenPart[2:]
 
-    colorValue = "#" + redPart + greenPart + bluePart
-    print("colorValue is", colorValue)
+            colorValue = "#" + redPart + greenPart + bluePart
+            print("colorValue is", colorValue)
 
-    turtleName.fillcolor(colorValue)
+            turtleName.fillcolor(colorValue)
 
 
-def drawSquare(turtleName, size):
-    turtleName.begin_fill()
-    for side in range(4):
-        turtleName.forward(size)
-        turtleName.right(90)
-    turtleName.end_fill()
+        def drawSquare(turtleName, size):
+            turtleName.begin_fill()
+            for side in range(4):
+                turtleName.forward(size)
+                turtleName.right(90)
+            turtleName.end_fill()
 
-# -------------------------------------------------
-# main part of program
-from turtle import *
-import random
-becca = Turtle()
-becca.speed(0)
+        # -------------------------------------------------
+        # main part of program
+        from turtle import *
+        import random
+        becca = Turtle()
+        becca.speed(0)
 
-#pick a random starting location
-becca.penup()
-startX = random.randrange(-190, 1)
-startY = random.randrange(0, 191)
-becca.goto(startX, startY)
-becca.pendown()
+        #pick a random starting location
+        becca.penup()
+        startX = random.randrange(-190, 1)
+        startY = random.randrange(0, 191)
+        becca.goto(startX, startY)
+        becca.pendown()
 
-# TODO - Make red, green, blue be random values between 0 and 255
+        # TODO - Make red, green, blue be random values between 0 and 255
 
-changeColor(becca, red, green, blue)
+        changeColor(becca, red, green, blue)
 
-#pick a random size and draw square
-squareSize = random.randrange(50, 200)
-drawSquare(becca, squareSize)
-=====
+        #pick a random size and draw square
+        squareSize = random.randrange(50, 200)
+        drawSquare(becca, squareSize)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
-import re
+        from unittest.gui import TestCaseGui
+        import re
 
-class myTests(TestCaseGui):
-    def countCopies(self, regex):
-        matches = re.findall(regex, self.getEditorText())
-        return len(matches)
+        class myTests(TestCaseGui):
+            def countCopies(self, regex):
+                matches = re.findall(regex, self.getEditorText())
+                return len(matches)
 
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"random.randrange\(\s*0\s*,\s*25[56]\s*\)", "Testing that you make a random number 0-255 using randrange.")
-        self.assertEqual(self.countCopies("random.randrange\(\s*0\s*,\s*25[56]\s*\)"), 3, "Testing that you made three random numbers 0-255.")
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"random.randrange\(\s*0\s*,\s*25[56]\s*\)", "Testing that you make a random number 0-255 using randrange.")
+                self.assertEqual(self.countCopies("random.randrange\(\s*0\s*,\s*25[56]\s*\)"), 3, "Testing that you made three random numbers 0-255.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 </section>

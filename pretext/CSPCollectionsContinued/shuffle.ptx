@@ -52,24 +52,25 @@
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle1_editor" interactive="activecode" language="python">
         <input>
-import random
-deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+          import random
+          deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-# Your code here
-=====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
-        self.assertRegex(self.getEditorText(), r"cutPoint.*=.*", "Testing that have cutPoint and initialize it")
-        self.assertRegex(self.getEditorText(), r"top.*=.*", 'Testing that you have a "top" variable')
-        self.assertRegex(self.getEditorText(), r"deck\[\s*0\s*:\s*cutPoint\s*\]", 'Testing that make the "top" cut correctly')
-        self.assertRegex(self.getEditorText(), r"bottom.*=.*", 'Testing that you have a "bottom" variable')
-        self.assertRegex(self.getEditorText(), r"deck\[\s*cutPoint\s*:.*\]", 'Testing that make the "bottom" cut')
-
-myTests().main()
+          # Your code here
         </input>
+        <tests>
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
+                  self.assertRegex(self.getEditorText(), r"cutPoint.*=.*", "Testing that have cutPoint and initialize it")
+                  self.assertRegex(self.getEditorText(), r"top.*=.*", 'Testing that you have a "top" variable')
+                  self.assertRegex(self.getEditorText(), r"deck\[\s*0\s*:\s*cutPoint\s*\]", 'Testing that make the "top" cut correctly')
+                  self.assertRegex(self.getEditorText(), r"bottom.*=.*", 'Testing that you have a "bottom" variable')
+                  self.assertRegex(self.getEditorText(), r"deck\[\s*cutPoint\s*:.*\]", 'Testing that make the "bottom" cut')
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
     <p>At this point, your program should print out a deck where part of the back has been moved to the front. So
@@ -90,19 +91,20 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle2_editor" interactive="activecode" language="python">
         <input>
-import random
-deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+          import random
+          deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-# Your code here
-=====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range based loop.")
-
-myTests().main()
+          # Your code here
         </input>
+        <tests>
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range based loop.")
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
 
@@ -185,24 +187,25 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle4_editor" interactive="activecode" language="python">
         <input>
-import random
-deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+          import random
+          deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-# Your code here
-=====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
-        self.assertRegex(self.getEditorText(), r"selectIndex.*=.*", "Testing that have selectIndex and initialize it")
-        self.assertRegex(self.getEditorText(), r"removed.*=.*", "Testing that have removed and initialize it")
-        self.assertRegex(self.getEditorText(), r"\[\s*selectIndex\s*\]", "Testing that you access item selectIndex from the deck")
-        self.assertRegex(self.getEditorText(), r"deck.pop\(\s*selectIndex\s*\)", 'Testing that you call remove on the deck and remove selectIndex')
-        self.assertRegex(self.getEditorText(), r"deck.append\(\s*removed\s*\)", 'Testing that you call append on the deck and append removed')
-
-myTests().main()
+          # Your code here
         </input>
+        <tests>
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
+                  self.assertRegex(self.getEditorText(), r"selectIndex.*=.*", "Testing that have selectIndex and initialize it")
+                  self.assertRegex(self.getEditorText(), r"removed.*=.*", "Testing that have removed and initialize it")
+                  self.assertRegex(self.getEditorText(), r"\[\s*selectIndex\s*\]", "Testing that you access item selectIndex from the deck")
+                  self.assertRegex(self.getEditorText(), r"deck.pop\(\s*selectIndex\s*\)", 'Testing that you call remove on the deck and remove selectIndex')
+                  self.assertRegex(self.getEditorText(), r"deck.append\(\s*removed\s*\)", 'Testing that you call append on the deck and append removed')
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
     <p>Now we will repeat the process. Since we are only moving one card at a time, doing 10 repetitions probably
@@ -222,19 +225,20 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle5_editor" interactive="activecode" language="python">
         <input>
-import random
-deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+          import random
+          deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-# Your code here
-=====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range-based loop.")
-
-myTests().main()
+          # Your code here
         </input>
+        <tests>
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range-based loop.")
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
 

@@ -1,13 +1,12 @@
 <section xml:id="csp-decisions-intro_functions-that-make-decisions">
-        <title>Functions that make Decisions</title>
-        <p>Using <c>if</c> is essential for writing functions or procedures that need to make decisions.
-            Say we want a function that calculates the cost to print pages in a library computer lab.
-            The library charges $0.10 per page for up to 30 pages. If the number of pages is over 30,
-            they charge $3.00 plus $0.05 per page over 30. The <c>costForPrints</c> function in the
-            program below implements that logic.</p>
+  <title>Functions that make Decisions</title>
+  <p>Using <c>if</c> is essential for writing functions or procedures that need to make decisions. Say we want a function
+    that calculates the cost to print pages in a library computer lab. The library charges $0.10 per page for up to 30
+    pages. If the number of pages is over 30, they charge $3.00 plus $0.05 per page over 30. The <c>costForPrints</c> function in the
+    program below implements that logic.</p>
 
-    <program xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
+    <input>
 def costForPrints(numberPages):
     # Assume number is &lt; 30
     cost = numberPages * 0.10
@@ -24,45 +23,45 @@ print( "10 prints costs", costForPrints(10) )
 print( "30 prints costs", costForPrints(30) )
 print( "40 prints costs", costForPrints(40) )
         </input>
-    </program>
-        <p>Notice an additional advantage of putting our logic into a function (instead of at the top level of
-            our program) - it is easier to use the code multiple times.
-            In this case, it allows us to test how the <c>if</c> works for various values. We can call the function
-            multiple times and pass different values for each function call. If we don&#8217;t use a function,
-            we can only test one value each time we run the program.</p>
+  </program>
+  <p>Notice an additional advantage of putting our logic into a function (instead of at the top level of our program) -
+    it is easier to use the code multiple times. In this case, it allows us to test how the <c>if</c> works for various
+    values. We can call the function multiple times and pass different values for each function call. If we don&#8217;t
+    use a function, we can only test one value each time we run the program.</p>
 
-<exercise label="cspdecisionsintro_iffunctions2">
+  <exercise label="cspdecisionsintro_iffunctions2">
     <statement>
-        <p>Write the code for the function <c>cabCost</c>. It should calculate and return the cost a cab
-            ride. If the distance traveled is less than or equal to 12 miles the cost is $2.00
-            a mile, and if the distance traveled is more than 12 miles the cost is $1.50 a mile.</p>
+      <p>Write the code for the function <c>cabCost</c>. It should calculate and return the cost a cab ride. If the distance
+        traveled is less than or equal to 12 miles the cost is $2.00 a mile, and if the distance traveled is more than
+        12 miles the cost is $1.50 a mile.</p>
 
     </statement>
     <program xml:id="cspdecisionsintro_iffunctions2_editor" interactive="activecode" language="python">
-        <input>
-def cabCost(miles):
-    # Your code here
+      <input>
+        def cabCost(miles):
+            # Your code here
 
-# main part of program
-cost1 = cabCost(10)
-print(cost1)
-cost2 = cabCost(12)
-print(cost2)
-cost3 = cabCost(20)
-print(cost3)
-=====
+        # main part of program
+        cost1 = cabCost(10)
+        print(cost1)
+        cost2 = cabCost(12)
+        print(cost2)
+        cost3 = cabCost(20)
+        print(cost3)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(cabCost(10), 20.0, 3, "Testing that you got the right value for cabCost(10).")
-        self.assertAlmostEqual(cabCost(12), 24.0, 3, "Testing that you got the right value for cabCost(12).")
-        self.assertAlmostEqual(cabCost(20), 30.0, 3, "Testing that you got the right value for cabCost(20).")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(cabCost(10), 20.0, 3, "Testing that you got the right value for cabCost(10).")
+                self.assertAlmostEqual(cabCost(12), 24.0, 3, "Testing that you got the right value for cabCost(12).")
+                self.assertAlmostEqual(cabCost(20), 30.0, 3, "Testing that you got the right value for cabCost(20).")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

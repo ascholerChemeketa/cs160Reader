@@ -170,34 +170,35 @@ print("highestRoll was", highestRoll)
     </statement>
     <program xml:id="cspdecisionssimulations_exercises5_editor" interactive="activecode" language="python">
       <input>
-from turtle import *
-import random
-drew = Turtle()
-drew.shape("circle")
+        from turtle import *
+        import random
+        drew = Turtle()
+        drew.shape("circle")
 
-#set starting location
-drew.penup()
-drew.goto(0, 0)
-drew.pendown()
+        #set starting location
+        drew.penup()
+        drew.goto(0, 0)
+        drew.pendown()
 
-#set up the color and size
-drew.pensize(50)
-drew.color("#ffc8c8")
+        #set up the color and size
+        drew.pensize(50)
+        drew.color("#ffc8c8")
 
-#draw the dot
-drew.forward(0)
+        #draw the dot
+        drew.forward(0)
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"random.randrange\(\s*-100,\s*10[01]\s*\)", "Testing that you make a random number between -100 and 100.")
-        self.assertRegex(self.getEditorText(), r"random.randrange\(\s*50,\s*20[01]\s*\)", "Testing that you make a random number between 50 and 200.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"random.randrange\(\s*-100,\s*10[01]\s*\)", "Testing that you make a random number between -100 and 100.")
+                self.assertRegex(self.getEditorText(), r"random.randrange\(\s*50,\s*20[01]\s*\)", "Testing that you make a random number between 50 and 200.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -214,37 +215,38 @@ myTests().main()
     </statement>
     <program xml:id="cspdecisionssimulations_exercises6_editor" interactive="activecode" language="python">
       <input>
-import random
+        import random
 
-def getOddsFor(targetNumber):
-    # matches will hold the number of times you "roll" the targetNumber
-    matches = 0
+        def getOddsFor(targetNumber):
+            # matches will hold the number of times you "roll" the targetNumber
+            matches = 0
 
-    # TODO
-    # 10000 times:
-        # make two random numbers 1-6
-        # if they add to targetNumber, increase matches by 1
+            # TODO
+            # 10000 times:
+                # make two random numbers 1-6
+                # if they add to targetNumber, increase matches by 1
 
-    # calculate and return percent of time roll matched targetNumber
-    return matches / 10000
+            # calculate and return percent of time roll matched targetNumber
+            return matches / 10000
 
-# main program
-print("Testing 8's, expect 0.13889", getOddsFor(8))
-print("Testing 5's, expect 0.1111", getOddsFor(5))
-print("Testing 12's, expect 0.0277", getOddsFor(12))
+        # main program
+        print("Testing 8's, expect 0.13889", getOddsFor(8))
+        print("Testing 5's, expect 0.1111", getOddsFor(5))
+        print("Testing 12's, expect 0.0277", getOddsFor(12))
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(getOddsFor(8), 0.13888, 2, "Testing that you got about the right answer for 8.")
-        self.assertAlmostEqual(getOddsFor(5), 0.11111, 2, "Testing that you got about the right answer for 5.")
-        self.assertAlmostEqual(getOddsFor(12), 0.02777, 2, "Testing that you got about the right answer for 12.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(getOddsFor(8), 0.13888, 2, "Testing that you got about the right answer for 8.")
+                self.assertAlmostEqual(getOddsFor(5), 0.11111, 2, "Testing that you got about the right answer for 5.")
+                self.assertAlmostEqual(getOddsFor(12), 0.02777, 2, "Testing that you got about the right answer for 12.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 

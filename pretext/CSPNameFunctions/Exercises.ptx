@@ -8,24 +8,25 @@
     </statement>
     <program xml:id="cspnamefunctions_exercises1_editor" interactive="activecode" language="python">
       <input>
-def recPerimeter(length, width):
-perimeter = 2 * (length + width)
-Return recPerimeter
+        def recPerimeter(length, width):
+        perimeter = 2 * (length + width)
+        Return recPerimeter
 
-# Main program
-result = recPerimeter(2, 4)
-print(result)
-=====
+        # Main program
+        result = recPerimeter(2, 4)
+        print(result)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(result, 12, "Testing that result has the correct value." )
-        self.assertNotIn("12", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(result, 12, "Testing that result has the correct value." )
+                self.assertNotIn("12", self.getEditorText(), "Testing that you didn't hardcode the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -38,25 +39,26 @@ myTests().main()
     </statement>
     <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
       <input>
-def areaTriangle():
-    base = 5
-    height = 4
-    return (5 * 4) / 2
+        def areaTriangle():
+            base = 5
+            height = 4
+            return (5 * 4) / 2
 
-# Main program. Do not modify the lines below
-print(areaTriangle(5, 4))
-print(areaTriangle(6, 3))
-=====
+        # Main program. Do not modify the lines below
+        print(areaTriangle(5, 4))
+        print(areaTriangle(6, 3))
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(self.getOutput().strip(), "10.0\n9.0", "Testing that your program prints the right answers." )
-        self.assertRegex(self.getEditorText(), r"\nprint\(areaTriangle\(5, 4\)\)\nprint\(areaTriangle\(6, 3\)\)", "Testing that you still have the starter main program")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(self.getOutput().strip(), "10.0\n9.0", "Testing that your program prints the right answers." )
+                self.assertRegex(self.getEditorText(), r"\nprint\(areaTriangle\(5, 4\)\)\nprint\(areaTriangle\(6, 3\)\)", "Testing that you still have the starter main program")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -74,26 +76,27 @@ myTests().main()
     </statement>
     <program xml:id="cspnamefunctions_exercises3_editor" interactive="activecode" language="python">
       <input>
-# Your code here
+        # Your code here
 
-# Main program. Do not modify lines below
-number = 150            #number to figure out the square root of
-guess1 = 10             #initial guess
-guess2 = approximateSqrt(number, guess1)
-guess3 = approximateSqrt(number, guess2)
-guess4 = approximateSqrt(number, guess3)
-print(guess4)
-=====
+        # Main program. Do not modify lines below
+        number = 150            #number to figure out the square root of
+        guess1 = 10             #initial guess
+        guess2 = approximateSqrt(number, guess1)
+        guess3 = approximateSqrt(number, guess2)
+        guess4 = approximateSqrt(number, guess3)
+        print(guess4)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(guess4, 12.2474489, 3, "Testing that you got the right value for guess4.")
-        self.assertNotRegex(self.getEditorText(), r"12\.24", "Testing that you did not hard code the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(guess4, 12.2474489, 3, "Testing that you got the right value for guess4.")
+                self.assertNotRegex(self.getEditorText(), r"12\.24", "Testing that you did not hard code the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 

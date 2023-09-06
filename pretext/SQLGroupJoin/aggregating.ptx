@@ -29,9 +29,10 @@ FROM
       database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 5575
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 5575
+      </tests>
     </program>
   </exercise>
   <p><c>COUNT</c> is one of the aggregation functions provided by SQL. <term>Aggregation</term> is the process of combining
@@ -83,9 +84,10 @@ FROM
       database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 1174.9783650671766
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 1174.9783650671766
+      </tests>
     </program>
   </exercise>
   <p>You use <c>WHERE</c> filtering with aggregating functions. The query below calculates the longest trip duration just for
@@ -111,9 +113,10 @@ WHERE
       database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 5009
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 5009
+      </tests>
     </program>
   </exercise>
   <subsection xml:id="sql-group-join_counting-unique-values">
@@ -141,9 +144,10 @@ FROM
         database="SQL/bikeshare.db">
         <input>
 
-====
-assert 0,0 == 140
         </input>
+        <tests>
+          assert 0,0 == 140
+        </tests>
       </program>
     </exercise>
   </subsection>

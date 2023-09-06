@@ -149,10 +149,11 @@ GROUP BY
     <program xml:id="sqlgroupjoin_grouping5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == W00069
-assert 0,1 == 705
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == W00069
+        assert 0,1 == 705
+      </tests>
     </program>
   </exercise>
 </section>

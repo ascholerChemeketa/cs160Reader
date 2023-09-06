@@ -13,26 +13,27 @@
     
     <program xml:id="cspcollectionsintro_addremove1_editor" interactive="activecode" language="python">
       <input>
-words = []
+        words = []
 
-words.append("Apple")
-print(words)
+        words.append("Apple")
+        print(words)
 
-words.append("Banana")
-print(words)
+        words.append("Banana")
+        print(words)
 
-words.append("Date")
-print(words)
-=====
+        words.append("Date")
+        print(words)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(words, ["Apple", "Banana", "Carrot", "Date"], "Testing that you added Carrot")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(words, ["Apple", "Banana", "Carrot", "Date"], "Testing that you added Carrot")
 
-myTests().main()
-        </input>
+        myTests().main()
+        </tests>
     </program>
   </exercise>
 
@@ -142,23 +143,23 @@ names.pop(0)
     </statement>
     <program xml:id="cspcollectionsintro_addremove5_editor" interactive="activecode" language="python">
       <input>
-letters = ["A", "F", "C", "Q", "C"] #don't change this
+        letters = ["A", "F", "C", "Q", "C"] #don't change this
 
-# your code here
+        # your code here
 
-print(letters)
-=====
+        print(letters)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-from unittest.gui import TestCaseGui
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(letters, ["A", "B", "C", "D"], "Testing that you have the right list")
+                self.assertNotIn("[", "".join(self.getEditorText().split("\n")[1:]), "Testing that you didn't use [ ].")
+                self.assertEqual(self.getEditorText().split("\n")[0], 'letters = ["A", "F", "C", "Q", "C"] #don\'t change this', "Testing that you did not change the first line")
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(letters, ["A", "B", "C", "D"], "Testing that you have the right list")
-        self.assertNotIn("[", "".join(self.getEditorText().split("\n")[1:]), "Testing that you didn't use [ ].")
-        self.assertEqual(self.getEditorText().split("\n")[0], 'letters = ["A", "F", "C", "Q", "C"] #don\'t change this', "Testing that you did not change the first line")
-
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <exercise label="cspcollectionsintro_addremove6" numbered="yes" adaptive="yes" indentation="hide" language="python">

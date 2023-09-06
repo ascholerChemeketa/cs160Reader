@@ -9,21 +9,22 @@
     </statement>
     <program xml:id="csprepeatnumbers_exercises1_editor" interactive="activecode" language="python">
       <input>
-sum = _____________
-for number in _____________:
-    sum = sum + _____________
-print(sum)
+        sum = _____________
+        for number in _____________:
+            sum = sum + _____________
+        print(sum)
 
-====
-from unittest.gui import TestCaseGui
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(sum, 165, "Testing that you got the right sum")
-        self.assertNotRegex(self.getEditorText(), "165", "Testing that you did not hard code the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(sum, 165, "Testing that you got the right sum")
+                self.assertNotRegex(self.getEditorText(), "165", "Testing that you did not hard code the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -38,22 +39,23 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatnumbers_exercises2_editor" interactive="activecode" language="python">
       <input>
-sum = _____________
+        sum = _____________
 
-# More code here
+        # More code here
 
-print(sum)
+        print(sum)
 
-====
-from unittest.gui import TestCaseGui
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(sum, 385, "Testing that you got the right sum")
-        self.assertNotRegex(self.getEditorText(), "385", "Testing that you did not hard code the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(sum, 385, "Testing that you got the right sum")
+                self.assertNotRegex(self.getEditorText(), "385", "Testing that you did not hard code the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <exercise label="csprepeatnumbers_exercises3" numbered="yes" indentation="show" language="python">
@@ -79,29 +81,30 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatnumbers_exercises4_editor" interactive="activecode" language="python">
       <input>
-def digitsIn(number):
-    digits = 0
+        def digitsIn(number):
+            digits = 0
 
-    # add code here!
-    #while the number is greater than 0
-    #    set the number to the number divided by 10 (use // to divide)
-    #    add one to the number of digits
+            # add code here!
+            #while the number is greater than 0
+            #    set the number to the number divided by 10 (use // to divide)
+            #    add one to the number of digits
 
-    return digits
+            return digits
 
-print( "Should be 3 digits in 294", digitsIn(294) )
-print( "Should be 5 digits in 83163", digitsIn(83163) )
-====
-from unittest.gui import TestCaseGui
+        print( "Should be 3 digits in 294", digitsIn(294) )
+        print( "Should be 5 digits in 83163", digitsIn(83163) )
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(digitsIn(8), 1, "Testing digitsIn(8) is equal to 1")
-        self.assertEqual(digitsIn(294), 3, "Testing digitsIn(294) is equal to 3")
-        self.assertEqual(digitsIn(1234), 4, "Testing digitsIn(1234) is equal to 4")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(digitsIn(8), 1, "Testing digitsIn(8) is equal to 1")
+                self.assertEqual(digitsIn(294), 3, "Testing digitsIn(294) is equal to 3")
+                self.assertEqual(digitsIn(1234), 4, "Testing digitsIn(1234) is equal to 4")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -129,27 +132,28 @@ myTests().main()
     </statement>
     <program xml:id="csprepeatnumbers_exercises5_editor" interactive="activecode" language="python">
       <input>
-money = 0
-invest_per_month = 300
-months = 0
+        money = 0
+        invest_per_month = 300
+        months = 0
 
-# TODO
-# repeat WHILE the money is less than 50000
-#    gain 0.5% interest to the money (set money to itself times 1.005)
-#    add the invest_per_month to the money
-#    increase the months by 1
+        # TODO
+        # repeat WHILE the money is less than 50000
+        #    gain 0.5% interest to the money (set money to itself times 1.005)
+        #    add the invest_per_month to the money
+        #    increase the months by 1
 
-print(months)
-====
-from unittest.gui import TestCaseGui
+        print(months)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(months, 122, "Testing you calculated the right answer.")
-        self.assertNotRegex(self.getEditorText(), "122", "Testing that you did not hard code the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(months, 122, "Testing you calculated the right answer.")
+                self.assertNotRegex(self.getEditorText(), "122", "Testing that you did not hard code the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 

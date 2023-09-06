@@ -32,35 +32,36 @@
     </statement>
     <program xml:id="cspdecisionsimages_combineimages1_editor" interactive="activecode" language="python">
       <input>
-from image import *
+        from image import *
 
-def isGreen(r, g, b):
-    #Write your logic here
+        def isGreen(r, g, b):
+            #Write your logic here
 
-# Main part of program
-# These three should be considered green
-print( isGreen(59, 165, 119) )
-print( isGreen(47, 142, 102) )
-print( isGreen(60, 220, 125) )
-# These should not be considered green
-print( isGreen(200, 200, 200) ) # gray
-print( isGreen(180, 180, 0) )   # dark yellow
-print( isGreen(200, 0, 200) )   # aqua
-=====
+        # Main part of program
+        # These three should be considered green
+        print( isGreen(59, 165, 119) )
+        print( isGreen(47, 142, 102) )
+        print( isGreen(60, 220, 125) )
+        # These should not be considered green
+        print( isGreen(200, 200, 200) ) # gray
+        print( isGreen(180, 180, 0) )   # dark yellow
+        print( isGreen(200, 0, 200) )   # aqua
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(isGreen(59, 165, 144), True, "Testing 59, 165, 144.")
-        self.assertEqual(isGreen(47, 142, 102), True, "Testing 47, 142, 102.")
-        self.assertEqual(isGreen(190, 220, 125), True, "Testing 190, 220, 125.")
-        self.assertEqual(isGreen(200, 200, 200), False, "Testing 200, 200, 200.")
-        self.assertEqual(isGreen(180, 180, 0), False, "Testing 180, 180, 0.")
-        self.assertEqual(isGreen(200, 0, 200), False, "Testing 200, 0, 200.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(isGreen(59, 165, 144), True, "Testing 59, 165, 144.")
+                self.assertEqual(isGreen(47, 142, 102), True, "Testing 47, 142, 102.")
+                self.assertEqual(isGreen(190, 220, 125), True, "Testing 190, 220, 125.")
+                self.assertEqual(isGreen(200, 200, 200), False, "Testing 200, 200, 200.")
+                self.assertEqual(isGreen(180, 180, 0), False, "Testing 180, 180, 0.")
+                self.assertEqual(isGreen(200, 0, 200), False, "Testing 200, 0, 200.")
 
-myTests().main()
-  </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Once you get that working, you can bopy and paste it into the program below. It will load the two pictures, with

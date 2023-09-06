@@ -115,37 +115,38 @@ else:
     </statement>
     <program xml:id="cspdecisionsintro_eliftricks4_editor" interactive="activecode" language="python">
         <input>
-def tempDescription(temp):
-    # Your code here
+          def tempDescription(temp):
+              # Your code here
 
-# main part of program
-description1 = tempDescription(85)
-print( description1 )
-description2 = tempDescription(75)
-print( description2 )
-description3 = tempDescription(65)
-print( description3 )
-description4 = tempDescription(42)
-print( description4 )
-description5 = tempDescription(70)
-print( description5 ) # should be Cool
-description6 = tempDescription(80)
-print( description6 ) # should be Warm
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(tempDescription(85), "Hot", "Testing that you return \"Hot\" for 85.")
-        self.assertEqual(tempDescription(75), "Warm", "Testing that you return \"Warm\" for 75.")
-        self.assertEqual(tempDescription(65), "Cool", "Testing that you return \"Cool\" for 65.")
-        self.assertEqual(tempDescription(42), "Cold", "Testing that you return \"Cold\" for 42.")
-        self.assertEqual(tempDescription(70), "Cool", "Testing that you return \"Cool\" for 70.")
-        self.assertEqual(tempDescription(80), "Warm", "Testing that you return \"Warm\" for 80.")
-
-myTests().main()
+          # main part of program
+          description1 = tempDescription(85)
+          print( description1 )
+          description2 = tempDescription(75)
+          print( description2 )
+          description3 = tempDescription(65)
+          print( description3 )
+          description4 = tempDescription(42)
+          print( description4 )
+          description5 = tempDescription(70)
+          print( description5 ) # should be Cool
+          description6 = tempDescription(80)
+          print( description6 ) # should be Warm
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertEqual(tempDescription(85), "Hot", "Testing that you return \"Hot\" for 85.")
+                  self.assertEqual(tempDescription(75), "Warm", "Testing that you return \"Warm\" for 75.")
+                  self.assertEqual(tempDescription(65), "Cool", "Testing that you return \"Cool\" for 65.")
+                  self.assertEqual(tempDescription(42), "Cold", "Testing that you return \"Cold\" for 42.")
+                  self.assertEqual(tempDescription(70), "Cool", "Testing that you return \"Cool\" for 70.")
+                  self.assertEqual(tempDescription(80), "Warm", "Testing that you return \"Warm\" for 80.")
+
+          myTests().main()
+        </tests>
     </program>
 </exercise>
     </section>

@@ -36,37 +36,38 @@ def distance(x1, y1, x2, y2):
     </statement>
     <program xml:id="cspnamefunctions_functionscallingfunctions1_editor" interactive="activecode" language="python">
       <input>
-def distance(x1, y1, x2, y2):
-    xDifference = x2 - x1
-    yDifference = y2 - y1
-    distance = math.sqrt( xDifference ** 2 + yDifference ** 2 )
-    return distance
+        def distance(x1, y1, x2, y2):
+            xDifference = x2 - x1
+            yDifference = y2 - y1
+            distance = math.sqrt( xDifference ** 2 + yDifference ** 2 )
+            return distance
 
-# Main program
-import math
-point1x = 0
-point1y = 0
-point2x = 6
-point2y = 2
-point3x = 1
-point3y = 3
+        # Main program
+        import math
+        point1x = 0
+        point1y = 0
+        point2x = 6
+        point2y = 2
+        point3x = 1
+        point3y = 3
 
-sideA = distance(point1x, point1y, point2x, point2y)
-print(sideA)
-sideB = distance(point2x, point2y, point3x, point3y)
-print(sideB)
-# Your test here
-====
+        sideA = distance(point1x, point1y, point2x, point2y)
+        print(sideA)
+        sideB = distance(point2x, point2y, point3x, point3y)
+        print(sideB)
+        # Your test here
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(sideC, 3.16227766, 3, "Testing that you printed the right length for sideC.")
-        self.assertNotRegex(self.getEditorText(), "3\.16", "Testing that you did not hard code the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertAlmostEqual(sideC, 3.16227766, 3, "Testing that you printed the right length for sideC.")
+                self.assertNotRegex(self.getEditorText(), "3\.16", "Testing that you did not hard code the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 </section>

@@ -12,31 +12,32 @@
     </statement>
     <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode" language="python">
       <input>
-from image import *
+        from image import *
 
-def posterize(colorValue):
-    #Write your logic here
+        def posterize(colorValue):
+            #Write your logic here
 
-# Main part of program
-print( posterize(20) )
-print( posterize(49) )
-print( posterize(50) )
-print( posterize(124) )
-print( posterize(200) )
-=====
+        # Main part of program
+        print( posterize(20) )
+        print( posterize(49) )
+        print( posterize(50) )
+        print( posterize(124) )
+        print( posterize(200) )
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(posterize(20), 0, "posterize(20)")
-        self.assertEqual(posterize(49), 0, "posterize(49)")
-        self.assertEqual(posterize(50), 125, "posterize(50)")
-        self.assertEqual(posterize(124), 125, "posterize(124)")
-        self.assertEqual(posterize(200), 255, "posterize(200)")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(posterize(20), 0, "posterize(20)")
+                self.assertEqual(posterize(49), 0, "posterize(49)")
+                self.assertEqual(posterize(50), 125, "posterize(50)")
+                self.assertEqual(posterize(124), 125, "posterize(124)")
+                self.assertEqual(posterize(200), 255, "posterize(200)")
 
-myTests().main()
-  </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Now that you have that function, add it to this program to see it in action:</p>

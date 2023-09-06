@@ -1,315 +1,316 @@
 <exercises xml:id="csp-repeat-images_chapter-exercises">
   <title>Chapter Exercises</title>
 
-<exercise label="csprepeatimages_exercises1">
-<statement>
-  <p>Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.</p>
-  <p>Hint: If your program runs out of time while it is running, it is probably because you are redrawing the
-      window as you change each pixel. You should only draw the window one time!</p>
+  <exercise label="csprepeatimages_exercises1">
+    <statement>
+      <p>Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.</p>
+      <p>Hint: If your program runs out of time while it is running, it is probably because you are redrawing the window
+        as you change each pixel. You should only draw the window one time!</p>
 
-</statement>
-<program xml:id="csprepeatimages_exercises1_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
+    </statement>
+    <program xml:id="csprepeatimages_exercises1_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
 
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
 
-# STEP 3: LOOP THROUGH THE PIXELS
-pixels = img.getPixels()
-for p in pixels:
-
-# STEP 4: GET THE DATA
-r = p.getRed()
-g = p.getGreen()
-b = p.getBlue()
-
-# STEP 5: MODIFY THE COLOR
-p.setRed(g)
-p.setGreen(b)
-p.setBlue(r)
-
-# STEP 6: UPDATE THE IMAGE
-img.updatePixel(p)
-
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 4)
-        self.assertEqual(testPixel.getRed(), 111, "Testing you set right red value for a particular pixel")
-        self.assertEqual(testPixel.getGreen(), 180, "Testing you set right green value for a particular pixel")
-        self.assertEqual(testPixel.getBlue(), 71, "Testing you set right blue value for a particular pixel")
-
-myTests().main()
-  </input>
-</program>
-</exercise>
-
-<exercise label="csprepeatimages_exercises2">
-<statement>
-  <p>Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to 0.</p>
-  
-
-</statement>
-<program xml:id="csprepeatimages_exercises2_editor" interactive="activecode" language="python">
-  <input>
-from image import
-
-# CREATE AN IMAGE FROM A FILE
-img = Image("mount_hood.jpg)
-
-# LOOP THROUGH THE PIXELS
-pixelList = img.getPixels()
-for p in pixelList:
-
-    # SET THE GREEN TO 0
-    p.setGreen()
-
-    # UPDATE THE IMAGE
-    img.updatePixel()
-
-# SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 4)
-        self.assertEqual(testPixel.getGreen(), 0, "Testing you set right red value for a particular pixel")
-
-myTests().main()
-  </input>
-</program>
-</exercise>
-
-<exercise label="csprepeatimages_exercises3">
-<statement>
-  <p>Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel ends up 1/2 of what it used to be.</p>
-  
-</statement>
-<program xml:id="csprepeatimages_exercises3_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
-
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
-
-# STEP 3: LOOP THROUGH THE PIXELS
-pixels = img.getPixels();
-for p
-
-    # STEP 4: GET THE DATA
-    b = p.
-
-    # STEP 5: MODIFY THE COLOR
-    p.setBlue(b * 0.5);
-
-    # STEP 6: UPDATE THE IMAGE
-    img.
-
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 4)
-        self.assertEqual(testPixel.getBlue(), 90, "Testing you set right blue value for a particular pixel")
-
-myTests().main()
-  </input>
-</program>
-</exercise>
-
-<exercise label="csprepeatimages_exercises4">
-<statement>
-  <p>Fix the indention below to correctly so that the red and green values for each pixel are set to be the
-      same as its blue value. This should make a black &amp; white version of the image.</p>
- 
-</statement>
-<program xml:id="csprepeatimages_exercises4_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
-
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
-
-# STEP 3: LOOP THROUGH THE PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
+        # STEP 3: LOOP THROUGH THE PIXELS
+        pixels = img.getPixels()
+        for p in pixels:
 
         # STEP 4: GET THE DATA
-        p = img.getPixel(x, y)
         r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
 
         # STEP 5: MODIFY THE COLOR
-        p.setGreen(r)
+        p.setRed(g)
+        p.setGreen(b)
         p.setBlue(r)
 
         # STEP 6: UPDATE THE IMAGE
         img.updatePixel(p)
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 4)
-        self.assertEqual(testPixel.getRed(), 71, "Testing you set right red value for a particular pixel")
-        self.assertEqual(testPixel.getGreen(), 71, "Testing you set right green value for a particular pixel")
-        self.assertEqual(testPixel.getBlue(), 71, "Testing you set right blue value for a particular pixel")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 4)
+                self.assertEqual(testPixel.getRed(), 111, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel.getGreen(), 180, "Testing you set right green value for a particular pixel")
+                self.assertEqual(testPixel.getBlue(), 71, "Testing you set right blue value for a particular pixel")
 
-myTests().main()
-  </input>
-</program>
-</exercise>
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
 
-<exercise label="csprepeatimages_exercises5">
-<statement>
-  <p>Write code that for each pixel, adds the <c>y</c> value of its location to the red. You will have to use the
-      nested-loop approach to iterating through all of the pixels so that you have access to the
-      x and y coordinates of the pixel you are working with.</p>
+  <exercise label="csprepeatimages_exercises2">
+    <statement>
+      <p>Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to 0.</p>
+
+    </statement>
+    <program xml:id="csprepeatimages_exercises2_editor" interactive="activecode" language="python">
+      <input>
+        from image import
+
+        # CREATE AN IMAGE FROM A FILE
+        img = Image("mount_hood.jpg)
+
+        # LOOP THROUGH THE PIXELS
+        pixelList = img.getPixels()
+        for p in pixelList:
+
+            # SET THE GREEN TO 0
+            p.setGreen()
+
+            # UPDATE THE IMAGE
+            img.updatePixel()
+
+        # SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 4)
+                self.assertEqual(testPixel.getGreen(), 0, "Testing you set right red value for a particular pixel")
+
+        myTests().main()
+        </tests>
+    </program>
+  </exercise>
+
+  <exercise label="csprepeatimages_exercises3">
+    <statement>
+      <p>Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel ends up 1/2 of what
+        it used to be.</p>
+
+    </statement>
+    <program xml:id="csprepeatimages_exercises3_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
+
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
+
+        # STEP 3: LOOP THROUGH THE PIXELS
+        pixels = img.getPixels();
+        for p
+
+            # STEP 4: GET THE DATA
+            b = p.
+
+            # STEP 5: MODIFY THE COLOR
+            p.setBlue(b * 0.5);
+
+            # STEP 6: UPDATE THE IMAGE
+            img.
+
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 4)
+                self.assertEqual(testPixel.getBlue(), 90, "Testing you set right blue value for a particular pixel")
+
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
+
+  <exercise label="csprepeatimages_exercises4">
+    <statement>
+      <p>Fix the indention below to correctly so that the red and green values for each pixel are set to be the same as
+        its blue value. This should make a black &amp; white version of the image.</p>
+
+    </statement>
+    <program xml:id="csprepeatimages_exercises4_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
+
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
+
+        # STEP 3: LOOP THROUGH THE PIXELS
+        for x in range(img.getWidth()):
+            for y in range(img.getHeight()):
+
+                # STEP 4: GET THE DATA
+                p = img.getPixel(x, y)
+                r = p.getRed()
+
+                # STEP 5: MODIFY THE COLOR
+                p.setGreen(r)
+                p.setBlue(r)
+
+                # STEP 6: UPDATE THE IMAGE
+                img.updatePixel(p)
+
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 4)
+                self.assertEqual(testPixel.getRed(), 71, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel.getGreen(), 71, "Testing you set right green value for a particular pixel")
+                self.assertEqual(testPixel.getBlue(), 71, "Testing you set right blue value for a particular pixel")
+
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
+
+  <exercise label="csprepeatimages_exercises5">
+    <statement>
+      <p>Write code that for each pixel, adds the <c>y</c> value of its location to the red. You will have to use the
+        nested-loop approach to iterating through all of the pixels so that you have access to the x and y coordinates
+        of the pixel you are working with.</p>
+
+    </statement>
+    <program xml:id="csprepeatimages_exercises5_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
+
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
+
+        # STEP 3: LOOP THROUGH THE PIXELS
 
 
-</statement>
-<program xml:id="csprepeatimages_exercises5_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
-
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
-
-# STEP 3: LOOP THROUGH THE PIXELS
+            # STEP 4: GET THE DATA
 
 
-    # STEP 4: GET THE DATA
+            # STEP 5: MODIFY THE COLOR
 
 
-    # STEP 5: MODIFY THE COLOR
+            # STEP 6: UPDATE THE IMAGE
 
 
-    # STEP 6: UPDATE THE IMAGE
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 40)
+                testPixel2 = img.getPixel(3, 42)
+                self.assertEqual(testPixel.getRed(), 129, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel2.getRed(), 132, "Testing you set right red value for a particular pixel")
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 40)
-        testPixel2 = img.getPixel(3, 42)
-        self.assertEqual(testPixel.getRed(), 129, "Testing you set right red value for a particular pixel")
-        self.assertEqual(testPixel2.getRed(), 132, "Testing you set right red value for a particular pixel")
+  <exercise label="csprepeatimages_exercises6">
+    <statement>
+      <p>Write code that blacks out the top half of the image by setting just the pixels in the top half to have a color
+        value of 0, 0, 0. You will have to use the nested-loop approach and only visit the pixels in the top half.</p>
+      <p>Remember to use <c>//</c> when dividing the width or height so that you don&#8217;t get a decimal (float) answer.</p>
 
-myTests().main()
-  </input>
-</program>
-</exercise>
+    </statement>
+    <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
 
-<exercise label="csprepeatimages_exercises6">
-<statement>
-  <p>Write code that blacks out the top half of the image by setting just the pixels in the top half to have
-      a color value of 0, 0, 0. You will have to use the nested-loop approach and only visit the pixels in the
-      top half.</p>
-  <p>Remember to use <c>//</c> when dividing the width or height so that you don&#8217;t get a decimal (float) answer.</p>
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
 
+        # STEP 3: LOOP THROUGH THE PIXELS
+        pixels = img.getPixels();
 
-</statement>
-<program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
+            # STEP 4: GET THE DATA
 
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
+            # STEP 5: MODIFY THE COLOR
 
-# STEP 3: LOOP THROUGH THE PIXELS
-pixels = img.getPixels();
+            # STEP 6: UPDATE THE IMAGE
 
-    # STEP 4: GET THE DATA
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-    # STEP 5: MODIFY THE COLOR
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 99)
+                testPixel2 = img.getPixel(3, 100)
+                self.assertEqual(testPixel.getRed(), 0, "Testing you blacked out pixels in the top half")
+                self.assertEqual(testPixel2.getRed(), 144, "Testing you did not black out the bottom half")
 
-    # STEP 6: UPDATE THE IMAGE
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
+  <exercise label="csprepeatimages_exercises7">
+    <statement>
+      <p>Write code top copy the top half of the image to the bottom half. You should end up with something that has two
+        copies of the top of mount hood.</p>
+      <p>You must use loops that track x and y locations to loop through all of the possible x,y pairs. Then use <c>getPixel</c>
+        and <c>setPixel</c> to copy from <term>x, y</term> to <term>x, y + half the height of the image</term>.</p>
+      <p>Hint: You saw a program to make a mirror image of the top half of an image. This is pretty similar&#8230;</p>
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 99)
-        testPixel2 = img.getPixel(3, 100)
-        self.assertEqual(testPixel.getRed(), 0, "Testing you blacked out pixels in the top half")
-        self.assertEqual(testPixel2.getRed(), 144, "Testing you did not black out the bottom half")
+    </statement>
+    <program xml:id="csprepeatimages_exercises7_editor" interactive="activecode" language="python">
+      <input>
+        # STEP 1: USE THE IMAGE LIBRARY
+        from image import *
 
-myTests().main()
-  </input>
-</program>
-</exercise>
+        # STEP 2: PICK THE IMAGE
+        img = Image("mount_hood.jpg")
 
-<exercise label="csprepeatimages_exercises7">
-<statement>
-  <p>Write code top copy the top half of the image to the bottom half. You should end
-      up with something that has two copies of the top of mount hood.</p>
-  <p>You must use loops that track x and y locations to loop through all of the
-      possible x,y pairs. Then use <c>getPixel</c> and <c>setPixel</c> to copy
-      from <term>x, y</term> to <term>x, y + half the height of the image</term>.</p>
-  <p>Hint: You saw a program to make a mirror image of the top half of an image.
-      This is pretty similar&#8230;</p>
+            # STEP 3: LOOP THROUGH THE PIXELS
 
+            # STEP 4: GET THE DATA
 
-</statement>
-<program xml:id="csprepeatimages_exercises7_editor" interactive="activecode" language="python">
-  <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
+            # STEP 6: UPDATE THE IMAGE
 
-# STEP 2: PICK THE IMAGE
-img = Image("mount_hood.jpg")
+        # STEP 7: SHOW THE RESULT
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-    # STEP 3: LOOP THROUGH THE PIXELS
+        class myTests(TestCaseGui):
+            def testOne(self):
+                testPixel = img.getPixel(3, 5)
+                testPixel2 = img.getPixel(3, 105)
+                self.assertEqual(testPixel.getRed(), testPixel2.getRed(), "Testing you copied from top half to bottom half.")
 
-    # STEP 4: GET THE DATA
-
-    # STEP 6: UPDATE THE IMAGE
-
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        testPixel = img.getPixel(3, 5)
-        testPixel2 = img.getPixel(3, 105)
-        self.assertEqual(testPixel.getRed(), testPixel2.getRed(), "Testing you copied from top half to bottom half.")
-
-myTests().main()
-  </input>
-</program>
-</exercise>
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
 </exercises>
 

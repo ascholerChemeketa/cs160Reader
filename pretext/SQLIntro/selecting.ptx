@@ -71,14 +71,15 @@ FROM
     <program xml:id="sqlintro_selecting3_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 31104
-assert 0,1 == 31200
-assert 1,0 == 31230
-assert 1,1 == 31620
-assert 99,0 == 31224
-assert 99,1 == 31221
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 31104
+        assert 0,1 == 31200
+        assert 1,0 == 31230
+        assert 1,1 == 31620
+        assert 99,0 == 31224
+        assert 99,1 == 31221
+      </tests>
     </program>
   </exercise>
 </section>

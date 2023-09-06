@@ -1,6 +1,6 @@
 <section xml:id="csp-collections-continued_iterating-with-indexes">
   <title>Iterating with Indexes</title>
-  <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c> syntax. But there are
+  <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c> syntax. However, there are
     limitations to that approach. What if we want to iterate through only part of the list? What if we want to iterate
     through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can&#8217;t do any of
     these.</p>
@@ -66,27 +66,28 @@ print(names)
     </statement>
     <program xml:id="cspcollectionscontinued_rangeloop4_editor" interactive="activecode" language="python">
       <input>
-numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
+        numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
 
-# Your code here
-=====
-from unittest.gui import TestCaseGui
+        # Your code here
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(numbers[0], 6, "Testing numbers[0]")
-        self.assertEqual(numbers[5], 10, "Testing numbers[5]")
-        self.assertEqual(numbers[9], 18, "Testing numbers[9]")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(numbers[0], 6, "Testing numbers[0]")
+                self.assertEqual(numbers[5], 10, "Testing numbers[5]")
+                self.assertEqual(numbers[9], 18, "Testing numbers[9]")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <exercise label="cspcollectionscontinued_rangeloop5" numbered="yes" adaptive="yes" indentation="show"
     language="python">
     <statement>
-      <p>The following program should loop through all the items in <c>list</c>. Any values that are negative should be
-        changed to be 0. After the negative items have been replaced, we want to print the list.</p>
+      <p>The following program should loop through all the items in <c>list</c>. Any negative values should be
+        changed to 0. After the negative items have been replaced, we want to print the list.</p>
       <p>Arrange and indent the blocks correctly. You will not use them all.</p>
     </statement>
     <blocks>

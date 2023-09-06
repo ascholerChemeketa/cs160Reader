@@ -42,37 +42,38 @@ else:
     </statement>
     <program xml:id="cspdecisionsstrings_instring2_editor" interactive="activecode" language="python">
       <input>
-def getSeason(monthName):
-    monthName = monthName.lower()
-    season = ""
-    if "dec" in monthName or "jan" in monthName or "feb" in monthName:
-        season = "Winter"
-    # add code for other seasons
-    # mar, apr, may are Spring
-    # jun, jul, aug are Summer
-    # sep, oct, nov are Fall
-    # for anything else, set the seson to "???"
+        def getSeason(monthName):
+            monthName = monthName.lower()
+            season = ""
+            if "dec" in monthName or "jan" in monthName or "feb" in monthName:
+                season = "Winter"
+            # add code for other seasons
+            # mar, apr, may are Spring
+            # jun, jul, aug are Summer
+            # sep, oct, nov are Fall
+            # for anything else, set the seson to "???"
 
-    return season
+            return season
 
-print("April is in ", getSeason("April"))
-print("aug is in ", getSeason("aug"))
-print("October is in ", getSeason("October"))
-print("July is in ", getSeason("July"))
-print("Novuary is in ", getSeason("Novuary"))
-=====
+        print("April is in ", getSeason("April"))
+        print("aug is in ", getSeason("aug"))
+        print("October is in ", getSeason("October"))
+        print("July is in ", getSeason("July"))
+        print("Novuary is in ", getSeason("Novuary"))
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getSeason("nov"), "Fall", "Testing nov.")
-        self.assertEqual(getSeason("February"), "Winter", "Testing February.")
-        self.assertEqual(getSeason("june"), "Summer", "Testing june.")
-        self.assertEqual(getSeason("thermidor"), "???", "Testing default.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(getSeason("nov"), "Fall", "Testing nov.")
+                self.assertEqual(getSeason("February"), "Winter", "Testing February.")
+                self.assertEqual(getSeason("june"), "Summer", "Testing june.")
+                self.assertEqual(getSeason("thermidor"), "???", "Testing default.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Another common need is to check how long a string is. The <c>len()</c> function can be used to ask for the length of a

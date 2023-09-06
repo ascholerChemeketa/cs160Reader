@@ -12,25 +12,26 @@
     </statement>
     <program xml:id="cspdecisionsintro_exercises1_editor" interactive="activecode" language="python">
         <input>
-weight = 0.5
-if weight &lt; 2:
-price = 1.50
-if weight &gt;= 2:
-price = 1.30
-    total = weight * price
-print(total)
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(weight, 3, "Testing that weight is 3.")
-        self.assertEqual(price, 1.3, "Testing that price is correct.")
-        self.assertAlmostEqual(total, 3.9, 2, "Testing the total is correct.")
-
-myTests().main()
+          weight = 0.5
+          if weight &lt; 2:
+          price = 1.50
+          if weight &gt;= 2:
+          price = 1.30
+              total = weight * price
+          print(total)
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertEqual(weight, 3, "Testing that weight is 3.")
+                  self.assertEqual(price, 1.3, "Testing that price is correct.")
+                  self.assertAlmostEqual(total, 3.9, 2, "Testing the total is correct.")
+
+          myTests().main()
+      </tests>
     </program>
 </exercise>
 
@@ -47,29 +48,30 @@ myTests().main()
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises2_editor" interactive="activecode" language="python">
-        <input>
-def isEven(number):
-    # Your code here
+      <input>
+        def isEven(number):
+            # Your code here
 
-# main part of program
-print( isEven(3) )
-print( isEven(9) )
-print( isEven(11) )
-print( isEven(131) )
-print( isEven(12) )
-print( isEven(8) )
-print( isEven(126) )
-=====
+        # main part of program
+        print( isEven(3) )
+        print( isEven(9) )
+        print( isEven(11) )
+        print( isEven(131) )
+        print( isEven(12) )
+        print( isEven(8) )
+        print( isEven(126) )
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(isEven(31), False, "Testing a mystery odd number.")
-        self.assertEqual(isEven(6), True, "Testing a mystery even number.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(isEven(31), False, "Testing a mystery odd number.")
+                self.assertEqual(isEven(6), True, "Testing a mystery even number.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
 </exercise>
 
@@ -84,28 +86,29 @@ myTests().main()
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises3_editor" interactive="activecode" language="python">
-        <input>
-def calculatePay(hours, hourlyPay):
-    # Your code here
+      <input>
+        def calculatePay(hours, hourlyPay):
+            # Your code here
 
-# main part of program
-print( calculatePay(30, 15) )
-print( calculatePay(40, 12) )
-print( calculatePay(50, 18) )
-print( calculatePay(60, 20) )
-=====
+        # main part of program
+        print( calculatePay(30, 15) )
+        print( calculatePay(40, 12) )
+        print( calculatePay(50, 18) )
+        print( calculatePay(60, 20) )
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(calculatePay(30, 15), 450.0, "Testing calculatePay(30, 15).")
-        self.assertEqual(calculatePay(40, 12), 480.0, "Testing calculatePay(40, 12).")
-        self.assertEqual(calculatePay(50, 18), 990.0, "Testing calculatePay(50, 18).")
-        self.assertEqual(calculatePay(60, 20), 1400.0, "Testing calculatePay(60, 20).")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(calculatePay(30, 15), 450.0, "Testing calculatePay(30, 15).")
+                self.assertEqual(calculatePay(40, 12), 480.0, "Testing calculatePay(40, 12).")
+                self.assertEqual(calculatePay(50, 18), 990.0, "Testing calculatePay(50, 18).")
+                self.assertEqual(calculatePay(60, 20), 1400.0, "Testing calculatePay(60, 20).")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
 </exercise>
 
@@ -122,34 +125,35 @@ myTests().main()
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises4_editor" interactive="activecode" language="python">
-        <input>
-def getClass(credits):
-    classLevel = "Unknown"
-    # Your code here
-    return classLevel
+      <input>
+        def getClass(credits):
+            classLevel = "Unknown"
+            # Your code here
+            return classLevel
 
-# main part of program
-print( getClass(150) )
-print( getClass(135) )
-print( getClass(120) )
-print( getClass(90) )
-print( getClass(85) )
-print( getClass(25) )
-=====
+        # main part of program
+        print( getClass(150) )
+        print( getClass(135) )
+        print( getClass(120) )
+        print( getClass(90) )
+        print( getClass(85) )
+        print( getClass(25) )
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getClass(150), "Senior", "Testing getClass(150).")
-        self.assertEqual(getClass(135), "Senior", "Testing getClass(135).")
-        self.assertEqual(getClass(120), "Junior", "Testing getClass(120).")
-        self.assertEqual(getClass(90), "Junior", "Testing getClass(90).")
-        self.assertEqual(getClass(85), "Sophomore", "Testing getClass(85).")
-        self.assertEqual(getClass(25), "First Year", "Testing getClass(25).")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(getClass(150), "Senior", "Testing getClass(150).")
+                self.assertEqual(getClass(135), "Senior", "Testing getClass(135).")
+                self.assertEqual(getClass(120), "Junior", "Testing getClass(120).")
+                self.assertEqual(getClass(90), "Junior", "Testing getClass(90).")
+                self.assertEqual(getClass(85), "Sophomore", "Testing getClass(85).")
+                self.assertEqual(getClass(25), "First Year", "Testing getClass(25).")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
 </exercise>
         

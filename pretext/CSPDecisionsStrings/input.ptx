@@ -90,39 +90,40 @@ elif action == "right":
     </statement>
     <program xml:id="cspdecisionsstrings_input3_editor" interactive="activecode" language="python">
       <input>
-def getGPAPoints(letterGrade):
-    #write funciton code here
+        def getGPAPoints(letterGrade):
+            #write funciton code here
 
-# Main part of program
+        # Main part of program
 
-letter1 = input("Enter your first grade")
-letter2 = input("Enter your second grade")
-letter3 = input("Enter your third grade")
+        letter1 = input("Enter your first grade")
+        letter2 = input("Enter your second grade")
+        letter3 = input("Enter your third grade")
 
-# Hard coded values to test with. You can comment out the lines above
-# and uncomment these three lines to make it easier to test your code.
-# letter1 = "A"
-# letter2 = "C"
-# letter3 = "A"
+        # Hard coded values to test with. You can comment out the lines above
+        # and uncomment these three lines to make it easier to test your code.
+        # letter1 = "A"
+        # letter2 = "C"
+        # letter3 = "A"
 
-totalPoints = getGPAPoints(letter1) + getGPAPoints(letter2) + getGPAPoints(letter3)
-gpa = totalPoints / 3
-print("Your GPA is", gpa)
+        totalPoints = getGPAPoints(letter1) + getGPAPoints(letter2) + getGPAPoints(letter3)
+        gpa = totalPoints / 3
+        print("Your GPA is", gpa)
 
-=====
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getGPAPoints("A"), 4, "Testing output for A.")
-        self.assertEqual(getGPAPoints("B"), 3, "Testing output for B.")
-        self.assertEqual(getGPAPoints("C"), 2, "Testing output for C.")
-        self.assertEqual(getGPAPoints("D"), 1, "Testing output for D.")
-        self.assertEqual(getGPAPoints("F"), 0, "Testing output for F.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(getGPAPoints("A"), 4, "Testing output for A.")
+                self.assertEqual(getGPAPoints("B"), 3, "Testing output for B.")
+                self.assertEqual(getGPAPoints("C"), 2, "Testing output for C.")
+                self.assertEqual(getGPAPoints("D"), 1, "Testing output for D.")
+                self.assertEqual(getGPAPoints("F"), 0, "Testing output for F.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 </section>

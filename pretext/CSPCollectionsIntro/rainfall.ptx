@@ -23,33 +23,34 @@
       </statement>
       <program xml:id="cspcollectionsintro_rainfall1_editor" interactive="activecode" language="python">
         <input>
-def getRealAvg(rainList):
-    sumRain = 0
-    # Your code here - total up all the values from rainList into sumRain
-    # using the accumulator pattern
+          def getRealAvg(rainList):
+              sumRain = 0
+              # Your code here - total up all the values from rainList into sumRain
+              # using the accumulator pattern
 
-    # Return the total
-    return sumRain
+              # Return the total
+              return sumRain
 
-# Main program
-testData1 = [2, 0, 4, -5, 0, 1]
-total1 = getRealAvg(testData1)
-print(total1)
+          # Main program
+          testData1 = [2, 0, 4, -5, 0, 1]
+          total1 = getRealAvg(testData1)
+          print(total1)
 
-testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
-total2 = getRealAvg(testData2)
-print(total2)
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getRealAvg(testData1), 2, "Testing with testData1.")
-        self.assertEqual(getRealAvg(testData2), 13, "Testing with testData2.")
-
-myTests().main()
+          testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
+          total2 = getRealAvg(testData2)
+          print(total2)
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertEqual(getRealAvg(testData1), 2, "Testing with testData1.")
+                  self.assertEqual(getRealAvg(testData2), 13, "Testing with testData2.")
+
+          myTests().main()
+      </tests>
       </program>
     </exercise>
   </subsection>
@@ -69,32 +70,33 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionsintro_rainfall2_editor" interactive="activecode" language="python">
         <input>
-def getRealAvg(rainList):
-    sumRain = 0
+          def getRealAvg(rainList):
+              sumRain = 0
 
-    # Your code here
+              # Your code here
 
-    return sumRain
+              return sumRain
 
-# Main program
-testData1 = [2, 0, 4, -5, 0, 1]
-total1 = getRealAvg(testData1)
-print(total1)
+          # Main program
+          testData1 = [2, 0, 4, -5, 0, 1]
+          total1 = getRealAvg(testData1)
+          print(total1)
 
-testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
-total2 = getRealAvg(testData2)
-print(total2)
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getRealAvg(testData1), 7, "Testing with testData1.")
-        self.assertEqual(getRealAvg(testData2), 16, "Testing with testData2.")
-
-myTests().main()
+          testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
+          total2 = getRealAvg(testData2)
+          print(total2)
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertEqual(getRealAvg(testData1), 7, "Testing with testData1.")
+                  self.assertEqual(getRealAvg(testData2), 16, "Testing with testData2.")
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
   </subsection>
@@ -116,33 +118,34 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionsintro_rainfall3_editor" interactive="activecode" language="python">
         <input>
-def getRealAvg(rainList):
-    sumRain = 0
-    count = 0
+          def getRealAvg(rainList):
+              sumRain = 0
+              count = 0
 
-    # Your code here
+              # Your code here
 
-    return count
+              return count
 
-# Main program
-testData1 = [2, 0, 4, -5, 0, 1]
-count1 = getRealAvg(testData1)
-print(count1)
+          # Main program
+          testData1 = [2, 0, 4, -5, 0, 1]
+          count1 = getRealAvg(testData1)
+          print(count1)
 
-testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
-count2 = getRealAvg(testData2)
-print(count2)
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(getRealAvg(testData1), 5, "Testing with testData1.")
-        self.assertEqual(getRealAvg(testData2), 7, "Testing with testData2.")
-
-myTests().main()
+          testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
+          count2 = getRealAvg(testData2)
+          print(count2)
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertEqual(getRealAvg(testData1), 5, "Testing with testData1.")
+                  self.assertEqual(getRealAvg(testData2), 7, "Testing with testData2.")
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
   </subsection>
@@ -157,33 +160,34 @@ myTests().main()
       </statement>
       <program xml:id="cspcollectionsintro_rainfall4_editor" interactive="activecode" language="python">
         <input>
-def getRealAvg(rainList):
-    sumRain = 0
-    count = 0
+          def getRealAvg(rainList):
+              sumRain = 0
+              count = 0
 
-    # Your code here
+              # Your code here
 
-    # Your code to return the average
+              # Your code to return the average
 
-# Main program
-testData1 = [2, 0, 4, -5, 0, 1]
-average1 = getRealAvg(testData1)
-print(average1)
+          # Main program
+          testData1 = [2, 0, 4, -5, 0, 1]
+          average1 = getRealAvg(testData1)
+          print(average1)
 
-testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
-average2 = getRealAvg(testData2)
-print(average2)
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertAlmostEqual(getRealAvg(testData1), 1.4, 1, "Testing testData1")
-        self.assertAlmostEqual(getRealAvg(testData2), 2.285714285714286, 3, "Testing testData2")
-
-myTests().main()
+          testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
+          average2 = getRealAvg(testData2)
+          print(average2)
         </input>
+        <tests>
+
+          from unittest.gui import TestCaseGui
+
+          class myTests(TestCaseGui):
+              def testOne(self):
+                  self.assertAlmostEqual(getRealAvg(testData1), 1.4, 1, "Testing testData1")
+                  self.assertAlmostEqual(getRealAvg(testData2), 2.285714285714286, 3, "Testing testData2")
+
+          myTests().main()
+        </tests>
       </program>
     </exercise>
   </subsection>

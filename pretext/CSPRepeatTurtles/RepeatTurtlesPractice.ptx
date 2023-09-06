@@ -136,43 +136,44 @@
     </statement>
     <program xml:id="csprepeatturtles_repeatturtlespractice3_editor" interactive="activecode" language="python">
       <input>
-def polygon(turtleName, sides, size):
-    turtleName.begin_fill()
-    for s in range(sides):
-        turtleName.forward(size)
-        turtleName.left(360 / sides)
-    turtleName.end_fill()
+        def polygon(turtleName, sides, size):
+            turtleName.begin_fill()
+            for s in range(sides):
+                turtleName.forward(size)
+                turtleName.left(360 / sides)
+            turtleName.end_fill()
 
-# main program
-from turtle import *
-space = Screen()
-lucia = Turtle()
-lucia.speed(0)
-lucia.penup()
-lucia.fillcolor("lavender")
-lucia.goto(-50, -150)
-lucia.pendown()
+        # main program
+        from turtle import *
+        space = Screen()
+        lucia = Turtle()
+        lucia.speed(0)
+        lucia.penup()
+        lucia.fillcolor("lavender")
+        lucia.goto(-50, -150)
+        lucia.pendown()
 
-# Add your code here to make a loop that counts down from 10 to 3 by -1
-____________________________
-    # Inside the loop - use your loop variable as the second parameter to control the number of sides
-    polygon(lucia, ____, 100)
-====
+        # Add your code here to make a loop that counts down from 10 to 3 by -1
+        ____________________________
+            # Inside the loop - use your loop variable as the second parameter to control the number of sides
+            polygon(lucia, ____, 100)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertRegex(self.getEditorText(), r"for \w+ in range.*:", "Testing that you created a loop.")
-        self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*2\s*", "Testing that your loop stops at the right value.")
-        self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*\d+\s*,\s*-1\s*", "Testing that your loop counts down.")
-        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia", "Testing that you call polygon with lucia")
-        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+", "Testing that you use the loop variable in the call")
-        self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+\s*,\s*100\s*\)", "Testing that you specify size 100")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertRegex(self.getEditorText(), r"for \w+ in range.*:", "Testing that you created a loop.")
+                self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*2\s*", "Testing that your loop stops at the right value.")
+                self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*\d+\s*,\s*-1\s*", "Testing that your loop counts down.")
+                self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia", "Testing that you call polygon with lucia")
+                self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+", "Testing that you use the loop variable in the call")
+                self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+\s*,\s*100\s*\)", "Testing that you specify size 100")
 
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 </section>

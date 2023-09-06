@@ -22,44 +22,45 @@
     </statement>
     <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
       <input>
-from image import *
+        from image import *
 
-def makeGray(pixel):
-    #get the average of the three colors
-    average = (pixel.red + pixel.green + pixel.blue) / 3
-    #use that for all three colors
-    pixel.red = average
-    pixel.green = average
-    pixel.blue = average
+        def makeGray(pixel):
+            #get the average of the three colors
+            average = (pixel.red + pixel.green + pixel.blue) / 3
+            #use that for all three colors
+            pixel.red = average
+            pixel.green = average
+            pixel.blue = average
 
-def darken(pixel, amount):
-    #Your code here to reduce each color by amount.
-    #If a color ends up less than 0, set it to 0
-    pass # &lt;--- Replace this with your code
+        def darken(pixel, amount):
+            #Your code here to reduce each color by amount.
+            #If a color ends up less than 0, set it to 0
+            pass # &lt;--- Replace this with your code
 
-# Main part of program
-testPixel = Pixel(120, 0, 0)
-makeGray(testPixel)
-print("testPixel after makeGray:", testPixel, "should be 40,40,40")
+        # Main part of program
+        testPixel = Pixel(120, 0, 0)
+        makeGray(testPixel)
+        print("testPixel after makeGray:", testPixel, "should be 40,40,40")
 
-testPixel2 = Pixel(60, 40, 50)
-darken(testPixel2, 30)
-print("testPixel2 after darken by 30:", testPixel2, "should be 30,10,20")
+        testPixel2 = Pixel(60, 40, 50)
+        darken(testPixel2, 30)
+        print("testPixel2 after darken by 30:", testPixel2, "should be 30,10,20")
 
-testPixel3 = Pixel(60, 40, 50)
-darken(testPixel3, 50)
-print("testPixel3 after darken by 50:", testPixel3, "should be 10,0,0")
-=====
+        testPixel3 = Pixel(60, 40, 50)
+        darken(testPixel3, 50)
+        print("testPixel3 after darken by 50:", testPixel3, "should be 10,0,0")
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works")
-        self.assertEqual(str(testPixel3), "[10,0,0]", "Test that darken won't make colors negative")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works")
+                self.assertEqual(str(testPixel3), "[10,0,0]", "Test that darken won't make colors negative")
 
-myTests().main()
-  </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Now we can use a conditional to apply those only to particular pixels in the image. Start by copy/pasting <c>darken</c>

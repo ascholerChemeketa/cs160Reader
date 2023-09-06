@@ -100,9 +100,10 @@ WHERE
     <program xml:id="sqlgroupjoin_joining5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 9883
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 9883
+      </tests>
     </program>
   </exercise>
 
@@ -132,9 +133,10 @@ assert 0,0 == 9883
     <program xml:id="sqlgroupjoin_joining6_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
 
-====
-assert 0,0 == 1268.9547619047619
-        </input>
+      </input>
+      <tests>
+        assert 0,0 == 1268.9547619047619
+      </tests>
     </program>
   </exercise>
 </section>

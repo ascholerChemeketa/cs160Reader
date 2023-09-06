@@ -29,29 +29,30 @@
     </statement>
     <program xml:id="cspcollectionsintro_listmax1_editor" interactive="activecode" language="python">
       <input>
-scores = [82, 95, 92, 76, 98, 84, 89, 92]
+        scores = [82, 95, 92, 76, 98, 84, 89, 92]
 
-# Pick a starting value - the first value in the list
-highest = scores[0]
+        # Pick a starting value - the first value in the list
+        highest = scores[0]
 
-# Loop through all the values
-for score in scores:
-    # If the value is larger than the highest value, change the highest to match it
-    if score &gt; highest:
-        highest = score
+        # Loop through all the values
+        for score in scores:
+            # If the value is larger than the highest value, change the highest to match it
+            if score &gt; highest:
+                highest = score
 
-print(highest)
-=====
+        print(highest)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(lowest, 76, "Testing that lowest was set to the right value.")
-        self.assertNotIn("76", "".join(self.getEditorText().split("\n")[1:]), "Testing that you didn't hardcode the answer.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(lowest, 76, "Testing that lowest was set to the right value.")
+                self.assertNotIn("76", "".join(self.getEditorText().split("\n")[1:]), "Testing that you didn't hardcode the answer.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <note>

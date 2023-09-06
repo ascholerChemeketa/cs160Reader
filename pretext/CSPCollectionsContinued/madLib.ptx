@@ -3,8 +3,8 @@
   <p>Let&#8217;s use the range-based loop of a list to create a MadLib program. MadLibs are stories where the
     &#8220;player&#8221; is asked to provide some words that are then incorporated into the story in the hopes of
     creating something amusingly silly.</p>
-  <p>Our program will start with a story where some placeholder words are in ALL_CAPS. Those are the ones we will ask the
-    user to fill in.</p>
+  <p>Our program will start with a story where some placeholder words are in ALL_CAPS. Those are the ones we will ask
+    the user to fill in.</p>
   <p>It is much easier to start with our story as one big string. But to loop through the words, looking for the ones in
     ALL_CAPS, it will be easier to have it stored as a list where each word is an item in the list. To turn the string
     into a list, we will use a new string function: <c>split(pattern)</c>. You don&#8217;t have to worry about using it on your own,
@@ -20,24 +20,25 @@
     </statement>
     <program xml:id="cspcollectionscontinued_madlib1_editor" interactive="activecode" language="python">
       <input>
-# This string is our story
-story = "We just got back from a pizza party in TOWN where everyone got to choose their own toppings. NAME made FOOD and THING_PLURAL pizza. Kind of weird if you ask me."
+        # This string is our story
+        story = "We just got back from a pizza party in TOWN where everyone got to choose their own toppings. NAME made FOOD and THING_PLURAL pizza. Kind of weird if you ask me."
 
-# Chop the string into a list by cutting it at each " "
-storyList = story.split(" ")
+        # Chop the string into a list by cutting it at each " "
+        storyList = story.split(" ")
 
-# Your code here to print out each item from storyList
-# Make sure to use a range-based loop
-=====
-from unittest.gui import TestCaseGui
+        # Your code here to print out each item from storyList
+        # Make sure to use a range-based loop
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(self.getOutput().strip().split("\n")[0], "We", "Testing first line of output")
-        self.assertEqual(self.getOutput().strip().split("\n")[-1], "me.", "Testing last line of output")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(self.getOutput().strip().split("\n")[0], "We", "Testing first line of output")
+                self.assertEqual(self.getOutput().strip().split("\n")[-1], "me.", "Testing last line of output")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Now let&#8217;s identify which words are in ALL_CAPS. To do that, we need to call the <c>isupper()</c> function on each
@@ -53,18 +54,19 @@ myTests().main()
     </statement>
     <program xml:id="cspcollectionscontinued_madlib2_editor" interactive="activecode" language="python">
       <input>
-# Your code here
-=====
-from unittest.gui import TestCaseGui
+        # Your code here
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(self.getOutput().strip().split("\n")[2], "False", "Testing 3rd line of output")
-        self.assertEqual(self.getOutput().strip().split("\n")[9], "True", "Testing 10th line of output")
-        self.assertEqual(self.getOutput().strip().split("\n")[11], "False", "Testing 12th line of output")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(self.getOutput().strip().split("\n")[2], "False", "Testing 3rd line of output")
+                self.assertEqual(self.getOutput().strip().split("\n")[9], "True", "Testing 10th line of output")
+                self.assertEqual(self.getOutput().strip().split("\n")[11], "False", "Testing 12th line of output")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Now we are ready to do something special each time we find an all-caps word. We want to replace those with user
@@ -81,18 +83,19 @@ myTests().main()
     </statement>
     <program xml:id="cspcollectionscontinued_madlib3_editor" interactive="activecode" language="python">
       <input>
-# Your code here
-=====
-from unittest.gui import TestCaseGui
+        # Your code here
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(storyList[2], "got", "Testing storyList[2] - should not have changed")
-        self.assertEqual(storyList[9], "INPUT", "Testing storyList[9] - should change to INPUT")
-        self.assertEqual(storyList[18], "INPUT", "Testing storyList[18] - should change to INPUT")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(storyList[2], "got", "Testing storyList[2] - should not have changed")
+                self.assertEqual(storyList[9], "INPUT", "Testing storyList[9] - should change to INPUT")
+                self.assertEqual(storyList[18], "INPUT", "Testing storyList[18] - should change to INPUT")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
   <p>Now you should be ready to actually make your program interactive! This version is not automatically checked, so
@@ -109,13 +112,13 @@ myTests().main()
     </statement>
     <program xml:id="cspcollectionscontinued_madlib4_editor" interactive="activecode" language="python">
       <input>
-# Your code here
+        # Your code here
 
-# Add these lines below your code
-# Combine all the list items into one string with " " between each item
-story = " ".join(storyList)
-# Print the result
-print(story)
+        # Add these lines below your code
+        # Combine all the list items into one string with " " between each item
+        story = " ".join(storyList)
+        # Print the result
+        print(story)
         </input>
     </program>
   </exercise>

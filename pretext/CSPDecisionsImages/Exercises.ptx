@@ -50,33 +50,34 @@
     </statement>
     <program xml:id="cspdecisionsimages_exercises2_editor" interactive="activecode" language="python">
       <input>
-from image import *
+        from image import *
 
-# CREATE AN IMAGE FROM A FILE
-img = Image("logo.jpg")
+        # CREATE AN IMAGE FROM A FILE
+        img = Image("logo.jpg")
 
-# LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        # LOOP THROUGH ALL PIXELS
+        for x in range(img.getWidth()):
+            for y in range(img.getHeight()):
+                p = img.getPixel(x, y)
+                r = p.getRed()
+                g = p.getGreen()
+                b = p.getBlue()
 
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
-=====
+        # SHOW THE CHANGED IMAGE
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(str(img.getPixel(100, 100)), '[30,100,150]', "Testing one of the pixels that was supposed to change")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(str(img.getPixel(100, 100)), '[30,100,150]', "Testing one of the pixels that was supposed to change")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -92,34 +93,35 @@ myTests().main()
     </statement>
     <program xml:id="cspdecisionsimages_exercises3_editor" interactive="activecode" language="python">
       <input>
-from image import *
+        from image import *
 
-# CREATE AN IMAGE FROM A FILE
-img = Image("logo.jpg")
+        # CREATE AN IMAGE FROM A FILE
+        img = Image("logo.jpg")
 
-# LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        # LOOP THROUGH ALL PIXELS
+        for x in range(img.getWidth()):
+            for y in range(img.getHeight()):
+                p = img.getPixel(x, y)
+                r = p.getRed()
+                g = p.getGreen()
+                b = p.getBlue()
 
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
-=====
+        # SHOW THE CHANGED IMAGE
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
+      </input>
+      <tests>
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing one of the pixels that was supposed to change")
-        self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing one of the pixels that was supposed to stay the same")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing one of the pixels that was supposed to change")
+                self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing one of the pixels that was supposed to stay the same")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </tests>
     </program>
   </exercise>
 
@@ -135,48 +137,48 @@ myTests().main()
     </statement>
     <program xml:id="cspdecisionsimages_exercises4_editor" interactive="activecode" language="python">
       <input>
+      from image import *
 
-from image import *
+      # Write isYellow here!!!
 
-# Write isYellow here!!!
+      # Main part of program
+      # CREATE AN IMAGE FROM A FILE
+      img = Image("goalkeeper.jpg")
 
-# Main part of program
-# CREATE AN IMAGE FROM A FILE
-img = Image("goalkeeper.jpg")
+      # LOOP THROUGH ALL PIXELS
+      for x in range(img.getWidth()):
+          for y in range(img.getHeight()):
+              # GET CURRENT COLOR VALUES
+              p = img.getPixel(x, y)
+              r = p.getRed()
+              g = p.getGreen()
+              b = p.getBlue()
 
-# LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        # GET CURRENT COLOR VALUES
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+              # IS IT YELLOW?
+              if isYellow(r, g, b):
 
-        # IS IT YELLOW?
-        if isYellow(r, g, b):
+                  # CHANGE THE COLOR TO SWAP RED AND BLUE
+                  newPixel = Pixel(b, g, r)
 
-            # CHANGE THE COLOR TO SWAP RED AND BLUE
-            newPixel = Pixel(b, g, r)
+                  # UPDATE THE IMAGE
+                  img.setPixel(x, y, newPixel)
 
-            # UPDATE THE IMAGE
-            img.setPixel(x, y, newPixel)
+      # SHOW THE CHANGED IMAGE
+      win = ImageWin(img.getWidth(),img.getHeight())
+      img.draw(win)
+    </input>
+    <tests>
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
-=====
+      from unittest.gui import TestCaseGui
 
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(isYellow(80, 70, 29), True, "Testing if 80,70,29 is considered Yellow")
-        self.assertEqual(isYellow(70, 80, 29), True, "Testing if 70,80,29 is considered Yellow")
-        self.assertEqual(isYellow(60, 70, 29), False, "Testing if 60,70,29 is considered Yellow")
-        self.assertEqual(isYellow(70, 60, 29), False, "Testing if 70,60,29 is considered Yellow")
-myTests().main()
-        </input>
+      class myTests(TestCaseGui):
+          def testOne(self):
+              self.assertEqual(isYellow(80, 70, 29), True, "Testing if 80,70,29 is considered Yellow")
+              self.assertEqual(isYellow(70, 80, 29), True, "Testing if 70,80,29 is considered Yellow")
+              self.assertEqual(isYellow(60, 70, 29), False, "Testing if 60,70,29 is considered Yellow")
+              self.assertEqual(isYellow(70, 60, 29), False, "Testing if 70,60,29 is considered Yellow")
+      myTests().main()
+      </tests>
     </program>
   </exercise>
 

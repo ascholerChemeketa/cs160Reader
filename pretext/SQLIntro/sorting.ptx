@@ -49,8 +49,8 @@ LIMIT 10
         </input>
     </program>
     <p>We can combine <c>ORDER BY</c> and <c>LIMIT</c> with the other clauses we have learned about to do something like selecting
-      just the start date, station, and the duration for only trips starting from station 31111, sorting them from
-      longest to shortest, and only keeping the first (longest) 10:</p>
+      just the start date, station, and duration for only trips starting from station 31111, sorting them from longest
+      to shortest, and only keeping the first (longest) 10:</p>
 
     <program xml:id="sqlintro_sorting4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
@@ -111,9 +111,10 @@ ORDER BY
         database="SQL/bikeshare.db">
         <input>
 
-====
-assert 0,0 == W00042
         </input>
+        <tests>
+          assert 0,0 == W00042
+        </tests>
       </program>
     </exercise>
 
@@ -131,10 +132,11 @@ assert 0,0 == W00042
         database="SQL/bikeshare.db">
         <input>
 
-====
-assert 0,0 == 31617
-assert 0,1 == 85666
         </input>
+        <tests>
+          assert 0,0 == 31617
+          assert 0,1 == 85666
+        </tests>
       </program>
     </exercise>
   </subsection>
