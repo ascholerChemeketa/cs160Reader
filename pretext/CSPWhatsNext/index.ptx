@@ -1,45 +1,49 @@
-<section xml:id="csp-whats-next_what-s-next">
+<chapter xml:id="csp-whats-next_what-s-next">
   <title>What&#8217;s Next?</title>
-  <p>Are you interested in extending your knowledge of Python or using it to solve problems of your own design? Here are
-    some resources to check out.</p>
-  <subsection xml:id="csp-whats-next_full-python-on-the-web">
-    <title>Full Python On The Web</title>
-    <p>There are many websites where you can write and test Python programs. However, unlike this book, which supports a limited set
-      of Python libraries, these sites usually support all the common Python libraries. (This book is more limited
-      because it turns your Python code into Javascript so it can run directly in the web browser. These sites
-      run your code on a server using &#8220;real&#8221; Python.)</p>
-    <p>Here are two options:</p>
-    <p>
-      <url href="https://replit.com/languages/python3" visual="https://replit.com/languages/python3">replit</url>
-    </p>
-    <p>
-      <url href="https://www.online-python.com/" visual="https://www.online-python.com/">online-python</url>
-    </p>
-  </subsection>
-  <subsection xml:id="csp-whats-next_python-on-your-computer">
-    <title>Python On Your Computer</title>
-    <p><url href="https://thonny.org/" visual="https://thonny.org/">Thonny</url> is a super simple editor for writing
-      Python to run on your computer. It will automatically install a copy of Python, so you can install <term>Thonny</term>
-      and start writing code without worrying about anything else.</p>
-    <p><url href="https://codewith.mu/en/" visual="https://codewith.mu/en/">Mu</url> is another good choice for getting
-      started writing Python to run on your computer.</p>
-    <p>You can also install <title_reference>Python &lt;https://www.python.org/&gt;</title_reference> and use any text
-      editor you like to write code. This route is only recommended if you already are used to using text editors and
-      working from the command prompt.</p>
-  </subsection>
-  <subsection xml:id="csp-whats-next_more-python">
-    <title>More Python</title>
-    <p><url href="http://interactivepython.org/runestone/static/thinkcspy/index.html"
-        visual="http://interactivepython.org/runestone/static/thinkcspy/index.html">*How To Think Like A Computer
-      Scientist</url> is a free ebook that covers basic concepts in more depth than this book and extends to much more
-      advanced programming topics. If you want to get serious about Python programming, check it out.</p>
-  </subsection>
-  <subsection xml:id="csp-whats-next_applications">
-    <title>Applications</title>
-    <p>There are Python libraries for making games (PyGame, Panda3D), for making applications that have Graphical User
-      Interfaces (GUIs) - buttons, windows, etc&#8230; (tkinter, Kivy), for doing data science on large data collections
-      (Pandas, NumPy), and just about anything else you can think of. Use google to look for &#8220;Python
-      YOUR_INTEREST&#8221; and see what you can find.</p>
-  </subsection>
-</section>
+  <section>
+    <title>Extending Your Programming Skills</title>
+    <p>Are you interested in extending your knowledge of Python or using it to solve problems of your own design? Here are
+      some resources to check out.</p>
+    <subsection xml:id="csp-whats-next_full-python-on-the-web">
+      <title>Full Python On The Web</title>
+      <p>There are many websites where you can write and test Python programs. However, unlike this book, which supports a limited set
+        of Python libraries, these sites usually support all the common Python libraries. (This book is more limited
+        because it turns your Python code into Javascript so it can run directly in the web browser. These sites
+        run your code on a server using &#8220;real&#8221; Python.)</p>
+      <p>Here are two options:
+        <ul>
+          <li><url href="https://replit.com/languages/python3" visual="https://replit.com/languages/python3">replit</url>
+          </li>
+          <li><url href="https://www.online-python.com/" visual="https://www.online-python.com/">online-python</url>
+          </li>
+        </ul>
+      </p>
+    </subsection>
+    <subsection xml:id="csp-whats-next_python-on-your-computer">
+      <title>Python On Your Computer</title>
+      <p><url href="https://thonny.org/" visual="https://thonny.org/">Thonny</url> is a super simple editor for writing
+        Python to run on your computer. It will automatically install a copy of Python, so you can install <term>Thonny</term>
+        and start writing code without worrying about anything else.</p>
+      <p><url href="https://codewith.mu/en/" visual="https://codewith.mu/en/">Mu</url> is another good choice for getting
+        started writing Python to run on your computer.</p>
+      <p>You can also install <title_reference>Python &lt;https://www.python.org/&gt;</title_reference> and use any text
+        editor you like to write code. This route is only recommended if you already are used to using text editors and
+        working from the command prompt.</p>
+    </subsection>
+    <subsection xml:id="csp-whats-next_more-python">
+      <title>More Python</title>
+      <p><url href="http://interactivepython.org/runestone/static/thinkcspy/index.html"
+          visual="http://interactivepython.org/runestone/static/thinkcspy/index.html">*How To Think Like A Computer
+        Scientist</url> is a free ebook that covers basic concepts in more depth than this book and extends to much more
+        advanced programming topics. If you want to get serious about Python programming, check it out.</p>
+    </subsection>
+    <subsection xml:id="csp-whats-next_applications">
+      <title>Applications</title>
+      <p>There are Python libraries for making games (PyGame, Panda3D), for making applications that have Graphical User
+        Interfaces (GUIs) - buttons, windows, etc&#8230; (tkinter, Kivy), for doing data science on large data collections
+        (Pandas, NumPy), and just about anything else you can think of. Use google to look for &#8220;Python
+        YOUR_INTEREST&#8221; and see what you can find.</p>
+    </subsection>
+  </section>
+</chapter>
 

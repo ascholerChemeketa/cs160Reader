@@ -6,7 +6,7 @@
     the items, there is always a first thing in a list, and a second, and so on:</p>
   <figure align="center">
     <caption>A shopping list</caption>
-    <image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" height="250px" />
+    <image source="CSPCollectionsIntro/Figures/lists.jpg" width="50%" alt="a shopping list" />
   </figure>
   <p>A <term>list</term> in Python is a collection of values. We can write a list by enclosed values in <c>[</c> and <c>]</c>
     and separating them by commas, like <c>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</c>. The values in a list can be any type of data, and can even be a mix of
