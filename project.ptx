@@ -13,6 +13,10 @@
       <publication>pretext/publication-html.xml</publication>
       <output-dir>output/web</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
+      <stringparam key="html.css.server" value="http://localhost:8002/pretext-css-core" />
+      <!-- <stringparam key="html.css.server" value="https://computerscience.chemeketa.edu/ascholer/pretext-css" /> -->
+      <stringparam key="html.css.version" value="0.8" />
+      <stringparam key="debug.skip-knowls" value="yes" />
       <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     <target name="runestone">

@@ -43,10 +43,9 @@
       <xi:include href="./CSPCollectionsContinued/toctree.ptx" />
       <xi:include href="./SQLIntro/toctree.ptx" />
       <xi:include href="./SQLGroupJoin/toctree.ptx" />
+      <xi:include href="./CSPPythonData/toctree.ptx" />
+      <xi:include href="./CSPWhatsNext/index.ptx" />
     </part>
-    <!-- 
-            <xi:include href="./CSPPythonData/toctree.ptx" />
-            <xi:include href="./CSPWhatsNext/index.ptx" /> -->
     <backmatter>
       <index>
         <index-list/>
