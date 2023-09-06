@@ -14,3 +14,4 @@ output
 build
 cli.log
 .error_schema.log
+logs
