@@ -1,6 +1,6 @@
 <exercises xml:id="csp-collections-intro_chapter-exercises">
   <title>Chapter Exercises</title>
-  <exercise label="cspcollectionsintro_exercises1" numbered="yes" indentation="show" language="python">
+  <exercise label="cspcollectionsintro_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program segment should iterate through the list <c>terms</c> and then add each item to the list <c>vocab</c>
         if it is not already in <c>vocab</c>. If the word is already in <c>vocab</c>, then the program should add 1 to the
@@ -176,4 +176,3 @@
   </exercise>
 
 </exercises>
-

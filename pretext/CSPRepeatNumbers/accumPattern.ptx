@@ -103,7 +103,7 @@ for number in range(6):
 print(sum)
     </input>
   </program>
-  <exercise label="csprepeatnumbers_accumpattern4" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csprepeatnumbers_accumpattern4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following is the correct code for printing the sum of all the odd numbers from 1 to 29 using the
         accumulator pattern, but it is mixed up. Drag the blocks from the left side and put them in the correct order and
@@ -128,4 +128,3 @@ print(sum)
     </blocks>
   </exercise>
 </section>
-

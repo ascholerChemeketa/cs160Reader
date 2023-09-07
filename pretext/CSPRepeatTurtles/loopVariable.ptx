@@ -151,7 +151,7 @@ for size in range(5, 60, 2):
     <p>
       <term>Mixed up program</term>
     </p>
-    <exercise label="csprepeatturtles_loopvariable5" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="csprepeatturtles_loopvariable5" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program creates a square spiral as shown below. To do so, we must draw sides of length 0, 5,
           10, 15, &#8230; 195. After drawing each side, we will turn to get ready for the next side.</p>
@@ -200,7 +200,7 @@ for size in range(5, 60, 2):
         </block>
       </blocks>
     </exercise>
-    <exercise label="csprepeatturtles_loopvariable6" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="csprepeatturtles_loopvariable6" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program defines a <c>square</c> procedure and then uses it to draw squares of size 20, 40, 60, 80,
           and 100.</p>
@@ -256,4 +256,3 @@ for size in range(5, 60, 2):
     </exercise>
   </subsection>
 </section>
-

@@ -71,8 +71,7 @@ print("We got", numHeads, "heads.")
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise label="cspdecisionssimulations_usingrandom1" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspdecisionssimulations_usingrandom1" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should roll 10 dice (that have sides from 1-6). We want to count print the number of dice
         that show a 6. Drag the blocks from the left and place them in the correct order on the right. Be sure to also
@@ -113,4 +112,3 @@ print("We got", numHeads, "heads.")
     </blocks>
   </exercise>
 </section>
-

@@ -162,7 +162,7 @@ names.pop(0)
       </tests>
     </program>
   </exercise>
-  <exercise label="cspcollectionsintro_addremove6" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspcollectionsintro_addremove6" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>The following program should make the <c>discounts</c> list contain the values of all the items from <c>price_list</c> after they
         have been discounted by 50%. To do so, we need to loop through the original prices, calculate the discounted
@@ -195,4 +195,3 @@ names.pop(0)
     </blocks>
   </exercise>
 </section>
-

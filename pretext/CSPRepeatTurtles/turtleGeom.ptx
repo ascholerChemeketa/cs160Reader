@@ -110,7 +110,7 @@ mia.end_fill()
     all the shapes. They are all basically the same and we don&#8217;t like repeating ourselves.</p>
   <p>In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure that can draw any <c>polygon</c>.
     It will take parameters to control how many sides there are and how long to make each side.</p>
-  <exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Arrange the blocks in the correct order and indentation to make the <c>polygon</c> procedure. This procedure will use <c>begin_fill</c>
         and <c>end_fill</c> to make the shapes be colored.</p>
@@ -172,4 +172,3 @@ polygon(mia, 3, 100)
         </input>
   </program>
 </section>
-

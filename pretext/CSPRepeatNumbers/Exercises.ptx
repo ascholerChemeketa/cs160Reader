@@ -58,7 +58,7 @@
       </tests>
     </program>
   </exercise>
-  <exercise label="csprepeatnumbers_exercises3" numbered="yes" indentation="show" language="python">
+  <exercise label="csprepeatnumbers_exercises3" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program calculates the height of an object as it falls from 1000 feet. The program should use a
         loop to print out the current height, then update the time by one second and calculate a new height. It should
@@ -158,4 +158,3 @@
   </exercise>
 
 </exercises>
-

@@ -40,7 +40,7 @@ for name in nameList:
   <p>Putting items into a list makes it easier to process them all without repeating chunks of code
     multiple times. Complete this algorithm for the problem discussed on the last page of finding the highest quiz
     score.</p>
-  <exercise label="cspcollectionsintro_list3" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="cspcollectionsintro_list3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should loop through all the scores and compare them to the highest score we have seen so
         far. (When we start, the highest score we have seen is 0.) If a score is higher than the highest score we have
@@ -67,4 +67,3 @@ for name in nameList:
     </blocks>
   </exercise>
 </section>
-

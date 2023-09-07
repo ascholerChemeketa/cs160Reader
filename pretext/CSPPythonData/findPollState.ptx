@@ -121,7 +121,7 @@
       </var>
     </setup>
   </exercise>
-  <exercise label="csppythondata_findpollstate5" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csppythondata_findpollstate5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program finds the highest PM10 value in a particular state. Arrange and indent the blocks so it
         works correctly.</p>
@@ -166,4 +166,3 @@
     </blocks>
   </exercise>
 </section>
-

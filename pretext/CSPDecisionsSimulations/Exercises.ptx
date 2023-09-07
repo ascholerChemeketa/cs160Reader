@@ -1,6 +1,6 @@
 <exercises xml:id="csp-decisions-simulations_chapter-exercises">
   <title>Chapter Exercises</title>
-  <exercise label="cspdecisionssimulations_exercises1" numbered="yes" indentation="show" language="python">
+  <exercise label="cspdecisionssimulations_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The code below is supposed to roll an 8-sided die (sides numbered 1-8) 10000 times and after it is done, print
         out how many times 1 was rolled.</p>
@@ -44,7 +44,7 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspdecisionssimulations_exercises2" numbered="yes" indentation="show" language="python">
+  <exercise label="cspdecisionssimulations_exercises2" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The code below is supposed to &#8220;flip a coin&#8221; 100 times by making a random number that is 0 (heads)
         or 1 (tails) and keep track of the longest streak of heads that we see. It will do so by first updating the <c>headsInARow</c>
@@ -251,4 +251,3 @@ print("highestRoll was", highestRoll)
   </exercise>
 
 </exercises>
-

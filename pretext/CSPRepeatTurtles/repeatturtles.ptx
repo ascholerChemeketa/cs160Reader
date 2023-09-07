@@ -22,7 +22,7 @@ square(alisha, 30)
 alisha.forward(30)
         </input>
   </program>
-  <exercise label="csprepeatturtles_repeatturtles2" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csprepeatturtles_repeatturtles2" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should define a procedure <title_reference>triangle</title_reference> that uses a loop to
         help draw a triangle. The main part of the program calls that function twice to draw two different triangles.</p>
@@ -56,7 +56,7 @@ alisha.forward(30)
       </block>
     </blocks>
   </exercise>
-  <exercise label="csprepeatturtles_repeatturtles3" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csprepeatturtles_repeatturtles3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a 175x150 rectangle as shown below, but the lines are mixed up. We
         want to define a <c>rectangle</c> procedure that repeats twice the process to draw half of a rectangle: draw a line for
@@ -109,4 +109,3 @@ alisha.forward(30)
     </blocks>
   </exercise>
 </section>
-

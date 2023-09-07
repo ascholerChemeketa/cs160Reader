@@ -51,7 +51,7 @@ print(score)
     <p>
       <term>Check Your Understanding</term>
     </p>
-    <exercise label="cspnamefunctions_commonissues3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="cspnamefunctions_commonissues3" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program is supposed to convert a Celsius temp into Fahrenheit.</p>
         <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
@@ -83,4 +83,3 @@ print(score)
     </exercise>
   </subsection>
 </section>
-

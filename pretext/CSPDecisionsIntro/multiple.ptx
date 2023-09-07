@@ -29,7 +29,7 @@ print(total)
         <exercise label="cspdecisionsintro_multiple1">
             <statement>
     <p>In the program above, what value for weight will result in an error complaining that price
-is not defined? <var/>  </p></statement><setup><var><condition string="^\s*^1$|1\.[0]*$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Which value is not tested currently?</p></feedback></condition></var></setup></exercise>        <p>So how can we fix the bug? One way would be to change the second if to use <c>&gt;=</c> so that there
+is not defined? <var />  </p></statement><setup><var><condition string="^\s*^1$|1\.[0]*$\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Which value is not tested currently?</p></feedback></condition></var></setup></exercise>        <p>So how can we fix the bug? One way would be to change the second if to use <c>&gt;=</c> so that there
             the program handles every situation correctly.</p>
         <p>Another way we could solve the problem would be to set a <c>price</c> as a <em>default</em>, to assume
             that the weight if 1 or more. Then, we use an <c>if</c> to change change it only if the weight
@@ -99,7 +99,7 @@ print(total)
 
     </exercise>
         <p><term>Check your understanding</term></p>
-<exercise label="cspdecisionsintro_multiple4" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+<exercise label="cspdecisionsintro_multiple4" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
         <p>The following program should calculate the total price, but the lines are mixed up. The
             price is based on the weight.  Items that weigh less than 2 pounds should cost 1.5. Items
             that weigh more than 2 pounds should cost 1.3. Drag the blocks from the left and place
@@ -167,4 +167,3 @@ print(x)
 
     </exercise>
     </section>
-

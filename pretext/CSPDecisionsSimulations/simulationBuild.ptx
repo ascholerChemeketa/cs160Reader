@@ -106,8 +106,7 @@ else:
   </exercise>
   <p>Now, we want to turn the code into a function that returns True or False instead of printing the answer. Making it
     into a function will make it easier to repeat the process over and over.</p>
-  <exercise label="cspdecisionssimulations_simulationbuild4" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspdecisionssimulations_simulationbuild4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Arrange the code so that the <c>checkHeadsInRow(desiredStreak)</c> function works correctly. It will take a number as its parameter - the
         number of heads in a row we want to see. It will do 100 flips and see if we get that many in a row. If so, it
@@ -153,4 +152,3 @@ else:
     </blocks>
   </exercise>
 </section>
-

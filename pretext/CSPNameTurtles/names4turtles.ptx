@@ -83,14 +83,12 @@ alex.forward(75)        # move forward by 75 units
     <figure align="center">
       <caption>The amount of turn for specified degrees for left and right turns. These diagrams assume the turtle is
         currently pointing East (to the right of your screen).</caption>
-      <image source="CSPNameTurtles/Figures/turnDegrees.png" width="100%"
-        alt="shows what a turn of each degrees means for left and right turns" />
+      <image source="CSPNameTurtles/Figures/turnDegrees.png" width="100%" alt="shows what a turn of each degrees means for left and right turns" />
     </figure>
     <p>
       <term>Mixed up programs</term>
     </p>
-    <exercise label="cspnameturtles_names4turtles3" numbered="yes" adaptive="yes" indentation="show"
-      language="python">
+    <exercise label="cspnameturtles_names4turtles3" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The
           program should do all necessary set-up: import the turtle module, get the space to draw on, and create the
@@ -147,8 +145,7 @@ alex.forward(75)        # move forward by 75 units
         </block>
       </blocks>
     </exercise>
-    <exercise label="cspnameturtles_names4turtles4" numbered="yes" adaptive="yes" indentation="show"
-      language="python">
+    <exercise label="cspnameturtles_names4turtles4" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a checkmark as shown below but the lines are mixed up. The
           program should do all necessary set-up: import the turtle module, get the space to draw on, and create the
@@ -209,4 +206,3 @@ alex.forward(75)        # move forward by 75 units
     </exercise>
   </subsection>
 </section>
-

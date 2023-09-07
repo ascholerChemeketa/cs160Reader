@@ -92,7 +92,7 @@ GROUP BY
     start_station
         </input>
   </program>
-  <exercise label="sqlgroupjoin_grouping4" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="sqlgroupjoin_grouping4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following code will calculate the mean trip duration for trips by each member type and sort the results so
         that the member type with the longest average trip is displayed first.</p>
@@ -157,4 +157,3 @@ GROUP BY
     </program>
   </exercise>
 </section>
-

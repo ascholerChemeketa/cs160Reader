@@ -104,7 +104,7 @@ hop(malik)
     <p>See the video below for a hint on how to solve the next mixed up code problem.</p>
 
     <video xml:id="yt_3oYHEHTt2hM" youtube="3oYHEHTt2hM" width="100%" />
-    <exercise label="cspnameprocedures_indentation3" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="cspnameprocedures_indentation3" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following code should define a procedure that draws a triangle, but it may be mixed up <em>and may
           contain extra (unused) code</em>. Drag the needed code to the right side in the correct order. <term>Remember
@@ -158,4 +158,3 @@ arnold = Turtle()
     </program>
   </subsection>
 </section>
-

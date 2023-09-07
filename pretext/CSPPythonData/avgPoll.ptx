@@ -10,7 +10,7 @@
     <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
   </note>
 
-  <exercise label="csppythondata_avgpoll1" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csppythondata_avgpoll1" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>This program will calculate the average PM2.5 pollution level in the US data. Arrange the blocks in the right
         order and indent them correctly. You will use all of them.</p>
@@ -76,4 +76,3 @@ print("Average PM 10 value is", average)
         </input>
   </program>
 </section>
-

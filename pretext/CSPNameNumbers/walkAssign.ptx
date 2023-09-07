@@ -15,8 +15,7 @@ d = b
     <exercise label="cspnamenumbers_walkassign2">
         <statement>
 
-            <p>What is the value of variable <c>d</c> when <xref
-                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing1" /> is finished running?</p>
+            <p>What is the value of variable <c>d</c> when <xref ref="csp-name-numbers_walking-through-assignment-more-generally-listing1" /> is finished running?</p>
 
         </statement>
         <choices>
@@ -77,8 +76,7 @@ var2 = var1
     <exercise label="cspnamenumbers_walkassign4">
         <statement>
 
-            <p>What are the values in <c>var1</c> and <c>var2</c> after <xref
-                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing2" /> runs?</p>
+            <p>What are the values in <c>var1</c> and <c>var2</c> after <xref ref="csp-name-numbers_walking-through-assignment-more-generally-listing2" /> runs?</p>
 
         </statement>
         <choices>
@@ -143,8 +141,7 @@ print(numDays2)
     <exercise label="cspnamenumbers_walkassign6">
         <statement>
 
-            <p>What three values are printed when <xref
-                    ref="csp-name-numbers_walking-through-assignment-more-generally-listing3" /> runs?</p>
+            <p>What three values are printed when <xref ref="csp-name-numbers_walking-through-assignment-more-generally-listing3" /> runs?</p>
 
         </statement>
         <choices>
@@ -188,7 +185,7 @@ print(numDays2)
         </choices>
 
     </exercise>
-    <exercise label="cspnamenumbers_walkassign7" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="cspnamenumbers_walkassign7" numbered="yes" adaptive="yes" indentation="hide" language="python">
         <statement>
             <p>The following program should figure out the cost per person for a dinner including the tip. But the
                 blocks have been mixed up. Drag the blocks from the left and put them in the correct order on the right.
@@ -241,4 +238,3 @@ print (bill)</pre>
         </program>
     </exercise>
 </section>
-

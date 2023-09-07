@@ -80,8 +80,7 @@ anu.goto(0, 0)
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise label="cspnameturtles_turtlecoordinates3" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspnameturtles_turtlecoordinates3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital F as shown below, but the lines are mixed up. The program
         should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle. It
@@ -132,8 +131,7 @@ anu.goto(0, 0)
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnameturtles_turtlecoordinates4" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspnameturtles_turtlecoordinates4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital A as shown below, but the lines are mixed up. The program
         should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle. It
@@ -186,4 +184,3 @@ anu.goto(0, 0)
     </blocks>
   </exercise>
 </section>
-

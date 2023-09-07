@@ -50,7 +50,7 @@
       <p><c>drawRoof</c> doesn't sound too bad - I can do it in a few lines of code.</p>
     </blockquote>
     <p>Now that I&#8217;ve broken everything down into manageable chunks, we are ready to start implementing&#8230;</p>
-    <exercise label="cspdesigningprocedures_programdesign1" numbered="yes" indentation="show" language="python">
+    <exercise label="cspdesigningprocedures_programdesign1" numbered="yes" indentation="hide" language="python">
       <statement>
         <p>Let&#8217;s make sure you understand the design listed above. Arrange the blocks to implement the rough
           design.</p>
@@ -124,4 +124,3 @@
     </exercise>
   </subsection>
 </section>
-

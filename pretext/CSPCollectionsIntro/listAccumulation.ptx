@@ -114,8 +114,7 @@ for item in words:
 print(poem)
     </input>
   </program>
-  <exercise label="cspcollectionsintro_listaccumulation5" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspcollectionsintro_listaccumulation5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should calculate the average of some numbers by adding them all up before dividing by the
         number of values there are and printing out the answer. Put the blocks in the correct order and indentation. You
@@ -144,4 +143,3 @@ print(poem)
     </blocks>
   </exercise>
 </section>
-

@@ -24,7 +24,7 @@
 
     <list xml:id="csp-python-data_filemethods1a">
       <title>File Methods</title>
-      <dl >
+      <dl>
         <li>
             <title>open</title>
             <c>fileReference = open("filename")</c>
@@ -130,7 +130,7 @@ Adrian, MI
       </tests>
     </program>
   </exercise>
-  <exercise label="csppythondata_readdata3" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="csppythondata_readdata3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program prints the pollution information for all cities that start with a <c>D</c>, but the code
         is mixed up. Arrange the blocks and indent them to make a working program.</p>
@@ -170,4 +170,3 @@ Adrian, MI
       are relatively small.</p>
   </note>
 </section>
-

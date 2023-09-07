@@ -93,8 +93,7 @@ grid(roger)                     # do the grid procedure with roger
   <p>In this case, <c>roger</c> is passed to <c>grid</c>, which calls the turtle <c>turtle</c>, and passes it to <c>row</c>, which calls
     it <c>turtleName</c>, which passes it to <c>square</c> which calls it <c>turtle</c>. Each of the procedures has its own
     &#8220;nickname&#8221; for the turtle that they are all working with.</p>
-  <exercise label="cspdesigningprocedures_procedurescallingprocedures3" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspdesigningprocedures_procedurescallingprocedures3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following code is supposed to draw a picture consisting of four &#8220;lines&#8221;; each
         &#8220;line&#8221; has three squares.</p>
@@ -161,4 +160,3 @@ grid(roger)                     # do the grid procedure with roger
     </blocks>
   </exercise>
 </section>
-

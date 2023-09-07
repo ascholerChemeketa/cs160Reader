@@ -2,8 +2,7 @@
     <title>Mixed Up Code Practice</title>
     <p>Try to solve each of the following. Click the <em>Check</em> button to check each solution. You will be told if
         your solution is too short, has a block in the wrong order, or you are using the wrong block.</p>
-    <exercise label="cspnamenumbers_variablepracticeparsons1" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons1" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print out the cost for each shirt if they are to buy 2 and get the
                 third free but were originally $45 each. The blocks have been mixed up. Drag the blocks from the left
@@ -24,8 +23,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons2" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons2" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print out the cost per person for a dinner including the tip. But
                 the blocks have been mixed up and include an extra block that isn&#8217;t needed in the solution. However,
@@ -55,8 +53,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons3" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons3" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print the amount of punch left in a two-gallon punch bowl if 12oz is
                 poured into as many cups as possible. One gallon contains 128oz and the punch bowl is full. However, the
@@ -83,8 +80,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons4" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons4" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print the number of seconds in 5 days. However, the blocks have been
                 mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the needed blocks from
@@ -111,8 +107,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons5" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons5" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print the number of months it would take you to save 500 if you make
                 50 a week. However, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the
@@ -138,8 +133,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons6" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons6" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print the cost of a trip that is 200 miles when the price of gas is
                 2.20 and the miles per gallon is 42. However, the blocks have been mixed up and include an extra block that
@@ -166,8 +160,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons7" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons7" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print how many miles you can go on half a tank of gas if the miles
                 per gallon is 26 and your tank holds 15 gallons. However, the blocks have been mixed up and include an extra
@@ -194,8 +187,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons8" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons8" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print how many chicken wings you can buy with $3.50 if the wings are
                 $.60 each. However, the blocks have been mixed up and include an extra block that isn&#8217;t needed in the
@@ -218,8 +210,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons9" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons9" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print how much you will have to pay for an item that is 60% off the
                 original price of $52.99. However, the blocks have been mixed up and include an extra block that isn&#8217;t
@@ -245,8 +236,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons10" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons10" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should print how much each pair of shorts cost when they are buy 2 and get
                 the third free. The shorts are originally $39.99 each. However, the blocks have been mixed up and include an
@@ -271,8 +261,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons11" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons11" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>Arrange the code so the following is printed in order: 55, &#8220;computer science&#8221;, 0. The blocks
                 have been mixed up and include an extra block that isn&#8217;t needed in the solution. Drag the needed
@@ -299,8 +288,7 @@
             </block>
         </blocks>
     </exercise>
-    <exercise label="cspnamenumbers_variablepracticeparsons12" numbered="yes" adaptive="yes" indentation="hide"
-        language="python">
+    <exercise label="cspnamenumbers_variablepracticeparsons12" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
             <p>The following program segment should swap the values of x and y after val1 and val 2 are assigned to x
                 and y, respectively. However, the blocks have been mixed up and include an extra block that isn&#8217;t
@@ -327,4 +315,3 @@
         </blocks>
     </exercise>
 </section>
-

@@ -219,8 +219,7 @@ square(imani, 25)      # draw a square with size 25
     </choices>
 
   </exercise>
-  <exercise label="cspnameprocedures_multipleparameters6" numbered="yes" adaptive="yes" indentation="show"
-    language="python">
+  <exercise label="cspnameprocedures_multipleparameters6" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following code assumes that a procedure square has been defined that takes a size. The code should create a
         turtle and then use it to draw a square, move forward, and draw a second square as shown below, but the lines
@@ -249,4 +248,3 @@ square(imani, 25)      # draw a square with size 25
     </blocks>
   </exercise>
 </section>
-

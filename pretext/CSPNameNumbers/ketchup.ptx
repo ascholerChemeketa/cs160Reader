@@ -6,8 +6,7 @@
         miles per hour.</p>
     <figure align="center">
         <caption>Ketchup dripping speed</caption>
-        <image source="CSPNameNumbers/Figures/ketchup.jpg" width="30%"
-            alt="A picture of ketchup dripping from a bottle" />
+        <image source="CSPNameNumbers/Figures/ketchup.jpg" width="30%" alt="A picture of ketchup dripping from a bottle" />
     </figure>
 
     <program xml:id="cspnamenumbers_ketchup1" interactive="codelens" language="python">
@@ -31,7 +30,7 @@ print(4 / dripFPM)
     </p>
 
     <video xml:id="X5SCf9AV_oo" youtube="X5SCf9AV_oo" width="100%" />
-    <exercise label="cspnamenumbers_ketchup2" numbered="yes" adaptive="yes" indentation="show" language="python">
+    <exercise label="cspnamenumbers_ketchup2" numbered="yes" adaptive="yes" indentation="hide" language="python">
         <statement>
             <p>The following program figures out the ketchup speed in feet per <em>seconds</em>. Drag the blocks from
                 the left and put them in the correct order on the right. Click the <em>Check</em> button to check your
@@ -58,4 +57,3 @@ print(4 / dripFPM)
         </blocks>
     </exercise>
 </section>
-

@@ -1,6 +1,6 @@
 <exercises xml:id="csp-decisions-images_chapter-exercises">
   <title>Chapter Exercises</title>
-  <exercise label="cspdecisionsimages_exercises1" numbered="yes" indentation="show" language="python">
+  <exercise label="cspdecisionsimages_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The code below is supposed to change the white in the French flag to aqua (Aqua is made by mixing blue and
         green with no red). Arrange and indent the blocks to make a correct program. You will not use them all.</p>
@@ -183,4 +183,3 @@
   </exercise>
 
 </exercises>
-

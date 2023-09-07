@@ -32,12 +32,12 @@ print(total)
     </program>
         <p>Using an <c>if</c> with an <c>else</c> makes sure that <em>either</em> the <c>if</c> block is executed <em>or</em> the
             <c>else</c> block is executed, but <term>never</term> both.</p>
-        <figure align="center" ><caption >Flow of execution for both an if and else</caption><image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%" alt="Flowchart for both an if and else"/></figure>
+        <figure align="center"><caption>Flow of execution for both an if and else</caption><image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%" alt="Flowchart for both an if and else" /></figure>
         <p>We never <term>have</term> to use an <c>else</c>. We can always write two seperate <c>if</c> statements. But
             using <c>else</c> can help avoid bugs where there is a &#8220;gap&#8221; between the two options like we saw on
             the previous page.</p>
         <p><term>Mixed up programs</term></p>
-<exercise label="cspdecisionsintro_ifandelse1" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+<exercise label="cspdecisionsintro_ifandelse1" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
         <p>The following program should print out &#8220;x is even&#8221; if the remainder of x divided by 2 is 0
             and &#8220;x is odd&#8221; otherwise, but the code is mixed up. Remember that the <c>%</c> symbol gives
             the remainder after the first number is divided by the second number.  Drag the blocks from
@@ -49,7 +49,7 @@ print(total)
 <cline>    print("x is even")</cline>
 <cline>else:</cline>
 <cline>    print("x is odd")</cline>
-</block></blocks></exercise><exercise label="cspdecisionsintro_ifandelse2" numbered="yes" indentation="show" language="python"><statement>
+</block></blocks></exercise><exercise label="cspdecisionsintro_ifandelse2" numbered="yes" indentation="hide" language="python"><statement>
         <p>The following function should calculate the shipping cost for an order. Orders over $50 ship free.
             Otherwise, it is $5 base shipping plus $0.75 per pound. Drag the blocks from
             the left and place them in the correct order on the right.  Be sure to also indent correctly!</p>
@@ -62,4 +62,3 @@ print(total)
 <cline>        shipping = 5 + 0.75 * weight</cline>
 <cline>    return shipping</cline>
 </block></blocks></exercise>    </section>
-

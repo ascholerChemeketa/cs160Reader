@@ -193,7 +193,7 @@ print("Mali" + " is " + str(Mali))
     <p>When you print a string (a sequence of characters in a pair of single, double, or triple quotes) in Python it
       will print the exact characters in the string. When you print a variable it will print the value of that variable.</p>
   </note>
-  <exercise label="cspnamestrings_madlib6" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="cspnamestrings_madlib6" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Put the blocks below into the correct order to print a twist on a famous poem.</p>
     </statement>
@@ -212,7 +212,7 @@ print("Mali" + " is " + str(Mali))
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_madlib7" numbered="yes" adaptive="yes" indentation="show" language="python">
+  <exercise label="cspnamestrings_madlib7" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Put the blocks below into the correct order to declare the variables and then print the following story. One
         day Jay went shopping. He wanted to buy shoes. But, he didn&#8217;t like any. So, Jay went home.</p>
@@ -247,8 +247,7 @@ place = "Portland"
 activity = "sailing"
       </input>
     </program>
-    <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib9"
-        language="python">
+    <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib9" language="python">
         <input>
 name = "Maria"
 month = "October"
@@ -263,4 +262,3 @@ print(end)
     </answer>
   </exercise>
 </section>
-

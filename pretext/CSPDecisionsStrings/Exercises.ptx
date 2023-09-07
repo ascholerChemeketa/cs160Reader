@@ -1,6 +1,6 @@
 <exercises xml:id="csp-decisions-strings_chapter-exercises">
   <title>Chapter Exercises</title>
-  <exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="show" language="python">
+  <exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program segment should ask whether the user wants to terminate the program and print out the
         appropriate statement based on the user&#8217;s response. The blocks have been mixed up and include extra blocks
@@ -35,7 +35,7 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspdecisionsstrings_exercises2" numbered="yes" indentation="show" language="python">
+  <exercise label="cspdecisionsstrings_exercises2" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program segment should ask the user for three numbers and say whether they are in order. The
         numbers can be either ascending (going up) or descending (going down).</p>
@@ -201,4 +201,3 @@
   </exercise>
 
 </exercises>
-

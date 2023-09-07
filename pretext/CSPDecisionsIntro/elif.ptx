@@ -136,7 +136,7 @@ else:
         </input>
     </program>
         <p><term>Check Your Understanding</term></p>
-<exercise label="cspdecisionsintro_elif5" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+<exercise label="cspdecisionsintro_elif5" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
         <p>The following program should report which team won or if there was a tie.  But the code
             has been mixed up.  Drag it into the right order with the right indention.</p>
 </statement>
@@ -156,4 +156,3 @@ else:
 </block><block order="2">
 <cline>    print("team1 and team2 tied")</cline>
 </block></blocks></exercise>    </section>
-
