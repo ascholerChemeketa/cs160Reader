@@ -8,37 +8,6 @@
     with a 13% increased risk of heart attacks.</p>
   <p>We will use just the US data. It is in a large text file that looks like this:</p>
 
-  <datafile filename="uspoll2.txt" label="uspoll2.txt" xml:id="csp-python-data_poll-data-file2">
-    <pre>
-      asdf
-      asdf
-      qwer
-    </pre>
-  </datafile>
-
-
-  <program xml:id="csppythondata_readdata1b" interactive="activecode" language="python">
-    <input>
-      # Open the file for reading. The reference we will use to work with it will be inFile
-      inFile = open("uspoll.txt")
-
-      # get all the lines of data
-      data = inFile.read().splitlines()
-
-      # Print out the full array of data
-      print(data)
-      print("-------------------------------------------")
-
-      # close the file
-      inFile.close()
-
-      # Now process all the data by looping through the lines
-      for line in data:
-          print(line)
-    </input>
-  </program>
-
-
   <datafile filename="uspoll.txt" label="uspoll.txt" xml:id="csp-python-data_poll-data-file">
     <pre source="CSP/datafiles/uspoll.txt"/>
   </datafile>
