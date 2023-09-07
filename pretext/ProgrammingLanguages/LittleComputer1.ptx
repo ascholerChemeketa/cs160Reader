@@ -4,7 +4,7 @@
     work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that
     data.</p>
   <p>The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three <xref
-      ref="../ComputerArchitecture/Processor2#registers" />: a program counter, an instruction register, and an
+      ref="computer-architecture-instruction-register" text="custom">registers</xref>: a program counter, an instruction register, and an
     accumulator. The CPU supports a very basic set of operations: it can get input and output, it can store data to
     memory and load it from memory, it can do addition and subtraction, and it can branch (or jump) to a different
     instruction if certain conditions are met.</p>
@@ -14,8 +14,8 @@
     dozens of instructions instead of the handful that the Little Computer does. But for the most part, everything they
     do is just as simple: they load/store data from memory, they do basic math and logic operations on data, and they
     use branches to make decisions and repeat operations. Whatever code a programmer writes in a <xref
-      ref="HighLevelLanguages#high-level-languages" /> like javascript or C++ gets turned into these basic <xref
-      ref="MachineLanguages#machine-languages" />.</p>
+      ref="programming-languages_high-level-programming-languages" text="custom">high-level language</xref> like javascript or C++ gets turned into these basic <xref
+      ref="programming-languages_machine-languages" text="custom">machine language</xref> commands.</p>
   <p>This video introduces how the Little Computer works:</p>
 
   <video xml:id="x7RMi6fA0jg" youtube="x7RMi6fA0jg" width="100%" />

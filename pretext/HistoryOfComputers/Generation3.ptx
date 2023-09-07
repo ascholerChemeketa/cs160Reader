@@ -25,7 +25,7 @@
   <p>This generation also saw the introduction of many features we now take for granted. Keyboards and displays were
     developed during this period to facilitate real-time interaction with computers - prior machines had to be fed a job
     and left to run it with little in the way of feedback provided until the job was complete. <xref
-      ref="../OperatingSystems/OperatingSystems#operatingsystems" /> were developed that allowed multiple programs and
+      ref="operating-systems_operating-systems" text="custom">operating systems</xref> were developed that allowed multiple programs and
     users to interact with the machine at once.</p>
   <figure align="" xml:id="the-third-generatio-img2">
     <caption>Doug Letterman, CC BY 2.0, via Wikimedia Commons</caption>

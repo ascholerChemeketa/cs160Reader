@@ -6,9 +6,9 @@
       <p>The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the
         turn that the turtle makes without modifying other code.</p>
       <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-      <p>
-        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-      </p>
+      <note>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </note>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
@@ -40,9 +40,9 @@
       <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop based code.
         There are three issues to fix.</p>
       <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-      <p>
-        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-      </p>
+      <note>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </note>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
@@ -73,9 +73,9 @@
     <statement>
       <p>Fix the indention in the code below to correctly draw 20 pentagons (5 sided polygons).</p>
       <p>Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).</p>
-      <p>
-        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-      </p>
+      <note>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </note>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises3_editor" interactive="activecode" language="python">
@@ -206,9 +206,9 @@
         other must be <m>100 - w</m>.</p>
       <p>The autograder will not verify everything about your program. It is up to you to determine if your program is
         correct or not.</p>
-      <p>
-        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-      </p>
+      <note>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </note>
 
     </statement>
     <program xml:id="csprepeatturtles_exercises6_editor" interactive="activecode" language="python">

@@ -8,20 +8,41 @@
   <p>Making a full-fledged AI that can respond to unexpected responses and questions is a profoundly complex task. But if
     our goals are more limited, we can try to make a program that seems smart by forcing the conversation. If we ask
     questions that require specific answers and count on the user to respond logically, basic conditional code
-    can handle generating our responses.</p>
-  <pre><p>Computer: Hello, what is your name?
-User: Greg
-Computer: Hello Greg. Nice to meet you. Where do you go to school?
-User: Chemeketa
-<em>Test to see if the input has "Chemeketa" in it, if so give this message:</em>
-Computer: That is where I live!
-<em>Otherwise, we would have the computer say something like "Huh, never heard of it."</em>
-Computer: What is your favorite movie?
-User: I like "Rushmore"?
-<em>Just ignore the user's input and pretend like we used it.</em>
-Computer: Oh, that is a pretty good one. I like "The Matrix",
-          I just wish it had a happy ending.
-<em>Ask another question...</em></p></pre>
+    can handle generating our responses. A forced conversation might go like this:</p>
+
+    <console>
+      <prompt>Computer: Hello, what is your name? </prompt>
+      <input>
+        User: Greg</input>
+      <prompt>Computer: Hello Greg. Nice to meet you. Where do you go to school? </prompt>
+      <input>
+        User: Chemeketa</input>
+    </console>
+
+    <p>We would test to see if the input has "Chemeketa" in it, if so give this message:</p>
+
+    <console>
+      <prompt>Computer: That is where I live! </prompt>
+      <input></input>
+    </console>
+
+    <p>Otherwise, we would have the computer say something like:</p>
+
+    <console>
+      <prompt>Computer: "Huh, never heard of it."</prompt>
+      <input></input>
+    </console>
+
+    <p>Then we would continue:</p>
+
+    <console>
+      <prompt>Computer: What is your favorite movie? </prompt>
+      <input>User: I like "Rushmore"?</input>
+      <output>Just ignore the user's input and pretend as if we used it...</output>
+      <prompt>Computer: Oh, that is a pretty good one. I like "The Matrix",
+        I just wish it had a happy ending.</prompt><input></input>
+    </console>
+
   <p>Write a chatbot that asks the user at least three questions and then uses the user&#8217;s input to build its
     answer or make a decision about what to say. (You can add extra questions like the last one where the computer asks
     a question but then does not look at the response, but those do not count towards the three-question minimum.) Try

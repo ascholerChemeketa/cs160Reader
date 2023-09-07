@@ -71,7 +71,9 @@
     </input>
   </program>
 
-  <note><xref ref="csp-python-data_poll-data-file" text="custom">Click here to review the uspoll.txt data file</xref>.</note>
+  <note>
+    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+  </note>
 
   <p>To do any real work with the lines of the file, we need to break up the lines into three parts. We want to
     turn <c>"Aberdeen, SD :13 :8"</c> into a list that looks like <c>["Aberdeen, SD", "13", "8"]</c>. That will make it easier to get the location - <c>values[0]</c>, or the
@@ -85,12 +87,12 @@
     <statement>
       <p>Currently, this program prints each city followed by its PM2.5 value. After you run it, try modifying it so it
         prints out the PM10 values instead of the PM2.5. Your output should look like this:</p>
-      <pre><p>
+      <pre>
 Aberdeen, SD
  PM10: 8
 Adrian, MI
  PM10: 9
-...</p></pre>
+...</pre>
       <p>Make sure not to print out extra lines. The test will assume that you have just that output.</p>
     </statement>
     <program xml:id="csppythondata_readdata2_editor" interactive="activecode" language="python">

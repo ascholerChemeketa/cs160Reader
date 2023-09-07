@@ -2,7 +2,7 @@
   <title>The Processor</title>
   <p>This basic model of a computer as a processing unit that takes some input, communicates with a memory, and produces
     output, is known as the <term>von Neumann architecture</term> after the early computer scientist <xref
-      ref="../HistoryOfComputers/Generation1#vonneumann" />. In this architecture, the processor itself consists of
+      ref="subsec-the-first-generation_stored-program" text="custom">John von Neumann</xref>. In this architecture, the processor itself consists of
     multiple specialized parts:</p>
   <figure>
     <caption>Important logical components of a computer</caption>
@@ -33,7 +33,7 @@
     one system bus that can carry messages from one component to another. This means that the processor and memory would
     have to take turns talking: &#8220;CPU: Please send me the data at address 1 in memory&#8221;; &#8220;Memory: OK,
     the data at 00001 is 01010111.&#8221;; &#8220;CPU: Please send me the data at address 2 in memory&#8221;&#8230;
-    Having multiple busses avoids this bottleneck by allowing the CPU communicate the next address it wants at the same
+    Having multiple busses avoids this bottleneck by allowing the CPU to communicate the next address it wants at the same
     time memory sends data back to the CPU.</p>
 
     <remark> Materials on this page adapted with permission from <url

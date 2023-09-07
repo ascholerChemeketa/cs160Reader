@@ -37,7 +37,7 @@
     , <c>j</c>, and <c>currentMin</c> are being used to keep track of locations in the list and can predict the outcome of steps
     before clicking the button.</p>
   <p>
-    <raw format="html" xml:id="_selectionsortanimation" names="selectionsortanimation" xml:space="preserve"><div align="center">
+    <raw format="html" xml:id="selectionsortanimation" names="selectionsortanimation" xml:space="preserve"><div align="center">
 <canvas id="SelectionSort" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>

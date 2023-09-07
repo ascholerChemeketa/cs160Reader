@@ -101,6 +101,6 @@
     <p>It is also possible to use an image that is on another web page if you know its full address. Doing this would
       look like:</p>
     <c>img = Image("https://shorturl.at/dNUX7")</c>
-    <p>If you try this, make sure to stick to small images or your program will take a very long time to run.</p>
   </note>
+
 </section> 

@@ -5,7 +5,7 @@
     values we need to do this for&#8221;</em>. We saw one example of that in the program that asked for user input. But
     there are many other situations in which a <c>while</c> is the easiest way to make a loop.</p>
   <p>Say we want to convert a decimal number to binary using the division method. The <xref
-      ref="../DataRepresentation/BinaryConversions2#binary-conversion-division" /> says that we need to keep dividing by
+      ref="data-representation_binary-to-decimal-2" text="custom">divide by two method</xref> says that we need to keep dividing by
     2 <term>until</term> the quotient is 0. That is a description of when to stop, which means a while loop is what we
     will use to write the algorithm. However, when we write a while loop, we need to describe the situation that means <em>&#8220;keep
     doing the loop&#8221;</em>. If we want to <em>&#8220;stop when the quotient is 0&#8221;</em> that is the same as <em>&#8220;keep

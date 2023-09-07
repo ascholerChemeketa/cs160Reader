@@ -218,7 +218,7 @@ pjs.draw();
   </p>
   <p>Why would we care about knowing more than one sorting algorithm? Each approach has its own advantages and
     disadvantages. Try clicking the “Reset - Partially Sorted” button and then run the sort on a list that is almost in
-    order. Compare how insertion sort works on that list with how <xref ref="SelectionSort2#selectionsortanimation" />
+    order. Compare how insertion sort works on that list with how <xref ref="algorithms_algorithms-selection-sort-2" text="custom">selection sort</xref>
     does on the same list. Which one is more effective?</p>
 </section>
 

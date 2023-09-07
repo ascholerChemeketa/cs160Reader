@@ -122,9 +122,9 @@ for y in range(6, 2, -1):
     <p>The program below will use the <c>stamp</c> procedure to leave a copy of itself on the screen that will remain after
       the turtle has moved somewhere else. It also uses the <c>shape</c> procedure to change the turtle&#8217;s icon from the
       default triangle to an actual turtle.</p>
-    <p>
-      <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-    </p>
+    <note>
+      <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+    </note>
     <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2&#8217;s from 5 to 59. The loop variable is called <c>size</c> and is used to
       control how far forward the turtle moves in each repetition.</p>
 

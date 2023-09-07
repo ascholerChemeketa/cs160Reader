@@ -3,7 +3,7 @@
   <p>We can use random numbers to make the results of turtle drawings unpredictable. The program below will pick a
     random number between 50 and 199 and call it <c>squareSize</c>. That number gets passed to the <c>drawSquare</c> function as the size of
     the square to draw. Each time you run the program, the square should be a different size.</p>
-  <p>As a reminder, here are the turtle commands: <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" /></p>
+  <p>As a reminder, here are the turtle commands: <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
 
   <program xml:id="cspdecisionssimulations_turtlerandom1" interactive="activecode" language="python">
     <input>

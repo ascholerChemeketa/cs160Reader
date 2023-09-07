@@ -30,7 +30,9 @@
     line up into values, split the city/state up into a list, and then test the state value against the state code
     &#8220;OR&#8221; and only print out records that have that code.</p>
 
-  <note><xref ref="csp-python-data_poll-data-file" text="custom">Click here to review the uspoll.txt data file</xref>.</note>
+  <note>
+    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+  </note>
 
   <program xml:id="csppythondata_findpollstate2" interactive="activecode" language="python">
     <input>

@@ -4,9 +4,12 @@
     which tracks the average performance of a collection of large stocks. Each line of the file represents the opening
     day of trading (not always the first of the month as the market is not open every day).</p>
 
-  <datafile filename="stocks.txt" label="stocks.txt" xml:id="csp-python-data_stocks-data-file">
-    <pre source="CSP/datafiles/stocks.txt" />
-  </datafile>
+    <data xml:id="csp-python-data_stocks-data-file">  
+      <title>Stocks datafile</title>
+      <datafile filename="stocks.txt" label="stocks.txt" >
+        <pre source="CSP/datafiles/stocks.txt" />
+      </datafile>
+    </data>
 
   <p>Each line has the values, each separated by commas: <ul>
       <li>
@@ -39,6 +42,10 @@
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing. Feel free to use extra ones while writing your code and Then remove them or comment them out when
         everything is working.</p>
+
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises1_editor" interactive="activecode" language="python">
       <input>
@@ -73,6 +80,9 @@ myTests().main()
         to that. Start by printing out all of the monthly high values, then worry about finding the highest one.</p>
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises2_editor" interactive="activecode" language="python">
       <input>
@@ -104,6 +114,10 @@ myTests().main()
         there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to &#8220;92&#8221;.</p>
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
+        
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises3_editor" interactive="activecode" language="python">
       <input>
@@ -138,6 +152,10 @@ myTests().main()
         there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to &#8220;96&#8221;.</p>
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
+        
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises4_editor" interactive="activecode" language="python">
       <input>
@@ -172,6 +190,10 @@ myTests().main()
         simple one.</p>
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
+        
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises5_editor" interactive="activecode" language="python">
       <input>
@@ -224,6 +246,9 @@ myTests().main()
         simple one.</p>
       <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
+      <note>
+        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+      </note>
     </statement>
     <program xml:id="csppythondata_exercises6_editor" interactive="activecode" language="python">
       <input>

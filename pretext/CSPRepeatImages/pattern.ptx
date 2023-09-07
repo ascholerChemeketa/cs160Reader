@@ -7,8 +7,6 @@
     the green to the original blue, and the red to the original green. But, mostly we are trying to describe a pattern
     that you can use to create many image effects.</p>
 
-  <hidefromview> asdf </hidefromview>
-
   <program xml:id="csprepeatimages_pattern1" interactive="activecode" language="python">
     <input>
 # STEP 1: USE THE IMAGE LIBRARY

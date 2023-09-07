@@ -274,8 +274,8 @@
 
   <exercise label="csprepeatimages_exercises7">
     <statement>
-      <p>Write code top copy the top half of the image to the bottom half. You should end up with something that has two
-        copies of the top of mount hood.</p>
+      <p>Write code to copy the top half of the image to the bottom half. You should end up with something that has two
+        copies of the top of Mount Hood.</p>
       <p>You must use loops that track x and y locations to loop through all of the possible x,y pairs. Then use <c>getPixel</c>
         and <c>setPixel</c> to copy from <term>x, y</term> to <term>x, y + half the height of the image</term>.</p>
       <p>Hint: You saw a program to make a mirror image of the top half of an image. This is pretty similar&#8230;</p>
@@ -313,4 +313,3 @@
     </program>
   </exercise>
 </exercises>
-

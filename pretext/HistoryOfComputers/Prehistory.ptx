@@ -3,7 +3,7 @@
   <p>Devices have been used to aid computation for thousands of years. The earliest known counting devices are clay
     tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count
     of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.</p>
-  <figure align="" xml:id="prehistory-img1">
+  <figure xml:id="prehistory-img1">
     <caption>&#169; Marie-Lan Nguyen / Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/Accountancy_clay_envelope_Louvre_Sb1932.jpg"
       width="50%" alt="Counting stones" />
@@ -16,7 +16,7 @@
     arithmetic on them. Since then, many other forms of reckoning boards or tables have been invented. In a medieval
     European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to
     certain rules, as an aid to calculating sums of money.</p>
-  <figure align="" xml:id="prehistory-img2">
+  <figure xml:id="prehistory-img2">
     <caption>Wikimedia Commons</caption>
     <image
       source="HistoryOfComputers/Images/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"
@@ -42,7 +42,7 @@
     including automatically carrying from one place to the next. Many other mathematicians of the 17th century tried
     their hand at building their own calculators, including <url
       href="http://en.wikipedia.org/wiki/Gottfried_Leibniz">Gottfried Leibniz</url> who described a machine that would
-    be implemented using <xref ref="../Binary/Binary#binary" />.</p>
+    be implemented using <xref ref="binary_binary-and-its-advantages" text="custom">binary</xref>.</p>
   <container classes="inlinegroup clear">
     <figure align="" xml:id="prehistory-img3">
       <caption>Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>

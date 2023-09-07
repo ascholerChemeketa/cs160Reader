@@ -16,7 +16,7 @@ LIMIT
         </input>
   </program>
   <p>That query gives us the station id (31104), but what if we want its name? The name of each station is in the <xref
-      ref="../SQLIntro/data#bikesharestations" />. To get the name of station 31104, we could query it (notice the <c>FROM</c>
+      ref="sql-intro_bikeshare-stations-table" text="title"/>. To get the name of station 31104, we could query it (notice the <c>FROM</c>
     clause):</p>
 
   <program xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql" database="SQL/bikeshare.db">

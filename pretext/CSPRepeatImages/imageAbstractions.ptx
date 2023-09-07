@@ -34,8 +34,8 @@
           <li>
             <title>Each pixel has a <term>color</term> value that is specified as three values: the amount of red</title>
 
-            <p>the amount of blue, and the amount of green. Each of those values is a number between 0 and 255. <xref
-                ref="../DataRepresentation/HexColors#hex-colors" /></p>
+            <p>the amount of blue, and the amount of green. Each of those values is a number between 0 and 255. (<xref
+                ref="data-representation_hex-data-colors" text="title" />)</p>
 
           </li>
         </dl>

@@ -44,7 +44,7 @@
             </li>
           </ol>
         </p>
-        <p>Check here for a review of <xref ref="../CSPDecisionsSimulations/random#random-numbers" />.</p>
+        <note>Check here for a review of <xref ref="csp-decisions-simulations_random-numbers" text="custom">random numbers</xref>.</note>
         <p>The checks for this program can&#8217;t verify it works because it is doing something random. They will just
           make sure you have some of the basic elements that are needed. Make sure to test your program until you are
           sure it is working. The checks do depend on you using the specified variable names in your code.</p>
@@ -168,7 +168,7 @@
             </li>
             <li>
               <p>Copy the card at that location of <c>selectIndex</c> to a variable <c>removed</c>. Then use the <c>.pop()</c> function to
-                remove that item from the <c>deck</c>. Here is <xref ref="../CSPCollectionsIntro/addRemove#list-add-remove" />
+                remove that item from the <c>deck</c>. Here is the section on <xref ref="csp-collections-intro_adding-and-removing-items" text="title"/>
                 if you need to review.</p>
             </li>
             <li>
@@ -176,7 +176,7 @@
             </li>
             <li>
               <p>Append the removed card to the end of the deck. Print the deck and verify that one random card was
-                moved to the end. Here is <xref ref="../CSPCollectionsIntro/addRemove#list-add-remove" />.</p>
+                moved to the end.</p>
             </li>
           </ol>
         </p>

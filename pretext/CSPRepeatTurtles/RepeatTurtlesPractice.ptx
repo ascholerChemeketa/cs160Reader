@@ -129,9 +129,9 @@
         down (10, 9, 8, &#8230; 3). Each shape should have a size (side length) of 100.</p>
       <p>If you are having trouble, try printing out the loop counter so you can see which numbers your loop is counting
         through.</p>
-      <p>
-        <xref ref="../CSPNameTurtles/turtleProcedures#turtle-reference" />
-      </p>
+      <note>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </note>
 
     </statement>
     <program xml:id="csprepeatturtles_repeatturtlespractice3_editor" interactive="activecode" language="python">

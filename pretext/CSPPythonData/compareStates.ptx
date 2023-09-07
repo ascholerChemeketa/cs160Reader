@@ -4,6 +4,7 @@
   <p>We now can calculate the pollution for a particular state. To compare several states, we can run the program
     once for each state. But it would be nice to run the program just once and have it repeat the calculations for each
     state that we are concerned about.</p>
+
   <p>To do this, we need to be able to easily repeat the &#8220;find average pollution&#8221; logic. If we have a large
     amount of code that we want to repeat, it makes sense to turn it into a function. The function <c>getAvgPM25</c> will take in
     a <c>targetState</c> and the <c>data</c> collection. It will then do the work to calculate the average and return it. There are
@@ -51,7 +52,9 @@
     </input>
   </program>
 
-  <note><xref ref="csp-python-data_poll-data-file" text="custom">Click here to review the uspoll.txt data file</xref>.</note>
+  <note>
+    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+  </note>
 
   <p>If we have a large list of states we want to process, it would be silly to keep copy/pasting the last three lines
     of code for different state codes. Repeating those three lines over and over is the perfect job for a loop.

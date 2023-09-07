@@ -71,6 +71,7 @@
   <p>It has these columns:</p>
 
   <table xml:id="sql-intro_bikeshare-stations-table">
+    <title>bikeshare stations table</title>
     <tabular row-headers="yes">
       <row header="yes">
         <cell> Column Name </cell>

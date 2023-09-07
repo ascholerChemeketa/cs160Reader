@@ -67,7 +67,7 @@
       <title>General Purpose Registers</title>
       <p>A simple computer might have one Accumulator (ACC) that is used to hold the result of operations performed by
         the ALU. (We will see an example of such a machine in <xref
-          ref="../ProgrammingLanguages/LittleComputer1#little-computer" />). Modern processors have anywhere from a few
+          ref="programming-languages_the-little-computer" />). Modern processors have anywhere from a few
         to dozens of these registers for storing the results of work directly in the CPU. The names of these
         general-purpose registers will differ from one machine to another, but no matter what they are called, they
         simply are very fast, very temporary storage for the CPU.</p>
