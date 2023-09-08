@@ -12,11 +12,9 @@
       <block order="4">
         <choice correct="yes">
           <cline>from turtle import *</cline>
-          <cline>space = Screen()</cline>
         </choice>
         <choice>
-          <cline>from turtle import *</cline>
-          <cline>space = screen() </cline>
+          <cline>from turtle import</cline>
         </choice>
       </block>
       <block order="2">
@@ -47,7 +45,6 @@
         <cline>from Turtle import * </cline>
       </block>
       <block order="3">
-        <cline>space = Screen()</cline>
         <cline>mik = Turtle()</cline>
       </block>
       <block order="2">
@@ -84,7 +81,6 @@
         <cline>from turtle import *</cline>
       </block>
       <block order="1">
-        <cline>space = Screen()</cline>
         <cline>ari = Turtle()</cline>
         <cline>chris = Turtle()</cline>
       </block>
@@ -121,7 +117,6 @@
         <cline>from turtle import *</cline>
       </block>
       <block order="8">
-        <cline>space = Screen()</cline>
         <cline>nic = Turtle()</cline>
       </block>
       <block order="1">
@@ -157,7 +152,6 @@
         <cline>from turtle import *</cline>
       </block>
       <block order="1">
-        <cline>space = Screen()</cline>
         <cline>bri = Turtle()</cline>
       </block>
       <block order="5">

@@ -14,7 +14,6 @@
     <input>
 from turtle import *
 from sys import *
-space = Screen()
 zoe = Turtle()
 zoe.speed(0)
 
@@ -37,7 +36,6 @@ for repeats in range(20):
     <input>
 from turtle import *
 from sys import *
-space = Screen()
 zoe = Turtle()
 zoe.speed(0)
 
@@ -68,7 +66,6 @@ for repeats in range(20):
       <block order="2">
         <cline>from turtle import *</cline>
         <cline>from sys import *</cline>
-        <cline>screen = Screen()</cline>
         <cline>mateo = Turtle()</cline>
         <cline>mateo.speed(0)</cline>
       </block>
@@ -114,10 +111,8 @@ for repeats in range(20):
   <program xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
     <input>
 from turtle import *
-from sys import *
 
-screen = Screen
-dave = Turtle()
+dave = Turtle
 dave.speed(0)
 
 for repeats in range(20)
@@ -127,7 +122,7 @@ for repeats in range(20)
 
     dave.Color("blue")
     for sides in range(4):
-    dave.forward(50)
+        dave.forward(50)
     dave.right(90)
         </input>
   </program>
@@ -144,7 +139,6 @@ from turtle import *
 import sys
 sys.setExecutionLimit(60000)
 
-screen = Screen
 dave = Turtle()
 dave.speed(3)
 
@@ -188,7 +182,6 @@ def square(turtleName):
 
 # main part of program
 from turtle import *
-screen = Screen
 dave = Turtle()
 dave.speed(0)
 

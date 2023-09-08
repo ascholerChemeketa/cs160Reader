@@ -9,7 +9,6 @@
     <input>
 # main part of our program
 from turtle import *
-space = Screen()
 hector = Turtle()
 hector.forward(10)
 hop(hector)
@@ -49,7 +48,6 @@ def hop(turtleName):                # This is not indented. The hop definition i
 
 # These are NOT indented. They are not part of either procedure. This is the main part of the program.
 from turtle import *
-space = Screen()
 malik = Turtle()
 square(malik)
 hop(malik)
@@ -125,7 +123,6 @@ hop(malik)
         </block>
         <block order="2">
           <cline>from turtle import *</cline>
-          <cline>space = Screen()</cline>
           <cline>bianca = Turtle()</cline>
           <cline>triangle(bianca)</cline>
         </block>
@@ -151,7 +148,6 @@ turtleName.forward(100)
 
     # make a turtle and do the drawT procedure with it
     from turtle import *
-space = Screen()
 arnold = Turtle()
   drawT(arnold)
         </input>

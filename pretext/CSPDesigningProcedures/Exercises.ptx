@@ -20,7 +20,7 @@
       </li>
     </ul>
   </p>
-  <p>Remember that although we can&#8217;t make curves, you can draw circles by setting a large <c>pensize</c> and then doing <c>forward(0)</c>
+  <p>Remember that although we can&#8217;t make curves, you can draw circles by setting a large <c>pensize</c> and then doing <c>forward(1)</c>
     to make a colored dot.</p>
   <note>
     <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>

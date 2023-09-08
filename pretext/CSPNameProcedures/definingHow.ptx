@@ -87,7 +87,6 @@ def square(turtleName):
 
 # make a turtle and do the square procedure with it
 from turtle import *
-space = Screen()
 malik = Turtle()
 square(malik)           # call the square procdure, use malik as the input
         </input>

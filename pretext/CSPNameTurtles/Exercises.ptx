@@ -9,7 +9,6 @@
     <program xml:id="cspnameturtles_exercises1_editor" interactive="activecode" language="python">
       <input>
         from turtle import *
-        space = screen()
         alex = Turtle
         alex.Forward(150)
       </input>
@@ -39,7 +38,6 @@
         alex.right(90)
         from turtle import *
         alex.left(90)
-        space = Screen()
         alex.forward(75)
       </input>
       <tests>
@@ -65,7 +63,6 @@
     <program xml:id="cspnameturtles_exercises3_editor" interactive="activecode" language="python">
       <input>
         from turtle import *
-        space = Screen()
         jessica = Turtle()
       </input>
     </program>
@@ -81,7 +78,6 @@
     <program xml:id="cspnameturtles_exercises4_editor" interactive="activecode" language="python">
       <input>
         from turtle import *
-        space = Screen()
         antonio = Turtle()
       </input>
     </program>

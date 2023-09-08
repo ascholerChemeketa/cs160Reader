@@ -8,7 +8,6 @@
   <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 avery = Turtle()
 avery.begin_fill()
 
@@ -24,7 +23,6 @@ avery.end_fill()
   <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 will = Turtle()
 will.begin_fill()
 
@@ -47,7 +45,6 @@ will.end_fill()
   <program xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 mia = Turtle()
 mia.begin_fill()
 
@@ -161,7 +158,6 @@ mia.end_fill()
 
 # Main program
 from turtle import *
-space = Screen()
 mia = Turtle()
 mia.fillcolor("light blue")
 

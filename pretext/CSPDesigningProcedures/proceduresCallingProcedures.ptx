@@ -28,7 +28,6 @@ def row(turtleName):
     square(turtleName, 10)
 
 from turtle import *
-space = Screen()
 roger = Turtle()
 roger.speed(10)
 row(roger)                      # do the row procedure with roger
@@ -79,7 +78,6 @@ def grid(turtle):
 
 
 from turtle import *
-space = Screen()
 roger = Turtle()
 roger.speed(10)
 grid(roger)                     # do the grid procedure with roger
@@ -153,7 +151,6 @@ grid(roger)                     # do the grid procedure with roger
       </block>
       <block order="1">
         <cline>from turtle import *</cline>
-        <cline>space = Screen()</cline>
         <cline>becca = Turtle()</cline>
         <cline>picture(becca)</cline>
       </block>

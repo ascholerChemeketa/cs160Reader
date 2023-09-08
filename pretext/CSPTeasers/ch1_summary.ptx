@@ -35,10 +35,6 @@
                     accomplish some goal. This is sometimes called <term>code</term>.</p>
             </li>
             <li>
-                <p><term>Screen</term> - A <c>Screen</c> is part of the Turtle library. It is a space on the page for the
-                    turtle to move in and draw on.</p>
-            </li>
-            <li>
                 <p><term>String</term> - A string is anything we can type between a pair of pair of single quotes (<c>'Hi'</c>),
                     double quotes (<c>"Hi"</c>), or triple quotes (<c>'''Hi'''</c>). It is a sequence of characters.</p>
             </li>

@@ -7,18 +7,17 @@
   </figure>
   <p>The program below draws a snowman on a blue background by drawing 4 circles. It positions each of the circles using <c>goto(x,y)</c>
     to move the turtle to exactly where we want it centered. To draw a circle, we use a trick: we use <c>pensize</c> to make a
-    really big (circular) pen, then do <c>forward(0)</c> to make a dot of the current <c>color</c>.</p>
+    really big (circular) pen, then do <c>forward(1)</c> to make a dot of the current <c>color</c>.</p>
 
   <program xml:id="cspnameturtles_turtlecoordinates1" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 mario = Turtle()
 
 # Background
 mario.color("sky blue")
 mario.pensize(800)
-mario.forward(0)                # Draw a blue dot that covers the screen
+mario.forward(1)                # Draw a blue dot that covers the screen
 
 # Base - a 200px circle centered at 0, -160
 mario.color("white")
@@ -26,21 +25,21 @@ mario.penup()                   # Pick up the pen so we don't draw when we goto
 mario.goto(0, -160)             # Jump directly to x = 0, y = -160
 mario.pendown()
 mario.pensize(200)
-mario.forward(0)                # Draw a dot at the current pensize
+mario.forward(1)                # Draw a dot at the current pensize
 
 # Body - a 150px circle centered at 0, 0
 mario.penup()
 mario.goto(0, 0)
 mario.pendown()
 mario.pensize(150)
-mario.forward(0)
+mario.forward(1)
 
 # Head - a 100px circle centered at 0, 120
 mario.penup()
 mario.goto(0, 120)
 mario.pendown()
 mario.pensize(100)
-mario.forward(0)
+mario.forward(1)
         </input>
   </program>
   <p>The program below uses the <c>goto(x,y)</c> to move to the top left corner before drawing a square that nearly fills the
@@ -49,7 +48,6 @@ mario.forward(0)
   <program xml:id="cspnameturtles_turtlecoordinates2" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 anu = Turtle()
 
 anu.penup()                         # Pick up the pen so we don't draw when we goto
@@ -88,12 +86,12 @@ anu.goto(0, 0)
       <p>Drag the needed blocks of statements from the left column to the right column and put them in the right order.
         There may be extra blocks that are not needed in a correct solution. Then click on <em>Check</em> to see if you
         are right.</p>
+      <p>Hint: To go from the top of the F after drawing it to the middle section, you will want to jump to location (0,60).</p>
       <image source="CSPNameTurtles/Figures/DrawFwGT.png" width="30%" />
     </statement>
     <blocks>
       <block order="3">
         <cline>from turtle import *</cline>
-        <cline>space = Screen()</cline>
         <cline>anu = Turtle()</cline>
       </block>
       <block order="5">
@@ -138,17 +136,12 @@ anu.goto(0, 0)
         should draw the lines in the order shown by the numbers in the picture on the left. Drag the needed blocks of
         statements from the left column to the right column and put them in the right order. There may be additional
         blocks that are not needed in a correct solution. Then click on <em>Check</em> to see if you are right.</p>
+      <p>Hint: Use the goto to get into position to draw the middle of the A after drawing the two sides.</p>
       <image source="CSPNameTurtles/Figures/DrawABig.png" width="30%" />
     </statement>
     <blocks>
       <block order="1">
         <cline>from turtle import *</cline>
-      </block>
-      <block order="5">
-        <cline>space = Screen()</cline>
-      </block>
-      <block order="3" correct="no">
-        <cline>space = screen() </cline>
       </block>
       <block order="9">
         <cline>ella = Turtle()</cline>

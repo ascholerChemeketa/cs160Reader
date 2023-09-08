@@ -12,7 +12,6 @@ def square(turtleName, size):
         turtleName.right(90)
 
 from turtle import *
-space = Screen()
 alisha = Turtle()
 square(alisha, 10)
 alisha.forward(10)
@@ -46,7 +45,6 @@ alisha.forward(30)
       <block order="6">
         <cline>#Start of main part of program</cline>
         <cline>from turtle import *</cline>
-        <cline>space = Screen()</cline>
       </block>
       <block order="1">
         <cline>nick = Turtle()</cline>
@@ -102,7 +100,6 @@ alisha.forward(30)
         <cline>from turtle import *</cline>
       </block>
       <block order="5">
-        <cline>space = Screen()</cline>
         <cline>carlos = Turtle()</cline>
         <cline>rectangle(carlos, 175, 150)</cline>
       </block>

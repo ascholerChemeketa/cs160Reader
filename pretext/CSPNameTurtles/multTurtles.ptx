@@ -25,7 +25,6 @@
   <program xml:id="cspnameturtles_multturtles2" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 zari = Turtle()
 zari.setheading(90)
 zari.forward(100)
@@ -43,7 +42,6 @@ zari.right(120)
   <program xml:id="cspnameturtles_multturtles3" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 zari = Turtle()
 chad = Turtle()                 # Make a second turtle named chad
 chad.color("orange")            # Change chad's color to make it clear what it draws
@@ -76,7 +74,6 @@ chad.right(120)
     <blocks>
       <block order="2">
         <cline>from turtle import *</cline>
-        <cline>wn = Screen()</cline>
       </block>
       <block order="1">
         <cline>jamal = Turtle()</cline>
@@ -139,9 +136,6 @@ chad.right(120)
         <choice>
           <cline>from turtle </cline>
         </choice>
-      </block>
-      <block order="3">
-        <cline>wn = Screen()</cline>
       </block>
       <block order="8">
         <choice correct="yes">

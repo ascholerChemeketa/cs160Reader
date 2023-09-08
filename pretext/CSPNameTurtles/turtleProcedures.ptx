@@ -174,7 +174,6 @@
   <program xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 ji = Turtle()         # create a turtle named ji
 ji.speed(0)           # make ji go as fast as possible
 ji.color("blue")      # make ji draw with blue

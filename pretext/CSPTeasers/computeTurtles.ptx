@@ -17,7 +17,7 @@
         task. Using a library means we do not have to figure out how to handle all the details of a
         particular problem - the library code will take care of many of those details for us. In the
         case of making a virtual turtle, our program will need to have a way to keep track of where
-        the turtle is, a way to move the turtle around, a way to draw to the screen, etc&#8230; The <c
+        the turtle is, a way to move the turtle around, etc&#8230; The <c
             xml:space="preserve">turtle</c> library will handle these details for us.</p>
 
     <p>To use a library, we need to tell Python we want to use the library with an <term>import</term>

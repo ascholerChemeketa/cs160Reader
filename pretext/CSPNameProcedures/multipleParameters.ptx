@@ -17,7 +17,6 @@ def square(turtle):
 
 # Main part of the program
 from turtle import *
-space = Screen()
 grace = Turtle()
 square(grace)
         </input>
@@ -41,7 +40,6 @@ def square(turtle):
 
 # Main part of the program
 from turtle import *
-space = Screen()
 grace = Turtle()
 square(grace)
         </input>
@@ -98,7 +96,6 @@ def square(turtle, size):   # square now has two parameters
     turtle.right(90)
 
 from turtle import *
-space = Screen()
 grace = Turtle()
 square(grace, 100)          # draw a square of size 100
 square(grace, 75)           # draw a square of size 75
@@ -124,7 +121,6 @@ def mystery(turtle,size):
     turtle.right(90)
 
 from turtle import *    # use the turtle library
-space = Screen()        # create a turtle screen (space)
 grace = Turtle()        # create a turtle named grace
 mystery(grace, 100)     # draw something with size = 100
 </input>
@@ -181,7 +177,6 @@ def square(turtle,size):
     turtle.right(90)
 
 from turtle import *    # use the turtle library
-space = Screen()        # create a turtle screen (space)
 imani = Turtle()        # create a turtle named imani
 square(imani, 25)      # draw a square with size 25
 </input>
@@ -229,9 +224,6 @@ square(imani, 25)      # draw a square with size 25
     <blocks>
       <block order="6">
         <cline>from turtle import *</cline>
-      </block>
-      <block order="2">
-        <cline>space = Screen()</cline>
       </block>
       <block order="1">
         <cline>imani = Turtle()</cline>

@@ -16,12 +16,6 @@
       <block order="2">
         <cline>from turtle import *</cline>
       </block>
-      <block order="7">
-        <cline>space = Screen()</cline>
-      </block>
-      <block order="9" correct="no">
-        <cline>space = screen() </cline>
-      </block>
       <block order="11">
         <cline>nick = Turtle()</cline>
         <cline>nick.shape("turtle")</cline>
@@ -75,7 +69,6 @@
     <blocks>
       <block order="4">
         <cline>from turtle import *</cline>
-        <cline>space = Screen()</cline>
         <cline>nick = Turtle()</cline>
         <cline>nick.shape("turtle")</cline>
         <cline>nick.penup()</cline>
@@ -143,7 +136,6 @@
 
         # main program
         from turtle import *
-        space = Screen()
         lucia = Turtle()
         lucia.speed(0)
         lucia.penup()

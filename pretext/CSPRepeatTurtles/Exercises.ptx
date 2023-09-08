@@ -14,7 +14,6 @@
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
       <input>
         from turtle import *
-        space = Screen()
         alisha = Turtle()
         alisha.setheading(90)
         for sides in range(4):
@@ -48,7 +47,6 @@
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
       <input>
         from turtle import *
-        space = Screen()
         steven = Turtle()
         for sides in range(8)
             steven.forward(45)
@@ -83,7 +81,6 @@
         from turtle import *
         import sys
         sys.setExecutionLimit(50000)
-        space = Screen()
         zoe = Turtle()
         zoe.speed(0)
 
@@ -221,7 +218,6 @@
                 turtleName.left(90)
 
         from turtle import *
-        space = Screen()
         ralph = Turtle()
         ralph.speed(10)
 

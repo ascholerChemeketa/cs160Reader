@@ -1,8 +1,8 @@
 <section xml:id="csp-name-turtles_procedures-and-functions">
   <title>Procedures and Functions</title>
   <p><term>Functions</term> are code recipes that do some work and return a value. We have seen string <term>functions</term>
-    like <c>lower()</c> which returns a new string with all lowercase characters. <term>Functions</term> return a value. The <c>Screen()</c>
-    and <c>Turtle()</c> in the code below both create objects and return them, so they are functions.</p>
+    like <c>lower()</c> which returns a new string with all lowercase characters. <term>Functions</term> return a value. In the code below, 
+    <c>Turtle()</c> creates an object and returns it, so it is a function.</p>
   <p><term>Procedures</term> are similar to functions in that they do some work. However, unlike functions, they do not
     return a value when they are done. The turtle behaviors <c>forward(75)</c> and <c>left(90)</c> below are both procedures since they do
     an action, but don&#8217;t return any kind of answer when they are done.</p>
@@ -61,7 +61,6 @@ newDirection =                # Done turning left, there is nothing left!!!
   <program xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
     <input>
 from turtle import *    # use the turtle library
-space = Screen()        # create a turtle space
 alex = Turtle()         # create a turtle named alex
 alex.left(180)          # turn alex by 180 degrees
 alex.forward(75)        # move forward by 75 units
@@ -124,7 +123,6 @@ alex.forward(75)        # move forward by 75 units
         <cline>from turtle import *</cline>
       </block>
       <block order="7">
-        <cline>space = Screen()</cline>
         <cline>jamal = Turtle()</cline>
       </block>
       <block order="10">
@@ -172,7 +170,6 @@ alex.forward(75)        # move forward by 75 units
     <blocks>
       <block order="8">
         <cline>from turtle import *</cline>
-        <cline>space = Screen()</cline>
       </block>
       <block order="9">
         <cline>jamal = Turtle()</cline>

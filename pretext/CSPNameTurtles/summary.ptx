@@ -10,8 +10,8 @@
           the end of that line.</p>
       </li>
       <li>
-        <p><term>Function</term> - A function returns a value. An example of a function is <c>Screen()</c> which creates and
-          returns a screen (drawing space) object.</p>
+        <p><term>Function</term> - A function returns a value. An example of a function is <c>Turtle()</c> which creates and
+          returns a turtle object.</p>
       </li>
       <li>
         <p><term>Procedure</term> - A procedure does an action, but doesn&#8217;t return a value. An example of a

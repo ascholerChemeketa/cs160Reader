@@ -39,7 +39,6 @@ def rectangle(turtle, width, height):
     turtle.penup()
 
 from turtle import *
-space = Screen()
 steve = Turtle()
 steve.speed(10)
 steve.fillcolor("light blue")

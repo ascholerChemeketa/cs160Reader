@@ -30,7 +30,6 @@
     interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 malik = Turtle()
 malik.forward(20)
 malik.right(90)
@@ -69,7 +68,6 @@ malik.right(90)
     interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 yessenia = Turtle()
 
 square(yessenia)            # draws a square with yessenia

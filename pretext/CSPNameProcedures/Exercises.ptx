@@ -19,7 +19,6 @@
         turtle.right(90)
 
         from turtle import *
-        space = Screen()
         malik = Turtle()
             square(malik)           # draw a square with malik
       </input>
@@ -62,7 +61,6 @@
 
 
         from turtle import *
-        space = Screen()
         dave = Turtle()
         square(100)             # draw a square of size 100
         square(75)              # draw a square of size 75
@@ -105,7 +103,6 @@
         # define hexagon here
 
         from turtle import *
-        space = Screen()
         brittany = Turtle()
         brittany.speed(10)
 
@@ -162,7 +159,6 @@
 
 
         from turtle import *
-        space = Screen()
         stu = Turtle()
         stu.speed(0)
 

@@ -185,7 +185,7 @@ print("highestRoll was", highestRoll)
         drew.color("#ffc8c8")
 
         #draw the dot
-        drew.forward(0)
+        drew.forward(1)
 
       </input>
       <tests>

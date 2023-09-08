@@ -25,7 +25,6 @@ def drawWall(turtleName):
     rectangle(turtleName, 300, 200)
 
 from turtle import *
-space = Screen()
 steve = Turtle()
 steve.speed(10)
 steve.penup()

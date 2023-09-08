@@ -13,7 +13,6 @@
 
 # Main part of program
 from turtle import *
-space = Screen()
 emily = Turtle()
 # CALL THE PROCEDURE
 pentagon(emily, 100)

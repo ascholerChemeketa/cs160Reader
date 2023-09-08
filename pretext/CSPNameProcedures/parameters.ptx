@@ -44,11 +44,10 @@ def hop(turtleName):                # turtleName is the parameter
 
 # main part of the program
 from turtle import *
-space = Screen()
 sue = Turtle()
 buster = Turtle()
-sue.forward(0)
-buster.forward(0)
+sue.forward(1)
+buster.forward(1)
 
 hop(sue)                            # call hop with sue as the argument
 sue.forward(50)
@@ -119,7 +118,6 @@ def spin(who):
 
 # Main part of the program
 from turtle import *
-space = Screen()
 ray = Turtle()
 
 spin(ray)

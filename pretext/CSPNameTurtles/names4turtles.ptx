@@ -20,7 +20,6 @@
   <program xml:id="cspnameturtles_names4turtles1" interactive="activecode" language="python">
     <input>
 from turtle import *    # use the turtle library
-space = Screen()        # create a turtle space
 alex = Turtle()         # create a turtle named alex
 alex.forward(150)       # move forward by 150 units
 alex.left(90)           # turn left 90 degrees
@@ -110,14 +109,6 @@ alex.forward(75)        # move forward by 75 units
             <cline>from turtle Import * </cline>
           </choice>
         </block>
-        <block order="6">
-          <choice correct="yes">
-            <cline>space = Screen()</cline>
-          </choice>
-          <choice>
-            <cline>space = screen() </cline>
-          </choice>
-        </block>
         <block order="10">
           <cline>ella = Turtle()</cline>
         </block>
@@ -163,9 +154,6 @@ alex.forward(75)        # move forward by 75 units
       <blocks>
         <block order="11">
           <cline>from turtle import *</cline>
-        </block>
-        <block order="7">
-          <cline>space = Screen()</cline>
         </block>
         <block order="6">
           <choice correct="yes">

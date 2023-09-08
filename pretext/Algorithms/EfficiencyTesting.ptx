@@ -127,7 +127,6 @@ from turtle import *
 import sys
 sys.setExecutionLimit(50000)
 import time
-space = Screen()
 reggie = Turtle()
 reggie.speed(0)
 reggie.penup()

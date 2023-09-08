@@ -45,7 +45,6 @@ alex.right(60)
   <program xml:id="csprepeatturtles_repetition1" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 alex = Turtle()
 for side in range(6):       # repeat the indented lines 6 times
     alex.forward(100)
@@ -140,7 +139,6 @@ for side in range(6):
     <program xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
       <input>
 from turtle import *
-space = Screen()
 alex = Turtle()
 for side in range(6):                       # repeat the indented lines 6 times
     print("side is currently", side)        # print current value of side

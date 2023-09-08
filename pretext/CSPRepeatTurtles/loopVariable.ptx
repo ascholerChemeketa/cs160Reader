@@ -131,7 +131,6 @@ for y in range(6, 2, -1):
     <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
       <input>
 from turtle import *
-space = Screen()
 tess = Turtle()
 tess.color("blue")
 tess.shape("turtle")
@@ -161,7 +160,6 @@ for size in range(5, 60, 2):
       <blocks>
         <block order="9">
           <cline>from turtle import *</cline>
-          <cline>space = Screen()</cline>
           <cline>nikea = Turtle()</cline>
           <cline>nikea.color("blue")</cline>
         </block>
@@ -232,7 +230,6 @@ for size in range(5, 60, 2):
         <block order="8">
           <cline># main program</cline>
           <cline>from turtle import *</cline>
-          <cline>space = Screen()</cline>
           <cline>jose = Turtle()</cline>
           <cline>jose.speed(10)</cline>
         </block>

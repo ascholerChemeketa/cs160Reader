@@ -116,7 +116,6 @@
         <block order="">
           <cline># Main part of the program</cline>
           <cline>from turtle import *</cline>
-          <cline>space = Screen()</cline>
           <cline>steve = Turtle()</cline>
           <cline>drawHouse(steve)</cline>
         </block>

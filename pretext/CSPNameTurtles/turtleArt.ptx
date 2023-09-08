@@ -5,7 +5,6 @@
   <program xml:id="cspnameturtles_turtleart1" interactive="activecode" language="python">
     <input>
 from turtle import *
-space = Screen()
 bob = Turtle()
 bob.speed(8)
 

@@ -55,7 +55,6 @@
 
         # main program
         from turtle import *
-        space = Screen()
         steve = Turtle()
         steve.speed(0)
         steve.penup()

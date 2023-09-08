@@ -13,7 +13,7 @@
   <p>
     <ul>
       <li>
-        <p>Case matters in Python so <c>screen</c> is not the same as <c>Screen</c></p>
+        <p>Case matters in Python so <c>turtle</c> is not the same as <c>Turtle</c></p>
       </li>
       <li>
         <p>open and close parentheses <c>()</c> are required after every function and procedure call, even if it
@@ -88,7 +88,6 @@
     <program xml:id="cspnameturtles_debugging1" interactive="activecode" language="python">
       <input>
 from turtle import *
-space = Screen()
 alex = Turtle()
 alex.forward(150)        # This is the last active line of code
 #alex.left               # This line is turned off and so is every line after it
@@ -107,7 +106,6 @@ alex.forward(150)        # This is the last active line of code
     <program xml:id="cspnameturtles_debugging2" interactive="activecode" language="python">
       <input>
 from turtle import *    # use the turtle library
-space = screen()        # create a turtle space
 alisha = Turtle()       # create a turtle named alisha
 alisha.right(90)        # turn alisha south
 alisha.forward          # move forward by 150 units
@@ -125,7 +123,6 @@ alisha.Forward(75)      # move forward by 75 units
     <program xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
       <input>
 from turtle Import *    # use the turtle library
-space = Screen()        # create a turtle space
 Alex = Turtle           # create a turtle named alex
 alex.left(180)          # turn alex by 180 degrees
 alex.forward(75)        # move forward by 75 units
