@@ -62,7 +62,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 </xsl:template>
 
 
+<xsl:variable name="b-has-baseurl" select="not($baseurl = '')"/>
 
+<xsl:template name="brand-logo">
+    <a id="logo-link" class="logo-link" target="_blank" >
+        <xsl:attribute name="href">
+            <xsl:choose>
+                <xsl:when test="$docinfo/brandlogo/@url != ''"><xsl:value-of select="$docinfo/brandlogo/@url"/></xsl:when>
+                <xsl:when test="$b-has-baseurl"><xsl:value-of select="$baseurl"/></xsl:when>
+                <xsl:otherwise></xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
+        <xsl:if test="$docinfo/brandlogo/@source">
+            <xsl:variable name="location">
+                <!-- empty when not using managed directories -->
+                <xsl:value-of select="$external-directory"/>
+                <xsl:value-of select="$docinfo/brandlogo/@source"/>
+            </xsl:variable>
+            <img src="{$location}" alt="Logo image"/>
+        </xsl:if>
+    </a>
+</xsl:template>
 
 
 <!-- Sometimes this template is useful to see which    -->

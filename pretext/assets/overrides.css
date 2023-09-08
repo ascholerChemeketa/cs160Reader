@@ -1,12 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+
 .ptx-runestone-container pre.program,
 .ptx-runestone-container pre.code-block {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 .ptx-runestone-container pre.program:before,
 .ptx-runestone-container pre.code-block:before {
-    content: none
+  content: none;
 }
 
 .blockquote {
   font-style: oblique;
+}
+
+.ptx-masthead .logo-link {
+  display: none;
+}
+
+
+.ptx-masthead .title-container > .heading {
+  /* font-family: "Teko", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Teko', serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.ptx-toc ul.structural li a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ptx-toc > ul.structural > li > a .codenumber {
+  font-family: "PT Serif", "Times New Roman", Times, serif;
+}
+
+.ptx-content :is(section, article) .heading {
+  font-family: "Teko", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.ptx-content :is(section, article) h2.heading {
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+}
+
+.ptx-content :is(section, article) h3.heading {
+    font-size: 1.5em;
+}
+
+.ptx-content .summary-links {
+    margin-top: 2em;
+}
+
+.ptx-masthead .ptx-banner {
+  padding: 0.75em 0;
+}
+
+.ptx-toc.parts:not(.depth2) > ul.structural > li:first-child > ul.structural > li > .toc-item > a {
+  color: var(--sectiontoc);
+  background-color: var(--chaptertoc);
+}
+
+.ptx-toc.parts:not(.depth2) > ul.structural > li > ul.structural > li > .toc-item > a {
+    color: white;
+    background-color: var(--chaptertoc); 
+}
+
+.ptx-toc.parts:not(.depth2) > ul.structural > li > ul.structural > li > .toc-item > a:hover {
+  background-color: var(--highlighttoc);
+}
+
+.ptx-content .summary-links a {
+  font-family: "Teko", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.ptx-content figcaption {
+    font-family: inherit;
+    font-size: 80%;
+}
+
+.ptx-content section.part .heading > .type {
+    display: inline;
+}
+.ptx-content section .heading > .codenumber::after {
+    content: " -";
+}
+
+.ptx-toc ul.structural ul.structural a > .codenumber {
+    display: inline;
+}
+
+.ptx-content .autopermalink { 
+    opacity: 0;
+}
+
+.ptx-content .autopermalink:hover {
+    opacity: 1;
+    background: var(--bodytitlehighlight);
+}
+
+.period {
+    display: none;
+}
+
+.ptx-content article > .heading::after, .ptx-content .discussion-like > .heading::after, .ptx-content .paragraphs > .heading::after, .ptx-content article > a > .heading::after {
+    content: none;
+}
+
+.ptx-content article:is( .theorem-like, .definition-like, .example-like, .project-like, .remark-like, .openproblem-like, .openproblems-like, .computation-like ) > :last-child {
+    margin-bottom: 10px;
+}
+
+
+.ptx-content .ptx-runestone-container .ac_output pre:empty {
+  display: none;
+}
+
+
+:root {
+  --ccgreen: rgb(64, 71, 20);
+  --cclightgreen: hsl(68 56% 35% / 1);
+  --ccred: rgb(120, 31, 28);
+  --documenttitle: var(--ccgreen);
+  --bodytitle: var(--ccgreen);
+  --bodysubtitle: var(--ccgreen);
+  --bodytitlehighlight: #e0e9ff;
+  --bodysubtitlehighlight: #fce5e4;
+
+  --parttoc: var(--ccgreen);
+  --parttoctext: white;
+  --parttocactive: var(--cclightgreen);
+  --parttoctextactive: white;
+
+  --chaptertoc: var(--ccgreen);
+  --chaptertoctext: white;
+  --chaptertocactive: var(--cclightgreen);
+  --chaptertoctextactive: white;
+
+  --sectiontoc: white;
+  --sectiontoctext: var(--ccgreen);
+  --sectiontocactive: var(--cclightgreen);
+  --sectiontoctextactive: white;
+  --tocborder: var(--ccgreen);
+
+  --highlighttoc: var(--cclightgreen);
+  --highlighttoctext: white;
+  --highlighttocborder: var(--chaptertoc);
+
+  --videoplay: var(--bodytitle);
+  --assemblageborder: #1100aa;
+  --assemblagebackground: #f5f8ff;
+
+  --knowlborder: var(--bodytitlehighlight);
+  --knowlbackground: var(--assemblagebackground);
+
+  --bodytitlehighlight: #e0e9ff;
+  --bodysubtitlehighlight: #e0e9ff;
 }

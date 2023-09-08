@@ -41,15 +41,17 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
   </common>
 
   <html>
+    
+    <exercises tabbed-tasks="inline reading project"/>
     <!-- <platform host="runestone" /> -->
     <!-- knowled checkpoints interfere with ActiveCode problems -->
     <knowl exercise-inline="no" example="no" listing="no" />
-
+    <baseurl href="http://localhost:8002/cs160reader/cs160reader/output/web/"/>
     <!-- Choices at https://github.com/PreTeXtBook/CSS_core -->
     <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
     darkmartiansands -->
     <!-- <css colors="bluegreen_grey" toc="crc" banner="crc" navbar="crc" shell="crc" /> -->
-    <css colors="bluegreen_grey" style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+    <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
   </html>
 
 </publication>

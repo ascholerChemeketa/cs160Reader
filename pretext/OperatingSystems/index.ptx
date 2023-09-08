@@ -1,4 +1,4 @@
-<chapter xml:id="operating-systems_operating-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="operating-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Operating Systems</title>
   <introduction>
     <p>A computer&#8217;s <term>Operating System</term> is the software that manages the low-level functions of the

@@ -28,10 +28,10 @@
     computer grind to a crawl as you switch from one to another, you have seen this in practice - memory is being
     swapped in/out to the very slow hard drive as you switch from one program to another.</p>
   <p>Below is an illustration of how the virtual memory trick works:</p>
-  <example>
+  <exploration>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-1.png" width="80%" />
+        <image source="OperatingSystems/Images/VirtualMemory-Page-1.png"  />
         <p>Process A thinks it has 8 addresses to use. So does process B. Orange blocks show memory for process A that
           is currently actually in the physical RAM, blue blocks show memory for B that is currently in RAM.</p>
         <p>When Process A asks the operating system for &#8220;memory location 1&#8221; because it wants to access the
@@ -45,7 +45,7 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-2.png" width="80%" />
+        <image source="OperatingSystems/Images/VirtualMemory-Page-2.png"  />
         <p>The gray blocks are blocks that are not currently in RAM. They are sitting on the hard drive, which is being
           used as backup storage for the RAM since there is too much total information to fit in main memory all at the
           same time.</p>
@@ -53,7 +53,7 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-3.png" width="80%" />
+        <image source="OperatingSystems/Images/VirtualMemory-Page-3.png"  />
         <p>Now imaging Process B asks the operating system for &#8220;memory location 8&#8221;.</p>
         <p>That memory block, &#8220;B8&#8221;, is not currently in RAM, it is on the hard drive. So, the operating system needs to move it
           back into RAM (the hard drive is too slow to work from directly).</p>
@@ -64,21 +64,21 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-4.png" width="80%" />
+        <image source="OperatingSystems/Images/VirtualMemory-Page-4.png"  />
         <p>The needed block, &#8220;B8&#8221;, has now been placed into location 5. Meanwhile, &#8220;A3&#8221; has
           finished moving to the hard drive to be stored until it is needed again.</p>
       </statement>
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-5.png" width="80%" />
+        <image source="OperatingSystems/Images/VirtualMemory-Page-5.png"  />
         <p>Finally, the operating system can complete the request by giving Process B the memory block &#8220;B8&#8221;.</p>
         <p>Process A doesn&#8217;t know that &#8220;A3&#8221; is no longer actually in main memory. If it goes to access
           it, the operating will use the same procedure to restore it from the hard drive by evicting some other block
           of memory.</p>
       </statement>
     </task>
-  </example>
+  </exploration>
 
   <exercise label="operatingsystems_virtualmemory1">
     <statement>

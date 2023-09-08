@@ -1,58 +1,55 @@
 <section xml:id="csp-teasers_compute-with-numbers">
-    <title>Compute with Numbers</title>
+  <title>Compute with Numbers</title>
 
+  <p>Computers were first used for numeric calculations. You may be used to doing calculations with
+    a calculator, but calculations are often easier if you can <em> name</em> the numbers you are
+    working with. When you name a number, or the result of a calculation, you are creating a <term>
+    variable</term>. A <term>variable</term> is a name associated with computer memory that can hold
+    a value and that value can change or vary. One example of a <term>variable</term> is the score
+    in a game. The score starts off at 0 and increases as you play the game.</p>
+  <figure align="center">
+    <caption>Both the <strong>score</strong> and <strong>high score</strong> in the game Angry Birds
+      would be represented by a variable.</caption>
+    <image source="CSPTeasers/Figures/angry_birds.jpg" width="100%" alt="A game with a score" />
+  </figure>
+  <p>One thing that you might want to calculate is the monthly payment on a loan for a car. To do
+    so, you can use this mathematical formula:</p>
+  <p classes="center">
+    <md>
+      <mrow>A = P \frac{r(1 + r)^n}{(1 + r)^n - 1}</mrow>
+    </md>
+  </p>
+  <p>That formula uses the following variables:</p>
+  <p>
+    <dl>
+      <li>
+        <title>P</title>
+        <classifier>The <term>principle</term> - the amount of the original loan</classifier>
+      </li>
+      <li>
+        <title>
+          <term>r</term>
+        </title>
+        <classifier>The monthly interest <term>rate</term> expressed as a decimal value. Loans are
+          often described in terms of an <em>APR</em> or Annual Percentage Rate that must be divided
+          by 1200 to produce the right value for r.</classifier>
 
-    <p>Computers were first used for numeric calculations. You may be
-        used to doing calculations with a calculator, but calculations are often easier if you can <em>
-        name</em> the numbers you are working with. When you name a number, or the result of a
-        calculation, you are creating a <term>variable</term>. A <term>variable</term> is a name
-        associated with computer memory that can hold a value and that value can change or vary. One
-        example of a <term>variable</term> is the score in a game. The score starts off at 0 and
-        increases as you play the game.</p>
-    <figure align="center" >
-        <caption>Both the <strong>score</strong> and <strong>high
-            score</strong> in the game Angry Birds would be represented by a variable.</caption>
-        <image source="CSPTeasers/Figures/angry_birds.jpg" width="100%" alt="A game with a score" />
-    </figure>
-    <p>One thing that you might want to calculate is the monthly payment on a loan for a car. To do
-        so,
-        you can use this mathematical formula:</p>
-    <p classes="center">
-        <md>
-            <mrow>A = P \frac{r(1 + r)^n}{(1 + r)^n - 1}</mrow>
-        </md>
-    </p>
-    <p>That formula uses the following variables:</p>
-    <p>
-        <dl>
-            <li>
-                <title>P</title>
-                <classifier>The <term>principle</term> - the amount of the original loan</classifier>
-            </li>
-            <li>
-                <title>
-                    <term>r</term>
-                </title>
-                <classifier>The monthly interest <term>rate</term> expressed as a decimal value.
-                    Loans are often described in terms of an <em>APR</em> or Annual Percentage Rate
-                    that must be divided by 1200 to produce the right value for r.</classifier>
+      </li>
+      <li>
+        <title>n</title>
+        <classifier>The <term>number</term> of monthly payments</classifier>
+      </li>
+    </dl>
+  </p>
+  <p>It calculates the value <term>A</term> which is the payment <term>amount</term>.</p>
+  <p>The Python program below sets some values for these variables and then does the calculations
+    needed to produce the payment. Press the <em>Save &amp; Run</em> button below to make the
+    computer execute these steps. The output from this program will be displayed to the right of the
+    program.</p>
 
-            </li>
-            <li>
-                <title>n</title>
-                <classifier>The <term>number</term> of monthly payments</classifier>
-            </li>
-        </dl>
-    </p>
-    <p>It calculates the value <term>A</term> which is the payment <term>amount</term>.</p>
-    <p>The Python program below sets some values for these variables and then does the calculations
-        needed to produce the payment. Press the <em>Save &amp; Run</em> button below to make the
-        computer execute these steps. The output from this program will be displayed to the right of
-        the program.</p>
-
-    <program xml:id="cspteasers_computenumbers1" interactive="activecode" language="python">
-        <input>
-            P = 10000 # $10,000 - notice we don't use ,'s in numbers
+  <program xml:id="cspteasers_computenumbers1" interactive="activecode" language="python">
+    <input>
+            P = 10000 # $10,000 - notice we don't use commas in numbers
             APR = 4.9 # annual percentage interest rate - we also don't use % symbols
             n = 60 # 60 payments (5 years of monthly payments)
 
@@ -62,111 +59,108 @@
             print("Monthly payment amount:")
             print(amount)
         </input>
-    </program>
-    <p>Currently the code is calculating the payment for a $10,000 loan at an APR of 4.9% over 60
-        months. Try changing the numeric values for P, APR, and n in the program above, and press
-        the <em>Run</em> button to calculate the payment for a different loan. Note that some of the
-        symbols used in Python are different than those we normally use for math: <c>*</c> means
-        &#8220;multiply&#8221; and <c>**</c> means &#8220;to the power of&#8221;.</p>
+  </program>
+  <p>Currently the code is calculating the payment for a $10,000 loan at an APR of 4.9% over 60
+    months. Try changing the numeric values for P, APR, and n in the program above, and press the <em>
+    Run</em> button to calculate the payment for a different loan. Note that some of the symbols
+    used in Python are different than those we normally use for math: <c>*</c> means
+    &#8220;multiply&#8221; and <c>**</c> means &#8220;to the power of&#8221;.</p>
 
+  <p>Also visible in the code are some <term>comments</term>. Comments are pieces of text that come
+    after a <c>#</c> symbol, like <c># $10,000 - notice we don't use commas in numbers</c>. Python will ignore these comments and they are colored
+    differently than the code to indicate that they are not actual code. Comments are used by
+    programmers to leave notes to themselves and others about the code. Try deleting a <c>#</c> in
+    the program above and then running it. You will get an error message because now Python is
+    trying to run the note as if it were code.</p>
+  <note>
+    <p>Notice how naming the values (using variables) for things like <term>n</term> makes it easier
+      to see which values to change to make the program calculate a different loan.</p>
+  </note>
 
-    <p>Also visible in the code are some <term>comments</term>.
-        Comments are pieces of text that come after a <c>#</c> symbol, like <c># $10,000 - notice we
-        don't use ,'s in numbers</c>. Python will ignore these comments and they are colored
-        differently than the code to indicate that they are not actual code. Comments are used by
-        programmers to leave notes to themselves and others about the code. Try deleting a <c>#</c>
-        in the program above and then running it. You will get an error message because now Python
-        is trying to run the note as if it was code.</p>
-    <note>
-        <p>Notice how naming the values (using variables) for things like <term>n</term> makes it
-            easier to see which values to change to make the program calculate a different loan.</p>
-    </note>
+  <exercise label="cspteasers_computenumbers2">
+    <statement>
 
-    <exercise label="cspteasers_computenumbers2">
+      <p>Try calculating the payment for an $8,000 loan at 6.5% interest over 72 months. What is the
+        monthly payment?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-            <p>Try calculating the payment for an $8,000 loan at 6.5% interest over 72 months. What
-                is the monthly payment?</p>
-
+          <p>134.48</p>
         </statement>
-        <choices>
+        <feedback>
+          <p>That would be the right dollar amount, but the computer will give you more digits than
+            that.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>134.48</p>
-                </statement>
-                <feedback>
-                    <p>That would be the right dollar amount, but the computer will give you more
-                        digits than that.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>134.4794369902589</p>
-                </statement>
-                <feedback>
-                    <p>Yes!</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>134</p>
-                </statement>
-                <feedback>
-                    <p>No, the computer does not round the result.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>135</p>
-                </statement>
-                <feedback>
-                    <p>No, the computer does not round the result.</p>
-                </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
-
-    <exercise label="cspteasers_computenumbers3">
+      <choice correct="yes">
         <statement>
-            <p>Try calculating the payment for a $20,000 loan at 7% interest over 48 months. What is
-                the monthly payment? <var />
-            </p>
+          <p>134.4794369902589</p>
         </statement>
-        <setup>
-            <var>
-                <condition number="[478.9248932488566, 478.9248932488566]">
-                    <feedback>
-                        <p>Correct!</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*\d+\s*$">
-                    <feedback>
-                        <p>You should have a decimal</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*478\.\d{0,12}\s*$">
-                    <feedback>
-                        <p>Make sure to use the full decimal value</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*478\.\d{13}\s*$">
-                    <feedback>
-                        <p>That looks close, check all your digits carefully</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*x\s*$">
-                    <feedback>
-                        <p>No - make sure that you are giving a numeric answer and do not include a
-                            $</p>
-                    </feedback>
-                </condition>
-            </var>
-        </setup>
-    </exercise>
+        <feedback>
+          <p>Yes!</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>134</p>
+        </statement>
+        <feedback>
+          <p>No, the computer does not round the result.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>135</p>
+        </statement>
+        <feedback>
+          <p>No, the computer does not round the result.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="cspteasers_computenumbers3">
+    <statement>
+      <p>Try calculating the payment for a $20,000 loan at 7% interest over 48 months. What is the
+        monthly payment? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[478.9248932488566, 478.9248932488566]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*\d+\s*$">
+          <feedback>
+            <p>You should have a decimal</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*478\.\d{0,12}\s*$">
+          <feedback>
+            <p>Make sure to use the full decimal value</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*478\.\d{13}\s*$">
+          <feedback>
+            <p>That looks close, check all your digits carefully</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>No - make sure that you are giving a numeric answer and do not include a $</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
 </section>
 

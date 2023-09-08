@@ -44,11 +44,15 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <platform host="runestone" />
     <!-- knowled checkpoints interfere with ActiveCode problems -->
     <knowl exercise-inline="no" example="no" listing="no" />
+    
+    <exercises tabbed-tasks="inline reading project"/>
+
+    <baseurl href="https://runestone.academy/ns/books/published/welcomecs2/"/>
 
     <!-- Choices at https://github.com/PreTeXtBook/CSS_core -->
     <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
         darkmartiansands -->
-    <css colors="bluegreen_grey" style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+    <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
   </html>
 
 </publication>
