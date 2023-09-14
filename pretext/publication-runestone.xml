@@ -29,15 +29,16 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
   <!-- This starts chapter numbering at 0 -->
   <numbering>
     <divisions chapter-start="1" />
-    <divisions part-structure="structural" />
+    <!-- <divisions part-structure="structural" /> -->
   </numbering>
 
   <!-- This turns off showing solutions after an exercise. -->
   <!-- Instead we will generate <solutions> at the end of a section -->
   <common>
-    <exercise-divisional solution="no" />
-    <exercise-inline solution="no" />
-    <project solution="no" />
+    <!-- <exercise-divisional solution="no" /> -->
+    <!-- <exercise-inline solution="no" /> -->
+    <!-- <project solution="no" /> -->
+    <tableofcontents levels="4" />
   </common>
 
   <html>
@@ -53,6 +54,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
         darkmartiansands -->
     <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+    <tableofcontents focused="yes" />
   </html>
 
 </publication>
