@@ -29,29 +29,31 @@
     colors being exactly 255.</p>
   <p>All of the white pixels need to be changed to yellow. A yellow will always have a relatively high green and red
     value and a low blue value. A good value for the yellow in the flag is 254 red, 242 green, and 0 blue.</p>
+  <p>Here is a program that does that. After running it, try removing the line that does the `updatePixel` - 
+    if you run that version you should get the unmodified French flag.</p>
 
   <program xml:id="cspdecisionsimages_decimages1" interactive="activecode" language="python">
     <input>
 from image import *
 
-# CREATE AN IMAGE FROM A FILE
 img = Image("fr-flag.gif")
 
-# LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        # GET CURRENT COLOR VALUES
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+pixels = img.getPixels()
+for p in pixels:
 
-        # IS IT WHITE?
-        if r &gt; 250 and g &gt; 250 and b &gt; 250:
-            # CREATE A NEW PIXEL
-            newPixel = Pixel(254, 242, 0)
-            # CHANGE THE IMAGE
-            img.setPixel(x, y, newPixel)
+    # GET CURRENT COLOR VALUES
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
+
+    # IS IT WHITE?
+    if r &gt; 250 and g &gt; 250 and b &gt; 250:
+        # MAKE IT YELLOW
+        p.setRed(254)
+        p.setGreen(242)
+        p.setBlue(0)
+        # CHANGE THE IMAGE
+        img.updatePixel(p)
 
 
 # SHOW THE CHANGED IMAGE
@@ -59,10 +61,12 @@ win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
       </input>
   </program>
+
   <p>The Belgian flag is very similar to the Chad flag. See if you can turn the Chad flag into the Belgian one by
-    turning the blue pixels into black ones. Hint: the blue pixels are not perfect blue. An approximate color value is
+    turning the blue pixels into black ones. Hints: blue pixels are not perfect blue. An approximate color value is
     (red = 0, green = 100, blue = 180), but you should not count on pixels having exactly those values - come up with a
-    recipee using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones.</p>
+    recipe using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones. 
+    Black pixels have r, g, b values of 0.</p>
 
   <image source="CSP/Images/be-flag.gif" width="20%" />
 
@@ -70,24 +74,38 @@ img.draw(win)
     <input>
 from image import *
 
-# CREATE AN IMAGE FROM A FILE
 img = Image("cd-flag.gif")
 
 # LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        # GET CURRENT COLOR VALUES
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+pixels = img.getPixels()
+for p in pixels:
+    # GET CURRENT COLOR VALUES
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-        # YOUR CODE HERE
+    # TEST THE PIXEL 
+
+        #IF BLUE MAKE BLACK AND UPDATE
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
       </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        p = img.getPixel(5, 5)
+        totalColor = p.getRed() + p.getBlue() + p.getGreen()
+        self.assertEqual(totalColor, 0, "Testing that blue pixels became black")
+        p2 = img.getPixel(50, 5)
+        totalColor = p2.getRed() + p2.getBlue() + p2.getGreen()
+        self.assertNotEqual(totalColor, 0, "Testing that yellow pixels did not become black")
+        
+myTests().main()
+        </tests>
   </program>
 
   <exercise label="cspdecisionsimages_decimages3">

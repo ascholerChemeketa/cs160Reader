@@ -80,20 +80,21 @@ img1 = Image("green_screen.jpg")
 img2 = Image("beach.jpg")
 
 # LOOP THROUGH ALL THE PIXELS IN IMG1
-for x in range(img1.getWidth()):
-    for y in range(img1.getHeight()):
-        p1 = img1.getPixel(x, y)
-        r1 = p1.getRed()
-        g1 = p1.getGreen()
-        b1 = p1.getBlue()
+pixels = img1.getPixels()
+for p1 in pixels:
+    x = p1.getX()
+    y = p1.getY()
+    r = p1.getRed()
+    g = p1.getGreen()
+    b = p1.getBlue()
 
-        # CHECK IF THE PIXEL IS GREEN
-        if isGreen(r1, g1, b1):
+    # CHECK IF THE PIXEL IS GREEN
+    if isGreen(r, g, b):
 
-            # GET THE CORESPONDING PIXEL FROM img2
-            p2 = img2.getPixel(x, y)
-            # USE THAT INSTEAD in img1
-            img1.setPixel(x, y, p2)
+        # GET THE CORESPONDING PIXEL FROM img2, CALL IT p2
+        p2 = img2.getPixel(x, y)
+        # USE THAT INSTEAD OF p1 IN img1
+        img1.setPixel(x, y, p2)
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img1.getWidth(), img1.getHeight())

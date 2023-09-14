@@ -1,43 +1,14 @@
 <section xml:id="csp-decisions-images_location-based-conditions">
   <title>Location based Conditions</title>
-
-  <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process.
-    This program changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
+  <p>We can also use conditionals and the x and y coordinates of pixels to make decisions about what pixels to process.
+    One popular graphic design technique is to make parts of an image black and white, only leaving color in the parts we
+    want to highlight. We will do this to make the graduates' faces stand out from the background in this image:</p>
     
-  <datafile label="cat" filename="cat.jpg">
-    <image source="CSP/Images/cat.jpg"/>
-  </datafile>
-    
-
-  <program xml:id="cspdecisionsimages_locationconditions1" interactive="activecode" language="python">
-    <input>
-      from image import *
-      
-      img = Image("cat.jpg")
-      
-      pixels = img.getPixels();
-      for p in pixels:
-      
-          # GET PIXEL DATA
-          x = p.getX()
-          y = p.getY()
+  <image source="CSP/Images/graduates.jpg" width="40%" /> 
   
-          # TEST THE LOCATION
-          if x &lt; 20 or x &gt; 180: 
-
-              #MAKE THE COLOR BLACK
-              p.setRed(0)
-              p.setBlue(0)
-              p.setGreen(0)
-      
-              # CHANGE THE PIXEL
-              img.updatePixel(p)
-      
-      # SHOW THE RESULT
-      win = ImageWin(img.getWidth(), img.getHeight())
-      img.draw(win)
-    </input>
-  </program>
+  <datafile label="graduates" filename="graduates.jpg">
+    <image source="CSP/Images/graduates.jpg"/>
+  </datafile>
     
   <p>First, we need to make some procedures that we will use to make a pixel gray and darken it. These procedures
     will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an

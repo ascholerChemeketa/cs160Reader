@@ -82,24 +82,24 @@ def isRed(r, g, b):
 img = Image("scooter.jpg")
 
 # LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        # GET CURRENT COLOR VALUES
-        p = img.getPixel(x, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+pixels = img.getPixels()
+for p in pixels:
 
-        # IS IT RED?
-        if isRed(r, g, b):
+    # GET CURRENT COLOR VALUES
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-            # CREATE THE COLOR
-            # Pixel takes the "red" value first and "blue" last.
-            # This swaps the red and blue values
-            newPixel = Pixel(b, g, r)
+    # IS IT RED?
+    if isRed(r, g, b):
 
-            # CHANGE THE IMAGE
-            img.setPixel(x, y, newPixel)
+        # CREATE THE COLOR
+        # Pixel takes the "red" value first and "blue" last.
+        # This swaps the red and blue values
+        newPixel = Pixel(b, g, r)
+
+        # CHANGE THE IMAGE
+        img.setPixel(x, y, newPixel)
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img.getWidth(),img.getHeight())

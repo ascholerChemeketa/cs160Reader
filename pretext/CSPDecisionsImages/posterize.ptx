@@ -12,8 +12,6 @@
     </statement>
     <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode" language="python">
       <input>
-        from image import *
-
         def posterize(colorValue):
             #Write your logic here
 
@@ -51,25 +49,27 @@ from image import *
 # CREATE AN IMAGE FROM A FILE
 img = Image("mount_hood.jpg")
 
-# LOOP THROUGH ALL PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
-        p = img.getPixel(x, y)
+# LOOP THROUGH THE PIXELS
+pixels = img.getPixels();
+for p in pixels:
 
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+    # GET THE DATA
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-        # VALUES FOR THE NEW COLOR
-        r = posterize(r)
-        g = posterize(g)
-        b = posterize(b)
+    # VALUES FOR THE NEW COLOR
+    newR = posterize(r)
+    newG = posterize(g)
+    newB = posterize(b)
+    
+    # MODIFY THE COLORS
+    p.setRed(newR)
+    p.setGreen(newG)
+    p.setBlue(newB)
 
-        # CREATE THE COLOR
-        newPixel = Pixel(r,g,b)
-
-        # CHANGE THE IMAGE
-        img.setPixel(x, y, newPixel)
+    # MODIFY THE IMAGE
+    img.updatePixel(p)
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img.getWidth(),img.getHeight())
