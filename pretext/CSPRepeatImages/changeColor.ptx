@@ -1,7 +1,7 @@
 <section xml:id="csp-repeat-images_increasing-and-decreasing-brightness">
   <title>Increasing and decreasing brightness</title>
-  <p>We can change one color channel (red/green/blue) at a time, or we can change all three. If we increase the value of
-    all colors, we make the image get brighter. If we decrease all the colors, we make the image darker.</p>
+  <p>While using this recipe, we can change one color channel (red/green/blue) at a time, or we can change all three. If we increase the value of
+    all colors, we make the image brighter. If we decrease all the colors, we make the image darker.</p>
   <p>This program uses step five to increase each color value by 50% (1.5 times its original value.)</p>
 
   <program xml:id="csprepeatimages_changecolor1" interactive="activecode" language="python">
@@ -36,14 +36,14 @@ win2 = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win2)
   </input>
   </program>
-  <p>Try decreasing each color channel by 50% (0.5 times its original value) - you should end up with a darker version
+  <p>Try decreasing each color channel by 50% (make it 0.5 times its original value) - you should end up with a darker version
     of the same picture.</p>
   <exercise label="csprepeatimages_changecolor2" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>If we ant to make the image both brighter and more red, we could increase just the red value. However, if we
-        want it to look more red, but get brighter overall, we would want to make a small increase to the red value and
-        a decrease to the blue and green values.</p>
-      <p>Arrange and indent the blocks below to make a recipe that would make the image more red but not increase the
+      <p>If we want to make the image both brighter and more red, we could increase just the red value. However, if we
+        want it to look more red, but not get brighter overall, we would want to make a small increase to the red value and
+        a small decrease to the blue and green values.</p>
+      <p>Arrange and indent the blocks below to make a recipe that would make the image redder but not increase the
         overall brightness much. You should modify the red value before you modify the green &amp; blue (that would not
         matter in a real program, but here you need to have them in that order.)</p>
     </statement>

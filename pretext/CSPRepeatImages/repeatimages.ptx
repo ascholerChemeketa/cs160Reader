@@ -50,8 +50,7 @@ img.draw(win)
     one by one, calls the current one <c>p</c> and then does the body of the loop with it. After the loop is done, we
     make a window to display the image in and draw it - but don&#8217;t worry too much about that code - we want to
     focus on the loop and what it does to each pixel. This program changes the red value of each pixel to 0 -
-    essentially it removes all the red from the image, making it look like we are looking through blue-green glass at
-    it.</p>
+    it removes all the red from the image, making it look like we are looking through blue-green glass.</p>
 
 </section>
     

@@ -1,50 +1,66 @@
 <section xml:id="csp-repeat-images_thinking-about-pixel-locations">
   <title>Thinking About Pixel Locations</title>
-  <p>So far, we have been getting a list of all of the pixels from an image using <c>img.getPixels()</c> and then looping through all
-    the pixels using <c>for p in pixels:</c>. This processed all the pixels in the first row, then all the pixels in the second row, and
-    so on until it processed all the pixels in the image.</p>
+  <p>When we loop through the pixels in an image, our loop moves from left to right
+    across each row starting from the top one and working our way to the bottom.</p>
   <figure align="center">
-    <caption>The order that pixels are processed if you use <literal>img.getPixels()</literal></caption>
+    <caption>The order that pixels are processed if you use <literal>img.getPixels()</literal>.
+    First, we visit the top row moving from left to right. Then we go to the second row and move
+    from left to right again. The process continues until we reach the bottom of the image.</caption>
     <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%" />
   </figure>
-  <p>This approach has some limitations because we never know what coordinates the pixel we are working on is located
-    at. This prevents us from writing programs that change where pixels are or do different things in different parts of
-    the image.</p>
-  <p>If we want to have access to the location of the pixel we are working with, we need to change our loop strategy. We
-    will use nested loops, with an outer one that iterates over all the columns in the image and inner one that iterates
-    over all of the rows in that column. This sample shows the basic idea but just prints out the locations of pixels in
-    the order they would be visited instead of doing actual work on an image.</p>
+  <p>Sometimes, we don't care where a particular pixel is in the image. But if we want
+    to accomplish a goal like <q>make the bottom half of the image black</q>, we need to 
+    know if the current pixel is in the bottom half or not.
+  </p>
+  <p>To find out where a pixel is, we can use the <c>.getX()</c> and <c>.getY()</c> functions 
+    of the pixel object. This code sample shows using the two functions to ask for the x 
+    and y locations of each pixel.
+  </p>
 
   <program xml:id="csprepeatimages_changecolorloc1" interactive="activecode" language="python">
     <input>
-imageWidth = 4
-imageHeight = 4
+      # STEP 1: USE THE IMAGE LIBRARY
+      from image import *
+      
+      # STEP 2: PICK THE IMAGE
+      img = Image("cat.jpg")
+      
+      # STEP 3: LOOP THROUGH THE PIXELS
+      pixels = img.getPixels();
+      for p in pixels:
 
-for x in range(imageWidth):         # For each possible x coordinate
-    for y in range(imageHeight):        # For each possible y at that x
-        print("Working on pixel: " + str(x) + ", " + str(y))
-  </input>
+          # STEP 4: GET THE DATA
+          x = p.getX()
+          y = p.getY()
+          print("Working on pixel at x = ", x, " and y = ", y)
+
+          # NO CHANGES - NO STEP 5/6
+          
+      # STEP 7: SHOW THE RESULT
+      win = ImageWin(img.getWidth(), img.getHeight())
+      img.draw(win)      
+    </input>
   </program>
-  <p>Notice that we start counting from 0 in images (in programming we generally start counting from 0 instead of 1). So
-    the uppermost left pixel is 0, 0. The bottom left pixel in a 4 x 4 image is 3, 0.</p>
+  <p>If you examine the output, you should see that the first pixel is at x = 0, y = 0. Then 
+    we move to x = 1, y = 0. The next pixel is at x = 2, y = 0. A few important details to notice:
+    <ul>
+      <li>We start counting from 0 for both x and y. The leftmost pixel is at x = 0. 
+        The pixel to its right is at x = 1.</li>
+      <li>This image is 128 pixels wide. So x counts up to 127 before reaching the end of the row 
+        (one less than width since we start counting from 0).</li>
+    </ul>
+  </p>
+
   <figure align="center">
     <caption>The x, y locations of various pixels in a 4 x 4 image.</caption>
     <image source="CSPRepeatImages/Figures/grid_coords.png" width="50%" />
   </figure>
-  <p>Since the outer loop in our program changes the x (the column) and the inner loop changes the y (the row), we will
-    start on column 0. On that column, the inner loop processes all the rows in that column. Then we move to column 1,
-    where we process all of its rows&#8230;</p>
-  <figure align="center" xml:id="id3">
-    <caption>The order that pixels are processed if you use a nested loop with x changing in the outer loop and y
-      changing in the inner loop.</caption>
-    <image source="CSPRepeatImages/Figures/colOrder.png" width="50%" />
-  </figure>
-
+  
   <exercise label="csprepeatimages_changecolorloc2">
     <statement>
 
-      <p>In the program above, if we set <c>imageWidth</c> to be 10 and <c>imageHeight</c> to be 5, what would the coordinates of the last
-        pixel processed be?</p>
+      <p>If an image has a width of 10 and a height of 5, what would the coordinates of the last
+        pixel visited by a loop be?</p>
 
     </statement>
     <choices>
@@ -81,18 +97,15 @@ for x in range(imageWidth):         # For each possible x coordinate
           <p>10, 5</p>
         </statement>
         <feedback>
-          <p>That would be true if the image had a width of 11 and a height of 6.</p>
+          <p>That would be true if the image had a width of 11 and a height of 6. Remeber we start counting from 0.</p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>Now let&#8217;s put the pixel coordinates to work. To do so, instead of printing coordinates like 0,0 we will use
-    them to call <c>getPixel</c> on the image. In the past, our loop was given a big list of all the pixels and iterated through
-    those. Now we have two loops, that are iterating through all the location in the image. We use those locations to
-    get the pixels one by one.</p>
-  <p>The sample below dose exactly that. Then, after getting the pixel, it modifies the There color channels (red,
-    green, blue) of that pixel by subtracting the x coordinate. This means on the left side of the image, where x is 0
+
+  <p>Now let&#8217;s put the pixel coordinates to work. We are going to use the location of each 
+    pixel to modify its color. We will do so by subtracting its x coordinate from each of the color 
+    values (red, green, blue). This means on the left side of the image, where x is 0
     or close to it, there is little change. On the right side, where x is larger, we remove more and more of the color,
     getting closer and closer to pure black. (Once we hit column 255, we could only get black as the starting
     red/green/blue values are all 255 at most.)</p>
@@ -106,22 +119,23 @@ from image import *
 img = Image("student2.jpg")
 
 # STEP 3: LOOP THROUGH THE PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
+pixels = img.getPixels();
+for p in pixels:
 
-        # STEP 4: GET THE DATA
-        p = img.getPixel(x, y)      # Get pixel at location x, y
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+    # STEP 4: GET THE DATA
+    x = p.getX()
+    y = p.getY()
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-        # STEP 5: MODIFY THE COLOR
-        p.setRed(r - x)             # Subtract column # from each color
-        p.setGreen(g - x)
-        p.setBlue(b - x)
+    # STEP 5: MODIFY THE COLOR
+    p.setRed(r - x)             # Subtract x from each color
+    p.setGreen(g - x)
+    p.setBlue(b - x)
 
-        # STEP 6: MODIFY THE IMAGE
-        img.updatePixel(p)
+    # STEP 6: MODIFY THE IMAGE
+    img.updatePixel(p)
 
 # STEP 7: SHOW THE RESULT
 win = ImageWin(img.getWidth(), img.getHeight())
@@ -131,7 +145,7 @@ img.draw(win)
   <p>We don&#8217;t always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
     a new location. This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put it back
     in the image. This <c>newY</c> is calculated as the height of the image minus one minus the y location of where we got
-    the pixel.</p>
+    the pixel. Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the new location.</p>
 
   <program xml:id="csprepeatimages_changecolorloc4" interactive="activecode" language="python">
     <input>
@@ -142,17 +156,20 @@ from image import *
 img = Image("student2.jpg")
 
 # STEP 3: LOOP THROUGH THE PIXELS
-for x in range(img.getWidth()):
-    for y in range(img.getHeight()):
+pixels = img.getPixels();
+for p in pixels:
 
-        # STEP 4: GET THE DATA
-        p = img.getPixel(x, y)
+    # STEP 4: GET THE DATA
+    x = p.getX()
+    y = p.getY()
 
-        # STEP 6: MODIFY THE IMAGE
-        # Calculate a new Y location for the pixel
-        newY = (img.getHeight() - 1) - y
-        # Write it to the image at (x, newY)
-        img.setPixel(x, newY, p)
+    # STEP 6: MODIFY THE IMAGE
+    # Calculate a new Y location for the pixel
+    newY = (img.getHeight() - 1) - y
+    
+    # STEP 6: MODIFY THE IMAGE
+    # Write pixel p to the image at location (x, newY)
+    img.setPixel(x, newY, p)
 
 # STEP 7: SHOW THE RESULT
 win = ImageWin(img.getWidth(), img.getHeight())
@@ -163,7 +180,7 @@ img.draw(win)
   <exercise label="csprepeatimages_changecolorloc5">
     <statement>
 
-      <p>What happened when we copied the pixel from (x,y) to (x, newY)?</p>
+      <p>What happened when we copied the pixel from (x, y) to (x, newY)?</p>
 
     </statement>
     <choices>
@@ -204,46 +221,6 @@ img.draw(win)
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>Say an image has a height of 10. When y is 0 (top row), newY will be <math>(10 - 1) - 0 = 9</math> which is the
-    last row in the image. When y is 1, newY will be: <math>(9 - 1) - 0 = 8</math>, or the next to last row in the
-    image. So the top row gets copied to the bottom. The second row gets copied to the row above that, etc&#8230;</p>
-  <p>Unfortunately, as we move rows from the top to the bottom, we lose the data that used to be there. So once we get
-    to the bottom half, we are copying data that was copied from the top half back to its starting location. If we want
-    to fix that problem, we need to copy our data from one Image to another so that we don&#8217;t wipe out the original
-    as we make changes. This program does exactly that - it copies from <c>imgSource</c> to <c>imgTarget</c> and then draws <c>imgTarget</c> when
-    it is done. <c>imgSource</c> never changes - to verify that, after running the program, try changing the last line to draw <c>imgSource</c>
-    instead of <c>imgTarget</c>.</p>
-
-  <program xml:id="csprepeatimages_changecolorloc6" interactive="activecode" language="python">
-    <input>
-# STEP 1: USE THE IMAGE LIBRARY
-from image import *
-
-# STEP 2: PICK THE IMAGE
-# first copy we will read from
-imgSource = Image("student2.jpg")
-# load a second copy we will write to
-imgTarget = Image("student2.jpg")
-
-# STEP 3: SELECT THE DATA
-for x in range(imgSource.getWidth()):
-    for y in range(imgSource.getHeight()):
-
-        # STEP 4: GET THE DATA
-        p = imgSource.getPixel(x, y)
-
-        # STEP 6: CHANGE THE IMAGE
-        # Calculate a new Y location for the pixel
-        newY = (imgSource.getHeight() - 1) - y
-        # Write the data to a copy of the image
-        imgTarget.setPixel(x, newY, p)
-
-# STEP 7: SHOW THE RESULT
-win = ImageWin(imgTarget.getWidth(), imgTarget.getHeight())
-imgTarget.draw(win)
-  </input>
-  </program>
 </section>
 

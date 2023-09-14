@@ -3,9 +3,10 @@
   <p>There is a fair amount of code involved in a program like this. But there is a pattern to the code we need to
     write. Learning to recognize the pattern makes it easier to write a new program - we can follow the steps of the
     pattern and only worry about modifying small parts of the basic recipe.</p>
-  <p>A basic image processing pattern is shown in the program below. This program changes the red to the original green,
-    the green to the original blue, and the red to the original green. But, mostly we are trying to describe a pattern
-    that you can use to create many image effects.</p>
+  <p>A basic image processing pattern is shown in the program below. This program changes the colors around in
+    crazy ways. It sets the red value to the original green,
+    the green to the original blue, and the blue to the original red. Compare the results of running this program 
+    with the original goalkeeper image from the <xref ref="csp-image-library" text="title"/>.</p>
 
   <program xml:id="csprepeatimages_pattern1" interactive="activecode" language="python">
     <input>
@@ -37,7 +38,7 @@ win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
   </input>
   </program>
-  <p>Here is the recipe without the code:</p>
+  <p>The fundamental steps are:</p>
   <p>
     <ol>
       <li>
@@ -45,8 +46,8 @@ img.draw(win)
       </li>
       <li>
         <p>
-          <term> PICK THE IMAGE.</term> We pick a particular image from our library by specifying it inside of the
-          parentheses and double quotes.</p>
+          <term> PICK THE IMAGE.</term> We pick a particular image from our library by specifying its name as 
+          a string (with quotation marks) inside the parentheses.</p>
 
       </li>
       <li>
@@ -55,9 +56,9 @@ img.draw(win)
 
       </li>
       <li>
-        <p><term>GET THE DATA.</term> You could <em>always</em> use the STEP 4 lines just as they are above, but you
-          might be able to make it shorter if you wanted. If you only needed red and were going to set the green and
-          blue to zero, you don&#8217;t have to get the green and blue.</p>
+        <p><term>GET THE DATA.</term> You could always use the STEP 4 lines just as they are above, but you
+          might be able to make it shorter if you don't need all the colors. If your program just needs to 
+          work with red, you don&#8217;t have to get the green and blue values.</p>
 
       </li>
       <li>
@@ -66,7 +67,7 @@ img.draw(win)
 
       </li>
       <li>
-        <p><term>UPDATE THE IMAGE.</term> This will update the image at the original pixel location to the new color.</p>
+        <p><term>UPDATE THE IMAGE.</term> This will update the image using the new colors of the pixel.</p>
       </li>
       <li>
         <p><term>SHOW THE RESULT.</term> This will draw the changed image in a window.</p>
@@ -99,7 +100,7 @@ img.draw(win)
 
       <choice correct="yes">
         <statement>
-          <p>It becomes a black and white picture</p>
+          <p>It becomes a black-and-white picture</p>
         </statement>
         <feedback>
           <p>Yes, anytime the red, green, and blue values are the same we get a shade of gray.</p>
@@ -199,7 +200,7 @@ img.draw(win)
           <p>Values outside of the range 0-255 are treated as 0.</p>
         </statement>
         <feedback>
-          <p>That would mean 300 red would be treated as 0... there still is lots of red.</p>
+          <p>That would mean 300 red would be treated as 0, which is "no red"...  still is lots of red visible.</p>
         </feedback>
       </choice>
 

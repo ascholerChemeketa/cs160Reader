@@ -9,7 +9,6 @@ xml:lang="en-US" >
   <xi:include href='./pattern.ptx' />
   <xi:include href='./changeColor.ptx' />
   <xi:include href='./changeColorLoc.ptx' />
-  <xi:include href='./changeData.ptx' />
   <xi:include href='./summary.ptx' />
   <xi:include href='./Exercises.ptx' />
 </chapter>
