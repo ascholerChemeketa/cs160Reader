@@ -1,31 +1,29 @@
 <section xml:id="csp-decisions-images_a-pixel-selection-function">
-  <title>A Pixel Selection Function</title>
-  <p>This time, we&#8217;re going to get a big trickier. We are going to try to change the red scooter
-      in this picture into a blue one.</p>
-      
-  <image source="CSP/Images/scooter.jpg" width="20%" /> 
+    <title>A Pixel Selection Function</title>
+    <p>Now let's try to change the red scooter in this picture into a blue one.</p>
 
-  <p>To do that we need to select all the red pixels. But there are a lot of different &#8220;reds&#8221;.
-      Obviously, a pixel with the color red = 255, green = 0, and blue = 0 is red.
-      But most of the pixels in the scooter aren&#8217;t pure red. The
-      red channel might not be 255. Or the blue or green might not be 0. Furthermore, a pixel
-      with color values (255, 255, 255) has the maximum red value&#8230; but it is not red, it is
-      white. Here are three examples of colors that might be part of the scooter:</p>
-      <p>
+    <image source="CSP/Images/scooter.jpg" width="20%" />
+
+    <p>To do that we need to select all the red pixels. But there are a lot of different &#8220;reds&#8221;. Obviously,
+        a pixel with the color red = 255, green = 0, and blue = 0 is red. But most of the pixels in the scooter
+        aren&#8217;t pure red. The red channel might not be 255. Or the blue or green might not be 0. Furthermore, a
+        pixel with color values (255, 255, 255) has the maximum red value&#8230; but it is not red, it is white. Here
+        are three examples of colors that might be part of the scooter:</p>
+    <p>
         <raw format="html" xml:space="preserve">
           <div style="background: rgb(122, 4, 18); color: white; padding: 2px 10px;">122, 4, 18</div>
           <div style="background: rgb(194, 8, 20); color: white; padding: 2px 10px;">194, 8, 20</div>
           <div style="background: rgb(247, 190, 194); color: white; padding: 2px 10px;">247, 190, 194</div>
         </raw>
-      </p>
-  <p>We will say that if a pixel&#8217;s red value is at least 10 greater than both the green and
-      the blue values, it is &#8220;red&#8221;. To express this as a conditional will look like
-      <c>r &gt;= g + 20 and r &gt;= b + 20</c>, where r, g, b are the red, green, and blue color values.
-      To test out our recipe, we are going to make a function <c>isRed</c>. It will accept values for
-      <c>r</c>, <c>g</c>, and <c>b</c> and return <c>True</c> if they meet our criteria and false otherwise.</p>
+    </p>
+    <p>We will say that if a pixel&#8217;s red value is at least 10 greater than both the green and the blue values, it
+        is &#8220;red&#8221;. To express this as a conditional will look like <c>r &gt;= g + 20 and r &gt;= b + 20</c>, where r, g, b are the red, green,
+        and blue color values. </p>
+    <p> To test out our recipe, we are going to make a function <c>isRed</c>. It will accept values for <c>r</c>, <c>g</c>, and <c>b</c>
+        and return <c>True</c> if they meet our criteria and false otherwise.</p>
 
-<program xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
-  <input>
+    <program xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
+        <input>
 from image import *
 
 def isRed(r, g, b):
@@ -44,31 +42,30 @@ print( isRed(200, 200, 200) ) # gray
 print( isRed(200, 200, 0) )   # yellow
 print( isRed(200, 0, 200) )   # aqua
   </input>
-</program>
-  <p>Now that we have some evidence that the function works, we can use it as the
-      condition for our <c>if</c> statement. Because the function returns <c>True</c> or
-      <c>False</c>, it can serve as the condition for the if: <c>if isRed(r, g, b):</c>.</p>
-  <p>If the pixel is determined to be &#8220;red&#8221;, we need to change it to a similar blue.
-      A dark red should become a dark blue and a light red a light blue. The easiest
-      way to do this is to swap the red and blue values. Like this:</p>
-  <p>
-    <raw format="html" xml:space="preserve">
+    </program>
+    <p>Now that we have some evidence that the function works, we can use it as the condition for our <c>if</c> statement.
+        Because the function returns <c>True</c> or <c>False</c>, it can serve as the condition for the if: <c>if isRed(r, g, b):</c>.</p>
+    <p>If the pixel is determined to be &#8220;red&#8221;, we need to change it to a similar blue. A dark red should
+        become a dark blue and a light red a light blue. The easiest way to do this is to swap the red and blue values.
+        Like this:</p>
+    <p>
+        <raw format="html" xml:space="preserve">
       <div style="background: rgb(122, 4, 18); color: white; padding: 2px 10px;">122, 4, 18</div>
       <div style="background: rgb(18, 4, 122); color: white; padding: 2px 10px;">18, 4, 122</div>
     </raw>
-  </p>
-  <p>Or this:</p>
-  <p>
-      <raw format="html" xml:space="preserve">
+    </p>
+    <p>Or this:</p>
+    <p>
+        <raw format="html" xml:space="preserve">
         <div style="background: rgb(247, 190, 194); color: white; padding: 2px 10px;">247, 190, 194</div>
         <div style="background: rgb(194, 190, 247); color: white; padding: 2px 10px;">194, 190, 247</div>
     </raw>
-  </p>
+    </p>
 
-  <p>Here is the final program:</p>
+    <p>Here is the final program:</p>
 
-<program xml:id="cspdecisionsimages_advancedselection2" interactive="activecode" language="python">
-  <input>
+    <program xml:id="cspdecisionsimages_advancedselection2" interactive="activecode" language="python">
+        <input>
 from image import *
 
 def isRed(r, g, b):
@@ -105,56 +102,55 @@ for p in pixels:
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
   </input>
-</program>
-  <p>After running the program, try modifying it to answer the question below.</p>
+    </program>
+    <p>After running the program, try modifying it to answer the question below.</p>
 
-<exercise label="cspdecisionsimages_advancedselection3">
-  <statement>
+    <exercise label="cspdecisionsimages_advancedselection3">
+        <statement>
 
-  <p>A simpler test for &#8220;is it red&#8221; might just be to see if the red value is 250 or more and not
-      worry about the green or blue. What happens if you change the condition in <c>isRed</c> to read
-      <c>if r &gt;= 250:</c>?</p>
+            <p>A simpler test for &#8220;is it red&#8221; might just be to see if the red value is 250 or more and not
+                worry about the green or blue. What happens if you change the condition in <c>isRed</c> to read <c>if r &gt;= 250:</c>?</p>
 
-  </statement>
-<choices>
+        </statement>
+        <choices>
 
-      <choice>
-          <statement>
-              <p>Almost identical to the complex version.</p>
-          </statement>
-          <feedback>
-              <p>Try it!</p>
-          </feedback>
-      </choice>
+            <choice>
+                <statement>
+                    <p>Almost identical to the complex version.</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
 
-      <choice>
-          <statement>
-              <p>All of the white pixels become blue too!</p>
-          </statement>
-          <feedback>
-              <p>Try it!</p>
-          </feedback>
-      </choice>
+            <choice>
+                <statement>
+                    <p>All of the white pixels become blue too!</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
 
-      <choice correct="yes">
-          <statement>
-              <p>You get something that looks like a blue flame pattern.</p>
-          </statement>
-          <feedback>
-              <p>Correct, those apparently are the only pixels that have a close to max red value.</p>
-          </feedback>
-      </choice>
+            <choice correct="yes">
+                <statement>
+                    <p>You get something that looks like a blue flame pattern.</p>
+                </statement>
+                <feedback>
+                    <p>Correct, those apparently are the only pixels that have a close to max red value.</p>
+                </feedback>
+            </choice>
 
-      <choice>
-          <statement>
-              <p>Light red pixels are not affected and you get a "blue outline".</p>
-          </statement>
-          <feedback>
-              <p>Try it!</p>
-          </feedback>
-      </choice>
-</choices>
+            <choice>
+                <statement>
+                    <p>Light red pixels are not affected and you get a "blue outline".</p>
+                </statement>
+                <feedback>
+                    <p>Try it!</p>
+                </feedback>
+            </choice>
+        </choices>
 
-</exercise>
+    </exercise>
 </section>
 

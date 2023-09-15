@@ -1,30 +1,27 @@
-<section xml:id="csp-decisions-images_location-based-conditions">
-  <title>Location based Conditions</title>
-  <p>We can also use conditionals and the x and y coordinates of pixels to make decisions about what pixels to process.
+<section xml:id="csp-decisions-images_location-based-conditions2">
+  <title>Location Based Conditions Continued</title>
+  <p>Let's use location-based decisions to do something more complex.
     One popular graphic design technique is to make parts of an image black and white, only leaving color in the parts we
-    want to highlight. We will do this to make the graduates' faces stand out from the background in this image:</p>
+    want to highlight. We will do this to make the graduates<rsq/> faces stand out from the background in this image:</p>
     
   <image source="CSP/Images/graduates.jpg" width="40%" /> 
-  
-  <datafile label="graduates" filename="graduates.jpg">
-    <image source="CSP/Images/graduates.jpg"/>
-  </datafile>
     
   <p>First, we need to make some procedures that we will use to make a pixel gray and darken it. These procedures
     will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an
     existing object, there will be no new value to return. We will just update the colors of the pixel and those changes
     will persist when the procedure is done. (Similar to how when we write a procedure that moves a turtle there is no
     new answer to return. Changing the turtle&#8217;s location or direction in a function permanently changes it.)</p>
+
   <p>Below, the code for <c>makeGray</c> is already written. Your task is to write the code for <c>darken</c> that will be used to
     make pixels darker:</p>
 
-  <exercise label="cspdecisionsimages_locationconditions1">
+  <exercise label="cspdecisionsimages_locationconditions21">
     <statement>
       <p>Write code to implement <c>darken</c>. It should reduce all three color values (red, green, blue) of the <c>pixel</c> by
-        the parameter <c>amount</c>. But, if a color would end up with A value below 0, set it to 0 instead.</p>
+        the parameter <c>amount</c>.</p>
 
     </statement>
-    <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
+    <program xml:id="cspdecisionsimages_locationconditions21_editor" interactive="activecode" language="python">
       <input>
         from image import *
 
@@ -37,9 +34,10 @@
             pixel.blue = average
 
         def darken(pixel, amount):
-            #Your code here to reduce each color by amount.
-            #If a color ends up less than 0, set it to 0
-            pass # &lt;--- Replace this with your code
+            #Set each of pixel's colors to it's old value - amount
+            pixel.red = #FIX ME
+            pixel.green = #FIX ME
+            pixel.blue = #FIX ME
 
         # Main part of program
         testPixel = Pixel(120, 0, 0)
@@ -50,9 +48,9 @@
         darken(testPixel2, 30)
         print("testPixel2 after darken by 30:", testPixel2, "should be 30,10,20")
 
-        testPixel3 = Pixel(60, 40, 50)
-        darken(testPixel3, 50)
-        print("testPixel3 after darken by 50:", testPixel3, "should be 10,0,0")
+        testPixel3 = Pixel(60, 100, 90)
+        darken(testPixel3, 10)
+        print("testPixel3 after darken by 10:", testPixel3, "should be 50,90,80")
       </input>
       <tests>
 
@@ -60,45 +58,47 @@
 
         class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works")
-                self.assertEqual(str(testPixel3), "[10,0,0]", "Test that darken won't make colors negative")
+                self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works correctly")
+                self.assertEqual(str(testPixel3), "[50,90,80]", "Test if darken works correctly")
 
         myTests().main()
       </tests>
     </program>
   </exercise>
+
   <p>Now we can use a conditional to apply those only to particular pixels in the image. Start by copy/pasting <c>darken</c>
     and <c>makeGray</c> from the program above into this program. Then examine the code inside the loop. Notice that we use a
     conditional to apply the functions only to pixels that have a Y value of 110 or more.</p>
 
-  <program xml:id="cspdecisionsimages_locationconditions2" interactive="activecode" language="python">
+  <program xml:id="cspdecisionsimages_locationconditions22" interactive="activecode" language="python">
     <input>
 from image import *
 
 # PUT THE makeGray AND darken PROCEDURES HERE
 
 # Main program
-# CREATE THE IMAGES
-img1 = Image("graduates.jpg")
+# CREATE THE IMAGE
+img= Image("graduates.jpg")
 
-# LOOP THROUGH ALL THE PIXELS IN IMG1
-for x in range(img1.getWidth()):
-    for y in range(img1.getHeight()):
-        currentPixel = img1.getPixel(x, y)
+pixels = img.getPixels();
+for p in pixels:
 
-        # TEST IF THIS PIXEL GETS CHANGED
-        if y &gt;= 110:
-            # CHANGE PIXEL AND UPDATE IMAGE
-            makeGray(currentPixel)
-            darken(currentPixel, 20)
-            img1.setPixel(x, y, currentPixel)
+    # GET PIXEL DATA
+    y = p.getY()
+
+    # TEST IF THIS PIXEL GETS CHANGED
+    if y &gt;= 110:
+        # CHANGE PIXEL AND UPDATE IMAGE
+        makeGray(p)
+        darken(p, 20)
+        img.updatePixel(p)
 
 # SHOW THE CHANGED IMAGE
-win = ImageWin(img1.getWidth(), img1.getHeight())
-img1.draw(win)
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
   </input>
   </program>
   <p>Try modifying the condition so it only leaves a rectangle of color around the students&#8217; heads and turns the rest to
-    gray. You want to say something like &#8220;if y is less than 110 or x is less than 70 or x is more than 200&#8221;.</p>
+    gray. You want to say something like <em>&#8220;if y is less than 110 or x is less than 70 or x is more than 200&#8221;</em>.</p>
 </section>
 

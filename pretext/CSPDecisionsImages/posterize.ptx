@@ -1,13 +1,12 @@
 <section xml:id="csp-decisions-images_posterizing">
   <title>Posterizing</title>
-  <p>The process of changing an image so it only uses a small number of colors is known as <term>posterizing</term> (old
-    posters had to be printed with a small number of colors - the technology didn&#8217;t let one make complex blends).</p>
-  <p>This time, we need to make a function that will force a color value between 0 and 255 to become one of a few
-    specific options.</p>
+  <p>As one last example of selectively modifying the colors in an image, we are going to <term>posterize</term> an image.  <term>Posterizing</term> is the process of changing an image so it only uses a small number of colors. (Old
+    posters had to be printed with a small number of colors - the technology didn&#8217;t allow for complex blending of colors).</p>
+  <p>This time, instead of making a function to answer a question like <lq/>is this green<rq/>, we need to make a function that will force a color value to become one of a few specific options.</p>
 
   <exercise label="cspdecisionsimages_posterize1">
     <statement>
-      <p>Write code to return 0 if <c>colorValue</c> is less than 50, 125 if it is 50-124, and 255 otherwise.</p>
+      <p>Write code for <c>posterize</c> to return 0 if <c>colorValue</c> is less than 50, 125 if it is 50-124, and 255 otherwise.</p>
 
     </statement>
     <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode" language="python">
@@ -84,16 +83,18 @@ img.draw(win)
 
       <p>How many different colors are possible in our image after we posterize it using this function?</p>
 
+      <hint>There are three color channels. How many values can they each take on?</hint>
+
     </statement>
     <choices>
 
       <choice correct="yes">
         <statement>
-          <p>8</p>
+          <p>27</p>
         </statement>
         <feedback>
-          <p>Two possible values of each of red, green, and blue (3 colors) is 2 raised to 3rd power combinations which
-            is 8.</p>
+          <p>Each of the three color channels (red, green, and blue) has 3 possible values (0, 125, or 255). 
+            That gives us 3 raised to 3rd power, or 27, combinations.</p>
         </feedback>
       </choice>
 
@@ -102,16 +103,18 @@ img.draw(win)
           <p>3</p>
         </statement>
         <feedback>
-          <p>Two values of each of red, green, and blue is more than 3.</p>
+          <p>Three values of each of red, green, and blue is more than 3.</p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>120</p>
+          <p>9</p>
         </statement>
         <feedback>
-          <p>Far fewer</p>
+          <p>Each of the 3 color channels (red, green, and blue) has 3 possible values (0, 125, or 255). There 
+            are more than 9 total combinations that can be made with those.
+          </p>
         </feedback>
       </choice>
 
@@ -120,7 +123,7 @@ img.draw(win)
           <p>16,777,216 (= 256 * 256 * 256)</p>
         </statement>
         <feedback>
-          <p>That's the total number of colors possible if each channel can be 0-255. But this code reduces that.</p>
+          <p>That's the total number of colors possible if each channel can have one of 256 different values. But our code makes each color only have 3 possible values.</p>
         </feedback>
       </choice>
     </choices>

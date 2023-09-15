@@ -6,6 +6,6 @@
   <xi:include href='./combineImages.ptx' />
   <xi:include href='./posterize.ptx' />
   <xi:include href='./locationConditions.ptx' />
-  <xi:include href='./changeData.ptx' />
+  <xi:include href='./locationConditions2.ptx' />
   <xi:include href='./Exercises.ptx' />
 </chapter>

@@ -1,133 +1,52 @@
 <section xml:id="csp-decisions-images_location-based-conditions">
-  <title>Location based Conditions</title>
+    <title>Location Based Conditions</title>
 
-  <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process.
-    This program changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
-    
-  <datafile label="cat" filename="cat.jpg">
-    <image source="CSP/Images/cat.jpg"/>
-  </datafile>
-    
+    <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
+        changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
 
-  <program xml:id="cspdecisionsimages_locationconditions1" interactive="activecode" language="python">
-    <input>
-      from image import *
-      
-      img = Image("cat.jpg")
-      
-      pixels = img.getPixels();
-      for p in pixels:
-      
-          # GET PIXEL DATA
-          x = p.getX()
-          y = p.getY()
-  
-          # TEST THE LOCATION
-          if x &lt; 20 or x &gt; 180: 
+    <datafile label="cat" filename="cat.jpg">
+        <image source="CSP/Images/cat.jpg" />
+    </datafile>
 
-              #MAKE THE COLOR BLACK
-              p.setRed(0)
-              p.setBlue(0)
-              p.setGreen(0)
-      
-              # CHANGE THE PIXEL
-              img.updatePixel(p)
-      
-      # SHOW THE RESULT
-      win = ImageWin(img.getWidth(), img.getHeight())
-      img.draw(win)
-    </input>
-  </program>
-    
-  <p>First, we need to make some procedures that we will use to make a pixel gray and darken it. These procedures
-    will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an
-    existing object, there will be no new value to return. We will just update the colors of the pixel and those changes
-    will persist when the procedure is done. (Similar to how when we write a procedure that moves a turtle there is no
-    new answer to return. Changing the turtle&#8217;s location or direction in a function permanently changes it.)</p>
-  <p>Below, the code for <c>makeGray</c> is already written. Your task is to write the code for <c>darken</c> that will be used to
-    make pixels darker:</p>
-
-  <exercise label="cspdecisionsimages_locationconditions1">
-    <statement>
-      <p>Write code to implement <c>darken</c>. It should reduce all three color values (red, green, blue) of the <c>pixel</c> by
-        the parameter <c>amount</c>. But, if a color would end up with A value below 0, set it to 0 instead.</p>
-
-    </statement>
-    <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
-      <input>
-        from image import *
-
-        def makeGray(pixel):
-            #get the average of the three colors
-            average = (pixel.red + pixel.green + pixel.blue) / 3
-            #use that for all three colors
-            pixel.red = average
-            pixel.green = average
-            pixel.blue = average
-
-        def darken(pixel, amount):
-            #Your code here to reduce each color by amount.
-            #If a color ends up less than 0, set it to 0
-            pass # &lt;--- Replace this with your code
-
-        # Main part of program
-        testPixel = Pixel(120, 0, 0)
-        makeGray(testPixel)
-        print("testPixel after makeGray:", testPixel, "should be 40,40,40")
-
-        testPixel2 = Pixel(60, 40, 50)
-        darken(testPixel2, 30)
-        print("testPixel2 after darken by 30:", testPixel2, "should be 30,10,20")
-
-        testPixel3 = Pixel(60, 40, 50)
-        darken(testPixel3, 50)
-        print("testPixel3 after darken by 50:", testPixel3, "should be 10,0,0")
-      </input>
-      <tests>
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-            def testOne(self):
-                self.assertEqual(str(testPixel2), "[30,10,20]", "Test if darken works")
-                self.assertEqual(str(testPixel3), "[10,0,0]", "Test that darken won't make colors negative")
-
-        myTests().main()
-      </tests>
-    </program>
-  </exercise>
-  <p>Now we can use a conditional to apply those only to particular pixels in the image. Start by copy/pasting <c>darken</c>
-    and <c>makeGray</c> from the program above into this program. Then examine the code inside the loop. Notice that we use a
-    conditional to apply the functions only to pixels that have a Y value of 110 or more.</p>
-
-  <program xml:id="cspdecisionsimages_locationconditions2" interactive="activecode" language="python">
-    <input>
+    <exercise xml:id="cspdecisionsimages_locationconditions1">
+        <statement>
+            <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40
+                left and rightmost pixels to black. (Hint: The image is 200 pixels wide.) </p>
+        </statement>
+        <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
+            <input>
 from image import *
 
-# PUT THE makeGray AND darken PROCEDURES HERE
+img = Image("cat.jpg")
 
-# Main program
-# CREATE THE IMAGES
-img1 = Image("graduates.jpg")
+pixels = img.getPixels();
+for p in pixels:
 
-# LOOP THROUGH ALL THE PIXELS IN IMG1
-for x in range(img1.getWidth()):
-    for y in range(img1.getHeight()):
-        currentPixel = img1.getPixel(x, y)
+    # GET PIXEL DATA
+    x = p.getX()
+    y = p.getY()
 
-        # TEST IF THIS PIXEL GETS CHANGED
-        if y &gt;= 110:
-            # CHANGE PIXEL AND UPDATE IMAGE
-            makeGray(currentPixel)
-            darken(currentPixel, 20)
-            img1.setPixel(x, y, currentPixel)
+    # TEST THE LOCATION
+    if x &lt; 20 or x &gt; 180: 
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img1.getWidth(), img1.getHeight())
-img1.draw(win)
-  </input>
-  </program>
-  <p>Try modifying the condition so it only leaves a rectangle of color around the students&#8217; heads and turns the rest to
-    gray. You want to say something like &#8220;if y is less than 110 or x is less than 70 or x is more than 200&#8221;.</p>
+        #MAKE THE COLOR BLACK
+        p.setRed(0)
+        p.setBlue(0)
+        p.setGreen(0)
+
+        # CHANGE THE PIXEL
+        img.updatePixel(p)
+
+# SHOW THE RESULT
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+    </input>
+            <tests> from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): p1 =
+                img.getPixel(38, 10) p2 = img.getPixel(177, 10) p3 = img.getPixel(55, 10) self.assertEqual(str(p1),
+                "[0,0,0]", "Test if 40 pixels on left are black") self.assertEqual(str(p2), "[0,0,0]", "Test if 40
+                pixels on right are black") self.assertEqual(str(p3), "[109,161,6]", "Test that pixels in the middle are
+                the same") myTests().main() </tests>
+        </program>
+    </exercise>
 </section>
 

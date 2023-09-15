@@ -1,7 +1,8 @@
 <section xml:id="csp-decisions-images_using-decisions-with-images">
   <title>Using Decisions with Images</title>
-  <p>We can create image effects by conditionally executing code on pixels that meet particular criteria. In the code
-    below, we will try to change the French flag (the image on top), into the flag of Chad (bottom).</p>
+  <p>In <xref ref="csp-repeat-images"/> we modified images in various ways by changing every pixel. 
+    But what if we don't want to change every single pixel? Maybe we want to change the French flag 
+    (left image below), into the flag of Chad (right image):</p>
 
   <hidden>
     <datafile label="fr-flag" filename="fr-flag.gif">
@@ -15,10 +16,18 @@
     </datafile>
   </hidden>
 
-  <image source="CSP/Images/fr-flag.gif" width="20%" />
-  <image source="CSP/Images/cd-flag.gif" width="20%" />
+  <sidebyside widths="20% 20%" margins="25%" >
+    <figure>
+        <caption>French flag</caption>
+        <image source="CSP/Images/fr-flag.gif" />
+    </figure>
+    <figure>
+        <caption>Chadian flag</caption>
+        <image source="CSP/Images/cd-flag.gif" />
+    </figure>
+  </sidebyside>
 
-  <p>To do this, we need to change just the white pixels in the image and make them yellow. This means we need a way to
+  <p>Because the flags are so similar, all we need to do is change the white pixels to yellow. To do so, we need a way to
     answer the question &#8220;is this pixel white?&#8221;. A pure white pixel has red, green, and blue values all of
     255. A not-quite-pure white may not have 255 for each of the three values, but they will all be high, and they will
     all be very similar to each other. In comparison, a blue pixel is going to have a high blue value and low red and

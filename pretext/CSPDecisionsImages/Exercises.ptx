@@ -11,11 +11,9 @@
         <cline>img = Image("fr-flag.gif")</cline>
       </block>
       <block order="4">
-        <cline>for x in range(img.getWidth()):</cline>
-        <cline> for y in range(img.getHeight()):</cline>
+        <cline>for p in img.getPixels():</cline>
       </block>
       <block order="3">
-        <cline> p = img.getPixel(x, y)</cline>
         <cline> r = p.getRed()</cline>
         <cline> g = p.getGreen()</cline>
         <cline> b = p.getBlue()</cline>
@@ -29,10 +27,12 @@
         </choice>
       </block>
       <block order="2">
-        <cline> newPixel = Pixel(0, 250, 250)</cline>
+        <cline> p.getRed(0)</cline>
+        <cline> p.getGreen(250)</cline>
+        <cline> p.getBlue(250)</cline>
       </block>
       <block order="8">
-        <cline> img.setPixel(x, y, newPixel)</cline>
+        <cline> img.updatePixel(p)</cline>
       </block>
       <block order="7">
         <cline>win = ImageWin(img.getWidth(),img.getHeight())</cline>
@@ -40,13 +40,14 @@
       </block>
     </blocks>
   </exercise>
+  
   <exercise label="cspdecisionsimages_exercises2">
     <statement>
-      <p>Write a program below to change all the greenish pixels in this image to the color: red 30, green 100, blue 150
-        (a slightly grayish blue).</p>
-      <p>Hint: The greenish pixels are not a pure green. They have almost as much red as they do green. A sample color
-        value might be: 111 red, 115 green, 65 blue. However, they are not all exactly the same color. You will need to
-        figure out a recipe to select the right colors from the image.</p>
+      <p>Complete the program below so it changes all the green pixels in the image to red.</p>
+      <p>Hint: The green pixels are not pure green. They have almost as much red as they do green. A sample color
+        value might be: 111 red, 115 green, 65 blue. However, the tan pixels also have a lot of green. A tan pixel 
+        might have the colors: 177 red, 129 green, 53 blue. Notice that the tan one has a lot more red than the green pixels. 
+        Make sure your recipe selects things that have a lot of green, but also do not have too much red.</p>
     </statement>
     <program xml:id="cspdecisionsimages_exercises2_editor" interactive="activecode" language="python">
       <input>
@@ -56,13 +57,24 @@
         img = Image("logo.jpg")
 
         # LOOP THROUGH ALL PIXELS
-        for x in range(img.getWidth()):
-            for y in range(img.getHeight()):
-                p = img.getPixel(x, y)
-                r = p.getRed()
-                g = p.getGreen()
-                b = p.getBlue()
+        pixels = img.getPixels();
+        for p in pixels:
 
+            # GET PIXEL DATA
+            r = p.getRed()
+            g = p.getGreen()
+            b = p.getBlue()
+
+            # DECIDE IF GREENISH
+            ???
+
+                # MAKE RED
+                p.setRed(255)
+                p.setGreen(0)
+                p.setBlue(0)
+            
+                # UPDATE IMAGE
+                img.updatePixel(p)
 
         # SHOW THE CHANGED IMAGE
         win = ImageWin(img.getWidth(),img.getHeight())
@@ -74,7 +86,8 @@
 
         class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(str(img.getPixel(100, 100)), '[30,100,150]', "Testing one of the pixels that was supposed to change")
+                self.assertEqual(str(img.getPixel(100, 100)), '[255,0,0]', "Testing that green became red")
+                self.assertEqual(str(img.getPixel(150, 40)), '[177,129,53]', "Testing that brown did not become red")
 
         myTests().main()
       </tests>
@@ -83,12 +96,11 @@
 
   <exercise label="cspdecisionsimages_exercises3">
     <statement>
-      <p>Write a program below that makes the white pixels in the right half of the image below turn black. The left
+      <p>We want to make the pixels in the right half of an image turn black. Pixels in the left
         half of the image should stay the same.</p>
-      <p>Although perfect white is (255, 255, 255), the pixels in the image are not all perfectly white. Write your code
-        to turn any pixel that has red, green, and blue values of above 230 to black (0, 0, 0).</p>
-      <p>Hint: Start by trying to make all the white pixels in the image turn black. then add a condition to check the x
-        value of the pixel to see if it is in the right half of the image (more than half the image&#8217;s width).</p>
+      <p>You need to write code to decide if each pixel is on the right half and then, if so, make it black.
+        The image is 300 pixels wide.
+      </p>
 
     </statement>
     <program xml:id="cspdecisionsimages_exercises3_editor" interactive="activecode" language="python">
@@ -99,12 +111,18 @@
         img = Image("logo.jpg")
 
         # LOOP THROUGH ALL PIXELS
-        for x in range(img.getWidth()):
-            for y in range(img.getHeight()):
-                p = img.getPixel(x, y)
-                r = p.getRed()
-                g = p.getGreen()
-                b = p.getBlue()
+        pixels = img.getPixels();
+        for p in pixels:
+
+            # GET PIXEL DATA
+            x = p.getX()
+
+            # DECIDE IF ON RIGHT
+
+                # MAKE BLACK (0,0,0)
+            
+                # UPDATE IMAGE
+                img.updatePixel(p)
 
 
         # SHOW THE CHANGED IMAGE
@@ -117,55 +135,61 @@
 
         class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing one of the pixels that was supposed to change")
-                self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing one of the pixels that was supposed to stay the same")
+                self.assertEqual(str(img.getPixel(280, 10)), '[0,0,0]', "Testing that a pixel on the right is black.")
+                self.assertEqual(str(img.getPixel(5, 260)), '[253,254,255]', "Testing that a pixel on the left is unchanged.")
 
         myTests().main()
       </tests>
     </program>
   </exercise>
 
+
+  <datafile label="goalkeeper" filename="goalkeeper.jpg">
+    <image source="CSP/Images/goalkeeper.jpg" />
+  </datafile>
+
   <exercise label="cspdecisionsimages_exercises4">
     <statement>
       <p>Write the function <c>isYellow</c> that accepts red, green, and blue values as its parameters and returns <c>True</c> if
-        both the green and red values are at least 40 more than the blue value. If the blue value is close to, or above,
-        either the green or red, it should return <c>False</c>.</p>
-      <p>Once you write the function, it will be used to turn the goal keeper&#8217;s jersey from yellow to aqua by
+        both the green and red values are at least 40 more than the blue value. Otherwise, it should return <c>False</c>.</p>
+      <p>Once you write the function, it will be used to turn the goalkeeper&#8217;s jersey from yellow to aqua by
         swapping the red and blue values.</p>
       <p>Hint: Start by writing a function that returns <c>True</c> always. That will let you run the program but will
         change every pixel. Then add a condition to say <c>True</c> or <c>False</c> based on the <c>r, g, b</c> values passed in.</p>
     </statement>
     <program xml:id="cspdecisionsimages_exercises4_editor" interactive="activecode" language="python">
       <input>
-      from image import *
+        from image import *
 
-      # Write isYellow here!!!
+        def isYellow(r, g, b):
+            # Write isYellow here!!!
 
-      # Main part of program
-      # CREATE AN IMAGE FROM A FILE
-      img = Image("goalkeeper.jpg")
+        # Main part of program
+        # CREATE AN IMAGE FROM A FILE
+        img = Image("goalkeeper.jpg")
 
-      # LOOP THROUGH ALL PIXELS
-      for x in range(img.getWidth()):
-          for y in range(img.getHeight()):
-              # GET CURRENT COLOR VALUES
-              p = img.getPixel(x, y)
-              r = p.getRed()
-              g = p.getGreen()
-              b = p.getBlue()
+        # LOOP THROUGH ALL PIXELS
+        pixels = img.getPixels();
+        for p in pixels:
 
-              # IS IT YELLOW?
-              if isYellow(r, g, b):
+            # GET PIXEL DATA
+            r = p.getRed()
+            g = p.getGreen()
+            b = p.getBlue()
 
-                  # CHANGE THE COLOR TO SWAP RED AND BLUE
-                  newPixel = Pixel(b, g, r)
+            # IS IT YELLOW?
+            if isYellow(r, g, b):
 
-                  # UPDATE THE IMAGE
-                  img.setPixel(x, y, newPixel)
+                # CHANGE THE COLOR TO SWAP RED AND BLUE
+                p.setRed(b)
+                p.setBlue(r)
 
-      # SHOW THE CHANGED IMAGE
-      win = ImageWin(img.getWidth(),img.getHeight())
-      img.draw(win)
+                # UPDATE THE IMAGE
+                img.updatePixel(p)
+
+        # SHOW THE CHANGED IMAGE
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
     </input>
     <tests>
 
@@ -175,59 +199,12 @@
           def testOne(self):
               self.assertEqual(isYellow(80, 70, 29), True, "Testing if 80,70,29 is considered Yellow")
               self.assertEqual(isYellow(70, 80, 29), True, "Testing if 70,80,29 is considered Yellow")
-              self.assertEqual(isYellow(60, 70, 29), False, "Testing if 60,70,29 is considered Yellow")
-              self.assertEqual(isYellow(70, 60, 29), False, "Testing if 70,60,29 is considered Yellow")
+              self.assertEqual(isYellow(60, 70, 29), False, "Testing if 60,70,29 is considered NOT Yellow")
+              self.assertEqual(isYellow(70, 60, 29), False, "Testing if 70,60,29 is considered NOT Yellow")
       myTests().main()
       </tests>
     </program>
   </exercise>
 
-
-
-<!--
-  <exercise label="csprepeatimages_exercises6">
-    <statement>
-      <p>Write code that blacks out the top half of the image by setting just the pixels in the top half to have a color
-        value of 0, 0, 0. You will have to use the nested-loop approach and only visit the pixels in the top half.</p>
-      <p>Remember to use <c>//</c> when dividing the width or height so that you don&#8217;t get a decimal (float) answer.</p>
-
-    </statement>
-    <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
-      <input>
-        # STEP 1: USE THE IMAGE LIBRARY
-        from image import *
-
-        # STEP 2: PICK THE IMAGE
-        img = Image("mount_hood.jpg")
-
-        # STEP 3: LOOP THROUGH THE PIXELS
-        pixels = img.getPixels();
-
-            # STEP 4: GET THE DATA
-
-            # STEP 5: MODIFY THE COLOR
-
-            # STEP 6: UPDATE THE IMAGE
-
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
-      </input>
-      <tests>
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-            def testOne(self):
-                testPixel = img.getPixel(3, 99)
-                testPixel2 = img.getPixel(3, 100)
-                self.assertEqual(testPixel.getRed(), 0, "Testing you blacked out pixels in the top half")
-                self.assertEqual(testPixel2.getRed(), 144, "Testing you did not black out the bottom half")
-
-        myTests().main()
-      </tests>
-    </program>
-  </exercise>
-
--->
 
 </exercises>
