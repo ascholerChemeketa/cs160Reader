@@ -15,7 +15,7 @@
     will access the second item in the list.</p>
   <warning>
     <p>In programming, we often count from 0 instead of from 1. It will take some getting used to, but when you see a
-      list of things, remember that the first one it item 0. The last item will always have an index one less than the
+      list of things, remember that the first one is item 0. The last item will always have an index one less than the
       number of items - the last item in a list with 10 values is index 9.</p>
   </warning>
 

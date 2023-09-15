@@ -48,7 +48,7 @@
     gives you 16 lines. Put a <q>0</q> at the start of the first 8 lines and a <q>1</q> at the start of
     the second 8 lines.</p>
   <p>This trick can be repeated as many times as you like. Adding one more bit doubles the number of patterns. The table
-    shows the number of patterns for 1, 2, 3 and 4 bits.</p>
+    shows the number of patterns for 1, 2, 3, and 4 bits.</p>
   <p>Number of Bits Number of Patterns Number of Patterns as a power of two:</p>
   <table>
     <tabular>

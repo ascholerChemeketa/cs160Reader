@@ -144,7 +144,7 @@ print("That took", end - start, "seconds")
   <exercise label="eff_measure_1">
     <statement>
 
-      <p>Try testing procedureB for inputs of size 4, 6, 8, 10 and identify what kind of algorithm it is. (Change line 6
+      <p>Try testing procedureB for inputs of size 4, 6, 8, and 10 and identify what kind of algorithm it is. (Change line 6
         to say <c>procedureB(4)</c> and then run it, then change to <c>procedureB(6)</c><ellipsis/>)</p>
 
     </statement>
@@ -186,7 +186,7 @@ print("That took", end - start, "seconds")
   <exercise label="eff_measure_2">
     <statement>
 
-      <p>Try testing procedureC for inputs of size 2, 4, 6, 8 and identify what kind of algorithm it is. (Change line 6
+      <p>Try testing procedureC for inputs of size 2, 4, 6, and 8 and identify what kind of algorithm it is. (Change line 6
         to say <c>procedureC(2)</c> and then run it, then change to <c>procedureC(2)</c><ellipsis/>)</p>
 
     </statement>

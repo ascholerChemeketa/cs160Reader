@@ -17,7 +17,7 @@
     this:</p>
   <image source="Binary/Images/digital_wave.gif" width="50%" alt="A digital signal" />
   <p>We could have more than two possible states - we refer to <q>digits</q> in numbers as digits because they
-    are only allowed to be 0, 1, 2, 3, 4, 5, 6, 7, 8 or 9. A single digit can’t represent a value halfway between
+    are only allowed to be 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9. A single digit can’t represent a value halfway between
     1 and 2. The English alphabet is a digital system with 26 possible values (A-Z).</p>
 
   <exercise label="binary_analog1">

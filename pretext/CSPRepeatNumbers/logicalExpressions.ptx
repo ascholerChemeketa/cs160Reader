@@ -20,8 +20,8 @@ print( "z is a ", type(z) )
         </input>
   </program>
 
-  <p>The usual way to produce <term>Boolean</term> values is with a <term>logical expression</term>. Much like a numeric
-    expression like <m>4 * (3 - 2)</m> evaluates to a number, a logical expression evaluates to a logical or True/False
+  <p>The usual way to produce <term>Boolean</term> values is with a <term>logical expression</term>. Much how a numeric
+    expression such as <m>4 * (3 - 2)</m> evaluates to a number, a logical expression evaluates to a logical or True/False
     value. Logical expressions are built with <term>comparison operators</term> that compare values to produce a
     True/False answer.</p>
   <p>
@@ -79,10 +79,10 @@ print( "isTwenty is ", isTwenty )
         </input>
   </program>
   <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean <q>equals</q> it is an <term>
-    assignment</term>. And assignment always happens after all expressions are evaluated. A good translation for that
+    assignment</term>. Also, remember that the assignment always happens after all expressions are evaluated. A good translation for that
     line of code would be <em><q>isTwenty gets assigned the value that we get by evaluating 'is age equal to
     20?'</q></em></p>
-  <p>As the line of code actually runs, the first thing that happens is the evaluation of <c>age == 20</c>. Since <c>age</c> is 20, the
+  <p>As the line of code runs, the first thing that happens is the evaluation of <c>age == 20</c>. Since <c>age</c> is 20, the
     result is True. That value replaces the logical expression and we end up with <c>isTwenty = True</c> and so that is the value that
     gets used for <c>isTwenty</c>.</p>
 

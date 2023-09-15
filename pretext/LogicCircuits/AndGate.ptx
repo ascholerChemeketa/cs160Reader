@@ -14,7 +14,7 @@
     really matter what state the second one is in, we know the output will be 0. Once again we can express this as a
     truth table. Note that we have the same four possible sets of inputs that we had for the OR gate: 00, 01, 10, or 11
     - any truth table describing a two-input circuit will always have those four possible inputs. What is different for
-    the AND gate is the outputs produced by each input - it outputs a 1 only when both inputs are 1:</p>
+    the AND gate is the output produced by each possible set of inputs - it outputs a 1 only when both inputs are 1:</p>
   <table xml:id="and-truth-table">
     <title>Truth table for AND</title>
     <tabular halign="center">

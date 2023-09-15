@@ -1,6 +1,6 @@
 <section xml:id="algorithms_big-o">
   <title>Big-O</title>
-  <p>As we saw one the last page, the exact way in which we count units of work in an algorithm is not as important as
+  <p>As we saw on the last page, the exact way in which we count units of work in an algorithm is not as important as
     the degree to which the algorithm depends on the size of its input. An algorithm that always involves the same
     amount of work is more efficient than one where the work grows as a function of the input size (at least once we
     pass a certain problem size).</p>

@@ -70,8 +70,8 @@
 
   <p>Note that at each level the work is ~1024 units of time - exactly the number of items in the full list. Thus we can
     say each level takes <m>O(n)</m> work.</p>
-  <p>The only other thing we need to figure out is <q>how many levels are required?</q> The table above skips a
-    few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like:</p>
+  <p>The only other thing we need to figure out is <q>How many levels are required?</q> The table above skips a
+    few steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like this:</p>
   <program language="none">
     <input>
 1024 → 512 → 256 → 128 → 64 → 32 → 16 → 8 → 4 → 2 → 1

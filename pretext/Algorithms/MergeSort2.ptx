@@ -21,7 +21,7 @@
     then merge the halves together!</em> Note that the definition for <term>MergeSort</term> calls <term>MergeSort</term>
     on the halves of the list - that means it is a <term>recursive</term> definition, a function that is defined in
     terms of itself. So your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those
-    gets split in half again… Until finally, we have lists of size 1. A list of size 1 is always sorted, so then we
+    gets split in half again… Until, finally, we have lists of size 1. A list of size 1 is always sorted, so then we
     start merging the sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of
     length 2 back into a sorted list of length 4…</p>
   <p>The rest of this video demonstrates the process:</p>

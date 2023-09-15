@@ -1,7 +1,7 @@
 <section xml:id="algorithms_merge-sort-compared">
   <title>Merge Sort Compared</title>
   <p>We have established that the Merge Sort algorithm requires <m>O(n \cdot log_2(n))</m> work to sort a list of size <term>
-    n</term>. How does that compare to Insertion and Selection sort that are <m>O(n^2)</m>?</p>
+    n</term>. How does that compare to Insertion Sort and Selection Sort, which are <m>O(n^2)</m>?</p>
   <p>Below is a graph of the growth of <m>n^2</m> and <m>n \cdot log_2(n)</m>:</p>
 
   <image source="Algorithms/Images/Sorts.svg" />
@@ -49,7 +49,7 @@
 
   </tabular>
   <p>Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring
-    constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic
+    constant factors that may change the exact numbers (especially for low values of n). Merge Sort has a greater basic
     overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving
     small problems it may take more time to run than Insertion Sort due to this. But we know that as <term>n</term>
     grows larger the basic pattern is going to hold - <m>O(n^2)</m> is going to grow faster than <m>O(n \cdot log_2(n))</m>,

@@ -29,7 +29,7 @@
     of ten.</p>
   <p>Computers use this same trick, but instead of representing values as decimals multiplied by powers of ten, they use
     binary numbers multiplied by a power of two. There are thus three things to represent: the sign of the number, the
-    binary value and the power of two to multiply it by. We will use the following scheme:</p>
+    binary value, and the power of two to multiply it by. We will use the following scheme:</p>
   <p>
     <ul>
       <li>

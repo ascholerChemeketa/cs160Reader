@@ -184,7 +184,7 @@
     </exercise>
     <exercise label="binary_bytes2">
       <statement>
-        <p>How many bytes are in 4KiB ? <var />
+        <p>How many bytes are in 4KiB? <var />
         </p>
       </statement>
       <setup>

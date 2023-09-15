@@ -228,7 +228,7 @@
 
   <exercise label="csprepeatimages_exercises6">
     <statement>
-      <p>Write code to multiple the r, g, and b color of each pixel by 0.8. In other words, for each color channel (r, g, b), get its current value, multiply that by 0.8, and use the answer as the new value for the color. This should make the image darker.</p>
+      <p>Write code to multiply the r, g, and b color of each pixel by 0.8. In other words, for each color channel (r, g, b), get its current value, multiply that by 0.8, and use the answer as the new value for the color. This should make the image darker.</p>
     </statement>
     <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
       <input>

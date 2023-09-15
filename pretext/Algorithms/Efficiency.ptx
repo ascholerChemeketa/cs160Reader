@@ -30,7 +30,7 @@ Pen Up
   <p>We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it
     doesn’t matter what size the square is (assuming Move always takes a fixed amount of time), this algorithm
     always requires 10 steps of work. If we decided that the pen up and pen down happen instantly and don’t count
-    as work than we might say the algorithm only took 8 <q>units</q> of work (4 Moves + 4 Turns); if we decided
+    as work, then we might say the algorithm only took 8 <q>units</q> of work (4 Moves + 4 Turns); if we decided
     that processing the <q>Repeat</q> took one unit of work for each loop we might say that the algorithm
     requires 14 units (Pen Down + 4 Moves + 4 Turns + 4 Repeats + Pen Up). But whatever we decide, the problem always
     takes that amount of work.</p>
@@ -66,7 +66,7 @@ Pen Up
         Shape (Gold) </caption>
     </figure>
   </p>
-  <p>What should be clear is that it does not really matter which accounting system we use when comparing the two
+  <p>What should be clear is that it does not matter which accounting system we use when comparing the two
     algorithms. By any counting system, if we are drawing a large number of sides, the DrawShape algorithm has to do
     more work than the DrawSquare algorithm.</p>
 </section>

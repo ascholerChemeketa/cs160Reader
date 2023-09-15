@@ -191,8 +191,7 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
     keep track of the <c>lowIndex</c>, the lowest possible location the number could be at, and the <c>highIndex</c>, the highest
     possible location. Each time at each step of the loop you calculate the middle between those two locations and check
     that <c>middleIndex</c>. If you do not find what you are looking for, you change either the low or high boundary to “throw out”
-    half of the remaining items. Try running the algorithm by hand and make sure you can predict the values the
-    animation above shows.</p>
+    half of the remaining items. Try running the algorithm by hand and make sure you can predict the values that the animation above shows.</p>
   <program language="none">
     <input>
     Note: assume that list and key are already set

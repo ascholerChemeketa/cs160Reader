@@ -44,7 +44,7 @@
     <title>The Registers</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif" width="35%" alt="Registers" />
     <p>A register is a memory location within the CPU itself, designed to be quickly accessed for purposes of fast data
-      retrieval. These contain instructions, data and other values that are needed by the ALU and control unit. On the
+      retrieval. These contain instructions, data, and other values that are needed by the ALU and control unit. On the
       timescale processors work at (billionths of a second) the trip to main memory can be too slow to wait for during
       the middle of an instruction. So the CPU needs some high-speed memory right inside the CPU to store the
       information it is currently working with. Here are some examples of kinds of registers a CPU will often have:</p>

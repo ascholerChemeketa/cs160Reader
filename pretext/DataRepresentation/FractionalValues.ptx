@@ -38,7 +38,7 @@
   <p>Normally we think of this table as starting from the ones and extending to the left, with each new column
     representing one larger power of two than the preceding column - making each column twice as large as the column to
     its right. If we want to move from left to right, we must divide the current column’s value by 2 to calculate
-    the next column. If we do this to the Ones column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>
+    the next column. If we do this to the One's column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>
     2^{-2}</m>), then <m>1/8</m> (<m>2^{-3}</m>), etc<ellipsis/></p>
   <table>
     <tabular halign="center">
@@ -201,7 +201,7 @@
       represent - although 0.6 is easy to represent in decimal - 6/10<superscript>ths</superscript> - it happens to be
       harder to represent in binary.</p>
     <important>
-      <p>Often times when computers represent decimal fractions as binary numbers, the value stored is only an
+      <p>Often when computers represent decimal fractions as binary numbers, the value stored is only an
         approximation of the true value. On the line below I have inserted code to have your web browser calculate the
         answer to 3 + .01 + .01:</p>
         <p>
@@ -239,7 +239,7 @@
         </condition>
         <condition string="^\s*x\s*$">
           <feedback>
-            <p>Use the blank table above. The 0 goes in the ones column.</p>
+            <p>Use the blank table above. The 0 goes in the one's column.</p>
           </feedback>
         </condition>
       </var>

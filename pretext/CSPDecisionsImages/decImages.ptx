@@ -19,7 +19,7 @@
   <image source="CSP/Images/cd-flag.gif" width="20%" />
 
   <p>To do this, we need to change just the white pixels in the image and make them yellow. This means we need a way to
-    answer the question <q>is this pixel white?</q>. A pure white pixel has red, green, and blue values all of
+    answer the question <q>Is this pixel white?</q>. A pure white pixel has red, green, and blue values all of
     255. A not-quite-pure white may not have 255 for each of the three values, but they will all be high, and they will
     all be very similar to each other. In comparison, a blue pixel is going to have a high blue value and low red and
     green (potentially 0 for a <q>perfect</q> blue). A red pixel will have a high red value and low blue and
@@ -66,7 +66,7 @@ img.draw(win)
     turning the blue pixels into black ones. Hints: blue pixels are not perfect blue. An approximate color value is
     (red = 0, green = 100, blue = 180), but you should not count on pixels having exactly those values - come up with a
     recipe using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones. 
-    Black pixels have r, g, b values of 0.</p>
+    Black pixels have r, g, and b values of 0.</p>
 
   <image source="CSP/Images/be-flag.gif" width="20%" />
 

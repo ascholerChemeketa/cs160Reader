@@ -63,7 +63,7 @@
     </table>
     <p>Note that in terms of Big-O <m>f(n) = \frac{n}{2}</m> is the same as <m>f(n) = n</m> - they are both linear
       functions. While it is true that in the best case, the algorithm takes 1 unit of time regardless of the number of
-      papers, we can’t count on always having the one we want at the top of the pile. Basing our rating of this
+      papers, we can’t count on always having the one we want at the top of the pile. Based on our rating of this
       algorithm on this rare exception would be misleading. So instead we will say Linear Search is <m>O(n)</m>. Kind of
       makes sense that linear search is a linear algorithm!</p>
     <important>

@@ -49,7 +49,7 @@ Chocolate Cream Pie:
 
         <p>Each operation in an algorithm must be sufficiently clear so that it does not need to be simplified. The
           meaning of <q>sufficiently clear</q> depends on who or what the algorithm is written for. The
-          instruction <c>average the two numbers</c> would be clear to most humans. But the same instruction is ambiguous to a computer because
+          instruction <c>average the two numbers</c> would be clear to most humans. However, the same instruction is ambiguous to a computer because
           the computer has no basic operations for averaging. For a computer, the algorithm would have to be expressed
           in terms of operations that can be carried out by programming language statements - adding the two numbers and
           dividing the sum by two.</p>

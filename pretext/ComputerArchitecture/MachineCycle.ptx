@@ -5,7 +5,7 @@
     bits that represent machine instructions. The code remains there until the user chooses to execute the program in
     question, at which point sections of the code are loaded into the computer’s memory.</p>
   <image source="ComputerArchitecture/Images/execution.gif" width="80%" alt="Execution" />
-  <p>To actually run the code, the processor then needs to retrieve instructions one by one from memory so it can run
+  <p>To run the code, the processor then needs to retrieve instructions one by one from memory so it can run
     them. This process consists of three stages: fetching the instruction, decoding the instruction, and executing the
     instruction - these three steps are known as the <term>machine cycle</term>. A processor spends all of its time in
     this cycle, endlessly retrieving the next instruction, decoding it, and running it.</p>

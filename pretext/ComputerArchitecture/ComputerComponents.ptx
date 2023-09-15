@@ -17,10 +17,10 @@
   </figure>
   <p>Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for
     expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is
-    really just a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
+    just a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
 
   <p>But there are basic features that just about every modern computer does share. There is a processor, sometimes
-    called the <term>CPU</term> (Central Processing Unit), that is responsible for running programs. There is a memory
+    called the <term>CPU</term> (Central Processing Unit), which is responsible for running programs. There is a memory
     unit, generally referred to as the <term>RAM</term> (Random Access Memory) or <term>Main Memory</term>, that is
     responsible for storing the information the computer is working with and the programs it is running. Finally, there
     are <term>input</term> and <term>output</term> devices - the devices like keyboards and network interfaces that get
@@ -35,8 +35,8 @@
     <image source="ComputerArchitecture/Images/vonNeumannData.png" width="80%" alt="Data Flow in a Computer" />
   </figure>
   <p>This description leaves out many important parts of a computer - from relatively simple things like the cord or
-    battery that supply electricity to complex devices like the storage (hard drives, DVD drives, flash drives) that
+    battery that supplies electricity, to complex devices like the storage (hard drives, DVD drives, flash drives) that
     provide long-term backup for main memory. But the basic functionality of the modern computer can be understood in
-    terms of a processor, memory and input/output.</p>
+    terms of a processor, memory, and input/output.</p>
 </section>
 

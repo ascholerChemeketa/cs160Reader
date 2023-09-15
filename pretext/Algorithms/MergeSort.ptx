@@ -2,7 +2,7 @@
   <title>Merging</title>
   <p>A problem-solving method that is often utilized in computer science is called <term>divide-and-conquer</term>. In
     this paradigm, a problem is repeatedly divided into smaller and smaller sub-problems, until the solution to
-    individual sub-problems becomes obvious. The solutions to these sub-problems are then combined to form a solution to
+    individual sub-problems become obvious. The solutions to these sub-problems are then combined to form a solution to
     the original problem.</p>
   <p>The sorting algorithms we have learned to this point (Insertion sort and Selection sort) have been <term>quadratic</term>
     time algorithms: in the worst case, they require <math>O(n^2)</math> amount of time to sort <term>n</term> items.

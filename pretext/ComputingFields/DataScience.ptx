@@ -1,13 +1,13 @@
 <section xml:id="computing-fields_data-science">
   <title>Data Science</title>
-  <p><term>Data Science</term> is a new, and rapidly growing inter-disciplinary field of study. It focuses on using a
+  <p><term>Data Science</term> is a new, and rapidly growing interdisciplinary field of study. It focuses on using a
     combination of computation and mathematics to answer questions and solve problems using large amounts of data.</p>
   <p>A data scientist will be responsible for gathering data and then using it to find trends, make forecasts, and
     communicate information. To do this, they will write computer programs, apply various mathematical techniques from
     statistics, calculus, and linear algebra, and make use of advanced tools like machine learning algorithms.</p>
-  <p>Although there are a general set of skills used by all data scientists, an individual data scientist often focuses
+  <p>Although there is a general set of skills used by all data scientists, an individual data scientist often focuses
     on a particular domain. They may specialize in working with data from biological sciences, business and marketing,
-    sports management, geology, or in any other domain where large amounts of data exist. To effectively work in one of
+    sports management, geology, or any other domain where large amounts of data exist. To effectively work in one of
     these domains, a data scientist often needs field-specific knowledge in addition to their general data science
     skills.</p>
 
@@ -38,7 +38,7 @@
       (Master’s or Ph.D.).</p>
     <p>Because Data Science is a cross-disciplinary field, degrees in data science can be found in many different
       programs. Some Data Science degrees are offered by math departments, others as concentrations in a degree in
-      computer science. And specialized data science programs may exist in other departments - a biology department may
+      computer science. Some specialized data science programs may exist in other departments - a biology department may
       offer a degree in <q>Bio Informatics</q> or <q>Biological Data Science</q>.</p>
     <p>Any data science degree is probably going to feature:</p>
     <p>
