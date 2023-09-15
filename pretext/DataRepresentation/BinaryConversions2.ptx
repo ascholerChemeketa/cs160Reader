@@ -1,6 +1,6 @@
 <section xml:id="data-representation_binary-conversions-multiplication-division-method">
   <title>Binary Conversions - Multiplication/Division Method</title>
-  <p>The biggest issue with the &#8220;table method&#8221; shown on the previous page is that it is hard to translate
+  <p>The biggest issue with the <q>table method</q> shown on the previous page is that it is hard to translate
     into an algorithm that a machine could run. The multiplication/division methods shown on this page are much easier
     to express in simple terms as they rely on mathematics instead of looking at a table and making a decision.</p>
   <subsection xml:id="data-representation_decimal-to-binary-1">
@@ -62,7 +62,7 @@ Step 4: number is empty. We are done, the answer is 13.
       computer code. To demonstrate that, the algorithm is implemented in Python in the <em>codelens</em> below. You DO
       NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm
       above into code requires some changes, but the code shown follows the same process described above. See the
-      &#8220;tips&#8221; box below the code lens for help running the program.</p>
+      <q>tips</q> box below the code lens for help running the program.</p>
 
     <program xml:id="datarepresentation_binaryconversions21" interactive="codelens" language="python">
       <input>
@@ -78,19 +78,19 @@ print("The final value of answer is", answer)
     </program>
     <note>
       <p>
-        <term>How to use the &#8220;codelens&#8221;</term>
+        <term>How to use the <q>codelens</q></term>
       </p> 
       <p>
         <ul>
           <li>
-            <p>You can click the &#8220;forward&#8221; button to watch the code run line by line.</p>
+            <p>You can click the <q>forward</q> button to watch the code run line by line.</p>
           </li>
           <li>
             <p>Use can use the large gray scroll bar beneath the code to scroll the code to the right - at the end of each line of code is an
-              explanation of what that line &#8220;says&#8221;</p>
+              explanation of what that line <q>says</q></p>
           </li>
           <li>
-            <p>The blue &#8220;Global frame&#8221; area that appears at the bottom will display the current value of <c>number</c> and <c>answer</c>.</p>
+            <p>The blue <q>Global frame</q> area that appears at the bottom will display the current value of <c>number</c> and <c>answer</c>.</p>
           </li>
         </ul>
       </p>

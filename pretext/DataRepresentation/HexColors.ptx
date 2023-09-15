@@ -4,12 +4,12 @@
     many pieces of data a computer works with, the 1s and 0s have a meaning defined by their data type; the computer
     interprets a sequence of 1s and 0s as a signed integer, or an ASCII character, or a floating-point decimal. But some
     pieces of information do not have a natural type. Things like memory addresses in a computer are just binary
-    sequences (00000, 00001, etc&#8230;). When a computer has to display data that does not have a &#8220;type&#8221; or
+    sequences (00000, 00001, etc<ellipsis/>). When a computer has to display data that does not have a <q>type</q> or
     for which the type is unknown, the raw information is typically shown in hexadecimal.</p>
   <figure align="">
     <image source="DataRepresentation/Images/hexaddress.png" width="50%" alt="Hex display of data" />
     <legend>
-      <p>A programmer&#8217;s view of two pieces of information in a program.</p>
+      <p>A programmer’s view of two pieces of information in a program.</p>
     </legend>
   </figure>
   <p>The image above shows a screenshot of looking at data while debugging a computer program. <term>x</term> is known
@@ -24,7 +24,7 @@
     green, and 140 blue makes a <inline classes="pink">nice pink</inline>. To specify this color, a website designer can
     write the 24 binary digits as 6 hex digits (remember that 4 binary digits correspond to one hex digit). 255 is FF in
     hex. 0 is 00 in hex. 140 is 8C in hex. So <inline classes="pink">this shade of pink</inline> can be written as
-    FF008C - a website designer would type something like &#8220;color: #FF008D;&#8221; to specify that some text should
+    FF008C - a website designer would type something like <q>color: #FF008D;</q> to specify that some text should
     be pink.</p>
   <p>You can play with the sliders below to explore how colors can be described as a mix of red, green and blue. Move
     the sliders to change the amount of each color. The current value is displayed in both decimal and hexadecimal. By

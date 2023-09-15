@@ -61,8 +61,8 @@ print( "z is a ", type(z) )
 
     </tabular>
   </table>
-  <p>The best way to think about an expression like <c>a &gt; b</c> is that it asks the question, <em>&#8220;is a greater than
-    b&#8221;</em>. The value we get by evaluating the expression is the answer to that question: either True or False.</p>
+  <p>The best way to think about an expression like <c>a &gt; b</c> is that it asks the question, <em><q>is a greater than
+    b</q></em>. The value we get by evaluating the expression is the answer to that question: either True or False.</p>
   <p>Here is a sample of them in use:</p>
 
   <program xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
@@ -78,11 +78,11 @@ print( "canDrink is ", canDrink )
 print( "isTwenty is ", isTwenty )
         </input>
   </program>
-  <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean &#8220;equals&#8221; it is an <term>
+  <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean <q>equals</q> it is an <term>
     assignment</term>. And assignment always happens after all expressions are evaluated. A good translation for that
-    line of code would be <em>&#8220;isTwenty gets assigned the value that we get by evaluating &#8216;is age equal to
-    20?&#8217;&#8221;</em></p>
-  <p>As the line of code actually runs, the first thing that happens is the evaluation of <c>age == 20</c>. Since age is 20, the
+    line of code would be <em><q>isTwenty gets assigned the value that we get by evaluating 'is age equal to
+    20?'</q></em></p>
+  <p>As the line of code actually runs, the first thing that happens is the evaluation of <c>age == 20</c>. Since <c>age</c> is 20, the
     result is True. That value replaces the logical expression and we end up with <c>isTwenty = True</c> and so that is the value that
     gets used for <c>isTwenty</c>.</p>
 

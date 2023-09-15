@@ -3,8 +3,8 @@
   <p>With slight modifications can use our normal algorithms for doing binary math. Take addition for example. We are
     familiar with adding base ten numbers column by column, carrying to the next column any time we get a value of 10 or
     more in the present column. In base two, each column can only store a 0 or a 1. So any value over 1 means we have to
-    carry. 2 (<m>{10}_2</m>) means &#8220;zero in this column, carry a 1&#8221;, 3 (<m>{11}_2</m>) means &#8220;one in
-    this column.</p>
+    carry. 2 (<m>{10}_2</m>) means <em><q>zero in this column, carry a 1</q></em>, 3 (<m>{11}_2</m>) means <em><q>one in this column,
+    carry 1 to the next column.</q></em></p>
 
   <p> Below is shown the process of adding 15 (<m>{1111}_2</m>) to 6 (<m>{0110}_2</m>). </p>
 

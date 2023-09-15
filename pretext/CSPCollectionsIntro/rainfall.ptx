@@ -1,6 +1,6 @@
 <section xml:id="csp-collections-intro_rainfall-problem">
   <title>Rainfall Problem</title>
-  <p>Let&#8217;s imagine that you have a list that contains amounts of rainfall for each day, collected by a
+  <p>Let’s imagine that you have a list that contains amounts of rainfall for each day, collected by a
     meteorologist. We want to figure out the average rainfall from the list. However, her rain-gathering equipment
     occasionally makes a mistake and reports a negative amount for that day. We have to ignore those.</p>
   <p>We will build the program gradually in the following steps:</p>
@@ -9,7 +9,7 @@
 
     <exercise label="cspcollectionsintro_rainfall1">
       <statement>
-        <p>First, let's not worry about filtering out the bad values or finding the average. Let&#8217;s just calculate
+        <p>First, let's not worry about filtering out the bad values or finding the average. Let’s just calculate
           the total of the values in the list.</p>
         <p>We will write the code in a function <c>getRealAvg</c> so that it is easier to test with different possible lists of
           data - we will get a different list for each month of data, so we need our program to work correctly for any
@@ -59,7 +59,7 @@
 
     <exercise label="cspcollectionsintro_rainfall2">
       <statement>
-        <p>Now, let&#8217;s worry about about ONLY adding the values of the numbers that aren&#8217;t negative to the
+        <p>Now, let’s worry about about ONLY adding the values of the numbers that aren’t negative to the
           total. You can copy your code from part 1 and use it to get started here. Then add logic so that you only add
           each value to <c>sumRain</c> if it is 0 or more.</p>
         <p>Hint: The if condition needs to be checked for each value in the list. You must nest the <c>if</c> inside the <c>for</c>

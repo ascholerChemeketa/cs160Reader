@@ -1,11 +1,11 @@
 <chapter xml:id="operating-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Operating Systems</title>
   <introduction>
-    <p>A computer&#8217;s <term>Operating System</term> is the software that manages the low-level functions of the
+    <p>A computer’s <term>Operating System</term> is the software that manages the low-level functions of the
       computer and provides a platform for other software to run. The earliest computers did not have operating systems,
       every program dealt directly with the hardware of the computer and human operators figured out what program would
       run when. Operating systems were designed to make more efficient use of the computer hardware, by allowing many
-      programs to be queued up and run in quick succession, and of programmer&#8217;s time, by handling some of the
+      programs to be queued up and run in quick succession, and of programmer’s time, by handling some of the
       tricky low-level management tasks so individual programs do not have to.</p>
   </introduction>
   

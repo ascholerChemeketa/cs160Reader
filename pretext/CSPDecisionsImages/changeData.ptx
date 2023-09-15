@@ -6,7 +6,7 @@
   <p>This program changes only the upper-left 1/4 of the image. To do so, it uses loops that
       only go up to 1/2 the width and 1/2 the height. At each location, it gets the existing pixel
       and then inverts each color channel (subtracts it from 255 so that a value of 0 becomes 255,
-      a value of 1 becomes 254, 2 becomes 253, etc&#8230;).</p>
+      a value of 1 becomes 254, 2 becomes 253, etc<ellipsis/>).</p>
 
 <program xml:id="csprepeatimages_changedata1" interactive="activecode" language="python">
   <input>
@@ -80,7 +80,7 @@ img.draw(win)
 </exercise>
   <p>You may have noticed that we used <c>// 2</c> to divide by two in that sample. Why?
       <c>range</c> only works with whole numbers. And <c>/ 2</c> produces a decimal value (also known as a
-      <c>float</c> for &#8220;floating decimal point&#8221;).  Try this example and note the error you get.</p>
+      <c>float</c> for <q>floating decimal point</q>).  Try this example and note the error you get.</p>
 
 <program xml:id="csprepeatimages_changedata3" interactive="activecode" language="python">
   <input>
@@ -96,7 +96,7 @@ print(x)
       the answer. So using <c>//</c> ensures that we always get a whole number (or <c>int</c> for integer).</p>
   <p>We could even use two sets of loops to visit two different parts of the image. This program
       has two copies of the code for steps 3-6. The first one visits the top 30 rows. The second
-      copy visits the last 30 rows. In each of those locations, we don&#8217;t even both accessing
+      copy visits the last 30 rows. In each of those locations, we don’t even both accessing
       the existing color. Instead we use the <c>Pixel(red, green, blue)</c> function to make a new
       red pixel (255 red, 0 green and blue) and store it into the image at the current location.</p>
 
@@ -132,7 +132,7 @@ img.draw(win)
   </input>
 </program>
   <p>Try modifying the program so that the red bars are on the left and right side of the image. To
-      do so, you will have to &#8220;fix&#8221; <c>for y...</c> loops AND change the <c>for x</c> loops to only cover
+      do so, you will have to <q>fix</q> <c>for y<ellipsis/></c> loops AND change the <c>for x</c> loops to only cover
       a limited distance. The first <c>for x</c> should cover a range from 0 to 30. The second one
       should start at the width - 30 and continue until it hits the full width.</p>
 </section>

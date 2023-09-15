@@ -18,7 +18,7 @@
                     followed by all the characters in the second string, <c>string2</c>.</p>
             </li>
             <li>
-                <p><term>Function</term> - A function returns a value. Function can take input as well, but don&#8217;t
+                <p><term>Function</term> - A function returns a value. Function can take input as well, but don’t
                     have to. An example is the string <c>lower()</c> function that returns a string with all lowercase letters.</p>
             </li>
             <li>
@@ -38,8 +38,8 @@
                     a pair of single, double, or triple quotes.</p>
             </li>
             <li>
-                <p><term>Substring</term> - A substring is a part of a string. One substring of &#8220;Hi there&#8221;
-                    would be &#8220;Hi&#8221;.</p>
+                <p><term>Substring</term> - A substring is a part of a string. One substring of <q>Hi there</q>
+                    would be <q>Hi</q>.</p>
             </li>
         </ul>
     </p>

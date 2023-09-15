@@ -34,8 +34,8 @@ drawSquare(becca, squareSize)
     <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%" alt="the space coordinate system" />
   </figure>
   <p>Because the square procedure is going to make a square up to 200 wide and tall extending to the right and down from
-    where we start, I don&#8217;t want it to start to the right or below the point 0, 0 or it might go off screen. I am
-    fine with it starting to the left of or above that location, but I don&#8217;t want it to start right at the edge of
+    where we start, I don’t want it to start to the right or below the point 0, 0 or it might go off screen. I am
+    fine with it starting to the left of or above that location, but I don’t want it to start right at the edge of
     the screen. So I want the starting x location to be between -190 and 0 and the starting y to be between 0 and 190.
     So this version of the program uses <c>goto(x, y)</c> and random numbers to pick a random starting location before drawing the
     square.</p>
@@ -66,7 +66,7 @@ drawSquare(becca, squareSize)
         </input>
   </program>
   <p>Try the program a few times. Each time you should get different squares.</p>
-  <p>Now let&#8217;s make it a little more interesting by picking a random color each time the program runs. We have
+  <p>Now let’s make it a little more interesting by picking a random color each time the program runs. We have
     added a procedure called <c>changeColor</c>. If you pass it the name of a turtle, and three numbers between 0-255 representing <c>red</c>
     , <c>green</c>, and <c>blue</c> values, it will make a hexadecimal color code that represents the color with that much
     red/green/blue. It will then use that to set the color of the turtle. Your task is to write code to pick three

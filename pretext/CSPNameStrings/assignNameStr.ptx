@@ -60,13 +60,13 @@ print(fullName)
             <c>input("What is your first name?")</c>
         </p>
 
-        <p>The string inside of the paranteheses (<em>&#8220;What is your first
-            name?&#8221;</em>) is called a <term>paramter</term>. It tells the function how to do its job. In this case,
+        <p>The string inside of the paranteheses (<em><q>What is your first
+            name?</q></em>) is called a <term>paramter</term>. It tells the function how to do its job. In this case,
             it tells <c>input</c> what to print in order to prompt the user of the program to type something.</p>
         <p>When the function is done getting the input from the user, it <term>returns</term> the string containing
             whatever the user types. When the function <term>returns</term> a value, the function is essentially is
             replaced by that value. The code <c>input("What is your first name?")</c> in the sample below will be replaced by whatever the user types -
-            something like <em>&#8220;Anne&#8221;</em>.</p>
+            something like <em><q>Anne</q></em>.</p>
 
         <program xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
             <input>
@@ -112,8 +112,8 @@ print("Cost to get from Chicago to Dallas: $" + str(costTrip))
         </program>
         <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that we form with
             concatenation, we can give it a list of values separated by commas. Using this version of print, we
-            don&#8217;t have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
-            &#8220;Cost to get from Chicago to Dallas&#8221;, they are just being printed one after another. Also notice
+            don’t have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
+            <q>Cost to get from Chicago to Dallas</q>, they are just being printed one after another. Also notice
             that this version of print automatically adds a space between items that are printed. Here that causes a
             problem as it means there will be a space between the $ and the cost.</p>
 

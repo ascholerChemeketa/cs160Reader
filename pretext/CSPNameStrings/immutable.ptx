@@ -3,7 +3,7 @@
 
     <p>Even though you can manipulate a string to create a new string the original
         string is <term>immutable</term> which means that they never change. Notice that after you execute the code
-        below the string stored in the variable <c>sentence</c> hasn&#8217;t changed.</p>
+        below the string stored in the variable <c>sentence</c> hasn’t changed.</p>
 
     <program xml:id="cspnamestrings_immutable1" interactive="activecode" language="python">
         <input>
@@ -15,8 +15,8 @@ print(short)
 print(sentence)          # Still what it was on line 1
         </input>
     </program>
-    <p>While the strings themselves can&#8217;t be changed you can change the value of a variable. This throws away the
-        original string and sets the variable&#8217;s value to the new string.</p>
+    <p>While the strings themselves can’t be changed you can change the value of a variable. This throws away the
+        original string and sets the variable’s value to the new string.</p>
 
     <program xml:id="cspnamestrings_immutable2" interactive="activecode" language="python">
         <input>

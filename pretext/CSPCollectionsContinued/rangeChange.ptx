@@ -4,7 +4,7 @@
     the <c>start</c> value, increases by <c>change</c> at each step, and stops when it hits <c>end</c> (but will not include the <c>end</c>
     value).</p>
   <p>We can use that to do things like iterating through every other item in a list. This program does exactly that by
-    starting from 0 and using a change value of 2. This means it visits indexes 0, 2, 4&#8230;</p>
+    starting from 0 and using a change value of 2. This means it visits indexes 0, 2, 4<ellipsis/></p>
 
   <program xml:id="cspcollectionscontinued_rangechange1" interactive="activecode" language="python">
     <input>
@@ -25,7 +25,7 @@ print("Total is", total)
     <statement>
 
       <p>Which of these changes to the program would give you just the items at odd indexes in a list? (indexes 1, 3,
-        5&#8230; which are for the values 9, 10, 10, 4 in the list above)</p>
+        5<ellipsis/> which are for the values 9, 10, 10, 4 in the list above)</p>
 
     </statement>
     <choices>
@@ -35,7 +35,7 @@ print("Total is", total)
           <p>Change the range to range(0, len(numbers), 3)</p>
         </statement>
         <feedback>
-          <p>No, that would access indexes 0, 3, 6...</p>
+          <p>No, that would access indexes 0, 3, 6<ellipsis/></p>
         </feedback>
       </choice>
 
@@ -53,7 +53,7 @@ print("Total is", total)
           <p>Change the range to range(0, len(numbers), 1)</p>
         </statement>
         <feedback>
-          <p>No, that would access indexes 1, 2, 3...</p>
+          <p>No, that would access indexes 1, 2, 3<ellipsis/></p>
         </feedback>
       </choice>
 
@@ -62,7 +62,7 @@ print("Total is", total)
           <p>Change the range to range(1, len(numbers), 3)</p>
         </statement>
         <feedback>
-          <p>No, that would access indexes 1, 4, 7...</p>
+          <p>No, that would access indexes 1, 4, 7<ellipsis/></p>
         </feedback>
       </choice>
     </choices>

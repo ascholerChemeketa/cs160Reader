@@ -28,7 +28,7 @@
     </script>
   </div>
   </raw>
-  <p>How many patterns can be formed with three bits? Let&#8217;s list them:</p>
+  <p>How many patterns can be formed with three bits? Let’s list them:</p>
   <blockquote>
     <line_block>
       <line>0 0 0</line>
@@ -42,10 +42,10 @@
     </line_block>
   </blockquote>
   <p>The list of patterns for three bits has 8 lines (patterns). Notice that the first four patterns are a
-    &#8220;0&#8221; followed by the possible patterns for 2 bits. The second four patterns are a &#8220;1&#8221;
+    <q>0</q> followed by the possible patterns for 2 bits. The second four patterns are a <q>1</q>
     followed by the patterns for 2 bits.</p>
   <p>To form the list of patterns for 4 bits, we can use the same trick. Make two copies of the list for 3 bits. This
-    gives you 16 lines. Put a &#8220;0&#8221; at the start of the first 8 lines and a &#8220;1&#8221; at the start of
+    gives you 16 lines. Put a <q>0</q> at the start of the first 8 lines and a <q>1</q> at the start of
     the second 8 lines.</p>
   <p>This trick can be repeated as many times as you like. Adding one more bit doubles the number of patterns. The table
     shows the number of patterns for 1, 2, 3 and 4 bits.</p>
@@ -88,7 +88,7 @@
     </tabular>
   </table>
   <p>How many patterns with 5 bits? Make two copies of the 4-bit patterns (16 patterns per copy). Make the patterns
-    unique by prefixing &#8220;0&#8221; to the first 16 patterns and &#8220;1&#8221; to the second 16. You now have <m>16&#215;2
+    unique by prefixing <q>0</q> to the first 16 patterns and <q>1</q> to the second 16. You now have <m>16 \times 2
     = 32 = 2^5</m> unique patterns.</p>
   <p>This demonstrates the following:</p>
   <p>

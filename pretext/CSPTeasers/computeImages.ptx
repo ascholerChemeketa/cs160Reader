@@ -74,7 +74,7 @@
     </figure>
     <p>All image manipulations in programs like Photoshop or Instagram filters are created by manipulating those red,
         green, and blue color components in each pixel.</p>
-    <p>Let&#8217;s remove the red from this picture. The program below does that.</p>
+    <p>Let’s remove the red from this picture. The program below does that.</p>
     <p>In Python, images are another example of an <term>object</term>. To work with them, we will make use of another <term>
         library</term>, this one called <c>image</c>. That library will allow us to make an <c>Image</c> that holds the data from
         an image and an <c>ImageWin</c> where we can draw the image to.</p>

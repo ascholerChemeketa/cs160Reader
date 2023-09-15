@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-images_posterizing">
   <title>Posterizing</title>
   <p>The process of changing an image so it only uses a small number of colors is known as <term>posterizing</term> (old
-    posters had to be printed with a small number of colors - the technology didn&#8217;t let one make complex blends).</p>
+    posters had to be printed with a small number of colors - the technology didn’t let one make complex blends).</p>
   <p>This time, we need to make a function that will force a color value between 0 and 255 to become one of a few
     specific options.</p>
 
@@ -76,7 +76,7 @@ win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
   </input>
   </program>
-  <p>Rewrite the code for posterizing an image using if and else rather than multiple if&#8217;s. Test that it still
+  <p>Rewrite the code for posterizing an image using if and else rather than multiple if’s. Test that it still
     works correctly.</p>
 
   <exercise label="cspdecisionsimages_posterize3">

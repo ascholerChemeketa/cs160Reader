@@ -1,7 +1,7 @@
 <section xml:id="history-of-computers_the-first-generation">
   <title>The First Generation</title>
   <p>Generations of computers are largely defined by the components used to build them. Although mechanical computers
-    like Babbage&#8217;s Engines and the Hollerith desk would continue to see use well into the 20th century,
+    like Babbage’s Engines and the Hollerith desk would continue to see use well into the 20th century,
     mathematicians and engineers in the 1930s realized that the logic of computation - Boolean logic - could be
     implemented with electronic relays and switches. <term>Vacuum tubes</term>, an electrical component that can be used
     as a switching device, became the core components of the first electrical computers.</p>
@@ -17,9 +17,9 @@
   </sidebar>
   <p>World War II inspired a great deal of mathematical work. The British developed a series of computational devices
     designed to do calculations required to break German codes. These devices culminated in <term>Colossus</term>, the
-    world&#8217;s first electronic digital computer that was all programmable. Operators could reprogram the machine by
+    world’s first electronic digital computer that was all programmable. Operators could reprogram the machine by
     changing switches and rewiring connections. Colossus could not compute any possible program, but it could be
-    &#8220;reprogrammed&#8221; to solve different problems relating to the breaking of codes.</p>
+    <q>reprogrammed</q> to solve different problems relating to the breaking of codes.</p>
 
   <video xml:id="yt_7cDeG3hyraA" youtube="7cDeG3hyraA" width="auto" />
 
@@ -41,7 +41,7 @@
     <p>Early computing machines had fixed programs. For example, a desk calculator is a fixed program computer. It can
       do basic mathematics, but it cannot be used as a word processor or a gaming console. Changing the program of a
       fixed-program machine requires re-wiring, re-structuring, or re-designing the machine. The earliest computers were
-      not so much &#8220;programmed&#8221; as they were &#8220;designed&#8221;. &#8220;Reprogramming&#8221;, when it was
+      not so much <q>programmed</q> as they were <q>designed</q>. <q>Reprogramming</q>, when it was
       possible at all, was a laborious process, starting with flowcharts and paper notes, followed by detailed
       engineering designs, and then the often-arduous process of physically re-wiring and re-building the machine. With
       the proposal of the stored-program computer, this changed. A stored-program computer includes by design an
@@ -61,13 +61,13 @@
     <p xml:id="the-first-generation-3">Even before the ENIAC was finished, its designers, John Mauchly and J. Presper
       Eckert, recognized its limitations and started the design of a stored-program computer, the EDVAC. It was the
       first general-purpose computer designed to store its instructions electronically, allowing new programs to be run
-      without physical modification to them machine. The basic architecture of this machine is known as the &#8220;<term>von
-      Neumann architecture</term>&#8221; after researcher, John von Neumann, who described it. The von Neumann
+      without physical modification to them machine. The basic architecture of this machine is known as the <q><term>von
+      Neumann architecture</term></q> after researcher, John von Neumann, who described it. The von Neumann
       architecture serves as the basic blueprint for almost every modern computer.</p>
     <p>Although EDVAC was the first general-purpose stored-program computer designed, it was not the first to run a
-      program. That honor goes to the <term>Manchester &#8220;baby&#8221;</term>, a machine built at the University of
+      program. That honor goes to the <term>Manchester <q>baby</q></term>, a machine built at the University of
       Manchester in England. It ran its first program in June of 1948. What actually represents the first computer
-      depends on how you define &#8220;computer&#8221;, but generally these two machines are considered to represent the
+      depends on how you define <q>computer</q>, but generally these two machines are considered to represent the
       first modern computers - electrical devices capable of storing in memory a program to do any arbitrary
       calculation.</p>
     <p>By the 1950s, computers had left the labs and gone mainstream - machines like the UNIVAC and the IBM 650 were

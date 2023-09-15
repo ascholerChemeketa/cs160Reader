@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-intro_using-multiple-if-statements">
         <title>Using Multiple if statements</title>
-        <p>You can use more than one <c>if</c> statement in your code.  Here&#8217;s an example of a calculation
-            that uses two <c>if</c> statements.  Let&#8217;s compute the total cost of an item where the price
+        <p>You can use more than one <c>if</c> statement in your code.  Here’s an example of a calculation
+            that uses two <c>if</c> statements.  Let’s compute the total cost of an item where the price
             is based on the weight of the item.  If the item weighs less than 1 pound then the price is
             1.45 a pound.  If the item weighs 1 pound or more the price is 1.15 a pound.</p>
         <p>The program below is an attempt to do that. But it is broken in a subtle way.

@@ -10,7 +10,7 @@
   <p>Not only are there significantly more addresses that a program is allowed to use than actually exist, every program
     that is running thinks it gets to use nearly the entire memory space. Two programs may both decide to store a piece
     of information at byte address #100000 - the operating system needs to make sure that neither program destroys the
-    other&#8217;s information and that they can both get to what they stored.</p>
+    other’s information and that they can both get to what they stored.</p>
   <p>Operating systems can address both of these issues through memory address virtualization. The basic idea is that
     the operating system takes any memory reference from a program (a <term>virtual address</term>) and remaps it to a
     location in main memory. What a program thinks is address #100000 may actually be at address #203434. When a second
@@ -34,12 +34,12 @@
         <image source="OperatingSystems/Images/VirtualMemory-Page-1.png"  />
         <p>Process A thinks it has 8 addresses to use. So does process B. Orange blocks show memory for process A that
           is currently actually in the physical RAM, blue blocks show memory for B that is currently in RAM.</p>
-        <p>When Process A asks the operating system for &#8220;memory location 1&#8221; because it wants to access the
+        <p>When Process A asks the operating system for <q>memory location 1</q> because it wants to access the
           data <term>A1</term>, the operating system looks up where that memory is really stored, finds the data in
           location 3 and then gives that back to the process. Process A will never know that what it thinks of as
-          &#8220;memory location 1&#8221; is actually physically stored in location 3.</p>
-        <p>If Process B asks for &#8220;memory location 1&#8221;, the operating system will give it the memory that is
-          stored at location 6. If it asked for &#8220;memory location 2&#8221;, it would get the data that is stored in
+          <q>memory location 1</q> is actually physically stored in location 3.</p>
+        <p>If Process B asks for <q>memory location 1</q>, the operating system will give it the memory that is
+          stored at location 6. If it asked for <q>memory location 2</q>, it would get the data that is stored in
           location 1.</p>
       </statement>
     </task>
@@ -54,26 +54,26 @@
     <task>
       <statement>
         <image source="OperatingSystems/Images/VirtualMemory-Page-3.png"  />
-        <p>Now imaging Process B asks the operating system for &#8220;memory location 8&#8221;.</p>
-        <p>That memory block, &#8220;B8&#8221;, is not currently in RAM, it is on the hard drive. So, the operating system needs to move it
+        <p>Now imaging Process B asks the operating system for <q>memory location 8</q>.</p>
+        <p>That memory block, <q>B8</q>, is not currently in RAM, it is on the hard drive. So, the operating system needs to move it
           back into RAM (the hard drive is too slow to work from directly).</p>
         <p>To do that, the operating system needs to make room by evicting some other memory block. It may choose to do
           this based on which block has been used the least or used the least recently. We will assume it chooses the
-          block at location 5, &#8220;A3&#8221;.</p>
+          block at location 5, <q>A3</q>.</p>
       </statement>
     </task>
     <task>
       <statement>
         <image source="OperatingSystems/Images/VirtualMemory-Page-4.png"  />
-        <p>The needed block, &#8220;B8&#8221;, has now been placed into location 5. Meanwhile, &#8220;A3&#8221; has
+        <p>The needed block, <q>B8</q>, has now been placed into location 5. Meanwhile, <q>A3</q> has
           finished moving to the hard drive to be stored until it is needed again.</p>
       </statement>
     </task>
     <task>
       <statement>
         <image source="OperatingSystems/Images/VirtualMemory-Page-5.png"  />
-        <p>Finally, the operating system can complete the request by giving Process B the memory block &#8220;B8&#8221;.</p>
-        <p>Process A doesn&#8217;t know that &#8220;A3&#8221; is no longer actually in main memory. If it goes to access
+        <p>Finally, the operating system can complete the request by giving Process B the memory block <q>B8</q>.</p>
+        <p>Process A doesn’t know that <q>A3</q> is no longer actually in main memory. If it goes to access
           it, the operating will use the same procedure to restore it from the hard drive by evicting some other block
           of memory.</p>
       </statement>
@@ -83,7 +83,7 @@
   <exercise label="operatingsystems_virtualmemory1">
     <statement>
 
-      <p>In the diagram above, at step 5, Program A asks for &#8220;memory location 6&#8221;. Where in physical memory
+      <p>In the diagram above, at step 5, Program A asks for <q>memory location 6</q>. Where in physical memory
         will that be found?</p>
 
     </statement>
@@ -131,7 +131,7 @@
   <exercise label="operatingsystems_virtualmemory2">
     <statement>
 
-      <p>In the diagram above, at step 5, Program B asks for &#8220;memory location 5&#8221;. Where in physical memory
+      <p>In the diagram above, at step 5, Program B asks for <q>memory location 5</q>. Where in physical memory
         will that be found?</p>
 
     </statement>

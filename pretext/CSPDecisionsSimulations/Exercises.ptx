@@ -46,7 +46,7 @@
   </exercise>
   <exercise label="cspdecisionssimulations_exercises2" numbered="yes" indentation="hide" language="python">
     <statement>
-      <p>The code below is supposed to &#8220;flip a coin&#8221; 100 times by making a random number that is 0 (heads)
+      <p>The code below is supposed to <q>flip a coin</q> 100 times by making a random number that is 0 (heads)
         or 1 (tails) and keep track of the longest streak of heads that we see. It will do so by first updating the <c>headsInARow</c>
         counter (like the sample from <xref ref="csp-decisions-simulations_building-a-simulation" text="title" />). If the <c>headsInARow</c>
         increased (but not if it was reset to 0), we will check and see if it is bigger than <c>longestStreak</c>. If so, we will
@@ -161,7 +161,7 @@ print("highestRoll was", highestRoll)
       <p>This program currently makes a pink dot that is 50 pixels across and is centered at 0, 0.</p>
       <p>Modify the program so that the size of the dot is a random value between 50 and 200 and the location it draws
         it is a random location where both x and y are random numbers between -100 and 100.</p>
-      <p>The automatic tests will make sure you generate appropriate values, but it won&#8217;t necessarily verify you
+      <p>The automatic tests will make sure you generate appropriate values, but it won’t necessarily verify you
         used the random numbers you make in the correct spots. You are responsible for checking that yourself!</p>
       <note>
         <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
@@ -208,9 +208,9 @@ print("highestRoll was", highestRoll)
       <p>Finish the function <c>getOddsFor</c>. It should determine the odds of rolling <c>targetNumber</c> when rolling two six-sided dice
         (1-6). It should do so by using a loop to repeat <c>TRIALS</c> number of times rolling two dice and seeing how many
         times <c>targetNumber</c> is the total of the two dice. Then return that number divided by <c>TRIALS</c>.</p>
-      <p>This is very similar to exercise 3 above&#8230; Just make sure to check if the total you &#8220;roll&#8221; is
+      <p>This is very similar to exercise 3 above<ellipsis/> Just make sure to check if the total you <q>roll</q> is
         the same as the <c>targetNumber</c> as opposed to always checking against 8.</p>
-      <p>Make sure to <c>return</c> your answer from the function, don&#8217;t print it in the function!</p>
+      <p>Make sure to <c>return</c> your answer from the function, don’t print it in the function!</p>
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises6_editor" interactive="activecode" language="python">

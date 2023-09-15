@@ -42,7 +42,7 @@
     procedure, we just need to change line 6 to say something like <c>procedureA(6)</c> to run procedureA with an input of 6 - or <c>procedureC(10)</c>
     to run procedureC with an input of size 10.</p>
   <p>When you run a procedure, it will make a drawing and print out how long the drawing took to make.</p>
-  <p>For example&#8230; The code below is already set up to run procedureA with an input size of 4 -<c>procedureA(4)</c> on line 6. I
+  <p>For example<ellipsis/> The code below is already set up to run procedureA with an input size of 4 -<c>procedureA(4)</c> on line 6. I
     ran it and got a time of ~0.97 seconds. Then, to test the same procedure with an input of size 6, I change line 6 to <c>procedureA(6)</c>.
     I run that and get a time of ~1.63 seconds. I do the same for input sizes of 8 and 10 (changing line 6 and then
     running the program again.) Here is what I get:</p>
@@ -145,7 +145,7 @@ print("That took", end - start, "seconds")
     <statement>
 
       <p>Try testing procedureB for inputs of size 4, 6, 8, 10 and identify what kind of algorithm it is. (Change line 6
-        to say <c>procedureB(4)</c> and then run it, then change to <c>procedureB(6)</c>&#8230;)</p>
+        to say <c>procedureB(4)</c> and then run it, then change to <c>procedureB(6)</c><ellipsis/>)</p>
 
     </statement>
     <choices>
@@ -187,7 +187,7 @@ print("That took", end - start, "seconds")
     <statement>
 
       <p>Try testing procedureC for inputs of size 2, 4, 6, 8 and identify what kind of algorithm it is. (Change line 6
-        to say <c>procedureC(2)</c> and then run it, then change to <c>procedureC(2)</c>&#8230;)</p>
+        to say <c>procedureC(2)</c> and then run it, then change to <c>procedureC(2)</c><ellipsis/>)</p>
 
     </statement>
     <choices>

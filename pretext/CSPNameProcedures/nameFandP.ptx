@@ -1,14 +1,14 @@
 <section
   xml:id="csp-name-procedures_stand-alone-procedures-and-functions">
   <title>Stand Alone Procedures and Functions</title>
-  <p>We&#8217;ve already seen how we can use names to represent numbers (both integers like <c>3</c> and <c>-325</c> and
+  <p>We’ve already seen how we can use names to represent numbers (both integers like <c>3</c> and <c>-325</c> and
     decimal numbers like <c>2.4</c> and <c>-322.9392</c>), strings (like <c>"Hi There"</c>), turtles, and images. When we do calculations
     using the names, the computer will look up the value for each name, and then use the value in the calculation.</p>
 
   <p>We can also name a sequence of statements and then ask the computer to run
     that sequence whenever we use that name. In programming there are two different terms used for a named sequence of
     statements: <term>procedure</term> and <term>function</term>. As we have already learned, <term>procedure</term>
-    accomplishes some task or makes something happen, but doesn&#8217;t return anything. A <term>function</term> returns
+    accomplishes some task or makes something happen, but doesn’t return anything. A <term>function</term> returns
     a result.</p>
   <p>Many procedures and functions are built directly into Python or libraries that we can import. We have seen a number
     of them that work with strings and turtles. There are also functions that work with numbers. The function <c>abs</c>

@@ -16,7 +16,7 @@
   <p>Along the way, look for places where you are writing basically the same code in multiple places. Those are places
     you can maybe use a procedure to do the common part of the work. You may have to use parameters to make the
     procedure flexible enough to work in multiple situations.</p>
-  <p>Don&#8217;t worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
+  <p>Don’t worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
     going to be easy and when you start working on it, realize it is much harder than you anticipated. In those cases
     you can stop and revise your design by breaking the complex procedure into smaller pieces.</p>
   <subsection xml:id="csp-designing-procedures_top-down-design-example">
@@ -38,7 +38,7 @@
             <c>drawRoof</c> which is a triangle </li>
         </ul>
       </p>
-      <p>OK, lets start with the <c>drawWall</c>... That seems pretty easy. I bet I can do that in about 10 lines of code. </p>
+      <p>OK, lets start with the <c>drawWall</c><ellipsis/> That seems pretty easy. I bet I can do that in about 10 lines of code. </p>
       <p> Moving on to the <c>drawDoor</c>. That seems easy too. And it is a rectangle, like the wall. Maybe I should make a <c>drawRectangle</c>
         that both of these use. If I do that, it needs to allow me to specify a <c>width</c> and <c>height</c> so I can make
         rectangles of different sizes. </p>
@@ -49,14 +49,14 @@
         easier. If I have it to use, I think this won't be too bad. I can just draw four small squares to make a window. </p>
       <p><c>drawRoof</c> doesn't sound too bad - I can do it in a few lines of code.</p>
     </blockquote>
-    <p>Now that I&#8217;ve broken everything down into manageable chunks, we are ready to start implementing&#8230;</p>
+    <p>Now that I’ve broken everything down into manageable chunks, we are ready to start implementing<ellipsis/></p>
     <exercise label="cspdesigningprocedures_programdesign1" numbered="yes" indentation="hide" language="python">
       <statement>
-        <p>Let&#8217;s make sure you understand the design listed above. Arrange the blocks to implement the rough
+        <p>Let’s make sure you understand the design listed above. Arrange the blocks to implement the rough
           design.</p>
         <p>For the auto-checker to work, you need to define your procedures in this order: <c>rectangle</c>, <c>drawWall</c>, <c>drawDoor</c>, <c>drawWindow</c>
           , <c>drawRoof</c>, <c>drawHouse</c>. The main part of the program should come after the procedures. </p>
-        <p>Don&#8217;t forget to indent the body of each procedure, even if it is not real code yet.</p>
+        <p>Don’t forget to indent the body of each procedure, even if it is not real code yet.</p>
       </statement>
       <blocks>
         <block order="">

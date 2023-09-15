@@ -5,12 +5,12 @@
     once for each state. But it would be nice to run the program just once and have it repeat the calculations for each
     state that we are concerned about.</p>
 
-  <p>To do this, we need to be able to easily repeat the &#8220;find average pollution&#8221; logic. If we have a large
+  <p>To do this, we need to be able to easily repeat the <q>find average pollution</q> logic. If we have a large
     amount of code that we want to repeat, it makes sense to turn it into a function. The function <c>getAvgPM25</c> will take in
     a <c>targetState</c> and the <c>data</c> collection. It will then do the work to calculate the average and return it. There are
     some <c>print</c> calls in the function just to show us what data is being worked on to help confirm the code is working.
-    In the main part of the program, we call the function twice - once for &#8220;OR&#8221; and once for
-    &#8220;TX&#8221;.</p>
+    In the main part of the program, we call the function twice - once for <q>OR</q> and once for
+    <q>TX</q>.</p>
 
   <program xml:id="csppythondata_comparestates1" interactive="activecode" language="python">
     <input>
@@ -58,7 +58,7 @@
 
   <p>If we have a large list of states we want to process, it would be silly to keep copy/pasting the last three lines
     of code for different state codes. Repeating those three lines over and over is the perfect job for a loop.
-    Let&#8217;s write a loop that can iterate through a list of states:</p>
+    Let’s write a loop that can iterate through a list of states:</p>
 
   <exercise label="csppythondata_comparestates2">
     <statement>

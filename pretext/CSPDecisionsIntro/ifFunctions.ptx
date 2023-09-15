@@ -26,7 +26,7 @@ print( "40 prints costs", costForPrints(40) )
   </program>
   <p>Notice an additional advantage of putting our logic into a function (instead of at the top level of our program) -
     it is easier to use the code multiple times. In this case, it allows us to test how the <c>if</c> works for various
-    values. We can call the function multiple times and pass different values for each function call. If we don&#8217;t
+    values. We can call the function multiple times and pass different values for each function call. If we don’t
     use a function, we can only test one value each time we run the program.</p>
 
   <exercise label="cspdecisionsintro_iffunctions2">

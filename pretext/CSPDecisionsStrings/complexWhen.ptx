@@ -83,7 +83,7 @@ if age &gt; 12:
     </choices>
 
   </exercise>
-  <p>It is fine to chain a bunch or and or or&#8217;s together to make one large expression as shown below. This program
+  <p>It is fine to chain a bunch or and or or’s together to make one large expression as shown below. This program
     accepts four different answers - because all four expressions are combined with or, only one part needs to be true
     to make the whole thing true.</p>
 
@@ -97,10 +97,10 @@ print ("All done")
   </program>
   <note>
     <p>We could simplify the example above by using the string <c>lower</c> function to turn the answer into lower case: <c>answer = answer.lower()</c>.
-      Once we did that, we would not have to worry about the answer being &#8220;Y&#8221; or &#8220;YES&#8221;, we would
+      Once we did that, we would not have to worry about the answer being <q>Y</q> or <q>YES</q>, we would
       know it only had lower-case letters.</p>
   </note>
-  <p>We will generally stay away from more complex expressions that mix and&#8217;s and or&#8217;s, they can get
+  <p>We will generally stay away from more complex expressions that mix and’s and or’s, they can get
     confusing to write and read. If you really feel the need to write something super complex, you can use parentheses
     to make sure that the logic is evaluated in the right order:</p>
   <program language="python">

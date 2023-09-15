@@ -1,11 +1,11 @@
 <section xml:id="csp-repeat-images_understanding-image-representation">
   <title>Understanding Image Representation</title>
   <p>In everyday life, we can often work at multiple levels of abstraction when thinking about a topic or talking about
-    it. We might refer to a particular thing as a <em>&#8220;car&#8221;</em>. That is sufficient to communicate a lot of
-    important information - that it probably has four wheels, that it is used for transportation, etc&#8230; But as we
+    it. We might refer to a particular thing as a <em><q>car</q></em>. That is sufficient to communicate a lot of
+    important information - that it probably has four wheels, that it is used for transportation, etc<ellipsis/> But as we
     describe a problem we are having with the car, we might need to refer to its parts - say its <em>
-    &#8220;engine&#8221;</em>. A &#8220;car&#8221; is just a collection of parts that work together. And the
-    &#8220;engine&#8221; itself is an abstraction - the engine is made up of a collection of parts and we could get even
+    <q>engine</q></em>. A <q>car</q> is just a collection of parts that work together. And the
+    <q>engine</q> itself is an abstraction - the engine is made up of a collection of parts and we could get even
     more detailed by talking about those parts.</p>
   <p>In computer science, we often work with similar stacks of abstractions. We build high-level abstractions to
     describe collections of lower-level data more easily. Images are a great example of this.</p>

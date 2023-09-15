@@ -88,7 +88,7 @@
       <p>Although perfect white is (255, 255, 255), the pixels in the image are not all perfectly white. Write your code
         to turn any pixel that has red, green, and blue values of above 230 to black (0, 0, 0).</p>
       <p>Hint: Start by trying to make all the white pixels in the image turn black. then add a condition to check the x
-        value of the pixel to see if it is in the right half of the image (more than half the image&#8217;s width).</p>
+        value of the pixel to see if it is in the right half of the image (more than half the image’s width).</p>
 
     </statement>
     <program xml:id="cspdecisionsimages_exercises3_editor" interactive="activecode" language="python">
@@ -130,7 +130,7 @@
       <p>Write the function <c>isYellow</c> that accepts red, green, and blue values as its parameters and returns <c>True</c> if
         both the green and red values are at least 40 more than the blue value. If the blue value is close to, or above,
         either the green or red, it should return <c>False</c>.</p>
-      <p>Once you write the function, it will be used to turn the goal keeper&#8217;s jersey from yellow to aqua by
+      <p>Once you write the function, it will be used to turn the goal keeper’s jersey from yellow to aqua by
         swapping the red and blue values.</p>
       <p>Hint: Start by writing a function that returns <c>True</c> always. That will let you run the program but will
         change every pixel. Then add a condition to say <c>True</c> or <c>False</c> based on the <c>r, g, b</c> values passed in.</p>
@@ -189,7 +189,7 @@
     <statement>
       <p>Write code that blacks out the top half of the image by setting just the pixels in the top half to have a color
         value of 0, 0, 0. You will have to use the nested-loop approach and only visit the pixels in the top half.</p>
-      <p>Remember to use <c>//</c> when dividing the width or height so that you don&#8217;t get a decimal (float) answer.</p>
+      <p>Remember to use <c>//</c> when dividing the width or height so that you don’t get a decimal (float) answer.</p>
 
     </statement>
     <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">

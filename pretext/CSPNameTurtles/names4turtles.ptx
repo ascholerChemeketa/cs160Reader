@@ -4,7 +4,7 @@
   <p>Strings are just one kind of <term>object</term>. <term>Objects</term> in
     programming are constructs that combine <term>state</term> - a collection of data (attributes) - with behaviors that
     can be done with/to that data.</p>
-  <p>A string&#8217;s data is a list of characters like <c>h e l l o t h e r e</c> its data are the functions like <c>length()</c> or <c>lower()</c> or
+  <p>A string’s data is a list of characters like <c>h e l l o t h e r e</c> its data are the functions like <c>length()</c> or <c>lower()</c> or
     even the slice behavior <c>[3:6]</c> that allow us to work with that list of characters.</p>
   <p>While strings are <term>immutable</term> (they never change once created), most objects are <term>mutable</term> -
     they can mutate or change. In mutable objects, when we use the behavior of the object, it will make some kind of
@@ -76,7 +76,7 @@ alex.forward(75)        # move forward by 75 units
   </exercise>
   <subsection xml:id="csp-name-turtles_what-does-a-left-turn-of-90-mean">
     <title>What does a left turn of 90 mean?</title>
-    <p>Turn instructions are always relative to the turtle&#8217;s current direction. The instruction <c>alex.left(90)</c> tells the
+    <p>Turn instructions are always relative to the turtle’s current direction. The instruction <c>alex.left(90)</c> tells the
       turtle named alex to make a quarter circle turn to its left - or counter-clockwise. If alex is currently facing
       East, it would end up facing North. If it is currently facing North, it would end up facing West.</p>
     <figure align="center">
@@ -96,7 +96,7 @@ alex.forward(75)        # move forward by 75 units
         <p>Drag the needed blocks of statements from the left column to the right column and put them in the right
           order. The numbers listed are <term>NOT</term> in the correct order - do not assume block 1 comes first. <term>In
           this problem there are extra blocks you will not use.</term> You will only use 1a or 1b, not both. Same with
-          2a/2b, 4a/4b, etc&#8230;</p>
+          2a/2b, 4a/4b, etc<ellipsis/></p>
         <p>When you think you are done, click on <em>Check</em> to see if you are right.</p>
         <image source="CSPNameTurtles/Figures/TurtleL4.png" width="30%" />
       </statement>
@@ -148,7 +148,7 @@ alex.forward(75)        # move forward by 75 units
         <p>Drag the needed blocks of statements from the left column to the right column and put them in the right
           order. The numbers listed are <term>NOT</term> in the correct order - do not assume block 1 comes first. <term>Like
           last time, you will not use all the blocks.</term> You will only use 1a or 1b, not both. Same with 2a/2b,
-          4a/4b, etc&#8230;</p>
+          4a/4b, etc<ellipsis/></p>
         <p>When you think you are done, click on <em>Check</em> to see if you are right.</p>
       </statement>
       <blocks>

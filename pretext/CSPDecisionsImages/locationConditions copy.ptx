@@ -14,7 +14,7 @@
     will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an
     existing object, there will be no new value to return. We will just update the colors of the pixel and those changes
     will persist when the procedure is done. (Similar to how when we write a procedure that moves a turtle there is no
-    new answer to return. Changing the turtle&#8217;s location or direction in a function permanently changes it.)</p>
+    new answer to return. Changing the turtle’s location or direction in a function permanently changes it.)</p>
   <p>Below, the code for <c>makeGray</c> is already written. Your task is to write the code for <c>darken</c> that will be used to
     make pixels darker:</p>
 
@@ -98,7 +98,7 @@ win = ImageWin(img1.getWidth(), img1.getHeight())
 img1.draw(win)
   </input>
   </program>
-  <p>Try modifying the condition so it only leaves a rectangle of color around the students&#8217; heads and turns the rest to
-    gray. You want to say something like &#8220;if y is less than 110 or x is less than 70 or x is more than 200&#8221;.</p>
+  <p>Try modifying the condition so it only leaves a rectangle of color around the students’ heads and turns the rest to
+    gray. You want to say something like <q>if y is less than 110 or x is less than 70 or x is more than 200</q>.</p>
 </section>
 

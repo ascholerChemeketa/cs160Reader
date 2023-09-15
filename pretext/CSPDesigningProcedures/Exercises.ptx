@@ -20,7 +20,7 @@
       </li>
     </ul>
   </p>
-  <p>Remember that although we can&#8217;t make curves, you can draw circles by setting a large <c>pensize</c> and then doing <c>forward(1)</c>
+  <p>Remember that although we can’t make curves, you can draw circles by setting a large <c>pensize</c> and then doing <c>forward(1)</c>
     to make a colored dot.</p>
   <note>
     <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
@@ -28,7 +28,7 @@
 
   <exercise label="cspdesigningprocedures_exercises1">
     <statement>
-      <p>Use this space to describe the procedures you will write. Like in my design, don&#8217;t worry about writing
+      <p>Use this space to describe the procedures you will write. Like in my design, don’t worry about writing
         code yet, just describe the parts of the task. Try to make sure that each one is simple enough to do in about
         ~10 lines of code. If it sounds more complex than that, break it down further and design procedures that will do
         the various sub-problems.</p>

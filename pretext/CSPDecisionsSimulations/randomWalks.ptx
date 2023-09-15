@@ -6,10 +6,10 @@
     Twitter</url></p>
   <p>The basic idea is to think about a process in terms of a series of steps. These steps are done with some degree of
     randomness: maybe a fixed distance in a random direction, or in a fixed direction with a random distance. In a
-    simulation, &#8220;direction&#8221; and &#8220;distance&#8221; may not mean actual physical dimensions. In a stock
+    simulation, <q>direction</q> and <q>distance</q> may not mean actual physical dimensions. In a stock
     market simulation random walk, a step might be a price movement from one day to the next.</p>
-  <p>However, the Python turtle makes for a great visual way to do a random walk where &#8220;direction&#8221; and
-    &#8220;distance&#8221; refer to actual physical movement. This example does a random walk where each step involves
+  <p>However, the Python turtle makes for a great visual way to do a random walk where <q>direction</q> and
+    <q>distance</q> refer to actual physical movement. This example does a random walk where each step involves
     moving 10 pixels forward in one of the cardinal directions (north, south, east, west).</p>
 
   <program xml:id="cspdecisionssimulations_randomwalks1" interactive="activecode" language="python">
@@ -99,7 +99,7 @@ while(currentX &lt; 200):
     move up/down by anywhere from -10 to 12.</p>
   <p>One possible flaw with this program is that the change in stock prices uses a different distribution of random
     changes. Most days the price goes up or down by a very small amount. However, some days it climbs or drops by a lot
-    more. Let&#8217;s figure out that logic.</p>
+    more. Let’s figure out that logic.</p>
   <exercise label="cspdecisionssimulations_randomwalks4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>This program should work like the one above. However, at each step, we want there to be a 2% chance that the

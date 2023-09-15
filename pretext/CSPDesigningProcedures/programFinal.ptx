@@ -2,7 +2,7 @@
   <title>Program Implementation - Final</title>
   <p>Now that we have all the building blocks, lets give a name to the lines of code that do the work of drawing the
     house.</p>
-  <p>The instructions to <c>goto</c> particular locations and <c>drawWall</c>, <c>drawDoor</c>, etc&#8230; have all been moved into a
+  <p>The instructions to <c>goto</c> particular locations and <c>drawWall</c>, <c>drawDoor</c>, etc<ellipsis/> have all been moved into a
     procedure to make it more clear what the overall goal of the instructions is. But, we have not given that procedure
     a name. Chose a name for the procedure that draws the whole house and replace the <c>_____________</c> below with your name. Make
     sure to replace it in both the procedure definition and the procedure call.</p>

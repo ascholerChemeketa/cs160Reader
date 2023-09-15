@@ -38,7 +38,7 @@
         </li>
         <li>
           <p><term>remove</term> - Removes the first copy of the specified item from the list. <c>list.remove("A")</c> would remove the
-            first &#8220;A&#8221; from the list.</p>
+            first <q>A</q> from the list.</p>
         </li>
       </ul>
     </p>

@@ -11,7 +11,7 @@
     would be 3.984375 (11.111111).</p>
   <p>Which of these two formats would be best? 4.4? or 2.6? There is no good answer. Sometimes we care about accurately
     representing small values and do not care about large ones. Other times, we need to represent larger values. A
-    system with a fixed number of digits to the right of the &#8216;.&#8217; locks us into one particular set of
+    system with a fixed number of digits to the right of the '.' locks us into one particular set of
     compromises.</p>
   <sidebar>
     <title>IEEE 754</title>
@@ -39,7 +39,7 @@
         <p>3 bits to represent the <term>exponent</term> - the power of two to multiply by. We need to represent
           positive and negative exponents; to do so we will subtract 4 from the binary number the exponent represents.
           For example, if the three exponent bits are 101, that means 5. We would subtract 4 to get 1 and thus raise 2
-          to the 1st power. If the exponent bits were 001, representing 1, we would subtract 4 and get -3&#8230; this
+          to the 1st power. If the exponent bits were 001, representing 1, we would subtract 4 and get -3<ellipsis/> this
           indicates we should raise 2 to the -3 power.</p>
       </li>
       <li>

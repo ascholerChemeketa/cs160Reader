@@ -21,7 +21,7 @@ print(total)
         </input>
   </program>
   <p>The key steps are described with comments. We always need to start with some initial value as our
-    &#8220;accumulation variable&#8221;, loop through the items, and combine each value with the accumulation variable.</p>
+    <q>accumulation variable</q>, loop through the items, and combine each value with the accumulation variable.</p>
   <p>If I wanted to multiply a group of numbers together, my accumulator variable would need to start with 1 (the
     multiplicative identity). At each step, I would multiply the current value from the list by my accumulated value to
     get the new accumulated value. This is shown in the animation below, using <c>product</c> as the accumulator variable.</p>
@@ -95,7 +95,7 @@ print(product)
     </choices>
 
   </exercise>
-  <p>We can &#8220;accumulate&#8221; other types of data as well. Say I have a series of words stored in a list. I can
+  <p>We can <q>accumulate</q> other types of data as well. Say I have a series of words stored in a list. I can
     use the accumulator pattern to build up one string with all of the words. My accumulator variable will need to start
     with an appropriate empty value for a string, which is <c>""</c>.</p>
 

@@ -29,7 +29,7 @@ print(score)
     <p>The parameters for a function are variables that only exist inside of that function. You can make changes to
       their values, but doing so has no effect on the rest of the program.</p>
     <p>This version of the program does not work correctly either. <c>score</c> is passed as the argument from the main part
-      of the program into <c>addFive</c>. That means <c>addFive</c> uses a <term>copy</term> of <c>score</c>&#8217;s value as its value for <c>x</c>.
+      of the program into <c>addFive</c>. That means <c>addFive</c> uses a <term>copy</term> of <c>score</c>’s value as its value for <c>x</c>.
       But <c>x</c> and <c>score</c> are not actually linked. A change to <c>x</c> does nothing to change the value of <c>score</c>.
       Nothing is ever returned, so the rest of the program never learns about the changes that happened in <c>addFive</c>.</p>
     <p>Again, try running in Codelens:</p>

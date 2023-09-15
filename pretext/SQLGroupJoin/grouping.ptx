@@ -51,7 +51,7 @@ ORDER BY
     rows for each type. Recall that <c>AS _______</c> gives a name to a calculated value - any time we do an aggregation, it will
     be helpful to name the result so we know what we are seeing in the output. By giving the aggregated value a name, we
     can use it in the <c>ORDER BY</c> to sort by the total number of trips we calculated.</p>
-  <p>Once you start grouping records, it only makes sense to talk about aggregated data. You can&#8217;t group the
+  <p>Once you start grouping records, it only makes sense to talk about aggregated data. You can’t group the
     records by <c>member_type</c> and try to select the <c>start_date</c>. There is no one start date for all of those records. You would
     instead have to ask about the <c>MIN(start_station)</c> or <c>MODE(start_station)</c> or <c>COUNT(DISTINCT start_station)</c>.</p>
   <warning>
@@ -77,7 +77,7 @@ GROUP BY
   </program>
   <p>You can still use other columns that you are not selecting to filter the data that gets used to calculate the
     aggregated value. You just need to make sure to put the <c>WHERE</c> before the <c>GROUP BY</c>. For example, you can calculate
-    the number of trips started from each station for just the bike &#8216;W000001&#8217; with this query:</p>
+    the number of trips started from each station for just the bike 'W000001' with this query:</p>
 
   <program xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <input>

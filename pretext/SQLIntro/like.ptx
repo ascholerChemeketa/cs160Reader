@@ -1,18 +1,18 @@
 <section xml:id="sql-intro_filtering-with-like">
   <title>Filtering with Like</title>
   <p>If the data that we are trying to filter is strings of text, we may need to search inside the strings. Perhaps we
-    are looking for all names that start with &#8220;Janice&#8221;, or all class descriptions that include the word
-    &#8220;Chemistry&#8221; anywhere in the title. To match part of a string using <c>WHERE</c>, we can&#8217;t rely on <c>==</c>.
-    If we ask for <c>WHERE name == 'Janice'</c>, we will only get names that perfectly match &#8216;Janice&#8217; - which would not include
-    &#8216;Janice Jones&#8217;.</p>
+    are looking for all names that start with <q>Janice</q>, or all class descriptions that include the word
+    <q>Chemistry</q> anywhere in the title. To match part of a string using <c>WHERE</c>, we can’t rely on <c>==</c>.
+    If we ask for <c>WHERE name == 'Janice'</c>, we will only get names that perfectly match 'Janice' - which would not include
+    'Janice Jones'.</p>
 
   <p>The <c>LIKE</c> comparison allows us to specify strings using <term>wildcards</term>. <term>Wildcards</term> are
-    symbols that can match anything. In SQL <c>LIKE</c> comparisons, <c>%</c> is a wildcard that means &#8220;any text can go
-    here&#8221;. So <c>'Janice%''</c> says &#8220;Look for strings that start with Janice, and then have anything after that
-    (including nothing else)&#8221;. While <c>'%Janice'</c> says &#8220;look for strings that end in Janice and may have anything
-    before that&#8221;. If we want to allow for extra text to be on either side of &#8216;Janice&#8217;, we would use <c>%</c>
+    symbols that can match anything. In SQL <c>LIKE</c> comparisons, <c>%</c> is a wildcard that means <q>any text can go
+    here</q>. So <c>'Janice%''</c> says <q>Look for strings that start with Janice, and then have anything after that
+    (including nothing else)</q>. While <c>'%Janice'</c> says <q>look for strings that end in Janice and may have anything
+    before that</q>. If we want to allow for extra text to be on either side of 'Janice', we would use <c>%</c>
     on both sides - <c>'%Janice%'</c></p>
-  <p>This sample pulls from the <c>bikeshare_stations</c> table to search for all station names that include &#8216;F St&#8217;:</p>
+  <p>This sample pulls from the <c>bikeshare_stations</c> table to search for all station names that include 'F St':</p>
 
   <program xml:id="sqlintro_like1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <input>
@@ -25,11 +25,11 @@ WHERE
         </input>
   </program>
   <p>We do have to be careful not to specify things that are too broad. Try changing the like to look for anything that
-    includes &#8216;7th&#8217; and examine the results.</p>
+    includes '7th' and examine the results.</p>
   <p>The pattern <c>'%7th%'</c> matches way too many things. To get just 7th (and not 17th or 27th) we would need to state
-    something like <em>&#8220;where the name starts with 7th or the name has &#8216; 7th&#8217; within it&#8221;</em>.
-    The space inside the string will make sure we don&#8217;t match &#8216;17th&#8217;. This query will perform that
-    search. Notice that to check if the name begins with &#8216;7th&#8217;, we make sure not to put a <c>%</c> at the
+    something like <em><q>where the name starts with 7th or the name has '7th' within it</q></em>.
+    The space inside the string will make sure we don’t match '17th'. This query will perform that
+    search. Notice that to check if the name begins with '7th', we make sure not to put a <c>%</c> at the
     start of the string.</p>
 
   <program xml:id="sqlintro_like2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
@@ -60,13 +60,13 @@ WHERE
         </condition>
         <condition number="[71, 71]">
           <feedback>
-            <p>That is the number that have &#8216;NW&#8217; anywhere inside the string. Make sure to only get those
-              that end with &#8216;NW&#8217;</p>
+            <p>That is the number that have 'NW' anywhere inside the string. Make sure to only get those
+              that end with 'NW'</p>
           </feedback>
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>No, make sure you are matching records that have &#8216;NW&#8217; inside the name. For your answer just
+            <p>No, make sure you are matching records that have 'NW' inside the name. For your answer just
               produce the number of records found.</p>
           </feedback>
         </condition>

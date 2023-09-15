@@ -13,7 +13,7 @@
     <image source="Algorithms/Images/CommonBigOs.svg" />
     </p>
   <p>To write that an algorithm is in a particular class, we say that it is <m>O(n)</m> or <m>O(log(n))</m>. Spoken, we
-    would say something like: <em>&#8220;Oh of n&#8221;</em> or <em>&#8220;Oh of log n&#8221;</em>.</p>
+    would say something like: <em><q>Oh of n</q></em> or <em><q>Oh of log n</q></em>.</p>
   <p>
     <dl>
       <li>
@@ -32,7 +32,7 @@
                 </li>
                 <li>
                   <p>Looking at a class roster and deciding if there are any students enrolled - I can say
-                    &#8220;Yes&#8221; or &#8220;No&#8221; in the same amount of time whether there are 0 names, 3 names
+                    <q>Yes</q> or <q>No</q> in the same amount of time whether there are 0 names, 3 names
                     or 100 names on the roster.</p>
                 </li>
               </ul>
@@ -47,8 +47,8 @@
 
             <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described
               by a logarithmic function. It could be <m>f(n) = log_2(n)</m> or <m>f(n) = 3 \cdot log_{10}(n)</m>. Note
-              that we don&#8217;t actually care what base the logarithm is.</p>
-            <p>We will see an example of this category soon&#8230;</p>
+              that we don’t care what base the logarithm is.</p>
+            <p>We will see an example of this category soon<ellipsis/></p>
 
       </li>
       <li>
@@ -101,7 +101,7 @@
   </p>
   <p>If the function that describes the work for an algorithm has multiple terms, we classify it only according to its
     fastest-growing term. <m>f(n) = n^2 + 2n</m> would be considered <term>Quadratic</term> because for large values of <term>
-    n</term> the <m>n^2</m> will dominate. Say <term>n</term> is 100: <m>n^2 = 10,000</m> and <m>2n = 200</m>&#8230; the
+    n</term> the <m>n^2</m> will dominate. Say <term>n</term> is 100: <m>n^2 = 10,000</m> and <m>2n = 200</m><ellipsis/> the
     extra 200 hardly even matters compared to the 10,000.</p>
 </section>
 

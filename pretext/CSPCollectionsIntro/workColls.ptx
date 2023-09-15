@@ -2,12 +2,12 @@
   <title>The Need for Lists</title>
 
   <p>Up until now, most of the data we have worked with we have thought about as single values: The number 34.2, or the
-    word &#8220;Hello&#8221;, or a Turtle, or an Image. We have used multiple pieces of data in programs - we might work
+    word <q>Hello</q>, or a Turtle, or an Image. We have used multiple pieces of data in programs - we might work
     with a first and last name, or an hours_worked and pay_rate - but those pieces of data were usually given separate
     names.</p>
   <p>Often, we want to work with a group of values that are all related. Say I want to work with the
     scores a student has gotten on a series of eight quizzes. If I name each score separately (<c>quiz1</c>, <c>quiz2</c>,
-    &#8230;) it will be hard to write code that does something like find the highest score. I would end up having to do
+    <ellipsis/>) it will be hard to write code that does something like find the highest score. I would end up having to do
     like this:</p>
   <program language="none">
     <input>highest_score = quiz1
@@ -18,7 +18,7 @@ if quiz3 &gt; highest_score:
 if quiz4 &gt; highest_score:
     highest_score = quiz4
 ...</input></program>
-  <p>Remember that in programming, we want to avoid writing the same code over and over. And that is what this is&#8230;
+  <p>Remember that in programming, we want to avoid writing the same code over and over. And that is what this is<ellipsis/>
     I am doing the same steps over and over, just with the different variables. What I need is a way to lump all the
     quizzes together so I can talk about them all at once and more easily write code to work with all the individual
     scores.</p>

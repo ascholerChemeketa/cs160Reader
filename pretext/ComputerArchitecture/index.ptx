@@ -4,7 +4,7 @@
   <introduction>
     <p>Computers are built as a sequence of abstractions. Logical gates hide the messy details of electrical signals
       behind clean Boolean logic; logic gates in turn are used to construct circuits that perform functions like
-      &#8220;add number <term>a</term> to <term>b</term>&#8221; or &#8220;remember the last value input&#8221;; these
+      <q>add number <term>a</term> to <term>b</term></q> or <q>remember the last value input</q>; these
       circuit are in turn used to build the higher-level components that programs interact with - things like the
       processor, the main memory and input and output devices.</p>
   </introduction>

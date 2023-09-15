@@ -113,7 +113,7 @@
   <exercise label="csprepeatturtles_exercises4">
     <statement>
 
-      <p>Which is range recipe would generate the sequence: 10, 8, 6, &#8230; 2</p>
+      <p>Which is range recipe would generate the sequence: 10, 8, 6, <ellipsis/> 2</p>
 
     </statement>
     <choices>
@@ -160,12 +160,12 @@
   <exercise label="csprepeatturtles_exercises5">
     <statement>
       <p>Write the correct recipe to fill in the ____________ in the code below to generate the pattern 5, 25, 45,
-        &#8230; 105. Use the smallest possible value for your stopValue. <var />
+        <ellipsis/> 105. Use the smallest possible value for your stopValue. <var />
       </p>
     </statement>
     <setup>
       <var>
-        <p>Just write what would replace the blank below. (Don&#8217;t include &#8220;range&#8221; or the parentheses in
+        <p>Just write what would replace the blank below. (Don’t include <q>range</q> or the parentheses in
           your answer; do include commas).</p>
         <p>
           <c>range(____________)</c>
@@ -191,13 +191,13 @@
   <exercise label="csprepeatturtles_exercises6">
     <statement>
       <p>We want to make a series of rectangles such that the first one is 10x90, the next is 20x80, the next is 30x70,
-        &#8230; until we draw one that is 90x10. Doing so will make a &#8220;staircase grid&#8221; like the one shown
+        <ellipsis/> until we draw one that is 90x10. Doing so will make a <q>staircase grid</q> like the one shown
         below:</p>
       <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%" />
       <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for loop to call the procedure with the
         correct values for its parameters. Make sure that the 90 width and 10 height rectangle is the first one you
         draw. You should only need one loop - <term>it must count down from 90 to 10</term>.</p>
-      <p>Start by writing a loop that just prints out the values 90, 80, 70, &#8230;, 10. Then you can modify the code
+      <p>Start by writing a loop that just prints out the values 90, 80, 70, <ellipsis/>, 10. Then you can modify the code
         to use those values to draw rectangles of the appropriate widths and heights.</p>
       <p>Hint: The values we use for width and height will always add to 100. So if we call one of them <m>w</m>, the
         other must be <m>100 - w</m>.</p>

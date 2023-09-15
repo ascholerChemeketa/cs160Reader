@@ -40,10 +40,10 @@
         <p>Write code to complete the <c>isEven</c> function. It should return <c>True</c> if <c>number</c> is
             even and <c>False</c> if it is odd.</p>
         <p>Make sure to return <c>False</c> or <c>True</c>, not <c>"False"</c> or <c>"True"</c> with quotes.
-            <c>False</c> in Python means False/no/0. <c>"False"</c> means <em>&#8220;the word False&#8221;</em>.
-            <c>True</c> in Python means True/yes/1. <c>"True"</c> means <em>&#8220;the word True&#8221;</em>.</p>
+            <c>False</c> in Python means False/no/0. <c>"False"</c> means <em><q>the word False</q></em>.
+            <c>True</c> in Python means True/yes/1. <c>"True"</c> means <em><q>the word True</q></em>.</p>
         <p>To check if a number is even, you can divide it by 2 and look at the remainder. (Remember
-            that <c>x % 2</c> says &#8220;divide x by 2 and get the remainder&#8221;.) If the remainder is 1, the number
+            that <c>x % 2</c> says <q>divide x by 2 and get the remainder</q>.) If the remainder is 1, the number
             is odd. If the remainder is 0, it is even.</p>
 
     </statement>
@@ -115,7 +115,7 @@
 <exercise label="cspdecisionsintro_exercises4">
     <statement>
         <p>The number of credits someone has determines what class level they are at a University.
-            A Senior has taken 135 or more credits. A Junior hasn&#8217;t taken that many, but has taken
+            A Senior has taken 135 or more credits. A Junior hasn’t taken that many, but has taken
             at least 90 credits. A Sophomore has taken at least 45. A First Year is anyone who has
             taken 45 or less.</p>
         <p>Write code to complete the <c>getClass</c> function. Your code should use <c>credits</c> and

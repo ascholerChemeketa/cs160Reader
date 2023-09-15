@@ -1,10 +1,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="algorithms_algorithms">
   <title>Algorithms</title>
   <introduction>
-    <p>It would perhaps be more accurate to call the field of computer science &#8220;algorithm science&#8221;. <term>
+    <p>It would perhaps be more accurate to call the field of computer science <q>algorithm science</q>. <term>
       Algorithms</term>, step-by-step instructions to solve a problem, are the heart of computer programming and
-      computer science. Any time someone sets out to answer a question that starts &#8220;How can I get the computer
-      to&#8230;&#8221;, that answer will be in the form of an algorithm. Part of learning computer science is learning
+      computer science. Any time someone sets out to answer a question that starts <q>How can I get the computer
+      to<ellipsis/></q>, that answer will be in the form of an algorithm. Part of learning computer science is learning
       to think in terms of these algorithms - to recognize common patterns that can be solved with known algorithms and
       how to express new ones.</p>
     <p>In this chapter, we will focus on algorithms for searching a list and sorting one. In addition to being basic

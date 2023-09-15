@@ -3,8 +3,8 @@
   <p>While <term>Selection sort</term> gets the job done, it is not the only algorithm that can be used for sorting a
     list. <term>Insertion sort</term> is another relatively straightforward algorithm. It too divides the list into a
     sorted and unsorted portion, but it sorts cards by shifting each one to the left until it is larger than its
-    neighbor - &#8220;inserting&#8221; one card at a time into the correct location.</p>
-  <p>Here is a &#8220;human algorithm&#8221; for using it to sort cards:</p>
+    neighbor - <q>inserting</q> one card at a time into the correct location.</p>
+  <p>Here is a <q>human algorithm</q> for using it to sort cards:</p>
   <program language="none">
     <input>
 1   Get a hand of unsorted cards
@@ -17,7 +17,7 @@
 </input>
   </program>
   <p>To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion
-    is built up. Cards keep swapping until they &#8220;find&#8221; their resting spot - they do not jump directly to it.
+    is built up. Cards keep swapping until they <q>find</q> their resting spot - they do not jump directly to it.
     Also, note that the sorted portion in this algorithm does not always have the smallest values, just the values that
     are known to be sorted relative to each other.</p>
 

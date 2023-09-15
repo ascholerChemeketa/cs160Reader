@@ -1,15 +1,15 @@
 <section xml:id="csp-repeat-numbers_while-loops-while-vs-until">
   <title>While Loops - While vs Until</title>
-  <p>While loops are most useful when we don&#8217;t have a set list of items to repeat over or any time we can more
-    easily describe <em>&#8220;here is the sign we should stop&#8221;</em> rather than <em>&#8220;here are all the
-    values we need to do this for&#8221;</em>. We saw one example of that in the program that asked for user input. But
+  <p>While loops are most useful when we don’t have a set list of items to repeat over or any time we can more
+    easily describe <em><q>here is the sign we should stop</q></em> rather than <em><q>here are all the
+    values we need to do this for</q></em>. We saw one example of that in the program that asked for user input. But
     there are many other situations in which a <c>while</c> is the easiest way to make a loop.</p>
   <p>Say we want to convert a decimal number to binary using the division method. The <xref
       ref="data-representation_binary-to-decimal-2" text="custom">divide by two method</xref> says that we need to keep dividing by
     2 <term>until</term> the quotient is 0. That is a description of when to stop, which means a while loop is what we
-    will use to write the algorithm. However, when we write a while loop, we need to describe the situation that means <em>&#8220;keep
-    doing the loop&#8221;</em>. If we want to <em>&#8220;stop when the quotient is 0&#8221;</em> that is the same as <em>&#8220;keep
-    going while the quotient is NOT 0.&#8221;</em> Try running this version of the algorithm in codelens mode:</p>
+    will use to write the algorithm. However, when we write a while loop, we need to describe the situation that means <em><q>keep
+    doing the loop</q></em>. If we want to <em><q>stop when the quotient is 0</q></em> that is the same as <em><q>keep
+    going while the quotient is NOT 0.</q></em> Try running this version of the algorithm in codelens mode:</p>
 
   <program xml:id="csprepeatnumbers_whilegeneral1" interactive="activecode" language="python">
     <input>
@@ -31,11 +31,11 @@ print(binary)
         </input>
   </program>
   <warning>
-    <p>The condition for a while loop always describes a test that tells us to keep going - <em>&#8220;Keep doing this
-      while&#8221;</em>. A common mistake is to write <term>until</term> logic - a test that says when to stop.</p>
-    <p>If the natural way to say what you want involved <term>until</term>, like &#8220;Keep going until the user enters
-      0&#8221;, turn it into <term>while</term> by reversing it - &#8220;Keep going while the user has NOT entered
-      0&#8221;.</p>
+    <p>The condition for a while loop always describes a test that tells us to keep going - <em><q>Keep doing this
+      while</q></em>. A common mistake is to write <term>until</term> logic - a test that says when to stop.</p>
+    <p>If the natural way to say what you want involved <term>until</term>, like <q>Keep going until the user enters
+      0</q>, turn it into <term>while</term> by reversing it - <q>Keep going while the user has NOT entered
+      0</q>.</p>
   </warning>
 
   <exercise label="csprepeatnumbers_whilegeneral2">
@@ -87,8 +87,8 @@ print(binary)
     </choices>
 
   </exercise>
-  <p>Thus a while loop allows us to write a program to use Newton&#8217;s method to calculate a square root and say
-    &#8220;keep repeating the formula until the answer stays the same&#8221;. This will produce the most accurate answer
+  <p>Thus a while loop allows us to write a program to use Newton’s method to calculate a square root and say
+    <q>keep repeating the formula until the answer stays the same</q>. This will produce the most accurate answer
     we can produce, without having to worry in advance about how many repetitions we should ask for. Try running this
     program and changing <c>number</c> to smaller and larger values. Notice how the number of repetitions is different for
     different numbers.</p>

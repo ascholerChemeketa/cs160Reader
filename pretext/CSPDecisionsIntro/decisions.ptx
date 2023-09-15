@@ -7,7 +7,7 @@
         <image source="CSPDecisionsIntro/Figures/umbrella.jpg" width="50%"/>
         <p>Algorithms also often need to make decisions about what actions to take. If a computer is processing
             an order and a credit card is valid then charge the card, otherwise it needs to ask for a new
-            credit card. The computer&#8217;s ability to take action (execute some code) when something is true is also
+            credit card. The computer’s ability to take action (execute some code) when something is true is also
             called <term>conditional execution</term>.</p>
     </section>
 

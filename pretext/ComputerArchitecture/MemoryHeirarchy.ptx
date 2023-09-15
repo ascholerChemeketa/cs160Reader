@@ -25,14 +25,14 @@
     <title>Cache</title>
     <p>This special memory is smaller and faster than the normal main memory and is housed closer to the CPU. It
       maintains a copy of parts of the main memory, allowing quicker access to some information. As far as the logic of
-      a program goes, the cache doesn&#8217;t exist&#8230; we always request information from the main memory (RAM). The
+      a program goes, the cache doesn’t exist<ellipsis/> we always request information from the main memory (RAM). The
       cache just makes it so that sometimes those memory requests come back extra fast. Lots of engineering goes into
       figuring out how the computer should decide what is important enough to get cached.</p>
   </subsection>
 
   <subsection xml:id="memory-hierarchy-main">
     <title>RAM - Main Memory (Physical Memory)</title>
-    <p>The &#8220;normal&#8221; main memory that we saw on the previous page. It generally runs significantly slower
+    <p>The <q>normal</q> main memory that we saw on the previous page. It generally runs significantly slower
       than the CPU - oftentimes hundreds of times slower. Thus each time the CPU has to access the main memory, it can
       represent a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off,
       it forgets the information it is storing.</p>
@@ -52,7 +52,7 @@
     <title>Secondary Memory</title>
     <p>Because main memory is generally built with circuits that need power, it cannot store information while the
       computer is off. Secondary memory is the general term for things like solid-state drives, hard drives, CD drives,
-      flash drives, etc&#8230; that can store information long-term. (Bottom two levels of the pyramid above). Not only
+      flash drives, etc<ellipsis/> that can store information long-term. (Bottom two levels of the pyramid above). Not only
       can they retain information without power, but they also generally provide better density - you can store more
       information in less space and with less cost. Unfortunately, these technologies are all slower than main memory.
       Information stored in secondary memory must be loaded into main memory (RAM) before the processor can access it -

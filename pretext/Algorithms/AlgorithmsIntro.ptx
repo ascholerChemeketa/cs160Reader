@@ -25,7 +25,7 @@ Chocolate Cream Pie:
     problem in an algorithm, many people can use your algorithm without needing to become experts in a particular field.</p>
   <p>Algorithms are especially important to computers because computers are general-purpose machines for solving
     problems. But for a computer to be useful, we must give it a problem to solve and a technique for solving the
-    problem. Through the use of algorithms, we can make computers &#8220;intelligent&#8221; by programming them with
+    problem. Through the use of algorithms, we can make computers <q>intelligent</q> by programming them with
     various algorithms to solve problems. Because of their speed and accuracy, computers are well-suited for solving
     tedious problems such as searching for a name in a large telephone directory or adding a long column of numbers.</p>
 
@@ -48,7 +48,7 @@ Chocolate Cream Pie:
         <title>Algorithms have unambiguous operations</title>
 
         <p>Each operation in an algorithm must be sufficiently clear so that it does not need to be simplified. The
-          meaning of &#8220;sufficiently clear&#8221; depends on who or what the algorithm is written for. The
+          meaning of <q>sufficiently clear</q> depends on who or what the algorithm is written for. The
           instruction <c>average the two numbers</c> would be clear to most humans. But the same instruction is ambiguous to a computer because
           the computer has no basic operations for averaging. For a computer, the algorithm would have to be expressed
           in terms of operations that can be carried out by programming language statements - adding the two numbers and

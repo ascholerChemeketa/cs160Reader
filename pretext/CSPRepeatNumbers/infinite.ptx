@@ -1,6 +1,6 @@
 <section xml:id="csp-repeat-numbers_infinite-loops">
   <title>Infinite Loops</title>
-  <p>In the last section, we saw what happens if a loop&#8217;s control variable is never updated. It will run forever.</p>
+  <p>In the last section, we saw what happens if a loop’s control variable is never updated. It will run forever.</p>
 
   <program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
     <input>
@@ -24,8 +24,8 @@ while 1 == 1:
   <p>Since <c>1</c> will always be equal to <c>1</c>, the two <c>print</c> statements will just be repeated over and over and
     over again and the logical expression will never be false. We call that an <term>infinite loop</term>, which means a
     loop that continues forever or until it is forced to stop.</p>
-  <p>In that program, it is obvious that the loop will be infinite. It is not always so clear. Maybe we don&#8217;t
-    update the loop control variable. Or maybe we don&#8217;t write the logical expression in a way that it will ever
+  <p>In that program, it is obvious that the loop will be infinite. It is not always so clear. Maybe we don’t
+    update the loop control variable. Or maybe we don’t write the logical expression in a way that it will ever
     become false. Look at this next program. Can you tell why it has an infinite loop?</p>
   <p>Try running it. The problem will freeze up and eventually, your browser tab will likely crash! To stop the program
     you will have to close the browser tab and reopen the page (copy the page address from the address bar of your

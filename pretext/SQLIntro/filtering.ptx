@@ -19,10 +19,10 @@ WHERE
     duration &gt;= 3600;
         </input>
   </program>
-  <p>Try running this and examining the duration column&#8230; the records that are returned by the <c>SELECT</c> should now
+  <p>Try running this and examining the duration column<ellipsis/> the records that are returned by the <c>SELECT</c> should now
     all be ones with a duration of at least 3600.</p>
   <p>When writing <c>WHERE</c> clauses, we use the same kinds of comparison operators that we do in Python: <c>==</c>, <c>!=</c>, <c>&gt;</c>
-    , <c>&gt;=</c>, &#8230; Just like in Python, we write numbers without commas like <c>3600</c>. Also like in Python, if we
+    , <c>&gt;=</c>, <ellipsis/> Just like in Python, we write numbers without commas like <c>3600</c>. Also like in Python, if we
     want to write something that is a string, we have to put quotes around it (either single <c>'</c> or double <c>"</c>
     quotes work). To select the records where <c>member_type</c> was <term>Member</term> we would write:</p>
   <program language="sql" database="SQL/bikeshare.db">
@@ -67,7 +67,7 @@ WHERE
       <p>Write a query to find the ending station and duration (in that order) of all trips by bike number <c>'W00153'</c> that
         lasted over 8 hours (remember that duration is measured in seconds, you will have to figure out how many seconds
         are in 8 hours).</p>
-      <p>The bike &#8220;number&#8221; - &#8216;W00153&#8217; - is not really a number, it is a string, so make sure to
+      <p>The bike <q>number</q> - 'W00153' - is not really a number, it is a string, so make sure to
         use quotes around it in your query.</p>
 
     </statement>

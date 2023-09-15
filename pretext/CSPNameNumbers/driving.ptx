@@ -42,9 +42,9 @@ costTrip = gallons * costPerGallon
     </input>
     </program>
 
-    <p>What we&#8217;re doing above is <term>tracing</term> a program. Normally, we <term>
-        run</term> a program &#8211; tell the computer to execute each step of the program as fast as possible. When we
-        do that, we don&#8217;t see individual variable values, as we can above. However, we can check values (including
+    <p>What we’re doing above is <term>tracing</term> a program. Normally, we <term>
+        run</term> a program <ndash/> tell the computer to execute each step of the program as fast as possible. When we
+        do that, we don’t see individual variable values, as we can above. However, we can check values (including
         the values for variables) by printing them.</p>
     <p>The function <c>print</c> can take an <em>input</em> (a variable name inside of parentheses) whose value will be
         displayed. The <c>print</c> function can also print a <term>string</term> (like <c>"Cost to get from Chicago to Dallas"</c>) which is a sequence of

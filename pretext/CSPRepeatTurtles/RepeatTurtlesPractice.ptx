@@ -7,7 +7,7 @@
   <exercise label="csprepeatturtles_repeatturtlespractice1" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses the stamp method to create an X of turtle shapes as shown below, but the lines are
-        mixed up. The program should do all necessary set-up, create the turtle, set the shape to &#8220;turtle&#8221;,
+        mixed up. The program should do all necessary set-up, create the turtle, set the shape to <q>turtle</q>,
         and pick up the pen. Stamp the blue turtles before you stamp the green ones.</p>
       <p>Arrange and indent the blocks correctly. You will not need them all.</p>
       <image source="CSPRepeatTurtles/Figures/TurtleStampX.png" width="30%" />
@@ -62,7 +62,7 @@
     <statement>
       <p>The following program uses the stamp method to create two squares of turtle shapes as shown below, but the
         lines are mixed up. The program should do all necessary set-up, create the turtle, set the shape to
-        &#8220;turtle&#8221;, and pick up the pen. Draw the blue square before you draw the green one.</p>
+        <q>turtle</q>, and pick up the pen. Draw the blue square before you draw the green one.</p>
       <p>Arrange and indent the blocks correctly. You will not need them all.</p>
       <image source="CSPRepeatTurtles/Figures/TurtleStampDoubleSquare.png" width="30%" />
     </statement>
@@ -117,7 +117,7 @@
       <p>In the program below, we want to draw a series of polygons, from 10 sides down to 3 sides, each with a side
         length of 100. The <c>polygon</c> procedure is provided as is starter code for the main part of the program. Add a loop
         and use it to call polygon. Make sure that you draw everything from a 10 sided to a 3 sided polygon, counting
-        down (10, 9, 8, &#8230; 3). Each shape should have a size (side length) of 100.</p>
+        down (10, 9, 8, <ellipsis/> 3). Each shape should have a size (side length) of 100.</p>
       <p>If you are having trouble, try printing out the loop counter so you can see which numbers your loop is counting
         through.</p>
       <note>

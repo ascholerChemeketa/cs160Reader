@@ -64,7 +64,7 @@
     months. Try changing the numeric values for P, APR, and n in the program above, and press the <em>
     Run</em> button to calculate the payment for a different loan. Note that some of the symbols
     used in Python are different than those we normally use for math: <c>*</c> means
-    &#8220;multiply&#8221; and <c>**</c> means &#8220;to the power of&#8221;.</p>
+    <q>multiply</q> and <c>**</c> means <q>to the power of</q>.</p>
 
   <p>Also visible in the code are some <term>comments</term>. Comments are pieces of text that come
     after a <c>#</c> symbol, like <c># $10,000 - notice we don't use commas in numbers</c>. Python will ignore these comments and they are colored

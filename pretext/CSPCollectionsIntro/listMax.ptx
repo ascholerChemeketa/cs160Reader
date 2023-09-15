@@ -1,13 +1,13 @@
 <section xml:id="csp-collections-intro_finding-the-largest-or-smallest-value">
   <title>Finding the Largest or Smallest Value</title>
   <p>Another common pattern for working with lists is finding the largest or smallest value. We saw an example of code
-    to do this earlier, but let&#8217;s break down the important parts of this recipe.</p>
-  <p>We need to have a &#8220;tracking variable&#8221; that will store the largest (or smallest value we have seen). The
+    to do this earlier, but let’s break down the important parts of this recipe.</p>
+  <p>We need to have a <q>tracking variable</q> that will store the largest (or smallest value we have seen). The
     easiest way to initialize that variable is to use the first value from the list (index 0). When we are starting, the
     first value is the largest (or smallest) we have seen.</p>
   <p>We then loop through the values and compare each to the highest value. If the current value is higher than the
     largest we have seen (or smaller than the lowest), we change our tracking variable to hold that new
-    &#8220;best&#8221; value.</p>
+    <q>best</q> value.</p>
 
   <exercise label="cspcollectionsintro_listmax1">
     <statement>
@@ -17,7 +17,7 @@
       <p>
         <ul>
           <li>
-            <p>Change the tracking variable&#8217;s name to <c>lowest</c></p>
+            <p>Change the tracking variable’s name to <c>lowest</c></p>
           </li>
           <li>
             <p>Change the comparison used in the if. If the current score is lower than the <c>lowest</c>, we have found a new
@@ -56,13 +56,13 @@
     </program>
   </exercise>
   <note>
-    <p>If we are not sure that the list has any items, we can&#8217;t start with the first item. In that case, we can
+    <p>If we are not sure that the list has any items, we can’t start with the first item. In that case, we can
       start with some value that is so low (or high as appropriate) that we are confident the first item we do look at will
-      be &#8220;better&#8221; and replace the starting one.</p>
+      be <q>better</q> and replace the starting one.</p>
     <p>The program above could use 0 as the initial value for <c>highest</c> - the first value we see would be sure to be
       higher. But once we change the program to look for the lowest, we would have to change the starting value to 101
       or something large to guarantee that any real values we looked at would be lower.</p>
-    <p>This is trickier to get right than just starting with the first value, so we won&#8217;t use it unless we have
+    <p>This is trickier to get right than just starting with the first value, so we won’t use it unless we have
       to.</p>
   </note>
   <p>Sometimes the max or min pattern might need to be modified to work with values calculated from each item. Here is

@@ -10,7 +10,7 @@
         <p>Quantum objects can be in a <url href="http://en.wikipedia.org/wiki/Quantum_superposition"
             visual="http://en.wikipedia.org/wiki/Quantum_superposition">superposition</url> of states: they
           simultaneously exist in multiple possible states (like both on and off) until that state is observed at which
-          point they &#8220;collapse&#8221; into just one state.</p>
+          point they <q>collapse</q> into just one state.</p>
       </li>
       <li>
         <p>Quantum objects can be <url href="http://en.wikipedia.org/wiki/Quantum_entanglement"
@@ -62,7 +62,7 @@
 
   </figure>
   <p>Quantum computers are probabilistic - each time you run a simulation of a problem, you get an answer that may be
-    correct. &#8220;Programming&#8221; a quantum computer involves setting up the quantum system so that the correct
+    correct. <q>Programming</q> a quantum computer involves setting up the quantum system so that the correct
     answer is the one most likely to appear. But since there is a chance that any particular run of the system produces
     an incorrect answer, obtaining confidence in your answer requires running multiple simulations until the pattern of
     results makes it statistically clear which answer is the correct one. But even if the simulation must be run dozens

@@ -33,7 +33,7 @@
       </row>
       <row>
         <cell> rating </cell>
-        <cell> Rating (R, PG, etc&#8230;) </cell>
+        <cell> Rating (R, PG, etc<ellipsis/>) </cell>
       </row>
       <row>
         <cell> genre </cell>
@@ -141,7 +141,7 @@ PG-13 | 32
 
   <exercise label="sqlgroupjoin_exercises5">
     <statement>
-      <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director&#8217;s movies have earned.
+      <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director’s movies have earned.
         Order the output so the directors with the highest <c>imdb_score</c> come first.</p>
       <p>Hint: You will need to use both <c>GROUP BY</c> and <c>ORDER BY`</c>.</p>
       <p>Your output should look like this:</p>
@@ -169,7 +169,7 @@ Francis Ford Coppola  | 9.2
     <statement>
       <p>Write a query to list each <c>director</c> with the <c>COUNT</c> of the number of films they have made. But <term>only</term>
         retrieve the data for directors with at least 2 films.</p>
-      <p>The results should be sorted by director&#8217;s name (but that should be the default, you should not have to
+      <p>The results should be sorted by director’s name (but that should be the default, you should not have to
         use <c>ORDER BY</c>).</p>
       <p>Hint: Remember that you have to use <c>HAVING</c> to filter grouped results.</p>
       <p>Your output should look like this:</p>
@@ -280,7 +280,7 @@ The Godfather</pre>
   <exercise label="sqlgroupjoin_exercises9">
     <statement>
       <p>Write a query that displays each <c>actor.name</c> with the highest <c>metacritic_score</c> of any movie that actor has been in (we
-        won&#8217;t know what movie the score is from).</p>
+        won’t know what movie the score is from).</p>
       <p>You will have to join <c>actors</c> and <c>movies</c> so that you have access to all the needed data. You will also have to
         use <c>GROUP BY</c>. The <c>GROUP BY</c> should come after the <c>JOIN</c>.</p>
       <p>Your output should look like this:</p>

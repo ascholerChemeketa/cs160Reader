@@ -36,7 +36,7 @@ def ProcedureName(Input1, Input2, Input3, ...):
       </li>
       <li>
         <p>The instructions that are part of the procedure or function are indented. These instructions are known as the
-          function&#8217;s <term>body</term>.</p>
+          function’s <term>body</term>.</p>
       </li>
     </ul>
   </p>
@@ -57,7 +57,7 @@ def square(turtleName):
     turtleName.right(90)
         </input>
   </program>
-  <p>If you are wondering why the <em>Run</em> button didn&#8217;t seem to do anything, all that the program did was
+  <p>If you are wondering why the <em>Run</em> button didn’t seem to do anything, all that the program did was
     define the procedure <c>square</c> which takes a <c>turtleName</c> as input. The code never actually told Python to actually do the
     square procedure!</p>
   <warning>

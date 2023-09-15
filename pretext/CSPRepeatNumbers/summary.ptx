@@ -17,8 +17,8 @@
       </li>
       <li>
         <p><term>While Loop</term> - A loop that continues as long as a logical expression is true. While loops are used
-          when we want to say &#8220;do these steps as long as&#8230;&#8221; instead of &#8220;do these steps for each
-          of these values&#8221; (which is a for loop).</p>
+          when we want to say <q>do these steps as long as<ellipsis/></q> instead of <q>do these steps for each
+          of these values</q> (which is a for loop).</p>
       </li>
     </ul>
   </p>

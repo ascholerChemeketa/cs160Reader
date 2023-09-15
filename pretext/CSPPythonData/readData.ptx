@@ -4,13 +4,13 @@
   <p>The file <c>"uspoll.txt"</c> is what is known as a <term>text file</term>. A <term>text file</term> is actually binary -
     everything a computer stores is stored as binary data. But in a <term>text file</term>, all of the information is
     stored as a series of ASCII-encoded characters. Thus in the file, the number 250 would be stored as
-    &#8220;250&#8221; which would be stored by the 8-bit values for &#8220;2&#8221;, &#8220;5&#8221;, and
-    &#8220;0&#8221;. Because everything is stored as text, we can open <term>text files</term> in a program like Notepad
+    <q>250</q> which would be stored by the 8-bit values for <q>2</q>, <q>5</q>, and
+    <q>0</q>. Because everything is stored as text, we can open <term>text files</term> in a program like Notepad
     to read or edit them.</p>
   <p>In a <term>binary file</term>, data is stored in its natural binary form. Thus the number 250 could be stored as as
     the 8-bit binary value 11111010. A <term>binary file</term> only makes sense if we know how to read it. If you see a
-    256-bit chunk of 1&#8217;s and 0&#8217;s, there is no way to know just by looking at the data if it is supposed to
-    be eight 32-bit values, or thirty-two 8-bit ones. And you can&#8217;t know if those 8-bit values are supposed to be
+    256-bit chunk of 1’s and 0’s, there is no way to know just by looking at the data if it is supposed to
+    be eight 32-bit values, or thirty-two 8-bit ones. And you can’t know if those 8-bit values are supposed to be
     numbers or ASCII characters.</p>
   <p>Text files tend to be more wasteful of bits and slower for a computer to process - the computer needs to turn the
     text <c>"250"</c> into the number <c>250</c> before it can compute with it. But they are easier for people to read and
@@ -78,9 +78,9 @@
   <p>To do any real work with the lines of the file, we need to break up the lines into three parts. We want to
     turn <c>"Aberdeen, SD :13 :8"</c> into a list that looks like <c>["Aberdeen, SD", "13", "8"]</c>. That will make it easier to get the location - <c>values[0]</c>, or the
     PM10 value - <c>values[1]</c>, or the PM2.5 value - <c>values[2]</c>.</p>
-  <p>In this version, the first thing we do with each line is to split it up at the &#8220;:&#8221; marks. The <c>split</c>
+  <p>In this version, the first thing we do with each line is to split it up at the <q>:</q> marks. The <c>split</c>
     function will turn a string into a list by splitting it at the value you give it. <c>values = line.split(":")</c> says to take the string
-    called line, split it at the &#8220;:&#8221; and to call the resulting list <c>values</c>. We can then use that to get
+    called line, split it at the <q>:</q> and to call the resulting list <c>values</c>. We can then use that to get
     just the city name, the PM 10 value, or the PM2.5 value.</p>
 
   <exercise label="csppythondata_readdata2">
@@ -166,7 +166,7 @@ Adrian, MI
     <p>If we were reading in a tremendously large file, reading it all at once might take up too much memory. In that
       case we would have to read it one line at a time, then discard that line before getting the next. That way, we
       would only need memory to store one line of data instead of all of them at once.</p>
-    <p>In the interest of simplicity, we will stick with the &#8220;read it all at once&#8221; strategy since our files
+    <p>In the interest of simplicity, we will stick with the <q>read it all at once</q> strategy since our files
       are relatively small.</p>
   </note>
 </section>

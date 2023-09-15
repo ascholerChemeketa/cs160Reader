@@ -3,7 +3,7 @@
 
   <p>We can also work with user input directly in string form. If the user is supposed to enter a word or other piece of
     text, it makes no sense to try to convert that to a number. Fortunately, the comparison operators like <c>==</c>, <c>!=</c>
-    , <c>&gt;</c>, etc&#8230; all work with strings.</p>
+    , <c>&gt;</c>, etc<ellipsis/> all work with strings.</p>
   <p>This program is something like we might have in part of a text-based adventure game where the user is trying to
     navigate a maze:</p>
 
@@ -73,7 +73,7 @@ elif action == "right":
   </exercise>
 
   <p>Now it is your turn to write a program that makes decisions with strings. In the program below, your job is to write
-    the function that will turn a letter grade like &#8220;A&#8221; into the GPA points it is worth: 4. That function
+    the function that will turn a letter grade like <q>A</q> into the GPA points it is worth: 4. That function
     will be used to calculate the GPA of someone who took three classes.</p>
   <p>Notice that there is some commented out code that <term>hardcodes</term> in three input values. <term>Hardcoded</term>
     values are ones that are written into a program instead of coming from outside as the program runs (like from user
@@ -85,7 +85,7 @@ elif action == "right":
   <exercise label="cspdecisionsstrings_input3">
     <statement>
       <p>Write the code for the <c>getGPAPoints</c> function. It should <term>return</term> the GPA points for the given <c>letterGrade</c>. An <c>"A"</c>
-        should result in 4, a <c>"B"</c> in 3, a <c>"C"</c> in 2, a <c>"D"</c> in 1, and an &#8220;F&#8221; in 0.</p>
+        should result in 4, a <c>"B"</c> in 3, a <c>"C"</c> in 2, a <c>"D"</c> in 1, and an <q>F</q> in 0.</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_input3_editor" interactive="activecode" language="python">

@@ -18,7 +18,7 @@
     <title>The Control Unit</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif" width="35%" alt="Control Unit" />
 
-    <p>The control unit is the true &#8220;brain&#8221; of the CPU and is responsible for controlling much of the
+    <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the
       operation of the rest of the processor. It does this by issuing control signals to the other areas of the
       processor, instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control
       unit can be broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
@@ -58,7 +58,7 @@
     <subsubsection xml:id="computer-architecture-pc">
       <title>Program Counter (PC)</title>
       <p>This register is used to hold the memory address of the instruction being executed. This is how the CPU keeps
-        track of where it is in the program (&#8220;I am on instruction 010101&#8221;). Normally, each time an
+        track of where it is in the program (<q>I am on instruction 010101</q>). Normally, each time an
         instruction is executed, the PC is increased by one to move to the next instruction. Sometimes, however, an
         instruction will modify the PC to make the program jump to a completely different instruction.</p>
     </subsubsection>

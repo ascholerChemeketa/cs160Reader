@@ -92,7 +92,7 @@ print(x)
         </condition>
         <condition string="^\s*\d+\s*,\s*\d+\s*$">
           <feedback>
-            <p>Those numbers aren&#8217;t right</p>
+            <p>Those numbers aren’t right</p>
           </feedback>
         </condition>
         <condition string="^\s*.*\s*$">
@@ -104,12 +104,12 @@ print(x)
     </setup>
   </exercise>
   <note>
-    <p>Computers can&#8217;t usually generate truly random numbers without measuring something that is random (like
-      static noise on radio frequencies). If they don&#8217;t have access to something like that, they must rely on
+    <p>Computers can’t usually generate truly random numbers without measuring something that is random (like
+      static noise on radio frequencies). If they don’t have access to something like that, they must rely on
       generating <term>pseudorandom</term> numbers - numbers that look random even though they are created using some
       mathematical recipe. Python takes the system time as a starting point (since it is always changing) and then uses
-      a mathematical recipe to &#8220;pick&#8221; the next random number each time we ask for one.</p>
-    <p>When these <term>pseudorandom</term> generators aren&#8217;t coded well, they can cause issues with simulations
+      a mathematical recipe to <q>pick</q> the next random number each time we ask for one.</p>
+    <p>When these <term>pseudorandom</term> generators aren’t coded well, they can cause issues with simulations
       or cryptography that rely on their results.</p>
   </note>
 </section>

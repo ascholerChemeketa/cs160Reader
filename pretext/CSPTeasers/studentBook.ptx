@@ -3,12 +3,12 @@
     <subsection xml:id="csp-teasers-philosophy">
         <title>Philosophy</title>
 
-        <p>This text is intended for students who haven&#8217;t programmed before and for students
+        <p>This text is intended for students who haven’t programmed before and for students
             who may not be intending on a career in software development. It uses the programming
             language <term>Python</term>, which is considered one of the easier programming
             languages to learn, but is powerful enough to be used by companies like Google and
             Pixar.</p>
-        <p>Learning to write code is a little like learning to write English. You can&#8217;t hope
+        <p>Learning to write code is a little like learning to write English. You can’t hope
             to sit down and write something if you do not understand the language. You have to start
             by learning to read the language. In reading, you learn not just how the language works,
             but how skilled writers use language to communicate. However, progressing from reader to
@@ -35,9 +35,9 @@
             </ul>
         </p>
         <p>This first chapter introduces the approach used in this book and offers some quick
-            &#8220;teasers&#8221; of things we&#8217;ll be doing later. <term>Don&#8217;t worry if
-            you don&#8217;t understand the code (programs - instructions that a computer can
-            understand) that you see in this chapter</term>. We&#8217;ll go through things much more
+            <q>teasers</q> of things we’ll be doing later. <term>Don’t worry if
+            you don’t understand the code (programs - instructions that a computer can
+            understand) that you see in this chapter</term>. We’ll go through things much more
             slowly in the next few chapters.</p>
     </subsection>
 
@@ -71,7 +71,7 @@
                 </li>
             </ul>
         </p>
-        <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221;
+        <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS <q>AS IS</q>
             AND
             ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
             WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE

@@ -1,10 +1,10 @@
 <section xml:id="parallel-processing_multi-processing">
   <title>Multi Processing</title>
   <figure>
-    <caption>Multiple processing cores on one chip. Image &#169; Intel Corporation</caption>
+    <caption>Multiple processing cores on one chip. Image <copyright/> Intel Corporation</caption>
     <image source="ParallelProcessing/Images/quad-core.jpg" width="30%" />
   </figure>
-  <p>In the year 2002, Intel&#8217;s flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU
+  <p>In the year 2002, Intel’s flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU
     clock ticks 3 billion times per second). The architecture of this processor was supposed to scale up to 10 GHz, but
     by 2005, Intel had to abandon the architecture as the power density of the chips was becoming unmanageable. Intel
     shifted to a new strategy and architecture called the Core architecture.</p>
@@ -64,7 +64,7 @@
   <p>Nowadays, just about every computer processor is <term>multi-core</term>. Personal computers routinely come with
     four or more processing cores. Computer graphics cards have thousands of processing units (though they are optimized
     to perform very specific types of work). Supercomputers, like <url
-      href="https://www.youtube.com/watch?v=FC3IryWr4c8" visual="https://www.youtube.com/watch?v=FC3IryWr4c8">IBM&#8217;s
+      href="https://www.youtube.com/watch?v=FC3IryWr4c8" visual="https://www.youtube.com/watch?v=FC3IryWr4c8">IBM’s
     Watson computer that beat the best human Jeopardy players</url>, combine thousands of processors into room-sized
     devices.</p>
   <p>Unfortunately, adding processing cores greatly complicates programming a computer. It is not the case that we can

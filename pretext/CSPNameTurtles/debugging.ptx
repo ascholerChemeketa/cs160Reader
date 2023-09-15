@@ -17,7 +17,7 @@
       </li>
       <li>
         <p>open and close parentheses <c>()</c> are required after every function and procedure call, even if it
-          doesn&#8217;t take any input.</p>
+          doesn’t take any input.</p>
       </li>
       <li>
         <p>Spelling matters. <c>froward</c> is not the same as <c>forward</c>.</p>
@@ -78,7 +78,7 @@
       program at a time. Do your best to isolate one part of the code from everything else so there is less to worry
       about. One way to do this is by <term>commenting out</term> code. Commenting out code means putting a <c>#</c> at
       the start of one or more lines of code to turn them into comments so the computer ignores them.</p>
-    <p>In the program below, we have commented out lines 5-7. Try running the program - it won&#8217;t try to do
+    <p>In the program below, we have commented out lines 5-7. Try running the program - it won’t try to do
       anything after the <c>alex.forward(150)</c>. Because it successfully creates the turtle and does the move forward, we are pretty
       sure those lines are working correctly.</p>
     <p>The full program is supposed to draw a square, but there are some bugs. Try turning one line of code at a time
@@ -115,7 +115,7 @@ alisha.Forward(75)      # move forward by 75 units
     </program>
     <p>The following example has 4 errors. Can you fix the errors so that the code runs correctly to print a capital C?</p>
     <danger>
-      <p>One of the errors in this one is tricky. It won&#8217;t cause an immediate problem, but will cause future lines
+      <p>One of the errors in this one is tricky. It won’t cause an immediate problem, but will cause future lines
         to misbehave. Errors like this are especially hard to debug. If a line of code is not doing its job, and you are
         100% certain it is right, you may have to re-examine earlier lines of code that you thought were correct.</p>
     </danger>

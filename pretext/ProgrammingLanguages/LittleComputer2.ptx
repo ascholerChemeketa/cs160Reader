@@ -1,15 +1,15 @@
 <section xml:id="programming-languages_the-little-computer-branching">
   <title>The Little Computer - Branching</title>
   <p>Normally, a computer works its way through the instructions in memory in order. After instruction 1, it runs
-    instruction 2, then 3, etc&#8230; A <term>branch</term> instruction can change that. A branch might tell the
-    computer <em>&#8220;skip ahead to memory location number 20 and execute that&#8221;</em> or <em>&#8220;go back and
-    execute the instruction at location 1 again&#8221;</em>.</p>
+    instruction 2, then 3, etc<ellipsis/> A <term>branch</term> instruction can change that. A branch might tell the
+    computer <em><q>skip ahead to memory location number 20 and execute that</q></em> or <em><q>go back and
+    execute the instruction at location 1 again</q></em>.</p>
 
   <subsection xml:id="the-little-computer-branching-decisions">
     <title>Decisions</title>
 
     <p>Branch instructions are how a computer can make decisions. In high-level languages, we generally use
-      &#8220;if&#8221; statements to make decisions about which instructions to execute. At a low level, those decisions
+      <q>if</q> statements to make decisions about which instructions to execute. At a low level, those decisions
       are usually implemented as branches to skip certain instructions.</p>
     <p>In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch.</p>
     <p>
@@ -43,14 +43,14 @@
     <title>Looping</title>
 
     <p>The target of a branch does not need to be later in the program - it is perfectly legal to branch to an earlier
-      instruction. This is how we make a computer &#8220;loop&#8221; or repeat a series of instructions. This video
+      instruction. This is how we make a computer <q>loop</q> or repeat a series of instructions. This video
       demonstrates a Little Computer program that uses a branch instruction to loop through a series of instructions.</p>
 
     <video xml:id="bLSVhz3j5xQ" youtube="bLSVhz3j5xQ" width="100%" />
     <p>You can test that program using the link below. As you do, pay attention to each output - the program outputs
-      more than one value, so the behavior is best described by the pattern of the output, <em>&#8220;It counts down
-      from 1 to 0&#8221;</em>, than its final output. We would not say that this program just <em>&#8220;outputs
-      0&#8221;</em>.</p>
+      more than one value, so the behavior is best described by the pattern of the output, <em><q>It counts down
+      from 1 to 0</q></em>, than its final output. We would not say that this program just <em><q>outputs
+      0</q></em>.</p>
     <p>
       <url href="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001"
         visual="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001">Launch the Little

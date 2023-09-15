@@ -8,7 +8,7 @@
     <caption>
       <url href="http://cdn.oreillystatic.com/news/graphics/prog_lang_poster.pdf"
         visual="http://cdn.oreillystatic.com/news/graphics/prog_lang_poster.pdf"> A genealogy of computer programming
-        languages. O&#8217;Reilly publishing </url>
+        languages. O’Reilly publishing </url>
     </caption>
 
     <image source="ProgrammingLanguages/Images/history-poster20.gif" />
@@ -16,18 +16,18 @@
   <sidebar>
     <title>Hello World</title>
     <p>Hello World is traditionally one of the first programs people write when learning a new programming language - a
-      simple program to just print the words &#8220;Hello World&#8221; on the screen.</p>
+      simple program to just print the words <q>Hello World</q> on the screen.</p>
     <p>You can find hundreds of <url href="http://helloworldcollection.de/">examples of Hello World in different
       languages here</url> .</p>
   </sidebar>
   <p>Each of these languages has its own <term>syntax</term> - the rules that govern what makes a legal statement in the
     language. Oftentimes languages borrow syntactical elements from each other and thus look similar, but every
     programming language has differences in what you can say and how you say it.</p>
-  <p>Human languages have syntax rules as well - in English, we consider <em>&#8220;I ate the red apple.&#8221;</em> to
-    be a sentence, while <em>&#8220;ate. I red the apple&#8221;</em> is nonsense. Programming languages have more
+  <p>Human languages have syntax rules as well - in English, we consider <em><q>I ate the red apple.</q></em> to
+    be a sentence, while <em><q>ate. I red the apple</q></em> is nonsense. Programming languages have more
     limited syntax than human languages, but the biggest difference is the listener. We depend on humans to understand
-    things even when there is a slight syntax error in something we say or write; &#8220;Let&#8217;s eat, grandma&#8221;
-    and &#8220;Let&#8217;s eat grandma&#8221; are two VERY different statements, but no one is going to engage in
+    things even when there is a slight syntax error in something we say or write; <q>Let’s eat, grandma</q>
+    and <q>Let’s eat grandma</q> are two VERY different statements, but no one is going to engage in
     cannibalism because we wrote the wrong one.</p>
   <p>Computers are not so forgiving - they are not clever enough to figure out what you meant. If you have an error that
     violates the syntax of their language they will not even try to execute it. If you have an error that does not

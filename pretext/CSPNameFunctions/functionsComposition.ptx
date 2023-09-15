@@ -63,7 +63,7 @@ print("The length of side C is", sideC)
     <warning>
       <p>Writing code using functional composition in this style can make programs look shorter, but it tends to make
         them harder to debug. In the first version of this program, we could add a <c>print</c> call after any line to see
-        what value a function produced and check if it is correct. If something isn&#8217;t working right in a line of
+        what value a function produced and check if it is correct. If something isn’t working right in a line of
         code like <c>sqrt( pow(sideA, 2) + pow(sideB, 2) )</c>, it can be hard to figure out what part is not working as expected - the <c>pow</c>, the <c>+</c>,
         or the <c>sqrt</c>.</p>
     </warning>

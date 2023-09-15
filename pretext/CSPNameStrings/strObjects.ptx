@@ -176,7 +176,7 @@ print(length)
         </program>
 
         <p>The <c>find(string)</c> function takes a string as input and returns the index where
-            that string is found in the current string. If the string isn&#8217;t found it returns -1.</p>
+            that string is found in the current string. If the string isn’t found it returns -1.</p>
 
         <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
             <input>
@@ -189,7 +189,7 @@ print(pos)
         </program>
         <note>
             <p>The <c>find</c> function will return the first position it finds the given string in. Notice that above it
-                printed 2 which means it found the &#8220;is&#8221; in &#8220;This&#8221; first.</p>
+                printed 2 which means it found the <q>is</q> in <q>This</q> first.</p>
             <p>
                 <term>Check your understanding</term>
             </p>

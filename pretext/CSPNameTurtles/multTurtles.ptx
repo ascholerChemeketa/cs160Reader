@@ -57,16 +57,16 @@ chad.right(120)
         </input>
   </program>
   <p>Every turtle object has its own state - it keeps track of its own position and color. So, when we created chad his
-    position wasn&#8217;t the same as zari&#8217;s - all turtles start at the center of the screen (0, 0). Similarly,
+    position wasn’t the same as zari’s - all turtles start at the center of the screen (0, 0). Similarly,
     his direction starts out at the default (East).</p>
   <p>
     <term>Mixed up programs</term>
   </p>
   <exercise label="cspnameturtles_multturtles4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program has one turtle, &#8220;jamal&#8221;, draw a capital L in blue and then another,
-        &#8220;tina&#8221;, draw a line to the west in orange as shown below. The program should do all set-up, have
-        &#8220;jamal&#8221; draw the L, and then have &#8220;tina&#8221; draw the line. Drag the blocks of statements
+      <p>The following program has one turtle, <q>jamal</q>, draw a capital L in blue and then another,
+        <q>tina</q>, draw a line to the west in orange as shown below. The program should do all set-up, have
+        <q>jamal</q> draw the L, and then have <q>tina</q> draw the line. Drag the blocks of statements
         from the left column to the right column and put them in the right order. Then click on <em> Check</em> to see
         if you are right.</p>
       <image source="CSPNameTurtles/Figures/TwoTurtles1N.png" width="30%" />
@@ -120,10 +120,10 @@ chad.right(120)
   </exercise>
   <exercise label="cspnameturtles_multturtles5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program has one turtle, &#8220;jamal&#8221;, draw a line to the north in blue and then another,
-        &#8220;tina&#8221;, draw a line to the east in orange as shown below. The program should import the turtle
-        module, get the window to draw on, create the turtle &#8220;jamal&#8221;, have it draw a line to the north, then
-        create the turtle &#8220;tina&#8221;, and have it draw a line to the east. Drag the blocks of statements from
+      <p>The following program has one turtle, <q>jamal</q>, draw a line to the north in blue and then another,
+        <q>tina</q>, draw a line to the east in orange as shown below. The program should import the turtle
+        module, get the window to draw on, create the turtle <q>jamal</q>, have it draw a line to the north, then
+        create the turtle <q>tina</q>, and have it draw a line to the east. Drag the blocks of statements from
         the left column to the right column and put them in the right order. Then click on <em>Check</em> to see if you
         are right.</p>
       <image source="CSPNameTurtles/Figures/TwoTurtlesLN.png" width="30%" />

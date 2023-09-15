@@ -14,7 +14,7 @@
           returns a turtle object.</p>
       </li>
       <li>
-        <p><term>Procedure</term> - A procedure does an action, but doesn&#8217;t return a value. An example of a
+        <p><term>Procedure</term> - A procedure does an action, but doesn’t return a value. An example of a
           procedure is <c>forward(100)</c> which makes the turtle go forward by 100 pixels.</p>
       </li>
     </ul>

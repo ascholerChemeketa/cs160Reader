@@ -5,16 +5,16 @@
   <p>When solving complex problems, we can use this trick to avoid repeating code and to make abstractions that make a
     program easier to read and write.</p>
   <p>Say we are starting with the coordinates of the three points of a triangle and we want to calculate the area of the
-    shape. There is a formula called <em>Heron&#8217;s formula</em> that we can use to find the area of a triangle: <m>\sqrt{s
+    shape. There is a formula called <em>Heron’s formula</em> that we can use to find the area of a triangle: <m>\sqrt{s
     (s - a) (s - b) (s - c)}</m> where <term>s</term> is the semi-perimeter (half the perimeter) and <term>a, b, c</term>
     are the lengths of the three sides.</p>
   <figure align="center">
     <caption>A triangle with sides that are labled a, b, and c.</caption>
     <image source="CSPNameFunctions/Figures/herons_formula.png" width="50%" alt="Triangle with sides labeled a, b, c" />
   </figure>
-  <p>That sounds too complex to do in a short amount of code. So let&#8217;s break down the problem. Before we can use
+  <p>That sounds too complex to do in a short amount of code. So let’s break down the problem. Before we can use
     that formula, we need to know the lengths of the three sides. We can use the distance formula to calculate them: <m>\sqrt{(x2-x1)^2
-    + (y2-y1)^2}</m>. Let&#8217;s make a function to do that job.</p>
+    + (y2-y1)^2}</m>. Let’s make a function to do that job.</p>
   <p>When designing functions, we need to define them in terms of their inputs (parameters) and their outputs (what they
     return). Our <c>distance</c> functions will take in two x,y pairs and it will return the distance between them:</p>
   <program language="python">
@@ -24,7 +24,7 @@ def distance(x1, y1, x2, y2):
     return distance
 </input>
   </program>
-  <p>Let&#8217;s start by writing that and testing it. We will make a function <c>distance</c> that has parameters for the x and
+  <p>Let’s start by writing that and testing it. We will make a function <c>distance</c> that has parameters for the x and
     y of two different points.</p>
 
   <exercise label="cspnamefunctions_functionscallingfunctions1">

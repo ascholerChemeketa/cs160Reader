@@ -1,9 +1,9 @@
 <section xml:id="computer-architecture_the-machine-cycle">
   <title>The Machine Cycle</title>
   <p>When software is installed onto a computer (by downloading it from the Internet or installing it from a disk), the
-    program and any associated files are stored in secondary memory. The program&#8217;s code is stored as a series of
+    program and any associated files are stored in secondary memory. The program’s code is stored as a series of
     bits that represent machine instructions. The code remains there until the user chooses to execute the program in
-    question, at which point sections of the code are loaded into the computer&#8217;s memory.</p>
+    question, at which point sections of the code are loaded into the computer’s memory.</p>
   <image source="ComputerArchitecture/Images/execution.gif" width="80%" alt="Execution" />
   <p>To actually run the code, the processor then needs to retrieve instructions one by one from memory so it can run
     them. This process consists of three stages: fetching the instruction, decoding the instruction, and executing the
@@ -34,7 +34,7 @@
   </p>
   <p>The video below demonstrates a simple program running on a computer. This imaginary computer shown uses special
     registers to hold memory address (MAR) and data that just came in from memory (MBR). It also uses registers called
-    AL and BL to hold values temporarily. Don&#8217;t worry about the details of those other registers, focus on the
+    AL and BL to hold values temporarily. Don’t worry about the details of those other registers, focus on the
     fetch/decode/execute cycle and how the PC and IR are used.</p>
 
   <video xml:id="jcHuWnIt6eI" youtube="jcHuWnIt6eI" width="100%" />

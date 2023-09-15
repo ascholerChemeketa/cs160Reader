@@ -8,9 +8,9 @@
   <subsection xml:id="data-representation_binary-to-decimal">
     <title>Binary to Decimal</title>
     <p>To convert a binary value to a decimal one, start with a table of binary column values. The rightmost digits of
-      the number should be in the &#8220;ones&#8221; column and each additional column to the left should be twice the
-      value of the previous column: &#8230; 64, 32, 16, 8, 4, 2, 1. Write your number in the columns so the last digit
-      is in the &#8220;ones&#8221; column. The decimal value of your number is the sum of each of the columns that has a
+      the number should be in the <q>ones</q> column and each additional column to the left should be twice the
+      value of the previous column: <ellipsis/> 64, 32, 16, 8, 4, 2, 1. Write your number in the columns so the last digit
+      is in the <q>ones</q> column. The decimal value of your number is the sum of each of the columns that has a
       1 bit in it.</p>
     <p>For example, I want to convert <m>{11010}_{2}</m> to decimal. I will need at least five columns to hold the five
       bits. They will be numbered: 1s, 2s, 4s, 8s, 16s. When I write those columns in descending order and write my
@@ -43,7 +43,7 @@
     <title>Decimal to Binary</title>
     <p>The first way to convert a decimal number to a binary one is with a table like the one below (if needed you can
       add more columns - each new column to the left should be twice the value of the preceding one). Then, working from
-      left to right, decide if you need that column&#8217;s value to make your number. The value for any column you use
+      left to right, decide if you need that column’s value to make your number. The value for any column you use
       should be subtracted from the value you are trying to make.</p>
     <table>
 
@@ -91,7 +91,7 @@ Do I need 1? Yes.
              1 - 1 = 0 left - we are done!
 </input>
     </program>
-    <p>If we think of each column we used as representing a 1 and each column we didn&#8217;t as a 0, we get this:</p>
+    <p>If we think of each column we used as representing a 1 and each column we didn’t as a 0, we get this:</p>
     <table>
       <tabular>
         <row header="yes">
@@ -179,7 +179,7 @@ Do I need 1? Yes.
             <p>8</p>
           </statement>
           <feedback>
-            <p>The 8th column would be 128... we don't need that</p>
+            <p>The 8th column would be 128<ellipsis/> we don't need that</p>
           </feedback>
         </choice>
 

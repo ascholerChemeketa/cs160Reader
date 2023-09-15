@@ -69,7 +69,7 @@
         rough approximation. If you use the answer as a new guess and repeat the process, you will get a closer
         approximation. You can keep repeating the process to make your approximation closer and closer to the real
         value.</p>
-      <p>Write an <c>approximateSqrt</c> function that takes a number and a guess as its parameters and then uses Newton&#8217;s formula
+      <p>Write an <c>approximateSqrt</c> function that takes a number and a guess as its parameters and then uses Newton’s formula
         to estimate the square root of the number.</p>
       <p>There is already code provided to use your function to calculate the square root of 150.</p>
 

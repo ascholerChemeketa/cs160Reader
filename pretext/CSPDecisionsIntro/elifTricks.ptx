@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-intro_using-elif-correctly">
         <title>Using elif correctly</title>
         <p>In the grade printing program on the previous page, the program checked each possible grade
-            starting with the highest (&#8220;A&#8221;) and working down to the lowest option (&#8220;F&#8221;):</p>
+            starting with the highest (<q>A</q>) and working down to the lowest option (<q>F</q>):</p>
         <blockquote>
             <pre>if score &gt;= 90:
     print("A")
@@ -15,7 +15,7 @@ else:
     print("F")</pre>
         </blockquote>
         <p>This ordering is important, because in an if/elif/else chain, Python will not skip ahead
-            to &#8220;the correct&#8221; option. If we put the various grades in a mixed up order, the first <c>if</c>
+            to <q>the correct</q> option. If we put the various grades in a mixed up order, the first <c>if</c>
             or <c>elif</c> whose condition is true is the one that will run.</p>
         <p>In this version of the program, a score of 83 will NOT be a B. Can you see why? Try running
             it in codelens mode.</p>
@@ -107,9 +107,9 @@ else:
             that represents a temperature in degrees F. It should return the string <c>"Hot"</c> if the temp
             is above 80, <c>"Warm"</c> if it is not above 80 but is above 70, <c>"Cool"</c> if it is not above 70
             but is above 60, and <c>"Cold"</c> otherwise (below 60).</p>
-        <p>Hint: You don&#8217;t have to solve it all at once. You can start with just an <c>if</c> that only
-            handles temp&#8217;s greater than 80. Then add an <c>elif</c> to handle the Warm temps.
-            Then add one for Cool&#8230;</p>
+        <p>Hint: You don’t have to solve it all at once. You can start with just an <c>if</c> that only
+            handles temp’s greater than 80. Then add an <c>elif</c> to handle the Warm temps.
+            Then add one for Cool<ellipsis/></p>
         <p>Make sure to <c>return</c> the answers and not just <c>print</c> them.</p>
 
     </statement>

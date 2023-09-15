@@ -9,7 +9,7 @@
                     for subtraction or <c>*</c> for multiplication.</p>
             </li>
             <li>
-                <p><term>Assignment</term> - Assignment means setting a variable&#8217;s value. For example, <c>x = 5</c>
+                <p><term>Assignment</term> - Assignment means setting a variable’s value. For example, <c>x = 5</c>
                     assigns the value of 5 to a variable called <c>x</c>.</p>
             </li>
             <li>

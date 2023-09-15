@@ -3,7 +3,7 @@
   <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would in English or in math
     class.</p>
   <p>In natural (human) languages, if I want to say that the color of a car can be blue or green, I would only mention
-    the car once: &#8220;The car can be blue or green.&#8221; If you try to do that in Python your program will not work
+    the car once: <q>The car can be blue or green.</q> If you try to do that in Python your program will not work
     as expected:</p>
 
   <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
@@ -52,8 +52,8 @@ print("Done")
     </choices>
 
   </exercise>
-  <p>Why does that happen? In English, we would think of &#8220;color equals&#8221; as talking about &#8220;blue or
-    green&#8221;. But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>. Each of those is evaluated on its own. Does <c>color == "blue"</c>?
+  <p>Why does that happen? In English, we would think of <q>color equals</q> as talking about <q>blue or
+    green</q>. But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>. Each of those is evaluated on its own. Does <c>color == "blue"</c>?
     No that is False. How about <c>"green"</c>. Is that True or False???</p>
   <p>It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered True in Python. So <c>green</c>
     counts as <c>True</c>. Since the value on the left of <c>or</c> is <c>False</c>, and the value on the right is <c>True</c>
@@ -85,8 +85,8 @@ print("Done")
         </input>
   </program>
   <warning>
-    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can&#8217;t have
-      something that looks like <c>... or "blue"</c> or <c>... and 10</c> or that part will just count as True.</p>
+    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can’t have
+      something that looks like <c><ellipsis/> or "blue"</c> or <c><ellipsis/> and 10</c> or that part will just count as True.</p>
   </warning>
 </section>
 
