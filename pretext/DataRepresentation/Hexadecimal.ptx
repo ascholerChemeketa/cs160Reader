@@ -38,7 +38,7 @@
   <p>So <m>{2047}_{16}</m> = <term>2</term> * 4096 + <term>0</term> * 256 + <term>4</term> * 16 + <term>7</term> * 1 = <m>
     {8263}_{10}</m>.</p>
   <p>Using this scheme, <m>{10}_{16}</m> = <term>1</term> * 16 + <term>0</term> * 1 = <m>{16}_{10}</m>. Which raises the
-    question <q>how do we represent ten in hexadecimal?</q> A 1 in the second column indicates a 16, so we
+    question <q>How do we represent ten in hexadecimal?</q> A 1 in the second column indicates a 16, so we
     can’t use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F
     to indicate 9-15:</p>
   <table>
@@ -77,7 +77,7 @@
 
     </tabular>
   </table>
-  <p>Thus in the hexadecimal number <m>{\textrm{1EA}}_{16}</m> the E means means 14 copies of the second digit (16). The
+  <p>Thus in the hexadecimal number <m>{\textrm{1EA}}_{16}</m> the E means 14 copies of the second digit (16). The
     A means 10 copies of the rightmost digit (1):</p>
   <table>
     <tabular halign="center">

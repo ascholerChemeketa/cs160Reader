@@ -20,7 +20,7 @@
           <p>A leading 0 means positive - read the number normally.</p>
         </li>
         <li>
-          <p>A leading 1 means negative - flip the remaining bits, read their value and one to the value. Make that
+          <p>A leading 1 means negative - flip the remaining bits, read their value, and one to the value. Make that
             value negative.</p>
         </li>
       </ul>
@@ -146,7 +146,7 @@
   <exercise label="datarepresentation_twoscomplement1">
     <statement>
 
-      <p>Which of these represents -3 as a five bit two’s complement number?</p>
+      <p>Which of these represents -3 as a five-bit two’s complement number?</p>
 
     </statement>
     <choices>
@@ -193,7 +193,7 @@
   <exercise label="datarepresentation_twoscomplement2">
     <statement>
 
-      <p>Given a 5 bit two’s complement number, what is the largest positive value you can represent?</p>
+      <p>Given a 5-bit two’s complement number, what is the largest positive value you can represent?</p>
 
     </statement>
     <choices>

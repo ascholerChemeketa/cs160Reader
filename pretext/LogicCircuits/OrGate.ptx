@@ -7,7 +7,7 @@
   <p>As a first example, consider two switches that are implemented in parallel - electricity can pass from a battery to
     a light bulb if either switch is on. <em>(Note that this is a highly simplified version of how electrical circuits
     really work)</em> In the figure below, the electricity is being routed through the top switch that is on. The fact
-    that the bottom switch is off does not change the fact that power can reach the bulb.</p>
+    that the bottom switch is in the off position does not change the fact that power can reach the bulb.</p>
   <image source="LogicCircuits/Images/switchesOr1.png" width="50%" />
   <p>If only the bottom switch is on, or if both switches are on, the power can still reach the bulb to light it:</p>
   <container classes="inlinegroup">

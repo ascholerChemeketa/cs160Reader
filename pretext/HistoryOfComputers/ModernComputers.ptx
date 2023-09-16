@@ -1,21 +1,38 @@
 <section xml:id="history-of-computers_modern-computers">
-        <title>Modern Computers</title>
-        <p>Today we live in a world dominated by computers. We are surrounded not only by the desktop and laptop computers that are a feature of nearly every office and home, and the smartphones that are seen as a standard modern accessory, but also by the computational devices embedded into nearly every electrical device we touch. Microprocessors are built into cars, watches, televisions, coffee makers and countless other devices. Although there is no widespread agreement on the topic, some people have declared this world of <term>ubiquitous computing</term> (computers found everywhere) the Fifth Generation of computing because of the fundamental change in how we interact with computers.</p>
-        <container classes="inlinegroup">
-            <figure align="" xml:id="modern-computers-img1"><caption >Fritzchens Fritz, CC0, via Wikimedia Commons</caption><image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%" alt="Intel Core i7 microprocessor"/><legend>
-                    <p>Modern microprocessors like this Intel i7 processor feature billions of transistors on one chip the size of a fingernail.</p>
-                </legend></figure>
-            <figure align="" xml:id="modern-computers-img2"><caption >Apple, CC BY-SA 4.0, via Wikimedia Commons</caption><image source="HistoryOfComputers/Images/IPhone_4s.jpg" width="50%" alt="Apple Iphone"/><legend>
-                    <p>Smartphones like the iPhone are more powerful computers than the supercomputers of the 1970s. And they can play Angry Birds.</p>
-                </legend></figure>
-        </container>
-        <p>How these fantastically complex microprocessors are manufactured:</p>
+  <title>Modern Computers</title>
+  <p>Today we live in a world dominated by computers. We are surrounded not only by the desktop and
+    laptop computers that are a feature of nearly every office and home, and the smartphones that
+    are seen as a standard modern accessory, but also by the computational devices embedded into
+    nearly every electrical device we touch. Microprocessors are built into cars, watches,
+    televisions, coffee makers, and countless other devices. Although there is no widespread
+    agreement on the topic, some people have declared this world of <term>ubiquitous computing</term>
+    (computers found everywhere) the Fifth Generation of computing because of the fundamental change
+    in how we interact with computers.</p>
+  <container classes="inlinegroup">
+    <figure align="" xml:id="modern-computers-img1">
+      <caption>Fritzchens Fritz, CC0, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%"
+        alt="Intel Core i7 microprocessor" />
+      <legend>
+        <p>Modern microprocessors like this Intel i7 processor feature billions of transistors on
+          one chip the size of a fingernail.</p>
+      </legend>
+    </figure>
+    <figure align="" xml:id="modern-computers-img2">
+      <caption>Apple, CC BY-SA 4.0, via Wikimedia Commons</caption>
+      <image source="HistoryOfComputers/Images/IPhone_4s.jpg" width="50%" alt="Apple iPhone" />
+      <legend>
+        <p>Smartphones like the iPhone are more powerful computers than the supercomputers of the
+          1970s. And they can play Angry Birds.</p>
+      </legend>
+    </figure>
+  </container>
+  <p>How these fantastically complex microprocessors are manufactured:</p>
 
-    <video xml:id="bor0qLifjz4" youtube="bor0qLifjz4" width="auto"/>
+  <video xml:id="bor0qLifjz4" youtube="bor0qLifjz4" width="auto" />
 
-    <remark> Materials on this page adapted with permission from <url
-        href="http://en.wikipedia.org/">Wikipedia</url> (<url
-        href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>)
-    </remark>
-    </section>
+  <remark> Materials on this page adapted with permission from <url
+      href="http://en.wikipedia.org/">Wikipedia</url> (<url
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
+</section>
 

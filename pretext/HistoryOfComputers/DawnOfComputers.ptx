@@ -11,7 +11,7 @@
 
   <p xml:id="dawn-of-computers-2">Whereas the Difference Engine could only calculate the values of polynomial functions,
     the new <term>Analytical Engine</term> would be able to do any calculation. The Engine incorporated an arithmetic
-    logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first
+    logic unit, control flow in the form of conditional branching and loops, and integrated memory; making it the first
     design for a general-purpose computer. The input of both programs and data was to be provided to the machine via
     punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards
     were to remain the dominant way of <url href="https://www.youtube.com/watch?v=KG2M4ttzBnY">feeding a program into a
@@ -47,9 +47,8 @@
   </blockquote>
   <p>Babbage was a man ahead of his time - manufacturing the fine clockwork mechanisms required for his Engines was
     impossible with current technology. Neither engine was ever completed in his lifetime. But sixty years after Babbage
-    developed the idea of the Analytical Engine, another inventory would successfully build a machine that would
-    transform the way governments and businesses processed information.</p>
-
+    developed the idea of the Analytical Engine, another inventor would successfully build a machine that would
+    transform the way governments and businesses process information.</p>
 
   <p>The 1880 census had taken seven years to process and it was estimated that
     the 1890 census would take approximately 13 years to complete. Since the U.S. Constitution mandates a census every

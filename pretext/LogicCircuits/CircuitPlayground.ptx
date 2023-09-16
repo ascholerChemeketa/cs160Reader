@@ -35,8 +35,8 @@
       </li>
       <li>
         <p>Control-Click switches between visual mode and a text version of your circuit. To save a circuit, switch to
-          text mode, then copy the text and save it in a text file on your computer. To load the circuit, make sure the
-          circuit is in text mode, paste in your saved text, then switch back to visual mode.</p>
+          text mode, then copy the text and save it in a text file on your computer. To load the circuit, make sure
+          the circuit is in text mode, paste in your saved text, then switch back to visual mode.</p>
       </li>
     </ul>
   </p>

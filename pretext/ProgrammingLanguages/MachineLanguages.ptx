@@ -23,8 +23,8 @@
   </p>
   <p>These instructions have no real meaning to you, but they are exactly the kind of instructions that a computer
     expects. It only knows how to deal with 0s and 1s, so all of its instructions must be written in binary format. A
-    processor’s control unit has a format it expects each such instruction to be in: typically a instruction will
-    be a set length, say 16 or 32 or 64 bits and the first few bits will specify what kind of instruction it is. These
+    processor’s control unit has a format it expects each such instruction to be in: typically an instruction will
+    be a set length, say 16, 32, or 64 bits and the first few bits will specify what kind of instruction it is. These
     first few bits, known as the <term>opcode</term> (operation code), say what general task is to be done - something
     like <q>store a number</q> or <q>add two numbers</q>. The rest of the instruction will contain <term>
     operands</term>, the extra information needed to understand the instruction - things like where to store the number

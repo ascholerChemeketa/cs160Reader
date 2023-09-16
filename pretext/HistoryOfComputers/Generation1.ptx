@@ -58,16 +58,16 @@
     </figure>
 
 
-    <p xml:id="the-first-generation-3">Even before the ENIAC was finished, its designers, John Mauchly and J. Presper
-      Eckert, recognized its limitations and started the design of a stored-program computer, the EDVAC. It was the
+    <p xml:id="the-first-generation-3">Even before the ENIAC was finished, its designers John Mauchly and J. Presper
+      Eckert recognized its limitations and started the design of a stored-program computer, the EDVAC. It was the
       first general-purpose computer designed to store its instructions electronically, allowing new programs to be run
-      without physical modification to them machine. The basic architecture of this machine is known as the <q><term>von
+      without physical modification to the machine. The basic architecture of this machine is known as the <q><term>von
       Neumann architecture</term></q> after researcher, John von Neumann, who described it. The von Neumann
       architecture serves as the basic blueprint for almost every modern computer.</p>
     <p>Although EDVAC was the first general-purpose stored-program computer designed, it was not the first to run a
       program. That honor goes to the <term>Manchester <q>baby</q></term>, a machine built at the University of
-      Manchester in England. It ran its first program in June of 1948. What actually represents the first computer
-      depends on how you define <q>computer</q>, but generally these two machines are considered to represent the
+      Manchester in England. It ran its first program in June of 1948. What truly represents the first computer
+      depends on how you define <q>computer</q>, but generally, these two machines are considered to represent the
       first modern computers - electrical devices capable of storing in memory a program to do any arbitrary
       calculation.</p>
     <p>By the 1950s, computers had left the labs and gone mainstream - machines like the UNIVAC and the IBM 650 were

@@ -26,7 +26,7 @@
               <p>What problems was it designed to solve?</p>
             </li>
             <li>
-              <p>In what contexts is it or was it actually used?</p>
+              <p>In what contexts is it or was it used?</p>
             </li>
             <li>
               <p>Even if your sources focus on an error or misuse of technology, remember that all technology exists
@@ -53,7 +53,7 @@
             </li>
             <li>
               <p>If you cannot get specific about input, output, or computation, you might not have chosen a concrete
-                enough topic, or your sources might be inadequate.</p>
+                enough topic or your sources might be inadequate.</p>
             </li>
           </ul>
         </li>
@@ -64,7 +64,7 @@
               <p>How do users of the technology benefit from it?</p>
             </li>
             <li>
-              <p>How does society as a whole benefit from the existence of the technology?</p>
+              <p>How does society as a whole benefit from the existence of this technology?</p>
             </li>
             <li>
               <p>If you are describing a bug that has no benefit, focus on the benefit that a working system should have

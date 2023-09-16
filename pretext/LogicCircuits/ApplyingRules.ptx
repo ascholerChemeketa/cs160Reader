@@ -1,7 +1,7 @@
 <section xml:id="logic-circuits_applying-logic-rules">
   <title>Applying Logic Rules</title>
   <p>Computers generally work with bit patterns like 01011100 to represent information. That means that often we need to
-    apply a rule like AND or OR to not just two-bits, but to two longer patterns of bits. To apply a rule like AND to
+    apply a rule like AND or OR to longer patterns of bits. To apply a rule like AND to
     two-bit patterns like 1010 and 1110, we simply apply the rule to each pair of corresponding bits.</p>
 
   <p>We are going to apply the AND rule to combine the bit pattern 1010 with the pattern 1110. To do so, we will apply
@@ -17,7 +17,7 @@
 
   <image source="LogicCircuits/Images/ApplyingAND3.png" width="50%" />
   <p>Finally, in the last position, two 0’s result in 0 according to the AND rule. Our final answer is 1010. In
-    any digit where both patterns had a 1 our answer has a 1; otherwise, it has a 0.</p>
+    any digit where both patterns had a 1, our answer has a 1; otherwise, it has a 0.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND4.png" width="50%" />
 

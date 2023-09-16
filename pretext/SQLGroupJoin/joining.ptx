@@ -15,7 +15,7 @@ LIMIT
     1
         </input>
   </program>
-  <p>That query gives us the station id (31104), but what if we want its name? The name of each station is in the <xref
+  <p>That query gives us the station ID (31104), but what if we want its name? The name of each station is in the <xref
       ref="sql-intro_bikeshare-stations-table" text="title"/>. To get the name of station 31104, we could query it (notice the <c>FROM</c>
     clause):</p>
 
@@ -69,7 +69,7 @@ LIMIT
     1
         </input>
   </program>
-  <p>Try the query - notice that it has all the columns from both tables. Which is really more than we want. We just
+  <p>Try the query - notice that it has all the columns from both tables. Which is more than we want. We just
     want the station name. So change the <c>*</c> to <c>name</c> so that we just get that column. If we want to be really
     clear about what column we are talking about (or if both tables had a column called <c>name</c> so we had to be more
     specific), we could write it as <c>bikeshare_stations.name</c> because it is the <c>name</c> column from <c>bikeshare_stations</c>.</p>

@@ -26,7 +26,7 @@
     </ul>
   </p>
   <p>Scientists are working on exploiting these behaviors to produce a new kind of computer, the <term>Quantum computer</term>
-    (video set to stop at 1:43, feel free to watch the rest if you want):</p>
+    (the video is set to stop at 1:43, feel free to watch the rest if you want):</p>
 
   <video xml:id="CMdHDHEuOUE" youtube="CMdHDHEuOUE" width="100%" end="103"/>
   <p>So how exactly do they work and why are they more powerful? By entangling particles that are in a superposition of
@@ -61,16 +61,17 @@
     <image source="LimitsAndFuture/Images/tut-intro-lightswitcheshandj.png" width="50%" />
 
   </figure>
-  <p>Quantum computers are probabilistic - each time you run a simulation of a problem, you get an answer that may be
-    correct. <q>Programming</q> a quantum computer involves setting up the quantum system so that the correct
+  <p>Quantum computers are probabilistic - each time you run a quantum algorithm, you do not get the same answer.
+    Instead, you get a result from the set of possible results. Each particular result has its own probability of
+    being selected. <q>Programming</q> a quantum computer involves setting up the quantum system so that the correct
     answer is the one most likely to appear. But since there is a chance that any particular run of the system produces
     an incorrect answer, obtaining confidence in your answer requires running multiple simulations until the pattern of
     results makes it statistically clear which answer is the correct one. But even if the simulation must be run dozens
-    or hundreds of times, it has th potential to be much faster than a classical computer checking trillions of
+    or hundreds of times, it has the potential to be much faster than a classical computer checking trillions of
     trillions of possible answers.</p>
   <p>This final video is about one of the earliest quantum computations - the factoring of 15 into 3 x 5 and getting the
     correct answer 48% of the time. While that may not sound too impressive, it is the first step on the road that might
-    make cryptography algorithms like RSA easy to crack. (Video set to play only a segment from the middle, but feel
+    make cryptography algorithms like RSA easy to crack. (The video is set to play only a segment from the middle, but feel
     free to watch the rest.)</p>
 
   <video xml:id="Yl3o236gdp8" youtube="Yl3o236gdp8" width="100%" start="249" end="480" />

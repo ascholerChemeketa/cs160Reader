@@ -1,13 +1,13 @@
 <section xml:id="limits-and-future_computability">
   <title>Computability</title>
-  <p>Before the first modern computer was even built, <term>Alan Turing</term> had proven that there are some problems
-    that are unsolvable with any conceivable mechanical calculation device - these functions are said to be <term>
+  <p>Before the first modern computer was even built, <term>Alan Turing</term> had proven that some problems
+    are unsolvable with any conceivable mechanical calculation device - these functions are said to be <term>
     uncomputable</term> as opposed to <term>computable</term> problems that can be solved by an algorithm in some finite
     number of steps.</p>
   <note>
     <p>Chapter 10 of <em>Nine Algorithms that Changed the Future</em> describes the basic idea of the proof.</p>
   </note>
-  <p>But even in the realm of functions that are theoretically computable, there are problems that are so complex to
+  <p>But even in the realm of functions that are theoretically computable, some problems are so complex to
     solve via computation that they are <term>practically uncomputable</term>. We may be able to solve simple versions
     of the problem, but as the input size grows, the time it takes to find a solution grows so fast that it rapidly
     becomes unusable.</p>

@@ -19,7 +19,7 @@
       <li>
         <term>According to your sources, what problems was the technology designed to solve?</term>
         <p>Smart locks are locks that use a cell phone app or numeric code to open a door instead of a key. In my first
-    source, the smart locks are being used on an apartment building.</p>
+    source, the smart locks are being used for an apartment building.</p>
       </li>
       <li>
         <term>According to your sources, how does the technology use computation?</term>
@@ -34,9 +34,9 @@
       </li>
       <li>
         <term>How is this use of computation harmful and who is harmed?</term>
-        <p>Residents who were forced to use the system lost privacy<mdash/>both the building and a third party would have
-    records of their coming and going. And residents who lacked a working cell phone were potentially locked out of
-    their building<mdash/>having your cell phone run out of battery before getting home is a lot more frequent for many
+        <p>Residents who were forced to use the system lost privacy <mdash/> both the building and a third party would have
+    records of their coming and going. Residents who lacked a working cell phone were potentially locked out of
+    their building <mdash/> having your cell phone run out of battery before getting home is a lot more frequent for many
     people than losing their keys.</p>
       </li>
     </ol>

@@ -11,7 +11,7 @@
     <image source="LogicCircuits/Images/switchesAnd2.png" width="45%" />
   </container>
   <p>What happens if both switches are off? If the first switch is off, the current is stopped there - it doesn’t
-    really matter what state the second one is in, we know the output will be 0. Once again we can express this as a
+    matter what state the second one is in, we know the output will be 0. Once again we can express this as a
     truth table. Note that we have the same four possible sets of inputs that we had for the OR gate: 00, 01, 10, or 11
     - any truth table describing a two-input circuit will always have those four possible inputs. What is different for
     the AND gate is the output produced by each possible set of inputs - it outputs a 1 only when both inputs are 1:</p>

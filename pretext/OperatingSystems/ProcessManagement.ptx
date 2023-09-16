@@ -2,9 +2,9 @@
   <title>Process Management</title>
   <p>A computer program is just a static collection of code and data. Once we start running a program, there is dynamic
     information associated with that particular run of the program - things like the current instruction, the values
-    that are stored in memory and the input the user has given. The word <term>process</term> refers to a computer
+    that are stored in memory, and the input the user has given. The word <term>process</term> refers to a computer
     program and the dynamic state associated with a particular execution of that program.</p>
-  <p>Most modern operating systems are capable of <term>multi-tasking</term>, that is to say running more than one
+  <p>Most modern operating systems are capable of <term>multi-tasking</term>, that is to say, running more than one
     process at a time. Multiple programs can be running at the same time (including multiple copies of the same
     program). On a computer with a single processor core, only one of these processes can be running at any given time.
     The other processes all have to sit in a <q>ready queue</q> waiting their turn to run. Processes that are
@@ -29,8 +29,7 @@
   <sidebar>
     <title>What’s Happening?</title>
     <p>You can check what processes are currently running on your computer (and manage them) by pressing <em>
-      ctrl-shift-esc</em> (Windows) or <em>command + option + escape</em> (OSX). On Windows then click <q>More
-      details</q>.</p>
+      ctrl-shift-esc</em> (Windows) or <em>command + option + escape</em> (OSX).</p>
     <p>You will see not just the processes associated with programs you have intentionally started, but also all the
       little extra programs that started automatically when you booted the computer.</p>
   </sidebar>

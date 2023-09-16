@@ -1,54 +1,59 @@
 <section xml:id="impacts-of-computing_example-street-maps">
   <title>Example: Street Maps</title>
-  <p>This example analyzes the impacts of street map applications on society. The sources are provided as links in the
-    answers.</p>
+  <p>This example analyzes the impacts of street map applications on society. The sources are
+    provided as links in the answers.</p>
 
-  <p>Answers to questions: 
-    <ol marker="A">
+  <p>Answers to questions: <ol marker="A">
       <li>
         <term>According to your sources, what problems was the technology designed to solve?</term>
-        <p>Street map software, such as the original <url href="https://en.wikipedia.org/wiki/MapQuest"
+        <p>Street map software, such as the original <url
+            href="https://en.wikipedia.org/wiki/MapQuest"
             visual="https://en.wikipedia.org/wiki/MapQuest">MapQuest</url>, the dominant <url
-            href="https://en.wikipedia.org/wiki/Google_Maps" visual="https://en.wikipedia.org/wiki/Google_Maps">Google
-    Maps</url>, and the open-content <url href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap"
-            visual="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</url>, allow users to browse
-    maps on the web and plan driving routes. They often have other features, such as searching for businesses in a
-    particular geographical area, planning trips with multiple stops, and predicting traffic.</p>
+            href="https://en.wikipedia.org/wiki/Google_Maps"
+            visual="https://en.wikipedia.org/wiki/Google_Maps">Google Maps</url>, and the
+    open-content <url href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap"
+            visual="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</url>,
+    allow users to browse maps on the web and plan driving routes. They often have other features,
+    such as searching for businesses in a particular geographical area, planning trips with multiple
+    stops, and predicting traffic.</p>
       </li>
       <li>
         <term>According to your sources, how does the technology use computation?</term>
 
-        <p>The main data used is a spatial description of the map itself, including not only the coordinates of
-    significant landmarks and turns in the road, but often detailed descriptions of shapes. That information is rendered
-    into map tiles that can be presented to a user. Most street map software also has some integration with top-down
-    satellite imagery to present a different view. Google Maps offers <url
+        <p>The main data used is a spatial description of the map itself, including not only the
+    coordinates of significant landmarks and turns in the road, but often detailed descriptions of
+    shapes. That information is rendered into map tiles that can be presented to a user. Most street
+    map software also has some integration with top-down satellite imagery to present a different
+    view. Google Maps offers <url
             href="https://en.wikipedia.org/wiki/Google_Street_View"
-            visual="https://en.wikipedia.org/wiki/Google_Street_View">Street View</url>, which allows users to view some
-    locations as though standing nearby, using VR stitching to assemble hypothetical views out of photography gathered
-    by Google.</p>
+            visual="https://en.wikipedia.org/wiki/Google_Street_View">Street View</url>, which
+    allows users to view some locations as though standing nearby, using VR stitching to assemble
+    hypothetical views out of photography gathered by Google.</p>
       </li>
       <li>
         <term>How is this use of computation beneficial and who benefits?</term>
-        <p>Access to detailed, accurate street maps that can be accessed on the web and shared has many benefits.
-    Software predictions about driving times are more precise than estimating distances on a paper map, and can
-    incorporate live information about traffic and construction. Street View is a useful feature for people who navigate
-    visually to be able to recognize landmarks along their route, and has been leveraged to make unexpected new
-    applications including <url
-            href="https://www.geoguessr.com/" visual="https://www.geoguessr.com/">games</url>. Businesses can leverage
-    their appearance on the map to attract customers. People can share locations and directions for a variety of
-    meetings.</p>
+        <p>Access to detailed, accurate street maps that can be accessed on the web and shared has
+    many benefits. Software predictions about driving times are more precise than estimating
+    distances on a paper map and can incorporate live information about traffic and construction.
+    Street View is a useful feature for people who navigate visually to be able to recognize
+    landmarks along their route, and has been leveraged to make unexpected new applications
+    including <url
+            href="https://www.geoguessr.com/" visual="https://www.geoguessr.com/">games</url>.
+    Businesses can leverage their appearance on the map to attract customers. People can share
+    locations and directions for a variety of meetings.</p>
       </li>
       <li>
         <term>How is this use of computation harmful and who is harmed?</term>
-        <p>There is also harm to both people who use the map and people whose locations appear on the map. Street View
-    suffers from many <url href="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns"
-            visual="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns">privacy concerns</url>. Coverage
-    of street map software is incomplete, and some locations do not appear or<mdash/>worse<mdash/>appear wrongly, so that
-    people relying on the software are <url
+        <p>There is also harm to both people who use the map and people whose locations appear on
+    the map. Street View suffers from many <url
+            href="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns"
+            visual="https://en.wikipedia.org/wiki/Google_Street_View_privacy_concerns">privacy
+    concerns</url>. Coverage of street map software is incomplete, and some locations do not appear
+    or<mdash />worse<mdash />appear wrongly, so that people relying on the software are <url
             href="https://web.archive.org/web/20091207222555/http://www.generalwarren.com/directions/directions.html"
             visual="https://web.archive.org/web/20091207222555/http://www.generalwarren.com/directions/directions.html">led
-    away from their destinations</url>. Cartography is complex, and by relying on software, people lose the skills of
-    making and reading maps.</p>
+    away from their destinations</url>. Cartography is complex, and by relying on software, people
+    lose the skills of making and reading maps.</p>
       </li>
     </ol>
   </p>

@@ -21,7 +21,7 @@
 </input>
     </program>
   </sidebyside>
-  <p>Depending on the timing, we could end up with 15, 6 or 16 stored as the value for <c>x</c>! How? Well, we know that
+  <p>Depending on the timing, we could end up with 15, 6, or 16 stored as the value for <c>x</c>! How? Well, we know that
     each worker will do their three steps in order, but we have no guarantee on the relative ordering between the two
     workers.</p>
   <p>
@@ -33,11 +33,11 @@
         <p>B finishes completely (<c>x</c> now 6) and then A goes (<c>x</c> now 16)</p>
       </li>
       <li>
-        <p>A1 runs, program A gets 5. B1 runs, B gets 5. B finishes steps 2 and 3, (<c>x</c> now is 6). Then A finishes
+        <p>A1 runs, and program A gets 5. B1 runs, and B gets 5. B finishes steps 2 and 3, (<c>x</c> now is 6). Then A finishes
           steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 15)</p>
       </li>
       <li>
-        <p>A1 runs, program A gets 5. B1 runs, B gets 5. A finishes steps 2 and 3, (<c>x</c> now is 15). Then B finishes
+        <p>A1 runs, and program A gets 5. B1 runs, and B gets 5. A finishes steps 2 and 3, (<c>x</c> now is 15). Then B finishes
           steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 6)</p>
       </li>
     </ul>
@@ -61,8 +61,8 @@
       no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2
       there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.</p>
     <p>Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked
-      resource is serial - only one worker can do anything with the resource at a time. The more time code spends
-      working within locks, the less able workers are to run in parallel. Second, we introduce the possibility for a <term>
+      resource is serial - only one worker can do anything with the resource at a time. The more time the code spends
+      working within locks, the less able workers are to run in parallel. Second, we introduce the possibility of a <term>
       deadlock</term>. Say we have two workers that both need to use two locked resources, X and Y to complete their
       work. We could end up in a situation where each is waiting for the other to release a lock it needs:</p>
     <figure>
@@ -76,7 +76,7 @@
           <title>Mutual Exclusion</title>
 
           <p>Only one worker can access a resource at a time. Any time we allow locks, this will be met. Only by
-            allowing both workers to access the resource at the same time can we avoid this.</p>
+            allowing both workers to access the resource at the same time can avoid this.</p>
         </li>
         <li>
           <title>Hold and wait</title>

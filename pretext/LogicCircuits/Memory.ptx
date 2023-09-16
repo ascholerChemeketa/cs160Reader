@@ -1,10 +1,11 @@
 <section xml:id="logic-circuits_remembering-things">
   <title>Remembering Things</title>
-  <p>In previous circuits we have seen, every path has gone strictly left to right. But we can take the output of a gate
-    and feed it back in as the inputs to earlier gates. This is the secret behind building a <q>memory</q>
-    circuit: feeding the output back into the circuit produces a loop that <q>remembers</q> a value. The circuit
-    below uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes right after an OR). Notice how the
-    output of each NOR gate feeds back as an input to the other gate.</p>
+  <p>In previous circuits we have seen, the flow of power has gone strictly left to right. But we
+    can take the output of a gate and feed it back in as the inputs to earlier gates. This is the
+    secret behind building a <q>memory</q> circuit: feeding the output back into the circuit
+    produces a loop that <q>remembers</q> a value. The circuit below uses two NOR gates (NOR is
+    short for Not OR, which is a NOT gate that comes right after an OR). Notice how the output of
+    each NOR gate feeds back as an input to the other gate.</p>
   <p>
     <raw format="html" xml:space="preserve">
             <script src="external/LogicCircuits/simcir/simcir.js"></script>
@@ -19,26 +20,26 @@
   <p>
     <ul>
       <li>
-        <p>Turn on Input 1 - this <term>Sets</term> the memory to 1. (Setting this input to on does nothing if the
-          memory is already 1.)</p>
+        <p>Turn on Input 1 - this <term>Sets</term> the memory to 1. (Setting this input to on does
+          nothing if the memory is already 1.)</p>
       </li>
       <li>
         <p>Turn off Input 1. Notice that the memory stays on even though both switches are off.</p>
       </li>
       <li>
-        <p>Turn on Input 2 - this <term>Resets</term> the memory to 0. (Setting this input to on does nothing if the
-          memory is already 0.)</p>
+        <p>Turn on Input 2 - this <term>Resets</term> the memory to 0. (Setting this input to on
+          does nothing if the memory is already 0.)</p>
       </li>
       <li>
         <p>Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.</p>
       </li>
     </ul>
   </p>
-  <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we
-    want to remember <term>1</term>, we flip <term>Input1</term> on briefly. To remember <term>0</term>, we flip <term>
-    Input2</term> on briefly.</p>
-  <p> There are many other circuits that can <q>remember</q> a value, but they all use this same basic idea of
-    feeding outputs back in as inputs. To remember more than one bit, we would simply need to make multiple copies of
-    this circuit, one for each bit we need to store.</p>
+  <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a
+    form of memory: If we want to remember <term>1</term>, we flip <term>Input1</term> on briefly.
+    To remember <term>0</term>, we flip <term> Input2</term> on briefly.</p>
+  <p>Many other circuits can <q>remember</q> a value, but they all use this same basic 
+    idea of feeding outputs back in as inputs. To remember more than one bit, we would simply
+    need to make multiple copies of this circuit, one for each bit we need to store.</p>
 </section>
 

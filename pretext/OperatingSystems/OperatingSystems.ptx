@@ -2,10 +2,10 @@
   <title>Operating System Varieties</title>
   <p>An operating system is a complex program that keeps the hardware and software components of a computer system
     coordinated. Usually, it is the only program that has full access to the computer hardware - its primary task is to
-    manage that hardware and control the ways in which other programs can make use of it.</p>
+    manage that hardware and control how other programs can make use of it.</p>
   <p>Although the simplest microprocessors (like those inside simple electronic devices) may not have an operating
     system, every complex modern computational device uses one. There are a wide range of operating systems, some
-    specialized for running personal computers, others for smartphones and others for more specialized hardware. How
+    specialized for running personal computers, others for smartphones, and others for more specialized hardware. How
     many of the operating system logos do you recognize in the image below?</p>
   <figure>
     <image source="OperatingSystems/Images/operating-system-logos.jpg" width="50%" />

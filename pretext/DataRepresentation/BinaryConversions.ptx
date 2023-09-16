@@ -3,7 +3,7 @@
   <p>Almost always, there is more than one possible algorithm to solve a problem; converting numbers from Binary to
     Decimal and back is no exception. We are going to look at two different approaches: <term>use of a table of powers
     of 2</term> and <term>repeated multiplication/division by 2</term>. Although the table method shown on this page is
-    the most straightforward method, the division/multiplication method shown on the next page is important to
+    the most straightforward one, the division/multiplication method shown on the next page is important to
     understand because it is easier to express as an algorithm that a computer can execute.</p>
   <subsection xml:id="data-representation_binary-to-decimal">
     <title>Binary to Decimal</title>

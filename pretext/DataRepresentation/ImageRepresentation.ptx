@@ -59,7 +59,7 @@
   <p>And end up with this image:</p>
   <image source="DataRepresentation/Images/circlecolor.png" width="80%%" alt="2-bit color circle" />
   <p>If we want more than 4 colors, we just need more than 2 bits. With 8 bits per pixel, we can represent <m>2^8 = 256</m>
-    different colors or shades of gray. This is sufficient for a black and white photograph but does not allow for
+    different colors or shades of gray. This is sufficient for a black-and-white photograph but does not allow for
     subtle shades of color in a photograph. For full-color images, 24 bits are usually used per pixel, allowing for <m>2^{24}
     = 16,777,216</m> different colors.</p>
   <p>Real images, of course, use a much greater number of pixels than we have seen here. For example, a 12-megapixel

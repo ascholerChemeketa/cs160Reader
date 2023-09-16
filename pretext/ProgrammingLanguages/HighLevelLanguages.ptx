@@ -6,7 +6,7 @@
   <p><term>High-level programming</term> languages were invented to abstract away the details of machine code and help
     programmers to concentrate on problem-solving. While it might take 3 or 4 lines of code to add two numbers using
     assembly language, this task could be accomplished with a single instruction in a high-level programming language
-    like C++, Java or Python. With a high-level language, a programmer creates a program using powerful,
+    like C++, Java, or Python. With a high-level language, a programmer creates a program using powerful,
     <q>big</q> operations which will later be converted into many little machine operations.</p>
 
   <p>Programs written in a high-level language must be converted into machine

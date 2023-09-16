@@ -2,7 +2,7 @@
   <title>Tables of Records</title>
 
   <p>Say you are conducting research about bike sharing for an internship in Washington D.C. You are given the Capital
-    Bike Sharing dataset, contains information on Washington D.C.’s bike share program for 2011. The database has
+    Bike Sharing dataset, which contains information on Washington D.C.’s bike share program for 2011. The database has
     hundreds of thousands of records about every ride that anyone took and you would like to look for patterns in the
     data to understand questions like: <q>How long is the average ride?</q> and <q>Where is the most popular
     place to start a ride?</q></p>

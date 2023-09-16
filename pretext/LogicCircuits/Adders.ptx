@@ -18,10 +18,10 @@
   <p>Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the
     logical question <q>Are both the inputs ON?</q> (AND gate) - if so, we should have indicated that the answer
     has a 2 in it. The 1s output answers the question <q>Is only one of the inputs ON?</q> (EOR gate - remember
-    EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions does the same
-    work as counting the number of inputs that are on and expressing the answer as a binary number!</p>
+    EOR is another name for XOR) - if so, the binary answer has a 1. The answer to those logical questions produces the same
+    result as counting the number of inputs that are on and expressing the answer as a binary number!</p>
   <p>The truth table for this circuit would have two output columns and look like the one shown below. Notice that there
-    are two ways to get an output 01 (the number 1) - either have the first input on and second input off or vice versa.</p>
+    are two ways to get an output 01 (the number 1) - either have the first input on and the second input off or vice versa.</p>
 
     <tabular halign="center">
       <row header="yes" bottom="minor">
@@ -63,7 +63,7 @@
   </important>
 
   <p>The circuit shown above is known as a <term>half adder</term>. To add larger numbers, we need a <term>full adder</term>
-    - a full adder is two half adders merged together with an OR gate. The circuit takes three inputs - two of the
+    - a full adder is two half adders merged with an OR gate. The circuit takes three inputs - two of the
     inputs are current values being added (A and B); the third input indicates whether or not there is a carry coming in
     from the previous column. The two outputs indicate the answers to the questions <q>Does this column have a 1 in
     the answer?</q> and <q>Do we need to carry a 1 to the next column?</q>.</p>

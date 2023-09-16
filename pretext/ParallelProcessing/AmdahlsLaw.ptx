@@ -7,20 +7,20 @@
     that are <term>parallel</term> (that can be done at the same time or even out of order). Say I have a giant pile of
     index cards with definitions written on them. I want to find one with information about Amdahl’s Law and add
     facts from it to this page but the cards are all jumbled up. Fortunately, I have 4 friends with me. I could divide
-    up the cards, give each person a pile and tell them what to look for. Then all five of us could search our pile.
+    up the cards, give each person a pile, and tell them what to look for. Then all five of us could search our pile.
     Once someone finds the right card, they can announce it and give it back for me to use. This program might look
     like:</p>
   <program language="none">
     <input>
-Divide pile up into 5 stacks                                        Serial
+Divide the pile up into 5 stacks                                    Serial
 Hand out one stack to each person and announce what to look for     Serial
-Everyone look for the card                                          Parallel
+Everyone looks for the card                                         Parallel
 Give the card to me                                                 Serial
 Add fact to page                                                    Serial
 </input>
   </program>
   <p>Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles,
-    communicating and typing up the fact will not go any faster. I could add 95 more friends and cut the
+    communicating and typing up the facts will not go any faster. I could add 95 more friends and cut the
     <q>looking</q> phase down to 1/100th of the original time, but that won’t help me type the information
     we find up any faster. We can speed up parallel parts by doing them simultaneously, but serial portions can not be
     sped up.</p>
@@ -65,12 +65,12 @@ Add fact to page                                                    Serial
         0.20} = \frac{1}{0.60} = 1.67</mrow>
     </md>
   </p>
-  <p>40% of the work still must be done in serial. The 60% that is parallel will only take 20% or the original total
+  <p>40% of the work still must be done in serial. The 60% that is parallel will only take 20% of the original total
     time. Thus, the work gets done in 60% of the original time or a speedup of 1.67 times.</p>
   <p>Better, but we are already seeing the diminishing returns of multiple workers. The first extra worker made the
     process 43% faster - the second extra worker only increased by 24% more. If we try putting 60 workers into that
     formula it predicts a total speedup of only 2.43x over one worker! Even an infinite number of workers would only
-    speed things up by a factor 2.5 times<ellipsis/> because 40% of the job is serial it can never be done in less time than
+    speed things up by a factor of 2.5 times<ellipsis/> because 40% of the job is serial it can never be done in less time than
     that.</p>
   <p>The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions.</p>
   <figure>
@@ -85,7 +85,7 @@ Add fact to page                                                    Serial
   <p>In fact, Amdahl’s law is too optimistic! In general, each worker (core) you add increases the total amount of
     work to do. Thinking back to the earlier example of organizing note cards, imagine the difference between managing 4
     helpers and 99. It would take significantly more time to split up and distribute work to 99 people. If the pile of
-    cards was large enough, we would probably still come out ahead, but at some point adding more workers will start to
+    cards were large enough, we would probably still come out ahead, but at some point adding more workers will start to
     slow us down. There are many such ways in which adding workers can increase the work that needs to be done:</p>
   <p>
     <ul>

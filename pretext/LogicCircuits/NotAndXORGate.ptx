@@ -44,7 +44,7 @@
   <p>It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents
     <q>the first number negative</q> and input 2 represents <q>the second number is negative</q>, then <term>
     XOR</term>’s output would tell us <q>Is the answer negative</q>. If either one of the two numbers, but
-    not both of them, were negative, then the answer will be negative.</p>
+    not both of them, were negative, then the answer would be negative.</p>
   <p>Watch out for <term>XOR</term> and <term>OR</term> - in English we often use the word <q>or</q> to mean both
     things. The statement <q>Entrées come with fries <em>or</em> a salad</q> probably means you can get one
     or the other, but not both. In that statement, <em>or</em> means the <term>XOR</term> rule. On the other hand,
@@ -79,7 +79,7 @@
     value for <q>it is not raining</q>. Anytime we want to say <q>We do not have X</q> we can say
     <q>NOT X</q>.</p>
   <p>Because the NOT rule applies to only one input, it can be applied to a single-bit pattern like 0101. To figure out
-    the answer, simply <q>flip</q> every bit from 1 to 0 or vice verse:</p>
+    the answer, simply <q>flip</q> every bit from 1 to 0 or vice versa:</p>
   <table xml:id="logic-circuits_id3">
     <title>NOT of 0101</title>
     <tabular row-headers="yes" halign="center">
@@ -105,7 +105,7 @@
   <note>
     <p>People refer to an AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate
       produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in
-      every other case. Similarly, a NOR is an OR followed by a NOT and an XNOR (or ENOR) is a NOT after an XOR. You are
+      every other case. Similarly, a NOR is an OR followed by a NOT, and an XNOR (or ENOR) is a NOT after an XOR. You are
       not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what
       they are.</p>
   </note>
