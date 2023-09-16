@@ -3,7 +3,7 @@
   <p>You undoubtedly have recognized that there are some similarities to drawing shapes like the square or hexagon. It
     turns out there is a general pattern to drawing any regular (all sides are the same length and all angles are the
     same size) geometric shape.</p>
-  <p>Let&#8217;s look at a few more examples. Here&#8217;s a triangle:</p>
+  <p>Let’s look at a few more examples. Here’s a triangle:</p>
 
   <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
     <input>
@@ -18,7 +18,7 @@ for side in range(3):
 avery.end_fill()
         </input>
   </program>
-  <p>And here&#8217;s a pentagon:</p>
+  <p>And here’s a pentagon:</p>
 
   <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
     <input>
@@ -33,7 +33,7 @@ for side in range(5):
 will.end_fill()
         </input>
   </program>
-  <p>Notice that the only code that is &#8220;inside&#8221; the <c>for</c> loop (indented after it) are the parts we want
+  <p>Notice that the only code that is <q>inside</q> the <c>for</c> loop (indented after it) are the parts we want
     to repeat. We only want to <c>end_fill</c> once, so it is not indented. It is not part of the code that is repeated.</p>
   <p>The only two things that are different between the two programs are the number of repetitions in the loop, and the
     angle that the turtle turns.</p>
@@ -104,7 +104,7 @@ mia.end_fill()
 
   </exercise>
   <p>Now that we have identified a pattern, it is a bit silly to write separate functions like <c>square</c> and <c>dodecagon</c> for
-    all the shapes. They are all basically the same and we don&#8217;t like repeating ourselves.</p>
+    all the shapes. They are all basically the same and we don’t like repeating ourselves.</p>
   <p>In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure that can draw any <c>polygon</c>.
     It will take parameters to control how many sides there are and how long to make each side.</p>
   <exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="hide" language="python">

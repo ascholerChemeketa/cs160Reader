@@ -124,7 +124,7 @@ ORDER BY
           ended at the same station.</p>
         <p>Again, start simple and build your way to the correct query. Start by selecting all columns so you can see
           what data you are getting as you work on the <c>WHERE</c> and <c>ORDER BY</c>.</p>
-        <p>Hint: both sides of the WHERE&#8217;s condition can be column names. If I wanted to find a record where the
+        <p>Hint: both sides of the WHERE’s condition can be column names. If I wanted to find a record where the
           start and end date were the same I could do: <c>WHERE start_date == end_date</c></p>
 
       </statement>

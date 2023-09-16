@@ -4,7 +4,7 @@
     tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count
     of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.</p>
   <figure xml:id="prehistory-img1">
-    <caption>&#169; Marie-Lan Nguyen / Wikimedia Commons</caption>
+    <caption><copyright/> Marie-Lan Nguyen / Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/Accountancy_clay_envelope_Louvre_Sb1932.jpg"
       width="50%" alt="Counting stones" />
     <legend>
@@ -57,7 +57,7 @@
       <image source="HistoryOfComputers/Images/Leibniz_binary_system_1703.png" width="50%"
         alt="Leibniz notes" />
       <legend>
-        <p>Leibniz&#8217;s notes on binary numbers</p>
+        <p>Leibniz’s notes on binary numbers</p>
       </legend>
     </figure>
   </container>

@@ -15,8 +15,8 @@ for number in range(0, 100, 2):
 print(sum)
         </input>
   </program>
-  <p>If you don&#8217;t already know what the correct answer should be, it is hard to tell that this program does not
-    work correctly. How do we know what&#8217;s really going on in this program? If we had written it, what could we do to
+  <p>If you don’t already know what the correct answer should be, it is hard to tell that this program does not
+    work correctly. How do we know what’s really going on in this program? If we had written it, what could we do to
     verify it?</p>
   <p>Here are some things we could do to check our program:</p>
   <p>
@@ -78,7 +78,7 @@ print(sum)
           <p>The loop is not actually iterating through even numbers</p>
         </statement>
         <feedback>
-          <p>Try using one of the strategies... You should see only even numbers</p>
+          <p>Try using one of the strategies<ellipsis/> You should see only even numbers</p>
         </feedback>
       </choice>
     </choices>

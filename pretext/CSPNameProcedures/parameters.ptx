@@ -29,7 +29,7 @@ hop(sue)     # a procedure call using the sue turtle as the argument
   <note>
     <p>Some people call <term>parameters</term> the <term>formal parameters</term> and <term>arguments</term> the <term>actual
       parameters</term>. We will stick to <term>parameters</term> and <term>arguments</term> to avoid confusion about
-      what we mean when we just say <em> &#8220;parameters&#8221;</em>.</p>
+      what we mean when we just say <em> <q>parameters</q></em>.</p>
   </note>
   <p>Try running this program below. It defines the <c>hop</c> procedure. Then, the main part of the program makes two
     turtles, has them mark their starting location, then has them each do a hop before doing a forward movement.</p>

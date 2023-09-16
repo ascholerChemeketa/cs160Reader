@@ -1,7 +1,7 @@
 <section xml:id="data-representation_number-systems-binary">
   <title>Number Systems &amp; Binary</title>
   <p>You have been using the decimal number system for so long that you probably no longer often stop to think about
-    what the individual digits mean. You see 134 and recognize it as &#8220;one hundred thirty-four&#8221;. 134 has that
+    what the individual digits mean. You see 134 and recognize it as <q>one hundred thirty-four</q>. 134 has that
     value because each digit in the number represents a multiple of some power of 10:</p>
   <table>
     <title>"134" base 10</title>
@@ -75,10 +75,10 @@
     </tabular>
   </table>
   <p><term>101</term> in binary means <term>1</term> * 4 + <term>0</term> * 2 + <term>1</term> * 1 = 5</p>
-  <p>Notice that since each digit can only be a 1 or a 0, we don&#8217;t actually need to multiply. A 1 indicates we
-    have the value for that column and a 0 indicates we don&#8217;t. So <term>101</term> in binary simply means 4 + 1 =
-    5 because the first 1 is in the &#8220;fours&#8221; column and the second 1 is in the &#8220;ones&#8221; column.</p>
-  <p>Because things can get confusing when we are talking about different bases (does &#8220;101&#8221; mean the binary
+  <p>Notice that since each digit can only be a 1 or a 0, we don’t actually need to multiply. A 1 indicates we
+    have the value for that column and a 0 indicates we don’t. So <term>101</term> in binary simply means 4 + 1 =
+    5 because the first 1 is in the <q>fours</q> column and the second 1 is in the <q>ones</q> column.</p>
+  <p>Because things can get confusing when we are talking about different bases (does <q>101</q> mean the binary
     number that represents 5 or the decimal number 101?), we often use a subscript to indicate the base of the number
     being represented. Thus <m>101_{10}</m> indicates the decimal number 101 and <m>101_{2}</m> indicates a binary
     number with the value 5.</p>
@@ -224,7 +224,7 @@
           <p>7</p>
         </statement>
         <feedback>
-          <p>The 7th column would represent 2 to the 6th power or 64... we don't need that</p>
+          <p>The 7th column would represent 2 to the 6th power or 64<ellipsis/> we don't need that</p>
         </feedback>
       </choice>
 

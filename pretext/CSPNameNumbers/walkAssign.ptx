@@ -1,6 +1,6 @@
 <section xml:id="csp-name-numbers_walking-through-assignment-more-generally">
     <title>Walking through Assignment more Generally</title>
-    <p>Let&#8217;s explore assignment in general. Try tracing this example.</p>
+    <p>Let’s explore assignment in general. Try tracing this example.</p>
 
     <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing1"> </listing>
     <program xml:id="cspnamenumbers_walkassign1" interactive="codelens" language="python">
@@ -59,7 +59,7 @@ d = b
         </choices>
 
     </exercise>
-    <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn&#8217;t create some kind of
+    <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn’t create some kind of
         relationship between the names, like in mathematics. The variable <c>a</c> might equal <c>12</c> at one point, and <c>15</c>
         at another. An assignment statement is an action that occurs once, and then is over with.</p>
 
@@ -121,8 +121,8 @@ var2 = var1
         </choices>
 
     </exercise>
-    <p>We can see values (including the values for named variables) by printing them. It&#8217;s a useful way to see
-        what&#8217;s going on inside a program. Try running this example where we&#8217;re having the computer calculate
+    <p>We can see values (including the values for named variables) by printing them. It’s a useful way to see
+        what’s going on inside a program. Try running this example where we’re having the computer calculate
         the number of days in three weeks:</p>
 
     <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing3">

@@ -43,8 +43,8 @@
   </exercise>
   <exercise label="cspcollectionsintro_exercises2">
     <statement>
-      <p>Write code to change the first item to &#8220;February&#8221;, to add &#8220;April&#8221; between
-        &#8220;March&#8221; and &#8220;May&#8221;, and to remove &#8220;August&#8221;.</p>
+      <p>Write code to change the first item to <q>February</q>, to add <q>April</q> between
+        <q>March</q> and <q>May</q>, and to remove <q>August</q>.</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises2_editor" interactive="activecode" language="python">
@@ -110,7 +110,7 @@
     <statement>
       <p>Write code for the function <c>freezeDays</c>. It should take a list of temperatures <c>temps</c> (in degrees F) and return
         the number of days that were below 32 degrees.</p>
-      <p>Hint: You may want to start by printing out each temperature and a &#8220;freeze&#8221; or &#8220;no&#8221;
+      <p>Hint: You may want to start by printing out each temperature and a <q>freeze</q> or <q>no</q>
         message to make sure you can identify the right temperatures. Then worry about counting how many there were.</p>
       <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
 
@@ -141,11 +141,11 @@
   <exercise label="cspcollectionsintro_exercises5">
     <statement>
       <p>Write code for the function <c>getGPA</c>. It should figure out the GPA for a list of <c>grades</c> that looks like
-        [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;].</p>
+        [<q>A</q>, <q>A</q>, <q>C</q>].</p>
       <p>To calculate the GPA, you need to add up the values of all the grades. An A is 4, a B is 3, a C is 2, a D is 1,
         and an F is 0. Then divide by the number of grades in the list.</p>
       <p>Hint: Work on part of the problem at a time. First write some if logic that just prints the correct value for
-        each grade (4, 4, 2 for [&#8220;A&#8221;, &#8220;A&#8221;, &#8220;C&#8221;]). Then worry about getting the total
+        each grade (4, 4, 2 for [<q>A</q>, <q>A</q>, <q>C</q>]). Then worry about getting the total
         of them. Once that is working, worry about dividing by the number of items.</p>
       <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
 

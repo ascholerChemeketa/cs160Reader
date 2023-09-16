@@ -1,12 +1,12 @@
 <section xml:id="algorithms_merge-sort-compared">
   <title>Merge Sort Compared</title>
-  <p>We have established that the Merge Sort algorithm requires <m>O(n&#183;log_2(n))</m> work to sort a list of size <term>
-    n</term>. How does that compare to Insertion and Selection sort that are <m>O(n^2)</m>?</p>
-  <p>Below is a graph of the growth of <m>n^2</m> and <m>n&#183;log_2(n)</m>:</p>
+  <p>We have established that the Merge Sort algorithm requires <m>O(n \cdot log_2(n))</m> work to sort a list of size <term>
+    n</term>. How does that compare to Insertion Sort and Selection Sort, which are <m>O(n^2)</m>?</p>
+  <p>Below is a graph of the growth of <m>n^2</m> and <m>n \cdot log_2(n)</m>:</p>
 
   <image source="Algorithms/Images/Sorts.svg" />
 
-  <p>Obviously, <m>n^2</m> grows much faster than <m>n&#183;log_2(n)</m>. Looking at the table below, we can see that
+  <p>Obviously, <m>n^2</m> grows much faster than <m>n \cdot log_2(n)</m>. Looking at the table below, we can see that
     sorting 500 items with Insertion Sort (<m>O(n^2)</m>) would take somewhere around 250,000 units of work. Doing the
     same task with Merge Sort would only take around 4,483 units of work!</p>
 
@@ -49,10 +49,10 @@
 
   </tabular>
   <p>Using the Big-O classification of each algorithm like this gives us a rough estimate of the work. We are ignoring
-    constant factors that may change the exact numbers (especially for low values of n). Merge Sort has more basic
+    constant factors that may change the exact numbers (especially for low values of n). Merge Sort has a greater basic
     overhead than Insertion Sort (for example, we have to copy items to and from a second list) - if you are solving
     small problems it may take more time to run than Insertion Sort due to this. But we know that as <term>n</term>
-    grows larger the basic pattern is going to hold - <m>O(n^2)</m> is going to grow faster than <m>O(n&#183;log_2(n))</m>,
+    grows larger the basic pattern is going to hold - <m>O(n^2)</m> is going to grow faster than <m>O(n \cdot log_2(n))</m>,
     so Merge Sort will certainly be faster out for large values of <term>n</term>.</p>
   <p>Below, you can use the Sort Timer to simulate running sorts of different sizes using the two algorithms. You can
     use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort

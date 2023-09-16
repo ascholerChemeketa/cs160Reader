@@ -79,9 +79,9 @@ if x &gt; 0:
             number, and 0 to check that it works correctly.</p>
         
         
-        <p>Although that approach works, it doesn&#8217;t really guarantee that only one option will be chosen. If
-            the first if said <c>x &lt;= 0</c>, we would print both &#8220;x is negative&#8221; and &#8220;x is 0&#8221;. To guarantee that
-            only one option is chosen, we can use <c>elif</c> (short for &#8220;<term>el**se **if</term>&#8221;). <c>elif</c> is used
+        <p>Although that approach works, it doesn’t really guarantee that only one option will be chosen. If
+            the first if said <c>x &lt;= 0</c>, we would print both <q>x is negative</q> and <q>x is 0</q>. To guarantee that
+            only one option is chosen, we can use <c>elif</c> (short for <q><term>el**se **if</term></q>). <c>elif</c> is used
             after an <c>if</c> or another <c>elif</c> to specify something to try if the previous conditions were not True:</p>
         <pre>if TEST1:
     # if body
@@ -95,7 +95,7 @@ else:
             elifs and the else are skipped. If <c>TEST1</c> is False, we check <c>TEST2</c>. If it is true, we do the
             first elif body and then skip the second elif and the else. If <c>TEST2</c> is also false, we move to
             <c>TEST3</c>. If it too ends up as false, we finally do the else.</p>
-        <p>Note that although we can have as many <c>elif</c>&#8217;s as we want, we can only have one <c>else</c>. It must
+        <p>Note that although we can have as many <c>elif</c>’s as we want, we can only have one <c>else</c>. It must
             always come last and does not have a condition. The <c>else</c> is what runs if everything else fails
             to run.</p>
         <p>Here is the positive/negative check rewritten with elif:</p>

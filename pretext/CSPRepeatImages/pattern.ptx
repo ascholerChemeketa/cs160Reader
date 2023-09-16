@@ -58,12 +58,12 @@ img.draw(win)
       <li>
         <p><term>GET THE DATA.</term> You could always use the STEP 4 lines just as they are above, but you
           might be able to make it shorter if you don't need all the colors. If your program just needs to 
-          work with red, you don&#8217;t have to get the green and blue values.</p>
+          work with red, you don’t have to get the green and blue values.</p>
 
       </li>
       <li>
-        <p><term>MODIFY THE COLOR.</term> This is the part that you will most often change. Here&#8217;s where you
-          change the red, green, and/or blue. You don&#8217;t have to change all of them.</p>
+        <p><term>MODIFY THE COLOR.</term> This is the part that you will most often change. Here’s where you
+          change the red, green, and/or blue. You don’t have to change all of them.</p>
 
       </li>
       <li>
@@ -200,7 +200,7 @@ img.draw(win)
           <p>Values outside of the range 0-255 are treated as 0.</p>
         </statement>
         <feedback>
-          <p>That would mean 300 red would be treated as 0, which is "no red"...  still is lots of red visible.</p>
+          <p>That would mean 300 red would be treated as 0, which is "no red"<ellipsis/>  still is lots of red visible.</p>
         </feedback>
       </choice>
 
@@ -209,7 +209,7 @@ img.draw(win)
           <p>Values outside of the range 0-255 are treated as 255.</p>
         </statement>
         <feedback>
-          <p>That would mean -100 blue would be treated as 255... but there is no blue in the image.</p>
+          <p>That would mean -100 blue would be treated as 255<ellipsis/> but there is no blue in the image.</p>
         </feedback>
       </choice>
 

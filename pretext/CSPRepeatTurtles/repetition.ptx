@@ -12,8 +12,8 @@
     </ul>
   </p>
   <p>Often times we have to repeat steps in a process. If you are making a cake the recipe might say add an ingredient
-    and then stir it 50 times or until the batter is smooth. The recipe would not say the word &#8220;stir&#8221; 50
-    times. It instead would instruct you to &#8220;stir 50 times&#8221; or &#8220;stir until smooth&#8221;.</p>
+    and then stir it 50 times or until the batter is smooth. The recipe would not say the word <q>stir</q> 50
+    times. It instead would instruct you to <q>stir 50 times</q> or <q>stir until smooth</q>.</p>
   <p>When our programs need to repeat a step or series of steps, we want to use this same trick to make the programs
     easier to write and read. While writing turtle programs, we have seen many examples of steps repeated. Here is our
     recipe for a turtle <c>alex</c> to draw a hexagon:</p>
@@ -35,9 +35,9 @@ alex.right(60)
   </program>
   <p>There are six repetitions of the <c>forward</c> and <c>right</c> commands. Although copy/paste can save us from having to type
     the lines six times, it is still not ideal. Remember that there is a general rule in programming: <term>DRY -
-    don&#8217;t repeat yourself</term>. Repeating ourselves in this case makes for a long chunk of code that is awkward
-    to read - you have to stop and think &#8220;OK, how many times is this repeating&#8230; ah, six&#8230; OK, this must
-    be a hexagon.&#8221;</p>
+    don’t repeat yourself</term>. Repeating ourselves in this case makes for a long chunk of code that is awkward
+    to read - you have to stop and think <q>OK, how many times is this repeating<ellipsis/> ah, six<ellipsis/> OK, this must
+    be a hexagon.</q></p>
 
   <p>We would like to rewrite our code to tell alex to repeat the <c>forward</c> and <c>right</c> steps 6 times each instead of
     listing them six times. We can do so with a <c>for</c> <term>loop</term>:</p>
@@ -85,7 +85,7 @@ print(sides)
             <p>The list of numbers 0 to 6</p>
           </statement>
           <feedback>
-            <p>Try running the program...</p>
+            <p>Try running the program<ellipsis/></p>
           </feedback>
         </choice>
 
@@ -94,7 +94,7 @@ print(sides)
             <p>The list of numbers 1 to 6</p>
           </statement>
           <feedback>
-            <p>Try running the program...</p>
+            <p>Try running the program<ellipsis/></p>
           </feedback>
         </choice>
 
@@ -103,7 +103,7 @@ print(sides)
             <p>The list of numbers 1 to 5</p>
           </statement>
           <feedback>
-            <p>Try running the program...</p>
+            <p>Try running the program<ellipsis/></p>
           </feedback>
         </choice>
 
@@ -119,7 +119,7 @@ print(sides)
 
     </exercise>
 
-    <p>For now, we don&#8217;t need to worry about exactly what values <c>range</c> produces. What is important is that <c>range(6)</c>
+    <p>For now, we don’t need to worry about exactly what values <c>range</c> produces. What is important is that <c>range(6)</c>
       makes a list that has 6 values. When that list is used in a <c>for</c> statement, it will cause the code to repeat 6
       times. Each repetition is called an <term>iteration</term> and will repeat all of the code indented past the <c>for</c>
       .
@@ -131,9 +131,9 @@ for side in range(6):
 </input>
     </program>
     <p>It is the name we will use for each item as we iterate through the the values <c>range</c> produces. Right now we
-      don&#8217;t really need to name those values - we don&#8217;t make use of them. But if we wanted to print out each
-      of the values that range produces, we would use <c>side</c> to refer to <term>&#8220;the value for the current
-      iteration&#8221;</term>. The program below does exactly that. In the loop, in addition to doing the turtle
+      don’t really need to name those values - we don’t make use of them. But if we wanted to print out each
+      of the values that range produces, we would use <c>side</c> to refer to <term><q>the value for the current
+      iteration</q></term>. The program below does exactly that. In the loop, in addition to doing the turtle
       commands, it prints out <c>side</c> to tell us when it starts each side of the shape.</p>
 
     <program xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
@@ -152,7 +152,7 @@ print("Done with program")
 
     <p>The <term>body</term> of a loop is the part that gets repeated. It is the lines of code after the <c>for</c> that
       are indented past the <c>for</c> itself. (Like how the body of a procedure is indented after <c>def</c>).</p>
-    <p>Notice that a blank line does not &#8220;end&#8221; the body of the <c>for</c>. Both <c>print("side is currently", side)</c> and the <c>alex.forward</c> and <c>alex.right</c>
+    <p>Notice that a blank line does not <q>end</q> the body of the <c>for</c>. Both <c>print("side is currently", side)</c> and the <c>alex.forward</c> and <c>alex.right</c>
       are part of the body and get repeated. The loop body ends at the first line that is indented to the same level as
       the <c>for</c>. In this case, the <c>print("Done with program")</c> is indented to the same level as <c>for</c>, so at that point the loop body is
       done and the line is not part of the loop. That last print will only happen one time.</p>

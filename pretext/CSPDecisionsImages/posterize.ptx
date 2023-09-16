@@ -1,8 +1,8 @@
 <section xml:id="csp-decisions-images_posterizing">
   <title>Posterizing</title>
   <p>As one last example of selectively modifying the colors in an image, we are going to <term>posterize</term> an image.  <term>Posterizing</term> is the process of changing an image so it only uses a small number of colors. (Old
-    posters had to be printed with a small number of colors - the technology didn&#8217;t allow for complex blending of colors).</p>
-  <p>This time, instead of making a function to answer a question like <lq/>is this green<rq/>, we need to make a function that will force a color value to become one of a few specific options.</p>
+    posters had to be printed with a small number of colors - the technology didn’t allow for complex blending of colors).</p>
+  <p>This time, instead of making a function to answer a question like <q>Is this green?</q>, we need to make a function that will force a color value to become one of a few specific options.</p>
 
   <exercise label="cspdecisionsimages_posterize1">
     <statement>
@@ -75,7 +75,7 @@ win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
   </input>
   </program>
-  <p>Rewrite the code for posterizing an image using if and else rather than multiple if&#8217;s. Test that it still
+  <p>Rewrite the code for posterizing an image using if and else rather than multiple if’s. Test that it still
     works correctly.</p>
 
   <exercise label="cspdecisionsimages_posterize3">

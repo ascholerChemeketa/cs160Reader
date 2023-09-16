@@ -27,11 +27,11 @@
     </figure>
   </sidebyside>
 
-  <p>Because the flags are so similar, all we need to do is change the white pixels to yellow. To do so, we need a way to
-    answer the question &#8220;is this pixel white?&#8221;. A pure white pixel has red, green, and blue values all of
+  <p>To do this, we need to change just the white pixels in the image and make them yellow. This means we need a way to
+    answer the question <q>Is this pixel white?</q>. A pure white pixel has red, green, and blue values all of
     255. A not-quite-pure white may not have 255 for each of the three values, but they will all be high, and they will
     all be very similar to each other. In comparison, a blue pixel is going to have a high blue value and low red and
-    green (potentially 0 for a &#8220;perfect&#8221; blue). A red pixel will have a high red value and low blue and
+    green (potentially 0 for a <q>perfect</q> blue). A red pixel will have a high red value and low blue and
     green ones.</p>
   <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not always going to be
     the right number to use, it just represents a value that is pretty close to maxed out without counting on all three
@@ -75,7 +75,7 @@ img.draw(win)
     turning the blue pixels into black ones. Hints: blue pixels are not perfect blue. An approximate color value is
     (red = 0, green = 100, blue = 180), but you should not count on pixels having exactly those values - come up with a
     recipe using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones. 
-    Black pixels have r, g, b values of 0.</p>
+    Black pixels have r, g, and b values of 0.</p>
 
   <image source="CSP/Images/be-flag.gif" width="20%" />
 
@@ -120,7 +120,7 @@ myTests().main()
   <exercise label="cspdecisionsimages_decimages3">
     <statement>
 
-      <p>Which recipe is reasonable for checking for &#8220;is it a blue pixel&#8221; for the flag of Chad?</p>
+      <p>Which recipe is reasonable for checking for <q>is it a blue pixel</q> for the flag of Chad?</p>
 
     </statement>
     <choices>

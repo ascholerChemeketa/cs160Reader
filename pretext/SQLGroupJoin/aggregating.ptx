@@ -1,7 +1,7 @@
 <section xml:id="sql-group-join_aggregating-data">
   <title>Aggregating Data</title>
 
-  <p>Say we want data about how many rides lasted longer than an hour. At this point we don&#8217;t care about where
+  <p>Say we want data about how many rides lasted longer than an hour. At this point we don’t care about where
     they started, or which bike they were on, we just want to know how many such rides there were. To ask for the total
     number of records a query finds, we can select <c>COUNT(*)</c>.</p>
 
@@ -14,7 +14,7 @@ FROM
         </input>
   </program>
   <p>The <c>AS</c> keyword is used after <c>COUNT(*)</c> to give the data that is returned a name. If we leave it off, the
-    &#8220;column&#8221; of data will just be labeled <c>COUNT(*)</c>. Calling it <c>number_rides</c> makes it much clearer what we are
+    <q>column</q> of data will just be labeled <c>COUNT(*)</c>. Calling it <c>number_rides</c> makes it much clearer what we are
     looking at.</p>
 
   <exercise label="sqlgroupjoin_aggregating2">

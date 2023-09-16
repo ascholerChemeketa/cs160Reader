@@ -2,7 +2,7 @@
   <title>Order and Indentation</title>
   <p>A function or procedure must be defined before you call it. So, like on the previous page, we will typically first
     define our procedures, then write the main part of our program. Remember that a function definition tells Python <term>
-    how</term> to do a job. It won&#8217;t actually do the job until it is told to do the job with a procedure call.</p>
+    how</term> to do a job. It won’t actually do the job until it is told to do the job with a procedure call.</p>
   <p>Try running the program below.</p>
 
   <program xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
@@ -57,14 +57,14 @@ hop(malik)
     <p>
       <ul>
         <li>
-          <p>Ahhh&#8230; a definition for square, it must have some lines inside of its body, look for indented code.
-            But don&#8217;t run that code yet!</p>
+          <p>Ahhh<ellipsis/> a definition for square, it must have some lines inside of its body, look for indented code.
+            But don’t run that code yet!</p>
         </li>
         <li>
           <p>The next 8 lines are indented, they are the body for square.</p>
         </li>
         <li>
-          <p>Oh, another definition. Look for a body for this function. Don&#8217;t do it yet.</p>
+          <p>Oh, another definition. Look for a body for this function. Don’t do it yet.</p>
         </li>
         <li>
           <p>The next three lines are indented, they are the body for hop.</p>
@@ -92,7 +92,7 @@ hop(malik)
       understand your code.</p>
     <p>When a line of code in this book is indented, we indent it using <term>4 spaces</term>. Python will let you use
       as many spaces as you want to indent, but once you start a function, you must use the same amount of indentation
-      for each line. You can&#8217;t use 2 spaces on one line, then 3 on the next. It is best to pick one distance and
+      for each line. You can’t use 2 spaces on one line, then 3 on the next. It is best to pick one distance and
       use that for all of your indentation.</p>
     <hint>
       <p>Pressing the <term>tab</term> key while on a line will shift it right 4 spaces. Pressing <term>shift-tab</term>

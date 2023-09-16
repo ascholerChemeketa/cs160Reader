@@ -7,7 +7,7 @@
   </p>
   <p>The key is to remember that the work does not necessarily equal the size of the problem. Instead, we have to use
     the size of the problem and the Big-O of the algorithm we are applying to calculate the approximate amount of work.</p>
-  <p>For example, say we have a list of 1000 things&#8230;</p>
+  <p>For example, say we have a list of 1000 things<ellipsis/></p>
   <p>
     <ul>
       <li>
@@ -26,7 +26,7 @@
   </p>
   <note>
     <p>You can use the <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha
-      website</url> to calculate log base 2 by typing something like &#8220;log2(1024)&#8221;. Try it below.</p>
+      website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
     <raw format="html" xml:space="preserve">
         <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
         <button type="submit">Submit</button></form></div>
@@ -40,7 +40,7 @@
       sizes to estimate the amount of work required for each of the two jobs. So I can set up the proportion like this:
       <md><mrow>\frac{ 10000^2 }{ 50000^2 } = \frac{0.243\textrm{ seconds}}{\textrm{time for job 2}}</mrow></md>
     </p>
-    <p>So&#8230;
+    <p>So<ellipsis/>
       <md><mrow>\frac{100000000}{2500000000} = \frac{0.243\textrm{ seconds}}{\textrm{time for job 2}}</mrow></md>
     </p>
     <p>Cross multiplying gives:
@@ -60,7 +60,7 @@
       work will be <m> log_2(10000000)</m>
       <md><mrow>\frac{10000000}{log_2(10000000)} = \frac{8.12\textrm{ seconds}}{\textrm{time for job 2}}</mrow></md>
     </p>
-    <p>So&#8230;
+    <p>So<ellipsis/>
       <md><mrow>\frac{10000000}{23.25} = \frac{8.12\textrm{ seconds}}{\textrm{time for job 2}}</mrow></md>
     </p>
     <p>Cross multiplying gives:

@@ -1,19 +1,19 @@
 <section xml:id="data-representation_negative-values-twos-complement">
-  <title>Negative Values - Two&#8217;s Complement</title>
+  <title>Negative Values - Two’s Complement</title>
   <p>To represent negative numbers, we must use the same tool we do for everything else: 0s and 1s.</p>
   <p>The most simple possible scheme would be to use one bit to represent the sign - say 0 for positive and 1 for
     negative. If we did that, then the numbers 0010 and 1010 would mean +2 (0 = positive, 010 = 2) and -2 (1 = negative,
     010 = 2). But if we tried to add those numbers using the normal process, we would get 0010 + 1010 = 1100. That says
     +2 + -2 = -4! (1 = negative, 100 = 3) The normal addition rules do not work with this simple scheme.</p>
   <p>Rather than design new rules for doing math, early computer designers figured out a slightly different way to
-    represent signed numbers called <term>two&#8217;s complement notation</term>. In this scheme, the first bit
+    represent signed numbers called <term>two’s complement notation</term>. In this scheme, the first bit
     indicates sign - 0 for positive and 1 for negative. Positive numbers are treated as normal. So 0100 still means 4.</p>
   <p>A number that starts with 1 is negative. Its value is defined by the following rule: take the other bits and flip
     them (0s become 1s and 1s become 0s) then add one to the value they represent. Thus 1011 would be interpreted as
     negative because of the leading 1, then we would take the other bits - 011 - and flip each bit to get 100, 100 is 4
     and we add one to that to get 5, so 1011 means -5.</p>
   <topic>
-    <title>Two&#8217;s Complement Interpretation</title>
+    <title>Two’s Complement Interpretation</title>
     <p>
       <ul>
         <li>
@@ -30,7 +30,7 @@
   <exercise>
     <TabNode tabname="Practice 1"
       tabnode_options="{'subchapter': 'TwosComplement', 'chapter': 'DataRepresentation', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': 'Practice 1'}">
-      <p>What decimal number does the two&#8217;s complement number 0010 represent?</p>
+      <p>What decimal number does the two’s complement number 0010 represent?</p>
     </TabNode>
     <solution><p>+2</p><p>A leading 0 means everything is normal.</p>
     </solution>
@@ -38,25 +38,25 @@
   <exercise>
     <TabNode tabname="Practice 2"
       tabnode_options="{'subchapter': 'TwosComplement', 'chapter': 'DataRepresentation', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': 'Practice 2'}">
-      <p>What decimal number does the two&#8217;s complement number 1010 represent?</p>
+      <p>What decimal number does the two’s complement number 1010 represent?</p>
     </TabNode>
     <solution><p>-6</p>
-                <p>Leading 1 says &#8220;negative&#8221; and requires us to flip the last three
+                <p>Leading 1 says <q>negative</q> and requires us to flip the last three
       bits to 101. That means 5. Add one to get 6.</p>
     </solution>
   </exercise>
   <exercise>
     <TabNode tabname="Practice 3"
       tabnode_options="{'subchapter': 'TwosComplement', 'chapter': 'DataRepresentation', 'basecourse': 'welcomecs', 'optional': '', 'optclass': '', 'tabname': 'Practice 3'}">
-      <p>What decimal number does the two&#8217;s complement number 1110 represent?</p>
+      <p>What decimal number does the two’s complement number 1110 represent?</p>
     </TabNode>
     <solution> <p>-2</p>
-                <p>Leading 1 says &#8220;negative&#8221; and requires us to flip the last three
+                <p>Leading 1 says <q>negative</q> and requires us to flip the last three
       bits to 001. That means 1. Add one to get 2.</p>
     </solution>
   </exercise>
   <p>We can use this same idea with more than 4 bits. We always just use the first bit as the sign and the rest of the
-    bits as the value and use the same rules for negative numbers. Thus the 8-bit two&#8217;s complement number 11011000
+    bits as the value and use the same rules for negative numbers. Thus the 8-bit two’s complement number 11011000
     would mean: first bit is 1, so negative, flip the last seven bits to 0100111, that is 39 (32 + 4 + 2 + 1), add one
     to get 40, so the value is -40.</p>
 
@@ -96,7 +96,7 @@
   <p>It is also easy to find the inverse of a number. To turn a negative into a positive or vice versa, invert all the
     bits and add one. If there is a carry past the last digit, ignore it.</p>
   <topic>
-    <title>Two&#8217;s Complement Conversion</title>
+    <title>Two’s Complement Conversion</title>
     <p>To change the sign of a number, flip all the bits and add one. Ignore any carry past the last original digit.</p>
   </topic>
   <p>For example, here is converting 5 to -5:</p>
@@ -125,8 +125,8 @@
   <title>Overflow &amp; Two's Complement</title>
 
   <p>Remember that <term>overflow</term> is when a value becomes too large to store in the bits we have. With
-    two&#8217;s complement, an overflow with a large positive value can produce a negative answer. For example, say I am
-    working with 4-bit two&#8217;s complement numbers. The largest positive number we can write in two&#8217;s
+    two’s complement, an overflow with a large positive value can produce a negative answer. For example, say I am
+    working with 4-bit two’s complement numbers. The largest positive number we can write in two’s
     complement with four bits is 0111 or 7. Now say I add 5 + 5 (0101 + 0101):</p>
   <program language="none">
     <input>
@@ -136,17 +136,17 @@
  1010   (-6 in two's complement)
 </input>
   </program>
-  <p>As an unsigned number, 1010 would mean ten. But in two&#8217;s complement, that means -6! The same thing can happen
+  <p>As an unsigned number, 1010 would mean ten. But in two’s complement, that means -6! The same thing can happen
     with negative numbers - if a negative number becomes too small it can wrap around to positive numbers!</p>
   <p>Normally integers are stored as 32-bit values. This gives a range of approximately +2.147 billion to -2.147 billion
     - usually enough to hold our answers. But if your math problem involves an answer that is too big you can
-    &#8220;wrap around&#8221;.</p>
+    <q>wrap around</q>.</p>
 
 </subsection>
   <exercise label="datarepresentation_twoscomplement1">
     <statement>
 
-      <p>Which of these represents -3 as a five bit two&#8217;s complement number?</p>
+      <p>Which of these represents -3 as a five bit two’s complement number?</p>
 
     </statement>
     <choices>
@@ -193,7 +193,7 @@
   <exercise label="datarepresentation_twoscomplement2">
     <statement>
 
-      <p>Given a 5 bit two&#8217;s complement number, what is the largest positive value you can represent?</p>
+      <p>Given a 5 bit two’s complement number, what is the largest positive value you can represent?</p>
 
     </statement>
     <choices>

@@ -37,9 +37,9 @@
   </table>
   <p>Normally we think of this table as starting from the ones and extending to the left, with each new column
     representing one larger power of two than the preceding column - making each column twice as large as the column to
-    its right. If we want to move from left to right, we must divide the current column&#8217;s value by 2 to calculate
-    the next column. If we do this to the Ones column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>
-    2^{-2}</m>), then <m>1/8</m> (<m>2^{-3}</m>), etc&#8230;</p>
+    its right. If we want to move from left to right, we must divide the current column’s value by 2 to calculate
+    the next column. If we do this to the One's column, we would get <m>1/2</m> (<m>2^{-1}</m>), then <m>1/4</m> (<m>
+    2^{-2}</m>), then <m>1/8</m> (<m>2^{-3}</m>), etc<ellipsis/></p>
   <table>
     <tabular halign="center">
 
@@ -50,7 +50,7 @@
         <cell> 1/8s </cell>
         <cell> 1/16s </cell>
         <cell> 1/32s </cell>
-        <cell> &#8230; </cell>
+        <cell> <ellipsis/> </cell>
       </row>
       <row bottom="medium">
         <cell>
@@ -71,7 +71,7 @@
         <cell>
           <m>2^{-5}</m>
         </cell>
-        <cell> &#8230; </cell>
+        <cell> <ellipsis/> </cell>
       </row>
 
       <row>
@@ -86,12 +86,12 @@
 
     </tabular>
   </table>
-  <p>These are the binary columns smaller than 1 that we have to work with: <m>1/2</m>, <m>1/4</m>, <m>1/8</m>,&#8230;
+  <p>These are the binary columns smaller than 1 that we have to work with: <m>1/2</m>, <m>1/4</m>, <m>1/8</m>,<ellipsis/>
     Any fractional value we want to represent, we must build using these fractions. Much like the decimal number <m>
     {0.34}_{10}</m> means 3 tenths and 4 one-hundredths, the binary number <m>{0.11}_2</m> means <m>1/2 + 1/4 =
     {0.75}_{10}</m></p>
-  <p>Say I have the binary value <m>{0.0101}_2</m>. We can use the &#8220;table&#8221; method to convert the fractional
-    value - we just need to line up the bits to the table so that the &#8220;.&#8221; falls on the line between 1 and
+  <p>Say I have the binary value <m>{0.0101}_2</m>. We can use the <q>table</q> method to convert the fractional
+    value - we just need to line up the bits to the table so that the <q>.</q> falls on the line between 1 and
     1/2:</p>
   <table>
     <tabular halign="center">
@@ -103,7 +103,7 @@
         <cell> 1/8s </cell>
         <cell> 1/16s </cell>
         <cell> 1/32s </cell>
-        <cell> &#8230; </cell>
+        <cell> <ellipsis/> </cell>
       </row>
       <row bottom="medium">
         <cell>
@@ -124,7 +124,7 @@
         <cell>
           <m>2^{-5}</m>
         </cell>
-        <cell> &#8230; </cell>
+        <cell> <ellipsis/> </cell>
       </row>
 
       <row>
@@ -148,7 +148,7 @@
     <title>Limits of Fractional Representation</title>
 
     <p>Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call
-      &#8216;.&#8217; the <term>decimal point</term>. In base 2 it is the <term>binary point</term>. The generic term
+      '.' the <term>decimal point</term>. In base 2 it is the <term>binary point</term>. The generic term
       for it is <term>radix point</term>.) Try using this table and a calculator or some scratch paper and see if you
       can figure out how to represent the value 0.6:</p>
     <table>
@@ -196,12 +196,12 @@
     <p>It is a trick question. There is no way to exactly represent 0.6 given that set of options. (The closest you can
       come is 0.625).</p>
     <p>Difficulties in representing exact fractional values with a fixed number of digits are not unique to binary
-      numbers. Say I ask you to represent 2/3 as a decimal with only 2 decimal places&#8230; you could use 0.66, or
+      numbers. Say I ask you to represent 2/3 as a decimal with only 2 decimal places<ellipsis/> you could use 0.66, or
       0.67, but could not exactly represent 2/3. Each number system will have different values that are tricky to
       represent - although 0.6 is easy to represent in decimal - 6/10<superscript>ths</superscript> - it happens to be
       harder to represent in binary.</p>
     <important>
-      <p>Often times when computers represent decimal fractions as binary numbers, the value stored is only an
+      <p>Often when computers represent decimal fractions as binary numbers, the value stored is only an
         approximation of the true value. On the line below I have inserted code to have your web browser calculate the
         answer to 3 + .01 + .01:</p>
         <p>
@@ -239,7 +239,7 @@
         </condition>
         <condition string="^\s*x\s*$">
           <feedback>
-            <p>Use the blank table above. The 0 goes in the ones column.</p>
+            <p>Use the blank table above. The 0 goes in the one's column.</p>
           </feedback>
         </condition>
       </var>

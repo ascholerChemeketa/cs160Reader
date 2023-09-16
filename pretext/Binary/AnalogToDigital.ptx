@@ -2,7 +2,7 @@
   <title>Analog To Digital</title>
   <p>We can turn an analog signal into a simple digital one with two possible states by interpreting it against a
     threshold. Any time we measure the value of the signal, if the value is below the threshold we call it
-    &#8220;off&#8221;; if it is above the threshold we call it &#8220;on&#8221;. In the image below, we could say at T1,
+    <q>off</q>; if it is above the threshold we call it <q>on</q>. In the image below, we could say at T1,
     the signal is off and at T2, it is on.</p>
   <image source="Binary/Images/threshold.gif" width="50%" alt="A threshold" />
   <p>If we ignore all the changes in the signal except for where it crosses the threshold, we get a digital pattern:</p>
@@ -13,7 +13,7 @@
   <image source="Binary/Images/binary_w_noise.gif" width="50%" alt="Noise in a digital signal" />
   <p>Even though there is a lot of noise - the signal is bouncing above and below the voltage we are trying to use, it
     is very much clear what the value should be at T1 and T2. We can ignore the noise and confidently say the signal at
-    T1 is &#8220;off&#8221; and at T2 is &#8220;on&#8221;.</p>
+    T1 is <q>off</q> and at T2 is <q>on</q>.</p>
 
 
   <exercise label="binary_analogtodigital1">
@@ -26,16 +26,16 @@
 
       <choice>
         <statement>
-          <p>Yes&#8212;the exact value of the signal cannot be determined.</p>
+          <p>Yes, the exact value of the signal cannot be determined.</p>
         </statement>
         <feedback>
-          <p>We don't really care about the exact value of the signal, just how it relates to the threshold.</p>
+          <p>We don't care about the exact value of the signal, just how it relates to the threshold.</p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>No&#8212;the value of the signal can be determined, as long as the noise is not too great.</p>
+          <p>No, the value of the signal can be determined, as long as the noise is not too great.</p>
         </statement>
         <feedback>
           <p />
@@ -44,7 +44,7 @@
 
       <choice>
         <statement>
-          <p>No&#8212;digital signals can't pick up any noise.</p>
+          <p>No, digital signals can't pick up any noise.</p>
         </statement>
         <feedback>
           <p>Digital systems can pick up noise that changes the signal from its intended "perfect" value.</p>
@@ -53,7 +53,7 @@
 
       <choice>
         <statement>
-          <p>Yes&#8212;the signal will have extra information in it because of the noise.</p>
+          <p>Yes, the signal will have extra information in it because of the noise.</p>
         </statement>
         <feedback>
           <p>Noise does not add information, it obscures it.</p>

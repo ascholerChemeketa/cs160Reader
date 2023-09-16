@@ -2,9 +2,9 @@
   <title>Iterating with Indexes</title>
   <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c> syntax. However, there are
     limitations to that approach. What if we want to iterate through only part of the list? What if we want to iterate
-    through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can&#8217;t do any of
+    through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can’t do any of
     these.</p>
-  <p>Perhaps most surprising is that the <c>for value in list:</c> can&#8217;t change values in a list. This is because when <c>value</c> is
+  <p>Perhaps most surprising is that the <c>for value in list:</c> can’t change values in a list. This is because when <c>value</c> is
     naming a value in the list, making a change just changes what <c>value</c> is naming - it does not change the list
     itself. Watch this codelens program that attempts to set each item in a list to 0 to see how it does not work:</p>
 
@@ -23,10 +23,10 @@ print(list)
   <pre>index[0] = 0 &lt;- first item
 index[1] = 0 &lt;- second item
 index[2] = 0 &lt;- third item</pre>
-  <p>But we don&#8217;t want to type out each line separately and we want to make sure we do not use too many or too few
+  <p>But we don’t want to type out each line separately and we want to make sure we do not use too many or too few
     indexes. We want to use a counting loop that will automatically generate all the needed indexes. This can be created
-    by using the <c>range</c> function and asking it to generate <c>range( len(list) )</c>. That syntax says: &#8220;Get the length of the
-    list. Then generate the range of numbers from 0 to one less than the length.&#8221; Which is exactly what we need.
+    by using the <c>range</c> function and asking it to generate <c>range( len(list) )</c>. That syntax says: <q>Get the length of the
+    list. Then generate the range of numbers from 0 to one less than the length.</q> Which is exactly what we need.
     For the example above, <c>range( len(list) )</c> would generate <c>0, 1, 2</c>, which are the indexes of the three values.</p>
   <p>Here is the final version of the more complex loop.</p>
 
@@ -39,14 +39,14 @@ for index in range( len(list) ):
     </input>
   </program>
   <p>Notice that the variable from the <c>for</c> loop, <c>index</c>, is holding the <term>index</term> of the current item. To
-    work with the &#8220;current item&#8221;, we need to index into the list using that index: <c>list[index]</c> will give us the
+    work with the <q>current item</q>, we need to index into the list using that index: <c>list[index]</c> will give us the
     current value.</p>
-  <p>A common programmer convention is to use the variable name <c>i</c> to stand for &#8220;index&#8221;. Although this
-    seems to violate the general rule of &#8220;use meaningful names&#8221;, because all programmers know that <c>i</c>
-    probably means &#8220;index&#8221; when used in a loop, <c>i</c> does in fact have meaning.</p>
+  <p>A common programmer convention is to use the variable name <c>i</c> to stand for <q>index</q>. Although this
+    seems to violate the general rule of <q>use meaningful names</q>, because all programmers know that <c>i</c>
+    probably means <q>index</q> when used in a loop, <c>i</c> does in fact have meaning.</p>
   <p>This program uses <c>i</c> as the index variable. In it, we have a list of names that need to be capitalized. To do
     this, we loop through the indexes 0-3, access the value at that index (<c>names[i]</c>), call <c>capitalize()</c> on it, and then store
-    it back to the same location in the list <c>names[i] = ...</c>:</p>
+    it back to the same location in the list <c>names[i] = <ellipsis/></c>:</p>
 
   <program xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
     <input>

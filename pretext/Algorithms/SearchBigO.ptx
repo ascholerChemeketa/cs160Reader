@@ -63,7 +63,7 @@
     </table>
     <p>Note that in terms of Big-O <m>f(n) = \frac{n}{2}</m> is the same as <m>f(n) = n</m> - they are both linear
       functions. While it is true that in the best case, the algorithm takes 1 unit of time regardless of the number of
-      papers, we can&#8217;t count on always having the one we want at the top of the pile. Basing our rating of this
+      papers, we can’t count on always having the one we want at the top of the pile. Based on our rating of this
       algorithm on this rare exception would be misleading. So instead we will say Linear Search is <m>O(n)</m>. Kind of
       makes sense that linear search is a linear algorithm!</p>
     <important>
@@ -138,9 +138,9 @@
       </tabular>
 
     <p>Instead of counting how many times we divide the starting number by 2, we can calculate that number. Using a
-      logarithm. Taking the base 2 logarithm of a number asks <em>&#8220;How many times do I have to divide this number
-      by 2 to reach 1?&#8221;</em> Calculating <m>log_2(1000)</m> gives 9.96. Since we can&#8217;t do .96 units of work
-      (each unit is checking one paper&#8230; hard to see how we can check 0.96 papers), we will round that up to 10.
+      logarithm. Taking the base 2 logarithm of a number asks <em><q>How many times do I have to divide this number
+      by 2 to reach 1?</q></em> Calculating <m>log_2(1000)</m> gives 9.96. Since we can’t do .96 units of work
+      (each unit is checking one paper<ellipsis/> hard to see how we can check 0.96 papers), we will round that up to 10.
       Since this function gives us the answer to how much work binary search requires, we will say Binary Search is <m>
       O(log(n))</m>.</p>
     <important classes="clear">
@@ -150,7 +150,7 @@
     <sidebar>
       <title>Wolfram Alpha</title>
       <p>You can use the <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha
-        website</url> to calculate log base 2 by typing something like &#8220;log2(1024)&#8221;. Try it below.</p>
+        website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
       <raw format="html" xml:space="preserve">
         <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
         <button type="submit">Submit</button></form></div>

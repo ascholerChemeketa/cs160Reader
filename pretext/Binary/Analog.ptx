@@ -13,11 +13,11 @@
 
   <p>That is one of the reasons computers are built as <term>digital</term> devices. A digital
     signal is only allowed to take on a limited number of possible values. Often, the only two states allowed are
-    &#8220;on&#8221; and &#8220;off&#8221;. A digital signal with only two states plotted over time thus looks like
+    <q>on</q> and <q>off</q>. A digital signal with only two states plotted over time thus looks like
     this:</p>
   <image source="Binary/Images/digital_wave.gif" width="50%" alt="A digital signal" />
-  <p>We could have more than two possible states - we refer to &#8220;digits&#8221; in numbers as digits because they
-    are only allowed to be 0, 1, 2, 3, 4, 5, 6, 7, 8 or 9. A single digit can&#8217;t represent a value halfway between
+  <p>We could have more than two possible states - we refer to <q>digits</q> in numbers as digits because they
+    are only allowed to be 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9. A single digit can’t represent a value halfway between
     1 and 2. The English alphabet is a digital system with 26 possible values (A-Z).</p>
 
   <exercise label="binary_analog1">
@@ -31,7 +31,7 @@
 
       <choice correct="yes">
         <statement>
-          <p>Yes&#8212;the noise hides the exact values of the original signal.</p>
+          <p>Yes, the noise hides the exact values of the original signal.</p>
         </statement>
         <feedback>
           <p />
@@ -40,7 +40,7 @@
 
       <choice>
         <statement>
-          <p>No&#8212;electronics can just ignore the noise.</p>
+          <p>No, electronics can just ignore the noise.</p>
         </statement>
         <feedback>
           <p>There is no way the electronics can perfectly tell the noise of the signal from the desired value.</p>
@@ -49,7 +49,7 @@
 
       <choice>
         <statement>
-          <p>No&#8212;information has been added to the signal.</p>
+          <p>No, information has been added to the signal.</p>
         </statement>
         <feedback>
           <p>Noise isn't information - we do not care about its value.</p>
@@ -58,7 +58,7 @@
 
       <choice>
         <statement>
-          <p>Maybe&#8212;it depends on how loud the noise is.</p>
+          <p>Maybe, it depends on how loud the noise is.</p>
         </statement>
         <feedback>
           <p>Any noise will hide the original signal - if we care about having exactly 3.00000 volts we can't afford any

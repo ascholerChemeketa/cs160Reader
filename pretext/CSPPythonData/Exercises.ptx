@@ -39,7 +39,7 @@
       <p>Add code to split the line into a list of values and print out the date value. (The date should be the first
         value in the list that you create with split.)</p>
       <p>Your final output should be a long list of dates and nothing else.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing. Feel free to use extra ones while writing your code and Then remove them or comment them out when
         everything is working.</p>
 
@@ -78,7 +78,7 @@ myTests().main()
         decimal number. This should look like: <c>float(values[??])</c>.</p>
       <p>The final version of your program should only print out the one highest value, but you should work your way up
         to that. Start by printing out all of the monthly high values, then worry about finding the highest one.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
         <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
@@ -109,10 +109,10 @@ myTests().main()
     <statement>
       <p>Modify your program from question 1 to only print the dates from a specific year specified by a variable <c>desiredYear</c>.
         If <c>desiredYear</c> is 96, you would only print out values where the year (last part of the date value) is
-        &#8220;96&#8221;.</p>
+        <q>96</q>.</p>
       <p>You should try changing desired year to different values to make sure your program works for any year for which
-        there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to &#8220;92&#8221;.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+        there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to <q>92</q>.</p>
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -145,12 +145,12 @@ myTests().main()
   <exercise label="csppythondata_exercises4">
     <statement>
       <p>Combine your solutions from problems 2 and 3 and make your program find the largest highest value from the
-        records indicated by the variable <c>desiredYear</c>. I.e. if <c>desiredYear</c> is &#8220;96&#8221;, your program should only
-        consider the records where the date value ends in &#8220;96&#8221;, and from those, should find the largest
-        &#8220;highest value for month&#8221; seen in those records.</p>
+        records indicated by the variable <c>desiredYear</c>. I.e. if <c>desiredYear</c> is <q>96</q>, your program should only
+        consider the records where the date value ends in <q>96</q>, and from those, should find the largest
+        <q>highest value for month</q> seen in those records.</p>
       <p>You should try changing desired year to different values to make sure your program works for any year for which
-        there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to &#8220;96&#8221;.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+        there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to <q>96</q>.</p>
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -184,11 +184,11 @@ myTests().main()
     <statement>
       <p>Turn your code from question 4 into a function so we can easily check the max value in multiple years. The
         function should be called <c>maxHighForYear</c>. It should take the <c>desiredYear</c> and the <c>data</c> as parameters and return the max
-        &#8220;highest value for month&#8221; found in the records that match the desired year.</p>
+        <q>highest value for month</q> found in the records that match the desired year.</p>
       <p>The starter code has a simple test of your function followed by a more complex test that tests all the valid
         years. If you need to debug your code, it might be easier if you comment out the complex test and just run the
         simple one.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -239,12 +239,12 @@ myTests().main()
   <exercise label="csppythondata_exercises6">
     <statement>
       <p>Write the function <c>avgVolumeForYear</c>. It should take the <c>desiredYear</c> and the <c>data</c> as parameters and return the average of
-        the &#8220;volume&#8221; value found in the records that match the desired year. (The &#8220;volume&#8221; is
+        the <q>volume</q> value found in the records that match the desired year. (The <q>volume</q> is
         the last value in each record.)</p>
       <p>The starter code has a simple test of your function followed by a more complex test that tests all the valid
         years. If you need to debug your code, it might be easier if you comment out the complex test and just run the
         simple one.</p>
-      <p>You can&#8217;t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
         <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>

@@ -5,8 +5,8 @@
     <p>The computer can also compute with words, or more accurately,
         with <term>strings</term> which are sequences of characters. We can create a <term>string</term>
         by typing characters between a pair of single (<c>'Hi'</c>), double (<c>"Hi"</c>), or triple
-        quotes (&#8216;&#8217;&#8217;Hi&#8217;&#8217;&#8217;). We can &#8220;compute&#8221; with
-        strings using some of the same basic arithmetic operators &#8211; they just mean something
+        quotes (<c>'''Hi'''</c>). We can <q>compute</q> with
+        strings using some of the same basic arithmetic operators <ndash/> they just mean something
         different here. Here we generate silly song lyrics by using <c>+</c> to combine (append) two
         strings and <c>*</c> to repeat strings.</p>
 

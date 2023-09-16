@@ -17,8 +17,8 @@ img.draw(win)                                    # draw it in that window
   <p>The program below modifies the cat image to remove all the red from each of its pixels. There are lot of lines in
     the program below,</p>
   <warning>
-    <p>Be patient with programs that modify images, they can take a little while to produce their results. Don&#8217;t
-      press the &#8220;Save and Run&#8221; button multiple times or you will just have to wait longer.</p>
+    <p>Be patient with programs that modify images, they can take a little while to produce their results. Don’t
+      press the <q>Save and Run</q> button multiple times or you will just have to wait longer.</p>
     <p>If you do hit the button too many times, you can reload the browser window to stop the program.</p>
   </warning>
 
@@ -48,7 +48,7 @@ img.draw(win)
   </program>
   <p>There are <m>200 \times 300 = 60,000</m> pixels in the <c>pixelList</c>. Our for loop takes that giant list of pixels and
     one by one, calls the current one <c>p</c> and then does the body of the loop with it. After the loop is done, we
-    make a window to display the image in and draw it - but don&#8217;t worry too much about that code - we want to
+    make a window to display the image in and draw it - but don’t worry too much about that code - we want to
     focus on the loop and what it does to each pixel. This program changes the red value of each pixel to 0 -
     it removes all the red from the image, making it look like we are looking through blue-green glass.</p>
 

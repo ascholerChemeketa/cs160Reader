@@ -84,7 +84,7 @@ if TEST:
         </tabular></table>
         <p>Unlike a <c>while</c>, an <c>if</c> will only run the instructions in its body one time. After the
             instructions have executed (which only happens if the test was <c>True</c>), Python continues
-            running the rest of this program. If the test isn&#8217;t <c>True</c> (is <c>False</c>) then execution
+            running the rest of this program. If the test isn’t <c>True</c> (is <c>False</c>) then execution
             will skip the block following the if and continue with the next statement following the
             block after the <c>if</c> statement.</p>
         <p>Run the program below in codelens. Then change the first line so that it sets x to 4 and again

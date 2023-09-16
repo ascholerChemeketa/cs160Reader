@@ -32,7 +32,7 @@
       </row>
       <row>
         <cell> rating </cell>
-        <cell> Rating (R, PG, etc&#8230;) </cell>
+        <cell> Rating (R, PG, etc<ellipsis/>) </cell>
       </row>
       <row>
         <cell> genre </cell>

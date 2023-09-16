@@ -27,8 +27,8 @@ FROM
     indentation. You are free to indent lines however you like. And a statement does not automatically end at the end of
     a line. It ends at the <c>;</c> symbol. A final difference is how we make a comment. In Python, we use <c>#</c> to
     make a comment in the code. In SQL, we use <c>--</c> to tell the computer to ignore the rest of the line.</p>
-  <p>Let&#8217;s use a <c>SELECT</c> to get all the data from the <c>trip_data</c> table. The following SQL query is an example of how
-    to do so. It asks the database to <c>SELECT</c> all columns (<c>*</c> is a shorthand that means &#8220;all columns&#8221;) <c>FROM</c>
+  <p>Let’s use a <c>SELECT</c> to get all the data from the <c>trip_data</c> table. The following SQL query is an example of how
+    to do so. It asks the database to <c>SELECT</c> all columns (<c>*</c> is a shorthand that means <q>all columns</q>) <c>FROM</c>
     the table named <c>trip_data</c>.</p>
 
   <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">

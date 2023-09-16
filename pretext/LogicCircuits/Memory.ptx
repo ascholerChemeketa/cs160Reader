@@ -1,8 +1,8 @@
 <section xml:id="logic-circuits_remembering-things">
   <title>Remembering Things</title>
   <p>In previous circuits we have seen, every path has gone strictly left to right. But we can take the output of a gate
-    and feed it back in as the inputs to earlier gates. This is the secret behind building a &#8220;memory&#8221;
-    circuit: feeding the output back into the circuit produces a loop that &#8220;remembers&#8221; a value. The circuit
+    and feed it back in as the inputs to earlier gates. This is the secret behind building a <q>memory</q>
+    circuit: feeding the output back into the circuit produces a loop that <q>remembers</q> a value. The circuit
     below uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes right after an OR). Notice how the
     output of each NOR gate feeds back as an input to the other gate.</p>
   <p>
@@ -37,7 +37,7 @@
   <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we
     want to remember <term>1</term>, we flip <term>Input1</term> on briefly. To remember <term>0</term>, we flip <term>
     Input2</term> on briefly.</p>
-  <p> There are many other circuits that can &#8220;remember&#8221; a value, but they all use this same basic idea of
+  <p> There are many other circuits that can <q>remember</q> a value, but they all use this same basic idea of
     feeding outputs back in as inputs. To remember more than one bit, we would simply need to make multiple copies of
     this circuit, one for each bit we need to store.</p>
 </section>

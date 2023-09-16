@@ -46,7 +46,7 @@ square(grace)
   </program>
   <p>Now the program is easier to change since we only have one line to change - <c>size = 50</c> - to draw another size square.
     Once we change the <c>size</c> variable, all of the <c>forward</c> commands will use that new value.</p>
-  <p>But, the procedure can still only draw a square of one particular size. We can&#8217;t use it to draw two different
+  <p>But, the procedure can still only draw a square of one particular size. We can’t use it to draw two different
     size squares. If we want <c>grace</c> to draw a small square and then a large square, we would need two different
     procedures:</p>
   <program language="python">

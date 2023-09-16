@@ -20,7 +20,7 @@
   <p>Here is a program that shows off why a function can be useful. I am trying to use 20 feet of material to make two
     sides of a right triangle. I want the length of the long side to be as close to 15 feet as I can make it. So I
     decide to calculate the length of the hypotenuse for different triangles - one where I make both legs 10; one where
-    I make the legs 11 and 9; one where I make the legs 12 and 8; etc&#8230; Looking at the results of these
+    I make the legs 11 and 9; one where I make the legs 12 and 8; etc<ellipsis/> Looking at the results of these
     calculations, I can see that my best option is to use lengths of 14 and 6 (which produces a hypotenuse just a bit
     closer to 15 than sides of 13 and 7).</p>
 
@@ -92,8 +92,8 @@ print("The length of side hypotenuse6 is", hypotenuse6)
         </input>
   </program>
   <p>Not only did writing it involve retyping lines like <c>aSquared = math.pow(___, ___)</c> over and over, and it is harder to read and understand.
-    A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see <em>&#8220;Oh, that is just where we are going to calcualte
-    the hypotenuse.&#8221;</em>. When there is no function, the reader has to slog through things like this:</p>
+    A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see <em><q>Oh, that is just where we are going to calcualte
+    the hypotenuse.</q></em>. When there is no function, the reader has to slog through things like this:</p>
   <program language="python">
     <input>
 aSquared = math.pow(10, 2)
@@ -101,8 +101,8 @@ bSquared = math.pow(10, 2)
 hypotenuse1 = math.sqrt(aSquared + bSquared)
 </input>
   </program>
-  <p>As they do so, they must come to their own conclusion <em>&#8220;Oh, I think I see what is going on, we are doing
-    all the math to calculate a hypotenuse&#8221;</em>. Doing this distracts them from the big picture of the problem we
+  <p>As they do so, they must come to their own conclusion <em><q>Oh, I think I see what is going on, we are doing
+    all the math to calculate a hypotenuse</q></em>. Doing this distracts them from the big picture of the problem we
     are really trying to solve.</p>
   <p>
     <term>Check Your Understanding</term>

@@ -18,8 +18,8 @@
     <p>UNIX is an operating system developed in the 1970s at AT&amp;T. It became the most common operating system for
       computers in academia and industry. To this day, UNIX-based computers remain popular in environments where
       developers want unfettered control over how the operating system works.</p>
-    <p>There are many &#8220;flavors&#8221; of UNIX and operating systems based on UNIX (sometimes referred to as
-      &#8220;*nixes&#8221;). Apple&#8217;s OSX is related to a UNIX-based operating system. Linux is a free Unix-like
+    <p>There are many <q>flavors</q> of UNIX and operating systems based on UNIX (sometimes referred to as
+      <q>*nixes</q>). Apple’s OSX is related to a UNIX-based operating system. Linux is a free Unix-like
       operating system.</p>
   </sidebar>
   <p>Operating systems that solve similar problems on similar hardware tend to themselves be similar. Windows, OSX, and
@@ -53,7 +53,7 @@
   </p>
   <note>
     <p>
-      <term>What&#8217;s the deal with Linux?</term>
+      <term>What’s the deal with Linux?</term>
     </p>
     <p>You may or may not have tried working with a PC running Linux - it is an alternative to Windows or Mac OSX for
       powering personal computers. But it also is the operating system that powers many of the electrical devices in

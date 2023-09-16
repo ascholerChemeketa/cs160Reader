@@ -103,7 +103,7 @@
     </choices>
   </exercise>
 
-  <p>Now let&#8217;s put the pixel coordinates to work. We are going to use the location of each 
+  <p>Now let’s put the pixel coordinates to work. We are going to use the location of each 
     pixel to modify its color. We will do so by subtracting its x coordinate from each of the color 
     values (red, green, blue). This means on the left side of the image, where x is 0
     or close to it, there is little change. On the right side, where x is larger, we remove more and more of the color,
@@ -142,7 +142,7 @@ win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
   </input>
   </program>
-  <p>We don&#8217;t always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
+  <p>We don’t always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
     a new location. This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put it back
     in the image. This <c>newY</c> is calculated as the height of the image minus one minus the y location of where we got
     the pixel. Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the new location.</p>

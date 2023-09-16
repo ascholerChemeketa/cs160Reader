@@ -67,9 +67,9 @@
     image would consist of 4000 x 3000 x 24 = <term>288,000,000 bits of information</term>! That is 36,000,000 bytes or
     approximately 34.3 MiB. However, if you were to look at an image file produced by this camera, you would find it to
     be much smaller than 34 MiB even though the file stored extra information beyond the contents of each pixel (the
-    dimensions of the image, how many bits per pixel, etc&#8230;). This is because the image has been compressed - most
+    dimensions of the image, how many bits per pixel, etc<ellipsis/>). This is because the image has been compressed - most
     common image formats (gif, jpeg, png) include some form of compression to reduce the space needed to store their
-    information&#8230; a topic we will learn more about later.</p>
+    information<ellipsis/> a topic we will learn more about later.</p>
 
   <exercise label="datarepresentation_imagerepresentation1">
     <statement>

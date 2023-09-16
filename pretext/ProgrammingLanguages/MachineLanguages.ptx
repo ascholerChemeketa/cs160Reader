@@ -23,14 +23,14 @@
   </p>
   <p>These instructions have no real meaning to you, but they are exactly the kind of instructions that a computer
     expects. It only knows how to deal with 0s and 1s, so all of its instructions must be written in binary format. A
-    processor&#8217;s control unit has a format it expects each such instruction to be in: typically a instruction will
+    processor’s control unit has a format it expects each such instruction to be in: typically a instruction will
     be a set length, say 16 or 32 or 64 bits and the first few bits will specify what kind of instruction it is. These
     first few bits, known as the <term>opcode</term> (operation code), say what general task is to be done - something
-    like &#8220;store a number&#8221; or &#8220;add two numbers&#8221;. The rest of the instruction will contain <term>
+    like <q>store a number</q> or <q>add two numbers</q>. The rest of the instruction will contain <term>
     operands</term>, the extra information needed to understand the instruction - things like where to store the number
     or which two numbers to add.</p>
   <p>The figure below shows how an imaginary computer might interpret an instruction. The first 4 bits are the opcode -
-    in this case, we are assuming 0001 means &#8220;add two values&#8221;. The next 6 bits specify the memory address of
+    in this case, we are assuming 0001 means <q>add two values</q>. The next 6 bits specify the memory address of
     the first number we are adding and the last 6 bits specify the memory address of the second number.</p>
   <figure>
     <image source="ProgrammingLanguages/Images/MachineInstruction.png" alt="A machine instruction" />
@@ -38,7 +38,7 @@
     </caption>
   </figure>
   <p>Computers usually support only a small number of machine code instructions; a few dozen to a few hundred very
-    simple instructions like &#8220;add two numbers&#8221; or &#8220;store a value to memory&#8221;. The list of
+    simple instructions like <q>add two numbers</q> or <q>store a value to memory</q>. The list of
     available instructions and the format for specifying them make up a <term>machine language</term>. Machine languages
     were the first programming languages - the earliest electronically programmable computers had to be programmed by
     feeding in a program as a list of 0s and 1s that specified what the computer was to do. (Before that the program had
@@ -49,8 +49,8 @@
   </important>
   <p>You can probably see the difficulties of working in machine language. While it might be very appropriate for a
     computer, it is extremely confusing for a computer programmer. They are also restricted to very low-level commands.
-    There is no way to say something like &#8220;open a connection to google.com&#8221; or &#8220;draw this image on the
-    screen&#8221; in a machine language - instead you would have to break those tasks down into much lower-level
+    There is no way to say something like <q>open a connection to google.com</q> or <q>draw this image on the
+    screen</q> in a machine language - instead you would have to break those tasks down into much lower-level
     commands that would accomplish your goal.</p>
 
 <remark> Materials on this page adapted with permission from <url

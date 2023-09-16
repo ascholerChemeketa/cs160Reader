@@ -1,6 +1,6 @@
 <section xml:id="csp-repeat-numbers_repeating-calculations">
   <title>Repeating Calculations</title>
-  <p>While calculating an approximate square root with Newton&#8217;s method, we often want to use the formula <m>1/2((N/G)
+  <p>While calculating an approximate square root with Newton’s method, we often want to use the formula <m>1/2((N/G)
     + G)</m> multiple times to keep improving our approximation. Earlier, we defined a procedure to make it easier to
     reuse the formula. But if we want to apply the formula a whole bunch of times in a row, a loop makes sense. Try
     running this program with the Codelens:</p>
@@ -62,9 +62,9 @@ print(guess)
   </exercise> 
   <p>The number of repetitions needed to get the most accurate possible square root for a given number is not always the
     same. If you change <c>number</c> to 2, it would only take 5 iterations of the loop to find the best possible guess for
-    the square root. Without experimenting, we don&#8217;t really know how many repetitions are needed to get the best
-    possible answer. Currently our program says something like <em>&#8220;repeat this calculation 5 times&#8221;</em>.
-    What we would like to say is something more like <em>&#8220;repeat this calculation while it keeps producing a new
-    value&#8221;</em>.</p>
+    the square root. Without experimenting, we don’t really know how many repetitions are needed to get the best
+    possible answer. Currently our program says something like <em><q>repeat this calculation 5 times</q></em>.
+    What we would like to say is something more like <em><q>repeat this calculation while it keeps producing a new
+    value</q></em>.</p>
 </section>
 

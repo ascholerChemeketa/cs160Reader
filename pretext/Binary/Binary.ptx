@@ -1,7 +1,7 @@
 <section xml:id="binary_binary-and-its-advantages">
   <title>Binary and Its Advantages</title>
-  <p><term>Binary</term> means &#8220;two states.&#8221; The two states are alternatively called &#8220;1&#8221; and
-    &#8220;0&#8221;, &#8220;true&#8221; and &#8220;false&#8221;, or &#8220;on&#8221; and &#8220;off&#8221;. But no
+  <p><term>Binary</term> means <q>two states.</q> The two states are alternatively called <q>1</q> and
+    <q>0</q>, <q>true</q> and <q>false</q>, or <q>on</q> and <q>off</q>. But no
     matter what we call them, the essential characteristic is that a <em>single binary device can be in just one of two
     possible states</em>.</p>
   <p>A good example is a toggle switch, such as a light switch. You can turn it on or off but not (in normal operation)
@@ -49,7 +49,7 @@
         <title>Anything that can be represented with some sort of pattern can be represented with a binary pattern</title>
 
         <p>It might seem hard right now to imagine how we could represent things as diverse as numbers, music, images
-          and text can all be represented by just &#8220;on&#8221; and &#8220;off&#8221;. But we will learn tricks for
+          and text can all be represented by just <q>on</q> and <q>off</q>. But we will learn tricks for
           converting anything that can be represented as any kind of pattern using just these two values.</p>
 
       </li>

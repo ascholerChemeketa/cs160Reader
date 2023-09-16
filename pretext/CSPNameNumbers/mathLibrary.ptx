@@ -27,7 +27,7 @@ print("The value we used for pi was", math.pi)
         </program>
     </listing>
     <p>An important detail to notice is that <c>math.sqrt</c> <term>returns</term> an answer to us that we must do something with.
-        Just like the line of code <c>x * 2</c> doesn&#8217;t do anything unless we store the result, (something like <c>y = x * 2</c>),
+        Just like the line of code <c>x * 2</c> doesn’t do anything unless we store the result, (something like <c>y = x * 2</c>),
         writing <c>math.sqrt(area / math.pi)</c> would do the math, but then throw away the answer. We need to store the answer into a variable
         if we want to do anything with it.</p>
 

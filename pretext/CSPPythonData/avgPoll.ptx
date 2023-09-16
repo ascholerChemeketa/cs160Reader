@@ -1,5 +1,5 @@
 <section xml:id="csp-python-data_what-s-the-average-pollution">
-  <title>What&#8217;s the average pollution?</title>
+  <title>What’s the average pollution?</title>
 
  
   <p>This time, we would like to get the average pollution level. To do that, we need to take every PM2.5 value and add
@@ -48,7 +48,7 @@
       </block>
     </blocks>
   </exercise>
-  <p>Now let&#8217;s do the same thing for the PM10 values. This program is mostly done. There are a few lines that need
+  <p>Now let’s do the same thing for the PM10 values. This program is mostly done. There are a few lines that need
     to still be written, they are all marked with a <c>TODO</c> comment. Finish up the program so you can find the average
     PM10 level.</p>
 

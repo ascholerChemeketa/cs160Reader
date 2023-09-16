@@ -3,7 +3,7 @@
   <sidebar>
     <title>ASCII Art</title>
     <p>ASCII art is images drawn only using the ASCII characters. Shading is created by using characters like @ for dark
-      areas and - for lighter ones. Below is the Mona Lisa as ASCII Art; the font size it 2 point to make the image more
+      areas and - for lighter ones. Below is the Mona Lisa as ASCII Art; the font size is 2 points to make the image more
       apparent, but if you zoom in you will see the individual characters.</p>
     <p>
       <raw format="html" xml:space="preserve">
@@ -68,16 +68,16 @@ Y8dNA@@AK@@d@@@b@@@@@@@@@L,-,\!]]\X(5)Z/7c\\t5/K@@@@@@@@b@@@@@@[
     4 things (as <m>2^2 = 4</m>) and pick one two-bit pattern for each item. Perhaps we would declare that 00: apples,
     01: bananas, 10: oranges, and 11: pears. We could also pick any other assignments, as long as we were consistent
     about it and everyone agreed to use the same system, it would not matter if 00 meant apples or bananas.</p>
-  <p><term>ASCII</term> is such a system for mapping text, like the letter &#8216;a&#8217;, onto a binary number, like
-    the value 01100001. For different programs to be able to read each other&#8217;s files, they must agree on what this
+  <p><term>ASCII</term> is such a system for mapping text, like the letter 'a', onto a binary number, like
+    the value 01100001. For different programs to be able to read each other’s files, they must agree on what this
     01100001 means. That is the point of ASCII - a common system for representing text as binary values, used by almost
     every program that works with text. When you make a plain text file in a simple text editing program like Notepad,
     you are working with ASCII text. (More complex programs like Word that feature different formatting options are not
-    ASCII based). It should not matter if you save a text file with a program on a Macintosh and open it with a
-    different program on a Windows machine; as long as they both &#8220;speak&#8221; ASCII, they will agree on what the
+    ASCII-based). It should not matter if you save a text file with a program on a Macintosh and open it with a
+    different program on a Windows machine; as long as they both <q>speak</q> ASCII, they will agree on what the
     file contains.</p>
   <p>ASCII needs to represent all the common symbols used in text files: letters (capital and lower case), punctuation,
-    digits, and special control symbols like &#8220;tab&#8221;. An <url href="http://www.ascii-code.com/"
+    digits, and special control symbols like <q>tab</q>. An <url href="http://www.ascii-code.com/"
       visual="http://www.ascii-code.com/">ASCII table</url> shows all the mappings of numbers to characters. You can use
     the slider below to view various parts of the ASCII table.</p>
   <raw format="html" xml:space="preserve"><script>
@@ -121,15 +121,15 @@ Y8dNA@@AK@@d@@@b@@@@@@@@@L,-,\!]]\X(5)Z/7c\\t5/K@@@@@@@@b@@@@@@[
     <p>
       <ul>
         <li>
-          <p>The codes from 0-31 (00000000-00011111) are all invisible symbols like &#8220;tab&#8221; or &#8220;end of
-            line&#8221;.</p>
+          <p>The codes from 0-31 (00000000-00011111) are all invisible symbols like <q>tab</q> or <q>end of
+            line</q>.</p>
         </li>
         <li>
           <p>The capital letters range from 65-90 (01000001-01011010)</p>
         </li>
         <li>
-          <p>The lowercase letters start at 97 (01100001). That means a computer often thinks &#8216;A&#8217; is less
-            than &#8216;a&#8217;.</p>
+          <p>The lowercase letters start at 97 (01100001). That means a computer often thinks 'A' is less
+            than 'a'.</p>
         </li>
         <li>
           <p>Originally, the ASCII codes only covered 7 bits (up to 127). All the codes above 127 were added later, and
@@ -153,7 +153,7 @@ Y8dNA@@AK@@d@@@b@@@@@@@@@L,-,\!]]\X(5)Z/7c\\t5/K@@@@@@@@b@@@@@@[
         </condition>
         <condition string="^\s*.{1}\s*$">
           <feedback>
-            <p>The answer is a letter&#8230; try using the table above</p>
+            <p>The answer is a letter<ellipsis/> try using the table above</p>
           </feedback>
         </condition>
         <condition string="^\s*x\s*$">

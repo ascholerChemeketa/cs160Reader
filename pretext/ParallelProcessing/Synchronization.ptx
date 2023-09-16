@@ -57,7 +57,7 @@
     <p>In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step
       3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step
       5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command
-      &#8220;check and acquire lock&#8221; that can be done as one <term>atomic</term> action - in other words, there is
+      <q>check and acquire lock</q> that can be done as one <term>atomic</term> action - in other words, there is
       no actual gap between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2
       there would be no guarantee that the resource that looked free to A in step 1 was still free in step 2.</p>
     <p>Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked
@@ -95,7 +95,7 @@
       </dl>
     </p>
     <p>None of the possible fixes mentioned to the conditions for deadlock are without issue. We can very easily end up
-      &#8220;starving&#8221; one worker who is forced to wait all the time for their resources. It is also notoriously
+      <q>starving</q> one worker who is forced to wait all the time for their resources. It is also notoriously
       hard to figure out in advance exactly who needs to lock what resources for how long and how conflicts should be
       resolved - even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or
       data corruption.</p>

@@ -161,7 +161,7 @@ sys.setExecutionLimit(60000)
     <p>They set the time limit for the program to 60,000 millisends. (One second is 1,000 milliseconds, so 60,000
       milliseconds is 60 seconds.) This should give the program time to finish.</p>
     <p>Of course we also could increase the speed of the turtle to help get the program done faster. But since there is
-      a limit to the turtle&#8217;s speed, it may sometimes be necessary to also increase the execution limit.</p>
+      a limit to the turtle’s speed, it may sometimes be necessary to also increase the execution limit.</p>
 
     <p>If you ever get bored waiting for a program to <term>timeout</term> (exceed its execution limit), you can simply
       refresh the browser page.</p>
@@ -170,7 +170,7 @@ sys.setExecutionLimit(60000)
     <title>Indirect Nesting</title>
     <p>It is also important to recognize that we can get the same behavior if we indirectly nest loops. The sample below
       has a <c>square</c> procedure with a loop. The main part of the program has a loop as well and that loop calls the <c>square</c>
-      procedure inside of it. So the lines inside <c>square</c>&#8217;s loop get executed 40 total times - the loop in main
+      procedure inside of it. So the lines inside <c>square</c>’s loop get executed 40 total times - the loop in main
       calls square 10 times and each call to square repeats them 4 times.</p>
 
     <program xml:id="csprepeatturtles_patterns6" interactive="activecode" language="python">
@@ -191,8 +191,8 @@ for repeats in range(10):
     square(dave)
         </input>
     </program>
-    <p>Normal nested loops can get difficult to read once you have multiple &#8220;levels&#8221; of loop all stacked
-      inside of each other. The &#8220;indirect&#8221; nesting, where the inner loop is hidden inside of a procedure
+    <p>Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loop all stacked
+      inside of each other. The <q>indirect</q> nesting, where the inner loop is hidden inside of a procedure
       makes the main part of the program a bit easier to read. Compare this program to the one at the top of the page.
       It is much easier to see that this program draws 10 squares than it was to see that the first one drew 20
       pentagons. We had to use a comment in the first one just to try to make things clear.</p>

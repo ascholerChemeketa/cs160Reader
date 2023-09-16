@@ -6,7 +6,7 @@
   <p>Say we want to draw this shape:</p>
   <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%" />
   <p>We notice that it consists of three rows. Each row consists of three squares. We already know how to write a
-    procedure draw a square&#8230; lets use it to write a procedure to draw a row of squares:</p>
+    procedure draw a square<ellipsis/> lets use it to write a procedure to draw a row of squares:</p>
 
   <program xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
     <input>
@@ -85,16 +85,16 @@ grid(roger)                     # do the grid procedure with roger
   </program>
   <p>Our <c>grid</c> procedure, the parameter is called <c>turtle</c>. Which is the same name that <c>square</c> uses for its first
     parameter. It is OK for two different procedures to use the same name for their parameters. It can however be
-    confusing&#8230; just because they have the same name, does not mean that they are always going to have the same
-    value. Just like two people who both make a phone call to &#8220;Bob&#8221; may be calling the same person, or may
+    confusing<ellipsis/> just because they have the same name, does not mean that they are always going to have the same
+    value. Just like two people who both make a phone call to <q>Bob</q> may be calling the same person, or may
     not be.</p>
   <p>In this case, <c>roger</c> is passed to <c>grid</c>, which calls the turtle <c>turtle</c>, and passes it to <c>row</c>, which calls
     it <c>turtleName</c>, which passes it to <c>square</c> which calls it <c>turtle</c>. Each of the procedures has its own
-    &#8220;nickname&#8221; for the turtle that they are all working with.</p>
+    <q>nickname</q> for the turtle that they are all working with.</p>
   <exercise label="cspdesigningprocedures_procedurescallingprocedures3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following code is supposed to draw a picture consisting of four &#8220;lines&#8221;; each
-        &#8220;line&#8221; has three squares.</p>
+      <p>The following code is supposed to draw a picture consisting of four <q>lines</q>; each
+        <q>line</q> has three squares.</p>
       <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
     </statement>
     <blocks>

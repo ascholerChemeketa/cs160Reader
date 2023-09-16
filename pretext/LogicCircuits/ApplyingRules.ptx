@@ -5,7 +5,7 @@
     two-bit patterns like 1010 and 1110, we simply apply the rule to each pair of corresponding bits.</p>
 
   <p>We are going to apply the AND rule to combine the bit pattern 1010 with the pattern 1110. To do so, we will apply
-    the rule to each &#8220;column&#8221; of bits in the two patterns. The AND rule states that if both input bits are
+    the rule to each <q>column</q> of bits in the two patterns. The AND rule states that if both input bits are
     1, the output is 1. The first bit of both patterns is 1, so we record a 1 for the first bit of our answer.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND1.png" width="50%" />
@@ -16,7 +16,7 @@
   <p>A 1 in the third bit of both input patterns means the third bit of our answer is 1 as well.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND3.png" width="50%" />
-  <p>Finally, in the last position, two 0&#8217;s result in 0 according to the AND rule. Our final answer is 1010. In
+  <p>Finally, in the last position, two 0’s result in 0 according to the AND rule. Our final answer is 1010. In
     any digit where both patterns had a 1 our answer has a 1; otherwise, it has a 0.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND4.png" width="50%" />
@@ -62,11 +62,11 @@
           requires - one input to be 1. So the second answer digit is 1.</p>
       </li>
       <li>
-        <p><term>Third column</term>: Once again, two 1&#8217;s as input result in a 1 for our answer in the third
+        <p><term>Third column</term>: Once again, two 1’s as input result in a 1 for our answer in the third
           digit.</p>
       </li>
       <li>
-        <p><term>Fourth column</term>: In the last digit, both patterns have 0&#8217;s. That is the only way that OR
+        <p><term>Fourth column</term>: In the last digit, both patterns have 0’s. That is the only way that OR
           produces a 0. So our answer has a 0 in the fourth digit.</p>
       </li>
     </ul>

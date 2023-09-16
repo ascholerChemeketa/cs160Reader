@@ -1,7 +1,7 @@
 <section xml:id="csp-name-numbers_expressions">
     <title>Expressions</title>
 
-    <p>The <em>right hand</em> side of the assignment statement doesn&#8217;t have to
+    <p>The <em>right hand</em> side of the assignment statement doesn’t have to
         be a value. It can be <em>an arithmetic expression</em>, like <c>2 * 2</c>. The expression will be evaluated and the
         result from the expression will be stored in the variable.</p>
 
@@ -39,7 +39,7 @@
     <subsection xml:id="csp-name-numbers_operations">
         <title>Operations</title>
         <p>You can use all the standard mathematical operations, you just have to know the right symbols to use: <c>/</c>
-            means divsion; <c>*</c> means times; <c>**</c> means &#8220;to the power of&#8221;.</p>
+            means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.</p>
 
         <listing xml:id="cspnamenumbers_expression4" >
             <program interactive="activecode" language="python">
@@ -148,7 +148,7 @@ print(result2)
         </exercise>
         <note>
             <p>The result of <c>x % y</c> when <c>x</c> is smaller than <c>y</c> is always <c>x</c>. The value <c>y</c>
-                can&#8217;t go into <c>x</c> at all, since <c>x</c> is smaller than <c>y</c>, so the result is just <c>x</c>.
+                can’t go into <c>x</c> at all, since <c>x</c> is smaller than <c>y</c>, so the result is just <c>x</c>.
                 So if you see <c>2 % 3</c> the result is <c>2</c>. Edit the code above to try this for yourself. Change the
                 code to <c>result = 2 % 3</c> and see what that prints when it is run.</p>
         </note>

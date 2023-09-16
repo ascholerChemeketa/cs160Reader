@@ -4,7 +4,7 @@
     that is hard because the string that has the state also has the city: <c>"Pocatello,ID"</c>. We need to separate the two.
     Fortunately, we can easily use <c>split</c> to do so.</p>
   <p>We have already been using <c>split</c> to chop up the entire line of data into a list of the three values it contains -
-    turning <c>"Pocatello,ID:15:9"</c> into <c>["Pocatello,ID", "15", "9"]</c>. In the same way, we can split <c>"Pocatello,ID"</c> at the &#8220;,&#8221; to turn it into a list
+    turning <c>"Pocatello,ID:15:9"</c> into <c>["Pocatello,ID", "15", "9"]</c>. In the same way, we can split <c>"Pocatello,ID"</c> at the <q>,</q> to turn it into a list
     like <c>["Pocatello", "ID"]</c> where the first value is the city and the second the state.</p>
   <p>Step 6 is in the sample below is where we do the key work. We grab <c>values[0]</c>, which is the city/state string, make a
     list out of it using <c>split</c>, and call that list <c>cityState</c>. We can then use <c>cityState[0]</c> to get the city name and <c>cityState[1]</c>
@@ -26,9 +26,9 @@
   </program>
 
   <p>Now that we have the state isolated, we can use that to look for just records that have the state code that we
-    desire. Let&#8217;s try that and look for records from Oregon. We will loop through all of the records, split the
+    desire. Let’s try that and look for records from Oregon. We will loop through all of the records, split the
     line up into values, split the city/state up into a list, and then test the state value against the state code
-    &#8220;OR&#8221; and only print out records that have that code.</p>
+    <q>OR</q> and only print out records that have that code.</p>
 
   <note>
     <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
@@ -55,8 +55,8 @@
   </program>
   <p>It seems to work. But if you look closely at the records it produces, there is nothing for Portland, OR. Looking at
     the data file, we can see why - Portland is listed as part of a metro area that extends into Washington, so its
-    state code is listed as &#8220;OR-WA&#8221;. For this program to work correctly, we need to accept any state code
-    that has &#8220;OR&#8221; anywhere in it. That is an easy fix, we just need to change the <c>==</c> operator into the <c>in</c>
+    state code is listed as <q>OR-WA</q>. For this program to work correctly, we need to accept any state code
+    that has <q>OR</q> anywhere in it. That is an easy fix, we just need to change the <c>==</c> operator into the <c>in</c>
     operator to see if the <c>targetState</c> is anywhere in the state code from the line we are working with. Try doing that and
     make sure Portland appears in the output.</p>
   <p>Now, we can merge our average logic into that code. We will only count records that are in the target state.</p>
@@ -97,7 +97,7 @@
 
   <exercise label="csppythondata_findpollstate4">
     <statement>
-      <p>Modify the program to calculate the average PM2.5 pollution in Texas (state code &#8220;TX&#8221;). What is the
+      <p>Modify the program to calculate the average PM2.5 pollution in Texas (state code <q>TX</q>). What is the
         value? <var />
       </p>
     </statement>

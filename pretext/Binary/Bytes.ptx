@@ -3,7 +3,7 @@
   <p>One bit of information is so little that usually computer memory is organized into groups of eight bits. Each
     eight-bit group is called a byte. Because it has 8 bits, it can store <m>2^8</m> or 256 different values. This makes
     it appropriate for storing things like a single character of text - with 256 different values we can assign a
-    different 8-bit pattern to each letter, digit, punctuation mark, etc&#8230;</p>
+    different 8-bit pattern to each letter, digit, punctuation mark, etc<ellipsis/></p>
   <p>When more than eight bits are required for some data, several bytes are used. For example, typically:</p>
   <p>
     <ul>
@@ -73,7 +73,7 @@
   </table>
   <subsection xml:id="binary_powers-of-2-vs-10">
     <title>Powers of 2 vs 10</title>
-    <p>In the metric system, Kilo, Mega, Giga, etc&#8230; refer to different powers of 10. So a <term>Kilobyte</term>,
+    <p>In the metric system, Kilo, Mega, Giga, etc<ellipsis/> refer to different powers of 10. So a <term>Kilobyte</term>,
       or <term>KB</term>, is <m>10^{3}</m> bytes. Using that system gives us the following units:</p>
     <table>
       <tabular>
@@ -126,23 +126,23 @@
       </tabular>
     </table>
     <p>Unfortunately, this distinction between units like <term>KB</term> and <term>KiB</term> is a relatively recent
-      one and is not used consistently. If someone specifies one of the <term>KiB</term>, <term>MiB</term>, etc&#8230;
+      one and is not used consistently. If someone specifies one of the <term>KiB</term>, <term>MiB</term>, etc<ellipsis/>
       values, you can be sure that they mean a power of 2. However, when someone specifies a value without the little <term>
-      i</term>, like <term>KB</term> or <term>MB</term> they may be specifying a power of 2 or 10. <em>&#8220;256
-      MB&#8221;</em> can either mean <m>256 \times 10^{6}</m> or <m>256 \times 2^{20}</m> bytes. The same source may
-      even use the <term>MB</term>, <term>GB</term>, etc&#8230; notation to mean both base 10 and base 2 when describing
-      different measurements. For example, if you buy a computer advertised with <em>&#8220;16 GB&#8221;</em> of main
-      memory (RAM) and a <em>&#8220;500 GB&#8221;</em> hard drive, the 16 GB means <m>16 \times 2^{30}</m> while the 500
+      i</term>, like <term>KB</term> or <term>MB</term> they may be specifying a power of 2 or 10. <em><q>256
+      MB</q></em> can either mean <m>256 \times 10^{6}</m> or <m>256 \times 2^{20}</m> bytes. The same source may
+      even use the <term>MB</term>, <term>GB</term>, etc<ellipsis/> notation to mean both base 10 and base 2 when describing
+      different measurements. For example, if you buy a computer advertised with <em><q>16 GB</q></em> of main
+      memory (RAM) and a <em><q>500 GB</q></em> hard drive, the 16 GB means <m>16 \times 2^{30}</m> while the 500
       GB means <m>500 \times 10^{9}</m>!</p>
-    <p>Fortunately, the values of the base 2 and base 10 systems are close enough that a value like <em>&#8220;32
-      GB&#8221;</em> gives you a good idea of how big the value is even if you aren&#8217;t sure how to interpret the <term>
+    <p>Fortunately, the values of the base 2 and base 10 systems are close enough that a value like <em><q>32
+      GB</q></em> gives you a good idea of how big the value is even if you aren’t sure how to interpret the <term>
       GB</term>. But if you desire an exact value, you need to figure out whether you should be using <m>10^{9}</m> or <m>
       2^{30}</m> for each <term>GB</term>.</p>
     <note>
       <p>Traditionally, people describe processor speeds, network speeds, and hard drive space using the power of
-        10&#8217;s system. They describe main memory (RAM) and the size of files and data using the power of 2&#8217;s
-        system. This gets a bit confusing when you are calculating something like how long it will take to send a <em>&#8220;200
-        MB&#8221;</em> file over a <em>&#8220;100 MB/s&#8221;</em> network connection - the two <term>MB</term>&#8217;s
+        10’s system. They describe main memory (RAM) and the size of files and data using the power of 2’s
+        system. This gets a bit confusing when you are calculating something like how long it will take to send a <em><q>200
+        MB</q></em> file over a <em><q>100 MB/s</q></em> network connection - the two <term>MB</term>’s
         are different units!</p>
     </note>
 
@@ -184,7 +184,7 @@
     </exercise>
     <exercise label="binary_bytes2">
       <statement>
-        <p>How many bytes are in 4KiB ? <var />
+        <p>How many bytes are in 4KiB? <var />
         </p>
       </statement>
       <setup>

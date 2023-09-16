@@ -24,7 +24,7 @@ print(summerMonths)
   <p>But, rather than do that work ourselves, there is syntax in Python for asking for part of a list. Part of a list is
     known as a <term>slice</term>. We ask for a slice in a similar way to asking for a single item. To get a single item
     from a list, say the item at index 4, we say <c>list[4]</c>. To ask for a slice of <c>list</c> we would say something like: <c>list[4:10]</c>
-    which says &#8220;I want a copy of items number 4 through 9&#8221;. Notice that the second value, which is the
+    which says <q>I want a copy of items number 4 through 9</q>. Notice that the second value, which is the
     stopping point, is not included in the slice.</p>
   <p>That means a much easier way to get a list of the summer months would be:</p>
 
@@ -41,10 +41,10 @@ print(summerMonths)
   <note>
     <p>Remember that the slice always stops just before the second index given. <c>[5:8]</c> only slices indexes 5-7.</p>
   </note>
-  <p>There are some handy shortcuts we can use when specifying a slice. If you don&#8217;t give a second index, like <c>[5:]</c>,
-    it means &#8220;to the end of the list&#8221;. If you use a negative value, it is counted from the end of the list. <c>[-3:-1]</c>
-    means &#8220;the slice from the third to the last item up to but not including the last item&#8221;. <c>[-2:]</c> would
-    mean &#8220;the last two items&#8221;.</p>
+  <p>There are some handy shortcuts we can use when specifying a slice. If you don’t give a second index, like <c>[5:]</c>,
+    it means <q>to the end of the list</q>. If you use a negative value, it is counted from the end of the list. <c>[-3:-1]</c>
+    means <q>the slice from the third to the last item up to but not including the last item</q>. <c>[-2:]</c> would
+    mean <q>the last two items</q>.</p>
 
   <program xml:id="cspcollectionscontinued_slices3" interactive="activecode" language="python">
     <input>
@@ -64,8 +64,8 @@ print(lastThree)
   <exercise label="cspcollectionscontinued_slices4">
     <statement>
 
-      <p>Check all the valid ways to specify the slice that includes &#8220;Sep&#8221;, &#8220;Oct&#8221;,
-        &#8220;Nov&#8221;, &#8220;Dec&#8221;</p>
+      <p>Check all the valid ways to specify the slice that includes <q>Sep</q>, <q>Oct</q>,
+        <q>Nov</q>, <q>Dec</q></p>
 
     </statement>
     <choices>

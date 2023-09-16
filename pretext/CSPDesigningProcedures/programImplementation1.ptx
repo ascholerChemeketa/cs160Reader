@@ -9,7 +9,7 @@
     <p>Remember, debugging code is often harder than writing it in the first place. It is much easier to find and fix
       errors in small blocks of code than in a giant program.</p>
   </warning>
-  <p>My lowest-level procedure was <c>rectangle</c>, so let&#8217;s start building that. In the sample below, I have attempted to
+  <p>My lowest-level procedure was <c>rectangle</c>, so let’s start building that. In the sample below, I have attempted to
     write the procedure.</p>
 
   <p>I have done a few things to make it easier to use the rectangle
@@ -18,7 +18,7 @@
     comment at the start of the procedure reminding myself of assumptions I have made - in this case that the turtle is
     facing East. An assumption that is made by a procedure is known as a <term>precondition</term> to the procedure - it
     is something that must already be true when we start for the procedure to work correctly.</p>
-  <p>I&#8217;ll also write some code to test it. I will try to use my procedure to draw a few different rectangles -
+  <p>I’ll also write some code to test it. I will try to use my procedure to draw a few different rectangles -
     first a 50x50 rectangle (a square), followed by a 10x100 narrow But tall rectangle. Try the code:</p>
 
   <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
@@ -63,7 +63,7 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
           the caller could just say <c>rectangle(steve, 50, 50, "light blue")</c> and not worry about doing the <c>fill_color</c> step itself.</p>
       </li>
       <li>
-        <p>Turtle&#8217;s have a <c>setheading</c> command. Instead of assuming a <term>precondition</term> that the turtle is
+        <p>Turtle’s have a <c>setheading</c> command. Instead of assuming a <term>precondition</term> that the turtle is
           facing East, we could have <c>rectangle</c> use to face the turtle East at the start of the procedure.</p>
       </li>
     </ul>

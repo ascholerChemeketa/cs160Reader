@@ -14,10 +14,10 @@ for iteration in range(5):
     loop as long as some <term>logical expression</term> is true. Just like with a for loop, the <term>body</term> of a
     while loop is the lines of code after <c>while</c> that are indented. A <term>logical expression</term> is one that is
     either true or false like <c>x &lt; 5</c>. (We will talk more about them later.)</p>
-  <p><c>While</c> loops are typically used when you don&#8217;t know how many times to execute the loop. they allow us to say <em>&#8220;keep
-    repeating this while we don&#8217;t have an answer&#8221;</em>. One reason we might not know in advance how many
+  <p><c>While</c> loops are typically used when you don’t know how many times to execute the loop. they allow us to say <em><q>keep
+    repeating this while we don’t have an answer</q></em>. One reason we might not know in advance how many
     times to repeat is if we are getting input from outside the program. The code below will keep asking you to enter
-    numbers. It will do so until you enter a number that isn&#8217;t negative. It will print out the sum and average of
+    numbers. It will do so until you enter a number that isn’t negative. It will print out the sum and average of
     all of the numbers you have entered.</p>
 
   <program xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
@@ -35,7 +35,7 @@ while int(value) &gt; 0:
 print("The sum is: " + str(sum) + " the average is: " + str(sum / count))
         </input>
   </program>
-  <p>The loop in this sample takes your input, which is stored in <c>value</c> as a string like &#8220;12&#8221;, and turns
+  <p>The loop in this sample takes your input, which is stored in <c>value</c> as a string like <q>12</q>, and turns
     that into an integer like 12. It checks to see if that value is greater than 0. If so, it does the loop body, if
     not, we skip over the loop body and continue with the rest of the program.</p>
 

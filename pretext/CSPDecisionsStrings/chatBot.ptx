@@ -43,7 +43,7 @@
         I just wish it had a happy ending.</prompt><input></input>
     </console>
 
-  <p>Write a chatbot that asks the user at least three questions and then uses the user&#8217;s input to build its
+  <p>Write a chatbot that asks the user at least three questions and then uses the user’s input to build its
     answer or make a decision about what to say. (You can add extra questions like the last one where the computer asks
     a question but then does not look at the response, but those do not count towards the three-question minimum.) Try
     to come up with your own questions instead of just copying the samples above!</p>

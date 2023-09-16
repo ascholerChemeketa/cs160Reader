@@ -1,7 +1,7 @@
 <section xml:id="history-of-computers_dawn-of-computers">
   <title>Dawn of Computers</title>
   <p><term>Charles Babbage</term>, an English mechanical engineer and polymath, originated the concept of a programmable
-    computer. Considered the &#8220;father of the computer&#8221;, he conceptualized and invented the first mechanical
+    computer. Considered the <q>father of the computer</q>, he conceptualized and invented the first mechanical
     computer in the early 19th century. In 1823, on a commission from the British government, he began designing and
     building the <term>Difference Engine</term> to calculate values for polynomial functions. After working on the
     machine for ten years he realized that a much more general design that could be instructed to perform arbitrary
@@ -15,13 +15,13 @@
     design for a general-purpose computer. The input of both programs and data was to be provided to the machine via
     punched cards, a method being used at the time to direct mechanical looms such as the Jacquard loom. Punch cards
     were to remain the dominant way of <url href="https://www.youtube.com/watch?v=KG2M4ttzBnY">feeding a program into a
-    computer</url> until the 1970&#8217;s.</p>
+    computer</url> until the 1970’s.</p>
   <figure xml:id="dawn-of-computers-img1">
     <caption>via Wikimedia commons</caption>
     <image source="HistoryOfComputers/Images/IBM_026_card_code.png" width="50%"
       alt="Punchcard" />
     <legend>
-      <p>1960&#8217;s Era computer punch card</p>
+      <p>1960’s Era computer punch card</p>
     </legend>
   </figure>
   <sidebar>
@@ -40,7 +40,7 @@
   <blockquote>
     <p>The Analytical Engine might act upon other things besides number, were objects found whose mutual fundamental
       relations could be expressed by those of the abstract science of operations, and which should be also susceptible
-      of adaptations to the action of the operating notation and mechanism of the engine&#8230;</p>
+      of adaptations to the action of the operating notation and mechanism of the engine<ellipsis/></p>
     <p>Supposing, for instance, that the fundamental relations of pitched sounds in the science of harmony and of
       musical composition were susceptible of such expression and adaptations, the engine might compose elaborate and
       scientific pieces of music of any degree of complexity or extent.</p>
@@ -55,7 +55,7 @@
     the 1890 census would take approximately 13 years to complete. Since the U.S. Constitution mandates a census every
     ten years, that meant the data would be obsolete before the results were available. <term>Herman Hollerith</term>
     invented a machine that could be used to tabulate data on punch cards, which could then easily be sorted or tallied
-    mechanically. Using this machine, the 1890&#8217;s census was completed in just one year. This success sparked a
+    mechanically. Using this machine, the 1890’s census was completed in just one year. This success sparked a
     revolution in business data processing - the company that Hollerith founded would merge with three other companies
     to become International Business Machines (IBM).</p>
   <figure xml:id="dawn-of-computers-img3">

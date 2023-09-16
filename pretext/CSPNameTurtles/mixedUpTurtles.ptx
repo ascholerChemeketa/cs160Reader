@@ -2,7 +2,7 @@
   <title>Mixed Up Code Practice</title>
   <p>Try to solve each of the following. Click the <em>Check</em> button to check each solution. You will be told if
     your solution is too short, has a block in the wrong order, or you are using the wrong block. Some of the problems
-    have an extra block that isn&#8217;t needed in the correct solution.</p>
+    have an extra block that isn’t needed in the correct solution.</p>
   <exercise label="cspnameturtles_mixedupturtles1" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>The following program segment should draw a red line. The blocks have been mixed up. Drag the blocks from the

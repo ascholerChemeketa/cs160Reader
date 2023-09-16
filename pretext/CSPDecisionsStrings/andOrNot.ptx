@@ -5,7 +5,7 @@
     <title>And</title>
     <p><c>and</c> is what we use when we want to verify that two things are BOTH true. A common use of <c>and</c> is to check
       that a value is in a range between a minimum value and a maximum value. For example, to determine if a grade is a
-      &#8220;B&#8221;, we need to make sure it is at least 80 but is also less than 90. We can use <c>and</c> to combine <c>grade &gt;= 80</c>
+      <q>B</q>, we need to make sure it is at least 80 but is also less than 90. We can use <c>and</c> to combine <c>grade &gt;= 80</c>
       and <c>grade &lt; 90</c> so that both must be true for the overall condition to be true. Try changing grade to different values
       as you run this program:</p>
 
@@ -21,8 +21,8 @@ print ("All done")
     <exercise label="cspdecisionsstrings_andornot2">
       <statement>
 
-        <p>Given the code below, what describes the values of x that will cause the code to print &#8220;condition
-          true&#8221;?</p>
+        <p>Given the code below, what describes the values of x that will cause the code to print <q>condition
+          true</q>?</p>
         <program language="python">
           <input>
 if x &gt; 0 and x &lt; 10:
@@ -68,8 +68,8 @@ print ("All done")
   <subsection xml:id="csp-decisions-strings_or">
     <title>Or</title>
     <p><c>or</c> is a way to give multiple ways to satisfy some criteria. For example, maybe our program is going to ask
-      the user if they have a bag to check. We want them to be able to answer either &#8220;yes&#8221; or just
-      &#8220;y&#8221;. If you input either answer when asked for an input by this program, it will tell you there will
+      the user if they have a bag to check. We want them to be able to answer either <q>yes</q> or just
+      <q>y</q>. If you input either answer when asked for an input by this program, it will tell you there will
       be an extra fee.</p>
 
     <program xml:id="cspdecisionsstrings_andornot3" interactive="activecode" language="python">
@@ -84,8 +84,8 @@ print ("All done")
     <exercise label="cspdecisionsstrings_andornot4">
       <statement>
 
-        <p>Given the code below, what describes the values of x that will cause the code to print &#8220;condition
-          true&#8221;?</p>
+        <p>Given the code below, what describes the values of x that will cause the code to print <q>condition
+          true</q>?</p>
         <program language="python">
           <input>
 if x &lt; 0 or x &gt;= 10:

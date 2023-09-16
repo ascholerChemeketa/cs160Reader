@@ -1,9 +1,9 @@
 <section xml:id="csp-collections-intro_working-with-indexes">
   <title>Working with Indexes</title>
 
-  <p>Sometimes, we don&#8217;t want to access all of the items in a list one at a time in order. To access individual
+  <p>Sometimes, we don’t want to access all of the items in a list one at a time in order. To access individual
     items in a collection (a list or a string), we can use an <term>index</term>. Each item in a collection has a number
-    associated with it &#8211; think of it as the item&#8217;s address in the collection. The first item in a collection
+    associated with it <ndash/> think of it as the item’s address in the collection. The first item in a collection
     has index <c>0</c>, the next one <c>1</c>, and so on. See the image below for a view of two lists with the <em>index</em>
     for each list item shown at the top of each yellow box and the <em>value</em> for that index shown at the bottom of
     each yellow box.</p>
@@ -15,7 +15,7 @@
     will access the second item in the list.</p>
   <warning>
     <p>In programming, we often count from 0 instead of from 1. It will take some getting used to, but when you see a
-      list of things, remember that the first one it item 0. The last item will always have an index one less than the
+      list of things, remember that the first one is item 0. The last item will always have an index one less than the
       number of items - the last item in a list with 10 values is index 9.</p>
   </warning>
 

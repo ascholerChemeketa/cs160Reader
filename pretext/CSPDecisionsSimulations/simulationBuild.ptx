@@ -1,13 +1,13 @@
 <section xml:id="csp-decisions-simulations_building-a-simulation">
   <title>Building a Simulation</title>
-  <p>Let&#8217;s use what we have learned about random numbers and if statements to build a simulation. We want to know
-    the answer to <em>&#8220;If you flip a coin 100 times, what are the chances you get 5 heads in a row at some
-    point?&#8221;</em></p>
+  <p>Let’s use what we have learned about random numbers and if statements to build a simulation. We want to know
+    the answer to <em><q>If you flip a coin 100 times, what are the chances you get 5 heads in a row at some
+    point?</q></em></p>
   <p>This is a complex problem. We need to flip a coin 100 times and figure out if we get at least 5 heads in a row -
     that is slightly different than what we have done so far. We will also need to repeat that a bunch of times - if we
     want to know the chances of something happening, we will need to do it say 10,000 times and see what percent of the
     time we get the right result.</p>
-  <p>So let&#8217;s start with the basics - how do we see if we got 5 heads in a row? Well, each time we flip a coin, if
+  <p>So let’s start with the basics - how do we see if we got 5 heads in a row? Well, each time we flip a coin, if
     it is a head, we need to add one to <c>headsInARow</c>. If it is a tail, that means we now have seen 0 <c>headsInARow</c>:</p>
 
   <program xml:id="cspdecisionssimulations_simulationbuild1" interactive="activecode" language="python">
@@ -29,9 +29,9 @@ for i in range(100):
     need to modify it so it produces just one answer - true or false - yes we got at least 5 heads in a row or no we did
     not.</p>
   <p>To do this, we will use <c>break</c> to stop the loop if we see 5 heads in a row. The <c>break</c> command is a way to stop a
-    loop - it &#8220;breaks&#8221; us out of the loop and continues with the rest of the program. In this case, if <c>headsInARow</c>
-    hits 5, we can stop the loop early - we know that we got 5 heads and we don&#8217;t want to keep going and flip a
-    tail and then &#8220;forget&#8221; that we had 5 in a row.</p>
+    loop - it <q>breaks</q> us out of the loop and continues with the rest of the program. In this case, if <c>headsInARow</c>
+    hits 5, we can stop the loop early - we know that we got 5 heads and we don’t want to keep going and flip a
+    tail and then <q>forget</q> that we had 5 in a row.</p>
 
   <program xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">
     <input>

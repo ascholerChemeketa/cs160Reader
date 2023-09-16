@@ -88,7 +88,7 @@
 
   <exercise label="cspnameprocedures_exercises3">
     <statement>
-      <p>Define a function <c>hexagon</c> that has a turtle&#8217;s name as its parameter. Your procedure should draw a hexagon
+      <p>Define a function <c>hexagon</c> that has a turtle’s name as its parameter. Your procedure should draw a hexagon
         (6 sides) where each side has a length of 50. The turtle should end up in its original position and facing.
         Remember the turns required (exterior angles) for a regular shape are <m>360 / numSides</m>.</p>
       <p>While you are developing your procedure, we will call the <c>hexagon</c> procedure just once. When you are done,

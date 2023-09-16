@@ -3,14 +3,14 @@
   <title>Defining Procedures - Why</title>
 
   <p>How does Python know what to do when we call functions like <c>abs</c> or
-    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedures or
-    function, associates a name with a name with a sequence of steps.</p>
+    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedure or
+    function associates a name with a name with a sequence of steps.</p>
   <p>Why do we make new procedures or functions? There are two primary reasons:</p>
   <p>
     <ul>
       <li>
-        <p><term>Code reuse</term> - A golden rule in programming is <term>DRY - don&#8217;t repeat yourself</term>. If
-          you find yourself typing the same code over and over (or copy/pasting), there is probably a better way to
+        <p><term>Code reuse</term> - A golden rule in programming is <term>DRY - don’t repeat yourself</term>. If
+          you find yourself typing the same code over and over (or by copying and pasting), there is probably a better way to
           solve the problem. By defining a function or procedure, we can easily reuse a sequence of instructions without
           typing the entire sequence over and over again.</p>
       </li>
@@ -81,11 +81,11 @@ yessenia.forward(20)
         </input>
   </program>
   <p>It is much easier to read this program and quickly understand what it is doing. It requires less typing (or
-    copy/pasting) to make this program. And you could modify this program to draw a fourth square without even
+    copy/pasting) to make this program. And, you could modify this program to draw a fourth square without even
     understanding how the squares are drawn - <c>square</c> is an abstraction that lets you draw a square without worrying
-    about how to actually accomplish that task.</p>
-  <p>However, this new program doesn&#8217;t work yet. Try running it if you have not already. You will get an error
-    message that <em>&#8220;&#8216;square&#8217; is not defined on line 5&#8221;</em>. Python has no idea what is meant
+    about how that task is actually accomplished.</p>
+  <p>However, this new program doesn’t work yet. Try running it if you have not already. You will get an error
+    message that <em><q>'square' is not defined on line 5</q></em>. Python has no idea what is meant
     by <c>square</c>. Before we can run this code, we need to <term>define</term> how the <c>square</c> procedure works.</p>
 </section>
 

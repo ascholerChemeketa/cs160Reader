@@ -21,7 +21,7 @@ def hypotenuse_length(sideA, sideB):
   </program>
   <p>Of course, running it right now does nothing. Just like a procedure definition, a function definition does not
     cause anything to happen on its own. It is only the instructions for what to do when someone calls <c>hypotenuse_length</c>. So
-    let&#8217;s add a call to the function. This working program asks for the lengths of two sides from the user and
+    let’s add a call to the function. This working program asks for the lengths of two sides from the user and
     then uses those two values <c>a</c> and <c>b</c> to call <c>hypotenuse_length</c>.</p>
 
   <program xml:id="cspnamefunctions_definingfunctionshow2" interactive="activecode" language="python">

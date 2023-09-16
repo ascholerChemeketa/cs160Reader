@@ -5,7 +5,7 @@
     <c>Turtle()</c> creates an object and returns it, so it is a function.</p>
   <p><term>Procedures</term> are similar to functions in that they do some work. However, unlike functions, they do not
     return a value when they are done. The turtle behaviors <c>forward(75)</c> and <c>left(90)</c> below are both procedures since they do
-    an action, but don&#8217;t return any kind of answer when they are done.</p>
+    an action, but don’t return any kind of answer when they are done.</p>
   <p>When we execute a <term>function</term>, also known as <term>calling</term> the function, we have to make sure to
     do something with the result. As we discussed in a previous chapter, you can picture the function call as turning
     into the returned value. In the line of code below, the <c>Turtle()</c> command turns into a new turtle object for us to use
@@ -31,9 +31,9 @@ newDirection =                # Done turning left, there is nothing left!!!
 </input>
   </program>
   <note>
-    <p>Some programmers don&#8217;t make a distinction between procedures and functions and will call both of these
+    <p>Some programmers don’t make a distinction between procedures and functions and will call both of these
       functions. In this book, we are using <term>function</term> for named code that returns a value and <term>
-      procedure</term> for named code that doesn&#8217;t return a value.</p>
+      procedure</term> for named code that doesn’t return a value.</p>
     <p>It is a difference worth paying attention to because of the difference in how we use them - whether we need to
       worry about doing something with the returned value or not.</p>
   </note>

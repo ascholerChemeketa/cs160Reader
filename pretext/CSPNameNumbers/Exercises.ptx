@@ -5,7 +5,7 @@
     <statement>
       <p><c>==</c> is an operator that checks for equality. If the value on the left side is equal to the value on the
         right side, it gives <c>True</c>. Otherwise it gives <c>False</c>.</p>
-      <p>Insert the correct operators in place of the <c>#</c>&#8217;s so each line prints <c>True</c>. Don&#8217;t change
+      <p>Insert the correct operators in place of the <c>#</c>’s so each line prints <c>True</c>. Don’t change
         any of the numbers.</p>
 
     </statement>
@@ -153,7 +153,7 @@
         correct values for <term>numHours</term> and <term>numMinutes</term> based on the <term>totalMinutes</term>
         value.</p>
       <p>The correct answers should be 4 for <term>numHours</term> and 30 for <term>numMinutes</term>. But make sure to
-        calculate those values - don&#8217;t hardcode them!</p>
+        calculate those values - don’t hardcode them!</p>
 
     </statement>
     <program xml:id="cspnamenumbers_exercises6_editor" interactive="activecode" language="python">

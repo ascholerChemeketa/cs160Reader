@@ -3,7 +3,7 @@
   <p>Once again, taking the algorithm from something appropriate for a human to computer pseudocode requires adding more
     detail. In the code below, <c>i</c> is equivalent to the black line - it marks the start of the unsorted portion of
     the list. <c>j</c> is the right hand - it stores the location of the card that is being inserted into place. The
-    animation of a human used the left hand to point to the card to the left of the one being inserted - here we use <c>j - 1</c>
+    animation of the human sort used the left hand to point to the card to the left of the one being inserted - here we use <c>j - 1</c>
     to indicate the card to the left of the card being inserted. (Since <c>j</c> is the index of a location, <c>j - 1</c>
     gives us the index to its left.)</p>
   <program language="none">

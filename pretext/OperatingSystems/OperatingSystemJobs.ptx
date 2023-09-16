@@ -26,7 +26,7 @@
       <title>Hardware Abstraction</title>
 
       <p>Computer hardware is diverse and complicated. There are many different kinds of storage drives that can be hooked
-        up to a computer - flash, hard drive, CD drive, SSD, etc&#8230; and each of those styles of drive comes in thousands
+        up to a computer - flash, hard drive, CD drive, SSD, etc<ellipsis/> and each of those styles of drive comes in thousands
         of makes and models. Each of those different drives stores information in different ways, often scattered pieces of
         information across the drive.</p>
       <p>Imagine you are writing a program and want to read a document from a drive. Without an operating system, you would
@@ -34,7 +34,7 @@
         memory. Then you would have to make sure that code worked with thousands of different kinds of drives.</p>
       <p>Instead of that nightmare situation, the operating system provides an <term>abstraction</term> for dealing with
         hardware - instead of talking to a drive about chunks of information, your program can talk to the operating system
-        about <em>&#8220;opening a file&#8221;</em>. Because the operating system knows how to look up and retrieve the
+        about <em><q>opening a file</q></em>. Because the operating system knows how to look up and retrieve the
         information that corresponds to that <em>file</em> on a wide variety of devices, your program is freed up from
         worrying about all of the messy details.</p>
     </subsection>
@@ -44,7 +44,7 @@
       <p>Related to the job of hardware abstraction is providing tools to other programs to interact with users in a
         consistent and effective manner. Operating systems provide application programming interfaces (APIs) that include
         tools for doing things like drawing windows. Rather than each application designer deciding what windows should look
-        like, what font to use in the title bar, where to put the close button, etc&#8230; the operating system provides
+        like, what font to use in the title bar, where to put the close button, etc<ellipsis/> the operating system provides
         code that takes care of those details. Not only does this makes programming an application easier, but it also helps
         enforce a consistent experience for the user.</p>
       <p>We could fill books with all the ways that operating systems provide allocations of and abstractions for computer

@@ -7,8 +7,8 @@
 
   <exercise label="cspcollectionsintro_addremove1">
     <statement>
-      <p>This program adds two strings to the list <c>words</c>. Add code to add the word &#8220;Carrot&#8221; to the list
-        after &#8220;Banana&#8221; but before &#8220;Date&#8221;</p>
+      <p>This program adds two strings to the list <c>words</c>. Add code to add the word <q>Carrot</q> to the list
+        after <q>Banana</q> but before <q>Date</q></p>
     </statement>
     
     <program xml:id="cspcollectionsintro_addremove1_editor" interactive="activecode" language="python">
@@ -106,7 +106,7 @@ print(numbers)
   <p>
     <ul>
       <li>
-        <p><c>pop()</c> removes an item from the end of a list. (It &#8220;pops&#8221; the item off.)</p>
+        <p><c>pop()</c> removes an item from the end of a list. (It <q>pops</q> the item off.)</p>
       </li>
       <li>
         <p><c>pop(index)</c> removes an item from the specified index.</p>
@@ -135,8 +135,8 @@ names.pop(0)
 
   <exercise label="cspcollectionsintro_addremove5">
     <statement>
-      <p>We want the list called alphabet to contain the letters &#8220;A&#8221;, &#8220;B&#8221;, &#8220;C&#8221;,
-        &#8220;D&#8221; in that order. Use a combination of append, insert, remove, and pop to make it have the right
+      <p>We want the list called alphabet to contain the letters <q>A</q>, <q>B</q>, <q>C</q>,
+        <q>D</q> in that order. Use a combination of append, insert, remove, and pop to make it have the right
         values.</p>
       <p>(Do not use <c>letters[index]</c> to change the existing items.)</p>
 

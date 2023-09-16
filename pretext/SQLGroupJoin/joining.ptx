@@ -34,7 +34,7 @@ WHERE
     get, we would like to write one query that works on both tables. In SQL, when you need to join data across multiple
     spreadsheets, you use the <c>JOIN</c> keyword. <c>JOIN</c> is used to merge the columns in one table with the columns in
     another table.</p>
-  <p>However, when we want to join records from two tables, we don&#8217;t want to join them randomly. We want to make
+  <p>However, when we want to join records from two tables, we don’t want to join them randomly. We want to make
     sure that records that talk about station 31104 in <c>trip_data</c> are joined with the records that talk about that same
     station number in <c>bikeshare_stations</c>. To specify how to <c>JOIN</c> tables, we must use an <c>ON</c> clause that specifies which
     column in the first table to match with which column in the second table. To name the columns, we use <term>dot</term>

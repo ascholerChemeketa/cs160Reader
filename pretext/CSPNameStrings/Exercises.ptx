@@ -4,7 +4,7 @@
   <exercise label="cspnamestrings_exercises1">
     <statement>
       <p>There are 3 syntax errors in the following code. Fix it to print correctly without errors. It will print,
-        &#8220;Your name is Carly and your favorite color is red.&#8221;.</p>
+        <q>Your name is Carly and your favorite color is red.</q>.</p>
 
     </statement>
     <program xml:id="cspnamestrings_exercises1_editor" interactive="activecode" language="python">
@@ -31,8 +31,8 @@
   <exercise label="cspnamestrings_exercises2">
     <statement>
       <p>You will get an error if you try to run the following code. Fix the code to print correctly without errors. It
-        should print, <em>&#8220;Your name is Carly and your age is 19.&#8221;</em></p>
-      <p>Note: Don&#8217;t forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where <c>x</c>
+        should print, <em><q>Your name is Carly and your age is 19.</q></em></p>
+      <p>Note: Don’t forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where <c>x</c>
         is the <term>int</term> you want to turn into a string.</p>
 
     </statement>
@@ -60,10 +60,10 @@
 
   <exercise label="cspnamestrings_exercises3">
     <statement>
-      <p>Use <term>string slicing</term> to get &#8220;giant alligator&#8221; from <c>sentence</c> and store it in <c>s1</c> .</p>
-      <p>You should not be typing the string &#8220;giant alligator&#8221; yourself, you should be getting the right
+      <p>Use <term>string slicing</term> to get <q>giant alligator</q> from <c>sentence</c> and store it in <c>s1</c> .</p>
+      <p>You should not be typing the string <q>giant alligator</q> yourself, you should be getting the right
         part of what is stored in <c>sentence</c>.</p>
-      <p>The print will put |&#8217;s around your output to make it clear if you have a space at the start or end of s1.</p>
+      <p>The print will put |’s around your output to make it clear if you have a space at the start or end of s1.</p>
 
     </statement>
     <program xml:id="cspnamestrings_exercises3_editor" interactive="activecode" language="python">

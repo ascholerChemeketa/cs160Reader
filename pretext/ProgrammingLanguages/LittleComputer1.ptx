@@ -30,7 +30,7 @@
   </p>
   <note>
     <p>As you experiment with the little computer, notice that the memory is storing both the instructions and the data.
-      An &#8220;instruction&#8221; is simply some data in memory that the computer tries to decode as a machine
+      An <q>instruction</q> is simply some data in memory that the computer tries to decode as a machine
       instruction and run.</p>
   </note>
 </section>

@@ -22,7 +22,7 @@
     rule says that if either input (switch) is on, the output (light) is on. This can be summarized in terms of a <term>truth
     table</term>. A truth table shows each possible set of input and the output those inputs produces.</p>
   <p>For the circuit shown above, we can think of the top switch as Input 1 and the bottom switch as Input 2. We will
-    call on &#8220;1&#8221; and off &#8220;0&#8221;. There are four possible sets of inputs for the two switches: 00 -
+    call on <q>1</q> and off <q>0</q>. There are four possible sets of inputs for the two switches: 00 -
     both off, 10 - top on, 01 - bottom on, 11 - both on. In every situation but 00, the output is on (1). The truth
     table below shows those four possibilities:</p>
   <table xml:id="or-truth-table">
@@ -59,8 +59,8 @@
     </tabular>
   </table>
   <p>Although the computer will only think in terms of 1 and 0, those can stand for any piece of information that has a
-    true/false or yes/no answer. For example, maybe our two inputs represent &#8220;Is it raining right now?&#8221; and
-    &#8220;Is rain forecast for later?&#8221; and our output represents &#8220;Bring an umbrella&#8221;. The logical
+    true/false or yes/no answer. For example, maybe our two inputs represent <q>Is it raining right now?</q> and
+    <q>Is rain forecast for later?</q> and our output represents <q>Bring an umbrella</q>. The logical
     rule <term>OR</term> is appropriate to decide if we need to have an umbrella with us. If it is raining now, or if it
     is expected to rain later (or if it is raining now and is expected to rain later) then we need an umbrella.</p>
 

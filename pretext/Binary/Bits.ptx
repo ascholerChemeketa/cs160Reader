@@ -1,6 +1,6 @@
 <section xml:id="binary_bits">
   <title>Bits</title>
-  <p>A <term>bit</term> (short for &#8220;BInary digiT&#8221;) is a single on/off value. Only these two values are
+  <p>A <term>bit</term> (short for <q>BInary digiT</q>) is a single on/off value. Only these two values are
     possible, though the two values may go by different names, such as true/false, or 1/0. There are many ways in which
     a bit can be implemented. Here are some ways that bits are implemented:</p>
   <p>

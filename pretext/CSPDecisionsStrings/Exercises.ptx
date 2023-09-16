@@ -3,8 +3,8 @@
   <exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program segment should ask whether the user wants to terminate the program and print out the
-        appropriate statement based on the user&#8217;s response. The blocks have been mixed up and include extra blocks
-        that aren&#8217;t needed in the solution. Drag the needed blocks from the left and put them in the correct order
+        appropriate statement based on the user’s response. The blocks have been mixed up and include extra blocks
+        that aren’t needed in the solution. Drag the needed blocks from the left and put them in the correct order
         on the right.</p>
     </statement>
     <blocks>
@@ -39,9 +39,9 @@
     <statement>
       <p>The following program segment should ask the user for three numbers and say whether they are in order. The
         numbers can be either ascending (going up) or descending (going down).</p>
-      <p>For example, if the inputs are <c>10 15 20</c>, the answer should be &#8220;yes, in order&#8221;. Same if the inputs
-        were <c>6 5 1</c>. But if the inputs were <c>3 5 4</c>, the answer would be &#8220;no, not in order&#8221;.</p>
-      <p>The blocks have been mixed up and include extra blocks that aren&#8217;t needed in the solution. Drag the
+      <p>For example, if the inputs are <c>10 15 20</c>, the answer should be <q>yes, in order</q>. Same if the inputs
+        were <c>6 5 1</c>. But if the inputs were <c>3 5 4</c>, the answer would be <q>no, not in order</q>.</p>
+      <p>The blocks have been mixed up and include extra blocks that aren’t needed in the solution. Drag the
         needed blocks from the left and put them in the correct order on the right.</p>
     </statement>
     <blocks>
@@ -76,7 +76,7 @@
         just the meal price. Otherwise, it should be the price + 8% (1.08 times the meal price).</p>
       <p>Remember that you can use <c>in</c> to check if one string appears inside another.</p>
       <p>Note that when you run it, you can enter whatever values you want. The tests for your program will
-        automatically try a collection of different inputs and don&#8217;t depend on what you type in.</p>
+        automatically try a collection of different inputs and don’t depend on what you type in.</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises3_editor" interactive="activecode" language="python">
@@ -121,7 +121,7 @@
       <p>The program below is supposed to figure out the cost of a ticket for a customer to a museum. Anyone who is over
         65 or younger than 12 gets in free. Anyone who is 12 to 17 gets in for $8. Everyone else is $15.</p>
       <p>Your job is to write the <c>getTicketCost</c> function. It should use the <c>age</c> parameter to decide on the right cost and then
-        return that value. (Just return a number like 0, 8, or 15, don&#8217;t include $).</p>
+        return that value. (Just return a number like 0, 8, or 15, don’t include $).</p>
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises4_editor" interactive="activecode" language="python">

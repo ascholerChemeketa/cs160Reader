@@ -37,7 +37,7 @@ for y in range(10):
     <title>Range Recipes</title>
 
     <p>That gives us a way to count through a series of numbers. But what if we want, like with the <c>polygon</c> example, to
-      count from 6 down to 3? Or to count from 10 to 100 by 10&#8217;s? To do these tasks, we can use a three-parameter
+      count from 6 down to 3? Or to count from 10 to 100 by 10’s? To do these tasks, we can use a three-parameter
       version of <c>range</c>:</p>
     <program language="python">
       <input>
@@ -120,12 +120,12 @@ for y in range(6, 2, -1):
     <p>We can now use the complex version of range to write a turtle program that repeats steps but uses a different
       value for a variable during each repetition.</p>
     <p>The program below will use the <c>stamp</c> procedure to leave a copy of itself on the screen that will remain after
-      the turtle has moved somewhere else. It also uses the <c>shape</c> procedure to change the turtle&#8217;s icon from the
+      the turtle has moved somewhere else. It also uses the <c>shape</c> procedure to change the turtle’s icon from the
       default triangle to an actual turtle.</p>
     <note>
       <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
     </note>
-    <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2&#8217;s from 5 to 59. The loop variable is called <c>size</c> and is used to
+    <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2’s from 5 to 59. The loop variable is called <c>size</c> and is used to
       control how far forward the turtle moves in each repetition.</p>
 
     <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
@@ -144,16 +144,16 @@ for size in range(5, 60, 2):
         </input>
     </program>
     <p>All except one of the shapes you see on the screen here are copies of the turtle shape created by <c>stamp</c>. But
-      the program still only has <em>one</em> turtle instance &#8212; can you figure out which one is the real tess?
-      (Hint: if you&#8217;re not sure, write a new line of code after the <c>for</c> loop to change tess&#8217; color, or
-      to put her pen down and draw a line, or to change her shape, etc&#8230;)</p>
+      the program still only has <em>one</em> turtle instance <mdash/> can you figure out which one is the real tess?
+      (Hint: if you’re not sure, write a new line of code after the <c>for</c> loop to change tess’ color, or
+      to put her pen down and draw a line, or to change her shape, etc<ellipsis/>)</p>
     <p>
       <term>Mixed up program</term>
     </p>
     <exercise label="csprepeatturtles_loopvariable5" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program creates a square spiral as shown below. To do so, we must draw sides of length 0, 5,
-          10, 15, &#8230; 195. After drawing each side, we will turn to get ready for the next side.</p>
+          10, 15, <ellipsis/> 195. After drawing each side, we will turn to get ready for the next side.</p>
         <p>Arrange and indent the blocks correctly. You will not use them all.</p>
         <image source="CSPRepeatTurtles/Figures/TurtleSpiral.png" width="30%" />
       </statement>

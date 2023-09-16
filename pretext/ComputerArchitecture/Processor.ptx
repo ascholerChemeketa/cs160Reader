@@ -31,8 +31,8 @@
   <p>Modern computers add many layers of complexity to this basic model. One such modification seen in the picture above
     is multiple busses - in the diagram on the previous page and the original von Neumann architecture, there is only
     one system bus that can carry messages from one component to another. This means that the processor and memory would
-    have to take turns talking: &#8220;CPU: Please send me the data at address 1 in memory&#8221;; &#8220;Memory: OK,
-    the data at 00001 is 01010111.&#8221;; &#8220;CPU: Please send me the data at address 2 in memory&#8221;&#8230;
+    have to take turns talking: <q>CPU: Please send me the data at address 1 in memory</q>; <q>Memory: OK,
+    the data at 00001 is 01010111.</q>; <q>CPU: Please send me the data at address 2 in memory</q><ellipsis/>
     Having multiple busses avoids this bottleneck by allowing the CPU to communicate the next address it wants at the same
     time memory sends data back to the CPU.</p>
 

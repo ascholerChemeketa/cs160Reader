@@ -38,8 +38,8 @@
   <p>So <m>{2047}_{16}</m> = <term>2</term> * 4096 + <term>0</term> * 256 + <term>4</term> * 16 + <term>7</term> * 1 = <m>
     {8263}_{10}</m>.</p>
   <p>Using this scheme, <m>{10}_{16}</m> = <term>1</term> * 16 + <term>0</term> * 1 = <m>{16}_{10}</m>. Which raises the
-    question &#8220;how do we represent ten in hexadecimal?&#8221; A 1 in the second column indicates a 16, so we
-    can&#8217;t use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F
+    question <q>how do we represent ten in hexadecimal?</q> A 1 in the second column indicates a 16, so we
+    can’t use that - we have to fit all the values up to 15 in the first column. We do so by using the letters A-F
     to indicate 9-15:</p>
   <table>
     <title>Hexadecimal representation of values 10-15</title>
@@ -215,7 +215,7 @@
   <p>Why would we want another base system? Large binary values are hard for people to read accurately and remember. Try
     it yourself - quickly try to decide if 0011100101110110 and 0011100101100110 are the same.</p>
   <p>Those two binary strings look like this in hex: <m>{3976}_{16}</m> and <m>{3966}_{16}</m>. In that format, it is a
-    little easier to say the values and to see where the difference is, isn&#8217;t it? Because changing switching from
+    little easier to say the values and to see where the difference is, isn’t it? Because changing switching from
     binary to hex is so easy, hexadecimal is used to display binary values in a more human-readable form. You will see
     an example of where this is used in web page design on the next page.</p>
 

@@ -15,8 +15,8 @@
   <p>Problems that have this characteristic are described as <term>non-polynomial</term>
     problems. This is a way of saying that the Big-O function that governs their behavior is something that can not be
     written as a polynomial (a function where every term consists of a constant power of <term>n</term>). Instead, the
-    Big-O is something like <m>O(2^n)</m> where <term>n</term> is the exponent or <m>O(n! \times)</m> (n! = 1 &#215; 2
-    &#215; 3 &#215; &#8230; &#215; n). The relative growth of some polynomial functions (<m>n</m> and <m>n^2</m>) and
+    Big-O is something like <m>O(2^n)</m> where <term>n</term> is the exponent or <m>O(n!)</m> (n! = 1 <times/> 2
+    <times/> 3 <times/> <ellipsis/> <times/> n). The relative growth of some polynomial functions (<m>n</m> and <m>n^2</m>) and
     non-polynomial ones (<m>2^n</m> and <m>n!</m>) can be seen below.</p>
 
     <tabular halign="center">
@@ -66,7 +66,7 @@
     and finding its prime factors in polynomial time. Much of modern cryptography and web security is based on the fact
     that this particular problem is so hard to solve. Should a polynomial time algorithm be found, codes that are
     considered uncrackable would become easy to defeat. This is one of the reasons for interest in quantum
-    computing&#8230; there are quantum prime factorization algorithms that run in polynomial time.</p>
+    computing<ellipsis/> there are quantum prime factorization algorithms that run in polynomial time.</p>
   <p>Many optimization problems are also non-polynomial. The traveling salesman problem is to find the most efficient
     route to visit every city on a map. The brute force approach to solving this problem (try every possible route) is <m>
     O(n!)</m>. The knapsack problem involves selecting the best subset of items from a list to maximize the value of
@@ -104,12 +104,12 @@
         visual="https://www.youtube.com/watch?v=dJUEkjxylBw">snuck the debate into their shows</url>.</p>
   </sidebar>
   <p>Faced with a problem that is non-polynomial, instead of looking for a perfect answer that will take too long to
-    find, we must instead do things like try to develop algorithms that look for a &#8220;pretty good&#8221; answer in a
+    find, we must instead do things like try to develop algorithms that look for a <q>pretty good</q> answer in a
     tractable amount of time or that can efficiently solve some special subset of the hard problems.</p>
   <p>This video does an <term>amazing</term> job of explaining the relationship between polynomial functions (the class
     known as P) and those problems that we believe to be fundamentally harder. It goes into more detail than we are
     worried about learning for this class, so do not worry about absorbing every detail. Instead, focus on the
-    explanations of how polynomial functions are different, why Moore&#8217;s Law can&#8217;t help us with harder
+    explanations of how polynomial functions are different, why Moore’s Law can’t help us with harder
     problems, and what this all means:</p>
 
   <video xml:id="YX40hbAHx3s" youtube="YX40hbAHx3s" width="auto" />

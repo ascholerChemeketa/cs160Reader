@@ -65,7 +65,7 @@
         <cell> number </cell>
         <cell>
           <p>How fast to move the turtle. Should be a value from 1-10 (1 is slow, 10 is fast), or 0 which means
-            &#8220;as fast as possible&#8221;.</p>
+            <q>as fast as possible</q>.</p>
         </cell>
       </row>
       <row bottom="minor">
@@ -93,14 +93,14 @@
         <cell> pendown </cell>
         <cell> None </cell>
         <cell>
-          <p>Puts down the turtle&#8217;s pen so that it draws when it moves</p>
+          <p>Puts down the turtle’s pen so that it draws when it moves</p>
         </cell>
       </row>
       <row bottom="minor">
         <cell> penup </cell>
         <cell> None </cell>
         <cell>
-          <p>Picks up the turtle&#8217;s pen so that it doesn&#8217;t draw when it moves</p>
+          <p>Picks up the turtle’s pen so that it doesn’t draw when it moves</p>
         </cell>
       </row>
       <row bottom="minor">
@@ -114,8 +114,8 @@
         <cell> color </cell>
         <cell> colorname </cell>
         <cell>
-          <p>Sets the color for drawing. Use <term>strings</term> - like &#8216;red&#8217;, &#8216;black&#8217;,
-            etc&#8230; This page has a <url href="https://trinket.io/docs/colors"
+          <p>Sets the color for drawing. Use <term>strings</term> - like 'red', 'black’,
+            etc<ellipsis/> This page has a <url href="https://trinket.io/docs/colors"
               visual="https://trinket.io/docs/colors">table of colors</url> Make sure to put quotation marks around the
             name of the color!</p>
         </cell>
@@ -146,7 +146,7 @@
         <cell> stamp </cell>
         <cell> None </cell>
         <cell>
-          <p>Stamps a copy of the turtle&#8217;s icon at the current location.</p>
+          <p>Stamps a copy of the turtle’s icon at the current location.</p>
         </cell>
       </row>
       <row bottom="minor">
@@ -154,8 +154,8 @@
         <cell> shapeName </cell>
         <cell>
           <p>Changes the icon used to represent the turtle. <c>shapeName</c> should be set to one of the following:
-            &#8220;arrow&#8221;, &#8220;turtle&#8221;, &#8220;circle&#8221;, &#8220;square&#8221;,
-            &#8220;triangle&#8221;, &#8220;classic&#8221;.</p>
+            <q>arrow</q>, <q>turtle</q>, <q>circle</q>, <q>square</q>,
+            <q>triangle</q>, <q>classic</q>.</p>
         </cell>
       </row>
 

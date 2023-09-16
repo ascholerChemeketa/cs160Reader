@@ -5,7 +5,7 @@
   everything else a computer can do.</p>
   <p>The diagrams for these circuits are drawn using the symbols shown below.
   Traditionally, the inputs to a gate come from the left, and the output comes out of the right side. That is why two
-  lines are going into every gate but NOT&#8230; every other gate requires two inputs.</p>
+  lines are going into every gate but NOT<ellipsis/> every other gate requires two inputs.</p>
 
   <image
     source="LogicCircuits/Images/BasicGates.png" width="50%" />
@@ -28,7 +28,7 @@
   gate being used in a circuit. The power is wired to two push-button switches that function as the inputs to the
   circuit. The inputs can be turned off, in which case they do not transmit power, or on, in which case they allow power
   through (try clicking on the buttons inside <term>Input1</term> and <term>Input2</term> - the center will turn a
-  different color when they are &#8220;on&#8221;). Those inputs feed into the left side of the <term>OR</term> gate. The
+  different color when they are <q>on</q>). Those inputs feed into the left side of the <term>OR</term> gate. The
   output of the <term>OR</term> gate comes out of the right side and travels to the <term> Output</term>. If either one
   of the two Inputs is set to on (or both are), the Output should be on.</p>
   <p>

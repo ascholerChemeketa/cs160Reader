@@ -1,15 +1,15 @@
 <section xml:id="csp-decisions-strings_testing-parts-of-strings-and-length">
   <title>Testing parts of strings and length</title>
   <p>A common need is to see if a string is contained in another string. Maybe we want to test if the user included
-    &#8220;yes&#8221; anywhere in their response. Or we have a date that might look like &#8220;Dec 1st&#8221; or
-    &#8220;3rd of December&#8221; and we just want to verify that in contains &#8220;Dec&#8221;. To do this in Python,
+    <q>yes</q> anywhere in their response. Or we have a date that might look like <q>Dec 1st</q> or
+    <q>3rd of December</q> and we just want to verify that in contains <q>Dec</q>. To do this in Python,
     we can use the <c>in</c> operator.</p>
   <p><c>in</c> is used like <c>PART in STRING</c> where we are testing if the string <c>PART</c> is in the string <c>STRING</c>. Both can either
     be a string in quotes or a variable that names a string.</p>
   <p>This program asks if the user wants to continue. It is designed to handle any possible input that includes a
-    &#8220;y&#8221; or &#8220;Y&#8221;. First, it changes the input to be all lowercase, then it tests if there is a
-    &#8220;y&#8221; in it. Try it with &#8220;Yes&#8221;, &#8220;yeah&#8221;, &#8220;yes please continue&#8221;,
-    &#8220;y&#8221;, etc&#8230; they all should work.</p>
+    <q>y</q> or <q>Y</q>. First, it changes the input to be all lowercase, then it tests if there is a
+    <q>y</q> in it. Try it with <q>Yes</q>, <q>yeah</q>, <q>yes please continue</q>,
+    <q>y</q>, etc<ellipsis/> they all should work.</p>
 
   <program xml:id="cspdecisionsstrings_instring1" interactive="activecode" language="python">
     <input>
@@ -28,10 +28,10 @@ else:
   <exercise label="cspdecisionsstrings_instring2">
     <statement>
       <p>Complete the <c>getSeason</c> function so that it returns the correct season for each month. We want it to accept
-        &#8220;dec&#8221; or &#8220;Dec&#8221; or &#8220;December&#8221; or &#8220;DECEMBER&#8221; all as being the same
+        <q>dec</q> or <q>Dec</q> or <q>December</q> or <q>DECEMBER</q> all as being the same
         thing, so we will convert the month to lower case and then use <c>in</c> to test it.</p>
       <p>Code for the Winter months is already there, write code for the other seasons. If there is no logical match for
-        the <c>monthName</c>, we will want to return &#8220;???&#8221; as the season.</p>
+        the <c>monthName</c>, we will want to return <q>???</q> as the season.</p>
       <p>
         <em>Hints:</em>
       </p>
