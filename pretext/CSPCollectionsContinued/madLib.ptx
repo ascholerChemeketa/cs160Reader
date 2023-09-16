@@ -98,7 +98,7 @@
       </tests>
     </program>
   </exercise>
-  <p>Now you should be ready to actually make your program interactive! This version is not automatically checked, so
+  <p>Now you should be ready to make your program interactive! This version is not automatically checked, so
     make sure to run it and test it by entering information. This starter code adds two lines that need to go after your
     code. They will turn the list back into a string using <c>string.join(list)</c> and print it out. Don’t worry about remembering <c>join()</c>
     - just recognize that it does the opposite of split - it turns a list into a string by joining together the items

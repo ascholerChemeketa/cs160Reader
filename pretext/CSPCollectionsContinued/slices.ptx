@@ -1,10 +1,10 @@
 <section xml:id="csp-collections-continued_slicing-a-list">
   <title>Slicing a List</title>
   <p>Now that we know how to iterate through parts of a list, we could use that technique to copy just part of a list.
-    Say we have a list with the 12 months, and from it we want to copy out just the summer months (June-August). We know
-    those are months 6-8 (human numbering), which means in computer counting, they will be index 5-7. That means we need
-    to use <c>range(5, 8, 1)</c> to loop through them. As we access each one, we will append it to the <c>summerMonths</c> list that starts out
-    empty.</p>
+    Say we have a list with the 12 months, and from it, we want to copy out just the summer months (June-August). We know
+    those are months 6-8 (human numbering), which means in computer counting, they will be indexes 5-7. That means we need
+    to use <c>range(5, 8, 1)</c> to loop through them. As we access each one, we will append it to the <c>summerMonths</c> 
+    list that starts empty.</p>
 
   <program xml:id="cspcollectionscontinued_slices1" interactive="codelens" language="python">
     <input>
@@ -22,7 +22,7 @@ print(summerMonths)
   </program>
 
   <p>But, rather than do that work ourselves, there is syntax in Python for asking for part of a list. Part of a list is
-    known as a <term>slice</term>. We ask for a slice in a similar way to asking for a single item. To get a single item
+    known as a <term>slice</term>. We ask for a slice in a similar way we ask for a single item. To get a single item
     from a list, say the item at index 4, we say <c>list[4]</c>. To ask for a slice of <c>list</c> we would say something like: <c>list[4:10]</c>
     which says <q>I want a copy of items number 4 through 9</q>. Notice that the second value, which is the
     stopping point, is not included in the slice.</p>
@@ -39,7 +39,7 @@ print(summerMonths)
     </input>
   </program>
   <note>
-    <p>Remember that the slice always stops just before the second index given. <c>[5:8]</c> only slices indexes 5-7.</p>
+    <p>Remember that the slice always stops just before the second index. <c>[5:8]</c> only slices indexes 5-7.</p>
   </note>
   <p>There are some handy shortcuts we can use when specifying a slice. If you don’t give a second index, like <c>[5:]</c>,
     it means <q>to the end of the list</q>. If you use a negative value, it is counted from the end of the list. <c>[-3:-1]</c>

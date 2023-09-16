@@ -145,7 +145,7 @@ highestRoll = 0
 
 for roll in range(6):
     # YOUR CODE HERE
-    # Make three random numbers that are 1-6 (optionally, print them out to make sure code works)
+    # Make three random numbers that are 1-6 (optionally, print them out to make sure the code works)
     # Total them up
     # If the total is more than the highestRoll, change highestRoll to match the total
     # Optionally, print highestRoll to see if it looks correct

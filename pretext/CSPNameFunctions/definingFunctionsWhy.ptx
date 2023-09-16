@@ -92,7 +92,7 @@ print("The length of side hypotenuse6 is", hypotenuse6)
         </input>
   </program>
   <p>Not only did writing it involve retyping lines like <c>aSquared = math.pow(___, ___)</c> over and over, and it is harder to read and understand.
-    A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see <em><q>Oh, that is just where we are going to calcualte
+    A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see <em><q>Oh, that is just where we are going to calculate
     the hypotenuse.</q></em>. When there is no function, the reader has to slog through things like this:</p>
   <program language="python">
     <input>
@@ -134,7 +134,7 @@ print(answer)
         </condition>
         <condition string="^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$">
           <feedback>
-            <p>Make sure you store the result of function call.</p>
+            <p>Make sure you store the result of the function call.</p>
           </feedback>
         </condition>
       </var>

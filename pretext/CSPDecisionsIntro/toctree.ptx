@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US"  xml:id="csp-decisions-intro">
-        <title>Making Decisions</title>
-        <xi:include href='./decisions.ptx' />
-        <xi:include href='./if.ptx' />
-        <xi:include href='./ifFunctions.ptx' />
-        <xi:include href='./multiple.ptx' />
-        <xi:include href='./ifAndElse.ptx' />
-        <xi:include href='./elif.ptx' />
-        <xi:include href='./elifTricks.ptx' />
-        <xi:include href='./summary.ptx' />
-        <xi:include href='./Exercises.ptx' />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="csp-decisions-intro">
+  <title>Making Decisions</title>
+  <xi:include href='./decisions.ptx' />
+  <xi:include href='./if.ptx' />
+  <xi:include href='./ifFunctions.ptx' />
+  <xi:include href='./multiple.ptx' />
+  <xi:include href='./ifAndElse.ptx' />
+  <xi:include href='./elif.ptx' />
+  <xi:include href='./elifTricks.ptx' />
+  <xi:include href='./summary.ptx' />
+  <xi:include href='./Exercises.ptx' />
+</chapter>

@@ -4,7 +4,7 @@
     depend on anything else. Then once we are sure they are working, we will build higher-level procedures that depend
     on them. This strategy is known as <term>bottom up implementation</term>.</p>
   <p>A critical part of successfully building a program is testing as we go. We need to make sure that each of our
-    procedures actually does its job before we try to use it to do something more complicated.</p>
+    procedures does its job correctly before we try to use it to do something more complicated.</p>
   <warning>
     <p>Remember, debugging code is often harder than writing it in the first place. It is much easier to find and fix
       errors in small blocks of code than in a giant program.</p>
@@ -14,12 +14,12 @@
 
   <p>I have done a few things to make it easier to use the rectangle
     procedure. First, I have it put the pen down and do <c>begin_fill</c> at the start and pick the pen back up and <c>end_fill</c> at the
-    end. This means my procedure does not depend on other code having already having set up the pen. Second left a
+    end. This means my procedure does not depend on other code having already set up the pen. Second left a
     comment at the start of the procedure reminding myself of assumptions I have made - in this case that the turtle is
     facing East. An assumption that is made by a procedure is known as a <term>precondition</term> to the procedure - it
     is something that must already be true when we start for the procedure to work correctly.</p>
   <p>I’ll also write some code to test it. I will try to use my procedure to draw a few different rectangles -
-    first a 50x50 rectangle (a square), followed by a 10x100 narrow But tall rectangle. Try the code:</p>
+    first, a 50x50 rectangle (a square), followed by a 10x100 narrow But tall rectangle. Try the code:</p>
 
   <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
     <input>
@@ -54,7 +54,7 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
                Discussion
             &lt;/h2&gt;
             </raw>
-  <p>Once you fix my bug, the procedure works just fine. But we could improve it. Here some ideas that would arguably
+  <p>Once you fix my bug, the procedure works just fine. But we could improve it. Here are some ideas that would arguably
     make it better:</p>
   <p>
     <ul>
@@ -64,15 +64,15 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
       </li>
       <li>
         <p>Turtle’s have a <c>setheading</c> command. Instead of assuming a <term>precondition</term> that the turtle is
-          facing East, we could have <c>rectangle</c> use to face the turtle East at the start of the procedure.</p>
+          facing East, we could have <c>rectangle</c> use it to face the turtle East at the start of the procedure.</p>
       </li>
     </ul>
   </p>
-  <p>The reason most programmers would see these as improvements is they make the procedure easier to use correctly (by
-    removing a precondition), or they make it more powerful (having it take care of the fill color). But, it is possible
+  <p>Most programmers would see these as improvements because they make the procedure easier to use correctly (by
+    removing a precondition), or they make it more powerful (by having it take care of the fill color). But, it is possible
     to overcomplicate a procedure by trying to make it too general.</p>
-  <p>Designing good code is often a balancing act. There is never one right design for a complex problem. But there are
-    designs that are better and designs that are worse. We seek designs that are the best possible combination of
-    flexible, simple, and robust.</p>
+
+  <p>Designing good code is often a balancing act. There is never one right design for a complex problem. But some designs are better and some 
+    designs are worse. We seek designs that are the best possible combination of flexible, simple, and robust.</p>
 </section>
 

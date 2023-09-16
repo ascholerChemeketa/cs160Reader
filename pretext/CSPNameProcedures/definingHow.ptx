@@ -3,8 +3,8 @@
   <title>Defining Procedures - How</title>
 
   <p>How does Python know what to do when we call functions like <c>abs</c> or
-    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedures or
-    function, associates a name with a name with a sequence of steps.</p>
+    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedure or
+    function associates a name with a sequence of steps.</p>
   <p>In Python, we define a new procedure or function with the keyword <c>def</c>. To use def, we also need to specify: a
     name for the procedure, a list of its inputs, and the instructions the procedure will perform in this format:</p>
   <program language="python">
@@ -62,10 +62,10 @@ def square(turtleName):
     square procedure!</p>
   <warning>
     <p>Remember - defining a procedure or function tells Python <term>HOW</term> to do a particular job. It does NOT
-      tell Python to actually do the job. To <term> do</term> the procdeure or function, we must call the procedure.</p>
+      tell Python to actually do the job. To <term> do</term> the procedure or function, we must call the it.</p>
   </warning>
 
-  <p>We call a procedure by using its name, and then giving it the right number of
+  <p>We call a procedure by using its name and then giving it the right number of
     inputs. Our <c>square</c> function requires one input - the name of the turtle that should make a square - so when we call <c>sqaure</c>
     we must provide the name of a turtle.</p>
   <p>This code sample defines our function, creates a turtle, and then calls the square function and gives it our turtle
@@ -88,7 +88,7 @@ def square(turtleName):
 # make a turtle and do the square procedure with it
 from turtle import *
 malik = Turtle()
-square(malik)           # call the square procdure, use malik as the input
+square(malik)           # call the square procedure, use malik as the input
         </input>
   </program>
 

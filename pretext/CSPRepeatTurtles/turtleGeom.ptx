@@ -35,12 +35,12 @@ will.end_fill()
   </program>
   <p>Notice that the only code that is <q>inside</q> the <c>for</c> loop (indented after it) are the parts we want
     to repeat. We only want to <c>end_fill</c> once, so it is not indented. It is not part of the code that is repeated.</p>
-  <p>The only two things that are different between the two programs are the number of repetitions in the loop, and the
-    angle that the turtle turns.</p>
+  <p>The only two things that are different between the two programs are the number of repetitions in the loop and the
+    angle the turtle turns.</p>
   <p>Any time we want to make a regular polygon, we need the turns to all sum up to <m>360</m>. In the triangle example <m>3
     * 120 = 360</m> and in the pentagon example <m>5 * 72 = 360</m>.</p>
-  <p>Change the <c>??</c> in line 7 below to the amount to turn each time to draw a 12 sided polygon (called a dodecagon).
-    If you get it right the turtle will draw a 12 sided closed polygon.</p>
+  <p>Change the <c>??</c> in line 7 below to the amount to turn each time to draw a 12-sided polygon (called a dodecagon).
+    If you get it right the turtle will draw a 12-sided closed polygon.</p>
 
   <program xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
     <input>
@@ -59,7 +59,7 @@ mia.end_fill()
   <exercise label="csprepeatturtles_turtlegeom4">
     <statement>
 
-      <p>How much does <c>mia</c> need turn in the program above to create a closed dodecagon (12-sided figure)? Only one
+      <p>How much does <c>mia</c> need to turn in the program above to create a closed dodecagon (12-sided figure)? Only one
         of these works.</p>
 
     </statement>

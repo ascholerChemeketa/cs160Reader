@@ -43,8 +43,8 @@ while counter &lt; 11:
     </program>
     <p>Remember that in assignment (<c>=</c>) statements, we always do the work on the right side, and then store the
       answer into the variable on the left side. Thus in <c>counter = counter + 1</c>, we first do <c>counter + 1</c> which says <q>add one to the
-      value we have stored in counter</q>. On its own, that would not change <c>counter</c>. To actually change counter, we
-      need to store the answer back into counter, so we do <c>counter = <ellipsis/></c>.</p>
+      value we have stored in counter</q>. On its own, that would not change <c>counter</c>. To change <c>counter</c>, we
+      need to store the answer back into <c>counter</c>, so we do <c>counter = <ellipsis/></c>.</p>
     <p>We can do whatever we want to update the counter. We could count from 30 down to 0 by 5:</p>
 
     <program xml:id="csprepeatnumbers_whilecount4" interactive="codelens" language="python">
@@ -78,8 +78,8 @@ while counter &lt; 8:
 print("Done")
     </input>
     </program>
-    <p>In this loop, the counter starts at 0, but we add 2 to it before we print it the first time. Thus the first thin
-      printed is 2. Then, when counter gets to 6, we add 2 more to get 8 and then print that value before we go back up
+    <p>In this loop, the <c>counter</c> starts at 0, but we add 2 to it before we print it the first time. Thus the first thin
+      printed is 2. Then, when <c>counter</c> gets to 6, we add 2 more to get 8 and then print that value before we go back up
       to test the <c>while</c>’s expression again. At that point, we realize it is time to stop. Thus this version
       prints out 2,4,6,8.</p>
 
@@ -93,8 +93,8 @@ print("Done")
     </input>
     </program>
     <note>
-      <p>A common misconception is that a while loop will stop as soon as it’s logical expression becomes false. A
-        while loop won’t stop in the middle of the body. It is only at the start of each iteration that the
+      <p>A common misconception is that a while loop will stop as soon as its logical expression becomes false. A
+        while loop will not stop in the middle of the body. It is only at the start of each iteration that the
         logical expression is evaluated to decide <q>should we do the body again?</q></p>
     </note>
     <exercise label="csprepeatnumbers_whilecount8" numbered="yes" adaptive="yes" indentation="hide" language="python">

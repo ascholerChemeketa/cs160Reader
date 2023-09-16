@@ -1,7 +1,7 @@
 <exercises xml:id="csp-designing-procedures_chapter-exercises">
   <title>Chapter Exercises</title>
-  <p>Design your own drawing using turtle graphics. You should use multiple colors, and your design must be complicated
-    enough to features multiple procedures, including at least one procedure that calls other procedures you have
+  <p>Create your own drawing using turtle graphics. You should use multiple colors, and your design must be complicated
+    enough to feature multiple procedures, including at least one procedure that calls other procedures you have
     written.</p>
   <p>Here are some ideas:</p>
   <p>
@@ -16,7 +16,7 @@
         <p>A few trees and a sun shining on them.</p>
       </li>
       <li>
-        <p>A snowman with three part body and two arms.</p>
+        <p>A snowman with a three-part body and two arms.</p>
       </li>
     </ul>
   </p>

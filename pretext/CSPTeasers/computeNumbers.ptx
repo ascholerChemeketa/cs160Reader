@@ -3,10 +3,10 @@
 
   <p>Computers were first used for numeric calculations. You may be used to doing calculations with
     a calculator, but calculations are often easier if you can <em> name</em> the numbers you are
-    working with. When you name a number, or the result of a calculation, you are creating a <term>
+    working with. When you name a number or the result of a calculation, you are creating a <term>
     variable</term>. A <term>variable</term> is a name associated with computer memory that can hold
     a value and that value can change or vary. One example of a <term>variable</term> is the score
-    in a game. The score starts off at 0 and increases as you play the game.</p>
+    in a game. The score starts at 0 and increases as you play the game.</p>
   <figure align="center">
     <caption>Both the <strong>score</strong> and <strong>high score</strong> in the game Angry Birds
       would be represented by a variable.</caption>

@@ -1,7 +1,7 @@
 <section xml:id="csp-designing-procedures_procedures-that-call-procedures">
   <title>Procedures that Call Procedures</title>
   <p>Once we start writing procedures, we may want to make use of our new abstractions to build even more complex new
-    procedures. We have actually already used this idea - our procedures like <c>square</c> make use of existing turtle
+    procedures. We have already used this idea - our procedures like <c>square</c> make use of existing turtle
     procedures like <c>forward</c>. But we can also use our own existing procedures to write other new procedures.</p>
   <p>Say we want to draw this shape:</p>
   <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%" />

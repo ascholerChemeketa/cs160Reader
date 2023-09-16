@@ -63,7 +63,7 @@ print(guess)
   <p>The number of repetitions needed to get the most accurate possible square root for a given number is not always the
     same. If you change <c>number</c> to 2, it would only take 5 iterations of the loop to find the best possible guess for
     the square root. Without experimenting, we don’t really know how many repetitions are needed to get the best
-    possible answer. Currently our program says something like <em><q>repeat this calculation 5 times</q></em>.
+    possible answer. Currently, our program says something like <em><q>repeat this calculation 5 times</q></em>.
     What we would like to say is something more like <em><q>repeat this calculation while it keeps producing a new
     value</q></em>.</p>
 </section>

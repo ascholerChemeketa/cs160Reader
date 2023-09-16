@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="csp-desicions-strings">
-      <title>Decisions with Strings and Complex Conditions</title>
-      <xi:include href='./decisionStrings.ptx' />
-      <xi:include href='./input.ptx' />
-      <xi:include href='./complex.ptx' />
-      <xi:include href='./andOrNot.ptx' />
-      <xi:include href='./complexWhen.ptx' />
-      <xi:include href='./complexTricks.ptx' />
-      <xi:include href='./inString.ptx' />
-      <xi:include href='./chatBot.ptx' />
-      <xi:include href='./summary.ptx' />
-      <xi:include href='./Exercises.ptx' />
-  </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="csp-desicions-strings">
+  <title>Decisions with Strings and Complex Conditions</title>
+  <xi:include href='./decisionStrings.ptx' />
+  <xi:include href='./input.ptx' />
+  <xi:include href='./complex.ptx' />
+  <xi:include href='./andOrNot.ptx' />
+  <xi:include href='./complexWhen.ptx' />
+  <xi:include href='./complexTricks.ptx' />
+  <xi:include href='./inString.ptx' />
+  <xi:include href='./chatBot.ptx' />
+  <xi:include href='./summary.ptx' />
+  <xi:include href='./Exercises.ptx' />
+</chapter>

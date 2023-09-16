@@ -57,7 +57,7 @@ chad.right(120)
         </input>
   </program>
   <p>Every turtle object has its own state - it keeps track of its own position and color. So, when we created chad his
-    position wasn’t the same as zari’s - all turtles start at the center of the screen (0, 0). Similarly,
+    position was not the same as zari’s - all turtles start at the center of the screen (0, 0). Similarly,
     his direction starts out at the default (East).</p>
   <p>
     <term>Mixed up programs</term>

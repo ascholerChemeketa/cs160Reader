@@ -3,11 +3,12 @@
 
   <subsection xml:id="csp-decisions-strings_and">
     <title>And</title>
-    <p><c>and</c> is what we use when we want to verify that two things are BOTH true. A common use of <c>and</c> is to check
-      that a value is in a range between a minimum value and a maximum value. For example, to determine if a grade is a
-      <q>B</q>, we need to make sure it is at least 80 but is also less than 90. We can use <c>and</c> to combine <c>grade &gt;= 80</c>
-      and <c>grade &lt; 90</c> so that both must be true for the overall condition to be true. Try changing grade to different values
-      as you run this program:</p>
+    <p><c>and</c> is what we use when we want to verify that two things are BOTH true. A common use of <c>and</c>
+      is to check that a value is in a range between a minimum value and a maximum value. For
+      example, to determine if a grade is a <q>B</q>, we need to make sure it is at least 80 but is
+      also less than 90. We can use <c>and</c> to combine <c>grade &gt;= 80</c> and <c>grade &lt; 90</c> so that both must be true
+      for the overall condition to be true. Try changing grade to different values as you run this
+      program:</p>
 
     <program xml:id="cspdecisionsstrings_andornot1" interactive="activecode" language="python">
       <input>
@@ -57,8 +58,8 @@ print ("All done")
             <p>1 to 9</p>
           </statement>
           <feedback>
-            <p>The "condition true" will only be printed when x is greater than 0 and less than 10 so this is the range
-              from 1 to 9.</p>
+            <p>The "condition true" will only be printed when x is greater than 0 and less than 10
+              so this is the range from 1 to 9.</p>
           </feedback>
         </choice>
       </choices>
@@ -67,10 +68,10 @@ print ("All done")
   </subsection>
   <subsection xml:id="csp-decisions-strings_or">
     <title>Or</title>
-    <p><c>or</c> is a way to give multiple ways to satisfy some criteria. For example, maybe our program is going to ask
-      the user if they have a bag to check. We want them to be able to answer either <q>yes</q> or just
-      <q>y</q>. If you input either answer when asked for an input by this program, it will tell you there will
-      be an extra fee.</p>
+    <p><c>or</c> is a way to give multiple ways to satisfy some criteria. For example, maybe our
+      program is going to ask the user if they have a bag to check. We want them to be able to
+      answer either <q>yes</q> or just <q>y</q>. If you input either answer when asked for an input
+      by this program, it will tell you there will be an extra fee.</p>
 
     <program xml:id="cspdecisionsstrings_andornot3" interactive="activecode" language="python">
       <input>
@@ -120,7 +121,8 @@ print ("All done")
             <p>negative values</p>
           </statement>
           <feedback>
-            <p>That is partially correct. But what values would be true because they made ``x &gt;= 10`` true?</p>
+            <p>That is partially correct. But what values would be true because they made ``x &gt;=
+              10`` true?</p>
           </feedback>
         </choice>
 
@@ -138,12 +140,13 @@ print ("All done")
   </subsection>
   <subsection xml:id="csp-decisions-strings_not">
     <title>Not</title>
-    <p>Finally, <c>not</c> is primarily used with functions that return a Boolean value. For instance, <c>isalnum</c> is a string
-      function that checks to see if all of the characters are alphanumeric (letters or digits). This program wants to
-      know the opposite of that - if there is at least one special symbol, it wants to make the user pick a new username.
-      So <c>not</c> is used to reverse the result of <c>isalnum</c>. If the user gives input that includes a symbol, <c>isalnum</c> will
-      return <c>False</c>, but the <c>not</c> will turn that into <c>True</c> which means that we will execute the line of code that
-      asks them to try again.</p>
+    <p>Finally, <c>not</c> is primarily used with functions that return a Boolean value. For instance, <c>isalnum</c>
+      is a string function that checks to see if all of the characters are alphanumeric (letters or
+      digits). This program wants to know the opposite of that - if there is at least one special
+      symbol, it wants to make the user pick a new username. So <c>not</c> is used to reverse the
+      result of <c>isalnum</c>. If the user gives input that includes a symbol, <c>isalnum</c> will return <c>False</c>,
+      but the <c>not</c> will turn that into <c>True</c> which means that we will execute the line of code
+      that asks them to try again.</p>
 
     <program xml:id="cspdecisionsstrings_andornot5" interactive="activecode" language="python">
       <input>
@@ -154,9 +157,9 @@ if not name.isalnum():
 print ("Welcome", name)
         </input>
     </program>
-    <p>Notice that the program currently only will ask you to try again once. If we want it to keep asking the user to
-      try again until they get it right, we would need a loop. Try changing the <c>if</c> into a <c>while</c> - the program
-      will keep asking you to try again until you get it right.</p>
+    <p>Notice that the program currently only will ask you to try again once. If we want it to keep
+      asking the user to try again until they get it right, we would need a loop. Try changing the <c>if</c>
+      into a <c>while</c> - the program will keep asking you to try again until you get it right.</p>
   </subsection>
 </section>
 

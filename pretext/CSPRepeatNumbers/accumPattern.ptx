@@ -59,7 +59,7 @@ print(binary)
   <program xml:id="csprepeatnumbers_accumpattern1" interactive="activecode" language="python">
     <input>
 # STEP 1: INITIALIZE ACCUMULATOR
-sum = 0  # Start out with nothing
+sum = 0  # Start with nothing
 # STEP 2: LOOP THROUGH THE DATA
 for number in range(1,101):
     # STEP 3: ACCUMULATE
@@ -86,7 +86,7 @@ for number in range(7, 0, -1):
 print(product)
         </input>
   </program>
-  <p>One ingredient that is critical is that we do step 1 before the loop starts. If we try to initialize the
+  <p>One critical ingredient is that we do step 1 before the loop starts. If we try to initialize the
     accumulator in the loop we will just keep resetting it. Watch this failed attempt to add up the numbers from 1 to 5
     run line by line to see why:</p>
 

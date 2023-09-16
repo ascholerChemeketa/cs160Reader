@@ -6,7 +6,9 @@
     <ul>
       <li>
         <p><term>Pixel</term> - A pixel is one small part (element) of a picture. Each pixel's
-          location in the pixture ir represented by two coordinates: <term>x</term> (horizontal) and <term>y</term> (vertical) coordinates. A pixel has a color that can be defined by an amount of red, green, and blue with values from 0 to 255.</p>
+          location in the picture is represented by two coordinates: <term>x</term> (horizontal) and <term>
+          y</term> (vertical) coordinates. A pixel has a color that can be defined by an amount of
+          red, green, and blue with values from 0 to 255.</p>
       </li>
     </ul>
   </p>

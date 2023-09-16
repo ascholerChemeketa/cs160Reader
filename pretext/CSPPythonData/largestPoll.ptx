@@ -8,7 +8,7 @@
     initialize these to match the first record, so we will start <c>max25</c> with a tiny value we know will get replaced by
     the first record.</p>
   <p>There is one extra wrinkle we need to worry about. Recall that the data in a text file is stored as ASCII text. So
-    a PM2.5 value in the file would be <c>"12"</c> instead of the number <c>12</c>. That is a problem, because when you
+    a PM2.5 value in the file would be <c>"12"</c> instead of the number <c>12</c>. That is a problem because when you
     compare strings, they are compared alphabetically. <c>"B"</c> is greater than <c>"Apple"</c> because B comes after A. By the
     same logic, the string <c>"2"</c> is greater than the string <c>"12"</c> because 2 is greater than 1. If we convert the
     strings to numbers, things will work as expected - <c>2</c> is smaller than <c>12</c>. So we must use <c>int()</c> to

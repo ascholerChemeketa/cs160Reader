@@ -42,7 +42,7 @@ img.draw(win2)
     <statement>
       <p>If we want to make the image both brighter and more red, we could increase just the red value. However, if we
         want it to look more red, but not get brighter overall, we would want to make a small increase to the red value and
-        a small decrease to the blue and green values.</p>
+        a small decrease in the blue and green values.</p>
       <p>Arrange and indent the blocks below to make a recipe that would make the image redder but not increase the
         overall brightness much. You should modify the red value before you modify the green &amp; blue (that would not
         matter in a real program, but here you need to have them in that order.)</p>

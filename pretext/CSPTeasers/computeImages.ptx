@@ -1,88 +1,92 @@
 <section xml:id="csp-teasers_compute-with-images">
-    <title>Compute with Images</title>
+  <title>Compute with Images</title>
 
-    <p>Pictures on a computer are broken up into little bits called <term> pixels</term>,
-        for <em>picture</em> (pix) <em>elements</em> (els). These are laid out on a grid, from left to right (the
-        horizontal or <term>x</term> dimension) and top to bottom (the vertical or <term>y</term> dimension).</p>
-    <figure align="center">
-        <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
-        <image source="CSPTeasers/Figures/grid.png" width="30%"
-            alt="A grid with horizontal (x) and vertical (y) dimensions" />
-    </figure>
+  <p>Pictures on a computer are broken up into little bits called <term> pixels</term>, for <em>
+    picture</em> (pix) <em>elements</em> (els). These are laid out on a grid, from left to right
+    (the horizontal or <term>x</term> dimension) and top to bottom (the vertical or <term>y</term>
+    dimension).</p>
+  <figure align="center">
+    <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
+    <image source="CSPTeasers/Figures/grid.png" width="30%"
+      alt="A grid with horizontal (x) and vertical (y) dimensions" />
+  </figure>
 
-    <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
+  <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
 
-    <datafile label="cat" filename="cat.jpg">
-        <image source="CSP/Images/cat.jpg" width="30%" />
-    </datafile>
+  <datafile label="cat" filename="cat.jpg">
+    <image source="CSP/Images/cat.jpg" width="30%" />
+  </datafile>
 
-    <exercise label="cspteasers_computeimages1">
+  <exercise label="cspteasers_computeimages1">
+    <statement>
+
+      <p>Which way does y increase on an image?</p>
+
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-            <p>Which way does y increase on an image?</p>
-
+          <p>From left to right</p>
         </statement>
-        <choices>
+        <feedback>
+          <p>The x value increases from left to right</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>From left to right</p>
-                </statement>
-                <feedback>
-                    <p>The x value increases from left to right</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>From right to left</p>
+        </statement>
+        <feedback>
+          <p>The horizontal direction is the x direction</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>From right to left</p>
-                </statement>
-                <feedback>
-                    <p>The horizontal direction is the x direction</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>From top to bottom</p>
+        </statement>
+        <feedback>
+          <p>The y value increases from top to bottom</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>From top to bottom</p>
-                </statement>
-                <feedback>
-                    <p>The y value increases from top to bottom</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>From bottom to top</p>
+        </statement>
+        <feedback>
+          <p>This is common on a Cartesian coordinate system, but it is not true here</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>From bottom to top</p>
-                </statement>
-                <feedback>
-                    <p>This is common on a Cartesian coordinate system, but it is not true here</p>
-                </feedback>
-            </choice>
-        </choices>
+  </exercise>
+  <p>Each pixel has a color associated with it: An amount of red, an amount of green, and an amount
+    of blue. The amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the
+    maximum amount of that color. A pixel is displayed using light, not paint, so it may work a bit
+    differently than you might expect if you only have experience making colors by mixing paint. For
+    example, you would mix blue and yellow paint to make green, but you mix red and green light to
+    make yellow light.</p>
+  <figure align="center">
+    <caption>How lights combine to make colors</caption>
+    <image source="CSPTeasers/Figures/additive-color.jpg" width="50%"
+      alt="a color wheel for combining color lights" />
+  </figure>
+  <p>All image manipulations in programs like Photoshop or Instagram filters are created by
+    manipulating those red, green, and blue color components in each pixel.</p>
+  <p>Let’s remove the red from this picture. The program below does that.</p>
+  <p>In Python, images are another example of an <term>object</term>. To work with them, we will
+    make use of another <term> library</term>, this one called <c>image</c>. That library will allow us
+    to make an <c>Image</c> that holds the data from an image and an <c>ImageWin</c> where we can draw the image
+    to.</p>
+  <p> The important lines are under the comments (lines that start with a <c>#</c>). Press the Save
+    &amp; Run button to run the program and show the changed image. Please note that processing all
+    those pixels can take a few seconds.</p>
 
-    </exercise>
-    <p>Each pixel has a color associated with it: An amount of red, an amount of green, and an amount of blue. The
-        amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the maximum amount of that
-        color. A pixel is displayed using light, not paint, so it may work a bit differently than you might expect if
-        you only have experience making colors by mixing paint. For example, you would mix blue and yellow paint to make
-        green, but you mix red and green light to make yellow light.</p>
-    <figure align="center">
-        <caption>How lights combine to make colors</caption>
-        <image source="CSPTeasers/Figures/additive-color.jpg" width="50%"
-            alt="a color wheel for combining color lights" />
-    </figure>
-    <p>All image manipulations in programs like Photoshop or Instagram filters are created by manipulating those red,
-        green, and blue color components in each pixel.</p>
-    <p>Let’s remove the red from this picture. The program below does that.</p>
-    <p>In Python, images are another example of an <term>object</term>. To work with them, we will make use of another <term>
-        library</term>, this one called <c>image</c>. That library will allow us to make an <c>Image</c> that holds the data from
-        an image and an <c>ImageWin</c> where we can draw the image to.</p>
-    <p> The important lines are under the comments (lines that start with a <c>#</c>). Press the Save &amp; Run button to
-        run the program and show the changed image. Please note that processing all those pixels can take a few seconds.</p>
-
-    <program xml:id="cspteasers_computeimages2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspteasers_computeimages2" interactive="activecode" language="python">
+    <input>
             # MAKE USE OF IMAGE LIBRARY
             import image
 
@@ -100,46 +104,46 @@
             win = image.ImageWin(400, 400)
             catPic.draw(win)
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspteasers_computeimages3">
+  <exercise label="cspteasers_computeimages3">
+    <statement>
+
+      <p>What do you think happens when you set all the colors to 0? Try adding lines that say <c>p.setBlue(0)</c>
+        and <c>p.setGreen(0)</c> to the program after the <c>p.setRed(0)</c> (but before <c>img.updatePixel(p)</c>) and run it to check. You
+        will have to make sure the lines are indented just like <c>p.setRed(0)</c> is.</p>
+    </statement>
+    <choices>
+
+      <choice>
         <statement>
-
-            <p>What do you think happens when you set all the colors to 0? Try adding lines that say <c>p.setBlue(0)</c> and <c>p.setGreen(0)</c>
-                to the program after the <c>p.setRed(0)</c> (but before <c>img.updatePixel(p)</c>) and run it to check. You will have to make sure
-                the lines are indented just like <c>p.setRed(0)</c> is.</p>
+          <p>You still see the picture, but it is all in shades of gray.</p>
         </statement>
-        <choices>
+        <feedback>
+          <p>Not if you set all the color values to 0.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>You still see the picture, but it is all in shades of gray.</p>
-                </statement>
-                <feedback>
-                    <p>Not if you set all the color values to 0.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>The picture is all white.</p>
+        </statement>
+        <feedback>
+          <p>Did you try it? This would be true if you set all the values to 255 instead of 0.</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>The picture is all white.</p>
-                </statement>
-                <feedback>
-                    <p>Did you try it? This would be true if you set all the values to 255 instead of 0.</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The picture is all black.</p>
+        </statement>
+        <feedback>
+          <p>Black is the absence of light so setting all colors to 0 results in an all-black image
+            since there is no light.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice correct="yes">
-                <statement>
-                    <p>The picture is all black.</p>
-                </statement>
-                <feedback>
-                    <p>Black is the absence of light so setting all colors to 0 results in an all black image since
-                        there is no light.</p>
-                </feedback>
-            </choice>
-        </choices>
-
-    </exercise>
+  </exercise>
 </section>
 

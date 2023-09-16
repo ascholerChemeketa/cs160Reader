@@ -59,7 +59,7 @@
 
     <exercise label="cspcollectionsintro_rainfall2">
       <statement>
-        <p>Now, let’s worry about about ONLY adding the values of the numbers that aren’t negative to the
+        <p>Now, let’s worry about ONLY adding the values of the numbers that aren’t negative to the
           total. You can copy your code from part 1 and use it to get started here. Then add logic so that you only add
           each value to <c>sumRain</c> if it is 0 or more.</p>
         <p>Hint: The if condition needs to be checked for each value in the list. You must nest the <c>if</c> inside the <c>for</c>

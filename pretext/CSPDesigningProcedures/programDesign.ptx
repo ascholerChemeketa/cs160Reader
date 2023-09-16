@@ -13,11 +13,11 @@
     for that task so it can do its job. These will be the parameters for your procedure. In the case of a turtle
     graphics program, every procedure will need to know the name of the turtle it is supposed to use. We also may need
     parameters to specify things like a size or color.</p>
-  <p>Along the way, look for places where you are writing basically the same code in multiple places. Those are places
+  <p>Along the way, look for places where you are writing the same code (or code that is essentially the same) in multiple places. Those are places
     you can maybe use a procedure to do the common part of the work. You may have to use parameters to make the
     procedure flexible enough to work in multiple situations.</p>
   <p>Don’t worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
-    going to be easy and when you start working on it, realize it is much harder than you anticipated. In those cases
+    going to be easy and when you start working on it, realize it is much harder than you anticipated. In those cases,
     you can stop and revise your design by breaking the complex procedure into smaller pieces.</p>
   <subsection xml:id="csp-designing-procedures_top-down-design-example">
     <title>Top-Down Design Example</title>
@@ -25,7 +25,7 @@
     <image source="CSPDesigningProcedures/Figures/turtlehouse.png" width="50%" />
     <p>My design process might look like this:</p>
     <blockquote>
-      <p>Can I <c>drawHouse</c> in ~10 lines of code? Pretty sure no. So let me break it down. Well, I need to:</p>
+      <p>Can I <c>drawHouse</c> in ~10 lines of code? Pretty sure I can not. So let me break it down. Well, I need to:</p>
       <p>
         <ul>
           <li>
@@ -33,7 +33,7 @@
           <li>
             <c>drawDoor</c> by making a smaller rectangle </li>
           <li>
-            <c>drawWindow</c> make a square with cross in the middle. I'll need to do this twice. </li>
+            <c>drawWindow</c> make a square with a cross in the middle. I'll need to do this twice. </li>
           <li>
             <c>drawRoof</c> which is a triangle </li>
         </ul>

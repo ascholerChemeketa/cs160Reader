@@ -1,6 +1,6 @@
 <section xml:id="csp-name-numbers_how-expressions-are-evaluated">
     <title>How Expressions are Evaluated</title>
-    <p>The order that expressions are executed is the same as it is in math. You probably learned this ordering as <term>
+    <p>The order in which expressions are evaluated is the same as it is in math. You probably learned this ordering as <term>
         PEMDAS</term> (Parentheses, Exponents, Multiply/Divide, Add/Subtract) and is shown in the table below from
         highest precedence to lowest. If two symbols have the same precedence they are evaluated from left to right.</p>
     <table>
@@ -46,7 +46,7 @@
                 </condition>
                 <condition string="^\s*.*\s*$">
                     <feedback>
-                        <p>Did you actually run the program?</p>
+                        <p>Did you run the program?</p>
                     </feedback>
                 </condition>
             </var>

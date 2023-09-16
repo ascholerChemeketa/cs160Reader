@@ -12,7 +12,7 @@
         <p>Make sure to use <c>begin_fill</c> and <c>end_fill</c> in your procedure. Without them, the triangle will not get filled in.</p>
       </li>
       <li>
-        <p>You don’t actually have to draw the bottom edge of the roof since there is already a line there.</p>
+        <p>You don’t have to draw the bottom edge of the roof since there is already a line there.</p>
       </li>
     </ul>
   </p>

@@ -38,7 +38,7 @@
       <p>Improve your code for the <c>printFirst</c> you wrote in the previous exercise.</p>
       <p>Before printing, make sure that <c>numberItems</c> is not greater than the length of the list. If <c>numberItems</c> is OK, do the
         printing. If not, just print <c>"Invalid numItems"</c>.</p>
-      <p>The tests for you code will check the output - make sure not to print anything extra or remove anything from
+      <p>Automated tests will check the output - make sure not to print anything extra or remove anything from
         the main program.</p>
 
     </statement>

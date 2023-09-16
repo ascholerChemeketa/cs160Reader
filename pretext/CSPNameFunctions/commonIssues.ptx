@@ -5,7 +5,7 @@
     <title>Returning Ends a Function</title>
     <p>One common mistake when writing functions is to try to do work after a return statement. When Python hits a <c>return</c>,
       it does just that: it returns to the place the function was called. The program below tries to use the <c>addFive</c>
-      function to add 5 to the score only the code in that function that actually does the math comes after the return
+      function to add 5 to the score; however, the code in the function that does the math comes after the return
       and thus never runs! Try running it in Codelens mode to see:</p>
 
     <program xml:id="cspnamefunctions_commonissues1" interactive="activecode" language="python">
@@ -21,16 +21,16 @@ print(score)
         </input>
     </program>
     <warning>
-      <p>A <c>return</c> ends a function immediately when it is hit.</p>
+      <p>A <c>return</c> ends a function immediately.</p>
     </warning>
   </subsection>
   <subsection xml:id="csp-name-functions_trying-to-change-a-parameter">
     <title>Trying to Change a Parameter</title>
     <p>The parameters for a function are variables that only exist inside of that function. You can make changes to
-      their values, but doing so has no effect on the rest of the program.</p>
+      their values, but doing so does not affect the rest of the program.</p>
     <p>This version of the program does not work correctly either. <c>score</c> is passed as the argument from the main part
       of the program into <c>addFive</c>. That means <c>addFive</c> uses a <term>copy</term> of <c>score</c>’s value as its value for <c>x</c>.
-      But <c>x</c> and <c>score</c> are not actually linked. A change to <c>x</c> does nothing to change the value of <c>score</c>.
+      But <c>x</c> and <c>score</c> are not linked in any way. A change to <c>x</c> does nothing to change the value of <c>score</c>.
       Nothing is ever returned, so the rest of the program never learns about the changes that happened in <c>addFive</c>.</p>
     <p>Again, try running in Codelens:</p>
 

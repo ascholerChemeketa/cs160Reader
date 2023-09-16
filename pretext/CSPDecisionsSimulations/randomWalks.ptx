@@ -1,16 +1,20 @@
 <section xml:id="csp-decisions-simulations_random-walks">
   <title>Random Walks</title>
-  <p>A <url href="https://en.wikipedia.org/wiki/Random_walk" visual="https://en.wikipedia.org/wiki/Random_walk">random
-    walk</url> is simulation technique that has been applied to solve problems in areas from physics to biology to
-    materials science economics to who to recommend that people follow on <url href="https://dl.acm.org/doi/10.1145/2488388.2488433" visual="https://dl.acm.org/doi/10.1145/2488388.2488433">
-    Twitter</url></p>
-  <p>The basic idea is to think about a process in terms of a series of steps. These steps are done with some degree of
-    randomness: maybe a fixed distance in a random direction, or in a fixed direction with a random distance. In a
-    simulation, <q>direction</q> and <q>distance</q> may not mean actual physical dimensions. In a stock
-    market simulation random walk, a step might be a price movement from one day to the next.</p>
-  <p>However, the Python turtle makes for a great visual way to do a random walk where <q>direction</q> and
-    <q>distance</q> refer to actual physical movement. This example does a random walk where each step involves
-    moving 10 pixels forward in one of the cardinal directions (north, south, east, west).</p>
+  <p>A <url href="https://en.wikipedia.org/wiki/Random_walk"
+      visual="https://en.wikipedia.org/wiki/Random_walk">random walk</url> is a simulation technique
+    that has been applied to solve problems in areas from physics to biology to materials science
+    economics to who to recommend that people follow on <url
+      href="https://dl.acm.org/doi/10.1145/2488388.2488433"
+      visual="https://dl.acm.org/doi/10.1145/2488388.2488433"> Twitter</url></p>
+  <p>The basic idea is to think about a process in terms of a series of steps. These steps are done
+    with some degree of randomness: maybe a fixed distance in a random direction, or in a fixed
+    direction with a random distance. In a simulation, <q>direction</q> and <q>distance</q> may not
+    mean actual physical dimensions. In a stock market simulation random walk, a step might be a
+    price movement from one day to the next.</p>
+  <p>However, the Python turtle makes for a great visual way to do a random walk where <q>direction</q>
+    and <q>distance</q> refer to actual physical movement. This example does a random walk where
+    each step involves moving 10 pixels forward in one of the cardinal directions (north, south,
+    east, west).</p>
 
   <program xml:id="cspdecisionssimulations_randomwalks1" interactive="activecode" language="python">
     <input>
@@ -31,9 +35,9 @@ for step in range(100):
     takeStep(travis)
         </input>
   </program>
-  <p>To generate a random direction, we are picking a random integer from 0-3 and then multiplying that by 90. This
-    guarantees that the only numbers we can pick are 0, 90, 180, and 270. Try changing line 3 to <c>direction = random.randrange(0, 360)</c> and removing
-    line 5. What is the result?</p>
+  <p>To generate a random direction, we are picking a random integer from 0-3 and then multiplying
+    that by 90. This guarantees that the only numbers we can pick are 0, 90, 180, and 270. Try
+    changing line 3 to <c>direction = random.randrange(0, 360)</c> and removing line 5. What is the result?</p>
 
   <exercise label="cspdecisionssimulations_randomwalks2">
     <statement>
@@ -72,9 +76,9 @@ for step in range(100):
     </choices>
 
   </exercise>
-  <p>To simulate something like the stock market, we might want to do something like the following. Try running this
-    program and think of the x dimension as time - the far left is day 0 and each step to the right is another day - and
-    the y dimension as value - the price of a stock.</p>
+  <p>To simulate something like the stock market, we might want to do something like the following.
+    Try running this program and think of the x dimension as time - the far left is day 0 and each
+    step to the right is another day - and the y dimension as value - the price of a stock.</p>
 
   <program xml:id="cspdecisionssimulations_randomwalks3" interactive="activecode" language="python">
     <input>
@@ -94,20 +98,21 @@ while(currentX &lt; 200):
     travis.goto(currentX, currentY)
         </input>
   </program>
-  <p>To take steps in this program, we track the current location of the turtle. To do a step, we increase <c>currentX</c> by 2
-    and change <c>currentY</c> by a random amount between -10 and 10. This will mean each step moves slightly to the right and
-    move up/down by anywhere from -10 to 12.</p>
-  <p>One possible flaw with this program is that the change in stock prices uses a different distribution of random
-    changes. Most days the price goes up or down by a very small amount. However, some days it climbs or drops by a lot
-    more. Let’s figure out that logic.</p>
-  <exercise label="cspdecisionssimulations_randomwalks4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <p>To take steps in this program, we track the current location of the turtle. To do a step, we
+    increase <c>currentX</c> by 2 and change <c>currentY</c> by a random amount between -10 and 10. This will mean
+    each step moves slightly to the right and move up/down by anywhere from -10 to 12.</p>
+  <p>One possible flaw with this program is that the change in stock prices uses a different
+    distribution of random changes. Most days the price goes up or down by a very small amount.
+    However, some days it climbs or drops by a lot more. Let’s figure out that logic.</p>
+  <exercise label="cspdecisionssimulations_randomwalks4" numbered="yes" adaptive="yes"
+    indentation="hide" language="python">
     <statement>
-      <p>This program should work like the one above. However, at each step, we want there to be a 2% chance that the
-        stock change up to 40 in either direction instead of just 10. To do that, we will make a variable <c>randValue</c> hold a
-        value between 1 and 100. If that is less than or equal to 2, then we will adjust <c>currentY</c> with a random value
-        chosen from the larger range.</p>
-      <p>Order and indent the code blocks to build this logic. Make sure to update <c>currentX</c> and <c>currentY</c> before you do the <c>goto</c>
-        .</p>
+      <p>This program should work like the one above. However, at each step, we want there to be a
+        2% chance that the stock change up to 40 in either direction instead of just 10. To do that,
+        we will make a variable <c>randValue</c> hold a value between 1 and 100. If that is less than or
+        equal to 2, then we will adjust <c>currentY</c> with a random value chosen from the larger range.</p>
+      <p>Order and indent the code blocks to build this logic. Make sure to update <c>currentX</c> and <c>currentY</c>
+        before you do the <c>goto</c> .</p>
     </statement>
     <blocks>
       <block order="2">
@@ -137,13 +142,13 @@ while(currentX &lt; 200):
         <cline> if randValue &lt;= 2:</cline>
       </block>
       <block order="9">
-        <cline>  yChange = random.randrange(-40, 41)</cline>
+        <cline> yChange = random.randrange(-40, 41)</cline>
       </block>
       <block order="3">
         <cline> else:</cline>
       </block>
       <block order="8">
-        <cline>  yChange = random.randrange(-10, 11)</cline>
+        <cline> yChange = random.randrange(-10, 11)</cline>
       </block>
       <block order="1">
         <cline> currentY = currentY + yChange</cline>
@@ -151,7 +156,10 @@ while(currentX &lt; 200):
       </block>
     </blocks>
   </exercise>
-  <p>Now that you have figured out the recipe, try using it in the program above. Does the graph look more like a <url href="https://finance.yahoo.com/chart/INTC#eyJpbnRlcnZhbCI6ImRheSIsInBlcmlvZGljaXR5IjoxLCJ0aW1lVW5pdCI6bnVsbCwiY2FuZGxlV2lkdGgiOjgsImZsaXBwZWQiOmZhbHNlLCJ2b2x1bWVVbmRlcmxheSI6dHJ1ZSwiYWRqIjp0cnVlLCJjcm9zc2hhaXIiOnRydWUsImNoYXJ0VHlwZSI6ImxpbmUiLCJleHRlbmRlZCI6ZmFsc2UsIm1hcmtldFNlc3Npb25zIjp7fSwiYWdncmVnYXRpb25UeXBlIjoib2hsYyIsImNoYXJ0U2NhbGUiOiJsaW5lYXIiLCJzdHVkaWVzIjp7IuKAjHZvbCB1bmRy4oCMIjp7InR5cGUiOiJ2b2wgdW5kciIsImlucHV0cyI6eyJpZCI6IuKAjHZvbCB1bmRy4oCMIiwiZGlzcGxheSI6IuKAjHZvbCB1bmRy4oCMIn0sIm91dHB1dHMiOnsiVXAgVm9sdW1lIjoiIzAwYjA2MSIsIkRvd24gVm9sdW1lIjoiI2ZmMzMzYSJ9LCJwYW5lbCI6ImNoYXJ0IiwicGFyYW1ldGVycyI6eyJ3aWR0aEZhY3RvciI6MC40NSwiY2hhcnROYW1lIjoiY2hhcnQifX19LCJwYW5lbHMiOnsiY2hhcnQiOnsicGVyY2VudCI6MSwiZGlzcGxheSI6IklOVEMiLCJjaGFydE5hbWUiOiJjaGFydCIsImluZGV4IjowLCJ5QXhpcyI6eyJuYW1lIjoiY2hhcnQiLCJwb3NpdGlvbiI6bnVsbH0sInlheGlzTEhTIjpbXSwieWF4aXNSSFMiOlsiY2hhcnQiLCLigIx2b2wgdW5kcuKAjCJdfX0sInNldFNwYW4iOnt9LCJsaW5lV2lkdGgiOjIsInN0cmlwZWRCYWNrZ3JvdW5kIjp0cnVlLCJldmVudHMiOnRydWUsImNvbG9yIjoiIzAwODFmMiIsInN0cmlwZWRCYWNrZ3JvdWQiOnRydWUsImV2ZW50TWFwIjp7ImNvcnBvcmF0ZSI6eyJkaXZzIjp0cnVlLCJzcGxpdHMiOnRydWV9LCJzaWdEZXYiOnt9fSwic3ltYm9scyI6W3sic3ltYm9sIjoiSU5UQyIsInN5bWJvbE9iamVjdCI6eyJzeW1ib2wiOiJJTlRDIiwicXVvdGVUeXBlIjoiRVFVSVRZIiwiZXhjaGFuZ2VUaW1lWm9uZSI6IkFtZXJpY2EvTmV3X1lvcmsifSwicGVyaW9kaWNpdHkiOjEsImludGVydmFsIjoiZGF5IiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOnt9fV19" visual="https://finance.yahoo.com/chart/INTC#eyJpbnRlcnZhbCI6ImRheSIsInBlcmlvZGljaXR5IjoxLCJ0aW1lVW5pdCI6bnVsbCwiY2FuZGxlV2lkdGgiOjgsImZsaXBwZWQiOmZhbHNlLCJ2b2x1bWVVbmRlcmxheSI6dHJ1ZSwiYWRqIjp0cnVlLCJjcm9zc2hhaXIiOnRydWUsImNoYXJ0VHlwZSI6ImxpbmUiLCJleHRlbmRlZCI6ZmFsc2UsIm1hcmtldFNlc3Npb25zIjp7fSwiYWdncmVnYXRpb25UeXBlIjoib2hsYyIsImNoYXJ0U2NhbGUiOiJsaW5lYXIiLCJzdHVkaWVzIjp7IuKAjHZvbCB1bmRy4oCMIjp7InR5cGUiOiJ2b2wgdW5kciIsImlucHV0cyI6eyJpZCI6IuKAjHZvbCB1bmRy4oCMIiwiZGlzcGxheSI6IuKAjHZvbCB1bmRy4oCMIn0sIm91dHB1dHMiOnsiVXAgVm9sdW1lIjoiIzAwYjA2MSIsIkRvd24gVm9sdW1lIjoiI2ZmMzMzYSJ9LCJwYW5lbCI6ImNoYXJ0IiwicGFyYW1ldGVycyI6eyJ3aWR0aEZhY3RvciI6MC40NSwiY2hhcnROYW1lIjoiY2hhcnQifX19LCJwYW5lbHMiOnsiY2hhcnQiOnsicGVyY2VudCI6MSwiZGlzcGxheSI6IklOVEMiLCJjaGFydE5hbWUiOiJjaGFydCIsImluZGV4IjowLCJ5QXhpcyI6eyJuYW1lIjoiY2hhcnQiLCJwb3NpdGlvbiI6bnVsbH0sInlheGlzTEhTIjpbXSwieWF4aXNSSFMiOlsiY2hhcnQiLCLigIx2b2wgdW5kcuKAjCJdfX0sInNldFNwYW4iOnt9LCJsaW5lV2lkdGgiOjIsInN0cmlwZWRCYWNrZ3JvdW5kIjp0cnVlLCJldmVudHMiOnRydWUsImNvbG9yIjoiIzAwODFmMiIsInN0cmlwZWRCYWNrZ3JvdWQiOnRydWUsImV2ZW50TWFwIjp7ImNvcnBvcmF0ZSI6eyJkaXZzIjp0cnVlLCJzcGxpdHMiOnRydWV9LCJzaWdEZXYiOnt9fSwic3ltYm9scyI6W3sic3ltYm9sIjoiSU5UQyIsInN5bWJvbE9iamVjdCI6eyJzeW1ib2wiOiJJTlRDIiwicXVvdGVUeXBlIjoiRVFVSVRZIiwiZXhjaGFuZ2VUaW1lWm9uZSI6IkFtZXJpY2EvTmV3X1lvcmsifSwicGVyaW9kaWNpdHkiOjEsImludGVydmFsIjoiZGF5IiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOnt9fV19">stock
+  <p>Now that you have figured out the recipe, try using it in the program above. Does the graph
+    look more like a <url
+      href="https://finance.yahoo.com/chart/INTC#eyJpbnRlcnZhbCI6ImRheSIsInBlcmlvZGljaXR5IjoxLCJ0aW1lVW5pdCI6bnVsbCwiY2FuZGxlV2lkdGgiOjgsImZsaXBwZWQiOmZhbHNlLCJ2b2x1bWVVbmRlcmxheSI6dHJ1ZSwiYWRqIjp0cnVlLCJjcm9zc2hhaXIiOnRydWUsImNoYXJ0VHlwZSI6ImxpbmUiLCJleHRlbmRlZCI6ZmFsc2UsIm1hcmtldFNlc3Npb25zIjp7fSwiYWdncmVnYXRpb25UeXBlIjoib2hsYyIsImNoYXJ0U2NhbGUiOiJsaW5lYXIiLCJzdHVkaWVzIjp7IuKAjHZvbCB1bmRy4oCMIjp7InR5cGUiOiJ2b2wgdW5kciIsImlucHV0cyI6eyJpZCI6IuKAjHZvbCB1bmRy4oCMIiwiZGlzcGxheSI6IuKAjHZvbCB1bmRy4oCMIn0sIm91dHB1dHMiOnsiVXAgVm9sdW1lIjoiIzAwYjA2MSIsIkRvd24gVm9sdW1lIjoiI2ZmMzMzYSJ9LCJwYW5lbCI6ImNoYXJ0IiwicGFyYW1ldGVycyI6eyJ3aWR0aEZhY3RvciI6MC40NSwiY2hhcnROYW1lIjoiY2hhcnQifX19LCJwYW5lbHMiOnsiY2hhcnQiOnsicGVyY2VudCI6MSwiZGlzcGxheSI6IklOVEMiLCJjaGFydE5hbWUiOiJjaGFydCIsImluZGV4IjowLCJ5QXhpcyI6eyJuYW1lIjoiY2hhcnQiLCJwb3NpdGlvbiI6bnVsbH0sInlheGlzTEhTIjpbXSwieWF4aXNSSFMiOlsiY2hhcnQiLCLigIx2b2wgdW5kcuKAjCJdfX0sInNldFNwYW4iOnt9LCJsaW5lV2lkdGgiOjIsInN0cmlwZWRCYWNrZ3JvdW5kIjp0cnVlLCJldmVudHMiOnRydWUsImNvbG9yIjoiIzAwODFmMiIsInN0cmlwZWRCYWNrZ3JvdWQiOnRydWUsImV2ZW50TWFwIjp7ImNvcnBvcmF0ZSI6eyJkaXZzIjp0cnVlLCJzcGxpdHMiOnRydWV9LCJzaWdEZXYiOnt9fSwic3ltYm9scyI6W3sic3ltYm9sIjoiSU5UQyIsInN5bWJvbE9iamVjdCI6eyJzeW1ib2wiOiJJTlRDIiwicXVvdGVUeXBlIjoiRVFVSVRZIiwiZXhjaGFuZ2VUaW1lWm9uZSI6IkFtZXJpY2EvTmV3X1lvcmsifSwicGVyaW9kaWNpdHkiOjEsImludGVydmFsIjoiZGF5IiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOnt9fV19"
+      visual="https://finance.yahoo.com/chart/INTC#eyJpbnRlcnZhbCI6ImRheSIsInBlcmlvZGljaXR5IjoxLCJ0aW1lVW5pdCI6bnVsbCwiY2FuZGxlV2lkdGgiOjgsImZsaXBwZWQiOmZhbHNlLCJ2b2x1bWVVbmRlcmxheSI6dHJ1ZSwiYWRqIjp0cnVlLCJjcm9zc2hhaXIiOnRydWUsImNoYXJ0VHlwZSI6ImxpbmUiLCJleHRlbmRlZCI6ZmFsc2UsIm1hcmtldFNlc3Npb25zIjp7fSwiYWdncmVnYXRpb25UeXBlIjoib2hsYyIsImNoYXJ0U2NhbGUiOiJsaW5lYXIiLCJzdHVkaWVzIjp7IuKAjHZvbCB1bmRy4oCMIjp7InR5cGUiOiJ2b2wgdW5kciIsImlucHV0cyI6eyJpZCI6IuKAjHZvbCB1bmRy4oCMIiwiZGlzcGxheSI6IuKAjHZvbCB1bmRy4oCMIn0sIm91dHB1dHMiOnsiVXAgVm9sdW1lIjoiIzAwYjA2MSIsIkRvd24gVm9sdW1lIjoiI2ZmMzMzYSJ9LCJwYW5lbCI6ImNoYXJ0IiwicGFyYW1ldGVycyI6eyJ3aWR0aEZhY3RvciI6MC40NSwiY2hhcnROYW1lIjoiY2hhcnQifX19LCJwYW5lbHMiOnsiY2hhcnQiOnsicGVyY2VudCI6MSwiZGlzcGxheSI6IklOVEMiLCJjaGFydE5hbWUiOiJjaGFydCIsImluZGV4IjowLCJ5QXhpcyI6eyJuYW1lIjoiY2hhcnQiLCJwb3NpdGlvbiI6bnVsbH0sInlheGlzTEhTIjpbXSwieWF4aXNSSFMiOlsiY2hhcnQiLCLigIx2b2wgdW5kcuKAjCJdfX0sInNldFNwYW4iOnt9LCJsaW5lV2lkdGgiOjIsInN0cmlwZWRCYWNrZ3JvdW5kIjp0cnVlLCJldmVudHMiOnRydWUsImNvbG9yIjoiIzAwODFmMiIsInN0cmlwZWRCYWNrZ3JvdWQiOnRydWUsImV2ZW50TWFwIjp7ImNvcnBvcmF0ZSI6eyJkaXZzIjp0cnVlLCJzcGxpdHMiOnRydWV9LCJzaWdEZXYiOnt9fSwic3ltYm9scyI6W3sic3ltYm9sIjoiSU5UQyIsInN5bWJvbE9iamVjdCI6eyJzeW1ib2wiOiJJTlRDIiwicXVvdGVUeXBlIjoiRVFVSVRZIiwiZXhjaGFuZ2VUaW1lWm9uZSI6IkFtZXJpY2EvTmV3X1lvcmsifSwicGVyaW9kaWNpdHkiOjEsImludGVydmFsIjoiZGF5IiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOnt9fV19">stock
     market price history</url>?</p>
 
 </section>

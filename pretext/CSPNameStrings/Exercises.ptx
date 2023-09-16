@@ -88,7 +88,7 @@
 
   <exercise label="cspnamestrings_exercises4">
     <statement>
-      <p>Using the variables given, modify the print statement to print <c>"A car travelling at 70 mph takes 2.0 hours to go 140 miles."</c> Make sure to print the variables, not
+      <p>Using the variables given, modify the print statement to print <c>"A car traveling at 70 mph takes 2.0 hours to go 140 miles."</c> Make sure to print the variables, not
         the values you know they contain.</p>
       <p>If we were to change <c>milesPerHour</c> and <c>distanceTravelled</c> your program should still print a mathematically correct message.</p>
 

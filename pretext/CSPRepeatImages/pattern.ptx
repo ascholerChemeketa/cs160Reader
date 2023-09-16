@@ -1,12 +1,13 @@
 <section xml:id="csp-repeat-images_a-pattern-for-image-processing">
   <title>A Pattern for Image Processing</title>
-  <p>There is a fair amount of code involved in a program like this. But there is a pattern to the code we need to
-    write. Learning to recognize the pattern makes it easier to write a new program - we can follow the steps of the
-    pattern and only worry about modifying small parts of the basic recipe.</p>
-  <p>A basic image processing pattern is shown in the program below. This program changes the colors around in
-    crazy ways. It sets the red value to the original green,
-    the green to the original blue, and the blue to the original red. Compare the results of running this program 
-    with the original goalkeeper image from the <xref ref="csp-image-library" text="title"/>.</p>
+  <p>There is a fair amount of code involved in a program like this. But there is a pattern to the
+    code we need to write. Learning to recognize the pattern makes it easier to write a new program
+    - we can follow the steps of the pattern and only worry about modifying small parts of the basic
+    recipe.</p>
+  <p>A basic image processing pattern is shown in the program below. This program changes the colors
+    around in crazy ways. It sets the red value to the original green, the green to the original
+    blue, and the blue to the original red. Compare the results of running this program with the
+    original goalkeeper image from the <xref ref="csp-image-library" text="title" />.</p>
 
   <program xml:id="csprepeatimages_pattern1" interactive="activecode" language="python">
     <input>
@@ -46,28 +47,29 @@ img.draw(win)
       </li>
       <li>
         <p>
-          <term> PICK THE IMAGE.</term> We pick a particular image from our library by specifying its name as 
-          a string (with quotation marks) inside the parentheses.</p>
+          <term> PICK THE IMAGE.</term> We pick a particular image from our library by specifying
+          its name as a string (with quotation marks) inside the parentheses.</p>
 
       </li>
       <li>
-        <p><term>LOOP THROUGH THE PIXELS.</term> This example gets <em>every</em> pixel in the image and loops through
-          them all one at a time.</p>
+        <p><term>LOOP THROUGH THE PIXELS.</term> This example gets <em>every</em> pixel in the image
+          and loops through them all one at a time.</p>
 
       </li>
       <li>
-        <p><term>GET THE DATA.</term> You could always use the STEP 4 lines just as they are above, but you
-          might be able to make it shorter if you don't need all the colors. If your program just needs to 
-          work with red, you don’t have to get the green and blue values.</p>
+        <p><term>GET THE DATA.</term> You could always use the STEP 4 lines just as they are above,
+          but you might be able to make it shorter if you don't need all the colors. If your program
+          just needs to work with red, you don’t have to get the green and blue values.</p>
 
       </li>
       <li>
-        <p><term>MODIFY THE COLOR.</term> This is the part that you will most often change. Here’s where you
-          change the red, green, and/or blue. You don’t have to change all of them.</p>
+        <p><term>MODIFY THE COLOR.</term> This is the part that you will most often change. Here’s
+          where you change the red, green, and/or blue. You don’t have to change all of them.</p>
 
       </li>
       <li>
-        <p><term>UPDATE THE IMAGE.</term> This will update the image using the new colors of the pixel.</p>
+        <p><term>UPDATE THE IMAGE.</term> This will update the image using the new colors of the
+          pixel.</p>
       </li>
       <li>
         <p><term>SHOW THE RESULT.</term> This will draw the changed image in a window.</p>
@@ -75,9 +77,9 @@ img.draw(win)
     </ol>
   </p>
 
-  <p>Notice that steps 4-6 are indented in the code. That means they are part of the for loop on line 9. They get
-    repeated for each of the pixels in the image. Step 7 is not indented. It happens just once after all the pixels are
-    processed in the for loop.</p>
+  <p>Notice that steps 4-6 are indented in the code. That means they are part of the for loop on
+    line 9. They get repeated for each of the pixels in the image. Step 7 is not indented. It
+    happens just once after all the pixels are processed in the for loop.</p>
 
   <p>Time to experiment with our pattern.</p>
 
@@ -131,7 +133,8 @@ img.draw(win)
   <exercise label="csprepeatimages_pattern3">
     <statement>
 
-      <p>Change lines 17-19 so that the new red value is 255 and blue and green are each 150. What happens?</p>
+      <p>Change lines 17-19 so that the new red value is 255 and blue and green are each 150. What
+        happens?</p>
 
     </statement>
     <choices>
@@ -178,10 +181,11 @@ img.draw(win)
   <exercise label="csprepeatimages_pattern4">
     <statement>
 
-      <p>We know that the color values are each supposed to be 0-255. What happens if we use values outside of that
-        range?</p>
-      <p>Change lines 17-19 so that the new red value is 255 and blue and green are each 0. Run the program and observe
-        the results. Then change the red value to 300 and the blue to -100. Run it again. What seems to happen?</p>
+      <p>We know that the color values are each supposed to be 0-255. What happens if we use values
+        outside of that range?</p>
+      <p>Change lines 17-19 so that the new red value is 255 and blue and green are each 0. Run the
+        program and observe the results. Then change the red value to 300 and the blue to -100. Run
+        it again. What seems to happen?</p>
 
     </statement>
     <choices>
@@ -191,7 +195,8 @@ img.draw(win)
           <p>Values above 255 are treated as 255 and values less than 0 are treated as 0.</p>
         </statement>
         <feedback>
-          <p>Yes, if you use a value less than 0 it becomes 0. If you use a value over 255, it becomes 255.</p>
+          <p>Yes, if you use a value less than 0 it becomes 0. If you use a value over 255, it
+            becomes 255.</p>
         </feedback>
       </choice>
 
@@ -200,7 +205,8 @@ img.draw(win)
           <p>Values outside of the range 0-255 are treated as 0.</p>
         </statement>
         <feedback>
-          <p>That would mean 300 red would be treated as 0, which is "no red"<ellipsis/>  still is lots of red visible.</p>
+          <p>That would mean 300 red would be treated as 0, which is "no red"<ellipsis /> still is
+            lots of red visible.</p>
         </feedback>
       </choice>
 
@@ -209,14 +215,15 @@ img.draw(win)
           <p>Values outside of the range 0-255 are treated as 255.</p>
         </statement>
         <feedback>
-          <p>That would mean -100 blue would be treated as 255<ellipsis/> but there is no blue in the image.</p>
+          <p>That would mean -100 blue would be treated as 255<ellipsis /> but there is no blue in
+            the image.</p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>Values outside the range 0-255 "wrap around". Going past 255 takes you back to 0, so 300 is the same as 300
-            - 255 = 45.</p>
+          <p>Values outside the range 0-255 "wrap around". Going past 255 takes you back to 0, so
+            300 is the same as 300 - 255 = 45.</p>
         </statement>
         <feedback>
           <p>That does not seem to be the case. 300 red looks the same as 255 red.</p>

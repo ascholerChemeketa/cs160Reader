@@ -1,13 +1,13 @@
 <section xml:id="csp-decisions-intro_using-elif-for-more-options">
-        <title>Using elif for more options</title>
-        <p>It can be tricky to specify multiple different levels or options with just <c>if</c> and <c>else</c>.
-            This problem provides a demonstration of the challenge:</p>
+  <title>Using elif for more options</title>
+  <p>It can be tricky to specify multiple different levels or options with just <c>if</c> and <c>else</c>.
+    This problem provides a demonstration of the challenge:</p>
 
-    <exercise label="cspdecisionsintro_elif1">
-        <statement>
+  <exercise label="cspdecisionsintro_elif1">
+    <statement>
 
-        <p>What is printed when the following code executes?</p>
-        <pre>score = 83
+      <p>What is printed when the following code executes?</p>
+      <pre>score = 83
 if score &gt;= 90:
     print("A")
 if score &gt;= 80:
@@ -19,53 +19,55 @@ if score &gt;= 60:
 if score &lt; 60:
     print("F")</pre>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>B</p>
         </statement>
-<choices>
+        <feedback>
+          <p>B will print. But the program will keep checking the other if statements. Which other
+            ones are true?</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>B</p>
-                </statement>
-                <feedback>
-                    <p>B will print. But the program will keep checking the other if statements. Which other ones are true?</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>B C</p>
+        </statement>
+        <feedback>
+          <p>B and C will print. But the program will keep checking the other if statements. Which
+            other ones are true?</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>B C</p>
-                </statement>
-                <feedback>
-                    <p>B and C will print. But the program will keep checking the other if statements. Which other ones are true?</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>B C D</p>
+        </statement>
+        <feedback>
+          <p>Correct.</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>B C D</p>
-                </statement>
-                <feedback>
-                    <p>Correct.</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>B C D F</p>
+        </statement>
+        <feedback>
+          <p>Score is not less than 60, so F will not print.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>B C D F</p>
-                </statement>
-                <feedback>
-                    <p>Score is not less than 60, so F will not print.</p>
-                </feedback>
-            </choice>
-</choices>
+  </exercise>
+  <p>We have used <c>if</c> and <c>else</c> to handle two possible options, but what could you do if
+    you want more than two options? What if you want to test if a value is negative, 0, or positive?
+    One way to do this using multiple <c>if</c> statements is shown below.</p>
 
-    </exercise>
-        <p>We have used <c>if</c> and <c>else</c> to handle two possible options, but what could you do for if
-            you want more than two options?  What if you want to test if a value is negative, 0, or
-            positive?  One way to do this using multiple <c>if</c> statements is shown below.</p>
-
-    <program xml:id="cspdecisionsintro_elif2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_elif2" interactive="activecode" language="python">
+    <input>
 x = 8
 if x &lt; 0:
     print("x is negative")
@@ -74,16 +76,17 @@ if x == 0:
 if x &gt; 0:
     print("x is positive")
         </input>
-    </program>
-        <p>Run this several times and change the value of x each time.  Try it with a positive number, a negative
-            number, and 0 to check that it works correctly.</p>
-        
-        
-        <p>Although that approach works, it doesn’t really guarantee that only one option will be chosen. If
-            the first if said <c>x &lt;= 0</c>, we would print both <q>x is negative</q> and <q>x is 0</q>. To guarantee that
-            only one option is chosen, we can use <c>elif</c> (short for <q><term>el**se **if</term></q>). <c>elif</c> is used
-            after an <c>if</c> or another <c>elif</c> to specify something to try if the previous conditions were not True:</p>
-        <pre>if TEST1:
+  </program>
+  <p>Run this several times and change the value of x each time. Try it with a positive number, a
+    negative number, and 0 to check that it works correctly.</p>
+
+  <p>Although that approach works, it doesn’t guarantee that only one option will be chosen.
+    If the first if said <c>x &lt;= 0</c>, we would print both <q>x is negative</q> and <q>x is 0</q>. To
+    guarantee that only one option is chosen, we can use <c>elif</c> (short for <q>
+      <term>el**se **if</term>
+    </q>). <c>elif</c> is used after an <c>if</c> or another <c>elif</c> to
+    specify something to try if the previous conditions were not True:</p>
+  <pre>if TEST1:
     # if body
 elif TEST2:
     # first elif body
@@ -91,17 +94,17 @@ elif TEST3:
     # second elif body
 else:
     #else body</pre>
-        <p>In that sample, we first check <c>TEST1</c>. If it is true, the if body is performed and then all of the
-            elifs and the else are skipped. If <c>TEST1</c> is False, we check <c>TEST2</c>. If it is true, we do the
-            first elif body and then skip the second elif and the else. If <c>TEST2</c> is also false, we move to
-            <c>TEST3</c>. If it too ends up as false, we finally do the else.</p>
-        <p>Note that although we can have as many <c>elif</c>’s as we want, we can only have one <c>else</c>. It must
-            always come last and does not have a condition. The <c>else</c> is what runs if everything else fails
-            to run.</p>
-        <p>Here is the positive/negative check rewritten with elif:</p>
+  <p>In that sample, we first check <c>TEST1</c>. If it is true, the if body is performed and then all of
+    the elifs and the else are skipped. If <c>TEST1</c> is False, we check <c>TEST2</c>. If it is true, we do
+    the first elif body and then skip the second elif and the else. If <c>TEST2</c> is also false, we
+    move to <c>TEST3</c>. If it too ends up as false, we finally do the else.</p>
+  <p>Note that although we can have as many <c>elif</c>’s as we want, we can only have one <c>else</c>. It
+    must always come last and does not have a condition. The <c>else</c> is what runs if everything else
+    fails to run.</p>
+  <p>Here is the positive/negative check rewritten with elif:</p>
 
-    <program xml:id="cspdecisionsintro_elif3" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_elif3" interactive="activecode" language="python">
+    <input>
 x = 8
 if x &lt; 0:
     print("x is negative")
@@ -110,18 +113,18 @@ elif x == 0:
 else:
     print("x is positive")
         </input>
-    </program>
-        <p>Which way is better? Beginners often have an easier time understanding 3 <c>if</c> statements.
-            Experts prefer using <c>if</c>, <c>elif</c>, and <c>else</c> since it better communicates that these
-            are exclusive options (we only want one of the three) which helps humans read the code and
-            helps prevent bugs where we do multiple options.</p>
-        <p>To see the advantages of using <c>elif</c>, try running this version of the letter grade
-            calculation program. Because the if/elif/else makes the options exclusive, we are guaranteed
-            to get only one answer. If the score is <c>&gt;= 90</c> we will print A, and then skip all the
-            rest of the tests.</p>
+  </program>
+  <p>Which way is better? Beginners often have an easier time understanding 3 <c>if</c> statements.
+    Experts prefer using <c>if</c>, <c>elif</c>, and <c>else</c> since it better communicates that these are
+    exclusive options (we only want one of the three) which helps humans read the code and helps
+    prevent bugs where we do multiple options.</p>
+  <p>To see the advantages of using <c>elif</c>, try running this version of the letter grade
+    calculation program. Because the if/elif/else makes the options exclusive, we are guaranteed to
+    get only one answer. If the score is <c>&gt;= 90</c> we will print A, and then skip all the rest of the
+    tests.</p>
 
-    <program xml:id="cspdecisionsintro_elif4" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_elif4" interactive="activecode" language="python">
+    <input>
 score = 83
 if score &gt;= 90:
     print("A")
@@ -134,25 +137,38 @@ elif score &gt;= 60:
 else:
     print("F")
         </input>
-    </program>
-        <p><term>Check Your Understanding</term></p>
-<exercise label="cspdecisionsintro_elif5" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following program should report which team won or if there was a tie.  But the code
-            has been mixed up.  Drag it into the right order with the right indention.</p>
-</statement>
-<blocks><block order="4">
-<cline># The scores</cline>
-<cline>team1 = int( input("Enter team 1 score") )</cline>
-<cline>team2 = int( input("Enter team 2 score") )</cline>
-</block><block order="5">
-<cline>if (team1 &gt; team2):</cline>
-<cline>    print("team1 won")</cline>
-</block><block order="3">
-<cline>elif (team2 &gt; team1):</cline>
-</block><block order="1">
-<cline>    print("team2 won")</cline>
-</block><block order="6">
-<cline>else:</cline>
-</block><block order="2">
-<cline>    print("team1 and team2 tied")</cline>
-</block></blocks></exercise>    </section>
+  </program>
+  <p>
+    <term>Check Your Understanding</term>
+  </p>
+  <exercise label="cspdecisionsintro_elif5" numbered="yes" adaptive="yes" indentation="hide"
+    language="python">
+    <statement>
+      <p>The following program should report which team won or if there was a tie. But the code has
+        been mixed up. Drag it into the right order with the correct indentation.</p>
+    </statement>
+    <blocks>
+      <block order="4">
+        <cline># The scores</cline>
+        <cline>team1 = int( input("Enter team 1 score") )</cline>
+        <cline>team2 = int( input("Enter team 2 score") )</cline>
+      </block>
+      <block order="5">
+        <cline>if (team1 &gt; team2):</cline>
+        <cline> print("team1 won")</cline>
+      </block>
+      <block order="3">
+        <cline>elif (team2 &gt; team1):</cline>
+      </block>
+      <block order="1">
+        <cline> print("team2 won")</cline>
+      </block>
+      <block order="6">
+        <cline>else:</cline>
+      </block>
+      <block order="2">
+        <cline> print("team1 and team2 tied")</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

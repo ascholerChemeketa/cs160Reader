@@ -57,7 +57,7 @@ alisha.forward(30)
   <exercise label="csprepeatturtles_repeatturtles3" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a 175x150 rectangle as shown below, but the lines are mixed up. We
-        want to define a <c>rectangle</c> procedure that repeats twice the process to draw half of a rectangle: draw a line for
+        want to define a <c>rectangle</c> procedure that twice repeats the process to draw half of a rectangle: draw a line for
         the width, then turn, draw a line for the height, and turn again.</p>
       <p>Arrange the blocks into the correct solution and indent them properly. You will not use all of the blocks.</p>
       <image source="CSPRepeatTurtles/Figures/TurtleRect.png" width="30%" />

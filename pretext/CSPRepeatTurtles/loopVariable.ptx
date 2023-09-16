@@ -17,7 +17,7 @@ polygon(mia, 3, 100)
 
   <p>We can do this by making use of the <term>loop variable</term>. It is the variable that is used to store each value
     in the list that the loop is iterating over. This program shows using two loops. In the first one, the loop variable
-    is called <c>x</c> and is used count from 0 to 4. In the second, the loop variable is called <c>y</c> and counts from
+    is called <c>x</c> and is used to count from 0 to 4. In the second, the loop variable is called <c>y</c> and counts from
     0 to 9.</p>
 
   <program xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
@@ -50,13 +50,13 @@ range(startValue, stopValue, step)
 
     <program xml:id="csprepeatturtles_loopvariable2" interactive="activecode" language="python">
       <input>
-# x will count from 0, by 2's and stop at 11 (10 will be last value)
+# x will count from 0, by 2's and stop at 11 (10 will be the last value)
 for x in range(0, 11, 2):
     print("x is ", x)
 
 print("--------------------------------------")
 
-# y will be start at 6 and count down by 1. It stops at 2 (3 is last value)
+# y will start at 6 and count down by 1. It stops at 2 (3 is the last value)
 for y in range(6, 2, -1):
     print("y is ", y)
         </input>
@@ -71,7 +71,7 @@ for y in range(6, 2, -1):
     <exercise label="csprepeatturtles_loopvariable3">
       <statement>
 
-        <p>Which is range recipe would generate the sequence: 2, 5, 8, 11?</p>
+        <p>Which range recipe would generate the sequence: 2, 5, 8, 11?</p>
 
       </statement>
       <choices>
@@ -138,7 +138,7 @@ tess.penup()
 
 # size counts by 2's from 5, stop at 60
 for size in range(5, 60, 2):
-    tess.stamp()              # leave a copy of turtle at current location
+    tess.stamp()              # leave a copy of turtle at its current location
     tess.forward(size)
     tess.right(24)
         </input>

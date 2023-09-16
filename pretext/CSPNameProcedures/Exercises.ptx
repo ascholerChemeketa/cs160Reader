@@ -44,7 +44,7 @@
   <exercise label="cspnameprocedures_exercises2">
     <statement>
       <p>The following code has some syntax errors. There are two errors, but each error is repeated multiple times due
-        to the author copy/pasting lines of code. Fix the errors so that the code runs and draws multiple squares.</p>
+        to the author copying and pasting lines of code. Fix the errors so that the code runs and draws multiple squares.</p>
 
     </statement>
     <program xml:id="cspnameprocedures_exercises2_editor" interactive="activecode" language="python">

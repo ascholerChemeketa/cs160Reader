@@ -16,7 +16,7 @@ else:
         </input>
   </program>
   <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let’s do 100 flips and count
-    up how many are heads (0). Each time through the loop, we will pick a new random number. We will only add to our
+    up how many heads (0s) we get. Each time through the loop, we will pick a new random number. We will only add to our
     accumulator <c>numHeads</c> if the random value is 0.</p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">

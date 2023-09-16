@@ -1,13 +1,15 @@
 <section xml:id="csp-decisions-simulations_random-numbers">
   <title>Random Numbers</title>
-  <p>When creating a simulation, we need a way to simulate unpredictable events. Is the driver of a car going to choose
-    to turn at a certain intersection? What will the weather be like in an hour? We may have some idea of what answers
-    are reasonable for these questions, and how likely each answer is, but at some point we will have to resort to
-    trying to pick an answer randomly while obeying what we believe the odds of different outcomes are.</p>
+  <p>When creating a simulation, we need a way to simulate unpredictable events. Is the driver of a
+    car going to choose to turn at a certain intersection? What will the weather be like in an hour?
+    We may have some idea of what answers are reasonable for these questions, and how likely each
+    answer is, but at some point, we will have to resort to trying to pick an answer randomly while
+    obeying what we believe the odds of different outcomes are.</p>
 
-  <p>In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we use the <c>randrange</c>
-    function in the <c>random</c> library. To use it, we have to import the library, then call the function. Try running this
-    program a few times to see that it does in fact generate a random number each time it runs:</p>
+  <p>In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we
+    use the <c>randrange</c> function in the <c>random</c> library. To use it, we have to import the library, and then
+    call the function. Try running this program a few times to see that it does in fact generate a
+    random number each time it runs:</p>
 
   <program xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
     <input>
@@ -17,9 +19,9 @@ x = random.randrange(1, 5)  # pick a number from 1-4
 print(x)
         </input>
   </program>
-  <p>As shown above, the <c>randrange</c> function takes can be called with a starting value (inclusive) and the ending value for
-    the range (exclusive). So <c>randrange(1, 5)</c> picks an integer from the range that starts at 1 and ends before 5. We can also
-    call it with just an end value like <c>randrange(5)</c></p>
+  <p>As shown above, the <c>randrange</c> function can be called with a starting value (inclusive) and
+    the ending value for the range (exclusive). So <c>randrange(1, 5)</c> picks an integer from the range that
+    starts at 1 and ends before 5. We can also call it with just an end value like <c>randrange(5)</c></p>
 
   <exercise label="cspdecisionssimulations_random2">
     <statement>
@@ -104,13 +106,14 @@ print(x)
     </setup>
   </exercise>
   <note>
-    <p>Computers can’t usually generate truly random numbers without measuring something that is random (like
-      static noise on radio frequencies). If they don’t have access to something like that, they must rely on
-      generating <term>pseudorandom</term> numbers - numbers that look random even though they are created using some
-      mathematical recipe. Python takes the system time as a starting point (since it is always changing) and then uses
-      a mathematical recipe to <q>pick</q> the next random number each time we ask for one.</p>
-    <p>When these <term>pseudorandom</term> generators aren’t coded well, they can cause issues with simulations
-      or cryptography that rely on their results.</p>
+    <p>Computers can’t usually generate truly random numbers without measuring something that is
+      random (like static noise on radio frequencies). If they don’t have access to something like
+      that, they must rely on generating <term>pseudorandom</term> numbers - numbers that look
+      random even though they are created using some mathematical recipe. Python takes the system
+      time as a starting point (since it is always changing) and then uses a mathematical recipe to <q>
+      pick</q> the next random number each time we ask for one.</p>
+    <p>When these <term>pseudorandom</term> generators aren’t coded well, they can cause issues with
+      simulations or cryptography that rely on their results.</p>
   </note>
 </section>
 

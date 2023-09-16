@@ -3,7 +3,7 @@
 
     <p>The name we give a variable, also called its <term>identifier</term>, is
         subject to some important rules. Some of these rules are strict - Python will not accept names that do not
-        follow these rules. These rules are part of the <term>syntax</term> of Python. The syntax of any language are
+        follow these rules. These rules are part of the <term>syntax</term> of Python. The syntax of a language is
         the rules for what are valid ways to write things in the language. Other rules for variable names are human
         conventions. Python will not enforce these rules, but you and other programmers reading your code may get
         confused.</p>
@@ -212,8 +212,8 @@
         <p>Meaningful names are generally full words like <c>height</c>. Abbreviations are generally not meaningful to anyone
             other than the original author. If you are reading through code and see a variable <c>h</c>, that will likely
             not do anything to help you figure out what information it is holding. (The exception to this rule is
-            representing values from a mathematical formula like <m>a^b + b^c = c^2</m> where <c>a</c> has a well defined
-            menaing.)</p>
+            representing values from a mathematical formula like <m>a^b + b^c = c^2</m> where <c>a</c> has a well-defined
+            meaning.)</p>
         <p>Oftentimes, you need multiple words to meaningfully describe a variable. Say you have a program that involves
             converting a height between inches and centimeters, within that program, the name <c>height</c> might be
             confusing. Is it referring to a value in inches? centimeters?</p>
@@ -265,7 +265,7 @@
                     </statement>
                     <feedback>
                         <p><code>date</code> isn't the worst option here, but it might not be clear to other readers of
-                            the code what date we are referring to. Is it a person's hire date? their birth day? today's
+                            the code what date we are referring to. Is it a person's hire date? their birthday? today's
                             date?</p>
                     </feedback>
                 </choice>

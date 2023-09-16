@@ -40,7 +40,7 @@ newDirection =                # Done turning left, there is nothing left!!!
 
   <exercise label="cspnameturtles_funcandproc1">
     <statement>
-      <p>What letter (like A, B, C, D, etc...) will the program below draw in block style when you click on the Run button? <var />
+      <p>What letter (like A, B, C, D, etc<ellipsis/>) will the program below draw in block style when you click on the Run button? <var />
       </p>
     </statement>
     <setup>

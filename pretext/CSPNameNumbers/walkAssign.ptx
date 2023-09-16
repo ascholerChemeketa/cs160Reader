@@ -61,7 +61,7 @@ d = b
     </exercise>
     <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn’t create some kind of
         relationship between the names, like in mathematics. The variable <c>a</c> might equal <c>12</c> at one point, and <c>15</c>
-        at another. An assignment statement is an action that occurs once, and then is over with.</p>
+        at another. An assignment statement is an action that occurs once and then is over with.</p>
 
     <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing2">
         <program xml:id="cspnamenumbers_walkassign3" interactive="codelens" language="python">
@@ -86,7 +86,7 @@ var2 = var1
                     <p>var1 is 45, var2 is 45</p>
                 </statement>
                 <feedback>
-                    <p>The variable var1 was set to 45, but that gets changed in line 2, before var2 gets set to any
+                    <p>The variable var1 was set to 45, but that gets changed in line 2 before var2 gets set to any
                         value at all.</p>
                 </feedback>
             </choice>
@@ -96,7 +96,7 @@ var2 = var1
                     <p>var1 is 45, var2 is var1</p>
                 </statement>
                 <feedback>
-                    <p>Both variables contain numeric values, because those are the only values in this program.</p>
+                    <p>Both variables contain numeric values because those are the only values in this program.</p>
                 </feedback>
             </choice>
 

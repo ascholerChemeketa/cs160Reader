@@ -1,7 +1,7 @@
 <section xml:id="csp-name-functions_functions-calling-functions-3">
   <title>Functions Calling Functions - 3</title>
-  <p>Here is the final version of our program, being used to test a new triangle. Use the Codelens view to run the
-    program. As you watch it run, here are some things to pay attention to:</p>
+  <p>Here is the final version of our program, being used to test a new triangle. Use the Codelens
+    view to run the program. As you watch it run, here are some things to pay attention to:</p>
   <p>
     <ul>
       <li>
@@ -11,22 +11,26 @@
         <p>The main part calls <c>triangle_area</c></p>
       </li>
       <li>
-        <p><c>triangle_area</c> calls <c>distance</c> three times. After each time <c>distance</c> runs, it returns a value that gets used by <c>triangle_area</c>
-          to set a, b, or c</p>
+        <p><c>triangle_area</c> calls <c>distance</c> three times. After each time <c>distance</c> runs, it returns a value that
+          gets used by <c>triangle_area</c> to set a, b, or c</p>
       </li>
       <li>
-        <p>What <c>distance</c> calls x1, x2, y1, and y2 does not always match the names used for those values in <c>triangle_area</c>. For
-          example, when we call <c>distance(x2, y2, x3, y3)</c> in <c>triangle_area</c>, distance will be given the value that <c>triangle_area</c> is calling <term>x2</term>
-          as its first parameter. <c>distance</c> calls its first parameter <term>x1</term>.</p>
-        <p>This is a little confusing if we try to think of something like <term>x1</term> as some fixed value that all
-          functions agree on. But that is not how variables work. If multiple functions or procedures have a parameter
-          or variable named <term>x1</term>, each one is potentially talking about a different piece of information.</p>
+        <p>What <c>distance</c> calls x1, x2, y1, and y2 does not always match the names used for those
+          values in <c>triangle_area</c>. For example, when we call <c>distance(x2, y2, x3, y3)</c> in <c>triangle_area</c>, distance will be given
+          the value that <c>triangle_area</c> is calling <term>x2</term> as its first parameter. <c>distance</c> calls
+          its first parameter <term>x1</term>.</p>
+        <p>This is a little confusing if we try to think of something like <term>x1</term> as some
+          fixed value that all functions agree on. But that is not how variables work. If multiple
+          functions or procedures have a parameter or variable named <term>x1</term>, each one is
+          potentially talking about a different piece of information.</p>
       </li>
     </ul>
   </p>
-  <p>When the <term>perimeter</term> is set in <c>triangle_area</c>, use the value to answer the question below the code sample.</p>
+  <p>When the <term>perimeter</term> is set in <c>triangle_area</c>, use the value to answer the question below
+    the code sample.</p>
 
-  <program xml:id="cspnamefunctions_functionscallingfunctions31" interactive="activecode" language="python">
+  <program xml:id="cspnamefunctions_functionscallingfunctions31" interactive="activecode"
+    language="python">
     <input>
 def distance(x1, y1, x2, y2):
     xDifference = x2 - x1
@@ -70,7 +74,8 @@ print(testArea)
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>Make sure to watch the program run and type in the value of the perimeter to at least 2 decimal places.</p>
+            <p>Make sure to watch the program run and type in the value of the perimeter to at least
+              2 decimal places.</p>
           </feedback>
         </condition>
       </var>

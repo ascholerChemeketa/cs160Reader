@@ -49,7 +49,7 @@ print(fullName)
         <note>
             <p>A string is a sequence of characters enclosed in a pair of single, double, or triple quotes. If you start
                 a string with a single quote you must end it with a single quote. If you start a string with a double
-                quote you must end it with a double quote. You must use the <c>+</c> operator to append strings together.</p>
+                quote, you must end it with a double quote. You must use the <c>+</c> operator to append strings together.</p>
         </note>
     </subsection>
     <subsection xml:id="csp-name-strings_inputting-strings">
@@ -62,9 +62,9 @@ print(fullName)
 
         <p>The string inside of the paranteheses (<em><q>What is your first
             name?</q></em>) is called a <term>paramter</term>. It tells the function how to do its job. In this case,
-            it tells <c>input</c> what to print in order to prompt the user of the program to type something.</p>
+            it tells <c>input</c> what to print to prompt the user of the program to type something.</p>
         <p>When the function is done getting the input from the user, it <term>returns</term> the string containing
-            whatever the user types. When the function <term>returns</term> a value, the function is essentially is
+            whatever the user types. When the function <term>returns</term> a value, the function is essentially
             replaced by that value. The code <c>input("What is your first name?")</c> in the sample below will be replaced by whatever the user types -
             something like <em><q>Anne</q></em>.</p>
 
@@ -113,7 +113,7 @@ print("Cost to get from Chicago to Dallas: $" + str(costTrip))
         <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that we form with
             concatenation, we can give it a list of values separated by commas. Using this version of print, we
             don’t have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
-            <q>Cost to get from Chicago to Dallas</q>, they are just being printed one after another. Also notice
+            <q>Cost to get from Chicago to Dallas</q>, they are just being printed one after another. Also, notice
             that this version of print automatically adds a space between items that are printed. Here that causes a
             problem as it means there will be a space between the $ and the cost.</p>
 

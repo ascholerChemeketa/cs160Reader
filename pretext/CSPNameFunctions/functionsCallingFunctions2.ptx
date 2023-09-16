@@ -1,7 +1,7 @@
 <section xml:id="csp-name-functions_functions-calling-functions-2">
   <title>Functions Calling Functions - 2</title>
-  <p>Now that we have written and tested <c>distance</c>, we can use it to help write <c>triangle_area</c>. This function will take all six
-    coordinates and return the area.</p>
+  <p>Now that we have written and tested <c>distance</c>, we can use it to help write <c>triangle_area</c>. This function
+    will take all six coordinates and return the area.</p>
   <program language="python">
     <input>
 def triangleArea(x1, y1, x2, y2, x3, y3):
@@ -10,11 +10,12 @@ def triangleArea(x1, y1, x2, y2, x3, y3):
 </input>
   </program>
   <p>Recall that the formula we need to use is: <m>\sqrt{s (s - a) (s - b) (s - c)}</m></p>
-  <p>The work for this function will involve calling the distance function three times to calculate the lengths of the
-    three sides (<term>a</term>, <term>b</term>, <term>c</term>). We then need to use those to calculate <term>s</term>,
-    the semi-perimeter.</p>
+  <p>The work for this function will involve calling the distance function three times to calculate
+    the lengths of the three sides (<term>a</term>, <term>b</term>, <term>c</term>). We then need to
+    use those to calculate <term>s</term>, the semi-perimeter.</p>
   <p>Below is the code for the final program but jumbled up - figure out the right order.</p>
-  <exercise label="cspnamefunctions_functionscallingfunctions21" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspnamefunctions_functionscallingfunctions21" numbered="yes" adaptive="yes"
+    indentation="hide" language="python">
     <statement>
       <p>Put the blocks in the right order and indentation. <term>You will use all of the blocks.</term></p>
     </statement>

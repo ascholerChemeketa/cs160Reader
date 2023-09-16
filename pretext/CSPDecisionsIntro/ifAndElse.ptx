@@ -1,24 +1,25 @@
 <section xml:id="csp-decisions-intro_using-if-and-else">
-        <title>Using if and else</title>
-        
-        
-        <p>The first program we saw on the last page is a bit repetitive. It compares
-            <c>weight</c> to the number 1 twice, once to see if it is below that number,
-            once to see if it is not below that number:</p>
-        <program language="python"><input>
+  <title>Using if and else</title>
+
+  <p>The first program we saw on the last page is a bit repetitive. It compares <c>weight</c> to the
+    number 1 twice, once to see if it is below that number, once to see if it is not below that
+    number:</p>
+  <program language="python">
+    <input>
 if weight &lt; 1:
     price = 1.45
 if weight &gt;= 1:
     price = 1.15
-</input></program>
-        <p>In situations like this, where there are exactly two mutually exclusive options (we either
-            have to do one or the other), there is an easier way to write the logic.
-            That is to use <c>else</c>. <c>else</c> provides a way to say <q>if the condition for the preceding
-            if was False, do this</q>. The body of the else - the code that will be executed if the if’s test
-            fails - is indented after the else.</p>
+</input>
+  </program>
+  <p>In situations like this, where there are exactly two mutually exclusive options (we either have
+    to do one or the other), there is an easier way to write the logic. That is to use <c>else</c>. <c>else</c>
+    provides a way to say <q>if the condition for the preceding if was False, do this</q>. The body
+    of the else - the code that will be executed if the if’s test fails - is indented after the
+    else.</p>
 
-    <program xml:id="if_and_else" interactive="activecode" language="python">
-        <input>
+  <program xml:id="if_and_else" interactive="activecode" language="python">
+    <input>
 weight = 0.5
 if weight &lt; 1:
     price = 1.45
@@ -29,36 +30,54 @@ print(weight)
 print(price)
 print(total)
         </input>
-    </program>
-        <p>Using an <c>if</c> with an <c>else</c> makes sure that <em>either</em> the <c>if</c> block is executed <em>or</em> the
-            <c>else</c> block is executed, but <term>never</term> both.</p>
-        <figure align="center"><caption>Flow of execution for both an if and else</caption><image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%" alt="Flowchart for both an if and else" /></figure>
-        <p>We never <term>have</term> to use an <c>else</c>. We can always write two seperate <c>if</c> statements. But
-            using <c>else</c> can help avoid bugs where there is a <q>gap</q> between the two options like we saw on
-            the previous page.</p>
-        <p><term>Mixed up programs</term></p>
-<exercise label="cspdecisionsintro_ifandelse1" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
-        <p>The following program should print out <q>x is even</q> if the remainder of x divided by 2 is 0
-            and <q>x is odd</q> otherwise, but the code is mixed up. Remember that the <c>%</c> symbol gives
-            the remainder after the first number is divided by the second number.  Drag the blocks from
-            the left and place them in the correct order on the right.  Be sure to also indent correctly!</p>
-</statement>
-<blocks><block order="1">
-<cline>x = input("Enter a number")</cline>
-<cline>if x % 2 == 0:</cline>
-<cline>    print("x is even")</cline>
-<cline>else:</cline>
-<cline>    print("x is odd")</cline>
-</block></blocks></exercise><exercise label="cspdecisionsintro_ifandelse2" numbered="yes" indentation="hide" language="python"><statement>
-        <p>The following function should calculate the shipping cost for an order. Orders over $50 ship free.
-            Otherwise, it is $5 base shipping plus $0.75 per pound. Drag the blocks from
-            the left and place them in the correct order on the right.  Be sure to also indent correctly!</p>
-</statement>
-<blocks><block order="1">
-<cline>def calculateShipping(orderCost, weight):</cline>
-<cline>    if orderCost &gt; 50:</cline>
-<cline>        shipping = 0</cline>
-<cline>    else:</cline>
-<cline>        shipping = 5 + 0.75 * weight</cline>
-<cline>    return shipping</cline>
-</block></blocks></exercise>    </section>
+  </program>
+  <p>Using an <c>if</c> with an <c>else</c> makes sure that <em>either</em> the <c>if</c> block is executed <em>
+    or</em> the <c>else</c> block is executed, but <term>never</term> both.</p>
+  <figure align="center">
+    <caption>Flow of execution for both an if and else</caption>
+    <image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%"
+      alt="Flowchart for both an if and else" />
+  </figure>
+  <p>We never <term>have</term> to use an <c>else</c>. We can always write two separate <c>if</c>
+    statements. But using <c>else</c> can help avoid bugs where there is a <q>gap</q> between the two
+    options like the one we saw on the previous page.</p>
+  <p>
+    <term>Mixed up programs</term>
+  </p>
+  <exercise label="cspdecisionsintro_ifandelse1" numbered="yes" adaptive="yes" indentation="hide"
+    language="python">
+    <statement>
+      <p>The following program should print out <q>x is even</q> if the remainder of x divided by 2
+        is 0 and <q>x is odd</q> otherwise, but the code is mixed up. Remember that the <c>%</c>
+        symbol gives the remainder after the first number is divided by the second number. Drag the
+        blocks from the left and place them in the correct order on the right. Be sure to also
+        indent correctly!</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <cline>x = input("Enter a number")</cline>
+        <cline>if x % 2 == 0:</cline>
+        <cline> print("x is even")</cline>
+        <cline>else:</cline>
+        <cline> print("x is odd")</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="cspdecisionsintro_ifandelse2" numbered="yes" indentation="hide" language="python">
+    <statement>
+      <p>The following function should calculate the shipping cost for an order. Orders over $50
+        ship free. Otherwise, it is $5 base shipping plus $0.75 per pound. Drag the blocks from the
+        left and place them in the correct order on the right. Be sure to also indent correctly!</p>
+    </statement>
+    <blocks>
+      <block order="1">
+        <cline>def calculateShipping(orderCost, weight):</cline>
+        <cline> if orderCost &gt; 50:</cline>
+        <cline> shipping = 0</cline>
+        <cline> else:</cline>
+        <cline> shipping = 5 + 0.75 * weight</cline>
+        <cline> return shipping</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

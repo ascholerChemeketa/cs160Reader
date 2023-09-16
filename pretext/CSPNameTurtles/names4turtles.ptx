@@ -90,7 +90,7 @@ alex.forward(75)        # move forward by 75 units
     <exercise label="cspnameturtles_names4turtles3" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The
-          program should do all necessary set-up: import the turtle module, get the space to draw on, and create the
+          program should do all the necessary set-up: import the turtle module, get the space to draw on, and create the
           turtle. The turtle should turn to face south, draw a line that is 150 pixels long, then turn to face east, and
           draw a line that is 75 pixels long.</p>
         <p>Drag the needed blocks of statements from the left column to the right column and put them in the right
@@ -139,7 +139,7 @@ alex.forward(75)        # move forward by 75 units
     <exercise label="cspnameturtles_names4turtles4" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a checkmark as shown below but the lines are mixed up. The
-          program should do all necessary set-up: import the turtle module, get the space to draw on, and create the
+          program should do all the necessary set-up: import the turtle module, get the space to draw on, and create the
           turtle. The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face
           northeast, and draw a line that is 150 pixels long. We have added a compass to the picture to indicate the
           directions north, south, west, and east. Northeast is between North and East. Southeast is between South and

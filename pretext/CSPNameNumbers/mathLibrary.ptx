@@ -8,7 +8,7 @@
         functions and predefined variables we can use to do so.</p>
     <p>For instance, say we want to figure out the radius of a circle with an area of 100 sq. inches. The formula to
         calculate this is <m>radius = \sqrt{\frac{area}{\pi}}</m>. The math library has a <c>math.sqrt(number)</c> function that will
-        give us the square root of whatever value we give. It also has a built in value for pi (<m>{\pi}</m>) that can
+        give us the square root of whatever value we give. It also has a built-in value for pi (<m>{\pi}</m>) that can
         be accessed as <c>math.pi</c>.</p>
     <p>To make use of these, we need to first <c>import math</c> to make the math library available to use in our program. We then
         can access things like <c>math.sqrt</c> and <c>math.pi</c>.</p>
@@ -16,7 +16,7 @@
     <listing xml:id="cspnamenumbers_mathlibrary_listing1">
         <program xml:id="cspnamenumbers_mathlibrary1" interactive="activecode" language="python">
             <input>
-# make the math library functions and variable available
+# make the math library functions and variables available
 import math
 
 area = 100

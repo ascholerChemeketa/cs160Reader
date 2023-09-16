@@ -30,7 +30,7 @@
                 </condition>
                 <condition string="^\s*.*\s*$">
                     <feedback>
-                        <p>Did you actually run the program?</p>
+                        <p>Did you run the program?</p>
                     </feedback>
                 </condition>
             </var>
@@ -65,12 +65,12 @@
                     </condition>
                     <condition string="^\s*^0.3{1,15}$\s*$">
                         <feedback>
-                            <p>Close, but that is not the number of digits you will actually get.</p>
+                            <p>Close, but that is not the number of digits you get.</p>
                         </feedback>
                     </condition>
                     <condition string="^\s*.*\s*$">
                         <feedback>
-                            <p>Did you actually run the program?</p>
+                            <p>Did you run the program?</p>
                         </feedback>
                     </condition>
                 </var>
@@ -80,8 +80,8 @@
     <subsection xml:id="csp-name-numbers_division-and-integer-division">
         <title>Division and Integer Division</title>
 
-        <p>This book is using Python 3 which returns a decimal value - 1.66666666666667 - from a calculation like <c>5 / 3</c>.
-            If we executed <c>5 / 3</c> in many programming languages (or older version so Python) it would result in just 1
+        <p>This book uses Python 3 which returns a decimal value - 1.66666666666667 - from a calculation like <c>5 / 3</c>.
+            If we executed <c>5 / 3</c> in many programming languages (or older versions of Python) it would result in just 1
             because we can only divide 5 by 3 one whole time. This form of division is known as <term>integer division</term>
             and is what you probably learned in elementary school before you learned long division.</p>
         <p>There are times when we want to do integer division as part of solving a problem. If I want to figure out how
@@ -140,7 +140,7 @@ print(result2)
                     </condition>
                     <condition string="^\s*.*\s*$">
                         <feedback>
-                            <p>Did you actually run the program?</p>
+                            <p>Did you run the program?</p>
                         </feedback>
                     </condition>
                 </var>

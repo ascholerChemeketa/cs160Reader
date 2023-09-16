@@ -116,7 +116,7 @@
     <statement>
       <p>In the program below, we want to draw a series of polygons, from 10 sides down to 3 sides, each with a side
         length of 100. The <c>polygon</c> procedure is provided as is starter code for the main part of the program. Add a loop
-        and use it to call polygon. Make sure that you draw everything from a 10 sided to a 3 sided polygon, counting
+        and use it to call <c>polygon</c>. Make sure that you draw everything from a 10-sided to a 3-sided polygon, counting
         down (10, 9, 8, <ellipsis/> 3). Each shape should have a size (side length) of 100.</p>
       <p>If you are having trouble, try printing out the loop counter so you can see which numbers your loop is counting
         through.</p>

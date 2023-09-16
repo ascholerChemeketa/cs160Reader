@@ -1,164 +1,138 @@
 <section xml:id="csp-decisions-intro_the-if-statement">
-        <title>The if Statement</title>
-        
-        
-        <p>In Python, we test data and execute instructions if the test is true using an <c>if</c> statement
-            which takes the form:</p>
-        <program language="python"><input>
+  <title>The if Statement</title>
+
+  <p>In Python, we test data and execute instructions if the test is true using an <c>if</c> statement
+    which takes the form:</p>
+  <program language="python">
+    <input>
 if TEST:
     BODY
-</input></program>
-        <p>The <term>test</term>, also known as the <term>condition</term>, must be a <term>logical expression</term> - something
-            that evaluates to either <c>True</c> or <c>False</c>. Like a <c>while</c> statement, after the test,
-            we must type a colon (<c>:</c>) and then indent the lines of the <term>body</term> - the instructions
-            to execute if the test is <c>True</c>.</p>
-        <p>While learning about <c>while</c>, we already learned the most common way to write logical
-            expressions - by using <term>comparison operators</term>. As a review, here they are - the result
-            of using any of these is either <c>True</c> or <c>False</c>:</p>
-        
-        
-        <table xml:id="csp-decisions-intro_index-1"><tabular>
-            
-                
-                
-                
-                    <row>
-                        <cell>
-                            Expression
-                        </cell>
-                        <cell>
-                            Logical meaning
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &lt; b
-                        </cell>
-                        <cell>
-                            True if a is less than b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &lt;= b
-                        </cell>
-                        <cell>
-                            True if a is less than or equal to b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &gt; b
-                        </cell>
-                        <cell>
-                            True if a is greater than b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a &gt;= b
-                        </cell>
-                        <cell>
-                            True if a is greater than or equal to b
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a == b
-                        </cell>
-                        <cell>
-                            True if a is equal to b.
-                                (Two equals signs, to distinguish it from assignment)
-                        </cell>
-                    </row>
-                    <row>
-                        <cell>
-                            a != b
-                        </cell>
-                        <cell>
-                            True if a is <em>not</em> equal to b.
-                        </cell>
-                    </row>
-                
-            
-        </tabular></table>
-        <p>Unlike a <c>while</c>, an <c>if</c> will only run the instructions in its body one time. After the
-            instructions have executed (which only happens if the test was <c>True</c>), Python continues
-            running the rest of this program. If the test isn’t <c>True</c> (is <c>False</c>) then execution
-            will skip the block following the if and continue with the next statement following the
-            block after the <c>if</c> statement.</p>
-        <p>Run the program below in codelens. Then change the first line so that it sets x to 4 and again
-            run with codelens to see how the behavior differs if the test is True or False.</p>
+</input>
+  </program>
+  <p>The <term>test</term>, also known as the <term>condition</term>, must be a <term>logical
+    expression</term> - something that evaluates to either <c>True</c> or <c>False</c>. Like a <c>while</c>
+    statement, after the test, we must type a colon (<c>:</c>) and then indent the lines of the <term>
+    body</term> - the instructions to execute if the test is <c>True</c>.</p>
+  <p>While learning about <c>while</c>, we already learned the most common way to write logical
+    expressions - by using <term>comparison operators</term>. As a review, here they are - the
+    result of using any of these is either <c>True</c> or <c>False</c>:</p>
 
-    <program xml:id="cspdecisionsintro_if1" interactive="activecode" language="python">
-        <input>
+  <table xml:id="csp-decisions-intro_index-1">
+    <tabular>
+
+      <row>
+        <cell> Expression </cell>
+        <cell> Logical meaning </cell>
+      </row>
+      <row>
+        <cell> a &lt; b </cell>
+        <cell> True if a is less than b </cell>
+      </row>
+      <row>
+        <cell> a &lt;= b </cell>
+        <cell> True if a is less than or equal to b </cell>
+      </row>
+      <row>
+        <cell> a &gt; b </cell>
+        <cell> True if a is greater than b </cell>
+      </row>
+      <row>
+        <cell> a &gt;= b </cell>
+        <cell> True if a is greater than or equal to b </cell>
+      </row>
+      <row>
+        <cell> a == b </cell>
+        <cell> True if a is equal to b. (Two equals signs, to distinguish it from assignment) </cell>
+      </row>
+      <row>
+        <cell> a != b </cell>
+        <cell> True if a is <em>not</em> equal to b. </cell>
+      </row>
+
+    </tabular>
+  </table>
+  <p>Unlike a <c>while</c>, an <c>if</c> will only run the instructions in its body one time. After the
+    instructions have been executed (which only happens if the test was <c>True</c>), Python continues
+    running the rest of this program. If the test isn’t <c>True</c> (is <c>False</c>) then execution will
+    skip the block following the if and continue with the next statement following the block after
+    the <c>if</c> statement.</p>
+  <p>Run the program below in codelens. Then change the first line so that it sets x to 4 and again
+    run with codelens to see how the behavior differs if the test is True or False.</p>
+
+  <program xml:id="cspdecisionsintro_if1" interactive="activecode" language="python">
+    <input>
 x = 0
 if x &lt; 3:
     print ("x is less than 3")
 print ("All done")
         </input>
-    </program>
-        
-        
-        <p>The figure below is called a <term>flowchart</term>.  It shows the execution paths for a program.
-            The diamond shape contains the <term>logical expression</term> and shows the path that the execution
-            takes if the logical expression is true as well as the path if the logical expression is
-            false.  Notice that it will only execute the statements in the indented block if the
-            logical expression was true. Regardless if the indented code is executed, the program
-            then continues running.</p>
-        <figure align="center" ><caption >Flow of execution for an if statement</caption><image source="CSPDecisionsIntro/Figures/decision.png" width="50%" alt="Flowchart for an if statement"/></figure>
+  </program>
 
-    <exercise label="cspdecisionsintro_if2">
-        <statement>
+  <p>The figure below is called a <term>flowchart</term>. It shows the execution paths for a
+    program. The diamond shape contains the <term>logical expression</term> and shows the path that
+    the execution takes if the logical expression is true as well as the path if the logical
+    expression is false. Notice that it will only execute the statements in the indented block if
+    the logical expression is true. Regardless of whether the indented code is executed, the program then
+    continues running.</p>
+  <figure align="center">
+    <caption>Flow of execution for an if statement</caption>
+    <image source="CSPDecisionsIntro/Figures/decision.png" width="50%"
+      alt="Flowchart for an if statement" />
+  </figure>
 
-        <p>Given the code below, what will be printed?</p>
-        <program language="python"><input>
+  <exercise label="cspdecisionsintro_if2">
+    <statement>
+
+      <p>Given the code below, what will be printed?</p>
+      <program language="python">
+        <input>
 x = 10
 if x &gt;= 8:
     print ("A")
 print ("B")
-</input></program>
+</input>
+      </program>
 
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>A</p>
         </statement>
-<choices>
+        <feedback>
+          <p>A will be printed, but then the program continues running</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>A</p>
-                </statement>
-                <feedback>
-                    <p>A will be printed, but then the program continues running</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>B</p>
+        </statement>
+        <feedback>
+          <p>10 is "greater than or equal to" 8</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>B</p>
-                </statement>
-                <feedback>
-                    <p>10 is "greater than or equal to" 8</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>A and B</p>
+        </statement>
+        <feedback>
+          <p>Correct</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>A and B</p>
-                </statement>
-                <feedback>
-                    <p>Correct</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>Nothing</p>
+        </statement>
+        <feedback>
+          <p>Try modifying the program above so you can test this code.</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>Nothing</p>
-                </statement>
-                <feedback>
-                    <p>Try modifying the program above so you can test this code.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
+  </exercise>
+</section>
 

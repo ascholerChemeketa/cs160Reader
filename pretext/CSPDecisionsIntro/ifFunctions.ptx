@@ -31,7 +31,7 @@ print( "40 prints costs", costForPrints(40) )
 
   <exercise label="cspdecisionsintro_iffunctions2">
     <statement>
-      <p>Write the code for the function <c>cabCost</c>. It should calculate and return the cost a cab ride. If the distance
+      <p>Write the code for the function <c>cabCost</c>. It should calculate and return the cost of a cab ride. If the distance
         traveled is less than or equal to 12 miles the cost is $2.00 a mile, and if the distance traveled is more than
         12 miles the cost is $1.50 a mile.</p>
 

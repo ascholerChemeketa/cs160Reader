@@ -1,6 +1,6 @@
 <section xml:id="csp-name-strings_making-a-madlib-story">
   <title>Making a MadLib story</title>
-  <p>You might have done MadLib stories when you were a kid. You provide some pieces of information, like a name of a
+  <p>You might have done MadLib stories when you were a kid. You provide some pieces of information, like the name of a
     friend, a verb, and a favorite game (for example), and those pieces of information get plugged into a story. Since
     you don’t know the story beforehand, you’re surprised at what happens to your friend in the story.</p>
 
@@ -65,8 +65,9 @@ print(ending)
     </choices>
 
   </exercise>
-  <p><term>You should really do this:</term> Run this program to see what gets generated, then change some of the
-    variables to make different stories. Try different names, different verbs.</p>
+
+  <p>Run this program to see what gets generated, then change some of the
+    variables to make different stories:</p>
 
   <program xml:id="cspnamestrings_madlib3" interactive="activecode" language="python">
     <input>
@@ -120,7 +121,7 @@ print(ending)
           <p>Yes</p>
         </statement>
         <feedback>
-          <p>The only thing that is different is when the lines are printed, but the lines are the same.</p>
+          <p> The only different thing is when the lines are printed, but the lines are the same.</p>
         </feedback>
       </choice>
 

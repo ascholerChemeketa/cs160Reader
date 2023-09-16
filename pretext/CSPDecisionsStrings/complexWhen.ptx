@@ -83,7 +83,7 @@ if age &gt; 12:
     </choices>
 
   </exercise>
-  <p>It is fine to chain a bunch or and or or’s together to make one large expression as shown below. This program
+  <p>It is fine to chain a bunch of <c>and</c>s or <c>or</c>s together to make one large expression as shown below. This program
     accepts four different answers - because all four expressions are combined with or, only one part needs to be true
     to make the whole thing true.</p>
 
@@ -101,7 +101,7 @@ print ("All done")
       know it only had lower-case letters.</p>
   </note>
   <p>We will generally stay away from more complex expressions that mix and’s and or’s, they can get
-    confusing to write and read. If you really feel the need to write something super complex, you can use parentheses
+    confusing to write and read. If you feel the need to write something super complex, you can use parentheses
     to make sure that the logic is evaluated in the right order:</p>
   <program language="python">
     <input>

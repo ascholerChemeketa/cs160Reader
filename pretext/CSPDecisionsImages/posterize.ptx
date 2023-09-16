@@ -1,15 +1,20 @@
 <section xml:id="csp-decisions-images_posterizing">
   <title>Posterizing</title>
-  <p>As one last example of selectively modifying the colors in an image, we are going to <term>posterize</term> an image.  <term>Posterizing</term> is the process of changing an image so it only uses a small number of colors. (Old
-    posters had to be printed with a small number of colors - the technology didn’t allow for complex blending of colors).</p>
-  <p>This time, instead of making a function to answer a question like <q>Is this green?</q>, we need to make a function that will force a color value to become one of a few specific options.</p>
+  <p>As one last example of selectively modifying the colors in an image, we are going to <term>
+    posterize</term> an image. <term>Posterizing</term> is the process of changing an image so it
+    only uses a small number of colors. (Old posters had to be printed with a small number of colors
+    - the technology didn’t allow for complex blending of colors).</p>
+  <p>This time, instead of making a function to answer a question like <q>Is this green?</q>, we
+    need to make a function that will force a color value to become one of a few specific options.</p>
 
   <exercise label="cspdecisionsimages_posterize1">
     <statement>
-      <p>Write code for <c>posterize</c> to return 0 if <c>colorValue</c> is less than 50, 125 if it is 50-124, and 255 otherwise.</p>
+      <p>Write code for <c>posterize</c> to return 0 if <c>colorValue</c> is less than 50, 125 if it is 50-124, and 255
+        otherwise.</p>
 
     </statement>
-    <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode" language="python">
+    <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode"
+      language="python">
       <input>
         def posterize(colorValue):
             #Write your logic here
@@ -75,13 +80,14 @@ win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
   </input>
   </program>
-  <p>Rewrite the code for posterizing an image using if and else rather than multiple if’s. Test that it still
-    works correctly.</p>
+  <p>Rewrite the code for posterizing an image using if and else rather than multiple ifs. Test
+    that it still works correctly.</p>
 
   <exercise label="cspdecisionsimages_posterize3">
     <statement>
 
-      <p>How many different colors are possible in our image after we posterize it using this function?</p>
+      <p>How many different colors are possible in our image after we posterize it using this
+        function?</p>
 
       <hint>There are three color channels. How many values can they each take on?</hint>
 
@@ -93,8 +99,8 @@ img.draw(win)
           <p>27</p>
         </statement>
         <feedback>
-          <p>Each of the three color channels (red, green, and blue) has 3 possible values (0, 125, or 255). 
-            That gives us 3 raised to 3rd power, or 27, combinations.</p>
+          <p>Each of the three color channels (red, green, and blue) has 3 possible values (0, 125,
+            or 255). That gives us 3 raised to 3rd power, or 27, combinations.</p>
         </feedback>
       </choice>
 
@@ -112,9 +118,8 @@ img.draw(win)
           <p>9</p>
         </statement>
         <feedback>
-          <p>Each of the 3 color channels (red, green, and blue) has 3 possible values (0, 125, or 255). There 
-            are more than 9 total combinations that can be made with those.
-          </p>
+          <p>Each of the 3 color channels (red, green, and blue) has 3 possible values (0, 125, or
+            255). There are more than 9 total combinations that can be made with those. </p>
         </feedback>
       </choice>
 
@@ -123,7 +128,8 @@ img.draw(win)
           <p>16,777,216 (= 256 * 256 * 256)</p>
         </statement>
         <feedback>
-          <p>That's the total number of colors possible if each channel can have one of 256 different values. But our code makes each color only have 3 possible values.</p>
+          <p>That's the total number of colors possible if each channel can have one of 256
+            different values. But our code makes each color only have 3 possible values.</p>
         </feedback>
       </choice>
     </choices>

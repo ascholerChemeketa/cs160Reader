@@ -5,7 +5,7 @@
   <program xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
     <input>
 # STEP 1: INITIALIZE ACCUMULATOR
-sum = 0  # Start out with nothing
+sum = 0  # Start with nothing
 # STEP 2: LOOP THROUGH THE DATA
 for number in range(0, 100, 2):
     # STEP 3: ACCUMULATE
@@ -84,8 +84,6 @@ print(sum)
     </choices>
 
   </exercise>
-  <p>A common feature of these techniques is that If you are writing a program that is going to calculate the GPA for
-    10,000 students, test it on just a few students and fix all the bugs you can.</p>
   <note>
     <p>Whenever possible, debug on as small a problem as possible. Debugging is hard. You can make it easier by limiting
       your debugging to small chunks of code (by testing parts of your program as you go) and debugging on small sets of

@@ -1,13 +1,14 @@
 <section xml:id="csp-decisions-intro_making-decisions">
-        <title>Making Decisions</title>
-        <p>We have discussed two major features used by computer algorithms. We can name values and we can
-            repeat steps. The third major tool we can use to build algorithms is the ability to make decisions.</p>
-        <p>We make decisions all the time.  Before we leave the house we may check to see if it will rain
-            that day, and if it will, we bring an umbrella.</p>
-        <image source="CSPDecisionsIntro/Figures/umbrella.jpg" width="50%"/>
-        <p>Algorithms also often need to make decisions about what actions to take. If a computer is processing
-            an order and a credit card is valid then charge the card, otherwise it needs to ask for a new
-            credit card. The computer’s ability to take action (execute some code) when something is true is also
-            called <term>conditional execution</term>.</p>
-    </section>
+  <title>Making Decisions</title>
+  <p>We have discussed two major features used by computer algorithms. We can name values and we can
+    repeat steps. The third major tool we can use to build algorithms is the ability to make
+    decisions.</p>
+  <p>We make decisions all the time. Before we leave the house we may check to see if it will rain
+    that day, and if it will, we bring an umbrella.</p>
+  <image source="CSPDecisionsIntro/Figures/umbrella.jpg" width="50%" />
+  <p>Algorithms also often need to make decisions about what actions to take. If a computer is
+    processing an order and a credit card is valid then charge the card, otherwise it needs to ask
+    for a new credit card. The computer’s ability to take action (execute some code) when something
+    is true is also called <term>conditional execution</term>.</p>
+</section>
 

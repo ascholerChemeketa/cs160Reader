@@ -24,8 +24,9 @@ drawSquare(becca, squareSize)
         </input>
   </program>
   <p>Note that although we want the size of the square to be random, it is important that all the sides of the square
-    are the same size. That is why we pick the random number in the main part of the program. If we picked a random
-    number on line 3 as we draw each side, each side would be a different length! Try changing line 3 to read <c>turtleName.forward(random.randrange(50, 200))</c> to
+    are the same size. That is why we pick the random number in the main part of the program. If we pick a random
+    number on line 3 as we draw each side, each side will be a different length! 
+    Try changing line 3 to read <c>turtleName.forward(random.randrange(50, 200))</c> to
     see for yourself.</p>
   <p>We can also pick a random location for the turtle to start in. Remember that the turtle uses this coordinate
     system:</p>
@@ -34,7 +35,7 @@ drawSquare(becca, squareSize)
     <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%" alt="the space coordinate system" />
   </figure>
   <p>Because the square procedure is going to make a square up to 200 wide and tall extending to the right and down from
-    where we start, I don’t want it to start to the right or below the point 0, 0 or it might go off screen. I am
+    where we start, I don’t want it to start to the right or below the point 0, 0 or it might go off-screen. I am
     fine with it starting to the left of or above that location, but I don’t want it to start right at the edge of
     the screen. So I want the starting x location to be between -190 and 0 and the starting y to be between 0 and 190.
     So this version of the program uses <c>goto(x, y)</c> and random numbers to pick a random starting location before drawing the

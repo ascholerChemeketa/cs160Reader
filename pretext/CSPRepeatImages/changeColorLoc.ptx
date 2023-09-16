@@ -9,7 +9,7 @@
     <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%" />
   </figure>
   <p>Sometimes, we don't care where a particular pixel is in the image. But if we want
-    to accomplish a goal like <q>make the bottom half of the image black</q>, we need to 
+    to accomplish a goal like <q>Make the bottom half of the image black</q>, we need to 
     know if the current pixel is in the bottom half or not.
   </p>
   <p>To find out where a pixel is, we can use the <c>.getX()</c> and <c>.getY()</c> functions 
@@ -97,7 +97,7 @@
           <p>10, 5</p>
         </statement>
         <feedback>
-          <p>That would be true if the image had a width of 11 and a height of 6. Remeber we start counting from 0.</p>
+          <p>That would be true if the image had a width of 11 and a height of 6. Remember that we start counting from 0.</p>
         </feedback>
       </choice>
     </choices>

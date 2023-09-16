@@ -30,9 +30,9 @@ positiveValue = abs(x)          # call the "abs" function and use the variable x
     The procedures <c>left</c> and <c>forward</c> are part of the turtle object. So when we use them, we need to specify which
     turtle should run them using dot notation: <c>alex.left(90)</c>. The function <c>upper</c> is part of a string object. So when we want
     to convert a string to upper case, we need to say which string is going to do the upper function: <c>name.upper()</c>. In
-    constrast, <c>abs</c> and <c>int</c> are not part of any object - they are stand alone functions that are not part of any
+    contrast, <c>abs</c> and <c>int</c> are not part of any object - they are stand-alone functions that are not part of any
     object. So we call them without using dot notation to specify a particular object.</p>
-  <p>In this book we will focus on writing these stand alone procedures and functions. These are not part of any
+  <p>In this book we will focus on writing these stand-alone procedures and functions. These are not part of any
     particular object and thus are not called using dot notation. However, as we will see over the next few pages, they
     can still work with objects as long as those objects are provided to the procedure or function as input.</p>
 </section>

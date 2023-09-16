@@ -1,6 +1,6 @@
 <section xml:id="csp-designing-procedures_program-implementation-3">
   <title>Program Implementation - 3</title>
-  <p>You may have noticed that the <c>drawWall</c> and <c>drawDoor</c> procedure do not worry about where the shape is being drawn. We
+  <p>You may have noticed that the <c>drawWall</c> and <c>drawDoor</c> procedures do not worry about where the shape is being drawn. We
     could put a <c>goto</c> into them so that they handle jumping to the right location to draw their shape. But, that would
     make it so they can only draw in one location. We will want to call the <c>drawWindow</c> procedure twice to draw two
     different windows. That will not work if <c>drawWindow</c> always jumps to a fixed location to do its drawing.</p>

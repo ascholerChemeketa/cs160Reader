@@ -119,7 +119,7 @@
       <p>It is currently 10:00, complete the code to tell what time it is going to be in 18 hours (using 12-hour time,
         not 24-hour time). Use the <c>%</c> (modulo or remainder operator) to calculate the correct value for <term>
         clockTime</term> based on the <term>newTime</term> value that is already calculated.</p>
-      <p>The answer should be 4 because 28 hours divided into 12 hour chunks leaves a remainder of 4. But make sure not
+      <p>The answer should be 4 because 28 hours divided into 12-hour chunks leaves a remainder of 4. But make sure not
         to hardcode the answer - you need to calculate the value, not just type it in.</p>
 
     </statement>

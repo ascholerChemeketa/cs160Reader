@@ -75,13 +75,13 @@ def largesSquare(turtle):
 </input>
   </program>
   <p>Yuck. How repetitive. Now imagine we want to make squares of size 75 and 25 as well. We would need 4 different
-    procedures that all basically look the same! Remember that if you find yourself writing the same code multiple
+    procedures that all look basically the same! Remember that if you find yourself writing the same code multiple
     times, there is probably a better way to do things.</p>
   <p>In this case, we can add an additional parameter to the procedure that specifies the size of the square. Recall
     that a procedure can have as many parameters (inputs) as we like - just separate the names for the parameters with a
     comma like: <c>(turtle, size)</c>.</p>
   <p>Now that square has two parameters, any call to <c>square</c> must provide two arguments. We need to specify the name of
-    the turtle to draw with, then the size of the square to draw. Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.</p>
+    the turtle to draw with and the size of the square to draw. Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.</p>
 
   <program xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
     <input>

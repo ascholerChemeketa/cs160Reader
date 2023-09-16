@@ -32,16 +32,14 @@
 
   <exercise label="cspnamefunctions_exercises2">
     <statement>
-      <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and height of a triangle to
-        calculate the area for. Modify the function so that it has parameters for base and height and works to calculate
+      <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and height of the triangle. 
+        Modify the function so that it has parameters for base and height and works to calculate
         the area of different triangles.</p>
 
     </statement>
     <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
       <input>
         def areaTriangle():
-            base = 5
-            height = 4
             return (5 * 4) / 2
 
         # Main program. Do not modify the lines below

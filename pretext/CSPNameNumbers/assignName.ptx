@@ -20,8 +20,8 @@
         <caption>Creating a variable and setting its value in memory.</caption>
         <image source="CSPNameNumbers/Figures/assignA.png" width="20%" />
     </figure>
-    <p>To see it in context, run the program below. The first line sets a value for <c>a</c>, but does not produce any
-        output we can see. The <c>print</c> command on the second line will show print out a value so we can see it. In this
+    <p>To see it in context, run the program below. The first line sets a value for <c>a</c> but does not produce any
+        output we can see. The <c>print</c> command on the second line will print out a value so we can see it. In this
         case, it prints <c>4</c> since that is the value stored in <c>a</c>.</p>
 
     <program xml:id="cspnamenumbers_assignname1" interactive="activecode" language="python">
@@ -39,10 +39,10 @@ print(a)
     <video xml:id="tULT-Nqunlc" youtube="tULT-Nqunlc" width="100%" />
 
     <warning>
-        <p>Although we use the <c>=</c> symbol to do assignment, you should not think of it as <q>equals</q>. Most
+        <p>Because we use the <c>=</c> symbol to do assignment, you should not think of it as <q>equals</q>. Most
             programmers will pronounce <c>a = 4</c> as <q>a <em>gets</em> 4</q> or <q>a <em>is assigned the value</em>
             4</q>. Assignment <term>always</term> takes the value of the right side of the <c>=</c> and stores it into
-            the variable named on the left hand side. It is actually an error to switch the order and try to write <c>4 = a</c>
+            the variable named on the left-hand side. It is an error to switch the order and try to write <c>4 = a</c>
             - that says <q>4 <em>is assigned the value</em> a</q> which does not make sense<ellipsis/> we can’t
             change the value of 4.</p>
     </warning>

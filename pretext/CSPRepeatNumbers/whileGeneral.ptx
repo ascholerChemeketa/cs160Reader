@@ -7,7 +7,7 @@
   <p>Say we want to convert a decimal number to binary using the division method. The <xref
       ref="data-representation_binary-to-decimal-2" text="custom">divide by two method</xref> says that we need to keep dividing by
     2 <term>until</term> the quotient is 0. That is a description of when to stop, which means a while loop is what we
-    will use to write the algorithm. However, when we write a while loop, we need to describe the situation that means <em><q>keep
+    will use to write the algorithm. However, when we write a while loop, we need to describe the conditions required to <em><q>keep
     doing the loop</q></em>. If we want to <em><q>stop when the quotient is 0</q></em> that is the same as <em><q>keep
     going while the quotient is NOT 0.</q></em> Try running this version of the algorithm in codelens mode:</p>
 

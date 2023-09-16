@@ -11,7 +11,7 @@
       </li>
     </ul>
   </p>
-  <p>Often times we have to repeat steps in a process. If you are making a cake the recipe might say add an ingredient
+  <p>Often we have to repeat steps in a process. If you are making a cake the recipe might say add an ingredient
     and then stir it 50 times or until the batter is smooth. The recipe would not say the word <q>stir</q> 50
     times. It instead would instruct you to <q>stir 50 times</q> or <q>stir until smooth</q>.</p>
   <p>When our programs need to repeat a step or series of steps, we want to use this same trick to make the programs
@@ -130,7 +130,7 @@ print(sides)
 for side in range(6):
 </input>
     </program>
-    <p>It is the name we will use for each item as we iterate through the the values <c>range</c> produces. Right now we
+    <p>It is the name we will use for each item as we iterate through the values <c>range</c> produces. Right now we
       don’t really need to name those values - we don’t make use of them. But if we wanted to print out each
       of the values that range produces, we would use <c>side</c> to refer to <term><q>the value for the current
       iteration</q></term>. The program below does exactly that. In the loop, in addition to doing the turtle
@@ -154,11 +154,11 @@ print("Done with program")
       are indented past the <c>for</c> itself. (Like how the body of a procedure is indented after <c>def</c>).</p>
     <p>Notice that a blank line does not <q>end</q> the body of the <c>for</c>. Both <c>print("side is currently", side)</c> and the <c>alex.forward</c> and <c>alex.right</c>
       are part of the body and get repeated. The loop body ends at the first line that is indented to the same level as
-      the <c>for</c>. In this case, the <c>print("Done with program")</c> is indented to the same level as <c>for</c>, so at that point the loop body is
+      the <c>for</c>. In this case, the <c>print("Done with program")</c> is indented to the same level as <c>for</c>, so at that point, the loop body is
       done and the line is not part of the loop. That last print will only happen one time.</p>
     <note>
       <p>The code that is the body of a loop must be indented one step past the loop. The loop body ends at the first
-        line that is indented the same (or fewer) spaces.</p>
+        line that is indented to the same level as the loop itself.</p>
     </note>
   </subsection>
 </section>

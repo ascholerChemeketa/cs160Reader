@@ -8,7 +8,7 @@ def hop(turtleName):        # turtleName is a parameter
     ...
 </input>
   </program>
-  <p>One of the trickiest parts to learning how to write and use procedures and functions is developing an accurate
+  <p>One of the trickiest parts of learning to write and use procedures and functions is developing an accurate
     understanding of how parameters work. Think of parameters as variables in a procedure that are set by the procedure
     call. Just like any variable, parameters can hold any value. And, just like any other variable, when you use the
     name of a parameter, you are accessing the value that the parameter is holding.</p>
@@ -22,7 +22,7 @@ hop(sue)     # a procedure call using the sue turtle as the argument
 </input>
   </program>
   <p>When this procedure call happens, all the code from <c>hop</c> will be executed. Any time we encounter the parameter <c>turtleName</c>,
-    we will actually use the argument - <c>sue</c> in its place. This process of giving the procedure information by
+    we will use the argument - <c>sue</c> in its place. This process of giving the procedure information by
     specifying arguments is known as <term>passing parameters</term> to the procedure.</p>
   <p>This system allows the procedure to work with any turtle. We can call <c>hop(buster)</c> to run <c>hop</c> and when we do so, <c>turtleName</c>
     will mean the turtle named <c>buster</c>.</p>
@@ -32,7 +32,7 @@ hop(sue)     # a procedure call using the sue turtle as the argument
       what we mean when we just say <em> <q>parameters</q></em>.</p>
   </note>
   <p>Try running this program below. It defines the <c>hop</c> procedure. Then, the main part of the program makes two
-    turtles, has them mark their starting location, then has them each do a hop before doing a forward movement.</p>
+    turtles, has them mark their starting location, and then has them each do a hop before doing a forward movement.</p>
 
   <program xml:id="cspnameprocedures_parameters1"
     interactive="activecode" language="python">
@@ -60,7 +60,7 @@ buster.forward(50)
   <warning>
     <p>The only variables you can use in a procedure are its parameters or new ones you create inside the procedures. It
       is an error to use variables from the main part of the program while writing the body of a procedure.</p>
-    <p>Think of each procedure as a self contained world. All that is known inside that world is what is passed into it
+    <p>Think of each procedure as a self-contained world. All that is known inside that world is what is passed into it
       as parameters.</p>
   </warning>
   <p>
@@ -80,7 +80,7 @@ buster.forward(50)
           <p>turtleName</p>
         </statement>
         <feedback>
-          <p>There is no one turtle named <b>turtleName</b>. It will be used to name both sue during the first call to
+          <p>There is no one turtle named <b>turtleName</b>. turtleName will be used to name sue during the first call to
             hop and buster during the second call to hop.</p>
         </feedback>
       </choice>

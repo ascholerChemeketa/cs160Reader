@@ -36,7 +36,7 @@
 
   <exercise label="csprepeatturtles_exercises2">
     <statement>
-      <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop based code.
+      <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop-based code.
         There are three issues to fix.</p>
       <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
       <note>
@@ -69,7 +69,7 @@
 
   <exercise label="csprepeatturtles_exercises3">
     <statement>
-      <p>Fix the indention in the code below to correctly draw 20 pentagons (5 sided polygons).</p>
+      <p>Fix the indention in the code below to correctly draw 20 pentagons (5-sided polygons).</p>
       <p>Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).</p>
       <note>
         <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>

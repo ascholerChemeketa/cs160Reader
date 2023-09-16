@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-images_combining-pictures">
   <title>Combining Pictures</title>
   <p>A common use of color replacement technology is <q>green scren</q> background replacement. An actor performs
-    in front of a green wall or a Zoom meeting participant sits in front of a green sheet. A computer algorithm them
+    in front of a green wall or a Zoom meeting participant sits in front of a green sheet. A computer algorithm then
     looks for green pixels and replaces them with pixels from some other image. The result is that the person looks like
     they are in some other location. (Unless of course, they have a green shirt on, in which case it will look like their
     disembodied head is floating in the background.)</p>

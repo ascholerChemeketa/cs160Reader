@@ -22,13 +22,13 @@ else:
     print("Bye!")
         </input>
   </program>
-  <p>We can combine <c>in</c> with other tricks like <c>or</c> or <c>and</c> to make more complex tests. Complete this mixed up
+  <p>We can combine <c>in</c> with other tricks like <c>or</c> or <c>and</c> to make more complex tests. Complete this mixed-up
     code problem that tells the user what season a given month is part of:</p>
 
   <exercise label="cspdecisionsstrings_instring2">
     <statement>
       <p>Complete the <c>getSeason</c> function so that it returns the correct season for each month. We want it to accept
-        <q>dec</q> or <q>Dec</q> or <q>December</q> or <q>DECEMBER</q> all as being the same
+        <q>dec</q> or <q>Dec</q> or <q>December</q> or <q>DECEMBER</q> as all being the same
         thing, so we will convert the month to lower case and then use <c>in</c> to test it.</p>
       <p>Code for the Winter months is already there, write code for the other seasons. If there is no logical match for
         the <c>monthName</c>, we will want to return <q>???</q> as the season.</p>

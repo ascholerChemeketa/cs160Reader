@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-strings_complex-conditional-dangers">
   <title>Complex Conditional Dangers</title>
-  <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would in English or in math
-    class.</p>
+  <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would in English.</p>
+  
   <p>In natural (human) languages, if I want to say that the color of a car can be blue or green, I would only mention
     the car once: <q>The car can be blue or green.</q> If you try to do that in Python your program will not work
     as expected:</p>

@@ -238,8 +238,8 @@
     </exercise>
     <exercise label="cspnamenumbers_variablepracticeparsons10" numbered="yes" adaptive="yes" indentation="show" language="python">
         <statement>
-            <p>The following program segment should print how much each pair of shorts cost when they are buy 2 and get
-                the third free. The shorts are originally $39.99 each. However, the blocks have been mixed up and include an
+            <p>The following program segment should print how much each pair of shorts costs when there is a buy 2 and get
+                the third free sale. The shorts were originally $39.99 each. However, the blocks have been mixed up and include an
                 extra block that isn’t needed in the solution. Drag the needed blocks from the left and put them
                 in the correct order on the right. Click the <c>Check</c> button to check your solution.</p>
         </statement>

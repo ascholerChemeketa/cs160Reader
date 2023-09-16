@@ -1,12 +1,14 @@
 <section xml:id="csp-name-procedures_practice-write-a-procedure">
   <title>Practice - Write a Procedure</title>
-  <p>Time for a little practice - try writing your own procedure. There is an answer available, but don’t look at
-    it until you have tried writing the procedure on your own!</p>
+  <p>Time for a little practice - try writing your own procedure. There is an answer available, but
+    don’t look at it until you have tried writing the procedure on your own!</p>
   <note>
     <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
   </note>
   <exercise>
-    <statement>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the length to make each side. (A pentagon has five sides and five corners - each turn will need to be 72 degrees).</statement>
+    <statement>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the
+      length to make each side. (A pentagon has five sides and five corners - each turn will need to
+      be 72 degrees).</statement>
     <program interactive="activecode" language="python">
       <input>
 #WRITE YOUR PROCEDURE HERE

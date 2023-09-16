@@ -1,79 +1,84 @@
 <section xml:id="csp-name-strings_chapter-summary">
-    <title>Chapter Summary</title>
-    <p>Chapter 3 included the following concepts from computing.</p>
+  <title>Chapter Summary</title>
+  <p>Chapter 3 included the following concepts from computing.</p>
 
+  <p>
+    <ul>
+      <li>
+        <p><term>Append</term> - You can add two strings together using the <c>+</c> symbol. This is
+          also called <term> concatenate</term>.</p>
+      </li>
+      <li>
+        <p><term>Capitalize</term> - The capitalize function returns a new string with the first
+          character capitalized.</p>
+      </li>
+      <li>
+        <p><term>Concatenate</term> - You can use <c>+</c> to concatenate (append) two strings like
+          this <c>string3 = string1 + string2</c>. This will create a new string called <c>string3</c> with all the characters from
+          the first string, <c>string1</c>, followed by all the characters in the second string, <c>string2</c>.</p>
+      </li>
+      <li>
+        <p><term>Function</term> - A function returns a value. Functions can take input as well but
+          don’t have to. An example is the string <c>lower()</c> function that returns a string with all
+          lowercase letters.</p>
+      </li>
+      <li>
+        <p><term>Immutable</term> - Immutable means that it does not change. Strings are immutable
+          in Python. When you call a function that appears to change a string, it will actually
+          return a new string.</p>
+      </li>
+      <li>
+        <p><term>Index</term> - An index is a number associated with the position of a character in
+          a string. In Python, the first character in a string is at index 0.</p>
+      </li>
+      <li>
+        <p><term>Object</term> - An object can have behavior (things it can do). For example, a
+          turtle object can go forward a specified amount. Strings and turtles are objects in
+          Python.</p>
+      </li>
+      <li>
+        <p><term>String</term> - A string is a sequence of characters. You specify a string as
+          characters inside a pair of single, double, or triple quotes.</p>
+      </li>
+      <li>
+        <p><term>Substring</term> - A substring is a part of a string. One substring of <q>Hi there</q>
+          would be <q>Hi</q>.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="csp-name-strings_summary-of-string-functions">
+    <title>Summary of String Functions</title>
+
+    <p>Chapter 4 also included the following string functions.</p>
     <p>
-        <ul>
-            <li>
-                <p><term>Append</term> - You can add two strings together using the <c>+</c> symbol. This is also called <term>
-                    concatenate</term>.</p>
-            </li>
-            <li>
-                <p><term>Capitalize</term> - The capitalize function returns a new string with the first character
-                    capitalized.</p>
-            </li>
-            <li>
-                <p><term>Concatenate</term> - You can use <c>+</c> to concatenate (append) two strings like this <c>string3 = string1 + string2</c>.
-                    This will create a new string called <c>string3</c> with all the characters from the first string, <c>string1</c>,
-                    followed by all the characters in the second string, <c>string2</c>.</p>
-            </li>
-            <li>
-                <p><term>Function</term> - A function returns a value. Function can take input as well, but don’t
-                    have to. An example is the string <c>lower()</c> function that returns a string with all lowercase letters.</p>
-            </li>
-            <li>
-                <p><term>Immutable</term> - Immutable means that it does not change. Strings are immutable in Python.
-                    When you call a function that appears to change a string, it will actually return a new string.</p>
-            </li>
-            <li>
-                <p><term>Index</term> - An index is a number associated with the position of a character in a string. In
-                    Python the first character in a string is at index 0.</p>
-            </li>
-            <li>
-                <p><term>Object</term> - An object can have behavior (things it can do). For example a turtle object can
-                    go forward a specified amount. Strings and turtles are objects in Python.</p>
-            </li>
-            <li>
-                <p><term>String</term> - A string is a sequence of characters. You specify a string as characters inside
-                    a pair of single, double, or triple quotes.</p>
-            </li>
-            <li>
-                <p><term>Substring</term> - A substring is a part of a string. One substring of <q>Hi there</q>
-                    would be <q>Hi</q>.</p>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <p><term>append</term> - You can add two strings together using the <c>+</c> symbol. This
+            is also called <term>concatenate</term>. The result of <c>"Happy" + " Birthday"</c> is <c>"Happy Birthday"</c>.</p>
+        </li>
+        <li>
+          <p><term>find</term> - The find function takes a string as input and returns the <term>
+            index</term> of the first occurrence of that string in the string the function is called
+            on. The code <c>"goodbye".find('bye')</c> returns 4.</p>
+        </li>
+        <li>
+          <p><term>len</term> - The len function that can take a string as input and returns the
+            number of characters in the string including any spaces. For example <c>len("Hi there")</c> will return
+            8.</p>
+        </li>
+        <li>
+          <p><term>lower</term> - The lower string function returns a new string with only lowercase
+            letters. For example <c>"ALL CAPS".lower()</c> returns <c>"all caps"</c>.</p>
+        </li>
+        <li>
+          <p><term>slice</term> - You can get part of a string which is also called a <term>
+            substring</term> using [start] or [start:end] which will return a substring of the
+            current string starting at the given start position and if an end position is given
+            ending at the character before the end position. For example <c>"out"[1]</c> will return <c>"u"</c>
+            and <c>"otter"[2:5]</c> returns <c>"ter"</c>.</p>
+        </li>
+      </ul>
     </p>
-    <subsection xml:id="csp-name-strings_summary-of-string-functions">
-        <title>Summary of String Functions</title>
-
-        <p>Chapter 4 also included the following string functions.</p>
-        <p>
-            <ul>
-                <li>
-                    <p><term>append</term> - You can add two strings together using the <c>+</c> symbol. This is also
-                        called <term>concatenate</term>. The result of <c>"Happy" + " Birthday"</c> is <c>"Happy Birthday"</c>.</p>
-                </li>
-                <li>
-                    <p><term>find</term> - The find function takes a string as input and returns the <term>index</term>
-                        of the first occurence of that string in the string the function is called on. The code <c>"goodbye".find('bye')</c>
-                        returns 4.</p>
-                </li>
-                <li>
-                    <p><term>len</term> - The len function that can take a string as input and returns the number of
-                        characters in the string including any spaces. For example <c>len("Hi there")</c> will return 8.</p>
-                </li>
-                <li>
-                    <p><term>lower</term> - The lower string function returns a new string with only lowercase letters.
-                        For example <c>"ALL CAPS".lower()</c> returns <c>"all caps"</c>.</p>
-                </li>
-                <li>
-                    <p><term>slice</term> - You can get part of a string which is also called a <term>substring</term>
-                        using [start] or [start:end] which will return a substring of the current string starting at the
-                        given start position and if an end position is given ending at the character before the end
-                        position. For example <c>"out"[1]</c> will return <c>"u"</c> and <c>"otter"[2:5]</c> returns <c>"ter"</c>.</p>
-                </li>
-            </ul>
-        </p>
-    </subsection>
+  </subsection>
 </section>
 

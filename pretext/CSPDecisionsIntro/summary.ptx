@@ -1,50 +1,55 @@
 <section xml:id="csp-decisions-intro_chapter-summary">
-        <title>Chapter Summary</title>
-        <p>This chapter included the following concepts from computing.</p>
-        
-        
-        <p><ul>
-            <li>
-                <p><term>Boolean Expression</term> - A Boolean expression is one that is either true or false.  This is
-                    also called a <term>logical expression</term>.</p>
-            </li>
-            <li>
-                <p><term>Condition</term> - A condition is something that is either true or false. This is also called
-                    a <term>Boolean expression</term> or a <term>logical expression</term>.</p>
-            </li>
-            <li>
-                <p><term>Conditional Execution</term> - Conditional execution means that one or more statements are
-                    executed only when a condition (<term>logical expression</term>) is true.  This is also called a
-                    <term>conditional</term>.  The statements that are executed when the condition is true are called
-                    the <term>body</term>.</p>
-            </li>
-            <li>
-                <p><term>Flowchart</term> - A flowchart is a diagram that shows the execution paths for a program.
-                    The conditionals are shown as diamonds.</p>
-            </li>
-            <li>
-                <p><term>Logical Expression</term> - A logical expression is one that is either true or false, like
-                    <c>x == 3</c> which will return true if x is equal to 3.  This is also called a <term>Boolean expression</term>.</p>
-            </li>
-        </ul></p>
-        <subsection xml:id="csp-decisions-intro_summary-of-python-keywords-and-functions">
-            <title>Summary of Python Keywords and Functions</title>
-            <p><ul>
-                <li>
-                    <p><term>Else</term> - The keyword <c>else</c> is used to execute one or more statements in a block following
-                        the <c>else</c> when the condition in the <c>if</c> part of the statement is false.  An <c>else</c>
-                        must always have an <c>if</c> statement before it.</p>
-                </li>
-                <li>
-                    <p><term>Elif</term> - The keyword <c>elif</c> is used when you want to have a conditional with 3 or more
-                        possibile options.  Add as many <c>elif</c> statements as you need after an <c>if</c> and before a <c>else</c>.</p>
-                </li>
-                <li>
-                    <p><term>If</term> - The Python keyword <c>if</c> is used to start a condition. It is followed by a Boolean
-                        expression and then has one or more statements in the body of the loop that are executed only
-                        if the Boolean expression is true.</p>
-                </li>
-            </ul></p>
-        </subsection>
-    </section>
+  <title>Chapter Summary</title>
+  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    <ul>
+      <li>
+        <p><term>Boolean Expression</term> - A Boolean expression is one that is either true or
+          false. This is also called a <term>logical expression</term>.</p>
+      </li>
+      <li>
+        <p><term>Condition</term> - A condition is something that is either true or false. This is
+          also called a <term>Boolean expression</term> or a <term>logical expression</term>.</p>
+      </li>
+      <li>
+        <p><term>Conditional Execution</term> - Conditional execution means that one or more
+          statements are executed only when a condition (<term>logical expression</term>) is true.
+          This is also called a <term>conditional</term>. The statements that are executed when the
+          condition is true are called the <term>body</term>.</p>
+      </li>
+      <li>
+        <p><term>Flowchart</term> - A flowchart is a diagram that shows the execution paths for a
+          program. The conditionals are shown as diamonds.</p>
+      </li>
+      <li>
+        <p><term>Logical Expression</term> - A logical expression is one that is either true or
+          false, like <c>x == 3</c> which will return true if x is equal to 3. This is also called a <term>Boolean
+          expression</term>.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="csp-decisions-intro_summary-of-python-keywords-and-functions">
+    <title>Summary of Python Keywords and Functions</title>
+    <p>
+      <ul>
+        <li>
+          <p><term>Else</term> - The keyword <c>else</c> is used to execute one or more statements in a
+            block following the <c>else</c> when the condition in the <c>if</c> part of the statement is
+            false. An <c>else</c> must always have an <c>if</c> statement before it.</p>
+        </li>
+        <li>
+          <p><term>Elif</term> - The keyword <c>elif</c> is used when you want to have a conditional
+            with 3 or more possible options. Add as many <c>elif</c> statements as you need after an <c>if</c>
+            and before a <c>else</c>.</p>
+        </li>
+        <li>
+          <p><term>If</term> - The Python keyword <c>if</c> is used to start a condition. It is
+            followed by a Boolean expression and then has one or more statements in the body of the
+            loop which are executed only if the Boolean expression is true.</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>
 

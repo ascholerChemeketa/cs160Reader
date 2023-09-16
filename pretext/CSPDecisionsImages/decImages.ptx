@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-images_using-decisions-with-images">
   <title>Using Decisions with Images</title>
-  <p>In <xref ref="csp-repeat-images"/> we modified images in various ways by changing every pixel. 
-    But what if we don't want to change every single pixel? Maybe we want to change the French flag 
+  <p>In <xref ref="csp-repeat-images" /> we modified images in various ways by changing every pixel.
+    But what if we don't want to change every single pixel? Maybe we want to change the French flag
     (left image below), into the flag of Chad (right image):</p>
 
   <hidden>
@@ -16,30 +16,31 @@
     </datafile>
   </hidden>
 
-  <sidebyside widths="20% 20%" margins="25%" >
+  <sidebyside widths="20% 20%" margins="25%">
     <figure>
-        <caption>French flag</caption>
-        <image source="CSP/Images/fr-flag.gif" />
+      <caption>French flag</caption>
+      <image source="CSP/Images/fr-flag.gif" />
     </figure>
     <figure>
-        <caption>Chadian flag</caption>
-        <image source="CSP/Images/cd-flag.gif" />
+      <caption>Chadian flag</caption>
+      <image source="CSP/Images/cd-flag.gif" />
     </figure>
   </sidebyside>
 
-  <p>To do this, we need to change just the white pixels in the image and make them yellow. This means we need a way to
-    answer the question <q>Is this pixel white?</q>. A pure white pixel has red, green, and blue values all of
-    255. A not-quite-pure white may not have 255 for each of the three values, but they will all be high, and they will
-    all be very similar to each other. In comparison, a blue pixel is going to have a high blue value and low red and
-    green (potentially 0 for a <q>perfect</q> blue). A red pixel will have a high red value and low blue and
-    green ones.</p>
-  <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not always going to be
-    the right number to use, it just represents a value that is pretty close to maxed out without counting on all three
-    colors being exactly 255.</p>
-  <p>All of the white pixels need to be changed to yellow. A yellow will always have a relatively high green and red
-    value and a low blue value. A good value for the yellow in the flag is 254 red, 242 green, and 0 blue.</p>
-  <p>Here is a program that does that. After running it, try removing the line that does the `updatePixel` - 
-    if you run that version you should get the unmodified French flag.</p>
+  <p>To do this, we need to change just the white pixels in the image and make them yellow. This
+    means we need a way to answer the question <q>Is this pixel white?</q>. A pure white pixel has
+    red, green, and blue values all of 255. A not-quite-pure white may not have 255 for each of the
+    three values, but they will all be high, and they will all be very similar to each other. In
+    comparison, a blue pixel is going to have a high blue value and low red and green (potentially 0
+    for a <q>perfect</q> blue). A red pixel will have a high red value and low blue and green ones.</p>
+  <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not
+    always going to be the right number to use, it just represents a value that is pretty close to
+    maxed out without counting on all three colors being exactly 255.</p>
+  <p>All of the white pixels need to be changed to yellow. A yellow will always have a relatively
+    high green and red value and a low blue value. A good value for the yellow in the flag is 254
+    red, 242 green, and 0 blue.</p>
+  <p>Here is a program that does that. After running it, try removing the line that does the
+    `updatePixel` - if you run that version you should get the unmodified French flag.</p>
 
   <program xml:id="cspdecisionsimages_decimages1" interactive="activecode" language="python">
     <input>
@@ -71,11 +72,12 @@ img.draw(win)
       </input>
   </program>
 
-  <p>The Belgian flag is very similar to the Chad flag. See if you can turn the Chad flag into the Belgian one by
-    turning the blue pixels into black ones. Hints: blue pixels are not perfect blue. An approximate color value is
-    (red = 0, green = 100, blue = 180), but you should not count on pixels having exactly those values - come up with a
-    recipe using <c>&gt;</c> and <c>&lt;</c> that selects the blue pixels but not the yellow or red ones. 
-    Black pixels have r, g, and b values of 0.</p>
+  <p>The Belgian flag is very similar to the Chad flag. See if you can turn the Chad flag into the
+    Belgian one by turning the blue pixels into black ones. Hints: blue pixels are not perfect blue.
+    An approximate color value is (red = 0, green = 100, blue = 180), but you should not count on
+    pixels having exactly those values - come up with a recipe using <c>&gt;</c> and <c>&lt;</c> that
+    selects the blue pixels but not the yellow or red ones. Black pixels have r, g, and b values of
+    0.</p>
 
   <image source="CSP/Images/be-flag.gif" width="20%" />
 
@@ -101,7 +103,7 @@ for p in pixels:
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
       </input>
-      <tests>
+    <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):

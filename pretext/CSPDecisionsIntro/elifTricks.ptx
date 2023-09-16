@@ -1,9 +1,9 @@
 <section xml:id="csp-decisions-intro_using-elif-correctly">
-        <title>Using elif correctly</title>
-        <p>In the grade printing program on the previous page, the program checked each possible grade
-            starting with the highest (<q>A</q>) and working down to the lowest option (<q>F</q>):</p>
-        <blockquote>
-            <pre>if score &gt;= 90:
+  <title>Using elif correctly</title>
+  <p>In the grade printing program on the previous page, the program checked each possible grade
+    starting with the highest (<q>A</q>) and working down to the lowest option (<q>F</q>):</p>
+  <blockquote>
+    <pre>if score &gt;= 90:
     print("A")
 elif score &gt;= 80:
     print("B")
@@ -13,15 +13,15 @@ elif score &gt;= 60:
     print("D")
 else:
     print("F")</pre>
-        </blockquote>
-        <p>This ordering is important, because in an if/elif/else chain, Python will not skip ahead
-            to <q>the correct</q> option. If we put the various grades in a mixed up order, the first <c>if</c>
-            or <c>elif</c> whose condition is true is the one that will run.</p>
-        <p>In this version of the program, a score of 83 will NOT be a B. Can you see why? Try running
-            it in codelens mode.</p>
+  </blockquote>
+  <p>This ordering is important, because in an if/elif/else chain, Python will not skip ahead to <q>the
+    correct</q> option. If we put the various grades in a mixed-up order, the first <c>if</c> or <c>elif</c>
+    whose condition is true is the one that will run.</p>
+  <p>In this version of the program, a score of 83 will NOT be a B. Can you see why? Try running it
+    in codelens mode.</p>
 
-    <program xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
+    <input>
 score = 83
 if score &gt;= 90:
     print("A")
@@ -34,14 +34,14 @@ elif score &gt;= 80:
 else:
     print("F")
         </input>
-    </program>
-        <p>To avoid issues like that, we always need to put the <c>if</c>/<c>elif</c> options in order from
-            highest to lowest, or from lowest to highest. The program below shows starting with the
-            lowest option and working our way up. Assumes x represents a percentile and we want to
-            indicate which quartile it is in.</p>
+  </program>
+  <p>To avoid issues like that, we always need to put the <c>if</c>/<c>elif</c> options in order from
+    highest to lowest, or from lowest to highest. The program below shows starting with the lowest
+    option and working our way up. Assumes x represents a percentile and we want to indicate which
+    quartile it is in.</p>
 
-    <program xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
+    <input>
 x = .25
 if x &lt;= .25:
     print("x is in the first quartile - x &lt;= .25")
@@ -52,69 +52,73 @@ elif x &lt;= .75:
 else:
     print("x is in the fourth quartile - .75 &lt; x &lt;= 1")
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspdecisionsintro_eliftricks3">
-        <statement>
-
-        <p>What would be printed if you moved lines 6-7 before lines 4-5 and set x equal to .5?</p>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>x is in the first quartile - x &lt;= .25</p>
-                </statement>
-                <feedback>
-                    <p>This will only print if x is less then or equal to .25.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>x is in the second quartile - .25 &lt; x &lt;= .5</p>
-                </statement>
-                <feedback>
-                    <p>This will print if the other if's were not true, and if x is less than or equal to .5.  By moving lines 6-7 before lines 4-5 this will never print.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>x is in the third quartile - .5 &lt; x &lt;= .75</p>
-                </statement>
-                <feedback>
-                    <p>This will print if the other if's are not true and if x is less than or equal to .75.  So, moving lines 6-7 before lines 4-5 messes up what this code is intended to do and incorrectly prints that .5 is in the third quartile.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>x is in the fourth quartile - .75 &lt; x &lt;= 1</p>
-                </statement>
-                <feedback>
-                    <p>This will only print if all of the other if's were false.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-
-<exercise label="cspdecisionsintro_eliftricks4">
+  <exercise label="cspdecisionsintro_eliftricks3">
     <statement>
-        <p>Write the code for the function <c>tempDescription</c>. It should take <c>temp</c> as a parameter
-            that represents a temperature in degrees F. It should return the string <c>"Hot"</c> if the temp
-            is above 80, <c>"Warm"</c> if it is not above 80 but is above 70, <c>"Cool"</c> if it is not above 70
-            but is above 60, and <c>"Cold"</c> otherwise (below 60).</p>
-        <p>Hint: You don’t have to solve it all at once. You can start with just an <c>if</c> that only
-            handles temp’s greater than 80. Then add an <c>elif</c> to handle the Warm temps.
-            Then add one for Cool<ellipsis/></p>
-        <p>Make sure to <c>return</c> the answers and not just <c>print</c> them.</p>
+
+      <p>What would be printed if you moved lines 6-7 before lines 4-5 and set x equal to .5?</p>
 
     </statement>
-    <program xml:id="cspdecisionsintro_eliftricks4_editor" interactive="activecode" language="python">
-        <input>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>x is in the first quartile - x &lt;= .25</p>
+        </statement>
+        <feedback>
+          <p>This will only print if x is less then or equal to .25.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>x is in the second quartile - .25 &lt; x &lt;= .5</p>
+        </statement>
+        <feedback>
+          <p>This will print if the other if's were not true, and if x is less than or equal to .5.
+            By moving lines 6-7 before lines 4-5 this will never print.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>x is in the third quartile - .5 &lt; x &lt;= .75</p>
+        </statement>
+        <feedback>
+          <p>This will print if the other if's are not true and if x is less than or equal to .75.
+            So, moving lines 6-7 before lines 4-5 messes up what this code is intended to do and
+            incorrectly prints that .5 is in the third quartile.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>x is in the fourth quartile - .75 &lt; x &lt;= 1</p>
+        </statement>
+        <feedback>
+          <p>This will only print if all of the other ifs are false.</p>
+        </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+
+  <exercise label="cspdecisionsintro_eliftricks4">
+    <statement>
+      <p>Write the code for the function <c>tempDescription</c>. It should take <c>temp</c> as a parameter that
+        represents a temperature in degrees F. It should return the string <c>"Hot"</c> if the temp is
+        above 80, <c>"Warm"</c> if it is not above 80 but is above 70, <c>"Cool"</c> if it is not above 70 but
+        is above 60, and <c>"Cold"</c> otherwise (below 60).</p>
+      <p>Hint: You don’t have to solve it all at once. You can start with just an <c>if</c> that only
+        handles temps greater than 80. Then add an <c>elif</c> to handle the Warm temps. Then add one
+        for Cool<ellipsis /></p>
+      <p>Make sure to <c>return</c> the answers and not just <c>print</c> them.</p>
+
+    </statement>
+    <program xml:id="cspdecisionsintro_eliftricks4_editor" interactive="activecode"
+      language="python">
+      <input>
           def tempDescription(temp):
               # Your code here
 
@@ -132,7 +136,7 @@ else:
           description6 = tempDescription(80)
           print( description6 ) # should be Warm
         </input>
-        <tests>
+      <tests>
 
           from unittest.gui import TestCaseGui
 
@@ -148,6 +152,6 @@ else:
           myTests().main()
         </tests>
     </program>
-</exercise>
-    </section>
+  </exercise>
+</section>
 

@@ -9,8 +9,8 @@
           to show the statements that are part of the body of a loop.</p>
       </li>
       <li>
-        <p><term>Range</term> - In Python, <c>range(startValue, stopValue, step)</c> is used to define a list of values that count from startValue to
-          stopValue by step that includes the startValue but does not include the stopValue.</p>
+        <p><term>Range</term> - In Python, <c>range(startValue, stopValue, step)</c> is used to define a list of values that count from <c>startValue</c> to
+          <c>stopValue</c> by step that includes the <c>startValue</c> but does not include the <c>stopValue</c>.</p>
       </li>
     </ul>
   </p>

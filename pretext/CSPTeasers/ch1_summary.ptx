@@ -1,48 +1,49 @@
 <section xml:id="csp-teasers_chapter-summary">
-    <title>Chapter Summary</title>
-    <p>Chapter 1 included the following concepts from computing.</p>
+  <title>Chapter Summary</title>
+  <p>Chapter 1 included the following concepts from computing.</p>
 
-    <p>
-        <ul>
-            <li>
-                <p><term>Code</term> - Code is a set of instructions that a computer can understand. This is sometimes
-                    called a <term>program</term>.</p>
-            </li>
-            <li>
-                <p><term>Comment</term> - Comments explain what we’re doing in the programs and are intended to be
-                    read by people, not computers. In Python a comment starts with <c>#</c>. The computer will ignore
-                    everything from the start of the comment to the end of that line.</p>
-            </li>
-            <li>
-                <p><term>Dot-Notation</term> - Dot-notation is how you ask an object to do something in Python. You use
-                    the name of the object followed by a dot (period) and then followed by what you want it to do and
-                    then any values in parentheses. For example to return a new string will all lowercase letters from a
-                    variable called <c>sentence</c> use <c>sentence.lower()</c>. To ask a turtle named <c>alex</c> to go forward 50 units use <c>alex.forward(50)</c>
-                    .</p>
-            </li>
-            <li>
-                <p><term>Library</term> - A library is a group of <term>programs</term> that provides some
-                    functionality. The <c>Turtle</c> library is a good example. It lets us create and work with <c>Turtle</c>
-                    objects.</p>
-            </li>
-            <li>
-                <p><term>Pixel</term> - A pixel is one small part (element) of a picture. Pixels are stored in a grid
-                    and have both x (horizontal) and y (vertical) values. A pixel has a color which can be defined by an
-                    amount of red, green, and blue with values f rom 0 to 255.</p>
-            </li>
-            <li>
-                <p><term>Program</term> - A program is a set of instructions that a computer can understand to
-                    accomplish some goal. This is sometimes called <term>code</term>.</p>
-            </li>
-            <li>
-                <p><term>String</term> - A string is anything we can type between a pair of pair of single quotes (<c>'Hi'</c>),
-                    double quotes (<c>"Hi"</c>), or triple quotes (<c>'''Hi'''</c>). It is a sequence of characters.</p>
-            </li>
-            <li>
-                <p><term>Variable</term> - A variable is a name associated with computer memory that can hold a value
-                    and that value can change or vary. One example of a variable is the score in a game.</p>
-            </li>
-        </ul>
-    </p>
+  <p>
+    <ul>
+      <li>
+        <p><term>Code</term> - Code is a set of instructions that a computer can understand. This is
+          sometimes called a <term>program</term>.</p>
+      </li>
+      <li>
+        <p><term>Comment</term> - Comments explain what we’re doing in the programs and are intended
+          to be read by people, not computers. In Python, a comment starts with <c>#</c>. The
+          computer will ignore everything from the start of the comment to the end of that line.</p>
+      </li>
+      <li>
+        <p><term>Dot-Notation</term> - Dot-notation is how you ask an object to do something in
+          Python. You use the name of the object followed by a dot (period) and then followed by
+          what you want it to do and then any values in parentheses. For example, to return a new
+          string with all lowercase letters from a variable called <c>sentence</c> use <c>sentence.lower()</c>. To ask a
+          turtle named <c>alex</c> to go forward 50 units use <c>alex.forward(50)</c> .</p>
+      </li>
+      <li>
+        <p><term>Library</term> - A library is a group of <term>programs</term> that provides some
+          functionality. The <c>Turtle</c> library is a good example. It lets us create and work with <c>Turtle</c>
+          objects.</p>
+      </li>
+      <li>
+        <p><term>Pixel</term> - A pixel is one small part (element) of a picture. Pixels are stored
+          in a grid and have both x (horizontal) and y (vertical) values. A pixel has a color that
+          is defined by an amount of red, green, and blue, each with values from 0 to 255.</p>
+      </li>
+      <li>
+        <p><term>Program</term> - A program is a set of instructions that a computer can understand
+          to accomplish some goal. This is sometimes called <term>code</term>.</p>
+      </li>
+      <li>
+        <p><term>String</term> - A string is anything we can type between a pair of single quotes (<c>'Hi'</c>),
+          double quotes (<c>"Hi"</c>), or triple quotes (<c>'''Hi'''</c>). It is a sequence of characters.</p>
+      </li>
+      <li>
+        <p><term>Variable</term> - A variable is a name associated with computer memory that can
+          hold a value and that value can change or vary. One example of a variable is the score in
+          a game.</p>
+      </li>
+    </ul>
+  </p>
 </section>
 

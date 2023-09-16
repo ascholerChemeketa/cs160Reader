@@ -1,12 +1,12 @@
 <section xml:id="csp-python-data_finding-the-pollution-for-a-state">
   <title>Finding the Pollution for a State</title>
-  <p>To get the average for particular states, we need to be able to identify which state a record belongs to. Currently
+  <p>To get the average for particular states, we need to be able to identify which state a record belongs to. Currently,
     that is hard because the string that has the state also has the city: <c>"Pocatello,ID"</c>. We need to separate the two.
     Fortunately, we can easily use <c>split</c> to do so.</p>
   <p>We have already been using <c>split</c> to chop up the entire line of data into a list of the three values it contains -
     turning <c>"Pocatello,ID:15:9"</c> into <c>["Pocatello,ID", "15", "9"]</c>. In the same way, we can split <c>"Pocatello,ID"</c> at the <q>,</q> to turn it into a list
     like <c>["Pocatello", "ID"]</c> where the first value is the city and the second the state.</p>
-  <p>Step 6 is in the sample below is where we do the key work. We grab <c>values[0]</c>, which is the city/state string, make a
+  <p>Step 6 in the sample below is where we do the key work. We grab <c>values[0]</c>, which is the city/state string, make a
     list out of it using <c>split</c>, and call that list <c>cityState</c>. We can then use <c>cityState[0]</c> to get the city name and <c>cityState[1]</c>
     to get the state.</p>
   <program xml:id="csppythondata_findpollstate1" interactive="codelens" language="python">

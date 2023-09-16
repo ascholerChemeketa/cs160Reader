@@ -54,7 +54,7 @@
                     <p>0</p>
                 </statement>
                 <feedback>
-                    <p>In some languages, this would be correct. But, this book is using Python 3 so you get a decimal
+                    <p>In some languages, this would be correct. But, this book uses Python, so you get a decimal
                         result.</p>
                 </feedback>
             </choice>

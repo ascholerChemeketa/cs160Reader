@@ -130,7 +130,7 @@ for repeats in range(20)
     <title>Execution Limit &amp; Run Amok Programs</title>
 
     <p>A Python program that is running in the browser has a limited amount of time it is allowed to run. If a program
-      takes more than ~20 seconds, it will stop running even if it is not done. This can prevent complex programs for
+      takes more than ~20 seconds, it will stop running even if it is not done. This can prevent complex programs from
       ever finishing what they are doing. Try running this program and wait until an error is printed.</p>
 
     <program xml:id="csprepeatturtles_patterns5" interactive="activecode" language="python">
@@ -158,7 +158,7 @@ import sys
 sys.setExecutionLimit(60000)
 </input>
     </program>
-    <p>They set the time limit for the program to 60,000 millisends. (One second is 1,000 milliseconds, so 60,000
+    <p>They set the time limit for the program to 60,000 milliseconds. (One second is 1,000 milliseconds, so 60,000
       milliseconds is 60 seconds.) This should give the program time to finish.</p>
     <p>Of course we also could increase the speed of the turtle to help get the program done faster. But since there is
       a limit to the turtle’s speed, it may sometimes be necessary to also increase the execution limit.</p>
@@ -191,7 +191,7 @@ for repeats in range(10):
     square(dave)
         </input>
     </program>
-    <p>Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loop all stacked
+    <p>Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loops all stacked
       inside of each other. The <q>indirect</q> nesting, where the inner loop is hidden inside of a procedure
       makes the main part of the program a bit easier to read. Compare this program to the one at the top of the page.
       It is much easier to see that this program draws 10 squares than it was to see that the first one drew 20

@@ -80,7 +80,7 @@
     PM10 value - <c>values[1]</c>, or the PM2.5 value - <c>values[2]</c>.</p>
   <p>In this version, the first thing we do with each line is to split it up at the <q>:</q> marks. The <c>split</c>
     function will turn a string into a list by splitting it at the value you give it. <c>values = line.split(":")</c> says to take the string
-    called line, split it at the <q>:</q> and to call the resulting list <c>values</c>. We can then use that to get
+    called line, split it at the <q>:</q> and call the resulting list <c>values</c>. We can then use that to get
     just the city name, the PM 10 value, or the PM2.5 value.</p>
 
   <exercise label="csppythondata_readdata2">

@@ -1,17 +1,15 @@
 <section xml:id="csp-teasers_compute-with-words">
-    <title>Compute with Words</title>
+  <title>Compute with Words</title>
 
+  <p>The computer can also compute with words, or more accurately, with <term>strings</term> which
+    are sequences of characters. We can create a <term>string</term> by typing characters between a
+    pair of single (<c>'Hi'</c>), double (<c>"Hi"</c>), or triple quotes (<c>'''Hi'''</c>). We can <q>compute</q>
+    with strings using some of the same basic arithmetic operators <ndash /> they just mean
+    something different here. Here we generate silly song lyrics by using <c>+</c> to combine
+    (append) two strings and <c>*</c> to repeat strings.</p>
 
-    <p>The computer can also compute with words, or more accurately,
-        with <term>strings</term> which are sequences of characters. We can create a <term>string</term>
-        by typing characters between a pair of single (<c>'Hi'</c>), double (<c>"Hi"</c>), or triple
-        quotes (<c>'''Hi'''</c>). We can <q>compute</q> with
-        strings using some of the same basic arithmetic operators <ndash/> they just mean something
-        different here. Here we generate silly song lyrics by using <c>+</c> to combine (append) two
-        strings and <c>*</c> to repeat strings.</p>
-
-    <program xml:id="cspteasers_computewords1" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspteasers_computewords1" interactive="activecode" language="python">
+    <input>
             basic = "da"
             print(basic)
             basic3 = basic + "-" + basic + "-" + basic
@@ -23,21 +21,20 @@
             print(together)
             print(together + " " + together)
         </input>
-    </program>
+  </program>
 
+  <p>Strings are different than numbers in that they are <term> objects</term>. Objects are complex
+    entities in code that combine data (like the text that is part of a string) with behaviors -
+    things the object can do. To access the behaviors of an object, we use <term>dot-notation</term>.
+    In dot notation, we use a <c>.</c> (or dot) to describe which behavior of an object we want to
+    make use of.</p>
+  <p>For example, the program below uses <c>sentence.lower()</c> to tell the string <term>sentence</term> that we
+    want it to give us a copy of itself that has been changed to all lower-case letters. We then ask
+    the new string, called <term>better</term> to make a copy of itself where just the first letter
+    is capitalized.</p>
 
-    <p>Strings are different than numbers in that they are <term>
-        objects</term>. Objects are complex entities in code that combine data (like the text that
-        is part of a string) with behaviors - things the object can do. To access the behaviors of an
-        object, we use <term>dot-notation</term>. In dot notation, we use a <c>.</c> (or dot) to
-        describe which behavior of an object we want to make use of.</p>
-    <p>For example, the program below uses <c>sentence.lower()</c> to tell the string <term>sentence</term>
-        that we want it to give us a copy of itself that has been changed to all lower-case letters.
-        We then ask the new string, called <term>better</term> to make a copy of itself where just
-        the first letter is capitalized.</p>
-
-    <program xml:id="cspteasers_computewords2" interactive="activecode" language="python">
-        <input>
+  <program xml:id="cspteasers_computewords2" interactive="activecode" language="python">
+    <input>
             sentence = "THIS IS A TEST"
             better = sentence.lower()
             print("The string better is :", better)
@@ -45,66 +42,67 @@
             betterStill = better.capitalize() + "."
             print("betterStill is :", betterStill)
         </input>
-    </program>
+  </program>
 
-    <exercise label="cspteasers_computewords3">
-        <statement>
-            <p>What would the following code print?</p>
-            <program line-numbers="yes" language="python"><input>first = "Hi"
+  <exercise label="cspteasers_computewords3">
+    <statement>
+      <p>What would the following code print?</p>
+      <program line-numbers="yes" language="python">
+        <input>first = "Hi"
 next = "There"
-print ((first + next) * 2)</input></program>
+print ((first + next) * 2)</input>
+      </program>
+    </statement>
+    <choices>
+
+      <choice>
+        <statement>
+          <p>Hi There</p>
         </statement>
-        <choices>
+        <feedback>
+          <p>When you add strings together you copy the second string right after the first, without
+            any added space</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>Hi There</p>
-                </statement>
-                <feedback>
-                    <p>When you add strings together you copy the second string right after the
-                        first, without any added space</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>HiThere</p>
+        </statement>
+        <feedback>
+          <p>Remember that * 2 repeats two copies of the same string</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>HiThere</p>
-                </statement>
-                <feedback>
-                    <p>Remember that * 2 repeats two copies of the same string</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>Hi There Hi There</p>
+        </statement>
+        <feedback>
+          <p>Adding strings together and repeating them doesn't add spaces between the strings</p>
+        </feedback>
+      </choice>
 
-            <choice>
-                <statement>
-                    <p>Hi There Hi There</p>
-                </statement>
-                <feedback>
-                    <p>Adding strings together and repeating them doesn't add spaces between the
-                        strings</p>
-                </feedback>
-            </choice>
+      <choice correct="yes">
+        <statement>
+          <p>HiThereHiThere</p>
+        </statement>
+        <feedback>
+          <p>Strings are added together without adding any space and they are repeated without
+            adding a space</p>
+        </feedback>
+      </choice>
 
-            <choice correct="yes">
-                <statement>
-                    <p>HiThereHiThere</p>
-                </statement>
-                <feedback>
-                    <p>Strings are added together without adding any space and they are repeated
-                        without adding a space</p>
-                </feedback>
-            </choice>
+      <choice>
+        <statement>
+          <p>HiThere2</p>
+        </statement>
+        <feedback>
+          <p>The * 2 repeats the string two times</p>
+        </feedback>
+      </choice>
+    </choices>
 
-            <choice>
-                <statement>
-                    <p>HiThere2</p>
-                </statement>
-                <feedback>
-                    <p>The * 2 repeats the string two times</p>
-                </feedback>
-            </choice>
-        </choices> 
-
-    </exercise>
+  </exercise>
 </section>
 

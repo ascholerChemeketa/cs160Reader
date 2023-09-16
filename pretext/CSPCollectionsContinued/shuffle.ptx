@@ -27,7 +27,7 @@
                 of the deck.</p>
             </li>
             <li>
-              <p>Print out <c>cutPoint</c>. Run your program a number of times and make sure it gives you values in the range
+              <p>Print out <c>cutPoint</c>. Run your program several times and make sure it gives you values in the range
                 1-11. You can remove the print once you see this is working.</p>
             </li>
             <li>
@@ -118,10 +118,10 @@
 
         <choice correct="yes">
           <statement>
-            <p>Poorly. New cuts seem to "fix" previous cuts and not compound on each other.</p>
+            <p>Poorly. New more cuts do not seem to mix up the deck more thoroughly.</p>
           </statement>
           <feedback>
-            <p>Correct. This is actually a really bad way to shuffle cards. Cutting the deck 10 times (or a million) is
+            <p>Correct. This is a bad way to shuffle cards. Cutting the deck 10 times (or a million) is
               no more random than cutting it just once!</p>
           </feedback>
         </choice>
@@ -151,7 +151,7 @@
   <subsection xml:id="csp-collections-continued_shuffle-by-move-to-back">
     <title>Shuffle By Move To Back</title>
     <p>The second algorithm we will try will be to pick one card at random from the deck (other than the last card) and
-      move it to the end of the deck. On its own that won’t do much, but maybe if we repeat it a bunch of times,
+      move it to the end of the deck. On its own, that won’t do much, but maybe if we repeat it a bunch of times,
       it will work.</p>
     <p>The exercises below will guide you through writing the algorithm.</p>
 
@@ -264,13 +264,13 @@
             <p>OK. But there are still really long runs of consecutive cards (like 2-6 all in order).</p>
           </statement>
           <feedback>
-            <p>It's possible you saw this, but only if you got unlucky. Try running the program again.</p>
+            <p>It is possible that you saw this, but only if you got unlucky. Try running the program again.</p>
           </feedback>
         </choice>
 
         <choice correct="yes">
           <statement>
-            <p>Really well.</p>
+            <p>Well.</p>
           </statement>
           <feedback>
             <p>This is pretty effective, though it would help to repeat the process more than 10 times.</p>
