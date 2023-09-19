@@ -54,6 +54,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <!-- <css colors="bluegreen_grey" toc="crc" banner="crc" navbar="crc" shell="crc" /> -->
     <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
     <tableofcontents focused="yes" />
+    <search variant="reference"/>
   </html>
 
 </publication>

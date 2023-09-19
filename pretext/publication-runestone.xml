@@ -55,6 +55,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         darkmartiansands -->
     <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
     <tableofcontents focused="yes" />
+    <search variant="reference"/>
   </html>
 
 </publication>
