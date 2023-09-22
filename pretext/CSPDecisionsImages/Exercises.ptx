@@ -143,11 +143,6 @@
     </program>
   </exercise>
 
-
-  <datafile label="goalkeeper" filename="goalkeeper.jpg">
-    <image source="CSP/Images/goalkeeper.jpg" />
-  </datafile>
-
   <exercise label="cspdecisionsimages_exercises4">
     <statement>
       <p>Write the function <c>isYellow</c> that accepts red, green, and blue values as its parameters and returns <c>True</c> if

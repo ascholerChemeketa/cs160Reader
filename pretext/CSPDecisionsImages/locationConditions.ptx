@@ -3,11 +3,7 @@
 
     <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
         changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
-
-    <datafile label="cat" filename="cat.jpg">
-        <image source="CSP/Images/cat.jpg" />
-    </datafile>
-
+        
     <exercise xml:id="cspdecisionsimages_locationconditions1">
         <statement>
             <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40
