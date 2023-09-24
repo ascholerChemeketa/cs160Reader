@@ -131,7 +131,7 @@
   --bodytitlehighlight: #e0e9ff;
   --bodysubtitlehighlight: #e0e9ff;
 
-  --tocborder: var(rgb(77 85 25));
+  --tocborder: rgb(77 85 25);
   --parttoc: rgb(46 51 13);
   --parttoctext: white;
   --parttocactive: var(--cclightgreen);
