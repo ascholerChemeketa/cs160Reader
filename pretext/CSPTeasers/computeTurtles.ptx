@@ -92,14 +92,13 @@ alex.forward(100)</pre>
   </exercise>
   <p>Just by going forward, backward, left, and right, we can have a turtle draw a shape:</p>
 
+
   <exercise label="cspteasers_computeturtles3">
     <statement>
-      <p>What shape will the program below draw when you click on the Run button? <var />
+      <p>What shape will the program below draw when you click on the Run button?
       </p>
-    </statement>
-    <setup>
-      <var>
-        <pre>import turtle    # use the turtle library
+      <p><var/></p>
+      <pre>import turtle    # use the turtle library
 zari = turtle.Turtle()         # create a turtle named zari
 zari.setheading(90)     # Point due north
 zari.forward(100)       # tell zari to move forward by 100 units
@@ -110,13 +109,22 @@ zari.forward(100)       # tell zari to move forward by 100 units
 zari.right(90)          # turn by 90 degrees
 zari.forward(100)       # tell zari to move forward by 100 units
 zari.right(90)          # turn by 90 degrees</pre>
+    </statement>
+    <setup>
+      <var>
         <condition string="^\s*square|Square|SQUARE\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
+        <condition string="">
+          <feedback>
+            <p>No, think of basic shapes. How many turns are made?</p>
+          </feedback>
+        </condition>
       </var>
     </setup>
   </exercise>
+
 </section>
 
