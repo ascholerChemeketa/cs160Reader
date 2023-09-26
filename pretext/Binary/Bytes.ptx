@@ -154,7 +154,7 @@
       </statement>
       <setup>
         <var>
-          <condition number="[24, 24]">
+          <condition number="24">
             <feedback>
               <p>Correct!</p>
             </feedback>
@@ -189,7 +189,7 @@
       </statement>
       <setup>
         <var>
-          <condition number="[4096, 4096]">
+          <condition number="4096">
             <feedback>
               <p>Correct!</p>
             </feedback>

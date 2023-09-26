@@ -156,7 +156,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="[10, 10]">
+        <condition number="10">
           <feedback>
             <p>Correct!</p>
           </feedback>

@@ -106,7 +106,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="[1024, 1024]">
+        <condition number="1024">
           <feedback>
             <p>Correct!</p>
           </feedback>

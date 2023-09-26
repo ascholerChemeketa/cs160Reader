@@ -126,7 +126,7 @@ Do I need 1? Yes.
       </statement>
       <setup>
         <var>
-          <condition number="[60, 60]">
+          <condition number="60">
             <feedback>
               <p>Correct!</p>
             </feedback>

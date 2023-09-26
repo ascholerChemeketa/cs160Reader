@@ -226,7 +226,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="[42, 42]">
+        <condition number="42">
           <feedback>
             <p>Correct!</p>
           </feedback>

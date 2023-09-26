@@ -67,7 +67,7 @@ print(testArea)
     </statement>
     <setup>
       <var>
-        <condition number="[21.81, 21.81]">
+        <condition number="21.81">
           <feedback>
             <p>Correct!</p>
           </feedback>

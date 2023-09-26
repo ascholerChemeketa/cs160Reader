@@ -79,7 +79,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="[600, 600]">
+        <condition number="600">
           <feedback>
             <p>Correct!</p>
           </feedback>

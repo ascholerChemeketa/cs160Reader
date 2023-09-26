@@ -58,9 +58,9 @@ WHERE
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[71, 71]">
+        <condition number="71">
           <feedback>
-            <p>That is the number that have 'NW' anywhere inside the string. Make sure to only get those
+            <p>That is the number of records that have 'NW' anywhere inside the string. Make sure to only get those
               that end with 'NW'</p>
           </feedback>
         </condition>

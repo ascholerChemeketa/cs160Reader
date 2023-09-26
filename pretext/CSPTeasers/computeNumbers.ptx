@@ -134,7 +134,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="[478.9248932488566, 478.9248932488566]">
+        <condition number="478.9248932488566">
           <feedback>
             <p>Correct!</p>
           </feedback>
