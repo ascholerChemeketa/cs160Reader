@@ -8,8 +8,8 @@
     </figure>
     <p>Here’s a program to compute the total price for the invoice:</p>
 
-    <listing  xml:id="cspnamenumbers_invoice1"> 
-    <program interactive="activecode" language="python">
+    <listing xml:id="cspnamenumbers_invoice1_listing"> 
+    <program interactive="activecode" language="python" xml:id="cspnamenumbers_invoice1">
         <input>
 quantity1 = 2
 unitPrice1 = 7.56
@@ -203,17 +203,18 @@ print(totalCost)
             <p>Create variables to hold each value. Calculate <c>numPaperclips</c> as <c>budget / costPerClip</c>. Be sure to print the result.</p>
             <p>
                 There is a hint available below. It doesn't give the full answer, you will have to replace all of the <c>???</c>'s in it with different values.
-            </p>
+          </p><p>
+            <hint><pre>
+    # 1. DECLARE VARIABLES AND ASSIGN VALUES
+    costPerClip = ???
+    budget = ???
+    # 2. CALCULATE RESULT
+    numPaperclips = ??? / ???
+    # 3. PRINT RESULT
+    print(???)</pre>
+                </hint>
+              </p>
         </statement>
-        <hint><pre>
-# 1. DECLARE VARIABLES AND ASSIGN VALUES
-costPerClip = ???
-budget = ???
-# 2. CALCULATE RESULT
-numPaperclips = ??? / ???
-# 3. PRINT RESULT
-print(???)</pre>
-            </hint>
             
         <program xml:id="cspnamenumbers_invoice7" interactive="activecode" language="python">
             <input>
