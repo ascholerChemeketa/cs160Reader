@@ -53,8 +53,8 @@
         </setup>
     </exercise>
 
-    <listing xml:id="cspnamenumbers_orderofoperations2">
-        <program interactive="activecode" language="python">
+    <listing xml:id="cspnamenumbers_orderofoperations2_listing">
+        <program interactive="activecode" language="python" xml:id="cspnamenumbers_orderofoperations2">
             <input>
     result = 4 ** 2 + -1 * 3
     print(result)
@@ -87,8 +87,8 @@
         </setup>
     </exercise>
 
-    <listing xml:id="cspnamenumbers_orderofoperations4">
-    <program interactive="activecode" language="python">
+    <listing xml:id="cspnamenumbers_orderofoperations4_listing">
+    <program interactive="activecode" language="python" xml:id="cspnamenumbers_orderofoperations4">
         <input>
 result = 4 ** (2 + -1) * -3
 print(result)

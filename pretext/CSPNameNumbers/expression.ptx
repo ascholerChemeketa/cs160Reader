@@ -5,9 +5,9 @@
         be a value. It can be <em>an arithmetic expression</em>, like <c>2 * 2</c>. The expression will be evaluated and the
         result from the expression will be stored in the variable.</p>
 
-    <listing xml:id="csp-name-numbers_expression2" >
+    <listing xml:id="csp-name-numbers_expression2_listing1" >
         <caption>Code to do a simple calculation</caption>
-        <program interactive="activecode" language="python">
+        <program xml:id="csp-name-numbers_expression2" interactive="activecode" language="python">
             <input>
         result = 2 * 2 + 1
         print(result)
@@ -18,7 +18,7 @@
 
     <exercise label="cspnamenumbers_expression1">
         <statement>
-            <p>What is printed when you run <xref ref="csp-name-numbers_expression2" />? <var />
+            <p>What is printed when you run <xref ref="csp-name-numbers_expression2_listing1" />? <var />
             </p>
         </statement>
         <setup>
@@ -41,8 +41,8 @@
         <p>You can use all the standard mathematical operations, you just have to know the right symbols to use: <c>/</c>
             means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.</p>
 
-        <listing xml:id="cspnamenumbers_expression4" >
-            <program interactive="activecode" language="python">
+        <listing xml:id="cspnamenumbers_expression4_listing" >
+            <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression4">
                 <input>
     result = 1 / 3
     print(result)
@@ -52,7 +52,7 @@
 
         <exercise label="cspnamenumbers_expression3">
             <statement>
-                <p>What is printed when you run <xref ref="cspnamenumbers_expression4"/> <var />
+                <p>What is printed when you run <xref ref="cspnamenumbers_expression4_listing"/> <var />
                 </p>
             </statement>
             <setup>
@@ -90,8 +90,8 @@
             sample below. The first is done using normal (decimal) division. The second is from doing integer division:</p>
 
         
-    <listing xml:id="cspnamenumbers_expression5">
-        <program  interactive="activecode" language="python">
+    <listing xml:id="cspnamenumbers_expression5_listing">
+        <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression5">
             <input>
 result1 = 37 / 3
 print(result1)
@@ -118,8 +118,8 @@ print(result2)
             <image source="CSPNameNumbers/Figures/mod-py.png" width="30%" />
         </figure>
 
-        <listing xml:id="cspnamenumbers_expression7">
-            <program  interactive="activecode" language="python">
+        <listing xml:id="cspnamenumbers_expression7_listing">
+            <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression7">
                 <input>
     x = 11 % 3
     print(x)
@@ -128,7 +128,7 @@ print(result2)
             </listing>
         <exercise label="cspnamenumbers_expression6">
             <statement>
-                <p>What is printed when you run <xref ref="cspnamenumbers_expression7"/> <var />
+                <p>What is printed when you run <xref ref="cspnamenumbers_expression7_listing"/> <var />
                 </p>
             </statement>
             <setup>
