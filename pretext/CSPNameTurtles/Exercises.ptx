@@ -3,7 +3,7 @@
 
   <exercise label="cspnameturtles_exercises1">
     <statement>
-      <p>There are 3 syntax errors in the following code. Fix it to work correctly without errors.</p>
+      <p>There are 2 syntax errors in the following code. Fix it to work correctly without errors.</p>
 
     </statement>
     <program xml:id="cspnameturtles_exercises1_editor" interactive="activecode" language="python">

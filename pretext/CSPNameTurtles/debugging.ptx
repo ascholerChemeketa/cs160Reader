@@ -104,7 +104,7 @@ alex.forward(150)        # This is the last active line of code
 #alex.left(90)
         </input>
     </program>
-    <p>The following example has 3 errors. Can you fix the errors so that the code runs correctly to
+    <p>The following example has 2 errors. Can you fix the errors so that the code runs correctly to
       print a capital L? You may want to start by commenting out all the lines and then turn them
       back on one by one like we did in the last exercise.</p>
 
@@ -118,15 +118,8 @@ alisha.left(90)         # turn to face east
 alisha.Forward(75)      # move forward by 75 units
         </input>
     </program>
-    <p>The following example has 4 errors. Can you fix the errors so that the code runs correctly to
+    <p>The following example has multiple errors. Can you fix the errors so that the code runs correctly to
       print a capital C?</p>
-    <danger>
-      <p>One of the errors in this one is tricky. It won’t cause an immediate problem, but will
-        cause future lines to misbehave. Errors like this are especially hard to debug. If a line of
-        code is not doing its job, and you are 100% certain it is right, you may have to re-examine
-        earlier lines of code that you thought were correct.</p>
-    </danger>
-
     <program xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
       <input>
 from turtle Import *    # use the turtle library
