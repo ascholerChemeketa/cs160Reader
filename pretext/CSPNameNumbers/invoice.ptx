@@ -198,7 +198,7 @@ print(totalCost)
         </choices>
 
     </exercise>
-    <exercise>
+    <exercise label="cspnamenumbers_invoice7">
         <statement><p>Write the code to calculate and print how many paperclips you can buy if each paperclip is $0.05 and you have $4.00 in your pocket. It should print 80.</p>
             <p>Create variables to hold each value. Calculate <c>numPaperclips</c> as <c>budget / costPerClip</c>. Be sure to print the result.</p>
             <p>
@@ -216,7 +216,7 @@ print(totalCost)
               </p>
         </statement>
             
-        <program xml:id="cspnamenumbers_invoice7" interactive="activecode" language="python">
+        <program xml:id="cspnamenumbers_invoice7_ed" interactive="activecode" language="python">
             <input>
 
 

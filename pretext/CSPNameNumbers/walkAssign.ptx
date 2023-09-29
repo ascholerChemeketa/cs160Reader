@@ -219,9 +219,9 @@ print(numDays2)
     </blocks>
   </exercise>
 
-  <exercise>
+  <exercise label="cspnamenumbers_walkassign8">
     <statement>
-      <p> 10 people went to a restaurant for dinner. Each guest ate 1 appetizer and 1 entree. The
+      <p>10 people went to a restaurant for dinner. Each guest ate 1 appetizer and 1 entree. The
         whole party shared 1 dessert. Write the code to calculate and print the total <c>bill</c> if
         each appetizer costs $2.00, each entree costs $9.89, and dessert costs $7.99. It should
         print 126.89. Create variables to hold each value. Calculate <c>bill</c> as <c>(appetizer + entree) * numPeople + dessert</c>. Be sure to

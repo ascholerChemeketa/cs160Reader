@@ -5,11 +5,11 @@
   <note>
     <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
   </note>
-  <exercise>
+  <exercise xml:id="csp-name-procedures_practice-write-a-procedure_1">
     <statement>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the
       length to make each side. (A pentagon has five sides and five corners - each turn will need to
       be 72 degrees).</statement>
-    <program interactive="activecode" language="python">
+    <program interactive="activecode" language="python" xml:id="csp-name-procedures_practice-write-a-procedure_1_ed">
       <input>
 #WRITE YOUR PROCEDURE HERE
 

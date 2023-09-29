@@ -237,10 +237,10 @@ print("Mali" + " is " + str(Mali))
       </block>
     </blocks>
   </exercise>
-  <exercise xml:id="cspnamestrings_madlib_final_ex" >
+  <exercise xml:id="cspnamestrings_madlib8" >
     <statement>Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the story still works if
       you change the values of the variables!</statement>
-    <program interactive="activecode" xml:id="cspnamestrings_madlib8" language="python">
+    <program interactive="activecode" xml:id="cspnamestrings_madlib8_ed" language="python">
       <input>
 name = "Jesse"
 month = "October"
@@ -248,7 +248,7 @@ place = "Portland"
 activity = "sailing"
       </input>
     </program>
-    <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib9" language="python">
+    <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib8_answer" language="python">
         <input>
 name = "Maria"
 month = "October"
