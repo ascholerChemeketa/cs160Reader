@@ -33,7 +33,7 @@
 
     <exercise label="cspnamenumbers_orderofoperations1">
         <statement>
-            <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations2" /> below? Try running the program to
+            <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations2_listing" /> below? Try running the program to
                 check yourself. <var />
             </p>
         </statement>
@@ -67,7 +67,7 @@
 
     <exercise label="cspnamenumbers_orderofoperations3">
         <statement>
-            <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations4"/> below? Try evaluating it by hand before
+            <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations4_listing"/> below? Try evaluating it by hand before
                 running the program to check yourself. <var />
             </p>
         </statement>

@@ -26,7 +26,7 @@ print(invoiceTotal)
     <exercise label="cspnamenumbers_invoice2">
         <statement>
 
-            <p>How many variables are in <xref ref="cspnamenumbers_invoice1"/>?</p>
+            <p>How many variables are in <xref ref="cspnamenumbers_invoice1_listing"/>?</p>
 
         </statement>
         <choices>
