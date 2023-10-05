@@ -121,6 +121,20 @@
 }
 
 
+/* ------------------------------------------------------ */
+/* FIXME upstream */
+/* fix assignment page rendering of mc */
+.runestone-sphinx label > .para {
+  display: inline;
+}
+
+/* hide disabled compare me buttons */
+button[name="compare"][disabled] {
+  display: none;
+}
+/* ------------------------------------------------------ */
+
+
 :root {
   --ccgreen: rgb(64, 71, 20);
   --cclightgreen: hsl(68 56% 35% / 1);

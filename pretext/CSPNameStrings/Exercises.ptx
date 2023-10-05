@@ -3,7 +3,9 @@
 
   <exercise label="cspnamestrings_exercises1">
     <statement>
-      <p>There are 3 syntax errors in the following code. Fix it to print correctly without errors. It will print,
+      <p>There are 2 syntax errors (errors that prevent the code from running) in the following code. 
+        There is also a missing space in one of the strings that will be printed.
+        Fix the code so that it prints exactly this:
         <q>Your name is Carly and your favorite color is red.</q>.</p>
 
     </statement>

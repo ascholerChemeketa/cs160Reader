@@ -61,7 +61,7 @@ print(fullName)
         </p>
 
         <p>The string inside of the paranteheses (<em><q>What is your first
-            name?</q></em>) is called a <term>paramter</term>. It tells the function how to do its job. In this case,
+            name?</q></em>) is called a <term>parameter</term>. It tells the function how to do its job. In this case,
             it tells <c>input</c> what to print to prompt the user of the program to type something.</p>
         <p>When the function is done getting the input from the user, it <term>returns</term> the string containing
             whatever the user types. When the function <term>returns</term> a value, the function is essentially

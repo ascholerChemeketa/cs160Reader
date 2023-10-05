@@ -28,7 +28,7 @@ print(betterStill)
         alt="a string with the position (index) shown above each character" />
     </figure>
     <p>A <term>slice</term> is a way to get part of a string. One way to use a <term>slice</term> is
-      to do <title_reference> stringName[num]`</title_reference>. This will return a new string with
+      to do <c>stringName[num]</c>. This will return a new string with
       just the character at that position in the string.</p>
 
     <program xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">

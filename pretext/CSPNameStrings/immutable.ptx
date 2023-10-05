@@ -27,7 +27,7 @@ print(sentence)
         </input>
   </program>
   <p>We can reassign a variable to hold the result of calling a function on a string. On line 3 of
-    the example below, we make the new value of <c>sentence</c> be the result of changing the old value of <c>sentance</c>
+    the example below, we make the new value of <c>sentence</c> be the result of changing the old value of <c>sentence</c>
     after it was changed to lowercase.</p>
 
   <program xml:id="cspnamestrings_immutable3" interactive="activecode" language="python">

@@ -26,11 +26,6 @@ gallons = distance / mpg
 
     <p>Now, if we know the average cost of a gallon of gas, we can figure out the cost
         of the trip from Chicago to Dallas in your car.</p>
-    <warning>
-        <p>Notice that in the code below that we are using <term>camel case</term> variable names like <c>costPerGallon</c> and <c>costTrip</c>.
-            When using this style, you have to be careful about capitalization - <c>costperGallon</c> is a different name than <c>costPerGallon</c>.
-            Try changing just the first copy of <c>costPerGallon</c> below to <c>costpergallon</c> and then run the code to see what happens.</p>
-    </warning>
 
     <program interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-2">
         <input>
@@ -69,6 +64,13 @@ print(costTrip)
 print("Cost to get from Chicago to Dallas", costTrip)
         </input>
     </program>
+
+    <warning>
+        <p>Notice that in the code above we are using <term>camel case</term> variable names like <c>costPerGallon</c> and <c>costTrip</c>.
+            When using this style, you have to be careful about capitalization - <c>costperGallon</c> is a different name than <c>costPerGallon</c>.
+            Try changing just the first copy of <c>costPerGallon</c> below to <c>costpergallon</c> and then run the code to see what happens.</p>
+    </warning>
+
     <p>Try editing the program above and running it to answer the questions below:</p>
 
     <exercise label="cspnamenumbers_driving4">
