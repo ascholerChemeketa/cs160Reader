@@ -9,7 +9,7 @@
     its parameters and calculates the length of the hypotenuse (long side). The final value that it computes - <c>sideC</c>
     is what gets returned.</p>
 
-  <program xml:id="cspnamefunctions_definingfunctionshow1" interactive="activecode" language="python">
+  <program xml:id="cspnamefunctions_definingfunctionshow1" language="python">
     <input>
 def hypotenuse_length(sideA, sideB):
     # sideA and sideB are our inputs
@@ -19,8 +19,9 @@ def hypotenuse_length(sideA, sideB):
     return sideC                                 # we return it
         </input>
   </program>
-  <p>Of course, running it right now does nothing. Just like a procedure definition, a function definition does not
-    cause anything to happen on its own. It is only the instructions for what to do when someone calls <c>hypotenuse_length</c>. So
+  <p>Running just that code would not do anything. Just like a procedure definition, a function definition does not
+    cause anything to happen on its own. The definition only provides the instructions for what to do when we 
+    make a <term>call</term> to the function. So
     let’s add a call to the function. This working program asks for the lengths of two sides from the user and
     then uses those two values <c>a</c> and <c>b</c> to call <c>hypotenuse_length</c>.</p>
 

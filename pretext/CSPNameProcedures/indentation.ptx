@@ -3,7 +3,7 @@
   <p>A function or procedure must be defined before you call it. So, like on the previous page, we will typically first
     define our procedures and then write the main part of our program. Remember that a function definition tells Python <term>
     how</term> to do a job. The program will not actually do the job until it is told to do so with a procedure call.</p>
-  <p>Try running the program below.</p>
+  <p>The program below does not work. Try running it to see what error message is produced.</p>
 
   <program xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
     <input>
@@ -21,8 +21,8 @@ def hop(turtleName):
     turtleName.pendown()
         </input>
   </program>
-  <p>You will get an error because <c>hop</c> is undefined when we reach it on line 6. Python has not been told yet how to
-    hop. Fix the program by moving the definition code (including the body) up above the main part of the program.</p>
+  <p>It produces an error message saying <c>name 'hop' is not defined on line 5</c>. Python has not been told yet how to
+    hop. Fix the program by moving the definition code (currently lines 8-12) up above the main part of the program.</p>
   <subsection xml:id="csp-name-procedures_indentation">
     <title>Indentation</title>
     <p>Indentation shows Python (and humans) what code is contained inside other code. The instructions that make up the

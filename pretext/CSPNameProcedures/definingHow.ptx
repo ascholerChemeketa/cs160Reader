@@ -41,7 +41,7 @@ def ProcedureName(Input1, Input2, Input3, ...):
     </ul>
   </p>
   <p>Here is a definition for the <c>square</c> procedure we tried to use on the last page. The square procedure takes one
-    input (called <c>turtleName</c>). It has 8 instructions in its body. Try running this code sample:</p>
+    input (called <c>turtleName</c>). It has 8 instructions in its body. Try running this code sample and then keep reading:</p>
 
   <program xml:id="cspnameprocedures_defininghow1"
     interactive="activecode" language="python">
@@ -57,15 +57,15 @@ def square(turtleName):
     turtleName.right(90)
         </input>
   </program>
-  <p>If you are wondering why the <em>Run</em> button didn’t seem to do anything, all that the program did was
-    define the procedure <c>square</c> which takes a <c>turtleName</c> as input. The code never actually told Python to actually do the
+  <p>Why didn't the <em>Run</em> button do anything? It is because the program
+    defined the procedure <c>square</c>, but it never actually told Python to do the
     square procedure!</p>
   <warning>
-    <p>Remember - defining a procedure or function tells Python <term>HOW</term> to do a particular job. It does NOT
-      tell Python to actually do the job. To <term> do</term> the procedure or function, we must call the it.</p>
+    <p>Defining a procedure or function tells Python <term>HOW</term> to do a particular job. It does NOT
+      tell Python to do the job. To <term> do</term> the procedure or function, we must <term>call</term> it.</p>
   </warning>
 
-  <p>We call a procedure by using its name and then giving it the right number of
+  <p>We <term>call</term> a procedure by using its name and then giving it the right number of
     inputs. Our <c>square</c> function requires one input - the name of the turtle that should make a square - so when we call <c>sqaure</c>
     we must provide the name of a turtle.</p>
   <p>This code sample defines our function, creates a turtle, and then calls the square function and gives it our turtle

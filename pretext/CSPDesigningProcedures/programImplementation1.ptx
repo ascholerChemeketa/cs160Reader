@@ -50,10 +50,8 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
   <p>See if you can fix the <c>rectangle</c> code. You might want to comment out or remove the line that says <c>rectangle(steve, 50, 50)</c> so you can
     focus just on the case that is causing problems - the 10x100 rectangle. If you get stuck, you can peek ahead at the
     next page. (Hint: you should need to change two lines.)</p>
-  <raw format="html" xml:space="preserve">            &lt;h2 &gt;
-               Discussion
-            &lt;/h2&gt;
-            </raw>
+  <subsection xml:id="csp-designing-procedures_program-implementation-1-discussion">
+    <title>Implementation Discussion</title>
   <p>Once you fix my bug, the procedure works just fine. But we could improve it. Here are some ideas that would arguably
     make it better:</p>
   <p>
@@ -74,5 +72,8 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
 
   <p>Designing good code is often a balancing act. There is never one right design for a complex problem. But some designs are better and some 
     designs are worse. We seek designs that are the best possible combination of flexible, simple, and robust.</p>
+    
+    
+  </subsection>
 </section>
 

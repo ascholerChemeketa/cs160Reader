@@ -22,9 +22,9 @@ def triangleArea(x1, y1, x2, y2, x3, y3):
     <blocks>
       <block order="6">
         <cline>def distance(x1, y1, x2, y2):</cline>
-        <cline> xDifference = x2 - x1</cline>
-        <cline> yDifference = y2 - y1</cline>
-        <cline> distance = math.sqrt( xDifference ** 2 + yDifference ** 2 )</cline>
+        <cline> xChange = x2 - x1</cline>
+        <cline> yChange = y2 - y1</cline>
+        <cline> distance = math.sqrt( xChange ** 2 + yChange ** 2 )</cline>
         <cline> return distance</cline>
       </block>
       <block order="7">

@@ -65,7 +65,7 @@ malik.right(90)
   <p>Now compare that program to this one.</p>
 
   <program xml:id="cspnameprocedures_definingwhy2"
-    interactive="activecode" language="python">
+     language="python">
     <input>
 from turtle import *
 yessenia = Turtle()
@@ -84,8 +84,6 @@ yessenia.forward(20)
     copy/pasting) to make this program. And, you could modify this program to draw a fourth square without even
     understanding how the squares are drawn - <c>square</c> is an abstraction that lets you draw a square without worrying
     about how that task is accomplished.</p>
-  <p>However, this new program doesn’t work yet. Try running it if you have not already. You will get an error
-    message that <em><q>'square' is not defined on line 5</q></em>. Python has no idea what is meant
-    by <c>square</c>. Before we can run this code, we need to <term>define</term> how the <c>square</c> procedure works.</p>
+
 </section>
 
