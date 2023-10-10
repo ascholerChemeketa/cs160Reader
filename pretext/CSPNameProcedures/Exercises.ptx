@@ -187,7 +187,7 @@
             def testOne(self):
                 self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*100\s*\)"), 2, "Testing that you told turtleName to move forward 100 twice (for the height).")
                 self.assertEqual(self.countCopies("\s{4}turtleName.forward\(\s*width\s*\)"), 2, "Testing that you turtleName to move forward the right width twice.")
-                self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(\90\)"), 4, "Testing that told turtleName to use four turns.")
+                self.assertEqual(self.countCopies("\s{4}\w+\.(right|left)\(90\)"), 4, "Testing that told turtleName to do four 90 degree turns.")
                 self.assertEqual(self.countCopies("\s{4}turtleName.color\s*\(\s*colorValue\s*\)"), 1, "Testing that you told turtleName to use color colorValue.")
                 self.assertEqual(self.countCopies("\s{4}turtleName.pendown\("), 1, "Testing that you told turtleName to put down the pen.")
                 self.assertEqual(self.countCopies("\s{4}turtleName.penup\("), 1, "Testing that you told turtleName to pick up the pen.")
