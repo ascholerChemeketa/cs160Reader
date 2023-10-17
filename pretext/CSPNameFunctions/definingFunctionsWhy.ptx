@@ -111,17 +111,21 @@ hypotenuse1 = math.sqrt(aSquared + bSquared)
   <exercise label="cspnamefunctions_definingfunctionswhy3">
     <statement>
       <p>We want to calculate the hypotenuse of a triangle with legs of 8 and 15 and then print out the result. Write
-        the line of code that would go in the ______________ to use the <c>hypotenuse_length</c> function defined above to do the math. <var />
+        the line of code that would go in the ______________ to use the <c>hypotenuse_length</c> function defined above to do the math.
       </p>
-    </statement>
-    <setup>
-      <var>
+      <p>
         <program language="python">
           <input>
 ______________
 print(answer)
 </input>
         </program>
+      </p>
+      <p> <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
         <condition string="^\s*answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$">
           <feedback>
             <p>Correct!</p>
