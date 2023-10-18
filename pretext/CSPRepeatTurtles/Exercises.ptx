@@ -160,16 +160,20 @@
   <exercise label="csprepeatturtles_exercises5">
     <statement>
       <p>Write the correct recipe to fill in the ____________ in the code below to generate the pattern 5, 25, 45,
-        <ellipsis/> 105. Use the smallest possible value for your stopValue. <var />
+        <ellipsis/> 105. Use the smallest possible value for your stopValue.
+      </p>
+      <p>
+        <c>range(____________)</c>
+      </p>
+      <p>Just write what would replace the blank below. (Don’t include <q>range</q> or the parentheses in
+        your answer; do include commas).
+      </p>
+      <p>
+        <var />
       </p>
     </statement>
     <setup>
       <var>
-        <p>Just write what would replace the blank below. (Don’t include <q>range</q> or the parentheses in
-          your answer; do include commas).</p>
-        <p>
-          <c>range(____________)</c>
-        </p>
         <condition string="^\s*^\s*5\s*,\s*106\s*,\s*20\s*$\s*$">
           <feedback>
             <p>Correct!</p>
