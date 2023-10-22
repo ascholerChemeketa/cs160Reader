@@ -170,9 +170,9 @@ for size in range(5, 60, 2):
           <choice>
             <cline>for x in range(0, 195, 5): </cline>
           </choice>
-        </block>
-        <block order="4">
-          <cline>for x in range(0, 205, 5): </cline>
+          <choice>
+            <cline>for x in range(0, 205, 5): </cline>
+          </choice>
         </block>
         <block order="1">
           <choice correct="yes">
@@ -181,9 +181,9 @@ for size in range(5, 60, 2):
           <choice>
             <cline> nikea.forward(size) </cline>
           </choice>
-        </block>
-        <block order="10">
-          <cline> nikea.forward(195) </cline>
+          <choice>
+            <cline> nikea.forward(195) </cline>
+          </choice>
         </block>
         <block order="6">
           <choice correct="yes">
@@ -192,9 +192,9 @@ for size in range(5, 60, 2):
           <choice>
             <cline> nikea.right(x) </cline>
           </choice>
-        </block>
-        <block order="3">
-          <cline> nikea.right(size) </cline>
+          <choice>
+            <cline> nikea.right(size) </cline>
+          </choice>
         </block>
       </blocks>
     </exercise>
