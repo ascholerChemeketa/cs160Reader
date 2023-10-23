@@ -217,8 +217,8 @@
             def testOne(self):
                 testPixel = img.getPixel(3, 40)
                 testPixel2 = img.getPixel(3, 42)
-                self.assertEqual(testPixel.getRed(), 129, "Testing you set right red value for a particular pixel")
-                self.assertEqual(testPixel2.getRed(), 132, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel.getRed(), 255, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel2.getRed(), 255, "Testing you set right red value for a particular pixel")
 
         myTests().main()
       </tests>
