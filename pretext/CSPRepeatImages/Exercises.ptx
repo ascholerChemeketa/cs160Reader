@@ -260,16 +260,15 @@
         class myTests(TestCaseGui):
             def testOne(self):
                 testPixel = img.getPixel(3, 40)
-                testPixel2 = img.getPixel(3, 42)
-                self.assertEqual(testPixel.getRed(), 129, "Testing you set right red value for a particular pixel")
-                self.assertEqual(testPixel2.getRed(), 132, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel.getRed(), 71, "Testing you set right red value for a particular pixel")
+                self.assertEqual(testPixel.getGreen(), 103, "Testing you set right green value for a particular pixel")
+                self.assertEqual(testPixel.getBlue(), 158, "Testing you set right blue value for a particular pixel")
 
         myTests().main()
       </tests>
     </program>
   </exercise>
-
-
+  
   <exercise label="csprepeatimages_exercises7">
     <statement>
       <p>Write code that for each pixel, adds the <c>y</c> value of its location to its red color.</p>
