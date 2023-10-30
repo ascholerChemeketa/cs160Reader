@@ -65,7 +65,36 @@
         stop looping once the object reaches the ground (height 0) and then print out the final number of seconds.</p>
       <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
     </statement>
-    <blocks />
+    <blocks>
+      <block order="6">
+        <cline>initial_height = 1000</cline>
+        <cline>current_height = initial_height</cline>
+        <cline>time = 0</cline>
+      </block>
+      <block order="2">
+        <choice correct="yes">
+          <cline>while current_height > 0:</cline>
+        </choice>
+        <choice>
+          <cline>while current_height == 0:</cline>
+        </choice>
+      </block>
+      <block order="3">
+        <cline> print("After", time, "seconds")</cline>
+        <cline> print("height is", current_height)</cline>
+      </block>
+      <block order="2">
+        <cline> time = time + 1</cline>
+      </block>
+      <block order="5">
+        <cline> # height = starting - 16.87*t^2</cline>
+        <cline> current_height = initial_height - 16.87 * (time ** 2)</cline>
+      </block>
+      <block order="4">
+        <cline>print("After", time, "seconds)</cline>
+        <cline>print("the object is on the ground")</cline>
+      </block>
+    </blocks>
   </exercise>
   <exercise label="csprepeatnumbers_exercises4">
     <statement>
