@@ -24,9 +24,7 @@
         <choice>
           <cline> randValue = random.randrange(1, 8) </cline>
         </choice>
-      </block>
-      <block order="1">
-        <choice correct="yes">
+        <choice>
           <cline> randValue = random.randrange(0, 8) </cline>
         </choice>
         <choice>
