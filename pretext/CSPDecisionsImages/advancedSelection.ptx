@@ -26,8 +26,6 @@
 
     <program xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
         <input>
-from image import *
-
 def isRed(r, g, b):
     if r &gt;= g + 20 and r &gt;= b + 20:
         return True
@@ -93,13 +91,13 @@ for p in pixels:
     # IS IT RED?
     if isRed(r, g, b):
 
-        # CREATE THE COLOR
-        # Pixel takes the "red" value first and "blue" last.
-        # This swaps the red and blue values
-        newPixel = Pixel(b, g, r)
+        # CHANGE THE COLOR
+        # Swap the red and blue values of the pixel
+        p.setRed(b)
+        p.setBlue(r)
 
         # CHANGE THE IMAGE
-        img.setPixel(x, y, newPixel)
+        img.updatePixel(p)
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img.getWidth(),img.getHeight())

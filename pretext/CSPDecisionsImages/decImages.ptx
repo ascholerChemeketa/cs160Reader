@@ -33,31 +33,36 @@
     three values, but they will all be high, and they will all be very similar to each other. In
     comparison, a blue pixel is going to have a high blue value and low red and green (potentially 0
     for a <q>perfect</q> blue). A red pixel will have a high red value and low blue and green ones.</p>
-  <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not
-    always going to be the right number to use, it just represents a value that is pretty close to
-    maxed out without counting on all three colors being exactly 255.</p>
+  <p>So in general, to find a white pixel we could look for something where <c>red &gt; 250 and
+    green &gt; 250 and blue &gt; 250</c>. <c>250</c> is not always going to be the right number to
+    use, it just represents a value that is pretty close to maxed out without counting on all three
+    colors being exactly 255.</p>
   <p>All of the white pixels need to be changed to yellow. A yellow will always have a relatively
     high green and red value and a low blue value. A good value for the yellow in the flag is 254
     red, 242 green, and 0 blue.</p>
-  <p>Here is a program that does that. After running it, try removing the line that does the
-    `updatePixel` - if you run that version you should get the unmodified French flag.</p>
 
-  <program xml:id="cspdecisionsimages_decimages1" interactive="activecode" language="python">
-    <input>
-from image import *
+  <exercise xml:id="cspdecisionsimages_decimages1">
+    <statement>
+      <p>Here is a program that changes the French flag to the flag of Chad. After running it, try
+        removing the line that does the <c>updatePixel</c> - if you run that version you should get
+        the unmodified French flag.</p>
+    </statement>
+    <program xml:id="cspdecisionsimages_decimages1_editor" interactive="activecode" language="python">
+      <input>
+        from image import *
 
-img = Image("fr-flag.gif")
+        img = Image("fr-flag.gif")
 
-pixels = img.getPixels()
-for p in pixels:
+        pixels = img.getPixels()
+        for p in pixels:
 
-    # GET CURRENT COLOR VALUES
-    r = p.getRed()
-    g = p.getGreen()
-    b = p.getBlue()
+        # GET CURRENT COLOR VALUES
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
 
-    # IS IT WHITE?
-    if r &gt; 250 and g &gt; 250 and b &gt; 250:
+        # IS IT WHITE?
+        if r &gt; 250 and g &gt; 250 and b &gt; 250:
         # MAKE IT YELLOW
         p.setRed(254)
         p.setGreen(242)
@@ -66,58 +71,72 @@ for p in pixels:
         img.updatePixel(p)
 
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
+        # SHOW THE CHANGED IMAGE
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
       </input>
-  </program>
+    </program>
+  </exercise>
 
-  <p>The Belgian flag is very similar to the Chad flag. See if you can turn the Chad flag into the
-    Belgian one by turning the blue pixels into black ones. Hints: blue pixels are not perfect blue.
-    An approximate color value is (red = 0, green = 100, blue = 180), but you should not count on
-    pixels having exactly those values - come up with a recipe using <c>&gt;</c> and <c>&lt;</c> that
-    selects the blue pixels but not the yellow or red ones. Black pixels have r, g, and b values of
-    0.</p>
+  <exercise xml:id="cspdecisionsimages_decimages2">
+    <statement>
+      <p>The Belgian flag is very similar to the Chad flag.</p>
 
-  <image source="CSP/Images/be-flag.gif" width="20%" />
+      <sidebyside widths="20% 20%" margins="25%">
+        <figure>
+          <caption>Chadian flag</caption>
+          <image source="CSP/Images/cd-flag.gif" />
+        </figure>
+        <figure>
+          <caption>Belgian flag</caption>
+          <image source="CSP/Images/be-flag.gif" />
+        </figure>
+      </sidebyside>
 
-  <program xml:id="cspdecisionsimages_decimages2" interactive="activecode" language="python">
-    <input>
-from image import *
+      <p>See if you can turn the Chad flag into the Belgian one. Do so by turning the blue pixels
+        into black ones. Hints: blue pixels are not perfect blue. An approximate color value is (red
+        = 0, green = 100, blue = 180), but you should not count on pixels having exactly those
+        values - come up with a recipe using <c>&gt;</c> and <c>&lt;</c> that selects the blue
+        pixels but not the yellow or red ones. Black pixels have r, g, and b values of 0.</p>
+    </statement>
 
-img = Image("cd-flag.gif")
+    <program xml:id="cspdecisionsimages_decimages2_editor" interactive="activecode" language="python">
+      <input>
+        from image import *
 
-# LOOP THROUGH ALL PIXELS
-pixels = img.getPixels()
-for p in pixels:
-    # GET CURRENT COLOR VALUES
-    r = p.getRed()
-    g = p.getGreen()
-    b = p.getBlue()
+        img = Image("cd-flag.gif")
 
-    # TEST THE PIXEL 
+        # LOOP THROUGH ALL PIXELS
+        pixels = img.getPixels()
+        for p in pixels:
+        # GET CURRENT COLOR VALUES
+        r = p.getRed()
+        g = p.getGreen()
+        b = p.getBlue()
+
+        # TEST THE PIXEL
 
         #IF BLUE MAKE BLACK AND UPDATE
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
+        # SHOW THE CHANGED IMAGE
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
       </input>
-    <tests>
-from unittest.gui import TestCaseGui
+      <tests>
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
-    def testOne(self):
+        class myTests(TestCaseGui):
+        def testOne(self):
         p = img.getPixel(5, 5)
         totalColor = p.getRed() + p.getBlue() + p.getGreen()
         self.assertEqual(totalColor, 0, "Testing that blue pixels became black")
         p2 = img.getPixel(50, 5)
         totalColor = p2.getRed() + p2.getBlue() + p2.getGreen()
         self.assertNotEqual(totalColor, 0, "Testing that yellow pixels did not become black")
-        
-myTests().main()
-        </tests>
-  </program>
+        myTests().main()
+      </tests>
+    </program>
+  </exercise>
 
   <exercise label="cspdecisionsimages_decimages3">
     <statement>

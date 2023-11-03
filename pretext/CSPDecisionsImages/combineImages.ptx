@@ -1,9 +1,9 @@
 <section xml:id="csp-decisions-images_combining-pictures">
   <title>Combining Pictures</title>
-  <p>A common use of color replacement technology is <q>green scren</q> background replacement. An actor performs
-    in front of a green wall or a Zoom meeting participant sits in front of a green sheet. A computer algorithm then
-    looks for green pixels and replaces them with pixels from some other image. The result is that the person looks like
-    they are in some other location. (Unless of course, they have a green shirt on, in which case it will look like their
+  <p>A common use of color replacement technology is <q>green scren</q> background replacement. An actor performs in
+    front of a green wall or a Zoom meeting participant sits in front of a green sheet. A computer algorithm then looks
+    for green pixels and replaces them with pixels from some other image. The result is that the person looks like they
+    are in some other location. (Unless of course, they have a green shirt on, in which case it will look like their
     disembodied head is floating in the background.)</p>
 
   <p>We are going to put the woman shown below into the beach scene:</p>
@@ -31,8 +31,6 @@
     </statement>
     <program xml:id="cspdecisionsimages_combineimages1_editor" interactive="activecode" language="python">
       <input>
-        from image import *
-
         def isGreen(r, g, b):
             #Write your logic here
 
@@ -67,38 +65,43 @@
     the woman stored as <c>img1</c> and the beach as <c>img2</c>. It then goes through each pixel in <c>img1</c> and asks <c>isGreen</c>
     about it. If the answer is <c>true</c>, that pixel gets replaced with the pixel from <c>img2</c> that is at the same x, y.</p>
 
-  <program xml:id="cspdecisionsimages_combineimages2" interactive="activecode" language="python">
-    <input>
-from image import *
+  <exercise label="cspdecisionsimages_combineimages2">
+    <statement>
+      <p> Add your <c>isGreen</c> function to this program. </p>
+    </statement>
+    <program xml:id="cspdecisionsimages_combineimages2_edtior" interactive="activecode" language="python">
+      <input>
+  from image import *
 
-# PUT YOUR isGreen CODE HERE
+  # PUT YOUR isGreen CODE HERE
 
-# Main program
-# CREATE THE IMAGES
-img1 = Image("green_screen.jpg")
-img2 = Image("beach.jpg")
+  # Main program
+  # CREATE THE IMAGES
+  img1 = Image("green_screen.jpg")
+  img2 = Image("beach.jpg")
 
-# LOOP THROUGH ALL THE PIXELS IN IMG1
-pixels = img1.getPixels()
-for p1 in pixels:
-    x = p1.getX()
-    y = p1.getY()
-    r = p1.getRed()
-    g = p1.getGreen()
-    b = p1.getBlue()
+  # LOOP THROUGH ALL THE PIXELS IN IMG1
+  pixels = img1.getPixels()
+  for p1 in pixels:
+      x = p1.getX()
+      y = p1.getY()
+      r = p1.getRed()
+      g = p1.getGreen()
+      b = p1.getBlue()
 
-    # CHECK IF THE PIXEL IS GREEN
-    if isGreen(r, g, b):
+      # CHECK IF THE PIXEL IS GREEN
+      if isGreen(r, g, b):
 
-        # GET THE CORESPONDING PIXEL FROM img2, CALL IT p2
-        p2 = img2.getPixel(x, y)
-        # USE THAT INSTEAD OF p1 IN img1
-        img1.setPixel(x, y, p2)
+          # GET THE CORESPONDING PIXEL FROM img2, CALL IT p2
+          p2 = img2.getPixel(x, y)
+          # USE THAT INSTEAD OF p1 IN img1
+          img1.setPixel(x, y, p2)
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img1.getWidth(), img1.getHeight())
-img1.draw(win)
-  </input>
-  </program>
+  # SHOW THE CHANGED IMAGE
+  win = ImageWin(img1.getWidth(), img1.getHeight())
+  img1.draw(win)
+    </input>
+    </program>
+  </exercise>
 </section>
 

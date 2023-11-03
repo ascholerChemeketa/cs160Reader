@@ -1,16 +1,16 @@
 <section xml:id="csp-decisions-images_location-based-conditions">
-    <title>Location Based Conditions</title>
+  <title>Location Based Conditions</title>
 
-    <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
-        changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
-        
-    <exercise xml:id="cspdecisionsimages_locationconditions1">
-        <statement>
-            <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40
-                left and rightmost pixels to black. (Hint: The image is 200 pixels wide.) </p>
-        </statement>
-        <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
-            <input>
+  <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
+    changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
+
+  <exercise xml:id="cspdecisionsimages_locationconditions1">
+    <statement>
+      <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40 left
+        and rightmost pixels to black. (Hint: The image is 200 pixels wide.) </p>
+    </statement>
+    <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
+      <input>
 from image import *
 
 img = Image("cat.jpg")
@@ -36,13 +36,22 @@ for p in pixels:
 # SHOW THE RESULT
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
-    </input>
-            <tests> from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): p1 =
-                img.getPixel(38, 10) p2 = img.getPixel(177, 10) p3 = img.getPixel(55, 10) self.assertEqual(str(p1),
-                "[0,0,0]", "Test if 40 pixels on left are black") self.assertEqual(str(p2), "[0,0,0]", "Test if 40
-                pixels on right are black") self.assertEqual(str(p3), "[109,161,6]", "Test that pixels in the middle are
-                the same") myTests().main() </tests>
-        </program>
-    </exercise>
+</input>
+      <tests>
+from unittest.gui import TestCaseGui 
+
+class myTests(TestCaseGui): 
+    def testOne(self): 
+        p1 = img.getPixel(38, 10)
+        p2 = img.getPixel(177, 10)
+        p3 = img.getPixel(55, 10)
+        self.assertEqual(str(p1),"[0,0,0]", "Test if 40 pixels on left are black")
+        self.assertEqual(str(p2), "[0,0,0]", "Test if 40 pixels on right are black")
+        self.assertEqual(str(p3), "[109,161,6]", "Test that pixels in the middle are the same")
+
+myTests().main()
+        </tests>
+    </program>
+  </exercise>
 </section>
 
