@@ -49,20 +49,20 @@
     </statement>
     <program xml:id="cspdecisionsimages_decimages1_editor" interactive="activecode" language="python">
       <input>
-        from image import *
+from image import *
 
-        img = Image("fr-flag.gif")
+img = Image("fr-flag.gif")
 
-        pixels = img.getPixels()
-        for p in pixels:
+pixels = img.getPixels()
+for p in pixels:
 
-        # GET CURRENT COLOR VALUES
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+    # GET CURRENT COLOR VALUES
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-        # IS IT WHITE?
-        if r &gt; 250 and g &gt; 250 and b &gt; 250:
+    # IS IT WHITE?
+    if r &gt; 250 and g &gt; 250 and b &gt; 250:
         # MAKE IT YELLOW
         p.setRed(254)
         p.setGreen(242)
@@ -71,9 +71,9 @@
         img.updatePixel(p)
 
 
-        # SHOW THE CHANGED IMAGE
-        win = ImageWin(img.getWidth(),img.getHeight())
-        img.draw(win)
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
       </input>
     </program>
   </exercise>
@@ -102,38 +102,39 @@
 
     <program xml:id="cspdecisionsimages_decimages2_editor" interactive="activecode" language="python">
       <input>
-        from image import *
+from image import *
 
-        img = Image("cd-flag.gif")
+img = Image("cd-flag.gif")
 
-        # LOOP THROUGH ALL PIXELS
-        pixels = img.getPixels()
-        for p in pixels:
-        # GET CURRENT COLOR VALUES
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+# LOOP THROUGH ALL PIXELS
+pixels = img.getPixels()
+for p in pixels:
+    # GET CURRENT COLOR VALUES
+    r = p.getRed()
+    g = p.getGreen()
+    b = p.getBlue()
 
-        # TEST THE PIXEL
+    # TEST THE PIXEL
 
         #IF BLUE MAKE BLACK AND UPDATE
 
-        # SHOW THE CHANGED IMAGE
-        win = ImageWin(img.getWidth(),img.getHeight())
-        img.draw(win)
+# SHOW THE CHANGED IMAGE
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
       </input>
       <tests>
-        from unittest.gui import TestCaseGui
+from unittest.gui import TestCaseGui
 
-        class myTests(TestCaseGui):
-        def testOne(self):
+class myTests(TestCaseGui):
+    def testOne(self):
         p = img.getPixel(5, 5)
         totalColor = p.getRed() + p.getBlue() + p.getGreen()
         self.assertEqual(totalColor, 0, "Testing that blue pixels became black")
         p2 = img.getPixel(50, 5)
         totalColor = p2.getRed() + p2.getBlue() + p2.getGreen()
         self.assertNotEqual(totalColor, 0, "Testing that yellow pixels did not become black")
-        myTests().main()
+
+myTests().main()
       </tests>
     </program>
   </exercise>

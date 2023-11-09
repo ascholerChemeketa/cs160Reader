@@ -4,6 +4,9 @@
   <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
     changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
 
+    <datafile label="cat" filename="cat.jpg">
+      <image source="CSP/Images/cat.jpg" width="30%" />
+    </datafile>
   <exercise xml:id="cspdecisionsimages_locationconditions1">
     <statement>
       <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40 left
@@ -40,14 +43,26 @@ img.draw(win)
       <tests>
 from unittest.gui import TestCaseGui 
 
+#account for weirdness with datafile color values
+#return b if a is close to it, otherwise return a
+def nudge(a, b):
+    if abs(a.getBlue() - b.getBlue()) &lt; 3 and abs(a.getRed() - b.getRed()) &lt; 3 and abs(a.getGreen() - b.getGreen()) &lt; 3:
+        return b
+    return a
+
 class myTests(TestCaseGui): 
     def testOne(self): 
         p1 = img.getPixel(38, 10)
         p2 = img.getPixel(177, 10)
         p3 = img.getPixel(55, 10)
+        
+        targetPixel = Pixel(109,161,7)
+
+        p3 = nudge(p3, targetPixel)
+        
         self.assertEqual(str(p1),"[0,0,0]", "Test if 40 pixels on left are black")
         self.assertEqual(str(p2), "[0,0,0]", "Test if 40 pixels on right are black")
-        self.assertEqual(str(p3), "[109,161,6]", "Test that pixels in the middle are the same")
+        self.assertEqual(str(p3), "[109,161,7]", "Test that pixels in the middle are unmodified")
 
 myTests().main()
         </tests>
