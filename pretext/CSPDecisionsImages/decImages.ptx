@@ -114,9 +114,9 @@ for p in pixels:
     g = p.getGreen()
     b = p.getBlue()
 
-    # TEST THE PIXEL
+    # TEST IF PIXEL IS BLUE
 
-        #IF BLUE MAKE BLACK AND UPDATE
+        # IF SO, MAKE BLACK AND UPDATE
 
 # SHOW THE CHANGED IMAGE
 win = ImageWin(img.getWidth(),img.getHeight())
@@ -125,14 +125,24 @@ img.draw(win)
       <tests>
 from unittest.gui import TestCaseGui
 
+#account for weirdness with datafile color values
+#return b if a is close to it, otherwise return a
+def nudge(a, b):
+    if abs(a.getBlue() - b.getBlue()) &lt; 3 and abs(a.getRed() - b.getRed()) &lt; 3 and abs(a.getGreen() - b.getGreen()) &lt; 3:
+        return b
+    return a
+
 class myTests(TestCaseGui):
     def testOne(self):
         p = img.getPixel(5, 5)
-        totalColor = p.getRed() + p.getBlue() + p.getGreen()
-        self.assertEqual(totalColor, 0, "Testing that blue pixels became black")
+        targetPixel = Pixel(0,0,0)
+        p = nudge(p, targetPixel)
+
+        self.assertEqual(str(p), "[0,0,0]", "Testing that blue pixels became black")
         p2 = img.getPixel(50, 5)
-        totalColor = p2.getRed() + p2.getBlue() + p2.getGreen()
-        self.assertNotEqual(totalColor, 0, "Testing that yellow pixels did not become black")
+        targetPixel = Pixel(0,0,0)
+        p2 = nudge(p2, targetPixel)
+        self.assertNotEqual(str(p2), "[0,0,0]", "Testing that yellow pixels did not become black")
 
 myTests().main()
       </tests>
