@@ -45,18 +45,20 @@
   <exercise label="cspdecisionssimulations_exercises2" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The code below is supposed to <q>flip a coin</q> 100 times by making a random number that is 0 (heads)
-        or 1 (tails) and keep track of the longest streak of heads that we see. It will do so by first updating the <c>headsInARow</c>
-        counter (like the sample from <xref ref="csp-decisions-simulations_building-a-simulation" text="title" />). If the <c>headsInARow</c>
+        or 1 (tails) and keep track of the longest streak of heads that we see. For each repetition, we need to 
+        make a random number, then check to see if it is a <q>heads</q> (0). 
+        Then we will updatethe <c>headsInARow</c>
+        counter (like the sample from <xref ref="csp-decisions-simulations_building-a-simulation" text="title" />)
+        based on that result by adding one or resetting it to 0. 
+        If the <c>headsInARow</c>
         increased (but not if it was reset to 0), we will check and see if it is bigger than <c>longestStreak</c>. If so, we will
         update the <c>longestStreak</c> to match <c>headsInARow</c>. After all 100 flips are done we will print out the <c>longestStreak</c>.</p>
       <p>Move the correct blocks from the left to the right and indent them properly. You will use all of the blocks.
         Make sure to put <c>import random</c> first.</p>
     </statement>
     <blocks>
-      <block order="9">
-        <cline>import random</cline>
-      </block>
       <block order="8">
+        <cline>import random</cline>
         <cline>headsInARow = 0</cline>
         <cline>longestStreak = 0</cline>
       </block>
@@ -70,19 +72,19 @@
         <cline> if flip == 0: #got a heads</cline>
       </block>
       <block order="5">
-        <cline> headsInARow = headsInARow + 1</cline>
+        <cline>  headsInARow = headsInARow + 1</cline>
       </block>
       <block order="4">
-        <cline> if headsInARow &gt; longestStreak:</cline>
+        <cline>  if headsInARow &gt; longestStreak:</cline>
       </block>
       <block order="1">
-        <cline> longestStreak = headsInARow</cline>
+        <cline>   longestStreak = headsInARow</cline>
       </block>
       <block order="10">
         <cline> else: #got a tails</cline>
       </block>
       <block order="7">
-        <cline> headsInARow = 0</cline>
+        <cline>  headsInARow = 0</cline>
       </block>
       <block order="6">
         <cline>print(longestStreak)</cline>
