@@ -27,12 +27,12 @@
         </choice>
       </block>
       <block order="2">
-        <cline> p.getRed(0)</cline>
-        <cline> p.getGreen(250)</cline>
-        <cline> p.getBlue(250)</cline>
+        <cline>  p.setRed(0)</cline>
+        <cline>  p.setGreen(250)</cline>
+        <cline>  p.setBlue(250)</cline>
       </block>
       <block order="8">
-        <cline> img.updatePixel(p)</cline>
+        <cline>  img.updatePixel(p)</cline>
       </block>
       <block order="7">
         <cline>win = ImageWin(img.getWidth(),img.getHeight())</cline>
