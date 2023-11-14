@@ -43,8 +43,7 @@ print(product)
 
   <exercise label="cspcollectionsintro_listaccumulation3">
     <statement>
-      <p>What is the value of <c>number</c> at the end of the 3rd time through the loop? If you want, you can indent the <c>print</c>
-        statement so that it prints the product each time through the loop instead of just once at the end.</p>
+      <p>What is the value of <c>product</c> at the end of the 3rd time through the loop?</p>
     </statement>
     <choices>
 
@@ -68,16 +67,16 @@ print(product)
 
       <choice correct="yes">
         <statement>
-          <p>3</p>
+          <p>6</p>
         </statement>
         <feedback>
-          <p>That's the value the third time through the loop</p>
+          <p>Correct. That's the value the third time through the loop.</p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>4</p>
+          <p>24</p>
         </statement>
         <feedback>
           <p>That's the value the fourth time through the loop</p>
@@ -86,7 +85,7 @@ print(product)
 
       <choice>
         <statement>
-          <p>10</p>
+          <p>120</p>
         </statement>
         <feedback>
           <p>That's the value the last time through the loop</p>

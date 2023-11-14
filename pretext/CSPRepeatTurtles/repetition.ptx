@@ -123,7 +123,7 @@ print(sides)
       makes a list that has 6 values. When that list is used in a <c>for</c> statement, it will cause the code to repeat 6
       times. Each repetition is called an <term>iteration</term> and will repeat all of the code indented past the <c>for</c>
       .
-                <em>(To **iterate*</em> is to go through items one at a time.)*</p>
+      (To <term>iterate</term> is to go through items one at a time.)</p>
     <p>That just leaves the variable <term>side</term> in the for statement to explain:</p>
     <program language="python">
       <input>

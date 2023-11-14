@@ -23,37 +23,39 @@
         <p>
           <ol>
             <li>
-              <p>Make a variable called <c>cutPoint</c> and set it to a random value between 1 and the one less than the length
-                of the deck.</p>
+              <p><c>cutPoint</c> is set to a random location in the list of cards <c>deck</c>. 
+                Use it to make a slices which contains list items 0 up to (but not including) 
+                the <c>cutPoint</c>. Store it in a new variable <c>top</c> and then print out <c>top</c>. 
+                Run the program a few times to make sure that you are printing out a random 
+                amount of the list each time.
+                Tests 1-2 should now pass.</p>
             </li>
             <li>
-              <p>Print out <c>cutPoint</c>. Run your program several times and make sure it gives you values in the range
-                1-11. You can remove the print once you see this is working.</p>
-            </li>
-            <li>
-              <p>Once you are confident that you are picking a valid cut point, use it to make two slices: <c>top</c> which
-                contains list items 0 up to (but not including) the <c>cutPoint</c> and <c>bottom</c> that contains from <c>cutPoint</c> on.</p>
-            </li>
-            <li>
-              <p>Print out both halves. Again, run your program multiple times to make sure it works. You can remove the
-                prints once you see this is working.</p>
+              <p>
+                Now make a slice that starts at <c>cutPoint</c> and goes until the end. Store 
+                that slice as <c>bottom</c>. Print it out make sure it has the part of the list 
+                that top does not. Tests 3-4 should now pass.
+              </p>
             </li>
             <li>
               <p>Set <c>deck</c> to be <c>bottom</c> plus <c>top</c> and print what deck becomes. That should reverse the order of
-                the two halves. (Doing <c>+</c> will merge two lists into one big list.)</p>
+                the two halves. (Doing <c>+</c> will merge two lists into one big list.) Print <c>deck</c> to see that 
+                you did in fact cut the cards and swap the two halves.</p>
             </li>
           </ol>
         </p>
-        <note>Check here for a review of <xref ref="csp-decisions-simulations_random-numbers" text="custom">random numbers</xref>.</note>
-        <p>The checks for this program can’t verify it works because it is doing something random. They will just
+        <note><p>The checks for this program can’t verify it works because it is doing something random. They will just
           make sure you have some of the basic elements that are needed. Make sure to test your program until you are
           sure it is working. The checks do depend on you using the specified variable names in your code.</p>
-
+        </note>
+        
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle1_editor" interactive="activecode" language="python">
         <input>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+          deckLength = len(deck)
+          cutPoint = random.randrange(1,deckLength)
 
           # Your code here
         </input>
@@ -62,12 +64,11 @@
 
           class myTests(TestCaseGui):
               def testOne(self):
-                  self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
-                  self.assertRegex(self.getEditorText(), r"cutPoint.*=.*", "Testing that have cutPoint and initialize it")
                   self.assertRegex(self.getEditorText(), r"top.*=.*", 'Testing that you have a "top" variable')
-                  self.assertRegex(self.getEditorText(), r"deck\[\s*0\s*:\s*cutPoint\s*\]", 'Testing that make the "top" cut correctly')
+                  self.assertRegex(self.getEditorText(), r"deck\[\s*0\s*:\s*cutPoint\s*\]", 'Testing that make the "top" cut correctly using 0 and cutPoint')
                   self.assertRegex(self.getEditorText(), r"bottom.*=.*", 'Testing that you have a "bottom" variable')
-                  self.assertRegex(self.getEditorText(), r"deck\[\s*cutPoint\s*:.*\]", 'Testing that make the "bottom" cut')
+                  self.assertRegex(self.getEditorText(), r"deck\[\s*cutPoint\s*:.*\]", 'Testing that make the "bottom" cut correctly using cutPoint')
+                  self.assertRegex(self.getEditorText(), r"deck.*=.*bottom\s*\+\s*top\s*", 'Testing that deck gets set to bottom + top')
 
           myTests().main()
         </tests>
@@ -83,28 +84,25 @@
         <p>
           <ol>
             <li>
-              <p>Put your existing code in a loop that repeats the whole process 10 times.</p>
+              <p>Put your code in the loop below that repeats the whole process 10 times.</p>
             </li>
           </ol>
         </p>
 
       </statement>
+
       <program xml:id="cspcollectionscontinued_shuffle2_editor" interactive="activecode" language="python">
         <input>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-          # Your code here
+          for r in range(10):
+              deckLength = len(deck)
+              cutPoint = random.randrange(1,deckLength)
+              # your code here - indented to be in loop
+          
+          print(deck)
         </input>
-        <tests>
-          from unittest.gui import TestCaseGui
-
-          class myTests(TestCaseGui):
-              def testOne(self):
-                  self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range based loop.")
-
-          myTests().main()
-        </tests>
       </program>
     </exercise>
 
@@ -160,23 +158,21 @@
         <p>
           <ol>
             <li>
-              <p>Make a variable called <c>selectIndex</c> and set it to a random value between 0 and 2 less than the length of the
+              <p>The starter code makes <c>selectIndex</c> and sets it to a random value between 0 and 2 less than the length of the
                 deck. (Since the last card is length - 1 and we do not want to select it).</p>
             </li>
             <li>
-              <p>Print <c>selectIndex</c> and make sure it gives valid numbers each time you run the program.</p>
-            </li>
-            <li>
-              <p>Copy the card at that location of <c>selectIndex</c> to a variable <c>removed</c>. Then use the <c>.pop()</c> function to
+              <p>Copy the card at that location of <c>selectIndex</c> to a variable <c>removed</c>. Then use the <c>.pop(XXX)</c> function to
                 remove that item from the <c>deck</c>. Here is the section on <xref ref="csp-collections-intro_adding-and-removing-items" text="title"/>
                 if you need to review.</p>
             </li>
             <li>
-              <p>Print <c>removed</c> and <c>deck</c>. Make sure the card you <q>removed</q> is no longer in the deck.</p>
+              <p>Print <c>removed</c> and <c>deck</c>. Make sure the card you <q>removed</q> is no longer in the deck.
+              At this point the first 3 tests should pass.</p>
             </li>
             <li>
               <p>Append the removed card to the end of the deck. Print the deck and verify that one random card was
-                moved to the end.</p>
+                moved to the end. At this point the last test should pass.</p>
             </li>
           </ol>
         </p>
@@ -190,6 +186,8 @@
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
+          deckLength = len(deck)
+          selectIndex = random.randrange(0, deckLength - 1)
           # Your code here
         </input>
         <tests>
@@ -197,8 +195,6 @@
 
           class myTests(TestCaseGui):
               def testOne(self):
-                  self.assertRegex(self.getEditorText(), r"random.randrange\([^,]*,[^\)]*\)", "Testing that use random.randrange")
-                  self.assertRegex(self.getEditorText(), r"selectIndex.*=.*", "Testing that have selectIndex and initialize it")
                   self.assertRegex(self.getEditorText(), r"removed.*=.*", "Testing that have removed and initialize it")
                   self.assertRegex(self.getEditorText(), r"\[\s*selectIndex\s*\]", "Testing that you access item selectIndex from the deck")
                   self.assertRegex(self.getEditorText(), r"deck.pop\(\s*selectIndex\s*\)", 'Testing that you call remove on the deck and remove selectIndex')
@@ -217,7 +213,7 @@
         <p>
           <ol>
             <li>
-              <p>Put your existing code in a loop that repeats the whole process 10 times.</p>
+              <p>Put your existing code in the loop below that repeats the whole process 10 times.</p>
             </li>
           </ol>
         </p>
@@ -228,17 +224,13 @@
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-          # Your code here
+          for r in range(10):
+              deckLength = len(deck)
+              selectIndex = random.randrange(0, deckLength - 1)
+              # Your code here - indented to be in the loop
+              
+          print(deck)
         </input>
-        <tests>
-          from unittest.gui import TestCaseGui
-
-          class myTests(TestCaseGui):
-              def testOne(self):
-                  self.assertRegex(self.getEditorText(), r"for\s+.*\s+in\s+range", "Testing that you added a range-based loop.")
-
-          myTests().main()
-        </tests>
       </program>
     </exercise>
 

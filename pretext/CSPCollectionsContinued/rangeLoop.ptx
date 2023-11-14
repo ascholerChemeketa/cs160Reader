@@ -1,5 +1,6 @@
 <section xml:id="csp-collections-continued_iterating-with-indexes">
   <title>Iterating with Indexes</title>
+
   <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c> syntax. However, there are
     limitations to that approach. What if we want to iterate through only part of the list? What if we want to iterate
     through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can’t do any of
@@ -58,31 +59,6 @@ print(names)
     </input>
   </program>
 
-  <exercise label="cspcollectionscontinued_rangeloop4">
-    <statement>
-      <p>Write an indexed-based loop and use it to double each item in the list called <c>numbers</c>. You will need to get the
-        existing value, multiply it by two, and store that value back into the list.</p>
-
-    </statement>
-    <program xml:id="cspcollectionscontinued_rangeloop4_editor" interactive="activecode" language="python">
-      <input>
-        numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
-
-        # Your code here
-      </input>
-      <tests>
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-            def testOne(self):
-                self.assertEqual(numbers[0], 6, "Testing numbers[0]")
-                self.assertEqual(numbers[5], 10, "Testing numbers[5]")
-                self.assertEqual(numbers[9], 18, "Testing numbers[9]")
-
-        myTests().main()
-      </tests>
-    </program>
-  </exercise>
   <exercise label="cspcollectionscontinued_rangeloop5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should loop through all the items in <c>list</c>. Any negative values should be
@@ -111,15 +87,43 @@ print(names)
       </block>
       <block order="1">
         <choice correct="yes">
-          <cline> list[i] = 0</cline>
+          <cline>  list[i] = 0</cline>
         </choice>
         <choice>
-          <cline> i = 0 </cline>
+          <cline>  i = 0 </cline>
         </choice>
       </block>
       <block order="3">
         <cline>print(list)</cline>
       </block>
     </blocks>
+  </exercise>
+
+  <exercise label="cspcollectionscontinued_rangeloop4">
+    <statement>
+      <p>Write an indexed-based loop and use it to double each item in the list called <c>numbers</c>. You will need to get the
+        existing value, multiply it by two, and store that value back into the list.</p>
+
+    </statement>
+    <program xml:id="cspcollectionscontinued_rangeloop4_editor" interactive="activecode" language="python">
+      <input>
+        numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
+
+        # Your code here
+        # Loop through numbers using an index-based loop 
+        #  Change each to be double its old value
+      </input>
+      <tests>
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(numbers[0], 6, "Testing numbers[0]")
+                self.assertEqual(numbers[5], 10, "Testing numbers[5]")
+                self.assertEqual(numbers[9], 18, "Testing numbers[9]")
+
+        myTests().main()
+      </tests>
+    </program>
   </exercise>
 </section>

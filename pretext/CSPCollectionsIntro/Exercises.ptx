@@ -10,9 +10,9 @@
     <blocks>
       <block order="7">
         <cline>terms = ["accent", "vertigo",</cline>
-        <cline> "libra", "illusion"]</cline>
+        <cline>  "libra", "illusion"]</cline>
         <cline>vocab = ["hereditary", "illusion",</cline>
-        <cline> "vertigo", "velocity", "fallacy"]</cline>
+        <cline>  "vertigo", "velocity", "fallacy"]</cline>
         <cline>duplicates = 0</cline>
       </block>
       <block order="5">
@@ -25,19 +25,19 @@
         <cline> if word not in terms: </cline>
       </block>
       <block order="8">
-        <cline> vocab.append(word)</cline>
+        <cline>  vocab.append(word)</cline>
       </block>
       <block order="2" correct="no">
-        <cline> word.append(vocab) </cline>
+        <cline>  word.append(vocab) </cline>
       </block>
       <block order="6">
-        <cline> elif word in vocab:</cline>
+        <cline> else:</cline>
       </block>
       <block order="1">
-        <cline> duplicates = duplicates + 1</cline>
+        <cline>  duplicates = duplicates + 1</cline>
       </block>
       <block order="9" correct="no">
-        <cline> duplicates + 1 </cline>
+        <cline>  duplicates + 1 </cline>
       </block>
     </blocks>
   </exercise>
@@ -75,8 +75,8 @@
       <p>Write code for the function <c>getRange</c>. It should take a list of numbers and return the range (the maximum value
         minus the minimum value). If we have the list [10, 8, 13, 20, 15], the range would be calculated as 20 - 8 and
         would be 12.</p>
-      <p>Hint: First just worry about finding the maximum and minimum values. Once that is working, getting the range
-        will be easy.</p>
+      <p><em>Hint</em>: You have seen recipes for <q>find highest</q> and <q>find lowest</q>. You can either use both 
+      or combine them into one loop.</p>
       <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
       <p>Use codelens and print statements for debugging!</p>
 
@@ -84,8 +84,13 @@
     <program xml:id="cspcollectionsintro_exercises3_editor" interactive="activecode" language="python">
       <input>
         def getRange(numbers):
-            # your code here
-            # return the range
+            # Assume the first number is both the largest and smallest
+            max = numbers[0]
+            min = numbers[0]
+
+            # Your code here - check rest of numbers
+
+            return max - min
 
         print( "Should be 12:", getRange([10, 8, 13, 20, 15]) )
         print( "Should be 11:", getRange([6, -5, 4, 0]) )
@@ -142,19 +147,24 @@
     <statement>
       <p>Write code for the function <c>getGPA</c>. It should figure out the GPA for a list of <c>grades</c> that looks like
         [<q>A</q>, <q>A</q>, <q>C</q>].</p>
-      <p>To calculate the GPA, you need to add up the values of all the grades. An A is 4, a B is 3, a C is 2, a D is 1,
+      <p>To calculate the GPA, you need to add up the point value of all the grades. An A is 4, a B is 3, a C is 2, a D is 1,
         and an F is 0. Then divide by the number of grades in the list.</p>
-      <p>Hint: Work on part of the problem at a time. First write some if logic that just prints the correct value for
+      <p>Hint: First write some if logic that just prints the correct value for
         each grade (4, 4, 2 for [<q>A</q>, <q>A</q>, <q>C</q>]). Then worry about getting the total
-        of them. Once that is working, worry about dividing by the number of items.</p>
+        of them.</p>
       <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises5_editor" interactive="activecode" language="python">
       <input>
         def getGPA(grades):
-            # your code here
-            # return the final value
+            gradePoints = 0
+
+            # Your code here to calculate all the grade points
+            # Loop through grades and add correct value for each grade
+            
+            average = gradePoints / len(grades)
+            return average
 
         print( "Should be 3.75:", getGPA(["A", "A", "A", "B"]) )
         print( "Should be ~2.667:", getGPA(["B", "D", "A"]) )

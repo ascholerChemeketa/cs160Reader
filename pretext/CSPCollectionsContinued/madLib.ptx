@@ -48,7 +48,7 @@
     <statement>
       <p>Modify your program, so instead of printing each word, you print True or False depending on if it is ALL_CAPS.
         Do so by calling <c>isupper()</c> on each list item and printing out the result. Because each item in the list is a
-        string, you can call isupper on it by doing something like: <c>storyList[index].isupper()</c>. Your output will look like a long list of
+        string, you can call isupper on it by doing something like: <c>storyList[i].isupper()</c>. Your output will look like a long list of
         FALSE, FALSE, FALSE, TRUE, etc<ellipsis/></p>
 
     </statement>
@@ -75,8 +75,8 @@
 
   <exercise label="cspcollectionscontinued_madlib3">
     <statement>
-      <p>Modify your program to use the <c>storyList[index].isupper()</c> call in the condition of an if. If <c>isupper()</c> results in True, change
-        storyList[index] <c>"INPUT"</c>. (If <c>isupper()</c> results in False, no change is needed.)</p>
+      <p>Modify your program to use the <c>storyList[i].isupper()</c> call in the condition of an if. If <c>isupper()</c> results in True, change
+        storyList[index] to be <c>"INPUT"</c>. (If <c>isupper()</c> results in False, no change is needed.)</p>
       <p>If you get stuck changing the item, look back at the mixed-up code problem on the first page of this chapter.
         It uses an if statement to decide which items to change.</p>
 
@@ -84,6 +84,9 @@
     <program xml:id="cspcollectionscontinued_madlib3_editor" interactive="activecode" language="python">
       <input>
         # Your code here
+
+        # Show what storyList ended up as
+        print(storyList)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -106,8 +109,7 @@
 
   <exercise label="cspcollectionscontinued_madlib4">
     <statement>
-      <p>Modify your program so that instead of setting the all-caps items to <c>= "INPUT"</c>, you set them to <c>= input("Please enter " + storyList[index])</c>. You may
-        need to change <c>index</c> to <c>i</c> or something else to match the variable you are using in your loop.</p>
+      <p>Modify your program so that instead of setting the all-caps items to <c>= "INPUT"</c>, you set them to <c>= input("Please enter " + storyList[i])</c>.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib4_editor" interactive="activecode" language="python">
