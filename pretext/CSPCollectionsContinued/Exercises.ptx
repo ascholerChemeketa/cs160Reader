@@ -5,6 +5,7 @@
     <statement>
       <p>Write code for the function <c>printFirst</c>. It should print the first <c>numberItems</c> from <c>list</c> with one item appearing on
         each line.</p>
+      <p>Hint: You will want to use an index-based loop (<c>for i in range( ________ )</c>) to do the iteration.</p>
       <p>The tests for your code will check the output - make sure not to print anything extra or remove anything from
         the main program.</p>
 
@@ -12,13 +13,13 @@
     <program xml:id="cspcollectionscontinued_exercises1_editor" interactive="activecode" language="python">
       <input>
         def printFirst(numberItems, list):
-            #Your code here to print the first numberItems in list
+            # Your code here
 
         # Main program - Do not modify
         values1 = [5, 2, 3, 8, 9, 1, 4]
-        printFirst(2, values1)
+        printFirst(2, values1)       # Should print 5 2
         print("------------------")
-        printFirst(4, values1)
+        printFirst(4, values1)       # Should print 5 2 3 8
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -35,34 +36,43 @@
 
   <exercise label="cspcollectionscontinued_exercises2">
     <statement>
-      <p>Improve your code for the <c>printFirst</c> you wrote in the previous exercise.</p>
-      <p>Before printing, make sure that <c>numberItems</c> is not greater than the length of the list. If <c>numberItems</c> is OK, do the
-        printing. If not, just print <c>"Invalid numItems"</c>.</p>
+      <p>Write the code for the <c>makeAcronym</c> function. It should take a list of words, like 
+        <c>["As", "Far", "As", "I", "Know"]</c> and turn it into a list that has just the first 
+        letters of each word: <c>["A", "F", "A", "I", "K"]</c>
+      </p>
+      <p>You will need to use an index-based loop (<c>for i in range( ________ )</c>). For each index <c>i</c>,
+      set item <c>i</c> from <c>list</c> to be just its first letter. You may want to do this in multiple steps - 
+      first get the current word, then get its first letter, then store that letter as <c>list[i]</c></p>
       <p>Automated tests will check the output - make sure not to print anything extra or remove anything from
         the main program.</p>
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises2_editor" interactive="activecode" language="python">
       <input>
-        def printFirst(numberItems, list):
-            #Your code here to print the first numberItems in list
-
+        def makeAcronym(list):
+            #Your code here
+        
         # Main program - Do not modify
-        values1 = [5, 2, 3, 8, 9, 1, 4]
-        printFirst(2, values1)
-        print("------------------")
-        printFirst(4, values1)
-        print("------------------")
-        printFirst(10, values1)
+        acronym1 = ["As", "Far", "As", "I", "Know"]
+        makeAcronym(acronym1)
+        print(acronym1)
+        
+        acronym2 = ["You", "Only", "Live", "Once"]
+        makeAcronym(acronym2)
+        print(acronym2)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(self.getOutput().split("\n")[0:2], ["5", "2"], "Testing that printFirst(2, values1) worked")
-                self.assertEqual(self.getOutput().split("\n")[3:7], ["5", "2", "3", "8"], "Testing that printFirst(4, values1) worked")
-                self.assertEqual(self.getOutput().split("\n")[-2], "Invalid numItems", 'Testing that printFirst(10, values1) resulted in "Invalid numItems"')
+                acronym1 = ["As", "Far", "As", "I", "Know"]
+                makeAcronym(acronym1)
+                self.assertEqual(acronym1, ["A", "F", "A", "I", "K"], "Testing [\"As\", \"Far\", \"As\", \"I\", \"Know\"]")
+
+                acronym2 = ["You", "Only", "Live", "Once"]
+                makeAcronym(acronym2)
+                self.assertEqual(acronym2, ["Y", "O", "L", "O"], "Testing [\"You\", \"Only\", \"Live\", \"Once\"]")
 
         myTests().main()
       </tests>
