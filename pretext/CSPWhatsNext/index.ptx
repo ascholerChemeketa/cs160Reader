@@ -32,8 +32,8 @@
     </subsection>
     <subsection xml:id="csp-whats-next_more-python">
       <title>More Python</title>
-      <p><url href="http://interactivepython.org/runestone/static/thinkcspy/index.html"
-          visual="http://interactivepython.org/runestone/static/thinkcspy/index.html">*How To Think Like A Computer
+      <p><url href="https://runestone.academy/ns/books/published/thinkcspy/index.html"
+          visual="https://runestone.academy/ns/books/published/thinkcspy/index.html">How To Think Like A Computer
         Scientist</url> is a free ebook that covers basic concepts in more depth than this book and extends to much more
         advanced programming topics. If you want to get serious about Python programming, check it out.</p>
     </subsection>
