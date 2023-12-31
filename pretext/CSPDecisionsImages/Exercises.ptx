@@ -9,6 +9,8 @@
       <block order="6">
         <cline>from image import *</cline>
         <cline>img = Image("fr-flag.gif")</cline>
+        <cline>win = ImageWin(img.getWidth(),img.getHeight())</cline>
+        <cline>img.draw(win)</cline>
       </block>
       <block order="4">
         <cline>for p in img.getPixels():</cline>
@@ -34,10 +36,6 @@
       <block order="8">
         <cline>  img.updatePixel(p)</cline>
       </block>
-      <block order="7">
-        <cline>win = ImageWin(img.getWidth(),img.getHeight())</cline>
-        <cline>img.draw(win)</cline>
-      </block>
     </blocks>
   </exercise>
   
@@ -55,6 +53,8 @@
 
         # CREATE AN IMAGE FROM A FILE
         img = Image("logo.jpg")
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();
@@ -75,10 +75,6 @@
             
                 # UPDATE IMAGE
                 img.updatePixel(p)
-
-        # SHOW THE CHANGED IMAGE
-        win = ImageWin(img.getWidth(),img.getHeight())
-        img.draw(win)
       </input>
       <tests>
 
@@ -109,6 +105,8 @@
 
         # CREATE AN IMAGE FROM A FILE
         img = Image("logo.jpg")
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();
@@ -124,10 +122,6 @@
                 # UPDATE IMAGE
                 img.updatePixel(p)
 
-
-        # SHOW THE CHANGED IMAGE
-        win = ImageWin(img.getWidth(),img.getHeight())
-        img.draw(win)
       </input>
       <tests>
 
@@ -162,6 +156,8 @@
         # Main part of program
         # CREATE AN IMAGE FROM A FILE
         img = Image("goalkeeper.jpg")
+        win = ImageWin(img.getWidth(),img.getHeight())
+        img.draw(win)
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();
@@ -181,10 +177,6 @@
 
                 # UPDATE THE IMAGE
                 img.updatePixel(p)
-
-        # SHOW THE CHANGED IMAGE
-        win = ImageWin(img.getWidth(),img.getHeight())
-        img.draw(win)
     </input>
     <tests>
 

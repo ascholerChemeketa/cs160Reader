@@ -13,8 +13,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
         pixels = img.getPixels()
@@ -33,9 +35,6 @@
         # STEP 6: UPDATE THE IMAGE
         img.updatePixel(p)
 
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -61,8 +60,10 @@
       <input>
         from image import
 
-        # CREATE AN IMAGE FROM A FILE
+        # PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg)
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # LOOP THROUGH THE PIXELS
         pixelList = img.getPixels()
@@ -73,10 +74,6 @@
 
             # UPDATE THE IMAGE
             img.updatePixel()
-
-        # SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -102,8 +99,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
         pixels = img.getPixels()
@@ -117,10 +116,6 @@
 
             # STEP 6: UPDATE THE IMAGE
             img.
-
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -147,8 +142,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
         pixels = img.getPixels()
@@ -163,9 +160,6 @@
             # STEP 6: UPDATE THE IMAGE
             img.updatePixel(p)
 
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -191,8 +185,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
 
@@ -205,10 +201,6 @@
 
             # STEP 6: UPDATE THE IMAGE
 
-
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -235,8 +227,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
 
@@ -250,9 +244,6 @@
             # STEP 6: UPDATE THE IMAGE
 
 
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui
@@ -278,8 +269,10 @@
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
-        # STEP 2: PICK THE IMAGE
+        # STEP 2: PICK THE IMAGE AND DISPLAY IT
         img = Image("mount_hood.jpg")
+        win = ImageWin(img.getWidth(), img.getHeight())
+        img.draw(win)
 
         # STEP 3: LOOP THROUGH THE PIXELS
 
@@ -292,10 +285,6 @@
 
             # STEP 6: UPDATE THE IMAGE
 
-
-        # STEP 7: SHOW THE RESULT
-        win = ImageWin(img.getWidth(), img.getHeight())
-        img.draw(win)
       </input>
       <tests>
         from unittest.gui import TestCaseGui

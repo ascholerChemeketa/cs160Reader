@@ -78,6 +78,8 @@ def isRed(r, g, b):
 # Main part of program
 # CREATE AN IMAGE FROM A FILE
 img = Image("scooter.jpg")
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
 
 # LOOP THROUGH ALL PIXELS
 pixels = img.getPixels()
@@ -99,9 +101,6 @@ for p in pixels:
         # CHANGE THE IMAGE
         img.updatePixel(p)
 
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
   </input>
     </program>
     <p>After running the program, try modifying it to answer the question below.</p>

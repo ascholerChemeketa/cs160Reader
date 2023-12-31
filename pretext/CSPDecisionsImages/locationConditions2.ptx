@@ -77,7 +77,9 @@ from image import *
 
 # Main program
 # CREATE THE IMAGE
-img= Image("graduates.jpg")
+img = Image("graduates.jpg")
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
 
 pixels = img.getPixels();
 for p in pixels:
@@ -91,10 +93,6 @@ for p in pixels:
         makeGray(p)
         darken(p, 20)
         img.updatePixel(p)
-
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
   </input>
   </program>
   <p>Try modifying the condition so it only leaves a rectangle of color around the students’ heads and turns the rest to

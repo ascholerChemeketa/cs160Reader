@@ -52,6 +52,8 @@ from image import *
 
 # CREATE AN IMAGE FROM A FILE
 img = Image("mount_hood.jpg")
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
 
 # LOOP THROUGH THE PIXELS
 pixels = img.getPixels();
@@ -74,10 +76,6 @@ for p in pixels:
 
     # MODIFY THE IMAGE
     img.updatePixel(p)
-
-# SHOW THE CHANGED IMAGE
-win = ImageWin(img.getWidth(),img.getHeight())
-img.draw(win)
   </input>
   </program>
   <p>Rewrite the code for posterizing an image using if and else rather than multiple ifs. Test

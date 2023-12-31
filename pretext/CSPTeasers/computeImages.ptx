@@ -92,6 +92,10 @@
 
             # CREATE AN IMAGE FROM A FILE AND CALL IT catPic
             catPic = image.Image("cat.jpg")
+            
+            # SHOW THE CHANGED IMAGE IN A 400x400 WINDOW
+            win = image.ImageWin(400, 400)
+            catPic.draw(win)
 
             # LOOP THROUGH ALL THE PIXELS
             pixels = catPic.getPixels()
@@ -100,9 +104,6 @@
                 p.setRed(0)
                 catPic.updatePixel(p)
 
-            # SHOW THE CHANGED IMAGE IN A 400x400 WINDOW
-            win = image.ImageWin(400, 400)
-            catPic.draw(win)
         </input>
   </program>
 

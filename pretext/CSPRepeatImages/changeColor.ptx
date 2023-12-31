@@ -9,7 +9,7 @@
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
-# STEP 2: PICK THE IMAGE
+# STEP 2: PICK THE IMAGE AND DISPLAY IT
 img = Image("student1.jpg")
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
@@ -31,9 +31,6 @@ for p in pixels:
     # STEP 6: UPDATE THE IMAGE
     img.updatePixel(p)
 
-# STEP 7: SHOW THE RESULT
-win2 = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win2)
   </input>
   </program>
   <p>Try decreasing each color channel by 50% (make it 0.5 times its original value) - you should end up with a darker version
@@ -53,6 +50,8 @@ img.draw(win2)
       </block>
       <block order="6">
         <cline>img = Image("cat.jpg")</cline>
+        <cline>win = ImageWin(img.getWidth(), img.getHeight())</cline>
+        <cline>img.draw(win)</cline>
       </block>
       <block order="9">
         <cline>pixels = img.getPixels()</cline>
@@ -83,10 +82,6 @@ img.draw(win2)
       </block>
       <block order="10">
         <cline> img.updatePixel(p)</cline>
-      </block>
-      <block order="2">
-        <cline>win = ImageWin(img.getWidth(), img.getHeight())</cline>
-        <cline>img.draw(win)</cline>
       </block>
     </blocks>
   </exercise>

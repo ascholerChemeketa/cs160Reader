@@ -22,8 +22,10 @@
       # STEP 1: USE THE IMAGE LIBRARY
       from image import *
       
-      # STEP 2: PICK THE IMAGE
+      # STEP 2: PICK THE IMAGE AND DISPLAY IT
       img = Image("cat.jpg")
+      win = ImageWin(img.getWidth(), img.getHeight())
+      img.draw(win)
       
       # STEP 3: LOOP THROUGH THE PIXELS
       pixels = img.getPixels();
@@ -35,10 +37,7 @@
           print("Working on pixel at x = ", x, " and y = ", y)
 
           # NO CHANGES - NO STEP 5/6
-          
-      # STEP 7: SHOW THE RESULT
-      win = ImageWin(img.getWidth(), img.getHeight())
-      img.draw(win)      
+            
     </input>
   </program>
   <p>If you examine the output, you should see that the first pixel is at x = 0, y = 0. Then 
@@ -115,8 +114,10 @@
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
-# STEP 2: PICK THE IMAGE
+# STEP 2: PICK THE IMAGE AND DISPLAY IT
 img = Image("student2.jpg")
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
 
 # STEP 3: LOOP THROUGH THE PIXELS
 pixels = img.getPixels();
@@ -137,9 +138,6 @@ for p in pixels:
     # STEP 6: MODIFY THE IMAGE
     img.updatePixel(p)
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
   </input>
   </program>
   <p>We don’t always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
@@ -152,8 +150,10 @@ img.draw(win)
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
-# STEP 2: PICK THE IMAGE
+# STEP 2: PICK THE IMAGE AND DISPLAY IT
 img = Image("student2.jpg")
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
 
 # STEP 3: LOOP THROUGH THE PIXELS
 pixels = img.getPixels();
@@ -171,9 +171,6 @@ for p in pixels:
     # Write pixel p to the image at location (x, newY)
     img.setPixel(x, newY, p)
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
   </input>
   </program>
 

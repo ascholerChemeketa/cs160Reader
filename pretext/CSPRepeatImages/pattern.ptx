@@ -14,8 +14,10 @@
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
-# STEP 2: PICK THE IMAGE
+# STEP 2: PICK THE IMAGE AND DISPLAY IT
 img = Image("goalkeeper.jpg")
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
 
 # STEP 3: LOOP THROUGH THE PIXELS
 pixels = img.getPixels()
@@ -34,9 +36,6 @@ for p in pixels:
     # STEP 6: UPDATE THE IMAGE WITH THE CHANGED PIXEL
     img.updatePixel(p)
 
-# STEP 7: SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
   </input>
   </program>
   <p>The fundamental steps are:</p>
@@ -47,9 +46,8 @@ img.draw(win)
       </li>
       <li>
         <p>
-          <term> PICK THE IMAGE.</term> We pick a particular image from our library by specifying
+          <term> PICK THE IMAGE AND DISPLAY IT AND DISPLAY IT.</term> We pick a particular image from our library by specifying
           its name as a string (with quotation marks) inside the parentheses.</p>
-
       </li>
       <li>
         <p><term>LOOP THROUGH THE PIXELS.</term> This example gets <em>every</em> pixel in the image
@@ -70,9 +68,6 @@ img.draw(win)
       <li>
         <p><term>UPDATE THE IMAGE.</term> This will update the image using the new colors of the
           pixel.</p>
-      </li>
-      <li>
-        <p><term>SHOW THE RESULT.</term> This will draw the changed image in a window.</p>
       </li>
     </ol>
   </p>

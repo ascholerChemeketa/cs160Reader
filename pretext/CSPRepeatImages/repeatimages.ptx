@@ -36,6 +36,10 @@ img = Image("cat.jpg")
 # Get a list of the pixels and store it in pixelList
 pixelList = img.getPixels()
 
+# show the image
+win = ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+
 for p in pixelList:                 #Loop through each pixel in the list and call it p
     # set the red value of p to 0
     p.setRed(0)
@@ -44,9 +48,6 @@ for p in pixelList:                 #Loop through each pixel in the list and cal
     # we need to tell the image to use the updated version of p
     img.updatePixel(p)
 
-# show the image
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
         </input>
   </program>
   <p>There are <m>200 \times 300 = 60,000</m> pixels in the <c>pixelList</c>. Our for loop takes that giant

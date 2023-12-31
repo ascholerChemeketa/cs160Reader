@@ -14,6 +14,8 @@
 from image import *
 
 img = Image("cat.jpg")
+win = ImageWin(img.getWidth(),img.getHeight())
+img.draw(win)
 
 pixels = img.getPixels();
 for p in pixels:
@@ -33,9 +35,6 @@ for p in pixels:
         # CHANGE THE PIXEL
         img.updatePixel(p)
 
-# SHOW THE RESULT
-win = ImageWin(img.getWidth(), img.getHeight())
-img.draw(win)
 </input>
       <tests>
 from unittest.gui import TestCaseGui 
