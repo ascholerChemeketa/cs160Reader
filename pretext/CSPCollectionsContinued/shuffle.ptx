@@ -24,7 +24,7 @@
           <ol>
             <li>
               <p><c>cutPoint</c> is set to a random location in the list of cards <c>deck</c>. 
-                Use it to make a slices which contains list items 0 up to (but not including) 
+                Use it to make a slice which contains list items 0 up to (but not including) 
                 the <c>cutPoint</c>. Store it in a new variable <c>top</c> and then print out <c>top</c>. 
                 Run the program a few times to make sure that you are printing out a random 
                 amount of the list each time.
@@ -33,8 +33,8 @@
             <li>
               <p>
                 Now make a slice that starts at <c>cutPoint</c> and goes until the end. Store 
-                that slice as <c>bottom</c>. Print it out make sure it has the part of the list 
-                that top does not. Tests 3-4 should now pass.
+                that slice as <c>bottom</c>. Print it out and make sure it has the part of the list 
+                that <c>top</c> does not. Tests 3-4 should now pass.
               </p>
             </li>
             <li>
