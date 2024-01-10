@@ -134,7 +134,7 @@
     </statement>
     <setup>
       <var>
-        <condition number="478.9248932488566">
+        <condition string="^\s*478\.92489\d*\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -144,14 +144,9 @@
             <p>You should have a decimal</p>
           </feedback>
         </condition>
-        <condition string="^\s*478\.\d{0,12}\s*$">
+        <condition string="^\s*478\.\d+\s*$">
           <feedback>
-            <p>Make sure to use the full decimal value</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*478\.\d{13}\s*$">
-          <feedback>
-            <p>That looks close, check all your digits carefully</p>
+            <p>That looks close, check all your digits carefully and make sure to provide at least 6 digits after the decimal</p>
           </feedback>
         </condition>
         <condition string="^\s*x\s*$">
