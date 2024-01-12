@@ -96,6 +96,7 @@
             # SHOW THE CHANGED IMAGE IN A 400x400 WINDOW
             win = image.ImageWin(400, 400)
             catPic.draw(win)
+            catPic.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
             # LOOP THROUGH ALL THE PIXELS
             pixels = catPic.getPixels()

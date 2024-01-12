@@ -39,6 +39,7 @@ pixelList = img.getPixels()
 # show the image
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
+img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
 for p in pixelList:                 #Loop through each pixel in the list and call it p
     # set the red value of p to 0

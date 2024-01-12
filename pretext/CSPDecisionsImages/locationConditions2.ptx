@@ -80,6 +80,7 @@ from image import *
 img = Image("graduates.jpg")
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
+img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
 pixels = img.getPixels();
 for p in pixels:

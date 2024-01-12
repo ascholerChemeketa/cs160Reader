@@ -54,6 +54,7 @@ from image import *
 img = Image("fr-flag.gif")
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
+img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
 pixels = img.getPixels()
 for p in pixels:
@@ -105,6 +106,7 @@ from image import *
 img = Image("cd-flag.gif")
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
+img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
 # LOOP THROUGH ALL PIXELS
 pixels = img.getPixels()

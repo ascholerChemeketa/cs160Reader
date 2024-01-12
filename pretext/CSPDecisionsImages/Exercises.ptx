@@ -55,6 +55,7 @@
         img = Image("logo.jpg")
         win = ImageWin(img.getWidth(),img.getHeight())
         img.draw(win)
+        img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();
@@ -107,6 +108,7 @@
         img = Image("logo.jpg")
         win = ImageWin(img.getWidth(),img.getHeight())
         img.draw(win)
+        img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();
@@ -158,6 +160,7 @@
         img = Image("goalkeeper.jpg")
         win = ImageWin(img.getWidth(),img.getHeight())
         img.draw(win)
+        img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
         # LOOP THROUGH ALL PIXELS
         pixels = img.getPixels();

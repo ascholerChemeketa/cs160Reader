@@ -13,6 +13,7 @@ from image import *
 img = Image("student1.jpg")
 win = ImageWin(img.getWidth(), img.getHeight())
 img.draw(win)
+img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
 # STEP 3: LOOP THROUGH THE PIXELS
 pixels = img.getPixels();

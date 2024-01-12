@@ -80,6 +80,11 @@
   img1 = Image("green_screen.jpg")
   img2 = Image("beach.jpg")
 
+  # SHOW THE IMAGE WE ARE CHANGING
+  win = ImageWin(img1.getWidth(), img1.getHeight())
+  img1.draw(win)
+  img1.setDelay(1, 400)   #SPEEDS UP THE DRAWING
+
   # LOOP THROUGH ALL THE PIXELS IN IMG1
   pixels = img1.getPixels()
   for p1 in pixels:
@@ -97,9 +102,6 @@
           # USE THAT INSTEAD OF p1 IN img1
           img1.setPixel(x, y, p2)
 
-  # SHOW THE CHANGED IMAGE
-  win = ImageWin(img1.getWidth(), img1.getHeight())
-  img1.draw(win)
     </input>
     </program>
   </exercise>

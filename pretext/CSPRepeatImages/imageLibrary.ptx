@@ -95,6 +95,7 @@
     # DISPLAY THE IMAGE
     win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
+    img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
       </input>
   </program>
 
