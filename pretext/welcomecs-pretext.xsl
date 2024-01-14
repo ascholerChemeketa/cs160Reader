@@ -84,6 +84,82 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </a>
 </xsl:template>
 
+<xsl:template match="setup/var/condition/feedback" mode="serialize-feedback">
+    <xsl:variable name="feedback-rtf">
+        <xsl:apply-templates select="."/>
+    </xsl:variable>
+    <xsl:value-of select="$feedback-rtf"/>
+</xsl:template>
+
+
+<xsl:template match="*" mode="xref-link">
+    <xsl:param name="target" select="/.." />
+    <xsl:param name="origin" select="''" />
+    <xsl:param name="content" select="'MISSING LINK CONTENT'"/>
+    <xsl:variable name="knowl">
+        <xsl:text>false</xsl:text>
+    </xsl:variable>
+    <xsl:choose>
+        <!-- 1st exceptional case, xref in a webwork, or in    -->
+        <!-- some sort of title.  Then just parrot the content -->
+        <xsl:when test="ancestor::webwork-reps|ancestor::title|ancestor::shorttitle|ancestor::subtitle">
+            <xsl:copy-of select="$content"/>
+        </xsl:when>
+        <!-- 2nd exceptional case, xref in mrow of display math  -->
+        <!--   with Javascript (pure HTML) we can make knowls    -->
+        <!--   without Javascript (EPUB) we use plain text       -->
+        <xsl:when test="parent::mrow or parent::me or parent::men">
+            <xsl:apply-templates select="." mode="xref-link-display-math">
+                <xsl:with-param name="target" select="$target"/>
+                <xsl:with-param name="origin" select="'xref'"/>
+                <xsl:with-param name="content" select="$content"/>
+            </xsl:apply-templates>
+        </xsl:when>
+        <!-- usual case, always an "a" element (anchor) -->
+        <xsl:otherwise>
+            <xsl:element name="a">
+                <!-- knowl/hyperlink variability here -->
+                <xsl:choose>
+                    <!-- build a modern knowl -->
+                    <xsl:when test="$knowl='true'">
+                        <!-- empty, but presence needed for accessibility -->
+                        <!-- An HTML "a" without an href attribute does   -->
+                        <!-- not default to role "link" and does not read -->
+                        <!-- as clickable by a screen reader.             -->
+                        <xsl:attribute name="href">
+                            <xsl:apply-templates select="$target" mode="url" />
+                        </xsl:attribute>
+                        <!-- mark as duplicated content via an xref -->
+                        <xsl:attribute name="class">
+                            <xsl:text>xref</xsl:text>
+                        </xsl:attribute>
+                        <xsl:attribute name="data-knowl">
+                            <xsl:apply-templates select="$target" mode="knowl-filename">
+                                <xsl:with-param name="origin" select="$origin"/>
+                            </xsl:apply-templates>
+                        </xsl:attribute>
+                    </xsl:when>
+                    <!-- build traditional hyperlink -->
+                    <xsl:otherwise>
+                        <xsl:attribute name="href">
+                            <xsl:apply-templates select="$target" mode="url" />
+                        </xsl:attribute>
+                        <!-- use a class to identify an internal link -->
+                        <xsl:attribute name="class">
+                            <xsl:text>internal</xsl:text>
+                        </xsl:attribute>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- add HTML title attribute to the link -->
+                <xsl:attribute name="title">
+                    <xsl:apply-templates select="$target" mode="tooltip-text" />
+                </xsl:attribute>
+                <!-- link content from common template -->
+                <xsl:copy-of select="$content"/>
+            </xsl:element>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
 
 <!-- Sometimes this template is useful to see which    -->
 <!-- templates are not implemented at all in some new  -->
