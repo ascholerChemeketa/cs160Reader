@@ -25,6 +25,7 @@
       <publication>pretext/publication-runestone.xml</publication>
       <output-dir>published/welcomecs2</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
+      <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     
     <!-- <target name="print" pdf-method="xelatex">
