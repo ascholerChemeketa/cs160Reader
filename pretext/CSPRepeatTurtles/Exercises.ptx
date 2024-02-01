@@ -199,12 +199,20 @@
         below:</p>
       <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%" />
       <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for loop to call the procedure with the
-        correct values for its parameters. Make sure that the 90 width and 10 height rectangle is the first one you
-        draw. You should only need one loop - <term>it must count down from 90 to 10</term>.</p>
-      <p>Start by writing a loop that just prints out the values 90, 80, 70, <ellipsis/>, 10. Then you can modify the code
-        to use those values to draw rectangles of the appropriate widths and heights.</p>
-      <p>Hint: The values we use for width and height will always add to 100. So if we call one of them <m>w</m>, the
-        other must be <m>100 - w</m>.</p>
+        correct values for its parameters. Make sure that the 90-width and 10-height rectangle is the first one you
+        draw. You should only need one loop and <term>it must count down from 90 to 10</term>.</p>
+      <p>Hints:
+          <ul>
+            <li>Start by writing a loop that just prints out the values 90, 80, 70, <ellipsis/>, 10. These will be the
+                widths of the rectangles you end up drawing.</li>
+            <li>Next, for each width, calculate the corresponding height. Each width/height pair should always add to
+                100, so if we call the width <m>w</m>, the height must be <m>100 - w</m>. Print out the height with
+                the width so that your output looks like 90 10, 80 20, 70 30, <ellipsis/>, 10 90.
+            </li>
+            <li>Finally, call <c>rectangle</c> in your loop and pass it the width and height you are calculating.
+            </li>
+          </ul>
+      </p>
       <p>The autograder will not verify everything about your program. It is up to you to determine if your program is
         correct or not.</p>
       <note>
