@@ -155,8 +155,8 @@
         class myTests(TestCaseGui):
             def testOne(self):
                 self.assertRegex(self.getEditorText(), r"for \w+ in range.*:", "Testing that you created a loop.")
-                self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*2\s*", "Testing that your loop stops at the right value.")
-                self.assertRegex(self.getEditorText(), r"range\(\s*\d+\s*,\s*\d+\s*,\s*-1\s*", "Testing that your loop counts down.")
+                self.assertRegex(self.getEditorText(), r"range\s*\(\s*\d+\s*,\s*2\s*", "Testing that your loop stops at the right value.")
+                self.assertRegex(self.getEditorText(), r"range\s*\(\s*\d+\s*,\s*\d+\s*,\s*-1\s*", "Testing that your loop counts down.")
                 self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia", "Testing that you call polygon with lucia")
                 self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+", "Testing that you use the loop variable in the call")
                 self.assertRegex(self.getEditorText(), r"\s+polygon\(\s*lucia\s*,\s*\w+\s*,\s*100\s*\)", "Testing that you specify size 100")
