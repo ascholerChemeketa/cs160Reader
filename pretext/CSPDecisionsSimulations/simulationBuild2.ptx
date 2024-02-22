@@ -77,7 +77,7 @@
         a row while flipping a coin 100 times. You should be getting an answer of around 80%.
       </p>
       <p>Then modify the program to check the odds of getting 6 heads in a row (instead of just 5).
-        What answer do you get? Round it to the nearest whole number. <var />
+        What answer do you get? Round it to the nearest whole number and enter it here: <var />
       </p>
       <p> Tip: you may want to change <c>repetitions</c> to <c>10000</c> so your answer is more
         reliable (the more repetitions you do, the more reliable the result will be.) </p>
