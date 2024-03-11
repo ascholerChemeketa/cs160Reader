@@ -31,6 +31,13 @@ FROM
     to do so. It asks the database to <c>SELECT</c> all columns (<c>*</c> is a shorthand that means <q>all columns</q>) <c>FROM</c>
     the table named <c>trip_data</c>.</p>
 
+  <warning>
+    <p>
+      The first time you run a database problem, it will take a little while for the database file to load. Be patient.
+      Once it is loaded by your browser, future runs using the same database should be much faster.
+    </p>
+  </warning>
+
   <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <input>
 SELECT
@@ -73,12 +80,12 @@ FROM
 
       </input>
       <tests>
-        assert 0,0 == 31104
-        assert 0,1 == 31200
-        assert 1,0 == 31230
-        assert 1,1 == 31620
-        assert 99,0 == 31224
-        assert 99,1 == 31221
+        assert 0,0 == 31605
+        assert 0,1 == 31217
+        assert 1,0 == 31400
+        assert 1,1 == 31623
+        assert 99,0 == 31111
+        assert 99,1 == 31110
       </tests>
     </program>
   </exercise>
