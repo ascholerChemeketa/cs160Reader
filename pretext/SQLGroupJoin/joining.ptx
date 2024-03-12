@@ -15,7 +15,7 @@ LIMIT
     1
         </input>
   </program>
-  <p>That query gives us the station ID (31200), but what if we want its name? The name of each station is in the <xref
+  <p>That query gives us the station ID (31104), but what if we want its name? The name of each station is in the <xref
       ref="sql-intro_bikeshare-stations-table" text="title"/>. To get the name of station 31104, we could query it (notice the <c>FROM</c>
     clause):</p>
 
@@ -26,7 +26,7 @@ SELECT
 FROM
     bikeshare_stations
 WHERE
-    station_id == 31200
+    station_id == 31104
         </input>
   </program>
   <p>We need the name that is a part of the <c>bikeshare_stations</c> table, but to find the right station, we need to use the duration that is a
@@ -36,7 +36,7 @@ WHERE
     spreadsheets, you use the <c>JOIN</c> keyword. <c>JOIN</c> is used to merge the columns in one table with the columns in
     another table.</p>
   <p>However, when we want to join records from two tables, we don’t want to join them randomly. We want to make
-    sure that records that talk about station 31200 in <c>trip_data</c> are joined with the records that talk about that same
+    sure that records that talk about station 31104 in <c>trip_data</c> are joined with the records that talk about that same
     station number in <c>bikeshare_stations</c>. To specify how to <c>JOIN</c> tables, we must use an <c>ON</c> clause that specifies which
     column in the first table to match with which column in the second table. To name the columns, we use <term>dot</term>
     syntax: <c>table_name.column_name</c>. The full syntax for a <c>JOIN</c> looks like this:</p>
