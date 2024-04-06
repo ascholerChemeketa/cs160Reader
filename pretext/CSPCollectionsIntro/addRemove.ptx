@@ -167,7 +167,7 @@ names.pop(0)
       <p>The following program should make the <c>discounts</c> list contain the values of all the items from <c>price_list</c> after they
         have been discounted by 50%. To do so, we need to loop through the original prices, calculate the discounted
         price, then append it to the discount list.</p>
-      <p>Put the blocks in the right order and indent them correctly. There are some blocks you will not use.</p>
+      <p>Put the blocks in the right order. There are some blocks you will not use.</p>
     </statement>
     <blocks>
       <block order="3">

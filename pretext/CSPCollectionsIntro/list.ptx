@@ -59,7 +59,7 @@ for name in nameList:
         <cline> if score &gt; highest:</cline>
       </block>
       <block order="4">
-        <cline> highest = score</cline>
+        <cline>  highest = score</cline>
       </block>
       <block order="2">
         <cline>print("The highest score was", highest)</cline>

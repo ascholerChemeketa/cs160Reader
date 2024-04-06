@@ -99,9 +99,9 @@ for repeats in range(20):
         </choice>
       </block>
       <block order="6">
-        <cline> mateo.color("red")</cline>
-        <cline> mateo.forward(50)</cline>
-        <cline> mateo.right(120)</cline>
+        <cline>  mateo.color("red")</cline>
+        <cline>  mateo.forward(50)</cline>
+        <cline>  mateo.right(120)</cline>
       </block>
     </blocks>
   </exercise>
@@ -123,7 +123,7 @@ for repeats in range(20)
     dave.Color("blue")
     for sides in range(4):
         dave.forward(50)
-    dave.right(90)
+        dave.right(90)
         </input>
   </program>
   <subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">

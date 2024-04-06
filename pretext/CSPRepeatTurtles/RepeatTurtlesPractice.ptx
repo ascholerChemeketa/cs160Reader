@@ -85,9 +85,9 @@
         <cline>nick.color("blue")</cline>
         <cline>for count in range(4):</cline>
         <cline> for num in range(5):</cline>
-        <cline> nick.stamp()</cline>
-        <cline> nick.forward(30)</cline>
-        <cline> nick.right(90)</cline>
+        <cline>  nick.stamp()</cline>
+        <cline>  nick.forward(30)</cline>
+        <cline>  nick.right(90)</cline>
       </block>
       <block order="2">
         <cline>nick.goto(-120,-120)</cline>
@@ -101,8 +101,8 @@
         <cline> for num in range(2): </cline>
       </block>
       <block order="7">
-        <cline> nick.stamp()</cline>
-        <cline> nick.forward(30)</cline>
+        <cline>  nick.stamp()</cline>
+        <cline>  nick.forward(30)</cline>
       </block>
       <block order="9">
         <cline> nick.right(90)</cline>

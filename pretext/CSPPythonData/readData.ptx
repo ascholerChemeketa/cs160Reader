@@ -156,9 +156,9 @@ Adrian, MI
         <cline> if city[0] == "D":</cline>
       </block>
       <block order="6">
-        <cline> print("City:", city)</cline>
-        <cline> print("PM10:", values[1])</cline>
-        <cline> print("PM2.5:", values[2])</cline>
+        <cline>  print("City:", city)</cline>
+        <cline>  print("PM10:", values[1])</cline>
+        <cline>  print("PM2.5:", values[2])</cline>
       </block>
     </blocks>
   </exercise>

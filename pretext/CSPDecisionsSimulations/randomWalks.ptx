@@ -142,13 +142,13 @@ while(currentX &lt; 200):
         <cline> if randValue &lt;= 2:</cline>
       </block>
       <block order="9">
-        <cline> yChange = random.randrange(-40, 41)</cline>
+        <cline>  yChange = random.randrange(-40, 41)</cline>
       </block>
       <block order="3">
         <cline> else:</cline>
       </block>
       <block order="8">
-        <cline> yChange = random.randrange(-10, 11)</cline>
+        <cline>  yChange = random.randrange(-10, 11)</cline>
       </block>
       <block order="1">
         <cline> currentY = currentY + yChange</cline>

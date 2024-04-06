@@ -35,7 +35,7 @@
         <cline> if randValue == 1:</cline>
       </block>
       <block order="5">
-        <cline> numberOfOnes = numberOfOnes + 1</cline>
+        <cline>  numberOfOnes = numberOfOnes + 1</cline>
       </block>
       <block order="7">
         <cline>print(numberOfOnes)</cline>

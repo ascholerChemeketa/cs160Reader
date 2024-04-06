@@ -150,14 +150,14 @@
         <cline> if targetState in cityState[1]:</cline>
       </block>
       <block order="3">
-        <cline> curPollution = int(values[1])</cline>
+        <cline>  curPollution = int(values[1])</cline>
       </block>
       <block order="7">
-        <cline> if curPollution &gt; maxPM10:</cline>
+        <cline>  if curPollution &gt; maxPM10:</cline>
       </block>
       <block order="4">
-        <cline> maxPM10 = curPollution</cline>
-        <cline> maxCity = cityState[0]</cline>
+        <cline>   maxPM10 = curPollution</cline>
+        <cline>   maxCity = cityState[0]</cline>
       </block>
       <block order="6">
         <cline>print("The most polluted city is" , maxCity)</cline>

@@ -131,18 +131,18 @@ mia.end_fill()
       </block>
       <block order="4">
         <choice correct="yes">
-          <cline> turtleName.forward(size)</cline>
+          <cline>  turtleName.forward(size)</cline>
         </choice>
         <choice>
-          <cline> turtleName.forward(sides) </cline>
+          <cline>  turtleName.forward(sides) </cline>
         </choice>
       </block>
       <block order="9">
         <choice correct="yes">
-          <cline> turtleName.left(360 / sides)</cline>
+          <cline>  turtleName.left(360 / sides)</cline>
         </choice>
         <choice>
-          <cline> turtleName.turn(sides / 360) </cline>
+          <cline>  turtleName.turn(sides / 360) </cline>
         </choice>
       </block>
       <block order="8">

@@ -73,9 +73,9 @@ print(total)
       <block order="1">
         <cline>def calculateShipping(orderCost, weight):</cline>
         <cline> if orderCost &gt; 50:</cline>
-        <cline> shipping = 0</cline>
+        <cline>  shipping = 0</cline>
         <cline> else:</cline>
-        <cline> shipping = 5 + 0.75 * weight</cline>
+        <cline>  shipping = 5 + 0.75 * weight</cline>
         <cline> return shipping</cline>
       </block>
     </blocks>

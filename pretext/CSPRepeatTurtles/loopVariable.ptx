@@ -17,8 +17,8 @@ polygon(mia, 3, 100)
 
   <p>We can do this by making use of the <term>loop variable</term>. It is the variable that is used to store each value
     in the list that the loop is iterating over. This program shows using two loops. In the first one, the loop variable
-    is called <c>x</c> and is used to count from 0 to 4. In the second, the loop variable is called <c>y</c> and counts from
-    0 to 9.</p>
+    is called <c>x</c> and is used to count from 0 to 4. In the second, the loop variable is called <c>y</c> and counts
+    from 0 to 9.</p>
 
   <program xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
     <input>
@@ -125,8 +125,8 @@ for y in range(6, 2, -1):
     <note>
       <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
     </note>
-    <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2’s from 5 to 59. The loop variable is called <c>size</c> and is used to
-      control how far forward the turtle moves in each repetition.</p>
+    <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2’s from 5 to 59. The loop variable is called <c>size</c> and is used to control
+      how far forward the turtle moves in each repetition.</p>
 
     <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
       <input>
@@ -144,16 +144,16 @@ for size in range(5, 60, 2):
         </input>
     </program>
     <p>All except one of the shapes you see on the screen here are copies of the turtle shape created by <c>stamp</c>. But
-      the program still only has <em>one</em> turtle instance <mdash/> can you figure out which one is the real tess?
-      (Hint: if you’re not sure, write a new line of code after the <c>for</c> loop to change tess’ color, or
-      to put her pen down and draw a line, or to change her shape, etc<ellipsis/>)</p>
+      the program still only has <em>one</em> turtle instance <mdash /> can you figure out which one is the real tess?
+      (Hint: if you’re not sure, write a new line of code after the <c>for</c> loop to change tess’ color, or to put her
+      pen down and draw a line, or to change her shape, etc<ellipsis />)</p>
     <p>
       <term>Mixed up program</term>
     </p>
     <exercise label="csprepeatturtles_loopvariable5" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program creates a square spiral as shown below. To do so, we must draw sides of length 0, 5,
-          10, 15, <ellipsis/> 195. After drawing each side, we will turn to get ready for the next side.</p>
+          10, 15, <ellipsis /> 195. After drawing each side, we will turn to get ready for the next side.</p>
         <p>Arrange and indent the blocks correctly. You will not use them all.</p>
         <image source="CSPRepeatTurtles/Figures/TurtleSpiral.png" width="30%" />
       </statement>
@@ -219,12 +219,12 @@ for size in range(5, 60, 2):
         </block>
         <block order="2">
           <choice correct="yes">
-            <cline> turtleName.forward(size)</cline>
-            <cline> turtleName.right(90)</cline>
+            <cline>  turtleName.forward(size)</cline>
+            <cline>  turtleName.right(90)</cline>
           </choice>
           <choice>
-            <cline> turtleName.forward(x)</cline>
-            <cline> turtleName.right(90) </cline>
+            <cline>  turtleName.forward(x)</cline>
+            <cline>  turtleName.right(90) </cline>
           </choice>
         </block>
         <block order="8">

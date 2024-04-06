@@ -124,30 +124,30 @@ else:
         <cline> for i in range(100):</cline>
       </block>
       <block order="5">
-        <cline> flip = random.randrange(0, 2)</cline>
+        <cline>  flip = random.randrange(0, 2)</cline>
       </block>
       <block order="2">
-        <cline> if flip == 0:</cline>
-        <cline> headsInARow = headsInARow + 1</cline>
-        <cline> else:</cline>
-        <cline> headsInARow = 0</cline>
+        <cline>  if flip == 0:</cline>
+        <cline>   headsInARow = headsInARow + 1</cline>
+        <cline>  else:</cline>
+        <cline>   headsInARow = 0</cline>
       </block>
       <block order="3">
-        <cline> if headsInARow == desiredStreak:</cline>
-        <cline> break</cline>
+        <cline>  if headsInARow == desiredStreak:</cline>
+        <cline>   break</cline>
       </block>
       <block order="8">
         <cline> # Make final decision</cline>
         <cline> if headsInARow &gt;= desiredStreak:</cline>
       </block>
       <block order="1">
-        <cline> return True</cline>
+        <cline>  return True</cline>
       </block>
       <block order="9">
         <cline> else:</cline>
       </block>
       <block order="4">
-        <cline> return False</cline>
+        <cline>  return False</cline>
       </block>
     </blocks>
   </exercise>

@@ -100,10 +100,10 @@ print("We got", numHeads, "heads.")
       </block>
       <block order="4">
         <choice correct="yes">
-          <cline> numSixes = numSixes + 1</cline>
+          <cline>  numSixes = numSixes + 1</cline>
         </choice>
         <choice>
-          <cline> numSixes + 1 </cline>
+          <cline>  numSixes + 1 </cline>
         </choice>
       </block>
       <block order="8">

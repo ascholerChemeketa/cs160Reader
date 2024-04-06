@@ -35,12 +35,12 @@ alisha.forward(30)
         <cline> for side in range(3):</cline>
       </block>
       <block order="3">
-        <cline> turtleName.forward(120)</cline>
-        <cline> turtleName.right(90)</cline>
+        <cline>  turtleName.forward(120)</cline>
+        <cline>  turtleName.right(90)</cline>
       </block>
       <block order="2" correct="no">
-        <cline> nick.forward(120)</cline>
-        <cline> nick.right(90) </cline>
+        <cline>  nick.forward(120)</cline>
+        <cline>  nick.right(90) </cline>
       </block>
       <block order="6">
         <cline>#Start of main part of program</cline>
@@ -48,9 +48,9 @@ alisha.forward(30)
       </block>
       <block order="1">
         <cline>nick = Turtle()</cline>
-        <cline>triangle("nick")</cline>
+        <cline>triangle(nick)</cline>
         <cline>nick.right(180)</cline>
-        <cline>triangle("nick")</cline>
+        <cline>triangle(nick)</cline>
       </block>
     </blocks>
   </exercise>
@@ -78,22 +78,22 @@ alisha.forward(30)
       </block>
       <block order="1">
         <choice correct="yes">
-          <cline> turtle.forward(width)</cline>
-          <cline> turtle.right(90)</cline>
+          <cline>  turtle.forward(width)</cline>
+          <cline>  turtle.right(90)</cline>
         </choice>
         <choice>
-          <cline> carlos.forward(width)</cline>
-          <cline> carlos.right(90) </cline>
+          <cline>  carlos.forward(width)</cline>
+          <cline>  carlos.right(90) </cline>
         </choice>
       </block>
       <block order="3">
         <choice correct="yes">
-          <cline> turtle.forward(height)</cline>
-          <cline> turtle.right(90)</cline>
+          <cline>  turtle.forward(height)</cline>
+          <cline>  turtle.right(90)</cline>
         </choice>
         <choice>
-          <cline> turtle.forward(150)</cline>
-          <cline> turtle.right(90) </cline>
+          <cline>  turtle.forward(150)</cline>
+          <cline>  turtle.right(90) </cline>
         </choice>
       </block>
       <block order="6">
