@@ -25,8 +25,6 @@
       <publication>pretext/publication-runestone.xml</publication>
       <output-dir>published/welcomecs2</output-dir>
       <xsl>pretext/welcomecs-pretext.xsl</xsl>
-      <stringparam key="html.css.server" value="https://ascholerchemeketa.github.io/pretext_css_core" />
-      <stringparam key="html.css.version" value="wide-theme-release" />
       <stringparam key="html.css.extra" value="external/overrides.css"/>
     </target>
     

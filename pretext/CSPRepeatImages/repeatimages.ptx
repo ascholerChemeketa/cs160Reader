@@ -19,10 +19,7 @@ img.draw(win)                                    # draw it in that window
     are lot of lines in the program below,</p>
   <warning>
     <p>Be patient with programs that modify images, they can take a little while to produce their
-      results. Don’t press the <q>Save and Run</q> button multiple times or you will just have to
-      wait longer.</p>
-    <p>If you do hit the button too many times, you can reload the browser window to stop the
-      program.</p>
+      results.</p>
   </warning>
 
   <program xml:id="csprepeatimages_repeatimages1" interactive="activecode" language="python">

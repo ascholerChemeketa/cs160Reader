@@ -65,6 +65,7 @@
         img = Image("mount_hood.jpg)
         win = ImageWin(img.getWidth(), img.getHeight())
         img.draw(win)
+        img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
 
         # LOOP THROUGH THE PIXELS
         pixelList = img.getPixels()

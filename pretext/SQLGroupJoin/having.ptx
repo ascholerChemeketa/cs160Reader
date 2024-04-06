@@ -40,7 +40,9 @@ ORDER BY n_trips DESC
   <exercise label="sqlgroupjoin_having2">
     <statement>
       <p>Below is a query to find the total time each bike was ridden. Add a <c>HAVING</c> clause to select only the bikes
-        that were used for less than 1000 minutes.</p>
+        that were used for less than 30000 minutes.</p>
+
+      <hint>The <c>HAVING</c> must come before the <c>ORDER BY</c></hint>
 
     </statement>
     <program xml:id="sqlgroupjoin_having2_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
@@ -55,10 +57,10 @@ ORDER BY n_trips DESC
         ORDER BY total_time DESC
       </input>
       <tests>
-        assert 0,0 == W01236
-        assert 0,1 == 925
-        assert 1,0 == W00053
-        assert 1,1 == 537
+        assert 0,0 == W00187
+        assert 0,1 == 22400
+        assert 1,0 == W00139
+        assert 1,1 == 19724
       </tests>
     </program>
   </exercise>

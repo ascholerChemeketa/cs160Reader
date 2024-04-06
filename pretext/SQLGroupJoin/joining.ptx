@@ -29,8 +29,9 @@ WHERE
     station_id == 31104
         </input>
   </program>
-  <p>We need the name that is a part of that table, but to find the right station, we need to use the duration that is a
-    part of the other <c>trip_data</c> table. Rather than do the first query and then write the second based on the answer we
+  <p>We need the name that is a part of the <c>bikeshare_stations</c> table, but to find the right station, we need to use the duration that is a
+    part of the other <c>trip_data</c> table. Doing two queries to get the data we need is kind of inconvenient.</p>
+  <p>Rather than do the first query and then write the second based on the answer we
     get, we would like to write one query that works on both tables. In SQL, when you need to join data across multiple
     spreadsheets, you use the <c>JOIN</c> keyword. <c>JOIN</c> is used to merge the columns in one table with the columns in
     another table.</p>
@@ -94,7 +95,7 @@ WHERE
 
   <exercise label="sqlgroupjoin_joining5">
     <statement>
-      <p>Write a query to find out how many trips were started at <c>'Adams Mill &amp; Columbia Rd NW'</c>?</p>
+      <p>Write a query to find out how many trips were started at (had a <c>start_station</c> of) <c>'Adams Mill &amp; Columbia Rd NW'</c>?</p>
 
     </statement>
     <program xml:id="sqlgroupjoin_joining5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
@@ -102,29 +103,26 @@ WHERE
 
       </input>
       <tests>
-        assert 0,0 == 9883
+        assert 0,0 == 858
       </tests>
     </program>
   </exercise>
 
   <exercise label="sqlgroupjoin_joining6">
     <statement>
-      <p>Write a query to find the average duration of trips that started at stations that are now listed as closed.</p>
+      <p>Write a query to find the total number of trips that started at stations that are now listed as closed.</p>
       <p>Hints:</p>
       <p>
         <ul>
           <li>
-            <p><c>duration</c> is in bikeshare_stations. You will want to use <c>AVG()</c> to find the average of all the values
-              retrieved.</p>
+            <p>You will want to use <c>COUNT(*)</c> to find the total number of stations.</p>
           </li>
           <li>
-            <p>Open/closed is stored as <c>status</c> in <c>bikeshare_stations</c>. It is stored as a string, so use <c>'closed'</c> as the value you
-              search for.</p>
+            <p>Open/closed is stored as <c>status</c> in <c>bikeshare_stations</c>. It is stored as a string, so use <c>'closed'</c> as the value in your <c>WHERE</c>.</p>
           </li>
           <li>
             <p>Build your way to the final solution. Start by just joining the tables so that the start_station is being
-              batched with the station_id and select all columns. Then add a WHERE to get just closed stations. Then
-              try to average the duration.</p>
+              batched with the station_id and select all columns. Then add a WHERE to get just closed stations. Then get the count.</p>
           </li>
         </ul>
       </p>
@@ -135,7 +133,7 @@ WHERE
 
       </input>
       <tests>
-        assert 0,0 == 1268.9547619047619
+        assert 0,0 == 1162
       </tests>
     </program>
   </exercise>

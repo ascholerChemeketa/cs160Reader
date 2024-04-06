@@ -41,7 +41,7 @@ WHERE
     get an error about the <c>WHERE</c>.</p>
   <warning>
     <p>For the simple programs we write, there will always just be one query. You should only ever have one <c>;</c> at
-      the end of your program. You also can just leave off the <c>;</c> entirely in which case your program is assumed to
+      the end of your code. You also can just leave off the <c>;</c> entirely in which case your code is assumed to
       be all one statement.</p>
   </warning>
   <p>It is also possible to filter by multiple criteria by using <c>AND</c> or <c>OR</c>. For example, to look at bike trips

@@ -102,7 +102,8 @@ ORDER BY
       <statement>
         <p>On what bike number was the most recent (by start date) trip?</p>
         <p>Select just the column that has the bike number, and sort the results so that the most recently started trip
-          is first. It is easiest to begin by selecting all data (<c>*</c>) while you get the query logic correct so you
+          is first.</p>
+        <p>It is easiest to begin by selecting all data (<c>*</c>) while you get the query logic correct so you
           can see if the data is sorted correctly. Once you get it working, select just the column with the bike number.
           and limit the results to one record.</p>
 
@@ -113,7 +114,7 @@ ORDER BY
 
         </input>
         <tests>
-          assert 0,0 == W00042
+          assert 0,0 == W00163
         </tests>
       </program>
     </exercise>
@@ -134,8 +135,8 @@ ORDER BY
 
         </input>
         <tests>
-          assert 0,0 == 31617
-          assert 0,1 == 85666
+          assert 0,0 == 31200
+          assert 0,1 == 85504
         </tests>
       </program>
     </exercise>

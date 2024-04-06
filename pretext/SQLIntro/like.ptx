@@ -61,7 +61,7 @@ WHERE
         <condition number="71">
           <feedback>
             <p>That is the number of records that have 'NW' anywhere inside the string. Make sure to only get those
-              that end with 'NW'</p>
+              that end with <c>'NW'</c></p>
           </feedback>
         </condition>
         <condition string="^\s*.*\s*$">

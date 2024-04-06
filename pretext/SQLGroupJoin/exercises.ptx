@@ -36,7 +36,7 @@
         <cell> Rating (R, PG, etc<ellipsis/>) </cell>
       </row>
       <row>
-        <cell> genre </cell>
+        <cell> genres </cell>
         <cell> Comma-separated list of genres </cell>
       </row>
       <row>
@@ -195,8 +195,7 @@ Alfred Hitchcock      | 6
 
   <exercise label="sqlgroupjoin_exercises7">
     <statement>
-      <p>Write a query to list each <c>director</c> with the number of movies they have made that have an <c>imdb_score</c> of 8.5 or
-        higher.</p>
+      <p>Write a query to list each <c>director</c> with the number of movies they have made that have an <c>imdb_score</c> of greater than 8.5.</p>
       <p>Sort the results so the directors with the greatest number of highly rated files are first.</p>
       <p>Hint: Here you want to filter the movies by IMDB rating before they are aggregated, so you need a <c>WHERE</c> not a <c>HAVING</c>
         .</p>

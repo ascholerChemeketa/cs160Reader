@@ -91,16 +91,20 @@ elif action == "right":
     <program xml:id="cspdecisionsstrings_input3_editor" interactive="activecode" language="python">
       <input>
         def getGPAPoints(letterGrade):
-            #write funciton code here
+            points = 0
+            # TODO - write code to set points to 4, 3, 2, 1 based on grade
+            return points
 
         # Main part of program
-
+        # You can use these lines to type in values... 
         letter1 = input("Enter your first grade")
         letter2 = input("Enter your second grade")
         letter3 = input("Enter your third grade")
 
-        # Hard coded values to test with. You can comment out the lines above
-        # and uncomment these three lines to make it easier to test your code.
+        # or use these hard-coded values. so you do not have to enter inputs
+        # with each run.
+        # Comment out the lines above and uncomment the ones below to use the
+        # hard-coded values.
         # letter1 = "A"
         # letter2 = "C"
         # letter3 = "A"
