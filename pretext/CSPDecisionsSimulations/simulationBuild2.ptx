@@ -33,39 +33,39 @@
       
       # Let program run 100,000ms (100s)
       sys.setExecutionLimit(100000)
-
+      
       def checkHeadsInRow(desiredStreak):
           headsInARow = 0 #start with 0
-
-      for i in range(100):
-          flip = random.randrange(0, 2)
-
-      if flip == 0:
-          headsInARow = headsInARow + 1
-      else:
-          headsInARow = 0
-
-      if headsInARow == desiredStreak:
-          break
-
-      # Make final decision
-      if headsInARow &gt;= desiredStreak:
-          return True
-      else:
-          return False
-
+      
+          for i in range(100):
+              flip = random.randrange(0, 2)
+      
+              if flip == 0:
+                  headsInARow = headsInARow + 1
+              else:
+                  headsInARow = 0
+      
+              if headsInARow == desiredStreak:
+                  break
+      
+          # Make final decision
+          if headsInARow >= desiredStreak:
+              return True
+          else:
+              return False
+      
       # ---------------------------------
       # main part of program
       repetitions = 1000
       successCounter = 0
       for run in range(repetitions):
-      # use the function to see if we get the 5 heads in a row
-      result = checkHeadsInRow(5)
-      # TODO if result is True increase successCounter by 1
-
+          # use the function to see if we get the 5 heads in a row
+          result = checkHeadsInRow(5)
+          # TODO if result is True increase successCounter by 1
+      
       print("The successCounter is", successCounter)
       print("As a percent, that is:")
-
+      
       percent = (successCounter / repetitions) * 100
       print(str(percent) + "%")
     </input>
