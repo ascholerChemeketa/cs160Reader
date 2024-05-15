@@ -74,7 +74,7 @@ print("Done")
     </tr>
 </table></raw>
   <p>The only way to get the logic we want, is to make sure both the left and right sides of the <c>or</c> are expressions
-    that make sense on their own as logical expressions. We have to repeat the <c>color == `` part so that ``"green"</c> is not evaluated on its own:</p>
+    that make sense on their own as logical expressions. We have to repeat the <c>color ==</c> part so that <c>"green"</c> is not evaluated on its own:</p>
 
   <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
     <input>
