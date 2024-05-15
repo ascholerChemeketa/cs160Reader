@@ -58,21 +58,21 @@ print("Done")
   <p>It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered True in Python. So <c>green</c>
     counts as <c>True</c>. Since the value on the left of <c>or</c> is <c>False</c>, and the value on the right is <c>True</c>
     (according to Python), the final value of the expression is <c>True</c>.</p>
-  <raw format="html" xml:space="preserve">&lt;table class="table center"&gt;
-    &lt;tr&gt;
-        &lt;td width="33%"&gt;color == "blue"&lt;/td&gt;
-        &lt;td width="33%"&gt;or&lt;/td&gt;
-        &lt;td width="33%"&gt;green&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;False&lt;/td&gt;
-        &lt;td&gt;or&lt;/td&gt;
-        &lt;td&gt;True&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td colspan="3"&gt;True&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</raw>
+  <raw format="html" xml:space="preserve"><table class="table center"  style="text-align: center">
+    <tr>
+        <td width="33%">color == "blue"</td>
+        <td width="33%">or</td>
+        <td width="33%">green</td>
+    </tr>
+    <tr>
+        <td>False</td>
+        <td>or</td>
+        <td>True</td>
+    </tr>
+    <tr>
+        <td colspan="3">True</td>
+    </tr>
+</table></raw>
   <p>The only way to get the logic we want, is to make sure both the left and right sides of the <c>or</c> are expressions
     that make sense on their own as logical expressions. We have to repeat the <c>color == `` part so that ``"green"</c> is not evaluated on its own:</p>
 
