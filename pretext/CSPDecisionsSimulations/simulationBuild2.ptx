@@ -30,28 +30,29 @@
     <input>
       import random
       import sys
+      
       # Let program run 100,000ms (100s)
       sys.setExecutionLimit(100000)
 
       def checkHeadsInRow(desiredStreak):
-      headsInARow = 0 #start with 0
+          headsInARow = 0 #start with 0
 
       for i in range(100):
-      flip = random.randrange(0, 2)
+          flip = random.randrange(0, 2)
 
       if flip == 0:
-      headsInARow = headsInARow + 1
+          headsInARow = headsInARow + 1
       else:
-      headsInARow = 0
+          headsInARow = 0
 
       if headsInARow == desiredStreak:
-      break
+          break
 
       # Make final decision
       if headsInARow &gt;= desiredStreak:
-      return True
+          return True
       else:
-      return False
+          return False
 
       # ---------------------------------
       # main part of program
