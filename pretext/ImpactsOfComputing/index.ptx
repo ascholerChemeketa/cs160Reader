@@ -18,7 +18,6 @@
   
   <xi:include href='./B2B.ptx' />
   <xi:include href='./AnalyzingImpacts.ptx' />
-  <xi:include href='./SmartLocks.ptx' />
-  <xi:include href='./StreetMaps.ptx' />
+  <xi:include href='./AIJobEvaluation.ptx' />
 </chapter>
 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="impacts-of-computing_example-ai-job-evaluation">
+	<title>Example: AI in Job Evaluation</title>
+	<p>
+		Analyze the impact of using Artificial Intelligence (AI) tools to screen candidates in hiring or evaluate employee performance, in response to the following article.
+	</p>
+
+	<p>
+		<url href="https://www.npr.org/2022/05/12/1098601458/artificial-intelligence-job-discrimination-disabilities" visible="npr.org">U.S.
+		warns of discrimination in using artificial intelligence to screen job candidates</url>
+	</p>
+
+	<ol marker="A">
+		<li>
+			<em>Quote a passage or two from the article describing the purpose of the technology in question and the concerns about it.</em>
+			<p>
+				"artificial intelligence technology to screen new job candidates or monitor worker productivity can unfairly discriminate against people with disabilities"
+			</p>
+
+			<p>
+				"AI-based recruitment tools—while often pitched as a way of eliminating human bias—can actually entrench bias"
+			</p>
+		</li>
+
+		<li>
+			<em>Who uses the technology? Who benefits from it, and how do they benefit?</em>
+			<p>
+				Prospective employers use AI to screen candidates, so they can sort through applicants and hire good employees more efficiently.
+			</p>
+
+			<p>
+				There are other AI tools that employers use to ‘streamline the work of evaluating employees’.
+			</p>
+		</li>
+
+		<li>
+			<em>Who is harmed by the use of the technology, or unequal access to it? How could they be harmed? Quote specific examples from the article.</em>
+			<p>
+				Job applicants might be evaluated by a system that inflexibly defines ability:
+				"Such technology could potentially screen out people with speech impediments, severe arthritis that slows typing or a range of other physical or mental impairments, the officials said."
+			</p>
+
+			<p>
+				AI tools might judge employees unfairly by not taking accommodations into account:
+				"Tools built to automatically analyze workplace behavior can also overlook on-the-job accommodations—such as a quiet workstation for someone with post-traumatic stress disorder or more frequent breaks for a pregnancy-related disability—that enable employees to modify their work conditions to perform their jobs successfully."
+			</p>
+		</li>
+
+		<li>
+			<em>What does the article say is being done—or might be done—to change the impacts of the technology on society? What thoughts do you have?</em>
+			<p>
+				The US Justice Department issued guidance to employers.
+				Use of these tools may be restricted by the Americans with Disabilities Act.
+				They suggested that "employers should have accommodations for candidates with disabilities, including the ability to request an alternate path by which to be assessed".
+			</p>
+
+			<p>
+				Perhaps the evaluation tools could be made more aware of potential disabilities and accomodations.
+				The evaluation tools themselves should be evaluated by humans who have personal experience with workplace oppression.
+			</p>
+		</li>
+	</ol>
+</section>
