@@ -177,25 +177,20 @@
 
       </tabular>
     </table>
-    <p>To convert binary to hex, simply break up the number into groups of 4 digits and convert each group:</p>
-    <p>
-      <raw format="html" xml:space="preserve">
-        <style>.red {color: red} .blue {color: blue}</style>
-        011011000011    (1731 in decimal)<br />
-        <inline class="red">0110</inline><inline class="blue">1100</inline><inline class="red">0011</inline><br />
-        <inline class="red">6</inline>   <inline class="blue">C</inline>   <inline class="red">3</inline><br />
-        6C3             (1731 in decimal)
-      </raw>
-    </p>
-    <p>To convert hex to binary, we can just turn each hex digit into one group of four binary digits:</p>
-    <p>
-      <raw format="html" xml:space="preserve">
-        A1              (161 in decimal)<br />
-        <inline class="red">A</inline>   <inline class="blue">1</inline><br />
-        <inline class="red">1010</inline><inline class="blue">0001</inline><br />
-        10100001        (161 in decimal)
-      </raw>
-    </p>
+    <p>To convert binary to hex, simply break up the number into groups of 4 digits and convert each group, as in this example (the binary and hexadecimal numerals are both equivalent to decimal 1731).</p>
+    <tabular halign="center">
+        <row><cell colspan="3">011011000011</cell></row>
+        <row><cell>0110</cell><cell>1100</cell><cell>0011</cell></row>
+        <row><cell>6</cell><cell>C</cell><cell>3</cell></row>
+        <row><cell colspan="3">6C3</cell></row>
+    </tabular>
+    <p>To convert hex to binary, we can just turn each hex digit into one group of four binary digits, as in this example (the hexadecimal and binary numerals are both equivalent to decimal 161).</p>
+    <tabular halign="center">
+        <row><cell colspan="2">A1</cell></row>
+        <row><cell>A</cell><cell>1</cell></row>
+        <row><cell>1010</cell><cell>0001</cell></row>
+        <row><cell colspan="2">10100001</cell></row>
+    </tabular>
     <p>This video reviews how hexadecimal works and provides a few more examples:</p>
 
     <video xml:id="m1JtWKuTLR0" youtube="m1JtWKuTLR0" width="100%" />

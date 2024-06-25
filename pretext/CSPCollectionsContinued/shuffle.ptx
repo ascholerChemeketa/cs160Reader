@@ -1,7 +1,7 @@
 <section xml:id="csp-collections-continued_shuffle-a-list">
   <title>Shuffle A List</title>
   <p>Imagine we want to program a card game. We will need the ability to simulate a deck of cards and select a hand of
-    cards for the player. If we store the deck as a list: <c>["Ace", "2", "3",<ellipsis/>]</c> we can think of the start of the list as the
+    cards for the player. If we store the deck as a list: <c>["Ace", "2", "3", …]</c> we can think of the start of the list as the
     <q>top</q> of the deck and the end of the list as the <q>bottom</q>. Dealing a player cards could be
     as simple as slicing the deck - make one slice that has the first 5 cards, that is the player's hand, and a second
     slice with everything else that is the leftover cards.</p>

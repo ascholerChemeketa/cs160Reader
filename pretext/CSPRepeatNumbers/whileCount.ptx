@@ -44,7 +44,7 @@ while counter &lt; 11:
     <p>Remember that in assignment (<c>=</c>) statements, we always do the work on the right side, and then store the
       answer into the variable on the left side. Thus in <c>counter = counter + 1</c>, we first do <c>counter + 1</c> which says <q>add one to the
       value we have stored in counter</q>. On its own, that would not change <c>counter</c>. To change <c>counter</c>, we
-      need to store the answer back into <c>counter</c>, so we do <c>counter = <ellipsis/></c>.</p>
+      need to store the answer back into <c>counter</c>, so we do <c>counter = …</c>.</p>
     <p>We can do whatever we want to update the counter. We could count from 30 down to 0 by 5:</p>
 
     <program xml:id="csprepeatnumbers_whilecount4" interactive="codelens" language="python">

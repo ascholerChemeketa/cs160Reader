@@ -112,35 +112,29 @@
 
   <exercise label="logiccircuits_notandxorgate1">
     <statement>
-      <p>What is the result of applying <term>NOT</term> to: <raw format="html" xml:space="preserve"><br/></raw> 1110? <raw
-          format="html" xml:space="preserve"><br/></raw> <var />
-      </p>
+      <p>What is the result of applying <term>NOT</term> to 1110?</p>
+      <p><var /></p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*0001\s*$">
+        <condition string="0001">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*[^01]+\s*$">
+        <condition string="[01]{4}">
+          <feedback>
+            <p>Flip each bit in the input pattern to its opposite.</p>
+          </feedback>
+        </condition>
+        <condition string="[01]+">
+          <feedback>
+            <p>Wrong number of digits</p>
+          </feedback>
+        </condition>
+        <condition string="">
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1,3}\s*$">
-          <feedback>
-            <p>Not enough digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{5,}\s*$">
-          <feedback>
-            <p>Too many digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Hint: flip each bit in the input pattern to its opposite.</p>
           </feedback>
         </condition>
       </var>
@@ -148,35 +142,43 @@
   </exercise>
   <exercise label="logiccircuits_notandxorgate2">
     <statement>
-      <p>What is the result of applying <term>XOR</term> to: <raw format="html" xml:space="preserve"><br/></raw> 0101 <raw
-          format="html" xml:space="preserve"><br/></raw> 0011? <raw format="html" xml:space="preserve"><br/></raw> <var />
-      </p>
+      <p>What is the result of applying <term>XOR</term> to the following?</p>
+      <tabular>
+        <row>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>0</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>1</cell>
+        </row>
+      </tabular>
+      <p><var /></p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*0110\s*$">
+        <condition string="0110">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*[^01]+\s*$">
+        <condition string="[01]{4}">
+          <feedback>
+            <p>Make sure to perform the operation in each column separately</p>
+          </feedback>
+        </condition>
+        <condition string="[01]+">
+          <feedback>
+            <p>Wrong number of digits</p>
+          </feedback>
+        </condition>
+        <condition string="">
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1,3}\s*$">
-          <feedback>
-            <p>Not enough digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{5,}\s*$">
-          <feedback>
-            <p>Too many digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Hint: apply XOR to each column of bits. XOR reports 1 if one (and only one) of the bits is 1.</p>
           </feedback>
         </condition>
       </var>

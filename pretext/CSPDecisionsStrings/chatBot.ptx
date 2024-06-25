@@ -10,37 +10,32 @@
     questions that require specific answers and count on the user to respond logically, basic conditional code
     can handle generating our responses. A forced conversation might go like this:</p>
 
-    <console>
-      <prompt>Computer: Hello, what is your name? </prompt>
-      <input>
-        User: Greg</input>
-      <prompt>Computer: Hello Greg. Nice to meet you. Where do you go to school? </prompt>
-      <input>
-        User: Chemeketa</input>
+    <console prompt="User: ">
+      <output>Computer: Hello, what is your name? </output>
+      <input>Greg</input>
+      <output>Computer: Hello Greg. Nice to meet you. Where do you go to school? </output>
+      <input>Chemeketa</input>
     </console>
 
     <p>We would test to see if the input has "Chemeketa" in it, if so give this message:</p>
 
-    <console>
-      <prompt>Computer: That is where I live! </prompt>
-      <input></input>
+    <console prompt="User: ">
+      <output>Computer: That is where I live!</output>
     </console>
 
     <p>Otherwise, we would have the computer say something like:</p>
 
-    <console>
-      <prompt>Computer: "Huh, never heard of it."</prompt>
-      <input></input>
+    <console prompt="User: ">
+      <output>Computer: Huh, never heard of it.</output>
     </console>
 
-    <p>Then we would continue:</p>
+    <p>Then we would continue, and in this case we might just ignore what the user says but answer as though it made sense:</p>
 
-    <console>
-      <prompt>Computer: What is your favorite movie? </prompt>
-      <input>User: I like "Rushmore"?</input>
-      <output>Just ignore the user's input and pretend as if we used it...</output>
-      <prompt>Computer: Oh, that is a pretty good one. I like "The Matrix",
-        I just wish it had a happy ending.</prompt><input></input>
+    <console prompt="User: ">
+      <output>Computer: What is your favorite movie? </output>
+      <input>I like "Rushmore"?</input>
+      <output>Computer: Oh, that is a pretty good one. I like "The Matrix",
+          I just wish it had a happy ending.</output>
     </console>
 
   <p>Write a chatbot that asks the user at least three questions and then uses the user’s input to build its

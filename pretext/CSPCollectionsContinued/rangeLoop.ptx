@@ -47,7 +47,7 @@ for index in range( len(list) ):
     probably means <q>index</q> when used in a loop, <c>i</c> does in fact have meaning.</p>
   <p>This program uses <c>i</c> as the index variable. In it, we have a list of names that need to be capitalized. To do
     this, we loop through the indexes 0-3, access the value at that index (<c>names[i]</c>), call <c>capitalize()</c> on it, and then store
-    it back to the same location in the list <c>names[i] = <ellipsis/></c>:</p>
+    it back to the same location in the list <c>names[i] = …</c>:</p>
 
   <program xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
     <input>

@@ -86,7 +86,7 @@ print("Done")
   </program>
   <warning>
     <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can’t have
-      something that looks like <c><ellipsis/> or "blue"</c> or <c><ellipsis/> and 10</c> or that part will just count as True.</p>
+      something that looks like <c>… or "blue"</c> or <c>… and 10</c> or that part will just count as True.</p>
   </warning>
 </section>
 
