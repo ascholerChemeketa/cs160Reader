@@ -42,12 +42,12 @@ print(binary)
           string <c>""</c>. This happens before the loop.</p>
       </li>
       <li>
-        <p>Use a loop to iterate through all the data. There should be a variable that on each value in the data we are
+        <p>Use a loop to iterate through all the data. There should be a variable that takes on each value in the data we are
           trying to accumulate.</p>
       </li>
       <li>
-        <p>Combine each <em>piece</em> of the data into the accumulator. The first program uses <c>+</c> to add each
-          value to the number <c>sum</c>. The second program uses <c>+</c> to build up the string <c>binary</c>.</p>
+        <p>Combine each <em>piece</em> of the data into the accumulator. The first program uses addition to add each
+          value to the number <c>sum</c>. The second program uses concatenation to build up the string <c>binary</c>.</p>
       </li>
       <li>
         <p>Once the loop is done, do something with the result.</p>
