@@ -86,7 +86,7 @@
   <p>Now we can use your code to help find the average pollution for a large number of different states. Add your loop
     to the main part of the program below and make sure your loop runs the two lines shown in comments (you may have to
     adjust the variable name <c>state</c> so it matches your loop). <c>stateList</c> has a list of the three richest (MD, AK, NJ) and
-    poorest states (AK, WV, MS) by per capita income.</p>
+    poorest states (AR, WV, MS) by per capita income.</p>
 
   <program xml:id="csppythondata_comparestates3" interactive="activecode" language="python">
     <input>
