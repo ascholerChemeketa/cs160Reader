@@ -53,7 +53,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Choices at https://github.com/PreTeXtBook/CSS_core -->
     <!-- Some not bad ones: blue_green, blue_grey, blue_red_dark, bluegreen_grey,
         darkmartiansands -->
-    <css style="wide" toc="wide" banner="wide" navbar="wide" shell="wide" />
+    <css theme="salem"/>
     <tableofcontents focused="yes" />
     <search variant="reference"/>
   </html>
