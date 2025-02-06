@@ -50,7 +50,8 @@
       <program line-numbers="yes" language="python">
         <input>first = "Hi"
 next = "There"
-print ((first + next) * 2)</input>
+print ((first + next) * 2)
+        </input>
       </program>
     </statement>
     <choices>
@@ -105,4 +106,3 @@ print ((first + next) * 2)</input>
 
   </exercise>
 </section>
-
