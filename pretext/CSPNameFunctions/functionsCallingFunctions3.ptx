@@ -74,7 +74,7 @@ print(testArea)
         </condition>
         <condition string="^\s*.*\s*$">
           <feedback>
-            <p>Make sure to watch the program run and type in the value of the perimeter to at least
+            <p>Make sure to watch the program run and type in the value of the perimeter to
               2 decimal places.</p>
           </feedback>
         </condition>

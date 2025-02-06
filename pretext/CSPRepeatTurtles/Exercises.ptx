@@ -174,19 +174,39 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*^\s*5\s*,\s*106\s*,\s*20\s*$\s*$">
+        <condition string="^\s*5\s*,\s*106\s*,\s*20\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*20\s*$\s*$">
+        <condition string="^\s*5\s*,\s*125\s*,\s*20\s*$">
+          <feedback>
+            <p>This is a common way to produce the desired range, but what is the smallest possible stopValue?</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*5\s*,\s*\d+\s*,\s*20\s*$">
+          <feedback>
+            <p>Wrong stopValue; be sure to use the smallest possible number</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$">
           <feedback>
             <p>Wrong startValue</p>
           </feedback>
         </condition>
-        <condition string="^\s*^\s*\d+\s*,\s*106\s*,\s*\d+\s*$\s*$">
+        <condition string="^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$">
           <feedback>
             <p>Wrong step</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$">
+          <feedback>
+            <p>Some of the values are incorrect</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Provide three numbers separated by commas</p>
           </feedback>
         </condition>
       </var>
