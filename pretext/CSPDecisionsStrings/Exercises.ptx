@@ -118,8 +118,8 @@
 
   <exercise label="cspdecisionsstrings_exercises4">
     <statement>
-      <p>The program below is supposed to figure out the cost of a ticket for a customer to a museum. Anyone who is over
-        65 or younger than 12 gets in free. Anyone who is 12 to 17 gets in for $8. Everyone else is $15.</p>
+      <p>The program below is supposed to figure out the cost of a ticket for a customer to a museum. Anyone who is at least
+        65 or who is younger than 12 gets in free. Anyone who is 12 through 17 gets in for $8. Everyone else is $15.</p>
       <p>Your job is to write the <c>getTicketCost</c> function. It should use the <c>age</c> parameter to decide on the right cost and then
         return that value. (Just return a number like 0, 8, or 15, don’t include $).</p>
 
@@ -149,8 +149,10 @@
             def testOne(self):
                 self.assertEqual(getTicketCost(6), 0, "Testing age 6")
                 self.assertEqual(getTicketCost(11), 0, "Testing age 11")
+                self.assertEqual(getTicketCost(12), 8, "Testing age 12")
                 self.assertEqual(getTicketCost(13), 8, "Testing age 13")
                 self.assertEqual(getTicketCost(17), 8, "Testing age 17")
+                self.assertEqual(getTicketCost(18), 15, "Testing age 18")
                 self.assertEqual(getTicketCost(32), 15, "Testing age 32")
                 self.assertEqual(getTicketCost(65), 0, "Testing age 65")
                 self.assertEqual(getTicketCost(80), 0, "Testing age 80")
