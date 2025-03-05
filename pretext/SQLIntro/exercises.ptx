@@ -35,8 +35,8 @@
         <cell> Rating (R, PG, etc<ellipsis/>) </cell>
       </row>
       <row>
-        <cell> genre </cell>
-        <cell> Comma separated list of genres </cell>
+        <cell> genres </cell>
+        <cell> Comma-separated list of genres </cell>
       </row>
       <row>
         <cell> runtime </cell>
@@ -127,7 +127,7 @@
   <exercise label="sqlintro_exercises4">
     <statement>
       <p>Write a query to select all of the columns of the movies that are in the genre <c>"Sci-Fi"</c>. Many movies have
-        multiple genres, we want to include every movie where Sci-Fi is anywhere in the list of genres - you will have
+        multiple genres, and we want to include every movie where Sci-Fi is anywhere in the list of genres - you will have
         to use <c>LIKE</c>.</p>
 
     </statement>

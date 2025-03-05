@@ -4,7 +4,7 @@
   <p>
     <ul>
       <li>
-        <p><term>query</term> - Request to a database for information are called queries.</p>
+        <p><term>query</term> - Requests to a database for information are called queries.</p>
       </li>
       <li>
         <p><term>SQL</term> - Structured Query Language, or SQL, is a programming language designed for writing

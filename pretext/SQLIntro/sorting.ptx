@@ -32,10 +32,9 @@ ORDER BY
   </program>
   <subsection xml:id="sql-intro_limit">
     <title>LIMIT</title>
-    <p>That query returns over 400,000 records (the environment we use will only show us 100 of those to prevent the web
+    <p>That query returns vast quantities of records (the environment we use will only show us 100 of those to prevent the web
       page from being overwhelmed with data). If we only want to see the 10 longest trips, we can use <c>LIMIT</c> to specify
-      the maximum number of rows to return:</p>
-    <p>but to <c>LIMIT</c> the output to the first 10 rows.</p>
+      the maximum number of rows to return.</p>
 
     <program xml:id="sqlintro_sorting3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <input>
