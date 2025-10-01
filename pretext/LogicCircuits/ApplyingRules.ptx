@@ -108,7 +108,7 @@
             <p>Wrong number of digits</p>
           </feedback>
         </condition>
-        <condition string="">
+        <condition string="^\s*.*\s*$">
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
           </feedback>
@@ -152,7 +152,7 @@
             <p>Wrong number of digits</p>
           </feedback>
         </condition>
-        <condition string="">
+        <condition string="^\s*.*\s*$">
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
           </feedback>
