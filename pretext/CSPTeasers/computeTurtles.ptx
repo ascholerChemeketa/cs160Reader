@@ -117,7 +117,7 @@ zari.right(90)          # turn by 90 degrees</pre>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="">
+        <condition string="^\s*.*\s*$">
           <feedback>
             <p>No, think of basic shapes. How many turns are made?</p>
           </feedback>
