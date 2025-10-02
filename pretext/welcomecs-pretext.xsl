@@ -62,6 +62,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 </xsl:template>
 
 
+<!-- Temporary - disable clipboard button on code samples. it is causing issues with FITB problems. -->
+<xsl:template name="insert-clipboardable-class"/> 
+
 <xsl:variable name="b-has-baseurl" select="not($baseurl = '')"/>
 
 <xsl:template name="brand-logo">
