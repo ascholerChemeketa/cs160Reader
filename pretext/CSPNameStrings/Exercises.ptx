@@ -100,7 +100,7 @@
         milesPerHour = 70
         distanceTravelled = 140
         timeTaken = distanceTravelled / milesPerHour
-        print("A car travelling at...")
+        print("A car traveling at...")
       </input>
       <tests>
 
@@ -108,7 +108,7 @@
 
         class myTests(TestCaseGui):
             def testOne(self):
-                self.assertEqual(self.getOutput().strip(), "A car travelling at 70 mph takes 2.0 hours to go 140 miles.", "Testing your output. Make sure you have spaces in the right places!" )
+                self.assertEqual(self.getOutput().strip(), "A car traveling at 70 mph takes 2.0 hours to go 140 miles.", "Testing your output. Make sure you have spaces in the right places!" )
                 self.assertRegex("".join(self.getEditorText().split("\n")[2:]), r"\D*", "Testing that you used the variables and did not just type numbers.")
 
         myTests().main()
