@@ -91,7 +91,7 @@
         <cline> current_height = initial_height - 16.87 * (time ** 2)</cline>
       </block>
       <block order="4">
-        <cline>print("After", time, "seconds)</cline>
+        <cline>print("After", time, "seconds")</cline>
         <cline>print("the object is on the ground")</cline>
       </block>
     </blocks>
