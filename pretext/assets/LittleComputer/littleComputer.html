@@ -267,6 +267,10 @@ h1 {
 			var url = window.location.href;
 			if(url.indexOf('?program=') != -1) {
 				var program = url.slice(window.location.href.indexOf('?program=')+9);
+				//remove any extra parameters
+				if(program.indexOf('&') != -1) {
+					program = program.slice(0, program.indexOf('&'));
+				}	
 				program = program.replace(/\//g, "\n");
 				$('#memoryBody').val(program);
 			}
