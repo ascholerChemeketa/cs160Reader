@@ -36,7 +36,30 @@
     Having multiple busses avoids this bottleneck by allowing the CPU to communicate the next address it wants at the same
     time memory sends data back to the CPU.</p>
 
+  <exercise label="computer-architecture_the-processor-ex1">
+    <statement>
+      <p>Match each processor component to its primary role.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Performs mathematical and logic operations</premise>
+        <response>Arithmetic logic unit</response>
+      </match>
+      <match>
+        <premise>Directs movement of instructions and sends control signals</premise>
+        <response>Control unit</response>
+      </match>
+      <match>
+        <premise>Provides small, fast storage for information currently in use</premise>
+        <response>Registers</response>
+      </match>
+      <match>
+        <premise>Holds program instructions and data outside the processor</premise>
+        <response>Main memory</response>
+      </match>
+    </cardsort>
+  </exercise>
+
     <remark> Materials on this page adapted with permission from <url
       href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
 </section>
-

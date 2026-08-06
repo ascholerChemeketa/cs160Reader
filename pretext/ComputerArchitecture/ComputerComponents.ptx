@@ -38,5 +38,47 @@
     battery that supplies electricity, to complex devices like the storage (hard drives, DVD drives, flash drives) that
     provide long-term backup for main memory. But the basic functionality of the modern computer can be understood in
     terms of a processor, memory, and input/output.</p>
-</section>
+  <exercise label="computer-architecture_computer-components-ex1">
+    <statement>
+      <p>Which of the following are part of the basic functionality shared by modern computers? Select all that apply.</p>
+    </statement>
+    <choices randomize="yes" multiple-correct="yes">
+      <choice correct="yes">
+        <statement><p>A processor that runs programs</p></statement>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Main memory that stores active programs and data</p></statement>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Input and output devices that exchange information with the computer</p></statement>
+      </choice>
+      <choice>
+        <statement><p>An optical disc drive</p></statement>
+      </choice>
+    </choices>
+  </exercise>
 
+  <exercise label="computer-architecture_computer-components-ex2">
+    <statement>
+      <p>Match each description to the component it describes.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise><p>Runs programs</p></premise>
+        <response>Processor</response>
+      </match>
+      <match>
+        <premise><p>Stores the information and programs currently being used</p></premise>
+        <response>Main memory</response>
+      </match>
+      <match>
+        <premise><p>Carries messages between computer components</p></premise>
+        <response>Bus</response>
+      </match>
+      <match>
+        <premise><p>Gets information into the computer or presents the results of calculations</p></premise>
+        <response>Input/output device</response>
+      </match>
+    </cardsort>
+  </exercise>
+</section>

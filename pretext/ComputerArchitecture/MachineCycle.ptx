@@ -39,7 +39,26 @@
 
   <video xml:id="jcHuWnIt6eI" youtube="jcHuWnIt6eI" width="100%" />
 
+  <exercise label="computer-architecture_the-machine-cycle-ex1">
+    <statement>
+      <p>During the fetch stage, which sequence correctly describes how the processor obtains the next instruction?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>Read its address from the program counter, request it from main memory, and place it in the instruction register.</p></statement>
+      </choice>
+      <choice>
+        <statement><p>Decode it in the ALU, copy its address to RAM, and place its result in the program counter.</p></statement>
+      </choice>
+      <choice>
+        <statement><p>Read it from secondary memory, execute it in the clock, and place it in the cache.</p></statement>
+      </choice>
+      <choice>
+        <statement><p>Request it from the instruction register, store it in the program counter, and send it to secondary memory.</p></statement>
+      </choice>
+    </choices>
+  </exercise>
+
   <remark> Materials on this page adapted with permission from <url
       href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
 </section>
-

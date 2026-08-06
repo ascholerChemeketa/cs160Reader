@@ -46,6 +46,47 @@
     up to 255, most computers use addresses that are much longer, often 32 or 64 bits long (8 or 16 hexadecimal digits)
     and thus can address billions of different bytes.</p>
 
+  <exercise label="computer-architecture_main-memory-ex1">
+    <statement>
+      <p>A value occupies 32 bits in main memory. How many bytes does it occupy?
+        <fillin mode="number" answer="4"/>
+      </p>
+    </statement>
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>.*</strcmp>
+          <feedback>
+            <p>Recall that one byte contains 8 bits.</p>
+          </feedback>
+        </test>
+      </evaluate>
+    </evaluation>
+  </exercise>
+
+  <exercise label="computer-architecture_main-memory-ex2">
+    <statement>
+      <p>What determines the meaning of the bits at a given location in memory?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>How the running program chooses to interpret the bits</p></statement>
+      </choice>
+      <choice>
+        <statement><p>The memory address where the bits are stored</p></statement>
+      </choice>
+      <choice>
+        <statement><p>The bit pattern by itself, regardless of how it is used</p></statement>
+      </choice>
+      <choice>
+        <statement><p>Whether the bits were most recently read or written</p></statement>
+      </choice>
+    </choices>
+  </exercise>
+
   <remark> Materials on this page adapted with permission from <url
       href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley Kjell
     (<url
