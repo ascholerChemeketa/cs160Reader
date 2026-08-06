@@ -53,8 +53,29 @@
     </figure>
   </subsection>
 
+  <exercise label="computing-fields_information-systems_1">
+    <statement>
+      <p>Which career would be most appropriate for someone with a degree in Information Systems?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Computer Systems Analyst</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Software Developer</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Computer Research Scientist</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 
   <remark> Materials on this page adapted from <url
     href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
 </section>
-

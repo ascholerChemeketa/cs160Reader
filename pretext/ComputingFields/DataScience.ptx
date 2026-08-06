@@ -56,5 +56,32 @@
     </p>
   </subsection>
   
-</section>
+  <exercise label="computing-fields_data-science_1">
+    <statement>
+      <p>Which of the following are commonly featured in a data science degree program according to this page?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>A solid foundation in programming and algorithms</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Mathematics including statistics and likely calculus and linear algebra</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Expertise in a particular domain</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Specialized training limited to hardware repair and circuit design</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 
+</section>

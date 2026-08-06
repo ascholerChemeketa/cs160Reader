@@ -54,8 +54,34 @@
     </figure>
   </subsection>
 
+  <exercise label="computing-fields_cybersecurity_1">
+    <statement>
+      <p>Which statement best describes cybersecurity according to this page?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>It is a cross-disciplinary field focused on preventing misuse of computational devices and data.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It is mainly about writing encryption algorithms.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It focuses only on business policy and user training rather than technical systems.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It is a purely technical discipline.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 
   <remark> Materials on this page adapted from <url
     href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
 </section>
-

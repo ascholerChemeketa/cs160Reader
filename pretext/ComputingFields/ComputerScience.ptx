@@ -71,8 +71,35 @@
     </figure>
   </subsection>
 
+  <exercise label="computing-fields_computer-science_1">
+    <statement>
+      <p>Other than programming, which is the strongest knowledge area for Computer Scientists?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Algorithms</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Operating Systems</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Computer Architecture</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Computer Networks</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
   <remark> Materials on this page adapted from <url
     href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
 
 </section>
-

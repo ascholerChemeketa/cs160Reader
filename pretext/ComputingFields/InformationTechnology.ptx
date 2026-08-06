@@ -67,8 +67,26 @@
     </figure>
   </subsection>
 
+  <exercise label="computing-fields_information-technology-ex1">
+    <statement>
+      <p>
+        Match each description to either Information Technology or Information Systems.
+      </p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Hands on technology focused</premise>
+        <premise>Requires certificate or two-year degree</premise>
+        <response>Information Technology</response>
+      </match>
+      <match>
+        <premise>Business and management oriented</premise>
+        <premise>Requires four-year degree</premise>
+        <response>Information Systems</response>
+      </match>
+    </cardsort>
+  </exercise>
 
   <remark> Materials on this page adapted from <url
     href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
 </section>
-

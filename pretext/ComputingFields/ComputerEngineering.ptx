@@ -45,7 +45,34 @@
     </figure>
   </subsection>
 
+  <exercise label="computing-fields_computer-engineering_1">
+    <statement>
+      <p>Which of the following are core knowledge areas (4 or 5 rating) for Computer Engineers?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Computer Architecture</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Electronic Circuits</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Software Design</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Algorithms</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
   <remark> Materials on this page adapted from <url
     href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
 </section>
-
