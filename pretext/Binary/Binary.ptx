@@ -1,16 +1,15 @@
 <section xml:id="binary_binary-and-its-advantages">
   <title>Binary and Its Advantages</title>
-  <p><term>Binary</term> means <q>two states.</q> The two states are alternatively called <q>1</q> and
+  <p>A <term>binary</term> value is one that can only have two possible values. Which we typically call <q>1</q> and
     <q>0</q>, <q>true</q> and <q>false</q>, or <q>on</q> and <q>off</q>. But no
     matter what we call them, the essential characteristic is that a <em>single binary device can be in just one of two
-    possible states</em>.</p>
+    possible states</em>. This means that a system that uses binary values is digital.</p>
+
   <p>A good example is a toggle switch, such as a light switch. You can turn it on or off but not (in normal operation)
     anything else. A light switch holds one bit of information.</p>
 
   <raw format="html" xml:space="preserve"><img class="center" width="50%" src="external/Binary/Images/OffSwitch.gif"  onmouseover="$(this).attr('src','external/Binary/Images/OnSwitch.gif')" onmouseout="$(this).attr('src','external/Binary/Images/OffSwitch.gif')" /></raw>
 
-  <p>A light dimmer is not a binary device: it has many positions between off and fully on. If you want a light dimmer
-    to be set to 25%, you must carefully adjust it.</p>
   <p>There are many advantages to binary. Here are four (somewhat overlapping) important reasons for using binary:</p>
   <p>
     <ol>
@@ -148,7 +147,51 @@
         </feedback>
       </choice>
     </choices>
+  </exercise>
 
+  <exercise label="binary_binary3">
+    <statement>
+      <p>Which of the following is a binary device?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>A light dimmer</p>
+        </statement>
+        <feedback>
+          <p>A light dimmer is not a binary device: it has many positions between off and fully on. If you want a light
+            dimmer to be set to 25%, you must carefully adjust it.</p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>A power plug</p>
+        </statement>
+        <feedback>
+          <p>A power plug can only be in one of two states: plugged in or unplugged.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>A volume knob</p>
+        </statement>
+        <feedback>
+          <p>A volume knob is not a binary device: it has many positions between off and fully on. If you want a volume
+            knob to be set to 25%, you must carefully adjust it.</p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>The shift lever in a car</p>
+        </statement>
+        <feedback>
+          <p>The shift lever in a car can be in more than two states: park, neutral, drive, reverse, etc...</p>
+        </feedback>
+      </choice>
+    </choices>
   </exercise>
 
   <sidebar>
@@ -165,4 +208,3 @@
     (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
 </section>
-

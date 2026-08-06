@@ -78,7 +78,6 @@
     <table>
       <tabular>
 
-
         <row header="yes">
           <cell> Name </cell>
           <cell> Number of Bytes </cell>
@@ -184,7 +183,7 @@
     </exercise>
     <exercise label="binary_bytes2">
       <statement>
-        <p>How many bytes are in 4KiB? <var />
+        <p>How many <em>bytes</em> are in 4KiB? <var />
         </p>
       </statement>
       <setup>
@@ -217,6 +216,69 @@
         </var>
       </setup>
     </exercise>
+    <exercise label="binary_bytes_3">
+      <statement>
+        <p>How many <em>bits</em> are in 20MiB? <var />
+        </p>
+      </statement>
+      <setup>
+        <var>
+          <condition number="167772160">
+            <feedback>
+              <p>Correct!</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*[^\d]+\s*$">
+            <feedback>
+              <p>Your answer should be a number</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*.{1,8}\s*$">
+            <feedback>
+              <p>That is not enough digits</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*.{10,}\s*$">
+            <feedback>
+              <p>That is too many digits</p>
+            </feedback>
+          </condition>
+          <condition string="^\s*x\s*$">
+            <feedback>
+              <p>Hint: how many <em>bytes</em> are in 20MiB? How many bits are in that many bytes?</p>
+            </feedback>
+          </condition>
+        </var>
+      </setup>
+    </exercise>
+    <exercise label="binary_bytes_4">
+      <statement>
+        <p>How many times bigger is 1GiB than 1MiB?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>1024 times bigger</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>1000 times bigger</p>
+          </statement>
+          <feedback>
+            <p>We want powers of 2, not powers of 10.</p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>2 times bigger</p>
+          </statement>
+          <feedback>
+            <p>GiB = <m>2^{30}</m> bytes, MiB = <m>2^{20}</m> bytes, so GiB is <m>2^{10}</m> times bigger.</p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
   </subsection>
 
   <remark> Materials on this page adapted with permission from <url
@@ -224,4 +286,3 @@
     (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
 </section>
-

@@ -66,7 +66,31 @@
         </feedback>
       </choice>
     </choices>
+  </exercise>
 
+  <exercise label="binary_analog_2">
+    <statement>
+      <p>
+        Identify each data type as either analog or digital. 
+      </p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Voltage on a wire</premise>
+        <premise>The temperature</premise>
+        <response>Analog</response>
+      </match>
+      <match>
+        <premise>The result of flipping a coin</premise>
+        <premise>A digit in a number</premise>
+        <premise>A letter in a word</premise>
+        <response>Digital</response>
+      </match>
+    </cardsort>
+    <hint>
+      <p>Analog data can take on an infinite number of values, while digital data can only take on a limited number of
+        values.</p>
+    </hint>
   </exercise>
 
   <remark> Materials on this page adapted with permission from <url
@@ -75,4 +99,3 @@
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
 
 </section>
-

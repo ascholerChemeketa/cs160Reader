@@ -94,9 +94,10 @@
   <p>
     <term>Number of possible patterns of N bits = <m>2^N</m></term>
   </p>
-  <p>Memorize this fact. Better yet, make lists of patterns (as above) and play around until you understand. Do this
-    now. This is an essential fact. If you allow yourself to get muddled on it, you will waste much time in this and
-    future courses.</p>
+  <p>This is a fact worth memorizing. It will come up over and over in this course and later ones. So take some time
+    to play with the toggle switches above and convince yourself that this is true and develop an intuition for
+    why it is true.
+  </p>
 
 
   <exercise label="binary_bitpatterns1">
@@ -135,10 +136,46 @@
     </setup>
   </exercise>
 
+  <exercise label="binary_bitpatterns_2">
+    <statement>
+      <p>Given six on/off switches, how many different patterns can be formed? <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="64">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{1}\s*$">
+          <feedback>
+            <p>That is not enough digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*.{3,}\s*$">
+          <feedback>
+            <p>That is too many digits</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*[^\d]+\s*$">
+          <feedback>
+            <p>Your answer should be a number</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Hint: it has to be a power of 2</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+
+
 
   <remark> Materials on this page adapted with permission from <url
       href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley Kjell
     (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
 </section>
-

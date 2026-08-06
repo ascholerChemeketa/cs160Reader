@@ -1,6 +1,21 @@
 <section xml:id="binary_analog-to-digital">
   <title>Analog To Digital</title>
-  <p>We can turn an analog signal into a simple digital one with two possible states by interpreting it against a
+  <p>Most physical measurements are analog in nature. When we engineer a system to produce or measure a signal like
+    the voltage on a wire, we can't expect to get a perfect value. There will always be some noise in the system.
+    Instead of 3.00000 volts, we might get 3.00001 volts or 2.99999 volts. 
+  </p>
+  <p>This makes producing exact results difficult when computing with analog data. Precision is important in computing.
+    We generally expect computers to be deterministic, meaning they should produce the same output for a given input.
+    If a slight variation in an analog signal can change the outcome, it is difficult (if not impossible) to achieve
+    consistent results. Is the 3.00001 volts we are seeing really 3.00000 volts with some noise? Or is it <q>really</q>
+   3.00001?</p>
+  <aside>
+    <p>Analog computers do exist. They are less common than digital computers, especially today, but at one point they
+      were common in applications where analog data needed to be processed to produce an analog result.
+    </p>
+  </aside>
+  <p>Rather than trying to capture the exact analog value, we can turn an analog signal into a simple digital
+    one with two possible states by interpreting it against a
     threshold. Any time we measure the value of the signal, if the value is below the threshold we call it
     <q>off</q>; if it is above the threshold we call it <q>on</q>. In the image below, we could say at T1,
     the signal is off and at T2, it is on.</p>
@@ -18,9 +33,7 @@
 
   <exercise label="binary_analogtodigital1">
     <statement>
-
       <p>If a <term>digital</term> signal picks up some noise, has information been lost?</p>
-
     </statement>
     <choices>
 
@@ -60,7 +73,35 @@
         </feedback>
       </choice>
     </choices>
+  </exercise>
 
+  <exercise label="binary_analogtodigital_2">
+    <statement>
+      <p>To convert an analog signal to either 0 or 1, we need one threshold. If we wanted to convert
+        the signal to one of four values, how many thresholds would be needed?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>3</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>5</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+      </choice>
+    </choices>
   </exercise>
   
   <remark> Materials on this page adapted with permission from <url
@@ -68,4 +109,3 @@
   (<url
     href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </remark>
 </section>
-
