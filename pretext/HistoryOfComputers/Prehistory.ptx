@@ -4,14 +4,11 @@
     tokens that were in use before 4000 BC. A given token might represent one sheep or ten sheep. To represent a count
     of 32 sheep, you would take three 10-sheep tokens and two 1-sheep tokens and seal them in a clay container.</p>
   <figure xml:id="prehistory-img1">
-    <caption><copyright/> Marie-Lan Nguyen / Wikimedia Commons</caption>
+    <caption>Counting stones <copyright/> Marie-Lan Nguyen / Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/Accountancy_clay_envelope_Louvre_Sb1932.jpg"
       width="50%">
       <shortdescription>Counting stones</shortdescription>
     </image>
-    <legend>
-      <p>Counting stones</p>
-    </legend>
   </figure>
   <p>By about 2500 BC, counting devices had been abstracted away from counting a particular thing and abacuses first
     appeared in ancient Sumer. These devices rely on the user moving beads or stones to represent numbers and to do
@@ -19,15 +16,12 @@
     European counting house, a checkered cloth would be placed on a table, and markers moved around on it according to
     certain rules, as an aid to calculating sums of money.</p>
   <figure xml:id="prehistory-img2">
-    <caption>Wikimedia Commons</caption>
+    <caption>An abacus. Wikimedia Commons</caption>
     <image
       source="HistoryOfComputers/Images/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"
       width="50%">
       <shortdescription>Abacus</shortdescription>
     </image>
-    <legend>
-      <p>An abacus</p>
-    </legend>
   </figure>
   <sidebar>
     <title>The Antikythera Mechanism</title>
@@ -49,23 +43,17 @@
     be implemented using <xref ref="binary_binary-and-its-advantages" text="custom">binary</xref>.</p>
   <container classes="inlinegroup clear">
     <figure xml:id="prehistory-img3">
-      <caption>Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>
+      <caption>The Pascaline. Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Pascaline-CnAM_00823-0003-IMG_6509.JPG"
         width="50%">
         <shortdescription>Pascaline</shortdescription>
       </image>
-      <legend>
-        <p>The Pascaline</p>
-      </legend>
     </figure>
     <figure xml:id="prehistory-img4">
-      <caption>Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons</caption>
+      <caption>Leibniz's notes on binary numbers. Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Leibniz_binary_system_1703.png" width="50%">
         <shortdescription>Leibniz notes</shortdescription>
       </image>
-      <legend>
-        <p>Leibniz's notes on binary numbers</p>
-      </legend>
     </figure>
   </container>
   <remark><p> Materials on this page adapted with permission from <url

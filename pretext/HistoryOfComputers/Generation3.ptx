@@ -29,14 +29,10 @@
       ref="operating-systems_operating-systems-varieties" text="custom">operating systems</xref> were developed that allowed multiple programs and
     users to interact with the machine at once.</p>
   <figure xml:id="the-third-generation-img2">
-    <caption>Doug Letterman, CC BY 2.0, via Wikimedia Commons</caption>
+    <caption>The PDP machines of the third generation were enormously influential - much early computer science was done on these machines. Doug Letterman, CC BY 2.0, via Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/PDP-8.jpg" width="50%">
       <shortdescription>PDP-8</shortdescription>
     </image>
-    <legend>
-      <p>The PDP machines of the third generation were enormously influential - much early computer science was done on
-        these machines</p>
-    </legend>
   </figure>
   <remark><p> Materials on this page adapted with permission from <url
       href="http://en.wikipedia.org/">Wikipedia</url> (<url

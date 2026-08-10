@@ -19,22 +19,16 @@
     of these machines.</p>
   <container classes="inlinegroup">
     <figure xml:id="the-fouth-generation-img2">
-      <caption>Ed Uthman, CC BY-SA 2.0, via Wikimedia Commons</caption>
+      <caption>The Apple I computer was sold as a kit for which people had to build their own case. Ed Uthman, CC BY-SA 2.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Apple_I_Computer.jpg" width="50%">
         <shortdescription>Apple I</shortdescription>
       </image>
-      <legend>
-        <p>The Apple I computer was sold as a kit for which people had to build their own case</p>
-      </legend>
     </figure>
     <figure xml:id="the-fouth-generation-img3">
-      <caption>Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia Commons</caption>
+      <caption>The first IBM PC was the 5150. Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Ibm_pc_5150.jpg" width="50%">
         <shortdescription>IBM 5150</shortdescription>
       </image>
-      <legend>
-        <p>The first IBM PC was the 5150</p>
-      </legend>
     </figure>
   </container>
   <remark><p> Materials on this page adapted with permission from <url
