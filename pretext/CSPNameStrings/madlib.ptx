@@ -2,7 +2,7 @@
   <title>Making a MadLib story</title>
   <p>You might have done MadLib stories when you were a kid. You provide some pieces of information, like the name of a
     friend, a verb, and a favorite game (for example), and those pieces of information get plugged into a story. Since
-    you don't know the story beforehand, you’re surprised at what happens to your friend in the story.</p>
+    you don't know the story beforehand, you're surprised at what happens to your friend in the story.</p>
 
   <program xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
     <input>

@@ -128,7 +128,7 @@ var2 = var1
 
   </exercise>
   <p>We can see values (including the values for named variables) by printing them. It's a useful
-    way to see what's going on inside a program. Try running this example where we’re having the
+    way to see what's going on inside a program. Try running this example where we're having the
     computer calculate the number of days in three weeks:</p>
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing3">

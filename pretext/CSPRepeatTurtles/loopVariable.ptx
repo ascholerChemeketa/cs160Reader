@@ -145,7 +145,7 @@ for size in range(5, 60, 2):
     </program>
     <p>All except one of the shapes you see on the screen here are copies of the turtle shape created by <c>stamp</c>. But
       the program still only has <em>one</em> turtle instance <mdash /> can you figure out which one is the real tess?
-      (Hint: if you’re not sure, write a new line of code after the <c>for</c> loop to change tess’ color, or to put her
+      (Hint: if you're not sure, write a new line of code after the <c>for</c> loop to change tess’ color, or to put her
       pen down and draw a line, or to change her shape, etc<ellipsis />)</p>
     <p>
       <term>Mixed up program</term>

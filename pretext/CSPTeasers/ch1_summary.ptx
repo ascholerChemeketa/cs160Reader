@@ -9,7 +9,7 @@
           sometimes called a <term>program</term>.</p>
       </li>
       <li>
-        <p><term>Comment</term> - Comments explain what we’re doing in the programs and are intended
+        <p><term>Comment</term> - Comments explain what we're doing in the programs and are intended
           to be read by people, not computers. In Python, a comment starts with <c>#</c>. The
           computer will ignore everything from the start of the comment to the end of that line.</p>
       </li>

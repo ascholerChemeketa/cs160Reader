@@ -18,7 +18,7 @@
     comment at the start of the procedure reminding myself of assumptions I have made - in this case that the turtle is
     facing East. An assumption that is made by a procedure is known as a <term>precondition</term> to the procedure - it
     is something that must already be true when we start for the procedure to work correctly.</p>
-  <p>I’ll also write some code to test it. I will try to use my procedure to draw a few different rectangles -
+  <p>I'll also write some code to test it. I will try to use my procedure to draw a few different rectangles -
     first, a 50x50 rectangle (a square), followed by a 10x100 narrow But tall rectangle. Try the code:</p>
 
   <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">

@@ -9,7 +9,7 @@
     <title>How Big?</title>
     <p><url href="https://htwins.net/scale2/"
            visual="https://htwins.net/scale2/">This cool animation</url> allows you
-      to explore the microscopic world. (Hint: you’ll find transistors at about <m>{10}^{-7}</m> meters)</p>
+      to explore the microscopic world. (Hint: you'll find transistors at about <m>{10}^{-7}</m> meters)</p>
   </sidebar>
   <p>Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly
     shrinking the size of computational components we have been able to build more complex and faster processors.

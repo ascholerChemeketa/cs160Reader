@@ -1,6 +1,6 @@
 <section xml:id="csp-decisions-images_a-pixel-selection-function">
   <title>A Pixel Selection Function</title>
-  <p>This time, we’re going to get a bit trickier. We are going to try to change the red scooter
+  <p>This time, we're going to get a bit trickier. We are going to try to change the red scooter
       in this picture into a blue one.</p>
       
   <image source="CSP/Images/scooter.jpg" width="20%">
