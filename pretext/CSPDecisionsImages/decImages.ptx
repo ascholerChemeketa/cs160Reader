@@ -6,24 +6,34 @@
 
   <hidden>
     <datafile label="fr-flag" filename="fr-flag.gif">
-      <image source="CSP/Images/fr-flag.gif" />
+      <image source="CSP/Images/fr-flag.gif">
+        <shortdescription>Flag of France.</shortdescription>
+      </image>
     </datafile>
     <datafile label="be-flag" filename="be-flag.gif">
-      <image source="CSP/Images/fr-flag.gif" />
+      <image source="CSP/Images/fr-flag.gif">
+        <shortdescription>Flag of France.</shortdescription>
+      </image>
     </datafile>
     <datafile label="cd-flag" filename="cd-flag.gif">
-      <image source="CSP/Images/cd-flag.gif" />
+      <image source="CSP/Images/cd-flag.gif">
+        <shortdescription>Flag of the Democratic Republic of the Congo.</shortdescription>
+      </image>
     </datafile>
   </hidden>
 
   <sidebyside widths="20% 20%" margins="25%">
     <figure>
       <caption>French flag</caption>
-      <image source="CSP/Images/fr-flag.gif" />
+      <image source="CSP/Images/fr-flag.gif">
+        <shortdescription>Flag of France.</shortdescription>
+      </image>
     </figure>
     <figure>
       <caption>Chadian flag</caption>
-      <image source="CSP/Images/cd-flag.gif" />
+      <image source="CSP/Images/cd-flag.gif">
+        <shortdescription>Flag of the Democratic Republic of the Congo.</shortdescription>
+      </image>
     </figure>
   </sidebyside>
 
@@ -84,11 +94,15 @@ for p in pixels:
       <sidebyside widths="20% 20%" margins="25%">
         <figure>
           <caption>Chadian flag</caption>
-          <image source="CSP/Images/cd-flag.gif" />
+          <image source="CSP/Images/cd-flag.gif">
+            <shortdescription>Flag of the Democratic Republic of the Congo.</shortdescription>
+          </image>
         </figure>
         <figure>
           <caption>Belgian flag</caption>
-          <image source="CSP/Images/be-flag.gif" />
+          <image source="CSP/Images/be-flag.gif">
+            <shortdescription>Flag of Belgium.</shortdescription>
+          </image>
         </figure>
       </sidebyside>
 

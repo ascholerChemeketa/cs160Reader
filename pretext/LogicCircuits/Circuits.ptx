@@ -8,7 +8,9 @@
     every other gate requires two inputs.</p>
 
   <image source="LogicCircuits/Images/BasicGates.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Symbols for basic logic gates.</shortdescription>
+  </image>
 
   <p>Key features:</p>
   <p>

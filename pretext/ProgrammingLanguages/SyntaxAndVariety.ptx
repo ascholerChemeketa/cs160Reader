@@ -11,7 +11,9 @@
         A genealogy of computer programming languages. O’Reilly publishing </url>
     </caption>
 
-    <image source="ProgrammingLanguages/Images/history-poster20.gif"/>
+    <image source="ProgrammingLanguages/Images/history-poster20.gif">
+      <shortdescription>Timeline poster showing the history of programming languages.</shortdescription>
+    </image>
   </figure>
   <sidebar>
     <title>Hello World</title>

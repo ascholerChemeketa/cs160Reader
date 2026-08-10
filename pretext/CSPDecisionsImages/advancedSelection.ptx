@@ -3,7 +3,9 @@
   <p>This time, we’re going to get a bit trickier. We are going to try to change the red scooter
       in this picture into a blue one.</p>
       
-  <image source="CSP/Images/scooter.jpg" width="20%" /> 
+  <image source="CSP/Images/scooter.jpg" width="20%">
+    <shortdescription>Person riding a scooter used as a sample image.</shortdescription>
+  </image> 
 
   <p>To do that we need to select all the red pixels. But there are a lot of different <q>reds</q>.
       Obviously, a pixel with the color red = 255, green = 0, and blue = 0 is red.

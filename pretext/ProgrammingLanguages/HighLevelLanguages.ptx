@@ -16,7 +16,9 @@
     to type, but it also means there is less code to debug - when something goes wrong, it is often easier to track
     down.</p>
   <image source="ProgrammingLanguages/Images/compiling.png"
-         width="80%"/>
+         width="80%">
+    <shortdescription>Diagram showing high-level code being compiled into machine code.</shortdescription>
+  </image>
   <p>The samples below show what code might look like in various language levels. Imagine we are designing software for
     the sales terminal in a restaurant; we are going to look at the part of the code that might calculate the 15% tip
     that is automatically added to large groups. <em>(Note: all the languages are made up samples of a particular level

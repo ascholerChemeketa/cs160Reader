@@ -64,7 +64,9 @@
       </p>
     </caption>
     <image source="LimitsAndFuture/Images/tut-intro-lightswitcheshandj.png"
-           width="50%"/>
+           width="50%">
+      <shortdescription>Quantum computing light switch analogy diagram.</shortdescription>
+    </image>
 
   </figure>
   <p>Quantum computers are probabilistic - each time you run a quantum algorithm, you do not get the same answer.

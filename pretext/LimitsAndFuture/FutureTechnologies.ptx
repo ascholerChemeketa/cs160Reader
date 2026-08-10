@@ -22,7 +22,9 @@
       by US Dept. of Energy</url>
     </caption>
     <image source="LimitsAndFuture/Images/nanoscale.jpg"
-           width="80%"/>
+           width="80%">
+      <shortdescription>Nanoscale technology illustration.</shortdescription>
+    </image>
   </figure>
   <p>We are nearing the end of our ability to continue shrinking existing silicon microchips. As the scale of components
     decreases, they become harder to build and harder to make reliable. Every attempt to reduce the size of chips

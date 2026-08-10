@@ -36,7 +36,9 @@ bob.end_fill()
         </input>
   </program>
   <p>Now we want to add a <q>chimney</q> to the house that looks something like this:</p>
-  <image source="CSPNameTurtles/Figures/turtle-house-3.png" width="20%" />
+  <image source="CSPNameTurtles/Figures/turtle-house-3.png" width="20%">
+    <shortdescription>Turtle graphics drawing of a house.</shortdescription>
+  </image>
   <p>Modify the program above so that it draws a <c>"red"</c> chimney. You can either draw it before or after drawing the
     roof.</p>
 

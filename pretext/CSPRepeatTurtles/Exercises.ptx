@@ -221,7 +221,9 @@
       <p>We want to make a series of rectangles such that the first one is 10x90, the next is 20x80, the next is 30x70,
         <ellipsis/> until we draw one that is 90x10. Doing so will make a <q>staircase grid</q> like the one shown
         below:</p>
-      <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%" />
+      <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%">
+        <shortdescription>Turtle graphics stair-step pattern.</shortdescription>
+      </image>
       <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for loop to call the procedure with the
         correct values for its parameters. Make sure that the 90-width and 10-height rectangle is the first one you
         draw. You should only need one loop and <term>it must count down from 90 to 10</term>.</p>

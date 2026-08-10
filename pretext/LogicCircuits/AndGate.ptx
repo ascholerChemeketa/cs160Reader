@@ -5,13 +5,19 @@
     one pathway through both switches from the battery to the light bulb, both switches must be in the on position to
     light the bulb:</p>
   <image source="LogicCircuits/Images/switchesAnd3.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Switch circuit demonstrating an AND gate with both switches closed.</shortdescription>
+  </image>
   <p>If either switch is off, that stops the current and the output is 0 (off):</p>
   <container classes="inlinegroup">
     <image source="LogicCircuits/Images/switchesAnd1.png"
-           width="45%"/>
+           width="45%">
+      <shortdescription>Switch circuit demonstrating one input case for an AND gate.</shortdescription>
+    </image>
     <image source="LogicCircuits/Images/switchesAnd2.png"
-           width="45%"/>
+           width="45%">
+      <shortdescription>Switch circuit demonstrating another input case for an AND gate.</shortdescription>
+    </image>
   </container>
   <p>What happens if both switches are off? If the first switch is off, the current is stopped there - it doesn't matter
     what state the second one is in, we know the output will be 0. Once again we can express this as a truth table. Note

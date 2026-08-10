@@ -9,17 +9,25 @@
     really work)</em> In the figure below, the electricity is being routed through the top switch that is on. The fact
     that the bottom switch is in the off position does not change the fact that power can reach the bulb.</p>
   <image source="LogicCircuits/Images/switchesOr1.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Switch circuit demonstrating one input case for an OR gate.</shortdescription>
+  </image>
   <p>If only the bottom switch is on, or if both switches are on, the power can still reach the bulb to light it:</p>
   <container classes="inlinegroup">
     <image source="LogicCircuits/Images/switchesOr2.png"
-           width="45%"/>
+           width="45%">
+      <shortdescription>Switch circuit demonstrating another input case for an OR gate.</shortdescription>
+    </image>
     <image source="LogicCircuits/Images/switchesOr4.png"
-           width="45%"/>
+           width="45%">
+      <shortdescription>Switch circuit demonstrating an OR gate with both switches closed.</shortdescription>
+    </image>
   </container>
   <p>The only way the light bulb will not be on is if both switches are in the off position:</p>
   <image source="LogicCircuits/Images/switchesOr3.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Switch circuit demonstrating an OR gate with both switches open.</shortdescription>
+  </image>
 
   <p>These switches are demonstrating the Boolean logic rule of <term>OR</term>. The OR rule says that if either input
     (switch) is on, the output (light) is on. This can be summarized in terms of a <term>truth table</term>. A truth
@@ -75,7 +83,9 @@
       Boole</url> invented the rules of logic that computers use in the 1800s. The term <term>Boolean</term> logic gets
       its name from him.</p>
     <image source="LogicCircuits/Images/George_Boole_color.jpg"
-           width="50%"/>
+           width="50%">
+      <shortdescription>Portrait of George Boole.</shortdescription>
+    </image>
   </sidebar>
   <exercise label="logic-circuits_the-or-gate-ex1">
     <statement>

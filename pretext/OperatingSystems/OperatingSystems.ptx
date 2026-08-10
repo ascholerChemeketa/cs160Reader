@@ -9,7 +9,9 @@
     many of the operating system logos do you recognize in the image below?</p>
   <figure>
     <image source="OperatingSystems/Images/operating-system-logos.jpg"
-           width="50%"/>
+           width="50%">
+      <shortdescription>Logos of several operating systems.</shortdescription>
+    </image>
     <caption> Popular operating systems logos. Clockwise from top-left: Macintosh, Linux, Windows, FreeBSD, Android, iOS </caption>
   </figure>
   <sidebar>

@@ -4,7 +4,9 @@
     procedures. We have already used this idea - our procedures like <c>square</c> make use of existing turtle
     procedures like <c>forward</c>. But we can also use our own existing procedures to write other new procedures.</p>
   <p>Say we want to draw this shape:</p>
-  <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%" />
+  <image source="CSPDesigningProcedures/Figures/turtlegrid.png" width="50%">
+    <shortdescription>Turtle graphics grid used for procedure design.</shortdescription>
+  </image>
   <p>We notice that it consists of three rows. Each row consists of three squares. We already know how to write a
     procedure draw a square<ellipsis/> lets use it to write a procedure to draw a row of squares:</p>
 

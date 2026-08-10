@@ -13,7 +13,9 @@
     <figure>
       <caption>Gordon Moore - Image <copyright/> Intel Corporation</caption>
       <image source="ParallelProcessing/Images/Moore.jpg"
-             width="30%"/>
+             width="30%">
+        <shortdescription>Portrait of Gordon Moore.</shortdescription>
+      </image>
     </figure>
   </sidebar>
 
@@ -72,7 +74,9 @@
       Commons</url> - <url name="CC-BY-SA-3.0"
            refuri="http://creativecommons.org/licenses/by-sa/3.0"> CC-BY-SA-3.0</url></caption>
     <image source="ParallelProcessing/Images/TransistorCounts.png"
-           width="100%"/>
+           width="100%">
+      <shortdescription>Graph of transistor counts increasing over time.</shortdescription>
+    </image>
   </figure>
   <p>Unfortunately, the <q>free ride</q> of increased power that computer programmers and users have enjoyed has hit
     some speed bumps. Partly, this is the necessity of squeezing transistors into ever-smaller spaces. Currently,
@@ -89,7 +93,9 @@
                  refuri="http://creativecommons.org/licenses/by-sa/3.0">
       CC-BY-SA-3.0</reference></caption>
     <image source="ParallelProcessing/Images/power.png"
-           width="80%"/>
+           width="80%">
+      <shortdescription>Graph showing processor power trends over time.</shortdescription>
+    </image>
   </figure>
   <exercise label="parallel-processing_moore-s-law-ex1">
     <statement>

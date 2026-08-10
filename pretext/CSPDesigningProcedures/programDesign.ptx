@@ -22,7 +22,9 @@
   <subsection xml:id="csp-designing-procedures_top-down-design-example">
     <title>Top-Down Design Example</title>
     <p>Say I want to draw a house using turtle graphics that looks like this:</p>
-    <image source="CSPDesigningProcedures/Figures/turtlehouse.png" width="50%" />
+    <image source="CSPDesigningProcedures/Figures/turtlehouse.png" width="50%">
+      <shortdescription>Turtle drawing of a simple house.</shortdescription>
+    </image>
     <p>My design process might look like this:</p>
     <blockquote>
       <p>Can I <c>drawHouse</c> in ~10 lines of code? Pretty sure I can not. So let me break it down. Well, I need to:</p>

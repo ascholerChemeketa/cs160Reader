@@ -30,7 +30,9 @@
   <exploration>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-1.png"/>
+        <image source="OperatingSystems/Images/VirtualMemory-Page-1.png">
+          <shortdescription>Virtual memory pages for two processes mapped into physical RAM.</shortdescription>
+        </image>
         <p>Process A thinks it has 8 addresses to use. So does process B. Orange blocks show memory for process A that
           is currently actually in the physical RAM and blue blocks show memory for B that is currently in RAM.</p>
         <p>When Process A asks the operating system for <q>memory location 1</q> because it wants to access the data <term>
@@ -43,7 +45,9 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-2.png"/>
+        <image source="OperatingSystems/Images/VirtualMemory-Page-2.png">
+          <shortdescription>Virtual memory diagram showing a missing page loaded from storage.</shortdescription>
+        </image>
         <p>The gray blocks are blocks that are not currently in RAM. They are sitting on the hard drive, which is being
           used as backup storage for the RAM since there is too much total information to fit in the main memory all at
           the same time.</p>
@@ -51,7 +55,9 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-3.png"/>
+        <image source="OperatingSystems/Images/VirtualMemory-Page-3.png">
+          <shortdescription>Virtual memory diagram showing page replacement in RAM.</shortdescription>
+        </image>
         <p>Now imaging Process B asks the operating system for <q>memory location 8</q>.</p>
         <p>That memory block, <q>B8</q>, is not currently in RAM, it is on the hard drive. So, the operating system
           needs to move it back into RAM (the hard drive is too slow to work from directly).</p>
@@ -62,14 +68,18 @@
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-4.png"/>
+        <image source="OperatingSystems/Images/VirtualMemory-Page-4.png">
+          <shortdescription>Virtual memory diagram showing updated page mappings after replacement.</shortdescription>
+        </image>
         <p>The needed block, <q>B8</q>, has now been placed into location 5. Meanwhile, <q>A3</q> has finished moving to
           the hard drive to be stored until it is needed again.</p>
       </statement>
     </task>
     <task>
       <statement>
-        <image source="OperatingSystems/Images/VirtualMemory-Page-5.png"/>
+        <image source="OperatingSystems/Images/VirtualMemory-Page-5.png">
+          <shortdescription>Virtual memory diagram showing process pages split between RAM and storage.</shortdescription>
+        </image>
         <p>Finally, the operating system can complete the request by giving Process B the memory block <q>B8</q>.</p>
         <p>Process A doesn't know that <q>A3</q> is no longer actually in main memory. If it goes to access it, the
           operating will use the same procedure to restore it from the hard drive by evicting some other block of

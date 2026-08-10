@@ -115,7 +115,9 @@ alex.forward(75)        # move forward by 75 units
       <p>
         <term>You will not use all the blocks.</term>
       </p>
-      <image source="CSPNameTurtles/Figures/TurtleT1.png" width="30%" />
+      <image source="CSPNameTurtles/Figures/TurtleT1.png" width="30%">
+        <shortdescription>Turtle graphics drawing of a T shape.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="1">
@@ -164,7 +166,9 @@ alex.forward(75)        # move forward by 75 units
       <p>
         <term>You will not use all the blocks.</term>
       </p>
-      <image source="CSPNameTurtles/Figures/turtleA2.png" width="30%" />
+      <image source="CSPNameTurtles/Figures/turtleA2.png" width="30%">
+        <shortdescription>Turtle graphics drawing of the letter A.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="8">

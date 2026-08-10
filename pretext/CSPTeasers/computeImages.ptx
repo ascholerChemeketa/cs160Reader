@@ -15,7 +15,9 @@
   <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
 
   <datafile label="cat" filename="cat.jpg">
-    <image source="CSP/Images/cat.jpg" width="30%" />
+    <image source="CSP/Images/cat.jpg" width="30%">
+      <shortdescription>Cat used as a sample image.</shortdescription>
+    </image>
   </datafile>
 
   <exercise label="cspteasers_computeimages1">

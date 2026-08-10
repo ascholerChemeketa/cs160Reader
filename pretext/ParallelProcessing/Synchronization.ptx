@@ -65,7 +65,9 @@
     <figure>
       <caption>A worker trying to access an already locked resource must wait for the existing lock to be released</caption>
       <image source="ParallelProcessing/Images/lock.png"
-             width="100%"/>
+             width="100%">
+        <shortdescription>Lock icon representing synchronization.</shortdescription>
+      </image>
     </figure>
     <p>In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step
       3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step
@@ -81,7 +83,9 @@
     <figure>
       <caption>Once we reach step 4 both A and B will be stuck waiting for the other one to finish.</caption>
       <image source="ParallelProcessing/Images/deadlocked.png"
-             width="100%"/>
+             width="100%">
+        <shortdescription>Diagram illustrating two processes deadlocked while waiting for locks.</shortdescription>
+      </image>
     </figure>
     <p>Deadlock depends on three criteria being met:</p>
     <p>

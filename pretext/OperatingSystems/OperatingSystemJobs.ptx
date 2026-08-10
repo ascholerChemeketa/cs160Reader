@@ -7,7 +7,9 @@
                  refuri="http://creativecommons.org/licenses/by-sa/3.0">
       CC-BY-SA-3.0</reference></caption>
     <image source="OperatingSystems/Images/Operating_system.png"
-           width="30%"/>
+           width="30%">
+      <shortdescription>Operating system layer between applications and computer hardware.</shortdescription>
+    </image>
   </figure>
   <p>When a computer is turned on, the hardware loads code from a set location in permanent memory (generally the disk
     drive) into the main memory. Those instructions load the operating system code and start it up. Once running, the

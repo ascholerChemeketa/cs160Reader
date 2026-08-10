@@ -210,7 +210,9 @@
     </table>
     <p>Comparing the graphs tells the same story. In relation to a Linear graph, a Logarithmic one appears to not be
       growing at all:</p>
-    <image source="Algorithms/Images/Searches.svg"/>
+    <image source="Algorithms/Images/Searches.svg">
+      <shortdescription>Diagram comparing common search algorithms.</shortdescription>
+    </image>
 
   </subsection>
   <exercise label="algorithms_search-efficiencies-ex1">

@@ -9,7 +9,9 @@
     each yellow box.</p>
   <figure align="center">
     <caption>Lists and their indices</caption>
-    <image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%" />
+    <image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%">
+      <shortdescription>Python list diagram showing element indices.</shortdescription>
+    </image>
   </figure>
   <p>We use square brackets to access items of the list, e.g., <c>myList[0]</c> will access the first item in the list. <c>myList[1]</c>
     will access the second item in the list.</p>

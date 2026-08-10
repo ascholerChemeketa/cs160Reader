@@ -155,7 +155,9 @@ for size in range(5, 60, 2):
         <p>The following program creates a square spiral as shown below. To do so, we must draw sides of length 0, 5,
           10, 15, <ellipsis /> 195. After drawing each side, we will turn to get ready for the next side.</p>
         <p>Arrange and indent the blocks correctly. You will not use them all.</p>
-        <image source="CSPRepeatTurtles/Figures/TurtleSpiral.png" width="30%" />
+        <image source="CSPRepeatTurtles/Figures/TurtleSpiral.png" width="30%">
+          <shortdescription>Turtle graphics spiral pattern.</shortdescription>
+        </image>
       </statement>
       <blocks>
         <block order="9">
@@ -203,7 +205,9 @@ for size in range(5, 60, 2):
         <p>The following program defines a <c>square</c> procedure and then uses it to draw squares of size 20, 40, 60, 80,
           and 100.</p>
         <p>Arrange and indent the blocks correctly. You will not use them all.</p>
-        <image source="CSPRepeatTurtles/Figures/TurtleSquares.png" width="30%" />
+        <image source="CSPRepeatTurtles/Figures/TurtleSquares.png" width="30%">
+          <shortdescription>Turtle graphics pattern of repeated squares.</shortdescription>
+        </image>
       </statement>
       <blocks>
         <block order="4">

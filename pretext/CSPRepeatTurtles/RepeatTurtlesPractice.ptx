@@ -10,7 +10,9 @@
         mixed up. The program should do all necessary set-up, create the turtle, set the shape to <q>turtle</q>,
         and pick up the pen. Stamp the blue turtles before you stamp the green ones.</p>
       <p>Arrange and indent the blocks correctly. You will not need them all.</p>
-      <image source="CSPRepeatTurtles/Figures/TurtleStampX.png" width="30%" />
+      <image source="CSPRepeatTurtles/Figures/TurtleStampX.png" width="30%">
+        <shortdescription>Turtle stamp pattern forming an X shape.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="2">
@@ -64,7 +66,9 @@
         lines are mixed up. The program should do all necessary set-up, create the turtle, set the shape to
         <q>turtle</q>, and pick up the pen. Draw the blue square before you draw the green one.</p>
       <p>Arrange and indent the blocks correctly. You will not need them all.</p>
-      <image source="CSPRepeatTurtles/Figures/TurtleStampDoubleSquare.png" width="30%" />
+      <image source="CSPRepeatTurtles/Figures/TurtleStampDoubleSquare.png" width="30%">
+        <shortdescription>Turtle stamp pattern forming two square outlines.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="4">

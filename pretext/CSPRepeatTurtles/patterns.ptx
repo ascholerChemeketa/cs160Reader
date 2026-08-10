@@ -60,7 +60,9 @@ for repeats in range(20):
         draw 10 triangles. As it does so, we want it to make a full circle. Think carefully about how many degrees the
         turtle needs to turn at each step to make a full circle.</p>
       <p>You will not need all of the blocks.</p>
-      <image source="CSPRepeatTurtles/Figures/RedTrianglesBlueCircle.png" width="30%" />
+      <image source="CSPRepeatTurtles/Figures/RedTrianglesBlueCircle.png" width="30%">
+        <shortdescription>Repeated turtle pattern of red triangles around a blue circle.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="2">

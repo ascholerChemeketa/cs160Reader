@@ -68,7 +68,9 @@ chad.right(120)
         <q>jamal</q> draw the L, and then have <q>tina</q> draw the line. Drag the blocks of statements
         from the left column to the right column and put them in the right order. Then click on <em> Check</em> to see
         if you are right.</p>
-      <image source="CSPNameTurtles/Figures/TwoTurtles1N.png" width="30%" />
+      <image source="CSPNameTurtles/Figures/TwoTurtles1N.png" width="30%">
+        <shortdescription>Two turtle objects shown with separate names.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="2">
@@ -125,7 +127,9 @@ chad.right(120)
         create the turtle <q>tina</q>, and have it draw a line to the east. Drag the blocks of statements from
         the left column to the right column and put them in the right order. Then click on <em>Check</em> to see if you
         are right.</p>
-      <image source="CSPNameTurtles/Figures/TwoTurtlesLN.png" width="30%" />
+      <image source="CSPNameTurtles/Figures/TwoTurtlesLN.png" width="30%">
+        <shortdescription>Two labeled turtles shown with separate names.</shortdescription>
+      </image>
     </statement>
     <blocks>
       <block order="2">

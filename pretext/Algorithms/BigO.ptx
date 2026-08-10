@@ -10,7 +10,9 @@
     , <term>Linear</term>, <term>Logarithmic</term> and <term>Quadratic</term>; their relative growths are shown in the
     figure below.</p>
   <p>
-    <image source="Algorithms/Images/CommonBigOs.svg"/>
+    <image source="Algorithms/Images/CommonBigOs.svg">
+      <shortdescription>Graph comparing common Big O growth rates.</shortdescription>
+    </image>
   </p>
   <p>To write that an algorithm is in a particular class, we say that it is <m>O(n)</m> or <m>O(log(n))</m>. Spoken, we
     would say something like: <em>

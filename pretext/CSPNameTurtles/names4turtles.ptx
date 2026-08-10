@@ -100,7 +100,9 @@ alex.forward(75)        # move forward by 75 units
           this problem there are extra blocks you will not use.</term> You will only use 1a or 1b, not both. Same with
           2a/2b, 4a/4b, etc<ellipsis/></p>
         <p>When you think you are done, click on <em>Check</em> to see if you are right.</p>
-        <image source="CSPNameTurtles/Figures/TurtleL4.png" width="30%" />
+        <image source="CSPNameTurtles/Figures/TurtleL4.png" width="30%">
+          <shortdescription>Turtle graphics drawing of an L shape.</shortdescription>
+        </image>
       </statement>
       <blocks>
         <block order="9">
@@ -146,7 +148,9 @@ alex.forward(75)        # move forward by 75 units
           northeast, and draw a line that is 150 pixels long. We have added a compass to the picture to indicate the
           directions north, south, west, and east. Northeast is between North and East. Southeast is between South and
           East.</p>
-        <image source="CSPNameTurtles/Figures/checkMark.png" width="30%" />
+        <image source="CSPNameTurtles/Figures/checkMark.png" width="30%">
+          <shortdescription>Green check mark icon.</shortdescription>
+        </image>
         <p>Drag the needed blocks of statements from the left column to the right column and put them in the right
           order. The numbers listed are <term>NOT</term> in the correct order - do not assume block 1 comes first. <term>Like
           last time, you will not use all the blocks.</term> You will only use 1a or 1b, not both. Same with 2a/2b,

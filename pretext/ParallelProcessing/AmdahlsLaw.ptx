@@ -29,12 +29,16 @@ Add fact to page                                                    Serial
     <figure>
       <caption>Effect of splitting the parallel part of a job in 5.</caption>
       <image source="ParallelProcessing/Images/amdahl1.png"
-             width="50%"/>
+             width="50%">
+        <shortdescription>Amdahl law example showing serial and parallel portions of a task.</shortdescription>
+      </image>
     </figure>
     <figure>
       <caption>Going from 1 to 2 workers has more effect than going from 4 to 5.</caption>
       <image source="ParallelProcessing/Images/amdahl2.png"
-             width="50%"/>
+             width="50%">
+        <shortdescription>Amdahl law example showing speedup from parallel execution.</shortdescription>
+      </image>
     </figure>
   </sidebyside>
 
@@ -43,7 +47,9 @@ Add fact to page                                                    Serial
     total work that is parallel (expressed as a decimal) and <term>N</term>: the number of ways we split the work.</p>
 
   <image source="ParallelProcessing/Images/AmdahlFormula.png"
-         width="80%"/>
+         width="80%">
+    <shortdescription>Formula for speedup according to Amdahl law.</shortdescription>
+  </image>
 
   <p>The bottom of the fraction represents the percent of the original time we will take - this equals the serial part
     plus one share of the parallel part. Dividing 1 by that gives us how many times faster we are working.</p>
@@ -80,7 +86,9 @@ Add fact to page                                                    Serial
       Commons</url> - <url name="CC-BY-SA-3.0"
            refuri="http://creativecommons.org/licenses/by-sa/3.0"> CC-BY-SA-3.0</url></caption>
     <image source="ParallelProcessing/Images/AmdahlsLaw.png"
-           width="80%"/>
+           width="80%">
+      <shortdescription>Graph of Amdahl law speedup curves for different parallel portions.</shortdescription>
+    </image>
   </figure>
   <p>Amdahl's Law makes it clear that parallel processing is best on tasks that are <term>embarrassingly parallel</term>
     - where only a tiny fraction of the work is serial. For other problems, there is a hard limit to the gains possible.</p>

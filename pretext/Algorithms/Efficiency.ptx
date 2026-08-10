@@ -1,7 +1,9 @@
 <section xml:id="algorithms_algorithm-efficiency">
   <title>Algorithm Efficiency</title>
   <image source="Algorithms/Images/Stopwatch.png"
-         width="15%"/>
+         width="15%">
+    <shortdescription>Stopwatch representing program running time.</shortdescription>
+  </image>
   <p>When it comes time to put an algorithm to work or choose between competing algorithms, we need a way to measure and
     compare algorithms. There are many different things we could measure about an algorithm: the number of lines of code
     to express, how much time it takes to program and debug, the amount of memory used while running, and the time taken
@@ -62,7 +64,9 @@ Pen Up
   <p>
 
     <figure>
-      <image source="Algorithms/Images/DrawAlgorithms.svg"/>
+      <image source="Algorithms/Images/DrawAlgorithms.svg">
+        <shortdescription>Flowchart showing steps for drawing an algorithm.</shortdescription>
+      </image>
       <caption>Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
         Shape (Gold) </caption>
     </figure>

@@ -3,7 +3,9 @@
   <figure>
     <caption>Multiple processing cores on one chip. Image <copyright/> Intel Corporation</caption>
     <image source="ParallelProcessing/Images/quad-core.jpg"
-           width="30%"/>
+           width="30%">
+      <shortdescription>Diagram of a quad-core processor.</shortdescription>
+    </image>
   </figure>
   <p>In the year 2002, Intel's flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU clock
     ticks 3 billion times per second). The architecture of this processor was supposed to scale up to 10 GHz, but by

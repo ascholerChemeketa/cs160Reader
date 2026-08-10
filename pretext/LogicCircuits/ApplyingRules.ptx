@@ -9,21 +9,29 @@
     output is 1. The first bit of both patterns is 1, so we record a 1 for the first bit of our answer.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND1.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>First step in applying AND gate logic rules.</shortdescription>
+  </image>
   <p>Looking at the second bit of each pattern, we see a 0 in the first pattern and a 1 in the second. The AND rule says
     that the output is 0 unless both inputs are 1. So this means the second bit of our answer will be 0.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND2.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Second step in applying AND gate logic rules.</shortdescription>
+  </image>
   <p>A 1 in the third bit of both input patterns means the third bit of our answer is 1 as well.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND3.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Third step in applying AND gate logic rules.</shortdescription>
+  </image>
   <p>Finally, in the last position, two 0's result in 0 according to the AND rule. Our final answer is 1010. In any
     digit where both patterns had a 1, our answer has a 1; otherwise, it has a 0.</p>
 
   <image source="LogicCircuits/Images/ApplyingAND4.png"
-         width="50%"/>
+         width="50%">
+    <shortdescription>Fourth step in applying AND gate logic rules.</shortdescription>
+  </image>
 
   <p>Here is the result of applying the OR rule to the same two patterns:</p>
   <table>

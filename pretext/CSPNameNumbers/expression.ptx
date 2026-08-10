@@ -113,7 +113,9 @@ print(result2)
             times with a remainder of <c>1</c>.</p>
         <figure align="center">
             <caption>Division showing the whole number result and the remainder</caption>
-            <image source="CSPNameNumbers/Figures/mod-py.png" width="30%" />
+            <image source="CSPNameNumbers/Figures/mod-py.png" width="30%">
+              <shortdescription>Python modulo expression example.</shortdescription>
+            </image>
         </figure>
 
         <listing xml:id="cspnamenumbers_expression7_listing">

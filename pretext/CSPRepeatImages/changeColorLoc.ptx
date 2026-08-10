@@ -6,7 +6,9 @@
     <caption>The order that pixels are processed if you use <literal>img.getPixels()</literal>.
     First, we visit the top row moving from left to right. Then we go to the second row and move
     from left to right again. The process continues until we reach the bottom of the image.</caption>
-    <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%" />
+    <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%">
+      <shortdescription>Pixel grid showing row-major traversal order.</shortdescription>
+    </image>
   </figure>
   <p>Sometimes, we don't care where a particular pixel is in the image. But if we want
     to accomplish a goal like <q>Make the bottom half of the image black</q>, we need to 
@@ -53,7 +55,9 @@
 
   <figure align="center">
     <caption>The x, y locations of various pixels in a 4 x 4 image.</caption>
-    <image source="CSPRepeatImages/Figures/grid_coords.png" width="50%" />
+    <image source="CSPRepeatImages/Figures/grid_coords.png" width="50%">
+      <shortdescription>Image grid with row and column coordinates.</shortdescription>
+    </image>
   </figure>
   
   <exercise label="csprepeatimages_changecolorloc2">

@@ -18,7 +18,9 @@
         computer will substitute the value <c>4</c>.</p>
     <figure align="center">
         <caption>Creating a variable and setting its value in memory.</caption>
-        <image source="CSPNameNumbers/Figures/assignA.png" width="20%" />
+        <image source="CSPNameNumbers/Figures/assignA.png" width="20%">
+          <shortdescription>Python assignment diagram for variable a.</shortdescription>
+        </image>
     </figure>
     <p>To see it in context, run the program below. The first line sets a value for <c>a</c> but does not produce any
         output we can see. The <c>print</c> command on the second line will print out a value so we can see it. In this

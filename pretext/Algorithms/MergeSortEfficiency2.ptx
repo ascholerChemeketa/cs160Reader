@@ -4,7 +4,9 @@
     n</term>. How does that compare to Insertion Sort and Selection Sort, which are <m>O(n^2)</m>?</p>
   <p>Below is a graph of the growth of <m>n^2</m> and <m>n \cdot log_2(n)</m>:</p>
 
-  <image source="Algorithms/Images/Sorts.svg"/>
+  <image source="Algorithms/Images/Sorts.svg">
+    <shortdescription>Diagram comparing common sorting algorithms.</shortdescription>
+  </image>
 
   <p>Obviously, <m>n^2</m> grows much faster than <m>n \cdot log_2(n)</m>. Looking at the table below, we can see that
     sorting 500 items with Insertion Sort (<m>O(n^2)</m>) would take somewhere around 250,000 units of work. Doing the

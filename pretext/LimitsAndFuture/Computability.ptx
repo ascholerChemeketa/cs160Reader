@@ -82,7 +82,9 @@
         Commons CC BY SA 3.0</url>
       </caption>
       <image source="LimitsAndFuture/Images/TSP2.jpg"
-             width="75%"/>
+             width="75%">
+        <shortdescription>Traveling salesperson route connecting several locations with distances.</shortdescription>
+      </image>
     </figure>
     <figure>
       <caption>Knapsack Problem: What collection of items is optimal? - <url name="Image via Wikipedia Commons"
@@ -93,7 +95,9 @@
         Commons CC BY SA 3.0</url>
       </caption>
       <image source="LimitsAndFuture/Images/Knapsack.png"
-             width="50%"/>
+             width="50%">
+        <shortdescription>Knapsack problem diagram with a 15 kg backpack and weighted items with values.</shortdescription>
+      </image>
     </figure>
   </container>
 
