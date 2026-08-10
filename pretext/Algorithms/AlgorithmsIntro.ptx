@@ -1,7 +1,6 @@
 <section xml:id="algorithms_algorithms-introduction">
   <title>Algorithms Introduction</title>
-  <p>Simply put, an algorithm is simply a set of step-by-step instructions for accomplishing some
-    task. If you have ever
+  <p>Simply put, an algorithm is simply a set of step-by-step instructions for accomplishing some task. If you have ever
     followed a recipe like the one below, you have followed an algorithm.</p>
   <program language="none">
     <input>
@@ -19,22 +18,16 @@ Chocolate Cream Pie:
 6. Refrigerate uncovered for about 8 hours or until set.
 </input>
   </program>
-  <p>As long as you understand the directions, you do not need to know much about cooking to follow
-    the recipe - this is
-    the power of algorithms. Once we have created an algorithm, we no longer need to think about the
-    principles on which
-    the algorithm is based. All you have to do is follow the directions. This means that algorithms
-    are a way of
-    capturing intelligence and sharing it with others. Once you have encoded the necessary
-    intelligence to solve a
-    problem in an algorithm, many people can use your algorithm without needing to become experts in
-    a particular field.</p>
-  <p>Algorithms are especially important to computers because computers are general-purpose machines
-    for solving problems. But for a computer to be useful, we must give it a problem to solve and a
-    technique for solving the problem. Through the use of algorithms, we can make computers <q>
-    intelligent</q> by programming them with various algorithms to solve problems. Because of their
-    speed and accuracy, computers are well-suited for solving tedious problems such as searching for
-    a name in a large telephone directory or adding a long column of numbers.</p>
+  <p>As long as you understand the directions, you do not need to know much about cooking to follow the recipe - this is
+    the power of algorithms. Once we have created an algorithm, we no longer need to think about the principles on which
+    the algorithm is based. All you have to do is follow the directions. This means that algorithms are a way of
+    capturing intelligence and sharing it with others. Once you have encoded the necessary intelligence to solve a
+    problem in an algorithm, many people can use your algorithm without needing to become experts in a particular field.</p>
+  <p>Algorithms are especially important to computers because computers are general-purpose machines for solving
+    problems. But for a computer to be useful, we must give it a problem to solve and a technique for solving the
+    problem. Through the use of algorithms, we can make computers <q> intelligent</q> by programming them with various
+    algorithms to solve problems. Because of their speed and accuracy, computers are well-suited for solving tedious
+    problems such as searching for a name in a large telephone directory or adding a long column of numbers.</p>
 
   <subsection xml:id="algorithms_algorithms-introduction-requirements">
     <title>Algorithm Requirements</title>
@@ -45,45 +38,37 @@ Chocolate Cream Pie:
     <dl>
       <li>
         <title>Algorithms have computable operations</title>
-        <p>Each step in an algorithm must be possible to do. For computers, many mathematical
-          operations such as
-          division by zero or finding the square root of a negative number are also impossible.
-          These operations are not
+        <p>Each step in an algorithm must be possible to do. For computers, many mathematical operations such as
+          division by zero or finding the square root of a negative number are also impossible. These operations are not
           computable so they cannot be used in writing algorithms.</p>
 
       </li>
       <li>
         <title>Algorithms must have clear steps</title>
 
-        <p>Each operation in an algorithm must be sufficiently clear so that whoever is executing it
-          can understand
-          what to do.</p>
-        <p>The meaning of <q>sufficiently clear</q> depends on who or what the algorithm is written
-          for. The instruction <c>average the two numbers</c> would be clear to most humans. However, the same instruction
-          is ambiguous to a computer because the computer has no basic operations for averaging. For
-          a computer, the algorithm would have to be expressed in terms of operations that can be
-          carried out by programming language statements - adding the two numbers and dividing the
-          sum by two.</p>
+        <p>Each operation in an algorithm must be sufficiently clear so that whoever is executing it can understand what
+          to do.</p>
+        <p>The meaning of <q>sufficiently clear</q> depends on who or what the algorithm is written for. The instruction <c>average the two numbers</c>
+          would be clear to most humans. However, the same instruction is ambiguous to a computer because the computer
+          has no basic operations for averaging. For a computer, the algorithm would have to be expressed in terms of
+          operations that can be carried out by programming language statements - adding the two numbers and dividing
+          the sum by two.</p>
 
       </li>
       <li>
         <title>Algorithms are well-ordered</title>
 
-        <p>Since an algorithm is a collection of operations or instructions, we must know the
-          correct order in which to
-          execute the instructions. If the order is unclear, we may perform the wrong instruction or
-          we may be uncertain
-          which instruction should be performed next. This characteristic is especially important
-          for computers. A
+        <p>Since an algorithm is a collection of operations or instructions, we must know the correct order in which to
+          execute the instructions. If the order is unclear, we may perform the wrong instruction or we may be uncertain
+          which instruction should be performed next. This characteristic is especially important for computers. A
           computer can only execute an algorithm if it knows the exact order of steps to perform.</p>
 
       </li>
       <li>
         <title>Algorithms halt in a finite amount of time</title>
 
-        <p>Algorithms should be composed of a finite number of operations. If an algorithm was of
-          infinite length, it would continue running forever. Thus it could not be said to solve
-          the problem it was designed to address.</p>
+        <p>Algorithms should be composed of a finite number of operations. If an algorithm was of infinite length, it
+          would continue running forever. Thus it could not be said to solve the problem it was designed to address.</p>
 
       </li>
     </dl>
@@ -91,30 +76,25 @@ Chocolate Cream Pie:
 
   <exercise label="algorithms_algorithms-introduction_1">
     <statement>
-      <p> Match each of the following <q>algorithms</q> with the reason it isn't really an
-        algorithm. Assume that the algorithm is written for an adult human.</p>
+      <p> Match each of the following <q>algorithms</q> with the reason it isn't really an algorithm. Assume that the
+        algorithm is written for an adult human.</p>
     </statement>
     <cardsort>
       <match>
         <premise>
-          <p>Step 1: Set heads to 0. Step 2: Flip a coin. Step 3: If the coin lands on heads,
-            increment heads by 1. Step 4: go back to step 2.</p>
+          <p>Step 1: Set heads to 0. Step 2: Flip a coin. Step 3: If the coin lands on heads, increment heads by 1. Step
+            4: go back to step 2.</p>
         </premise>
         <response>
-          <p>
-            It is not finite.
-          </p>
+          <p> It is not finite. </p>
         </response>
       </match>
       <match>
         <premise>
-          <p>Brush your teeth. Rinse your mouth. Rinse your toothbrush. Squeeze some toothpaste onto
-            the brush.</p>
+          <p>Brush your teeth. Rinse your mouth. Rinse your toothbrush. Squeeze some toothpaste onto the brush.</p>
         </premise>
         <response>
-          <p>
-            It is not well-ordered.
-          </p>
+          <p> It is not well-ordered. </p>
         </response>
       </match>
       <match>
@@ -122,9 +102,7 @@ Chocolate Cream Pie:
           <p>Get the ingredients. Cook them souffle.</p>
         </premise>
         <response>
-          <p>
-            It is not clear enough.
-          </p>
+          <p> It is not clear enough. </p>
         </response>
       </match>
     </cardsort>

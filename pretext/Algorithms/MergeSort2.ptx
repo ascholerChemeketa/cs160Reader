@@ -17,16 +17,25 @@
 </input>
   </program>
 
-  <p>It looks almost like cheating… <em>How do you sort a list? You cut it in half and sort each half,
-    then merge the halves together!</em> Note that the definition for <term>MergeSort</term> calls <term>MergeSort</term>
-    on the halves of the list - that means it is a <term>recursive</term> definition, a function that is defined in
-    terms of itself. So your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those
-    gets split in half again… Until, finally, we have lists of size 1. A list of size 1 is always sorted, so then we
-    start merging the sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of
-    length 2 back into a sorted list of length 4…</p>
+  <p>It looks almost like cheating… <em>How do you sort a list? You cut it in half and sort each half, then merge the
+    halves together!</em> Note that the definition for <term>MergeSort</term> calls <term>MergeSort</term> on the halves
+    of the list - that means it is a <term>recursive</term> definition, a function that is defined in terms of itself. Recursive functions are a powerful tool, but they can be a bit tricky to understand. They often work by breaking a problem down into smaller sub-problems of the same type.
+  </p>
+  <p>
+    In this case, we keep breaking the list into smaller parts and sorting those parts.
+    Your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those gets split in half
+    again… Until, finally, we have lists of size 1. A list of size 1 is always sorted, so that means we can stop splitting.
+  </p>
+  <p>
+    Then it is time to merge the sorted lists back together. We merge the
+    sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of length 2 back into a
+    sorted list of length 4…</p>
   <p>The rest of this video demonstrates the process:</p>
 
-  <video xml:id="EeQ8pwjQxTM-2" youtube="EeQ8pwjQxTM" start="180" width="100%" />
+  <video xml:id="EeQ8pwjQxTM-2"
+         youtube="EeQ8pwjQxTM"
+         start="180"
+         width="100%"/>
   <note>
     <p>
       <em>A point of accuracy you can feel free to ignore…</em>
@@ -40,7 +49,8 @@
   </note>
   <p>The animation below allows you to step through the process on a randomly generated list.</p>
   <p>
-  <raw format="html" xml:space="preserve"><div align="center">
+    <raw format="html"
+         xml:space="preserve"><div align="center">
 <canvas id="MergeSort" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>
 <script type="text/processing" data-processing-target="MergeSort">
@@ -413,6 +423,51 @@
   <button type="button" onclick="resetLarge('MergeSort')">Reset 32 Items</button>
 <div style="font-size: 80%">Animation based on work by <a href="http://cs.armstrong.edu/liang/animation/animation.html">Y. Daniel Liang</a></div>
 </div></raw>
-</p>
+  </p>
+  <exercise label="algorithms_algorithms-merge-sort-ex1">
+    <statement>
+      <p>What stops the recursive process of <q>split the list and mergesort each half</q>?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>A list with zero or one item is already sorted and does not need to be split further.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>A list that has been divided into exactly two halves does not need to be split further.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the first item is the smallest item we are done.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Every item has been swapped once.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_algorithms-merge-sort-ex2">
+    <statement>
+      <p>Put the main merge sort stages in their logical order.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Split the list into smaller halves.</premise>
+        <response>First stage</response>
+      </match>
+      <match>
+        <premise>Mergesort each half.</premise>
+        <response>Middle stage</response>
+      </match>
+      <match>
+        <premise>Merge the sorted halves together.</premise>
+        <response>Final stage</response>
+      </match>
+    </cardsort>
+  </exercise>
 </section>
-

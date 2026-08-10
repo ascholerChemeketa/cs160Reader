@@ -29,11 +29,15 @@
   </program>
   <p>The first three minutes of the video below demonstrates the process:</p>
 
-  <video xml:id="EeQ8pwjQxTM" youtube="EeQ8pwjQxTM" end="180" width="100%" />
+  <video xml:id="EeQ8pwjQxTM"
+         youtube="EeQ8pwjQxTM"
+         end="180"
+         width="100%"/>
   <p>Think you have it? Give it a try below. Use the ListA and ListB buttons to move an item from the two sorted lists
     at the bottom to the new list at the top:</p>
-    <p>
-  <raw format="html" xml:space="preserve"><div align="center">
+  <p>
+    <raw format="html"
+         xml:space="preserve"><div align="center">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>
 <canvas id="Merge" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>
 <script type="text/processing" data-processing-target="Merge">
@@ -318,9 +322,62 @@ pjs.draw();
 <button type="button" onclick="reset('Merge')">Reset</button>
 <div style="font-size: 80%">Animation based on work by <a href="http://cs.armstrong.edu/liang/animation/animation.html">Y. Daniel Liang</a></div>
 </div></raw>
-</p>
+  </p>
   <p>Once you have merging down, move on to Merge Sort on the next page. Remember for later what was mentioned at the
     end of the video - merging <term>n</term> items is a <term>linear algorithm</term> - it takes <math>O(n)</math>
     work.</p>
+  <exercise label="algorithms_algorithms-merging-ex1">
+    <statement>
+      <p>When merging two sorted lists, which item should be moved to the output next?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>The smaller of the first remaining items from the two lists.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The larger of the first remaining items.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>A random item from either list.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Always the first item from the left list.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_algorithms-merging-ex2">
+    <statement>
+      <p>What is the Big-O work required to merge a total of <m>n</m> items from two sorted lists?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Linear, <m>O(n)</m></p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Constant, <m>O(1)</m></p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Quadratic, <m>O(n^2)</m></p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Exponential, <m>O(2^n)</m></p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-

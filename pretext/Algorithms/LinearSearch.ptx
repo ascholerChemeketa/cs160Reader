@@ -1,11 +1,17 @@
 <section xml:id="algorithms_algorithms-linear-search">
   <title>Linear Search</title>
-  
-  
-  <p>Computers spend lots of time working with large lists of data. One of the fundamental tasks they do with that data is to search it for particular values - say looking up a particular student record so it can be displayed.</p>
-  <p>What is the simplest method for searching a list of elements? Check the first item, then the second item, and so on until you find the target item or reach the end of the list. Because we progress in a straight line through the list items, it is known as a <term>linear search</term>. Of course, to be an effective algorithm, we have to specify it in terms of operations a computer can do.</p>
-  <p>Assume a list called <c>list</c>, filled with integers. Each integer in the list has a unique location in the list - called its <term>index</term>. The task is to search for the location of a particular value - often called the <c>key</c>. Here’s how to do the search:</p>
-  <program language="none"><input>
+
+  <p>Computers spend lots of time working with large lists of data. One of the fundamental tasks they do with that data
+    is to search it for particular values - say looking up a particular student record so it can be displayed.</p>
+  <p>What is the simplest method for searching a list of elements? Check the first item, then the second item, and so on
+    until you find the target item or reach the end of the list. Because we progress in a straight line through the list
+    items, it is known as a <term>linear search</term>. Of course, to be an effective algorithm, we have to specify it
+    in terms of operations a computer can do.</p>
+  <p>Assume a list called <c>list</c>, filled with integers. Each integer in the list has a unique location in the list -
+    called its <term>index</term>. The task is to search for the location of a particular value - often called the <c>key</c>.
+    Here’s how to do the search:</p>
+  <program language="none">
+    <input>
     Note: assume that list and key are already set
 1   set location = 0
 2   repeat while location &lt; (length of the list)
@@ -16,12 +22,17 @@
 6       set location = location + 1     advance to next location
 7
 8   print "Value not found"
-</input></program>
-  <p>Note that <c>location</c> here is a variable that stores the index we are currently looking at in the list. <c>list[location]</c> is the standard way of saying “the value in <c>list</c> at <c>location</c>”.</p>
-  <p>You can try doing a linear search below. Type the number you wish to search for in the text box, then step through the search. Each “Step” in the animation takes you through the repeat loop one time. Try following the algorithm above step by step as you watch the animation.</p>
+</input>
+  </program>
+  <p>Note that <c>location</c> here is a variable that stores the index we are currently looking at in the list. <c>list[location]</c> is the
+    standard way of saying “the value in <c>list</c> at <c>location</c>”.</p>
+  <p>You can try doing a linear search below. Type the number you wish to search for in the text box, then step through
+    the search. Each “Step” in the animation takes you through the repeat loop one time. Try following the algorithm
+    above step by step as you watch the animation.</p>
   <p>
-    
-  <raw format="html" xml:space="preserve">
+
+    <raw format="html"
+         xml:space="preserve">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>
     <script>
@@ -176,7 +187,63 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
 <button type="button" onclick="reset('LinearSearch')">Reset</button>
 <div style="font-size: 80%">Animation based on work by <a href="http://cs.armstrong.edu/liang/animation/animation.html">Y. Daniel Liang</a></div>
 </div>
-</raw></p>
-  <p>Linear search is pretty easy, but it does have one big weakness - you potentially have to look at every item in the list. Imagine finding someone’s number in a phone book with a linear search! While linear search works fine for small jobs, it does not scale well to larger problems.</p>
+</raw>
+  </p>
+  <p>Linear search is pretty easy, but it does have one big weakness - you potentially have to look at every item in the
+    list. Imagine finding someone’s number in a phone book with a linear search! While linear search works fine for
+    small jobs, it does not scale well to larger problems.</p>
+  <exercise label="algorithms_algorithms-linear-search-ex1">
+    <statement>
+      <p>What is the basic strategy of linear search?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Check items one at a time from the beginning until the key is found or the list ends.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Repeatedly discard half of the list.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Sort the list before checking any item.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Check only the first and last items.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_algorithms-linear-search-ex2">
+    <statement>
+      <p>When does a linear search do the most work?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>When the key is last in the list or is not present.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the key is the first item.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the list is already sorted.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the list has an even number of items.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-

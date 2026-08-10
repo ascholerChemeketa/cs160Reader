@@ -35,41 +35,43 @@
       </li>
     </ul>
   </p>
-  <transition />
+  <transition/>
   <p>The actual procedures we will test are in the program at the bottom of the page. There is a lot of code, you do not
     have to worry about most of it. What is important is that it defines <c>procedureA</c>, <c>procedureB</c>, <c>procedureC</c>, <c>procedureD</c>, and <c>procedureE</c>.
     Each procedure takes a number as its input. At the top of the program is the procedure <c>doTest</c>. To run a particular
     procedure, we just need to change line 6 to say something like <c>procedureA(6)</c> to run procedureA with an input of 6 - or <c>procedureC(10)</c>
     to run procedureC with an input of size 10.</p>
   <p>When you run a procedure, it will make a drawing and print out how long the drawing took to make.</p>
-  <p>For example<ellipsis/> The code below is already set up to run procedureA with an input size of 4 -<c>procedureA(4)</c> on line 6. I
-    ran it and got a time of ~0.97 seconds. Then, to test the same procedure with an input of size 6, I change line 6 to <c>procedureA(6)</c>.
-    I run that and get a time of ~1.63 seconds. I do the same for input sizes of 8 and 10 (changing line 6 and then
-    running the program again.) Here is what I get:</p>
+  <p>For example<ellipsis/> The code below is already set up to run procedureA with an input size of 4 -<c>procedureA(4)</c> on line
+    6. I ran it and got a time of ~0.97 seconds. Then, to test the same procedure with an input of size 6, I change line
+    6 to <c>procedureA(6)</c>. I run that and get a time of ~1.63 seconds. I do the same for input sizes of 8 and 10 (changing line 6
+    and then running the program again.) Here is what I get:</p>
 
-    <tabular>
+  <tabular>
 
-      <row header="yes">
-        <cell> Input </cell>
-        <cell> 4 </cell>
-        <cell> 6 </cell>
-        <cell> 8 </cell>
-        <cell> 10 </cell>
-      </row>
+    <row header="yes">
+      <cell> Input </cell>
+      <cell> 4 </cell>
+      <cell> 6 </cell>
+      <cell> 8 </cell>
+      <cell> 10 </cell>
+    </row>
 
-      <row>
-        <cell> Time </cell>
-        <cell> 0.97 </cell>
-        <cell> 1.63 </cell>
-        <cell> 2.22 </cell>
-        <cell> 2.77 </cell>
-      </row>
+    <row>
+      <cell> Time </cell>
+      <cell> 0.97 </cell>
+      <cell> 1.63 </cell>
+      <cell> 2.22 </cell>
+      <cell> 2.77 </cell>
+    </row>
 
-    </tabular>
+  </tabular>
   <p>Looking at that pattern, I can see that each time I increase the Input size by 2, procedureA takes approximately
     ~0.6 more seconds. That steady growth means procedureA is <term>Linear</term> or <term>O(n)</term>.</p>
 
-  <program xml:id="algorithms_efficiency_testing" interactive="activecode" language="python">
+  <program xml:id="algorithms_efficiency_testing"
+           interactive="activecode"
+           language="python">
     <input>
 def doTest():
     # to test other procedures,
@@ -139,13 +141,11 @@ print("That took", end - start, "seconds")
         </input>
   </program>
 
-
-  
   <exercise label="eff_measure_1">
     <statement>
 
-      <p>Try testing procedureB for inputs of size 4, 6, 8, and 10 and identify what kind of algorithm it is. (Change line 6
-        to say <c>procedureB(4)</c> and then run it, then change to <c>procedureB(6)</c><ellipsis/>)</p>
+      <p>Try testing procedureB for inputs of size 4, 6, 8, and 10 and identify what kind of algorithm it is. (Change
+        line 6 to say <c>procedureB(4)</c> and then run it, then change to <c>procedureB(6)</c><ellipsis/>)</p>
 
     </statement>
     <choices>
@@ -186,8 +186,8 @@ print("That took", end - start, "seconds")
   <exercise label="eff_measure_2">
     <statement>
 
-      <p>Try testing procedureC for inputs of size 2, 4, 6, and 8 and identify what kind of algorithm it is. (Change line 6
-        to say <c>procedureC(2)</c> and then run it, then change to <c>procedureC(2)</c><ellipsis/>)</p>
+      <p>Try testing procedureC for inputs of size 2, 4, 6, and 8 and identify what kind of algorithm it is. (Change
+        line 6 to say <c>procedureC(2)</c> and then run it, then change to <c>procedureC(2)</c><ellipsis/>)</p>
 
     </statement>
     <choices>
@@ -225,5 +225,46 @@ print("That took", end - start, "seconds")
 
   </exercise>
 
-</section>
+  <exercise label="algorithms_efficiency-testing-ex3">
+    <statement>
+      <p>Try testing procedureD for inputs of size 4, 6, 8, and 10 and identify what kind of algorithm it is. Change
+        line 6 to call <c>procedureD</c> with each input size.</p>
+    </statement>
+    <choices randomize="yes">
+      <choice>
+        <statement><p>Constant - O(1)</p></statement>
+        <feedback><p>ProcedureD repeats its drawing operations once for every input item, so increasing the input should increase the time.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Linear - O(n)</p></statement>
+        <feedback><p>Correct. Each loop iteration does a fixed amount of drawing work, so increasing the input by the same amount should add about the same amount of time.</p></feedback>
+      </choice>
+      <choice>
+        <statement><p>Quadratic - O(n^2)</p></statement>
+        <feedback><p>There is only one loop whose number of iterations depends on the input, so the growth is not quadratic.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
 
+  <exercise label="algorithms_efficiency-testing-ex4">
+    <statement>
+      <p>Try testing procedureE for inputs of size 2, 4, 6, and 8 and identify what kind of algorithm it is. Change
+        line 6 to call <c>procedureE</c> with each input size.</p>
+    </statement>
+    <choices randomize="yes">
+      <choice>
+        <statement><p>Constant - O(1)</p></statement>
+        <feedback><p>Increasing the input makes procedureE perform more drawing work, so its time is not about the same for every input size.</p></feedback>
+      </choice>
+      <choice>
+        <statement><p>Linear - O(n)</p></statement>
+        <feedback><p>The inner loop becomes longer as the outer loop advances, so equal increases in input size should add more and more work.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Quadratic - O(n^2)</p></statement>
+        <feedback><p>Correct. ProcedureE draws 1 square in its first row, then 2, then 3, and so on, so the total work increases faster and faster as the input size increases.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+</section>

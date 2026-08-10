@@ -22,12 +22,83 @@
     the current cards we are comparing by pointing to them with a pair of human hands. The left hand will point to the
     smallest card we have seen so far, and the right hand will point to the card currently being considered.</p>
 
-  <video xml:id="TfOBNNNZPbM" youtube="TfOBNNNZPbM" width="100%" />
+  <video xml:id="TfOBNNNZPbM"
+         youtube="TfOBNNNZPbM"
+         width="100%"/>
   <p>
     <em>Animation used by permission of Virginia Tech</em>
   </p>
-  <remark> Materials on this page adapted with permission from <url
-      href="http://courses.cs.vt.edu/csonline/">Online Interactive Modules for Teaching Computer Science</url> by Osman
-    Balci et al. of Virginia Tech.</remark>
-</section>
+  <remark> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
+    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</remark>
+  <exercise label="algorithms_selection-sort-ex1">
+    <statement>
+      <p>What does selection sort do during each pass through its unsorted portion?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Find the smallest remaining item and move it to the front of the unsorted portion.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Swap every adjacent pair in the list.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Split the list into halves and merge them.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Choose a random item as the next sorted value.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_selection-sort-ex2">
+    <statement>
+      <p>As selection sort proceeds, what is true of the portion before the marker?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>It is sorted and contains the smallest items found so far.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It is unsorted and never changes.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It contains only the largest items.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It is empty until the final pass.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  
+  <exercise label="algorithms_selection-sort-ex3">
+    <statement>
+      <p>We do a selection sort (using min value to front strategy) on the list <pf>3, 2, 4, 5, 1</pf>. Arrange the blocks below to show the state of the list after each pass of the algorithm.</p>
+      <p>Note that you may use the same block twice in a row if the current pass does not change the list.</p>
+      <p>You will not use all of the blocks.</p>
+    </statement>
+    <blocks>
+      <block><cline>3, 2, 4, 5, 1 (start)</cline></block>
+      <block><cline>1, 2, 4, 5, 3</cline></block>
+      <block><cline>1, 2, 4, 5, 3</cline></block>
+      <block><cline>1, 2, 3, 5, 4</cline></block>
+      <block><cline>1, 2, 3, 4, 5</cline></block>
+      <block correct="no"><cline>1, 3, 2, 4, 5</cline></block>
+    </blocks>
+  </exercise>
 
+</section>

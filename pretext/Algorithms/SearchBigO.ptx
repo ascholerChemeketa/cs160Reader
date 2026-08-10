@@ -16,7 +16,7 @@
     <p>Here are those three scenarios summarized:</p>
     <table>
       <title>Linear Search Big-O</title>
-      
+
       <tabular>
 
         <row header="yes">
@@ -84,84 +84,86 @@
     <p>Imagine we are searching in a list that is 1000 items long. If we assume we have to get down to just 1 possible
       item and then check that one, the process would look like:</p>
 
-      <tabular halign="center">
-        <row header="yes">
-          <cell> Items Left to Search </cell>
-          <cell> Comparisons So Far </cell>
-        </row>
+    <tabular halign="center">
+      <row header="yes">
+        <cell> Items Left to Search </cell>
+        <cell> Comparisons So Far </cell>
+      </row>
 
-        <row>
-          <cell> 1000 </cell>
-          <cell> 0 </cell>
-        </row>
-        <row>
-          <cell> 500 </cell>
-          <cell> 1 </cell>
-        </row>
-        <row>
-          <cell> 250 </cell>
-          <cell> 2 </cell>
-        </row>
-        <row>
-          <cell> 125 </cell>
-          <cell> 3 </cell>
-        </row>
-        <row>
-          <cell> 62 </cell>
-          <cell> 4 </cell>
-        </row>
-        <row>
-          <cell> 31 </cell>
-          <cell> 5 </cell>
-        </row>
-        <row>
-          <cell> 15 </cell>
-          <cell> 6 </cell>
-        </row>
-        <row>
-          <cell> 7 </cell>
-          <cell> 7 </cell>
-        </row>
-        <row>
-          <cell> 3 </cell>
-          <cell> 8 </cell>
-        </row>
-        <row>
-          <cell> 1 </cell>
-          <cell> 9 </cell>
-        </row>
-        <row>
-          <cell> 0 </cell>
-          <cell> 10 </cell>
-        </row>
+      <row>
+        <cell> 1000 </cell>
+        <cell> 0 </cell>
+      </row>
+      <row>
+        <cell> 500 </cell>
+        <cell> 1 </cell>
+      </row>
+      <row>
+        <cell> 250 </cell>
+        <cell> 2 </cell>
+      </row>
+      <row>
+        <cell> 125 </cell>
+        <cell> 3 </cell>
+      </row>
+      <row>
+        <cell> 62 </cell>
+        <cell> 4 </cell>
+      </row>
+      <row>
+        <cell> 31 </cell>
+        <cell> 5 </cell>
+      </row>
+      <row>
+        <cell> 15 </cell>
+        <cell> 6 </cell>
+      </row>
+      <row>
+        <cell> 7 </cell>
+        <cell> 7 </cell>
+      </row>
+      <row>
+        <cell> 3 </cell>
+        <cell> 8 </cell>
+      </row>
+      <row>
+        <cell> 1 </cell>
+        <cell> 9 </cell>
+      </row>
+      <row>
+        <cell> 0 </cell>
+        <cell> 10 </cell>
+      </row>
 
-      </tabular>
+    </tabular>
 
     <p>Instead of counting how many times we divide the starting number by 2, we can calculate that number. Using a
-      logarithm. Taking the base 2 logarithm of a number asks <em><q>How many times do I have to divide this number
-      by 2 to reach 1?</q></em> Calculating <m>log_2(1000)</m> gives 9.96. Since we can’t do .96 units of work
-      (each unit is checking one paper<ellipsis/> hard to see how we can check 0.96 papers), we will round that up to 10.
-      Since this function gives us the answer to how much work binary search requires, we will say Binary Search is <m>
-      O(log(n))</m>.</p>
+      logarithm. Taking the base 2 logarithm of a number asks <em>
+        <q>How many times do I have to divide this number by 2 to reach 1?</q>
+      </em> Calculating <m>log_2(1000)</m>
+      gives 9.96. Since we can’t do .96 units of work (each unit is checking one paper<ellipsis/> hard to see how we can
+      check 0.96 papers), we will round that up to 10. Since this function gives us the answer to how much work binary
+      search requires, we will say Binary Search is <m> O(log(n))</m>.</p>
     <important classes="clear">
       <p><term>Binary Search</term> is <m>O(log(n))</m> - <term>Logarithmic</term></p>
     </important>
 
     <sidebar>
       <title>Wolfram Alpha</title>
-      <p>You can use the <url href="http://www.wolframalpha.com/" visual="http://www.wolframalpha.com/">Wolfram Alpha
+      <p>You can use the <url href="http://www.wolframalpha.com/"
+             visual="http://www.wolframalpha.com/">Wolfram Alpha
         website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
-      <raw format="html" xml:space="preserve">
+      <raw format="html"
+           xml:space="preserve">
         <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
         <button type="submit">Submit</button></form></div>
       </raw>
     </sidebar>
-    
+
   </subsection>
   <subsection xml:id="algorithms_search-efficiencies-comparison">
     <title>Comparison</title>
-    
-    
+
     <p>We have established that <term>Binary Search</term> is <m>O(log(n))</m> and <term>Linear Search</term> is <m>O(n)</m>,
       so how do those compare?</p>
     <p>This table makes the difference pretty clear:</p>
@@ -208,8 +210,53 @@
     </table>
     <p>Comparing the graphs tells the same story. In relation to a Linear graph, a Logarithmic one appears to not be
       growing at all:</p>
-    <image source="Algorithms/Images/Searches.svg" />
+    <image source="Algorithms/Images/Searches.svg"/>
 
   </subsection>
+  <exercise label="algorithms_search-efficiencies-ex1">
+    <statement>
+      <p>Match each search algorithm to its Big-O classification.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Linear search</premise>
+        <response>
+          <m>O(n)</m>
+        </response>
+      </match>
+      <match>
+        <premise>Binary search</premise>
+        <response>
+          <m>O(log(n))</m>
+        </response>
+      </match>
+    </cardsort>
+  </exercise>
+  <exercise label="algorithms_search-efficiencies-ex2">
+    <statement>
+      <p>Why is binary search classified as logarithmic?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Each unsuccessful comparison removes about half of the remaining possible items.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It checks every item in order.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It always needs exactly two comparisons.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It sorts the list one item at a time.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-

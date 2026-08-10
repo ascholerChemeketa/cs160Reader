@@ -4,7 +4,7 @@
     n</term>. How does that compare to Insertion Sort and Selection Sort, which are <m>O(n^2)</m>?</p>
   <p>Below is a graph of the growth of <m>n^2</m> and <m>n \cdot log_2(n)</m>:</p>
 
-  <image source="Algorithms/Images/Sorts.svg" />
+  <image source="Algorithms/Images/Sorts.svg"/>
 
   <p>Obviously, <m>n^2</m> grows much faster than <m>n \cdot log_2(n)</m>. Looking at the table below, we can see that
     sorting 500 items with Insertion Sort (<m>O(n^2)</m>) would take somewhere around 250,000 units of work. Doing the
@@ -12,7 +12,8 @@
 
   <tabular halign="center">
 
-    <row header="yes" bottom="minor">
+    <row header="yes"
+         bottom="minor">
       <cell>
         <term>Problem size</term>
       </cell>
@@ -58,8 +59,9 @@
     use the slider to change the size of the list being sorted. Try comparing the two algorithms at different sort
     sizes. Does Merge Sort always win? At what point does Insertion Sort start taking more than a half-second to run? At
     what point does Merges Sort start taking more than a half-second?</p>
-    <p>
-  <raw format="html" xml:space="preserve">
+  <p>
+    <raw format="html"
+         xml:space="preserve">
   <style>
   #sorterBox {
     width: 600px;
@@ -206,6 +208,59 @@
         <button id="goNLogNButton" class="sortButton">Merge Sort</button><span id="mergeSorting"></span>
     </div>
 </fieldset></raw>
-</p>
+  </p>
+  <exercise label="algorithms_merge-sort-compared-ex1">
+    <statement>
+      <p>Which sorting algorithm is expected to scale better for very large lists?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Merge sort, because <m>O(n log(n))</m> grows more slowly than <m>O(n^2)</m>.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Insertion sort, because <m>O(n^2)</m> grows more slowly than <m>O(n log(n))</m>.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Selection sort, because it has constant work.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>All sorting algorithms require the same work for large lists.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_merge-sort-compared-ex2">
+    <statement>
+      <p>Why might insertion sort still be useful for a small list?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Merge sort has extra overhead, so its better growth rate may not outweigh that overhead for small inputs.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Insertion sort is logarithmic for small lists.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Merge sort cannot sort lists with fewer than 100 items.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Small lists do not need to be sorted.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-

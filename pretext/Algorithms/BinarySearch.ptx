@@ -16,7 +16,8 @@
   <p>Try watching the algorithm run on various values. Note that items that have turned white have been “thrown out” and
     no longer need to be worried about. Gray items show the range of possible locations that still need to be checked:</p>
   <p>
-    <raw format="html" xml:space="preserve">
+    <raw format="html"
+         xml:space="preserve">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>
     <script>
   <![CDATA[
@@ -191,7 +192,8 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
     keep track of the <c>lowIndex</c>, the lowest possible location the number could be at, and the <c>highIndex</c>, the highest
     possible location. Each time at each step of the loop you calculate the middle between those two locations and check
     that <c>middleIndex</c>. If you do not find what you are looking for, you change either the low or high boundary to “throw out”
-    half of the remaining items. Try running the algorithm by hand and make sure you can predict the values that the animation above shows.</p>
+    half of the remaining items. Try running the algorithm by hand and make sure you can predict the values that the
+    animation above shows.</p>
   <program language="none">
     <input>
     Note: assume that list and key are already set
@@ -219,6 +221,60 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
     substantially more efficient. The 20 items above never take more than 6 steps to check. If the list was 100 items it
     would never take more than 8 steps. 100,000 items could be searched in just 19 steps! We will take a closer look at
     just how efficient this algorithm is later.</p>
+  <exercise label="algorithms_algorithms-binary-search-ex1">
+    <statement>
+      <p>What condition must hold before binary search can be used?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>The list must be sorted.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The list must contain only numbers.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The list must have an even length.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The key must be the first item.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="algorithms_algorithms-binary-search-ex2">
+    <statement>
+      <p>During binary search, the middle value is larger than the key. Which items can be discarded?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>The middle item and every item after it.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The middle item and every item before it.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Only the first item.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>No items; all must still be checked.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
 
 
