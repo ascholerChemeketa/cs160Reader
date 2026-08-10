@@ -23,7 +23,7 @@ alisha.forward(30)
   </program>
   <exercise label="csprepeatturtles_repeatturtles2" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program should define a procedure <title_reference>triangle</title_reference> that uses a loop to
+      <p>The following program should define a procedure <pf>triangle</pf> that uses a loop to
         help draw a triangle. The main part of the program calls that function twice to draw two different triangles.</p>
       <p>Arrange and indent the blocks correctly. You will not need them all.</p>
     </statement>

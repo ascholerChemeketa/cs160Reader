@@ -26,7 +26,7 @@
         and start writing code without worrying about anything else.</p>
       <p><url href="https://codewith.mu/en/" visual="https://codewith.mu/en/">Mu</url> is another good choice for getting
         started writing Python to run on your computer.</p>
-      <p>You can also install <title_reference>Python &lt;https://www.python.org/&gt;</title_reference> and use any text
+      <p>You can also install <pf>Python &lt;https://www.python.org/&gt;</pf> and use any text
         editor you like to write code. This route is only recommended if you already are used to using text editors and
         working from the command prompt.</p>
     </subsection>

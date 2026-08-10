@@ -22,9 +22,9 @@
   <p>To use a library, we need to tell Python we want to use the library with an <term>import</term>
     statement. In the program below, we start with <c>import turtle</c> to tell Python we want to make use of the <term>
     turtle</term> library. To use commands from the library, we use dot notation: we type the name
-    of the library, then a dot <title_reference> .</title_reference>, then the command. The line <c>alex = turtle.Turtle()</c>
-    calls the <title_reference> Turtle()</title_reference> command from the <title_reference>turtle</title_reference>
-    library to make a new turtle - we name that turtle <title_reference>alex</title_reference>.</p>
+    of the library, then a dot <pf> .</pf>, then the command. The line <c>alex = turtle.Turtle()</c>
+    calls the <pf> Turtle()</pf> command from the <pf>turtle</pf>
+    library to make a new turtle - we name that turtle <pf>alex</pf>.</p>
 
   <p>The turtles that we make are <term>objects</term> that have behaviors we can access with
     dot-notation. We use these to tell the turtle <c>alex</c> to move around on the screen using

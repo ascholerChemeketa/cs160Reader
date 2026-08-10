@@ -80,7 +80,7 @@ print("The length of side C is", sideC)
 
         <p><c>int()</c> takes a number and returns just the whole number part (without rounding). <c>int(3.9)</c>
           would return 3. <c>abs()</c> takes one number and returns it as a positive value.</p>
-        <p>What do you think <title_reference>print(int(abs(-16.789) + 1))</title_reference>,
+        <p>What do you think <pf>print(int(abs(-16.789) + 1))</pf>,
           prints?</p>
 
       </statement>
