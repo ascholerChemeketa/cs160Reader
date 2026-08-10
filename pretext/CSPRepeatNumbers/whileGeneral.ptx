@@ -87,7 +87,7 @@ print(binary)
     </choices>
 
   </exercise>
-  <p>Thus a while loop allows us to write a program to use Newton’s method to calculate a square root and say
+  <p>Thus a while loop allows us to write a program to use Newton's method to calculate a square root and say
     <q>keep repeating the formula until the answer stays the same</q>. This will produce the most accurate answer
     we can produce, without having to worry in advance about how many repetitions we should ask for. Try running this
     program and changing <c>number</c> to smaller and larger values. Notice how the number of repetitions is different for

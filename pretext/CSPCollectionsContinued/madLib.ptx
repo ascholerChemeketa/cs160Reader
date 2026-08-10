@@ -1,6 +1,6 @@
 <section xml:id="csp-collections-continued_making-a-madlib-story">
   <title>Making a MadLib Story</title>
-  <p>Let’s use the range-based loop of a list to create a MadLib program. MadLibs are stories where the
+  <p>Let's use the range-based loop of a list to create a MadLib program. MadLibs are stories where the
     <q>player</q> is asked to provide some words that are then incorporated into the story in the hopes of
     creating something amusingly silly.</p>
   <p>Our program will start with a story where some placeholder words are in ALL_CAPS. Those are the ones we will ask
@@ -41,7 +41,7 @@
       </tests>
     </program>
   </exercise>
-  <p>Now let’s identify which words are in ALL_CAPS. To do that, we need to call the <c>isupper()</c> function on each
+  <p>Now let's identify which words are in ALL_CAPS. To do that, we need to call the <c>isupper()</c> function on each
     word. It returns <c>True</c> if the word is all upper case and <c>False</c> if it is not.</p>
 
   <exercise label="cspcollectionscontinued_madlib2">

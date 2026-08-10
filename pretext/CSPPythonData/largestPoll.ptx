@@ -1,5 +1,5 @@
 <section xml:id="csp-python-data_what-s-the-largest-pollution-values">
-  <title>What’s the largest pollution values?</title>
+  <title>What's the largest pollution values?</title>
   <p>Now that we have figured out how to process the data in the file, we can get to work on answering questions about
     it. One of the interesting questions to explore might be, <q>Which city has the worst pollution at the PM2.5
     level?</q> The program below figures that out. It uses the maximum value pattern to do this - <c>max25</c> will be

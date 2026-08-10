@@ -93,14 +93,14 @@
         <cell> pendown </cell>
         <cell> None </cell>
         <cell>
-          <p>Puts down the turtle’s pen so that it draws when it moves</p>
+          <p>Puts down the turtle's pen so that it draws when it moves</p>
         </cell>
       </row>
       <row bottom="minor">
         <cell> penup </cell>
         <cell> None </cell>
         <cell>
-          <p>Picks up the turtle’s pen so that it doesn’t draw when it moves</p>
+          <p>Picks up the turtle's pen so that it doesn’t draw when it moves</p>
         </cell>
       </row>
       <row bottom="minor">
@@ -146,7 +146,7 @@
         <cell> stamp </cell>
         <cell> None </cell>
         <cell>
-          <p>Stamps a copy of the turtle’s icon at the current location.</p>
+          <p>Stamps a copy of the turtle's icon at the current location.</p>
         </cell>
       </row>
       <row bottom="minor">

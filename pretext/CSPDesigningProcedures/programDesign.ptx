@@ -52,7 +52,7 @@
     <p>Now that I’ve broken everything down into manageable chunks, we are ready to start implementing<ellipsis/></p>
     <exercise label="cspdesigningprocedures_programdesign1" numbered="yes" indentation="hide" language="python">
       <statement>
-        <p>Let’s make sure you understand the design listed above. Arrange the blocks to implement the rough
+        <p>Let's make sure you understand the design listed above. Arrange the blocks to implement the rough
           design.</p>
         <p>For the auto-checker to work, you need to define your procedures in this order: <c>rectangle</c>, <c>drawWall</c>, <c>drawDoor</c>, <c>drawWindow</c>
           , <c>drawRoof</c>, <c>drawHouse</c>. The main part of the program should come after the procedures. </p>

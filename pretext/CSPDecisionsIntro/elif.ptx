@@ -98,7 +98,7 @@ else:
     the elifs and the else are skipped. If <c>TEST1</c> is False, we check <c>TEST2</c>. If it is true, we do
     the first elif body and then skip the second elif and the else. If <c>TEST2</c> is also false, we
     move to <c>TEST3</c>. If it too ends up as false, we finally do the else.</p>
-  <p>Note that although we can have as many <c>elif</c>’s as we want, we can only have one <c>else</c>. It
+  <p>Note that although we can have as many <c>elif</c>'s as we want, we can only have one <c>else</c>. It
     must always come last and does not have a condition. The <c>else</c> is what runs if everything else
     fails to run.</p>
   <p>Here is the positive/negative check rewritten with elif:</p>

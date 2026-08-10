@@ -81,7 +81,7 @@
   <p>Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the
     inputs - one adder handles A1 &amp; B1, another adder handles A2 &amp; B2, etc<ellipsis/> It inputs representing the
     two digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs
-    two answers: <q>What is the sum in this column?</q> (the S output) and <q>Do we carry a 1 into the next column’s
+    two answers: <q>What is the sum in this column?</q> (the S output) and <q>Do we carry a 1 into the next column's
     full adder?</q> (the Cout output).</p>
   <p>Try adding 3 to 2 by setting the A inputs to 011 and the B inputs to 010. Does the result represent 5? Try other
     numbers!</p>

@@ -3,7 +3,7 @@
   <p>You undoubtedly have recognized that there are some similarities to drawing shapes like the square or hexagon. It
     turns out there is a general pattern to drawing any regular (all sides are the same length and all angles are the
     same size) geometric shape.</p>
-  <p>Let’s look at a few more examples. Here’s a triangle:</p>
+  <p>Let's look at a few more examples. Here's a triangle:</p>
 
   <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
     <input>
@@ -18,7 +18,7 @@ for side in range(3):
 avery.end_fill()
         </input>
   </program>
-  <p>And here’s a pentagon:</p>
+  <p>And here's a pentagon:</p>
 
   <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
     <input>

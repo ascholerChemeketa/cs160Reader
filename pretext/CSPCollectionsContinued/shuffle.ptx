@@ -77,7 +77,7 @@
     <p>At this point, your program should print out a deck where part of the back has been moved to the front. So
       hopefully, if we repeat that process a bunch of times, the deck will keep getting chopped up differently and
       become more and more jumbled.</p>
-    <p>Let’s test that.</p>
+    <p>Let's test that.</p>
 
     <exercise label="cspcollectionscontinued_shuffle2">
       <statement>
@@ -205,7 +205,7 @@
       </program>
     </exercise>
     <p>Now we will repeat the process. Since we are only moving one card at a time, doing 10 repetitions probably
-      won’t be enough. But let’s start with that and see if the method looks like it is working before we
+      won’t be enough. But let's start with that and see if the method looks like it is working before we
       scale it up to more repetitions.</p>
 
     <exercise label="cspcollectionscontinued_shuffle5">

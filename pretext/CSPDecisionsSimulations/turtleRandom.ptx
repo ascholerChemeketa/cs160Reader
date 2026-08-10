@@ -67,7 +67,7 @@ drawSquare(becca, squareSize)
         </input>
   </program>
   <p>Try the program a few times. Each time you should get different squares.</p>
-  <p>Now let’s make it a little more interesting by picking a random color each time the program runs. We have
+  <p>Now let's make it a little more interesting by picking a random color each time the program runs. We have
     added a procedure called <c>changeColor</c>. If you pass it the name of a turtle, and three numbers between 0-255 representing <c>red</c>
     , <c>green</c>, and <c>blue</c> values, it will make a hexadecimal color code that represents the color with that much
     red/green/blue. It will then use that to set the color of the turtle. Your task is to write code to pick three

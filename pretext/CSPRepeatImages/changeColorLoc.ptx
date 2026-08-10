@@ -103,7 +103,7 @@
     </choices>
   </exercise>
 
-  <p>Now let’s put the pixel coordinates to work. We are going to use the location of each 
+  <p>Now let's put the pixel coordinates to work. We are going to use the location of each 
     pixel to modify its color. We will do so by subtracting its x coordinate from each of the color 
     values (red, green, blue). This means on the left side of the image, where x is 0
     or close to it, there is little change. On the right side, where x is larger, we remove more and more of the color,

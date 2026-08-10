@@ -2,7 +2,7 @@
   <title>Merge Sort Efficiency</title>
   <p>So how efficient is Merge Sort? Well, for starters, remember that merging <term>n</term> items takes <m>O(n)</m>
     work. In other words, merging 5 items takes ~5 units of work, merging 20 items, takes ~20 units of work, etc<ellipsis/>
-    Now let’s do a rough analysis of how long it takes to do a merge sort on a list of length 1024.</p>
+    Now let's do a rough analysis of how long it takes to do a merge sort on a list of length 1024.</p>
   <p>All the hard work takes place as we merge the lists back together:</p>
   <p>
     <ul>

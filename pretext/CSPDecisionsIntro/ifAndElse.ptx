@@ -15,7 +15,7 @@ if weight &gt;= 1:
   <p>In situations like this, where there are exactly two mutually exclusive options (we either have
     to do one or the other), there is an easier way to write the logic. That is to use <c>else</c>. <c>else</c>
     provides a way to say <q>if the condition for the preceding if was False, do this</q>. The body
-    of the else - the code that will be executed if the if’s test fails - is indented after the
+    of the else - the code that will be executed if the if's test fails - is indented after the
     else.</p>
 
   <program xml:id="if_and_else" interactive="activecode" language="python">

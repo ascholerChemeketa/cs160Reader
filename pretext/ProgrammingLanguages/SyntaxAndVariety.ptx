@@ -29,7 +29,7 @@
       <q>ate. I red the apple</q>
     </em> is nonsense. Programming languages have more limited syntax than human
     languages, but the biggest difference is the listener. We depend on humans to understand things even when there is a
-    slight syntax error in something we say or write; <q>Let’s eat, grandma</q> and <q>Let’s eat grandma</q> are two
+    slight syntax error in something we say or write; <q>Let's eat, grandma</q> and <q>Let's eat grandma</q> are two
     VERY different statements, but no one is going to engage in cannibalism because we wrote the wrong one.</p>
   <p>Computers are not so forgiving - they are not clever enough to figure out what you meant. If you have an error that
     violates the syntax of their language they will not even try to execute it. If you have an error that does not

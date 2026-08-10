@@ -26,7 +26,7 @@
   </program>
 
   <p>Now that we have the state isolated, we can use that to look for just records that have the state code that we
-    desire. Let’s try that and look for records from Oregon. We will loop through all of the records, split the
+    desire. Let's try that and look for records from Oregon. We will loop through all of the records, split the
     line up into values, split the city/state up into a list, and then test the state value against the state code
     <q>OR</q> and only print out records that have that code.</p>
 

@@ -66,7 +66,7 @@ while counter &lt; 100:
     </input>
     </program>
     <p>Where we do the update matters. In this loop, <c>counter</c> starts at 0. We print that value, then add 2 to the <c>counter</c>.
-      When we get to 6, it is printed, then we add 2. Then we go back to the <c>while</c>’s test. Since <c>counter &lt; 8</c> is no
+      When we get to 6, it is printed, then we add 2. Then we go back to the <c>while</c>'s test. Since <c>counter &lt; 8</c> is no
       longer true, we end the loop. So we see the value 0,2,4,6 even though the counter ends up reaching 8.</p>
 
     <program xml:id="csprepeatnumbers_whilecount6" interactive="codelens" language="python">
@@ -80,7 +80,7 @@ print("Done")
     </program>
     <p>In this loop, the <c>counter</c> starts at 0, but we add 2 to it before we print it the first time. Thus the first thin
       printed is 2. Then, when <c>counter</c> gets to 6, we add 2 more to get 8 and then print that value before we go back up
-      to test the <c>while</c>’s expression again. At that point, we realize it is time to stop. Thus this version
+      to test the <c>while</c>'s expression again. At that point, we realize it is time to stop. Thus this version
       prints out 2,4,6,8.</p>
 
     <program xml:id="csprepeatnumbers_whilecount7" interactive="codelens" language="python">
@@ -114,7 +114,7 @@ print("Done")
     </exercise>
     <exercise label="csprepeatnumbers_whilecount9" numbered="yes" adaptive="yes" indentation="hide" language="python">
       <statement>
-        <p>The following is the correct code for printing the even numbers from 2 to 10, by 2’s <term>but it also
+        <p>The following is the correct code for printing the even numbers from 2 to 10, by 2's <term>but it also
           includes some extra code that you won’t need</term>. Drag the needed blocks from the left and put them
           in the correct order on the right. Don’t forget to indent blocks in the body of the loop.</p>
       </statement>

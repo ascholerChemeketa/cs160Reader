@@ -58,7 +58,7 @@
 
   <p>If we have a large list of states we want to process, it would be silly to keep copy/pasting the last three lines
     of code for different state codes. Repeating those three lines over and over is the perfect job for a loop.
-    Let’s write a loop that can iterate through a list of states:</p>
+    Let's write a loop that can iterate through a list of states:</p>
 
   <exercise label="csppythondata_comparestates2">
     <statement>

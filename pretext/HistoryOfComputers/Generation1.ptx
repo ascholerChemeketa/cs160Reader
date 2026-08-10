@@ -1,7 +1,7 @@
 <section xml:id="history-of-computers_the-first-generation">
   <title>The First Generation</title>
   <p>Generations of computers are largely defined by the components used to build them. Although mechanical computers
-    like Babbage’s Engines and the Hollerith desk would continue to see use well into the 20th century,
+    like Babbage's Engines and the Hollerith desk would continue to see use well into the 20th century,
     mathematicians and engineers in the 1930s realized that the logic of computation - Boolean logic - could be
     implemented with electronic relays and switches. <term>Vacuum tubes</term>, an electrical component that can be used
     as a switching device, became the core components of the first electrical computers.</p>
@@ -17,7 +17,7 @@
   </sidebar>
   <p>World War II inspired a great deal of mathematical work. The British developed a series of computational devices
     designed to do calculations required to break German codes. These devices culminated in <term>Colossus</term>, the
-    world’s first electronic digital computer that was all programmable. Operators could reprogram the machine by
+    world's first electronic digital computer that was all programmable. Operators could reprogram the machine by
     changing switches and rewiring connections. Colossus could not compute any possible program, but it could be
     <q>reprogrammed</q> to solve different problems relating to the breaking of codes.</p>
 

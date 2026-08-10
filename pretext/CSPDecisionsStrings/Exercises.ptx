@@ -3,7 +3,7 @@
   <exercise label="cspdecisionsstrings_exercises1" numbered="yes" indentation="hide" language="python">
     <statement>
       <p>The following program segment should ask whether the user wants to terminate the program and print out the
-        appropriate statement based on the user’s response. The blocks have been mixed up and include extra blocks
+        appropriate statement based on the user's response. The blocks have been mixed up and include extra blocks
         that aren’t needed in the solution. Drag the needed blocks from the left and put them in the correct order
         on the right.</p>
     </statement>

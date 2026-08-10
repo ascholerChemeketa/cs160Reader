@@ -18,7 +18,7 @@
           <div style="background: rgb(247, 190, 194); color: white; padding: 2px 10px;">247, 190, 194</div>
         </raw>
       </p>
-  <p>We will say that if a pixel’s red value is at least 10 greater than both the green and
+  <p>We will say that if a pixel's red value is at least 10 greater than both the green and
       the blue values, it is <q>red</q>. To express this as a conditional will look like
       <c>r &gt;= g + 20 and r &gt;= b + 20</c>, where r, g, b are the red, green, and blue color values.
       To test out our recipe, we are going to make a function <c>isRed</c>. It will accept values for

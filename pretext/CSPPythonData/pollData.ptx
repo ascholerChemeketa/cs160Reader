@@ -1,6 +1,6 @@
 <section xml:id="csp-python-data_our-first-data-set-air-pollution-in-the-united-states">
   <title>Our first data set: Air pollution in the United States</title>
-  <p>This first data set that we’re going to explore is from <em>The Guardian</em> newspaper’s data
+  <p>This first data set that we’re going to explore is from <em>The Guardian</em> newspaper's data
     blog. It is a record of the air pollution in various cities. According to the World Health
     Organization, 2.5-micrometer pollution is particularly deadly because it more easily gets <url
       href="http://en.wikipedia.org/wiki/Particulates"

@@ -1,7 +1,7 @@
 <section xml:id="csp-decisions-simulations_using-random-numbers">
   <title>Using Random Numbers</title>
   <p>If we want to simulate something like flipping a coin, we can assign a different number to each possible outcome.
-    There are two sides to a coin - <em>heads</em> and <em>tails</em> - so let’s call heads <em>0</em> and tails <em>
+    There are two sides to a coin - <em>heads</em> and <em>tails</em> - so let's call heads <em>0</em> and tails <em>
     1</em>. If we make a random integer between 0 and 1, we can think of it as representing heads or tails on the coin:</p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
@@ -15,7 +15,7 @@ else:
     print("tails")
         </input>
   </program>
-  <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let’s do 100 flips and count
+  <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let's do 100 flips and count
     up how many heads (0s) we get. Each time through the loop, we will pick a new random number. We will only add to our
     accumulator <c>numHeads</c> if the random value is 0.</p>
 
@@ -51,7 +51,7 @@ print("We got", numHeads, "heads.")
         <p>
           <ul>
             <li>
-              <p>We generate 10 0’s and 1’s</p>
+              <p>We generate 10 0's and 1's</p>
             </li>
             <li>
               <p>We call each 0 a <q>head</q></p>

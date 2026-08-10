@@ -65,7 +65,7 @@
       <p>Use <term>string slicing</term> to get <q>giant alligator</q> from <c>sentence</c> and store it in <c>s1</c> .</p>
       <p>You should not be typing the string <q>giant alligator</q> yourself, you should be getting the right
         part of what is stored in <c>sentence</c>.</p>
-      <p>The print will put |’s around your output to make it clear if you have a space at the start or end of s1.</p>
+      <p>The print will put |'s around your output to make it clear if you have a space at the start or end of s1.</p>
 
     </statement>
     <program xml:id="cspnamestrings_exercises3_editor" interactive="activecode" language="python">

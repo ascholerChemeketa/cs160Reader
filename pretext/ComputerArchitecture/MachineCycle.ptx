@@ -1,9 +1,9 @@
 <section xml:id="computer-architecture_the-machine-cycle">
   <title>The Machine Cycle</title>
   <p>When software is installed onto a computer (by downloading it from the Internet or installing it from a disk), the
-    program and any associated files are stored in secondary memory. The program’s code is stored as a series of bits
+    program and any associated files are stored in secondary memory. The program's code is stored as a series of bits
     that represent machine instructions. The code remains there until the user chooses to execute the program in
-    question, at which point sections of the code are loaded into the computer’s memory.</p>
+    question, at which point sections of the code are loaded into the computer's memory.</p>
   <image source="ComputerArchitecture/Images/execution.gif"
          width="80%"
          alt="Execution"/>

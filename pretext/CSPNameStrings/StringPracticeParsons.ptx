@@ -7,7 +7,7 @@
   <exercise label="cspnamestrings_stringpracticeparsons1" adaptive="yes" indentation="show"
     language="python">
     <statement>
-      <p>The following code should print Maria’s first name on one line and her last name on the
+      <p>The following code should print Maria's first name on one line and her last name on the
         next line. But, the blocks have been mixed up and include an extra block that isn’t needed
         in the solution. Drag the blocks from the left and put them in the correct order on the
         right. Click the <em>Check Me</em> button to check your solution.</p>

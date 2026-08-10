@@ -1,6 +1,6 @@
 <section xml:id="csp-repeat-numbers_infinite-loops">
   <title>Infinite Loops</title>
-  <p>In the last section, we saw what happens if a loop’s control variable is never updated. It will run forever.</p>
+  <p>In the last section, we saw what happens if a loop's control variable is never updated. It will run forever.</p>
 
   <program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
     <input>

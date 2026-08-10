@@ -139,9 +139,9 @@
       2^{30}</m> for each <term>GB</term>.</p>
     <note>
       <p>Traditionally, people describe processor speeds, network speeds, and hard drive space using the power of
-        10’s system. They describe main memory (RAM) and the size of files and data using the power of 2’s
+        10's system. They describe main memory (RAM) and the size of files and data using the power of 2's
         system. This gets a bit confusing when you are calculating something like how long it will take to send a <em><q>200
-        MB</q></em> file over a <em><q>100 MB/s</q></em> network connection - the two <term>MB</term>’s
+        MB</q></em> file over a <em><q>100 MB/s</q></em> network connection - the two <term>MB</term>'s
         are different units!</p>
     </note>
 

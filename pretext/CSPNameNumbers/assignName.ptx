@@ -7,14 +7,14 @@
         change or <em>vary</em> during the game, which is why we call it a <term>variable</term>.</p>
 
     <p>Think of a variable as a box that has a label on it and you can store a value in the box. The value can be
-        anything that can be represented on a computer and stored in a computer’s memory. A computer’s
+        anything that can be represented on a computer and stored in a computer's memory. A computer's
         memory is only made up of numbers (really, just patterns of voltages, but we can think about them as numbers).
         Everything that a computer can remember in its memory is translated into these numbers <ndash/> but don’t
         worry about how this works right now.</p>
 
-    <p>In programming languages, setting a variable’s value is also called <term>
+    <p>In programming languages, setting a variable's value is also called <term>
         assignment</term>. A statement like <c>a = 4</c> means that the symbol <c>a</c> refers to space (in the
-        computer’s memory) that is assigned the value <c>4</c>. When we use the symbol <c>a</c> in a program the
+        computer's memory) that is assigned the value <c>4</c>. When we use the symbol <c>a</c> in a program the
         computer will substitute the value <c>4</c>.</p>
     <figure align="center">
         <caption>Creating a variable and setting its value in memory.</caption>

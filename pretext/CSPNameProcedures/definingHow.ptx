@@ -36,7 +36,7 @@ def ProcedureName(Input1, Input2, Input3, ...):
       </li>
       <li>
         <p>The instructions that are part of the procedure or function are indented. These instructions are known as the
-          function’s <term>body</term>.</p>
+          function's <term>body</term>.</p>
       </li>
     </ul>
   </p>

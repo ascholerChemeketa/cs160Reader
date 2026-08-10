@@ -141,7 +141,7 @@ PG-13 | 32
 
   <exercise label="sqlgroupjoin_exercises5">
     <statement>
-      <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director’s movies have earned.
+      <p>Write a query to list each <c>director</c> with the highest (<c>MAX</c>) <c>imdb_score</c> that director's movies have earned.
         Order the output so the directors with the highest <c>imdb_score</c> come first.</p>
       <p>Hint: You will need to use both <c>GROUP BY</c> and <c>ORDER BY`</c>.</p>
       <p>Your output should look like this:</p>
@@ -169,7 +169,7 @@ Francis Ford Coppola  | 9.2
     <statement>
       <p>Write a query to list each <c>director</c> with the <c>COUNT</c> of the number of films they have made. But <term>only</term>
         retrieve the data for directors with at least 2 films.</p>
-      <p>The results should be sorted by director’s name (but that should be the default, you should not have to
+      <p>The results should be sorted by director's name (but that should be the default, you should not have to
         use <c>ORDER BY</c>).</p>
       <p>Hint: Remember that you have to use <c>HAVING</c> to filter grouped results.</p>
       <p>Your output should look like this:</p>

@@ -29,7 +29,7 @@
     processes, giving each a brief chance to run some instructions before switching to the next.</p>
 
   <sidebar>
-    <title>What’s Happening?</title>
+    <title>What's Happening?</title>
     <p>You can check what processes are currently running on your computer (and manage them) by pressing <em>
       ctrl-shift-esc</em> (Windows) or <em>command + option + escape</em> (OSX).</p>
     <p>You will see not just the processes associated with programs you have intentionally started, but also all the

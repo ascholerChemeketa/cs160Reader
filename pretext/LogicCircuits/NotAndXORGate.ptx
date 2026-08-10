@@ -43,7 +43,7 @@
       </tabular>
     </table>
     <p>It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents <q>the
-      first number negative</q> and input 2 represents <q>the second number is negative</q>, then <term> XOR</term>’s
+      first number negative</q> and input 2 represents <q>the second number is negative</q>, then <term> XOR</term>'s
       output would tell us <q>Is the answer negative</q>. If either one of the two numbers, but not both of them, were
       negative, then the answer would be negative.</p>
     <p>Watch out for <term>XOR</term> and <term>OR</term> - in English we often use the word <q>or</q> to mean both

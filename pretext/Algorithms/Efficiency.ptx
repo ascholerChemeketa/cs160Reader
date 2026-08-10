@@ -17,7 +17,7 @@
     program uses.</p>
   <p>So instead of measuring time when measuring algorithms, we usually think in terms of the work required. The work
     required to perform a particular algorithm does not generally change when it is executed on different machines or
-    under different conditions. So what exactly is <q>work</q>? Let’s try to come up with some descriptions of how much
+    under different conditions. So what exactly is <q>work</q>? Let's try to come up with some descriptions of how much
     work two different algorithms take. First, we will consider this DrawSquare algorithm:</p>
   <program language="none">
     <input>

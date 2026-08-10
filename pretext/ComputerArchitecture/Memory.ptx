@@ -6,7 +6,7 @@
            width="30%"
            alt="Main Memory"/>
   </figure>
-  <p>Main memory consists of a very long list of bytes (groups of 8 bits). When the computer’s power is on, every byte
+  <p>Main memory consists of a very long list of bytes (groups of 8 bits). When the computer's power is on, every byte
     contains some pattern or other, even those bytes not being used for anything. (Remember the nature of binary: when a
     binary device is working it is either <q>on</q> or <q>off</q>, never in-between.)</p>
   <p>The meaning of the bits in memory depends completely on how the running program decides to treat them. Without
@@ -41,7 +41,7 @@
     <p>A 0x written in front of a number is an alternative way to say <q>This is hexadecimal</q>. This is a popular
       convention in programming languages and tools where you can’t write a subscript <m>_{16}</m> after values.</p>
   </note>
-  <p>The highest possible address depends on both the computer’s hardware and operating system. Although the picture to
+  <p>The highest possible address depends on both the computer's hardware and operating system. Although the picture to
     the right only shows addresses that consist of 2 hex digits (which correspond to 8 bits) and thus only go up to 255,
     most computers use addresses that are much longer, often 32 or 64 bits long (8 or 16 hexadecimal digits) and thus
     can address billions of different bytes.</p>

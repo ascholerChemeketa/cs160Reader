@@ -9,7 +9,7 @@
   <figure>
     <image source="DataRepresentation/Images/hexaddress.png" width="50%" alt="Hex display of data" />
     <legend>
-      <p>A programmer’s view of two pieces of information in a program.</p>
+      <p>A programmer's view of two pieces of information in a program.</p>
     </legend>
   </figure>
   <p>The image above shows a screenshot of looking at data while debugging a computer program. <term>x</term> is known

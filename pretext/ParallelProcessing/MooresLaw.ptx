@@ -1,11 +1,11 @@
 <section xml:id="parallel-processing_moore-s-law">
-  <title>Moore’s Law</title>
+  <title>Moore's Law</title>
   <p>In the 1960s, Gordon Moore, one of the co-founders of Intel, noticed that integrated circuits were becoming more
     complex at an exponential rate. He predicted that this growth would continue - that the number of transistors on a
-    circuit would double every two years. This prediction came to be called <term>Moore’s Law</term>. Although Moore was
+    circuit would double every two years. This prediction came to be called <term>Moore's Law</term>. Although Moore was
     focused on the number of transistors on a chip, others have expanded his idea into a prediction for overall
     performance increases. The combined benefits of increased complexity and speed in chips have resulted in processing
-    power doubling every 18 months. Thus the term <q>Moore’s Law</q> is used to refer to the idea that overall
+    power doubling every 18 months. Thus the term <q>Moore's Law</q> is used to refer to the idea that overall
     processing power doubles every year and a half.</p>
 
   <sidebar>
@@ -63,7 +63,7 @@
 
   </tabular>
   <p>This continuous doubling and redoubling of computing power in chips has held steady for the past 40+ years. To put
-    this kind of growth into perspective: If Moore’s Law applied to the air travel industry, a flight from New York to
+    this kind of growth into perspective: If Moore's Law applied to the air travel industry, a flight from New York to
     Paris which took 7 hours and cost $900 in 1978 would now require about 1/10th of a second and cost under a penny.</p>
   <figure>
     <caption>Transistor count of various processors over the past 40 years. Note that the y-axis is a logarithmic scale

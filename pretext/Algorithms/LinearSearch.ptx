@@ -9,7 +9,7 @@
     in terms of operations a computer can do.</p>
   <p>Assume a list called <c>list</c>, filled with integers. Each integer in the list has a unique location in the list -
     called its <term>index</term>. The task is to search for the location of a particular value - often called the <c>key</c>.
-    Here’s how to do the search:</p>
+    Here's how to do the search:</p>
   <program language="none">
     <input>
     Note: assume that list and key are already set
@@ -190,7 +190,7 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
 </raw>
   </p>
   <p>Linear search is pretty easy, but it does have one big weakness - you potentially have to look at every item in the
-    list. Imagine finding someone’s number in a phone book with a linear search! While linear search works fine for
+    list. Imagine finding someone's number in a phone book with a linear search! While linear search works fine for
     small jobs, it does not scale well to larger problems.</p>
   <exercise label="algorithms_algorithms-linear-search-ex1">
     <statement>
