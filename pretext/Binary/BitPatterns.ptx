@@ -8,10 +8,11 @@
       1 0
       1 1
   </pre>
-  <figure xml:id="bit-patterns-demo-app">
-    <caption>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.</caption>
-  </figure>
-    <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
+  <activity xml:id="bit-patterns-demo-app">
+      <p>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.
+      </p>
+      <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
+  </activity>
   <p>How many patterns can be formed with three bits? Let's list them:</p>
   <pre>
       0 0 0
@@ -32,7 +33,7 @@
   <p>This trick can be repeated as many times as you like. Adding one more bit doubles the number of patterns. The table
     shows the number of patterns for 1, 2, 3, and 4 bits.</p>
   <p>Number of Bits Number of Patterns Number of Patterns as a power of two:</p>
-  <table>
+
     <tabular>
       <row header="yes">
         <cell> Bits </cell>
@@ -68,7 +69,7 @@
         </cell>
       </row>
     </tabular>
-  </table>
+
   <p>How many patterns with 5 bits? Make two copies of the 4-bit patterns (16 patterns per copy). Make the patterns
     unique by prefixing <q>0</q> to the first 16 patterns and <q>1</q> to the second 16. You now have <m>16 \times 2
     = 32 = 2^5</m> unique patterns.</p>
