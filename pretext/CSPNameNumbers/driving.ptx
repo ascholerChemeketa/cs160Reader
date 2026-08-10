@@ -17,24 +17,24 @@
     </p>
 
     <program interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-1" >
-        <input>
+        <code>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
-    </input>
+    </code>
     </program> 
 
     <p>Now, if we know the average cost of a gallon of gas, we can figure out the cost
         of the trip from Chicago to Dallas in your car.</p>
 
     <program interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-2">
-        <input>
+        <code>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
 costPerGallon = 3.65
 costTrip = gallons * costPerGallon
-    </input>
+    </code>
     </program>
 
     <p>The Codelens allows us to see the value of each variable in a program as it runs. But normally if we run a program 
@@ -49,7 +49,7 @@ costTrip = gallons * costPerGallon
         separated by commas. You can see this on line 12 in the program below.</p>
 
     <program interactive="activecode" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-3">
-        <input>
+        <code>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
@@ -62,7 +62,7 @@ print(costTrip)
 
 #Print the description and value on the same line
 print("Cost to get from Chicago to Dallas", costTrip)
-        </input>
+        </code>
     </program>
 
     <warning>

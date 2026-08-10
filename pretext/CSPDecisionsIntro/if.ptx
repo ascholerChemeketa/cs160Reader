@@ -4,10 +4,10 @@
   <p>In Python, we test data and execute instructions if the test is true using an <c>if</c> statement
     which takes the form:</p>
   <program language="python">
-    <input>
+    <code>
 if TEST:
     BODY
-</input>
+</code>
   </program>
   <p>The <term>test</term>, also known as the <term>condition</term>, must be a <term>logical
     expression</term> - something that evaluates to either <c>True</c> or <c>False</c>. Like a <c>while</c>
@@ -60,12 +60,12 @@ if TEST:
     run with codelens to see how the behavior differs if the test is True or False.</p>
 
   <program xml:id="cspdecisionsintro_if1" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 0
 if x &lt; 3:
     print ("x is less than 3")
 print ("All done")
-        </input>
+        </code>
   </program>
 
   <p>The figure below is called a <term>flowchart</term>. It shows the execution paths for a
@@ -86,12 +86,12 @@ print ("All done")
 
       <p>Given the code below, what will be printed?</p>
       <program language="python">
-        <input>
+        <code>
 x = 10
 if x &gt;= 8:
     print ("A")
 print ("B")
-</input>
+</code>
       </program>
 
     </statement>

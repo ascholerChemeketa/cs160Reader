@@ -10,7 +10,7 @@
     original goalkeeper image from the <xref ref="csp-image-library" text="title" />.</p>
 
   <program xml:id="csprepeatimages_pattern1" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
@@ -37,7 +37,7 @@ for p in pixels:
     # STEP 6: UPDATE THE IMAGE WITH THE CHANGED PIXEL
     img.updatePixel(p)
 
-  </input>
+  </code>
   </program>
   <p>The fundamental steps are:</p>
   <p>

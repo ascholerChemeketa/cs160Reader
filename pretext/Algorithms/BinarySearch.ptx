@@ -23,7 +23,7 @@
     half of the remaining items. Try running the algorithm by hand and make sure you can predict the values that the
     animation above shows.</p>
   <program language="none">
-    <input>
+    <code>
     Note: assume that list and key are already set
 1   set lowIndex = 0
 2   set highIndex = length of list - 1
@@ -43,7 +43,7 @@
 16          lowIndex = middleIndex + 1
 17
 18  print "Value not found"
-</input>
+</code>
   </program>
   <p>Although binary search is more complex than linear search and depends on the items being in order, it can be
     substantially more efficient. The 20 items above never take more than 6 steps to check. If the list was 100 items it

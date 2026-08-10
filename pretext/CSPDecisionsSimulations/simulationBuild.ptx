@@ -11,7 +11,7 @@
     it is a head, we need to add one to <c>headsInARow</c>. If it is a tail, that means we now have seen 0 <c>headsInARow</c>:</p>
 
   <program xml:id="cspdecisionssimulations_simulationbuild1" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 headsInARow = 0
@@ -23,7 +23,7 @@ for i in range(100):
     else:
         headsInARow = 0
     print("We have seen", headsInARow, "in a row") # testing code
-        </input>
+        </code>
   </program>
   <p>Try running the program. Does it appear to work correctly? Once you have verified that the code appears to work, we
     need to modify it so it produces just one answer - true or false - yes we got at least 5 heads in a row or no we did
@@ -34,7 +34,7 @@ for i in range(100):
     tail and then <q>forget</q> that we had 5 in a row.</p>
 
   <program xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 headsInARow = 0
@@ -54,7 +54,7 @@ if headsInARow &gt;= 5:
     print(True)
 else:
     print(False)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionssimulations_simulationbuild3">

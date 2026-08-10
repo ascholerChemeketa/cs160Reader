@@ -12,7 +12,7 @@
     really big (circular) pen, then do <c>forward(1)</c> to make a dot of the current <c>color</c>.</p>
 
   <program xml:id="cspnameturtles_turtlecoordinates1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 mario = Turtle()
 
@@ -42,13 +42,13 @@ mario.goto(0, 120)
 mario.pendown()
 mario.pensize(100)
 mario.forward(1)
-        </input>
+        </code>
   </program>
   <p>The program below uses the <c>goto(x,y)</c> to move to the top left corner before drawing a square that nearly fills the
     drawing space. It uses <c>fillcolor</c>, <c>begin_fill</c>, and <c>end_fill</c> to fill in the shape as it draws it.</p>
 
   <program xml:id="cspnameturtles_turtlecoordinates2" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 anu = Turtle()
 
@@ -75,7 +75,7 @@ anu.end_fill()                      # Stop filling as we move
 # Goto the center without drawing as we move
 anu.penup()
 anu.goto(0, 0)
-        </input>
+        </code>
   </program>
   <p>
     <term>Mixed up programs</term>

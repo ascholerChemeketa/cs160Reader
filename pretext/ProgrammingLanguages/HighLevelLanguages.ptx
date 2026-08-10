@@ -29,7 +29,7 @@
       <title>English</title>
       <program>
 
-        <input>
+        <code>
               To calculate the total amount owed,
               first, multiply the total price
               of the meal by 0.15. This gives you
@@ -37,42 +37,42 @@
               
               Then, add the tip amount to the price
               of the meal to find the total bill.
-              </input>
+              </code>
       </program>
     </li>
     <li>
       <title>High-Level Language</title>
       <program language="python">
-        <input>
+        <code>
   tip = mealCost * 0.15
   bill = mealCost + tip
-          </input>
+          </code>
       </program>
     </li>
     <li>
       <title>Assembly</title>
       <program language="none">
-        <input>
+        <code>
   LOAD    MealCost
   MULT    TIPRATE
   STORE   Tip
   LOAD    MealCost
   ADD     Tip
   STORE   Bill
-  </input>
+  </code>
       </program>
     </li>
     <li>
       <title>Machine Code</title>
       <program language="none">
-        <input>
+        <code>
   0101010111100101
   1111011010101110
   1101101010010101
   0101110110001111
   0001010101111100
   1101101010111111
-  </input>
+  </code>
       </program>
     </li>
   </dl>

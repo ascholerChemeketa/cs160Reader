@@ -3,7 +3,7 @@
   <p>Here is an attempt to sum up all the even numbers from 0 to 100 that has a bug:</p>
 
   <program xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 sum = 0  # Start with nothing
 # STEP 2: LOOP THROUGH THE DATA
@@ -13,7 +13,7 @@ for number in range(0, 100, 2):
 
 # STEP 4: PROCESS RESULT
 print(sum)
-        </input>
+        </code>
   </program>
   <p>If you don't already know what the correct answer should be, it is hard to tell that this program does not
     work correctly. How do we know what's really going on in this program? If we had written it, what could we do to

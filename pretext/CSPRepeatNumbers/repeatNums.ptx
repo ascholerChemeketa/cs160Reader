@@ -6,7 +6,7 @@
     running this program with the Codelens:</p>
 
   <program xml:id="csprepeatnumbers_repeatnums1" interactive="activecode" language="python">
-    <input>
+    <code>
 # Number to find the square root of
 number = 110
 # Our first (obviously incorrect guess)
@@ -17,7 +17,7 @@ for iteration in range(5):
 
 print("The square root of ", number, "is approximately:")
 print(guess)
-        </input>
+        </code>
   </program>
   <p>Each time we pass through the loop, we update the guess and it becomes a little closer to the truest value for the
     square root we can represent (we can never write a perfect representation of the answer as a decimal, so we have to

@@ -8,7 +8,7 @@
     that are at least one hour (3600 seconds):</p>
 
   <program xml:id="sqlintro_filtering1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     member_type,
     start_date,
@@ -17,7 +17,7 @@ FROM
     trip_data
 WHERE
     duration &gt;= 3600;
-        </input>
+        </code>
   </program>
   <p>Try running this and examining the duration column<ellipsis/> the records that are returned by the <c>SELECT</c> should now
     all be ones with a duration of at least 3600.</p>
@@ -26,12 +26,12 @@ WHERE
     want to write something that is a string, we have to put quotes around it (either single <c>'</c> or double <c>"</c>
     quotes work). To select the records where <c>member_type</c> was <term>Member</term> we would write:</p>
   <program language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 ...
 WHERE
     member_type == "Member"
     --Use quotes around Member because it is a string
-</input>
+</code>
   </program>
   <p>Finally, notice that the <c>WHERE</c> clause is part of the query as the <c>;</c> does not appear until after the <c>WHERE</c>.
     If there was a <c>;</c> at the end of the <c>FROM trip_data</c>, the statement would end there and the <c>WHERE</c> would not be
@@ -48,7 +48,7 @@ WHERE
     that are 60 minutes or more and the <c>member_type</c> is <c>'Member'</c>, the query would be as below.</p>
 
   <program xml:id="sqlintro_filtering2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     member_type,
     start_date,
@@ -59,7 +59,7 @@ WHERE
     duration &gt;= 3600
     AND
     member_type == 'Member'
-        </input>
+        </code>
   </program>
 
   <exercise label="sqlintro_filtering3">
@@ -73,9 +73,9 @@ WHERE
     </statement>
     <program xml:id="sqlintro_filtering3_editor" interactive="activecode" language="sql"
       database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 31606
         assert 0,1 == 40791

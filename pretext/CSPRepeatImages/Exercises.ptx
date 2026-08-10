@@ -9,7 +9,7 @@
 
     </statement>
     <program xml:id="csprepeatimages_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -36,7 +36,7 @@
         # STEP 6: UPDATE THE IMAGE
         img.updatePixel(p)
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -58,7 +58,7 @@
 
     </statement>
     <program xml:id="csprepeatimages_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from image import
 
         # PICK THE IMAGE AND DISPLAY IT
@@ -76,7 +76,7 @@
 
             # UPDATE THE IMAGE
             img.updatePixel()
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -97,7 +97,7 @@
 
     </statement>
     <program xml:id="csprepeatimages_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -119,7 +119,7 @@
 
             # STEP 6: UPDATE THE IMAGE
             img.
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -141,7 +141,7 @@
 
     </statement>
     <program xml:id="csprepeatimages_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -164,7 +164,7 @@
             # STEP 6: UPDATE THE IMAGE
             img.updatePixel(p)
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -185,7 +185,7 @@
       <p>Write code to set the red value of each pixel to 255. This should give the entire image a rosy tint.</p>
     </statement>
     <program xml:id="csprepeatimages_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -206,7 +206,7 @@
 
             # STEP 6: UPDATE THE IMAGE
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -228,7 +228,7 @@
       <p>Write code to multiply the r, g, and b color of each pixel by 0.8. In other words, for each color channel (r, g, b), get its current value, multiply that by 0.8, and use the answer as the new value for the color. This should make the image darker.</p>
     </statement>
     <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -250,7 +250,7 @@
             # STEP 6: UPDATE THE IMAGE
 
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -271,7 +271,7 @@
       <p>Write code that for each pixel, adds the <c>y</c> value of its location to its red color.</p>
     </statement>
     <program xml:id="csprepeatimages_exercises7_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # STEP 1: USE THE IMAGE LIBRARY
         from image import *
 
@@ -292,7 +292,7 @@
 
             # STEP 6: UPDATE THE IMAGE
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

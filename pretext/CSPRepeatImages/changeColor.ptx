@@ -5,7 +5,7 @@
   <p>This program uses step five to increase each color value by 50% (1.5 times its original value.)</p>
 
   <program xml:id="csprepeatimages_changecolor1" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
@@ -32,7 +32,7 @@ for p in pixels:
     # STEP 6: UPDATE THE IMAGE
     img.updatePixel(p)
 
-  </input>
+  </code>
   </program>
   <p>Try decreasing each color channel by 50% (make it 0.5 times its original value) - you should end up with a darker version
     of the same picture.</p>

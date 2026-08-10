@@ -5,7 +5,7 @@
     on how many item(s) a person orders. Try this program a few times and enter different values for the input.</p>
 
   <program xml:id="cspdecisionsstrings_decisionstrings1" interactive="activecode" language="python">
-    <input>
+    <code>
 numItems = int( input("How many items do you want?") )
 
 if numItems &gt; 1:
@@ -16,7 +16,7 @@ else:
     message = "That is not a valid number to order!"
 
 print(message)
-</input>
+</code>
   </program>
   <p>In the program, notice that we have to use the <c>int</c> function to turn the input from a string into an integer.
     Anytime we use <c>input</c> to get some input from the user, it will be read as a string. If the user types <c>20</c>, that

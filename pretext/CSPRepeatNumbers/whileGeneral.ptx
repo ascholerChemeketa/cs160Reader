@@ -12,7 +12,7 @@
     going while the quotient is NOT 0.</q></em> Try running this version of the algorithm in codelens mode:</p>
 
   <program xml:id="csprepeatnumbers_whilegeneral1" interactive="activecode" language="python">
-    <input>
+    <code>
 number = 11
 binary = ""     # this will hold our answer
 
@@ -28,7 +28,7 @@ while number != 0:
     number = number // 2
 
 print(binary)
-        </input>
+        </code>
   </program>
   <warning>
     <p>The condition for a while loop always describes a test that tells us to keep going - <em><q>Keep doing this
@@ -94,7 +94,7 @@ print(binary)
     different numbers.</p>
 
   <program xml:id="csprepeatnumbers_whilegeneral3" interactive="activecode" language="python">
-    <input>
+    <code>
 number = 110
 guess = number              # guess will store our most recent guess
 last_guess = 0              # The guess before this one
@@ -103,7 +103,7 @@ while guess != last_guess:  # != means "not eqaul to"
     #Now calculate a new guess
     guess = 1/2 * ((number / guess) + guess)
     print("New guess is:", guess)
-        </input>
+        </code>
   </program>
 </section>
 

@@ -13,7 +13,7 @@
 
     </statement>
     <program xml:id="cspdesigningprocedures_programfinal1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with
     turtle.pendown()
@@ -83,7 +83,7 @@ steve = Turtle()
 steve.speed(0)
 steve.penup()
 _____________(steve)      # call your procedure
-        </input>
+        </code>
     </program>
   </exercise>
 </section>

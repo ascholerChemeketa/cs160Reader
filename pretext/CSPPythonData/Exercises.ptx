@@ -48,14 +48,14 @@
       </note>
     </statement>
     <program xml:id="csppythondata_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 inFile = open("stocks.txt")
 data = inFile.read().splitlines()
 inFile.close()
 
 for line in data:
     #Your code here
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 
@@ -85,13 +85,13 @@ myTests().main()
       </note>
     </statement>
     <program xml:id="csppythondata_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 inFile = open("stocks.txt")
 data = inFile.read().splitlines()
 inFile.close()
 
 #Your code here
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 
@@ -120,7 +120,7 @@ myTests().main()
       </note>
     </statement>
     <program xml:id="csppythondata_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 inFile = open("stocks.txt")
 data = inFile.read().splitlines()
 inFile.close()
@@ -128,7 +128,7 @@ inFile.close()
 desiredYear = "92"
 
 #Your code here
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 
@@ -158,7 +158,7 @@ myTests().main()
       </note>
     </statement>
     <program xml:id="csppythondata_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 inFile = open("stocks.txt")
 data = inFile.read().splitlines()
 inFile.close()
@@ -166,7 +166,7 @@ inFile.close()
 desiredYear = "96"
 
 #Your code here
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 
@@ -196,7 +196,7 @@ myTests().main()
       </note>
     </statement>
     <program xml:id="csppythondata_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def maxHighForYear(desiredYear, data):
     # your code here
     # make sure to return the answer
@@ -222,7 +222,7 @@ for yearNum in range(1989, 2002):
     yearsMax = maxHighForYear(year, data)
     print("Max value for", year, "was", yearsMax)
 
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 
@@ -251,7 +251,7 @@ myTests().main()
       </note>
     </statement>
     <program xml:id="csppythondata_exercises6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def avgVolumeForYear(desiredYear, data):
     # your code here
     # make sure to return the answer
@@ -277,7 +277,7 @@ for yearNum in range(1989, 2002):
     yearsMax = avgVolumeForYear(year, data)
     print("Max value for", year, "was", yearsMax)
 
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui
 

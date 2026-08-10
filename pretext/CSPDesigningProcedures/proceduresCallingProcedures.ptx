@@ -11,7 +11,7 @@
     procedure draw a square<ellipsis/> lets use it to write a procedure to draw a row of squares:</p>
 
   <program xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtle, size):
     turtle.forward(size)
     turtle.right(90)
@@ -33,7 +33,7 @@ from turtle import *
 roger = Turtle()
 roger.speed(10)
 row(roger)                      # do the row procedure with roger
-        </input>
+        </code>
   </program>
   <p>The <c>row</c> procedure has one parameter - <c>turtleName</c>. Whatever turtle is specified as the argument in the procedure
     call to <c>row</c> will be called <c>turtleName</c> inside <c>row</c>. So because we call <c>row(roger)</c>, <c>turtleName</c> will mean <c>roger</c>.</p>
@@ -43,7 +43,7 @@ row(roger)                      # do the row procedure with roger
   <p>Now we can use the <c>row</c> to help write a <c>grid</c> procedure that makes the final picture:</p>
 
   <program xml:id="cspdesigningprocedures_procedurescallingprocedures2" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtle, size):
     turtle.forward(size)
     turtle.right(90)
@@ -83,7 +83,7 @@ from turtle import *
 roger = Turtle()
 roger.speed(10)
 grid(roger)                     # do the grid procedure with roger
-        </input>
+        </code>
   </program>
   <p>Our <c>grid</c> procedure, the parameter is called <c>turtle</c>. Which is the same name that <c>square</c> uses for its first
     parameter. It is OK for two different procedures to use the same name for their parameters. It can however be

@@ -12,23 +12,23 @@
     in the rest of the program. We need to give that turtle a name by storing it into a variable - in this case that
     variable is <c>alex</c>:</p>
   <program language="python">
-    <input>
+    <code>
 alex = Turtle()
-</input>
+</code>
   </program>
   <p>However, when we execute a <term>procedure</term>, there is no value that is returned. So the procedure call does
     not turn into anything. There is nothing to store. It would not make sense to write:</p>
   <program language="python">
-    <input>
+    <code>
 newDirection = alex.left(90)  # NO NO NO!
-</input>
+</code>
   </program>
   <p><c>alex.left(90)</c> just changes the direction of the turtle. It does not give us a result; it does not turn into anything.
     Thus, when it is done executing, we essentially would have this:</p>
   <program language="python">
-    <input>
+    <code>
 newDirection =                # Done turning left, there is nothing left!!!
-</input>
+</code>
   </program>
   <note>
     <p>Some programmers don't make a distinction between procedures and functions and will call both of these
@@ -58,7 +58,7 @@ newDirection =                # Done turning left, there is nothing left!!!
     </evaluation>
   </exercise>
   <program xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *    # use the turtle library
 alex = Turtle()         # create a turtle named alex
 alex.left(180)          # turn alex by 180 degrees
@@ -67,7 +67,7 @@ alex.left(90)           # turn left 90 degrees
 alex.forward(100)       # more forward by 100 units
 alex.left(90)           # turn left 90 degrees
 alex.forward(75)        # move forward by 75 units
-        </input>
+        </code>
   </program>
   <p>
     <term>Check Your Understanding</term>

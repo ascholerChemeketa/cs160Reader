@@ -15,7 +15,7 @@
     convert the PM2.5 values to integer numbers.</p>
 
   <program xml:id="csppythondata_largestpoll1" interactive="activecode" language="python">
-    <input>
+    <code>
 inFile = open("uspoll.txt")
 data = inFile.read().splitlines()
 inFile.close()
@@ -38,7 +38,7 @@ for line in data:
 
 # print the largest PM 2.5 value
 print("Highest pollution is", max25, "in", maxCity)
-        </input>
+        </code>
   </program>
 
   <exercise label="csppythondata_largestpoll2">

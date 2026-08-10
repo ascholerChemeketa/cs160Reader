@@ -11,7 +11,7 @@
     called its <term>index</term>. The task is to search for the location of a particular value - often called the <c>key</c>.
     Here's how to do the search:</p>
   <program language="none">
-    <input>
+    <code>
     Note: assume that list and key are already set
 1   set location = 0
 2   repeat while location &lt; (length of the list)
@@ -22,7 +22,7 @@
 6       set location = location + 1     advance to next location
 7
 8   print "Value not found"
-</input>
+</code>
   </program>
   <p>Note that <c>location</c> here is a variable that stores the index we are currently looking at in the list. <c>list[location]</c> is the
     standard way of saying <q>the value in <c>list</c> at <c>location</c></q>.</p>

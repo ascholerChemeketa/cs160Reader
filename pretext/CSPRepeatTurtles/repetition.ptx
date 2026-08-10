@@ -18,7 +18,7 @@
     easier to write and read. While writing turtle programs, we have seen many examples of steps repeated. Here is our
     recipe for a turtle <c>alex</c> to draw a hexagon:</p>
   <program language="python">
-    <input>
+    <code>
 alex.forward(100)
 alex.right(60)
 alex.forward(100)
@@ -31,7 +31,7 @@ alex.forward(100)
 alex.right(60)
 alex.forward(100)
 alex.right(60)
-</input>
+</code>
   </program>
   <p>There are six repetitions of the <c>forward</c> and <c>right</c> commands. Although copy/paste can save us from having to type
     the lines six times, it is still not ideal. Remember that there is a general rule in programming: <term>DRY -
@@ -43,7 +43,7 @@ alex.right(60)
     listing them six times. We can do so with a <c>for</c> <term>loop</term>:</p>
 
   <program xml:id="csprepeatturtles_repetition1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 alex = Turtle()
 for side in range(6):       # repeat the indented lines 6 times
@@ -51,7 +51,7 @@ for side in range(6):       # repeat the indented lines 6 times
     alex.right(60)
 
 print("Done with program")
-        </input>
+        </code>
   </program>
   <p>A <term>loop</term> in a program is anything that causes lines of code to get executed multiple times in a row. A <c>for</c>
     loop is a specific kind of loop in Python that uses a list of values and a series of steps and repeats all of the
@@ -66,10 +66,10 @@ print("Done with program")
       produces:</p>
 
     <program xml:id="csprepeatturtles_repetition2" interactive="activecode" language="python">
-      <input>
+      <code>
 sides = list( range(6) )
 print(sides)
-        </input>
+        </code>
     </program>
 
     <exercise label="csprepeatturtles_repetition3">
@@ -126,9 +126,9 @@ print(sides)
       (To <term>iterate</term> is to go through items one at a time.)</p>
     <p>That just leaves the variable <term>side</term> in the for statement to explain:</p>
     <program language="python">
-      <input>
+      <code>
 for side in range(6):
-</input>
+</code>
     </program>
     <p>It is the name we will use for each item as we iterate through the values <c>range</c> produces. Right now we
       don't really need to name those values - we don't make use of them. But if we wanted to print out each
@@ -137,7 +137,7 @@ for side in range(6):
       commands, it prints out <c>side</c> to tell us when it starts each side of the shape.</p>
 
     <program xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle import *
 alex = Turtle()
 for side in range(6):                       # repeat the indented lines 6 times
@@ -147,7 +147,7 @@ for side in range(6):                       # repeat the indented lines 6 times
     alex.right(60)
 
 print("Done with program")
-        </input>
+        </code>
     </program>
 
     <p>The <term>body</term> of a loop is the part that gets repeated. It is the lines of code after the <c>for</c> that

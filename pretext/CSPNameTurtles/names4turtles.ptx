@@ -18,13 +18,13 @@
     to turn left 90 degrees, and asks <c>alex</c> to go forward 75 pixels.</p>
 
   <program xml:id="cspnameturtles_names4turtles1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *    # use the turtle library
 alex = Turtle()         # create a turtle named alex
 alex.forward(150)       # move forward by 150 units
 alex.left(90)           # turn left 90 degrees
 alex.forward(75)        # move forward by 75 units
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnameturtles_names4turtles2">

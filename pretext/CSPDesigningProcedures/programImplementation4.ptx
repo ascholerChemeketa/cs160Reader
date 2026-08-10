@@ -25,7 +25,7 @@
 
     </statement>
     <program xml:id="cspdesigningprocedures_programimplementation41_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with
     turtle.pendown()
@@ -85,7 +85,7 @@ drawWall(steve)
 
 steve.goto(-150, 50)
 drawRoof(steve)                # test the drawRoof procedure
-        </input>
+        </code>
     </program>
   </exercise>
 </section>

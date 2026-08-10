@@ -4,10 +4,10 @@
     data from the image cat.jpg and names it with the variable <c>img</c>. Once we have done that, we
     can draw the entire image using lines of code like this:</p>
   <program language="python">
-    <input>
+    <code>
 win = ImageWin(img.getWidth(), img.getHeight())  # Make a window to hold the image
 img.draw(win)                                    # draw it in that window
-</input>
+</code>
   </program>
   <p>To modify the colors in an image, we need to modify all of its pixels one by one. In an image
     with 60,000 pixels, we would not want to write a separate line of code for each pixel. What we
@@ -23,7 +23,7 @@ img.draw(win)                                    # draw it in that window
   </warning>
 
   <program xml:id="csprepeatimages_repeatimages1" interactive="activecode" language="python">
-    <input>
+    <code>
 from image import *
 
 # Create an Image object from the file "cat.jpg"
@@ -46,7 +46,7 @@ for p in pixelList:                 #Loop through each pixel in the list and cal
     # we need to tell the image to use the updated version of p
     img.updatePixel(p)
 
-        </input>
+        </code>
   </program>
   <p>There are <m>200 \times 300 = 60,000</m> pixels in the <c>pixelList</c>. Our for loop takes that giant
     list of pixels and one by one, calls the current one <c>p</c> and then does the body of the loop

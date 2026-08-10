@@ -36,7 +36,7 @@
 
     </statement>
     <program xml:id="cspdecisionsimages_combineimages1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def isGreen(r, g, b):
             #Write your logic here
 
@@ -49,7 +49,7 @@
         print( isGreen(200, 200, 200) ) # gray
         print( isGreen(180, 180, 0) )   # dark yellow
         print( isGreen(200, 0, 200) )   # aqua
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -76,7 +76,7 @@
       <p> Add your <c>isGreen</c> function to this program. </p>
     </statement>
     <program xml:id="cspdecisionsimages_combineimages2_edtior" interactive="activecode" language="python">
-      <input>
+      <code>
   from image import *
 
   # PUT YOUR isGreen CODE HERE
@@ -108,7 +108,7 @@
           # USE THAT INSTEAD OF p1 IN img1
           img1.setPixel(x, y, p2)
 
-    </input>
+    </code>
     </program>
   </exercise>
 </section>

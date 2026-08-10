@@ -5,20 +5,20 @@
     memory where the value 5 is stored):</p>
   <sidebyside>
     <program language="none">
-      <input>
+      <code>
     Worker A's Task
 1   get x from memory
 2   add 10
 3   store total to x in memory
-</input>
+</code>
     </program>
     <program language="none">
-      <input>
+      <code>
     Worker B's Task
 1   get x from memory
 2   add 1
 3   store total to x in memory
-</input>
+</code>
     </program>
   </sidebyside>
   <p>Depending on the timing, we could end up with 15, 6, or 16 stored as the value for <c>x</c>! How? Well, we know that

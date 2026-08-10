@@ -8,12 +8,12 @@
   <p>In Python, we define a new procedure or function with the keyword <c>def</c>. To use def, we also need to specify: a
     name for the procedure, a list of its inputs, and the instructions the procedure will perform in this format:</p>
   <program language="python">
-    <input>
+    <code>
 def ProcedureName(Input1, Input2, Input3, ...):
     Instruction1
     Instruction2
     ...
-</input>
+</code>
   </program>
 
   <p>Key things to pay attention to:</p>
@@ -45,7 +45,7 @@ def ProcedureName(Input1, Input2, Input3, ...):
 
   <program xml:id="cspnameprocedures_defininghow1"
     interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtleName):
     turtleName.forward(100)
     turtleName.right(90)
@@ -55,7 +55,7 @@ def square(turtleName):
     turtleName.right(90)
     turtleName.forward(100)
     turtleName.right(90)
-        </input>
+        </code>
   </program>
   <p>Why didn't the <em>Run</em> button do anything? It is because the program
     defined the procedure <c>square</c>, but it never actually told Python to do the
@@ -73,7 +73,7 @@ def square(turtleName):
 
   <program xml:id="cspnameprocedures_defininghow2"
     interactive="activecode" language="python">
-    <input>
+    <code>
 # define HOW to do a square
 def square(turtleName):
     turtleName.forward(100)
@@ -89,7 +89,7 @@ def square(turtleName):
 from turtle import *
 malik = Turtle()
 square(malik)           # call the square procedure, use malik as the input
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnameprocedures_defininghow3">

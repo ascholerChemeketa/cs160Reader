@@ -12,7 +12,7 @@
     value of <c>weight</c> that will result in an error?</p>
 
   <program xml:id="Price_If_Bugged" interactive="activecode" language="python">
-    <input>
+    <code>
 weight = 0.5
 if weight &lt; 1:
     price = 1.45
@@ -22,7 +22,7 @@ total = weight * price
 print(weight)
 print(price)
 print(total)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsintro_multiple1">
@@ -52,7 +52,7 @@ print(total)
     weight turns out to be 1 or more.</p>
 
   <program xml:id="cspdecisionsintro_multiple2" interactive="activecode" language="python">
-    <input>
+    <code>
 weight = 0.5
 price = 1.45
 
@@ -63,7 +63,7 @@ total = weight * price
 print(weight)
 print(price)
 print(total)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsintro_multiple3">
@@ -155,13 +155,13 @@ print(total)
 
       <p>Which of the following is true about the code below?</p>
       <program language="python">
-        <input>
+        <code>
 if (x &gt; 2):
     x = x * 2
 if (x &gt; 4):
     x = 0
 print(x)
-</input>
+</code>
       </program>
 
     </statement>

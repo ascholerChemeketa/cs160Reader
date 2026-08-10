@@ -28,7 +28,7 @@
 
     </statement>
     <program xml:id="cspcollectionsintro_listmax1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         scores = [82, 95, 92, 76, 98, 84, 89, 92]
 
         # Pick a starting value - the first value in the list
@@ -41,7 +41,7 @@
                 highest = score
 
         print(highest)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -69,7 +69,7 @@
     an example of adapting the basic recipe to find the longest name in a list of names:</p>
 
   <program xml:id="cspcollectionsintro_listmax2" interactive="activecode" language="python">
-    <input>
+    <code>
 names = ["Ray", "Jessie", "Brittany", "Flora", "David"]
 
 # Assume the first name is the longest
@@ -82,7 +82,7 @@ for name in names:
         longestName = name
 
 print(longestName)
-        </input>
+        </code>
   </program>
 </section>
 

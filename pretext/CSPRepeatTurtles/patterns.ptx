@@ -11,7 +11,7 @@
     will be repeated 20 times. So each of those lines will happen 100 times!</p>
 
   <program xml:id="csprepeatturtles_patterns1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 from sys import *
 zoe = Turtle()
@@ -25,7 +25,7 @@ for repeats in range(20):
     for sides in range(5):
         zoe.forward(50)
         zoe.right(72)
-        </input>
+        </code>
   </program>
   <p>By setting the pen color differently, we can distinguish the part that draws the shape from the part that draws <em>
     between</em> the shapes. The <c>forward</c> and <c>right</c> inside of the outer loop, before the second <c>for</c> work together
@@ -33,7 +33,7 @@ for repeats in range(20):
     turtle draws a pentagon.</p>
 
   <program xml:id="csprepeatturtles_patterns2" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 from sys import *
 zoe = Turtle()
@@ -51,7 +51,7 @@ for repeats in range(20):
     for sides in range(5):
         zoe.forward(50)
         zoe.right(72)
-        </input>
+        </code>
   </program>
   <p>You can use the coloring in the picture below to help you figure out the correct order of the lines below.</p>
   <exercise label="csprepeatturtles_patterns3" numbered="yes" adaptive="yes" indentation="hide" language="python">
@@ -111,7 +111,7 @@ for repeats in range(20):
     errors are in the numbers used - those would be logic errors, not syntax errors.)</p>
 
   <program xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 
 dave = Turtle
@@ -126,7 +126,7 @@ for repeats in range(20)
     for sides in range(4):
         dave.forward(50)
         dave.right(90)
-        </input>
+        </code>
   </program>
   <subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">
     <title>Execution Limit &amp; Run Amok Programs</title>
@@ -136,7 +136,7 @@ for repeats in range(20)
       ever finishing what they are doing. Try running this program and wait until an error is printed.</p>
 
     <program xml:id="csprepeatturtles_patterns5" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle import *
 import sys
 sys.setExecutionLimit(60000)
@@ -151,14 +151,14 @@ for repeats in range(36):
     for sides in range(4):
         dave.forward(50)
         dave.right(90)
-        </input>
+        </code>
     </program>
     <p>Now try uncommenting these two lines:</p>
     <program language="python">
-      <input>
+      <code>
 import sys
 sys.setExecutionLimit(60000)
-</input>
+</code>
     </program>
     <p>They set the time limit for the program to 60,000 milliseconds. (One second is 1,000 milliseconds, so 60,000
       milliseconds is 60 seconds.) This should give the program time to finish.</p>
@@ -176,7 +176,7 @@ sys.setExecutionLimit(60000)
       calls square 10 times and each call to square repeats them 4 times.</p>
 
     <program xml:id="csprepeatturtles_patterns6" interactive="activecode" language="python">
-      <input>
+      <code>
 def square(turtleName):
     for sides in range(4):
         turtleName.forward(50)
@@ -191,7 +191,7 @@ for repeats in range(10):
     dave.forward(10)
     dave.left(36)
     square(dave)
-        </input>
+        </code>
     </program>
     <p>Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loops all stacked
       inside of each other. The <q>indirect</q> nesting, where the inner loop is hidden inside of a procedure

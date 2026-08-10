@@ -15,7 +15,7 @@
     types of data (though it is often best to avoid complicating things by mixing different types of data in one list).</p>
 
   <program xml:id="cspcollectionsintro_list1" interactive="activecode" language="python">
-    <input>
+    <code>
 numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(numberList)
 
@@ -24,20 +24,20 @@ print(nameList)
 
 randomList = [42, "hello", 3.14]
 print(randomList)
-        </input>
+        </code>
   </program>
   <p>Recall that the <c>for</c> loop will automatically repeat code for each value in a list. That means if I want to greet
     each name in the <c>nameList</c> I could do:</p>
 
   <program xml:id="cspcollectionsintro_list2" interactive="activecode" language="python">
-    <input>
+    <code>
 nameList = ["Dora", "Rex", "Humberto", "Devon"]
 
 # Iterate through the values and call each one name
 for name in nameList:
     # Do stuff with that name
     print("Greetings", name)
-        </input>
+        </code>
   </program>
   <p>Putting items into a list makes it easier to process them all without repeating chunks of code
     multiple times. Complete this algorithm for the problem discussed on the last page of finding the highest quiz

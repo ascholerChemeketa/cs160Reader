@@ -10,13 +10,13 @@
     cards, give each person a pile, and tell them what to look for. Then all five of us could search our pile. Once
     someone finds the right card, they can announce it and give it back for me to use. This program might look like:</p>
   <program language="none">
-    <input>
+    <code>
 Divide the pile up into 5 stacks                                    Serial
 Hand out one stack to each person and announce what to look for     Serial
 Everyone looks for the card                                         Parallel
 Give the card to me                                                 Serial
 Add fact to page                                                    Serial
-</input>
+</code>
   </program>
   <p>Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles,
     communicating and typing up the facts will not go any faster. I could add 95 more friends and cut the <q>looking</q>

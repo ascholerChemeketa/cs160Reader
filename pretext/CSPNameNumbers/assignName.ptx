@@ -27,10 +27,10 @@
         case, it prints <c>4</c> since that is the value stored in <c>a</c>.</p>
 
     <program xml:id="cspnamenumbers_assignname1" interactive="activecode" language="python">
-        <input>
+        <code>
 a = 4
 print(a)
-        </input>
+        </code>
     </program>
     <p>If we later change the value stored at <c>a</c>, say by doing <c>a = 7.2</c> then we say that the variable <c>a</c> now
         has the value <c>7.2</c> meaning that the value in the box (memory) associated with the name <c>a</c> is changed to <c>7.2</c>

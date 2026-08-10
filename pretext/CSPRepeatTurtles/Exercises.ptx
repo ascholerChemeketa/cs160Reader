@@ -12,14 +12,14 @@
 
     </statement>
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         alisha = Turtle()
         alisha.setheading(90)
         for sides in range(4):
             alisha.forward(100)
             alisha.right(90)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -45,13 +45,13 @@
 
     </statement>
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         steven = Turtle()
         for sides in range(8)
             steven.forward(45)
         steven.right(50)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -77,7 +77,7 @@
 
     </statement>
     <program xml:id="csprepeatturtles_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         import sys
         sys.setExecutionLimit(50000)
@@ -91,7 +91,7 @@
         for sides in range(5):
         zoe.forward(50)
         zoe.right(72)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -247,7 +247,7 @@
 
     </statement>
     <program xml:id="csprepeatturtles_exercises6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def rectangle(turtleName, width, height):
             for x in range(2):
                 turtleName.forward(width)
@@ -261,7 +261,7 @@
 
         #Your code here
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

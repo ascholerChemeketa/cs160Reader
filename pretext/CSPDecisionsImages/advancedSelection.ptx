@@ -21,7 +21,7 @@
       <c>r</c>, <c>g</c>, and <c>b</c> and return <c>True</c> if they meet our criteria and false otherwise.</p>
 
     <program xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
-        <input>
+        <code>
 def isRed(r, g, b):
     if r &gt;= g + 20 and r &gt;= b + 20:
         return True
@@ -37,7 +37,7 @@ print( isRed(247, 190, 194) )
 print( isRed(200, 200, 200) ) # gray
 print( isRed(200, 200, 0) )   # yellow
 print( isRed(200, 0, 200) )   # aqua
-  </input>
+  </code>
 </program>
   <p>Now that we have some evidence that the function works, we can use it as the
       condition for our <c>if</c> statement. Because the function returns <c>True</c> or
@@ -52,7 +52,7 @@ print( isRed(200, 0, 200) )   # aqua
     <p>Here is the final program:</p>
 
     <program xml:id="cspdecisionsimages_advancedselection2" interactive="activecode" language="python">
-        <input>
+        <code>
 from image import *
 
 def isRed(r, g, b):
@@ -88,7 +88,7 @@ for p in pixels:
         # CHANGE THE IMAGE
         img.updatePixel(p)
 
-  </input>
+  </code>
     </program>
     <p>After running the program, try modifying it to answer the question below.</p>
 

@@ -5,37 +5,37 @@
   <p>One sign that you may want to use an <c>and</c> to simplify things, is if you have a nested if:</p>
 
   <program xml:id="cspdecisionsstrings_complexwhen1" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 8
 if x &lt;= 10:
     if x &gt;= 1:
         print("x is between 1 and 10")
 print("Done")
-        </input>
+        </code>
   </program>
   <p>The inner print statement will only run if <c>x &gt;= 1</c> is true. But the if statement that checks that for that is
     inside <c>if x &lt;= 10</c>. So it only runs if x is 10 or less. Thus to reach the message about <c>x</c>, it must be both 10 or
     less and 1 or more. So why not just write it like this?</p>
 
   <program xml:id="cspdecisionsstrings_complexwhen2" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 8
 if x &lt;= 10 and  x &gt;= 1:
     print("x is between 1 and 10")
 print("Done")
-        </input>
+        </code>
   </program>
   <p>Similarly, we could write the back check logic from the last page using multiple <c>if</c> statements:</p>
 
   <program xml:id="cspdecisionsstrings_complexwhen3" interactive="activecode" language="python">
-    <input>
+    <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes":
     print("That will be an extra fee.")
 if answer =="y":
     print("That will be an extra fee.")
 print ("All done")
-        </input>
+        </code>
   </program>
   <p>But that means repeating the print statement multiple times. So the version that used <c>or</c> is better than this.</p>
 
@@ -44,11 +44,11 @@ print ("All done")
 
       <p>What logic is equivalent to the logic shown below?</p>
       <program language="python">
-        <input>
+        <code>
 if age &gt; 12:
     if age &lt; 20:
         print("Teenager")
-</input>
+</code>
       </program>
 
     </statement>
@@ -88,12 +88,12 @@ if age &gt; 12:
     to make the whole thing true.</p>
 
   <program xml:id="cspdecisionsstrings_complexwhen5" interactive="activecode" language="python">
-    <input>
+    <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes" or answer =="y" or answer == "Y" or answer == "YES":
     print("That will be an extra fee.")
 print ("All done")
-        </input>
+        </code>
   </program>
   <note>
     <p>We could simplify the example above by using the string <c>lower</c> function to turn the answer into lower case: <c>answer = answer.lower()</c>.
@@ -104,10 +104,10 @@ print ("All done")
     confusing to write and read. If you feel the need to write something super complex, you can use parentheses
     to make sure that the logic is evaluated in the right order:</p>
   <program language="python">
-    <input>
+    <code>
 # True if the type is checking or savings AND the balance is over 10000
 if (balance &gt; 10000) and (type == "checking" or type == "savings")
-</input>
+</code>
   </program>
 </section>
 

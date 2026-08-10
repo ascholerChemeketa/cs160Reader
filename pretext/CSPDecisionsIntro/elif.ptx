@@ -67,7 +67,7 @@ if score &lt; 60:
     One way to do this using multiple <c>if</c> statements is shown below.</p>
 
   <program xml:id="cspdecisionsintro_elif2" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 8
 if x &lt; 0:
     print("x is negative")
@@ -75,7 +75,7 @@ if x == 0:
     print("x is 0")
 if x &gt; 0:
     print("x is positive")
-        </input>
+        </code>
   </program>
   <p>Run this several times and change the value of x each time. Try it with a positive number, a
     negative number, and 0 to check that it works correctly.</p>
@@ -104,7 +104,7 @@ else:
   <p>Here is the positive/negative check rewritten with elif:</p>
 
   <program xml:id="cspdecisionsintro_elif3" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 8
 if x &lt; 0:
     print("x is negative")
@@ -112,7 +112,7 @@ elif x == 0:
     print("x is 0")
 else:
     print("x is positive")
-        </input>
+        </code>
   </program>
   <p>Which way is better? Beginners often have an easier time understanding 3 <c>if</c> statements.
     Experts prefer using <c>if</c>, <c>elif</c>, and <c>else</c> since it better communicates that these are
@@ -124,7 +124,7 @@ else:
     tests.</p>
 
   <program xml:id="cspdecisionsintro_elif4" interactive="activecode" language="python">
-    <input>
+    <code>
 score = 83
 if score &gt;= 90:
     print("A")
@@ -136,7 +136,7 @@ elif score &gt;= 60:
     print("D")
 else:
     print("F")
-        </input>
+        </code>
   </program>
   <p>
     <term>Check Your Understanding</term>

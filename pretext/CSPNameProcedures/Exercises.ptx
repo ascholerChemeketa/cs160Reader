@@ -7,7 +7,7 @@
 
     </statement>
     <program xml:id="cspnameprocedures_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def square(turtle):
         turtle.forward(100)
         turtle.right(90)
@@ -21,7 +21,7 @@
         from turtle import *
         malik = Turtle()
             square(malik)           # draw a square with malik
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -48,7 +48,7 @@
 
     </statement>
     <program xml:id="cspnameprocedures_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def square(turtle, size):
             turtle.forward(Size)
             turtle.right(90)
@@ -66,7 +66,7 @@
         square(75)              # draw a square of size 75
         square(50)              # draw a square of size 50
         square(25)              # draw a square of size 25
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -99,7 +99,7 @@
 
     </statement>
     <program xml:id="cspnameprocedures_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # define hexagon here
 
         from turtle import *
@@ -113,7 +113,7 @@
         #for i in range(5):
         #    brittany.right(60)
         #    hexagon(brittany)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -152,7 +152,7 @@
 
     </statement>
     <program xml:id="cspnameprocedures_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def colorRectangle(turtleName, width, colorValue):
             # height will always be 100
             # your code here
@@ -173,7 +173,7 @@
         #    colorString = "#" + "00" + (2 * hexValue)  # make a #XXXXXX formatted hex color using no red and two copies  of i*2
         #    colorRectangle(stu, i, colorString)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

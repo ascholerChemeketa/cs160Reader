@@ -7,7 +7,7 @@
     use <c>j - 1</c> to indicate the card to the left of the card being inserted. (Since <c>j</c> is the index of a location, <c>j - 1</c>
     gives us the index to its left.)</p>
   <program language="none">
-    <input>
+    <code>
     Note: assume that list already exists
 1   i = 1                                   i marks start of unsorted cards
 2   repeat until (i >= length of the list):
@@ -23,7 +23,7 @@
 12
 13      Move the marker showing start of the unsorted portion
 14      i = i + 1
-</input>
+</code>
   </program>
   <p>Like before, do not worry about memorizing the algorithm, instead use it and the animation below until you can
     consistently predict the next step before it runs and understand how i and j are getting used.</p>

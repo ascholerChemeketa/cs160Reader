@@ -48,13 +48,13 @@
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         months = ["asdf", "March", "May", "June", "August"] #do not change
 
         # your code here
 
         print(months)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -82,7 +82,7 @@
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getRange(numbers):
             # Assume the first number is both the largest and smallest
             max = numbers[0]
@@ -95,7 +95,7 @@
         print( "Should be 12:", getRange([10, 8, 13, 20, 15]) )
         print( "Should be 11:", getRange([6, -5, 4, 0]) )
         print( "Should be 2:", getRange([-2, -1, -2, -3]) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -121,14 +121,14 @@
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def freezeDays(temps):
             # your code here
             # return the final value
 
         print( "Should be 3:", freezeDays([42, 31, 30, 33, 27, 32]) )
         print( "Should be 2:", freezeDays([18, 50, 72, 31, 60]) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -156,7 +156,7 @@
 
     </statement>
     <program xml:id="cspcollectionsintro_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getGPA(grades):
             gradePoints = 0
 
@@ -169,7 +169,7 @@
         print( "Should be 3.75:", getGPA(["A", "A", "A", "B"]) )
         print( "Should be ~2.667:", getGPA(["B", "D", "A"]) )
         print( "Should be 2.00:", getGPA(["F", "D", "C", "B", "A"]) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

@@ -74,9 +74,9 @@
     </statement>
     <program xml:id="sqlgroupjoin_exercises1_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 8.303999999999997
       </tests>
@@ -92,9 +92,9 @@
     </statement>
     <program xml:id="sqlgroupjoin_exercises2_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 8.9
       </tests>
@@ -108,9 +108,9 @@
     </statement>
     <program xml:id="sqlgroupjoin_exercises3_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 32
       </tests>
@@ -129,9 +129,9 @@ PG-13 | 32
     </statement>
     <program xml:id="sqlgroupjoin_exercises4_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 1,0 == G
         assert 1,1 == 14
@@ -153,9 +153,9 @@ Francis Ford Coppola  | 9.2
     </statement>
     <program xml:id="sqlgroupjoin_exercises5_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == Frank Darabont
         assert 0,1 == 9.3
@@ -181,9 +181,9 @@ Alfred Hitchcock      | 6
     </statement>
     <program xml:id="sqlgroupjoin_exercises6_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == Akira Kurosawa
         assert 0,1 == 5
@@ -209,9 +209,9 @@ Steven Spielberg      | 2
     </statement>
     <program xml:id="sqlgroupjoin_exercises7_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == Peter Jackson
         assert 0,1 == 3
@@ -265,9 +265,9 @@ The Godfather</pre>
     </statement>
     <program xml:id="sqlgroupjoin_exercises8_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == Apocalypse Now
         assert 1,0 == On the Waterfront
@@ -294,9 +294,9 @@ A.S. Duggal              | 67
     </statement>
     <program xml:id="sqlgroupjoin_exercises9_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-    </input>
+    </code>
     <tests>
       assert 0,0 == A.B. Lane
       assert 0,1 == 0

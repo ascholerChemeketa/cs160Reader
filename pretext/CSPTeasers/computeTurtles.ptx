@@ -33,13 +33,13 @@
   <p>Try clicking the Save &amp; Run button below to see what the following program does.</p>
 
   <program xml:id="cspteasers_computeturtles1" interactive="activecode" language="python">
-    <input>
+    <code>
             import turtle # use the turtle library
             alex = turtle.Turtle() # create a turtle named alex
             alex.forward(150) # move forward by 150 units
             alex.left(90) # turn by 90 degrees
             alex.forward(75) # move forward by 75 units
-        </input>
+        </code>
   </program>
 
   <exercise label="cspteasers_computeturtles2">

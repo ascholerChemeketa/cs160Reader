@@ -20,7 +20,7 @@
   </p>
 
   <program xml:id="csprepeatimages_changecolorloc1" interactive="activecode" language="python">
-    <input>
+    <code>
       # STEP 1: USE THE IMAGE LIBRARY
       from image import *
       
@@ -41,7 +41,7 @@
 
           # NO CHANGES - NO STEP 5/6
             
-    </input>
+    </code>
   </program>
   <p>If you examine the output, you should see that the first pixel is at x = 0, y = 0. Then 
     we move to x = 1, y = 0. The next pixel is at x = 2, y = 0. A few important details to notice:
@@ -115,7 +115,7 @@
     red/green/blue values are all 255 at most.)</p>
 
   <program xml:id="csprepeatimages_changecolorloc3" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
@@ -144,7 +144,7 @@ for p in pixels:
     # STEP 6: MODIFY THE IMAGE
     img.updatePixel(p)
 
-  </input>
+  </code>
   </program>
   <p>We don't always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
     a new location. This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put it back
@@ -152,7 +152,7 @@ for p in pixels:
     the pixel. Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the new location.</p>
 
   <program xml:id="csprepeatimages_changecolorloc4" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
 
@@ -178,7 +178,7 @@ for p in pixels:
     # Write pixel p to the image at location (x, newY)
     img.setPixel(x, newY, p)
 
-  </input>
+  </code>
   </program>
 
   <exercise label="csprepeatimages_changecolorloc5">

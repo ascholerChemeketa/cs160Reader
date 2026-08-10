@@ -13,7 +13,7 @@
     <q>TX</q>.</p>
 
   <program xml:id="csppythondata_comparestates1" interactive="activecode" language="python">
-    <input>
+    <code>
       def getAvgPM25(targetState, data):
           print("Working on", targetState)
           total25 = 0
@@ -49,7 +49,7 @@
       state = "TX"
       pollution = getAvgPM25(state, data)
       print("Average Pollution in", state, "is", pollution)
-    </input>
+    </code>
   </program>
 
   <note>
@@ -67,11 +67,11 @@
 
     </statement>
     <program xml:id="csppythondata_comparestates2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         stateList = ["MD", "AK", "NJ", "AR", "WV", "MS"]
 
         # Your code here
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -89,7 +89,7 @@
     poorest states (AR, WV, MS) by per capita income.</p>
 
   <program xml:id="csppythondata_comparestates3" interactive="activecode" language="python">
-    <input>
+    <code>
 def getAvgPM25(targetState, data):
     total25 = 0
     count = 0
@@ -120,7 +120,7 @@ stateList = ["MD", "AK", "NJ", "AR", "WV", "MS"]
     # Repeat these two lines:
     #pollution = getAvgPM25(state, data)
     #print("Average Pollution in", state, "is", pollution)
-        </input>
+        </code>
   </program>
 
   <exercise label="csppythondata_comparestates4">

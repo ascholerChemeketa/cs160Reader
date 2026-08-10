@@ -120,7 +120,7 @@
     program below.</p>
 
   <program xml:id="csprepeatimages_library-of-images1" interactive="activecode" language="python">
-    <input>
+    <code>
     from image import *
     
     # CREATE THE IMAGE OBJECT
@@ -130,7 +130,7 @@
     win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
-      </input>
+      </code>
   </program>
 
   <note>

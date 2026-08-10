@@ -44,10 +44,10 @@
     to come up with your own questions instead of just copying the samples above!</p>
 
   <program xml:id="cspdecisionsstrings_chatbot1" interactive="activecode" language="python">
-    <input>
+    <code>
 
 
-        </input>
+        </code>
   </program>
 </section>
 

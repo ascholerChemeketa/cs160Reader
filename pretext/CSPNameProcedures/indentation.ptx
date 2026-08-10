@@ -6,7 +6,7 @@
   <p>The program below does not work. Try running it to see what error message is produced.</p>
 
   <program xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
-    <input>
+    <code>
 # main part of our program
 from turtle import *
 hector = Turtle()
@@ -19,7 +19,7 @@ def hop(turtleName):
     turtleName.penup()
     turtleName.forward(10)
     turtleName.pendown()
-        </input>
+        </code>
   </program>
   <p>It produces an error message saying <c>name 'hop' is not defined on line 5</c>. Python has not been told yet how to
     hop. Fix the program by moving the definition code (currently lines 8-12) up above the main part of the program.</p>
@@ -30,7 +30,7 @@ def hop(turtleName):
       indenting:</p>
 
     <program xml:id="cspnameprocedures_indentation2" interactive="activecode" language="python">
-      <input>
+      <code>
 def square(turtleName):
     turtleName.forward(100)         # These are all indented to show they are inside square
     turtleName.right(90)
@@ -51,7 +51,7 @@ from turtle import *
 malik = Turtle()
 square(malik)
 hop(malik)
-        </input>
+        </code>
     </program>
     <p>When Python reads that program it does something like this:</p>
     <p>
@@ -136,7 +136,7 @@ hop(malik)
       to the right if it needs to be indented.</p>
 
     <program xml:id="cspnameprocedures_indentation4" interactive="activecode" language="python">
-      <input>
+      <code>
 # define HOW to draw a T
 def drawT(turtleName):
 turtleName.left(90)
@@ -150,7 +150,7 @@ turtleName.forward(100)
     from turtle import *
 arnold = Turtle()
   drawT(arnold)
-        </input>
+        </code>
     </program>
   </subsection>
 </section>

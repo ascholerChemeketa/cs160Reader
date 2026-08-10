@@ -5,7 +5,7 @@
     item and move it to the beginning of the unsorted portion, thereby making it sorted.</p>
   <p>Put into an algorithm for a human to sort a hand of playing cards, it might look like this:</p>
   <program language="none">
-    <input>
+    <code>
 1   Get a hand of unsorted cards
 2   Set a marker for the unsorted section at the front of the hand
 3   Repeat 4-7 until one card remains in the unsorted section
@@ -14,7 +14,7 @@
 6       Swap this number with the first card in the unsorted section
 7       Advance the marker to the right one card
 8   Stop
-</input>
+</code>
   </program>
   <p>To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate
     step of the algorithm will be highlighted in the bottom left panel of the animation. To divide the sorted and

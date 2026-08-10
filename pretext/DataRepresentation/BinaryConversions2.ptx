@@ -7,13 +7,13 @@
     <title>Decimal to Binary</title>
     <p>The following algorithm converts a decimal number to a binary one:</p>
     <program>
-      <input>
+      <code>
         Step 1: Start with a blank answer and the number you are converting
         Step 2: Divide your number by 2 to make a quotient and a remainder
         Step 3: Place your remainder on the left side of your answer
         Step 4: If your quotient is 0, you are done
                 Otherwise, make the quotient your new number and go back to step 2
-      </input>
+      </code>
     </program>
     <p>Here is an example of running the algorithm to convert <m>{11}_{10}</m> to binary:</p>
 
@@ -28,17 +28,17 @@
     <title>Binary to Decimal</title>
     <p>To convert a binary number to its decimal value, we can use almost the same trick, but in reverse:</p>
     <program language="none">
-      <input>
+      <code>
 Step 1: Start with the 'number' you are converting and the 'answer' of 0
 Step 2: Multiply your 'answer' by 2
 Step 3: Remove the leftmost digit of 'number' and add it to your 'answer'
 Step 4: If 'number' has no more digits, you are done
         Otherwise, go back to step 2
-</input>
+</code>
     </program>
     <p>If we follow this algorithm to convert <m>{1101}_{2}</m> into a decimal value, it would look like this:</p>
     <program language="none">
-      <input>
+      <code>
 Step 1: 'number' is 1101 and 'answer' is 0
 Step 2: 'answer' is multiplied by 2 - it becomes 0
 Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
@@ -56,7 +56,7 @@ Step 2: 'answer' is multiplied by 2 - it becomes 12
 Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
          'number' is now "" (empty) and 'answer' is 13
 Step 4: 'number' is empty. We are done, the 'answer' is 13.
-</input>
+</code>
     </program>
     <p>As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple
       computer code. To demonstrate that, the algorithm is implemented in Python in the <em>codelens</em> below. You DO
@@ -65,7 +65,7 @@ Step 4: 'number' is empty. We are done, the 'answer' is 13.
       <q>tips</q> box below the code lens for help running the program.</p>
 
     <program xml:id="datarepresentation_binaryconversions21" interactive="codelens" language="python">
-      <input>
+      <code>
 number = "1101"
 answer = 0
 while len(number) > 0:               #do next 3 lines until length of number is 0
@@ -74,7 +74,7 @@ while len(number) > 0:               #do next 3 lines until length of number is 
     number = number[1:]                 #remove leftmost digit
 
 print("The final value of answer is", answer)
-    </input>
+    </code>
     </program>
     <note>
       <p>

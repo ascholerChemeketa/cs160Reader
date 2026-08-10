@@ -6,7 +6,7 @@
     program below implements that logic.</p>
 
   <program xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
-    <input>
+    <code>
 def costForPrints(numberPages):
     # Assume number is &lt; 30
     cost = numberPages * 0.10
@@ -22,7 +22,7 @@ def costForPrints(numberPages):
 print( "10 prints costs", costForPrints(10) )
 print( "30 prints costs", costForPrints(30) )
 print( "40 prints costs", costForPrints(40) )
-        </input>
+        </code>
   </program>
   <p>Notice an additional advantage of putting our logic into a function (instead of at the top level of our program) -
     it is easier to use the code multiple times. In this case, it allows us to test how the <c>if</c> works for various
@@ -37,7 +37,7 @@ print( "40 prints costs", costForPrints(40) )
 
     </statement>
     <program xml:id="cspdecisionsintro_iffunctions2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def cabCost(miles):
             # Your code here
 
@@ -48,7 +48,7 @@ print( "40 prints costs", costForPrints(40) )
         print(cost2)
         cost3 = cabCost(20)
         print(cost3)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

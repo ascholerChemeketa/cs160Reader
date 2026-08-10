@@ -4,7 +4,7 @@
   <p>Imagine that we write a query on the <c>trip_data</c> table to find the station with the longest overall ride:</p>
 
   <program xml:id="sqlgroupjoin_joining1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     start_station
 FROM
@@ -13,21 +13,21 @@ ORDER BY
     duration DESC
 LIMIT
     1
-        </input>
+        </code>
   </program>
   <p>That query gives us the station ID (31104), but what if we want its name? The name of each station is in the <xref
       ref="sql-intro_bikeshare-stations-table" text="title"/>. To get the name of station 31104, we could query it (notice the <c>FROM</c>
     clause):</p>
 
   <program xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
     bikeshare_stations
 WHERE
     station_id == 31104
-        </input>
+        </code>
   </program>
   <p>We need the name that is a part of the <c>bikeshare_stations</c> table, but to find the right station, we need to use the duration that is a
     part of the other <c>trip_data</c> table. Doing two queries to get the data we need is kind of inconvenient.</p>
@@ -41,7 +41,7 @@ WHERE
     column in the first table to match with which column in the second table. To name the columns, we use <term>dot</term>
     syntax: <c>table_name.column_name</c>. The full syntax for a <c>JOIN</c> looks like this:</p>
   <program language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *  -- or whatever
 FROM first_table
@@ -51,13 +51,13 @@ ON
     -- match the value in column_B in the second table
     first_table.column_A == second_table.column_B
 -- WHERE or ORDER BY if we want
-</input>
+</code>
   </program>
   <p>So to merge the two queries we did earlier, we will have <c>trip_data</c> as the first table and <c>bikeshare_stations</c> as the second. In <c>trip_data</c>,
     the station number is stored as <c>start_station</c>. In <c>bikeshare_stations</c> those same values are stored in the <c>station_id</c> column.</p>
 
   <program xml:id="sqlgroupjoin_joining3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM trip_data
@@ -68,7 +68,7 @@ ORDER BY
     duration DESC
 LIMIT
     1
-        </input>
+        </code>
   </program>
   <p>Try the query - notice that it has all the columns from both tables. Which is more than we want. We just
     want the station name. So change the <c>*</c> to <c>name</c> so that we just get that column. If we want to be really
@@ -78,7 +78,7 @@ LIMIT
     station. You can join the <c>end_station</c> field from the <c>trip_data</c> table to the <c>station_id</c> field in the <c>bikeshare_stations</c> table.</p>
 
   <program xml:id="sqlgroupjoin_joining4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     COUNT(*) AS num_trips
 FROM trip_data
@@ -87,7 +87,7 @@ ON
     trip_data.end_station == bikeshare_stations.station_id
 WHERE
     bikeshare_stations.name = "Van Ness Metro / UDC"
-        </input>
+        </code>
   </program>
   <p>Again, in the WHERE clause, we are being very specific. Because there is only one <c>name</c> column in the two tables,
     we could just say <c>name</c>. But it never hurts to be clear about which table we are talking about once we start
@@ -99,9 +99,9 @@ WHERE
 
     </statement>
     <program xml:id="sqlgroupjoin_joining5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 858
       </tests>
@@ -129,9 +129,9 @@ WHERE
 
     </statement>
     <program xml:id="sqlgroupjoin_joining6_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 1162
       </tests>

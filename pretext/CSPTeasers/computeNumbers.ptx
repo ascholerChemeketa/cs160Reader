@@ -50,7 +50,7 @@
     program.</p>
 
   <program xml:id="cspteasers_computenumbers1" interactive="activecode" language="python">
-    <input>
+    <code>
             P = 10000 # $10,000 - notice we don't use commas in numbers
             APR = 4.9 # annual percentage interest rate - we also don't use % symbols
             n = 60 # 60 payments (5 years of monthly payments)
@@ -60,7 +60,7 @@
             amount = P * (r * (1 + r) ** n) / ((1 + r) ** n - 1)
             print("Monthly payment amount:")
             print(amount)
-        </input>
+        </code>
   </program>
   <p>Currently the code is calculating the payment for a $10,000 loan at an APR of 4.9% over 60
     months. Try changing the numeric values for P, APR, and n in the program above, and press the <em>

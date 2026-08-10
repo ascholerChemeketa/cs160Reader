@@ -5,7 +5,7 @@
     you don't know the story beforehand, you're surprised at what happens to your friend in the story.</p>
 
   <program xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
-    <input>
+    <code>
 firstName = "Pat"
 lastName = "Smith"
 gender = "girl"
@@ -21,7 +21,7 @@ print(next1)
 print(next2)
 print (next3)
 print(ending)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnamestrings_madlib2">
@@ -70,7 +70,7 @@ print(ending)
     variables to make different stories:</p>
 
   <program xml:id="cspnamestrings_madlib3" interactive="activecode" language="python">
-    <input>
+    <code>
 firstName = "Sofia"
 lastName = "Diaz"
 gender = "girl"
@@ -86,7 +86,7 @@ print(next1)
 print(next2)
 print(next3)
 print(ending)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnamestrings_madlib4">
@@ -94,7 +94,7 @@ print(ending)
 
       <p>Would the following code print the same story as shown above?</p>
       <program language="python">
-        <input>
+        <code>
 firstName = "Sofia"
 lastName = "Diaz"
 gender = "girl"
@@ -110,7 +110,7 @@ next3 = "The wicked witch was planning to " + verb + " " + firstName + "!"
 print(next3)
 ending = "But " + firstName + " was smart and avoided the wicked witch."
 print(ending)
-</input>
+</code>
       </program>
 
     </statement>
@@ -142,10 +142,10 @@ print(ending)
 
       <p>What would the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 Mali = 5
 print("Mali" + " is " + str(Mali))
-</input>
+</code>
       </program>
 
     </statement>
@@ -241,15 +241,15 @@ print("Mali" + " is " + str(Mali))
     <statement>Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the story still works if
       you change the values of the variables!</statement>
     <program interactive="activecode" xml:id="cspnamestrings_madlib8_ed" language="python">
-      <input>
+      <code>
 name = "Jesse"
 month = "October"
 place = "Portland"
 activity = "sailing"
-      </input>
+      </code>
     </program>
     <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib8_answer" language="python">
-        <input>
+        <code>
 name = "Maria"
 month = "October"
 place = "Portland"
@@ -258,7 +258,7 @@ start = month + " is " + name + "'s favorite month for " + activity + "."
 print(start)
 end = "This year " + name + " decided that she would go " + activity + " in " + place + "."
 print(end)
-        </input>
+        </code>
       </program>
     </answer>
   </exercise>

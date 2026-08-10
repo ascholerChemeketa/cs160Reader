@@ -22,7 +22,7 @@
 
       </statement>
       <program xml:id="cspcollectionsintro_rainfall1_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           def getRealAvg(rainList):
               sumRain = 0
               # Your code here - you should only need to add two lines of code
@@ -40,7 +40,7 @@
           testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
           total2 = getRealAvg(testData2)
           print(total2)
-        </input>
+        </code>
         <tests>
 
           from unittest.gui import TestCaseGui
@@ -70,7 +70,7 @@
 
       </statement>
       <program xml:id="cspcollectionsintro_rainfall2_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           def getRealAvg(rainList):
               sumRain = 0
 
@@ -86,7 +86,7 @@
           testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
           total2 = getRealAvg(testData2)
           print(total2)
-        </input>
+        </code>
         <tests>
 
           from unittest.gui import TestCaseGui
@@ -118,7 +118,7 @@
 
       </statement>
       <program xml:id="cspcollectionsintro_rainfall3_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           def getRealAvg(rainList):
               sumRain = 0
               count = 0
@@ -135,7 +135,7 @@
           testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
           count2 = getRealAvg(testData2)
           print(count2)
-        </input>
+        </code>
         <tests>
 
           from unittest.gui import TestCaseGui
@@ -160,7 +160,7 @@
 
       </statement>
       <program xml:id="cspcollectionsintro_rainfall4_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           def getRealAvg(rainList):
               sumRain = 0
               count = 0
@@ -177,7 +177,7 @@
           testData2 = [0, 5, 1, 0, -1, 6, 4, -2, 0]
           average2 = getRealAvg(testData2)
           print(average2)
-        </input>
+        </code>
         <tests>
 
           from unittest.gui import TestCaseGui

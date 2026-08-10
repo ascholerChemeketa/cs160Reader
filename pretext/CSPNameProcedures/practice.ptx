@@ -10,7 +10,7 @@
       length to make each side. (A pentagon has five sides and five corners - each turn will need to
       be 72 degrees).</statement>
     <program interactive="activecode" language="python" xml:id="csp-name-procedures_practice-write-a-procedure_1_ed">
-      <input>
+      <code>
 #WRITE YOUR PROCEDURE HERE
 
 # Main part of program
@@ -18,11 +18,11 @@ from turtle import *
 emily = Turtle()
 # CALL THE PROCEDURE
 pentagon(emily, 100)
-      </input>
+      </code>
     </program>
     <answer>
       <program xml:id="cspnameprocedures_practice2" language="python">
-        <input>
+        <code>
 # DEFINE THE PROCEDURE
 def pentagon(turtle, size):
     turtle.forward(size)
@@ -35,7 +35,7 @@ def pentagon(turtle, size):
     turtle.right(72)
     turtle.forward(size)
     turtle.right(72)
-        </input>
+        </code>
       </program>
 
     </answer>

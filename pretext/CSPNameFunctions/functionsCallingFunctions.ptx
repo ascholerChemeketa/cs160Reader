@@ -23,11 +23,11 @@
     their outputs (what they return). Our <c>distance</c> functions will take in two x,y pairs and it will
     return the distance between them:</p>
   <program language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
     Do work to calculate distance.
     return distance
-</input>
+</code>
   </program>
   <p>Let's start by writing that and testing it. We will make a function <c>distance</c> that has parameters
     for the x and y of two different points.</p>
@@ -42,7 +42,7 @@ def distance(x1, y1, x2, y2):
     </statement>
     <program xml:id="cspnamefunctions_functionscallingfunctions1_editor" interactive="activecode"
       language="python">
-      <input>
+      <code>
         def distance(x1, y1, x2, y2):
             xDifference = x2 - x1
             yDifference = y2 - y1
@@ -63,7 +63,7 @@ def distance(x1, y1, x2, y2):
         sideB = distance(point2x, point2y, point3x, point3y)
         print(sideB)
         # Your test here
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

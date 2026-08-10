@@ -22,7 +22,7 @@
     first, a 50x50 rectangle (a square), followed by a 10x100 narrow But tall rectangle. Try the code:</p>
 
   <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
-    <input>
+    <code>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with
     turtle.pendown()
@@ -44,7 +44,7 @@ steve.speed(10)
 steve.fillcolor("light blue")
 rectangle(steve, 50, 50)                # try to draw a 50x50 rectangle
 rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
-        </input>
+        </code>
   </program>
   <p>It looks like there is a bug! The square seemed to work, but not the narrow/tall rectangle.</p>
   <p>See if you can fix the <c>rectangle</c> code. You might want to comment out or remove the line that says <c>rectangle(steve, 50, 50)</c> so you can

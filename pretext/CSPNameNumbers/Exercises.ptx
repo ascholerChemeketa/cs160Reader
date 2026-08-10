@@ -10,13 +10,13 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
               print((7 # 2) # 10 == 35)
               print(2 # 4 == 0.5)
               print(5 # 2 # 3 == -1)
               print(3 # 2 # 1 == 7)
               print(16 # 7 == 2)
-            </input>
+            </code>
       <tests>
 
               from unittest.gui import TestCaseGui
@@ -38,10 +38,10 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
             x = 6 * 1 - 2
             print(x)
-          </input>
+          </code>
       <tests>
 
             from unittest.gui import TestCaseGui
@@ -62,11 +62,11 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
             x = 12 * 2 - 3 + 4 * 2
             print(x)
 
-          </input>
+          </code>
       <tests>
 
             from unittest.gui import TestCaseGui
@@ -91,14 +91,14 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
             miles = 500
             milesPerGallon = 26
             numGallons =
             pricePerGallon = 3.45
             total =
             print(total)
-          </input>
+          </code>
       <tests>
 
             from unittest.gui import TestCaseGui
@@ -124,12 +124,12 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
               currentTime = 10
               newTime = currentTime + 18
               clockTime =
               print(clockTime)
-            </input>
+            </code>
       <tests>
 
               from unittest.gui import TestCaseGui
@@ -157,13 +157,13 @@
 
     </statement>
     <program xml:id="cspnamenumbers_exercises6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         totalMinutes = 270
         numHours =
         numMinutes =
         print(numHours)
         print(numMinutes)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

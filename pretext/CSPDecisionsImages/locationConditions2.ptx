@@ -23,7 +23,7 @@
 
     </statement>
     <program xml:id="cspdecisionsimages_locationconditions21_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from image import *
 
         def makeGray(pixel):
@@ -52,7 +52,7 @@
         testPixel3 = Pixel(60, 100, 90)
         darken(testPixel3, 10)
         print("testPixel3 after darken by 10:", testPixel3, "should be 50,90,80")
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -72,7 +72,7 @@
     conditional to apply the functions only to pixels that have a Y value of 110 or more.</p>
 
   <program xml:id="cspdecisionsimages_locationconditions22" interactive="activecode" language="python">
-    <input>
+    <code>
 from image import *
 
 # PUT THE makeGray AND darken PROCEDURES HERE
@@ -96,7 +96,7 @@ for p in pixels:
         makeGray(p)
         darken(p, 20)
         img.updatePixel(p)
-  </input>
+  </code>
   </program>
   <p>Try modifying the condition so it only leaves a rectangle of color around the students' heads and turns the rest to
     gray. You want to say something like <q>if y is less than 110 or x is less than 70 or x is more than 200</q>.</p>

@@ -9,7 +9,7 @@
       and thus never runs! Try running it in Codelens mode to see:</p>
 
     <program xml:id="cspnamefunctions_commonissues1" interactive="activecode" language="python">
-      <input>
+      <code>
 def addFive(x):
     return x
     x = x + 5           #This never gets to run!
@@ -18,7 +18,7 @@ def addFive(x):
 score = 10
 score = addFive(score)
 print(score)
-        </input>
+        </code>
     </program>
     <warning>
       <p>A <c>return</c> ends a function immediately.</p>
@@ -35,7 +35,7 @@ print(score)
     <p>Again, try running in Codelens:</p>
 
     <program xml:id="cspnamefunctions_commonissues2" interactive="activecode" language="python">
-      <input>
+      <code>
 def addFive(x):
     x = x + 5           #This never gets to run!
 
@@ -43,7 +43,7 @@ def addFive(x):
 score = 10
 addFive(score)
 print(score)
-        </input>
+        </code>
     </program>
     <warning>
       <p>The only way to get information (new values) out of a function is to return them.</p>

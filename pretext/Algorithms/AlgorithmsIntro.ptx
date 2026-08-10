@@ -3,7 +3,7 @@
   <p>Simply put, an algorithm is simply a set of step-by-step instructions for accomplishing some task. If you have ever
     followed a recipe like the one below, you have followed an algorithm.</p>
   <program language="none">
-    <input>
+    <code>
 Chocolate Cream Pie:
 1. Heat milk, marshmallows, and chocolate in a 
    3-quart saucepan over low heat, stirring constantly, 
@@ -16,7 +16,7 @@ Chocolate Cream Pie:
 4. Fold the chocolate mixture into whipped cream.
 5. Pour into a pie shell.
 6. Refrigerate uncovered for about 8 hours or until set.
-</input>
+</code>
   </program>
   <p>As long as you understand the directions, you do not need to know much about cooking to follow the recipe - this is
     the power of algorithms. Once we have created an algorithm, we no longer need to think about the principles on which

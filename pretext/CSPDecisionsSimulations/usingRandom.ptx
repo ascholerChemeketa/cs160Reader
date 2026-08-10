@@ -5,7 +5,7 @@
     1</em>. If we make a random integer between 0 and 1, we can think of it as representing heads or tails on the coin:</p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 flip = random.randrange(0, 2)  # pick a number from 0-1
@@ -13,14 +13,14 @@ if flip == 0:
     print("heads")
 else:
     print("tails")
-        </input>
+        </code>
   </program>
   <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let's do 100 flips and count
     up how many heads (0s) we get. Each time through the loop, we will pick a new random number. We will only add to our
     accumulator <c>numHeads</c> if the random value is 0.</p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 numHeads = 0    # how many heads we have flipped
@@ -32,7 +32,7 @@ for i in range(100):
         #print("Heads! We now have", numHeads)      # commented out testing code
 
 print("We got", numHeads, "heads.")
-        </input>
+        </code>
   </program>
   <p>Try running the program a few times. You usually won't get exactly 50, but it will usually be pretty close to
     that number since we flip 100 coins. Determining if this program is working correctly is a bit of a challenge - it

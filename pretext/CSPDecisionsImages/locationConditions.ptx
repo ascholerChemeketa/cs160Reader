@@ -10,7 +10,7 @@
         and rightmost pixels to black. (Hint: The image is 200 pixels wide.) </p>
     </statement>
     <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 from image import *
 
 img = Image("cat.jpg")
@@ -36,7 +36,7 @@ for p in pixels:
         # CHANGE THE PIXEL
         img.updatePixel(p)
 
-</input>
+</code>
       <tests>
 from unittest.gui import TestCaseGui 
 

@@ -15,7 +15,7 @@
 
     <listing xml:id="cspnamenumbers_mathlibrary_listing1">
         <program xml:id="cspnamenumbers_mathlibrary1" interactive="activecode" language="python">
-            <input>
+            <code>
 # make the math library functions and variables available
 import math
 
@@ -23,7 +23,7 @@ area = 100
 radius = math.sqrt(area / math.pi)
 print("Radius is", radius)
 print("The value we used for pi was", math.pi)
-        </input>
+        </code>
         </program>
     </listing>
     <p>An important detail to notice is that <c>math.sqrt</c> <term>returns</term> an answer to us that we must do something with.

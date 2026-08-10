@@ -51,14 +51,14 @@
         
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle1_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
           deckLength = len(deck)
           cutPoint = random.randrange(1,deckLength)
 
           # Your code here
-        </input>
+        </code>
         <tests>
           from unittest.gui import TestCaseGui
 
@@ -92,7 +92,7 @@
       </statement>
 
       <program xml:id="cspcollectionscontinued_shuffle2_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
@@ -102,7 +102,7 @@
               # your code here - indented to be in loop
           
           print(deck)
-        </input>
+        </code>
       </program>
     </exercise>
 
@@ -182,14 +182,14 @@
 
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle4_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
           deckLength = len(deck)
           selectIndex = random.randrange(0, deckLength - 1)
           # Your code here
-        </input>
+        </code>
         <tests>
           from unittest.gui import TestCaseGui
 
@@ -220,7 +220,7 @@
 
       </statement>
       <program xml:id="cspcollectionscontinued_shuffle5_editor" interactive="activecode" language="python">
-        <input>
+        <code>
           import random
           deck = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
@@ -230,7 +230,7 @@
               # Your code here - indented to be in the loop
               
           print(deck)
-        </input>
+        </code>
       </program>
     </exercise>
 

@@ -12,7 +12,7 @@
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
           weight = 0.5
           if weight &lt; 2:
           price = 1.50
@@ -20,7 +20,7 @@
           price = 1.30
               total = weight * price
           print(total)
-        </input>
+        </code>
       <tests>
 
           from unittest.gui import TestCaseGui
@@ -52,7 +52,7 @@
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def isEven(number):
             # Your code here
 
@@ -64,7 +64,7 @@
         print( isEven(12) )
         print( isEven(8) )
         print( isEven(126) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -89,7 +89,7 @@
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def calculatePay(hours, hourlyPay):
             # Your code here
 
@@ -98,7 +98,7 @@
         print( calculatePay(40, 12) )
         print( calculatePay(50, 18) )
         print( calculatePay(60, 20) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -128,7 +128,7 @@
 
     </statement>
     <program xml:id="cspdecisionsintro_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getClass(credits):
             classLevel = "Unknown"
             # Your code here
@@ -141,7 +141,7 @@
         print( getClass(90) )
         print( getClass(85) )
         print( getClass(25) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

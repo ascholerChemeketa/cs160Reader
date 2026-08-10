@@ -25,7 +25,7 @@
     closer to 15 than sides of 13 and 7).</p>
 
   <program xml:id="cspnamefunctions_definingfunctionswhy1" interactive="activecode" language="python">
-    <input>
+    <code>
 def hypotenuse_length(sideA, sideB):
     # sideA and sideB are our inputs
     aSquared = math.pow(sideA, 2)
@@ -53,12 +53,12 @@ print("The length of side hypotenuse5 is", hypotenuse5)
 
 hypotenuse6 = hypotenuse_length(15, 5)
 print("The length of side hypotenuse6 is", hypotenuse6)
-    </input>
+    </code>
   </program>
   <p>Now look below at a version of this program without a function.</p>
 
   <program xml:id="cspnamefunctions_definingfunctionswhy2" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 aSquared = math.pow(10, 2)
 bSquared = math.pow(10, 2)
@@ -89,17 +89,17 @@ aSquared = math.pow(15, 2)
 bSquared = math.pow(7, 2)
 hypotenuse6 = math.sqrt(aSquared + bSquared)
 print("The length of side hypotenuse6 is", hypotenuse6)
-        </input>
+        </code>
   </program>
   <p>Not only did writing it involve retyping lines like <c>aSquared = math.pow(___, ___)</c> over and over, and it is harder to read and understand.
     A function call like <c>hypotenuse_length(15, 5)</c> allows us to instantly see <em><q>Oh, that is just where we are going to calculate
     the hypotenuse.</q></em>. When there is no function, the reader has to slog through things like this:</p>
   <program language="python">
-    <input>
+    <code>
 aSquared = math.pow(10, 2)
 bSquared = math.pow(10, 2)
 hypotenuse1 = math.sqrt(aSquared + bSquared)
-</input>
+</code>
   </program>
   <p>As they do so, they must come to their own conclusion <em><q>Oh, I think I see what is going on, we are doing
     all the math to calculate a hypotenuse</q></em>. Doing this distracts them from the big picture of the problem we
@@ -115,10 +115,10 @@ hypotenuse1 = math.sqrt(aSquared + bSquared)
       </p>
       <p>
         <program language="python">
-          <input>
+          <code>
 ______________
 print(answer)
-</input>
+</code>
         </program>
       </p>
       <p> <fillin mode="string" width="60" answer="answer = hypotenuse_length(8, 15)"/>

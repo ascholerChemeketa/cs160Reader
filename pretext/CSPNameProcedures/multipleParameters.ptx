@@ -4,7 +4,7 @@
     with a side length of 50? We could do that by changing each of the <c>100s into a 50</c>.</p>
 
   <program xml:id="cspnameprocedures_multipleparameters1" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtle):
     turtle.forward(100)
     turtle.right(90)
@@ -19,14 +19,14 @@ def square(turtle):
 from turtle import *
 grace = Turtle()
 square(grace)
-        </input>
+        </code>
   </program>
   <p>But, this means we have to change each of the four <c>forward</c> statements and we could make a mistake and not set all
     of them to the same number. Is there a better way? What if we create a variable <c>size</c> and set its value to the
     amount to move forward?</p>
 
   <program xml:id="cspnameprocedures_multipleparameters2" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtle):
     size = 50
     turtle.forward(size)
@@ -42,7 +42,7 @@ def square(turtle):
 from turtle import *
 grace = Turtle()
 square(grace)
-        </input>
+        </code>
   </program>
   <p>Now the program is easier to change since we only have one line to change - <c>size = 50</c> - to draw another size square.
     Once we change the <c>size</c> variable, all of the <c>forward</c> commands will use that new value.</p>
@@ -50,7 +50,7 @@ square(grace)
     size squares. If we want <c>grace</c> to draw a small square and then a large square, we would need two different
     procedures:</p>
   <program language="python">
-    <input>
+    <code>
 def square(turtle):
     size = 50
     turtle.forward(size)
@@ -72,7 +72,7 @@ def largesSquare(turtle):
     turtle.right(90)
     turtle.forward(size)
     turtle.right(90)
-</input>
+</code>
   </program>
   <p>Yuck. How repetitive. Now imagine we want to make squares of size 75 and 25 as well. We would need 4 different
     procedures that all look basically the same! Remember that if you find yourself writing the same code multiple
@@ -84,7 +84,7 @@ def largesSquare(turtle):
     the turtle to draw with and the size of the square to draw. Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.</p>
 
   <program xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
-    <input>
+    <code>
 def square(turtle, size):   # square now has two parameters
     turtle.forward(size)
     turtle.right(90)
@@ -101,7 +101,7 @@ square(grace, 100)          # draw a square of size 100
 square(grace, 75)           # draw a square of size 75
 square(grace, 50)           # draw a square of size 50
 square(grace, 25)           # draw a square of size 25
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnameprocedures_multipleparameters4">
@@ -109,7 +109,7 @@ square(grace, 25)           # draw a square of size 25
 
       <p>What shape would the following code draw?</p>
       <program language="python">
-        <input>
+        <code>
 def mystery(turtle,size):
     turtle.forward(size)
     turtle.right(90)
@@ -123,7 +123,7 @@ def mystery(turtle,size):
 from turtle import *    # use the turtle library
 grace = Turtle()        # create a turtle named grace
 mystery(grace, 100)     # draw something with size = 100
-</input>
+</code>
       </program>
 
     </statement>
@@ -165,7 +165,7 @@ mystery(grace, 100)     # draw something with size = 100
 
       <p>In the following code what are the arguments?</p>
       <program language="python">
-        <input>
+        <code>
 def square(turtle,size):
     turtle.forward(size)
     turtle.right(90)
@@ -179,7 +179,7 @@ def square(turtle,size):
 from turtle import *    # use the turtle library
 imani = Turtle()        # create a turtle named imani
 square(imani, 25)      # draw a square with size 25
-</input>
+</code>
       </program>
 
     </statement>

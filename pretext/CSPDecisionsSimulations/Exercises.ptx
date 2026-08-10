@@ -105,7 +105,7 @@
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 import random
 
 numEights = 0
@@ -120,7 +120,7 @@ for roll in range(10000):
 
 # print number of eights rolled when loop is done
 print("Number of eights was", numEights)
-        </input>
+        </code>
     </program>
   </exercise>
 
@@ -138,7 +138,7 @@ print("Number of eights was", numEights)
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 import random
 
 highestRoll = 0
@@ -152,7 +152,7 @@ for roll in range(6):
 
 # print the highest roll when done with loop
 print("highestRoll was", highestRoll)
-        </input>
+        </code>
     </program>
   </exercise>
 
@@ -169,7 +169,7 @@ print("highestRoll was", highestRoll)
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         import random
         drew = Turtle()
@@ -187,7 +187,7 @@ print("highestRoll was", highestRoll)
         #draw the dot
         drew.forward(1)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -214,7 +214,7 @@ print("highestRoll was", highestRoll)
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         import random
 
         def getOddsFor(targetNumber):
@@ -234,7 +234,7 @@ print("highestRoll was", highestRoll)
         print("Testing 5's, expect 0.1111", getOddsFor(5))
         print("Testing 12's, expect 0.0277", getOddsFor(12))
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

@@ -9,7 +9,7 @@
     the list. Also, recall that <c>list[j]</c> means <q>the value in the list at location j</q>.</p>
   <p>Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
   <program language="none">
-    <input>
+    <code>
     Note: assume that list already exists
 1   i = 0                                    i marks start of unsorted cards
 2   repeat (length of the list - 1) times:
@@ -30,7 +30,7 @@
 17      list[i] = currentMin
 18
 19      i = i + 1                           move start of unsorted one to right
-</input>
+</code>
   </program>
   <p>The animation below allows you to step through a selection sort. Each step either advances the <q>right hand</q> or does
     a swap and then advances the <q>marker</q>. Step through some sorts and refer to the algorithm above until you see how <c>i</c>

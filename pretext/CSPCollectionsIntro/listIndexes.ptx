@@ -119,7 +119,7 @@
     assignment statement changes the value at that index in the list.</p>
 
   <program xml:id="cspcollectionsintro_listindexes3" interactive="codelens" language="python">
-    <input>
+    <code>
 items = [2, 4, 6, 8]
 
 print(items[0])
@@ -133,7 +133,7 @@ print(items)
 items[3] = items[2] + 1
 
 print(items)
-    </input>
+    </code>
   </program>
 
   <exercise label="cspcollectionsintro_listindexes4">
@@ -191,7 +191,7 @@ print(values)</pre>
     value we want from the list. As we change <c>itemNum</c>, the item we access by using it as an index changes as well:</p>
 
   <program xml:id="cspcollectionsintro_listindexes5" interactive="codelens" language="python">
-    <input>
+    <code>
 items = [2, 4, 6, 8]
 
 itemNum = 0
@@ -205,7 +205,7 @@ print( items[itemNum] )
 itemNum = itemNum + 2
 print( items[itemNum] )
 # prints items[2]
-    </input>
+    </code>
   </program>
   <p>This trick will come in very handy later when we write more complex logic for accessing all of the items in a list.</p>
 
@@ -214,7 +214,7 @@ print( items[itemNum] )
     work with later:</p>
 
   <program xml:id="cspcollectionsintro_listindexes6" interactive="codelens" language="python">
-    <input>
+    <code>
 items = [2, 4, 6, 8]
 
 print( len(items) )
@@ -222,7 +222,7 @@ print( len(items) )
 numberOfItems = len(items)
 print( numberOfItems )
 print("The last item is at index", numberOfItems - 1 )
-    </input>
+    </code>
   </program>
 </section>
 

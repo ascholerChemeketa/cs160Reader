@@ -17,7 +17,7 @@
     east, west).</p>
 
   <program xml:id="cspdecisionssimulations_randomwalks1" interactive="activecode" language="python">
-    <input>
+    <code>
 def takeStep(turtleName):
     # generate 0, 1, 2, or 3
     direction = random.randrange(0, 4)
@@ -33,7 +33,7 @@ travis.speed(8)
 
 for step in range(100):
     takeStep(travis)
-        </input>
+        </code>
   </program>
   <p>To generate a random direction, we are picking a random integer from 0-3 and then multiplying
     that by 90. This guarantees that the only numbers we can pick are 0, 90, 180, and 270. Try
@@ -81,7 +81,7 @@ for step in range(100):
     step to the right is another day - and the y dimension as value - the price of a stock.</p>
 
   <program xml:id="cspdecisionssimulations_randomwalks3" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 import random
 travis = Turtle()
@@ -96,7 +96,7 @@ while(currentX &lt; 200):
     currentX = currentX + 2
     currentY = currentY + random.randrange(-10, 11)
     travis.goto(currentX, currentY)
-        </input>
+        </code>
   </program>
   <p>To take steps in this program, we track the current location of the turtle. To do a step, we
     increase <c>currentX</c> by 2 and change <c>currentY</c> by a random amount between -10 and 10. This will mean

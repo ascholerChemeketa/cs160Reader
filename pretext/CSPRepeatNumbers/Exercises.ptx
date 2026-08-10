@@ -8,13 +8,13 @@
 
     </statement>
     <program xml:id="csprepeatnumbers_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         sum = _____________
         for number in _____________:
             sum = sum + _____________
         print(sum)
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -38,14 +38,14 @@
 
     </statement>
     <program xml:id="csprepeatnumbers_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         sum = _____________
 
         # More code here
 
         print(sum)
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -109,7 +109,7 @@
 
     </statement>
     <program xml:id="csprepeatnumbers_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def digitsIn(number):
             digits = 0
 
@@ -122,7 +122,7 @@
 
         print( "Should be 3 digits in 294", digitsIn(294) )
         print( "Should be 5 digits in 83163", digitsIn(83163) )
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -160,7 +160,7 @@
 
     </statement>
     <program xml:id="csprepeatnumbers_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         money = 0
         invest_per_month = 300
         months = 0
@@ -172,7 +172,7 @@
         #    increase the months by 1
 
         print(months)
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

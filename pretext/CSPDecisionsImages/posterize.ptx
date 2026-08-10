@@ -15,7 +15,7 @@
     </statement>
     <program xml:id="cspdecisionsimages_posterize1_editor" interactive="activecode"
       language="python">
-      <input>
+      <code>
         def posterize(colorValue):
             #Write your logic here
 
@@ -25,7 +25,7 @@
         print( posterize(50) )
         print( posterize(124) )
         print( posterize(200) )
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -45,7 +45,7 @@
   <p>Now that you have that function, add it to this program to see it in action:</p>
 
   <program xml:id="cspdecisionsimages_posterize2" interactive="activecode" language="python">
-    <input>
+    <code>
 from image import *
 
 # ADD YOUR FUNCTION HERE
@@ -77,7 +77,7 @@ for p in pixels:
 
     # MODIFY THE IMAGE
     img.updatePixel(p)
-  </input>
+  </code>
   </program>
   <p>Rewrite the code for posterizing an image using if and else rather than multiple ifs. Test
     that it still works correctly.</p>

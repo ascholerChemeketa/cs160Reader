@@ -21,7 +21,7 @@ else:
     in codelens mode.</p>
 
   <program xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
-    <input>
+    <code>
 score = 83
 if score &gt;= 90:
     print("A")
@@ -33,7 +33,7 @@ elif score &gt;= 80:
     print("B")
 else:
     print("F")
-        </input>
+        </code>
   </program>
   <p>To avoid issues like that, we always need to put the <c>if</c>/<c>elif</c> options in order from
     highest to lowest, or from lowest to highest. The program below shows starting with the lowest
@@ -41,7 +41,7 @@ else:
     quartile it is in.</p>
 
   <program xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
-    <input>
+    <code>
 x = .25
 if x &lt;= .25:
     print("x is in the first quartile - x &lt;= .25")
@@ -51,7 +51,7 @@ elif x &lt;= .75:
     print("x is in the third quartile - .5 &lt; x &lt;= .75")
 else:
     print("x is in the fourth quartile - .75 &lt; x &lt;= 1")
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsintro_eliftricks3">
@@ -118,7 +118,7 @@ else:
     </statement>
     <program xml:id="cspdecisionsintro_eliftricks4_editor" interactive="activecode"
       language="python">
-      <input>
+      <code>
           def tempDescription(temp):
               # Your code here
 
@@ -135,7 +135,7 @@ else:
           print( description5 ) # should be Cool
           description6 = tempDescription(80)
           print( description6 ) # should be Warm
-        </input>
+        </code>
       <tests>
 
           from unittest.gui import TestCaseGui

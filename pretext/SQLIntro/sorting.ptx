@@ -5,14 +5,14 @@
     example, the following query returns bike trips ordered by duration:</p>
 
   <program xml:id="sqlintro_sorting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
     trip_data
 ORDER BY
     duration
-        </input>
+        </code>
   </program>
   <p>The column name after the <c>ORDER BY</c> clause specifies which column to use as the sorting key, in this case <c>duration</c>.
     The shortest trips are listed first and the longest trips are listed last. This increasing, or <term>ascending</term>
@@ -21,14 +21,14 @@ ORDER BY
     say <c>ASC</c>, but do not need to since that is the default.)</p>
 
   <program xml:id="sqlintro_sorting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
     trip_data
 ORDER BY
     duration DESC
-        </input>
+        </code>
   </program>
   <subsection xml:id="sql-intro_limit">
     <title>LIMIT</title>
@@ -37,7 +37,7 @@ ORDER BY
       the maximum number of rows to return.</p>
 
     <program xml:id="sqlintro_sorting3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 SELECT
     *
 FROM
@@ -45,14 +45,14 @@ FROM
 ORDER BY
     duration DESC
 LIMIT 10
-        </input>
+        </code>
     </program>
     <p>We can combine <c>ORDER BY</c> and <c>LIMIT</c> with the other clauses we have learned about to do something like selecting
       just the start date, station, and duration for only trips starting from station 31111, sorting them from longest
       to shortest, and only keeping the first (longest) 10:</p>
 
     <program xml:id="sqlintro_sorting4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 SELECT
     start_date,
     start_station,
@@ -64,7 +64,7 @@ WHERE
 ORDER BY
     duration DESC
 LIMIT 10
-        </input>
+        </code>
     </program>
     <p>The ordering of the clauses is important. The <c>WHERE</c> must come before the <c>ORDER BY</c> which should come before the <c>LIMIT</c>
       .</p>
@@ -77,7 +77,7 @@ LIMIT 10
       be ordered by <c>end_station</c>, then within each pair of <c>start_station</c> and <c>end_station</c> values, the rows will be ordered by <c>duration</c>.</p>
 
     <program xml:id="sqlintro_sorting5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 SELECT
     start_station,
     end_station,
@@ -93,7 +93,7 @@ ORDER BY
     start_station ASC,  -- sort by starting location first
     end_station ASC,    -- then by ending
     duration DESC       -- then by duration
-        </input>
+        </code>
     </program>
     <p>Now try to write SQL queries that will answer the following questions.</p>
 
@@ -109,9 +109,9 @@ ORDER BY
       </statement>
       <program xml:id="sqlintro_sorting6_editor" interactive="activecode" language="sql"
         database="SQL/bikeshare.db">
-        <input>
+        <code>
 
-        </input>
+        </code>
         <tests>
           assert 0,0 == W00163
         </tests>
@@ -130,9 +130,9 @@ ORDER BY
       </statement>
       <program xml:id="sqlintro_sorting7_editor" interactive="activecode" language="sql"
         database="SQL/bikeshare.db">
-        <input>
+        <code>
 
-        </input>
+        </code>
         <tests>
           assert 0,0 == 31200
           assert 0,1 == 85504

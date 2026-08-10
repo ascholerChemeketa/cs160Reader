@@ -10,7 +10,7 @@
     list out of it using <c>split</c>, and call that list <c>cityState</c>. We can then use <c>cityState[0]</c> to get the city name and <c>cityState[1]</c>
     to get the state.</p>
   <program xml:id="csppythondata_findpollstate1" interactive="codelens" language="python">
-    <input>
+    <code>
       line = "Pocatello,ID:15:9"
       values = line.split(":")
       print("All the values:")
@@ -22,7 +22,7 @@
       print("State:", cityState[1])
       print("PM10:", values[1])
       print("PM2.5:", values[2])
-    </input>
+    </code>
   </program>
 
   <p>Now that we have the state isolated, we can use that to look for just records that have the state code that we
@@ -35,7 +35,7 @@
   </note>
 
   <program xml:id="csppythondata_findpollstate2" interactive="activecode" language="python">
-    <input>
+    <code>
       inFile = open("uspoll.txt")
       data = inFile.read().splitlines()
       inFile.close()
@@ -51,7 +51,7 @@
           if targetState == cityState[1]:
               print(cityState[0])
               print("PM2.5:", values[2])
-      </input>
+      </code>
   </program>
   <p>It seems to work. But if you look closely at the records it produces, there is nothing for Portland, OR. Looking at
     the data file, we can see why - Portland is listed as part of a metro area that extends into Washington, so its
@@ -62,7 +62,7 @@
   <p>Now, we can merge our average logic into that code. We will only count records that are in the target state.</p>
 
   <program xml:id="csppythondata_findpollstate3" interactive="activecode" language="python">
-    <input>
+    <code>
       inFile = open("uspoll.txt")
       data = inFile.read().splitlines()
       inFile.close()
@@ -92,7 +92,7 @@
       # print the average
       average = total25 / count
       print("Average PM 2.5 value for " , targetState, " is ", average)
-    </input>
+    </code>
   </program>
 
   <exercise label="csppythondata_findpollstate4">

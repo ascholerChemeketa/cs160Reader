@@ -5,9 +5,9 @@
     we generally write a <term>SELECT</term> statement (recall that a complete instruction in programming is known as a
     statement). The general format of a <c>SELECT</c> is:</p>
   <program language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT columns FROM table;
-</input>
+</code>
   </program>
   <p>In SQL <term>keywords</term> like <c>SELECT</c> are generally written using all <term>upper case</term>, while <term>column
     names and table names</term> use <term>lower case</term>. This is a convention to make statements easier for people
@@ -15,13 +15,13 @@ SELECT columns FROM table;
   <p>It is also common to break the statement up across multiple lines - as statements get more and more complex, this
     too makes them easier to read:</p>
   <program language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 --Still all one statement:
 SELECT
     columns
 FROM
     table;
-</input>
+</code>
   </program>
   <p>In Python, each statement goes on its own line and must be indented in a particular way. SQL does not care about
     indentation. You are free to indent lines however you like. And a statement does not automatically end at the end of
@@ -39,12 +39,12 @@ FROM
   </warning>
 
   <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
     trip_data;
-        </input>
+        </code>
   </program>
   <p>As we do a <c>SELECT</c>, it might not make sense to ask for all of the columns in a table. If we want to answer a
     question about the length of rides, we probably do not need the information about station numbers or bike numbers.
@@ -53,14 +53,14 @@ FROM
     , <c>end_date</c>, and <c>duration</c> columns, the query would look like the following:</p>
 
   <program xml:id="sqlintro_selecting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     start_date,
     end_date,
     duration
 FROM
     trip_data;
-        </input>
+        </code>
   </program>
   <p>The column names must match the names of the columns in the data table and be separated by commas. Because SQL does
     not care about line breaks, it would be fine to list all the columns on one line like: <c>start_date, end_date, duration</c>.</p>
@@ -76,9 +76,9 @@ FROM
 
     </statement>
     <program xml:id="sqlintro_selecting3_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 31605
         assert 0,1 == 31217

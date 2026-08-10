@@ -12,7 +12,7 @@
     <q>y</q>, etc<ellipsis/> they all should work.</p>
 
   <program xml:id="cspdecisionsstrings_instring1" interactive="activecode" language="python">
-    <input>
+    <code>
 answer = input("Do you wish to continue?")
 answer = answer.lower()   # change input to lower case
 
@@ -20,7 +20,7 @@ if "y" in answer:
     print("Great, let's continue")
 else:
     print("Bye!")
-        </input>
+        </code>
   </program>
   <p>We can combine <c>in</c> with other tricks like <c>or</c> or <c>and</c> to make more complex tests. Complete this mixed-up
     code problem that tells the user what season a given month is part of:</p>
@@ -41,7 +41,7 @@ else:
 
     </statement>
     <program xml:id="cspdecisionsstrings_instring2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getSeason(monthName):
             monthName = monthName.lower()
             season = ""
@@ -60,7 +60,7 @@ else:
         print("October is in ", getSeason("October"))
         print("July is in ", getSeason("July"))
         print("Novuary is in ", getSeason("Novuary"))
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -80,14 +80,14 @@ else:
     string. It accepts a string as its parameter and returns the length of that string.</p>
 
   <program xml:id="cspdecisionsstrings_instring3" interactive="activecode" language="python">
-    <input>
+    <code>
 name = "Daphne"
 nameLength = len(name)
 print("That name is", nameLength, "letters long.")
 
 fullName = "Daphne Smith"
 print("The full name is", len(fullName), "letters long.")
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsstrings_instring4">

@@ -14,7 +14,7 @@
 
   <program xml:id="cspnamefunctions_functionscomposition1" interactive="activecode"
     language="python">
-    <input>
+    <code>
 import math
 
 sideAText = input("Enter length of side A")
@@ -27,7 +27,7 @@ bSquared = math.pow(sideB, 2)
 sideC = math.sqrt(aSquared + bSquared)
 
 print("The length of side C is", sideC)
-        </input>
+        </code>
   </program>
   <p>The fact that every function (other than <c>print</c>) returns a value is what allows us to chain
     them together by using the result of one function as the input to the next function. We take the
@@ -46,7 +46,7 @@ print("The length of side C is", sideC)
 
     <program xml:id="cspnamefunctions_functionscomposition2" interactive="activecode"
       language="python">
-      <input>
+      <code>
 import math
 
 sideA = float( input("Enter length of side A") )
@@ -55,7 +55,7 @@ sideB = float( input("Enter length of side B") )
 sideC = math.sqrt( math.pow(sideA, 2) + math.pow(sideB, 2) )
 
 print("The length of side C is", sideC)
-        </input>
+        </code>
     </program>
     <p>Like when doing math, we always do work inside of parentheses before worrying about the work
       outside of them. In this case, that means we start with the <c>"Enter length of side A"</c>. It is just a string, so

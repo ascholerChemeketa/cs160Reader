@@ -7,12 +7,12 @@
     as expected:</p>
 
   <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
-    <input>
+    <code>
 color = "red"
 if color == "blue" or "green":
     print("That is a valid color.")
 print("Done")
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsstrings_complextricks2">
@@ -63,12 +63,12 @@ print("Done")
     that make sense on their own as logical expressions. We have to repeat the <c>color ==</c> part so that <c>"green"</c> is not evaluated on its own:</p>
 
   <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
-    <input>
+    <code>
 color = "red"
 if color == "blue" or color == "green":
     print("That is a valid color.")
 print("Done")
-        </input>
+        </code>
   </program>
   <warning>
     <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can't have

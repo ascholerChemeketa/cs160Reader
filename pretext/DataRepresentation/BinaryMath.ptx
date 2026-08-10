@@ -70,14 +70,14 @@
       of digits that can be represented. For example, say we are using 4-bit numbers and we try to add 9 + 9 (<m>
       {1001}_2</m> + <m>{1001}_2</m>) - any bits past 4 need to be discarded.</p>
     <program language="none">
-      <input>
+      <code>
   1  1    (Carries)
    1001   (9)
   +1001   (9)
   10010   (18)
   Keep only the last 4 bits:
    0010   (2 !?!)
-  </input>
+  </code>
     </program>
     <p>9 + 9 gave us just 2 because we can not store the bit that should represent 16. This is an overflow error.
       Circuits in computers have to detect when there is a carry-out of the last digit so it can signal an error and

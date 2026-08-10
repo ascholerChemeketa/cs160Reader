@@ -3,11 +3,11 @@
   <p>Now that we have written and tested <c>distance</c>, we can use it to help write <c>triangle_area</c>. This function
     will take all six coordinates and return the area.</p>
   <program language="python">
-    <input>
+    <code>
 def triangleArea(x1, y1, x2, y2, x3, y3):
     Do work to calculate area - use the distance function to help
     return area
-</input>
+</code>
   </program>
   <p>Recall that the formula we need to use is: <m>\sqrt{s (s - a) (s - b) (s - c)}</m></p>
   <p>The work for this function will involve calling the distance function three times to calculate

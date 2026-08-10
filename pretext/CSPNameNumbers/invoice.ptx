@@ -12,7 +12,7 @@
 
     <listing xml:id="cspnamenumbers_invoice1_listing"> 
     <program interactive="activecode" language="python" xml:id="cspnamenumbers_invoice1">
-        <input>
+        <code>
 quantity1 = 2
 unitPrice1 = 7.56
 total1 = quantity1 * unitPrice1
@@ -21,7 +21,7 @@ unitPrice2 = 4.71
 total2 = quantity2 * unitPrice2
 invoiceTotal = total1 + total2
 print(invoiceTotal)
-        </input>
+        </code>
     </program>
 </listing>
 
@@ -76,7 +76,7 @@ print(invoiceTotal)
 
         <listing  xml:id="cspnamenumbers_invoice3"> 
     <program xml:id="cspnamenumbers_invoice3cl" interactive="codelens" language="python">
-        <input>
+        <code>
 quantity = 2
 unitPrice = 7.56
 total1 = quantity * unitPrice
@@ -85,7 +85,7 @@ unitPrice = 4.71
 total2 = quantity * unitPrice
 invoiceTotal = total1 + total2
 print(invoiceTotal)
-    </input>
+    </code>
     </program>
         </listing>
 
@@ -139,7 +139,7 @@ print(invoiceTotal)
         the total cost (it should print 3.55).</p>
 
     <program xml:id="cspnamenumbers_invoice5" interactive="activecode" language="python">
-        <input>
+        <code>
 numApples = 4
 numPears = 3
 
@@ -148,7 +148,7 @@ costPerPear =
 
 totalCost =
 print(totalCost)
-        </input>
+        </code>
     </program>
     <p>You are welcome to try out the following answers by copying and pasting them into the program above before
         answering this question:</p>
@@ -219,10 +219,10 @@ print(totalCost)
         </statement>
             
         <program xml:id="cspnamenumbers_invoice7_ed" interactive="activecode" language="python">
-            <input>
+            <code>
 
 
-                </input>
+                </code>
         </program>
     </exercise>
 </section>

@@ -3,22 +3,22 @@
   <p>In the last section, we saw what happens if a loop's control variable is never updated. It will run forever.</p>
 
   <program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
-    <input>
+    <code>
 counter = 1
 while counter &lt;= 10:
     print(counter)
-    </input>
+    </code>
   </program>
   <p>Getting a computer to repeat a set of statements is simple. Sometimes it can be tricky to get it to <em>stop</em>.
     Remember that a while loop will execute as long as the logical expression is true. What happens if the logical
     expression is <em>always</em> true?</p>
 
   <program xml:id="csprepeatnumbers_infinite2" interactive="codelens" language="python">
-    <input>
+    <code>
 while 1 == 1:
     print("Looping")
     print("Forever")
-    </input>
+    </code>
   </program>
 
   <p>Since <c>1</c> will always be equal to <c>1</c>, the two <c>print</c> statements will just be repeated over and over and
@@ -32,12 +32,12 @@ while 1 == 1:
     browser before closing it).</p>
 
   <program xml:id="csprepeatnumbers_infinite3" interactive="activecode" language="python">
-    <input>
+    <code>
 counter = 1
 while counter != 10:
     print(counter)
     counter = counter + 2
-        </input>
+        </code>
   </program>
   <p>If you run in Codelens mode, there will be an error displayed that tells you Codelens stopped the run after 1000
     lines of execution. You can watch the program run and see what it is doing up until that point. Try doing so. The

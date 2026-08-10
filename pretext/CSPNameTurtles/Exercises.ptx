@@ -7,11 +7,11 @@
 
     </statement>
     <program xml:id="cspnameturtles_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         alex = Turtle
         alex.Forward(150)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -32,14 +32,14 @@
 
     </statement>
     <program xml:id="cspnameturtles_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         alex = Turtle()
         alex.forward(150)
         alex.right(90)
         from turtle import *
         alex.left(90)
         alex.forward(75)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -61,10 +61,10 @@
 
     </statement>
     <program xml:id="cspnameturtles_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         jessica = Turtle()
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -76,10 +76,10 @@
 
     </statement>
     <program xml:id="cspnameturtles_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from turtle import *
         antonio = Turtle()
-      </input>
+      </code>
     </program>
   </exercise>
 

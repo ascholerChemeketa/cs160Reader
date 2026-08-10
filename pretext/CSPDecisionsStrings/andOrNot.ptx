@@ -11,12 +11,12 @@
       program:</p>
 
     <program xml:id="cspdecisionsstrings_andornot1" interactive="activecode" language="python">
-      <input>
+      <code>
 grade = 83
 if grade &gt;= 80 and grade &lt; 90:
     print ("You got a B")
 print ("All done")
-        </input>
+        </code>
     </program>
 
     <exercise label="cspdecisionsstrings_andornot2">
@@ -25,11 +25,11 @@ print ("All done")
         <p>Given the code below, what describes the values of x that will cause the code to print <q>condition
           true</q>?</p>
         <program language="python">
-          <input>
+          <code>
 if x &gt; 0 and x &lt; 10:
     print ("condition true")
 print ("All done")
-</input>
+</code>
         </program>
 
       </statement>
@@ -74,12 +74,12 @@ print ("All done")
       by this program, it will tell you there will be an extra fee.</p>
 
     <program xml:id="cspdecisionsstrings_andornot3" interactive="activecode" language="python">
-      <input>
+      <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes" or answer =="y":
     print("That will be an extra fee.")
 print ("All done")
-        </input>
+        </code>
     </program>
 
     <exercise label="cspdecisionsstrings_andornot4">
@@ -88,11 +88,11 @@ print ("All done")
         <p>Given the code below, what describes the values of x that will cause the code to print <q>condition
           true</q>?</p>
         <program language="python">
-          <input>
+          <code>
 if x &lt; 0 or x &gt;= 10:
     print ("condition true")
 print ("All done")
-</input>
+</code>
         </program>
 
       </statement>
@@ -149,13 +149,13 @@ print ("All done")
       that asks them to try again.</p>
 
     <program xml:id="cspdecisionsstrings_andornot5" interactive="activecode" language="python">
-      <input>
+      <code>
 name = input("Please enter a username, make sure not to include special characters.")
 if not name.isalnum():
     name = input("Try again, make sure not to include special characters.")
 
 print ("Welcome", name)
-        </input>
+        </code>
     </program>
     <p>Notice that the program currently only will ask you to try again once. If we want it to keep
       asking the user to try again until they get it right, we would need a loop. Try changing the <c>if</c>

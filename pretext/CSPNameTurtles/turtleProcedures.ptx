@@ -172,7 +172,7 @@
   </note>
 
   <program xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 ji = Turtle()         # create a turtle named ji
 ji.speed(0)           # make ji go as fast as possible
@@ -204,7 +204,7 @@ ji.right(90)
 ji.forward(50)
 ji.right(90)
 ji.forward(75)
-        </input>
+        </code>
   </program>
   <p>Try some experiments on the code:</p>
   <p>

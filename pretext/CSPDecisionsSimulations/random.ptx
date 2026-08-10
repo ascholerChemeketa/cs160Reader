@@ -12,12 +12,12 @@
     random number each time it runs:</p>
 
   <program xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 x = random.randrange(1, 5)  # pick a number from 1-4
 print(x)
-        </input>
+        </code>
   </program>
   <p>As shown above, the <c>randrange</c> function can be called with a starting value (inclusive) and
     the ending value for the range (exclusive). So <c>randrange(1, 5)</c> picks an integer from the range that

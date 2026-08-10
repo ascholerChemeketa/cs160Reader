@@ -7,22 +7,22 @@
     the loop before printing it).</p>
 
   <program xml:id="csprepeatnumbers_whilecount1" interactive="codelens" language="python">
-    <input>
+    <code>
 for counter in range(1,11):
     print(counter)
-    </input>
+    </code>
   </program>
   <p>In a <c>while</c> loop, there is not a known list of items we are iterating through. So the <c>while</c> can't
     automatically go to the next value. It is up to us to advance the loop. Here is a <c>while</c> loop that counts from 1 to
     10:</p>
 
   <program xml:id="csprepeatnumbers_whilecount2" interactive="codelens" language="python">
-    <input>
+    <code>
 counter = 1
 while counter &lt; 11:
     print(counter)
     counter = counter + 1
-    </input>
+    </code>
   </program>
 
   <subsection xml:id="csp-repeat-numbers_loop-control-variable">
@@ -35,11 +35,11 @@ while counter &lt; 11:
       would never change. Try running this version of the program:</p>
 
     <program xml:id="csprepeatnumbers_whilecount3" interactive="codelens" language="python">
-      <input>
+      <code>
 counter = 1
 while counter &lt; 11:
     print(counter)
-    </input>
+    </code>
     </program>
     <p>Remember that in assignment (<c>=</c>) statements, we always do the work on the right side, and then store the
       answer into the variable on the left side. Thus in <c>counter = counter + 1</c>, we first do <c>counter + 1</c> which says <q>add one to the
@@ -48,35 +48,35 @@ while counter &lt; 11:
     <p>We can do whatever we want to update the counter. We could count from 30 down to 0 by 5:</p>
 
     <program xml:id="csprepeatnumbers_whilecount4" interactive="codelens" language="python">
-      <input>
+      <code>
 counter = 30
 while counter &gt; 0:
     print(counter)
     counter = counter - 5
-    </input>
+    </code>
     </program>
     <p>Or we could double the counter with each iteration:</p>
 
     <program xml:id="csprepeatnumbers_whilecount5" interactive="codelens" language="python">
-      <input>
+      <code>
 counter = 1
 while counter &lt; 100:
     print(counter)
     counter = counter * 2
-    </input>
+    </code>
     </program>
     <p>Where we do the update matters. In this loop, <c>counter</c> starts at 0. We print that value, then add 2 to the <c>counter</c>.
       When we get to 6, it is printed, then we add 2. Then we go back to the <c>while</c>'s test. Since <c>counter &lt; 8</c> is no
       longer true, we end the loop. So we see the value 0,2,4,6 even though the counter ends up reaching 8.</p>
 
     <program xml:id="csprepeatnumbers_whilecount6" interactive="codelens" language="python">
-      <input>
+      <code>
 counter = 0
 while counter &lt; 8:
     print(counter)
     counter = counter + 2
 print("Done")
-    </input>
+    </code>
     </program>
     <p>In this loop, the <c>counter</c> starts at 0, but we add 2 to it before we print it the first time. Thus the first thin
       printed is 2. Then, when <c>counter</c> gets to 6, we add 2 more to get 8 and then print that value before we go back up
@@ -84,13 +84,13 @@ print("Done")
       prints out 2,4,6,8.</p>
 
     <program xml:id="csprepeatnumbers_whilecount7" interactive="codelens" language="python">
-      <input>
+      <code>
 counter = 0
 while counter &lt; 8:
     counter = counter + 2
     print(counter)
 print("Done")
-    </input>
+    </code>
     </program>
     <note>
       <p>A common misconception is that a while loop will stop as soon as its logical expression becomes false. A

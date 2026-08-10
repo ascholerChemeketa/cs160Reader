@@ -6,12 +6,12 @@
     number of records a query finds, we can select <c>COUNT(*)</c>.</p>
 
   <program xml:id="sqlgroupjoin_aggregating1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     COUNT (*) AS number_rides
 FROM
     trip_data
-        </input>
+        </code>
   </program>
   <p>The <c>AS</c> keyword is used after <c>COUNT(*)</c> to give the data that is returned a name. If we leave it off, the
     <q>column</q> of data will just be labeled <c>COUNT(*)</c>. Calling it <c>number_rides</c> makes it much clearer what we are
@@ -27,9 +27,9 @@ FROM
     </statement>
     <program xml:id="sqlgroupjoin_aggregating2_editor" interactive="activecode" language="sql"
       database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 480
       </tests>
@@ -66,13 +66,13 @@ FROM
   <p>For example, the query below calculates the minimum and maximum trip duration:</p>
 
   <program xml:id="sqlgroupjoin_aggregating3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
   MIN(duration) AS minimum_duration,
   MAX(duration) AS maximum_duration
 FROM
   trip_data
-        </input>
+        </code>
   </program>
 
   <exercise label="sqlgroupjoin_aggregating4">
@@ -82,9 +82,9 @@ FROM
     </statement>
     <program xml:id="sqlgroupjoin_aggregating4_editor" interactive="activecode" language="sql"
       database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 1190.2256836077308
       </tests>
@@ -94,14 +94,14 @@ FROM
     trips made by Casual member type users.</p>
 
   <program xml:id="sqlgroupjoin_aggregating5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
   MAX(duration)
 FROM
   trip_data
 WHERE
   member_type = 'Casual'
-        </input>
+        </code>
   </program>
 
   <exercise label="sqlgroupjoin_aggregating6">
@@ -111,9 +111,9 @@ WHERE
     </statement>
     <program xml:id="sqlgroupjoin_aggregating6_editor" interactive="activecode" language="sql"
       database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 408030
       </tests>
@@ -127,12 +127,12 @@ WHERE
       below counts how many bike numbers are used.</p>
 
     <program xml:id="sqlgroupjoin_aggregating7" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 SELECT
     COUNT(DISTINCT bike_number) AS n_distinct_bikes
 FROM
     trip_data
-        </input>
+        </code>
     </program>
 
     <exercise label="sqlgroupjoin_aggregating8">
@@ -142,9 +142,9 @@ FROM
       </statement>
       <program xml:id="sqlgroupjoin_aggregating8_editor" interactive="activecode" language="sql"
         database="SQL/bikeshare.db">
-        <input>
+        <code>
 
-        </input>
+        </code>
         <tests>
           assert 0,0 == 135
         </tests>

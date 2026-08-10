@@ -9,7 +9,7 @@
     (append) two strings and <c>*</c> to repeat strings.</p>
 
   <program xml:id="cspteasers_computewords1" interactive="activecode" language="python">
-    <input>
+    <code>
             basic = "da"
             print(basic)
             basic3 = basic + "-" + basic + "-" + basic
@@ -20,7 +20,7 @@
             together = (basic + "-") * 3 + next
             print(together)
             print(together + " " + together)
-        </input>
+        </code>
   </program>
 
   <p>Strings are different than numbers in that they are <term> objects</term>. Objects are complex
@@ -34,24 +34,24 @@
     is capitalized.</p>
 
   <program xml:id="cspteasers_computewords2" interactive="activecode" language="python">
-    <input>
+    <code>
             sentence = "THIS IS A TEST"
             better = sentence.lower()
             print("The string better is :", better)
             print("sentence is still :", sentence)
             betterStill = better.capitalize() + "."
             print("betterStill is :", betterStill)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspteasers_computewords3">
     <statement>
       <p>What would the following code print?</p>
       <program line-numbers="yes" language="python">
-        <input>first = "Hi"
+        <code>first = "Hi"
 next = "There"
 print ((first + next) * 2)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

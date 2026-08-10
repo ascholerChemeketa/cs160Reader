@@ -8,10 +8,10 @@
     <listing xml:id="csp-name-numbers_expression2_listing1" >
         <caption>Code to do a simple calculation</caption>
         <program xml:id="csp-name-numbers_expression2" interactive="activecode" language="python">
-            <input>
+            <code>
         result = 2 * 2 + 1
         print(result)
-                </input>
+                </code>
         </program>
 
     </listing>
@@ -42,10 +42,10 @@
 
         <listing xml:id="cspnamenumbers_expression4_listing" >
             <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression4">
-                <input>
+                <code>
     result = 1 / 3
     print(result)
-            </input>
+            </code>
             </program>
         </listing>
 
@@ -90,12 +90,12 @@
         
     <listing xml:id="cspnamenumbers_expression5_listing">
         <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression5">
-            <input>
+            <code>
 result1 = 37 / 3
 print(result1)
 result2 = 37 // 3
 print(result2)
-        </input>
+        </code>
         </program></listing>
         <note>
             <p>Integer division always just ignores the remainder - it does not round the answer. <c>5 // 3</c> is just 1.</p>
@@ -120,10 +120,10 @@ print(result2)
 
         <listing xml:id="cspnamenumbers_expression7_listing">
             <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression7">
-                <input>
+                <code>
     x = 11 % 3
     print(x)
-            </input>
+            </code>
             </program>
             </listing>
         <exercise label="cspnamenumbers_expression6">

@@ -35,7 +35,7 @@
     (<c>COUNT(*)</c>) for each member type (<c>GROUP BY member_type</c>).</p>
 
   <program xml:id="sqlgroupjoin_grouping1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     member_type,
     COUNT(*) AS n_trips
@@ -45,7 +45,7 @@ GROUP BY
     member_type
 ORDER BY
     n_trips DESC
-        </input>
+        </code>
   </program>
   <p>The result of this query has one row for each distinct <c>member_type</c>, and the column named <c>n_trips</c> counts the number of
     rows for each type. Recall that <c>AS _______</c> gives a name to a calculated value - any time we do an aggregation, it will
@@ -64,7 +64,7 @@ ORDER BY
     aggregation function (<c>MAX</c> or <c>MIN</c> in this case).</p>
 
   <program xml:id="sqlgroupjoin_grouping2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     start_station,
     MIN(duration) AS minimum_duration,
@@ -73,14 +73,14 @@ FROM
     trip_data
 GROUP BY
     start_station
-        </input>
+        </code>
   </program>
   <p>You can still use other columns that you are not selecting to filter the data that gets used to calculate the
     aggregated value. You just need to make sure to put the <c>WHERE</c> before the <c>GROUP BY</c>. For example, you can calculate
     the number of trips started from each station for just the bike 'W00174' with this query:</p>
 
   <program xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     start_station,
     COUNT(*) AS trips_started
@@ -90,7 +90,7 @@ WHERE
     bike_number = 'W00174'
 GROUP BY
     start_station
-        </input>
+        </code>
   </program>
   <exercise label="sqlgroupjoin_grouping4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
@@ -147,9 +147,9 @@ GROUP BY
 
     </statement>
     <program xml:id="sqlgroupjoin_grouping5_editor" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == W00142
         assert 0,1 == 512

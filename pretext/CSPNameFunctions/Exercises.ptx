@@ -7,7 +7,7 @@
 
     </statement>
     <program xml:id="cspnamefunctions_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def recPerimeter(length, width):
         perimeter = 2 * (length + width)
         Return recPerimeter
@@ -15,7 +15,7 @@
         # Main program
         result = recPerimeter(2, 4)
         print(result)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -38,14 +38,14 @@
 
     </statement>
     <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def areaTriangle():
             return (5 * 4) / 2
 
         # Main program. Do not modify the lines below
         print(areaTriangle(5, 4))
         print(areaTriangle(6, 3))
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -73,7 +73,7 @@
 
     </statement>
     <program xml:id="cspnamefunctions_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # Your code here
 
         # Main program. Do not modify lines below
@@ -83,7 +83,7 @@
         guess3 = approximateSqrt(number, guess2)
         guess4 = approximateSqrt(number, guess3)
         print(guess4)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

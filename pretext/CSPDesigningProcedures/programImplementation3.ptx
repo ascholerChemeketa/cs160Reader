@@ -13,7 +13,7 @@
 
     </statement>
     <program xml:id="cspdesigningprocedures_programimplementation31_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def rectangle(turtle, width, height):
             # Assumes turtle faces East to start with
             turtle.pendown()
@@ -64,7 +64,7 @@
         drawDoor(steve)                # test the drawDoor procedure
 
         # add a test here for the window. Try drawing it at -100, 0
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

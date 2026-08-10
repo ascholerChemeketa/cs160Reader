@@ -3,13 +3,13 @@
   <p>In previous pages, we have seen examples that are repetitive, but where each line has a slight change, like this
     sequence of calls to <c>polygon</c>:</p>
   <program language="python">
-    <input>
+    <code>
 ...
 polygon(mia, 6, 100)
 polygon(mia, 5, 100)
 polygon(mia, 4, 100)
 polygon(mia, 3, 100)
-</input>
+</code>
   </program>
   <p>In situations like that, it would be nice to use a loop to repeat the lines instead of typing them out one by one.
     But to do so, we need to use a variable for the value that changes. Something like <c>polygon(mia, sides, 100)</c> where <c>sides</c> is set to
@@ -21,7 +21,7 @@ polygon(mia, 3, 100)
     from 0 to 9.</p>
 
   <program xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
-    <input>
+    <code>
 # x will be set to 0, 1, 2, 3, 4
 for x in range(5):
     print("x is ", x)
@@ -31,7 +31,7 @@ print("--------------------------------------")
 # y will be set to 0, 1, 2, 3, 4, ... 9
 for y in range(10):
     print("y is ", y)
-        </input>
+        </code>
   </program>
   <subsection xml:id="csp-repeat-turtles_range-recipes">
     <title>Range Recipes</title>
@@ -40,16 +40,16 @@ for y in range(10):
       count from 6 down to 3? Or to count from 10 to 100 by 10's? To do these tasks, we can use a three-parameter
       version of <c>range</c>:</p>
     <program language="python">
-      <input>
+      <code>
 range(startValue, stopValue, step)
-</input>
+</code>
     </program>
     <p>This version of <c>range</c> begins from the <c>startValue</c>, increases by <c>step</c> with each value, and stops when it hits <c>stopValue</c>
       (but does not actually include the <c>stopValue</c>). If the <c>step</c> is negative, range will count down from <c>startValue</c> to <c>stopValue</c>
       .</p>
 
     <program xml:id="csprepeatturtles_loopvariable2" interactive="activecode" language="python">
-      <input>
+      <code>
 # x will count from 0, by 2's and stop at 11 (10 will be the last value)
 for x in range(0, 11, 2):
     print("x is ", x)
@@ -59,7 +59,7 @@ print("--------------------------------------")
 # y will start at 6 and count down by 1. It stops at 2 (3 is the last value)
 for y in range(6, 2, -1):
     print("y is ", y)
-        </input>
+        </code>
     </program>
     <note>
       <p>The one-parameter range recipe <c>range(10)</c> is the same as the three-parameter recipe <c>range(0, 10, 1)</c>.</p>
@@ -129,7 +129,7 @@ for y in range(6, 2, -1):
       how far forward the turtle moves in each repetition.</p>
 
     <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle import *
 tess = Turtle()
 tess.color("blue")
@@ -141,7 +141,7 @@ for size in range(5, 60, 2):
     tess.stamp()              # leave a copy of turtle at its current location
     tess.forward(size)
     tess.right(24)
-        </input>
+        </code>
     </program>
     <p>All except one of the shapes you see on the screen here are copies of the turtle shape created by <c>stamp</c>. But
       the program still only has <em>one</em> turtle instance <mdash /> can you figure out which one is the real tess?

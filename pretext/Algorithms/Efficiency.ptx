@@ -22,14 +22,14 @@
     under different conditions. So what exactly is <q>work</q>? Let's try to come up with some descriptions of how much
     work two different algorithms take. First, we will consider this DrawSquare algorithm:</p>
   <program language="none">
-    <input>
+    <code>
 DrawSquare of size (n)
 Pen Down
 Repeat 4 times:
     Move (n)
     Turn Clockwise (90)
 Pen Up
-</input>
+</code>
   </program>
   <p>We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it doesn't
     matter what size the square is (assuming Move always takes a fixed amount of time), this algorithm always requires
@@ -39,14 +39,14 @@ Pen Up
     + 4 Repeats + Pen Up). But whatever we decide, the problem always takes that amount of work.</p>
   <p>Compare that to the following algorithm:</p>
   <program language="none">
-    <input>
+    <code>
 DrawShape with (n) sides
 Pen Down
 Repeat (n) times:
     Move 100
     Turn Clockwise ( 360 / (n) )
 Pen Up
-</input>
+</code>
   </program>
   <p>If we use it to draw a square and stick to our original accounting method, it takes 10 <q>units</q> of work. But
     what if use it to draw a triangle? Now it would take 8 units of work (Pen Down + 3 Moves + 3 Turns + Pen Up). If we

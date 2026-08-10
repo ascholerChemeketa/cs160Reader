@@ -91,7 +91,7 @@
       before moving on.</p>
 
     <program xml:id="cspnameturtles_debugging1" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle import *
 alex = Turtle()
 alex.forward(150)        # This is the last active line of code
@@ -102,26 +102,26 @@ alex.forward(150)        # This is the last active line of code
 #alex.left90)
 #alex.forward(150)
 #alex.left(90)
-        </input>
+        </code>
     </program>
     <p>The following example has 2 errors. Can you fix the errors so that the code runs correctly to
       print a capital L? You may want to start by commenting out all the lines and then turn them
       back on one by one like we did in the last exercise.</p>
 
     <program xml:id="cspnameturtles_debugging2" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle import *    # use the turtle library
 alisha = Turtle()       # create a turtle named alisha
 alisha.right(90)        # turn alisha south
 alisha.forward          # move forward by 150 units
 alisha.left(90)         # turn to face east
 alisha.Forward(75)      # move forward by 75 units
-        </input>
+        </code>
     </program>
     <p>The following example has multiple errors. Can you fix the errors so that the code runs correctly to
       print a capital C?</p>
     <program xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
-      <input>
+      <code>
 from turtle Import *    # use the turtle library
 Alex = Turtle           # create a turtle named alex
 alex.left(180)          # turn alex by 180 degrees
@@ -130,15 +130,15 @@ alex.turn(90)           # turn left 90 degrees
 alex.forward(100)       # more forward by 100 units
 alex.left(90)           # turn left 90 degrees
 alex.forward            # move forward by 75 units
-        </input>
+        </code>
     </program>
     <p>Use the area below to try to draw a block letter or number.</p>
 
     <program xml:id="cspnameturtles_debugging4" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
 
   </subsection>

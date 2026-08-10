@@ -8,7 +8,7 @@
     navigate a maze:</p>
 
   <program xml:id="cspdecisionsstrings_input1" interactive="activecode" language="python">
-    <input>
+    <code>
 print("You are in front of a creepy door in a hallway.")
 print("What do you want to do?")
 action = input("Type: in, left, or right. Then click OK or press enter")
@@ -21,7 +21,7 @@ elif action == "left":
 elif action == "right":
     print("You choose to turn right.")
     print("A greenish light is visible in the distance.")
-        </input>
+        </code>
   </program>
 
   <exercise label="cspdecisionsstrings_input2">
@@ -89,7 +89,7 @@ elif action == "right":
 
     </statement>
     <program xml:id="cspdecisionsstrings_input3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getGPAPoints(letterGrade):
             points = 0
             # TODO - write code to set points to 4, 3, 2, 1 based on grade
@@ -113,7 +113,7 @@ elif action == "right":
         gpa = totalPoints / 3
         print("Your GPA is", gpa)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

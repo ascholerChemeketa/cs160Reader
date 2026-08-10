@@ -74,9 +74,9 @@
     </statement>
     <program xml:id="sqlintro_exercises1_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 1957
         assert 0,1 == 12 Angry Men
@@ -95,9 +95,9 @@
     </statement>
     <program xml:id="sqlintro_exercises2_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 26
         assert 0,2 == Before Sunset
@@ -114,9 +114,9 @@
     </statement>
     <program xml:id="sqlintro_exercises3_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 1,2 == A Beautiful Mind
         assert 5,2 == Back to the Future
@@ -133,9 +133,9 @@
     </statement>
     <program xml:id="sqlintro_exercises4_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,2 == 2001: A Space Odyssey
         assert 2,2 == Alien
@@ -150,9 +150,9 @@
     </statement>
     <program xml:id="sqlintro_exercises5_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,2 == Alien
         assert 4,2 == Butch Cassidy and the Sundance Kid
@@ -168,9 +168,9 @@
     </statement>
     <program xml:id="sqlintro_exercises6_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 1,0 == The Godfather
         assert 1,1 == 1972
@@ -188,9 +188,9 @@
     </statement>
     <program xml:id="sqlintro_exercises7_editor" interactive="activecode" language="sql"
       database="SQL/movies.db">
-      <input>
+      <code>
 
-      </input>
+      </code>
       <tests>
         assert 0,0 == 12 Years a Slave
         assert 0,1 == 2013

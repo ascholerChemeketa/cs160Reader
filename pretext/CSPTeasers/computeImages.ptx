@@ -90,7 +90,7 @@
     those pixels can take a few seconds.</p>
 
   <program xml:id="cspteasers_computeimages2" interactive="activecode" language="python">
-    <input>
+    <code>
             # MAKE USE OF IMAGE LIBRARY
             import image
 
@@ -109,7 +109,7 @@
                 p.setRed(0)
                 catPic.updatePixel(p)
 
-        </input>
+        </code>
   </program>
 
   <exercise label="cspteasers_computeimages3">

@@ -6,7 +6,7 @@
     student on the quizzes. I might use the following program:</p>
 
   <program xml:id="cspcollectionsintro_listaccumulation1" interactive="activecode" language="python">
-    <input>
+    <code>
 scores = [82, 95, 92, 76, 98, 84, 89, 92]
 
 # Pick an appropriate initial value
@@ -18,7 +18,7 @@ for score in scores:
     total = total + score
 
 print(total)
-        </input>
+        </code>
   </program>
   <p>The key steps are described with comments. We always need to start with some initial value as our
     <q>accumulation variable</q>, loop through the items, and combine each value with the accumulation variable.</p>
@@ -27,7 +27,7 @@ print(total)
     get the new accumulated value. This is shown in the animation below, using <c>product</c> as the accumulator variable.</p>
 
   <program xml:id="cspcollectionsintro_listaccumulation2" interactive="codelens" language="python">
-    <input>
+    <code>
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Pick an appropriate initial value
 product = 1
@@ -38,7 +38,7 @@ for n in numbers:
     product = product * n
 
 print(product)
-    </input>
+    </code>
   </program>
 
   <exercise label="cspcollectionsintro_listaccumulation3">
@@ -99,7 +99,7 @@ print(product)
     with an appropriate empty value for a string, which is <c>""</c>.</p>
 
   <program xml:id="cspcollectionsintro_listaccumulation4" interactive="codelens" language="python">
-    <input>
+    <code>
 words = ["Roses", "are", "red", "violets", "are", "dead"]
 
 # Pick an appropriate initial value
@@ -111,7 +111,7 @@ for item in words:
     poem = poem + " " + item
 
 print(poem)
-    </input>
+    </code>
   </program>
   <exercise label="cspcollectionsintro_listaccumulation5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>

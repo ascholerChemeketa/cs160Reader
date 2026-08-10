@@ -48,7 +48,7 @@
         Make sure your recipe selects things that have a lot of green, but also do not have too much red.</p>
     </statement>
     <program xml:id="cspdecisionsimages_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from image import *
 
         # CREATE AN IMAGE FROM A FILE
@@ -76,7 +76,7 @@
             
                 # UPDATE IMAGE
                 img.updatePixel(p)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -101,7 +101,7 @@
 
     </statement>
     <program xml:id="cspdecisionsimages_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from image import *
 
         # CREATE AN IMAGE FROM A FILE
@@ -124,7 +124,7 @@
                 # UPDATE IMAGE
                 img.updatePixel(p)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -149,7 +149,7 @@
         change every pixel. Then add a condition to say <c>True</c> or <c>False</c> based on the <c>r, g, b</c> values passed in.</p>
     </statement>
     <program xml:id="cspdecisionsimages_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         from image import *
 
         def isYellow(r, g, b):
@@ -180,7 +180,7 @@
 
                 # UPDATE THE IMAGE
                 img.updatePixel(p)
-    </input>
+    </code>
     <tests>
 
       from unittest.gui import TestCaseGui

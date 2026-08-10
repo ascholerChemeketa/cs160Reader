@@ -5,10 +5,10 @@
     causes the loop to repeat 5 times. By forcing us to provide that list of values, the <c>for</c> loop requires us to
     specify the number of iterations there will be before we begin looping.</p>
   <program language="python">
-    <input>
+    <code>
 for iteration in range(5):
     guess = 1/2 * ((number / guess) + guess)
-</input>
+</code>
   </program>
   <p>However, there is another way to repeat statements: the <c>while</c> loop. It will repeat the <term>body</term> of the
     loop as long as some <term>logical expression</term> is true. Just like with a for loop, the <term>body</term> of a
@@ -21,7 +21,7 @@ for iteration in range(5):
     all of the numbers you have entered.</p>
 
   <program xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
-    <input>
+    <code>
 sum = 0
 count = 0
 message = "Enter an integer. Enter 0 or less to stop."
@@ -33,7 +33,7 @@ while int(value) &gt; 0:
     value = input(message)
 
 print("The sum is: " + str(sum) + " the average is: " + str(sum / count))
-        </input>
+        </code>
   </program>
   <p>The loop in this sample takes your input, which is stored in <c>value</c> as a string like <q>12</q>, and turns
     that into an integer like 12. It checks to see if that value is greater than 0. If so, it does the loop body, if

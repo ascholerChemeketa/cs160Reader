@@ -10,14 +10,14 @@
     is what gets returned.</p>
 
   <program xml:id="cspnamefunctions_definingfunctionshow1" interactive="activecode" language="python">
-    <input>
+    <code>
 def hypotenuse_length(sideA, sideB):
     # sideA and sideB are our inputs
     aSquared = math.pow(sideA, 2)
     bSquared = math.pow(sideB, 2)
     sideC = math.sqrt(aSquared + bSquared)       # this is the final answer
     return sideC                                 # we return it
-        </input>
+        </code>
   </program>
   <p>Running it right now does nothing. Just like a procedure definition, a function definition does not
     cause anything to happen on its own. It is only the instructions for what to do when someone calls <c>hypotenuse_length</c>. So
@@ -25,7 +25,7 @@ def hypotenuse_length(sideA, sideB):
     then uses those two values <c>a</c> and <c>b</c> to call <c>hypotenuse_length</c>.</p>
 
   <program xml:id="cspnamefunctions_definingfunctionshow2" interactive="activecode" language="python">
-    <input>
+    <code>
 def hypotenuse_length(sideA, sideB):
     aSquared = math.pow(sideA, 2)
     bSquared = math.pow(sideB, 2)
@@ -38,7 +38,7 @@ a = float(input("Enter side a"))
 b = float(input("Enter side b"))
 c = hypotenuse_length(a, b)
 print("The length of side c is", c)
-        </input>
+        </code>
   </program>
   <p>
     <term>Check Your Understanding</term>
@@ -51,12 +51,12 @@ print("The length of side c is", c)
       </p>
       <p>
         <program language="python">
-          <input>
+          <code>
 def convertFtoC(tempF):
     tempF = tempF - 32
     tempC = (5 / 9) * tempF
     ______________
-</input>
+</code>
         </program>
       </p>
       <p>

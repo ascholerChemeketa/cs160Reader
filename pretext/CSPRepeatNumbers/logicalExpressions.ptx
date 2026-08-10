@@ -10,14 +10,14 @@
     the <c>type</c> function to ask about the values stored in x, y, and z in the program below:</p>
 
   <program xml:id="csprepeatnumbers_logicalexpressions1" interactive="activecode" language="python">
-    <input>
+    <code>
 x = True
 y = "True"
 z = 1
 print( "x is a ", type(x) )
 print( "y is a ", type(y) )
 print( "z is a ", type(z) )
-        </input>
+        </code>
   </program>
 
   <p>The usual way to produce <term>Boolean</term> values is with a <term>logical expression</term>. Much how a numeric
@@ -66,7 +66,7 @@ print( "z is a ", type(z) )
   <p>Here is a sample of them in use:</p>
 
   <program xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
-    <input>
+    <code>
 age = 20
 
 canVote = age &gt;= 18
@@ -76,7 +76,7 @@ isTwenty = age == 20
 print( "canVote is ", canVote )
 print( "canDrink is ", canDrink )
 print( "isTwenty is ", isTwenty )
-        </input>
+        </code>
   </program>
   <p>Something like <c>isTwenty = age == 20</c> may look odd. But remember that <c>=</c> does not mean <q>equals</q> it is an <term>
     assignment</term>. Also, remember that the assignment always happens after all expressions are evaluated. A good translation for that
@@ -91,10 +91,10 @@ print( "isTwenty is ", isTwenty )
 
       <p>Given these values, which is the only logical expression that would evaluate to False?</p>
       <program language="python">
-        <input>
+        <code>
 x = 30
 y = 2
-</input>
+</code>
       </program>
 
     </statement>

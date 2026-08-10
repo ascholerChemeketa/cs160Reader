@@ -27,7 +27,7 @@
 
   <program xml:id="cspdecisionssimulations_simulationbuild21" interactive="activecode"
     language="python">
-    <input>
+    <code>
       import random
       import sys
       
@@ -68,7 +68,7 @@
       
       percent = (successCounter / repetitions) * 100
       print(str(percent) + "%")
-    </input>
+    </code>
   </program>
 
   <exercise label="cspdecisionssimulations_simulationbuild22">

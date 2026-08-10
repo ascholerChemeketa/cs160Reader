@@ -7,7 +7,7 @@
     starting from 0 and using a change value of 2. This means it visits indexes 0, 2, 4<ellipsis/></p>
 
   <program xml:id="cspcollectionscontinued_rangechange1" interactive="activecode" language="python">
-    <input>
+    <code>
 numbers = [8, 9, 7, 10, 6, 10, 7, 4]
 
 total = 0
@@ -18,7 +18,7 @@ for i in range(0, len(numbers), 2):
     total = total + numbers[i]
 
 print("Total is", total)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspcollectionscontinued_rangechange2">
@@ -81,7 +81,7 @@ print("Total is", total)
 
     </statement>
     <program xml:id="cspcollectionscontinued_rangechange3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
         listLength = len(numbers)
@@ -90,7 +90,7 @@ print("Total is", total)
         for i in range(0, halfway, 1):
             print("i is", i, "- Value at i is", numbers[i])
 
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

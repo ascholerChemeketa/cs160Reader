@@ -130,7 +130,7 @@
 
     </statement>
     <program xml:id="csprepeatturtles_repeatturtlespractice3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def polygon(turtleName, sides, size):
             turtleName.begin_fill()
             for s in range(sides):
@@ -151,7 +151,7 @@
         ____________________________
             # Inside the loop - use your loop variable as the second parameter to control the number of sides
             polygon(lucia, ____, 100)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

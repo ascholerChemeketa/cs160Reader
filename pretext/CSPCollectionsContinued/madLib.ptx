@@ -19,7 +19,7 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # This string is our story
         story = "We just got back from a pizza party in TOWN where everyone got to choose their own toppings. NAME made FOOD and THING_PLURAL pizza. Kind of weird if you ask me."
 
@@ -28,7 +28,7 @@
 
         # Your code here to print out each item from storyList
         # Make sure to use a range-based loop
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -53,9 +53,9 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # Your code here
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -82,12 +82,12 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # Your code here
 
         # Show what storyList ended up as
         print(storyList)
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -113,7 +113,7 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_madlib4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # Your code here
 
         # Add these lines below your code
@@ -121,7 +121,7 @@
         story = " ".join(storyList)
         # Print the result
         print(story)
-        </input>
+        </code>
     </program>
   </exercise>
 </section>

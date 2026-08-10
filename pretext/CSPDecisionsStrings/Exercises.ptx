@@ -80,7 +80,7 @@
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getTotalCost(price, location):
             # your code here - make sure to return an answer!
 
@@ -99,7 +99,7 @@
 
         print(cost)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -125,7 +125,7 @@
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def getTicketCost(age):
             # your code here - make sure to return an answer!
 
@@ -140,7 +140,7 @@
         cost = getTicketCost(customerAge)
         print("Ticket costs", cost)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -173,7 +173,7 @@
 
     </statement>
     <program xml:id="cspdecisionsstrings_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def canGraduate(totalCredits, mathCredits):
             # your code here - make sure to return an answer!
 
@@ -182,7 +182,7 @@
         isReady = canGraduate(24, 4)
         print(isReady)
 
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui

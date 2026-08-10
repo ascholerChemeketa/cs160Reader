@@ -91,9 +91,9 @@
   <p>The only other thing we need to figure out is <q>How many levels are required?</q> The table above skips a few
     steps in the middle. We could go back and add them in - starting with 1024 items the levels would look like this:</p>
   <program language="none">
-    <input>
+    <code>
 1024 → 512 → 256 → 128 → 64 → 32 → 16 → 8 → 4 → 2 → 1
-</input>
+</code>
   </program>
   <p>That is 10 levels of merging to group 1024 single items into one list of 1024.</p>
   <aside>

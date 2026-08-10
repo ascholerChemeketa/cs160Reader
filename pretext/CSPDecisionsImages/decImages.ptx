@@ -58,7 +58,7 @@
         the unmodified French flag.</p>
     </statement>
     <program xml:id="cspdecisionsimages_decimages1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 from image import *
 
 img = Image("fr-flag.gif")
@@ -83,7 +83,7 @@ for p in pixels:
         # CHANGE THE IMAGE
         img.updatePixel(p)
 
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -114,7 +114,7 @@ for p in pixels:
     </statement>
 
     <program xml:id="cspdecisionsimages_decimages2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 from image import *
 
 img = Image("cd-flag.gif")
@@ -134,7 +134,7 @@ for p in pixels:
 
         # IF SO, MAKE BLACK AND UPDATE
 
-      </input>
+      </code>
       <tests>
 from unittest.gui import TestCaseGui
 

@@ -51,7 +51,7 @@
     Here we just print them out:</p>
 
   <program xml:id="csppythondata_readdata1" interactive="activecode" language="python">
-    <input>
+    <code>
       # Open the file for reading. The reference we will use to work with it will be inFile
       inFile = open("uspoll.txt")
 
@@ -68,7 +68,7 @@
       # Now process all the data by looping through the lines
       for line in data:
           print(line)
-    </input>
+    </code>
   </program>
 
   <note>
@@ -96,7 +96,7 @@ Adrian, MI
       <p>Make sure not to print out extra lines. The test will assume that you have just that output.</p>
     </statement>
     <program xml:id="csppythondata_readdata2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         # open the file for reading
         inFile = open("uspoll.txt")
 
@@ -117,7 +117,7 @@ Adrian, MI
 
             print(city)
             print("  PM2.5:", values[2])
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

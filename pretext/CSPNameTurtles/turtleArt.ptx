@@ -3,7 +3,7 @@
   <p>Below is a program to draw a simple house.</p>
 
   <program xml:id="cspnameturtles_turtleart1" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 bob = Turtle()
 bob.speed(8)
@@ -33,7 +33,7 @@ bob.left(120)
 bob.forward(100)
 bob.left(120)
 bob.end_fill()
-        </input>
+        </code>
   </program>
   <p>Now we want to add a <q>chimney</q> to the house that looks something like this:</p>
   <image source="CSPNameTurtles/Figures/turtle-house-3.png" width="20%">

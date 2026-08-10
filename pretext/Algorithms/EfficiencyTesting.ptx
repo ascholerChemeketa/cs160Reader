@@ -72,7 +72,7 @@
   <program xml:id="algorithms_efficiency_testing"
            interactive="activecode"
            language="python">
-    <input>
+    <code>
 def doTest():
     # to test other procedures,
     #   change the procedure that is called to procedureA, procedureB, etc...
@@ -138,7 +138,7 @@ start = time.time()
 doTest()
 end = time.time()
 print("That took", end - start, "seconds")
-        </input>
+        </code>
   </program>
 
   <exercise label="eff_measure_1">

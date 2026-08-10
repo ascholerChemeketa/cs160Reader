@@ -10,11 +10,11 @@
 
     </statement>
     <program xml:id="cspnamestrings_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         color = "red'
         name = 'Carly'
         print("Your name is " + name + and your favorite color is" + color + ".")
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -39,11 +39,11 @@
 
     </statement>
     <program xml:id="cspnamestrings_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         age = 14 + 5
         name = 'Carly'
         print("Your name is" + name + "and your age is" + age + ".")
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -69,11 +69,11 @@
 
     </statement>
     <program xml:id="cspnamestrings_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         sentence = "There is a giant alligator over there."
         s1 =
         print("|" + s1 + "|")
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -96,12 +96,12 @@
 
     </statement>
     <program xml:id="cspnamestrings_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         milesPerHour = 70
         distanceTravelled = 140
         timeTaken = distanceTravelled / milesPerHour
         print("A car traveling at...")
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -125,9 +125,9 @@
 
     </statement>
     <program xml:id="cspnamestrings_exercises5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 

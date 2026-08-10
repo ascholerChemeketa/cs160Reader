@@ -3,10 +3,10 @@
 
   <p>The formal name for an input to a function is <term>parameter</term>:</p>
   <program language="python">
-    <input>
+    <code>
 def hop(turtleName):        # turtleName is a parameter
     ...
-</input>
+</code>
   </program>
   <p>One of the trickiest parts of learning to write and use procedures and functions is developing an accurate
     understanding of how parameters work. Think of parameters as variables in a procedure that are set by the procedure
@@ -16,10 +16,10 @@ def hop(turtleName):        # turtleName is a parameter
   <p>When we call (use) a procedure, we must provide values for each of the
     parameters that it has. The values that we provide are known as the <term>arguments</term>.</p>
   <program language="python">
-    <input>
+    <code>
 ...
 hop(sue)     # a procedure call using the sue turtle as the argument
-</input>
+</code>
   </program>
   <p>When this procedure call happens, all the code from <c>hop</c> will be executed. Any time we encounter the parameter <c>turtleName</c>,
     we will use the argument - <c>sue</c> in its place. This process of giving the procedure information by
@@ -36,7 +36,7 @@ hop(sue)     # a procedure call using the sue turtle as the argument
 
   <program xml:id="cspnameprocedures_parameters1"
     interactive="activecode" language="python">
-    <input>
+    <code>
 def hop(turtleName):                # turtleName is the parameter
     turtleName.penup()              # turtleName means whatever turtle was passed to the procedure
     turtleName.forward(20)
@@ -55,7 +55,7 @@ sue.forward(50)
 buster.left(90)
 hop(buster)                         # call hop with buster as the argument
 buster.forward(50)
-        </input>
+        </code>
   </program>
   <warning>
     <p>The only variables you can use in a procedure are its parameters or new ones you create inside the procedures. It
@@ -112,7 +112,7 @@ buster.forward(50)
       <p>This code sample makes a turtle called ray and then calls the spin procedure. What belongs in the blank to make
         the program work?</p>
       <program language="python">
-        <input>
+        <code>
 def spin(who):
     ________.left(180)
 
@@ -121,7 +121,7 @@ from turtle import *
 ray = Turtle()
 
 spin(ray)
-</input>
+</code>
       </program>
 
     </statement>

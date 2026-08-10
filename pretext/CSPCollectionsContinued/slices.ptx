@@ -7,7 +7,7 @@
     list that starts empty.</p>
 
   <program xml:id="cspcollectionscontinued_slices1" interactive="codelens" language="python">
-    <input>
+    <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 # Empty list we will build up
@@ -18,7 +18,7 @@ for i in range(5, 8, 1):
     summerMonths.append( months[i] )
 
 print(summerMonths)
-    </input>
+    </code>
   </program>
 
   <p>But, rather than do that work ourselves, there is syntax in Python for asking for part of a list. Part of a list is
@@ -29,14 +29,14 @@ print(summerMonths)
   <p>That means a much easier way to get a list of the summer months would be:</p>
 
   <program xml:id="cspcollectionscontinued_slices2" interactive="codelens" language="python">
-    <input>
+    <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 # Use a slice to get summerMonths
 summerMonths = months[5:8]
 
 print(summerMonths)
-    </input>
+    </code>
   </program>
   <note>
     <p>Remember that the slice always stops just before the second index. <c>[5:8]</c> only slices indexes 5-7.</p>
@@ -47,7 +47,7 @@ print(summerMonths)
     mean <q>the last two items</q>.</p>
 
   <program xml:id="cspcollectionscontinued_slices3" interactive="activecode" language="python">
-    <input>
+    <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 summerMonths = months[5:8]
@@ -58,7 +58,7 @@ print(lastSix)
 
 lastThree = months[-3:]
 print(lastThree)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspcollectionscontinued_slices4">

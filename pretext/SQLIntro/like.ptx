@@ -15,14 +15,14 @@
   <p>This sample pulls from the <c>bikeshare_stations</c> table to search for all station names that include 'F St':</p>
 
   <program xml:id="sqlintro_like1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
     bikeshare_stations
 WHERE
     name LIKE '%F St%'
-        </input>
+        </code>
   </program>
   <p>We do have to be careful not to specify things that are too broad. Try changing the like to look for anything that
     includes '7th' and examine the results.</p>
@@ -33,7 +33,7 @@ WHERE
     start of the string.</p>
 
   <program xml:id="sqlintro_like2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
-    <input>
+    <code>
 SELECT
     *
 FROM
@@ -42,7 +42,7 @@ WHERE
     name LIKE '7th%'  --7th at beginning of name
     OR
     name LIKE '% 7th%'  --space in front of 7th
-        </input>
+        </code>
   </program>
 
   <exercise label="sqlintro_like3">

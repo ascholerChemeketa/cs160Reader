@@ -4,12 +4,12 @@
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing1">
     <program xml:id="cspnamenumbers_walkassign1" interactive="codelens" language="python">
-      <input>
+      <code>
 a = 1
 b = 12.3
 c = "Fred"
 d = b
-    </input>
+    </code>
     </program>
   </listing>
 
@@ -69,11 +69,11 @@ d = b
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing2">
     <program xml:id="cspnamenumbers_walkassign3" interactive="codelens" language="python">
-      <input>
+      <code>
 var1 = 45
 var1 = 17.3
 var2 = var1
-    </input>
+    </code>
     </program>
   </listing>
 
@@ -133,14 +133,14 @@ var2 = var1
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing3">
     <program xml:id="cspnamenumbers_walkassign5" interactive="activecode" language="python">
-      <input>
+      <code>
 daysInWeek = 7
 print(daysInWeek)
 numDays = 7 * 3
 print(numDays)
 numDays2 = daysInWeek * 3
 print(numDays2)
-        </input>
+        </code>
     </program>
   </listing>
 
@@ -242,10 +242,10 @@ print(numDays2)
       </p>
     </statement>
     <program xml:id="cspnamenumbers_walkassign9" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-                </input>
+                </code>
     </program>
   </exercise>
 </section>

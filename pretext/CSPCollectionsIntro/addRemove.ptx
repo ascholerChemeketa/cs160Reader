@@ -12,7 +12,7 @@
     </statement>
     
     <program xml:id="cspcollectionsintro_addremove1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         words = []
 
         words.append("Apple")
@@ -23,7 +23,7 @@
 
         words.append("Date")
         print(words)
-      </input>
+      </code>
       <tests>
 
         from unittest.gui import TestCaseGui
@@ -42,7 +42,7 @@
     with codelens:</p>
 
   <program xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
-    <input>
+    <code>
 numbers = [10, 20]
 
 # Add the value 5 at location 0 (start)
@@ -52,7 +52,7 @@ print(numbers)
 # Add the value 15 at location 2 (third place)
 numbers.insert(2, 15)
 print(numbers)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspcollectionsintro_addremove3">
@@ -119,7 +119,7 @@ print(numbers)
   <p>This sample shows all three methods:</p>
 
   <program xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
-    <input>
+    <code>
 names = ["Steve", "Charlie", "Naomi", "Darcy", "Charlie"]
 
 # remove first copy of Charlie
@@ -130,7 +130,7 @@ names.pop()
 
 #remove the first item
 names.pop(0)
-    </input>
+    </code>
   </program>
 
   <exercise label="cspcollectionsintro_addremove5">
@@ -142,13 +142,13 @@ names.pop(0)
 
     </statement>
     <program xml:id="cspcollectionsintro_addremove5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         letters = ["A", "F", "C", "Q", "C"] #don't change this
 
         # your code here
 
         print(letters)
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

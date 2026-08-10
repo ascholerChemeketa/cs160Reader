@@ -8,13 +8,13 @@
     string with the first letter of the string capitalized.</p>
 
   <program xml:id="cspnamestrings_strobjects1" interactive="activecode" language="python">
-    <input>
+    <code>
 sentence = "THIS IS A TEST"
 better = sentence.lower()
 print(better)
 betterStill = better.capitalize() + "."
 print(betterStill)
-        </input>
+        </code>
   </program>
   <subsection xml:id="csp-name-strings_getting-part-of-a-string">
     <title>Getting Part of a String</title>
@@ -33,7 +33,7 @@ print(betterStill)
       just the character at that position in the string.</p>
 
     <program xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">
-      <input>
+      <code>
 sentence = "This is a test"
 s1 = sentence[1]
 print(s1)
@@ -43,14 +43,14 @@ s3 = sentence[8]
 print(s3)
 s4 = sentence[10]
 print(s4)
-        </input>
+        </code>
     </program>
     <p>A <term>slice</term> with two values separated with a <c>:</c> between them returns a new
       string with the characters from the given start position to the one before the given end
       position.</p>
 
     <program xml:id="cspnamestrings_strobjects3" interactive="activecode" language="python">
-      <input>
+      <code>
 sentence = "This is a test"
 s1 = sentence[1:3]
 print(s1)
@@ -60,7 +60,7 @@ s3 = sentence[8:11]
 print(s3)
 s4 = sentence[10:14]
 print(s4)
-        </input>
+        </code>
     </program>
     <p>
       <term>Check Your Understanding</term>
@@ -71,11 +71,11 @@ print(s4)
 
         <p>What will be printed when the following executes?</p>
         <program language="python">
-          <input>
+          <code>
 str = "This is the end"
 str = str[1:4]
 print(str)
-</input>
+</code>
         </program>
 
       </statement>
@@ -119,11 +119,11 @@ print(str)
 
         <p>What will be printed when the following executes?</p>
         <program language="python">
-          <input>
+          <code>
 str = "This is the end"
 str = str[5]
 print(str)
-</input>
+</code>
         </program>
 
       </statement>
@@ -168,27 +168,27 @@ print(str)
       string including spaces.</p>
 
     <program xml:id="cspnamestrings_strobjects6" interactive="activecode" language="python">
-      <input>
+      <code>
 sentence = "This is a test"
 length = len(sentence)
 print(length)
 sentence = "Hi"
 length = len(sentence)
 print(length)
-        </input>
+        </code>
     </program>
 
     <p>The <c>find(string)</c> function takes a string as input and returns the index where that string is found
       in the current string. If the string isn't found it returns -1.</p>
 
     <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
-      <input>
+      <code>
 sentence = "This is a test"
 pos = sentence.find("is")
 print(pos)
 pos = sentence.find("love")
 print(pos)
-        </input>
+        </code>
     </program>
     <note>
       <p>The <c>find</c> function will return the first position it finds the given string in. Notice
@@ -203,10 +203,10 @@ print(pos)
 
         <p>Given the following code segment, what will be printed?</p>
         <program language="python">
-          <input>
+          <code>
 street = "125 Main Street"
 print(len(street))
-</input>
+</code>
         </program>
 
       </statement>
@@ -248,11 +248,11 @@ print(len(street))
 
         <p>What will be printed when the following executes?</p>
         <program language="python">
-          <input>
+          <code>
 str = "His shirt is red"
 pos = str.find("is")
 print(pos)
-</input>
+</code>
         </program>
 
       </statement>
@@ -294,19 +294,19 @@ print(pos)
         <p>Write the code to evaluate the length of the string "I like green eggs" and print it. It
           should print "The length is 17".</p>
         <program xml:id="cspnamestrings_strobjects10" interactive="activecode" language="python">
-          <input>
+          <code>
       sentence = 'I like green eggs'
-              </input>
+              </code>
         </program>
       </statement>
       <answer>
         <program xml:id="cspnamestrings_strobjects11" language="python">
-          <input>
+          <code>
 # DECLARE VARIABLES
 sentence = 'I like green eggs'
 # PRINT RESULT
 print('The length is ' + str(len(sentence)))
-      </input>
+      </code>
         </program>
 
       </answer>

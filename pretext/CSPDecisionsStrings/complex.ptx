@@ -6,7 +6,7 @@
     Experience class to them:</p>
 
   <program xml:id="cspdecisionsstrings_complex1" interactive="activecode" language="python">
-    <input>
+    <code>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
 
@@ -16,18 +16,18 @@ if credits &gt; 0:
             print("You should sign up for a FYE class")
         if madeDecision == "No":
             print("You should sign up for a FYE class")
-        </input>
+        </code>
   </program>
   <p>The code as written works, but is awkward. We repeat statements (like the print message) and do a lot of nesting of
     if statements that make it tricky to parse the exact situation the messages will be displayed in.</p>
   <p>What we want to express is something more like this version that avoids duplication and makes the structure more
     simple.</p>
   <program language="python">
-    <input>
+    <code>
 if credits is between 0 and 45:
     if madeDecision is "N" or "No":
         print("You should sign up for a FYE class")
-</input>
+</code>
   </program>
 
   <p>To express ideas kind of like those while making decisions, we can use the keywords <c>and</c>, <c>or</c>, and <c>not</c>.
@@ -65,7 +65,7 @@ if credits is between 0 and 45:
     work.</p>
 
   <program xml:id="cspdecisionsstrings_complex2" interactive="activecode" language="python">
-    <input>
+    <code>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
 
@@ -74,7 +74,7 @@ if credits &gt; 0 and credits &lt; 45:
         print("You should sign up for a FYE class")
     else:
         print("You should NOT sign up for a FYE class")
-        </input>
+        </code>
   </program>
 </section>
 

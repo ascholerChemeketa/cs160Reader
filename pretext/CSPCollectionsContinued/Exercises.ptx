@@ -11,7 +11,7 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def printFirst(numberItems, list):
             # Your code here
 
@@ -20,7 +20,7 @@
         printFirst(2, values1)       # Should print 5 2
         print("------------------")
         printFirst(4, values1)       # Should print 5 2 3 8
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -48,7 +48,7 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def makeAcronym(list):
             #Your code here
         
@@ -60,7 +60,7 @@
         acronym2 = ["You", "Only", "Live", "Once"]
         makeAcronym(acronym2)
         print(acronym2)
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -88,7 +88,7 @@
         values first, and then worry about the other category once that is working.</p>
     </statement>
     <program xml:id="cspcollectionscontinued_exercises3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def fixNumbers(list):
             #Your code here to limit the list values to 0-255
 
@@ -99,7 +99,7 @@
         values2 = [127, 216, 280, 250, 50, 0, -3, 20]
         fixNumbers(values2)
         print(values2)
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
@@ -128,7 +128,7 @@
 
     </statement>
     <program xml:id="cspcollectionscontinued_exercises4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         def middleThird(list):
             # slice the list into three equal parts
             # return just the middle third
@@ -140,7 +140,7 @@
         print( middleThird(values2) )
         values3 = list(range(1, 31)) # Makes a list out of the range. Will have 1-30
         print( middleThird(values3) )
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 

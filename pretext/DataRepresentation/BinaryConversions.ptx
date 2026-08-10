@@ -75,7 +75,7 @@
     </table>
     <p>For example, I want to write 155 as a binary number. Here is what my thought process might look like:</p>
     <program language="none">
-      <input>
+      <code>
 Do I need 128? Yes, that is less than 155. 
                155 - 128 = 27: that is what we have left to make
 Do I need 64? No - I only have 27 left
@@ -89,7 +89,7 @@ Do I need 2? Yes.
              3 - 2 = 1 
 Do I need 1? Yes. 
              1 - 1 = 0 left - we are done!
-</input>
+</code>
     </program>
     <p>If we think of each column we used as representing a 1 and each column we didn't as a 0, we get this:</p>
     <table>

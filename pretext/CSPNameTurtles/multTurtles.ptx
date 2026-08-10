@@ -22,7 +22,7 @@
     </evaluation>
   </exercise>
   <program xml:id="cspnameturtles_multturtles2" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 zari = Turtle()
 zari.setheading(90)
@@ -32,14 +32,14 @@ zari.forward(100)
 zari.right(120)
 zari.forward(100)
 zari.right(120)
-        </input>
+        </code>
   </program>
   <p>This works because the turtle <c>zari</c> is keeping track of its state as we call different procedures. When we say <c>forward</c>,
     the actual direction <c>zari</c> moves depends on what turns it has done so far.</p>
   <p>If we introduce another turtle and use it to run some of the procedures, we will not get the same shape.</p>
 
   <program xml:id="cspnameturtles_multturtles3" interactive="activecode" language="python">
-    <input>
+    <code>
 from turtle import *
 zari = Turtle()
 chad = Turtle()                 # Make a second turtle named chad
@@ -53,7 +53,7 @@ zari.right(120)
 
 chad.forward(100)               # Use chad for the last two procedures
 chad.right(120)
-        </input>
+        </code>
   </program>
   <p>Every turtle object has its own state - it keeps track of its own position and color. So, when we created chad his
     position was not the same as zari's - all turtles start at the center of the screen (0, 0). Similarly,

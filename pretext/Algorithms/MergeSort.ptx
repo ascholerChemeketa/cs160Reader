@@ -12,7 +12,7 @@
   <p>One of the keys to Merge Sort is an algorithm for merging two sorted lists into one big sorted list. We won't worry
     about computer pseudocode for this process, but here is human pseudocode:</p>
   <program language="none">
-    <input>
+    <code>
 1   How to Merge listA and listB into sortedList
 1   repeat until listA is empty AND listB is empty
 2       if listA is empty
@@ -25,7 +25,7 @@
 9               move first item from listA to end of sortedList
 10          else
 11              move first item from listB to end of sortedList
-</input>
+</code>
   </program>
   <p>The first three minutes of the video below demonstrates the process:</p>
 

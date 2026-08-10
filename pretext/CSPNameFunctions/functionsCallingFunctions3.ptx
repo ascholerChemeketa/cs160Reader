@@ -31,7 +31,7 @@
 
   <program xml:id="cspnamefunctions_functionscallingfunctions31" interactive="activecode"
     language="python">
-    <input>
+    <code>
 def distance(x1, y1, x2, y2):
     xDifference = x2 - x1
     yDifference = y2 - y1
@@ -57,7 +57,7 @@ p3x = 3
 p3y = 2
 testArea = triangle_area(p1x, p1y, p2x, p2y, p3x, p3y)
 print(testArea)
-        </input>
+        </code>
   </program>
 
   <exercise label="cspnamefunctions_functionscallingfunctions32">

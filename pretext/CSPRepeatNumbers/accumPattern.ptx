@@ -6,7 +6,7 @@
     to combine several values and build up an answer.</p>
   <p>In the first program, we <em>accumulate</em> the different values that <c>value</c> holds into the variable <c>sum</c>:</p>
   <program language="python">
-    <input>
+    <code>
 sum = 0
 count = 0
 message = "Enter an integer. Enter 0 or less to stop."
@@ -17,11 +17,11 @@ while int(value) &gt; 0:
     value = input(message)
 
 print("The sum is: " + str(sum) + " the average is: " + str(sum / count))
-</input>
+</code>
   </program>
   <p>In the second program, we <em>accumulate</em> the different values that <c>remainder</c> holds into the variable <c>binary</c>:</p>
   <program language="python">
-    <input>
+    <code>
 number = 11
 binary = ""
 
@@ -31,7 +31,7 @@ while number != 0:
     number = number // 2
 
 print(binary)
-</input>
+</code>
   </program>
   <p>Here are the five steps in this pattern:</p>
   <p>
@@ -57,7 +57,7 @@ print(binary)
   <p>What is the sum of all the numbers between 1 and 100? We can answer that easily using our pattern.</p>
 
   <program xml:id="csprepeatnumbers_accumpattern1" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 sum = 0  # Start with nothing
 # STEP 2: LOOP THROUGH THE DATA
@@ -67,14 +67,14 @@ for number in range(1,101):
 
 # STEP 4: PROCESS RESULT
 print(sum)
-        </input>
+        </code>
   </program>
   <p>Step 3 does not have to use <c>+</c> to build up our answer. We could use <c>*</c> in the accumulator pattern to
     build up the value of <m>7!</m>. (<m>7!</m> means the value you get by calculating <m>7 \cdot 6 \cdot 5 \cdot 4
     \cdot 3 \cdot 2 \cdot 1</m>)</p>
 
   <program xml:id="csprepeatnumbers_accumpattern2" interactive="activecode" language="python">
-    <input>
+    <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 product = 1  # 0! is defined as 1... that is our starting point
 # STEP 2: LOOP THROUGH THE DATA
@@ -84,14 +84,14 @@ for number in range(7, 0, -1):
 
 # STEP 4: PROCESS RESULT
 print(product)
-        </input>
+        </code>
   </program>
   <p>One critical ingredient is that we do step 1 before the loop starts. If we try to initialize the
     accumulator in the loop we will just keep resetting it. Watch this failed attempt to add up the numbers from 1 to 5
     run line by line to see why:</p>
 
   <program xml:id="csprepeatnumbers_accumpattern3" interactive="codelens" language="python">
-    <input>
+    <code>
 # STEP 2: LOOP THROUGH THE DATA
 for number in range(6):
     # STEP 1: INITIALIZE ACCUMULATOR???
@@ -101,7 +101,7 @@ for number in range(6):
 
 # STEP 4: PROCESS RESULT
 print(sum)
-    </input>
+    </code>
   </program>
   <exercise label="csprepeatnumbers_accumpattern4" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>

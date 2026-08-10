@@ -14,22 +14,22 @@
             <p>The code sample below concatenates the strings <c>first</c> and <c>last</c> into <c>fullName</c>:</p>
 
         <program xml:id="cspnamestrings_assignnamestr1" interactive="activecode" language="python">
-            <input>
+            <code>
 first = "Jorge"
 last = "Garcia"
 fullName = first + " " + last
 print(fullName)
-        </input>
+        </code>
         </program>
         <p>Now try running this slightly different example.</p>
 
         <program xml:id="cspnamestrings_assignnamestr2" interactive="activecode" language="python">
-            <input>
+            <code>
 first = 'Jorge'
 last = "Garcia"
 fullName = first + last
 print(fullName)
-        </input>
+        </code>
         </program>
         <note>
             <p>Blank spaces are not automatically added when you append two strings. If you want a blank space in
@@ -39,12 +39,12 @@ print(fullName)
         <p>Try to run the example below. It should give you errors. Can you fix the errors?</p>
 
         <program xml:id="cspnamestrings_assignnamestr3" interactive="activecode" language="python">
-            <input>
+            <code>
 first = 'Jorge"
 last = 'Garcia"
 fullName = first " " last
 print(fullName)
-        </input>
+        </code>
         </program>
         <note>
             <p>A string is a sequence of characters enclosed in a pair of single, double, or triple quotes. If you start
@@ -69,12 +69,12 @@ print(fullName)
             something like <em><q>Anne</q></em>.</p>
 
         <program xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
-            <input>
+            <code>
 first = input("What is your first name?")
 last = input("What is your last name?")
 fullName = first + " " + last
 print("Your full name is " + fullName)
-        </input>
+        </code>
         </program>
     </subsection>
     <subsection xml:id="csp-name-strings_concatenating-strings-and-numbers">
@@ -85,12 +85,12 @@ print("Your full name is " + fullName)
             the number into a string first. The <c>str(num)</c> function will convert a number into a string.</p>
 
         <program xml:id="cspnamestrings_assignnamestr5" interactive="activecode" language="python">
-            <input>
+            <code>
 Fred = 5
 print("Fred")
 print(Fred)
 print("Fred" + " is " + str(Fred))
-        </input>
+        </code>
         </program>
         <note>
             <p>Notice how printing the string <c>"Fred"</c> prints something different than printing the value of the variable <c>Fred</c>.
@@ -101,14 +101,14 @@ print("Fred" + " is " + str(Fred))
         <p>We can update our driving example to print out the cost of the trip with just one <c>print</c> statement.</p>
 
         <program xml:id="cspnamestrings_assignnamestr6" interactive="activecode" language="python">
-            <input>
+            <code>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
 costPerGallon = 3.65
 costTrip = gallons * costPerGallon
 print("Cost to get from Chicago to Dallas: $" + str(costTrip))
-        </input>
+        </code>
         </program>
         <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that we form with
             concatenation, we can give it a list of values separated by commas. Using this version of print, we
@@ -118,14 +118,14 @@ print("Cost to get from Chicago to Dallas: $" + str(costTrip))
             problem as it means there will be a space between the $ and the cost.</p>
 
         <program xml:id="cspnamestrings_assignnamestr7" interactive="activecode" language="python">
-            <input>
+            <code>
 distance = 924.7
 mpg = 35.5
 gallons = distance / mpg
 costPerGallon = 3.65
 costTrip = gallons * costPerGallon
 print("Cost to get from Chicago to Dallas: $", costTrip)
-        </input>
+        </code>
         </program>
         <p>
             <term>Check your understanding</term>
@@ -136,10 +136,10 @@ print("Cost to get from Chicago to Dallas: $", costTrip)
 
                 <p>Given the following code segment, what will be printed?</p>
                 <program language="python">
-                    <input>
+                    <code>
 street = "125 Main Street"
 print("The address is " + "street")
-</input>
+</code>
                 </program>
 
             </statement>
@@ -181,11 +181,11 @@ print("The address is " + "street")
 
                 <p>What will be printed when the following executes?</p>
                 <program language="python">
-                    <input>
+                    <code>
 street = "125 Main Street"
 cityState = "Atlanta, GA"
 print(street + "," + cityState)
-</input>
+</code>
                 </program>
 
             </statement>

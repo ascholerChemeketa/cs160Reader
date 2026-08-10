@@ -35,9 +35,9 @@
 
     </statement>
     <program xml:id="cspdesigningprocedures_exercises1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 
@@ -48,9 +48,9 @@
 
     </statement>
     <program xml:id="cspdesigningprocedures_exercises2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 </exercises>

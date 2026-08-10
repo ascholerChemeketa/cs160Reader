@@ -6,7 +6,7 @@
     neighbor - <q>inserting</q> one card at a time into the correct location.</p>
   <p>Here is a <q>human algorithm</q> for using it to sort cards:</p>
   <program language="none">
-    <input>
+    <code>
 1   Get a hand of unsorted cards
 2   Set a marker for the sorted section after the first card of the hand
 3   Repeat steps 4 through 6 until the unsorted section is empty
@@ -14,7 +14,7 @@
 5       Swap this card to the left until it arrives at the correct sorted position
 6       Advance the marker to the right one card
 7   Stop
-</input>
+</code>
   </program>
   <p>To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion
     is built up. Cards keep swapping until they <q>find</q> their resting spot - they do not jump directly to it. Also,

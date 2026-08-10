@@ -10,13 +10,13 @@
     itself. Watch this codelens program that attempts to set each item in a list to 0 to see how it does not work:</p>
 
   <program xml:id="cspcollectionscontinued_rangeloop1" interactive="codelens" language="python">
-    <input>
+    <code>
 list = [5, 10, 15]
 for value in list:
     value = 0
 
 print(list)
-    </input>
+    </code>
   </program>
   <p><c>value</c> takes on the value of each item in <c>list</c>, but it is essentially working with a copy of the data. Changing <c>value</c>
     does nothing to the actual list!</p>
@@ -32,12 +32,12 @@ index[2] = 0 &lt;- third item</pre>
   <p>Here is the final version of the more complex loop.</p>
 
   <program xml:id="cspcollectionscontinued_rangeloop2" interactive="codelens" language="python">
-    <input>
+    <code>
 list = [5, 10, 15]
 for index in range( len(list) ):
     print("index is", index)
     print("item in list is", list[index])
-    </input>
+    </code>
   </program>
   <p>Notice that the variable from the <c>for</c> loop, <c>index</c>, is holding the <term>index</term> of the current item. To
     work with the <q>current item</q>, we need to index into the list using that index: <c>list[index]</c> will give us the
@@ -50,13 +50,13 @@ for index in range( len(list) ):
     it back to the same location in the list <c>names[i] = …</c>:</p>
 
   <program xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
-    <input>
+    <code>
 names = ["vu", "reggie", "dana", "serena"]
 for i in range( len(names) ):
     names[i] = names[i].capitalize()
 
 print(names)
-    </input>
+    </code>
   </program>
 
   <exercise label="cspcollectionscontinued_rangeloop5" numbered="yes" adaptive="yes" indentation="hide" language="python">
@@ -106,13 +106,13 @@ print(names)
 
     </statement>
     <program xml:id="cspcollectionscontinued_rangeloop4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
         numbers = [3, 5, 7, 12, 3, 5, 0, 5, 8, 9, 10, 8, 7, 7, 2, 6]
 
         # Your code here
         # Loop through numbers using an index-based loop 
         #  Change each to be double its old value
-      </input>
+      </code>
       <tests>
         from unittest.gui import TestCaseGui
 
