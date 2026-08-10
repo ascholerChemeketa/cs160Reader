@@ -283,7 +283,7 @@
         </exercise>
         <warning>
             <p>Beginners sometimes confuse <q>meaningful to the human readers</q> with <q>meaningful to the
-                computer</q>. So they'll wrongly think that because they’ve called some variable <c>average</c>
+                computer</q>. So they'll wrongly think that because they've called some variable <c>average</c>
                 or <c>pi</c>, it will somehow automagically calculate an average, or automagically associate the variable <c>pi</c>
                 with the value 3.14159.</p>
             <p>That is not the case. The computer doesn't attach semantic meaning to your variable names. The

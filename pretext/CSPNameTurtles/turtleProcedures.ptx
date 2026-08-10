@@ -114,7 +114,7 @@
         <cell> color </cell>
         <cell> colorname </cell>
         <cell>
-          <p>Sets the color for drawing. Use <term>strings</term> - like 'red', 'black’,
+          <p>Sets the color for drawing. Use <term>strings</term> - like 'red', 'black',
             etc<ellipsis/> This page has a <url href="https://trinket.io/docs/colors"
               visual="https://trinket.io/docs/colors">table of colors</url> Make sure to put quotation marks around the
             name of the color!</p>

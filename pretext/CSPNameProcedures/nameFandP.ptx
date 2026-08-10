@@ -1,7 +1,7 @@
 <section
   xml:id="csp-name-procedures_stand-alone-procedures-and-functions">
   <title>Stand Alone Procedures and Functions</title>
-  <p>We’ve already seen how we can use names to represent numbers (both integers like <c>3</c> and <c>-325</c> and
+  <p>We've already seen how we can use names to represent numbers (both integers like <c>3</c> and <c>-325</c> and
     decimal numbers like <c>2.4</c> and <c>-322.9392</c>), strings (like <c>"Hi There"</c>), turtles, and images. When we do calculations
     using the names, the computer will look up the value for each name, and then use the value in the calculation.</p>
 
