@@ -8,19 +8,17 @@
     specialized for running personal computers, others for smartphones, and others for more specialized hardware. How
     many of the operating system logos do you recognize in the image below?</p>
   <figure>
-    <image source="OperatingSystems/Images/operating-system-logos.jpg" width="50%" />
-    <caption>
-      Popular operating systems logos. Clockwise from top-left: Macintosh, Linux, Windows, FreeBSD, Android, iOS
-    </caption>
+    <image source="OperatingSystems/Images/operating-system-logos.jpg"
+           width="50%"/>
+    <caption> Popular operating systems logos. Clockwise from top-left: Macintosh, Linux, Windows, FreeBSD, Android, iOS </caption>
   </figure>
   <sidebar>
     <title>*nix</title>
     <p>UNIX is an operating system developed in the 1970s at AT&amp;T. It became the most common operating system for
       computers in academia and industry. To this day, UNIX-based computers remain popular in environments where
       developers want unfettered control over how the operating system works.</p>
-    <p>There are many <q>flavors</q> of UNIX and operating systems based on UNIX (sometimes referred to as
-      <q>*nixes</q>). Apple’s OSX is related to a UNIX-based operating system. Linux is a free Unix-like
-      operating system.</p>
+    <p>There are many <q>flavors</q> of UNIX and operating systems based on UNIX (sometimes referred to as <q>*nixes</q>).
+      Apple’s OSX is related to a UNIX-based operating system. Linux is a free Unix-like operating system.</p>
   </sidebar>
   <p>Operating systems that solve similar problems on similar hardware tend to themselves be similar. Windows, OSX, and
     Linux desktops all provide similar ways to view files, and interact with programs because they are used on personal
@@ -61,12 +59,60 @@
     <p>Where did it come from? Why is it so popular? This video tells the quick version of the story of Linux and free,
       open-source software:</p>
 
-    <video xml:id="yt_5ocq6_3-nEw" youtube="5ocq6_3-nEw" width="100%" />
+    <video xml:id="yt_5ocq6_3-nEw"
+           youtube="5ocq6_3-nEw"
+           width="100%"/>
     <p>
       <url href="https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e"
-        visual="https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e">Closed Caption
-        Version</url>
+           visual="https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e">Closed
+        Caption Version</url>
     </p>
   </note>
+  <exercise label="operating-systems_operating-systems-varieties-ex1">
+    <statement>
+      <p>Match each operating system type to the constraint it is designed to address.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Embedded operating system</premise>
+        <response>Runs a particular piece of relatively simple hardware efficiently</response>
+      </match>
+      <match>
+        <premise>Real-time operating system</premise>
+        <response>Processes incoming events within a fixed amount of time</response>
+      </match>
+      <match>
+        <premise>Batch operating system</premise>
+        <response>Runs programs from a queue of jobs with little user interaction</response>
+      </match>
+    </cardsort>
+  </exercise>
+  <exercise label="operating-systems_operating-systems-varieties-ex2">
+    <statement>
+      <p>Which operating system type is most appropriate for flight controls that must react promptly to a pilot's
+        input?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Real-time operating system</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Batch operating system</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Desktop operating system</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>File system</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-
