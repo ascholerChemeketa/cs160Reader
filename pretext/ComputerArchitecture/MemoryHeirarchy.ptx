@@ -8,9 +8,12 @@
   <figure>
     <caption>
       <url name="Image via teachbook.com.au"
-        refuri="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image via teachbook.com.au</url>
+           refuri="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image
+        via teachbook.com.au</url>
     </caption>
-    <image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg" width="100%" alt="Memory Hierarchy" />
+    <image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg"
+           width="100%"
+           alt="Memory Hierarchy"/>
   </figure>
 
   <subsection xml:id="memory-hierarchy-registers">
@@ -32,17 +35,19 @@
 
   <subsection xml:id="memory-hierarchy-main">
     <title>RAM - Main Memory (Physical Memory)</title>
-    <p>The <q>normal</q> main memory that we saw on the previous page. It generally runs significantly slower
-      than the CPU - oftentimes hundreds of times slower. Thus each time the CPU has to access the main memory, it can
-      represent a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off,
-      it forgets the information it is storing.</p>
+    <p>The <q>normal</q> main memory that we saw on the previous page. It generally runs significantly slower than the
+      CPU - oftentimes hundreds of times slower. Thus each time the CPU has to access the main memory, it can represent
+      a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off, it forgets
+      the information it is storing.</p>
     <figure>
-      <caption>A stick of RAM that might go in a laptop computer.<url
-          name="Image via Wikipedia Commons"
-          refuri="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image via
-        Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
-          refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</url></caption>
-      <image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg" width="50%" alt="RAM" />
+      <caption>A stick of RAM that might go in a laptop computer.<url name="Image via Wikipedia Commons"
+             refuri="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image
+        via Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
+             refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+        Commons CC BY SA 3.0</url></caption>
+      <image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg"
+             width="50%"
+             alt="RAM"/>
 
     </figure>
 
@@ -51,23 +56,27 @@
   <subsection xml:id="memory-hierarchy-secondary">
     <title>Secondary Memory</title>
     <p>Because main memory is generally built with circuits that need power, it cannot store information while the
-      computer is off. Secondary memory is the general term for things like solid-state drives, spinning magnetic hard drives, CD drives,
-      flash drives, etc<ellipsis/> that can store information long-term. (Bottom two levels of the pyramid above). Not only
-      can they retain information without power, but they also generally provide better density - you can store more
-      information in less space and with less cost. Unfortunately, these technologies are all slower than main memory.
-      Information stored in secondary memory must be loaded into main memory (RAM) before the processor can access it -
-      when you wait for a program to start up, a big part of what you are waiting on is the needed information to be
-      transferred from a slower hard drive to the fast RAM that the processor can talk to.</p>
+      computer is off. Secondary memory is the general term for things like solid-state drives, spinning magnetic hard
+      drives, CD drives, flash drives, etc<ellipsis/> that can store information long-term. (Bottom two levels of the
+      pyramid above). Not only can they retain information without power, but they also generally provide better density
+      - you can store more information in less space and with less cost. Unfortunately, these technologies are all
+      slower than main memory. Information stored in secondary memory must be loaded into main memory (RAM) before the
+      processor can access it - when you wait for a program to start up, a big part of what you are waiting on is the
+      needed information to be transferred from a slower hard drive to the fast RAM that the processor can talk to.</p>
   </subsection>
 
   <subsection xml:id="memory-hierarchy-relative-speed">
     <title>Relative Speed</title>
 
-    <p>There is a famous (in computer science) dataset called <url href="https://gist.github.com/jboner/2841832">latency numbers every programmer should know</url>. Part of it is reproduced below. It is not something you actually need to memorize, especially since the exact numbers can vary based on the specific hardware and context, but it is useful to have a general understanding of the relative performance differences of the different levels of memory.</p>
+    <p>There is a famous (in computer science) dataset called <url href="https://gist.github.com/jboner/2841832">latency
+      numbers every programmer should know</url>. Part of it is reproduced below. It is not something you actually need
+      to memorize, especially since the exact numbers can vary based on the specific hardware and context, but it is
+      useful to have a general understanding of the relative performance differences of the different levels of memory.</p>
 
     <table xml:id="memory-hierarchy-relative-speed-data">
       <title>Memory Latency</title>
-      <caption>These numbers are approximate but realistic. The CPU cycle time is assumed to be 0.25 nanoseconds (corresponding to a 4 GHz CPU).</caption>
+      <caption>These numbers are approximate but realistic. The CPU cycle time is assumed to be 0.25 nanoseconds
+        (corresponding to a 4 GHz CPU).</caption>
       <tabular cols="l r r">
         <row header="yes">
           <cell>Event</cell>
@@ -116,10 +125,11 @@
         </row>
       </tabular>
     </table>
-    <p>
-      Notice that main memory is hundreds of times slower than the CPU! That is the reason why cache and memory are used - they provide ways to store information in a way that the CPU can access without having to wait that long.
-    </p>
-    <p>Main memory in turn is dramatically faster than solid-state drives (SSDs) and spinning hard drives. That is why we can't just use the more permanent storage options as the primary storage for the CPU. Every time it needed to access a new piece of data it would have to wait millions of cycles.</p>
+    <p> Notice that main memory is hundreds of times slower than the CPU! That is the reason why cache and memory are
+      used - they provide ways to store information in a way that the CPU can access without having to wait that long. </p>
+    <p>Main memory in turn is dramatically faster than solid-state drives (SSDs) and spinning hard drives. That is why
+      we can't just use the more permanent storage options as the primary storage for the CPU. Every time it needed to
+      access a new piece of data it would have to wait millions of cycles.</p>
   </subsection>
 
   <exercise label="computer-architecture_memory-hierarchy-ex1">
@@ -148,8 +158,8 @@
 
   <exercise label="computer-architecture_memory-hierarchy-ex2">
     <statement>
-      <p>Based on <xref ref="memory-hierarchy-relative-speed-data"/>, how many times slower is main memory than the CPU?
-        <fillin mode="number" answer="400"/>
+      <p>Based on <xref ref="memory-hierarchy-relative-speed-data"/>, how many times slower is main memory than the CPU? <fillin mode="number"
+                answer="400"/>
       </p>
     </statement>
     <evaluation>
@@ -169,8 +179,9 @@
 
   <exercise label="computer-architecture_memory-hierarchy-ex3">
     <statement>
-      <p>Based on <xref ref="memory-hierarchy-relative-speed-data"/>, how many times faster is accessing a piece of data in main memory than seeking it on a spinning hard drive?
-        <fillin mode="number" answer="100000"/>
+      <p>Based on <xref ref="memory-hierarchy-relative-speed-data"/>, how many times faster is accessing a piece of data
+        in main memory than seeking it on a spinning hard drive? <fillin mode="number"
+                answer="100000"/>
       </p>
     </statement>
     <evaluation>

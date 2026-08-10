@@ -1,12 +1,14 @@
 <section xml:id="computer-architecture_the-processor">
   <title>The Processor</title>
   <p>This basic model of a computer as a processing unit that takes some input, communicates with a memory, and produces
-    output, is known as the <term>von Neumann architecture</term> after the early computer scientist <xref
-      ref="subsec-the-first-generation_stored-program" text="custom">John von Neumann</xref>. In this architecture, the processor itself consists of
-    multiple specialized parts:</p>
+    output, is known as the <term>von Neumann architecture</term> after the early computer scientist <xref ref="subsec-the-first-generation_stored-program"
+          text="custom">John
+    von Neumann</xref>. In this architecture, the processor itself consists of multiple specialized parts:</p>
   <figure>
     <caption>Important logical components of a computer</caption>
-    <image source="ComputerArchitecture/Images/cpustructuremap.gif" width="50%" alt="CPU Structure" />
+    <image source="ComputerArchitecture/Images/cpustructuremap.gif"
+           width="50%"
+           alt="CPU Structure"/>
   </figure>
   <p>
     <ul>
@@ -31,10 +33,10 @@
   <p>Modern computers add many layers of complexity to this basic model. One such modification seen in the picture above
     is multiple busses - in the diagram on the previous page and the original von Neumann architecture, there is only
     one system bus that can carry messages from one component to another. This means that the processor and memory would
-    have to take turns talking: <q>CPU: Please send me the data at address 1 in memory</q>; <q>Memory: OK,
-    the data at 00001 is 01010111.</q>; <q>CPU: Please send me the data at address 2 in memory</q><ellipsis/>
-    Having multiple busses avoids this bottleneck by allowing the CPU to communicate the next address it wants at the same
-    time memory sends data back to the CPU.</p>
+    have to take turns talking: <q>CPU: Please send me the data at address 1 in memory</q>; <q>Memory: OK, the data at
+    00001 is 01010111.</q>; <q>CPU: Please send me the data at address 2 in memory</q><ellipsis/> Having multiple busses
+    avoids this bottleneck by allowing the CPU to communicate the next address it wants at the same time memory sends
+    data back to the CPU.</p>
 
   <exercise label="computer-architecture_the-processor-ex1">
     <statement>
@@ -60,6 +62,6 @@
     </cardsort>
   </exercise>
 
-    <remark> Materials on this page adapted with permission from <url
-      href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
+  <remark> Materials on this page adapted with permission from <url href="http://www.eastaughs.fsnet.co.uk/">Microprocessor
+    Tutorial by Matthew Eastaugh</url></remark>
 </section>

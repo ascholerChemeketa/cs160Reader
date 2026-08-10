@@ -7,17 +7,19 @@
       <p>Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power
         supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse </p>
       <p>
-        <url
-          name="Image via Wikipedia Commons"
-          refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
+        <url name="Image via Wikipedia Commons"
+             refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
         via Wikipedia Commons</url> - <url name="Creative Commons CC BY 2.5"
-          refuri="http://creativecommons.org/licenses/by/2.5">Creative Commons CC BY 2.5</url></p>
+             refuri="http://creativecommons.org/licenses/by/2.5">Creative
+        Commons CC BY 2.5</url></p>
     </caption>
-    <image source="ComputerArchitecture/Images/Personal_computer.png" width="60%" alt="A personal computer" />
+    <image source="ComputerArchitecture/Images/Personal_computer.png"
+           width="60%"
+           alt="A personal computer"/>
   </figure>
   <p>Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for
-    expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is
-    just a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
+    expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is just
+    a computer that can happen to make phone calls) does not come with an optical disk drive.</p>
 
   <p>But there are basic features that just about every modern computer does share. There is a processor, sometimes
     called the <term>CPU</term> (Central Processing Unit), which is responsible for running programs. There is a memory
@@ -27,12 +29,14 @@
     information into the computer and printers and monitors that display the results of calculations. Finally, these
     devices need to talk to each other - they do so over electrical circuits called <term>busses</term>.</p>
   <figure>
-    <caption><url
-        name="Image via Wikipedia Commons"
-        refuri="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image
+    <caption><url name="Image via Wikipedia Commons"
+           refuri="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image
       via Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
-        refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons CC BY SA 3.0</url></caption>
-    <image source="ComputerArchitecture/Images/vonNeumannData.png" width="80%" alt="Data Flow in a Computer" />
+           refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+      Commons CC BY SA 3.0</url></caption>
+    <image source="ComputerArchitecture/Images/vonNeumannData.png"
+           width="80%"
+           alt="Data Flow in a Computer"/>
   </figure>
   <p>This description leaves out many important parts of a computer - from relatively simple things like the cord or
     battery that supplies electricity, to complex devices like the storage (hard drives, DVD drives, flash drives) that
@@ -42,18 +46,27 @@
     <statement>
       <p>Which of the following are part of the basic functionality shared by modern computers? Select all that apply.</p>
     </statement>
-    <choices randomize="yes" multiple-correct="yes">
+    <choices randomize="yes"
+             multiple-correct="yes">
       <choice correct="yes">
-        <statement><p>A processor that runs programs</p></statement>
+        <statement>
+          <p>A processor that runs programs</p>
+        </statement>
       </choice>
       <choice correct="yes">
-        <statement><p>Main memory that stores active programs and data</p></statement>
+        <statement>
+          <p>Main memory that stores active programs and data</p>
+        </statement>
       </choice>
       <choice correct="yes">
-        <statement><p>Input and output devices that exchange information with the computer</p></statement>
+        <statement>
+          <p>Input and output devices that exchange information with the computer</p>
+        </statement>
       </choice>
       <choice>
-        <statement><p>An optical disc drive</p></statement>
+        <statement>
+          <p>An optical disc drive</p>
+        </statement>
       </choice>
     </choices>
   </exercise>
@@ -64,19 +77,27 @@
     </statement>
     <cardsort>
       <match>
-        <premise><p>Runs programs</p></premise>
+        <premise>
+          <p>Runs programs</p>
+        </premise>
         <response>Processor</response>
       </match>
       <match>
-        <premise><p>Stores the information and programs currently being used</p></premise>
+        <premise>
+          <p>Stores the information and programs currently being used</p>
+        </premise>
         <response>Main memory</response>
       </match>
       <match>
-        <premise><p>Carries messages between computer components</p></premise>
+        <premise>
+          <p>Carries messages between computer components</p>
+        </premise>
         <response>Bus</response>
       </match>
       <match>
-        <premise><p>Gets information into the computer or presents the results of calculations</p></premise>
+        <premise>
+          <p>Gets information into the computer or presents the results of calculations</p>
+        </premise>
         <response>Input/output device</response>
       </match>
     </cardsort>

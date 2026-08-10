@@ -3,7 +3,9 @@
 
   <subsection xml:id="computer-architecture-alu">
     <title>The ALU</title>
-    <image source="ComputerArchitecture/Images/cpustructuremap-alu.gif" width="35%" alt="ALU" />
+    <image source="ComputerArchitecture/Images/cpustructuremap-alu.gif"
+           width="35%"
+           alt="ALU"/>
     <p>The arithmetic logic unit is a collection of circuits that can do math and logic. Early processors could only do
       very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic
       (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via
@@ -16,34 +18,39 @@
 
   <subsection xml:id="computer-architecture-control-unit">
     <title>The Control Unit</title>
-    <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif" width="35%" alt="Control Unit" />
+    <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif"
+           width="35%"
+           alt="Control Unit"/>
 
-    <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the
-      operation of the rest of the processor. It does this by issuing control signals to the other areas of the
-      processor, instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control
-      unit can be broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
+    <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the operation of
+      the rest of the processor. It does this by issuing control signals to the other areas of the processor,
+      instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control unit can be
+      broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
 
-  <subsubsection xml:id="computer-architecture-decoder">
-    <title>The Decoder</title>
-    <p>Like everything else the computer works with, instructions are represented as sequences of 0s and 1s. The decoder
-      is the logic that examines those bits and determines what actions must be taken to execute the instruction they
-      represent. The control unit uses this information to send the appropriate series of messages to the ALU, memory,
-      and registers.</p>
-  </subsubsection>
+    <subsubsection xml:id="computer-architecture-decoder">
+      <title>The Decoder</title>
+      <p>Like everything else the computer works with, instructions are represented as sequences of 0s and 1s. The
+        decoder is the logic that examines those bits and determines what actions must be taken to execute the
+        instruction they represent. The control unit uses this information to send the appropriate series of messages to
+        the ALU, memory, and registers.</p>
+    </subsubsection>
 
-  <subsubsection xml:id="computer-architecture-clock">
-    <title>The Clock (or Timer)</title>
-    <p>The timer or clock ensures that all processes and instructions are carried out and completed at the right time.
-      If one component of the computer tries to read a signal before another component has sent the message it might see
-      an older message or complete gibberish. Pulses are sent to the other areas of the CPU at regular intervals and
-      actions only occur when a pulse is detected.</p>
-    <p>Clock speeds in a modern computer are typically measured in gigahertz (GHz), which represents billions of cycles per second. A CPU that operates at 4 GHz completes four billion operations per second.</p>
-  </subsubsection>
-</subsection>
+    <subsubsection xml:id="computer-architecture-clock">
+      <title>The Clock (or Timer)</title>
+      <p>The timer or clock ensures that all processes and instructions are carried out and completed at the right time.
+        If one component of the computer tries to read a signal before another component has sent the message it might
+        see an older message or complete gibberish. Pulses are sent to the other areas of the CPU at regular intervals
+        and actions only occur when a pulse is detected.</p>
+      <p>Clock speeds in a modern computer are typically measured in gigahertz (GHz), which represents billions of
+        cycles per second. A CPU that operates at 4 GHz completes four billion operations per second.</p>
+    </subsubsection>
+  </subsection>
 
   <subsection xml:id="computer-architecture-registers">
     <title>The Registers</title>
-    <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif" width="35%" alt="Registers" />
+    <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif"
+           width="35%"
+           alt="Registers"/>
     <p>A register is a memory location within the CPU itself, designed to be quickly accessed for purposes of fast data
       retrieval. These contain instructions, data, and other values that are needed by the ALU and control unit. On the
       timescale processors work at (billionths of a second) the trip to main memory can be too slow to wait for during
@@ -59,19 +66,18 @@
     <subsubsection xml:id="computer-architecture-pc">
       <title>Program Counter (PC)</title>
       <p>This register is used to hold the memory address of the instruction being executed. This is how the CPU keeps
-        track of where it is in the program (<q>I am on instruction 010101</q>). Normally, each time an
-        instruction is executed, the PC is increased by one to move to the next instruction. Sometimes, however, an
-        instruction will modify the PC to make the program jump to a completely different instruction.</p>
+        track of where it is in the program (<q>I am on instruction 010101</q>). Normally, each time an instruction is
+        executed, the PC is increased by one to move to the next instruction. Sometimes, however, an instruction will
+        modify the PC to make the program jump to a completely different instruction.</p>
     </subsubsection>
 
     <subsubsection xml:id="computer-architecture-acc">
       <title>General Purpose Registers</title>
       <p>A simple computer might have one Accumulator (ACC) that is used to hold the result of operations performed by
-        the ALU. (We will see an example of such a machine in <xref
-          ref="programming-languages_the-little-computer" />). Modern processors have anywhere from a few
-        to dozens of these registers for storing the results of work directly in the CPU. The names of these
-        general-purpose registers will differ from one machine to another, but no matter what they are called, they
-        simply are very fast, very temporary storage for the CPU.</p>
+        the ALU. (We will see an example of such a machine in <xref ref="programming-languages_the-little-computer"/>).
+        Modern processors have anywhere from a few to dozens of these registers for storing the results of work directly
+        in the CPU. The names of these general-purpose registers will differ from one machine to another, but no matter
+        what they are called, they simply are very fast, very temporary storage for the CPU.</p>
     </subsubsection>
   </subsection>
 
@@ -79,18 +85,27 @@
     <statement>
       <p>Which statements about the arithmetic logic unit are true? Select all that apply.</p>
     </statement>
-    <choices randomize="yes" multiple-correct="yes">
+    <choices randomize="yes"
+             multiple-correct="yes">
       <choice correct="yes">
-        <statement><p>It performs mathematical and Boolean logic operations.</p></statement>
+        <statement>
+          <p>It performs mathematical and Boolean logic operations.</p>
+        </statement>
       </choice>
       <choice correct="yes">
-        <statement><p>A simple ALU may perform multiplication through repeated addition.</p></statement>
+        <statement>
+          <p>A simple ALU may perform multiplication through repeated addition.</p>
+        </statement>
       </choice>
       <choice correct="yes">
-        <statement><p>A modern processor may have several specialized ALUs.</p></statement>
+        <statement>
+          <p>A modern processor may have several specialized ALUs.</p>
+        </statement>
       </choice>
       <choice>
-        <statement><p>It keeps the processor synchronized by sending regular timing pulses.</p></statement>
+        <statement>
+          <p>It keeps the processor synchronized by sending regular timing pulses.</p>
+        </statement>
       </choice>
     </choices>
   </exercise>
@@ -123,6 +138,6 @@
     </cardsort>
   </exercise>
 
-  <remark> Materials on this page adapted with permission from <url
-      href="http://www.eastaughs.fsnet.co.uk/">Microprocessor Tutorial by Matthew Eastaugh</url></remark>
+  <remark> Materials on this page adapted with permission from <url href="http://www.eastaughs.fsnet.co.uk/">Microprocessor
+    Tutorial by Matthew Eastaugh</url></remark>
 </section>
