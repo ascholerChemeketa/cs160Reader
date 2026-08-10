@@ -2,9 +2,9 @@
   <title>Binary Search</title>
   <p>If a list is sorted, we can describe a more efficient algorithm than linear search. For a sorted list, any value
     you check gives you some information about the relative location of the thing you are looking for. Imagine you pick
-    up a phone book looking for “Davis, Sue”. You flip to the middle somewhere and see “Jones” - oops you are too far
-    in, so you jump way earlier in the book. Now you see “Evans” - still too far back - so you jump earlier again. Then
-    you see “Clark” - that means you need to jump back partway to where “Evans” was…</p>
+    up a phone book looking for <q>Davis, Sue</q>. You flip to the middle somewhere and see <q>Jones</q> - oops you are too far
+    in, so you jump way earlier in the book. Now you see <q>Evans</q> - still too far back - so you jump earlier again. Then
+    you see <q>Clark</q> - that means you need to jump back partway to where <q>Evans</q> was…</p>
   <p>This is essentially the strategy of <term>binary search</term>. To do a binary search for a particular value (<c>key</c>)
     in a list, check the middle item in the list. If it is not the key and the key is smaller than the middle item, the
     target must be in the first half of the list. If the target is larger than the middle item, the target must be in
@@ -13,7 +13,7 @@
     above the middle. If the value you are looking for is bigger, throw out everything from the middle value down. Then
     repeat the process but only using the values you have not thrown out. The splitting process continues until the
     target is located or there is nothing left in the list.</p>
-  <p>Try watching the algorithm run on various values. Note that items that have turned white have been “thrown out” and
+  <p>Try watching the algorithm run on various values. Note that items that have turned white have been <q>thrown out</q> and
     no longer need to be worried about. Gray items show the range of possible locations that still need to be checked:</p>
   <p>
     <raw format="html"
@@ -191,7 +191,7 @@ Value to search for (key): <input type="text" value="39" id="key" style="text-al
   <p>Below are the main steps of the binary search algorithm, expressed in pseudocode. To do a binary search you need to
     keep track of the <c>lowIndex</c>, the lowest possible location the number could be at, and the <c>highIndex</c>, the highest
     possible location. Each time at each step of the loop you calculate the middle between those two locations and check
-    that <c>middleIndex</c>. If you do not find what you are looking for, you change either the low or high boundary to “throw out”
+    that <c>middleIndex</c>. If you do not find what you are looking for, you change either the low or high boundary to <q>throw out</q>
     half of the remaining items. Try running the algorithm by hand and make sure you can predict the values that the
     animation above shows.</p>
   <program language="none">

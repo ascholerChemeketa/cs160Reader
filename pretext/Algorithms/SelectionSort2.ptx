@@ -6,7 +6,7 @@
   <p>In the code below, <c>i</c> is equivalent to the black line - it marks the start of the unsorted portion of the
     list. <c>j</c> is the right hand - it stores the location we are at as we scan for the next smallest card. Finally, <c>currentMinIndex</c>
     is the left hand - it remembers where the smallest value we have seen is as we sweep through the unsorted part of
-    the list. Also, recall that <c>list[j]</c> means “the value in the list at location j”.</p>
+    the list. Also, recall that <c>list[j]</c> means <q>the value in the list at location j</q>.</p>
   <p>Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
   <program language="none">
     <input>
@@ -32,8 +32,8 @@
 19      i = i + 1                           move start of unsorted one to right
 </input>
   </program>
-  <p>The animation below allows you to step through a selection sort. Each step either advances the “right hand” or does
-    a swap and then advances the “marker”. Step through some sorts and refer to the algorithm above until you see how <c>i</c>
+  <p>The animation below allows you to step through a selection sort. Each step either advances the <q>right hand</q> or does
+    a swap and then advances the <q>marker</q>. Step through some sorts and refer to the algorithm above until you see how <c>i</c>
     , <c>j</c>, and <c>currentMin</c> are being used to keep track of locations in the list and can predict the outcome of steps
     before clicking the button.</p>
   <p>

@@ -25,9 +25,9 @@
 </input>
   </program>
   <p>Note that <c>location</c> here is a variable that stores the index we are currently looking at in the list. <c>list[location]</c> is the
-    standard way of saying “the value in <c>list</c> at <c>location</c>”.</p>
+    standard way of saying <q>the value in <c>list</c> at <c>location</c></q>.</p>
   <p>You can try doing a linear search below. Type the number you wish to search for in the text box, then step through
-    the search. Each “Step” in the animation takes you through the repeat loop one time. Try following the algorithm
+    the search. Each <q>Step</q> in the animation takes you through the repeat loop one time. Try following the algorithm
     above step by step as you watch the animation.</p>
   <p>
 
