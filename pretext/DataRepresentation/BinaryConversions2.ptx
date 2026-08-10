@@ -99,7 +99,7 @@ print("The final value of answer is", answer)
     <exercise label="datarepresentation_binaryconversions22">
       <statement>
 
-        <p>If you use the division method to convert 49 to binary, how many times do you have to do step 2?</p>
+        <p>If you use the division method to convert decimal 49 to binary, how many times do you have to do step 2 (divide the number by 2)?</p>
 
       </statement>
       <choices>
@@ -140,8 +140,61 @@ print("The final value of answer is", answer)
           </feedback>
         </choice>
       </choices>
+    </exercise>
 
+
+    <exercise label="datarepresentation_binaryconversions_ex2">
+      <statement>
+
+        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
+
+        <p>What is <m>{2}_{11010}</m> divided by 2 (in binary)? <fillin mode="number" answer="1101"/></p>
+
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <numcmp use-answer="yes"/>
+          </test>
+          <test>
+            <strcmp>[^01]</strcmp>
+            <feedback>
+              <p>You must enter a valid binary number (only 0s and 1s).</p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+
+      <hint>
+        <p><m>{2}_{11010}</m> is 26 in decimal. You can check your answer by making sure it equals 13 in decimal. But you shouldn't have to do math to figure out the answer.</p>
+      </hint>
+    </exercise>
+
+    <exercise label="datarepresentation_binaryconversions_ex3">
+      <statement>
+
+        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
+
+        <p>What is <m>{2}_{11}</m> multiplied by 8 (in binary)? <fillin mode="number" answer="11000"/></p>
+
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <numcmp use-answer="yes"/>
+          </test>
+          <test>
+            <strcmp>[^01]</strcmp>
+            <feedback>
+              <p>You must enter a valid binary number (only 0s and 1s).</p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+
+      <hint>
+        <p>Each shift to the left multiplies the number by 2. How many shifts are needed to multiply by 8?</p>
+      </hint>
     </exercise>
   </subsection>
 </section>
-
