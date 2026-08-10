@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adding Numbers with Logic interactive 1</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+            <script src="simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir.css" />
+            <script src="simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir-basicset.css" />
+            <script src="simcir/simcir-library.js"></script>
+            <script src="simcir/misc/simcir-altfulladder.js"></script>
+            <div class="simcir">{"width":580,"height":250,"showToolbox":false,"devices":[{"type":"DC","id":"dev0","x":120,"y":120,"label":"Power"},{"type":"Toggle","id":"dev1","x":200,"y":80,"label":"InputA","state":{"on":false}},{"type":"XOR","id":"dev2","x":280,"y":136,"label":"XOR"},{"type":"AND","id":"dev3","x":280,"y":88,"label":"AND"},{"type":"LED","id":"dev4","x":432,"y":48,"label":"1s bit"},{"type":"LED","id":"dev5","x":368,"y":48,"label":"2s bit"},{"type":"Toggle","id":"dev6","x":200,"y":144,"label":"InputB","state":{"on":false}}],"connectors":[{"from":"dev1.in0","to":"dev0.out0"},{"from":"dev2.in0","to":"dev1.out0"},{"from":"dev2.in1","to":"dev6.out0"},{"from":"dev3.in0","to":"dev1.out0"},{"from":"dev3.in1","to":"dev6.out0"},{"from":"dev4.in0","to":"dev2.out0"},{"from":"dev5.in0","to":"dev3.out0"},{"from":"dev6.in0","to":"dev0.out0"}    ]}</div>
+</body>
+</html>

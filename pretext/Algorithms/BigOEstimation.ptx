@@ -28,14 +28,20 @@
     </ul>
   </p>
   <note>
-    <p>You can use the <url href="http://www.wolframalpha.com/"
-           visual="http://www.wolframalpha.com/">Wolfram Alpha
-      website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
-    <raw format="html"
-         xml:space="preserve">
-        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
-        <button type="submit">Submit</button></form></div>
-      </raw>
+    <p>You can use Wolfram Alpha or Google to calculate log base 2 by typing something like <q>log2(1024)</q> as the search query. Try it with these links:
+      <ul>
+        <li>
+          <p>
+            <url href="http://www.wolframalpha.com/input/?i=log2(1024)" visual="http://www.wolframalpha.com/input/?i=log2(1024)">Wolfram Alpha : log2(1024)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://www.google.com/search?q=log2(1024)" visual="https://www.google.com/search?q=log2(1024)">Google : log2(1024)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
   </note>
   <example>
     <title>Sample problem 1</title>

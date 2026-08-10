@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circuit Playground interactive 1</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+            <script src="simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir.css" />
+            <script src="simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir-basicset.css" />
+            <script src="simcir/simcir-library.js"></script>
+            <script src="simcir/misc/simcir-altfulladder.js"></script>
+            <div class="simcir">{    "width":580,    "height":500,    "showToolbox":true,    "toolbox":[    {"type":"DC","label":"Power"},    {"type":"LED"},    {"type":"Toggle"},    {"type":"NOT"},    {"type":"AND"},    {"type":"OR"},    {"type":"XOR"},    {"type":"Joint"}    ],    "devices":[    {"type":"Toggle","id":"dev0","x":120,"y":96,"label":"Input1","state":{"on":false}},    {"type":"DC","id":"dev1","x":40,"y":160,"label":"Power"},    {"type":"Toggle","id":"dev2","x":120,"y":216,"label":"Input2","state":{"on":false}}    ],    "connectors":[    {"from":"dev0.in0","to":"dev1.out0"},    {"from":"dev2.in0","to":"dev1.out0"}    ]}</div>
+</body>
+</html>

@@ -8,7 +8,7 @@
   <p>A good example is a toggle switch, such as a light switch. You can turn it on or off but not (in normal operation)
     anything else. A light switch holds one bit of information.</p>
 
-  <raw format="html" xml:space="preserve"><img class="center" width="50%" src="external/Binary/Images/OffSwitch.gif"  onmouseover="$(this).attr('src','external/Binary/Images/OnSwitch.gif')" onmouseout="$(this).attr('src','external/Binary/Images/OffSwitch.gif')" /></raw>
+    <interactive label="binary-binary-and-its-advantages-interactive-1" iframe="Binary/binary-binary-and-its-advantages-interactive-1.html"/>
 
   <p>There are many advantages to binary. Here are four (somewhat overlapping) important reasons for using binary:</p>
   <p>

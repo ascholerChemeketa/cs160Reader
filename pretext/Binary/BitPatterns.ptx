@@ -13,21 +13,7 @@
   <figure xml:id="bit-patterns-demo-app">
     <caption>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.</caption>
   </figure>
-  <raw format="html" xml:space="preserve">
-  <div class="figure" style="max-width: 300px;">
-    <img style="" src="external/Binary/Images/toggleOff.gif" class="toggleImg"/>
-    <img style=""  src="external/Binary/Images/toggleOff.gif" class="toggleImg"/>
-    <script>
-        function toggle() {
-        if($(this).attr('src').indexOf("toggleOn") != -1)
-              $(this).attr('src','external/Binary/Images/toggleOff.gif');
-        else
-              $(this).attr('src','external/Binary/Images/toggleOn.gif');
-        }
-        window.addEventListener("load", () => $("img.toggleImg").mousedown(toggle));
-    </script>
-  </div>
-  </raw>
+    <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
   <p>How many patterns can be formed with three bits? Let's list them:</p>
   <blockquote>
     <line_block>

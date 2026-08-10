@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEEE 754 interactive 1</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      MathJax.typesetPromise();
+    });
+  </script>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+      <style>
+        
+      .digit {
+          width: 45px;
+          margin: 2px;
+          text-align: center;
+      }
+      
+      #result, #digitsTable {
+          width: 100%;
+      }
+      
+      #result fieldset {
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          width: 100%;
+      }
+      
+      .signcol {
+        background: #DBE5F1;
+        text-align: center;
+      }
+      
+      .expcol {
+          background: #EAF1DD;
+          text-align: center;
+      }
+      
+      .fraccol {
+          background: #FDE9D9;
+          text-align: center;
+      }
+      
+      #result legend {
+          margin: 0px;
+          font-size: inherit;
+          font-weight: bold;
+          border-bottom: none;
+          width: auto;
+      }
+      *  {
+        box-sizing:border-box;
+      }
+      </style>
+      <script>
+        
+      window.addEventListener("load", function() {
+          var digitsTable = '<table id="digitsTable" style="clear: both; border-collapse: inherit; border-spacing: 0; border-radius: 5px; border: 1px solid #ccc;"><tr><th class="signcol">Sign</th><th class="expcol">Exponent</th><th class="fraccol">Fraction</th></tr><tr>';
+      
+          var i = 0;
+          digitsTable += '<td class="signcol"><input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" /></td>';
+      
+          digitsTable += '<td class="expcol"><input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" />';
+          digitsTable += '<input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" />';
+          digitsTable += '<input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" /></td>';
+      
+          digitsTable += '<td class="fraccol"><input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" />';
+          digitsTable += '<input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" />';
+          digitsTable += '<input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" />';
+          digitsTable += '<input readonly="true" class="digit" type="text" id="digit' + (i++) + '" value="0" /></td>';
+      
+          digitsTable += "</tr></table>";
+          document.getElementById("digits").insertAdjacentHTML("beforeend", digitsTable);
+      
+          const digitInputs = document.querySelectorAll("#digits input");
+          digitInputs.forEach(function(input) {
+            input.addEventListener("click", function() {
+              if( input.value == "1" )
+                  input.value = "0";
+              else
+                  input.value = "1";
+              input.dispatchEvent(new Event("change"));
+            });
+          });
+      
+          digitInputs.forEach(function(input) {
+            input.addEventListener("change", function() {
+              var sign = "+"
+              if( document.getElementById("digit0").value == "1" ) {
+                  document.getElementById("sign").textContent = "$$  1 = negative \\hspace{110 px}  $$";
+                  sign = "-";
+              }
+              else
+                  document.getElementById("sign").textContent = "$$  0 = positive \\hspace{110 px}  $$";
+      
+      
+              var exp = document.getElementById("digit1").value + document.getElementById("digit2").value + document.getElementById("digit3").value;
+              var expValue = parseInt(exp, 2);
+              var expValueDecimal = Math.pow(2, expValue - 4)
+              var expHTML = "$$ \\begin{align*}  {" + exp + "}_2 &= " + expValue + " \\hspace{20 px} \\textrm{(Exponent bits as binary number)}  \\cr ";
+              expHTML+= "" + expValue + " - 4 &= " + (expValue - 4) + " \\hspace{20 px} \\textrm{(Subtract 4 for excess notation)} \\cr ";
+              expHTML+= "2^{" + (expValue - 4) + "} &= " + expValueDecimal + " \\hspace{20 px} \\textrm{  (Calculate 2 to that power)} \\cr ";
+              expHTML+= "\\textrm{exponent value} &= " + expValueDecimal ;
+              expHTML+= " \\end{align*} $$";
+              document.getElementById("exponent").innerHTML = expHTML;
+      
+              var mantissa = document.getElementById("digit4").value + document.getElementById("digit5").value + document.getElementById("digit6").value + document.getElementById("digit7").value;
+              var mantissaVal = parseInt(mantissa, 2) / 16.0;
+              var mantissaHTML = "$$ \\begin{align*} {0." + mantissa + "}_2 &= " + mantissaVal + "\\hspace{10 px} (";
+              if( document.getElementById("digit4").value == "1")
+                  mantissaHTML += "1/2 + ";
+              if( document.getElementById("digit5").value == "1")
+                  mantissaHTML += "1/4 + ";
+              if( document.getElementById("digit6").value == "1")
+                  mantissaHTML += "1/8 + ";
+              if( document.getElementById("digit7").value == "1")
+                  mantissaHTML += "1/16 + ";
+      
+              if(mantissaHTML.charAt(mantissaHTML.length - 2) == "+")
+                  mantissaHTML = mantissaHTML.slice(0, -2) + ")";
+              else
+                  mantissaHTML = mantissaHTML.slice(0, -2);
+      
+              mantissaHTML += " \\cr \\textrm{fraction value} &= " + mantissaVal + "\\hspace{180 px}";
+              mantissaHTML += " \\end{align*} $$";
+      
+              document.getElementById("mantissa").innerHTML = mantissaHTML;
+      
+              document.getElementById("meaning").innerHTML = "$$ \\begin{align*} value &= \\textrm{ (sign) (exponent value)} \\cdot \\textrm{(fraction value) } \\cr " +
+                  "&= " + sign + expValueDecimal + " \\cdot " + mantissaVal + " \\cr " +
+                  "&= " + sign + expValueDecimal * mantissaVal + " \\end{align*} $$";
+      
+              const node = document.getElementById('result');
+              if (window.MathJax && MathJax.typesetPromise) {
+                MathJax.typesetPromise([node]);
+              }
+      
+            });
+          });
+      
+          document.getElementById("digit0").dispatchEvent(new Event("change")); //trigger initial parse
+      });
+      
+      </script>
+      <div id="digits"></div>
+      $$x = 1$$
+      <div id="result">
+          <fieldset class='signcol'><legend>Sign:</legend> <span type="text" id="sign" readonly="true"> </span></fieldset>
+          <fieldset class='expcol'><legend>Exponent:</legend><span type="text" id="exponent" readonly="true"> </span></fieldset>
+          <fieldset class='fraccol'><legend>Fraction:</legend><span type="text" id="mantissa" readonly="true"> </span></fieldset>
+          <fieldset class=''><legend>Final meaning:</legend><span type="text" id="meaning" readonly="true"> </span></fieldset>
+      </div>
+</body>
+</html>

@@ -153,11 +153,7 @@
       <p>You can use the <url href="http://www.wolframalpha.com/"
              visual="http://www.wolframalpha.com/">Wolfram Alpha
         website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
-      <raw format="html"
-           xml:space="preserve">
-        <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
-        <button type="submit">Submit</button></form></div>
-      </raw>
+            <interactive label="algorithms-search-efficiencies-binary-interactive-1" iframe="Algorithms/algorithms-search-efficiencies-binary-interactive-1.html"/>
     </sidebar>
 
   </subsection>

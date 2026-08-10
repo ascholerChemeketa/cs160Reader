@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASCII Art interactive 2</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<script>
+    
+    window.addEventListener("load", function() {
+      var slider = document.getElementById("ascii-slider");
+      function updateTable() {
+        var pad = "00000000"
+        var temp = parseInt(slider.value, 10);
+        var output = "<table class='place-values table' style='width:600px; margin:0 auto; text-align: center;'>";
+        var headers = "<thead><tr><th class='header'>Binary</th>";
+        var decs = "<tr><th class='header'>Decimal</th>";
+        var values = "<tr><td class='header'>Character</td>"
+        for(var i = temp - 3; i < temp + 3; i++) {
+            var binString = Number(i).toString(2);
+            headers += "<th>" +  pad.substring(0, pad.length - binString.length) + binString + "</th>";
+            decs += "<th>" +  i + "</th>";
+            values += "<td>" +  String.fromCharCode(i) +  "</td>";
+        }
+        decs += "</tr>";
+        headers += "</tr>" + decs + "</thead>";
+        values += "</tr>"
+        output += headers + values + "</table>";
+        document.getElementById("ascii-target").innerHTML = output;
+      }
+      slider.addEventListener("input", updateTable);
+      updateTable();
+    }); 
+    </script>
+    <p class="clear" >
+        <b>Scroll me:</b>
+          <input type="range" id="ascii-slider" min="3" max="253" value="68" style="width:600px; margin-bottom: 10px; margin-top: 10px;" />
+      <div id="ascii-target">
+      </div>
+    </p>
+</body>
+</html>

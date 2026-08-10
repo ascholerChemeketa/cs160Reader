@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bit Patterns interactive 1</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="figure" style="max-width: 300px;">
+    <img style="" src="Images/toggleOff.gif" class="toggleImg"/>
+    <img style=""  src="Images/toggleOff.gif" class="toggleImg"/>
+    <script>
+        function toggle(event) {
+          const image = event.currentTarget;
+          image.src = image.getAttribute("src").includes("toggleOn") ? "Images/toggleOff.gif" : "Images/toggleOn.gif";
+        }
+        window.addEventListener("load", () => {
+          document.querySelectorAll("img.toggleImg").forEach((image) => {
+            image.addEventListener("mousedown", toggle);
+          });
+        });
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merge Sort Compared interactive 1</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <style>
+  #sorterBox {
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #sorterBox legend {
+    width: auto;
+    margin: 0px 0px 0px 10px;
+    border: none;
+  }
+  .sortRow {
+    padding: 5px 10px;
+  }
+  #probSizeEntry {
+    margin-right: 20px;
+  }
+  #probSizeText {
+    text-align: center;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  #sizeBox {
+    float: right;
+    padding-bottom: 15px;
+    width: 200px;
+  }
+  #inputBox {
+    display: inline-block;
+  }
+  #probSize {
+    width: 150px;
+  }
+  .sortButton {
+    width: 120px;
+    margin-right: 15px;
+  }
+  </style>
+  <script>
+    
+  function getBaseLog(x,y) {
+        return Math.log(x) / Math.log(y);
+  }
+
+  function simulateNSqWork(n) {
+    var total = 0;
+    n *= n;
+    n /= 51324;     //misc tuning constant
+    n *= (1.05 - Math.random() / 10); //+- 5% variability
+    var places = 5 - Math.floor(getBaseLog(n,10));
+    if(places < 0) places = 0;
+    setTimeout(function() {
+        document.getElementById("insertSorting").textContent = (n / 1000.0).toFixed(places) + " seconds";
+        document.getElementById("goNSqButton").disabled = false;
+    }, n);
+  }
+
+  function addCommas(nStr) {
+     nStr += '';
+     var x = nStr.split('.');
+     var x1 = x[0];
+     var x2 = x.length > 1 ? '.' + x[1] : '';
+     var rgx = /(\d+)(\d{3})/;
+     while (rgx.test(x1)) {
+           x1 = x1.replace(rgx, '$1' + ',' + '$2');
+     }
+     return x1 + x2;
+  }
+
+  function simulateNLogNWork(n) {
+    var total = 0;
+    n *= Math.log(n);  //base e but adjust to 2 with tuning constant
+    n /= 47303;     //misc tuning constant
+    n += 0.00234;     //misc tuning constant - make merge sort come in slower on small list
+    n *= (1.05 - Math.random() / 10); //+- 5% variability
+    var places = 5 - Math.floor(getBaseLog(n,10));
+    if(places < 0) places = 0;
+    setTimeout(function() {
+        document.getElementById("mergeSorting").textContent = (n / 1000.0).toFixed(places) + " seconds";
+        document.getElementById("goNLogNButton").disabled = false;
+    }, n);
+  }
+
+  function changeSize() {
+    var n = document.getElementById("probSize").value;
+    document.getElementById("probSizeText").value = addCommas(Math.pow(10,n));
+  }
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("probSize").addEventListener("input", changeSize);
+    changeSize();
+    document.getElementById("goNSqButton").addEventListener("click", function() {
+        var temp = document.getElementById("probSizeText").value.split(",").join("");
+        var n = parseInt(temp);
+        document.getElementById("insertSorting").innerHTML = "Sorting... <img src='Images/working.gif'>";
+        document.getElementById("goNSqButton").disabled = true;
+        simulateNSqWork(n);
+    });
+    document.getElementById("goNLogNButton").addEventListener("click", function() {
+        var temp = document.getElementById("probSizeText").value.split(",").join("");
+        var n = parseInt(temp);
+        document.getElementById("mergeSorting").innerHTML = "Sorting... <img src='Images/working.gif'>";
+        document.getElementById("goNLogNButton").disabled = true;
+        simulateNLogNWork(n);
+    });
+  });
+  
+  </script>
+
+<fieldset id="sorterBox">
+    <legend>Sort Timer</legend>
+    <div id="sizeBox">
+        <span id="probSizeEntry"><strong>List Length:</strong></span>
+        <div id="inputBox">
+            <input type="text" class="work" id="probSizeText" readonly="true" />
+            <input type="range" id="probSize" min="1" max="7" value="1" />
+         </div>
+    </div>
+    <div class="sortRow">
+        <button id="goNSqButton" class="sortButton">Insertion Sort</button><span id="insertSorting"></span>
+    </div>
+    <div class="sortRow">
+        <button id="goNLogNButton" class="sortButton">Merge Sort</button><span id="mergeSorting"></span>
+    </div>
+</fieldset>
+</body>
+</html>

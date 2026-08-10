@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adding Numbers with Logic interactive 2</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+            <script src="simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir.css" />
+            <script src="simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir-basicset.css" />
+            <script src="simcir/simcir-library.js"></script>
+            <script src="simcir/misc/simcir-altfulladder.js"></script>
+<div class="simcir">{    "width":580,    "height":250,    "showToolbox":false,    "devices":[    {"type":"DC","id":"dev0","x":24,"y":80,"label":"Power"},    {"type":"XOR","id":"dev1","x":184,"y":96,"label":"XOR"},    {"type":"AND","id":"dev2","x":184,"y":48,"label":"AND"},    {"type":"AND","id":"dev3","x":296,"y":128,"label":"AND"},    {"type":"Toggle","id":"dev4","x":104,"y":40,"label":"InputA","state":{"on":false}},    {"type":"Toggle","id":"dev5","x":104,"y":104,"label":"InputB","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":104,"y":184,"label":"Carry In","state":{"on":false}},    {"type":"XOR","id":"dev7","x":296,"y":176,"label":"XOR"},    {"type":"OR","id":"dev8","x":352,"y":64,"label":"OR"},    {"type":"LED","id":"dev9","x":464,"y":32,"label":"Carry Out"},    {"type":"LED","id":"dev10","x":552,"y":32,"label":"Sum"},    {"type":"Joint","id":"dev11","x":528,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev12","x":512,"y":184,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev13","x":440,"y":40,"label":"Joint","state":{"direction":0}},    {"type":"Joint","id":"dev14","x":424,"y":72,"label":"Joint","state":{"direction":0}}    ],    "connectors":[    {"from":"dev1.in0","to":"dev4.out0"},    {"from":"dev1.in1","to":"dev5.out0"},    {"from":"dev2.in0","to":"dev4.out0"},    {"from":"dev2.in1","to":"dev5.out0"},    {"from":"dev3.in0","to":"dev1.out0"},    {"from":"dev3.in1","to":"dev6.out0"},    {"from":"dev4.in0","to":"dev0.out0"},    {"from":"dev5.in0","to":"dev0.out0"},    {"from":"dev6.in0","to":"dev0.out0"},    {"from":"dev7.in0","to":"dev1.out0"},    {"from":"dev7.in1","to":"dev6.out0"},    {"from":"dev8.in0","to":"dev2.out0"},    {"from":"dev8.in1","to":"dev3.out0"},    {"from":"dev9.in0","to":"dev13.out0"},    {"from":"dev10.in0","to":"dev11.out0"},    {"from":"dev11.in0","to":"dev12.out0"},    {"from":"dev12.in0","to":"dev7.out0"},    {"from":"dev13.in0","to":"dev14.out0"},    {"from":"dev14.in0","to":"dev8.out0"}    ]}</div>
+</body>
+</html>

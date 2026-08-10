@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hex Data &amp; Colors interactive 1</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <style>
+    
+    .colorbar {
+      float: left;
+      width: 400px;
+      clear: left;
+    }
+    .colorVal {
+          width: 80px;
+          text-align: center;
+          margin-top: 2px;
+          vertical-align: top;
+          border: 1px solid #ccc;
+          background: #f6f6f6;
+    }
+    #colorLabel {
+      clear: both;
+      text-align: right;
+  
+    }
+    #colorName {
+      width: 118px;
+      margin: 0px;
+      margin-left: 10px;
+      text-align: center;
+          border: 1px solid #ccc;
+          background: #f6f6f6
+    }
+    .colorpicker {
+      width: 520px;
+      margin: 15px auto;
+    }
+    #red, #green, #blue {
+      width: 250px;
+      margin: 5px 15px;
+      display: inline-block;
+    }
+    #red { accent-color: #ef2929; }
+    #green { accent-color: #8ae234; }
+    #blue { accent-color: #729fcf; }
+    #swatchblock {
+      width: 120px;
+      margin-top: 0px;
+      margin-left: 400px;
+      margin-bottom: 15px;
+    }
+    #swatch {
+      width: 120px;
+      height: 90px;
+      margin-top: 0px;
+      background-image: none;
+    }
+    #outputBlock {
+      clear: both;
+    } 
+    </style>
+    <script>
+      
+    function hexFromRGB(r, g, b) {
+      var hex = [
+        r.toString( 16 ),
+        g.toString( 16 ),
+        b.toString( 16 )
+      ].map(function(val) {
+        return val.length === 1 ? "0" + val : val;
+      });
+      return hex.join( "" ).toUpperCase();
+    }
+    function refreshSwatch() {
+      var red = parseInt(document.getElementById("red").value, 10),
+        green = parseInt(document.getElementById("green").value, 10),
+        blue = parseInt(document.getElementById("blue").value, 10),
+        hex = hexFromRGB( red, green, blue );
+      document.getElementById("swatch").style.backgroundColor = "#" + hex;
+      document.getElementById("redVal").value = red + " (" + hex.substring(0,2) + ")";
+      document.getElementById("greenVal").value = green + " (" + hex.substring(2,4) + ")";
+      document.getElementById("blueVal").value = blue + " (" + hex.substring(4,6) + ")";
+      document.getElementById("colorName").value = hex.substring(0,6);
+    }
+    window.addEventListener("load", function() {
+      document.querySelectorAll("#red, #green, #blue").forEach(function(slider) {
+        slider.addEventListener("input", refreshSwatch);
+      });
+      refreshSwatch();
+    });
+    
+    </script>
+
+    <div class="colorpicker">
+      <div class="colorbar">
+        <input type="range" id="red" min="0" max="255" value="255" />
+        <input type="text" class="colorVal" id="redVal" readonly="true" />
+      </div>
+      <div class="colorbar">
+        <input type="range" id="green" min="0" max="255" value="0" />
+        <input type="text" class="colorVal" id="greenVal" readonly="true" />
+      </div>
+      <div class="colorbar">
+        <input type="range" id="blue" min="0" max="255" value="140" />
+        <input type="text" class="colorVal" id="blueVal" readonly="true" />
+      </div>
+
+      <div id="swatchblock">
+        <div id="swatch"></div>
+      </div>
+      <div id="colorLabel">Hex color code:<input type="text" id="colorName" readonly="true" /></div>
+    </div>
+</body>
+</html>

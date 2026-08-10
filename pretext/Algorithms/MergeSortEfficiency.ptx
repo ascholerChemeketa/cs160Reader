@@ -101,11 +101,7 @@
     <p>You can use <url href="http://www.wolframalpha.com/"
            visual="http://www.wolframalpha.com/">Wolfram Alpha website</url>
       to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below:</p>
-    <raw format="html"
-         xml:space="preserve">
-          <div style="text-align: center;"><form action="https://www.wolframalpha.com/input/"><input type="text" id="input" style="width:60%" name="i"></input>
-          <button type="submit">Submit</button></form></div>
-        </raw>
+        <interactive label="algorithms-merge-sort-efficiency-interactive-1" iframe="Algorithms/algorithms-merge-sort-efficiency-interactive-1.html"/>
   </sidebar>
   <p>As we saw with binary search, that progression - dividing by 2 repeatedly until we reach 1 - can also be determined
     by the mathematical function <m>log_2(n)</m>. <m>log_2(1024) = 10</m>. Using that, we could calculate the number of

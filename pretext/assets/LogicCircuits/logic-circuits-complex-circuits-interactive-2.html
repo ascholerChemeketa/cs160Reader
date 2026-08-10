@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Complex Circuits interactive 2</title>
+  <script src="../iframe-resizer.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+            <script src="simcir/simcir.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir.css" />
+            <script src="simcir/simcir-basicset.js"></script>
+            <link rel="stylesheet" type="text/css" href="simcir/simcir-basicset.css" />
+            <script src="simcir/simcir-library.js"></script>
+            <script src="simcir/misc/simcir-altfulladder.js"></script>
+<div class="simcir">{    "width":580,    "height":250,    "showToolbox":false,    "devices":[    {"type":"Toggle","id":"dev0","x":200,"y":96,"label":"Input2","state":{"on":false}},    {"type":"AND","id":"dev1","x":288,"y":128,"label":"AND"},    {"type":"DC","id":"dev2","x":128,"y":96,"label":"Power"},    {"type":"AND","id":"dev3","x":344,"y":80,"label":"AND"},    {"type":"LED","id":"dev4","x":424,"y":80,"label":"Output"},    {"type":"Toggle","id":"dev5","x":200,"y":32,"label":"Input1","state":{"on":false}},    {"type":"Toggle","id":"dev6","x":200,"y":160,"label":"Input3","state":{"on":false}}    ],    "connectors":[    {"from":"dev0.in0","to":"dev2.out0"},    {"from":"dev1.in0","to":"dev0.out0"},    {"from":"dev1.in1","to":"dev6.out0"},    {"from":"dev3.in0","to":"dev5.out0"},    {"from":"dev3.in1","to":"dev1.out0"},    {"from":"dev4.in0","to":"dev3.out0"},    {"from":"dev5.in0","to":"dev2.out0"},    {"from":"dev6.in0","to":"dev2.out0"}    ]}</div>
+</body>
+</html>

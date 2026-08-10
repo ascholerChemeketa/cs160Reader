@@ -13,13 +13,7 @@
       red channel might not be 255. Or the blue or green might not be 0. Furthermore, a pixel
       with color values (255, 255, 255) has the maximum red value<ellipsis/> but it is not red, it is
       white. Here are three examples of colors that might be part of the scooter:</p>
-      <p>
-        <raw format="html" xml:space="preserve">
-          <div style="background: rgb(122, 4, 18); color: white; padding: 2px 10px;">122, 4, 18</div>
-          <div style="background: rgb(194, 8, 20); color: white; padding: 2px 10px;">194, 8, 20</div>
-          <div style="background: rgb(247, 190, 194); color: white; padding: 2px 10px;">247, 190, 194</div>
-        </raw>
-      </p>
+              <interactive label="csp-decisions-images-a-pixel-selection-function-interactive-1" iframe="CSPDecisionsImages/csp-decisions-images-a-pixel-selection-function-interactive-1.html"/>
   <p>We will say that if a pixel's red value is at least 10 greater than both the green and
       the blue values, it is <q>red</q>. To express this as a conditional will look like
       <c>r &gt;= g + 20 and r &gt;= b + 20</c>, where r, g, b are the red, green, and blue color values.
@@ -51,19 +45,9 @@ print( isRed(200, 0, 200) )   # aqua
   <p>If the pixel is determined to be <q>red</q>, we need to change it to a similar blue.
       A dark red should become a dark blue and a light red a light blue. The easiest
       way to do this is to swap the red and blue values. Like this:</p>
-  <p>
-    <raw format="html" xml:space="preserve">
-      <div style="background: rgb(122, 4, 18); color: white; padding: 2px 10px;">122, 4, 18</div>
-      <div style="background: rgb(18, 4, 122); color: white; padding: 2px 10px;">18, 4, 122</div>
-    </raw>
-    </p>
+      <interactive label="csp-decisions-images-a-pixel-selection-function-interactive-2" iframe="CSPDecisionsImages/csp-decisions-images-a-pixel-selection-function-interactive-2.html"/>
     <p>Or this:</p>
-    <p>
-        <raw format="html" xml:space="preserve">
-        <div style="background: rgb(247, 190, 194); color: white; padding: 2px 10px;">247, 190, 194</div>
-        <div style="background: rgb(194, 190, 247); color: white; padding: 2px 10px;">194, 190, 247</div>
-    </raw>
-    </p>
+            <interactive label="csp-decisions-images-a-pixel-selection-function-interactive-3" iframe="CSPDecisionsImages/csp-decisions-images-a-pixel-selection-function-interactive-3.html"/>
 
     <p>Here is the final program:</p>
 
