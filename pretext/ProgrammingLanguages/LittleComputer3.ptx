@@ -1,18 +1,84 @@
 <section xml:id="programming-languages_the-little-computer-assembly">
   <title>The Little Computer - Assembly</title>
-  <p>The Little Computer supports an <xref ref="programming-languages_assembly-languages" text="custom">assembly language</xref> that can make it easier for humans
-    to write and read programs. In addition to replacing numeric commands like <q>1XX</q> or <q>902</q>
-    with abbreviated English commands like <q>ADD</q> or <q>OUT</q>, Little Computer assembly allows us to
-    think at a slightly more abstract level. Instead of remembering specific memory addresses so we can say <em><q>add
-    the value from location 10</q></em>, we can name memory locations and then say things like <em><q>add
-    X</q></em>. This video introduces it:</p>
+  <p>The Little Computer supports an <xref ref="programming-languages_assembly-languages"
+          text="custom">assembly
+    language</xref> that can make it easier for humans to write and read programs. In addition to replacing numeric
+    commands like <q>1XX</q> or <q>902</q> with abbreviated English commands like <q>ADD</q> or <q>OUT</q>, Little
+    Computer assembly allows us to think at a slightly more abstract level. Instead of remembering specific memory
+    addresses so we can say <em>
+      <q>add the value from location 10</q>
+    </em>, we can name memory locations and then say things like <em>
+      <q>add X</q>
+    </em>. This video introduces it:</p>
 
-  <video xml:id="gg4siPI0sdk" youtube="gg4siPI0sdk" width="100%" />
+  <video xml:id="gg4siPI0sdk"
+         youtube="gg4siPI0sdk"
+         width="100%"/>
   <p>You can try the assembler here: <url href="external/LittleComputer/littleComputerAssembler.html"
-      visual="external/LittleComputer/littleComputerAssembler.html">Launch the Little Computer assembler</url>  <em>(Control
-    or Command-click to open in a new window)</em></p>
-  <p>To test out a program after assembling it, use the Little Computer: <url
-      href="external/LittleComputer/littleComputer.html" visual="external/LittleComputer/littleComputer.html">Launch the
-    Little Computer</url>  </p>
+         visual="external/LittleComputer/littleComputerAssembler.html">Launch
+    the Little Computer assembler</url>  <em>(Control or Command-click to open in a new window)</em></p>
+  <p>To test out a program after assembling it, use the Little Computer: <url href="external/LittleComputer/littleComputer.html"
+         visual="external/LittleComputer/littleComputer.html">Launch
+    the Little Computer</url>
+  </p>
+  <exercise label="programming-languages_the-little-computer-assembly-ex1">
+    <statement>
+      <p>What advantages do symbolic names provide in Little Computer assembly? Select all that apply.</p>
+    </statement>
+    <choices randomize="yes"
+             multiple-correct="yes">
+      <choice correct="yes">
+        <statement>
+          <p>They let a programmer refer to a meaningful name instead of remembering a specific memory address.</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>They allow references to remain correct when the program's layout or size changes.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>They let the processor skip the process of executing instructions.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>They make memory locations store more than one value at a time.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>They remove the need for instructions to be represented in machine code.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="programming-languages_the-little-computer-assembly-ex2">
+    <statement>
+      <p>After a Little Computer assembly program is assembled, how does the computer run it?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>It executes the corresponding machine instructions.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It reads the assembly words as ordinary English sentences.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It sends the program directly to a high-level language compiler.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>It runs only the labels and skips the instructions.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-

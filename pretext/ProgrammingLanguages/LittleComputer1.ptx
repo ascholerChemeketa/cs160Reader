@@ -3,35 +3,86 @@
   <p>The Little Computer (sometimes called the Little Man Computer) is designed to explore how machine-level languages
     work. At a low level, all computers do is move around pieces of data and do basic math and logic operations on that
     data.</p>
-  <p>The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three <xref
-      ref="computer-architecture-instruction-register" text="custom">registers</xref>: a program counter, an instruction register, and an
-    accumulator. The CPU supports a very basic set of operations: it can get input and output, it can store data to
-    memory and load it from memory, it can do addition and subtraction, and it can branch (or jump) to a different
-    instruction if certain conditions are met.</p>
+  <p>The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has three <xref ref="computer-architecture-instruction-register"
+          text="custom">
+    registers</xref>: a program counter, an instruction register, and an accumulator. The CPU supports a very basic set
+    of operations: it can get input and output, it can store data to memory and load it from memory, it can do addition
+    and subtraction, and it can branch (or jump) to a different instruction if certain conditions are met.</p>
   <p>Rather than use binary to encode instructions, it uses decimal numbers to represent data and instructions. This
     makes it a little easier for a human to see what is going on. But other than that, it is a relatively accurate, if
     very simple, simulation of a computer. A real processor will have more registers to work with and will support
     dozens of instructions instead of the handful that the Little Computer does. But for the most part, everything they
     do is just as simple: they load/store data from memory, they do basic math and logic operations on data, and they
-    use branches to make decisions and repeat operations. Whatever code a programmer writes in a <xref
-      ref="programming-languages_high-level-programming-languages" text="custom">high-level language</xref> like javascript or C++ gets turned into these basic <xref
-      ref="programming-languages_machine-languages" text="custom">machine language</xref> commands.</p>
+    use branches to make decisions and repeat operations. Whatever code a programmer writes in a <xref ref="programming-languages_high-level-programming-languages"
+          text="custom">high-level
+    language</xref> like javascript or C++ gets turned into these basic <xref ref="programming-languages_machine-languages"
+          text="custom">machine
+    language</xref> commands.</p>
   <p>This video introduces how the Little Computer works:</p>
 
-  <video xml:id="x7RMi6fA0jg" youtube="x7RMi6fA0jg" width="100%" />
+  <video xml:id="x7RMi6fA0jg"
+         youtube="x7RMi6fA0jg"
+         width="100%"/>
 
   <p>You can run the Little Computer be run in a web page using the link below. The interface looks a little different
     than the video, but it functions the same way. It will launch with the program shown in the video. To try out a
     different program, simply edit the values that are in memory, and then press the reset button.</p>
   <p>
     <url href="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000"
-      visual="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000">Launch the Little Computer</url>
-    
+         visual="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000">Launch
+      the Little Computer</url>
+
   </p>
   <note>
     <p>As you experiment with the little computer, notice that the memory is storing both the instructions and the data.
-      An <q>instruction</q> is simply some data in memory that the computer tries to decode as a machine
-      instruction and run.</p>
+      An <q>instruction</q> is simply some data in memory that the computer tries to decode as a machine instruction and
+      run.</p>
   </note>
+  <exercise label="programming-languages_the-little-computer-ex1">
+    <statement>
+      <p>Why can the Little Computer use the same memory to store both instructions and ordinary data?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Both are values in memory; a value is treated as an instruction only when the processor decodes and
+            executes it.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Instructions are stored in a separate kind of memory that data cannot enter.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Data automatically changes into an instruction after being stored.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>The accumulator permanently holds every instruction in the program.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="programming-languages_the-little-computer-ex2">
+    <statement>
+      <p>Match each Little Computer component to its role.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>Program counter</premise>
+        <response>Keeps track of the next instruction to execute</response>
+      </match>
+      <match>
+        <premise>Instruction register</premise>
+        <response>Holds the instruction currently being decoded or executed</response>
+      </match>
+      <match>
+        <premise>Accumulator</premise>
+        <response>Holds a value used while the CPU performs operations</response>
+      </match>
+    </cardsort>
+  </exercise>
 </section>
-
