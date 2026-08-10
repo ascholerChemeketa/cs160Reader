@@ -217,33 +217,34 @@
 
   <exercise label="datarepresentation_fractionalvalues1">
     <statement>
-      <p>What decimal value does the binary number 0.111 represent? <var />
+      <p>What decimal value does the binary number 0.111 represent? <fillin mode="string" answer="0.875"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*0?\.875\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^0-9\.]+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*0?\.875\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*[^0-9\.]+\s*$</strcmp>
           <feedback>
             <p>Your answer should be a number</p>
           </feedback>
-        </condition>
-        <condition string="^\s*1.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*1.*\s*$</strcmp>
           <feedback>
             <p>Your answer should start with 0.</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Use the blank table above. The 0 goes in the one's column.</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="datarepresentation_fractionalvalues2">
     <statement>

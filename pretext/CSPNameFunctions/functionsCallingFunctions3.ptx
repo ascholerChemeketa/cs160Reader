@@ -62,24 +62,23 @@ print(testArea)
 
   <exercise label="cspnamefunctions_functionscallingfunctions32">
     <statement>
-      <p>What is the value of <c>perimeter</c> that is calculated inside <c>triangle_area</c>? <var />
+      <p>What is the value of <c>perimeter</c> that is calculated inside <c>triangle_area</c>? <fillin mode="number" answer="21.81"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="21.81">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Make sure to watch the program run and type in the value of the perimeter to
-              2 decimal places.</p>
+            2 decimal places.</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

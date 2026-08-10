@@ -196,33 +196,34 @@
 
   <exercise label="datarepresentation_floatingpointnumbers1">
     <statement>
-      <p>What is the largest value you can make using the scheme above? <var />
+      <p>What is the largest value you can make using the scheme above? <fillin mode="string" answer="7.5"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*\+?7\.5\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^0-9\.\-]+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*\+?7\.5\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*[^0-9\.\-]+\s*$</strcmp>
           <feedback>
             <p>Your answer should be a number</p>
           </feedback>
-        </condition>
-        <condition string="^\s*^\-.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*^\-.*\s*$</strcmp>
           <feedback>
             <p>It should be positive</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: To make a large value you need the largest exponent and largest fraction you can make</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="datarepresentation_floatingpointnumbers2">
     <statement>
@@ -282,33 +283,34 @@
 
   <exercise label="datarepresentation_floatingpointnumbers3">
     <statement>
-      <p>Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25? <var />
+      <p>Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25? <fillin mode="number" answer="1010"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="1010">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^0-1]+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*[^0-1]+\s*$</strcmp>
           <feedback>
             <p>Your answer should only consist of 0s and 1s</p>
           </feedback>
-        </condition>
-        <condition string="^\s*^[0-1]{4}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*^[0-1]{4}\s*$</strcmp>
           <feedback>
             <p>Use the tool above to help figure out the answer</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: your answer should be 4 digits</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

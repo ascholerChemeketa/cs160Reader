@@ -27,38 +27,40 @@ print(guess)
   <exercise label="csprepeatnumbers_repeatnums2">
     <statement>
       <p>Modify the loop to repeat more times. What is the minimum number of repetitions you need to get an answer that
-        is as accurate as possible? (One that displays as 10.48808848170152) <var />
+        is as accurate as possible? (One that displays as 10.48808848170152) <fillin mode="string" answer="8"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^8$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*^9$\s*$">
-          <feedback>
-            <p>That is more repetitions than needed</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*\d{2}\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^8$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*^9$\s*$</strcmp>
           <feedback>
             <p>That is more repetitions than needed</p>
           </feedback>
-        </condition>
-        <condition string="^\s*\d\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*\d{2}\s*$</strcmp>
+          <feedback>
+            <p>That is more repetitions than needed</p>
+          </feedback>
+        </test>
+        <test>
+          <strcmp>^\s*\d\s*$</strcmp>
           <feedback>
             <p>The answer is still changing after that many repetitions</p>
-          </feedback> 
-        </condition>
-        <condition string="^\s*.*\s*$">
+          </feedback>
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Make sure to give your answer as a number</p>
           </feedback>
-        </condition> 
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise> 
   <p>The number of repetitions needed to get the most accurate possible square root for a given number is not always the
     same. If you change <c>number</c> to 2, it would only take 5 iterations of the loop to find the best possible guess for

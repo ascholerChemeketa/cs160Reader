@@ -34,23 +34,22 @@
     <exercise label="cspnamenumbers_orderofoperations1">
         <statement>
             <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations2_listing" /> below? Try running the program to
-                check yourself. <var />
+                check yourself. <fillin mode="string" answer="13"/>
             </p>
         </statement>
-        <setup>
-            <var>
-                <condition string="^\s*^13$\s*$">
-                    <feedback>
-                        <p>Correct!</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*.*\s*$">
-                    <feedback>
-                        <p>Did you run the program?</p>
-                    </feedback>
-                </condition>
-            </var>
-        </setup>
+        <evaluation>
+          <evaluate>
+            <test correct="yes">
+              <strcmp>^\s*^13$\s*$</strcmp>
+            </test>
+            <test>
+              <strcmp>^\s*.*\s*$</strcmp>
+              <feedback>
+                <p>Did you run the program?</p>
+              </feedback>
+            </test>
+          </evaluate>
+        </evaluation>
     </exercise>
 
     <listing xml:id="cspnamenumbers_orderofoperations2_listing">
@@ -68,23 +67,22 @@
     <exercise label="cspnamenumbers_orderofoperations3">
         <statement>
             <p>What is printed when you run <xref ref="cspnamenumbers_orderofoperations4_listing"/> below? Try evaluating it by hand before
-                running the program to check yourself. <var />
+                running the program to check yourself. <fillin mode="string" answer="-12"/>
             </p>
         </statement>
-        <setup>
-            <var>
-                <condition string="^\s*^-12$\s*$">
-                    <feedback>
-                        <p>Correct!</p>
-                    </feedback>
-                </condition>
-                <condition string="^\s*.*\s*$">
-                    <feedback>
-                        <p>Did you actually run the program</p>
-                    </feedback>
-                </condition>
-            </var>
-        </setup>
+        <evaluation>
+          <evaluate>
+            <test correct="yes">
+              <strcmp>^\s*^-12$\s*$</strcmp>
+            </test>
+            <test>
+              <strcmp>^\s*.*\s*$</strcmp>
+              <feedback>
+                <p>Did you actually run the program</p>
+              </feedback>
+            </test>
+          </evaluate>
+        </evaluation>
     </exercise>
 
     <listing xml:id="cspnamenumbers_orderofoperations4_listing">

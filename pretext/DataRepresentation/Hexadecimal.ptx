@@ -216,73 +216,71 @@
 
   <exercise label="datarepresentation_hexadecimal1">
     <statement>
-      <p>What decimal value does the hexadecimal number 2A represent? <var />
+      <p>What decimal value does the hexadecimal number 2A represent? <fillin mode="number" answer="42"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="42">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^\d]+\s*$">
-          <feedback>
-            <p>Your answer should be a number</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1}\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*.{1}\s*$</strcmp>
           <feedback>
             <p>Not enough digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{3,}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{3,}\s*$</strcmp>
           <feedback>
             <p>Too many digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: Use the table from the top of the page</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="datarepresentation_hexadecimal2">
     <statement>
-      <p>What does hexadecimal 3FC look like in binary? <var />
+      <p>What does hexadecimal 3FC look like in binary? <fillin mode="string" answer="001111111100" width="16"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*0*11\s*1111\s*1100\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^0-1\s+]+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*0*11\s*1111\s*1100\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*[^0-1\s+]+\s*$</strcmp>
           <feedback>
             <p>Your answer should only consist of 1s and 0s</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{1,9}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{1,9}\s*$</strcmp>
           <feedback>
             <p>Not enough digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{15,}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{15,}\s*$</strcmp>
           <feedback>
             <p>Too many digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: Convert each digit separately</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

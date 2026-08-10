@@ -78,38 +78,39 @@
         a row while flipping a coin 100 times. You should be getting an answer of around 80%.
       </p>
       <p>Then modify the program to check the odds of getting 6 heads in a row (instead of just 5).
-        What answer do you get? Round it to the nearest whole number and enter it here: <var />
+        What answer do you get? Round it to the nearest whole number and enter it here: <fillin mode="string" answer="54"/>
       </p>
       <p> Tip: you may want to change <c>repetitions</c> to <c>10000</c> so your answer is more
         reliable (the more repetitions you do, the more reliable the result will be.) </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*5[45](\.\d*)?%?\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[78]\d(\.\d*)?%?\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*5[45](\.\d*)?%?\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*[78]\d(\.\d*)?%?\s*$</strcmp>
           <feedback>
             <p>That looks like the odds of getting 5 heads in a row. Make sure you simulate 6 heads
-              in a row. (The odds should be much lower.)</p>
+            in a row. (The odds should be much lower.)</p>
           </feedback>
-        </condition>
-        <condition string="^\s*\d?\d(\.\d*)?%?\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*\d?\d(\.\d*)?%?\s*$</strcmp>
           <feedback>
             <p>That does not look correct. Your simulation can get very
-              unlucky or lucky, and thus generate a value that is too high or too low. So try
-              running the program again to double-check the answer.</p>
+            unlucky or lucky, and thus generate a value that is too high or too low. So try
+            running the program again to double-check the answer.</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>That does not look correct. Make sure to write your answer as a number like <c>XX</c>.</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

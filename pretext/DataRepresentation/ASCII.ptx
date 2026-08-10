@@ -141,63 +141,65 @@ Y8dNA@@AK@@d@@@b@@@@@@@@@L,-,\!]]\X(5)Z/7c\\t5/K@@@@@@@@b@@@@@@[
 
   <exercise label="datarepresentation_ascii1">
     <statement>
-      <p>What letter or symbol does 01100110 map to on the ASCII table? <var />
+      <p>What letter or symbol does 01100110 map to on the ASCII table? <fillin mode="string" answer="f"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*f\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*f\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*.{1}\s*$</strcmp>
           <feedback>
-            <p>Correct!</p>
+            <p>The answer is a letter<ellipsis /> try using the table above</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{1}\s*$">
-          <feedback>
-            <p>The answer is a letter<ellipsis/> try using the table above</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>The answer should only have one character</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="datarepresentation_ascii2">
     <statement>
-      <p>What binary number corresponds to the plus symbol on the ASCII table? <var />
+      <p>What binary number corresponds to the plus symbol on the ASCII table? <fillin mode="string" answer="00101011"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*00101011\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1,7}\s*$">
-          <feedback>
-            <p>The answer should have 8 digit</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{9,}\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*00101011\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*.{1,7}\s*$</strcmp>
           <feedback>
             <p>The answer should have 8 digit</p>
           </feedback>
-        </condition>
-        <condition string="[^01]+">
+        </test>
+        <test>
+          <strcmp>^\s*.{9,}\s*$</strcmp>
+          <feedback>
+            <p>The answer should have 8 digit</p>
+          </feedback>
+        </test>
+        <test>
+          <strcmp>[^01]+</strcmp>
           <feedback>
             <p>The answer should be just 0s and 1s</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Try looking it up on the table above</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

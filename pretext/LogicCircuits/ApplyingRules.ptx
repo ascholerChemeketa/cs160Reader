@@ -96,33 +96,34 @@
         </row>
       </tabular>
       <p>
-        <var/>
+        <fillin mode="string" answer="0111"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="0111">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="[01]{4}">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>0111</strcmp>
+        </test>
+        <test>
+          <strcmp>[01]{4}</strcmp>
           <feedback>
             <p>Make sure to perform the operation in each column separately</p>
           </feedback>
-        </condition>
-        <condition string="[01]+">
+        </test>
+        <test>
+          <strcmp>[01]+</strcmp>
           <feedback>
             <p>Wrong number of digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="logiccircuits_applyingrules2">
     <statement>
@@ -142,33 +143,34 @@
         </row>
       </tabular>
       <p>
-        <var/>
+        <fillin mode="string" answer="0010"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="0010">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="[01]{4}">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>0010</strcmp>
+        </test>
+        <test>
+          <strcmp>[01]{4}</strcmp>
           <feedback>
             <p>Make sure to perform the operation in each column separately</p>
           </feedback>
-        </condition>
-        <condition string="[01]+">
+        </test>
+        <test>
+          <strcmp>[01]+</strcmp>
           <feedback>
             <p>Wrong number of digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Your answer should be just 1s and 0s</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

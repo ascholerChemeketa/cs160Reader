@@ -147,10 +147,14 @@
     </statement>
     <evaluation>
       <evaluate>
-        <test correct="yes"><numcmp use-answer="yes"/></test>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
         <test>
           <strcmp>.*</strcmp>
-          <feedback><p>For a logarithmic algorithm, calculate <m>log_2(1024)</m>: how many times can 1024 be divided by 2 to reach 1?</p></feedback>
+          <feedback>
+            <p>For a logarithmic algorithm, calculate <m>log_2(1024)</m>: how many times can 1024 be divided by 2 to reach 1?</p>
+          </feedback>
         </test>
       </evaluate>
     </evaluation>
@@ -161,10 +165,14 @@
     </statement>
     <evaluation>
       <evaluate>
-        <test correct="yes"><numcmp use-answer="yes"/></test>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
         <test>
           <strcmp>.*</strcmp>
-          <feedback><p>Tripling the input size multiplies the work of an <m>O(n^2)</m> algorithm by <m>3^2 = 9</m>.</p></feedback>
+          <feedback>
+            <p>Tripling the input size multiplies the work of an <m>O(n^2)</m> algorithm by <m>3^2 = 9</m>.</p>
+          </feedback>
         </test>
       </evaluate>
     </evaluation>

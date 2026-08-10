@@ -151,38 +151,34 @@
 
   <exercise label="datarepresentation_numbersystems1">
     <statement>
-      <p>What decimal value does the binary number 1010 represent? <var />
+      <p>What decimal value does the binary number 1010 represent? <fillin mode="number" answer="10"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="10">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[\D]+\s*$">
-          <feedback>
-            <p>The answer should be a number</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1}\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*.{1}\s*$</strcmp>
           <feedback>
             <p>Not enough digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{3,}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{3,}\s*$</strcmp>
           <feedback>
             <p>Too many digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: With 4 binary digits what columns will you be using?</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="datarepresentation_numbersystems2">
     <statement>

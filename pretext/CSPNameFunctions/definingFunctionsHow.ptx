@@ -50,7 +50,6 @@ print("The length of side c is", c)
         complete it correctly?
       </p>
       <p>
-        
         <program language="python">
           <input>
 def convertFtoC(tempF):
@@ -61,23 +60,21 @@ def convertFtoC(tempF):
         </program>
       </p>
       <p>
-        <var />
+        <fillin mode="string" answer="return tempC"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*return\s+tempC$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*return\s+tempC$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*$</strcmp>
           <feedback>
             <p>No... the answer is stored in <c>tempC</c> we want to return that value.</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
-

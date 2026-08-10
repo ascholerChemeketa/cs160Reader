@@ -81,28 +81,28 @@ print("Highest pollution is", max25, "in", maxCity)
 
   <exercise label="csppythondata_largestpoll3">
     <statement>
-      <p>What PM10 value does the most polluted city have? <var />
+      <p>What PM10 value does the most polluted city have? <fillin mode="string" answer="74"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^\s*74\s*$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*^\s*\d+\s*$\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^\s*74\s*$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*^\s*\d+\s*$\s*$</strcmp>
           <feedback>
             <p>That is not the right value.</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Make sure to give your answer as a number</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

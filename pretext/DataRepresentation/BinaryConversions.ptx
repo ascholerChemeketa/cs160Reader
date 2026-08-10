@@ -121,43 +121,40 @@ Do I need 1? Yes.
       the same as <m>{101}_{2}</m>.</p>
     <exercise label="datarepresentation_binaryconversions1">
       <statement>
-        <p>What decimal value does the binary number 111100 represent? <var />
+        <p>What decimal value does the binary number 111100 represent? <fillin mode="number" answer="60"/>
         </p>
       </statement>
-      <setup>
-        <var>
-          <condition number="60">
-            <feedback>
-              <p>Correct!</p>
-            </feedback>
-          </condition>
-          <condition string="^\s*[^\d]+\s*$">
-            <feedback>
-              <p>Your answer should be a number</p>
-            </feedback>
-          </condition>
-          <condition string="^\s*.{1}\s*$">
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <numcmp use-answer="yes"/>
+          </test>
+          <test>
+            <strcmp>^\s*.{1}\s*$</strcmp>
             <feedback>
               <p>That is not enough digits</p>
             </feedback>
-          </condition>
-          <condition string="^\s*.{4}\s*$">
+          </test>
+          <test>
+            <strcmp>^\s*.{4}\s*$</strcmp>
             <feedback>
               <p>Hint: With 6 binary digits the largest column you should use is 32</p>
             </feedback>
-          </condition>
-          <condition string="^\s*.{3,}\s*$">
+          </test>
+          <test>
+            <strcmp>^\s*.{3,}\s*$</strcmp>
             <feedback>
               <p>Too many digits</p>
             </feedback>
-          </condition>
-          <condition string="^\s*x\s*$">
+          </test>
+          <test>
+            <strcmp>^\s*x\s*$</strcmp>
             <feedback>
               <p>We are looking for a base ten number</p>
             </feedback>
-          </condition>
-        </var>
-      </setup>
+          </test>
+        </evaluate>
+      </evaluation>
     </exercise>
     <exercise label="datarepresentation_binaryconversions2">
       <statement>

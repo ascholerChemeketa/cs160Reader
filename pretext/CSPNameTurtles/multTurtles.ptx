@@ -4,23 +4,22 @@
 
   <exercise label="cspnameturtles_multturtles1">
     <statement>
-      <p>What shape will the program below draw when you click on the Run button? <var />
+      <p>What shape will the program below draw when you click on the Run button? <fillin mode="string" answer="triangle"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^triangle$|^Triangle$|^TRIANGLE$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^triangle$|^Triangle$|^TRIANGLE$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Try to follow the directions as if you are the turtle</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <program xml:id="cspnameturtles_multturtles2" interactive="activecode" language="python">
     <input>

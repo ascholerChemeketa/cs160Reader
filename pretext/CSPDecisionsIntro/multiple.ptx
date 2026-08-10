@@ -28,23 +28,22 @@ print(total)
   <exercise label="cspdecisionsintro_multiple1">
     <statement>
       <p>In the program above, what value for weight will result in an error complaining that price
-        is not defined? <var />
+        is not defined? <fillin mode="string" answer="1"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^1$|1\.[0]*$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^1$|1\.[0]*$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Which value is not tested currently?</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <p>So how can we fix the bug? One way would be to change the second if to use <c>&gt;=</c> so that
     there the program handles every situation correctly.</p>

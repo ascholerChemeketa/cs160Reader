@@ -169,48 +169,52 @@
         your answer; do include commas).
       </p>
       <p>
-        <var />
+        <fillin mode="string" answer="5, 106, 20"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*5\s*,\s*106\s*,\s*20\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*5\s*,\s*125\s*,\s*20\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*5\s*,\s*106\s*,\s*20\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*5\s*,\s*125\s*,\s*20\s*$</strcmp>
           <feedback>
             <p>This is a common way to produce the desired range, but what is the smallest possible stopValue?</p>
           </feedback>
-        </condition>
-        <condition string="^\s*5\s*,\s*\d+\s*,\s*20\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*5\s*,\s*\d+\s*,\s*20\s*$</strcmp>
           <feedback>
             <p>Wrong stopValue; be sure to use the smallest possible number</p>
           </feedback>
-        </condition>
-        <condition string="^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$</strcmp>
           <feedback>
             <p>Wrong startValue</p>
           </feedback>
-        </condition>
-        <condition string="^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$</strcmp>
           <feedback>
             <p>Wrong step</p>
           </feedback>
-        </condition>
-        <condition string="^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$</strcmp>
           <feedback>
             <p>Some of the values are incorrect</p>
           </feedback>
-        </condition>
-        <condition string=".*">
+        </test>
+        <test>
+          <strcmp>.*</strcmp>
           <feedback>
             <p>Provide three numbers separated by commas</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="csprepeatturtles_exercises6">
     <statement>

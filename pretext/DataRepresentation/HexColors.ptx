@@ -204,38 +204,40 @@
 
   <exercise label="datarepresentation_hexcolors2">
     <statement>
-      <p>What hex code specifies black? <var />
+      <p>What hex code specifies black? <fillin mode="number" answer="0"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="0">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[^0-9A-Fa-f]+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*[^0-9A-Fa-f]+\s*$</strcmp>
           <feedback>
             <p>Your answer should consist of hex digits: 0-9, A, B, C, D, E, F</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{1,5}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{1,5}\s*$</strcmp>
           <feedback>
             <p>Not enough digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{7,}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{7,}\s*$</strcmp>
           <feedback>
             <p>Too many digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>Hint: Try reproducing the color with the tool above</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

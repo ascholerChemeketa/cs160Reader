@@ -109,8 +109,7 @@ Add fact to page                                                    Serial
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <numcmp use-answer="yes"
-                  tolerance="0.01"/>
+          <numcmp use-answer="yes" tolerance="0.01"/>
         </test>
         <test>
           <strcmp>.*</strcmp>
@@ -130,8 +129,7 @@ Add fact to page                                                    Serial
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <numcmp use-answer="yes"
-                  tolerance="0.01"/>
+          <numcmp use-answer="yes" tolerance="0.01"/>
         </test>
         <test>
           <strcmp>.*</strcmp>

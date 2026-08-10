@@ -98,28 +98,28 @@
   <exercise label="csppythondata_findpollstate4">
     <statement>
       <p>Modify the program to calculate the average PM2.5 pollution in Texas (state code <q>TX</q>). What is the
-        value? <var />
+        value? <fillin mode="string" answer="10.9"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^\s*10.9\s*$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*^\s*\d+\s*$\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^\s*10.9\s*$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*^\s*\d+\s*$\s*$</strcmp>
           <feedback>
             <p>That is not the right value.</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Make sure to give your answer as a number</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <exercise label="csppythondata_findpollstate5" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>

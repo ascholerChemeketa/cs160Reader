@@ -80,38 +80,34 @@
   <exercise label="datarepresentation_imagerepresentation1">
     <statement>
       <p>How many bits would a 10x20 image with 8 different possible colors per pixel require? (Hint: how many bits are
-        required to represent 8 different colors) <var />
+        required to represent 8 different colors) <fillin mode="number" answer="600"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition number="600">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[\D]+\s*$">
-          <feedback>
-            <p>The answer should be just numeric digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.{1,2}\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <numcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>^\s*.{1,2}\s*$</strcmp>
           <feedback>
             <p>Not enough digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*.{4,}\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*.{4,}\s*$</strcmp>
           <feedback>
             <p>Too many digits</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>(length x width) x bits per pixel</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

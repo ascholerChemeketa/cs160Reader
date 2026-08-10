@@ -131,33 +131,34 @@
   <exercise label="cspteasers_computenumbers3">
     <statement>
       <p>Try calculating the payment for a $20,000 loan at 7% interest over 48 months. What is the
-        monthly payment? <var />
+        monthly payment? <fillin mode="string" answer="478.92489"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*478\.92489\d*\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*\d+\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*478\.92489\d*\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*\d+\s*$</strcmp>
           <feedback>
             <p>You should have a decimal</p>
           </feedback>
-        </condition>
-        <condition string="^\s*478\.\d+\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*478\.\d+\s*$</strcmp>
           <feedback>
             <p>That looks close, check all your digits carefully and make sure to provide at least 6 digits after the decimal</p>
           </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*x\s*$</strcmp>
           <feedback>
             <p>No - make sure that you are giving a numeric answer and do not include a $</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 

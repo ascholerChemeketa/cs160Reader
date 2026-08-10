@@ -40,23 +40,22 @@ newDirection =                # Done turning left, there is nothing left!!!
 
   <exercise label="cspnameturtles_funcandproc1">
     <statement>
-      <p>What letter (like A, B, C, D, etc<ellipsis/>) will the program below draw in block style when you click on the Run button? <var />
+      <p>What letter (like A, B, C, D, etc<ellipsis/>) will the program below draw in block style when you click on the Run button? <fillin mode="string" answer="c"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*^c$|^C$\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*^c$|^C$\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*.*\s*$</strcmp>
           <feedback>
             <p>Try to follow the directions as if you are the turtle</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
   <program xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
     <input>

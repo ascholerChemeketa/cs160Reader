@@ -111,7 +111,7 @@ hypotenuse1 = math.sqrt(aSquared + bSquared)
   <exercise label="cspnamefunctions_definingfunctionswhy3">
     <statement>
       <p>We want to calculate the hypotenuse of a triangle with legs of 8 and 15 and then print out the result. Write
-        the line of code that would go in the ______________ to use the <c>hypotenuse_length</c> function defined above to do the math.
+        the line of code that could replace the ______________ in the sample below to use the <c>hypotenuse_length</c> function defined above to do the math.
       </p>
       <p>
         <program language="python">
@@ -121,28 +121,28 @@ print(answer)
 </input>
         </program>
       </p>
-      <p> <var />
+      <p> <fillin mode="string" width="60" answer="answer = hypotenuse_length(8, 15)"/>
       </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="^\s*answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$">
-          <feedback>
-            <p>Correct!</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*\w+\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>^\s*answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$</strcmp>
+        </test>
+        <test>
+          <strcmp>^\s*\w+\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$</strcmp>
           <feedback>
             <p>Make sure you use the same variable name the second line is using.</p>
           </feedback>
-        </condition>
-        <condition string="^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$">
+        </test>
+        <test>
+          <strcmp>^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$</strcmp>
           <feedback>
             <p>Make sure you store the result of the function call.</p>
           </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
 </section>
 
