@@ -2,11 +2,12 @@
   <title>Multi Processing</title>
   <figure>
     <caption>Multiple processing cores on one chip. Image <copyright/> Intel Corporation</caption>
-    <image source="ParallelProcessing/Images/quad-core.jpg" width="30%" />
+    <image source="ParallelProcessing/Images/quad-core.jpg"
+           width="30%"/>
   </figure>
-  <p>In the year 2002, Intel’s flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU
-    clock ticks 3 billion times per second). The architecture of this processor was supposed to scale up to 10 GHz, but
-    by 2005, Intel had to abandon the architecture as the power density of the chips was becoming unmanageable. Intel
+  <p>In the year 2002, Intel’s flagship consumer processor was the Pentium 4 running at 3.06 GHz (meaning the CPU clock
+    ticks 3 billion times per second). The architecture of this processor was supposed to scale up to 10 GHz, but by
+    2005, Intel had to abandon the architecture as the power density of the chips was becoming unmanageable. Intel
     shifted to a new strategy and architecture called the Core architecture.</p>
   <p>These new chips were not clocked as fast as the ones they replaced, but they featured multiple processing cores.
     Chip designers had figured out that by reducing the clock speed by say 20%, they could also reduce the voltage,
@@ -16,55 +17,55 @@
     to manage. Each of these processing cores can work independently - assuming they each can process 80% of what one
     higher speed chip could, that means a total increase in processing power of 60%.</p>
 
-    <tabular halign="center">
+  <tabular halign="center">
 
-      <row header="yes">
-        <cell> </cell>
-        <cell> 1 Fast Core </cell>
-        <cell> 2 Cores </cell>
-      </row>
+    <row header="yes">
+      <cell> </cell>
+      <cell> 1 Fast Core </cell>
+      <cell> 2 Cores </cell>
+    </row>
 
-      <row>
-        <cell>
-          <term>Speed</term>
-        </cell>
-        <cell> 100% </cell>
-        <cell> 80% </cell>
-      </row>
-      <row>
-        <cell>
-          <term>Power</term>
-        </cell>
-        <cell> 100% </cell>
-        <cell> 100% (50% each) </cell>
-      </row>
-      <row>
-        <cell>
-          <term>Area</term>
-        </cell>
-        <cell> 1 </cell>
-        <cell> 2 </cell>
-      </row>
-      <row>
-        <cell>
-          <term>Power Density</term>
-        </cell>
-        <cell> 100%/1 = 100% </cell>
-        <cell> 100%/2 = 50% </cell>
-      </row>
-      <row>
-        <cell>
-          <term>Instruction Processing Power</term>
-        </cell>
-        <cell> 100% </cell>
-        <cell> 160% </cell>
-      </row>
+    <row>
+      <cell>
+        <term>Speed</term>
+      </cell>
+      <cell> 100% </cell>
+      <cell> 80% </cell>
+    </row>
+    <row>
+      <cell>
+        <term>Power</term>
+      </cell>
+      <cell> 100% </cell>
+      <cell> 100% (50% each) </cell>
+    </row>
+    <row>
+      <cell>
+        <term>Area</term>
+      </cell>
+      <cell> 1 </cell>
+      <cell> 2 </cell>
+    </row>
+    <row>
+      <cell>
+        <term>Power Density</term>
+      </cell>
+      <cell> 100%/1 = 100% </cell>
+      <cell> 100%/2 = 50% </cell>
+    </row>
+    <row>
+      <cell>
+        <term>Instruction Processing Power</term>
+      </cell>
+      <cell> 100% </cell>
+      <cell> 160% </cell>
+    </row>
 
-    </tabular>
+  </tabular>
   <p>Nowadays, just about every computer processor is <term>multi-core</term>. Personal computers routinely come with
     four or more processing cores. Computer graphics cards have thousands of processing units (though they are optimized
-    to perform very specific types of work). Supercomputers, like <url
-      href="https://www.youtube.com/watch?v=FC3IryWr4c8" visual="https://www.youtube.com/watch?v=FC3IryWr4c8">IBM’s
+    to perform very specific types of work). Supercomputers, like <url href="https://www.youtube.com/watch?v=FC3IryWr4c8"
+         visual="https://www.youtube.com/watch?v=FC3IryWr4c8">IBM’s
     Watson computer that beat the best human Jeopardy players</url>, combine thousands of processors into room-sized
     devices.</p>
   <p>Unfortunately, adding processing cores greatly complicates programming a computer. It is not the case that we can
@@ -75,5 +76,59 @@
       system designers and programmers had their choice, we would still be focused on cranking up the speed of single
       processors instead of increasing power by adding cores.</p>
   </important>
+  <exercise label="parallel-processing_multi-processing-ex1">
+    <statement>
+      <p>Why can two somewhat slower processor cores be preferable to one faster core?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>They can provide more total processing power while spreading the same power over more area.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Two cores eliminate all heat generated by a processor.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Each core can use more power than the original faster core.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Every program automatically runs twice as fast.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="parallel-processing_multi-processing-ex2">
+    <statement>
+      <p>If two cores each deliver 80% of the instruction processing power of one fast core, what total processing power
+        do they provide relative to that one fast core?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>160%</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>80%</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>100%</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>200%</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-
