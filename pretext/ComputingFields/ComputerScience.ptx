@@ -39,14 +39,16 @@
 
   <subsection xml:id="cs-education">
     <title>Education</title>
-    <ul>
+    <p>
+      <ul>
       <li>
         <p>Working as a software developer requires a Bachelor’s degree</p>
       </li>
       <li>
         <p>Working as a research scientist requires a graduate degree (Master’s or Ph.D.).</p>
       </li>
-    </ul>
+      </ul>
+    </p>
     <p>The first year of study generally focuses on programming - the essential skill needed to solve problems using a
       computer. Courses in the following years tend to be more focused on the theory of why software and hardware work
       and how to build software.</p>

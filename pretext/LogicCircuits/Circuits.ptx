@@ -47,17 +47,19 @@
     <note xml:id="circuit-tips">
       <title>Circuit simulator tips</title>
 
-      <ul>
-        <li>
-          <p>An input is ON when the center turns dark.</p>
-        </li>
-        <li>
-          <p>A red circle at the output or input to a gate indicates it is on. Black is off.</p>
-        </li>
-        <li>
-          <p>The final Output light turns bright red when it is on.</p>
-        </li>
-      </ul>
+      <p>
+        <ul>
+          <li>
+            <p>An input is ON when the center turns dark.</p>
+          </li>
+          <li>
+            <p>A red circle at the output or input to a gate indicates it is on. Black is off.</p>
+          </li>
+          <li>
+            <p>The final Output light turns bright red when it is on.</p>
+          </li>
+        </ul>
+      </p>
     </note>
   </p>
   <exercise label="logic-circuits_circuits-ex1">
