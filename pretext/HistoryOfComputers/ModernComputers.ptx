@@ -8,7 +8,7 @@
     agreement on the topic, some people have declared this world of <term>ubiquitous computing</term>
     (computers found everywhere) the Fifth Generation of computing because of the fundamental change
     in how we interact with computers.</p>
-  <container classes="inlinegroup">
+  <sidebyside width="45%">
     <figure xml:id="modern-computers-img1">
       <caption>Modern microprocessors like this Intel i7 processor feature billions of transistors on one chip the size of a fingernail. Fritzchens Fritz, CC0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%">
@@ -21,7 +21,7 @@
         <shortdescription>Apple iPhone</shortdescription>
       </image>
     </figure>
-  </container>
+  </sidebyside>
   <p>How these fantastically complex microprocessors are manufactured:</p>
 
   <video xml:id="bor0qLifjz4" youtube="bor0qLifjz4" width="auto" />
@@ -30,4 +30,3 @@
       href="http://en.wikipedia.org/">Wikipedia</url> (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </p></remark>
 </section>
-

@@ -17,7 +17,7 @@
     individual users. In 1981 IBM released the first PC and the personal computer revolution had begun. Although the
     machines we use are millions of times more powerful than those early personal computers they are direct descendants
     of these machines.</p>
-  <container classes="inlinegroup">
+  <sidebyside width="45%">
     <figure xml:id="the-fouth-generation-img2">
       <caption>The Apple I computer was sold as a kit for which people had to build their own case. Ed Uthman, CC BY-SA 2.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Apple_I_Computer.jpg" width="50%">
@@ -30,9 +30,8 @@
         <shortdescription>IBM 5150</shortdescription>
       </image>
     </figure>
-  </container>
+  </sidebyside>
   <remark><p> Materials on this page adapted with permission from <url
       href="http://en.wikipedia.org/">Wikipedia</url> (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </p></remark>
 </section>
-

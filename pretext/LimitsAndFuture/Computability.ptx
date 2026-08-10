@@ -72,7 +72,7 @@
     O(n!)</m>. The knapsack problem involves selecting the best subset of items from a list to maximize the value of
     items placed into a backpack with a limited capacity - it too has no polynomial time solution. Both of these
     problems relate closely to all kinds of optimization problems we would like to use computers to solve.</p>
-  <container classes="inlinegroup">
+  <sidebyside width="45%">
     <figure>
       <caption> Traveling Salesman: Is this the best possible route? - <url name="Image by Jeremy Kubica"
              refuri="http://computationaltales.blogspot.com/2011/08/traveling-salesmans-problem-part-6-of.html">Image
@@ -99,7 +99,7 @@
         <shortdescription>Knapsack problem diagram with a 15 kg backpack and weighted items with values.</shortdescription>
       </image>
     </figure>
-  </container>
+  </sidebyside>
 
   <sidebar>
     <title>P = NP?</title>

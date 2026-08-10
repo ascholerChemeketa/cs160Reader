@@ -13,7 +13,7 @@
     <shortdescription>Switch circuit demonstrating one input case for an OR gate.</shortdescription>
   </image>
   <p>If only the bottom switch is on, or if both switches are on, the power can still reach the bulb to light it:</p>
-  <container classes="inlinegroup">
+  <sidebyside width="45%">
     <image source="LogicCircuits/Images/switchesOr2.png"
            width="45%">
       <shortdescription>Switch circuit demonstrating another input case for an OR gate.</shortdescription>
@@ -22,7 +22,7 @@
            width="45%">
       <shortdescription>Switch circuit demonstrating an OR gate with both switches closed.</shortdescription>
     </image>
-  </container>
+  </sidebyside>
   <p>The only way the light bulb will not be on is if both switches are in the off position:</p>
   <image source="LogicCircuits/Images/switchesOr3.png"
          width="50%">

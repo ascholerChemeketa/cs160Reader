@@ -41,7 +41,7 @@
     their hand at building their own calculators, including <url
       href="http://en.wikipedia.org/wiki/Gottfried_Leibniz">Gottfried Leibniz</url> who described a machine that would
     be implemented using <xref ref="binary_binary-and-its-advantages" text="custom">binary</xref>.</p>
-  <container classes="inlinegroup clear">
+  <sidebyside width="45%">
     <figure xml:id="prehistory-img3">
       <caption>The Pascaline. Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Pascaline-CnAM_00823-0003-IMG_6509.JPG"
@@ -55,10 +55,9 @@
         <shortdescription>Leibniz notes</shortdescription>
       </image>
     </figure>
-  </container>
+  </sidebyside>
   <remark><p> Materials on this page adapted with permission from <url
       href="http://en.wikipedia.org/">Wikipedia</url> (<url
       href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>)
   </p></remark>
 </section>
-
