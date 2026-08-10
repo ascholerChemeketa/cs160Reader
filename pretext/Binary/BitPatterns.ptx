@@ -1,32 +1,28 @@
-<section xml:id="binary_bit-patterns">
+﻿<section xml:id="binary_bit-patterns">
   <title>Bit Patterns</title>
   <p>A bit can only represent two possible values - 0 or 1. With one bit there are two possible patterns. How many
     patterns can be formed with two bits? Here is a complete list:</p>
-  <blockquote>
-    <line_block>
-      <line>0 0</line>
-      <line>0 1</line>
-      <line>1 0</line>
-      <line>1 1</line>
-    </line_block>
-  </blockquote>
+  <pre>
+      0 0
+      0 1
+      1 0
+      1 1
+  </pre>
   <figure xml:id="bit-patterns-demo-app">
     <caption>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.</caption>
   </figure>
     <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
   <p>How many patterns can be formed with three bits? Let's list them:</p>
-  <blockquote>
-    <line_block>
-      <line>0 0 0</line>
-      <line>0 0 1</line>
-      <line>0 1 0</line>
-      <line>0 1 1</line>
-      <line>1 0 0</line>
-      <line>1 0 1</line>
-      <line>1 1 0</line>
-      <line>1 1 1</line>
-    </line_block>
-  </blockquote>
+  <pre>
+      0 0 0
+      0 0 1
+      0 1 0
+      0 1 1
+      1 0 0
+      1 0 1
+      1 1 0
+      1 1 1
+  </pre>
   <p>The list of patterns for three bits has 8 lines (patterns). Notice that the first four patterns are a
     <q>0</q> followed by the possible patterns for 2 bits. The second four patterns are a <q>1</q>
     followed by the patterns for 2 bits.</p>
