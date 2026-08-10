@@ -28,8 +28,8 @@
   <p>
     <em>Animation used by permission of Virginia Tech</em>
   </p>
-  <remark> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
-    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</remark>
+  <remark><p> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
+    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</p></remark>
   <exercise label="algorithms_selection-sort-ex1">
     <statement>
       <p>What does selection sort do during each pass through its unsorted portion?</p>

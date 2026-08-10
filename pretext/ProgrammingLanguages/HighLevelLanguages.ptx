@@ -133,7 +133,8 @@
     </choices>
   </exercise>
 
-  <remark> Materials on this page adapted with permission from: <ol>
+  <remark>
+    <p> Materials on this page adapted with permission from: <ol>
       <li>
         <url href="http://courses.cs.vt.edu/csonline/">Online Interactive Modules for Teaching Computer Science</url> by
     Osman Balci et al. of Virginia Tech </li>
@@ -141,5 +142,6 @@
         <url href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by
     Bradley Kjell (<url href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC 3.0</url>) </li>
     </ol>
+    </p>
   </remark>
 </section>

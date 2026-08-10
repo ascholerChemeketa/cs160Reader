@@ -1,27 +1,32 @@
 <section xml:id="computing-fields_cybersecurity">
   <title>Cybersecurity</title>
 
-  <p><term>Cybersecurity</term> is a cross-disciplinary field that is concerned with preventing misuse of computational
-    devices and data. It is a relatively new discipline that arose out of a realization that a system is only as secure
-    as its weakest link - and thus keeping systems secure requires a comprehensive approach.</p>
-  <p>While every technical professional should be concerned with security - developers should write secure code, network
-    administrators should configure systems to be resilient to attack, etc<ellipsis/> - there is a need for individuals that
-    can think about all of these potential issues and how they interact. These are cybersecurity professionals.</p>
-  <p>Cybersecurity jobs from the technical (cryptography, network defense) to business and management (setting
-    organization policy and training users). Even within the more technical jobs, there are a wide variety of
-    specializations that may require advanced skills in programming, networking, system administration, or mathematics.</p>
+  <subsection>
+    <title>Description</title>
+    <p><term>Cybersecurity</term> is a cross-disciplinary field that is concerned with preventing misuse of computational
+      devices and data. It is a relatively new discipline that arose out of a realization that a system is only as secure
+      as its weakest link - and thus keeping systems secure requires a comprehensive approach.</p>
+    <p>While every technical professional should be concerned with security - developers should write secure code, network
+      administrators should configure systems to be resilient to attack, etc<ellipsis/> - there is a need for individuals that
+      can think about all of these potential issues and how they interact. These are cybersecurity professionals.</p>
+    <p>Cybersecurity jobs from the technical (cryptography, network defense) to business and management (setting
+      organization policy and training users). Even within the more technical jobs, there are a wide variety of
+      specializations that may require advanced skills in programming, networking, system administration, or mathematics.</p>
+  </subsection>
 
   <subsection xml:id="cyber-careers">
     <title>Typical careers</title>
-    <ol>
-      <li>
-        <p>
-          <url href="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">Information
-            Security Analyst</url>
-        </p>
-      </li>
-    </ol>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <url href="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm">Information
+              Security Analyst</url>
+          </p>
+        </li>
+      </ol>
+    </p>
   </subsection>
 
   <subsection xml:id="cyber-education">
@@ -54,34 +59,37 @@
     </figure>
   </subsection>
 
-  <exercise label="computing-fields_cybersecurity_1">
-    <statement>
-      <p>Which statement best describes cybersecurity according to this page?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>It is a cross-disciplinary field focused on preventing misuse of computational devices and data.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It is mainly about writing encryption algorithms.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It focuses only on business policy and user training rather than technical systems.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It is a purely technical discipline.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_cybersecurity_1">
+      <statement>
+        <p>Which statement best describes cybersecurity according to this page?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>It is a cross-disciplinary field focused on preventing misuse of computational devices and data.</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>It is mainly about writing encryption algorithms.</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>It focuses only on business policy and user training rather than technical systems.</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>It is a purely technical discipline.</p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
 
-  <remark> Materials on this page adapted from <url
-    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+    <remark><p> Materials on this page adapted from <url
+      href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></p></remark>
+  </subsection>
 </section>

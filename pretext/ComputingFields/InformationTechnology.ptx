@@ -1,43 +1,48 @@
 <section xml:id="computing-fields_information-technology">
   <title>Information Technology</title>
 
-  <p>Although the term <term>Information Technology</term> is sometimes used to describe any career involving computers,
-    in the education world it has a more specific meaning - the skill set required to put computers to work in a
-    business or other organization.</p>
-  <p>IT professionals have the responsibility for installing and maintaining hardware and software products as well as
-    integrating those products to meet organizational needs. They often work directly with non-technical users of
-    complex technology to support those users and fix issues.</p>
-  <p>A broad range of basic knowledge is required for an IT professional - they need to understand the basics of
-    networking, programming, operating systems, computer hardware, and security. On top of this base layer of knowledge,
-    many IT professionals develop more extensive expertise in a particular area such as database administration, system
-    administration, or cybersecurity.</p>
+  <subsection>
+    <title>Description</title>
+    <p>Although the term <term>Information Technology</term> is sometimes used to describe any career involving computers,
+      in the education world it has a more specific meaning - the skill set required to put computers to work in a
+      business or other organization.</p>
+    <p>IT professionals have the responsibility for installing and maintaining hardware and software products as well as
+      integrating those products to meet organizational needs. They often work directly with non-technical users of
+      complex technology to support those users and fix issues.</p>
+    <p>A broad range of basic knowledge is required for an IT professional - they need to understand the basics of
+      networking, programming, operating systems, computer hardware, and security. On top of this base layer of knowledge,
+      many IT professionals develop more extensive expertise in a particular area such as database administration, system
+      administration, or cybersecurity.</p>
+  </subsection>
 
   <subsection xml:id="information-technology-careers">
     <title>Typical careers</title>
-    <ol>
-      <li>
-        <p>
-          <url href="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm"
-            visual="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm">Computer
-            Support Specialist</url>
-        </p>
-      </li>
-      <li>
-        <p>
-          <url
-            href="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">Network
-            and Systems Administrator</url>
-        </p>
-      </li>
-      <li>
-        <p>
-          <url href="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm">Database
-            Administrator</url>
-        </p>
-      </li>
-    </ol>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <url href="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm"
+              visual="https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm">Computer
+              Support Specialist</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url
+              href="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm">Network
+              and Systems Administrator</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm">Database
+              Administrator</url>
+          </p>
+        </li>
+      </ol>
+    </p>
   </subsection>
 
   <subsection xml:id="information-technology-education">
@@ -67,26 +72,29 @@
     </figure>
   </subsection>
 
-  <exercise label="computing-fields_information-technology-ex1">
-    <statement>
-      <p>
-        Match each description to either Information Technology or Information Systems.
-      </p>
-    </statement>
-    <cardsort>
-      <match>
-        <premise>Hands on technology focused</premise>
-        <premise>Requires certificate or two-year degree</premise>
-        <response>Information Technology</response>
-      </match>
-      <match>
-        <premise>Business and management oriented</premise>
-        <premise>Requires four-year degree</premise>
-        <response>Information Systems</response>
-      </match>
-    </cardsort>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_information-technology-ex1">
+      <statement>
+        <p>
+          Match each description to either Information Technology or Information Systems.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+          <premise>Hands on technology focused</premise>
+          <premise>Requires certificate or two-year degree</premise>
+          <response>Information Technology</response>
+        </match>
+        <match>
+          <premise>Business and management oriented</premise>
+          <premise>Requires four-year degree</premise>
+          <response>Information Systems</response>
+        </match>
+      </cardsort>
+    </exercise>
 
-  <remark> Materials on this page adapted from <url
-    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+    <remark><p> Materials on this page adapted from <url
+      href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></p></remark>
+  </subsection>
 </section>

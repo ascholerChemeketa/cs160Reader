@@ -1,30 +1,35 @@
 <section xml:id="computing-fields_software-engineering">
   <title>Software Engineering</title>
 
-  <p><term>Software engineering</term> is concerned with developing and maintaining software systems that behave
-    reliably and efficiently, are affordable to develop and maintain, and satisfy the requirements of the users. It has
-    developed to meet the industry need for graduates capable of working in teams on large software systems.</p>
+  <subsection>
+    <title>Description</title>
+    <p><term>Software engineering</term> is concerned with developing and maintaining software systems that behave
+      reliably and efficiently, are affordable to develop and maintain, and satisfy the requirements of the users. It has
+      developed to meet the industry need for graduates capable of working in teams on large software systems.</p>
 
-  <p>There is significant overlap in the skills required in SE and CS - both require a strong foundation in programming
-    fundamentals and some knowledge of computational theory. Where the two disciplines differ is their focus after that.
-    While Computer Science is concerned with learning how to use computation to solve new problems in many different
-    areas, Software Engineering is more concerned with mastering a specific set of skills required to design and develop
-    reliable software projects. If you need someone to design a new way for computers to render more complex graphics in
-    video games or solve new problems in computational biology, you want a computer scientist. If you want someone to
-    help build a new application that is going to be a commercial project and be used by thousands of consumers, you
-    probably want a software engineer.</p>
+    <p>There is significant overlap in the skills required in SE and CS - both require a strong foundation in programming
+      fundamentals and some knowledge of computational theory. Where the two disciplines differ is their focus after that.
+      While Computer Science is concerned with learning how to use computation to solve new problems in many different
+      areas, Software Engineering is more concerned with mastering a specific set of skills required to design and develop
+      reliable software projects. If you need someone to design a new way for computers to render more complex graphics in
+      video games or solve new problems in computational biology, you want a computer scientist. If you want someone to
+      help build a new application that is going to be a commercial project and be used by thousands of consumers, you
+      probably want a software engineer.</p>
+  </subsection>
 
   <subsection xml:id="software-engineering-careers">
     <title>Typical careers</title>
-    <ol>
-      <li>
-        <p>
-          <url href="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">Software
-            Developer</url>
-        </p>
-      </li>
-    </ol>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <url href="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">Software
+              Developer</url>
+          </p>
+        </li>
+      </ol>
+    </p>
   </subsection>
 
   <subsection xml:id="software-engineering-education">
@@ -57,35 +62,38 @@
     </figure>
   </subsection>
 
-  <exercise label="computing-fields_software-engineering_1">
-    <statement>
-      <p>Compare the knowledge areas for Software Engineers with those for Computer Scientists. Which areas below are more emphasized for Software Engineers?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Software Design</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Software Validation</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>AI</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Programming</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_software-engineering_1">
+      <statement>
+        <p>Compare the knowledge areas for Software Engineers with those for Computer Scientists. Which areas below are more emphasized for Software Engineers?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>Software Design</p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Software Validation</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>AI</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Programming</p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
 
-   <remark> Materials on this page adapted from <url
-    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+    <remark><p> Materials on this page adapted from <url
+      href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></p></remark>
+  </subsection>
 
 </section>

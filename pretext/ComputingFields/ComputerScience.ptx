@@ -1,35 +1,40 @@
 <section xml:id="computing-fields_computer-science">
   <title>Computer Science</title>
 
-  <p>Despite its name, much of <term>computer science</term> is not focused on the study of computers themselves.
-    Instead, computer scientists are more concerned with understanding what problems can be solved with computation and
-    how we can most efficiently and appropriately solve those problems with <em>algorithms</em>. (An algorithm is simply
-    a step-by-step process for solving a problem.)</p>
-  <p>Computer science tends to have a more theoretical focus than other computing disciplines. There is a core to the
-    discipline that is closely related to ideas in math and logic. But the discipline also applies those theoretical
-    tools to solve specific problems in areas from artificial intelligence, to graphics, to simulations, and many
-    others.</p>
+  <subsection>
+    <title>Description</title>
+    <p>Despite its name, much of <term>computer science</term> is not focused on the study of computers themselves.
+      Instead, computer scientists are more concerned with understanding what problems can be solved with computation and
+      how we can most efficiently and appropriately solve those problems with <em>algorithms</em>. (An algorithm is simply
+      a step-by-step process for solving a problem.)</p>
+    <p>Computer science tends to have a more theoretical focus than other computing disciplines. There is a core to the
+      discipline that is closely related to ideas in math and logic. But the discipline also applies those theoretical
+      tools to solve specific problems in areas from artificial intelligence, to graphics, to simulations, and many
+      others.</p>
+  </subsection>
 
   <subsection xml:id="cs-careers">
     <title>Typical careers</title>
-    <ol>
-      <li>
-        <p>
-          <url
-            href="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">Software
-            Developer</url>
-        </p>
-      </li>
-      <li>
-        <p>
-          <url
-            href="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
-            visual="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm">Computer
-            Research Scientist</url>
-        </p>
-      </li>
-    </ol>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <url
+              href="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">Software
+              Developer</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url
+              href="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
+              visual="http://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm">Computer
+              Research Scientist</url>
+          </p>
+        </li>
+      </ol>
+    </p>
   </subsection>
 
   <subsection xml:id="cs-education">
@@ -71,35 +76,38 @@
     </figure>
   </subsection>
 
-  <exercise label="computing-fields_computer-science_1">
-    <statement>
-      <p>Other than programming, which is the strongest knowledge area for Computer Scientists?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Algorithms</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Operating Systems</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Computer Architecture</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Computer Networks</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_computer-science_1">
+      <statement>
+        <p>Other than programming, which is the strongest knowledge area for Computer Scientists?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>Algorithms</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Operating Systems</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Computer Architecture</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Computer Networks</p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
 
-  <remark> Materials on this page adapted from <url
-    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+    <remark><p> Materials on this page adapted from <url
+      href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></p></remark>
+  </subsection>
 
 </section>

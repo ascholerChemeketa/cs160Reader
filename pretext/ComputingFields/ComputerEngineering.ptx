@@ -1,22 +1,27 @@
 <section xml:id="computing-fields_computer-engineering">
   <title>Computer Engineering</title>
 
-  <p><term>Computer Engineers</term> research, design, and test computer chips, circuit boards, computer
-    systems, and related equipment. They need to understand computer programming, as they are the ones who design the
-    hardware that runs programs, but in general, their work is more focused on the hardware itself.</p>
+  <subsection>
+    <title>Description</title>
+    <p><term>Computer Engineers</term> research, design, and test computer chips, circuit boards, computer
+      systems, and related equipment. They need to understand computer programming, as they are the ones who design the
+      hardware that runs programs, but in general, their work is more focused on the hardware itself.</p>
+  </subsection>
 
   <subsection xml:id="ce-careers">
     <title>Typical careers</title>
-    <ol>
-      <li>
-        <p>
-          <url
-            href="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm"
-            visual="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm">Computer
-            engineer</url>
-        </p>
-      </li>
-    </ol>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <url
+              href="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm"
+              visual="http://www.bls.gov/ooh/architecture-and-engineering/computer-hardware-engineers.htm">Computer
+              engineer</url>
+          </p>
+        </li>
+      </ol>
+    </p>
   </subsection>
 
   <subsection xml:id="ce-education">
@@ -45,34 +50,37 @@
     </figure>
   </subsection>
 
-  <exercise label="computing-fields_computer-engineering_1">
-    <statement>
-      <p>Which of the following are core knowledge areas (4 or 5 rating) for Computer Engineers?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Computer Architecture</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Electronic Circuits</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Software Design</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Algorithms</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_computer-engineering_1">
+      <statement>
+        <p>Which of the following are core knowledge areas (4 or 5 rating) for Computer Engineers?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>Computer Architecture</p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Electronic Circuits</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Software Design</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Algorithms</p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
 
-  <remark> Materials on this page adapted from <url
-    href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></remark>
+    <remark><p> Materials on this page adapted from <url
+      href="https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf">the 2020 Association for Computing Machinery Curriculum Report</url></p></remark>
+  </subsection>
 </section>

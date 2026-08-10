@@ -1,22 +1,26 @@
 <section xml:id="computing-fields_data-science">
   <title>Data Science</title>
-  <p><term>Data Science</term> is a new, and rapidly growing interdisciplinary field of study. It focuses on using a
-    combination of computation and mathematics to answer questions and solve problems using large amounts of data.</p>
-  <p>A data scientist will be responsible for gathering data and then using it to find trends, make forecasts, and
-    communicate information. To do this, they will write computer programs, apply various mathematical techniques from
-    statistics, calculus, and linear algebra, and make use of advanced tools like machine learning algorithms.</p>
-  <p>Although there is a general set of skills used by all data scientists, an individual data scientist often focuses
-    on a particular domain. They may specialize in working with data from biological sciences, business and marketing,
-    sports management, geology, or any other domain where large amounts of data exist. To effectively work in one of
-    these domains, a data scientist often needs field-specific knowledge in addition to their general data science
-    skills.</p>
 
-  <figure align="" >
-    <caption >Data Science combines mathematics,
-      computer science, and knowledge in a domain.</caption>
-    <image source="ComputingFields/Images/DataScience.svg" width="50%"
-      alt="Data Science is the intersection of math, computer science, and domain knowledge." />
-  </figure>
+  <subsection>
+    <title>Description</title>
+    <p><term>Data Science</term> is a new, and rapidly growing interdisciplinary field of study. It focuses on using a
+      combination of computation and mathematics to answer questions and solve problems using large amounts of data.</p>
+    <p>A data scientist will be responsible for gathering data and then using it to find trends, make forecasts, and
+      communicate information. To do this, they will write computer programs, apply various mathematical techniques from
+      statistics, calculus, and linear algebra, and make use of advanced tools like machine learning algorithms.</p>
+    <p>Although there is a general set of skills used by all data scientists, an individual data scientist often focuses
+      on a particular domain. They may specialize in working with data from biological sciences, business and marketing,
+      sports management, geology, or any other domain where large amounts of data exist. To effectively work in one of
+      these domains, a data scientist often needs field-specific knowledge in addition to their general data science
+      skills.</p>
+
+    <figure align="" >
+      <caption >Data Science combines mathematics,
+        computer science, and knowledge in a domain.</caption>
+      <image source="ComputingFields/Images/DataScience.svg" width="50%"
+        alt="Data Science is the intersection of math, computer science, and domain knowledge." />
+    </figure>
+  </subsection>
 
   <subsection xml:id="ds-careers">
     <title>Typical careers</title>
@@ -56,32 +60,35 @@
     </p>
   </subsection>
   
-  <exercise label="computing-fields_data-science_1">
-    <statement>
-      <p>Which of the following are commonly featured in a data science degree program according to this page?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>A solid foundation in programming and algorithms</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Mathematics including statistics and likely calculus and linear algebra</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Expertise in a particular domain</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Specialized training limited to hardware repair and circuit design</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
+  <subsection>
+    <title>Exercises</title>
+    <exercise label="computing-fields_data-science_1">
+      <statement>
+        <p>Which of the following are commonly featured in a data science degree program according to this page?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>A solid foundation in programming and algorithms</p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Mathematics including statistics and likely calculus and linear algebra</p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Expertise in a particular domain</p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>Specialized training limited to hardware repair and circuit design</p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+  </subsection>
 
 </section>
