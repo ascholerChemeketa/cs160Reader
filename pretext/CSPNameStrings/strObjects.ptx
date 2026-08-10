@@ -178,7 +178,7 @@ print(length)
     </program>
 
     <p>The <c>find(string)</c> function takes a string as input and returns the index where that string is found
-      in the current string. If the string isn’t found it returns -1.</p>
+      in the current string. If the string isn't found it returns -1.</p>
 
     <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
       <input>

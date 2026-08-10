@@ -50,7 +50,7 @@
 
         <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described by
           a logarithmic function. It could be <m>f(n) = log_2(n)</m> or <m>f(n) = 3 \cdot log_{10}(n)</m>. Note that we
-          don’t care what base the logarithm is.</p>
+          don't care what base the logarithm is.</p>
         <p>We will see an example of this category soon<ellipsis/></p>
 
       </li>

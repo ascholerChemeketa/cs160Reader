@@ -16,7 +16,7 @@
   <p>Along the way, look for places where you are writing the same code (or code that is essentially the same) in multiple places. Those are places
     you can maybe use a procedure to do the common part of the work. You may have to use parameters to make the
     procedure flexible enough to work in multiple situations.</p>
-  <p>Don’t worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
+  <p>Don't worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
     going to be easy and when you start working on it, realize it is much harder than you anticipated. In those cases,
     you can stop and revise your design by breaking the complex procedure into smaller pieces.</p>
   <subsection xml:id="csp-designing-procedures_top-down-design-example">
@@ -56,7 +56,7 @@
           design.</p>
         <p>For the auto-checker to work, you need to define your procedures in this order: <c>rectangle</c>, <c>drawWall</c>, <c>drawDoor</c>, <c>drawWindow</c>
           , <c>drawRoof</c>, <c>drawHouse</c>. The main part of the program should come after the procedures. </p>
-        <p>Don’t forget to indent the body of each procedure, even if it is not real code yet.</p>
+        <p>Don't forget to indent the body of each procedure, even if it is not real code yet.</p>
       </statement>
       <blocks>
         <block order="">

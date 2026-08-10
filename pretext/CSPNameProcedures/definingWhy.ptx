@@ -9,7 +9,7 @@
   <p>
     <ul>
       <li>
-        <p><term>Code reuse</term> - A golden rule in programming is <term>DRY - don’t repeat yourself</term>. If
+        <p><term>Code reuse</term> - A golden rule in programming is <term>DRY - don't repeat yourself</term>. If
           you find yourself typing the same code over and over (or by copying and pasting), there is probably a better way to
           solve the problem. By defining a function or procedure, we can easily reuse a sequence of instructions without
           typing the entire sequence over and over again.</p>

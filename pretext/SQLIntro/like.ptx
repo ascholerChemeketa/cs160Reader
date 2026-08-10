@@ -2,7 +2,7 @@
   <title>Filtering with Like</title>
   <p>If the data that we are trying to filter is strings of text, we may need to search inside the strings. Perhaps we
     are looking for all names that start with <q>Janice</q>, or all class descriptions that include the word
-    <q>Chemistry</q> anywhere in the title. To match part of a string using <c>WHERE</c>, we can’t rely on <c>==</c>.
+    <q>Chemistry</q> anywhere in the title. To match part of a string using <c>WHERE</c>, we can't rely on <c>==</c>.
     If we ask for <c>WHERE name == 'Janice'</c>, we will only get names that perfectly match 'Janice' - which would not include
     'Janice Jones'.</p>
 
@@ -28,7 +28,7 @@ WHERE
     includes '7th' and examine the results.</p>
   <p>The pattern <c>'%7th%'</c> matches way too many things. To get just 7th (and not 17th or 27th) we would need to state
     something like <em><q>where the name starts with 7th or the name has '7th' within it</q></em>.
-    The space inside the string will make sure we don’t match '17th'. This query will perform that
+    The space inside the string will make sure we don't match '17th'. This query will perform that
     search. Notice that to check if the name begins with '7th', we make sure not to put a <c>%</c> at the
     start of the string.</p>
 

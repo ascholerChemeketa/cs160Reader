@@ -20,7 +20,7 @@ Add fact to page                                                    Serial
   </program>
   <p>Searching piles for the right card should only take 1/5th as long with 5 people looking. But dividing up the piles,
     communicating and typing up the facts will not go any faster. I could add 95 more friends and cut the <q>looking</q>
-    phase down to 1/100th of the original time, but that won’t help me type the information we find up any faster. We
+    phase down to 1/100th of the original time, but that won't help me type the information we find up any faster. We
     can speed up parallel parts by doing them simultaneously, but serial portions can not be sped up.</p>
   <p>The figure below on the left shows how the total time depends on how much work can be split up and how many workers
     we have. The one on the right compares the total time on a hypothetical job done by 1-5 workers. Notice that

@@ -3,9 +3,9 @@
 
   <p>We have seen that it is easy to loop through every item in a list using the <c>for value in list:</c> syntax. However, there are
     limitations to that approach. What if we want to iterate through only part of the list? What if we want to iterate
-    through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can’t do any of
+    through the list in reverse order? What if we want to change items in the list? The <c>for value in list:</c> can't do any of
     these.</p>
-  <p>Perhaps most surprising is that the <c>for value in list:</c> can’t change values in a list. This is because when <c>value</c> is
+  <p>Perhaps most surprising is that the <c>for value in list:</c> can't change values in a list. This is because when <c>value</c> is
     naming a value in the list, making a change just changes what <c>value</c> is naming - it does not change the list
     itself. Watch this codelens program that attempts to set each item in a list to 0 to see how it does not work:</p>
 
@@ -24,7 +24,7 @@ print(list)
   <pre>index[0] = 0 &lt;- first item
 index[1] = 0 &lt;- second item
 index[2] = 0 &lt;- third item</pre>
-  <p>But we don’t want to type out each line separately and we want to make sure we do not use too many or too few
+  <p>But we don't want to type out each line separately and we want to make sure we do not use too many or too few
     indexes. We want to use a counting loop that will automatically generate all the needed indexes. This can be created
     by using the <c>range</c> function and asking it to generate <c>range( len(list) )</c>. That syntax says: <q>Get the length of the
     list. Then generate the range of numbers from 0 to one less than the length.</q> Which is exactly what we need.

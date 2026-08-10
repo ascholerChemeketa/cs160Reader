@@ -41,7 +41,7 @@ print(summerMonths)
   <note>
     <p>Remember that the slice always stops just before the second index. <c>[5:8]</c> only slices indexes 5-7.</p>
   </note>
-  <p>There are some handy shortcuts we can use when specifying a slice. If you don’t give a second index, like <c>[5:]</c>,
+  <p>There are some handy shortcuts we can use when specifying a slice. If you don't give a second index, like <c>[5:]</c>,
     it means <q>to the end of the list</q>. If you use a negative value, it is counted from the end of the list. <c>[-3:-1]</c>
     means <q>the slice from the third to the last item up to but not including the last item</q>. <c>[-2:]</c> would
     mean <q>the last two items</q>.</p>

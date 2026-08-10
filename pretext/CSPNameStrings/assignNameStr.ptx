@@ -112,7 +112,7 @@ print("Cost to get from Chicago to Dallas: $" + str(costTrip))
         </program>
         <p>There is another way we can use the <c>print</c> function. Instead of giving it one string that we form with
             concatenation, we can give it a list of values separated by commas. Using this version of print, we
-            don’t have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
+            don't have to convert <c>costTrip</c> to a string because it is not being concatenated with the string
             <q>Cost to get from Chicago to Dallas</q>, they are just being printed one after another. Also, notice
             that this version of print automatically adds a space between items that are printed. Here that causes a
             problem as it means there will be a space between the $ and the cost.</p>

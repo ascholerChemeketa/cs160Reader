@@ -62,7 +62,7 @@ d = b
     </choices>
 
   </exercise>
-  <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn’t create
+  <p>The <em>sequence</em> of statements in a program is very important. Assignment doesn't create
     some kind of relationship between the names, like in mathematics. The variable <c>a</c> might
     equal <c>12</c> at one point, and <c>15</c> at another. An assignment statement is an action that
     occurs once and then is over with.</p>

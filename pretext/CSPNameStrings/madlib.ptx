@@ -2,7 +2,7 @@
   <title>Making a MadLib story</title>
   <p>You might have done MadLib stories when you were a kid. You provide some pieces of information, like the name of a
     friend, a verb, and a favorite game (for example), and those pieces of information get plugged into a story. Since
-    you don’t know the story beforehand, you’re surprised at what happens to your friend in the story.</p>
+    you don't know the story beforehand, you’re surprised at what happens to your friend in the story.</p>
 
   <program xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
     <input>
@@ -216,7 +216,7 @@ print("Mali" + " is " + str(Mali))
   <exercise label="cspnamestrings_madlib7" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Put the blocks below into the correct order to declare the variables and then print the following story. One
-        day Jay went shopping. He wanted to buy shoes. But, he didn’t like any. So, Jay went home.</p>
+        day Jay went shopping. He wanted to buy shoes. But, he didn't like any. So, Jay went home.</p>
     </statement>
     <blocks>
       <block order="2">

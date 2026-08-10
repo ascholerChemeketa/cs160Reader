@@ -34,7 +34,7 @@ for i in range(100):
 print("We got", numHeads, "heads.")
         </input>
   </program>
-  <p>Try running the program a few times. You usually won’t get exactly 50, but it will usually be pretty close to
+  <p>Try running the program a few times. You usually won't get exactly 50, but it will usually be pretty close to
     that number since we flip 100 coins. Determining if this program is working correctly is a bit of a challenge - it
     would take too long to use Codelens to watch the whole execution. To sanity check it, try the following:</p>
   <p>

@@ -85,7 +85,7 @@ print("Done")
         </input>
   </program>
   <warning>
-    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can’t have
+    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can't have
       something that looks like <c>… or "blue"</c> or <c>… and 10</c> or that part will just count as True.</p>
   </warning>
 </section>

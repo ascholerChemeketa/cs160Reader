@@ -56,13 +56,13 @@
     </program>
   </exercise>
   <note>
-    <p>If we are not sure that the list has any items, we can’t start with the first item. In that case, we can
+    <p>If we are not sure that the list has any items, we can't start with the first item. In that case, we can
       start with some value that is so low (or high as appropriate) that we are confident the first item we do look at will
       be <q>better</q> and replace the starting one.</p>
     <p>The program above could use 0 as the initial value for <c>highest</c> - the first value we see would be sure to be
       higher. But once we change the program to look for the lowest, we would have to change the starting value to 101
       or something large to guarantee that any real values we looked at would be lower.</p>
-    <p>This is trickier to get right than just starting with the first value, so we won’t use it unless we have
+    <p>This is trickier to get right than just starting with the first value, so we won't use it unless we have
       to.</p>
   </note>
   <p>Sometimes the max or min pattern might need to be modified to work with values calculated from each item. Here is

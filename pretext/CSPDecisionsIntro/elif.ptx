@@ -80,7 +80,7 @@ if x &gt; 0:
   <p>Run this several times and change the value of x each time. Try it with a positive number, a
     negative number, and 0 to check that it works correctly.</p>
 
-  <p>Although that approach works, it doesn’t guarantee that only one option will be chosen.
+  <p>Although that approach works, it doesn't guarantee that only one option will be chosen.
     If the first if said <c>x &lt;= 0</c>, we would print both <q>x is negative</q> and <q>x is 0</q>. To
     guarantee that only one option is chosen, we can use <c>elif</c> (short for <q>
       <term>el**se **if</term>

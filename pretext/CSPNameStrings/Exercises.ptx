@@ -34,7 +34,7 @@
     <statement>
       <p>You will get an error if you try to run the following code. Fix the code to print correctly without errors. It
         should print, <em><q>Your name is Carly and your age is 19.</q></em></p>
-      <p>Note: Don’t forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where <c>x</c>
+      <p>Note: Don't forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where <c>x</c>
         is the <term>int</term> you want to turn into a string.</p>
 
     </statement>

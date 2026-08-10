@@ -118,7 +118,7 @@
   <exercise label="cspdecisionsintro_exercises4">
     <statement>
       <p>The number of credits someone has determines what class level they are at a University. A
-        Senior has taken 135 or more credits. A Junior hasn’t taken that many credits, but has taken at
+        Senior has taken 135 or more credits. A Junior hasn't taken that many credits, but has taken at
         least 90. A Sophomore has taken at least 45 credits. A First Year is anyone who has taken 45
         or less.</p>
       <p>Write code to complete the <c>getClass</c> function. Your code should use <c>credits</c> and the above

@@ -1,6 +1,6 @@
 <section xml:id="csp-repeat-numbers_while-loops-while-vs-until">
   <title>While Loops - While vs Until</title>
-  <p>While loops are most useful when we don’t have a set list of items to repeat over or any time we can more
+  <p>While loops are most useful when we don't have a set list of items to repeat over or any time we can more
     easily describe <em><q>here is the sign we should stop</q></em> rather than <em><q>here are all the
     values we need to do this for</q></em>. We saw one example of that in the program that asked for user input. But
     there are many other situations in which a <c>while</c> is the easiest way to make a loop.</p>

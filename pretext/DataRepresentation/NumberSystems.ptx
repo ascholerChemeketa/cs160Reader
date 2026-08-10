@@ -75,8 +75,8 @@
     </tabular>
   </table>
   <p><term>101</term> in binary means <term>1</term> * 4 + <term>0</term> * 2 + <term>1</term> * 1 = 5</p>
-  <p>Notice that since each digit can only be a 1 or a 0, we don’t actually need to multiply. A 1 indicates we
-    have the value for that column and a 0 indicates we don’t. So <term>101</term> in binary simply means 4 + 1 =
+  <p>Notice that since each digit can only be a 1 or a 0, we don't actually need to multiply. A 1 indicates we
+    have the value for that column and a 0 indicates we don't. So <term>101</term> in binary simply means 4 + 1 =
     5 because the first 1 is in the <q>fours</q> column and the second 1 is in the <q>ones</q> column.</p>
   <p>Because things can get confusing when we are talking about different bases (does <q>101</q> mean the binary
     number that represents 5 or the decimal number 101?), we often use a subscript to indicate the base of the number

@@ -39,7 +39,7 @@
     {11111110}_{2}</m> or <m>{FE}_{16}</m>) and byte 255 (<m>{FF}_{16}</m>).</p>
   <note>
     <p>A 0x written in front of a number is an alternative way to say <q>This is hexadecimal</q>. This is a popular
-      convention in programming languages and tools where you can’t write a subscript <m>_{16}</m> after values.</p>
+      convention in programming languages and tools where you can't write a subscript <m>_{16}</m> after values.</p>
   </note>
   <p>The highest possible address depends on both the computer's hardware and operating system. Although the picture to
     the right only shows addresses that consist of 2 hex digits (which correspond to 8 bits) and thus only go up to 255,

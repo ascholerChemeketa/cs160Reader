@@ -142,7 +142,7 @@ for p in pixels:
 
   </input>
   </program>
-  <p>We don’t always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
+  <p>We don't always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
     a new location. This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put it back
     in the image. This <c>newY</c> is calculated as the height of the image minus one minus the y location of where we got
     the pixel. Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the new location.</p>

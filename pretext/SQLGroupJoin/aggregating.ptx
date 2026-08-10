@@ -1,7 +1,7 @@
 <section xml:id="sql-group-join_aggregating-data">
   <title>Aggregating Data</title>
 
-  <p>Say we want data about how many rides lasted longer than an hour. At this point we don’t care about where
+  <p>Say we want data about how many rides lasted longer than an hour. At this point we don't care about where
     they started, or which bike they were on, we just want to know how many such rides there were. To ask for the total
     number of records a query finds, we can select <c>COUNT(*)</c>.</p>
 

@@ -104,7 +104,7 @@ mia.end_fill()
 
   </exercise>
   <p>Now that we have identified a pattern, it is a bit silly to write separate functions like <c>square</c> and <c>dodecagon</c> for
-    all the shapes. They are all basically the same and we don’t like repeating ourselves.</p>
+    all the shapes. They are all basically the same and we don't like repeating ourselves.</p>
   <p>In this case, the way to avoid repeating ourselves is to make an abstraction - a procedure that can draw any <c>polygon</c>.
     It will take parameters to control how many sides there are and how long to make each side.</p>
   <exercise label="csprepeatturtles_turtlegeom5" numbered="yes" adaptive="yes" indentation="hide" language="python">

@@ -39,7 +39,7 @@
       <p>Add code to split the line into a list of values and print out the date value. (The date should be the first
         value in the list that you create with split.)</p>
       <p>Your final output should be a long list of dates and nothing else.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing. Feel free to use extra ones while writing your code and Then remove them or comment them out when
         everything is working.</p>
 
@@ -78,7 +78,7 @@ myTests().main()
         decimal number. This should look like: <c>float(values[??])</c>.</p>
       <p>The final version of your program should only print out the one highest value, but you should work your way up
         to that. Start by printing out all of the monthly high values, then worry about finding the highest one.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
         <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
@@ -112,7 +112,7 @@ myTests().main()
         <q>96</q>.</p>
       <p>You should try changing <c>desiredYear</c> to different values to make sure your program works for any year for which
         there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to <q>92</q>.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -150,7 +150,7 @@ myTests().main()
         <q>highest value for month</q> seen in those records.</p>
       <p>You should try changing <c>desiredYear</c> to different values to make sure your program works for any year for which
         there is data (89-01), but to pass the tests, you must set <c>desiredYear</c> to <q>96</q>.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -188,7 +188,7 @@ myTests().main()
       <p>The starter code has a simple test of your function followed by a more complex test that tests all the valid
         years. If you need to debug your code, it might be easier if you comment out the complex test and just run the
         simple one.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
         
       <note>
@@ -244,7 +244,7 @@ myTests().main()
       <p>The starter code has a simple test of your function followed by a more complex test that tests all the valid
         years. If you need to debug your code, it might be easier if you comment out the complex test and just run the
         simple one.</p>
-      <p>You can’t use codelens with file reading problems, but you can use print statements to check what your
+      <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
         <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>

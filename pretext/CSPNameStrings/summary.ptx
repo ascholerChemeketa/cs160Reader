@@ -19,7 +19,7 @@
       </li>
       <li>
         <p><term>Function</term> - A function returns a value. Functions can take input as well but
-          don’t have to. An example is the string <c>lower()</c> function that returns a string with all
+          don't have to. An example is the string <c>lower()</c> function that returns a string with all
           lowercase letters.</p>
       </li>
       <li>

@@ -69,7 +69,7 @@ print(invoiceTotal)
         </choices>
 
     </exercise>
-    <p>We don’t really have to create new variables <c>quantity2</c> and <c>unitPrice2</c>. We only use those to compute the total
+    <p>We don't really have to create new variables <c>quantity2</c> and <c>unitPrice2</c>. We only use those to compute the total
         for the line, and then we could reuse those variable names.</p>
 
         <listing  xml:id="cspnamenumbers_invoice3"> 

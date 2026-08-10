@@ -3,7 +3,7 @@
   <p>As one last example of selectively modifying the colors in an image, we are going to <term>
     posterize</term> an image. <term>Posterizing</term> is the process of changing an image so it
     only uses a small number of colors. (Old posters had to be printed with a small number of colors
-    - the technology didn’t allow for complex blending of colors).</p>
+    - the technology didn't allow for complex blending of colors).</p>
   <p>This time, instead of making a function to answer a question like <q>Is this green?</q>, we
     need to make a function that will force a color value to become one of a few specific options.</p>
 

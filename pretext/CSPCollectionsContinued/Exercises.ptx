@@ -122,7 +122,7 @@
       <p>Write the code for <c>middleThird()</c>. It should accept a <c>list</c> as its parameter and then slice the list into three
         equal parts (first third, middle third, last third) and return the middle third.</p>
       <p>You can assume the <c>list</c> will always be of a size that evenly divides by 3.</p>
-      <p>Hint: Indexes you use in a list slice must be integers. You can’t ask for a slice <c>[2.0:4.0]</c>, just <c>[2:4]</c>.
+      <p>Hint: Indexes you use in a list slice must be integers. You can't ask for a slice <c>[2.0:4.0]</c>, just <c>[2:4]</c>.
         When you do division, use <c>//</c> to get an integer answer instead of <c>/</c> which gives a decimal answer.</p>
       <p>If you are having issues, first calculate the indexes you will use to make the slice and print them out.</p>
 

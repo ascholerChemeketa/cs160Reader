@@ -110,7 +110,7 @@ else:
         represents a temperature in degrees F. It should return the string <c>"Hot"</c> if the temp is
         above 80, <c>"Warm"</c> if it is not above 80 but is above 70, <c>"Cool"</c> if it is not above 70 but
         is above 60, and <c>"Cold"</c> otherwise (below 60).</p>
-      <p>Hint: You don’t have to solve it all at once. You can start with just an <c>if</c> that only
+      <p>Hint: You don't have to solve it all at once. You can start with just an <c>if</c> that only
         handles temps greater than 80. Then add an <c>elif</c> to handle the Warm temps. Then add one
         for Cool<ellipsis /></p>
       <p>Make sure to <c>return</c> the answers and not just <c>print</c> them.</p>

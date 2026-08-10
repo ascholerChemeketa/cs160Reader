@@ -7,7 +7,7 @@
 
   <p>To do that we need to select all the red pixels. But there are a lot of different <q>reds</q>.
       Obviously, a pixel with the color red = 255, green = 0, and blue = 0 is red.
-      But most of the pixels in the scooter aren’t pure red. The
+      But most of the pixels in the scooter aren't pure red. The
       red channel might not be 255. Or the blue or green might not be 0. Furthermore, a pixel
       with color values (255, 255, 255) has the maximum red value<ellipsis/> but it is not red, it is
       white. Here are three examples of colors that might be part of the scooter:</p>

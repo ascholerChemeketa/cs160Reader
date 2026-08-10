@@ -28,7 +28,7 @@
     <title>Cache</title>
     <p>This special memory is smaller and faster than the normal main memory and is housed closer to the CPU. It
       maintains a copy of parts of the main memory, allowing quicker access to some information. As far as the logic of
-      a program goes, the cache doesn’t exist<ellipsis/> we always request information from the main memory (RAM). The
+      a program goes, the cache doesn't exist<ellipsis/> we always request information from the main memory (RAM). The
       cache just makes it so that sometimes those memory requests come back extra fast. Lots of engineering goes into
       figuring out how the computer should decide what is important enough to get cached.</p>
   </subsection>

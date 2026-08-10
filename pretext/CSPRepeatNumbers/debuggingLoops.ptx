@@ -15,7 +15,7 @@ for number in range(0, 100, 2):
 print(sum)
         </input>
   </program>
-  <p>If you don’t already know what the correct answer should be, it is hard to tell that this program does not
+  <p>If you don't already know what the correct answer should be, it is hard to tell that this program does not
     work correctly. How do we know what's really going on in this program? If we had written it, what could we do to
     verify it?</p>
   <p>Here are some things we could do to check our program:</p>

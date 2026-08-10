@@ -134,7 +134,7 @@
       memory (RAM) and a <em><q>500 GB</q></em> hard drive, the 16 GB means <m>16 \times 2^{30}</m> while the 500
       GB means <m>500 \times 10^{9}</m>!</p>
     <p>Fortunately, the values of the base 2 and base 10 systems are close enough that a value like <em><q>32
-      GB</q></em> gives you a good idea of how big the value is even if you aren’t sure how to interpret the <term>
+      GB</q></em> gives you a good idea of how big the value is even if you aren't sure how to interpret the <term>
       GB</term>. But if you desire an exact value, you need to figure out whether you should be using <m>10^{9}</m> or <m>
       2^{30}</m> for each <term>GB</term>.</p>
     <note>

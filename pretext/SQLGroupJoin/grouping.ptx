@@ -51,7 +51,7 @@ ORDER BY
     rows for each type. Recall that <c>AS _______</c> gives a name to a calculated value - any time we do an aggregation, it will
     be helpful to name the result so we know what we are seeing in the output. By giving the aggregated value a name, we
     can use it in the <c>ORDER BY</c> to sort by the total number of trips we calculated.</p>
-  <p>Once you start grouping records, it only makes sense to talk about aggregated data. You can’t group the
+  <p>Once you start grouping records, it only makes sense to talk about aggregated data. You can't group the
     records by <c>member_type</c> and try to select the <c>start_date</c>. There is no one start date for all of those records. You would
     instead have to ask about the <c>MIN(start_station)</c> or <c>MODE(start_station)</c> or <c>COUNT(DISTINCT start_station)</c>.</p>
   <warning>

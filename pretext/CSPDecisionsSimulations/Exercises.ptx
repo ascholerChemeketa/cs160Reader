@@ -161,7 +161,7 @@ print("highestRoll was", highestRoll)
       <p>This program currently makes a pink dot that is 50 pixels across and is centered at 0, 0.</p>
       <p>Modify the program so that the size of the dot is a random value between 50 and 200 and the location it draws
         it is a random location where both x and y are random numbers between -100 and 100.</p>
-      <p>The automatic tests will make sure you generate appropriate values, but it won’t necessarily verify you
+      <p>The automatic tests will make sure you generate appropriate values, but it won't necessarily verify you
         used the random numbers you make in the correct spots. You are responsible for checking that yourself!</p>
       <note>
         <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
@@ -210,7 +210,7 @@ print("highestRoll was", highestRoll)
         times <c>targetNumber</c> is the total of the two dice. Then return that number divided by <c>TRIALS</c>.</p>
       <p>This is very similar to exercise 3 above<ellipsis/> Just make sure to check if the total you <q>roll</q> is
         the same as the <c>targetNumber</c> as opposed to always checking against 8.</p>
-      <p>Make sure to <c>return</c> your answer from the function, don’t print it in the function!</p>
+      <p>Make sure to <c>return</c> your answer from the function, don't print it in the function!</p>
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises6_editor" interactive="activecode" language="python">

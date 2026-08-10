@@ -19,10 +19,10 @@
                     <p>It can also contain digits, like <c>1</c> or <c>9</c>, just not as the first character</p>
                 </li>
                 <li>
-                    <p>It can’t have spaces, or special symbols other than <c>_</c></p>
+                    <p>It can't have spaces, or special symbols other than <c>_</c></p>
                 </li>
                 <li>
-                            It can’t be a Python <term>keyword</term>. Keywords are words that have special
+                            It can't be a Python <term>keyword</term>. Keywords are words that have special
                                 meaning in the language(see below for examples).
                 </li>
                 <li>
@@ -30,7 +30,7 @@
                 </li>
             </ul>
         </p>
-        <p>Python has a few dozen keywords that you can’t use as variable names. Here is a list of the most common
+        <p>Python has a few dozen keywords that you can't use as variable names. Here is a list of the most common
             ones. If you ever have an error based on one of your variable names and do not know why, compare your name
             to this list to make sure you are not using a keyword as your name.</p>
         <table xml:id="python-keywords">
@@ -217,7 +217,7 @@
         <p>Oftentimes, you need multiple words to meaningfully describe a variable. Say you have a program that involves
             converting a height between inches and centimeters, within that program, the name <c>height</c> might be
             confusing. Is it referring to a value in inches? centimeters?</p>
-        <p>In cases like this, since you can’t have spaces in a variable name, you can either join words together
+        <p>In cases like this, since you can't have spaces in a variable name, you can either join words together
             by uppercasing the first letter of each new word like <c>heightInInches</c> (called <term>mixed-case</term> or <term>
             camel-case</term> because the capitals look like the humps of a camel) or use underscores between words like <c>height_in_inches</c>
             (called <term>snake-case</term>).</p>
@@ -286,7 +286,7 @@
                 computer</q>. So they’ll wrongly think that because they’ve called some variable <c>average</c>
                 or <c>pi</c>, it will somehow automagically calculate an average, or automagically associate the variable <c>pi</c>
                 with the value 3.14159.</p>
-            <p>That is not the case. The computer doesn’t attach semantic meaning to your variable names. The
+            <p>That is not the case. The computer doesn't attach semantic meaning to your variable names. The
                 Python interpreter does not care if you call a variable <c>average</c>, <c>a</c>, <c>something</c>, or <c>sue</c> - to it,
                 all of those names are equally meaningful in that they have no real meaning other than naming a value
                 the programmer is working with.</p>

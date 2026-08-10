@@ -30,7 +30,7 @@ for i in range(100):
     not.</p>
   <p>To do this, we will use <c>break</c> to stop the loop if we see 5 heads in a row. The <c>break</c> command is a way to stop a
     loop - it <q>breaks</q> us out of the loop and continues with the rest of the program. In this case, if <c>headsInARow</c>
-    hits 5, we can stop the loop early - we know that we got 5 heads and we don’t want to keep going and flip a
+    hits 5, we can stop the loop early - we know that we got 5 heads and we don't want to keep going and flip a
     tail and then <q>forget</q> that we had 5 in a row.</p>
 
   <program xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">

@@ -29,9 +29,9 @@ Repeat 4 times:
 Pen Up
 </input>
   </program>
-  <p>We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it doesn’t
+  <p>We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it doesn't
     matter what size the square is (assuming Move always takes a fixed amount of time), this algorithm always requires
-    10 steps of work. If we decided that the pen up and pen down happen instantly and don’t count as work, then we might
+    10 steps of work. If we decided that the pen up and pen down happen instantly and don't count as work, then we might
     say the algorithm only took 8 <q>units</q> of work (4 Moves + 4 Turns); if we decided that processing the <q>Repeat</q>
     took one unit of work for each loop we might say that the algorithm requires 14 units (Pen Down + 4 Moves + 4 Turns
     + 4 Repeats + Pen Up). But whatever we decide, the problem always takes that amount of work.</p>
@@ -54,7 +54,7 @@ Pen Up
   <p>If we do a little thinking, we could come up with a function relating the amount of work required <term>f(n)</term>
     to the number of sides <term>n</term>: <term>f(n) = 2n + 2</term>. Each side of the shape takes two steps, and there
     are two steps for putting the Pen Down and Up.</p>
-  <p>If we decided the Pen Up/Down didn’t count, we might say the function for calculating work was just <term>f(n) = 2n</term>.
+  <p>If we decided the Pen Up/Down didn't count, we might say the function for calculating work was just <term>f(n) = 2n</term>.
     If we decided that each time we <q>Repeat</q> it costs a unit of work, each side would require three steps and the
     function might be <term>f(n) = 3n + 2</term>.</p>
   <p>The graph below compares the work required for the two algorithms. The x-axis represents the value of <term>n</term>

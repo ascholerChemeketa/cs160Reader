@@ -71,7 +71,7 @@
       <statement>
         <image source="OperatingSystems/Images/VirtualMemory-Page-5.png"/>
         <p>Finally, the operating system can complete the request by giving Process B the memory block <q>B8</q>.</p>
-        <p>Process A doesn’t know that <q>A3</q> is no longer actually in main memory. If it goes to access it, the
+        <p>Process A doesn't know that <q>A3</q> is no longer actually in main memory. If it goes to access it, the
           operating will use the same procedure to restore it from the hard drive by evicting some other block of
           memory.</p>
       </statement>

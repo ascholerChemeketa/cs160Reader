@@ -10,7 +10,7 @@
   <p>In a <term>binary file</term>, data is stored in its natural binary form. Thus the number 250 could be stored as as
     the 8-bit binary value 11111010. A <term>binary file</term> only makes sense if we know how to read it. If you see a
     256-bit chunk of 1's and 0's, there is no way to know just by looking at the data if it is supposed to
-    be eight 32-bit values, or thirty-two 8-bit ones. And you can’t know if those 8-bit values are supposed to be
+    be eight 32-bit values, or thirty-two 8-bit ones. And you can't know if those 8-bit values are supposed to be
     numbers or ASCII characters.</p>
   <p>Text files tend to be more wasteful of bits and slower for a computer to process - the computer needs to turn the
     text <c>"250"</c> into the number <c>250</c> before it can compute with it. But they are easier for people to read and

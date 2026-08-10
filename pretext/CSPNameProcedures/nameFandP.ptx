@@ -8,7 +8,7 @@
   <p>We can also name a sequence of statements and then ask the computer to run
     that sequence whenever we use that name. In programming there are two different terms used for a named sequence of
     statements: <term>procedure</term> and <term>function</term>. As we have already learned, <term>procedure</term>
-    accomplishes some task or makes something happen, but doesn’t return anything. A <term>function</term> returns
+    accomplishes some task or makes something happen, but doesn't return anything. A <term>function</term> returns
     a result.</p>
   <p>Many procedures and functions are built directly into Python or libraries that we can import. We have seen a number
     of them that work with strings and turtles. There are also functions that work with numbers. The function <c>abs</c>

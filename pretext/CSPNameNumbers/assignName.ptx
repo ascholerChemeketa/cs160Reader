@@ -9,7 +9,7 @@
     <p>Think of a variable as a box that has a label on it and you can store a value in the box. The value can be
         anything that can be represented on a computer and stored in a computer's memory. A computer's
         memory is only made up of numbers (really, just patterns of voltages, but we can think about them as numbers).
-        Everything that a computer can remember in its memory is translated into these numbers <ndash/> but don’t
+        Everything that a computer can remember in its memory is translated into these numbers <ndash/> but don't
         worry about how this works right now.</p>
 
     <p>In programming languages, setting a variable's value is also called <term>
@@ -43,7 +43,7 @@ print(a)
             programmers will pronounce <c>a = 4</c> as <q>a <em>gets</em> 4</q> or <q>a <em>is assigned the value</em>
             4</q>. Assignment <term>always</term> takes the value of the right side of the <c>=</c> and stores it into
             the variable named on the left-hand side. It is an error to switch the order and try to write <c>4 = a</c>
-            - that says <q>4 <em>is assigned the value</em> a</q> which does not make sense<ellipsis/> we can’t
+            - that says <q>4 <em>is assigned the value</em> a</q> which does not make sense<ellipsis/> we can't
             change the value of 4.</p>
     </warning>
 </section>

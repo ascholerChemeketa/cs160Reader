@@ -91,7 +91,7 @@ Do I need 1? Yes.
              1 - 1 = 0 left - we are done!
 </input>
     </program>
-    <p>If we think of each column we used as representing a 1 and each column we didn’t as a 0, we get this:</p>
+    <p>If we think of each column we used as representing a 1 and each column we didn't as a 0, we get this:</p>
     <table>
       <tabular>
         <row header="yes">

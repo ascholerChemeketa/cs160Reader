@@ -100,7 +100,7 @@
         <cell> penup </cell>
         <cell> None </cell>
         <cell>
-          <p>Picks up the turtle's pen so that it doesn’t draw when it moves</p>
+          <p>Picks up the turtle's pen so that it doesn't draw when it moves</p>
         </cell>
       </row>
       <row bottom="minor">

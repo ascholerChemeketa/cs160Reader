@@ -58,12 +58,12 @@ for p in pixels:
       <li>
         <p><term>GET THE DATA.</term> You could always use the STEP 4 lines just as they are above,
           but you might be able to make it shorter if you don't need all the colors. If your program
-          just needs to work with red, you don’t have to get the green and blue values.</p>
+          just needs to work with red, you don't have to get the green and blue values.</p>
 
       </li>
       <li>
         <p><term>MODIFY THE COLOR.</term> This is the part that you will most often change. Here's
-          where you change the red, green, and/or blue. You don’t have to change all of them.</p>
+          where you change the red, green, and/or blue. You don't have to change all of them.</p>
 
       </li>
       <li>

@@ -7,7 +7,7 @@
     list. <c>j</c> is the right hand - it stores the location we are at as we scan for the next smallest card. Finally, <c>currentMinIndex</c>
     is the left hand - it remembers where the smallest value we have seen is as we sweep through the unsorted part of
     the list. Also, recall that <c>list[j]</c> means “the value in the list at location j”.</p>
-  <p>Don’t worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
+  <p>Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
   <program language="none">
     <input>
     Note: assume that list already exists
