@@ -123,7 +123,7 @@ for y in range(6, 2, -1):
       the turtle has moved somewhere else. It also uses the <c>shape</c> procedure to change the turtle's icon from the
       default triangle to an actual turtle.</p>
     <note>
-      <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
     </note>
     <p>The loop, <c>for size in range(5, 60, 2):</c>, says to count by 2's from 5 to 59. The loop variable is called <c>size</c> and is used to control
       how far forward the turtle moves in each repetition.</p>

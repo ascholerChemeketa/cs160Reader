@@ -164,7 +164,7 @@ print("highestRoll was", highestRoll)
       <p>The automatic tests will make sure you generate appropriate values, but it won't necessarily verify you
         used the random numbers you make in the correct spots. You are responsible for checking that yourself!</p>
       <note>
-        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
       </note>
 
     </statement>

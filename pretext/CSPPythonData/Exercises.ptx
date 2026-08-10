@@ -44,7 +44,7 @@
         everything is working.</p>
 
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises1_editor" interactive="activecode" language="python">
@@ -81,7 +81,7 @@ myTests().main()
       <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises2_editor" interactive="activecode" language="python">
@@ -116,7 +116,7 @@ myTests().main()
         code is doing.</p>
         
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises3_editor" interactive="activecode" language="python">
@@ -154,7 +154,7 @@ myTests().main()
         code is doing.</p>
         
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises4_editor" interactive="activecode" language="python">
@@ -192,7 +192,7 @@ myTests().main()
         code is doing.</p>
         
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises5_editor" interactive="activecode" language="python">
@@ -247,7 +247,7 @@ myTests().main()
       <p>You can't use codelens with file reading problems, but you can use print statements to check what your
         code is doing.</p>
       <note>
-        <xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref>
+        <p><xref ref="csp-python-data_stocks-data-file" text="custom">Stocks data file</xref></p>
       </note>
     </statement>
     <program xml:id="csppythondata_exercises6_editor" interactive="activecode" language="python">

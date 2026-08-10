@@ -72,7 +72,7 @@
   </program>
 
   <note>
-    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
   </note>
 
   <p>To do any real work with the lines of the file, we need to break up the lines into three parts. We want to

@@ -125,7 +125,7 @@
       <p>If you are having trouble, try printing out the loop counter so you can see which numbers your loop is counting
         through.</p>
       <note>
-        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
       </note>
 
     </statement>

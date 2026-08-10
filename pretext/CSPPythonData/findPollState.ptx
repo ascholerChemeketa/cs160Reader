@@ -31,7 +31,7 @@
     <q>OR</q> and only print out records that have that code.</p>
 
   <note>
-    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
   </note>
 
   <program xml:id="csppythondata_findpollstate2" interactive="activecode" language="python">

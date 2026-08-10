@@ -3,7 +3,7 @@
   <p>Time for a little practice - try writing your own procedure. There is an answer available, but
     don't look at it until you have tried writing the procedure on your own!</p>
   <note>
-    <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+    <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
   </note>
   <exercise xml:id="csp-name-procedures_practice-write-a-procedure_1">
     <statement>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the

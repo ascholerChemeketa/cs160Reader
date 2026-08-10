@@ -94,7 +94,7 @@
       <p>While you are developing your procedure, we will call the <c>hexagon</c> procedure just once. When you are done,
         uncomment the code at the bottom of the program to draw 5 more hexagons.</p>
       <note>
-        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
       </note>
 
     </statement>
@@ -147,7 +147,7 @@
       <p>There is code in the main part of the program to draw two different color rectangles. Once you get your
         procedure working, you can comment it out and uncomment the last 4 lines of the program to make a cool pattern.</p>
       <note>
-        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
       </note>
 
     </statement>

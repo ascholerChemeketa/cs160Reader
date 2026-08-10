@@ -53,7 +53,7 @@
   </program>
 
   <note>
-    <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
   </note>
 
   <p>If we have a large list of states we want to process, it would be silly to keep copy/pasting the last three lines
