@@ -4,143 +4,135 @@
     won’t worry about what the switches would look like for the new rules below<ellipsis/> we would have to make our
     simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer
     scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.</p>
-    <subsection xml:id="xor-and-not-gate-xor">
-      <title> XOR Gates</title>
-  <p>The exclusive or gate, known as <term>XOR</term> describes a gate that only outputs a 1 only if one of the inputs
-    is 1 and the other is 0. In other words, we can have either input on, but not both on.</p>
-  <table xml:id="xort-truth-table">
-    <title>Truth table for XOR</title>
-    <tabular halign="center">
+  <subsection xml:id="xor-and-not-gate-xor">
+    <title> XOR Gates</title>
+    <p>The exclusive or gate, known as <term>XOR</term> describes a gate that only outputs a 1 only if one of the inputs
+      is 1 and the other is 0. In other words, we can have either input on, but not both on.</p>
+    <table xml:id="xort-truth-table">
+      <title>Truth table for XOR</title>
+      <tabular halign="center">
 
-      <row header="yes" bottom="minor">
-        <cell> Input 1 </cell>
-        <cell right="minor"> Input 2 </cell>
-        <cell> Output </cell>
-      </row>
+        <row header="yes"
+             bottom="minor">
+          <cell> Input 1 </cell>
+          <cell right="minor"> Input 2 </cell>
+          <cell> Output </cell>
+        </row>
 
-      <row>
-        <cell> 0 </cell>
-        <cell right="minor"> 0 </cell>
-        <cell> 0 </cell>
-      </row>
-      <row>
-        <cell> 0 </cell>
-        <cell right="minor"> 1 </cell>
-        <cell> 1 </cell>
-      </row>
-      <row>
-        <cell> 1 </cell>
-        <cell right="minor"> 0 </cell>
-        <cell> 1 </cell>
-      </row>
-      <row>
-        <cell> 1 </cell>
-        <cell right="minor"> 1 </cell>
-        <cell> 0 </cell>
-      </row>
+        <row>
+          <cell> 0 </cell>
+          <cell right="minor"> 0 </cell>
+          <cell> 0 </cell>
+        </row>
+        <row>
+          <cell> 0 </cell>
+          <cell right="minor"> 1 </cell>
+          <cell> 1 </cell>
+        </row>
+        <row>
+          <cell> 1 </cell>
+          <cell right="minor"> 0 </cell>
+          <cell> 1 </cell>
+        </row>
+        <row>
+          <cell> 1 </cell>
+          <cell right="minor"> 1 </cell>
+          <cell> 0 </cell>
+        </row>
 
-    </tabular>
-  </table>
-  <p>It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents
-    <q>the first number negative</q> and input 2 represents <q>the second number is negative</q>, then <term>
-    XOR</term>’s output would tell us <q>Is the answer negative</q>. If either one of the two numbers, but
-    not both of them, were negative, then the answer would be negative.</p>
-  <p>Watch out for <term>XOR</term> and <term>OR</term> - in English we often use the word <q>or</q> to mean both
-    things. The statement <q>Entrées come with fries <em>or</em> a salad</q> probably means you can get one
-    or the other, but not both. In that statement, <em>or</em> means the <term>XOR</term> rule. On the other hand,
-    imagine a class syllabus that states: <q>If you turn in copied work, <em>or</em> the wrong assignment, you will
-    get a 0</q>. You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts
-    are true). In this case, <em>or</em> means logical <term>OR</term> - if either part is true, the answer is true.</p>
-</subsection>
-<subsection xml:id="xor-and-not-gate-not">
-  <title>NOT Gates</title>
-  <p>The <term>NOT</term> gate is special in that it only has one input. The output is always the opposite of the input:</p>
-  <table xml:id="not-truth-table">
-    <title>Truth table for NOT</title>
-    <tabular halign="center">
+      </tabular>
+    </table>
+    <p>It is the logical rule we need if we want to decide the sign of a multiplication problem. If input 1 represents <q>the
+      first number negative</q> and input 2 represents <q>the second number is negative</q>, then <term> XOR</term>’s
+      output would tell us <q>Is the answer negative</q>. If either one of the two numbers, but not both of them, were
+      negative, then the answer would be negative.</p>
+    <p>Watch out for <term>XOR</term> and <term>OR</term> - in English we often use the word <q>or</q> to mean both
+      things. The statement <q>Entrées come with fries <em>or</em> a salad</q> probably means you can get one or the
+      other, but not both. In that statement, <em>or</em> means the <term>XOR</term> rule. On the other hand, imagine a
+      class syllabus that states: <q>If you turn in copied work, <em>or</em> the wrong assignment, you will get a 0</q>.
+      You would certainly get a 0 if you turned in a plagiarized copy of the wrong assignment (both parts are true). In
+      this case, <em>or</em> means logical <term>OR</term> - if either part is true, the answer is true.</p>
+  </subsection>
+  <subsection xml:id="xor-and-not-gate-not">
+    <title>NOT Gates</title>
+    <p>The <term>NOT</term> gate is special in that it only has one input. The output is always the opposite of the
+      input:</p>
+    <table xml:id="not-truth-table">
+      <title>Truth table for NOT</title>
+      <tabular halign="center">
 
-      <row header="yes" bottom="minor">
-        <cell right="minor">Input </cell>
-        <cell> Output </cell>
-      </row>
+        <row header="yes"
+             bottom="minor">
+          <cell right="minor">Input </cell>
+          <cell> Output </cell>
+        </row>
 
-      <row>
-        <cell right="minor"> 0 </cell>
-        <cell> 1 </cell>
-      </row>
-      <row>
-        <cell right="minor"> 1 </cell>
-        <cell> 0 </cell>
-      </row>
+        <row>
+          <cell right="minor"> 0 </cell>
+          <cell> 1 </cell>
+        </row>
+        <row>
+          <cell right="minor"> 1 </cell>
+          <cell> 0 </cell>
+        </row>
 
-    </tabular>
-  </table>
-  <p>The NOT operation is what we use if we have a truth value like <q>it is raining</q> but want to have the
-    value for <q>it is not raining</q>. Anytime we want to say <q>We do not have X</q> we can say
-    <q>NOT X</q>.</p>
-  <p>Because the NOT rule applies to only one input, it can be applied to a single-bit pattern like 0101. To figure out
-    the answer, simply <q>flip</q> every bit from 1 to 0 or vice versa:</p>
-  <table xml:id="logic-circuits_id3">
-    <title>NOT of 0101</title>
-    <tabular row-headers="yes" halign="center">
-      <row bottom="minor">
-        <cell right="minor">Input pattern</cell>
-        <cell> 1 </cell>
-        <cell> 0 </cell>
-        <cell> 1 </cell>
-        <cell> 0 </cell>
-      </row>
-      <row>
-        <cell right="minor">NOT result</cell>
-        <cell> 0 </cell>
-        <cell> 1 </cell>
-        <cell> 0 </cell>
-        <cell> 1 </cell>
-      </row>
+      </tabular>
+    </table>
+    <p>The NOT operation is what we use if we have a truth value like <q>it is raining</q> but want to have the value
+      for <q>it is not raining</q>. Anytime we want to say <q>We do not have X</q> we can say <q>NOT X</q>.</p>
+    <p>Because the NOT rule applies to only one input, it can be applied to a single-bit pattern like 0101. To figure
+      out the answer, simply <q>flip</q> every bit from 1 to 0 or vice versa:</p>
+    <table xml:id="logic-circuits_id3">
+      <title>NOT of 0101</title>
+      <tabular row-headers="yes"
+               halign="center">
+        <row bottom="minor">
+          <cell right="minor">Input pattern</cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+        </row>
+        <row>
+          <cell right="minor">NOT result</cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+          <cell> 0 </cell>
+          <cell> 1 </cell>
+        </row>
 
-    </tabular>
-  </table>
-  
-</subsection>
+      </tabular>
+    </table>
+
+  </subsection>
   <note>
     <p>People refer to an AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate
       produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in
-      every other case. Similarly, a NOR is an OR followed by a NOT, and an XNOR (or ENOR) is a NOT after an XOR. You are
-      not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know what
-      they are.</p>
+      every other case. Similarly, a NOR is an OR followed by a NOT, and an XNOR (or ENOR) is a NOT after an XOR. You
+      are not responsible for memorizing the truth tables for these gates, but if you happen to see them, now you know
+      what they are.</p>
   </note>
 
-  <exercise label="logiccircuits_notandxorgate1">
+  <exercise label="logic-circuits_xor-and-not-gates-ex1">
     <statement>
-      <p>What is the result of applying <term>NOT</term> to 1110?</p>
-      <p><var /></p>
+      <p>What is the result of applying <term>NOT</term> to 1110? <fillin mode="string"
+                answer="0001"/></p>
     </statement>
-    <setup>
-      <var>
-        <condition string="0001">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>0001</strcmp>
+        </test>
+        <test>
+          <strcmp>.*</strcmp>
           <feedback>
-            <p>Correct!</p>
+            <p>Flip each bit in the input pattern to its opposite. Your answer should have four 0s and 1s.</p>
           </feedback>
-        </condition>
-        <condition string="[01]{4}">
-          <feedback>
-            <p>Flip each bit in the input pattern to its opposite.</p>
-          </feedback>
-        </condition>
-        <condition string="[01]+">
-          <feedback>
-            <p>Wrong number of digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
-          <feedback>
-            <p>Your answer should be just 1s and 0s</p>
-          </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
   </exercise>
-  <exercise label="logiccircuits_notandxorgate2">
+  <exercise label="logic-circuits_xor-and-not-gates-ex2">
     <statement>
       <p>What is the result of applying <term>XOR</term> to the following?</p>
       <tabular>
@@ -157,32 +149,40 @@
           <cell>1</cell>
         </row>
       </tabular>
-      <p><var /></p>
+      <p>
+        <fillin mode="string"
+                answer="0110"/>
+      </p>
     </statement>
-    <setup>
-      <var>
-        <condition string="0110">
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <strcmp>0110</strcmp>
+        </test>
+        <test>
+          <strcmp>.*</strcmp>
           <feedback>
-            <p>Correct!</p>
+            <p>Apply XOR to each column separately. Your answer should have four 0s and 1s.</p>
           </feedback>
-        </condition>
-        <condition string="[01]{4}">
-          <feedback>
-            <p>Make sure to perform the operation in each column separately</p>
-          </feedback>
-        </condition>
-        <condition string="[01]+">
-          <feedback>
-            <p>Wrong number of digits</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*.*\s*$">
-          <feedback>
-            <p>Your answer should be just 1s and 0s</p>
-          </feedback>
-        </condition>
-      </var>
-    </setup>
+        </test>
+      </evaluate>
+    </evaluation>
+  </exercise>
+  <exercise label="logic-circuits_xor-and-not-gates-ex3">
+    <statement>
+      <p>Sort each input pair by the output it produces for an XOR gate.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>00</premise>
+        <premise>11</premise>
+        <response>Output 0</response>
+      </match>
+      <match>
+        <premise>01</premise>
+        <premise>10</premise>
+        <response>Output 1</response>
+      </match>
+    </cardsort>
   </exercise>
 </section>
-
