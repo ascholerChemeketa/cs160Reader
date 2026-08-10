@@ -76,7 +76,7 @@
     appropriate to decide if we need to have an umbrella with us. If it is raining now, or if it is expected to rain
     later (or if it is raining now and is expected to rain later) then we need an umbrella.</p>
 
-  <sidebar xml:id="logic-circuits_index-1">
+  <aside xml:id="logic-circuits_index-1">
     <title>George Boole</title>
     <p><url href="http://en.wikipedia.org/wiki/George_Boole"
            visual="http://en.wikipedia.org/wiki/George_Boole">George
@@ -86,7 +86,7 @@
            width="50%">
       <shortdescription>Portrait of George Boole.</shortdescription>
     </image>
-  </sidebar>
+  </aside>
   <exercise label="logic-circuits_the-or-gate-ex1">
     <statement>
       <p>For a two-input OR gate, when is the output 0?</p>

@@ -15,13 +15,13 @@
       <shortdescription>Timeline poster showing the history of programming languages.</shortdescription>
     </image>
   </figure>
-  <sidebar>
+  <aside>
     <title>Hello World</title>
     <p>Hello World is traditionally one of the first programs people write when learning a new programming language - a
       simple program to just print the words <q>Hello World</q> on the screen.</p>
     <p>You can find hundreds of <url href="http://helloworldcollection.de/">examples of Hello World in different
       languages here</url> .</p>
-  </sidebar>
+  </aside>
   <p>Each of these languages has its own <term>syntax</term> - the rules that govern what makes a legal statement in the
     language. Oftentimes languages borrow syntactical elements from each other and thus look similar, but every
     programming language has differences in what you can say and how you say it.</p>

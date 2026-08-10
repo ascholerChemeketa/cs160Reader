@@ -5,12 +5,12 @@
     are proven to be unsolvable by any computer and those that have no polynomial time solution and thus are unsolvable
     in practical terms on a modern computer. In addition to those algorithmic limits, physical limits are increasingly
     affecting our ability to build faster computers.</p>
-  <sidebar>
+  <aside>
     <title>How Big?</title>
     <p><url href="https://htwins.net/scale2/"
            visual="https://htwins.net/scale2/">This cool animation</url> allows you
       to explore the microscopic world. (Hint: you'll find transistors at about <m>{10}^{-7}</m> meters)</p>
-  </sidebar>
+  </aside>
   <p>Moore's Law has served well as a predictor of the growth of the limits of computational power. By relentlessly
     shrinking the size of computational components we have been able to build more complex and faster processors.
     However, the exponential growth of computer power predicted by Moore's Law may be close to an end. Modern

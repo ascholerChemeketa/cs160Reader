@@ -23,7 +23,7 @@
       <shortdescription>Abacus</shortdescription>
     </image>
   </figure>
-  <sidebar>
+  <aside>
     <title>The Antikythera Mechanism</title>
     <p>The ancient Greeks used complex devices to compute the timing of astrological events Antikythera mechanism and
       the astrolabe from ancient Greece. The <term>Antikythera mechanism</term> was a clockwork device of complexity
@@ -32,7 +32,7 @@
       <url href="http://en.wikipedia.org/wiki/Antikythera_mechanism"
       >Wikipedia</url>
     </p>
-  </sidebar>
+  </aside>
   <p>In the 1600s, the first mechanical calculators were developed. A teenager named Blaise Pascal (later to become a
     famous mathematician) was one of their inventors. Pascal began to work on his calculator in 1642 when he was only 19
     years old. He had been assisting his father, who worked as a tax commissioner and sought to produce a device that

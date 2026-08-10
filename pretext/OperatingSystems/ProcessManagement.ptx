@@ -28,13 +28,13 @@
     processes at once. But the basic model still holds - each processing core is constantly switching between different
     processes, giving each a brief chance to run some instructions before switching to the next.</p>
 
-  <sidebar>
+  <aside>
     <title>What's Happening?</title>
     <p>You can check what processes are currently running on your computer (and manage them) by pressing <em>
       ctrl-shift-esc</em> (Windows) or <em>command + option + escape</em> (OSX).</p>
     <p>You will see not just the processes associated with programs you have intentionally started, but also all the
       little extra programs that started automatically when you booted the computer.</p>
-  </sidebar>
+  </aside>
   <exercise label="operating-systems_process-management-ex1">
     <statement>
       <p>Match each process state to the reason a process is in that state.</p>

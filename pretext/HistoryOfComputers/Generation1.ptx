@@ -5,7 +5,7 @@
     mathematicians and engineers in the 1930s realized that the logic of computation - Boolean logic - could be
     implemented with electronic relays and switches. <term>Vacuum tubes</term>, an electrical component that can be used
     as a switching device, became the core components of the first electrical computers.</p>
-  <sidebar>
+  <aside>
     <title>Vacuum tube</title>
     <figure xml:id="the-first-generation-img0">
       <image
@@ -16,7 +16,7 @@
     </figure>
     <p>Public domain, via Wikimedia Commons</p>
     <p>A vacuum tube - the fundamental building block of most early computers.</p>
-  </sidebar>
+  </aside>
   <p>World War II inspired a great deal of mathematical work. The British developed a series of computational devices
     designed to do calculations required to break German codes. These devices culminated in <term>Colossus</term>, the
     world's first electronic digital computer that was all programmable. Operators could reprogram the machine by

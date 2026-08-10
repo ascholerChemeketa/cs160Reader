@@ -101,7 +101,7 @@
     </figure>
   </sidebyside>
 
-  <sidebar>
+  <aside>
     <title>P = NP?</title>
     <p>One of the greatest problems in theoretical computer science is to prove or disprove that the class of polynomial
       problems (P) is distinct from those for which solutions can be checked in polynomial time but finding those
@@ -109,7 +109,7 @@
     <p>Writers of the Simpsons and Futurama have even <url href="https://www.youtube.com/watch?v=dJUEkjxylBw"
            visual="https://www.youtube.com/watch?v=dJUEkjxylBw">snuck
       the debate into their shows</url>.</p>
-  </sidebar>
+  </aside>
   <p>Faced with a problem that is non-polynomial, instead of looking for a perfect answer that will take too long to
     find, we must instead do things like try to develop algorithms that look for a <q>pretty good</q> answer in a
     tractable amount of time or that can efficiently solve some special subset of the hard problems.</p>

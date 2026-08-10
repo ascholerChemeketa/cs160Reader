@@ -84,7 +84,7 @@
       software developers have to be careful to watch for these errors. Computers use many more than 4 bits to store
       each number, but any fixed representation will have limits to how big a value can be stored.</p>
 
-    <sidebar>
+    <aside>
       <title>Real-world overflow</title>
       <p>Real software can have bugs when the developers do not use enough bits to represent numbers. Youtube engineers
         had to <url href="https://www.wired.com/2014/12/gangnam-style-youtube-math/"
@@ -95,7 +95,7 @@
           href="http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone"
           visual="http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone">see an overflow bug at
         work in the game Hearthstone.</url>.</p>
-    </sidebar>
+    </aside>
   </subsection>
 
   <exercise label="datarepresentation_binarymath1">

@@ -1,6 +1,6 @@
 <section xml:id="history-of-computers_the-third-generation">
   <title>The Third Generation</title>
-  <sidebar>
+  <aside>
     <title>Integrated Circuit</title>
     <figure xml:id="the-third-generatio-img1">
       <caption>Kimmo Palosaari, Public domain, via Wikimedia Commons</caption>
@@ -9,7 +9,7 @@
       </image>
     </figure>
     <p>Integrated circuits combine multiple transistors into one compact package.</p>
-  </sidebar>
+  </aside>
   <p>Jack Kilby of Texas Instruments invented the <term>integrated circuit</term> in 1958. Integrated circuits (ICs)
     combine many transistors into a single package; compared to individual transistors, they consume less power and can
     be packed in much tighter. Early ICs consisted of only a handful of transistors, but nowadays integrated circuits

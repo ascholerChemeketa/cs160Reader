@@ -82,7 +82,7 @@
     LOADing and STOREing values into registers, we can express commands that look more like normal calculations: <c>tip = mealCost * 0.15</c>
     .</p>
 
-  <sidebar>
+  <aside>
     <title>FORTRAN</title>
     <p>The first high-level language, Fortran (FORmula TRANslating system) was designed in 1954. Like many developments
       in computation, it came from someone looking to get out of doing tedious work. Its creator, John Backus, said <em>
@@ -90,7 +90,7 @@
       programs for computing missile trajectories, I started work on a programming system to make it easier to write
       programs.</q>
       </em></p>
-  </sidebar>
+  </aside>
 
   <exercise label="programming-languages_high-level-programming-languages-ex1">
     <statement>

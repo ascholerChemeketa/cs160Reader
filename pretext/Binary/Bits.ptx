@@ -28,13 +28,13 @@
     </ul>
   </p>
 
-  <sidebar>
+  <aside>
     <title>Bits</title>
     <image source="Binary/Images/punchcard.jpg" width="20%">
       <shortdescription>Punchcard</shortdescription>
     </image>
     <p>Each hole (or spot where there is no hole punched) in this card represents a bit of information.</p>
-  </sidebar>
+  </aside>
 
   <p>Computers do all of their processing in terms of bits - any piece of information a computer stores or manipulates
     is stored as a sequence of these on/off values. For different purposes, a computer may use any of the mechanisms

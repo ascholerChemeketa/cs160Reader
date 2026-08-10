@@ -148,13 +148,13 @@
       <p><term>Binary Search</term> is <m>O(log(n))</m> - <term>Logarithmic</term></p>
     </important>
 
-    <sidebar>
+    <aside>
       <title>Wolfram Alpha</title>
       <p>You can use the <url href="http://www.wolframalpha.com/"
              visual="http://www.wolframalpha.com/">Wolfram Alpha
         website</url> to calculate log base 2 by typing something like <q>log2(1024)</q>. Try it below.</p>
             <interactive label="algorithms-search-efficiencies-binary-interactive-1" iframe="Algorithms/algorithms-search-efficiencies-binary-interactive-1.html"/>
-    </sidebar>
+    </aside>
 
   </subsection>
   <subsection xml:id="algorithms_search-efficiencies-comparison">

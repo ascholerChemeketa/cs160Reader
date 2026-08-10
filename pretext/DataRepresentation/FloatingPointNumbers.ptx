@@ -13,7 +13,7 @@
     representing small values and do not care about large ones. Other times, we need to represent larger values. A
     system with a fixed number of digits to the right of the '.' locks us into one particular set of
     compromises.</p>
-  <sidebar>
+  <aside>
     <title>IEEE 754</title>
     <p>We are considering a simple example of how floating-point numbers work - real systems have a few extra details
       like special values to represent infinity. You can find information about the most common real implementation, the
@@ -21,7 +21,7 @@
         visual="http://www.tfinley.net/notes/cps104/floating.html">on this page</url> or on <url
         href="http://en.wikipedia.org/wiki/Floating_point" visual="http://en.wikipedia.org/wiki/Floating_point">
       wikipedia</url>.</p>
-  </sidebar>
+  </aside>
   <p>The alternative is to use a <term>floating-point</term> representation. You may not have heard of the term, but you
     have seen the same basic idea in <term>scientific notation</term>. When we write 6.2 x <m>{10}^{12}</m> instead of
     6200000000000 or 1.65 x <m>{10}^{-8}</m> instead of 0.0000000165, we are condensing the representation of large and

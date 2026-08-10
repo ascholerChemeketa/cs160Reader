@@ -8,7 +8,7 @@
     power doubling every 18 months. Thus the term <q>Moore's Law</q> is used to refer to the idea that overall
     processing power doubles every year and a half.</p>
 
-  <sidebar>
+  <aside>
     <title>Gordon Moore</title>
     <figure>
       <caption>Gordon Moore - Image <copyright/> Intel Corporation</caption>
@@ -17,7 +17,7 @@
         <shortdescription>Portrait of Gordon Moore.</shortdescription>
       </image>
     </figure>
-  </sidebar>
+  </aside>
 
   <p>Based on this idea that processing power doubles every 1.5 years, a processor that comes out today is roughly 4x
     more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (This helps explain why

@@ -22,7 +22,7 @@
       <shortdescription>Punchcard</shortdescription>
     </image>
   </figure>
-  <sidebar>
+  <aside>
     <title>Ada Lovelace</title>
     <figure xml:id="dawn-of-computers-img2">
       <caption>Public domain, via Wikimedia Commons</caption>
@@ -30,7 +30,7 @@
         <shortdescription>Ada Lovelace</shortdescription>
       </image>
     </figure>
-  </sidebar>
+  </aside>
   <p><term>Ada Byron Lovelace</term> collaborated with Babbage on documenting the Analytical Engine. She is often
     credited as the first programmer, having developed the first algorithm - one to calculate <url
       href="http://en.wikipedia.org/wiki/Bernoulli_number">Bernoulli numbers</url> - specifically designed to run on a

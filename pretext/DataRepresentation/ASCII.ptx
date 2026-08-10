@@ -1,6 +1,6 @@
 <section xml:id="data-representation_representing-letters-with-ascii">
   <title>Representing Letters with ASCII</title>
-  <sidebar>
+  <aside>
     <title>ASCII Art</title>
     <p>ASCII art is images drawn only using the ASCII characters. Shading is created by using characters like @ for dark
       areas and - for lighter ones. Below is the Mona Lisa as ASCII Art; the font size is 2 points to make the image more
@@ -8,7 +8,7 @@
           <interactive label="data-representation-representing-letters-with-ascii-interactive-1" iframe="DataRepresentation/data-representation-representing-letters-with-ascii-interactive-1.html"/>
     <p>And then there is asciimation, which <url href="http://www.asciimation.co.nz/"
         visual="http://www.asciimation.co.nz/">needs to be seen</url> to be believed.</p>
-  </sidebar>
+  </aside>
   <p>To represent things other than integers, we need to find a way to map the data we wish to represent onto binary
     strings. These mappings can be completely arbitrary. If we want to represent a choice between apples, bananas,
     oranges, and pears (perhaps as the fruit choices in a menu) we could recognize that it requires 2 bits to represent
