@@ -6,8 +6,9 @@
     to say <q>store the current value to memory location 13</q> as you would in machine language, in assembly you could
     write something like <q>STORE 13</q>.</p>
   <image source="ProgrammingLanguages/Images/Assembly.png"
-         width="100%"
-         alt="Assembly code"/>
+         width="100%">
+    <shortdescription>Assembly code</shortdescription>
+  </image>
   <p>The image above shows an imaginary list of machine instructions, along with what they might look like in assembly.
     Do not worry about memorizing the details of this particular assembly language, just recognize that each instruction
     is a translation of the machine code. Each <q>LOAD</q> instruction corresponds to a machine instruction that starts

@@ -17,8 +17,9 @@
     <figure >
       <caption >Data Science combines mathematics,
         computer science, and knowledge in a domain.</caption>
-      <image source="ComputingFields/Images/DataScience.svg" width="50%"
-        alt="Data Science is the intersection of math, computer science, and domain knowledge." />
+      <image source="ComputingFields/Images/DataScience.svg" width="50%">
+        <shortdescription>Data Science is the intersection of math, computer science, and domain knowledge.</shortdescription>
+      </image>
     </figure>
   </subsection>
 

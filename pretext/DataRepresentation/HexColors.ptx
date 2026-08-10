@@ -7,7 +7,9 @@
     sequences (00000, 00001, etc<ellipsis/>). When a computer has to display data that does not have a <q>type</q> or
     for which the type is unknown, the raw information is typically shown in hexadecimal.</p>
   <figure>
-    <image source="DataRepresentation/Images/hexaddress.png" width="50%" alt="Hex display of data" />
+    <image source="DataRepresentation/Images/hexaddress.png" width="50%">
+      <shortdescription>Hex display of data</shortdescription>
+    </image>
     <legend>
       <p>A programmer's view of two pieces of information in a program.</p>
     </legend>

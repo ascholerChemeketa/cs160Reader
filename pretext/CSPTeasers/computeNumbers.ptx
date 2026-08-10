@@ -10,7 +10,9 @@
   <figure align="center">
     <caption>Both the <strong>score</strong> and <strong>high score</strong> in the game Angry Birds
       would be represented by a variable.</caption>
-    <image source="CSPTeasers/Figures/angry_birds.jpg" width="100%" alt="A game with a score" />
+    <image source="CSPTeasers/Figures/angry_birds.jpg" width="100%">
+      <shortdescription>A game with a score</shortdescription>
+    </image>
   </figure>
   <p>One thing that you might want to calculate is the monthly payment on a loan for a car. To do
     so, you can use this mathematical formula:</p>

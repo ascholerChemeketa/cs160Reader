@@ -7,8 +7,9 @@
     dimension).</p>
   <figure align="center">
     <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
-    <image source="CSPTeasers/Figures/grid.png" width="30%"
-      alt="A grid with horizontal (x) and vertical (y) dimensions" />
+    <image source="CSPTeasers/Figures/grid.png" width="30%">
+      <shortdescription>A grid with horizontal (x) and vertical (y) dimensions</shortdescription>
+    </image>
   </figure>
 
   <p>Pixels are quite small. Even this small picture below has 200 columns and 300 rows of pixels:</p>
@@ -71,8 +72,9 @@
     make yellow light.</p>
   <figure align="center">
     <caption>How lights combine to make colors</caption>
-    <image source="CSPTeasers/Figures/additive-color.jpg" width="50%"
-      alt="a color wheel for combining color lights" />
+    <image source="CSPTeasers/Figures/additive-color.jpg" width="50%">
+      <shortdescription>a color wheel for combining color lights</shortdescription>
+    </image>
   </figure>
   <p>All image manipulations in programs like Photoshop or Instagram filters are created by
     manipulating those red, green, and blue color components in each pixel.</p>

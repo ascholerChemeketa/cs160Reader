@@ -12,8 +12,9 @@
         via teachbook.com.au</url>
     </caption>
     <image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg"
-           width="100%"
-           alt="Memory Hierarchy"/>
+           width="100%">
+      <shortdescription>Memory Hierarchy</shortdescription>
+    </image>
   </figure>
 
   <subsection xml:id="memory-hierarchy-registers">
@@ -46,8 +47,9 @@
              refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
         Commons CC BY SA 3.0</url></caption>
       <image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg"
-             width="50%"
-             alt="RAM"/>
+             width="50%">
+        <shortdescription>RAM</shortdescription>
+      </image>
 
     </figure>
 

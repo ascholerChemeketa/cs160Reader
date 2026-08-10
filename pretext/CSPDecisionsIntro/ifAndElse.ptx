@@ -35,8 +35,9 @@ print(total)
     or</em> the <c>else</c> block is executed, but <term>never</term> both.</p>
   <figure align="center">
     <caption>Flow of execution for both an if and else</caption>
-    <image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%"
-      alt="Flowchart for both an if and else" />
+    <image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%">
+      <shortdescription>Flowchart for both an if and else</shortdescription>
+    </image>
   </figure>
   <p>We never <term>have</term> to use an <c>else</c>. We can always write two separate <c>if</c>
     statements. But using <c>else</c> can help avoid bugs where there is a <q>gap</q> between the two

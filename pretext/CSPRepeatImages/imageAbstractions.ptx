@@ -23,8 +23,9 @@
               dimension) and top to bottom (vertical or <term>y</term> dimension).</p>
             <figure align="center">
               <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
-              <image source="CSPRepeatImages/Figures/grid.png" width="50%"
-                alt="A grid with horizontal (x) and vertical (y) dimensions" />
+              <image source="CSPRepeatImages/Figures/grid.png" width="50%">
+                <shortdescription>A grid with horizontal (x) and vertical (y) dimensions</shortdescription>
+              </image>
             </figure>
           </li>
         </dl>

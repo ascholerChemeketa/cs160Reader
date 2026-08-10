@@ -3,8 +3,9 @@
   <figure>
     <caption>Main memory is a sequence of bytes, each with a unique address. </caption>
     <image source="ComputerArchitecture/Images/memory.png"
-           width="30%"
-           alt="Main Memory"/>
+           width="30%">
+      <shortdescription>Main Memory</shortdescription>
+    </image>
   </figure>
   <p>Main memory consists of a very long list of bytes (groups of 8 bits). When the computer's power is on, every byte
     contains some pattern or other, even those bytes not being used for anything. (Remember the nature of binary: when a

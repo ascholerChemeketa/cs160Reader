@@ -18,8 +18,9 @@
     computer</url> until the 1970's.</p>
   <figure xml:id="dawn-of-computers-img1">
     <caption>via Wikimedia commons</caption>
-    <image source="HistoryOfComputers/Images/IBM_026_card_code.png" width="50%"
-      alt="Punchcard" />
+    <image source="HistoryOfComputers/Images/IBM_026_card_code.png" width="50%">
+      <shortdescription>Punchcard</shortdescription>
+    </image>
     <legend>
       <p>1960's Era computer punch card</p>
     </legend>
@@ -28,8 +29,9 @@
     <title>Ada Lovelace</title>
     <figure xml:id="dawn-of-computers-img2">
       <caption>Public domain, via Wikimedia Commons</caption>
-      <image source="HistoryOfComputers/Images/Ada_Lovelace_portrait.jpg" width="50%"
-        alt="Ada Lovelace" />
+      <image source="HistoryOfComputers/Images/Ada_Lovelace_portrait.jpg" width="50%">
+        <shortdescription>Ada Lovelace</shortdescription>
+      </image>
     </figure>
   </sidebar>
   <p><term>Ada Byron Lovelace</term> collaborated with Babbage on documenting the Analytical Engine. She is often
@@ -60,7 +62,9 @@
   <figure xml:id="dawn-of-computers-img3">
     <caption>U.S. Census Bureau employees, Public domain, via Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/1902_Hollerith_electric_tabulating_machine.jpg"
-      width="50%" alt="Hollerith Desk" />
+      width="50%">
+      <shortdescription>Hollerith Desk</shortdescription>
+    </image>
     <legend>
       <p>The Hollerith tabulating machine</p>
     </legend>

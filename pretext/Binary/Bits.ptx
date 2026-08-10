@@ -30,7 +30,9 @@
 
   <sidebar>
     <title>Bits</title>
-    <image source="Binary/Images/punchcard.jpg" width="20%" alt="Punchcard" />
+    <image source="Binary/Images/punchcard.jpg" width="20%">
+      <shortdescription>Punchcard</shortdescription>
+    </image>
     <p>Each hole (or spot where there is no hole punched) in this card represents a bit of information.</p>
   </sidebar>
 

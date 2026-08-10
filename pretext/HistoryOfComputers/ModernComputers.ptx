@@ -11,8 +11,9 @@
   <container classes="inlinegroup">
     <figure xml:id="modern-computers-img1">
       <caption>Fritzchens Fritz, CC0, via Wikimedia Commons</caption>
-      <image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%"
-        alt="Intel Core i7 microprocessor" />
+      <image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%">
+        <shortdescription>Intel Core i7 microprocessor</shortdescription>
+      </image>
       <legend>
         <p>Modern microprocessors like this Intel i7 processor feature billions of transistors on
           one chip the size of a fingernail.</p>
@@ -20,7 +21,9 @@
     </figure>
     <figure xml:id="modern-computers-img2">
       <caption>Apple, CC BY-SA 4.0, via Wikimedia Commons</caption>
-      <image source="HistoryOfComputers/Images/IPhone_4s.jpg" width="50%" alt="Apple iPhone" />
+      <image source="HistoryOfComputers/Images/IPhone_4s.jpg" width="50%">
+        <shortdescription>Apple iPhone</shortdescription>
+      </image>
       <legend>
         <p>Smartphones like the iPhone are more powerful computers than the supercomputers of the
           1970s. And they can play Angry Birds.</p>

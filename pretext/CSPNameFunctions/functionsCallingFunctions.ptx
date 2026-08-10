@@ -11,8 +11,9 @@
     sides.</p>
   <figure align="center">
     <caption>A triangle with sides that are labled a, b, and c.</caption>
-    <image source="CSPNameFunctions/Figures/herons_formula.png" width="50%"
-      alt="Triangle with sides labeled a, b, c" />
+    <image source="CSPNameFunctions/Figures/herons_formula.png" width="50%">
+      <shortdescription>Triangle with sides labeled a, b, c</shortdescription>
+    </image>
   </figure>
   <p>That sounds too complex to do in a short amount of code. So let's break down the problem.
     Before we can use that formula, we need to know the lengths of the three sides. We can use the

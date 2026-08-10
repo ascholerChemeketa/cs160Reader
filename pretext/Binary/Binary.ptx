@@ -35,7 +35,9 @@
         <title>Flawless copies can be made of binary data</title>
 
         <p>Remember this picture?</p>
-        <image source="Binary/Images/binary_w_noise.gif" width="50%" alt="Noise in a digital signal" />
+        <image source="Binary/Images/binary_w_noise.gif" width="50%">
+          <shortdescription>Noise in a digital signal</shortdescription>
+        </image>
         <p>Imagine now we are trying to copy the red signal but produce the grey one. When we attempt to read the copy,
           we can easily tell what the signal was supposed to be and restore it to the correct value. Because any noise
           introduced with a copy can be immediately filtered out, we can copy the information as many times as needed
@@ -199,7 +201,9 @@
       <caption>Claude Shannon, a mathematician at Bell Telephone Laboratories, identified these characteristics of
         binary. His 1948 paper A Mathematical Theory of Communication is the foundation of information theory and much
         of computer science.</caption>
-      <image source="Binary/Images/shannonSmall.jpg" width="50%" alt="Claude Shannon" />
+      <image source="Binary/Images/shannonSmall.jpg" width="50%">
+        <shortdescription>Claude Shannon</shortdescription>
+      </image>
     </figure>
   </sidebar>
 

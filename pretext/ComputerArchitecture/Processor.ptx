@@ -7,8 +7,9 @@
   <figure>
     <caption>Important logical components of a computer</caption>
     <image source="ComputerArchitecture/Images/cpustructuremap.gif"
-           width="50%"
-           alt="CPU Structure"/>
+           width="50%">
+      <shortdescription>CPU Structure</shortdescription>
+    </image>
   </figure>
   <p>
     <ul>

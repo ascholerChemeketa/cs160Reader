@@ -6,7 +6,9 @@
         miles per hour.</p>
     <figure align="center">
         <caption>Ketchup dripping speed</caption>
-        <image source="CSPNameNumbers/Figures/ketchup.jpg" width="30%" alt="A picture of ketchup dripping from a bottle" />
+        <image source="CSPNameNumbers/Figures/ketchup.jpg" width="30%">
+          <shortdescription>A picture of ketchup dripping from a bottle</shortdescription>
+        </image>
     </figure>
 
     <program xml:id="cspnamenumbers_ketchup1" interactive="codelens" language="python">

@@ -11,8 +11,9 @@
     or off - but was faster, more reliable, smaller, and much cheaper to build.</p>
   <figure xml:id="the-second-generation-img1">
     <caption>Public domain, via Wikimedia Commons</caption>
-    <image source="HistoryOfComputers/Images/Unijunction_transistors.jpg" width="50%"
-      alt="Transistors" />
+    <image source="HistoryOfComputers/Images/Unijunction_transistors.jpg" width="50%">
+      <shortdescription>Transistors</shortdescription>
+    </image>
   </figure>
   <p>By the end of the 1950s, they had replaced vacuum tubes in computers. The ability to pack more components into less
     space and have them operate reliably resulted in a new <term>Second Generation</term> of computers. These machines
@@ -20,7 +21,9 @@
     took up multiple cabinets and were so expensive that only large corporations could afford them.</p>
   <figure xml:id="the-second-generation-img2">
     <caption>Public domain, via Wikimedia Commons</caption>
-    <image source="HistoryOfComputers/Images/IBM1620A.jpg" width="50%" alt="IBM 1620" />
+    <image source="HistoryOfComputers/Images/IBM1620A.jpg" width="50%">
+      <shortdescription>IBM 1620</shortdescription>
+    </image>
     <legend>
       <p>The IBM 1620 - a Second Generation computer</p>
     </legend>

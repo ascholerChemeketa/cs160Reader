@@ -32,7 +32,9 @@ drawSquare(becca, squareSize)
     system:</p>
   <figure align="center">
     <caption>The coordinates for the drawing space. Note that the center is x = 0 and y = 0.</caption>
-    <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%" alt="the space coordinate system" />
+    <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%">
+      <shortdescription>the space coordinate system</shortdescription>
+    </image>
   </figure>
   <p>Because the square procedure is going to make a square up to 200 wide and tall extending to the right and down from
     where we start, I don't want it to start to the right or below the point 0, 0 or it might go off-screen. I am

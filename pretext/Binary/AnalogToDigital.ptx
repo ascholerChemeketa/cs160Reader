@@ -19,13 +19,19 @@
     threshold. Any time we measure the value of the signal, if the value is below the threshold we call it
     <q>off</q>; if it is above the threshold we call it <q>on</q>. In the image below, we could say at T1,
     the signal is off and at T2, it is on.</p>
-  <image source="Binary/Images/threshold.gif" width="50%" alt="A threshold" />
+  <image source="Binary/Images/threshold.gif" width="50%">
+    <shortdescription>A threshold</shortdescription>
+  </image>
   <p>If we ignore all the changes in the signal except for where it crosses the threshold, we get a digital pattern:</p>
-  <image source="Binary/Images/binary_w_threshold.gif" width="50%" alt="A threshold applied" />
+  <image source="Binary/Images/binary_w_threshold.gif" width="50%">
+    <shortdescription>A threshold applied</shortdescription>
+  </image>
   <p>Even if the electrical circuit that is trying to represent this pattern has a lot of noise, we should be able to
     distinguish the intended values. In the image below, the red line indicates the signal we are trying to represent,
     and the grey line indicates the electrical signal that is measured.</p>
-  <image source="Binary/Images/binary_w_noise.gif" width="50%" alt="Noise in a digital signal" />
+  <image source="Binary/Images/binary_w_noise.gif" width="50%">
+    <shortdescription>Noise in a digital signal</shortdescription>
+  </image>
   <p>Even though there is a lot of noise - the signal is bouncing above and below the voltage we are trying to use, it
     is very much clear what the value should be at T1 and T2. We can ignore the noise and confidently say the signal at
     T1 is <q>off</q> and at T2 is <q>on</q>.</p>

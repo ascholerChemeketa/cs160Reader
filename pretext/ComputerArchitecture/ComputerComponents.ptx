@@ -14,8 +14,9 @@
         Commons CC BY 2.5</url></p>
     </caption>
     <image source="ComputerArchitecture/Images/Personal_computer.png"
-           width="60%"
-           alt="A personal computer"/>
+           width="60%">
+      <shortdescription>A personal computer</shortdescription>
+    </image>
   </figure>
   <p>Not all of those components are critical: a laptop may use a trackpad instead of a mouse and lack room for
     expansion cards; a computer used as a network server may be installed without a monitor; a smartphone (which is just
@@ -35,8 +36,9 @@
            refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
       Commons CC BY SA 3.0</url></caption>
     <image source="ComputerArchitecture/Images/vonNeumannData.png"
-           width="80%"
-           alt="Data Flow in a Computer"/>
+           width="80%">
+      <shortdescription>Data Flow in a Computer</shortdescription>
+    </image>
   </figure>
   <p>This description leaves out many important parts of a computer - from relatively simple things like the cord or
     battery that supplies electricity, to complex devices like the storage (hard drives, DVD drives, flash drives) that

@@ -6,7 +6,9 @@
   <figure xml:id="prehistory-img1">
     <caption><copyright/> Marie-Lan Nguyen / Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/Accountancy_clay_envelope_Louvre_Sb1932.jpg"
-      width="50%" alt="Counting stones" />
+      width="50%">
+      <shortdescription>Counting stones</shortdescription>
+    </image>
     <legend>
       <p>Counting stones</p>
     </legend>
@@ -20,7 +22,9 @@
     <caption>Wikimedia Commons</caption>
     <image
       source="HistoryOfComputers/Images/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"
-      width="50%" alt="Abacus" />
+      width="50%">
+      <shortdescription>Abacus</shortdescription>
+    </image>
     <legend>
       <p>An abacus</p>
     </legend>
@@ -47,15 +51,18 @@
     <figure xml:id="prehistory-img3">
       <caption>Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Pascaline-CnAM_00823-0003-IMG_6509.JPG"
-        width="50%" alt="Pascaline" />
+        width="50%">
+        <shortdescription>Pascaline</shortdescription>
+      </image>
       <legend>
         <p>The Pascaline</p>
       </legend>
     </figure>
     <figure xml:id="prehistory-img4">
       <caption>Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons</caption>
-      <image source="HistoryOfComputers/Images/Leibniz_binary_system_1703.png" width="50%"
-        alt="Leibniz notes" />
+      <image source="HistoryOfComputers/Images/Leibniz_binary_system_1703.png" width="50%">
+        <shortdescription>Leibniz notes</shortdescription>
+      </image>
       <legend>
         <p>Leibniz's notes on binary numbers</p>
       </legend>

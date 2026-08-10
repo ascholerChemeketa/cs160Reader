@@ -4,8 +4,9 @@
   <subsection xml:id="computer-architecture-alu">
     <title>The ALU</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-alu.gif"
-           width="35%"
-           alt="ALU"/>
+           width="35%">
+      <shortdescription>ALU</shortdescription>
+    </image>
     <p>The arithmetic logic unit is a collection of circuits that can do math and logic. Early processors could only do
       very simple operations - add or subtract numbers, compare two numbers to see which is larger, and do Boolean logic
       (to say combine two values with XOR). More complex operations, like multiplication, might have to be performed via
@@ -19,8 +20,9 @@
   <subsection xml:id="computer-architecture-control-unit">
     <title>The Control Unit</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif"
-           width="35%"
-           alt="Control Unit"/>
+           width="35%">
+      <shortdescription>Control Unit</shortdescription>
+    </image>
 
     <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the operation of
       the rest of the processor. It does this by issuing control signals to the other areas of the processor,
@@ -49,8 +51,9 @@
   <subsection xml:id="computer-architecture-registers">
     <title>The Registers</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif"
-           width="35%"
-           alt="Registers"/>
+           width="35%">
+      <shortdescription>Registers</shortdescription>
+    </image>
     <p>A register is a memory location within the CPU itself, designed to be quickly accessed for purposes of fast data
       retrieval. These contain instructions, data, and other values that are needed by the ALU and control unit. On the
       timescale processors work at (billionths of a second) the trip to main memory can be too slow to wait for during

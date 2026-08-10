@@ -76,8 +76,9 @@ print ("All done")
     continues running.</p>
   <figure align="center">
     <caption>Flow of execution for an if statement</caption>
-    <image source="CSPDecisionsIntro/Figures/decision.png" width="50%"
-      alt="Flowchart for an if statement" />
+    <image source="CSPDecisionsIntro/Figures/decision.png" width="50%">
+      <shortdescription>Flowchart for an if statement</shortdescription>
+    </image>
   </figure>
 
   <exercise label="cspdecisionsintro_if2">

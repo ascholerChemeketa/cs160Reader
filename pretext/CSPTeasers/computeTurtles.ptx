@@ -6,8 +6,9 @@
 
   <figure>
     <caption>Children playing with a Logo turtle robot that could draw with a pen</caption>
-    <image source="CSPTeasers/Figures/mindstorms_turtle.jpg"
-      alt="Children playing with a Logo turtle robot that can draw with a pen" width="50%" />
+    <image source="CSPTeasers/Figures/mindstorms_turtle.jpg" width="50%">
+      <shortdescription>Children playing with a Logo turtle robot that can draw with a pen</shortdescription>
+    </image>
   </figure>
 
   <p>Today, we can play with virtual turtles in a fully graphical and non-robotic way. To do so, we

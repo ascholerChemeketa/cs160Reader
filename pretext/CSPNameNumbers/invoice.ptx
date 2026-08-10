@@ -4,7 +4,9 @@
         spreadsheet with an invoice for an office supply company.</p>
     <figure align="center">
         <caption>A spreadsheet with order information</caption>
-        <image source="CSPNameNumbers/Figures/invoice.png" width="100%" alt="a spreadsheet" />
+        <image source="CSPNameNumbers/Figures/invoice.png" width="100%">
+          <shortdescription>a spreadsheet</shortdescription>
+        </image>
     </figure>
     <p>Here's a program to compute the total price for the invoice:</p>
 

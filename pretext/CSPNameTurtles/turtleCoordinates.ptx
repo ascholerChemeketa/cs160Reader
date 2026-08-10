@@ -3,7 +3,9 @@
   <p>The space that the turtle draws in is 400 by 400 pixels. The center of the space is at x=0, y=0.</p>
   <figure align="center">
     <caption>The coordinates for the drawing space. Note that the center is x = 0 and y = 0.</caption>
-    <image source="CSPNameTurtles/Figures/spaceCoord.png" width="50%" alt="the space coordinate system" />
+    <image source="CSPNameTurtles/Figures/spaceCoord.png" width="50%">
+      <shortdescription>the space coordinate system</shortdescription>
+    </image>
   </figure>
   <p>The program below draws a snowman on a blue background by drawing 4 circles. It positions each of the circles using <c>goto(x,y)</c>
     to move the turtle to exactly where we want it centered. To draw a circle, we use a trick: we use <c>pensize</c> to make a
