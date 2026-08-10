@@ -7,36 +7,104 @@
     affecting our ability to build faster computers.</p>
   <sidebar>
     <title>How Big?</title>
-    <p><url href="https://htwins.net/scale2/" visual="https://htwins.net/scale2/">This cool animation</url> allows you
+    <p><url href="https://htwins.net/scale2/"
+           visual="https://htwins.net/scale2/">This cool animation</url> allows you
       to explore the microscopic world. (Hint: you’ll find transistors at about <m>{10}^{-7}</m> meters)</p>
   </sidebar>
-  <p>Moore’s Law has served well as a predictor of the growth of the limits of computational power. By
-    relentlessly shrinking the size of computational components we have been able to build more complex and faster
-    processors. However, the exponential growth of computer power predicted by Moore’s Law may be close to an end.
-    Modern transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At
-    this scale, the gate in a transistor that blocks or allows current is only about 50 atoms wide.</p>
+  <p>Moore’s Law has served well as a predictor of the growth of the limits of computational power. By relentlessly
+    shrinking the size of computational components we have been able to build more complex and faster processors.
+    However, the exponential growth of computer power predicted by Moore’s Law may be close to an end. Modern
+    transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At this
+    scale, the gate in a transistor that blocks or allows current is only about 50 atoms wide.</p>
   <figure>
-    <caption>A transistor is ~10 nm or 1/10,000th the size of a human hair.
-      <url name="Image by US Dept. of Energy" refuri="http://www.nano.gov/nanotech-101/what/nano-size">Image by US
-        Dept. of Energy</url>
+    <caption>A transistor is ~10 nm or 1/10,000th the size of a human hair. <url name="Image by US Dept. of Energy"
+           refuri="http://www.nano.gov/nanotech-101/what/nano-size">Image
+      by US Dept. of Energy</url>
     </caption>
-    <image source="LimitsAndFuture/Images/nanoscale.jpg" width="80%" />
+    <image source="LimitsAndFuture/Images/nanoscale.jpg"
+           width="80%"/>
   </figure>
   <p>We are nearing the end of our ability to continue shrinking existing silicon microchips. As the scale of components
     decreases, they become harder to build and harder to make reliable. Every attempt to reduce the size of chips
     requires increasingly complex new processes. The fabrication facilities used to make cutting-edge processors cost
     billions of dollars - only three companies in the world are actively pursuing commercial manufacturing at smaller
     and smaller scales. And as features shrink to a few dozen atoms, quantum effects mean they start behaving
-    differently. We can’t just build the same kinds of chips much smaller than we already do. For these reasons, <url
-      href="https://www.google.com/search?q=moore%27s%20law%20is%20dead"
-      visual="https://www.google.com/search?q=moore%27s%20law%20is%20dead"><q>Moore’s Law is Dead</q></url>
-    is a popular sentiment - the steady growth in computing power we have had for over four decades is slowing down.</p>
+    differently. We can’t just build the same kinds of chips much smaller than we already do. For these reasons, <url href="https://www.google.com/search?q=moore%27s%20law%20is%20dead"
+         visual="https://www.google.com/search?q=moore%27s%20law%20is%20dead">
+      <q>Moore’s Law is Dead</q>
+    </url> is a popular sentiment - the steady growth in computing power we have had for
+    over four decades is slowing down.</p>
   <p>Computing power will continue to increase, but it will not come by following the path that has given us dramatic
-    speedups year after year. Instead, we will need <url
-      href="https://www.digitaltrends.com/computing/end-moores-law-end-of-computers/"
-      visual="https://www.digitaltrends.com/computing/end-moores-law-end-of-computers/">completely new strategies</url>
-    for increasing the amount of work we can do with computation. These strategies include new materials for
-    microprocessors, doing parallel computing in the cloud, specialized hardware for specific tasks, and researching
-    completely different forms of computation like quantum computation.</p>
+    speedups year after year. Instead, we will need <url href="https://www.digitaltrends.com/computing/end-moores-law-end-of-computers/"
+         visual="https://www.digitaltrends.com/computing/end-moores-law-end-of-computers/">completely
+    new strategies</url> for increasing the amount of work we can do with computation. These strategies include new
+    materials for microprocessors, doing parallel computing in the cloud, specialized hardware for specific tasks, and
+    researching completely different forms of computation like quantum computation.</p>
+  <exercise label="limits-and-future_end-of-moore-s-law-ex1">
+    <statement>
+      <p>Why is continuing to shrink silicon transistors becoming more difficult?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Features approach atomic scales, where fabrication becomes difficult and quantum effects affect
+            reliability.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Smaller transistors always require less complex manufacturing.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Silicon chips cannot contain more than one transistor.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Computers no longer need processing power.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="limits-and-future_end-of-moore-s-law-ex2">
+    <statement>
+      <p>Which are strategies for increasing computing power as traditional transistor shrinking slows? Select all that
+        apply.</p>
+    </statement>
+    <choices randomize="yes"
+             multiple-correct="yes">
+      <choice correct="yes">
+        <statement>
+          <p>Use specialized hardware for particular tasks.</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Use new materials for microprocessors.</p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Doing massively parallel computing.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Make every computation a serial computation.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Stop using microprocessors entirely.</p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>Require transistors to be larger than human hairs.</p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
 </section>
-
