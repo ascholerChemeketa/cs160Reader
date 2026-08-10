@@ -195,7 +195,7 @@
   </exercise>
 
   <sidebar>
-    <figure align="" xml:id="binary-and-its-advantages-img1">
+    <figure xml:id="binary-and-its-advantages-img1">
       <caption>Claude Shannon, a mathematician at Bell Telephone Laboratories, identified these characteristics of
         binary. His 1948 paper A Mathematical Theory of Communication is the foundation of information theory and much
         of computer science.</caption>

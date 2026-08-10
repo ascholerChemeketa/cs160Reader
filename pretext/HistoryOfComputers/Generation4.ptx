@@ -2,7 +2,7 @@
   <title>The Fourth Generation</title>
   <sidebar>
     <title>Microprocessors</title>
-    <figure align="" xml:id="the-fouth-generation-img1">
+    <figure xml:id="the-fouth-generation-img1">
       <caption>Thomas Nguyen, CC BY-SA 4.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Intel_D4004.jpg" width="50%"
         alt="Intel 4004 Microprocessor" />
@@ -17,14 +17,14 @@
     machines we use are millions of times more powerful than those early personal computers they are direct descendants
     of these machines.</p>
   <container classes="inlinegroup">
-    <figure align="" xml:id="the-fouth-generation-img2">
+    <figure xml:id="the-fouth-generation-img2">
       <caption>Ed Uthman, CC BY-SA 2.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Apple_I_Computer.jpg" width="50%" alt="Apple I" />
       <legend>
         <p>The Apple I computer was sold as a kit for which people had to build their own case</p>
       </legend>
     </figure>
-    <figure align="" xml:id="the-fouth-generation-img3">
+    <figure xml:id="the-fouth-generation-img3">
       <caption>Ruben de Rijcke, CC BY-SA 3.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Ibm_pc_5150.jpg" width="50%" alt="IBM 5150" />
       <legend>

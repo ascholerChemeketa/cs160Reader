@@ -44,7 +44,7 @@
       href="http://en.wikipedia.org/wiki/Gottfried_Leibniz">Gottfried Leibniz</url> who described a machine that would
     be implemented using <xref ref="binary_binary-and-its-advantages" text="custom">binary</xref>.</p>
   <container classes="inlinegroup clear">
-    <figure align="" xml:id="prehistory-img3">
+    <figure xml:id="prehistory-img3">
       <caption>Rama, CC BY-SA 3.0 FR, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Pascaline-CnAM_00823-0003-IMG_6509.JPG"
         width="50%" alt="Pascaline" />
@@ -52,7 +52,7 @@
         <p>The Pascaline</p>
       </legend>
     </figure>
-    <figure align="" xml:id="prehistory-img4">
+    <figure xml:id="prehistory-img4">
       <caption>Gottfried Wilhelm Leibniz, Public domain, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Leibniz_binary_system_1703.png" width="50%"
         alt="Leibniz notes" />

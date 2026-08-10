@@ -31,7 +31,7 @@ Add fact to page                                                    Serial
       <image source="ParallelProcessing/Images/amdahl1.png"
              width="50%"/>
     </figure>
-    <figure align="">
+    <figure>
       <caption>Going from 1 to 2 workers has more effect than going from 4 to 5.</caption>
       <image source="ParallelProcessing/Images/amdahl2.png"
              width="50%"/>

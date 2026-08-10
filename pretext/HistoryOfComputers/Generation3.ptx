@@ -2,7 +2,7 @@
   <title>The Third Generation</title>
   <sidebar>
     <title>Integrated Circuit</title>
-    <figure align="" xml:id="the-third-generatio-img1">
+    <figure xml:id="the-third-generatio-img1">
       <caption>Kimmo Palosaari, Public domain, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Three_IC_circuit_chips.JPG" width="50%"
         alt="Integrated Circuit" />
@@ -27,7 +27,7 @@
     and left to run it with little in the way of feedback provided until the job was complete. <xref
       ref="operating-systems_operating-systems-varieties" text="custom">operating systems</xref> were developed that allowed multiple programs and
     users to interact with the machine at once.</p>
-  <figure align="" xml:id="the-third-generation-img2">
+  <figure xml:id="the-third-generation-img2">
     <caption>Doug Letterman, CC BY 2.0, via Wikimedia Commons</caption>
     <image source="HistoryOfComputers/Images/PDP-8.jpg" width="50%"
       alt="PDP-8" />

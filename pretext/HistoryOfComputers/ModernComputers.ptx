@@ -9,7 +9,7 @@
     (computers found everywhere) the Fifth Generation of computing because of the fundamental change
     in how we interact with computers.</p>
   <container classes="inlinegroup">
-    <figure align="" xml:id="modern-computers-img1">
+    <figure xml:id="modern-computers-img1">
       <caption>Fritzchens Fritz, CC0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/Intel-i7.jpg" width="50%"
         alt="Intel Core i7 microprocessor" />
@@ -18,7 +18,7 @@
           one chip the size of a fingernail.</p>
       </legend>
     </figure>
-    <figure align="" xml:id="modern-computers-img2">
+    <figure xml:id="modern-computers-img2">
       <caption>Apple, CC BY-SA 4.0, via Wikimedia Commons</caption>
       <image source="HistoryOfComputers/Images/IPhone_4s.jpg" width="50%" alt="Apple iPhone" />
       <legend>
