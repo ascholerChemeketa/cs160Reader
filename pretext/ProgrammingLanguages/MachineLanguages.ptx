@@ -44,10 +44,10 @@
     first programming languages - the earliest electronically programmable computers had to be programmed by feeding in
     a program as a list of 0s and 1s that specified what the computer was to do. (Before that the program had to be set
     physically with switches or patch cords.)</p>
-  <important>
+  <insight>
     <p>Because these are the only instructions a computer actually can understand and perform, at some point, every
       program a computer runs must be converted to machine instructions.</p>
-  </important>
+  </insight>
   <p>You can probably see the difficulties of working in machine language. While it might be very appropriate for a
     computer, it is extremely confusing for a computer programmer. They are also restricted to very low-level commands.
     There is no way to say something like <q>open a connection to google.com</q> or <q>draw this image on the screen</q>

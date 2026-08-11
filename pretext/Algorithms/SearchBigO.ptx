@@ -68,9 +68,9 @@
       papers, we can't count on always having the one we want at the top of the pile. Based on our rating of this
       algorithm on this rare exception would be misleading. So instead we will say Linear Search is <m>O(n)</m>. Kind of
       makes sense that linear search is a linear algorithm!</p>
-    <important>
+    <insight>
       <p><term>Linear Search</term> is <m>O(n)</m> - <term>Linear</term></p>
-    </important>
+    </insight>
     <note>
       <p>This demonstrates a common pattern when describing work for an algorithm: The best case normally does not tell
         us much - it is too rare. The average case and worst case are often (though not always) the same.</p>
@@ -146,9 +146,9 @@
       gives 9.96. Since we can't do .96 units of work (each unit is checking one paper<ellipsis/> hard to see how we can
       check 0.96 papers), we will round that up to 10. Since this function gives us the answer to how much work binary
       search requires, we will say Binary Search is <m> O(log(n))</m>.</p>
-    <important classes="clear">
+    <insight>
       <p><term>Binary Search</term> is <m>O(log(n))</m> - <term>Logarithmic</term></p>
-    </important>
+    </insight>
 
     <aside>
       <title>Wolfram Alpha</title>

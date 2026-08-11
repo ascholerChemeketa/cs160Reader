@@ -73,11 +73,11 @@
   <p>Unfortunately, adding processing cores greatly complicates programming a computer. It is not the case that we can
     add a second core and magically run every program twice as fast. The following pages introduce some of the issues we
     encounter with multi-core systems.</p>
-  <important>
+  <insight>
     <p>The move to parallel computation is a road to more powerful computers, but it is plan B for how to get there. If
       system designers and programmers had their choice, we would still be focused on cranking up the speed of single
       processors instead of increasing power by adding cores.</p>
-  </important>
+  </insight>
   <exercise label="parallel-processing_multi-processing-ex1">
     <statement>
       <p>Why can two somewhat slower processor cores be preferable to one faster core?</p>

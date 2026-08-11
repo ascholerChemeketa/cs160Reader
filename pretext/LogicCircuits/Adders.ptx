@@ -50,11 +50,11 @@
     </row>
   </tabular>
 
-  <important>
+  <insight>
     <p>Everything a computer does is in terms of answering logical questions. Doing math, modifying an image,
       recognizing speech, playing music, etc<ellipsis/> all at some level are represented as logical questions the
       computer can process using logic gates.</p>
-  </important>
+  </insight>
 
   <p>The circuit shown above is known as a <term>half adder</term>. To add larger numbers, we need a <term>full adder</term>
     - a full adder is two half adders merged with an OR gate. The circuit takes three inputs - two of the inputs are

@@ -35,13 +35,13 @@
     image from the bits we would need to know the dimensions of the image; but now, we also would need to specify the
     number of bits used for each pixel. Those 72 bits could represent a 3x6 image where each pixel is represented with 4
     bits (with 4 bits we could represent <m>2^4 = 16</m> different shades of gray).</p>
-  <important>
+  <insight>
     <p>
       <em>A pattern of bits only has the meaning we assign to it.</em>
     </p>
     <p>32 bits could represent a 4x8 image of 1-bit pixels, a 4x4 image of 2-bit pixels, a sequence of 4 ASCII letters,
       a really large binary number, or nearly anything else.</p>
-  </important>
+  </insight>
   <p>What about colors? Remember, bits only have the meaning we assign to them. We could interpret the 2 bits per pixel
     to mean:</p>
   <p>
