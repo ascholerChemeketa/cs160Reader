@@ -124,9 +124,7 @@
         down (10, 9, 8, <ellipsis/> 3). Each shape should have a size (side length) of 100.</p>
       <p>If you are having trouble, try printing out the loop counter so you can see which numbers your loop is counting
         through.</p>
-      <note>
-        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
-      </note>
+      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
 
     </statement>
     <program xml:id="csprepeatturtles_repeatturtlespractice3_editor" interactive="activecode" language="python">

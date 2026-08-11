@@ -8,4 +8,6 @@
   <xi:include href='./locationConditions.ptx' />
   <xi:include href='./locationConditions2.ptx' />
   <xi:include href='./Exercises.ptx' />
+  <!-- The following is commented out intentionally once the datafiles are loaded into the DB -->
+  <!-- <xi:include href='./imageDatafiles.ptx' /> -->
 </chapter>

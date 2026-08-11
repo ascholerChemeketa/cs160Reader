@@ -163,9 +163,7 @@ print("highestRoll was", highestRoll)
         it is a random location where both x and y are random numbers between -100 and 100.</p>
       <p>The automatic tests will make sure you generate appropriate values, but it won't necessarily verify you
         used the random numbers you make in the correct spots. You are responsible for checking that yourself!</p>
-      <note>
-        <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
-      </note>
+      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
 
     </statement>
     <program xml:id="cspdecisionssimulations_exercises5_editor" interactive="activecode" language="python">

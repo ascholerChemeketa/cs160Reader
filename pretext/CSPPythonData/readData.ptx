@@ -27,20 +27,20 @@
       <dl>
         <li>
             <title>open</title>
-            <c>fileReference = open("filename")</c>
+            <p><c>fileReference = open("filename")</c></p>
             <p>Open a file called filename and use it for reading. This will return a reference to a file object. We can
               use that reference to ask for data to be read, or to close the file.</p>
         </li>
         <li>
             <title>splitlines</title>
-            <c>data = fileReference.read().splitlines()</c>
+            <p><c>data = fileReference.read().splitlines()</c></p>
             <p>This is actually two commands, but we will always use them together like this. <c>read</c> will read in the
               entire file of data into one big string. <c>splitlines</c> takes that and splits it into a list - each item in the list
               is a string that has the text of one line from the file.</p>
         </li>
         <li>
             <title>close</title>
-            <c>fileReference.close()</c>
+            <p><c>fileReference.close()</c></p>
             <p>Closes a file.</p>
         </li>
     </dl>

@@ -49,16 +49,14 @@ print("The length of side c is", c)
       <p>This function converts temperature in degrees F to degrees C. What code goes where the ______________ is to
         complete it correctly?
       </p>
-      <p>
-        <program language="python">
-          <code>
+      <program language="python">
+        <code>
 def convertFtoC(tempF):
     tempF = tempF - 32
     tempC = (5 / 9) * tempF
     ______________
 </code>
-        </program>
-      </p>
+      </program>
       <p>
         <fillin mode="string" answer="return tempC"/>
       </p>

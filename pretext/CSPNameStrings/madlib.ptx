@@ -58,7 +58,7 @@ print(ending)
           <p>print("Pat called the police who took the witch away.")</p>
         </statement>
         <feedback>
-          <p>This <i>would</i> work. But if you changed the <pf>firstName</pf> variable, this line would not change.
+          <p>This <em>would</em> work. But if you changed the <pf>firstName</pf> variable, this line would not change.
             A different answer is better.</p>
         </feedback>
       </choice>
@@ -238,8 +238,8 @@ print("Mali" + " is " + str(Mali))
     </blocks>
   </exercise>
   <exercise xml:id="cspnamestrings_madlib8" >
-    <statement>Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the story still works if
-      you change the values of the variables!</statement>
+    <statement><p>Write a Madlib that uses the variables below in a 1-2 sentence story. Make sure the story still works if
+      you change the values of the variables!</p></statement>
     <program interactive="activecode" xml:id="cspnamestrings_madlib8_ed" language="python">
       <code>
 name = "Jesse"
@@ -248,7 +248,7 @@ place = "Portland"
 activity = "sailing"
       </code>
     </program>
-    <answer> There are many possible stories, here is one: <program xml:id="cspnamestrings_madlib8_answer" language="python">
+    <answer> <p>There are many possible stories, here is one:</p> <program xml:id="cspnamestrings_madlib8_answer" language="python">
         <code>
 name = "Maria"
 month = "October"

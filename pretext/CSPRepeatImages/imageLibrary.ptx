@@ -92,7 +92,9 @@
   <note>
     <p>It is also possible to use an image that is on another web page if you know its full address. Doing this would
       look like:</p>
-    <code>img = Image("https://shorturl.at/dNUX7")</code>
+    <program>
+      <code>img = Image("https://shorturl.at/dNUX7")</code>
+    </program>
   </note>
 
 </section> 

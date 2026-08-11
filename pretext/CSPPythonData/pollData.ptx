@@ -15,6 +15,7 @@
 
   <p>There are three columns separated by colon (':') characters:</p>
   <list xml:id="csp-python-data_poll-data-file-description">
+    <title>US Air Pollution Data File Columns</title>
     <ul>
       <li>
         <p>The city and state, separated by a comma.</p>

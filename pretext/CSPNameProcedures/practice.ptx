@@ -6,9 +6,9 @@
     <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
   </note>
   <exercise xml:id="csp-name-procedures_practice-write-a-procedure_1">
-    <statement>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the
+    <statement><p>Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the
       length to make each side. (A pentagon has five sides and five corners - each turn will need to
-      be 72 degrees).</statement>
+      be 72 degrees).</p></statement>
     <program interactive="activecode" language="python" xml:id="csp-name-procedures_practice-write-a-procedure_1_ed">
       <code>
 #WRITE YOUR PROCEDURE HERE
@@ -41,4 +41,3 @@ def pentagon(turtle, size):
     </answer>
   </exercise>
 </section>
-

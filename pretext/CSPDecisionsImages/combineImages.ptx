@@ -8,14 +8,6 @@
 
   <p>We are going to put the woman shown below into the beach scene:</p>
 
-  <hidden>
-    <datafile label="beach" filename="beach.jpg">
-      <image source="CSP/Images/beach.jpg">
-        <shortdescription>Beach scene used as a sample image.</shortdescription>
-      </image>
-    </datafile>
-  </hidden>
-
   <sidebyside width="20%" margins="25%">
     <image source="CSP/Images/green_screen.jpg">
       <shortdescription>Green screen backdrop used for image compositing.</shortdescription>

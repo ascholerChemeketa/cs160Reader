@@ -63,30 +63,30 @@
         <p>Don't forget to indent the body of each procedure, even if it is not real code yet.</p>
       </statement>
       <blocks>
-        <block order="">
+        <block>
           <cline>def rectangle(turtle, width, height):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> draw a rectangle of requested size</cline>
         </block>
-        <block order="">
+        <block>
           <cline>def drawWall(turtleName):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> set a color</cline>
           <cline> draw a large rectangle</cline>
         </block>
-        <block order="">
+        <block>
           <cline>def drawDoor(turtleName):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> set a color</cline>
           <cline> draw a small rectangle</cline>
         </block>
-        <block order="">
+        <block>
           <cline>def drawWindow(turtleName):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> set a color</cline>
           <cline> draw a small square</cline>
           <cline> move</cline>
@@ -96,17 +96,17 @@
           <cline> move</cline>
           <cline> draw a small square</cline>
         </block>
-        <block order="">
+        <block>
           <cline>def drawRoof(turtleName):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> set a color</cline>
           <cline> draw a triangle</cline>
         </block>
-        <block order="">
+        <block>
           <cline>def drawHouse(turtleName):</cline>
         </block>
-        <block order="">
+        <block>
           <cline> drawWall</cline>
           <cline> move</cline>
           <cline> drawDoor</cline>
@@ -117,7 +117,7 @@
           <cline> move</cline>
           <cline> drawRoof</cline>
         </block>
-        <block order="">
+        <block>
           <cline># Main part of the program</cline>
           <cline>from turtle import *</cline>
           <cline>steve = Turtle()</cline>

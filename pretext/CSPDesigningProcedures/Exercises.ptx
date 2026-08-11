@@ -1,5 +1,6 @@
 <exercises xml:id="csp-designing-procedures_chapter-exercises">
   <title>Chapter Exercises</title>
+  <introduction>
   <p>Create your own drawing using turtle graphics. You should use multiple colors, and your design must be complicated
     enough to feature multiple procedures, including at least one procedure that calls other procedures you have
     written.</p>
@@ -25,6 +26,7 @@
   <note>
     <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
   </note>
+  </introduction>
 
   <exercise label="cspdesigningprocedures_exercises1">
     <statement>

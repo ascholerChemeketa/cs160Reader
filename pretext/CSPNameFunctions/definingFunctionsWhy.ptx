@@ -113,14 +113,12 @@ hypotenuse1 = math.sqrt(aSquared + bSquared)
       <p>We want to calculate the hypotenuse of a triangle with legs of 8 and 15 and then print out the result. Write
         the line of code that could replace the ______________ in the sample below to use the <c>hypotenuse_length</c> function defined above to do the math.
       </p>
-      <p>
-        <program language="python">
-          <code>
+      <program language="python">
+        <code>
 ______________
 print(answer)
 </code>
-        </program>
-      </p>
+      </program>
       <p> <fillin mode="string" width="60" answer="answer = hypotenuse_length(8, 15)"/>
       </p>
     </statement>
@@ -145,4 +143,3 @@ print(answer)
     </evaluation>
   </exercise>
 </section>
-

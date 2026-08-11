@@ -97,11 +97,11 @@ hop(malik)
       as many spaces as you want to indent, but once you start a function, you must use the same amount of indentation
       for each line. You can't use 2 spaces on one line and then 3 on the next. It is best to pick one distance and
       use that for all of your indentation.</p>
-    <hint>
+    <remark>
       <p>Pressing the <term>tab</term> key while on a line will shift it right 4 spaces. Pressing <term>shift-tab</term>
         will move the line left 4 spaces. You can also select multiple lines of code and use <term>tab</term> or <term>
         shift-tab</term> to move all the lines at once.</p>
-    </hint>
+    </remark>
     <p>See the video below for a hint on how to solve the next mixed-up code problem.</p>
 
     <video xml:id="yt_3oYHEHTt2hM" youtube="3oYHEHTt2hM" width="100%" />

@@ -3,7 +3,7 @@
   <p>When we loop through the pixels in an image, our loop moves from left to right
     across each row starting from the top one and working our way to the bottom.</p>
   <figure>
-    <caption>The order that pixels are processed if you use <literal>img.getPixels()</literal>.
+    <caption>The order that pixels are processed if you use <pf>img.getPixels()</pf>.
     First, we visit the top row moving from left to right. Then we go to the second row and move
     from left to right again. The process continues until we reach the bottom of the image.</caption>
     <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%">

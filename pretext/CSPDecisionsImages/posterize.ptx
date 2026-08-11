@@ -88,8 +88,6 @@ for p in pixels:
       <p>How many different colors are possible in our image after we posterize it using this
         function?</p>
 
-      <hint>There are three color channels. How many values can they each take on?</hint>
-
     </statement>
     <choices>
 
@@ -132,7 +130,7 @@ for p in pixels:
         </feedback>
       </choice>
     </choices>
+    <hint><p>There are three color channels. How many values can they each take on?</p></hint>
 
   </exercise>
 </section>
-
