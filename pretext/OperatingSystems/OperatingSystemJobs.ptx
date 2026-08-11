@@ -3,11 +3,11 @@
   <subsection>
     <title>Jobs of an Operating System</title>
 <figure>
-    <caption><reference name="Wikimedia Commons"
+    <caption><url
                  href="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
-      Commons</reference> - <reference name="CC-BY-SA-3.0"
+      Commons</url> - <url
                  href="http://creativecommons.org/licenses/by-sa/3.0">
-      CC-BY-SA-3.0</reference></caption>
+      CC-BY-SA-3.0</url></caption>
     <image source="OperatingSystems/Images/Operating_system.png"
            width="30%">
       <shortdescription>Operating system layer between applications and computer hardware.</shortdescription>
