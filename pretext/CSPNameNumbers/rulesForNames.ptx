@@ -237,7 +237,7 @@
                         <p>hireDate</p>
                     </statement>
                     <feedback>
-                        <p>Correct! This or <code>hire_date</code> would both be reasonable choices for a name.</p>
+                        <p>Correct! This or <pf>hire_date</pf> would both be reasonable choices for a name.</p>
                     </feedback>
                 </choice>
 
@@ -246,7 +246,7 @@
                         <p>_hire_date</p>
                     </statement>
                     <feedback>
-                        <p><code>hire_date</code> would be reasonable. But you don't usually start a variable name with
+                        <p><pf>hire_date</pf> would be reasonable. But you don't usually start a variable name with
                             an underscore.</p>
                     </feedback>
                 </choice>
@@ -265,7 +265,7 @@
                         <p>date</p>
                     </statement>
                     <feedback>
-                        <p><code>date</code> isn't the worst option here, but it might not be clear to other readers of
+                        <p><pf>date</pf> isn't the worst option here, but it might not be clear to other readers of
                             the code what date we are referring to. Is it a person's hire date? their birthday? today's
                             date?</p>
                     </feedback>
@@ -276,7 +276,7 @@
                         <p>hd</p>
                     </statement>
                     <feedback>
-                        <p>An abbreviation would not be appropriate in this case. <code>hd</code> is not meaningful.</p>
+                        <p>An abbreviation would not be appropriate in this case. <pf>hd</pf> is not meaningful.</p>
                     </feedback>
                 </choice>
             </choices>

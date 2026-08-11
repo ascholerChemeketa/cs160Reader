@@ -2,7 +2,7 @@
   <title>Thinking About Pixel Locations</title>
   <p>When we loop through the pixels in an image, our loop moves from left to right
     across each row starting from the top one and working our way to the bottom.</p>
-  <figure align="center">
+  <figure>
     <caption>The order that pixels are processed if you use <literal>img.getPixels()</literal>.
     First, we visit the top row moving from left to right. Then we go to the second row and move
     from left to right again. The process continues until we reach the bottom of the image.</caption>
@@ -53,7 +53,7 @@
     </ul>
   </p>
 
-  <figure align="center">
+  <figure>
     <caption>The x, y locations of various pixels in a 4 x 4 image.</caption>
     <image source="CSPRepeatImages/Figures/grid_coords.png" width="50%">
       <shortdescription>Image grid with row and column coordinates.</shortdescription>

@@ -2,7 +2,7 @@
     <title>Figuring out an Invoice</title>
     <p>We can use variables to solve problems like those we might solve in a spreadsheet. Imagine that you had a
         spreadsheet with an invoice for an office supply company.</p>
-    <figure align="center">
+    <figure>
         <caption>A spreadsheet with order information</caption>
         <image source="CSPNameNumbers/Figures/invoice.png" width="100%">
           <shortdescription>a spreadsheet</shortdescription>

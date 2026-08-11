@@ -7,7 +7,7 @@
         result from the expression will be stored in the variable.</p>
 
     <listing xml:id="csp-name-numbers_expression2_listing1" >
-        <caption>Code to do a simple calculation</caption>
+        <title>Code to do a simple calculation</title>
         <program xml:id="csp-name-numbers_expression2" interactive="activecode" language="python">
             <code>
         result = 2 * 2 + 1
@@ -43,6 +43,7 @@
             means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.</p>
 
         <listing xml:id="cspnamenumbers_expression4_listing" >
+            <title>Code to do a simple calculation</title>
             <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression4">
                 <code>
     result = 1 / 3
@@ -91,6 +92,7 @@
 
         
     <listing xml:id="cspnamenumbers_expression5_listing">
+        <title>Code to do integer division</title>
         <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression5">
             <code>
 result1 = 37 / 3
@@ -113,7 +115,7 @@ print(result2)
             when you divide the first number by the second. In the case of <c>4 % 2</c>, <c>2</c> goes into <c>4</c> two times
             with a remainder of <c>0</c>. The result of <c>5 % 2</c> would be <c>1</c> since <c>2</c> goes into <c>5</c>, two
             times with a remainder of <c>1</c>.</p>
-        <figure align="center">
+        <figure>
             <caption>Division showing the whole number result and the remainder</caption>
             <image source="CSPNameNumbers/Figures/mod-py.png" width="30%">
               <shortdescription>Python modulo expression example.</shortdescription>
@@ -121,6 +123,7 @@ print(result2)
         </figure>
 
         <listing xml:id="cspnamenumbers_expression7_listing">
+            <title>Code to do modulo division</title>
             <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression7">
                 <code>
     x = 11 % 3

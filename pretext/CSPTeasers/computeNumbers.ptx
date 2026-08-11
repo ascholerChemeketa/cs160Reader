@@ -7,8 +7,8 @@
     variable</term>. A <term>variable</term> is a name associated with computer memory that can hold
     a value and that value can change or vary. One example of a <term>variable</term> is the score
     in a game. The score starts at 0 and increases as you play the game.</p>
-  <figure align="center">
-    <caption>Both the <strong>score</strong> and <strong>high score</strong> in the game Angry Birds
+  <figure>
+    <caption>Both the <term>score</term> and <term>high score</term> in the game Angry Birds
       would be represented by a variable.</caption>
     <image source="CSPTeasers/Figures/angry_birds.jpg" width="100%">
       <shortdescription>A game with a score</shortdescription>
@@ -16,7 +16,7 @@
   </figure>
   <p>One thing that you might want to calculate is the monthly payment on a loan for a car. To do
     so, you can use this mathematical formula:</p>
-  <p classes="center">
+  <p>
     <md>
       <mrow>A = P \frac{r(1 + r)^n}{(1 + r)^n - 1}</mrow>
     </md>

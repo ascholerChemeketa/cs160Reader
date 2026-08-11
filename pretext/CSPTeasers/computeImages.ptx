@@ -5,7 +5,7 @@
     picture</em> (pix) <em>elements</em> (els). These are laid out on a grid, from left to right
     (the horizontal or <term>x</term> dimension) and top to bottom (the vertical or <term>y</term>
     dimension).</p>
-  <figure align="center">
+  <figure>
     <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
     <image source="CSPTeasers/Figures/grid.png" width="30%">
       <shortdescription>A grid with horizontal (x) and vertical (y) dimensions</shortdescription>
@@ -72,7 +72,7 @@
     differently than you might expect if you only have experience making colors by mixing paint. For
     example, you would mix blue and yellow paint to make green, but you mix red and green light to
     make yellow light.</p>
-  <figure align="center">
+  <figure>
     <caption>How lights combine to make colors</caption>
     <image source="CSPTeasers/Figures/additive-color.jpg" width="50%">
       <shortdescription>a color wheel for combining color lights</shortdescription>

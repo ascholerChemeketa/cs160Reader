@@ -2,8 +2,9 @@
   <title>Using elif correctly</title>
   <p>In the grade printing program on the previous page, the program checked each possible grade
     starting with the highest (<q>A</q>) and working down to the lowest option (<q>F</q>):</p>
-  <blockquote>
-    <pre>if score &gt;= 90:
+
+  <program language="python">
+if score &gt;= 90:
     print("A")
 elif score &gt;= 80:
     print("B")
@@ -12,8 +13,9 @@ elif score &gt;= 70:
 elif score &gt;= 60:
     print("D")
 else:
-    print("F")</pre>
-  </blockquote>
+    print("F")
+  </program>
+
   <p>This ordering is important, because in an if/elif/else chain, Python will not skip ahead to <q>the
     correct</q> option. If we put the various grades in a mixed-up order, the first <c>if</c> or <c>elif</c>
     whose condition is true is the one that will run.</p>

@@ -24,7 +24,7 @@ print(betterStill)
     <p>A string has characters in a sequence. Each character is at a position or <term> index</term>
       which starts with 0 as shown below. An <term>index</term> is the term for a number associated
       with a position in a collection of values like a string.</p>
-    <figure align="center">
+    <figure>
       <caption>A string with the position (index) shown above each character</caption>
       <image source="CSPNameStrings/Figures/stringIndicies.png" width="100%">
         <shortdescription>a string with the position (index) shown above each character</shortdescription>

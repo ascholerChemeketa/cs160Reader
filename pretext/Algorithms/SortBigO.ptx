@@ -67,7 +67,7 @@
   </table>
   <p>The total swaps would be 99 steps times 1 swap each = 99. Expressed in terms of <m>n</m> we could say it is <m>n -
     1</m> swaps.</p>
-  <p>The total comparisons would be 99 + 98 + 97 + <ellipsis/> + 3 + 2 + 1 or <m>(n - 1) + (n - 2) + (n - 3) + <ellipsis/>
+  <p>The total comparisons would be 99 + 98 + 97 + <ellipsis/> + 3 + 2 + 1 or <m>(n - 1) + (n - 2) + (n - 3) + \dots
     + 3 + 2 + 1</m>. So what does that equal? There is a trick to find out - pair up the first item and the last, then
     the second item and next to last and so on. Each pair of items sums to <m>n</m>:</p>
   <image source="Algorithms/Images/summation.png"

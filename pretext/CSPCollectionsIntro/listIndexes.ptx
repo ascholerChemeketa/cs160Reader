@@ -7,7 +7,7 @@
     has index <c>0</c>, the next one <c>1</c>, and so on. See the image below for a view of two lists with the <em>index</em>
     for each list item shown at the top of each yellow box and the <em>value</em> for that index shown at the bottom of
     each yellow box.</p>
-  <figure align="center">
+  <figure>
     <caption>Lists and their indices</caption>
     <image source="CSPCollectionsIntro/Figures/listIndices.png" width="100%">
       <shortdescription>Python list diagram showing element indices.</shortdescription>

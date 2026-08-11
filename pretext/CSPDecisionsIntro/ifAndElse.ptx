@@ -33,7 +33,7 @@ print(total)
   </program>
   <p>Using an <c>if</c> with an <c>else</c> makes sure that <em>either</em> the <c>if</c> block is executed <em>
     or</em> the <c>else</c> block is executed, but <term>never</term> both.</p>
-  <figure align="center">
+  <figure>
     <caption>Flow of execution for both an if and else</caption>
     <image source="CSPDecisionsIntro/Figures/ifAndElseFlow.png" width="50%">
       <shortdescription>Flowchart for both an if and else</shortdescription>

@@ -81,7 +81,7 @@ alex.forward(75)        # move forward by 75 units
     <p>Turn instructions are always relative to the turtle's current direction. The instruction <c>alex.left(90)</c> tells the
       turtle named alex to make a quarter circle turn to its left - or counter-clockwise. If alex is currently facing
       East, it would end up facing North. If it is currently facing North, it would end up facing West.</p>
-    <figure align="center">
+    <figure>
       <caption>The amount of turn for specified degrees for left and right turns. These diagrams assume the turtle is
         currently pointing East (to the right of your screen).</caption>
       <image source="CSPNameTurtles/Figures/turnDegrees.png" width="100%">

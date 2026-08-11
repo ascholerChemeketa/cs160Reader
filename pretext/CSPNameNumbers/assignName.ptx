@@ -16,7 +16,7 @@
         assignment</term>. A statement like <c>a = 4</c> means that the symbol <c>a</c> refers to space (in the
         computer's memory) that is assigned the value <c>4</c>. When we use the symbol <c>a</c> in a program the
         computer will substitute the value <c>4</c>.</p>
-    <figure align="center">
+    <figure>
         <caption>Creating a variable and setting its value in memory.</caption>
         <image source="CSPNameNumbers/Figures/assignA.png" width="20%">
           <shortdescription>Python assignment diagram for variable a.</shortdescription>

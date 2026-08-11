@@ -1,7 +1,7 @@
 <section xml:id="csp-name-turtles_turtle-coordinates">
   <title>Turtle Coordinates</title>
   <p>The space that the turtle draws in is 400 by 400 pixels. The center of the space is at x=0, y=0.</p>
-  <figure align="center">
+  <figure>
     <caption>The coordinates for the drawing space. Note that the center is x = 0 and y = 0.</caption>
     <image source="CSPNameTurtles/Figures/spaceCoord.png" width="50%">
       <shortdescription>the space coordinate system</shortdescription>

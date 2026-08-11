@@ -30,7 +30,7 @@ drawSquare(becca, squareSize)
     see for yourself.</p>
   <p>We can also pick a random location for the turtle to start in. Remember that the turtle uses this coordinate
     system:</p>
-  <figure align="center">
+  <figure>
     <caption>The coordinates for the drawing space. Note that the center is x = 0 and y = 0.</caption>
     <image source="CSPDecisionsSimulations/Figures/spaceCoord.png" width="100%">
       <shortdescription>the space coordinate system</shortdescription>

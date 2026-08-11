@@ -21,7 +21,7 @@
 
             <p><em>elements</em> (els). The pixels are laid out on a grid, from left to right (horizontal or <term>x</term>
               dimension) and top to bottom (vertical or <term>y</term> dimension).</p>
-            <figure align="center">
+            <figure>
               <caption>A grid with horizontal (x) and vertical (y) dimensions</caption>
               <image source="CSPRepeatImages/Figures/grid.png" width="50%">
                 <shortdescription>A grid with horizontal (x) and vertical (y) dimensions</shortdescription>

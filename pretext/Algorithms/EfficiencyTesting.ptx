@@ -35,7 +35,7 @@
       </li>
     </ul>
   </p>
-  <transition/>
+
   <p>The actual procedures we will test are in the program at the bottom of the page. There is a lot of code, you do not
     have to worry about most of it. What is important is that it defines <c>procedureA</c>, <c>procedureB</c>, <c>procedureC</c>, <c>procedureD</c>, and <c>procedureE</c>.
     Each procedure takes a number as its input. At the top of the program is the procedure <c>doTest</c>. To run a particular

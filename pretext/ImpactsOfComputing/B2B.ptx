@@ -4,8 +4,8 @@
     wonderful job of laying out many of the effects of computing technology. These paragraphs from the book lay out its
     thesis and also elegantly describe the concerns we should all have:</p>
   <blockquote>
-    <paragraphs>
-    <title>Good and Ill, Promise and Peril</title>
+
+    <p><term>Good and Ill, Promise and Peril</term></p>
     <p>The digital explosion has thrown a lot of things up for grabs, and we all have a stake in who does the grabbing.
       The way the technology is offered to us, the way we use it, and the consequences of the vast dissemination of
       digital information are matters not in the hands of technology experts alone. Governments and corporations and
@@ -19,9 +19,8 @@
       risks and opportunities. All of us, and all of our public agencies and private institutions, have a say in whether
       technology will be used for good or ill and whether we will fall prey to its risks or prosper from the
       opportunities it creates.</p>
-    </paragraphs>
-    <paragraphs>
-    <title>Technology Is Neither Good nor Bad</title>
+    
+    <p><term>Technology Is Neither Good nor Bad</term></p>
     <p>Any technology can be used for good or ill; digital technologies, in particular, can be simultaneously good and
       bad. Nuclear reactions create electric power and weapons of mass destruction. These two uses share a common core
       but are otherwise quite distinct. Not so in the world after the digital explosion.</p>
@@ -44,9 +43,8 @@
       mostly innocent data looking for signs of <q>suspicious activity</q> by potential terrorists<mdash/>and to
       notice lesser transgressions in the process. Although the World Wide Web reaches into millions of households, the
       rules and regulations governing it are not much better than those of a lawless frontier town of the Old West.</p>
-    </paragraphs>
-    <paragraphs>
-    <title>New Technologies Bring Both Risks and Opportunities</title>
+    
+    <p><term>New Technologies Bring Both Risks and Opportunities</term></p>
     <p>The same large storage media that enable anyone to analyze millions of baseball statistics also allow anyone with
       access to confidential information to jeopardize its security. Access to aerial maps via the Internet makes it
       possible for criminals to plan burglaries of upscale houses, but technologically sophisticated police know that
@@ -65,7 +63,7 @@
       one of us can make, to our workplace or to another institution, can be to ask a question at the right time about
       the risks of some new technological innovation<mdash/>or to point out the possibility of doing something in the
       near future that a few years ago would have been utterly impossible.</p>
-    </paragraphs>
+    
   </blockquote>
   <remark><p> Materials on this page adapted with permission from <url
       href="https://www.bitsbook.com/">Blown To Bits by Hal Abelson, Ken Ledeen, Harry Lewis, Wendy Seltzer</url> (<url

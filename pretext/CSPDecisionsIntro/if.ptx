@@ -75,7 +75,7 @@ print ("All done")
     expression is false. Notice that it will only execute the statements in the indented block if
     the logical expression is true. Regardless of whether the indented code is executed, the program then
     continues running.</p>
-  <figure align="center">
+  <figure>
     <caption>Flow of execution for an if statement</caption>
     <image source="CSPDecisionsIntro/Figures/decision.png" width="50%">
       <shortdescription>Flowchart for an if statement</shortdescription>

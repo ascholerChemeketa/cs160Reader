@@ -9,7 +9,7 @@
     use to find the area of a triangle: <m>\sqrt{s (s - a) (s - b) (s - c)}</m> where <term>s</term>
     is the semi-perimeter (half the perimeter) and <term>a, b, c</term> are the lengths of the three
     sides.</p>
-  <figure align="center">
+  <figure>
     <caption>A triangle with sides that are labled a, b, and c.</caption>
     <image source="CSPNameFunctions/Figures/herons_formula.png" width="50%">
       <shortdescription>Triangle with sides labeled a, b, c</shortdescription>
