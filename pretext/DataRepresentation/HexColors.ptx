@@ -22,9 +22,9 @@
     colors for websites. Colors are generally specified as 24-bit numbers - 8 bits each to represent how much red, green,
     and blue. These 8 bits are enough to give values of <m>{0-255}_{10}</m> (<m>{00000000-11111111}_{2}</m>) for each of
     the three primary colors. To make different colors, we mix different amounts of the three primaries. 255 red, 0
-    green, and 140 blue makes a <inline classes="pink">nice pink</inline>. To specify this color, a website designer can
+    green, and 140 blue makes a nice pink. To specify this color, a website designer can
     write the 24 binary digits as 6 hex digits (remember that 4 binary digits correspond to one hex digit). 255 is FF in
-    hex. 0 is 00 in hex. 140 is 8C in hex. So <inline classes="pink">this shade of pink</inline> can be written as
+    hex. 0 is 00 in hex. 140 is 8C in hex. So this shade of pink can be written as
     FF008C - a website designer would type something like <q>color: #FF008D;</q> to specify that some text should
     be pink.</p>
   <p>You can play with the sliders below to explore how colors can be described as a mix of red, green, and blue. Move

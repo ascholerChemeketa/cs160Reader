@@ -120,10 +120,10 @@
     011. That means 3. Add one and get 4. So -2 + (-2) = -4.</p>
   <p>It is also easy to find the inverse of a number. To turn a negative into a positive or vice versa, invert all the
     bits and add one. If there is a carry past the last digit, ignore it.</p>
-  <topic>
+  <insight>
     <title>Two's Complement Conversion</title>
     <p>To change the sign of a number, flip all the bits and add one. Ignore any carry past the last original digit.</p>
-  </topic>
+  </insight>
   <p>For example, here is converting 5 to -5:</p>
   <program language="none">
     <code>
