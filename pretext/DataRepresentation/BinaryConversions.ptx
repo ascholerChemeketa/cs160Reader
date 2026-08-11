@@ -94,7 +94,6 @@ Do I need 1? Yes.
 </code>
     </program>
     <p>If we think of each column we used as representing a 1 and each column we didn't as a 0, we get this:</p>
-    <table>
       <tabular>
         <row header="yes">
           <cell> 128s </cell>
@@ -117,7 +116,6 @@ Do I need 1? Yes.
           <cell> 1 </cell>
         </row>
       </tabular>
-    </table>
     <p>Or written without a table: <m>{10011011}_{2}</m>.</p>
     <p>Just like with decimal numbers, leading zeros do not modify the value of a number. So <m>{00000101}_{2}</m> is
       the same as <m>{101}_{2}</m>.</p>
@@ -204,4 +202,3 @@ Do I need 1? Yes.
     </exercise>
   </subsection>
 </section>
-

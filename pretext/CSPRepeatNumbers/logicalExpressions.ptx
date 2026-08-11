@@ -28,6 +28,7 @@ print( "z is a ", type(z) )
     <term>Comparison Operators</term>
   </p>
   <table>
+    <title>Comparison operators</title>
     <tabular>
 
       <row>
@@ -139,4 +140,3 @@ y = 2
 
   </exercise>
 </section>
-

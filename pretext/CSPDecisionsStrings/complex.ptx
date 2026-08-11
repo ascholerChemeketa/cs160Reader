@@ -36,6 +36,7 @@ if credits is between 0 and 45:
     A <c>not</c> negates the logical value that follows it. If it was true, then a <c>not</c> changes the result to false. If
     it was false, the <c>not</c> changes the result to true.</p>
   <table>
+    <title>Logical operators</title>
     <tabular>
 
       <row header="yes">
@@ -77,4 +78,3 @@ if credits &gt; 0 and credits &lt; 45:
         </code>
   </program>
 </section>
-

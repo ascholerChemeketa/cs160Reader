@@ -18,6 +18,7 @@ if TEST:
     result of using any of these is either <c>True</c> or <c>False</c>:</p>
 
   <table xml:id="csp-decisions-intro_index-1">
+    <title>Comparison operators</title>
     <tabular>
 
       <row>
@@ -136,4 +137,3 @@ print ("B")
 
   </exercise>
 </section>
-

@@ -4,6 +4,7 @@
     database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c> table (so queries will look like <c>SELECT * from movies</c>).
     It features the following columns of data:</p>
   <table xml:id="sql-group-join_movie-table">
+    <title>movies table columns</title>
     <tabular>
 
       <row header="yes">
@@ -224,6 +225,7 @@ Steven Spielberg      | 2
     particular actor. If an actor appears in multiple movies, they will appear in one record for each movie they appear
     in.</p>
   <table xml:id="sql-group-join_actor-table">
+    <title>actors table columns</title>
     <tabular>
 
       <row header="yes">
@@ -306,4 +308,3 @@ A.S. Duggal              | 67
     </program>
   </exercise>
 </section>
-

@@ -4,6 +4,7 @@
     database has two tables, <c>movies</c> and <c>actors</c>. We will be using the <c>movie</c> table (so queries will look like <c>SELECT * from movies</c>).
     It features the following columns of data:</p>
   <table xml:id="sql-intro_movie-table">
+    <title>movies table columns</title>
     <tabular>
 
       <row header="yes">
@@ -200,4 +201,3 @@
     </program>
   </exercise>
 </section>
-

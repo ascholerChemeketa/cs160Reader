@@ -81,7 +81,6 @@
   </table>
   <p>Thus in the hexadecimal number <m>{\textrm{1EA}}_{16}</m> the E means 14 copies of the second digit (16). The
     A means 10 copies of the rightmost digit (1):</p>
-  <table>
     <tabular halign="center">
 
       <row header="yes" bottom="medium">
@@ -97,7 +96,6 @@
       </row>
 
     </tabular>
-  </table>
   <p>So <m>{1\textrm{EA}}_{16}</m> = <term>1</term> * 256 + <term>14</term> * 16 + <term>10</term> * 1 = <m>{490}_{10}</m>
     .</p>
   </subsection>
@@ -285,4 +283,3 @@
     </evaluation>
   </exercise>
 </section>
-

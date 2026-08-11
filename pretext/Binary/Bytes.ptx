@@ -24,9 +24,8 @@
     music file, we describe it in terms of <term>Kibibytes</term>, <term>Mebibytes</term>, <term>Gibibytes</term> or
     even larger quantities. These are all names for different powers of 2:</p>
   <table>
+    <title>Binary memory units</title>
     <tabular>
-
-
       <row header="yes">
         <cell> Name </cell>
         <cell> Number of Bytes </cell>
@@ -79,6 +78,7 @@
     <p>In the metric system, Kilo, Mega, Giga, etc<ellipsis/> refer to different powers of 10. So a <term>Kilobyte</term>,
       or <term>KB</term>, is <m>10^{3}</m> bytes. Using that system gives us the following units:</p>
     <table>
+      <title>Decimal memory units</title>
       <tabular>
 
         <row header="yes">

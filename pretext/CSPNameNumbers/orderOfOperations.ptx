@@ -4,6 +4,7 @@
         PEMDAS</term> (Parentheses, Exponents, Multiply/Divide, Add/Subtract) and is shown in the table below from
         highest precedence to lowest. If two symbols have the same precedence they are evaluated from left to right.</p>
     <table>
+        <title>Operator precedence</title>
         <tabular>
 
             <row header="yes">
@@ -94,4 +95,3 @@ print(result)
     </program>
     </listing>
 </section>
-

@@ -12,6 +12,7 @@
   </p>
   <p>If we did the same work for a selection sort on a list of 100 things (<m>n = 100</m>), it would look like:</p>
   <table>
+    <title>Selection sort work for 100 items</title>
     <tabular>
 
       <row header="yes">

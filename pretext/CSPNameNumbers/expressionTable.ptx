@@ -2,6 +2,7 @@
     <title>Summary of Expression Types</title>
     <p>Here is a table summarizing the basic arithmetic operations:</p>
     <table>
+        <title>Arithmetic operations</title>
         <tabular>
 
             <row header="yes">
@@ -234,4 +235,3 @@
 
     </exercise>
 </section>
-

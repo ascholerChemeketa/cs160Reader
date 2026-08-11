@@ -20,6 +20,7 @@
     the <c>trip_data</c>:</p>
 
   <table xml:id="sql-intro_trip-data-table">
+    <title>trip_data table columns</title>
     <tabular row-headers="yes">
       <row header="yes">
         <cell> Column Name </cell>
@@ -107,4 +108,3 @@
     </tabular>
   </table>
 </section>
-
