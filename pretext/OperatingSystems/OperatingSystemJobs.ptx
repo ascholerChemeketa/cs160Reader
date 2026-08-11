@@ -1,6 +1,8 @@
 <section xml:id="operating-systems_operating-systems-goals">
   <title>Operating Systems Goals</title>
-  <figure>
+  <subsection>
+    <title>Jobs of an Operating System</title>
+<figure>
     <caption><reference name="Wikimedia Commons"
                  refuri="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
       Commons</reference> - <reference name="CC-BY-SA-3.0"
@@ -16,8 +18,8 @@
     operating system is responsible for starting up application programs and managing the hardware resources that they
     need. Indeed, most programs are not allowed to interact directly with the hardware - instead, the operating system
     mediates all interactions between programs and the hardware.</p>
-
-  <subsection xml:id="operating-systems-goals-allocation">
+  </subsection>
+<subsection xml:id="operating-systems-goals-allocation">
     <title>Hardware Allocation</title>
     <p>Most of the hardware resources a computer has are <term>scarce</term>, meaning they are in limited supply: The
       CPU can only do so much work at any given time. There is a physical limit to how much information can fit into the

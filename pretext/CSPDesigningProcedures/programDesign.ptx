@@ -1,6 +1,7 @@
 <section xml:id="csp-designing-procedures_program-design">
   <title>Program Design</title>
-  <p>One of the secrets of solving large, complex problems is to do our best to turn them into a group of smaller
+  <introduction>
+<p>One of the secrets of solving large, complex problems is to do our best to turn them into a group of smaller
     problems. Then, we can try to solve these small problems and test our solutions one at a time.</p>
 
   <p>The process of breaking a large problem up into smaller sub-problems is
@@ -19,7 +20,8 @@
   <p>Don't worry about coming up with a perfect design on your first try. Sometimes you will think a problem is
     going to be easy and when you start working on it, realize it is much harder than you anticipated. In those cases,
     you can stop and revise your design by breaking the complex procedure into smaller pieces.</p>
-  <subsection xml:id="csp-designing-procedures_top-down-design-example">
+  </introduction>
+<subsection xml:id="csp-designing-procedures_top-down-design-example">
     <title>Top-Down Design Example</title>
     <p>Say I want to draw a house using turtle graphics that looks like this:</p>
     <image source="CSPDesigningProcedures/Figures/turtlehouse.png" width="50%">

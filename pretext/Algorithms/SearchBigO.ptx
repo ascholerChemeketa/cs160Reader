@@ -1,9 +1,11 @@
 <section xml:id="algorithms_search-efficiencies">
   <title>Search Efficiencies</title>
-  <p>We already have discussed the fact that binary search is much more efficient than linear search, but let us
+  <introduction>
+<p>We already have discussed the fact that binary search is much more efficient than linear search, but let us
     quantify the difference in terms of Big-O. We will count items checked as the unit of work for searching - taking
     one item in a list and comparing it to what we are looking for will count as one unit.</p>
-  <subsection xml:id="algorithms_search-efficiencies-linear">
+  </introduction>
+<subsection xml:id="algorithms_search-efficiencies-linear">
     <title>Linear Search Efficency</title>
 
     <p>Say we have an unsorted pile of tests and we go looking for the one that belongs to one particular student. In

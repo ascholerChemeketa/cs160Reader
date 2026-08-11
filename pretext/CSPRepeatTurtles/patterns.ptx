@@ -1,6 +1,8 @@
 <section xml:id="csp-repeat-turtles_nesting-loops">
   <title>Nesting Loops</title>
-  <p>If we keep drawing the same shape over and over, turning slightly and/or moving between each drawing, we can make <url href="http://en.wikipedia.org/wiki/Spirograph" visual="http://en.wikipedia.org/wiki/Spirograph">spirograph</url>
+  <subsection>
+    <title>Repeating Patterns</title>
+<p>If we keep drawing the same shape over and over, turning slightly and/or moving between each drawing, we can make <url href="http://en.wikipedia.org/wiki/Spirograph" visual="http://en.wikipedia.org/wiki/Spirograph">spirograph</url>
     like patterns.</p>
 
   <p>The program below does this by drawing 20 pentagons. To do this, we need to repeat the pentagon recipe 20 times
@@ -128,7 +130,8 @@ for repeats in range(20)
         dave.right(90)
         </code>
   </program>
-  <subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">
+  </subsection>
+<subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">
     <title>Execution Limit &amp; Run Amok Programs</title>
 
     <p>A Python program that is running in the browser has a limited amount of time it is allowed to run. If a program

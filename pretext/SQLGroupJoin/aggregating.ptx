@@ -1,7 +1,8 @@
 <section xml:id="sql-group-join_aggregating-data">
   <title>Aggregating Data</title>
-
-  <p>Say we want data about how many rides lasted longer than an hour. At this point we don't care about where
+  <subsection>
+    <title>Aggregate Functions</title>
+<p>Say we want data about how many rides lasted longer than an hour. At this point we don't care about where
     they started, or which bike they were on, we just want to know how many such rides there were. To ask for the total
     number of records a query finds, we can select <c>COUNT(*)</c>.</p>
 
@@ -119,7 +120,8 @@ WHERE
       </tests>
     </program>
   </exercise>
-  <subsection xml:id="sql-group-join_counting-unique-values">
+  </subsection>
+<subsection xml:id="sql-group-join_counting-unique-values">
     <title>Counting Unique Values</title>
     <p>It is often helpful to not only count the number of rows but also to count the number of unique values of a
       column. You can do this using the <c>DISTINCT</c> keyword.</p>

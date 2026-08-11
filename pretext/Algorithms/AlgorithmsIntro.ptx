@@ -1,6 +1,8 @@
 <section xml:id="algorithms_algorithms-introduction">
   <title>Algorithms Introduction</title>
-  <p>Simply put, an algorithm is simply a set of step-by-step instructions for accomplishing some task. If you have ever
+  <subsection>
+    <title>What Is an Algorithm?</title>
+<p>Simply put, an algorithm is simply a set of step-by-step instructions for accomplishing some task. If you have ever
     followed a recipe like the one below, you have followed an algorithm.</p>
   <program language="none">
     <code>
@@ -28,8 +30,8 @@ Chocolate Cream Pie:
     problem. Through the use of algorithms, we can make computers <q> intelligent</q> by programming them with various
     algorithms to solve problems. Because of their speed and accuracy, computers are well-suited for solving tedious
     problems such as searching for a name in a large telephone directory or adding a long column of numbers.</p>
-
-  <subsection xml:id="algorithms_algorithms-introduction-requirements">
+  </subsection>
+<subsection xml:id="algorithms_algorithms-introduction-requirements">
     <title>Algorithm Requirements</title>
 
   </subsection>

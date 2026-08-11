@@ -2,8 +2,10 @@
   <title>What's Next?</title>
   <section>
     <title>Extending Your Programming Skills</title>
+    <introduction>
     <p>Are you interested in extending your knowledge of Python or using it to solve problems of your own design? Here are
       some resources to check out.</p>
+    </introduction>
     <subsection xml:id="csp-whats-next_full-python-on-the-web">
       <title>Full Python On The Web</title>
       <p>There are many websites where you can write and test Python programs. However, unlike this book, which supports a limited set

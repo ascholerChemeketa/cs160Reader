@@ -1,6 +1,8 @@
 <section xml:id="csp-name-functions_functions-and-composition">
   <title>Functions and Composition</title>
-  <p>So far we have focused on writing <term>procedures</term> - problem-solving recipes that do
+  <subsection>
+    <title>Procedures and Functions</title>
+<p>So far we have focused on writing <term>procedures</term> - problem-solving recipes that do
     part of a job and return no answer. Now we will shift our attention to <term>functions</term> -
     problem-solving recipes that are designed to calculate some value and return it to the code that
     calls the function so we can do more work with the result.</p>
@@ -37,8 +39,8 @@ print("The length of side C is", sideC)
   <p>Note that just like with procedures, some functions like <c>input</c> are standalone and are called
     on their own. Other functions are part of a library or object and must be called with dot
     notation like <c>math.pow</c>.</p>
-
-  <subsection xml:id="csp-name-functions_function-composition">
+  </subsection>
+<subsection xml:id="csp-name-functions_function-composition">
     <title>Function Composition</title>
     <p>We can more directly specify to use the result of calling one function as the input to
       another function via <term>functional composition</term>. That is where we put one function

@@ -1,7 +1,8 @@
 <section xml:id="csp-repeat-turtles_repeating-steps-range">
   <title>Repeating Steps &amp; Range</title>
-
-  <p>
+  <subsection>
+    <title>For Loops</title>
+<p>
     <em>Learning Objectives:</em>
   </p>
   <p>
@@ -59,7 +60,8 @@ print("Done with program")
   <p>In this case, the steps that are repeated are the <c>forward</c> and <c>right</c> commands that are indented after the <c>for</c>.
     Notice that the <c>print</c>, which is not indented, only happens one time, after we have repeated the <c>forward</c> and <c>right</c>
     commands.</p>
-  <subsection xml:id="csp-repeat-turtles_range">
+  </subsection>
+<subsection xml:id="csp-repeat-turtles_range">
     <title>Range</title>
     <p>The list of items the <c>for</c> uses to determine how many times to repeat is created by the <c>range</c> function. This
       is a function built into Python that can be used to generate a list of numbers. This example shows exactly what <c>range(6)</c>

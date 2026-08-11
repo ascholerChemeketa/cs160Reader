@@ -1,6 +1,7 @@
 <section xml:id="csp-collections-continued_shuffle-a-list">
   <title>Shuffle A List</title>
-  <p>Imagine we want to program a card game. We will need the ability to simulate a deck of cards and select a hand of
+  <introduction>
+<p>Imagine we want to program a card game. We will need the ability to simulate a deck of cards and select a hand of
     cards for the player. If we store the deck as a list: <c>["Ace", "2", "3", …]</c> we can think of the start of the list as the
     <q>top</q> of the deck and the end of the list as the <q>bottom</q>. Dealing a player cards could be
     as simple as slicing the deck - make one slice that has the first 5 cards, that is the player's hand, and a second
@@ -10,7 +11,8 @@
   <p>To reduce the complexity, we will only deal with a deck with 13 cards. However, we will write the code so that it
     could work for any size deck. A good practice when problem solving is to whenever possible, solve a smaller version
     of the problem before scaling up to tackle the full version.</p>
-  <subsection xml:id="csp-collections-continued_shuffle-by-cuts">
+  </introduction>
+<subsection xml:id="csp-collections-continued_shuffle-by-cuts">
     <title>Shuffle By Cuts</title>
     <p>Our first algorithm will be to try shuffling by doing a series of <q>cuts</q>, where we split the deck in
       half and put the <q>bottom</q> (second) half <q>on top of</q> (in front of) the <q>top</q>

@@ -1,6 +1,8 @@
 <section xml:id="binary_bytes">
   <title>Bytes</title>
-  <p>One bit of information is so little that usually computer memory is organized into groups of eight bits. Each
+  <subsection>
+    <title>Bytes and Memory Units</title>
+<p>One bit of information is so little that usually computer memory is organized into groups of eight bits. Each
     eight-bit group is called a byte. Because it has 8 bits, it can store <m>2^8</m> or 256 different values. This makes
     it appropriate for storing things like a single character of text - with 256 different values we can assign a
     different 8-bit pattern to each letter, digit, punctuation mark, etc<ellipsis/></p>
@@ -71,7 +73,8 @@
 
     </tabular>
   </table>
-  <subsection xml:id="binary_powers-of-2-vs-10">
+  </subsection>
+<subsection xml:id="binary_powers-of-2-vs-10">
     <title>Powers of 2 vs 10</title>
     <p>In the metric system, Kilo, Mega, Giga, etc<ellipsis/> refer to different powers of 10. So a <term>Kilobyte</term>,
       or <term>KB</term>, is <m>10^{3}</m> bytes. Using that system gives us the following units:</p>

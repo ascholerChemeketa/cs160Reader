@@ -1,6 +1,8 @@
 <section xml:id="data-representation_hexadecimal">
   <title>Hexadecimal</title>
-  <p><term>Hexadecimal</term> is base 16. Much like base 10 uses digits that represent powers of 10 and binary uses
+  <subsection>
+    <title>Hexadecimal Basics</title>
+<p><term>Hexadecimal</term> is base 16. Much like base 10 uses digits that represent powers of 10 and binary uses
     digits that represent powers of 2, hexadecimal uses digits that represent powers of 16. Here is how we would
     interpret <m>{2047}_{16}</m>:</p>
   <table>
@@ -98,8 +100,8 @@
   </table>
   <p>So <m>{1\textrm{EA}}_{16}</m> = <term>1</term> * 256 + <term>14</term> * 16 + <term>10</term> * 1 = <m>{490}_{10}</m>
     .</p>
-
-  <subsection xml:id="hexadecimal-conversion">
+  </subsection>
+<subsection xml:id="hexadecimal-conversion">
     <title>Hexadecimal Conversion To and From Binary</title>
 
     <p>In hexadecimal, each digit can represent 16 different values: 0-F (0-15). In binary, we can represent the same

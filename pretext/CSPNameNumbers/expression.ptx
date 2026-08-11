@@ -1,7 +1,8 @@
 <section xml:id="csp-name-numbers_expressions">
     <title>Expressions</title>
-
-    <p>The <em>right hand</em> side of the assignment statement doesn't have to
+  <subsection>
+    <title>Arithmetic Expressions</title>
+<p>The <em>right hand</em> side of the assignment statement doesn't have to
         be a value. It can be <em>an arithmetic expression</em>, like <c>2 * 2</c>. The expression will be evaluated and the
         result from the expression will be stored in the variable.</p>
 
@@ -35,7 +36,8 @@
           </evaluate>
         </evaluation>
     </exercise>
-    <subsection xml:id="csp-name-numbers_operations">
+  </subsection>
+<subsection xml:id="csp-name-numbers_operations">
         <title>Operations</title>
         <p>You can use all the standard mathematical operations, you just have to know the right symbols to use: <c>/</c>
             means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.</p>

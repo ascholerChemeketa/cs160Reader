@@ -1,14 +1,15 @@
 <section xml:id="programming-languages_the-little-computer-branching">
   <title>The Little Computer - Branching</title>
-  <p>Normally, a computer works its way through the instructions in memory in order. After instruction 1, it runs
+  <introduction>
+<p>Normally, a computer works its way through the instructions in memory in order. After instruction 1, it runs
     instruction 2, then 3, etc<ellipsis/> A <term>branch</term> instruction can change that. A branch might tell the
     computer <em>
       <q>skip ahead to memory location number 20 and execute that</q>
     </em> or <em>
       <q>go back and execute the instruction at location 1 again</q>
     </em>.</p>
-
-  <subsection xml:id="the-little-computer-branching-decisions">
+  </introduction>
+<subsection xml:id="the-little-computer-branching-decisions">
     <title>Decisions</title>
 
     <p>Branch instructions are how a computer can make decisions. In high-level languages, we generally use <q>if</q>

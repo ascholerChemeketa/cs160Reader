@@ -1,6 +1,8 @@
 <section xml:id="history-of-computers_the-first-generation">
   <title>The First Generation</title>
-  <p>Generations of computers are largely defined by the components used to build them. Although mechanical computers
+  <subsection>
+    <title>First Generation Overview</title>
+<p>Generations of computers are largely defined by the components used to build them. Although mechanical computers
     like Babbage's Engines and the Hollerith desk would continue to see use well into the 20th century,
     mathematicians and engineers in the 1930s realized that the logic of computation - Boolean logic - could be
     implemented with electronic relays and switches. <term>Vacuum tubes</term>, an electrical component that can be used
@@ -36,7 +38,8 @@
       <shortdescription>ENIAC</shortdescription>
     </image>
   </figure>
-  <subsection xml:id="subsec-the-first-generation_stored-program">
+  </subsection>
+<subsection xml:id="subsec-the-first-generation_stored-program">
     <title>The Stored Program Computer</title>
 
     <p>Early computing machines had fixed programs. For example, a desk calculator is a fixed program computer. It can

@@ -1,7 +1,9 @@
 <section xml:id="csp-name-functions_common-function-issues">
   <title>Common Function Issues</title>
-  <p>There are a few common mistakes you should watch out for while writing functions.</p>
-  <subsection xml:id="csp-name-functions_returning-ends-a-function">
+  <introduction>
+<p>There are a few common mistakes you should watch out for while writing functions.</p>
+  </introduction>
+<subsection xml:id="csp-name-functions_returning-ends-a-function">
     <title>Returning Ends a Function</title>
     <p>One common mistake when writing functions is to try to do work after a return statement. When Python hits a <c>return</c>,
       it does just that: it returns to the place the function was called. The program below tries to use the <c>addFive</c>

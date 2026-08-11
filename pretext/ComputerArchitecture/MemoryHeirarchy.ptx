@@ -1,6 +1,8 @@
 <section xml:id="computer-architecture_memory-hierarchy">
   <title>Memory Hierarchy</title>
-  <p>In an ideal, simple computer there would only be one memory - the main memory. That memory would be instantaneously
+  <subsection>
+    <title>Memory Hierarchy Overview</title>
+<p>In an ideal, simple computer there would only be one memory - the main memory. That memory would be instantaneously
     accessible, allow permanent storage, require minimal energy, and be compact and cheap. Unfortunately, no technology
     offers all those features. Real-world constraints force computer engineers to use multiple different technologies,
     using each for the kind of thing it is best suited for. These different technologies form the <term>memory hierarchy</term>
@@ -16,8 +18,8 @@
       <shortdescription>Memory Hierarchy</shortdescription>
     </image>
   </figure>
-
-  <subsection xml:id="memory-hierarchy-registers">
+  </subsection>
+<subsection xml:id="memory-hierarchy-registers">
     <title>Registers</title>
     <p>The small memory location on the CPU itself. Because the memory is right on the CPU, and because of the way it is
       engineered, it provides instant access to the information it contains. But because the space on the CPU is

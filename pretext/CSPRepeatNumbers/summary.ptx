@@ -1,6 +1,7 @@
 <section xml:id="csp-repeat-numbers_chapter-summary">
   <title>Chapter Summary</title>
-  <p>This chapter included the following concepts from computing.</p>
+  <introduction>
+<p>This chapter included the following concepts from computing.</p>
 
   <p>
     <ul>
@@ -23,7 +24,8 @@
       </li>
     </ul>
   </p>
-  <subsection xml:id="csp-repeat-numbers_summary-of-python-keywords-and-functions">
+  </introduction>
+<subsection xml:id="csp-repeat-numbers_summary-of-python-keywords-and-functions">
     <title>Summary of Python Keywords and Functions</title>
     <p>
       <ul>

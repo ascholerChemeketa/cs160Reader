@@ -1,7 +1,8 @@
 <section xml:id="sql-intro_sorting">
   <title>Sorting</title>
-
-  <p>We can use SQL to specify how to sort the records that are retrieved by a query using an <c>ORDER BY</c> clause. For
+  <subsection>
+    <title>ORDER BY</title>
+<p>We can use SQL to specify how to sort the records that are retrieved by a query using an <c>ORDER BY</c> clause. For
     example, the following query returns bike trips ordered by duration:</p>
 
   <program xml:id="sqlintro_sorting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
@@ -30,7 +31,8 @@ ORDER BY
     duration DESC
         </code>
   </program>
-  <subsection xml:id="sql-intro_limit">
+  </subsection>
+<subsection xml:id="sql-intro_limit">
     <title>LIMIT</title>
     <p>That query returns vast quantities of records (the environment we use will only show us 100 of those to prevent the web
       page from being overwhelmed with data). If we only want to see the 10 longest trips, we can use <c>LIMIT</c> to specify

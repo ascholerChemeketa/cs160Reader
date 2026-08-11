@@ -1,13 +1,14 @@
 <section xml:id="csp-name-numbers_rules-for-names">
     <title>Rules for Names</title>
-
-    <p>The name we give a variable, also called its <term>identifier</term>, is
+  <introduction>
+<p>The name we give a variable, also called its <term>identifier</term>, is
         subject to some important rules. Some of these rules are strict - Python will not accept names that do not
         follow these rules. These rules are part of the <term>syntax</term> of Python. The syntax of a language is
         the rules for what are valid ways to write things in the language. Other rules for variable names are human
         conventions. Python will not enforce these rules, but you and other programmers reading your code may get
         confused.</p>
-    <subsection xml:id="csp-name-numbers_naming-syntax">
+  </introduction>
+<subsection xml:id="csp-name-numbers_naming-syntax">
         <title>Naming Syntax</title>
         <p>There are restrictions on what you can use as a variable name.</p>
         <p>

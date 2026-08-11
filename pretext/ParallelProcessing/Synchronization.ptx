@@ -1,6 +1,8 @@
 <section xml:id="parallel-processing_synchronization">
   <title>Synchronization</title>
-  <p>When two or more workers are doing tasks that can affect the results of each other, synchronizing their actions can
+  <subsection>
+    <title>Synchronization Basics</title>
+<p>When two or more workers are doing tasks that can affect the results of each other, synchronizing their actions can
     become critical. Say two processing cores try to do these two jobs (assume that <c>x</c> refers to a location in
     memory where the value 5 is stored):</p>
   <sidebyside>
@@ -55,8 +57,8 @@
 
   <p>The potential for different results depending on which worker acts first is called a <term>race condition</term>
     and leads to nasty bugs in programs (you likely only see the error occasionally, making it very hard to track down).</p>
-
-  <subsection xml:id="synchronization-deadlock">
+  </subsection>
+<subsection xml:id="synchronization-deadlock">
     <title>Locks and Deadlock</title>
     <p>One solution to synchronization issues is to add <term>locks</term> to certain resources (like pieces of memory
       or hardware). Before using a locked resource, a worker has to check if anyone else already has locked it. If not,

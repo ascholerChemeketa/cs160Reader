@@ -1,9 +1,11 @@
 <section xml:id="data-representation_binary-conversions-multiplication-division-method">
   <title>Binary Conversions - Multiplication/Division Method</title>
-  <p>The biggest issue with the <q>table method</q> shown on the previous page is that it is hard to translate
+  <introduction>
+<p>The biggest issue with the <q>table method</q> shown on the previous page is that it is hard to translate
     into an algorithm that a machine could run. The multiplication/division methods shown on this page are much easier
     to express in simple terms as they rely on mathematics instead of looking at a table and making a decision.</p>
-  <subsection xml:id="data-representation_decimal-to-binary-1">
+  </introduction>
+<subsection xml:id="data-representation_decimal-to-binary-1">
     <title>Decimal to Binary</title>
     <p>The following algorithm converts a decimal number to a binary one:</p>
     <program>

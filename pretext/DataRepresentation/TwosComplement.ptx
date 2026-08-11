@@ -1,6 +1,8 @@
 <section xml:id="data-representation_negative-values-twos-complement">
   <title>Negative Values - Two's Complement</title>
-  <p>To represent negative numbers, we must use the same tool we do for everything else: 0s and 1s.</p>
+  <subsection>
+    <title>Representing Negative Values</title>
+<p>To represent negative numbers, we must use the same tool we do for everything else: 0s and 1s.</p>
   <p>The most simple possible scheme would be to use one bit to represent the sign - say 0 for positive and 1 for
     negative. If we did that, then the numbers 0010 and 1010 would mean +2 (0 = positive, 010 = 2) and -2 (1 = negative,
     010 = 2). But if we tried to add those numbers using the normal process, we would get 0010 + 1010 = 1100. That says
@@ -59,8 +61,8 @@
     bits as the value and use the same rules for negative numbers. Thus the 8-bit two's complement number 11011000
     would mean: first bit is 1, so negative, flip the last seven bits to 0100111, that is 39 (32 + 4 + 2 + 1), add one
     to get 40, so the value is -40.</p>
-
-    <subsection xml:id="negative-values-twos-complement-advantages">
+  </subsection>
+<subsection xml:id="negative-values-twos-complement-advantages">
       <title>Advantages of Two's Complement</title>
       
   <p>The main advantage of two's complement is that the normal rules for addition work with it as long as we

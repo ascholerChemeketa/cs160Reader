@@ -1,10 +1,12 @@
 <section xml:id="logic-circuits_xor-and-not-gates">
   <title>XOR and NOT Gates</title>
-  <p>We can combine two inputs to produce an output using many rules other than <term>AND</term> or <term>OR</term>. We
+  <introduction>
+<p>We can combine two inputs to produce an output using many rules other than <term>AND</term> or <term>OR</term>. We
     won't worry about what the switches would look like for the new rules below<ellipsis/> we would have to make our
     simplified model of an electric circuit more complex to see how they work. Instead, we will do what computer
     scientists normally do - abstract away from the actual electronics and focus on the logical rules they describe.</p>
-  <subsection xml:id="xor-and-not-gate-xor">
+  </introduction>
+<subsection xml:id="xor-and-not-gate-xor">
     <title> XOR Gates</title>
     <p>The exclusive or gate, known as <term>XOR</term> describes a gate that only outputs a 1 only if one of the inputs
       is 1 and the other is 0. In other words, we can have either input on, but not both on.</p>

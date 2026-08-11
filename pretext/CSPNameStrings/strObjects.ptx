@@ -1,7 +1,8 @@
 <section xml:id="csp-name-strings_strings-are-objects">
   <title>Strings are Objects</title>
-
-  <p>Strings are objects in Python which means that there is a set of built-in functions that you
+  <subsection>
+    <title>String Objects</title>
+<p>Strings are objects in Python which means that there is a set of built-in functions that you
     can use to manipulate strings. You use <term>dot-notation</term> to invoke the functions on a
     string object such as <c>sentence.lower()</c>. The function <c>lower()</c> returns a new string with all of the
     characters in the original string set to lowercase. The function <c>capitalize()</c> will return a new
@@ -16,7 +17,8 @@ betterStill = better.capitalize() + "."
 print(betterStill)
         </code>
   </program>
-  <subsection xml:id="csp-name-strings_getting-part-of-a-string">
+  </subsection>
+<subsection xml:id="csp-name-strings_getting-part-of-a-string">
     <title>Getting Part of a String</title>
 
     <p>A string has characters in a sequence. Each character is at a position or <term> index</term>

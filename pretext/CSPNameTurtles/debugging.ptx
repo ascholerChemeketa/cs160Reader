@@ -1,7 +1,7 @@
 <section xml:id="csp-name-turtles_errors-in-programs">
   <title>Errors in Programs</title>
-
-  <p>Below are some programs that have errors you need to fix. Errors in programs fall into two
+  <introduction>
+<p>Below are some programs that have errors you need to fix. Errors in programs fall into two
     major categories. <term>Syntax errors</term> are errors in code that violate the rules of the
     language. Syntax errors will either prevent the program from running or prevent a particular
     line from running correctly. <term>Logic errors</term> are pieces of code that follow the rules
@@ -41,7 +41,8 @@
       </li>
     </ul>
   </p>
-  <subsection xml:id="csp-name-turtles_debugging-programs">
+  </introduction>
+<subsection xml:id="csp-name-turtles_debugging-programs">
     <title>Debugging Programs</title>
 
     <p>A major part of writing programs is <term>debugging</term> them - finding and fixing <term>

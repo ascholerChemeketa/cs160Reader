@@ -1,6 +1,7 @@
 <section xml:id="csp-name-strings_chapter-summary">
   <title>Chapter Summary</title>
-  <p>Chapter 3 included the following concepts from computing.</p>
+  <introduction>
+<p>Chapter 3 included the following concepts from computing.</p>
 
   <p>
     <ul>
@@ -46,7 +47,8 @@
       </li>
     </ul>
   </p>
-  <subsection xml:id="csp-name-strings_summary-of-string-functions">
+  </introduction>
+<subsection xml:id="csp-name-strings_summary-of-string-functions">
     <title>Summary of String Functions</title>
 
     <p>Chapter 4 also included the following string functions.</p>

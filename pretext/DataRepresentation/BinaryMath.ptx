@@ -1,6 +1,8 @@
 <section xml:id="data-representation_binary-addition">
   <title>Binary Addition</title>
-  <p>With slight modifications can use our normal algorithms for doing binary math. Take addition for example. We are
+  <subsection>
+    <title>Adapting Addition for Binary</title>
+<p>With slight modifications can use our normal algorithms for doing binary math. Take addition for example. We are
     familiar with adding base ten numbers column by column, carrying to the next column any time we get a value of 10 or
     more in the present column. In base two, each column can only store a 0 or a 1. So any value over 1 means we have to
     carry. 2 (<m>{10}_2</m>) means <em><q>zero in this column, carry a 1</q></em>, 3 (<m>{11}_2</m>) means <em><q>one in this column,
@@ -60,8 +62,8 @@
       </row>
     </tabular>
   </table>
-
-  <subsection xml:id="binary-addition-overflow">
+  </subsection>
+<subsection xml:id="binary-addition-overflow">
     <title>Overflow</title>
 
     <p>One thing we do have to watch out for any time we have a fixed number of bits to represent numbers is <term>

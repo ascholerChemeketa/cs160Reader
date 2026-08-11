@@ -1,7 +1,8 @@
 <section xml:id="csp-name-turtles_turtles-as-objects">
   <title>Turtles as Objects</title>
-
-  <p>Strings are just one kind of <term>object</term>. <term>Objects</term> in
+  <subsection>
+    <title>Turtle Objects</title>
+<p>Strings are just one kind of <term>object</term>. <term>Objects</term> in
     programming are constructs that combine <term>state</term> - a collection of data (attributes) - with behaviors that
     can be done with/to that data.</p>
   <p>A string's data is a list of characters like <c>h e l l o t h e r e</c> its data are the functions like <c>length()</c> or <c>lower()</c> or
@@ -74,7 +75,8 @@ alex.forward(75)        # move forward by 75 units
     </choices>
 
   </exercise>
-  <subsection xml:id="csp-name-turtles_what-does-a-left-turn-of-90-mean">
+  </subsection>
+<subsection xml:id="csp-name-turtles_what-does-a-left-turn-of-90-mean">
     <title>What does a left turn of 90 mean?</title>
     <p>Turn instructions are always relative to the turtle's current direction. The instruction <c>alex.left(90)</c> tells the
       turtle named alex to make a quarter circle turn to its left - or counter-clockwise. If alex is currently facing

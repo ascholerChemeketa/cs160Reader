@@ -1,6 +1,8 @@
 <section xml:id="csp-repeat-numbers_counting-with-a-while-loop">
   <title>Counting with a While Loop</title>
-  <p>We can also use a <c>while</c> loop to count through values similar to a <c>for</c> loop that is iterating over a range.
+  <subsection>
+    <title>Using an Explicit Counter</title>
+<p>We can also use a <c>while</c> loop to count through values similar to a <c>for</c> loop that is iterating over a range.
     However, it does involve a little extra work on our part.</p>
   <p>A <c>for</c> loop automatically moves to the next value as we iterate through a list. This program will set <c>counter</c> to
     1, print it, then change <c>counter</c> to 2, print that, etc<ellipsis/> It continues counting until it reaches 11 (and stops
@@ -24,8 +26,8 @@ while counter &lt; 11:
     counter = counter + 1
     </code>
   </program>
-
-  <subsection xml:id="csp-repeat-numbers_loop-control-variable">
+  </subsection>
+<subsection xml:id="csp-repeat-numbers_loop-control-variable">
     <title>Loop Control Variable</title>
     <p>In the while loop in the program above, <c>counter</c> is known as the <term>loop control variable</term>. The <term>loop
       control variable</term> is a variable that is tested as part of the logical expression of the <c>while</c> (<c>counter &lt; 11</c>). A

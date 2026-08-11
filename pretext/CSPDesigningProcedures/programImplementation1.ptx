@@ -1,6 +1,8 @@
 <section xml:id="csp-designing-procedures_program-implementation-1">
   <title>Program Implementation - 1</title>
-  <p>Now we want to start building and testing the actual code. We will start with the low-level procedures that do not
+  <subsection>
+    <title>Implementation Plan</title>
+<p>Now we want to start building and testing the actual code. We will start with the low-level procedures that do not
     depend on anything else. Then once we are sure they are working, we will build higher-level procedures that depend
     on them. This strategy is known as <term>bottom up implementation</term>.</p>
   <p>A critical part of successfully building a program is testing as we go. We need to make sure that each of our
@@ -50,7 +52,8 @@ rectangle(steve, 10, 100)               # try to draw a 10x100 rectangle
   <p>See if you can fix the <c>rectangle</c> code. You might want to comment out or remove the line that says <c>rectangle(steve, 50, 50)</c> so you can
     focus just on the case that is causing problems - the 10x100 rectangle. If you get stuck, you can peek ahead at the
     next page. (Hint: you should need to change two lines.)</p>
-  <subsection xml:id="csp-designing-procedures_program-implementation-1-discussion">
+  </subsection>
+<subsection xml:id="csp-designing-procedures_program-implementation-1-discussion">
     <title>Implementation Discussion</title>
   <p>Once you fix my bug, the procedure works just fine. But we could improve it. Here are some ideas that would arguably
     make it better:</p>

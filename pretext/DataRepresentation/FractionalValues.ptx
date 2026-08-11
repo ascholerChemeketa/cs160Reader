@@ -1,6 +1,8 @@
 <section xml:id="data-representation_fractional-values">
   <title>Fractional Values</title>
-  <p>We have learned to interpret binary numbers using place values based on powers of two. The value 1011 means 8 + 2 +
+  <subsection>
+    <title>Binary Fractional Values</title>
+<p>We have learned to interpret binary numbers using place values based on powers of two. The value 1011 means 8 + 2 +
     1 or 11 as we can see in this table:</p>
     <tabular halign="center">
 
@@ -188,8 +190,8 @@
   <p>
     <m>{0.0101}_2 = {0.3125}_{10}</m>
   </p>
-
-  <subsection xml:id="fractional-values-limits">
+  </subsection>
+<subsection xml:id="fractional-values-limits">
     <title>Limits of Fractional Representation</title>
 
     <p>Say I ask you to make 0.6 using just 4 places to the right of the binary point (In base 10 we call

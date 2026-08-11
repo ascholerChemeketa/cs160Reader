@@ -1,6 +1,8 @@
 <section xml:id="csp-repeat-turtles_using-the-loop-variable">
   <title>Using the Loop Variable</title>
-  <p>In previous pages, we have seen examples that are repetitive, but where each line has a slight change, like this
+  <subsection>
+    <title>Changing Loop Values</title>
+<p>In previous pages, we have seen examples that are repetitive, but where each line has a slight change, like this
     sequence of calls to <c>polygon</c>:</p>
   <program language="python">
     <code>
@@ -33,7 +35,8 @@ for y in range(10):
     print("y is ", y)
         </code>
   </program>
-  <subsection xml:id="csp-repeat-turtles_range-recipes">
+  </subsection>
+<subsection xml:id="csp-repeat-turtles_range-recipes">
     <title>Range Recipes</title>
 
     <p>That gives us a way to count through a series of numbers. But what if we want, like with the <c>polygon</c> example, to
