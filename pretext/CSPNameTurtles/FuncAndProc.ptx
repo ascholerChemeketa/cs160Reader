@@ -84,14 +84,10 @@ newDirection =                # Done turning left, there is nothing left!!!
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^c$|^C$\s*$
-          </strcmp>
+          <strcmp>^\s*^c$|^C$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

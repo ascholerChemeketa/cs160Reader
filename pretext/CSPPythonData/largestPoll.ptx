@@ -119,14 +119,10 @@ print("Highest pollution is", max25, "in", maxCity)
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^\s*74\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*74\s*$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*^\s*\d+\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*\d+\s*$\s*$</strcmp>
 
           <feedback>
             <p>
@@ -135,9 +131,7 @@ print("Highest pollution is", max25, "in", maxCity)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

@@ -161,9 +161,7 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{1,2}\s*$
-          </strcmp>
+          <strcmp>^\s*.{1,2}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -172,9 +170,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{4,}\s*$
-          </strcmp>
+          <strcmp>^\s*.{4,}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -183,9 +179,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*x\s*$
-          </strcmp>
+          <strcmp>^\s*x\s*$</strcmp>
 
           <feedback>
             <p>

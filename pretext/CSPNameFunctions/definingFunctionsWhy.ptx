@@ -165,14 +165,10 @@ print(answer)
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$
-          </strcmp>
+          <strcmp>answer\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*\w+\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$
-          </strcmp>
+          <strcmp>^\s*\w+\s*=\s*hypotenuse_length\(\s*8\s*,\s*15\s*\)\s*$</strcmp>
 
           <feedback>
             <p>
@@ -181,9 +177,7 @@ print(answer)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$
-          </strcmp>
+          <strcmp>^\s*^[^=]*hypotenuse_length\(\s*8\s*,\s*15\s*\)$\s*$</strcmp>
 
           <feedback>
             <p>

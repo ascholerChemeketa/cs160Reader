@@ -46,14 +46,10 @@ print(guess)
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^8$\s*$
-          </strcmp>
+          <strcmp>^\s*^8$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*^9$\s*$
-          </strcmp>
+          <strcmp>^\s*^9$\s*$</strcmp>
 
           <feedback>
             <p>
@@ -62,9 +58,7 @@ print(guess)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d{2}\s*$
-          </strcmp>
+          <strcmp>^\s*\d{2}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -73,9 +67,7 @@ print(guess)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d\s*$
-          </strcmp>
+          <strcmp>^\s*\d\s*$</strcmp>
 
           <feedback>
             <p>
@@ -84,9 +76,7 @@ print(guess)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

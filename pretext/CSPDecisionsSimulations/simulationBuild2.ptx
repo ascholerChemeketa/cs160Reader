@@ -112,14 +112,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*5[45](\.\d*)?%?\s*$
-          </strcmp>
+          <strcmp>^\s*5[45](\.\d*)?%?\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*[78]\d(\.\d*)?%?\s*$
-          </strcmp>
+          <strcmp>^\s*[78]\d(\.\d*)?%?\s*$</strcmp>
 
           <feedback>
             <p>
@@ -130,9 +126,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d?\d(\.\d*)?%?\s*$
-          </strcmp>
+          <strcmp>^\s*\d?\d(\.\d*)?%?\s*$</strcmp>
 
           <feedback>
             <p>
@@ -144,9 +138,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

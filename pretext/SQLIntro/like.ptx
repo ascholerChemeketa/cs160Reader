@@ -82,14 +82,10 @@ WHERE
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^62$\s*$
-          </strcmp>
+          <strcmp>^\s*^62$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            71
-          </strcmp>
+          <strcmp>71</strcmp>
 
           <feedback>
             <p>
@@ -99,9 +95,7 @@ WHERE
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

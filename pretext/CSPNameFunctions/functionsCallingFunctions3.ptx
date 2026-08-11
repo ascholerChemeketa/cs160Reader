@@ -98,9 +98,7 @@ print(testArea)
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

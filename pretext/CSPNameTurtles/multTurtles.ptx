@@ -15,14 +15,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^triangle$|^Triangle$|^TRIANGLE$\s*$
-          </strcmp>
+          <strcmp>^\s*^triangle$|^Triangle$|^TRIANGLE$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

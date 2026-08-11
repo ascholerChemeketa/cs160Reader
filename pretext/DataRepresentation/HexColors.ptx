@@ -133,9 +133,7 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>
-            ^\s*[^0-9A-Fa-f]+\s*$
-          </strcmp>
+          <strcmp>^\s*[^0-9A-Fa-f]+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -144,9 +142,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{1,5}\s*$
-          </strcmp>
+          <strcmp>^\s*.{1,5}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -155,9 +151,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{7,}\s*$
-          </strcmp>
+          <strcmp>^\s*.{7,}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -166,9 +160,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*x\s*$
-          </strcmp>
+          <strcmp>^\s*x\s*$</strcmp>
 
           <feedback>
             <p>

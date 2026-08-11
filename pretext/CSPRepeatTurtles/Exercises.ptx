@@ -218,14 +218,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*5\s*,\s*106\s*,\s*20\s*$
-          </strcmp>
+          <strcmp>^\s*5\s*,\s*106\s*,\s*20\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*5\s*,\s*125\s*,\s*20\s*$
-          </strcmp>
+          <strcmp>^\s*5\s*,\s*125\s*,\s*20\s*$</strcmp>
 
           <feedback>
             <p>
@@ -235,9 +231,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*5\s*,\s*\d+\s*,\s*20\s*$
-          </strcmp>
+          <strcmp>^\s*5\s*,\s*\d+\s*,\s*20\s*$</strcmp>
 
           <feedback>
             <p>
@@ -246,9 +240,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$
-          </strcmp>
+          <strcmp>^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$</strcmp>
 
           <feedback>
             <p>
@@ -257,9 +249,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$
-          </strcmp>
+          <strcmp>^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -268,9 +258,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$
-          </strcmp>
+          <strcmp>^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -279,9 +267,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            .*
-          </strcmp>
+          <strcmp>.*</strcmp>
 
           <feedback>
             <p>

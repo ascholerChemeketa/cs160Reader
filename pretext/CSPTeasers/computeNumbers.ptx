@@ -204,14 +204,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*478\.92489\d*\s*$
-          </strcmp>
+          <strcmp>^\s*478\.92489\d*\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d+\s*$
-          </strcmp>
+          <strcmp>^\s*\d+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -220,9 +216,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*478\.\d+\s*$
-          </strcmp>
+          <strcmp>^\s*478\.\d+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -232,9 +226,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*x\s*$
-          </strcmp>
+          <strcmp>^\s*x\s*$</strcmp>
 
           <feedback>
             <p>

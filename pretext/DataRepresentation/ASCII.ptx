@@ -105,14 +105,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*f\s*$
-          </strcmp>
+          <strcmp>^\s*f\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{1}\s*$
-          </strcmp>
+          <strcmp>^\s*.{1}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -121,9 +117,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*x\s*$
-          </strcmp>
+          <strcmp>^\s*x\s*$</strcmp>
 
           <feedback>
             <p>
@@ -145,14 +139,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*00101011\s*$
-          </strcmp>
+          <strcmp>^\s*00101011\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{1,7}\s*$
-          </strcmp>
+          <strcmp>^\s*.{1,7}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -161,9 +151,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.{9,}\s*$
-          </strcmp>
+          <strcmp>^\s*.{9,}\s*$</strcmp>
 
           <feedback>
             <p>
@@ -172,9 +160,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            [^01]+
-          </strcmp>
+          <strcmp>[^01]+</strcmp>
 
           <feedback>
             <p>
@@ -183,9 +169,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*x\s*$
-          </strcmp>
+          <strcmp>^\s*x\s*$</strcmp>
 
           <feedback>
             <p>

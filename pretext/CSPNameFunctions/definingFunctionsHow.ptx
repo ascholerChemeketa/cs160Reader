@@ -81,14 +81,10 @@ def convertFtoC(tempF):
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*return\s+tempC$\s*$
-          </strcmp>
+          <strcmp>^\s*return\s+tempC$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*$
-          </strcmp>
+          <strcmp>^\s*$</strcmp>
 
           <feedback>
             <p>

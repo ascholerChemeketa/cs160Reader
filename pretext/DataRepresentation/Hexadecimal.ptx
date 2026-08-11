@@ -304,9 +304,7 @@
             <numcmp use-answer="yes"/>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{1}\s*$
-            </strcmp>
+            <strcmp>^\s*.{1}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -315,9 +313,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{3,}\s*$
-            </strcmp>
+            <strcmp>^\s*.{3,}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -326,9 +322,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*x\s*$
-            </strcmp>
+            <strcmp>^\s*x\s*$</strcmp>
 
             <feedback>
               <p>
@@ -350,14 +344,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              ^\s*0*11\s*1111\s*1100\s*$
-            </strcmp>
+            <strcmp>^\s*0*11\s*1111\s*1100\s*$</strcmp>
           </test>
           <test>
-            <strcmp>
-              ^\s*[^0-1\s+]+\s*$
-            </strcmp>
+            <strcmp>^\s*[^0-1\s+]+\s*$</strcmp>
 
             <feedback>
               <p>
@@ -366,9 +356,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{1,9}\s*$
-            </strcmp>
+            <strcmp>^\s*.{1,9}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -377,9 +365,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{15,}\s*$
-            </strcmp>
+            <strcmp>^\s*.{15,}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -388,9 +374,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*x\s*$
-            </strcmp>
+            <strcmp>^\s*x\s*$</strcmp>
 
             <feedback>
               <p>

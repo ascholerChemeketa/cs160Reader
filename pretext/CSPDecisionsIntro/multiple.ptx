@@ -46,14 +46,10 @@ print(total)
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^1$|1\.[0]*$\s*$
-          </strcmp>
+          <strcmp>^\s*^1$|1\.[0]*$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

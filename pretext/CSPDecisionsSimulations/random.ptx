@@ -112,14 +112,10 @@ print(x)
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^\s*2\s*,\s*5\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*2\s*,\s*5\s*$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*^\s*2\s*,\s*4\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*2\s*,\s*4\s*$\s*$</strcmp>
 
           <feedback>
             <p>
@@ -128,9 +124,7 @@ print(x)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*^[^,]+$\s*$
-          </strcmp>
+          <strcmp>^\s*^[^,]+$\s*$</strcmp>
 
           <feedback>
             <p>
@@ -139,9 +133,7 @@ print(x)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*\d+\s*,\s*\d+\s*$
-          </strcmp>
+          <strcmp>^\s*\d+\s*,\s*\d+\s*$</strcmp>
 
           <feedback>
             <p>
@@ -150,9 +142,7 @@ print(x)
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

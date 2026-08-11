@@ -141,14 +141,10 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^\s*10.9\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*10.9\s*$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*^\s*\d+\s*$\s*$
-          </strcmp>
+          <strcmp>^\s*^\s*\d+\s*$\s*$</strcmp>
 
           <feedback>
             <p>
@@ -157,9 +153,7 @@
           </feedback>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

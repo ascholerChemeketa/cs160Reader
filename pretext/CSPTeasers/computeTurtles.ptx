@@ -161,14 +161,10 @@ zari.right(90)          # turn by 90 degrees</pre>
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*square|Square|SQUARE\s*$
-          </strcmp>
+          <strcmp>^\s*square|Square|SQUARE\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

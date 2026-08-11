@@ -167,14 +167,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              0001
-            </strcmp>
+            <strcmp>0001</strcmp>
           </test>
           <test>
-            <strcmp>
-              .*
-            </strcmp>
+            <strcmp>.*</strcmp>
 
             <feedback>
               <p>
@@ -216,14 +212,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              0110
-            </strcmp>
+            <strcmp>0110</strcmp>
           </test>
           <test>
-            <strcmp>
-              .*
-            </strcmp>
+            <strcmp>.*</strcmp>
 
             <feedback>
               <p>

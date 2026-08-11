@@ -202,9 +202,7 @@ Add fact to page                                                    Serial
           <numcmp use-answer="yes" tolerance="0.01"/>
         </test>
         <test>
-          <strcmp>
-            .*
-          </strcmp>
+          <strcmp>.*</strcmp>
 
           <feedback>
             <p>
@@ -231,9 +229,7 @@ Add fact to page                                                    Serial
           <numcmp use-answer="yes" tolerance="0.01"/>
         </test>
         <test>
-          <strcmp>
-            .*
-          </strcmp>
+          <strcmp>.*</strcmp>
 
           <feedback>
             <p>

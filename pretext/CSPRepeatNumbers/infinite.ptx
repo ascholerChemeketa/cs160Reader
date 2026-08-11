@@ -81,14 +81,10 @@ while counter != 10:
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>
-            ^\s*^&lt;=?$\s*$
-          </strcmp>
+          <strcmp>^\s*^&lt;=?$\s*$</strcmp>
         </test>
         <test>
-          <strcmp>
-            ^\s*.*\s*$
-          </strcmp>
+          <strcmp>^\s*.*\s*$</strcmp>
 
           <feedback>
             <p>

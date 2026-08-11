@@ -205,9 +205,7 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>
-            .*
-          </strcmp>
+          <strcmp>.*</strcmp>
 
           <feedback>
             <p>

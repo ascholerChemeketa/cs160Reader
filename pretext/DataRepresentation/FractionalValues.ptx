@@ -250,14 +250,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              ^\s*0?\.875\s*$
-            </strcmp>
+            <strcmp>^\s*0?\.875\s*$</strcmp>
           </test>
           <test>
-            <strcmp>
-              ^\s*[^0-9\.]+\s*$
-            </strcmp>
+            <strcmp>^\s*[^0-9\.]+\s*$</strcmp>
 
             <feedback>
               <p>
@@ -266,9 +262,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*1.*\s*$
-            </strcmp>
+            <strcmp>^\s*1.*\s*$</strcmp>
 
             <feedback>
               <p>
@@ -277,9 +271,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*x\s*$
-            </strcmp>
+            <strcmp>^\s*x\s*$</strcmp>
 
             <feedback>
               <p>

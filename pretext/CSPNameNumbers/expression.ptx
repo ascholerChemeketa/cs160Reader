@@ -32,14 +32,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              ^\s*^5$\s*$
-            </strcmp>
+            <strcmp>^\s*^5$\s*$</strcmp>
           </test>
           <test>
-            <strcmp>
-              ^\s*.*\s*$
-            </strcmp>
+            <strcmp>^\s*.*\s*$</strcmp>
 
             <feedback>
               <p>
@@ -81,14 +77,10 @@
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              ^\s*^0.3333333333333333$\s*$
-            </strcmp>
+            <strcmp>^\s*^0.3333333333333333$\s*$</strcmp>
           </test>
           <test>
-            <strcmp>
-              ^\s*^0.3{1,15}$\s*$
-            </strcmp>
+            <strcmp>^\s*^0.3{1,15}$\s*$</strcmp>
 
             <feedback>
               <p>
@@ -97,9 +89,7 @@
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.*\s*$
-            </strcmp>
+            <strcmp>^\s*.*\s*$</strcmp>
 
             <feedback>
               <p>
@@ -201,14 +191,10 @@ print(result2)
       <evaluation>
         <evaluate>
           <test correct="yes">
-            <strcmp>
-              ^\s*^2$\s*$
-            </strcmp>
+            <strcmp>^\s*^2$\s*$</strcmp>
           </test>
           <test>
-            <strcmp>
-              ^\s*.*\s*$
-            </strcmp>
+            <strcmp>^\s*.*\s*$</strcmp>
 
             <feedback>
               <p>

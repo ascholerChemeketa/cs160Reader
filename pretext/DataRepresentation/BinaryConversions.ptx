@@ -175,9 +175,7 @@ Do I need 1? Yes.
             <numcmp use-answer="yes"/>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{1}\s*$
-            </strcmp>
+            <strcmp>^\s*.{1}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -186,9 +184,7 @@ Do I need 1? Yes.
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{4}\s*$
-            </strcmp>
+            <strcmp>^\s*.{4}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -197,9 +193,7 @@ Do I need 1? Yes.
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*.{3,}\s*$
-            </strcmp>
+            <strcmp>^\s*.{3,}\s*$</strcmp>
 
             <feedback>
               <p>
@@ -208,9 +202,7 @@ Do I need 1? Yes.
             </feedback>
           </test>
           <test>
-            <strcmp>
-              ^\s*x\s*$
-            </strcmp>
+            <strcmp>^\s*x\s*$</strcmp>
 
             <feedback>
               <p>
