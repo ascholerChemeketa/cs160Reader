@@ -226,9 +226,15 @@ print(numDays2)
         each appetizer costs $2.00, each entree costs $9.89, and dessert costs $7.99. It should
         print 126.89. Create variables to hold each value. Calculate <c>bill</c> as <c>(appetizer + entree) * numPeople + dessert</c>. Be sure to
         print the result.</p>
-      <p> There is a hint available by clicking the link below. It doesn't give the full answer, you
+      <p> There is a hint available by clicking the link below the problem. It doesn't give the full answer, you
         will have to replace all of the <c>???</c>'s in it with different values. </p>
-      <p>
+    </statement>
+    <program xml:id="cspnamenumbers_walkassign9" interactive="activecode" language="python">
+      <code>
+
+
+                </code>
+    </program>
         <hint>
           <pre>
         numPeople = ???
@@ -239,13 +245,5 @@ print(numDays2)
         
         print (bill)</pre>
         </hint>
-      </p>
-    </statement>
-    <program xml:id="cspnamenumbers_walkassign9" interactive="activecode" language="python">
-      <code>
-
-
-                </code>
-    </program>
   </exercise>
 </section>
