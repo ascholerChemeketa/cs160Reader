@@ -11,4 +11,7 @@ xml:lang="en-US" >
   <xi:include href='./changeColorLoc.ptx' />
   <xi:include href='./summary.ptx' />
   <xi:include href='./Exercises.ptx' />
+  <!-- The following is commented out as it is not needed by the reader -->
+  <!-- It must be loaded once for Runestone to add the data files to the DB -->
+  <!-- <xi:include href='./imageDatafiles.ptx' /> -->
 </chapter>

@@ -1,0 +1,47 @@
+<section xml:id="csp-repeat-images_image-datafiles">
+  <title>Datafiles for Images</title>
+
+  <p>This section contains the datafiles for the images used in this chapter.</p>
+
+    <!-- cat.jpg is elsewhere -->
+  <datafile label="mount_hood" filename="mount_hood.jpg">
+    <image source="CSP/Images/mount_hood.jpg">
+      <shortdescription>Mount Hood landscape used as a sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="graduates" filename="graduates.jpg">
+    <image source="CSP/Images/graduates.jpg">
+      <shortdescription>Graduates in caps and gowns used as a sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="goalkeeper" filename="goalkeeper.jpg">
+    <image source="CSP/Images/goalkeeper.jpg">
+      <shortdescription>Soccer goalkeeper used as a sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="green_screen" filename="green_screen.jpg">
+    <image source="CSP/Images/green_screen.jpg">
+      <shortdescription>Green screen backdrop used for image compositing.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="student1" filename="student1.jpg">
+    <image source="CSP/Images/student1.jpg">
+      <shortdescription>First student portrait sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="student2" filename="student2.jpg">
+    <image source="CSP/Images/student2.jpg">
+      <shortdescription>Second student portrait sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="scooter" filename="scooter.jpg">
+    <image source="CSP/Images/scooter.jpg">
+      <shortdescription>Person riding a scooter used as a sample image.</shortdescription>
+    </image>
+  </datafile>
+  <datafile label="logo" filename="logo.jpg">
+    <image source="CSP/Images/logo.jpg">
+      <shortdescription>Sample logo image.</shortdescription>
+    </image>
+  </datafile>
+</section> 
