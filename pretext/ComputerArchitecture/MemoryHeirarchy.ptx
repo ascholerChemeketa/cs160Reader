@@ -78,10 +78,9 @@
       useful to have a general understanding of the relative performance differences of the different levels of memory.</p>
 
     <table xml:id="memory-hierarchy-relative-speed-data">
-      <title>Memory Latency</title>
-      <caption>These numbers are approximate but realistic. The CPU cycle time is assumed to be 0.25 nanoseconds
-        (corresponding to a 4 GHz CPU).</caption>
-      <tabular cols="l r r">
+      <title>Memory Latency. These numbers are approximate but realistic. The CPU cycle time is assumed to be 0.25 nanoseconds
+        (corresponding to a 4 GHz CPU)</title>
+      <tabular>
         <row header="yes">
           <cell>Event</cell>
           <cell>Nanoseconds</cell>
