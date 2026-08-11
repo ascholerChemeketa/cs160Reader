@@ -37,27 +37,24 @@
   <table>
     <title>OR of 1010 and 1110</title>
 
-    <tabular>
+    <tabular row-headers="yes">
 
       <row>
-        <cell header="yes"
-              right="minor"> Pattern 1 </cell>
+        <cell right="minor"> Pattern 1 </cell>
         <cell> 1 </cell>
         <cell> 0 </cell>
         <cell> 1 </cell>
         <cell> 0 </cell>
       </row>
       <row bottom="minor">
-        <cell header="yes"
-              right="minor"> Pattern 2 </cell>
+        <cell right="minor"> Pattern 2 </cell>
         <cell> 1 </cell>
         <cell> 1 </cell>
         <cell> 1 </cell>
         <cell> 0 </cell>
       </row>
       <row>
-        <cell header="yes"
-              right="minor"> OR Result </cell>
+        <cell right="minor"> OR Result </cell>
         <cell> 1 </cell>
         <cell> 1 </cell>
         <cell> 1 </cell>
@@ -181,4 +178,3 @@
     </evaluation>
   </exercise>
 </section>
-

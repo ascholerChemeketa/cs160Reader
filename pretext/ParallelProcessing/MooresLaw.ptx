@@ -23,11 +23,11 @@
     more powerful than one from 3 years ago and 16x more powerful than one from six years ago. (This helps explain why
     computers need to be upgraded so frequently.)</p>
 
-  <tabular halign="center">
+  <tabular halign="center" row-headers="yes">
 
     <row header="yes"
          bottom="medium">
-      <cell header="yes"> Years </cell>
+      <cell> Years </cell>
       <cell> 1.5 </cell>
       <cell> 3 </cell>
       <cell> 4.5 </cell>
@@ -39,7 +39,7 @@
       <cell> 15 </cell>
     </row>
     <row>
-      <cell header="yes"> Doublings </cell>
+      <cell> Doublings </cell>
       <cell> 1 </cell>
       <cell> 2 </cell>
       <cell> 3 </cell>
@@ -51,7 +51,7 @@
       <cell> 10 </cell>
     </row>
     <row>
-      <cell header="yes"> Relative Power </cell>
+      <cell> Relative Power </cell>
       <cell> x2 </cell>
       <cell> x4 </cell>
       <cell> x8 </cell>

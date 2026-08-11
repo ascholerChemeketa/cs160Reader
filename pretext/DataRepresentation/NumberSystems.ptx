@@ -6,15 +6,15 @@
   <table>
     <title>"134" base 10</title>
     
-    <tabular halign="center">
+    <tabular halign="center" row-headers="yes">
       <row bottom="minor">
-        <cell header="yes">Place value</cell>
+        <cell>Place value</cell>
         <cell> 100s </cell>
         <cell> 10s </cell>
         <cell> 1s </cell>
       </row>
       <row bottom="medium">
-        <cell header="yes">Power of 10</cell>
+        <cell>Power of 10</cell>
         <cell>
           <m>{10}^2</m>
         </cell>
@@ -26,7 +26,7 @@
         </cell>
       </row>
       <row>
-        <cell header="yes">Digit</cell>
+        <cell>Digit</cell>
         <cell> 1 </cell>
         <cell> 3 </cell>
         <cell> 4 </cell>
@@ -236,4 +236,3 @@
 
   </exercise>
 </section>
-
