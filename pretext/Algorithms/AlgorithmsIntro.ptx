@@ -88,7 +88,7 @@ Chocolate Cream Pie:
             4: go back to step 2.
         </premise>
         <response>
-          <p> It is not finite. </p>
+          It is not finite.
         </response>
       </match>
       <match>
@@ -96,7 +96,7 @@ Chocolate Cream Pie:
           Brush your teeth. Rinse your mouth. Rinse your toothbrush. Squeeze some toothpaste onto the brush.
         </premise>
         <response>
-          <p> It is not well-ordered. </p>
+          It is not well-ordered.
         </response>
       </match>
       <match>
@@ -104,7 +104,7 @@ Chocolate Cream Pie:
           Get the ingredients. Cook them souffle.
         </premise>
         <response>
-          <p> It is not clear enough. </p>
+          It is not clear enough.
         </response>
       </match>
     </cardsort>
