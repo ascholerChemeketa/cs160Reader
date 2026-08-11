@@ -19,15 +19,18 @@
 
   <subsection xml:id="computer-architecture-control-unit">
     <title>The Control Unit</title>
-    <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif"
-           width="35%">
-      <shortdescription>Control Unit</shortdescription>
-    </image>
+    <subsubsection xml:id="computer-architecture-control-unit-overview">
+      <title>Overview</title>
+      <image source="ComputerArchitecture/Images/cpustructuremap-cu.gif"
+            width="35%">
+        <shortdescription>Control Unit</shortdescription>
+      </image>
 
-    <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the operation of
-      the rest of the processor. It does this by issuing control signals to the other areas of the processor,
-      instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control unit can be
-      broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
+      <p>The control unit is the true <q>brain</q> of the CPU and is responsible for controlling much of the operation of
+        the rest of the processor. It does this by issuing control signals to the other areas of the processor,
+        instructing them on what should be performed next. Similarly to the arithmetic logic unit, the control unit can be
+        broken down further for easier understanding. Two key sub-components are the decoder and clock:</p>
+    </subsubsection>
 
     <subsubsection xml:id="computer-architecture-decoder">
       <title>The Decoder</title>
@@ -50,6 +53,8 @@
 
   <subsection xml:id="computer-architecture-registers">
     <title>The Registers</title>
+    <subsubsection xml:id="computer-architecture-registers-overview">
+      <title>Overview</title>
     <image source="ComputerArchitecture/Images/cpustructuremap-reg.gif"
            width="35%">
       <shortdescription>Registers</shortdescription>
@@ -59,6 +64,7 @@
       timescale processors work at (billionths of a second) the trip to main memory can be too slow to wait for during
       the middle of an instruction. So the CPU needs some high-speed memory right inside the CPU to store the
       information it is currently working with. Here are some examples of kinds of registers a CPU will often have:</p>
+      </subsubsection>
 
     <subsubsection xml:id="computer-architecture-instruction-register">
       <title>Instruction Register (IR)</title>
@@ -81,7 +87,6 @@
         Modern processors have anywhere from a few to dozens of these registers for storing the results of work directly
         in the CPU. The names of these general-purpose registers will differ from one machine to another, but no matter
         what they are called, they simply are very fast, very temporary storage for the CPU.</p>
-    </subsubsection>
 
 
   <exercise label="computer-architecture_the-processor-cont-ex1">
@@ -143,5 +148,6 @@
 
   <remark><p> Materials on this page adapted with permission from <url href="http://www.eastaughs.fsnet.co.uk/">Microprocessor
     Tutorial by Matthew Eastaugh</url></p></remark>
+    </subsubsection>
 </subsection>
 </section>
