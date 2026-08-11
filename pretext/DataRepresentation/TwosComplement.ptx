@@ -14,7 +14,7 @@
     them (0s become 1s and 1s become 0s) then add one to the value they represent. Thus 1011 would be interpreted as
     negative because of the leading 1, then we would take the other bits - 011 - and flip each bit to get 100, 100 is 4
     and we add one to that to get 5, so 1011 means -5.</p>
-  <topic>
+  <insight>
     <title>Two's Complement Interpretation</title>
     <p>
       <ul>
@@ -27,7 +27,7 @@
         </li>
       </ul>
     </p>
-  </topic>
+  </insight>
   <p>Try reading these values:</p>
   <exercise>
     <TabNode tabname="Practice 1"

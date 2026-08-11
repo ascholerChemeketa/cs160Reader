@@ -12,6 +12,7 @@
     record is an individual trip someone made.</p>
 
   <figure align="center" xml:id="trip-data">
+    <caption>The trip_data table from the bike dataset.</caption>
     <image source="SQLIntro/figures/trip_data_table.png">
       <shortdescription>The trip_data table from the bike dataset.</shortdescription>
     </image>
@@ -68,6 +69,7 @@
   <p xml:id="sql-intro_bikesharestations" names="bikesharestations">Information about the stations is stored in a
     separate table called the <c>bikeshare_stations</c> table. In that table, each record is the information about one particular station.</p>
   <figure align="center">
+    <caption>The bikeshare_stations table from the bike dataset.</caption>
     <image source="SQLIntro/figures/bikeshare_stations_table.png">
       <shortdescription>The bikeshare_stations table from the bike dataset.</shortdescription>
     </image>

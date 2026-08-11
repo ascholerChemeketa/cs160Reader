@@ -61,16 +61,15 @@ Pen Up
     function might be <term>f(n) = 3n + 2</term>.</p>
   <p>The graph below compares the work required for the two algorithms. The x-axis represents the value of <term>n</term>
     input to the algorithms while the y-axis represents <term>f(n)</term> - the work required.</p>
-  <p>
 
-    <figure>
-      <image source="Algorithms/Images/DrawAlgorithms.svg">
-        <shortdescription>Flowchart showing steps for drawing an algorithm.</shortdescription>
-      </image>
-      <caption>Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
-        Shape (Gold) </caption>
-    </figure>
-  </p>
+  <figure>
+    <caption>Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
+      Shape (Gold) </caption>
+    <image source="Algorithms/Images/DrawAlgorithms.svg">
+      <shortdescription>Flowchart showing steps for drawing an algorithm.</shortdescription>
+    </image>
+  </figure>
+  
   <p>What should be clear is that it does not matter which accounting system we use when comparing the two algorithms.
     By any counting system, if we are drawing a large number of sides, the DrawShape algorithm has to do more work than
     the DrawSquare algorithm.</p>

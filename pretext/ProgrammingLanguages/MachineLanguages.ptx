@@ -33,10 +33,10 @@
     in this case, we are assuming 0001 means <q>add two values</q>. The next 6 bits specify the memory address of the
     first number we are adding and the last 6 bits specify the memory address of the second number.</p>
   <figure>
+    <caption>How a computer might interpret the instruction 0001110001001011. </caption>
     <image source="ProgrammingLanguages/Images/MachineInstruction.png">
       <shortdescription>A machine instruction</shortdescription>
     </image>
-    <caption>How a computer might interpret the instruction 0001110001001011. </caption>
   </figure>
   <p>Computers usually support only a small number of machine code instructions; a few dozen to a few hundred very
     simple instructions like <q>add two numbers</q> or <q>store a value to memory</q>. The list of available

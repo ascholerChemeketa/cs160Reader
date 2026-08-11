@@ -10,14 +10,14 @@
   <aside>
     <title>Vacuum tube</title>
     <figure xml:id="the-first-generation-img0">
+      <caption>A vacuum tube - the fundamental building block of most early computers. Public domain, via Wikimedia Commons
+      </caption>
       <image
         source="HistoryOfComputers/Images/RCA_Power_Vacuum_Tube.jpg"
         width="30%">
         <shortdescription>Vacuum tube</shortdescription>
       </image>
     </figure>
-    <p>Public domain, via Wikimedia Commons</p>
-    <p>A vacuum tube - the fundamental building block of most early computers.</p>
   </aside>
   <p>World War II inspired a great deal of mathematical work. The British developed a series of computational devices
     designed to do calculations required to break German codes. These devices culminated in <term>Colossus</term>, the
