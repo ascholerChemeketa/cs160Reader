@@ -24,6 +24,7 @@
     that is automatically added to large groups. <em>(Note: all the languages are made up samples of a particular level
     - don't worry about the details of any of them.)</em></p>
 
+    <p>
   <dl>
     <li>
       <title>English</title>
@@ -76,6 +77,7 @@
       </program>
     </li>
   </dl>
+</p>
 
   <p>Note that the high-level language is much more compact than the assembly or machine code and, even more important,
     it allows us to express an algorithm at a level much closer to the actual problem domain. Instead of worrying about
