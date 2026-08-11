@@ -84,8 +84,8 @@ Chocolate Cream Pie:
     <cardsort>
       <match>
         <premise>
-          <p>Step 1: Set heads to 0. Step 2: Flip a coin. Step 3: If the coin lands on heads, increment heads by 1. Step
-            4: go back to step 2.</p>
+          Step 1: Set heads to 0. Step 2: Flip a coin. Step 3: If the coin lands on heads, increment heads by 1. Step
+            4: go back to step 2.
         </premise>
         <response>
           <p> It is not finite. </p>
@@ -93,7 +93,7 @@ Chocolate Cream Pie:
       </match>
       <match>
         <premise>
-          <p>Brush your teeth. Rinse your mouth. Rinse your toothbrush. Squeeze some toothpaste onto the brush.</p>
+          Brush your teeth. Rinse your mouth. Rinse your toothbrush. Squeeze some toothpaste onto the brush.
         </premise>
         <response>
           <p> It is not well-ordered. </p>
@@ -101,7 +101,7 @@ Chocolate Cream Pie:
       </match>
       <match>
         <premise>
-          <p>Get the ingredients. Cook them souffle.</p>
+          Get the ingredients. Cook them souffle.
         </premise>
         <response>
           <p> It is not clear enough. </p>

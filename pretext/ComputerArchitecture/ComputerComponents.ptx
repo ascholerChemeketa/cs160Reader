@@ -79,25 +79,25 @@
     <cardsort>
       <match>
         <premise>
-          <p>Runs programs</p>
+          Runs programs
         </premise>
         <response>Processor</response>
       </match>
       <match>
         <premise>
-          <p>Stores the information and programs currently being used</p>
+          Stores the information and programs currently being used
         </premise>
         <response>Main memory</response>
       </match>
       <match>
         <premise>
-          <p>Carries messages between computer components</p>
+          Carries messages between computer components
         </premise>
         <response>Bus</response>
       </match>
       <match>
         <premise>
-          <p>Gets information into the computer or presents the results of calculations</p>
+          Gets information into the computer or presents the results of calculations
         </premise>
         <response>Input/output device</response>
       </match>
