@@ -24,11 +24,8 @@
     <dl>
       <li>
         <title>Constant</title>
-        <classifier>
-          <m>O(1)</m>
-        </classifier>
 
-        <p>Any algorithm that takes a constant amount of work. It could be 4 steps or 100 steps, the important thing is
+        <p><m>O(1)</m>. Any algorithm that takes a constant amount of work. It could be 4 steps or 100 steps, the important thing is
           that the amount of work does not depend on the input to the algorithm.</p>
         <p>Examples:</p>
         <p>
@@ -46,11 +43,8 @@
       </li>
       <li>
         <title>Logarithmic</title>
-        <classifier>
-          <m>O(log(n))</m>
-        </classifier>
 
-        <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described by
+        <p><m>O(log(n))</m>. Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described by
           a logarithmic function. It could be <m>f(n) = log_2(n)</m> or <m>f(n) = 3 \cdot log_{10}(n)</m>. Note that we
           don't care what base the logarithm is.</p>
         <p>We will see an example of this category soon<ellipsis/></p>
@@ -58,11 +52,8 @@
       </li>
       <li>
         <title>Linear</title>
-        <classifier>
-          <m>O(n)</m>
-        </classifier>
 
-        <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described by
+        <p><m>O(n)</m>. Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is described by
           a linear function. It could be <m>f(n) = \frac{n}{2} - 4</m> or <m>f(n) = 5n + 100</m>.</p>
         <p>Examples:</p>
         <p>
@@ -80,11 +71,8 @@
       </li>
       <li>
         <title>Quadratic</title>
-        <classifier>
-          <m>O(n^2)</m>
-        </classifier>
 
-        <p>Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is given by
+        <p><m>O(n^2)</m>. Any algorithm where the relationship between work <term>f(n)</term> and input <term>n</term> is given by
           quadratic function like <m>f(n) = 5n^2 + 2</m>.</p>
         <p>Examples:</p>
         <p>

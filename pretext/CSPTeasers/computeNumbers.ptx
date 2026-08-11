@@ -26,20 +26,20 @@
     <dl>
       <li>
         <title>P</title>
-        <classifier>The <term>principle</term> - the amount of the original loan</classifier>
+        <p>The <term>principle</term> - the amount of the original loan</p>
       </li>
       <li>
         <title>
           <term>r</term>
         </title>
-        <classifier>The monthly interest <term>rate</term> expressed as a decimal value. Loans are
+        <p>The monthly interest <term>rate</term> expressed as a decimal value. Loans are
           often described in terms of an <em>APR</em> or Annual Percentage Rate that must be divided
-          by 1200 to produce the right value for r.</classifier>
+          by 1200 to produce the right value for r.</p>
 
       </li>
       <li>
         <title>n</title>
-        <classifier>The <term>number</term> of monthly payments</classifier>
+        <p>The <term>number</term> of monthly payments</p>
       </li>
     </dl>
   </p>
@@ -161,4 +161,3 @@
     </evaluation>
   </exercise>
 </section>
-
