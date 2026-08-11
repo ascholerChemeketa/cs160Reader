@@ -13,7 +13,7 @@
 	<p>
 		<ol marker="A">
 		<li>
-			<em>Quote a passage or two from the article describing the purpose of the technology in question and the concerns about it.</em>
+			<p><em>Quote a passage or two from the article describing the purpose of the technology in question and the concerns about it.</em></p>
 			<p>
 				"artificial intelligence technology to screen new job candidates or monitor worker productivity can unfairly discriminate against people with disabilities"
 			</p>
@@ -24,7 +24,7 @@
 		</li>
 
 		<li>
-			<em>Who uses the technology? Who benefits from it, and how do they benefit?</em>
+			<p><em>Who uses the technology? Who benefits from it, and how do they benefit?</em></p>
 			<p>
 				Prospective employers use AI to screen candidates, so they can sort through applicants and hire good employees more efficiently.
 			</p>
@@ -35,7 +35,7 @@
 		</li>
 
 		<li>
-			<em>Who is harmed by the use of the technology, or unequal access to it? How could they be harmed? Quote specific examples from the article.</em>
+			<p><em>Who is harmed by the use of the technology, or unequal access to it? How could they be harmed? Quote specific examples from the article.</em></p>
 			<p>
 				Job applicants might be evaluated by a system that inflexibly defines ability:
 				"Such technology could potentially screen out people with speech impediments, severe arthritis that slows typing or a range of other physical or mental impairments, the officials said."
@@ -48,7 +48,7 @@
 		</li>
 
 		<li>
-			<em>What does the article say is being done<mdash/>or might be done<mdash/>to change the impacts of the technology on society? What thoughts do you have?</em>
+			<p><em>What does the article say is being done<mdash/>or might be done<mdash/>to change the impacts of the technology on society? What thoughts do you have?</em></p>
 			<p>
 				The US Justice Department issued guidance to employers.
 				Use of these tools may be restricted by the Americans with Disabilities Act.
