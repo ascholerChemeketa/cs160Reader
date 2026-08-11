@@ -117,7 +117,7 @@ print(total)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="cspdecisionsintro_multiple4" numbered="yes" adaptive="yes" indentation="hide"
+  <exercise label="cspdecisionsintro_multiple4" adaptive="yes" indentation="hide"
     language="python">
     <statement>
       <p>The following program should calculate the total price, but the lines are mixed up. The

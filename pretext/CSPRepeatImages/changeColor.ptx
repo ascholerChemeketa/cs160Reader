@@ -36,7 +36,7 @@ for p in pixels:
   </program>
   <p>Try decreasing each color channel by 50% (make it 0.5 times its original value) - you should end up with a darker version
     of the same picture.</p>
-  <exercise label="csprepeatimages_changecolor2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="csprepeatimages_changecolor2" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>If we want to make the image both brighter and more red, we could increase just the red value. However, if we
         want it to look more red, but not get brighter overall, we would want to make a small increase to the red value and

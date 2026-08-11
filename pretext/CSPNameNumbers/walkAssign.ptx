@@ -192,7 +192,7 @@ print(numDays2)
     </choices>
 
   </exercise>
-  <exercise label="cspnamenumbers_walkassign7" numbered="yes" adaptive="yes" indentation="hide"
+  <exercise label="cspnamenumbers_walkassign7" adaptive="yes" indentation="hide"
     language="python">
     <statement>
       <p>The following program should figure out the cost per person for a dinner including the tip.

@@ -61,7 +61,7 @@ chad.right(120)
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise label="cspnameturtles_multturtles4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspnameturtles_multturtles4" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program has one turtle, <q>jamal</q>, draw a capital L in blue and then another,
         <q>tina</q>, draw a line to the west in orange as shown below. The program should do all set-up, have
@@ -119,7 +119,7 @@ chad.right(120)
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnameturtles_multturtles5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspnameturtles_multturtles5" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program has one turtle, <q>jamal</q>, draw a line to the north in blue and then another,
         <q>tina</q>, draw a line to the east in orange as shown below. The program should import the turtle

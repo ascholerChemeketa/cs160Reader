@@ -45,7 +45,7 @@ print(total)
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise label="cspdecisionsintro_ifandelse1" numbered="yes" adaptive="yes" indentation="hide"
+  <exercise label="cspdecisionsintro_ifandelse1" adaptive="yes" indentation="hide"
     language="python">
     <statement>
       <p>The following program should print out <q>x is even</q> if the remainder of x divided by 2
@@ -64,7 +64,7 @@ print(total)
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspdecisionsintro_ifandelse2" numbered="yes" indentation="hide" language="python">
+  <exercise label="cspdecisionsintro_ifandelse2" indentation="hide" language="python">
     <statement>
       <p>The following function should calculate the shipping cost for an order. Orders over $50
         ship free. Otherwise, it is $5 base shipping plus $0.75 per pound. Drag the blocks from the

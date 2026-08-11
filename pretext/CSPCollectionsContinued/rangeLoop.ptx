@@ -59,7 +59,7 @@ print(names)
     </code>
   </program>
 
-  <exercise label="cspcollectionscontinued_rangeloop5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspcollectionscontinued_rangeloop5" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program should loop through all the items in <c>list</c>. Any negative values should be
         changed to 0. After the negative items have been replaced, we want to print the list.</p>

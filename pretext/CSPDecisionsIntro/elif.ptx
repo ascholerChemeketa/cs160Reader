@@ -141,7 +141,7 @@ else:
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise label="cspdecisionsintro_elif5" numbered="yes" adaptive="yes" indentation="hide"
+  <exercise label="cspdecisionsintro_elif5" adaptive="yes" indentation="hide"
     language="python">
     <statement>
       <p>The following program should report which team won or if there was a tie. But the code has

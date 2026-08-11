@@ -4,7 +4,7 @@
   <p>
     <term>Mixed up program</term>
   </p>
-  <exercise label="csprepeatturtles_repeatturtlespractice1" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="csprepeatturtles_repeatturtlespractice1" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses the stamp method to create an X of turtle shapes as shown below, but the lines are
         mixed up. The program should do all necessary set-up, create the turtle, set the shape to <q>turtle</q>,
@@ -60,7 +60,7 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="csprepeatturtles_repeatturtlespractice2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="csprepeatturtles_repeatturtlespractice2" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses the stamp method to create two squares of turtle shapes as shown below, but the
         lines are mixed up. The program should do all necessary set-up, create the turtle, set the shape to

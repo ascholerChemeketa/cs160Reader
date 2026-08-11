@@ -104,7 +104,7 @@ while(currentX &lt; 200):
   <p>One possible flaw with this program is that the change in stock prices uses a different
     distribution of random changes. Most days the price goes up or down by a very small amount.
     However, some days it climbs or drops by a lot more. Let's figure out that logic.</p>
-  <exercise label="cspdecisionssimulations_randomwalks4" numbered="yes" adaptive="yes"
+  <exercise label="cspdecisionssimulations_randomwalks4" adaptive="yes"
     indentation="hide" language="python">
     <statement>
       <p>This program should work like the one above. However, at each step, we want there to be a

@@ -105,7 +105,7 @@ alex.forward(75)        # move forward by 75 units
   <p>
     <term>Mixed up programs</term>
   </p>
-  <exercise label="cspnameturtles_funcandproc4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspnameturtles_funcandproc4" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital T as shown below but the lines are mixed up. The program
         should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle. After
@@ -156,7 +156,7 @@ alex.forward(75)        # move forward by 75 units
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnameturtles_funcandproc5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cspnameturtles_funcandproc5" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital A as shown below, but the lines are mixed up. The program
         should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle. After

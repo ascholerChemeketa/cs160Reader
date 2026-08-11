@@ -56,7 +56,7 @@ for repeats in range(20):
         </code>
   </program>
   <p>You can use the coloring in the picture below to help you figure out the correct order of the lines below.</p>
-  <exercise label="csprepeatturtles_patterns3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="csprepeatturtles_patterns3" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>There is a way of arranging the statements below such that the image shown below is created. The turtle will
         draw 10 triangles. As it does so, we want it to make a full circle. Think carefully about how many degrees the

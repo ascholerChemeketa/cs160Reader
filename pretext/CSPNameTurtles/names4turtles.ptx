@@ -91,7 +91,7 @@ alex.forward(75)        # move forward by 75 units
     <p>
       <term>Mixed up programs</term>
     </p>
-    <exercise label="cspnameturtles_names4turtles3" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="cspnameturtles_names4turtles3" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a capital L as shown below, but the lines are mixed up. The
           program should do all the necessary set-up: import the turtle module, get the space to draw on, and create the
@@ -142,7 +142,7 @@ alex.forward(75)        # move forward by 75 units
         </block>
       </blocks>
     </exercise>
-    <exercise label="cspnameturtles_names4turtles4" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <exercise label="cspnameturtles_names4turtles4" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>The following program uses a turtle to draw a checkmark as shown below but the lines are mixed up. The
           program should do all the necessary set-up: import the turtle module, get the space to draw on, and create the
