@@ -106,7 +106,7 @@
       </tabular>
     </table>
 
-  </subsection>
+
   <note>
     <p>People refer to an AND gate followed by a NOT as a NAND (Not-AND). That combination negates what the AND gate
       produces, producing the exact opposite - a NAND combo will produce an answer of 0 when both inputs are on and 1 in
@@ -187,4 +187,5 @@
       </match>
     </cardsort>
   </exercise>
+</subsection>
 </section>

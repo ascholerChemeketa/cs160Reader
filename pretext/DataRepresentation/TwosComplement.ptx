@@ -87,7 +87,7 @@
   </subsection>
 <subsection xml:id="negative-values-twos-complement-advantages">
       <title>Advantages of Two's Complement</title>
-      
+
   <p>The main advantage of two's complement is that the normal rules for addition work with it as long as we
     ignore extra bits. Say we have:</p>
   <program language="none">
@@ -167,7 +167,7 @@
     - usually enough to hold our answers. But if your math problem involves an answer that is too big you can
     <q>wrap around</q>.</p>
 
-</subsection>
+
   <exercise label="datarepresentation_twoscomplement1">
     <statement>
 
@@ -262,4 +262,5 @@
 
   </exercise>
 
+</subsection>
 </section>

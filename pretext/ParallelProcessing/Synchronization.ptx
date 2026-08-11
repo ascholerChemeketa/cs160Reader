@@ -119,7 +119,7 @@
       figure out in advance exactly who needs to lock what resources for how long and how conflicts should be resolved -
       even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or data
       corruption.</p>
-  </subsection>
+
 
   <exercise label="parallel-processing_synchronization-ex1">
     <statement>
@@ -220,4 +220,5 @@
       </block>
     </blocks>
   </exercise>
+</subsection>
 </section>

@@ -57,7 +57,7 @@
       also helps enforce a consistent experience for the user.</p>
     <p>We could fill books with all the ways that operating systems provide allocations of and abstractions for computer
       hardware, but on the following pages, we will focus on two fundamental resources: processors and main memory.</p>
-  </subsection>
+
 
   <exercise label="operating-systems_operating-systems-goals-ex1">
     <statement>
@@ -105,4 +105,5 @@
       </choice>
     </choices>
   </exercise>
+</subsection>
 </section>

@@ -134,7 +134,7 @@
     <p>Main memory in turn is dramatically faster than solid-state drives (SSDs) and spinning hard drives. That is why
       we can't just use the more permanent storage options as the primary storage for the CPU. Every time it needed to
       access a new piece of data it would have to wait millions of cycles.</p>
-  </subsection>
+
 
   <exercise label="computer-architecture_memory-hierarchy-ex1">
     <statement>
@@ -203,4 +203,5 @@
     </evaluation>
   </exercise>
 
+</subsection>
 </section>

@@ -254,7 +254,7 @@
         $3.02 when it adds two pennies to $3, you probably would be willing to use the less efficient representation!</p>
     </insight>
 
-  </subsection>
+
 
   <exercise label="datarepresentation_fractionalvalues1">
     <statement>
@@ -342,5 +342,6 @@
     </choices>
 
   </exercise>
+</subsection>
 </section>
 

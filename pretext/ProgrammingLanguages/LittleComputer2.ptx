@@ -67,7 +67,7 @@
         the Little Computer loop program</url>
 
     </p>
-  </subsection>
+
 
   <exercise label="programming-languages_the-little-computer-branching-ex1">
     <statement>
@@ -123,4 +123,5 @@
       </choice>
     </choices>
   </exercise>
+</subsection>
 </section>

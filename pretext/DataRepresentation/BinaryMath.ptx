@@ -98,7 +98,7 @@
           visual="http://www.codeproject.com/Articles/802368/Integer-Overflow-in-Hearthstone">see an overflow bug at
         work in the game Hearthstone.</url>.</p>
     </aside>
-  </subsection>
+
 
   <exercise label="datarepresentation_binarymath1">
     <statement>
@@ -193,5 +193,6 @@
     </choices>
 
   </exercise>
+</subsection>
 </section>
 

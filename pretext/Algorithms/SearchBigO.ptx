@@ -212,7 +212,7 @@
       <shortdescription>Diagram comparing common search algorithms.</shortdescription>
     </image>
 
-  </subsection>
+
   <exercise label="algorithms_search-efficiencies-ex1">
     <statement>
       <p>Match each search algorithm to its Big-O classification.</p>
@@ -259,4 +259,5 @@
       </choice>
     </choices>
   </exercise>
+</subsection>
 </section>

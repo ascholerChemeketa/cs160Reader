@@ -82,7 +82,7 @@
         in the CPU. The names of these general-purpose registers will differ from one machine to another, but no matter
         what they are called, they simply are very fast, very temporary storage for the CPU.</p>
     </subsubsection>
-  </subsection>
+
 
   <exercise label="computer-architecture_the-processor-cont-ex1">
     <statement>
@@ -143,4 +143,5 @@
 
   <remark><p> Materials on this page adapted with permission from <url href="http://www.eastaughs.fsnet.co.uk/">Microprocessor
     Tutorial by Matthew Eastaugh</url></p></remark>
+</subsection>
 </section>

@@ -34,7 +34,7 @@ Chocolate Cream Pie:
 <subsection xml:id="algorithms_algorithms-introduction-requirements">
     <title>Algorithm Requirements</title>
 
-  </subsection>
+
   <p>To be useful, an algorithm must meet certain requirements:</p>
   <p>
     <dl>
@@ -112,4 +112,5 @@ Chocolate Cream Pie:
 
   <remark><p> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
     Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</p></remark>
+</subsection>
 </section>
