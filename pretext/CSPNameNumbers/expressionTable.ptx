@@ -83,7 +83,7 @@
                     <p>0.25</p>
                 </statement>
                 <feedback>
-                    <p>This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code></p>
+                    <p>This would be correct if it was <pf>1 / 4</pf>, <pf>1.0 / 4</pf>, or <pf>1 / 4.0</pf></p>
                 </feedback>
             </choice>
         </choices>
@@ -130,7 +130,7 @@
                     <p>0.25</p>
                 </statement>
                 <feedback>
-                    <p>This would be correct if it was <code>1 / 4</code>, <code>1.0 / 4</code>, or <code>1 / 4.0</code></p>
+                    <p>This would be correct if it was <pf>1 / 4</pf>, <pf>1.0 / 4</pf>, or <pf>1 / 4.0</pf></p>
                 </feedback>
             </choice>
         </choices>
@@ -150,7 +150,7 @@
                     <p>0</p>
                 </statement>
                 <feedback>
-                    <p>This would be correct if it was <code>18 % 2</code>, but what is the remainder of 18 divided by
+                    <p>This would be correct if it was <pf>18 % 2</pf>, but what is the remainder of 18 divided by
                         5?</p>
                 </feedback>
             </choice>
@@ -160,7 +160,7 @@
                     <p>1</p>
                 </statement>
                 <feedback>
-                    <p>This would be correct if it was <code>18 % 17</code>, since 17 goes into 18 one time and the
+                    <p>This would be correct if it was <pf>18 % 17</pf>, since 17 goes into 18 one time and the
                         remainder is 18 - 17 = 1.</p>
                 </feedback>
             </choice>
@@ -200,7 +200,7 @@
                     <p>0</p>
                 </statement>
                 <feedback>
-                    <p>This would be correct if it was <code>6 % 2</code>.</p>
+                    <p>This would be correct if it was <pf>6 % 2</pf>.</p>
                 </feedback>
             </choice>
 

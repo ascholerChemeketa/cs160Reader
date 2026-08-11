@@ -143,7 +143,7 @@ print("Cost to get from Chicago to Dallas", costTrip)
                     <p>costPerGallon</p>
                 </statement>
                 <feedback>
-                    <p>Since <code>costPerGallon</code> is in double quotes it is a string, and it will print out those
+                    <p>Since <pf>costPerGallon</pf> is in double quotes it is a string, and it will print out those
                         exact characters.</p>
                 </feedback>
             </choice>

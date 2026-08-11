@@ -39,7 +39,7 @@ print(ending)
           <p>realEnding = firstName + " called the police who took the witch away."</p>
         </statement>
         <feedback>
-          <p>This would only work if you also put <code>print(realEnding)</code> after this line.</p>
+          <p>This would only work if you also put <pf>print(realEnding)</pf> after this line.</p>
         </feedback>
       </choice>
 
@@ -49,7 +49,7 @@ print(ending)
         </statement>
         <feedback>
           <p>This is a good way to do this since the line that is printed will have the correct first name. You could
-            also make a string named <code>realEnding</code> first, and then print it.</p>
+            also make a string named <pf>realEnding</pf> first, and then print it.</p>
         </feedback>
       </choice>
 
@@ -58,7 +58,7 @@ print(ending)
           <p>print("Pat called the police who took the witch away.")</p>
         </statement>
         <feedback>
-          <p>This <i>would</i> work. But if you changed the <code>firstName</code> variable, this line would not change.
+          <p>This <i>would</i> work. But if you changed the <pf>firstName</pf> variable, this line would not change.
             A different answer is better.</p>
         </feedback>
       </choice>

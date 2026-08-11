@@ -153,7 +153,7 @@ print(values)</pre>
           <p>[3, 2, 1]</p>
         </statement>
         <feedback>
-          <p>That is the original contents of <code>values</code>, but the contents are changed.</p>
+          <p>That is the original contents of <pf>values</pf>, but the contents are changed.</p>
         </feedback>
       </choice>
 
@@ -162,7 +162,7 @@ print(values)</pre>
           <p>[2, 0, 2]</p>
         </statement>
         <feedback>
-          <p>When you set <code>values[0]</code> to <code>values[1]</code> it makes a copy of the value and doesn't zero
+          <p>When you set <pf>values[0]</pf> to <pf>values[1]</pf> it makes a copy of the value and doesn't zero
             it out.</p>
         </feedback>
       </choice>

@@ -41,7 +41,7 @@ alex.forward(75)        # move forward by 75 units
           <p>North</p>
         </statement>
         <feedback>
-          <p>The turtles in some of the examples faced north because of the <code>setheading(90)</code> instruction.
+          <p>The turtles in some of the examples faced north because of the <pf>setheading(90)</pf> instruction.
             Which way does alex move first?</p>
         </feedback>
       </choice>
