@@ -1,15 +1,23 @@
 <section xml:id="sql-intro_tables-of-records">
   <title>Tables of Records</title>
 
-  <p>Say you are conducting research about bike sharing for an internship in Washington D.C. You are given the Capital
-    Bike Sharing dataset, which contains information on Washington D.C.'s bike share program for 2011. The database has
-    hundreds of thousands of records about every ride that anyone took and you would like to look for patterns in the
-    data to understand questions like: <q>How long is the average ride?</q> and <q>Where is the most popular
-    place to start a ride?</q></p>
+  <p>
+    Say you are conducting research about bike sharing for an internship in Washington D.C.
+    You are given the Capital Bike Sharing dataset, which contains information on Washington D.C.'s
+    bike share program for 2011.
+    The database has hundreds of thousands of records about every ride that anyone took and you
+    would like to look for patterns in the data to understand questions like:
+    <q>How long is the average ride?</q> and
+    <q>Where is the most popular
+    place to start a ride?</q>
+  </p>
 
-  <p>In a database, the data is arranged in <term>tables</term> like the one shown below. This <c>trip_data</c> table has all of
-    the information about individual trips that were made. Each row in a table is a <term>record</term> - here, each
-    record is an individual trip someone made.</p>
+  <p>
+    In a database, the data is arranged in <term>tables</term> like the one shown below.
+    This <c>trip_data</c> table has all of the information about individual trips that were made.
+    Each row in a table is a <term>record</term>- here, each record is an individual trip someone
+    made.
+  </p>
 
   <figure xml:id="trip-data">
     <caption>The trip_data table from the bike dataset.</caption>
@@ -17,95 +25,123 @@
       <shortdescription>The trip_data table from the bike dataset.</shortdescription>
     </image>
   </figure>
-  <p>The columns are the pieces of data associated with each record. Here is a description of the columns available in
-    the <c>trip_data</c>:</p>
+
+  <p>
+    The columns are the pieces of data associated with each record.
+    Here is a description of the columns available in the <c>trip_data</c>:
+  </p>
 
   <table xml:id="sql-intro_trip-data-table">
     <title>trip_data table columns</title>
+
     <tabular row-headers="yes">
       <row header="yes">
-        <cell> Column Name </cell>
-        <cell> Description </cell>
+        <cell>Column Name</cell>
+        <cell>Description</cell>
       </row>
+
       <row>
-        <cell> index </cell>
-        <cell> A unique number that identifies the trip </cell>
+        <cell>index</cell>
+        <cell>A unique number that identifies the trip</cell>
       </row>
+
       <row>
-        <cell> duration </cell>
-        <cell> The time in seconds of the trip </cell>
+        <cell>duration</cell>
+        <cell>The time in seconds of the trip</cell>
       </row>
+
       <row>
-        <cell> start_date </cell>
-        <cell> Date and time the bike was checked out </cell>
+        <cell>start_date</cell>
+        <cell>Date and time the bike was checked out</cell>
       </row>
+
       <row>
-        <cell> end_date </cell>
-        <cell> Date and time the bike was returned </cell>
+        <cell>end_date</cell>
+        <cell>Date and time the bike was returned</cell>
       </row>
+
       <row>
-        <cell> start_station </cell>
-        <cell> Station number the bike was checked out at </cell>
+        <cell>start_station</cell>
+        <cell>Station number the bike was checked out at</cell>
       </row>
+
       <row>
-        <cell> end_station </cell>
-        <cell> Station number the bike was returned at </cell>
+        <cell>end_station</cell>
+        <cell>Station number the bike was returned at</cell>
       </row>
+
       <row>
-        <cell> bike_number </cell>
-        <cell> Which bike was used </cell>
+        <cell>bike_number</cell>
+        <cell>Which bike was used</cell>
       </row>
+
       <row>
-        <cell> member_type </cell>
-        <cell> Type of user - Casual (one time), or Member </cell>
+        <cell>member_type</cell>
+        <cell>Type of user - Casual (one time), or Member</cell>
       </row>
     </tabular>
   </table>
 
   <note>
-    <p>Don't worry about memorizing all of the columns, you can check back here as needed.</p>
+    <p>
+      Don't worry about memorizing all of the columns, you can check back here as needed.
+    </p>
   </note>
 
-  <p xml:id="sql-intro_bikesharestations" >Information about the stations is stored in a
-    separate table called the <c>bikeshare_stations</c> table. In that table, each record is the information about one particular station.</p>
+  <p xml:id="sql-intro_bikesharestations">
+    Information about the stations is stored in a separate table called the
+    <c>bikeshare_stations</c> table.
+    In that table, each record is the information about one particular station.
+  </p>
+
   <figure>
     <caption>The bikeshare_stations table from the bike dataset.</caption>
     <image source="SQLIntro/figures/bikeshare_stations_table.png">
       <shortdescription>The bikeshare_stations table from the bike dataset.</shortdescription>
     </image>
   </figure>
-  <p>It has these columns:</p>
+
+  <p>
+    It has these columns:
+  </p>
 
   <table xml:id="sql-intro_bikeshare-stations-table">
     <title>bikeshare stations table</title>
+
     <tabular row-headers="yes">
       <row header="yes">
-        <cell> Column Name </cell>
-        <cell> Description </cell>
+        <cell>Column Name</cell>
+        <cell>Description</cell>
       </row>
+
       <row>
-        <cell> index </cell>
-        <cell> A number that identifies the record (1, 2, 3<ellipsis/>) </cell>
+        <cell>index</cell>
+        <cell>A number that identifies the record (1, 2, 3 <ellipsis/> )</cell>
       </row>
+
       <row>
-        <cell> station_id </cell>
-        <cell> A unique number that identifies the station </cell>
+        <cell>station_id</cell>
+        <cell>A unique number that identifies the station</cell>
       </row>
+
       <row>
-        <cell> name </cell>
-        <cell> The name of the station </cell>
+        <cell>name</cell>
+        <cell>The name of the station</cell>
       </row>
+
       <row>
-        <cell> status </cell>
-        <cell> If the station is open or closed </cell>
+        <cell>status</cell>
+        <cell>If the station is open or closed</cell>
       </row>
+
       <row>
-        <cell> latitude </cell>
-        <cell> Latitude (North-South position) of station </cell>
+        <cell>latitude</cell>
+        <cell>Latitude (North-South position) of station</cell>
       </row>
+
       <row>
-        <cell> longitude </cell>
-        <cell> Longitude (East-West position) of station </cell>
+        <cell>longitude</cell>
+        <cell>Longitude (East-West position) of station</cell>
       </row>
     </tabular>
   </table>

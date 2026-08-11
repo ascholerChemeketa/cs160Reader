@@ -1,98 +1,146 @@
 <section xml:id="logic-circuits_the-and-gate">
   <title>The AND Gate</title>
-  <p>By changing the way wires run between our switches (the inputs) and the light (output), we can perform different
-    Boolean operations. The circuit below demonstrates the Boolean rule <term>AND</term>. Notice that because there is
-    one pathway through both switches from the battery to the light bulb, both switches must be in the on position to
-    light the bulb:</p>
-  <image source="LogicCircuits/Images/switchesAnd3.png"
-         width="50%">
-    <shortdescription>Switch circuit demonstrating an AND gate with both switches closed.</shortdescription>
+
+  <p>
+    By changing the way wires run between our switches (the inputs) and the light (output), we can
+    perform different Boolean operations.
+    The circuit below demonstrates the Boolean rule <term>AND</term>.
+    Notice that because there is one pathway through both switches from the battery to the light
+    bulb, both switches must be in the on position to light the bulb:
+  </p>
+
+  <image source="LogicCircuits/Images/switchesAnd3.png" width="50%">
+    <shortdescription>
+      Switch circuit demonstrating an AND gate with both switches closed.
+    </shortdescription>
   </image>
-  <p>If either switch is off, that stops the current and the output is 0 (off):</p>
+
+  <p>
+    If either switch is off, that stops the current and the output is 0 (off):
+  </p>
+
   <sidebyside width="45%">
-    <image source="LogicCircuits/Images/switchesAnd1.png"
-           width="45%">
-      <shortdescription>Switch circuit demonstrating one input case for an AND gate.</shortdescription>
+    <image source="LogicCircuits/Images/switchesAnd1.png" width="45%">
+      <shortdescription>
+        Switch circuit demonstrating one input case for an AND gate.
+      </shortdescription>
     </image>
-    <image source="LogicCircuits/Images/switchesAnd2.png"
-           width="45%">
-      <shortdescription>Switch circuit demonstrating another input case for an AND gate.</shortdescription>
+
+    <image source="LogicCircuits/Images/switchesAnd2.png" width="45%">
+      <shortdescription>
+        Switch circuit demonstrating another input case for an AND gate.
+      </shortdescription>
     </image>
   </sidebyside>
-  <p>What happens if both switches are off? If the first switch is off, the current is stopped there - it doesn't matter
-    what state the second one is in, we know the output will be 0. Once again we can express this as a truth table. Note
-    that we have the same four possible sets of inputs that we had for the OR gate: 00, 01, 10, or 11 - any truth table
-    describing a two-input circuit will always have those four possible inputs. What is different for the AND gate is
-    the output produced by each possible set of inputs - it outputs a 1 only when both inputs are 1:</p>
+
+  <p>
+    What happens if both switches are off?
+    If the first switch is off, the current is stopped there - it doesn't matter what state the
+    second one is in, we know the output will be 0.
+    Once again we can express this as a truth table.
+    Note that we have the same four possible sets of inputs that we had for the OR gate: 00, 01, 10,
+    or 11 - any truth table describing a two-input circuit will always have those four possible
+    inputs.
+    What is different for the AND gate is the output produced by each possible set of inputs - it
+    outputs a 1 only when both inputs are 1:
+  </p>
+
   <table xml:id="and-truth-table">
     <title>Truth table for AND</title>
+
     <tabular halign="center">
-
-      <row header="yes"
-           bottom="minor">
-        <cell> Input 1 </cell>
-        <cell right="minor"> Input 2 </cell>
-        <cell> Output </cell>
+      <row header="yes" bottom="minor">
+        <cell>Input 1</cell>
+        <cell right="minor">Input 2</cell>
+        <cell>Output</cell>
       </row>
 
       <row>
-        <cell> 0 </cell>
-        <cell right="minor"> 0 </cell>
-        <cell> 0 </cell>
-      </row>
-      <row>
-        <cell> 0 </cell>
-        <cell right="minor"> 1 </cell>
-        <cell> 0 </cell>
-      </row>
-      <row>
-        <cell> 1 </cell>
-        <cell right="minor"> 0 </cell>
-        <cell> 0 </cell>
-      </row>
-      <row>
-        <cell> 1 </cell>
-        <cell right="minor"> 1 </cell>
-        <cell> 1 </cell>
+        <cell>0</cell>
+        <cell right="minor">0</cell>
+        <cell>0</cell>
       </row>
 
+      <row>
+        <cell>0</cell>
+        <cell right="minor">1</cell>
+        <cell>0</cell>
+      </row>
+
+      <row>
+        <cell>1</cell>
+        <cell right="minor">0</cell>
+        <cell>0</cell>
+      </row>
+
+      <row>
+        <cell>1</cell>
+        <cell right="minor">1</cell>
+        <cell>1</cell>
+      </row>
     </tabular>
   </table>
-  <p>Once again, the 1's and 0's can represent any Boolean (true/false) information. For instance, we could express the
-    logic for determining whether or not a student got a B with this rule: <q>If your grade is greater than or equal to
-    80 AND your grade is less than 90, then you have a B</q>. The AND combines two true/false ideas (<q>your grade is >
-    or = to 80</q>, <q>your grade is &lt; 90</q>) into one result (<q>you have a B</q>). If either of the two facts is
-    false (i.e. your grade is less than 80 or it is 90 or above), then you do not have a B.</p>
+
+  <p>
+    Once again, the 1's and 0's can represent any Boolean (true/false) information.
+    For instance, we could express the logic for determining whether or not a student got a B with
+    this rule:
+    <q>If your grade is greater than or equal to
+    80 AND your grade is less than 90, then you have a B</q>.
+    The AND combines two true/false ideas ( <q>your grade is &gt;
+    or = to 80</q>,
+    <q>your grade is &lt; 90</q> ) into one result ( <q>you have a B</q> ).
+    If either of the two facts is false (i.e.
+    your grade is less than 80 or it is 90 or above), then you do not have a B.
+  </p>
+
   <exercise label="logic-circuits_the-and-gate-ex1">
     <statement>
-      <p>For a two-input AND gate, which input pair produces an output of 1?</p>
+      <p>
+        For a two-input AND gate, which input pair produces an output of 1?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>00</p>
+          <p>
+            00
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>01</p>
+          <p>
+            01
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>10</p>
+          <p>
+            10
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>11</p>
+          <p>
+            11
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_the-and-gate-ex2">
     <statement>
-      <p>Sort each input pair by the output it produces for an AND gate.</p>
+      <p>
+        Sort each input pair by the output it produces for an AND gate.
+      </p>
     </statement>
     <cardsort>
       <match>

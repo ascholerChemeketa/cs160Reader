@@ -1,15 +1,22 @@
 <section xml:id="csp-decisions-simulations_random-numbers">
   <title>Random Numbers</title>
-  <p>When creating a simulation, we need a way to simulate unpredictable events. Is the driver of a
-    car going to choose to turn at a certain intersection? What will the weather be like in an hour?
+
+  <p>
+    When creating a simulation, we need a way to simulate unpredictable events.
+    Is the driver of a car going to choose to turn at a certain intersection?
+    What will the weather be like in an hour?
     We may have some idea of what answers are reasonable for these questions, and how likely each
     answer is, but at some point, we will have to resort to trying to pick an answer randomly while
-    obeying what we believe the odds of different outcomes are.</p>
+    obeying what we believe the odds of different outcomes are.
+  </p>
 
-  <p>In Python, to generate random values, we use the <c>random</c> library. To pick a random integer, we
-    use the <c>randrange</c> function in the <c>random</c> library. To use it, we have to import the library, and then
-    call the function. Try running this program a few times to see that it does in fact generate a
-    random number each time it runs:</p>
+  <p>
+    In Python, to generate random values, we use the <c>random</c> library.
+    To pick a random integer, we use the <c>randrange</c> function in the <c>random</c> library.
+    To use it, we have to import the library, and then call the function.
+    Try running this program a few times to see that it does in fact generate a random number each
+    time it runs:
+  </p>
 
   <program xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
     <code>
@@ -17,105 +24,161 @@ import random
 
 x = random.randrange(1, 5)  # pick a number from 1-4
 print(x)
-        </code>
+    </code>
   </program>
-  <p>As shown above, the <c>randrange</c> function can be called with a starting value (inclusive) and
-    the ending value for the range (exclusive). So <c>randrange(1, 5)</c> picks an integer from the range that
-    starts at 1 and ends before 5. We can also call it with just an end value like <c>randrange(5)</c></p>
+
+  <p>
+    As shown above, the <c>randrange</c> function can be called with a starting value (inclusive)
+    and the ending value for the range (exclusive).
+    So <c>randrange(1, 5)</c> picks an integer from the range that starts at 1 and ends before 5.
+    We can also call it with just an end value like <c>randrange(5)</c>
+  </p>
 
   <exercise label="cspdecisionssimulations_random2">
     <statement>
-
-      <p>What is a value that the recipe <c>random.randrange(12, 20)</c> can produce?</p>
-
+      <p>
+        What is a value that the recipe <c>random.randrange(12, 20)</c> can produce?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>0</p>
+          <p>
+            0
+          </p>
         </statement>
+
         <feedback>
-          <p>12 is the lowest value that will be selected</p>
+          <p>
+            12 is the lowest value that will be selected
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>10</p>
+          <p>
+            10
+          </p>
         </statement>
+
         <feedback>
-          <p>12 is the lowest value that will be selected</p>
+          <p>
+            12 is the lowest value that will be selected
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>19</p>
+          <p>
+            19
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct.</p>
+          <p>
+            Correct.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>20</p>
+          <p>
+            20
+          </p>
         </statement>
+
         <feedback>
-          <p>The range is exclusive of the second value. 20 will not be picked</p>
+          <p>
+            The range is exclusive of the second value.
+            20 will not be picked
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 
   <exercise label="cspdecisionssimulations_random3">
     <statement>
-      <p>We want to make a random whole number between 2 and 4. Fill in the blank in this recipe: <c>random.randrange(________________)</c> <fillin mode="string" answer="2, 5"/>
+      <p>
+        We want to make a random whole number between 2 and 4.
+        Fill in the blank in this recipe: <c>random.randrange(________________)</c>
+        <fillin mode="string" answer="2, 5"/>
       </p>
     </statement>
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>^\s*^\s*2\s*,\s*5\s*$\s*$</strcmp>
+          <strcmp>
+            ^\s*^\s*2\s*,\s*5\s*$\s*$
+          </strcmp>
         </test>
         <test>
-          <strcmp>^\s*^\s*2\s*,\s*4\s*$\s*$</strcmp>
+          <strcmp>
+            ^\s*^\s*2\s*,\s*4\s*$\s*$
+          </strcmp>
+
           <feedback>
-            <p>That would not include 4 as a possible option</p>
+            <p>
+              That would not include 4 as a possible option
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*^[^,]+$\s*$</strcmp>
+          <strcmp>
+            ^\s*^[^,]+$\s*$
+          </strcmp>
+
           <feedback>
-            <p>Make sure to give two numbers separated by a comma</p>
+            <p>
+              Make sure to give two numbers separated by a comma
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*\d+\s*,\s*\d+\s*$</strcmp>
+          <strcmp>
+            ^\s*\d+\s*,\s*\d+\s*$
+          </strcmp>
+
           <feedback>
-            <p>Those numbers aren't right</p>
+            <p>
+              Those numbers aren't right
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*.*\s*$</strcmp>
+          <strcmp>
+            ^\s*.*\s*$
+          </strcmp>
+
           <feedback>
-            <p>Make sure to give two numbers separated by a comma (and nothing else)</p>
+            <p>
+              Make sure to give two numbers separated by a comma (and nothing else)
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
+
   <note>
-    <p>Computers can't usually generate truly random numbers without measuring something that is
-      random (like static noise on radio frequencies). If they don't have access to something like
-      that, they must rely on generating <term>pseudorandom</term> numbers - numbers that look
-      random even though they are created using some mathematical recipe. Python takes the system
-      time as a starting point (since it is always changing) and then uses a mathematical recipe to <q>
-      pick</q> the next random number each time we ask for one.</p>
-    <p>When these <term>pseudorandom</term> generators aren't coded well, they can cause issues with
-      simulations or cryptography that rely on their results.</p>
+    <p>
+      Computers can't usually generate truly random numbers without measuring something that is
+      random (like static noise on radio frequencies).
+      If they don't have access to something like that, they must rely on generating
+      <term>pseudorandom</term> numbers - numbers that look random even though they are created
+      using some mathematical recipe.
+      Python takes the system time as a starting point (since it is always changing) and then uses a
+      mathematical recipe to <q>
+      pick</q> the next random number each time we ask for one.
+    </p>
+
+    <p>
+      When these <term>pseudorandom</term> generators aren't coded well, they can cause issues with
+      simulations or cryptography that rely on their results.
+    </p>
   </note>
 </section>
-

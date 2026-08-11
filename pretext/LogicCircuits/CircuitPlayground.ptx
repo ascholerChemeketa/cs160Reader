@@ -1,86 +1,147 @@
 <section xml:id="logic-circuits_circuit-playground">
   <title>Circuit Playground</title>
-  <p>Here is a circuit you can edit.</p>
-      <interactive label="logic-circuits-circuit-playground-interactive-1" iframe="LogicCircuits/logic-circuits-circuit-playground-interactive-1.html"/>
-  <p>Instructions:</p>
+
+  <p>
+    Here is a circuit you can edit.
+  </p>
+
+  <interactive label="logic-circuits-circuit-playground-interactive-1" iframe="LogicCircuits/logic-circuits-circuit-playground-interactive-1.html"/>
+  <p>
+    Instructions:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>To add a component, drag it into the circuit area.</p>
+        <p>
+          To add a component, drag it into the circuit area.
+        </p>
       </li>
+
       <li>
-        <p>To delete a component, drag it from the circuit area back to the component palette.</p>
+        <p>
+          To delete a component, drag it from the circuit area back to the component palette.
+        </p>
       </li>
+
       <li>
-        <p>To connect two components, click on the yellow (input) circle of one component and drag to the white (output)
-          circle of another component, then release.</p>
+        <p>
+          To connect two components, click on the yellow (input) circle of one component and drag to
+          the white (output) circle of another component, then release.
+        </p>
       </li>
+
       <li>
-        <p>To disconnect two components, click the yellow circle where the connecting line ends and release.</p>
+        <p>
+          To disconnect two components, click the yellow circle where the connecting line ends and
+          release.
+        </p>
       </li>
+
       <li>
-        <p>Double-click the label of a component to rename it.</p>
+        <p>
+          Double-click the label of a component to rename it.
+        </p>
       </li>
+
       <li>
-        <p>Make sure to start your circuit with DC - connect it to Toggles to be your inputs.</p>
+        <p>
+          Make sure to start your circuit with DC - connect it to Toggles to be your inputs.
+        </p>
       </li>
+
       <li>
-        <p>Control-Click switches between visual mode and a text version of your circuit. To save a circuit, switch to
-          text mode, then copy the text and save it in a text file on your computer. To load the circuit, make sure the
-          circuit is in text mode, paste in your saved text, then switch back to visual mode.</p>
+        <p>
+          Control-Click switches between visual mode and a text version of your circuit.
+          To save a circuit, switch to text mode, then copy the text and save it in a text file on
+          your computer.
+          To load the circuit, make sure the circuit is in text mode, paste in your saved text, then
+          switch back to visual mode.
+        </p>
       </li>
     </ul>
   </p>
+
   <exercise label="logic-circuits_circuit-playground-ex1">
     <statement>
-      <p>In the circuit playground, what should you do to connect two components?</p>
+      <p>
+        In the circuit playground, what should you do to connect two components?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Drag from the yellow input circle of one component to the white output circle of another.</p>
+          <p>
+            Drag from the yellow input circle of one component to the white output circle of
+            another.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Double-click both component labels.</p>
+          <p>
+            Double-click both component labels.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Drag both components back to the palette.</p>
+          <p>
+            Drag both components back to the palette.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Click the circuit background twice.</p>
+          <p>
+            Click the circuit background twice.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_circuit-playground-ex2">
     <statement>
-      <p>Which component should provide power at the start of a circuit?</p>
+      <p>
+        Which component should provide power at the start of a circuit?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>LED</p>
+          <p>
+            LED
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Toggle</p>
+          <p>
+            Toggle
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>DC</p>
+          <p>
+            DC
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Joint</p>
+          <p>
+            Joint
+          </p>
         </statement>
       </choice>
     </choices>

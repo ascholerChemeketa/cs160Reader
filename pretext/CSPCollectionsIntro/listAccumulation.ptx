@@ -1,9 +1,13 @@
 <section xml:id="csp-collections-intro_list-accumulation">
   <title>List Accumulation</title>
 
-  <p>We have already encountered the <term>accumulator</term> pattern - where we loop through a list of values and
-    combine them all. This is a natural thing to do with our lists. Say I want to total the points that were earned by a
-    student on the quizzes. I might use the following program:</p>
+  <p>
+    We have already encountered the <term>accumulator</term> pattern - where we loop through a list
+    of values and combine them all.
+    This is a natural thing to do with our lists.
+    Say I want to total the points that were earned by a student on the quizzes.
+    I might use the following program:
+  </p>
 
   <program xml:id="cspcollectionsintro_listaccumulation1" interactive="activecode" language="python">
     <code>
@@ -18,13 +22,22 @@ for score in scores:
     total = total + score
 
 print(total)
-        </code>
+    </code>
   </program>
-  <p>The key steps are described with comments. We always need to start with some initial value as our
-    <q>accumulation variable</q>, loop through the items, and combine each value with the accumulation variable.</p>
-  <p>If I wanted to multiply a group of numbers together, my accumulator variable would need to start with 1 (the
-    multiplicative identity). At each step, I would multiply the current value from the list by my accumulated value to
-    get the new accumulated value. This is shown in the animation below, using <c>product</c> as the accumulator variable.</p>
+
+  <p>
+    The key steps are described with comments.
+    We always need to start with some initial value as our <q>accumulation variable</q>, loop
+    through the items, and combine each value with the accumulation variable.
+  </p>
+
+  <p>
+    If I wanted to multiply a group of numbers together, my accumulator variable would need to start
+    with 1 (the multiplicative identity).
+    At each step, I would multiply the current value from the list by my accumulated value to get
+    the new accumulated value.
+    This is shown in the animation below, using <c>product</c> as the accumulator variable.
+  </p>
 
   <program xml:id="cspcollectionsintro_listaccumulation2" interactive="codelens" language="python">
     <code>
@@ -43,60 +56,92 @@ print(product)
 
   <exercise label="cspcollectionsintro_listaccumulation3">
     <statement>
-      <p>What is the value of <c>product</c> at the end of the 3rd time through the loop?</p>
+      <p>
+        What is the value of <c>product</c> at the end of the 3rd time through the loop?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>1</p>
+          <p>
+            1
+          </p>
         </statement>
+
         <feedback>
-          <p>That's the value the first time through the loop</p>
+          <p>
+            That's the value the first time through the loop
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>2</p>
+          <p>
+            2
+          </p>
         </statement>
+
         <feedback>
-          <p>That's the value the second time through the loop</p>
+          <p>
+            That's the value the second time through the loop
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>6</p>
+          <p>
+            6
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct. That's the value the third time through the loop.</p>
+          <p>
+            Correct.
+            That's the value the third time through the loop.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>24</p>
+          <p>
+            24
+          </p>
         </statement>
+
         <feedback>
-          <p>That's the value the fourth time through the loop</p>
+          <p>
+            That's the value the fourth time through the loop
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>120</p>
+          <p>
+            120
+          </p>
         </statement>
+
         <feedback>
-          <p>That's the value the last time through the loop</p>
+          <p>
+            That's the value the last time through the loop
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>We can <q>accumulate</q> other types of data as well. Say I have a series of words stored in a list. I can
-    use the accumulator pattern to build up one string with all of the words. My accumulator variable will need to start
-    with an appropriate empty value for a string, which is <c>""</c>.</p>
+
+  <p>
+    We can <q>accumulate</q> other types of data as well.
+    Say I have a series of words stored in a list.
+    I can use the accumulator pattern to build up one string with all of the words.
+    My accumulator variable will need to start with an appropriate empty value for a string, which
+    is <c>""</c>.
+  </p>
 
   <program xml:id="cspcollectionsintro_listaccumulation4" interactive="codelens" language="python">
     <code>
@@ -113,11 +158,15 @@ for item in words:
 print(poem)
     </code>
   </program>
+
   <exercise label="cspcollectionsintro_listaccumulation5" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program should calculate the average of some numbers by adding them all up before dividing by the
-        number of values there are and printing out the answer. Put the blocks in the correct order and indentation. You
-        will not need them all.</p>
+      <p>
+        The following program should calculate the average of some numbers by adding them all up
+        before dividing by the number of values there are and printing out the answer.
+        Put the blocks in the correct order and indentation.
+        You will not need them all.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -131,6 +180,7 @@ print(poem)
         <choice correct="yes">
           <cline> sum = sum + number</cline>
         </choice>
+
         <choice>
           <cline> sum = sum + numbers </cline>
         </choice>

@@ -3,12 +3,14 @@
 
   <exercise label="cspnamestrings_exercises1">
     <statement>
-      <p>There are 2 syntax errors (errors that prevent the code from running) in the following code. 
+      <p>
+        There are 2 syntax errors (errors that prevent the code from running) in the following code.
         There is also a missing space in one of the strings that will be printed.
         Fix the code so that it prints exactly this:
-        <q>Your name is Carly and your favorite color is red.</q>.</p>
-
+        <q>Your name is Carly and your favorite color is red.</q>.
+      </p>
     </statement>
+
     <program xml:id="cspnamestrings_exercises1_editor" interactive="activecode" language="python">
       <code>
         color = "red'
@@ -16,7 +18,6 @@
         print("Your name is " + name + and your favorite color is" + color + ".")
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -32,12 +33,18 @@
 
   <exercise label="cspnamestrings_exercises2">
     <statement>
-      <p>You will get an error if you try to run the following code. Fix the code to print correctly without errors. It
-        should print, <em><q>Your name is Carly and your age is 19.</q></em></p>
-      <p>Note: Don't forget that to turn an <term>int</term> into a string you do something like <c>str(x)</c> where <c>x</c>
-        is the <term>int</term> you want to turn into a string.</p>
+      <p>
+        You will get an error if you try to run the following code.
+        Fix the code to print correctly without errors.
+        It should print, <em><q>Your name is Carly and your age is 19.</q></em>
+      </p>
 
+      <p>
+        Note: Don't forget that to turn an <term>int</term> into a string you do something like
+        <c>str(x)</c> where <c>x</c> is the <term>int</term> you want to turn into a string.
+      </p>
     </statement>
+
     <program xml:id="cspnamestrings_exercises2_editor" interactive="activecode" language="python">
       <code>
         age = 14 + 5
@@ -45,7 +52,6 @@
         print("Your name is" + name + "and your age is" + age + ".")
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -62,12 +68,22 @@
 
   <exercise label="cspnamestrings_exercises3">
     <statement>
-      <p>Use <term>string slicing</term> to get <q>giant alligator</q> from <c>sentence</c> and store it in <c>s1</c> .</p>
-      <p>You should not be typing the string <q>giant alligator</q> yourself, you should be getting the right
-        part of what is stored in <c>sentence</c>.</p>
-      <p>The print will put |'s around your output to make it clear if you have a space at the start or end of s1.</p>
+      <p>
+        Use <term>string slicing</term> to get <q>giant alligator</q> from <c>sentence</c> and store
+        it in <c>s1</c>.
+      </p>
 
+      <p>
+        You should not be typing the string <q>giant alligator</q> yourself, you should be getting
+        the right part of what is stored in <c>sentence</c>.
+      </p>
+
+      <p>
+        The print will put |'s around your output to make it clear if you have a space at the start
+        or end of s1.
+      </p>
     </statement>
+
     <program xml:id="cspnamestrings_exercises3_editor" interactive="activecode" language="python">
       <code>
         sentence = "There is a giant alligator over there."
@@ -75,7 +91,6 @@
         print("|" + s1 + "|")
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -90,11 +105,18 @@
 
   <exercise label="cspnamestrings_exercises4">
     <statement>
-      <p>Using the variables given, modify the print statement to print <c>"A car traveling at 70 mph takes 2.0 hours to go 140 miles."</c> Make sure to print the variables, not
-        the values you know they contain.</p>
-      <p>If we were to change <c>milesPerHour</c> and <c>distanceTravelled</c> your program should still print a mathematically correct message.</p>
+      <p>
+        Using the variables given, modify the print statement to print
+        <c>"A car traveling at 70 mph takes 2.0 hours to go 140 miles."</c> Make sure to print the
+        variables, not the values you know they contain.
+      </p>
 
+      <p>
+        If we were to change <c>milesPerHour</c> and <c>distanceTravelled</c> your program should
+        still print a mathematically correct message.
+      </p>
     </statement>
+
     <program xml:id="cspnamestrings_exercises4_editor" interactive="activecode" language="python">
       <code>
         milesPerHour = 70
@@ -103,7 +125,6 @@
         print("A car traveling at...")
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -118,18 +139,21 @@
 
   <exercise label="cspnamestrings_exercises5">
     <statement>
-      <p>Write code below to get at least 3 values from the user using the <c>input</c> function and output a mad lib (which
-        will use the input to tell a silly story).</p>
-      <p>This problem is not automatically checked. Make sure you are using variables to build your output and that the
-        story uses the values you type in as input. Try giving different inputs and make sure that the story uses them.</p>
+      <p>
+        Write code below to get at least 3 values from the user using the <c>input</c> function and
+        output a mad lib (which will use the input to tell a silly story).
+      </p>
 
+      <p>
+        This problem is not automatically checked.
+        Make sure you are using variables to build your output and that the story uses the values
+        you type in as input.
+        Try giving different inputs and make sure that the story uses them.
+      </p>
     </statement>
-    <program xml:id="cspnamestrings_exercises5_editor" interactive="activecode" language="python">
-      <code>
 
-        </code>
+    <program xml:id="cspnamestrings_exercises5_editor" interactive="activecode" language="python">
+      <code/>
     </program>
   </exercise>
-
 </exercises>
-

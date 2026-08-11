@@ -1,9 +1,18 @@
 <section xml:id="algorithms_selection-sort">
   <title>Selection Sort</title>
-  <p>S<term>election sort</term> works by splitting a list into two portions - a sorted part and an unsorted part.
-    Initially, everything is in the unsorted part, but one card at a time, we select the smallest remaining unsorted
-    item and move it to the beginning of the unsorted portion, thereby making it sorted.</p>
-  <p>Put into an algorithm for a human to sort a hand of playing cards, it might look like this:</p>
+
+  <p>
+    S <term>election sort</term> works by splitting a list into two portions - a sorted part and an
+    unsorted part.
+    Initially, everything is in the unsorted part, but one card at a time, we select the smallest
+    remaining unsorted item and move it to the beginning of the unsorted portion, thereby making it
+    sorted.
+  </p>
+
+  <p>
+    Put into an algorithm for a human to sort a hand of playing cards, it might look like this:
+  </p>
+
   <program language="none">
     <code>
 1   Get a hand of unsorted cards
@@ -14,91 +23,155 @@
 6       Swap this number with the first card in the unsorted section
 7       Advance the marker to the right one card
 8   Stop
-</code>
+    </code>
   </program>
-  <p>To see how the Selection Card Sort Algorithm works, watch the video below. As the sort progresses, the appropriate
-    step of the algorithm will be highlighted in the bottom left panel of the animation. To divide the sorted and
-    unsorted sections of our hand, we use a black vertical bar. On each loop through steps 4-7, we will keep track of
-    the current cards we are comparing by pointing to them with a pair of human hands. The left hand will point to the
-    smallest card we have seen so far, and the right hand will point to the card currently being considered.</p>
 
-  <video xml:id="TfOBNNNZPbM"
-         youtube="TfOBNNNZPbM"
-         width="100%"/>
+  <p>
+    To see how the Selection Card Sort Algorithm works, watch the video below.
+    As the sort progresses, the appropriate step of the algorithm will be highlighted in the bottom
+    left panel of the animation.
+    To divide the sorted and unsorted sections of our hand, we use a black vertical bar.
+    On each loop through steps 4-7, we will keep track of the current cards we are comparing by
+    pointing to them with a pair of human hands.
+    The left hand will point to the smallest card we have seen so far, and the right hand will point
+    to the card currently being considered.
+  </p>
+
+  <video xml:id="TfOBNNNZPbM" youtube="TfOBNNNZPbM" width="100%"/>
   <p>
     <em>Animation used by permission of Virginia Tech</em>
   </p>
-  <remark><p> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
-    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</p></remark>
+
+  <remark>
+    <p>
+      Materials on this page adapted with permission from
+      <url href="http://courses.cs.vt.edu/csonline/">Online
+    Interactive Modules for Teaching Computer Science</url>
+      by Osman Balci et al.
+      of Virginia Tech.
+    </p>
+  </remark>
+
   <exercise label="algorithms_selection-sort-ex1">
     <statement>
-      <p>What does selection sort do during each pass through its unsorted portion?</p>
+      <p>
+        What does selection sort do during each pass through its unsorted portion?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Find the smallest remaining item and move it to the front of the unsorted portion.</p>
+          <p>
+            Find the smallest remaining item and move it to the front of the unsorted portion.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Swap every adjacent pair in the list.</p>
+          <p>
+            Swap every adjacent pair in the list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Split the list into halves and merge them.</p>
+          <p>
+            Split the list into halves and merge them.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Choose a random item as the next sorted value.</p>
+          <p>
+            Choose a random item as the next sorted value.
+          </p>
         </statement>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="algorithms_selection-sort-ex2">
-    <statement>
-      <p>As selection sort proceeds, what is true of the portion before the marker?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>It is sorted and contains the smallest items found so far.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It is unsorted and never changes.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It contains only the largest items.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>It is empty until the final pass.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
-  
-  <exercise label="algorithms_selection-sort-ex3">
-    <statement>
-      <p>We do a selection sort (using min value to front strategy) on the list <pf>3, 2, 4, 5, 1</pf>. Arrange the blocks below to show the state of the list after each pass of the algorithm.</p>
-      <p>Note that you may use the same block twice in a row if the current pass does not change the list.</p>
-      <p>You will not use all of the blocks.</p>
-    </statement>
-    <blocks>
-      <block><cline>3, 2, 4, 5, 1 (start)</cline></block>
-      <block><cline>1, 2, 4, 5, 3</cline></block>
-      <block><cline>1, 2, 4, 5, 3</cline></block>
-      <block><cline>1, 2, 3, 5, 4</cline></block>
-      <block><cline>1, 2, 3, 4, 5</cline></block>
-      <block correct="no"><cline>1, 3, 2, 4, 5</cline></block>
-    </blocks>
   </exercise>
 
+  <exercise label="algorithms_selection-sort-ex2">
+    <statement>
+      <p>
+        As selection sort proceeds, what is true of the portion before the marker?
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>
+            It is sorted and contains the smallest items found so far.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            It is unsorted and never changes.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            It contains only the largest items.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            It is empty until the final pass.
+          </p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="algorithms_selection-sort-ex3">
+    <statement>
+      <p>
+        We do a selection sort (using min value to front strategy) on the list
+        <pf>3, 2, 4, 5, 1</pf>.
+        Arrange the blocks below to show the state of the list after each pass of the algorithm.
+      </p>
+
+      <p>
+        Note that you may use the same block twice in a row if the current pass does not change the
+        list.
+      </p>
+
+      <p>
+        You will not use all of the blocks.
+      </p>
+    </statement>
+    <blocks>
+      <block>
+        <cline>3, 2, 4, 5, 1 (start)</cline>
+      </block>
+      <block>
+        <cline>1, 2, 4, 5, 3</cline>
+      </block>
+      <block>
+        <cline>1, 2, 4, 5, 3</cline>
+      </block>
+      <block>
+        <cline>1, 2, 3, 5, 4</cline>
+      </block>
+      <block>
+        <cline>1, 2, 3, 4, 5</cline>
+      </block>
+      <block correct="no">
+        <cline>1, 3, 2, 4, 5</cline>
+      </block>
+    </blocks>
+  </exercise>
 </section>

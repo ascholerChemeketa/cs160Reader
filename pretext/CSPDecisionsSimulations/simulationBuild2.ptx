@@ -1,32 +1,51 @@
 <section xml:id="csp-decisions-simulations_building-a-simulation-2">
   <title>Building a Simulation - 2</title>
-  <p>Now that we have a working function, we can focus on using the function. Look for the spot with
-    the missing code at line 28. Add the needed code to complete the accumulator pattern to count up
-    the number of times <c>result</c> ends up as <c>True</c>. The expected answer is around 80% -
-    about 8 times out of 10 you should get at least 5 heads in a row if you flip a coin 100 times.</p>
-  <p>If you run into troubles, here are some debugging tips:</p>
+
+  <p>
+    Now that we have a working function, we can focus on using the function.
+    Look for the spot with the missing code at line 28.
+    Add the needed code to complete the accumulator pattern to count up the number of times
+    <c>result</c> ends up as <c>True</c>.
+    The expected answer is around 80% - about 8 times out of 10 you should get at least 5 heads in a
+    row if you flip a coin 100 times.
+  </p>
+
+  <p>
+    If you run into troubles, here are some debugging tips:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>We know <c>checkHeadsInRow</c> works. Focus your attention on the main part of the
-          program.</p>
+        <p>
+          We know <c>checkHeadsInRow</c> works.
+          Focus your attention on the main part of the program.
+        </p>
       </li>
+
       <li>
-        <p>Print the <c>result</c> you get in each repetition loop.</p>
+        <p>
+          Print the <c>result</c> you get in each repetition loop.
+        </p>
       </li>
+
       <li>
-        <p>Print the <c>successCounter</c> at the end of each repetition of the loop.</p>
+        <p>
+          Print the <c>successCounter</c> at the end of each repetition of the loop.
+        </p>
       </li>
+
       <li>
-        <p>Reduce repetitions to something like 10 to make it easier to see all the output. Your
-          answer will be less
-          reliable with fewer repetitions, so reset it to 1000 when you are done debugging.</p>
+        <p>
+          Reduce repetitions to something like 10 to make it easier to see all the output.
+          Your answer will be less reliable with fewer repetitions, so reset it to 1000 when you are
+          done debugging.
+        </p>
       </li>
     </ul>
   </p>
 
-  <program xml:id="cspdecisionssimulations_simulationbuild21" interactive="activecode"
-    language="python">
+  <program xml:id="cspdecisionssimulations_simulationbuild21" interactive="activecode" language="python">
     <code>
       import random
       import sys
@@ -49,7 +68,7 @@
                   break
       
           # Make final decision
-          if headsInARow >= desiredStreak:
+          if headsInARow &gt;= desiredStreak:
               return True
           else:
               return False
@@ -73,44 +92,70 @@
 
   <exercise label="cspdecisionssimulations_simulationbuild22">
     <statement>
-      <p>Make sure that your simulation is giving the right answer for the likelihood of getting 5
-        heads in
-        a row while flipping a coin 100 times. You should be getting an answer of around 80%.
+      <p>
+        Make sure that your simulation is giving the right answer for the likelihood of getting 5
+        heads in a row while flipping a coin 100 times.
+        You should be getting an answer of around 80%.
       </p>
-      <p>Then modify the program to check the odds of getting 6 heads in a row (instead of just 5).
-        What answer do you get? Round it to the nearest whole number and enter it here: <fillin mode="string" answer="54"/>
+
+      <p>
+        Then modify the program to check the odds of getting 6 heads in a row (instead of just 5).
+        What answer do you get?
+        Round it to the nearest whole number and enter it here: <fillin mode="string" answer="54"/>
       </p>
-      <p> Tip: you may want to change <c>repetitions</c> to <c>10000</c> so your answer is more
-        reliable (the more repetitions you do, the more reliable the result will be.) </p>
+
+      <p>
+        Tip: you may want to change <c>repetitions</c> to <c>10000</c> so your answer is more
+        reliable (the more repetitions you do, the more reliable the result will be.)
+      </p>
     </statement>
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>^\s*5[45](\.\d*)?%?\s*$</strcmp>
+          <strcmp>
+            ^\s*5[45](\.\d*)?%?\s*$
+          </strcmp>
         </test>
         <test>
-          <strcmp>^\s*[78]\d(\.\d*)?%?\s*$</strcmp>
+          <strcmp>
+            ^\s*[78]\d(\.\d*)?%?\s*$
+          </strcmp>
+
           <feedback>
-            <p>That looks like the odds of getting 5 heads in a row. Make sure you simulate 6 heads
-            in a row. (The odds should be much lower.)</p>
+            <p>
+              That looks like the odds of getting 5 heads in a row.
+              Make sure you simulate 6 heads in a row.
+              (The odds should be much lower.)
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*\d?\d(\.\d*)?%?\s*$</strcmp>
+          <strcmp>
+            ^\s*\d?\d(\.\d*)?%?\s*$
+          </strcmp>
+
           <feedback>
-            <p>That does not look correct. Your simulation can get very
-            unlucky or lucky, and thus generate a value that is too high or too low. So try
-            running the program again to double-check the answer.</p>
+            <p>
+              That does not look correct.
+              Your simulation can get very unlucky or lucky, and thus generate a value that is too
+              high or too low.
+              So try running the program again to double-check the answer.
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*.*\s*$</strcmp>
+          <strcmp>
+            ^\s*.*\s*$
+          </strcmp>
+
           <feedback>
-            <p>That does not look correct. Make sure to write your answer as a number like <c>XX</c>.</p>
+            <p>
+              That does not look correct.
+              Make sure to write your answer as a number like <c>XX</c>.
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
 </section>
-

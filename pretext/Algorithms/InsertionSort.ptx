@@ -1,10 +1,19 @@
 <section xml:id="algorithms_insertion-sort">
   <title>Insertion Sort</title>
-  <p>While <term>Selection sort</term> gets the job done, it is not the only algorithm that can be used for sorting a
-    list. <term>Insertion sort</term> is another relatively straightforward algorithm. It too divides the list into a
-    sorted and unsorted portion, but it sorts cards by shifting each one to the left until it is larger than its
-    neighbor - <q>inserting</q> one card at a time into the correct location.</p>
-  <p>Here is a <q>human algorithm</q> for using it to sort cards:</p>
+
+  <p>
+    While <term>Selection sort</term> gets the job done, it is not the only algorithm that can be
+    used for sorting a list.
+    <term>Insertion sort</term> is another relatively straightforward algorithm.
+    It too divides the list into a sorted and unsorted portion, but it sorts cards by shifting each
+    one to the left until it is larger than its neighbor - <q>inserting</q> one card at a time into
+    the correct location.
+  </p>
+
+  <p>
+    Here is a <q>human algorithm</q> for using it to sort cards:
+  </p>
+
   <program language="none">
     <code>
 1   Get a hand of unsorted cards
@@ -14,91 +23,152 @@
 5       Swap this card to the left until it arrives at the correct sorted position
 6       Advance the marker to the right one card
 7   Stop
-</code>
+    </code>
   </program>
-  <p>To see how the Insertion Card Sort Algorithm works, watch the video below. Pay attention to how the sorted portion
-    is built up. Cards keep swapping until they <q>find</q> their resting spot - they do not jump directly to it. Also,
-    note that the sorted portion in this algorithm does not always have the smallest values, just the values that are
-    known to be sorted relative to each other.</p>
 
-  <video xml:id="zDPNARGL9kY"
-         youtube="zDPNARGL9kY"
-         width="100%"/>
+  <p>
+    To see how the Insertion Card Sort Algorithm works, watch the video below.
+    Pay attention to how the sorted portion is built up.
+    Cards keep swapping until they <q>find</q> their resting spot - they do not jump directly to it.
+    Also, note that the sorted portion in this algorithm does not always have the smallest values,
+    just the values that are known to be sorted relative to each other.
+  </p>
+
+  <video xml:id="zDPNARGL9kY" youtube="zDPNARGL9kY" width="100%"/>
   <p>
     <em>Animation used by permission of Virginia Tech</em>
   </p>
-  <remark><p> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
-    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</p></remark>
+
+  <remark>
+    <p>
+      Materials on this page adapted with permission from
+      <url href="http://courses.cs.vt.edu/csonline/">Online
+    Interactive Modules for Teaching Computer Science</url>
+      by Osman Balci et al.
+      of Virginia Tech.
+    </p>
+  </remark>
+
   <exercise label="algorithms_insertion-sort-ex1">
     <statement>
-      <p>How does insertion sort place a newly selected item?</p>
+      <p>
+        How does insertion sort place a newly selected item?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>It swaps the item left until it reaches its correct position in the sorted portion.</p>
+          <p>
+            It swaps the item left until it reaches its correct position in the sorted portion.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It immediately moves the item to the front of the whole list.</p>
+          <p>
+            It immediately moves the item to the front of the whole list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It discards half the list.</p>
+          <p>
+            It discards half the list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It waits until every item has been selected.</p>
+          <p>
+            It waits until every item has been selected.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="algorithms_insertion-sort-ex2">
     <statement>
-      <p>What is true about insertion sort's sorted portion?</p>
+      <p>
+        What is true about insertion sort's sorted portion?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Its items are in order relative to each other, even if they are not the smallest items overall.</p>
+          <p>
+            Its items are in order relative to each other, even if they are not the smallest items
+            overall.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It is always empty until the final step.</p>
+          <p>
+            It is always empty until the final step.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It contains only the largest values.</p>
+          <p>
+            It contains only the largest values.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It never grows during the algorithm.</p>
+          <p>
+            It never grows during the algorithm.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
-  
+
   <exercise label="algorithms_insertionsort-ex3">
     <statement>
-      <p>We do an insertion sort on the list <pf>3, 2, 5, 4, 1</pf>. Arrange the blocks below to show the state of the list after each pass of the algorithm.</p>
-      <p>Note that you may use the same block twice in a row if the current pass does not change the list.</p>
-      <p>You will not use all of the blocks.</p>
+      <p>
+        We do an insertion sort on the list <pf>3, 2, 5, 4, 1</pf>.
+        Arrange the blocks below to show the state of the list after each pass of the algorithm.
+      </p>
+
+      <p>
+        Note that you may use the same block twice in a row if the current pass does not change the
+        list.
+      </p>
+
+      <p>
+        You will not use all of the blocks.
+      </p>
     </statement>
     <blocks>
-      <block><cline>3, 2, 5, 4, 1 (start)</cline></block>
-      <block><cline>2, 3, 5, 4, 1</cline></block>
-      <block><cline>2, 3, 5, 4, 1</cline></block>
-      <block><cline>2, 3, 4, 5, 1</cline></block>
-      <block><cline>1, 2, 3, 4, 5</cline></block>
-      <block correct="no"><cline>1, 3, 2, 5, 4</cline></block>
+      <block>
+        <cline>3, 2, 5, 4, 1 (start)</cline>
+      </block>
+      <block>
+        <cline>2, 3, 5, 4, 1</cline>
+      </block>
+      <block>
+        <cline>2, 3, 5, 4, 1</cline>
+      </block>
+      <block>
+        <cline>2, 3, 4, 5, 1</cline>
+      </block>
+      <block>
+        <cline>1, 2, 3, 4, 5</cline>
+      </block>
+      <block correct="no">
+        <cline>1, 3, 2, 5, 4</cline>
+      </block>
     </blocks>
   </exercise>
 </section>
-
-

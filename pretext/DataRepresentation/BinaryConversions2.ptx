@@ -1,25 +1,23 @@
 <section xml:id="data-representation_binary-conversions-multiplication-division-method">
   <title>Binary Conversions - Multiplication/Division Method</title>
   <introduction>
-<p>The biggest issue with the <q>table method</q> shown on the previous page is that it is hard to translate
-    into an algorithm that a machine could run. The multiplication/division methods shown on this page are much easier
-    to express in simple terms as they rely on mathematics instead of looking at a table and making a decision.</p>
+    <p>The biggest issue with the <q>table method</q> shown on the previous page is that it is hard to translate into an
+      algorithm that a machine could run. The multiplication/division methods shown on this page are much easier to
+      express in simple terms as they rely on mathematics instead of looking at a table and making a decision.</p>
   </introduction>
-<subsection xml:id="data-representation_decimal-to-binary-1">
+  <subsection xml:id="data-representation_decimal-to-binary-1">
     <title>Decimal to Binary</title>
     <p>The following algorithm converts a decimal number to a binary one:</p>
     <program>
-      <code>
-        Step 1: Start with a blank answer and the number you are converting
-        Step 2: Divide your number by 2 to make a quotient and a remainder
-        Step 3: Place your remainder on the left side of your answer
-        Step 4: If your quotient is 0, you are done
-                Otherwise, make the quotient your new number and go back to step 2
-      </code>
+      <code> Step 1: Start with a blank answer and the number you are converting Step 2: Divide your number by 2 to make
+        a quotient and a remainder Step 3: Place your remainder on the left side of your answer Step 4: If your quotient
+        is 0, you are done Otherwise, make the quotient your new number and go back to step 2 </code>
     </program>
     <p>Here is an example of running the algorithm to convert <m>{11}_{10}</m> to binary:</p>
 
-    <video xml:id="TaagNvZCbjo" youtube="TaagNvZCbjo" width="100%" />
+    <video xml:id="TaagNvZCbjo"
+           youtube="TaagNvZCbjo"
+           width="100%"/>
     <p>
       <em>Animation used by permission of Virginia Tech</em>
     </p>
@@ -30,69 +28,51 @@
     <title>Binary to Decimal</title>
     <p>To convert a binary number to its decimal value, we can use almost the same trick, but in reverse:</p>
     <program language="none">
-      <code>
-Step 1: Start with the 'number' you are converting and the 'answer' of 0
-Step 2: Multiply your 'answer' by 2
-Step 3: Remove the leftmost digit of 'number' and add it to your 'answer'
-Step 4: If 'number' has no more digits, you are done
-        Otherwise, go back to step 2
-</code>
+      <code> Step 1: Start with the 'number' you are converting and the 'answer' of 0 Step 2: Multiply your 'answer' by
+        2 Step 3: Remove the leftmost digit of 'number' and add it to your 'answer' Step 4: If 'number' has no more
+        digits, you are done Otherwise, go back to step 2 </code>
     </program>
     <p>If we follow this algorithm to convert <m>{1101}_{2}</m> into a decimal value, it would look like this:</p>
     <program language="none">
-      <code>
-Step 1: 'number' is 1101 and 'answer' is 0
-Step 2: 'answer' is multiplied by 2 - it becomes 0
-Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
-         'number' is now 101 and 'answer' is 1
-Step 4: 'number' still has digits, go back to step 2
-Step 2: 'answer' is multiplied by 2 - it becomes 2
-Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
-         'number' is now 01 and 'answer' is 3
-Step 4: 'number' still has digits, go back to step 2
-Step 2: 'answer' is multiplied by 2 - it becomes 6
-Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
-         'number' is now 1 and 'answer' is 6
-Step 4: 'number' still has digits, go back to step 2
-Step 2: 'answer' is multiplied by 2 - it becomes 12
-Step 3: Remove the leftmost digit of 'number' and add it to 'answer'
-         'number' is now "" (empty) and 'answer' is 13
-Step 4: 'number' is empty. We are done, the 'answer' is 13.
-</code>
+      <code> Step 1: 'number' is 1101 and 'answer' is 0 Step 2: 'answer' is multiplied by 2 - it becomes 0 Step 3:
+        Remove the leftmost digit of 'number' and add it to 'answer' 'number' is now 101 and 'answer' is 1 Step 4:
+        'number' still has digits, go back to step 2 Step 2: 'answer' is multiplied by 2 - it becomes 2 Step 3: Remove
+        the leftmost digit of 'number' and add it to 'answer' 'number' is now 01 and 'answer' is 3 Step 4: 'number'
+        still has digits, go back to step 2 Step 2: 'answer' is multiplied by 2 - it becomes 6 Step 3: Remove the
+        leftmost digit of 'number' and add it to 'answer' 'number' is now 1 and 'answer' is 6 Step 4: 'number' still has
+        digits, go back to step 2 Step 2: 'answer' is multiplied by 2 - it becomes 12 Step 3: Remove the leftmost digit
+        of 'number' and add it to 'answer' 'number' is now "" (empty) and 'answer' is 13 Step 4: 'number' is empty. We
+        are done, the 'answer' is 13. </code>
     </program>
     <p>As mentioned earlier, the advantage of this algorithm is that it very easily converts into relatively simple
       computer code. To demonstrate that, the algorithm is implemented in Python in the <em>codelens</em> below. You DO
       NOT need to worry about exactly how the Python language works. You will notice that turning the English algorithm
-      above into code requires some changes, but the code shown follows the same process described above. See the
-      <q>tips</q> box below the code lens for help running the program.</p>
+      above into code requires some changes, but the code shown follows the same process described above. See the <q>
+      tips</q> box below the code lens for help running the program.</p>
 
-    <program xml:id="datarepresentation_binaryconversions21" interactive="codelens" language="python">
-      <code>
-number = "1101"
-answer = 0
-while len(number) > 0:               #do next 3 lines until length of number is 0
-    answer = answer * 2                 #multiply answer by 2
-    answer = answer + int(number[0])    #add leftmost digit to answer
-    number = number[1:]                 #remove leftmost digit
-
-print("The final value of answer is", answer)
-    </code>
+    <program xml:id="datarepresentation_binaryconversions21"
+             interactive="codelens"
+             language="python">
+      <code> number = "1101" answer = 0 while len(number) > 0: #do next 3 lines until length of number is 0 answer =
+        answer * 2 #multiply answer by 2 answer = answer + int(number[0]) #add leftmost digit to answer number =
+        number[1:] #remove leftmost digit print("The final value of answer is", answer) </code>
     </program>
     <note>
       <p>
         <term>How to use the <q>codelens</q></term>
-      </p> 
+      </p>
       <p>
         <ul>
           <li>
             <p>You can click the <q>forward</q> button to watch the code run line by line.</p>
           </li>
           <li>
-            <p>Use can use the large gray scroll bar beneath the code to scroll the code to the right - at the end of each line of code is an
-              explanation of what that line <q>says</q></p>
+            <p>Use can use the large gray scroll bar beneath the code to scroll the code to the right - at the end of
+              each line of code is an explanation of what that line <q>says</q></p>
           </li>
           <li>
-            <p>The blue <q>Global frame</q> area that appears at the bottom will display the current value of <c>number</c> and <c>answer</c>.</p>
+            <p>The blue <q>Global frame</q> area that appears at the bottom will display the current value of <c>number</c>
+              and <c>answer</c>.</p>
           </li>
         </ul>
       </p>
@@ -101,7 +81,8 @@ print("The final value of answer is", answer)
     <exercise label="datarepresentation_binaryconversions22">
       <statement>
 
-        <p>If you use the division method to convert decimal 49 to binary, how many times do you have to do step 2 (divide the number by 2)?</p>
+        <p>If you use the division method to convert decimal 49 to binary, how many times do you have to do step 2
+          (divide the number by 2)?</p>
 
       </statement>
       <choices>
@@ -129,7 +110,7 @@ print("The final value of answer is", answer)
             <p>6</p>
           </statement>
           <feedback>
-            <p />
+            <p/>
           </feedback>
         </choice>
 
@@ -144,13 +125,14 @@ print("The final value of answer is", answer)
       </choices>
     </exercise>
 
-
     <exercise label="datarepresentation_binaryconversions_ex2">
       <statement>
 
-        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
+        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding
+          a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
 
-        <p>What is <m>{2}_{11010}</m> divided by 2 (in binary)? <fillin mode="number" answer="1101"/></p>
+        <p>What is <m>{2}_{11010}</m> divided by 2 (in binary)? <fillin mode="number"
+                  answer="1101"/></p>
 
       </statement>
       <evaluation>
@@ -168,16 +150,19 @@ print("The final value of answer is", answer)
       </evaluation>
 
       <hint>
-        <p><m>{2}_{11010}</m> is 26 in decimal. You can check your answer by making sure it equals 13 in decimal. But you shouldn't have to do math to figure out the answer.</p>
+        <p><m>{2}_{11010}</m> is 26 in decimal. You can check your answer by making sure it equals 13 in decimal. But
+          you shouldn't have to do math to figure out the answer.</p>
       </hint>
     </exercise>
 
     <exercise label="datarepresentation_binaryconversions_ex3">
       <statement>
 
-        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
+        <p>These methods work because multiplying by 2 is the same as shifting the bits to the left in binary by adding
+          a 0 at the end. And dividing by 2 is the same as shifting the bits to the right by removing the last bit.</p>
 
-        <p>What is <m>{2}_{11}</m> multiplied by 8 (in binary)? <fillin mode="number" answer="11000"/></p>
+        <p>What is <m>{2}_{11}</m> multiplied by 8 (in binary)? <fillin mode="number"
+                  answer="11000"/></p>
 
       </statement>
       <evaluation>

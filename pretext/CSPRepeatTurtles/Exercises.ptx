@@ -3,12 +3,21 @@
 
   <exercise label="csprepeatturtles_exercises1">
     <statement>
-      <p>The code currently draws a square. Change it so that it draws a triangle. Do so by modifying the loop and the
-        turn that the turtle makes without modifying other code.</p>
-      <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        The code currently draws a square.
+        Change it so that it draws a triangle.
+        Do so by modifying the loop and the turn that the turtle makes without modifying other code.
+      </p>
 
+      <p>
+        Remember that to make a complete shape, the turns must sum to 360 degrees.
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="csprepeatturtles_exercises1_editor" interactive="activecode" language="python">
       <code>
         from turtle import *
@@ -19,7 +28,6 @@
             alisha.right(90)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -34,12 +42,21 @@
 
   <exercise label="csprepeatturtles_exercises2">
     <statement>
-      <p>Fix the errors in the code so that it draws an octagon. Do so by fixing the issues in the loop-based code.
-        There are three issues to fix.</p>
-      <p>Remember that to make a complete shape, the turns must sum to 360 degrees.</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        Fix the errors in the code so that it draws an octagon.
+        Do so by fixing the issues in the loop-based code.
+        There are three issues to fix.
+      </p>
 
+      <p>
+        Remember that to make a complete shape, the turns must sum to 360 degrees.
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="csprepeatturtles_exercises2_editor" interactive="activecode" language="python">
       <code>
         from turtle import *
@@ -49,7 +66,6 @@
         steven.right(50)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -59,17 +75,26 @@
                 self.assertRegex(self.getEditorText(), r"steven\.right\(\s*45\s*\)", "Testing that the turn is now correct")
 
         myTests().main()
-              </tests>
+      </tests>
     </program>
   </exercise>
 
   <exercise label="csprepeatturtles_exercises3">
     <statement>
-      <p>Fix the indention in the code below to correctly draw 20 pentagons (5-sided polygons).</p>
-      <p>Make sure to use four spaces for each indentation level (the tab key will automatically use 4 spaces).</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        Fix the indention in the code below to correctly draw 20 pentagons (5-sided polygons).
+      </p>
 
+      <p>
+        Make sure to use four spaces for each indentation level (the tab key will automatically use
+        4 spaces).
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="csprepeatturtles_exercises3_editor" interactive="activecode" language="python">
       <code>
         from turtle import *
@@ -87,7 +112,6 @@
         zoe.right(72)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -106,62 +130,87 @@
 
   <exercise label="csprepeatturtles_exercises4">
     <statement>
-
-      <p>Which is range recipe would generate the sequence: 10, 8, 6, <ellipsis/> 2</p>
-
+      <p>
+        Which is range recipe would generate the sequence: 10, 8, 6, <ellipsis/> 2
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice correct="yes">
         <statement>
-          <p>range(10, 0, -2)</p>
+          <p>
+            range(10, 0, -2)
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct</p>
+          <p>
+            Correct
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>range(10, 1, 2)</p>
+          <p>
+            range(10, 1, 2)
+          </p>
         </statement>
+
         <feedback>
-          <p>That counts up by 2's</p>
+          <p>
+            That counts up by 2's
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>range(10, 2, -2)</p>
+          <p>
+            range(10, 2, -2)
+          </p>
         </statement>
+
         <feedback>
-          <p>That recipe would not generate 2 because it is the stop value</p>
+          <p>
+            That recipe would not generate 2 because it is the stop value
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>range(10, 3, 2)</p>
+          <p>
+            range(10, 3, 2)
+          </p>
         </statement>
+
         <feedback>
-          <p>This recipe counts up by 2's</p>
+          <p>
+            This recipe counts up by 2's
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 
   <exercise label="csprepeatturtles_exercises5">
     <statement>
-      <p>Write the correct recipe to fill in the ____________ in the code below to generate the pattern 5, 25, 45,
-        <ellipsis/> 105. Use the smallest possible value for your stopValue.
+      <p>
+        Write the correct recipe to fill in the ____________ in the code below to generate the
+        pattern 5, 25, 45, <ellipsis/> 105.
+        Use the smallest possible value for your stopValue.
       </p>
+
       <p>
         <c>range(____________)</c>
       </p>
-      <p>Just write what would replace the blank below. (Don't include <q>range</q> or the parentheses in
-        your answer; do include commas).
+
+      <p>
+        Just write what would replace the blank below.
+        (Don't include <q>range</q> or the parentheses in your answer; do include commas).
       </p>
+
       <p>
         <fillin mode="string" answer="5, 106, 20"/>
       </p>
@@ -169,75 +218,134 @@
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>^\s*5\s*,\s*106\s*,\s*20\s*$</strcmp>
+          <strcmp>
+            ^\s*5\s*,\s*106\s*,\s*20\s*$
+          </strcmp>
         </test>
         <test>
-          <strcmp>^\s*5\s*,\s*125\s*,\s*20\s*$</strcmp>
+          <strcmp>
+            ^\s*5\s*,\s*125\s*,\s*20\s*$
+          </strcmp>
+
           <feedback>
-            <p>This is a common way to produce the desired range, but what is the smallest possible stopValue?</p>
+            <p>
+              This is a common way to produce the desired range, but what is the smallest possible
+              stopValue?
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*5\s*,\s*\d+\s*,\s*20\s*$</strcmp>
+          <strcmp>
+            ^\s*5\s*,\s*\d+\s*,\s*20\s*$
+          </strcmp>
+
           <feedback>
-            <p>Wrong stopValue; be sure to use the smallest possible number</p>
+            <p>
+              Wrong stopValue; be sure to use the smallest possible number
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$</strcmp>
+          <strcmp>
+            ^\s*\d+\s*,\s*(106|125)\s*,\s*20\s*$
+          </strcmp>
+
           <feedback>
-            <p>Wrong startValue</p>
+            <p>
+              Wrong startValue
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$</strcmp>
+          <strcmp>
+            ^\s*5\s*,\s*(106|125)\s*,\s*\d+\s*$
+          </strcmp>
+
           <feedback>
-            <p>Wrong step</p>
+            <p>
+              Wrong step
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$</strcmp>
+          <strcmp>
+            ^\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$
+          </strcmp>
+
           <feedback>
-            <p>Some of the values are incorrect</p>
+            <p>
+              Some of the values are incorrect
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>.*</strcmp>
+          <strcmp>
+            .*
+          </strcmp>
+
           <feedback>
-            <p>Provide three numbers separated by commas</p>
+            <p>
+              Provide three numbers separated by commas
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
+
   <exercise label="csprepeatturtles_exercises6">
     <statement>
-      <p>We want to make a series of rectangles such that the first one is 10x90, the next is 20x80, the next is 30x70,
-        <ellipsis/> until we draw one that is 90x10. Doing so will make a <q>staircase grid</q> like the one shown
-        below:</p>
+      <p>
+        We want to make a series of rectangles such that the first one is 10x90, the next is 20x80,
+        the next is 30x70, <ellipsis/> until we draw one that is 90x10.
+        Doing so will make a <q>staircase grid</q> like the one shown below:
+      </p>
+
       <image source="CSPRepeatTurtles/Figures/TurtleStairs.png" width="30%">
         <shortdescription>Turtle graphics stair-step pattern.</shortdescription>
       </image>
-      <p>Below is a program with <c>rectangle</c> already defined. Add code that uses a for loop to call the procedure with the
-        correct values for its parameters. Make sure that the 90-width and 10-height rectangle is the first one you
-        draw. You should only need one loop and <term>it must count down from 90 to 10</term>.</p>
-      <p>Hints:
-          <ul>
-            <li>Start by writing a loop that just prints out the values 90, 80, 70, <ellipsis/>, 10. These will be the
-                widths of the rectangles you end up drawing.</li>
-            <li>Next, for each width, calculate the corresponding height. Each width/height pair should always add to
-                100, so if we call the width <m>w</m>, the height must be <m>100 - w</m>. Print out the height with
-                the width so that your output looks like 90 10, 80 20, 70 30, <ellipsis/>, 10 90.
-            </li>
-            <li>Finally, call <c>rectangle</c> in your loop and pass it the width and height you are calculating.
-            </li>
-          </ul>
-      </p>
-      <p>The autograder will not verify everything about your program. It is up to you to determine if your program is
-        correct or not.</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
 
+      <p>
+        Below is a program with <c>rectangle</c> already defined.
+        Add code that uses a for loop to call the procedure with the correct values for its
+        parameters.
+        Make sure that the 90-width and 10-height rectangle is the first one you draw.
+        You should only need one loop and <term>it must count down from 90 to 10</term>.
+      </p>
+
+      <p>
+        Hints:
+        <ul>
+          <li>
+            Start by writing a loop that just prints out the values 90, 80, 70, <ellipsis/>, 10.
+            These will be the widths of the rectangles you end up drawing.
+          </li>
+
+          <li>
+            Next, for each width, calculate the corresponding height.
+            Each width/height pair should always add to 100, so if we call the width <m>w</m>, the
+            height must be <m>100 - w</m>.
+            Print out the height with the width so that your output looks like 90 10, 80 20, 70 30,
+            <ellipsis/>, 10 90.
+          </li>
+
+          <li>
+            Finally, call <c>rectangle</c> in your loop and pass it the width and height you are
+            calculating.
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        The autograder will not verify everything about your program.
+        It is up to you to determine if your program is correct or not.
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="csprepeatturtles_exercises6_editor" interactive="activecode" language="python">
       <code>
         def rectangle(turtleName, width, height):
@@ -268,5 +376,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>

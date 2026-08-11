@@ -1,16 +1,22 @@
 <section xml:id="csp-repeat-images_chapter-summary">
   <title>Chapter Summary</title>
-  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    This chapter included the following concepts from computing.
+  </p>
 
   <p>
     <ul>
       <li>
-        <p><term>Pixel</term> - A pixel is one small part (element) of a picture. Each pixel's
-          location in the picture is represented by two coordinates: <term>x</term> (horizontal) and <term>
-          y</term> (vertical) coordinates. A pixel has a color that can be defined by an amount of
-          red, green, and blue with values from 0 to 255.</p>
+        <p>
+          <term>Pixel</term>- A pixel is one small part (element) of a picture.
+          Each pixel's location in the picture is represented by two coordinates: <term>x</term>
+          (horizontal) and <term>
+          y</term> (vertical) coordinates.
+          A pixel has a color that can be defined by an amount of red, green, and blue with values
+          from 0 to 255.
+        </p>
       </li>
     </ul>
   </p>
 </section>
-

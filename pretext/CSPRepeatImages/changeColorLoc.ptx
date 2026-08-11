@@ -1,22 +1,34 @@
 <section xml:id="csp-repeat-images_thinking-about-pixel-locations">
   <title>Thinking About Pixel Locations</title>
-  <p>When we loop through the pixels in an image, our loop moves from left to right
-    across each row starting from the top one and working our way to the bottom.</p>
+
+  <p>
+    When we loop through the pixels in an image, our loop moves from left to right across each row
+    starting from the top one and working our way to the bottom.
+  </p>
+
   <figure>
-    <caption>The order that pixels are processed if you use <pf>img.getPixels()</pf>.
-    First, we visit the top row moving from left to right. Then we go to the second row and move
-    from left to right again. The process continues until we reach the bottom of the image.</caption>
+    <caption>
+      The order that pixels are processed if you use <pf>img.getPixels()</pf>.
+      First, we visit the top row moving from left to right.
+      Then we go to the second row and move from left to right again.
+      The process continues until we reach the bottom of the image.
+    </caption>
+
     <image source="CSPRepeatImages/Figures/rowOrder.png" width="50%">
       <shortdescription>Pixel grid showing row-major traversal order.</shortdescription>
     </image>
   </figure>
-  <p>Sometimes, we don't care where a particular pixel is in the image. But if we want
-    to accomplish a goal like <q>Make the bottom half of the image black</q>, we need to 
-    know if the current pixel is in the bottom half or not.
+
+  <p>
+    Sometimes, we don't care where a particular pixel is in the image.
+    But if we want to accomplish a goal like <q>Make the bottom half of the image black</q>, we need
+    to know if the current pixel is in the bottom half or not.
   </p>
-  <p>To find out where a pixel is, we can use the <c>.getX()</c> and <c>.getY()</c> functions 
-    of the pixel object. This code sample shows using the two functions to ask for the x 
-    and y locations of each pixel.
+
+  <p>
+    To find out where a pixel is, we can use the <c>.getX()</c> and <c>.getY()</c> functions of the
+    pixel object.
+    This code sample shows using the two functions to ask for the x and y locations of each pixel.
   </p>
 
   <program xml:id="csprepeatimages_changecolorloc1" interactive="activecode" language="python">
@@ -43,13 +55,24 @@
             
     </code>
   </program>
-  <p>If you examine the output, you should see that the first pixel is at x = 0, y = 0. Then 
-    we move to x = 1, y = 0. The next pixel is at x = 2, y = 0. A few important details to notice:
+
+  <p>
+    If you examine the output, you should see that the first pixel is at x = 0, y = 0.
+    Then we move to x = 1, y = 0.
+    The next pixel is at x = 2, y = 0.
+    A few important details to notice:
     <ul>
-      <li>We start counting from 0 for both x and y. The leftmost pixel is at x = 0. 
-        The pixel to its right is at x = 1.</li>
-      <li>This image is 128 pixels wide. So x counts up to 127 before reaching the end of the row 
-        (one less than width since we start counting from 0).</li>
+      <li>
+        We start counting from 0 for both x and y.
+        The leftmost pixel is at x = 0.
+        The pixel to its right is at x = 1.
+      </li>
+
+      <li>
+        This image is 128 pixels wide.
+        So x counts up to 127 before reaching the end of the row (one less than width since we start
+        counting from 0).
+      </li>
     </ul>
   </p>
 
@@ -59,60 +82,87 @@
       <shortdescription>Image grid with row and column coordinates.</shortdescription>
     </image>
   </figure>
-  
+
   <exercise label="csprepeatimages_changecolorloc2">
     <statement>
-
-      <p>If an image has a width of 10 and a height of 5, what would the coordinates of the last
-        pixel visited by a loop be?</p>
-
+      <p>
+        If an image has a width of 10 and a height of 5, what would the coordinates of the last
+        pixel visited by a loop be?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>4, 9</p>
+          <p>
+            4, 9
+          </p>
         </statement>
+
         <feedback>
-          <p>Remember that the width defines the possible x coordinates and the x comes first</p>
+          <p>
+            Remember that the width defines the possible x coordinates and the x comes first
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>5, 10</p>
+          <p>
+            5, 10
+          </p>
         </statement>
+
         <feedback>
-          <p>Remember that the width defines the possible x coordinates and the x comes first</p>
+          <p>
+            Remember that the width defines the possible x coordinates and the x comes first
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>9, 4</p>
+          <p>
+            9, 4
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct. We start counting from 0, so a width of 10 means columns 0-9. A height of 5 means rows 0-4.</p>
+          <p>
+            Correct.
+            We start counting from 0, so a width of 10 means columns 0-9.
+            A height of 5 means rows 0-4.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>10, 5</p>
+          <p>
+            10, 5
+          </p>
         </statement>
+
         <feedback>
-          <p>That would be true if the image had a width of 11 and a height of 6. Remember that we start counting from 0.</p>
+          <p>
+            That would be true if the image had a width of 11 and a height of 6.
+            Remember that we start counting from 0.
+          </p>
         </feedback>
       </choice>
     </choices>
   </exercise>
 
-  <p>Now let's put the pixel coordinates to work. We are going to use the location of each 
-    pixel to modify its color. We will do so by subtracting its x coordinate from each of the color 
-    values (red, green, blue). This means on the left side of the image, where x is 0
-    or close to it, there is little change. On the right side, where x is larger, we remove more and more of the color,
-    getting closer and closer to pure black. (Once we hit column 255, we could only get black as the starting
-    red/green/blue values are all 255 at most.)</p>
+  <p>
+    Now let's put the pixel coordinates to work.
+    We are going to use the location of each pixel to modify its color.
+    We will do so by subtracting its x coordinate from each of the color values (red, green, blue).
+    This means on the left side of the image, where x is 0 or close to it, there is little change.
+    On the right side, where x is larger, we remove more and more of the color, getting closer and
+    closer to pure black.
+    (Once we hit column 255, we could only get black as the starting red/green/blue values are all
+    255 at most.)
+  </p>
 
   <program xml:id="csprepeatimages_changecolorloc3" interactive="activecode" language="python">
     <code>
@@ -144,12 +194,19 @@ for p in pixels:
     # STEP 6: MODIFY THE IMAGE
     img.updatePixel(p)
 
-  </code>
+    </code>
   </program>
-  <p>We don't always have to modify the pixel color. We can also use the coordinates to move a particular pixel to
-    a new location. This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put it back
-    in the image. This <c>newY</c> is calculated as the height of the image minus one minus the y location of where we got
-    the pixel. Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the new location.</p>
+
+  <p>
+    We don't always have to modify the pixel color.
+    We can also use the coordinates to move a particular pixel to a new location.
+    This sample calculates a <c>newY</c> that is used as the y coordinate for the pixel when we put
+    it back in the image.
+    This <c>newY</c> is calculated as the height of the image minus one minus the y location of
+    where we got the pixel.
+    Then instead of updating the pixel in its old location, we use <c>setPixel</c> to copy it to the
+    new location.
+  </p>
 
   <program xml:id="csprepeatimages_changecolorloc4" interactive="activecode" language="python">
     <code>
@@ -178,53 +235,75 @@ for p in pixels:
     # Write pixel p to the image at location (x, newY)
     img.setPixel(x, newY, p)
 
-  </code>
+    </code>
   </program>
 
   <exercise label="csprepeatimages_changecolorloc5">
     <statement>
-
-      <p>What happened when we copied the pixel from (x, y) to (x, newY)?</p>
-
+      <p>
+        What happened when we copied the pixel from (x, y) to (x, newY)?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>We rotated the image 90 degrees to the left and flipped it over.</p>
+          <p>
+            We rotated the image 90 degrees to the left and flipped it over.
+          </p>
         </statement>
+
         <feedback>
-          <p>This would be true if we created a new image and set the values in the new image from the old pixel values.</p>
+          <p>
+            This would be true if we created a new image and set the values in the new image from
+            the old pixel values.
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>We mirrored the image around a horizontal line.</p>
+          <p>
+            We mirrored the image around a horizontal line.
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct. The top rows are copied to the bottom and end up erasing the top part of the image.</p>
+          <p>
+            Correct.
+            The top rows are copied to the bottom and end up erasing the top part of the image.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>We flipped the image horizontally.</p>
+          <p>
+            We flipped the image horizontally.
+          </p>
         </statement>
+
         <feedback>
-          <p>This would be true if we created a new image and set the values in the new image from the old pixel values.</p>
+          <p>
+            This would be true if we created a new image and set the values in the new image from
+            the old pixel values.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>No change.</p>
+          <p>
+            No change.
+          </p>
         </statement>
+
         <feedback>
-          <p>Compare this image to the original student2.jpg image.</p>
+          <p>
+            Compare this image to the original student2.jpg image.
+          </p>
         </feedback>
       </choice>
     </choices>
   </exercise>
 </section>
-

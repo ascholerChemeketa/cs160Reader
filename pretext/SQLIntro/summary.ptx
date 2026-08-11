@@ -1,16 +1,24 @@
 <section xml:id="sql-intro_chapter-summary">
   <title>Chapter Summary</title>
-  <p>This chapter included the following concepts from computing.</p>
+
+  <p>
+    This chapter included the following concepts from computing.
+  </p>
+
   <p>
     <ul>
       <li>
-        <p><term>query</term> - Requests to a database for information are called queries.</p>
+        <p>
+          <term>query</term>- Requests to a database for information are called queries.
+        </p>
       </li>
+
       <li>
-        <p><term>SQL</term> - Structured Query Language, or SQL, is a programming language designed for writing
-          algorithms that compute using information in a database.</p>
+        <p>
+          <term>SQL</term>- Structured Query Language, or SQL, is a programming language designed
+          for writing algorithms that compute using information in a database.
+        </p>
       </li>
     </ul>
   </p>
 </section>
-

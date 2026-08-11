@@ -1,54 +1,99 @@
 <section xml:id="csp-python-data_reading-the-data">
   <title>Reading the data</title>
 
-  <p>The file <c>"uspoll.txt"</c> is what is known as a <term>text file</term>. A <term>text file</term> is actually binary -
-    everything a computer stores is stored as binary data. But in a <term>text file</term>, all of the information is
-    stored as a series of ASCII-encoded characters. Thus in the file, the number 250 would be stored as
-    <q>250</q> which would be stored by the 8-bit values for <q>2</q>, <q>5</q>, and
-    <q>0</q>. Because everything is stored as text, we can open <term>text files</term> in a program like Notepad
-    to read or edit them.</p>
-  <p>In a <term>binary file</term>, data is stored in its natural binary form. Thus the number 250 could be stored as as
-    the 8-bit binary value 11111010. A <term>binary file</term> only makes sense if we know how to read it. If you see a
-    256-bit chunk of 1's and 0's, there is no way to know just by looking at the data if it is supposed to
-    be eight 32-bit values, or thirty-two 8-bit ones. And you can't know if those 8-bit values are supposed to be
-    numbers or ASCII characters.</p>
-  <p>Text files tend to be more wasteful of bits and slower for a computer to process - the computer needs to turn the
-    text <c>"250"</c> into the number <c>250</c> before it can compute with it. But they are easier for people to read and
-    write. Thus, if we have data that people need to interact with, and the amount of information is not too great, it
-    is common to store it in text format. If there is a tremendous amount of information or no need for people to
-    interact with it, we are more likely to store it in binary form.</p>
-  <p>In Python, we must <term>open</term> files before we can read from them or write to them and <term>close</term>
-    them when we are done with them. Opening a file returns a Python object that has predefined functions and
-    procedures, just like the turtle, string, or image objects we have seen before. Here are the functions and
-    procedures that can be used to open and close files.</p>
+  <p>
+    The file <c>"uspoll.txt"</c> is what is known as a <term>text file</term>.
+    A <term>text file</term> is actually binary - everything a computer stores is stored as binary
+    data.
+    But in a <term>text file</term>, all of the information is stored as a series of ASCII-encoded
+    characters.
+    Thus in the file, the number 250 would be stored as <q>250</q> which would be stored by the
+    8-bit values for <q>2</q>, <q>5</q>, and <q>0</q>.
+    Because everything is stored as text, we can open <term>text files</term> in a program like
+    Notepad to read or edit them.
+  </p>
 
-    <list xml:id="csp-python-data_filemethods1a">
-      <title>File Methods</title>
-      <dl>
-        <li>
-            <title>open</title>
-            <p><c>fileReference = open("filename")</c></p>
-            <p>Open a file called filename and use it for reading. This will return a reference to a file object. We can
-              use that reference to ask for data to be read, or to close the file.</p>
-        </li>
-        <li>
-            <title>splitlines</title>
-            <p><c>data = fileReference.read().splitlines()</c></p>
-            <p>This is actually two commands, but we will always use them together like this. <c>read</c> will read in the
-              entire file of data into one big string. <c>splitlines</c> takes that and splits it into a list - each item in the list
-              is a string that has the text of one line from the file.</p>
-        </li>
-        <li>
-            <title>close</title>
-            <p><c>fileReference.close()</c></p>
-            <p>Closes a file.</p>
-        </li>
+  <p>
+    In a <term>binary file</term>, data is stored in its natural binary form.
+    Thus the number 250 could be stored as as the 8-bit binary value 11111010.
+    A <term>binary file</term> only makes sense if we know how to read it.
+    If you see a 256-bit chunk of 1's and 0's, there is no way to know just by looking at the data
+    if it is supposed to be eight 32-bit values, or thirty-two 8-bit ones.
+    And you can't know if those 8-bit values are supposed to be numbers or ASCII characters.
+  </p>
+
+  <p>
+    Text files tend to be more wasteful of bits and slower for a computer to process - the computer
+    needs to turn the text <c>"250"</c> into the number <c>250</c> before it can compute with it.
+    But they are easier for people to read and write.
+    Thus, if we have data that people need to interact with, and the amount of information is not
+    too great, it is common to store it in text format.
+    If there is a tremendous amount of information or no need for people to interact with it, we are
+    more likely to store it in binary form.
+  </p>
+
+  <p>
+    In Python, we must <term>open</term> files before we can read from them or write to them and
+    <term>close</term> them when we are done with them.
+    Opening a file returns a Python object that has predefined functions and procedures, just like
+    the turtle, string, or image objects we have seen before.
+    Here are the functions and procedures that can be used to open and close files.
+  </p>
+
+  <list xml:id="csp-python-data_filemethods1a">
+    <title>File Methods</title>
+
+    <dl>
+      <li>
+        <title>open</title>
+
+        <p>
+          <c>fileReference = open("filename")</c>
+        </p>
+
+        <p>
+          Open a file called filename and use it for reading.
+          This will return a reference to a file object.
+          We can use that reference to ask for data to be read, or to close the file.
+        </p>
+      </li>
+
+      <li>
+        <title>splitlines</title>
+
+        <p>
+          <c>data = fileReference.read().splitlines()</c>
+        </p>
+
+        <p>
+          This is actually two commands, but we will always use them together like this.
+          <c>read</c> will read in the entire file of data into one big string.
+          <c>splitlines</c> takes that and splits it into a list - each item in the list is a string
+          that has the text of one line from the file.
+        </p>
+      </li>
+
+      <li>
+        <title>close</title>
+
+        <p>
+          <c>fileReference.close()</c>
+        </p>
+
+        <p>
+          Closes a file.
+        </p>
+      </li>
     </dl>
   </list>
 
-  <p>Here is a sample of using those commands to open our file, read all the data into a list called <c>data</c>, and
-    close the file. Once we have all the data, we can use a <c>for in</c> loop to iterate through all the lines in the file.
-    Here we just print them out:</p>
+  <p>
+    Here is a sample of using those commands to open our file, read all the data into a list called
+    <c>data</c>, and close the file.
+    Once we have all the data, we can use a <c>for in</c> loop to iterate through all the lines in
+    the file.
+    Here we just print them out:
+  </p>
 
   <program xml:id="csppythondata_readdata1" interactive="activecode" language="python">
     <code>
@@ -72,29 +117,47 @@
   </program>
 
   <note>
-    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
+    <p>
+      <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    </p>
   </note>
 
-  <p>To do any real work with the lines of the file, we need to break up the lines into three parts. We want to
-    turn <c>"Aberdeen, SD :13 :8"</c> into a list that looks like <c>["Aberdeen, SD", "13", "8"]</c>. That will make it easier to get the location - <c>values[0]</c>, or the
-    PM10 value - <c>values[1]</c>, or the PM2.5 value - <c>values[2]</c>.</p>
-  <p>In this version, the first thing we do with each line is to split it up at the <q>:</q> marks. The <c>split</c>
-    function will turn a string into a list by splitting it at the value you give it. <c>values = line.split(":")</c> says to take the string
-    called line, split it at the <q>:</q> and call the resulting list <c>values</c>. We can then use that to get
-    just the city name, the PM 10 value, or the PM2.5 value.</p>
+  <p>
+    To do any real work with the lines of the file, we need to break up the lines into three parts.
+    We want to turn <c>"Aberdeen, SD :13 :8"</c> into a list that looks like
+    <c>["Aberdeen, SD", "13", "8"]</c>.
+    That will make it easier to get the location - <c>values[0]</c>, or the PM10 value -
+    <c>values[1]</c>, or the PM2.5 value - <c>values[2]</c>.
+  </p>
+
+  <p>
+    In this version, the first thing we do with each line is to split it up at the <q>:</q> marks.
+    The <c>split</c> function will turn a string into a list by splitting it at the value you give
+    it.
+    <c>values = line.split(":")</c> says to take the string called line, split it at the <q>:</q>
+    and call the resulting list <c>values</c>.
+    We can then use that to get just the city name, the PM 10 value, or the PM2.5 value.
+  </p>
 
   <exercise label="csppythondata_readdata2">
     <statement>
-      <p>Currently, this program prints each city followed by its PM2.5 value. After you run it, try modifying it so it
-        prints out the PM10 values instead of the PM2.5. Your output should look like this:</p>
+      <p>
+        Currently, this program prints each city followed by its PM2.5 value.
+        After you run it, try modifying it so it prints out the PM10 values instead of the PM2.5.
+        Your output should look like this:
+      </p>
       <pre>
 Aberdeen, SD
  PM10: 8
 Adrian, MI
  PM10: 9
 ...</pre>
-      <p>Make sure not to print out extra lines. The test will assume that you have just that output.</p>
+      <p>
+        Make sure not to print out extra lines.
+        The test will assume that you have just that output.
+      </p>
     </statement>
+
     <program xml:id="csppythondata_readdata2_editor" interactive="activecode" language="python">
       <code>
         # open the file for reading
@@ -130,10 +193,14 @@ Adrian, MI
       </tests>
     </program>
   </exercise>
+
   <exercise label="csppythondata_readdata3" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program prints the pollution information for all cities that start with a <c>D</c>, but the code
-        is mixed up. Arrange the blocks and indent them to make a working program.</p>
+      <p>
+        The following program prints the pollution information for all cities that start with a
+        <c>D</c>, but the code is mixed up.
+        Arrange the blocks and indent them to make a working program.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -162,11 +229,19 @@ Adrian, MI
       </block>
     </blocks>
   </exercise>
+
   <note>
-    <p>If we were reading in a tremendously large file, reading it all at once might take up too much memory. In that
-      case we would have to read it one line at a time, then discard that line before getting the next. That way, we
-      would only need memory to store one line of data instead of all of them at once.</p>
-    <p>In the interest of simplicity, we will stick with the <q>read it all at once</q> strategy since our files
-      are relatively small.</p>
+    <p>
+      If we were reading in a tremendously large file, reading it all at once might take up too much
+      memory.
+      In that case we would have to read it one line at a time, then discard that line before
+      getting the next.
+      That way, we would only need memory to store one line of data instead of all of them at once.
+    </p>
+
+    <p>
+      In the interest of simplicity, we will stick with the <q>read it all at once</q> strategy
+      since our files are relatively small.
+    </p>
   </note>
 </section>

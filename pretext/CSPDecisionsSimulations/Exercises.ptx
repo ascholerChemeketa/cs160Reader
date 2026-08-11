@@ -1,11 +1,18 @@
 <exercises xml:id="csp-decisions-simulations_chapter-exercises">
   <title>Chapter Exercises</title>
+
   <exercise label="cspdecisionssimulations_exercises1" indentation="hide" language="python">
     <statement>
-      <p>The code below is supposed to roll an 8-sided die (sides numbered 1-8) 10000 times and after it is done, print
-        out how many times 1 was rolled.</p>
-      <p>Move the correct blocks from the left to the right and indent them properly. You will not need to use all of
-        the blocks. Make sure to put <c>import random</c> first.</p>
+      <p>
+        The code below is supposed to roll an 8-sided die (sides numbered 1-8) 10000 times and after
+        it is done, print out how many times 1 was rolled.
+      </p>
+
+      <p>
+        Move the correct blocks from the left to the right and indent them properly.
+        You will not need to use all of the blocks.
+        Make sure to put <c>import random</c> first.
+      </p>
     </statement>
     <blocks>
       <block order="6">
@@ -21,12 +28,15 @@
         <choice correct="yes">
           <cline> randValue = random.randrange(1, 9)</cline>
         </choice>
+
         <choice>
           <cline> randValue = random.randrange(1, 8) </cline>
         </choice>
+
         <choice>
           <cline> randValue = random.randrange(0, 8) </cline>
         </choice>
+
         <choice>
           <cline> randValue = random.randrange(0, 9) </cline>
         </choice>
@@ -42,19 +52,28 @@
       </block>
     </blocks>
   </exercise>
+
   <exercise label="cspdecisionssimulations_exercises2" indentation="hide" language="python">
     <statement>
-      <p>The code below is supposed to <q>flip a coin</q> 100 times by making a random number that is 0 (heads)
-        or 1 (tails) and keep track of the longest streak of heads that we see. For each repetition, we need to 
-        make a random number, then check to see if it is a <q>heads</q> (0). 
-        Then we will updatethe <c>headsInARow</c>
-        counter (like the sample from <xref ref="csp-decisions-simulations_building-a-simulation" text="title" />)
-        based on that result by adding one or resetting it to 0. 
-        If the <c>headsInARow</c>
-        increased (but not if it was reset to 0), we will check and see if it is bigger than <c>longestStreak</c>. If so, we will
-        update the <c>longestStreak</c> to match <c>headsInARow</c>. After all 100 flips are done we will print out the <c>longestStreak</c>.</p>
-      <p>Move the correct blocks from the left to the right and indent them properly. You will use all of the blocks.
-        Make sure to put <c>import random</c> first.</p>
+      <p>
+        The code below is supposed to <q>flip a coin</q> 100 times by making a random number that is
+        0 (heads) or 1 (tails) and keep track of the longest streak of heads that we see.
+        For each repetition, we need to make a random number, then check to see if it is a
+        <q>heads</q> (0).
+        Then we will updatethe <c>headsInARow</c> counter (like the sample from
+        <xref ref="csp-decisions-simulations_building-a-simulation" text="title"/> ) based on that
+        result by adding one or resetting it to 0.
+        If the <c>headsInARow</c> increased (but not if it was reset to 0), we will check and see if
+        it is bigger than <c>longestStreak</c>.
+        If so, we will update the <c>longestStreak</c> to match <c>headsInARow</c>.
+        After all 100 flips are done we will print out the <c>longestStreak</c>.
+      </p>
+
+      <p>
+        Move the correct blocks from the left to the right and indent them properly.
+        You will use all of the blocks.
+        Make sure to put <c>import random</c> first.
+      </p>
     </statement>
     <blocks>
       <block order="8">
@@ -91,19 +110,35 @@
       </block>
     </blocks>
   </exercise>
+
   <exercise label="cspdecisionssimulations_exercises3">
     <statement>
-      <p>Using the code below, write a program that simulates rolling a pair of six-sided dice (1-6) 10000 times and
-        counting up the number of times that an eight is rolled (the two dice add to 8).</p>
-      <p>Make sure to generate two separate numbers between 1-6 for each roll. Then add those two numbers up and if they
-        make eight, increment the <c>numEights</c> counter.</p>
-      <p>If you have trouble, try reducing the range to something like 10 or 20 rolls. For each roll, print out what
-        you rolled for each of the dice and the total they make.</p>
-      <p><term>Warning</term> There is no autograder for this problem. It is up to you to decide if your program is
-        working. For 10000 trials you should usually get an answer between 1300 and 1500. You may occasionally get a
-        result outside that range if you are really unlucky or really lucky.</p>
+      <p>
+        Using the code below, write a program that simulates rolling a pair of six-sided dice (1-6)
+        10000 times and counting up the number of times that an eight is rolled (the two dice add to
+        8).
+      </p>
 
+      <p>
+        Make sure to generate two separate numbers between 1-6 for each roll.
+        Then add those two numbers up and if they make eight, increment the <c>numEights</c>
+        counter.
+      </p>
+
+      <p>
+        If you have trouble, try reducing the range to something like 10 or 20 rolls.
+        For each roll, print out what you rolled for each of the dice and the total they make.
+      </p>
+
+      <p>
+        <term>Warning</term> There is no autograder for this problem.
+        It is up to you to decide if your program is working.
+        For 10000 trials you should usually get an answer between 1300 and 1500.
+        You may occasionally get a result outside that range if you are really unlucky or really
+        lucky.
+      </p>
     </statement>
+
     <program xml:id="cspdecisionssimulations_exercises3_editor" interactive="activecode" language="python">
       <code>
 import random
@@ -120,23 +155,37 @@ for roll in range(10000):
 
 # print number of eights rolled when loop is done
 print("Number of eights was", numEights)
-        </code>
+      </code>
     </program>
   </exercise>
 
   <exercise label="cspdecisionssimulations_exercises4">
     <statement>
-      <p>A friend of yours likes a game that involves rolling dice to create their characters.</p>
-      <p>Finish the program below to simulate rolling three dice (with sides 1-6) 6 different times and keeping track of
-        the highest total that you saw.</p>
-      <p>For example: Roll 1, 3, 5 - total is 9. The highest roll so far is now 9 Roll 4, 6, 3 - total is 13. The
-        highest roll so far is now 3 Roll 2, 1, 5 - total is 8. The highest roll so far is still 13 Roll 6, 5, 5 - total
-        is 16. The highest roll so far is now 16 Roll 3, 2, 5 - total is 10. The highest roll so far is still 16 Roll 4,
-        4, 3 - total is 11. The highest roll so far is still 16</p>
-      <p><term>Warning</term> There is no autograder for this problem. It is up to you to decide if your program is
-        working.</p>
+      <p>
+        A friend of yours likes a game that involves rolling dice to create their characters.
+      </p>
 
+      <p>
+        Finish the program below to simulate rolling three dice (with sides 1-6) 6 different times
+        and keeping track of the highest total that you saw.
+      </p>
+
+      <p>
+        For example: Roll 1, 3, 5 - total is 9.
+        The highest roll so far is now 9 Roll 4, 6, 3 - total is 13.
+        The highest roll so far is now 3 Roll 2, 1, 5 - total is 8.
+        The highest roll so far is still 13 Roll 6, 5, 5 - total is 16.
+        The highest roll so far is now 16 Roll 3, 2, 5 - total is 10.
+        The highest roll so far is still 16 Roll 4, 4, 3 - total is 11.
+        The highest roll so far is still 16
+      </p>
+
+      <p>
+        <term>Warning</term> There is no autograder for this problem.
+        It is up to you to decide if your program is working.
+      </p>
     </statement>
+
     <program xml:id="cspdecisionssimulations_exercises4_editor" interactive="activecode" language="python">
       <code>
 import random
@@ -152,20 +201,33 @@ for roll in range(6):
 
 # print the highest roll when done with loop
 print("highestRoll was", highestRoll)
-        </code>
+      </code>
     </program>
   </exercise>
 
   <exercise label="cspdecisionssimulations_exercises5">
     <statement>
-      <p>This program currently makes a pink dot that is 50 pixels across and is centered at 0, 0.</p>
-      <p>Modify the program so that the size of the dot is a random value between 50 and 200 and the location it draws
-        it is a random location where both x and y are random numbers between -100 and 100.</p>
-      <p>The automatic tests will make sure you generate appropriate values, but it won't necessarily verify you
-        used the random numbers you make in the correct spots. You are responsible for checking that yourself!</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        This program currently makes a pink dot that is 50 pixels across and is centered at 0, 0.
+      </p>
 
+      <p>
+        Modify the program so that the size of the dot is a random value between 50 and 200 and the
+        location it draws it is a random location where both x and y are random numbers between -100
+        and 100.
+      </p>
+
+      <p>
+        The automatic tests will make sure you generate appropriate values, but it won't necessarily
+        verify you used the random numbers you make in the correct spots.
+        You are responsible for checking that yourself!
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="cspdecisionssimulations_exercises5_editor" interactive="activecode" language="python">
       <code>
         from turtle import *
@@ -187,7 +249,6 @@ print("highestRoll was", highestRoll)
 
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -202,15 +263,30 @@ print("highestRoll was", highestRoll)
 
   <exercise label="cspdecisionssimulations_exercises6">
     <statement>
-      <p>Challenge.</p>
-      <p>Finish the function <c>getOddsFor</c>. It should determine the odds of rolling <c>targetNumber</c> when rolling two six-sided dice
-        (1-6). It should do so by using a loop to repeat <c>TRIALS</c> number of times rolling two dice and seeing how many
-        times <c>targetNumber</c> is the total of the two dice. Then return that number divided by <c>TRIALS</c>.</p>
-      <p>This is very similar to exercise 3 above<ellipsis/> Just make sure to check if the total you <q>roll</q> is
-        the same as the <c>targetNumber</c> as opposed to always checking against 8.</p>
-      <p>Make sure to <c>return</c> your answer from the function, don't print it in the function!</p>
+      <p>
+        Challenge.
+      </p>
 
+      <p>
+        Finish the function <c>getOddsFor</c>.
+        It should determine the odds of rolling <c>targetNumber</c> when rolling two six-sided dice
+        (1-6).
+        It should do so by using a loop to repeat <c>TRIALS</c> number of times rolling two dice and
+        seeing how many times <c>targetNumber</c> is the total of the two dice.
+        Then return that number divided by <c>TRIALS</c>.
+      </p>
+
+      <p>
+        This is very similar to exercise 3 above <ellipsis/> Just make sure to check if the total
+        you <q>roll</q> is the same as the <c>targetNumber</c> as opposed to always checking against
+        8.
+      </p>
+
+      <p>
+        Make sure to <c>return</c> your answer from the function, don't print it in the function!
+      </p>
     </statement>
+
     <program xml:id="cspdecisionssimulations_exercises6_editor" interactive="activecode" language="python">
       <code>
         import random
@@ -234,7 +310,6 @@ print("highestRoll was", highestRoll)
 
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -247,5 +322,4 @@ print("highestRoll was", highestRoll)
       </tests>
     </program>
   </exercise>
-
 </exercises>

@@ -1,131 +1,206 @@
 <section xml:id="logic-circuits_adding-numbers-with-logic">
   <title>Adding Numbers with Logic</title>
-  <p>To do mathematics, a computer needs to think of the problem as a set of Boolean outputs and inputs. For example, if
-    a computer is adding two 1-bit binary numbers, there are two inputs (each of the bits). The answer in binary can be
-    0, 1, or <m>10_2</m> (two) - it will thus take two bits to represent. The circuit below <q>adds</q> the two inputs
-    and produces either 00, 01, or 10 as appropriate:</p>
-      <interactive label="logic-circuits-adding-numbers-with-logic-interactive-1" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-1.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
-  <p>Notice that each output (the 2s column and the 1s column) functions independently. The 2s output answers the
-    logical question <q>Are both the inputs ON?</q> (AND gate) - if so, we should have indicated that the answer has a 2
-    in it. The 1s output answers the question <q>Is only one of the inputs ON?</q> (EOR gate - remember EOR is another
-    name for XOR) - if so, the binary answer has a 1. The answer to those logical questions produces the same result as
-    counting the number of inputs that are on and expressing the answer as a binary number!</p>
-  <p>The truth table for this circuit would have two output columns and look like the one shown below. Notice that there
-    are two ways to get an output 01 (the number 1) - either have the first input on and the second input off or vice
-    versa.</p>
+
+  <p>
+    To do mathematics, a computer needs to think of the problem as a set of Boolean outputs and
+    inputs.
+    For example, if a computer is adding two 1-bit binary numbers, there are two inputs (each of the
+    bits).
+    The answer in binary can be 0, 1, or <m>10_2</m> (two) - it will thus take two bits to
+    represent.
+    The circuit below <q>adds</q> the two inputs and produces either 00, 01, or 10 as appropriate:
+  </p>
+
+  <interactive label="logic-circuits-adding-numbers-with-logic-interactive-1" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-1.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
+  <p>
+    Notice that each output (the 2s column and the 1s column) functions independently.
+    The 2s output answers the logical question <q>Are both the inputs ON?</q> (AND gate) - if so, we
+    should have indicated that the answer has a 2 in it.
+    The 1s output answers the question <q>Is only one of the inputs ON?</q> (EOR gate - remember EOR
+    is another name for XOR) - if so, the binary answer has a 1.
+    The answer to those logical questions produces the same result as counting the number of inputs
+    that are on and expressing the answer as a binary number!
+  </p>
+
+  <p>
+    The truth table for this circuit would have two output columns and look like the one shown
+    below.
+    Notice that there are two ways to get an output 01 (the number 1) - either have the first input
+    on and the second input off or vice versa.
+  </p>
 
   <tabular halign="center">
-    <row header="yes"
-         bottom="minor">
-      <cell> Input 1 </cell>
-      <cell right="minor"> Input 2 </cell>
-      <cell> 2s Output </cell>
-      <cell> 1s Output </cell>
+    <row header="yes" bottom="minor">
+      <cell>Input 1</cell>
+      <cell right="minor">Input 2</cell>
+      <cell>2s Output</cell>
+      <cell>1s Output</cell>
     </row>
+
     <row>
-      <cell> 0 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-      <cell> 0 </cell>
+      <cell>0</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
+      <cell>0</cell>
     </row>
+
     <row>
-      <cell> 0 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
-      <cell> 1 </cell>
+      <cell>0</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
+      <cell>1</cell>
     </row>
+
     <row>
-      <cell> 1 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-      <cell> 1 </cell>
+      <cell>1</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
+      <cell>1</cell>
     </row>
+
     <row>
-      <cell> 1 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 1 </cell>
-      <cell> 0 </cell>
+      <cell>1</cell>
+      <cell right="minor">1</cell>
+      <cell>1</cell>
+      <cell>0</cell>
     </row>
   </tabular>
 
   <insight>
-    <p>Everything a computer does is in terms of answering logical questions. Doing math, modifying an image,
-      recognizing speech, playing music, etc<ellipsis/> all at some level are represented as logical questions the
-      computer can process using logic gates.</p>
+    <p>
+      Everything a computer does is in terms of answering logical questions.
+      Doing math, modifying an image, recognizing speech, playing music, etc <ellipsis/> all at some
+      level are represented as logical questions the computer can process using logic gates.
+    </p>
   </insight>
 
-  <p>The circuit shown above is known as a <term>half adder</term>. To add larger numbers, we need a <term>full adder</term>
-    - a full adder is two half adders merged with an OR gate. The circuit takes three inputs - two of the inputs are
-    current values being added (A and B); the third input indicates whether or not there is a carry coming in from the
-    previous column. The two outputs indicate the answers to the questions <q>Does this column have a 1 in the answer?</q>
-    and <q>Do we need to carry a 1 to the next column?</q>.</p>
-      <interactive label="logic-circuits-adding-numbers-with-logic-interactive-2" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-2.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
-  <p>To add large numbers, multiple full adders are chained together - one full adder is used for each binary digit in
-    the number. An abstracted view of adding two 3-digit binary numbers using three full adders is shown below.</p>
-  <p>Each full adder box is one of the circuits from above. It is responsible for adding the bits in one column of the
-    inputs - one adder handles A1 &amp; B1, another adder handles A2 &amp; B2, etc<ellipsis/> It inputs representing the
-    two digits in the numbers being added (A and B) as well as the carry from the previous adder(Cin). Each full outputs
-    two answers: <q>What is the sum in this column?</q> (the S output) and <q>Do we carry a 1 into the next column's
-    full adder?</q> (the Cout output).</p>
-  <p>Try adding 3 to 2 by setting the A inputs to 011 and the B inputs to 010. Does the result represent 5? Try other
-    numbers!</p>
-      <interactive label="logic-circuits-adding-numbers-with-logic-interactive-3" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-3.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
+  <p>
+    The circuit shown above is known as a <term>half adder</term>.
+    To add larger numbers, we need a <term>full adder</term>- a full adder is two half adders merged
+    with an OR gate.
+    The circuit takes three inputs - two of the inputs are current values being added (A and B); the
+    third input indicates whether or not there is a carry coming in from the previous column.
+    The two outputs indicate the answers to the questions
+    <q>Does this column have a 1 in the answer?</q> and
+    <q>Do we need to carry a 1 to the next column?</q>.
+  </p>
+
+  <interactive label="logic-circuits-adding-numbers-with-logic-interactive-2" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-2.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
+  <p>
+    To add large numbers, multiple full adders are chained together - one full adder is used for
+    each binary digit in the number.
+    An abstracted view of adding two 3-digit binary numbers using three full adders is shown below.
+  </p>
+
+  <p>
+    Each full adder box is one of the circuits from above.
+    It is responsible for adding the bits in one column of the inputs - one adder handles A1 &amp;
+    B1, another adder handles A2 &amp; B2, etc <ellipsis/> It inputs representing the two digits in
+    the numbers being added (A and B) as well as the carry from the previous adder(Cin).
+    Each full outputs two answers: <q>What is the sum in this column?</q> (the S output) and
+    <q>Do we carry a 1 into the next column's
+    full adder?</q> (the Cout output).
+  </p>
+
+  <p>
+    Try adding 3 to 2 by setting the A inputs to 011 and the B inputs to 010.
+    Does the result represent 5?
+    Try other numbers!
+  </p>
+
+  <interactive label="logic-circuits-adding-numbers-with-logic-interactive-3" iframe="LogicCircuits/logic-circuits-adding-numbers-with-logic-interactive-3.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
   <exercise label="logic-circuits_adding-numbers-with-logic-ex1">
     <statement>
-      <p>What two-bit result does a half adder produce when both inputs are 1?</p>
+      <p>
+        What two-bit result does a half adder produce when both inputs are 1?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>00</p>
+          <p>
+            00
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>01</p>
+          <p>
+            01
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>10</p>
+          <p>
+            10
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>11</p>
+          <p>
+            11
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_adding-numbers-with-logic-ex2">
     <statement>
-      <p>A full adder has inputs A = 1, B = 1, and Carry In = 1. What are its Carry Out and Sum outputs, in that order?</p>
+      <p>
+        A full adder has inputs A = 1, B = 1, and Carry In = 1.
+        What are its Carry Out and Sum outputs, in that order?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>0, 0</p>
+          <p>
+            0, 0
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>0, 1</p>
+          <p>
+            0, 1
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>1, 0</p>
+          <p>
+            1, 0
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>1, 1</p>
+          <p>
+            1, 1
+          </p>
         </statement>
       </choice>
     </choices>

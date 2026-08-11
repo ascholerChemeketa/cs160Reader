@@ -1,11 +1,15 @@
 <section xml:id="csp-repeat-images_a-library-of-image">
   <title>A Library of Images</title>
 
-  <p>The images we work with in this book must be built into the webpage - you can't use an image from your own
-    computer. Below are some images that are built into the web pages in this chapter.</p>
+  <p>
+    The images we work with in this book must be built into the webpage - you can't use an image
+    from your own computer.
+    Below are some images that are built into the web pages in this chapter.
+  </p>
 
   <figure xml:id="csp-image-library">
     <title>Image Library</title>
+
     <caption>Images available in this book</caption>
     <sbsgroup>
       <sidebyside width="30%">
@@ -15,12 +19,14 @@
             <shortdescription>Mount Hood landscape used as a sample image.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>graduates.jpg</caption>
           <image source="CSP/Images/graduates.jpg">
             <shortdescription>Graduates in caps and gowns used as a sample image.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>goalkeeper.jpg</caption>
           <image source="CSP/Images/goalkeeper.jpg">
@@ -28,6 +34,7 @@
           </image>
         </figure>
       </sidebyside>
+
       <sidebyside width="30%">
         <figure>
           <caption>green_screen.jpg</caption>
@@ -35,12 +42,14 @@
             <shortdescription>Green screen backdrop used for image compositing.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>cat.jpg</caption>
           <image source="CSP/Images/cat.jpg">
             <shortdescription>Cat used as a sample image.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>student1.jpg</caption>
           <image source="CSP/Images/student1.jpg">
@@ -48,6 +57,7 @@
           </image>
         </figure>
       </sidebyside>
+
       <sidebyside width="30%">
         <figure>
           <caption>student2.jpg</caption>
@@ -55,12 +65,14 @@
             <shortdescription>Second student portrait sample image.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>scooter.jpg</caption>
           <image source="CSP/Images/scooter.jpg">
             <shortdescription>Person riding a scooter used as a sample image.</shortdescription>
           </image>
         </figure>
+
         <figure>
           <caption>logo.jpg</caption>
           <image source="CSP/Images/logo.jpg">
@@ -71,9 +83,12 @@
     </sbsgroup>
   </figure>
 
-  <p>To use a particular image, change the line of code that creates an image object so that it specifies the desired
-    image name in quotes. Like <c>img = Image("student1.jpg")</c> to use <c>student1.jpg</c>. Try out one or more of these images by changing line 4 in the
-    program below.</p>
+  <p>
+    To use a particular image, change the line of code that creates an image object so that it
+    specifies the desired image name in quotes.
+    Like <c>img = Image("student1.jpg")</c> to use <c>student1.jpg</c>.
+    Try out one or more of these images by changing line 4 in the program below.
+  </p>
 
   <program xml:id="csprepeatimages_library-of-images1" interactive="activecode" language="python">
     <code>
@@ -86,15 +101,17 @@
     win = ImageWin(img.getWidth(), img.getHeight())
     img.draw(win)
     img.setDelay(1, 400)   #SPEEDS UP THE DRAWING
-      </code>
+    </code>
   </program>
 
   <note>
-    <p>It is also possible to use an image that is on another web page if you know its full address. Doing this would
-      look like:</p>
+    <p>
+      It is also possible to use an image that is on another web page if you know its full address.
+      Doing this would look like:
+    </p>
+
     <program>
       <code>img = Image("https://shorturl.at/dNUX7")</code>
     </program>
   </note>
-
-</section> 
+</section>

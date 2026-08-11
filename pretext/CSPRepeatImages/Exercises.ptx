@@ -3,11 +3,18 @@
 
   <exercise label="csprepeatimages_exercises1">
     <statement>
-      <p>Fix the indention below to correctly set the red to the green, the green to the blue, and the blue to the red.</p>
-      <p>Hint: If your program runs out of time while it is running, it is probably because you are redrawing the window
-        as you change each pixel. You should only draw the window one time!</p>
+      <p>
+        Fix the indention below to correctly set the red to the green, the green to the blue, and
+        the blue to the red.
+      </p>
 
+      <p>
+        Hint: If your program runs out of time while it is running, it is probably because you are
+        redrawing the window as you change each pixel.
+        You should only draw the window one time!
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises1_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -54,9 +61,12 @@
 
   <exercise label="csprepeatimages_exercises2">
     <statement>
-      <p>Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to 0.</p>
-
+      <p>
+        Fix 4 syntax errors in the code below so that it correctly sets the green in all pixels to
+        0.
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises2_editor" interactive="activecode" language="python">
       <code>
         from image import
@@ -86,16 +96,18 @@
                 self.assertEqual(testPixel.getGreen(), 0, "Testing you set right green value for a particular pixel")
 
         myTests().main()
-        </tests>
+      </tests>
     </program>
   </exercise>
 
   <exercise label="csprepeatimages_exercises3">
     <statement>
-      <p>Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel ends up 1/2 of what
-        it used to be.</p>
-
+      <p>
+        Fill in the missing code on lines 9, 12, and 18 below so that the blue value of each pixel
+        ends up 1/2 of what it used to be.
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises3_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -135,11 +147,13 @@
 
   <exercise label="csprepeatimages_exercises4">
     <statement>
-      <p>This program should make a black-and-white image by setting the 
-        red and green values for each pixel to be the same as
-        the pixel<rsq/>s blue value. Write the missing code:</p>
-
+      <p>
+        This program should make a black-and-white image by setting the red and green values for
+        each pixel to be the same as the pixel <rsq/> s blue value.
+        Write the missing code:
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises4_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -182,8 +196,12 @@
 
   <exercise label="csprepeatimages_exercises5">
     <statement>
-      <p>Write code to set the red value of each pixel to 255. This should give the entire image a rosy tint.</p>
+      <p>
+        Write code to set the red value of each pixel to 255.
+        This should give the entire image a rosy tint.
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises5_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -222,11 +240,16 @@
     </program>
   </exercise>
 
-
   <exercise label="csprepeatimages_exercises6">
     <statement>
-      <p>Write code to multiply the r, g, and b color of each pixel by 0.8. In other words, for each color channel (r, g, b), get its current value, multiply that by 0.8, and use the answer as the new value for the color. This should make the image darker.</p>
+      <p>
+        Write code to multiply the r, g, and b color of each pixel by 0.8.
+        In other words, for each color channel (r, g, b), get its current value, multiply that by
+        0.8, and use the answer as the new value for the color.
+        This should make the image darker.
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises6_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -265,11 +288,14 @@
       </tests>
     </program>
   </exercise>
-  
+
   <exercise label="csprepeatimages_exercises7">
     <statement>
-      <p>Write code that for each pixel, adds the <c>y</c> value of its location to its red color.</p>
+      <p>
+        Write code that for each pixel, adds the <c>y</c> value of its location to its red color.
+      </p>
     </statement>
+
     <program xml:id="csprepeatimages_exercises7_editor" interactive="activecode" language="python">
       <code>
         # STEP 1: USE THE IMAGE LIBRARY
@@ -307,6 +333,4 @@
       </tests>
     </program>
   </exercise>
-
-  
 </exercises>

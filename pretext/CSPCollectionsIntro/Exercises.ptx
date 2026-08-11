@@ -1,11 +1,19 @@
 <exercises xml:id="csp-collections-intro_chapter-exercises">
   <title>Chapter Exercises</title>
+
   <exercise label="cspcollectionsintro_exercises1" indentation="hide" language="python">
     <statement>
-      <p>The following program segment should iterate through the list <c>terms</c> and then add each item to the list <c>vocab</c>
-        if it is not already in <c>vocab</c>. If the word is already in <c>vocab</c>, then the program should add 1 to the
-        variable <c>duplicates</c>.</p>
-      <p>Arrange and indent the blocks correctly. You will not use them all.</p>
+      <p>
+        The following program segment should iterate through the list <c>terms</c> and then add each
+        item to the list <c>vocab</c> if it is not already in <c>vocab</c>.
+        If the word is already in <c>vocab</c>, then the program should add 1 to the variable
+        <c>duplicates</c>.
+      </p>
+
+      <p>
+        Arrange and indent the blocks correctly.
+        You will not use them all.
+      </p>
     </statement>
     <blocks>
       <block order="7">
@@ -41,12 +49,15 @@
       </block>
     </blocks>
   </exercise>
+
   <exercise label="cspcollectionsintro_exercises2">
     <statement>
-      <p>Write code to change the first item to <q>February</q>, to add <q>April</q> between
-        <q>March</q> and <q>May</q>, and to remove <q>August</q>.</p>
-
+      <p>
+        Write code to change the first item to <q>February</q>, to add <q>April</q> between
+        <q>March</q> and <q>May</q>, and to remove <q>August</q>.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionsintro_exercises2_editor" interactive="activecode" language="python">
       <code>
         months = ["asdf", "March", "May", "June", "August"] #do not change
@@ -56,7 +67,6 @@
         print(months)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -72,15 +82,28 @@
 
   <exercise label="cspcollectionsintro_exercises3">
     <statement>
-      <p>Write code for the function <c>getRange</c>. It should take a list of numbers and return the range (the maximum value
-        minus the minimum value). If we have the list [10, 8, 13, 20, 15], the range would be calculated as 20 - 8 and
-        would be 12.</p>
-      <p><em>Hint</em>: You have seen recipes for <q>find highest</q> and <q>find lowest</q>. You can either use both 
-      or combine them into one loop.</p>
-      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
-      <p>Use codelens and print statements for debugging!</p>
+      <p>
+        Write code for the function <c>getRange</c>.
+        It should take a list of numbers and return the range (the maximum value minus the minimum
+        value).
+        If we have the list [10, 8, 13, 20, 15], the range would be calculated as 20 - 8 and would
+        be 12.
+      </p>
 
+      <p>
+        <em>Hint</em>: You have seen recipes for <q>find highest</q> and <q>find lowest</q>.
+        You can either use both or combine them into one loop.
+      </p>
+
+      <p>
+        Feel free to comment out some of the tests or add your own while you work on your code.
+      </p>
+
+      <p>
+        Use codelens and print statements for debugging!
+      </p>
     </statement>
+
     <program xml:id="cspcollectionsintro_exercises3_editor" interactive="activecode" language="python">
       <code>
         def getRange(numbers):
@@ -97,7 +120,6 @@
         print( "Should be 2:", getRange([-2, -1, -2, -3]) )
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -113,13 +135,23 @@
 
   <exercise label="cspcollectionsintro_exercises4">
     <statement>
-      <p>Write code for the function <c>freezeDays</c>. It should take a list of temperatures <c>temps</c> (in degrees F) and return
-        the number of days that were below 32 degrees.</p>
-      <p>Hint: You may want to start by printing out each temperature and a <q>freeze</q> or <q>no</q>
-        message to make sure you can identify the right temperatures. Then worry about counting how many there were.</p>
-      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
+      <p>
+        Write code for the function <c>freezeDays</c>.
+        It should take a list of temperatures <c>temps</c> (in degrees F) and return the number of
+        days that were below 32 degrees.
+      </p>
 
+      <p>
+        Hint: You may want to start by printing out each temperature and a <q>freeze</q> or
+        <q>no</q> message to make sure you can identify the right temperatures.
+        Then worry about counting how many there were.
+      </p>
+
+      <p>
+        Feel free to comment out some of the tests or add your own while you work on your code.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionsintro_exercises4_editor" interactive="activecode" language="python">
       <code>
         def freezeDays(temps):
@@ -130,7 +162,6 @@
         print( "Should be 2:", freezeDays([18, 50, 72, 31, 60]) )
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -145,16 +176,29 @@
 
   <exercise label="cspcollectionsintro_exercises5">
     <statement>
-      <p>Write code for the function <c>getGPA</c>. It should figure out the GPA for a list of <c>grades</c> that looks like
-        [<q>A</q>, <q>A</q>, <q>C</q>].</p>
-      <p>To calculate the GPA, you need to add up the point value of all the grades. An A is 4, a B is 3, a C is 2, a D is 1,
-        and an F is 0. Then divide by the number of grades in the list.</p>
-      <p>Hint: First write some if logic that just prints the correct value for
-        each grade (4, 4, 2 for [<q>A</q>, <q>A</q>, <q>C</q>]). Then worry about getting the total
-        of them.</p>
-      <p>Feel free to comment out some of the tests or add your own while you work on your code.</p>
+      <p>
+        Write code for the function <c>getGPA</c>.
+        It should figure out the GPA for a list of <c>grades</c> that looks like [ <q>A</q>,
+        <q>A</q>, <q>C</q> ].
+      </p>
 
+      <p>
+        To calculate the GPA, you need to add up the point value of all the grades.
+        An A is 4, a B is 3, a C is 2, a D is 1, and an F is 0.
+        Then divide by the number of grades in the list.
+      </p>
+
+      <p>
+        Hint: First write some if logic that just prints the correct value for each grade (4, 4, 2
+        for [ <q>A</q>, <q>A</q>, <q>C</q> ]).
+        Then worry about getting the total of them.
+      </p>
+
+      <p>
+        Feel free to comment out some of the tests or add your own while you work on your code.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionsintro_exercises5_editor" interactive="activecode" language="python">
       <code>
         def getGPA(grades):
@@ -171,7 +215,6 @@
         print( "Should be 2.00:", getGPA(["F", "D", "C", "B", "A"]) )
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -184,5 +227,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>

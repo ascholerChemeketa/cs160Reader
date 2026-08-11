@@ -1,8 +1,15 @@
 <section xml:id="csp-decisions-simulations_using-random-numbers">
   <title>Using Random Numbers</title>
-  <p>If we want to simulate something like flipping a coin, we can assign a different number to each possible outcome.
-    There are two sides to a coin - <em>heads</em> and <em>tails</em> - so let's call heads <em>0</em> and tails <em>
-    1</em>. If we make a random integer between 0 and 1, we can think of it as representing heads or tails on the coin:</p>
+
+  <p>
+    If we want to simulate something like flipping a coin, we can assign a different number to each
+    possible outcome.
+    There are two sides to a coin - <em>heads</em> and <em>tails</em>- so let's call heads
+    <em>0</em> and tails <em>
+    1</em>.
+    If we make a random integer between 0 and 1, we can think of it as representing heads or tails
+    on the coin:
+  </p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
     <code>
@@ -13,11 +20,15 @@ if flip == 0:
     print("heads")
 else:
     print("tails")
-        </code>
+    </code>
   </program>
-  <p>By using the accumulator pattern and a loop, we could repeat a series of flips. Let's do 100 flips and count
-    up how many heads (0s) we get. Each time through the loop, we will pick a new random number. We will only add to our
-    accumulator <c>numHeads</c> if the random value is 0.</p>
+
+  <p>
+    By using the accumulator pattern and a loop, we could repeat a series of flips.
+    Let's do 100 flips and count up how many heads (0s) we get.
+    Each time through the loop, we will pick a new random number.
+    We will only add to our accumulator <c>numHeads</c> if the random value is 0.
+  </p>
 
   <program xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">
     <code>
@@ -32,50 +43,86 @@ for i in range(100):
         #print("Heads! We now have", numHeads)      # commented out testing code
 
 print("We got", numHeads, "heads.")
-        </code>
+    </code>
   </program>
-  <p>Try running the program a few times. You usually won't get exactly 50, but it will usually be pretty close to
-    that number since we flip 100 coins. Determining if this program is working correctly is a bit of a challenge - it
-    would take too long to use Codelens to watch the whole execution. To sanity check it, try the following:</p>
+
+  <p>
+    Try running the program a few times.
+    You usually won't get exactly 50, but it will usually be pretty close to that number since we
+    flip 100 coins.
+    Determining if this program is working correctly is a bit of a challenge - it would take too
+    long to use Codelens to watch the whole execution.
+    To sanity check it, try the following:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>Change the number of iterations of the loop from 100 to 10. That will be a lot easier to deal with.</p>
+        <p>
+          Change the number of iterations of the loop from 100 to 10.
+          That will be a lot easier to deal with.
+        </p>
       </li>
+
       <li>
-        <p>Uncomment the two print lines that are commented out. The first will print each of the flips. The second will
-          print each one that was determined to be a <em>head</em> and how many we have seen so far.</p>
+        <p>
+          Uncomment the two print lines that are commented out.
+          The first will print each of the flips.
+          The second will print each one that was determined to be a <em>head</em> and how many we
+          have seen so far.
+        </p>
       </li>
+
       <li>
-        <p>Now you can verify that:</p>
+        <p>
+          Now you can verify that:
+        </p>
+
         <p>
           <ul>
             <li>
-              <p>We generate 10 0's and 1's</p>
+              <p>
+                We generate 10 0's and 1's
+              </p>
             </li>
+
             <li>
-              <p>We call each 0 a <q>head</q></p>
+              <p>
+                We call each 0 a <q>head</q>
+              </p>
             </li>
+
             <li>
-              <p>The <c>numHeads</c> count goes up by 1 each time</p>
+              <p>
+                The <c>numHeads</c> count goes up by 1 each time
+              </p>
             </li>
           </ul>
         </p>
       </li>
     </ul>
   </p>
+
   <note>
-    <p>Remember that while debugging we should simplify things as much as possible and use print statements to
-      <q>see</q> what is happening as our code runs.</p>
+    <p>
+      Remember that while debugging we should simplify things as much as possible and use print
+      statements to <q>see</q> what is happening as our code runs.
+    </p>
   </note>
+
   <p>
     <term>Mixed up programs</term>
   </p>
+
   <exercise label="cspdecisionssimulations_usingrandom1" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program should roll 10 dice (that have sides from 1-6). We want to count print the number of dice
-        that show a 6. Drag the blocks from the left and place them in the correct order on the right. Be sure to also
-        indent correctly! You will not use all of the blocks.</p>
+      <p>
+        The following program should roll 10 dice (that have sides from 1-6).
+        We want to count print the number of dice that show a 6.
+        Drag the blocks from the left and place them in the correct order on the right.
+        Be sure to also indent correctly!
+        You will not use all of the blocks.
+      </p>
     </statement>
     <blocks>
       <block order="1">
@@ -90,6 +137,7 @@ print("We got", numHeads, "heads.")
           <cline> # pick a number from 1-6</cline>
           <cline> die = random.randrange(1, 7)</cline>
         </choice>
+
         <choice>
           <cline> # pick a number from 1-6 </cline>
           <cline> die = random.randrange(1, 6)</cline>
@@ -102,6 +150,7 @@ print("We got", numHeads, "heads.")
         <choice correct="yes">
           <cline>  numSixes = numSixes + 1</cline>
         </choice>
+
         <choice>
           <cline>  numSixes + 1 </cline>
         </choice>

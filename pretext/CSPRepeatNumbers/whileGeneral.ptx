@@ -1,15 +1,30 @@
 <section xml:id="csp-repeat-numbers_while-loops-while-vs-until">
   <title>While Loops - While vs Until</title>
-  <p>While loops are most useful when we don't have a set list of items to repeat over or any time we can more
-    easily describe <em><q>here is the sign we should stop</q></em> rather than <em><q>here are all the
-    values we need to do this for</q></em>. We saw one example of that in the program that asked for user input. But
-    there are many other situations in which a <c>while</c> is the easiest way to make a loop.</p>
-  <p>Say we want to convert a decimal number to binary using the division method. The <xref
-      ref="data-representation_binary-to-decimal-2" text="custom">divide by two method</xref> says that we need to keep dividing by
-    2 <term>until</term> the quotient is 0. That is a description of when to stop, which means a while loop is what we
-    will use to write the algorithm. However, when we write a while loop, we need to describe the conditions required to <em><q>keep
-    doing the loop</q></em>. If we want to <em><q>stop when the quotient is 0</q></em> that is the same as <em><q>keep
-    going while the quotient is NOT 0.</q></em> Try running this version of the algorithm in codelens mode:</p>
+
+  <p>
+    While loops are most useful when we don't have a set list of items to repeat over or any time we
+    can more easily describe <em><q>here is the sign we should stop</q></em> rather than
+    <em><q>here are all the
+    values we need to do this for</q></em>.
+    We saw one example of that in the program that asked for user input.
+    But there are many other situations in which a <c>while</c> is the easiest way to make a loop.
+  </p>
+
+  <p>
+    Say we want to convert a decimal number to binary using the division method.
+    The
+    <xref ref="data-representation_binary-to-decimal-2" text="custom">divide by two method</xref>
+    says that we need to keep dividing by 2 <term>until</term> the quotient is 0.
+    That is a description of when to stop, which means a while loop is what we will use to write the
+    algorithm.
+    However, when we write a while loop, we need to describe the conditions required to
+    <em><q>keep
+    doing the loop</q></em>.
+    If we want to <em><q>stop when the quotient is 0</q></em> that is the same as
+    <em><q>keep
+    going while the quotient is NOT 0.</q></em> Try running this version of the
+    algorithm in codelens mode:
+  </p>
 
   <program xml:id="csprepeatnumbers_whilegeneral1" interactive="activecode" language="python">
     <code>
@@ -28,70 +43,107 @@ while number != 0:
     number = number // 2
 
 print(binary)
-        </code>
+    </code>
   </program>
+
   <warning>
-    <p>The condition for a while loop always describes a test that tells us to keep going - <em><q>Keep doing this
-      while</q></em>. A common mistake is to write <term>until</term> logic - a test that says when to stop.</p>
-    <p>If the natural way to say what you want involved <term>until</term>, like <q>Keep going until the user enters
-      0</q>, turn it into <term>while</term> by reversing it - <q>Keep going while the user has NOT entered
-      0</q>.</p>
+    <p>
+      The condition for a while loop always describes a test that tells us to keep going -
+      <em><q>Keep doing this
+      while</q></em>.
+      A common mistake is to write <term>until</term> logic - a test that says when to stop.
+    </p>
+
+    <p>
+      If the natural way to say what you want involved <term>until</term>, like
+      <q>Keep going until the user enters
+      0</q>, turn it into <term>while</term> by reversing
+      it - <q>Keep going while the user has NOT entered
+      0</q>.
+    </p>
   </warning>
 
   <exercise label="csprepeatnumbers_whilegeneral2">
     <statement>
-
-      <p>We have a program that is going to keep adding interest to a bank account until the <c>balance</c> reaches $10,000 or
-        more. Which would be the correct logic to complete <c>while ___________:</c>?</p>
-
+      <p>
+        We have a program that is going to keep adding interest to a bank account until the
+        <c>balance</c> reaches $10,000 or more.
+        Which would be the correct logic to complete <c>while ___________:</c>?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>while balance &gt;= 10000</p>
+          <p>
+            while balance &gt;= 10000
+          </p>
         </statement>
+
         <feedback>
-          <p>That is the "until" logic - the situation to stop in. We want the condition under which to continue.</p>
+          <p>
+            That is the "until" logic - the situation to stop in.
+            We want the condition under which to continue.
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>while balance &lt; 10000</p>
+          <p>
+            while balance &lt; 10000
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct. The sign to keep going is that the balance is less than 10000</p>
+          <p>
+            Correct.
+            The sign to keep going is that the balance is less than 10000
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>while balance == 10000</p>
+          <p>
+            while balance == 10000
+          </p>
         </statement>
+
         <feedback>
-          <p>We need to write the logic that describes when to continue looping. That would only loop if we already had
-            10000.</p>
+          <p>
+            We need to write the logic that describes when to continue looping.
+            That would only loop if we already had 10000.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>while balance != 10000</p>
+          <p>
+            while balance != 10000
+          </p>
         </statement>
+
         <feedback>
-          <p>That is close. We need to loop until we hit 10000. But if we do not hit 10000 exactly, that loop would not
-            stop.</p>
+          <p>
+            That is close.
+            We need to loop until we hit 10000.
+            But if we do not hit 10000 exactly, that loop would not stop.
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>Thus a while loop allows us to write a program to use Newton's method to calculate a square root and say
-    <q>keep repeating the formula until the answer stays the same</q>. This will produce the most accurate answer
-    we can produce, without having to worry in advance about how many repetitions we should ask for. Try running this
-    program and changing <c>number</c> to smaller and larger values. Notice how the number of repetitions is different for
-    different numbers.</p>
+
+  <p>
+    Thus a while loop allows us to write a program to use Newton's method to calculate a square root
+    and say <q>keep repeating the formula until the answer stays the same</q>.
+    This will produce the most accurate answer we can produce, without having to worry in advance
+    about how many repetitions we should ask for.
+    Try running this program and changing <c>number</c> to smaller and larger values.
+    Notice how the number of repetitions is different for different numbers.
+  </p>
 
   <program xml:id="csprepeatnumbers_whilegeneral3" interactive="activecode" language="python">
     <code>
@@ -103,7 +155,6 @@ while guess != last_guess:  # != means "not eqaul to"
     #Now calculate a new guess
     guess = 1/2 * ((number / guess) + guess)
     print("New guess is:", guess)
-        </code>
+    </code>
   </program>
 </section>
-

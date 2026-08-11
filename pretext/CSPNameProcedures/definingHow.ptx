@@ -1,50 +1,79 @@
-<section
-  xml:id="csp-name-procedures_defining-procedures-how">
+<section xml:id="csp-name-procedures_defining-procedures-how">
   <title>Defining Procedures - How</title>
 
-  <p>How does Python know what to do when we call functions like <c>abs</c> or
-    procedures like <c>alex.forward(50)</c>? Someone had to <term>define</term> them. <term>Defining</term> a new procedure or
-    function associates a name with a sequence of steps.</p>
-  <p>In Python, we define a new procedure or function with the keyword <c>def</c>. To use def, we also need to specify: a
-    name for the procedure, a list of its inputs, and the instructions the procedure will perform in this format:</p>
+  <p>
+    How does Python know what to do when we call functions like <c>abs</c> or procedures like
+    <c>alex.forward(50)</c>?
+    Someone had to <term>define</term> them.
+    <term>Defining</term> a new procedure or function associates a name with a sequence of steps.
+  </p>
+
+  <p>
+    In Python, we define a new procedure or function with the keyword <c>def</c>.
+    To use def, we also need to specify: a name for the procedure, a list of its inputs, and the
+    instructions the procedure will perform in this format:
+  </p>
+
   <program language="python">
     <code>
 def ProcedureName(Input1, Input2, Input3, ...):
     Instruction1
     Instruction2
     ...
-</code>
+    </code>
   </program>
 
-  <p>Key things to pay attention to:</p>
+  <p>
+    Key things to pay attention to:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>The procedure name should obey the same rules as other names. Both syntax rules (no spaces or odd characters)
-          and style conventions (camelCase or snake_case). Like other names, it should be meaningful - it should
-          describe what task it performs.</p>
+        <p>
+          The procedure name should obey the same rules as other names.
+          Both syntax rules (no spaces or odd characters) and style conventions (camelCase or
+          snake_case).
+          Like other names, it should be meaningful - it should describe what task it performs.
+        </p>
       </li>
+
       <li>
-        <p>The inputs (called parameters) are always inside ()</p>
+        <p>
+          The inputs (called parameters) are always inside ()
+        </p>
       </li>
+
       <li>
-        <p>There may be multiple inputs - if there are, they are separated by commas. There may also be just one input
-          or even no inputs.</p>
+        <p>
+          There may be multiple inputs - if there are, they are separated by commas.
+          There may also be just one input or even no inputs.
+        </p>
       </li>
+
       <li>
-        <p>There is a : after the input list.</p>
+        <p>
+          There is a : after the input list.
+        </p>
       </li>
+
       <li>
-        <p>The instructions that are part of the procedure or function are indented. These instructions are known as the
-          function's <term>body</term>.</p>
+        <p>
+          The instructions that are part of the procedure or function are indented.
+          These instructions are known as the function's <term>body</term>.
+        </p>
       </li>
     </ul>
   </p>
-  <p>Here is a definition for the <c>square</c> procedure we tried to use on the last page. The square procedure takes one
-    input (called <c>turtleName</c>). It has 8 instructions in its body. Try running this code sample and then keep reading:</p>
 
-  <program xml:id="cspnameprocedures_defininghow1"
-    interactive="activecode" language="python">
+  <p>
+    Here is a definition for the <c>square</c> procedure we tried to use on the last page.
+    The square procedure takes one input (called <c>turtleName</c> ).
+    It has 8 instructions in its body.
+    Try running this code sample and then keep reading:
+  </p>
+
+  <program xml:id="cspnameprocedures_defininghow1" interactive="activecode" language="python">
     <code>
 def square(turtleName):
     turtleName.forward(100)
@@ -55,24 +84,36 @@ def square(turtleName):
     turtleName.right(90)
     turtleName.forward(100)
     turtleName.right(90)
-        </code>
+    </code>
   </program>
-  <p>Why didn't the <em>Run</em> button do anything? It is because the program
-    defined the procedure <c>square</c>, but it never actually told Python to do the
-    square procedure!</p>
+
+  <p>
+    Why didn't the <em>Run</em> button do anything?
+    It is because the program defined the procedure <c>square</c>, but it never actually told Python
+    to do the square procedure!
+  </p>
+
   <warning>
-    <p>Defining a procedure or function tells Python <term>HOW</term> to do a particular job. It does NOT
-      tell Python to do the job. To <term> do</term> the procedure or function, we must <term>call</term> it.</p>
+    <p>
+      Defining a procedure or function tells Python <term>HOW</term> to do a particular job.
+      It does NOT tell Python to do the job.
+      To <term> do</term> the procedure or function, we must <term>call</term> it.
+    </p>
   </warning>
 
-  <p>We <term>call</term> a procedure by using its name and then giving it the right number of
-    inputs. Our <c>square</c> function requires one input - the name of the turtle that should make a square - so when we call <c>sqaure</c>
-    we must provide the name of a turtle.</p>
-  <p>This code sample defines our function, creates a turtle, and then calls the square function and gives it our turtle
-    as input:</p>
+  <p>
+    We <term>call</term> a procedure by using its name and then giving it the right number of
+    inputs.
+    Our <c>square</c> function requires one input - the name of the turtle that should make a square
+    - so when we call <c>sqaure</c> we must provide the name of a turtle.
+  </p>
 
-  <program xml:id="cspnameprocedures_defininghow2"
-    interactive="activecode" language="python">
+  <p>
+    This code sample defines our function, creates a turtle, and then calls the square function and
+    gives it our turtle as input:
+  </p>
+
+  <program xml:id="cspnameprocedures_defininghow2" interactive="activecode" language="python">
     <code>
 # define HOW to do a square
 def square(turtleName):
@@ -89,56 +130,76 @@ def square(turtleName):
 from turtle import *
 malik = Turtle()
 square(malik)           # call the square procedure, use malik as the input
-        </code>
+    </code>
   </program>
 
   <exercise label="cspnameprocedures_defininghow3">
     <statement>
-
-      <p>Given the definition of the <c>square</c> function above, which is the correct way to make a square using a turtle <c>lilly</c>
-        ?</p>
-
+      <p>
+        Given the definition of the <c>square</c> function above, which is the correct way to make a
+        square using a turtle <c>lilly</c>?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice correct="yes">
         <statement>
-          <p>square(lilly)</p>
+          <p>
+            square(lilly)
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct.</p>
+          <p>
+            Correct.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>lilly.square(turtleName)</p>
+          <p>
+            lilly.square(turtleName)
+          </p>
         </statement>
+
         <feedback>
-          <p>Square is a standalone function. We do not call it using dot notation.</p>
+          <p>
+            Square is a standalone function.
+            We do not call it using dot notation.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>lilly.square()</p>
+          <p>
+            lilly.square()
+          </p>
         </statement>
+
         <feedback>
-          <p>Square is a standalone function. We do not call it using dot notation.</p>
+          <p>
+            Square is a standalone function.
+            We do not call it using dot notation.
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>square(turtleName)</p>
+          <p>
+            square(turtleName)
+          </p>
         </statement>
+
         <feedback>
-          <p>When we call this function, we need to give it a particular turtle as its input. lilly is the name of the
-            turtle we want to use.</p>
+          <p>
+            When we call this function, we need to give it a particular turtle as its input.
+            lilly is the name of the turtle we want to use.
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 </section>
-

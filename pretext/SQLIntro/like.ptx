@@ -1,18 +1,36 @@
 <section xml:id="sql-intro_filtering-with-like">
   <title>Filtering with Like</title>
-  <p>If the data that we are trying to filter is strings of text, we may need to search inside the strings. Perhaps we
-    are looking for all names that start with <q>Janice</q>, or all class descriptions that include the word
-    <q>Chemistry</q> anywhere in the title. To match part of a string using <c>WHERE</c>, we can't rely on <c>==</c>.
-    If we ask for <c>WHERE name == 'Janice'</c>, we will only get names that perfectly match 'Janice' - which would not include
-    'Janice Jones'.</p>
 
-  <p>The <c>LIKE</c> comparison allows us to specify strings using <term>wildcards</term>. <term>Wildcards</term> are
-    symbols that can match anything. In SQL <c>LIKE</c> comparisons, <c>%</c> is a wildcard that means <q>any text can go
-    here</q>. So <c>'Janice%''</c> says <q>Look for strings that start with Janice, and then have anything after that
-    (including nothing else)</q>. While <c>'%Janice'</c> says <q>look for strings that end in Janice and may have anything
-    before that</q>. If we want to allow for extra text to be on either side of 'Janice', we would use <c>%</c>
-    on both sides - <c>'%Janice%'</c></p>
-  <p>This sample pulls from the <c>bikeshare_stations</c> table to search for all station names that include 'F St':</p>
+  <p>
+    If the data that we are trying to filter is strings of text, we may need to search inside the
+    strings.
+    Perhaps we are looking for all names that start with <q>Janice</q>, or all class descriptions
+    that include the word <q>Chemistry</q> anywhere in the title.
+    To match part of a string using <c>WHERE</c>, we can't rely on <c>==</c>.
+    If we ask for <c>WHERE name == 'Janice'</c>, we will only get names that perfectly match
+    'Janice' - which would not include 'Janice Jones'.
+  </p>
+
+  <p>
+    The <c>LIKE</c> comparison allows us to specify strings using <term>wildcards</term>.
+    <term>Wildcards</term> are symbols that can match anything.
+    In SQL <c>LIKE</c> comparisons, <c>%</c> is a wildcard that means
+    <q>any text can go
+    here</q>.
+    So <c>'Janice%''</c> says
+    <q>Look for strings that start with Janice, and then have anything after that
+    (including nothing else)</q>.
+    While <c>'%Janice'</c> says
+    <q>look for strings that end in Janice and may have anything
+    before that</q>.
+    If we want to allow for extra text to be on either side of 'Janice', we would use <c>%</c> on
+    both sides - <c>'%Janice%'</c>
+  </p>
+
+  <p>
+    This sample pulls from the <c>bikeshare_stations</c> table to search for all station names that
+    include 'F St':
+  </p>
 
   <program xml:id="sqlintro_like1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
@@ -22,15 +40,23 @@ FROM
     bikeshare_stations
 WHERE
     name LIKE '%F St%'
-        </code>
+    </code>
   </program>
-  <p>We do have to be careful not to specify things that are too broad. Try changing the like to look for anything that
-    includes '7th' and examine the results.</p>
-  <p>The pattern <c>'%7th%'</c> matches way too many things. To get just 7th (and not 17th or 27th) we would need to state
-    something like <em><q>where the name starts with 7th or the name has '7th' within it</q></em>.
-    The space inside the string will make sure we don't match '17th'. This query will perform that
-    search. Notice that to check if the name begins with '7th', we make sure not to put a <c>%</c> at the
-    start of the string.</p>
+
+  <p>
+    We do have to be careful not to specify things that are too broad.
+    Try changing the like to look for anything that includes '7th' and examine the results.
+  </p>
+
+  <p>
+    The pattern <c>'%7th%'</c> matches way too many things.
+    To get just 7th (and not 17th or 27th) we would need to state something like
+    <em><q>where the name starts with 7th or the name has '7th' within it</q></em>.
+    The space inside the string will make sure we don't match '17th'.
+    This query will perform that search.
+    Notice that to check if the name begins with '7th', we make sure not to put a <c>%</c> at the
+    start of the string.
+  </p>
 
   <program xml:id="sqlintro_like2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
@@ -42,36 +68,49 @@ WHERE
     name LIKE '7th%'  --7th at beginning of name
     OR
     name LIKE '% 7th%'  --space in front of 7th
-        </code>
+    </code>
   </program>
 
   <exercise label="sqlintro_like3">
     <statement>
-      <p>Change the program above to find the number of records that end with NW. Write the number of records found in
-        the box below. <fillin mode="string" answer="62"/>
+      <p>
+        Change the program above to find the number of records that end with NW.
+        Write the number of records found in the box below.
+        <fillin mode="string" answer="62"/>
       </p>
     </statement>
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>^\s*^62$\s*$</strcmp>
+          <strcmp>
+            ^\s*^62$\s*$
+          </strcmp>
         </test>
         <test>
-          <strcmp>71</strcmp>
+          <strcmp>
+            71
+          </strcmp>
+
           <feedback>
-            <p>That is the number of records that have 'NW' anywhere inside the string. Make sure to only get those
-            that end with <c>'NW'</c></p>
+            <p>
+              That is the number of records that have 'NW' anywhere inside the string.
+              Make sure to only get those that end with <c>'NW'</c>
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*.*\s*$</strcmp>
+          <strcmp>
+            ^\s*.*\s*$
+          </strcmp>
+
           <feedback>
-            <p>No, make sure you are matching records that have 'NW' inside the name. For your answer just
-            produce the number of records found.</p>
+            <p>
+              No, make sure you are matching records that have 'NW' inside the name.
+              For your answer just produce the number of records found.
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
 </section>
-

@@ -1,16 +1,24 @@
 <section xml:id="csp-python-data_comparing-states">
   <title>Comparing States</title>
 
-  <p>We now can calculate the pollution for a particular state. To compare several states, we can run the program
-    once for each state. But it would be nice to run the program just once and have it repeat the calculations for each
-    state that we are concerned about.</p>
+  <p>
+    We now can calculate the pollution for a particular state.
+    To compare several states, we can run the program once for each state.
+    But it would be nice to run the program just once and have it repeat the calculations for each
+    state that we are concerned about.
+  </p>
 
-  <p>To do this, we need to be able to easily repeat the <q>find average pollution</q> logic. If we have a large
-    amount of code that we want to repeat, it makes sense to turn it into a function. The function <c>getAvgPM25</c> will take in
-    a <c>targetState</c> and the <c>data</c> collection. It will then do the work to calculate the average and return it. There are
-    some <c>print</c> calls in the function just to show us what data is being worked on to help confirm the code is working.
+  <p>
+    To do this, we need to be able to easily repeat the <q>find average pollution</q> logic.
+    If we have a large amount of code that we want to repeat, it makes sense to turn it into a
+    function.
+    The function <c>getAvgPM25</c> will take in a <c>targetState</c> and the <c>data</c> collection.
+    It will then do the work to calculate the average and return it.
+    There are some <c>print</c> calls in the function just to show us what data is being worked on
+    to help confirm the code is working.
     In the main part of the program, we call the function twice - once for <q>OR</q> and once for
-    <q>TX</q>.</p>
+    <q>TX</q>.
+  </p>
 
   <program xml:id="csppythondata_comparestates1" interactive="activecode" language="python">
     <code>
@@ -53,19 +61,26 @@
   </program>
 
   <note>
-    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
+    <p>
+      <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    </p>
   </note>
 
-  <p>If we have a large list of states we want to process, it would be silly to keep copy/pasting the last three lines
-    of code for different state codes. Repeating those three lines over and over is the perfect job for a loop.
-    Let's write a loop that can iterate through a list of states:</p>
+  <p>
+    If we have a large list of states we want to process, it would be silly to keep copy/pasting the
+    last three lines of code for different state codes.
+    Repeating those three lines over and over is the perfect job for a loop.
+    Let's write a loop that can iterate through a list of states:
+  </p>
 
   <exercise label="csppythondata_comparestates2">
     <statement>
-      <p>Write a loop to print out each state in <c>stateList</c> on its own line. Do not print anything other than the state
-        codes.</p>
-
+      <p>
+        Write a loop to print out each state in <c>stateList</c> on its own line.
+        Do not print anything other than the state codes.
+      </p>
     </statement>
+
     <program xml:id="csppythondata_comparestates2_editor" interactive="activecode" language="python">
       <code>
         stateList = ["MD", "AK", "NJ", "AR", "WV", "MS"]
@@ -83,10 +98,16 @@
       </tests>
     </program>
   </exercise>
-  <p>Now we can use your code to help find the average pollution for a large number of different states. Add your loop
-    to the main part of the program below and make sure your loop runs the two lines shown in comments (you may have to
-    adjust the variable name <c>state</c> so it matches your loop). <c>stateList</c> has a list of the three richest (MD, AK, NJ) and
-    poorest states (AR, WV, MS) by per capita income.</p>
+
+  <p>
+    Now we can use your code to help find the average pollution for a large number of different
+    states.
+    Add your loop to the main part of the program below and make sure your loop runs the two lines
+    shown in comments (you may have to adjust the variable name <c>state</c> so it matches your
+    loop).
+    <c>stateList</c> has a list of the three richest (MD, AK, NJ) and poorest states (AR, WV, MS) by
+    per capita income.
+  </p>
 
   <program xml:id="csppythondata_comparestates3" interactive="activecode" language="python">
     <code>
@@ -120,45 +141,58 @@ stateList = ["MD", "AK", "NJ", "AR", "WV", "MS"]
     # Repeat these two lines:
     #pollution = getAvgPM25(state, data)
     #print("Average Pollution in", state, "is", pollution)
-        </code>
+    </code>
   </program>
 
   <exercise label="csppythondata_comparestates4">
     <statement>
-
-      <p>What does the program reveal?</p>
-
+      <p>
+        What does the program reveal?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice correct="yes">
         <statement>
-          <p>The richer states seem to be more polluted.</p>
+          <p>
+            The richer states seem to be more polluted.
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct</p>
+          <p>
+            Correct
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>The poorer states seem to be more polluted.</p>
+          <p>
+            The poorer states seem to be more polluted.
+          </p>
         </statement>
+
         <feedback>
-          <p>The poorer states are AR, WV, and MS</p>
+          <p>
+            The poorer states are AR, WV, and MS
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>There does not seem to be a pattern to the results.</p>
+          <p>
+            There does not seem to be a pattern to the results.
+          </p>
         </statement>
+
         <feedback>
-          <p>The poorer states are AR, WV, and MS</p>
+          <p>
+            The poorer states are AR, WV, and MS
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 </section>
-

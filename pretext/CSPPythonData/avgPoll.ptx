@@ -1,19 +1,26 @@
 <section xml:id="csp-python-data_what-s-the-average-pollution">
   <title>What's the average pollution?</title>
 
- 
-  <p>This time, we would like to get the average pollution level. To do that, we need to take every PM2.5 value and add
-    them all together. As we do this, we need to keep a count of how many values we have seen, so we can compute an
-    average.</p>
+  <p>
+    This time, we would like to get the average pollution level.
+    To do that, we need to take every PM2.5 value and add them all together.
+    As we do this, we need to keep a count of how many values we have seen, so we can compute an
+    average.
+  </p>
 
   <note>
-    <p><xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref></p>
+    <p>
+      <xref ref="csp-python-data_our-first-data-set-air-pollution-in-the-united-states" text="custom">Polution data file</xref>
+    </p>
   </note>
 
   <exercise label="csppythondata_avgpoll1" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>This program will calculate the average PM2.5 pollution level in the US data. Arrange the blocks in the right
-        order and indent them correctly. You will use all of them.</p>
+      <p>
+        This program will calculate the average PM2.5 pollution level in the US data.
+        Arrange the blocks in the right order and indent them correctly.
+        You will use all of them.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -48,9 +55,14 @@
       </block>
     </blocks>
   </exercise>
-  <p>Now let's do the same thing for the PM10 values. This program is mostly done. There are a few lines that need
-    to still be written, they are all marked with a <c>TODO</c> comment. Finish up the program so you can find the average
-    PM10 level.</p>
+
+  <p>
+    Now let's do the same thing for the PM10 values.
+    This program is mostly done.
+    There are a few lines that need to still be written, they are all marked with a <c>TODO</c>
+    comment.
+    Finish up the program so you can find the average PM10 level.
+  </p>
 
   <program xml:id="csppythondata_avgpoll2" interactive="activecode" language="python">
     <code>
@@ -73,6 +85,6 @@ for line in data:
 
 average = # TODO - calculate average
 print("Average PM 10 value is", average)
-        </code>
+    </code>
   </program>
 </section>

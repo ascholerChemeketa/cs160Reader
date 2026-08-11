@@ -3,34 +3,51 @@
 
   <subsection>
     <title>Description</title>
-    <p><term>Data Science</term> is a new, and rapidly growing interdisciplinary field of study. It focuses on using a
-      combination of computation and mathematics to answer questions and solve problems using large amounts of data.</p>
-    <p>A data scientist will be responsible for gathering data and then using it to find trends, make forecasts, and
-      communicate information. To do this, they will write computer programs, apply various mathematical techniques from
-      statistics, calculus, and linear algebra, and make use of advanced tools like machine learning algorithms.</p>
-    <p>Although there is a general set of skills used by all data scientists, an individual data scientist often focuses
-      on a particular domain. They may specialize in working with data from biological sciences, business and marketing,
-      sports management, geology, or any other domain where large amounts of data exist. To effectively work in one of
-      these domains, a data scientist often needs field-specific knowledge in addition to their general data science
-      skills.</p>
 
-    <figure >
-      <caption >Data Science combines mathematics,
-        computer science, and knowledge in a domain.</caption>
+    <p>
+      <term>Data Science</term> is a new, and rapidly growing interdisciplinary field of study.
+      It focuses on using a combination of computation and mathematics to answer questions and solve
+      problems using large amounts of data.
+    </p>
+
+    <p>
+      A data scientist will be responsible for gathering data and then using it to find trends, make
+      forecasts, and communicate information.
+      To do this, they will write computer programs, apply various mathematical techniques from
+      statistics, calculus, and linear algebra, and make use of advanced tools like machine learning
+      algorithms.
+    </p>
+
+    <p>
+      Although there is a general set of skills used by all data scientists, an individual data
+      scientist often focuses on a particular domain.
+      They may specialize in working with data from biological sciences, business and marketing,
+      sports management, geology, or any other domain where large amounts of data exist.
+      To effectively work in one of these domains, a data scientist often needs field-specific
+      knowledge in addition to their general data science skills.
+    </p>
+
+    <figure>
+      <caption>
+        Data Science combines mathematics, computer science, and knowledge in a domain.
+      </caption>
+
       <image source="ComputingFields/Images/DataScience.svg" width="50%">
-        <shortdescription>Data Science is the intersection of math, computer science, and domain knowledge.</shortdescription>
+        <shortdescription>
+          Data Science is the intersection of math, computer science, and domain knowledge.
+        </shortdescription>
       </image>
     </figure>
   </subsection>
 
   <subsection xml:id="ds-careers">
     <title>Typical careers</title>
+
     <p>
       <ol>
         <li>
           <p>
-            <url href="https://www.coursera.org/articles/what-is-a-data-scientist"
-              visual="https://www.coursera.org/articles/what-is-a-data-scientist">Data Scientist or Data Analyst</url>
+            <url href="https://www.coursera.org/articles/what-is-a-data-scientist" visual="https://www.coursera.org/articles/what-is-a-data-scientist">Data Scientist or Data Analyst</url>
           </p>
         </li>
       </ol>
@@ -39,57 +56,92 @@
 
   <subsection xml:id="ds-education">
     <title>Education</title>
-    <p>Working as a data analyst or scientist generally requires a Bachelor's degree or graduate degree
-      (Master's or Ph.D.).</p>
-    <p>Because Data Science is a cross-disciplinary field, degrees in data science can be found in many different
-      programs. Some Data Science degrees are offered by math departments, others as concentrations in a degree in
-      computer science. Some specialized data science programs may exist in other departments - a biology department may
-      offer a degree in <q>Bio Informatics</q> or <q>Biological Data Science</q>.</p>
-    <p>Any data science degree is probably going to feature:</p>
+
+    <p>
+      Working as a data analyst or scientist generally requires a Bachelor's degree or graduate
+      degree (Master's or Ph.D.).
+    </p>
+
+    <p>
+      Because Data Science is a cross-disciplinary field, degrees in data science can be found in
+      many different programs.
+      Some Data Science degrees are offered by math departments, others as concentrations in a
+      degree in computer science.
+      Some specialized data science programs may exist in other departments - a biology department
+      may offer a degree in <q>Bio Informatics</q> or <q>Biological Data Science</q>.
+    </p>
+
+    <p>
+      Any data science degree is probably going to feature:
+    </p>
+
     <p>
       <ul>
         <li>
-          <p>A solid foundation in programming and algorithms.</p>
+          <p>
+            A solid foundation in programming and algorithms.
+          </p>
         </li>
+
         <li>
-          <p>Mathematics including statistics and likely calculus and linear algebra.</p>
+          <p>
+            Mathematics including statistics and likely calculus and linear algebra.
+          </p>
         </li>
+
         <li>
-          <p>Exposure to the techniques and tools used in data science.</p>
+          <p>
+            Exposure to the techniques and tools used in data science.
+          </p>
         </li>
       </ul>
     </p>
   </subsection>
-  
+
   <subsection>
     <title>Exercises</title>
+
     <exercise label="computing-fields_data-science_1">
       <statement>
-        <p>Which of the following are commonly featured in a data science degree program according to this page?</p>
+        <p>
+          Which of the following are commonly featured in a data science degree program according to
+          this page?
+        </p>
       </statement>
+
       <choices randomize="yes">
         <choice correct="yes">
           <statement>
-            <p>A solid foundation in programming and algorithms</p>
+            <p>
+              A solid foundation in programming and algorithms
+            </p>
           </statement>
         </choice>
+
         <choice correct="yes">
           <statement>
-            <p>Mathematics including statistics and likely calculus and linear algebra</p>
+            <p>
+              Mathematics including statistics and likely calculus and linear algebra
+            </p>
           </statement>
         </choice>
+
         <choice correct="yes">
           <statement>
-            <p>Expertise in a particular domain</p>
+            <p>
+              Expertise in a particular domain
+            </p>
           </statement>
         </choice>
+
         <choice>
           <statement>
-            <p>Specialized training limited to hardware repair and circuit design</p>
+            <p>
+              Specialized training limited to hardware repair and circuit design
+            </p>
           </statement>
         </choice>
       </choices>
     </exercise>
   </subsection>
-
 </section>

@@ -1,85 +1,139 @@
 <section xml:id="programming-languages_assembly-languages">
   <title>Assembly Languages</title>
-  <p>Because strings of 0s and 1s are so hard for people to read, <term>assembly languages</term> were invented. An
-    assembly language is essentially a human-readable direct translation of machine language. Each assembly instruction
-    generally directly matches one machine instruction. The only difference is that instead of writing <q>0100001101</q>
-    to say <q>store the current value to memory location 13</q> as you would in machine language, in assembly you could
-    write something like <q>STORE 13</q>.</p>
-  <image source="ProgrammingLanguages/Images/Assembly.png"
-         width="100%">
+
+  <p>
+    Because strings of 0s and 1s are so hard for people to read, <term>assembly languages</term>
+    were invented.
+    An assembly language is essentially a human-readable direct translation of machine language.
+    Each assembly instruction generally directly matches one machine instruction.
+    The only difference is that instead of writing <q>0100001101</q> to say
+    <q>store the current value to memory location 13</q> as you would in machine language, in
+    assembly you could write something like <q>STORE 13</q>.
+  </p>
+
+  <image source="ProgrammingLanguages/Images/Assembly.png" width="100%">
     <shortdescription>Assembly code</shortdescription>
   </image>
-  <p>The image above shows an imaginary list of machine instructions, along with what they might look like in assembly.
-    Do not worry about memorizing the details of this particular assembly language, just recognize that each instruction
-    is a translation of the machine code. Each <q>LOAD</q> instruction corresponds to a machine instruction that starts
-    with the opcode 001 which means load; each <q>STORE</q> instruction corresponds to a machine instruction that starts
-    with the opcode 010.</p>
-  <p>Although assembly is much easier to read than machine code, you probably noticed that it is still very low level. A
-    job as simple as <q>add 2 and 5</q> took many instructions to express. For this reason, most programmers do not work
-    in assembly most of the time.</p>
-  <p>However, assembly is the way that machine code is displayed in a human-readable format. Since all programs at some
-    point become machine code, that means when a programmer is debugging a program at a low level, they will often be
-    looking at assembly. There are also times, typically when working on an <term>embedded processor</term> (the kind of
-    simple processor built into an electric device) when a programmer has to interact with the hardware at a very low
-    level - in that situation assembly is the tool they use.</p>
+
+  <p>
+    The image above shows an imaginary list of machine instructions, along with what they might look
+    like in assembly.
+    Do not worry about memorizing the details of this particular assembly language, just recognize
+    that each instruction is a translation of the machine code.
+    Each <q>LOAD</q> instruction corresponds to a machine instruction that starts with the opcode
+    001 which means load; each <q>STORE</q> instruction corresponds to a machine instruction that
+    starts with the opcode 010.
+  </p>
+
+  <p>
+    Although assembly is much easier to read than machine code, you probably noticed that it is
+    still very low level.
+    A job as simple as <q>add 2 and 5</q> took many instructions to express.
+    For this reason, most programmers do not work in assembly most of the time.
+  </p>
+
+  <p>
+    However, assembly is the way that machine code is displayed in a human-readable format.
+    Since all programs at some point become machine code, that means when a programmer is debugging
+    a program at a low level, they will often be looking at assembly.
+    There are also times, typically when working on an <term>embedded processor</term> (the kind of
+    simple processor built into an electric device) when a programmer has to interact with the
+    hardware at a very low level - in that situation assembly is the tool they use.
+  </p>
 
   <exercise label="programming-languages_assembly-languages-ex1">
     <statement>
-      <p>How does an assembly language primarily differ from the corresponding machine language?</p>
+      <p>
+        How does an assembly language primarily differ from the corresponding machine language?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>It uses human-readable instruction names in place of numeric machine instructions.</p>
+          <p>
+            It uses human-readable instruction names in place of numeric machine instructions.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It lets one instruction automatically solve any programming problem.</p>
+          <p>
+            It lets one instruction automatically solve any programming problem.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It runs without being translated into machine instructions.</p>
+          <p>
+            It runs without being translated into machine instructions.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It stores programs outside the computer's memory.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="programming-languages_assembly-languages-ex2">
-    <statement>
-      <p>Which situations are good reasons to work with assembly language? Select all that apply.</p>
-    </statement>
-    <choices randomize="yes"
-             multiple-correct="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Debugging a program at a very low level</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Working closely with the hardware in an embedded processor</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Writing a large application because assembly automatically needs fewer instructions than a high-level
-            language</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Avoiding the need to understand how the computer carries out instructions</p>
+          <p>
+            It stores programs outside the computer's memory.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
 
-  <remark><p> Materials on this page adapted with permission from <url href="http://courses.cs.vt.edu/csonline/">Online
-    Interactive Modules for Teaching Computer Science</url> by Osman Balci et al. of Virginia Tech.</p></remark>
+  <exercise label="programming-languages_assembly-languages-ex2">
+    <statement>
+      <p>
+        Which situations are good reasons to work with assembly language?
+        Select all that apply.
+      </p>
+    </statement>
+
+    <choices randomize="yes" multiple-correct="yes">
+      <choice correct="yes">
+        <statement>
+          <p>
+            Debugging a program at a very low level
+          </p>
+        </statement>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>
+            Working closely with the hardware in an embedded processor
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            Writing a large application because assembly automatically needs fewer instructions than
+            a high-level language
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            Avoiding the need to understand how the computer carries out instructions
+          </p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
+  <remark>
+    <p>
+      Materials on this page adapted with permission from
+      <url href="http://courses.cs.vt.edu/csonline/">Online
+    Interactive Modules for Teaching Computer Science</url>
+      by Osman Balci et al.
+      of Virginia Tech.
+    </p>
+  </remark>
 </section>

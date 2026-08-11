@@ -1,13 +1,27 @@
 <section xml:id="algorithms_algorithms-selection-sort-2">
   <title>Selection Sort Code</title>
-  <p>Turning the selection sort into an algorithm for a computer requires a little more detail than the version a human
-    can use to sort cards. The basic strategy is the same, but instead of a marker and two hands, we need to use
-    variables to store locations in the list that we care about.</p>
-  <p>In the code below, <c>i</c> is equivalent to the black line - it marks the start of the unsorted portion of the
-    list. <c>j</c> is the right hand - it stores the location we are at as we scan for the next smallest card. Finally, <c>currentMinIndex</c>
-    is the left hand - it remembers where the smallest value we have seen is as we sweep through the unsorted part of
-    the list. Also, recall that <c>list[j]</c> means <q>the value in the list at location j</q>.</p>
-  <p>Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.</p>
+
+  <p>
+    Turning the selection sort into an algorithm for a computer requires a little more detail than
+    the version a human can use to sort cards.
+    The basic strategy is the same, but instead of a marker and two hands, we need to use variables
+    to store locations in the list that we care about.
+  </p>
+
+  <p>
+    In the code below, <c>i</c> is equivalent to the black line - it marks the start of the unsorted
+    portion of the list.
+    <c>j</c> is the right hand - it stores the location we are at as we scan for the next smallest
+    card.
+    Finally, <c>currentMinIndex</c> is the left hand - it remembers where the smallest value we have
+    seen is as we sweep through the unsorted part of the list.
+    Also, recall that <c>list[j]</c> means <q>the value in the list at location j</q>.
+  </p>
+
+  <p>
+    Don't worry about memorizing the algorithm, but do refer to it as you use the animation below.
+  </p>
+
   <program language="none">
     <code>
     Note: assume that list already exists
@@ -30,16 +44,24 @@
 17      list[i] = currentMin
 18
 19      i = i + 1                           move start of unsorted one to right
-</code>
+    </code>
   </program>
-  <p>The animation below allows you to step through a selection sort. Each step either advances the <q>right hand</q> or does
-    a swap and then advances the <q>marker</q>. Step through some sorts and refer to the algorithm above until you see how <c>i</c>
-    , <c>j</c>, and <c>currentMin</c> are being used to keep track of locations in the list and can predict the outcome of steps
-    before clicking the button.</p>
-      <interactive label="algorithms-algorithms-selection-sort-2-interactive-1" iframe="Algorithms/algorithms-algorithms-selection-sort-2-interactive-1.html"/>
+
+  <p>
+    The animation below allows you to step through a selection sort.
+    Each step either advances the <q>right hand</q> or does a swap and then advances the
+    <q>marker</q>.
+    Step through some sorts and refer to the algorithm above until you see how <c>i</c>, <c>j</c>,
+    and <c>currentMin</c> are being used to keep track of locations in the list and can predict the
+    outcome of steps before clicking the button.
+  </p>
+
+  <interactive label="algorithms-algorithms-selection-sort-2-interactive-1" iframe="Algorithms/algorithms-algorithms-selection-sort-2-interactive-1.html"/>
   <exercise label="algorithms_algorithms-selection-sort-2-ex1">
     <statement>
-      <p>Match each selection-sort variable to its role.</p>
+      <p>
+        Match each selection-sort variable to its role.
+      </p>
     </statement>
     <cardsort>
       <match>
@@ -56,29 +78,44 @@
       </match>
     </cardsort>
   </exercise>
+
   <exercise label="algorithms_algorithms-selection-sort-2-ex2">
     <statement>
-      <p>After selection sort finds the smallest unsorted value, what does it do next?</p>
+      <p>
+        After selection sort finds the smallest unsorted value, what does it do next?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Swap it with the first item in the unsorted portion.</p>
+          <p>
+            Swap it with the first item in the unsorted portion.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Delete it from the list.</p>
+          <p>
+            Delete it from the list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Move it to the end of the list.</p>
+          <p>
+            Move it to the end of the list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Start the entire search over without changing the list.</p>
+          <p>
+            Start the entire search over without changing the list.
+          </p>
         </statement>
       </choice>
     </choices>

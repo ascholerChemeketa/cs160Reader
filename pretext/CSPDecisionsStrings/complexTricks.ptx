@@ -1,10 +1,16 @@
 <section xml:id="csp-decisions-strings_complex-conditional-dangers">
   <title>Complex Conditional Dangers</title>
-  <p>A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we would in English.</p>
-  
-  <p>In natural (human) languages, if I want to say that the color of a car can be blue or green, I would only mention
-    the car once: <q>The car can be blue or green.</q> If you try to do that in Python your program will not work
-    as expected:</p>
+
+  <p>
+    A common mistake when trying to use <c>and</c> or <c>or</c> is to write things in the way we
+    would in English.
+  </p>
+
+  <p>
+    In natural (human) languages, if I want to say that the color of a car can be blue or green, I
+    would only mention the car once: <q>The car can be blue or green.</q> If you try to do that in
+    Python your program will not work as expected:
+  </p>
 
   <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
     <code>
@@ -12,55 +18,87 @@ color = "red"
 if color == "blue" or "green":
     print("That is a valid color.")
 print("Done")
-        </code>
+    </code>
   </program>
 
   <exercise label="cspdecisionsstrings_complextricks2">
     <statement>
-
-      <p>What does the code sample above do?</p>
-
+      <p>
+        What does the code sample above do?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>Produces an error message</p>
+          <p>
+            Produces an error message
+          </p>
         </statement>
+
         <feedback>
-          <p>Try running it!</p>
+          <p>
+            Try running it!
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>Prints "That is a valid color." then "Done"</p>
+          <p>
+            Prints "That is a valid color." then "Done"
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct</p>
+          <p>
+            Correct
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>Prints "Done"</p>
+          <p>
+            Prints "Done"
+          </p>
         </statement>
+
         <feedback>
-          <p>Try running it!</p>
+          <p>
+            Try running it!
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>Why does that happen? In English, we would think of <q>color equals</q> as talking about <q>blue or
-    green</q>. But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>. Each of those is evaluated on its own. Does <c>color == "blue"</c>?
-    No that is False. How about <c>"green"</c>. Is that True or False???</p>
-  <p>It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered True in Python. So <c>green</c>
-    counts as <c>True</c>. Since the value on the left of <c>or</c> is <c>False</c>, and the value on the right is <c>True</c>
-    (according to Python), the final value of the expression is <c>True</c>.</p>
-    <interactive label="csp-decisions-strings-complex-conditional-dangers-interactive-1" iframe="CSPDecisionsStrings/csp-decisions-strings-complex-conditional-dangers-interactive-1.html"/>
-  <p>The only way to get the logic we want, is to make sure both the left and right sides of the <c>or</c> are expressions
-    that make sense on their own as logical expressions. We have to repeat the <c>color ==</c> part so that <c>"green"</c> is not evaluated on its own:</p>
+
+  <p>
+    Why does that happen?
+    In English, we would think of <q>color equals</q> as talking about <q>blue or
+    green</q>.
+    But in Python, the <c>or</c> splits <c>color == "blue"</c> from <c>"green"</c>.
+    Each of those is evaluated on its own.
+    Does <c>color == "blue"</c>?
+    No that is False.
+    How about <c>"green"</c>.
+    Is that True or False???
+  </p>
+
+  <p>
+    It turns out that any value that is not the number 0 or the empty string <c>""</c> is considered
+    True in Python.
+    So <c>green</c> counts as <c>True</c>.
+    Since the value on the left of <c>or</c> is <c>False</c>, and the value on the right is
+    <c>True</c> (according to Python), the final value of the expression is <c>True</c>.
+  </p>
+
+  <interactive label="csp-decisions-strings-complex-conditional-dangers-interactive-1" iframe="CSPDecisionsStrings/csp-decisions-strings-complex-conditional-dangers-interactive-1.html"/>
+  <p>
+    The only way to get the logic we want, is to make sure both the left and right sides of the
+    <c>or</c> are expressions that make sense on their own as logical expressions.
+    We have to repeat the <c>color ==</c> part so that <c>"green"</c> is not evaluated on its own:
+  </p>
 
   <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
     <code>
@@ -68,11 +106,14 @@ color = "red"
 if color == "blue" or color == "green":
     print("That is a valid color.")
 print("Done")
-        </code>
+    </code>
   </program>
+
   <warning>
-    <p>The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False). You can't have
-      something that looks like <c>… or "blue"</c> or <c>… and 10</c> or that part will just count as True.</p>
+    <p>
+      The items on both side of an <c>and</c> or <c>or</c> MUST be logical expressions (True/False).
+      You can't have something that looks like <c>… or "blue"</c> or <c>… and 10</c> or that part
+      will just count as True.
+    </p>
   </warning>
 </section>
-

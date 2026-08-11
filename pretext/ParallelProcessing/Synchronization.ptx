@@ -1,224 +1,342 @@
 <section xml:id="parallel-processing_synchronization">
   <title>Synchronization</title>
+
   <subsection>
     <title>Synchronization Basics</title>
-<p>When two or more workers are doing tasks that can affect the results of each other, synchronizing their actions can
-    become critical. Say two processing cores try to do these two jobs (assume that <c>x</c> refers to a location in
-    memory where the value 5 is stored):</p>
-  <sidebyside>
-    <program language="none">
-      <code>
+
+    <p>
+      When two or more workers are doing tasks that can affect the results of each other,
+      synchronizing their actions can become critical.
+      Say two processing cores try to do these two jobs (assume that <c>x</c> refers to a location
+      in memory where the value 5 is stored):
+    </p>
+
+    <sidebyside>
+      <program language="none">
+        <code>
     Worker A's Task
 1   get x from memory
 2   add 10
 3   store total to x in memory
-</code>
-    </program>
-    <program language="none">
-      <code>
+        </code>
+      </program>
+
+      <program language="none">
+        <code>
     Worker B's Task
 1   get x from memory
 2   add 1
 3   store total to x in memory
-</code>
-    </program>
-  </sidebyside>
-  <p>Depending on the timing, we could end up with 15, 6, or 16 stored as the value for <c>x</c>! How? Well, we know that
-    each worker will do their three steps in order, but we have no guarantee on the relative ordering between the two
-    workers.</p>
-  <p>
-    <ul>
-      <li>
-        <p>A finishes completely (<c>x</c> now 15) and then B goes (<c>x</c> now 16)</p>
-      </li>
-      <li>
-        <p>B finishes completely (<c>x</c> now 6) and then A goes (<c>x</c> now 16)</p>
-      </li>
-      <li>
-        <p>A1 runs, and program A gets 5. B1 runs, and B gets 5. B finishes steps 2 and 3, (<c>x</c> now is 6). Then A
-          finishes steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 15)</p>
-      </li>
-      <li>
-        <p>A1 runs, and program A gets 5. B1 runs, and B gets 5. A finishes steps 2 and 3, (<c>x</c> now is 15). Then B
-          finishes steps 2 and 3 but using the value of 5 it already retrieved (<c>x</c> now is 6)</p>
-      </li>
-    </ul>
-  </p>
+        </code>
+      </program>
+    </sidebyside>
 
-  <p>A situation like this is possible in a multi-core computer where two cores are running different threads of a
-    program that share data. When a core accesses a piece of data, it will store it into a register and work with that
-    stored copy. Only once it is done will it write the updated value back to the original location in memory.</p>
+    <p>
+      Depending on the timing, we could end up with 15, 6, or 16 stored as the value for <c>x</c>!
+      How?
+      Well, we know that each worker will do their three steps in order, but we have no guarantee on
+      the relative ordering between the two workers.
+    </p>
 
-  <p>It is even more likely we will have issues when many workers are trying to access the same data and they hold the
-    copied data for longer periods of time. This is common in systems where multiple computers are sharing resources
-    over a network. Imagine a scenario where multiple computers are all trying to work with information in a shared
-    database<mdash/>each computer will retrieve records, work with them, and then eventually update the database with
-    new data. If multiple computers try to update the same record at the same time, conflicts can arise.</p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            A finishes completely ( <c>x</c> now 15) and then B goes ( <c>x</c> now 16)
+          </p>
+        </li>
 
-  <p>The potential for different results depending on which worker acts first is called a <term>race condition</term>
-    and leads to nasty bugs in programs (you likely only see the error occasionally, making it very hard to track down).</p>
+        <li>
+          <p>
+            B finishes completely ( <c>x</c> now 6) and then A goes ( <c>x</c> now 16)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A1 runs, and program A gets 5.
+            B1 runs, and B gets 5.
+            B finishes steps 2 and 3, ( <c>x</c> now is 6).
+            Then A finishes steps 2 and 3 but using the value of 5 it already retrieved ( <c>x</c>
+            now is 15)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A1 runs, and program A gets 5.
+            B1 runs, and B gets 5.
+            A finishes steps 2 and 3, ( <c>x</c> now is 15).
+            Then B finishes steps 2 and 3 but using the value of 5 it already retrieved ( <c>x</c>
+            now is 6)
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      A situation like this is possible in a multi-core computer where two cores are running
+      different threads of a program that share data.
+      When a core accesses a piece of data, it will store it into a register and work with that
+      stored copy.
+      Only once it is done will it write the updated value back to the original location in memory.
+    </p>
+
+    <p>
+      It is even more likely we will have issues when many workers are trying to access the same
+      data and they hold the copied data for longer periods of time.
+      This is common in systems where multiple computers are sharing resources over a network.
+      Imagine a scenario where multiple computers are all trying to work with information in a
+      shared database <mdash/> each computer will retrieve records, work with them, and then
+      eventually update the database with new data.
+      If multiple computers try to update the same record at the same time, conflicts can arise.
+    </p>
+
+    <p>
+      The potential for different results depending on which worker acts first is called a
+      <term>race condition</term> and leads to nasty bugs in programs (you likely only see the error
+      occasionally, making it very hard to track down).
+    </p>
   </subsection>
-<subsection xml:id="synchronization-deadlock">
+
+  <subsection xml:id="synchronization-deadlock">
     <title>Locks and Deadlock</title>
-    <p>One solution to synchronization issues is to add <term>locks</term> to certain resources (like pieces of memory
-      or hardware). Before using a locked resource, a worker has to check if anyone else already has locked it. If not,
-      the worker <em>acquires a lock</em> - marking that resource as in use. When it is locked, anyone else who wishes
-      to use it must wait until the lock is released.</p>
+
+    <p>
+      One solution to synchronization issues is to add <term>locks</term> to certain resources (like
+      pieces of memory or hardware).
+      Before using a locked resource, a worker has to check if anyone else already has locked it.
+      If not, the worker <em>acquires a lock</em>- marking that resource as in use.
+      When it is locked, anyone else who wishes to use it must wait until the lock is released.
+    </p>
+
     <figure>
-      <caption>A worker trying to access an already locked resource must wait for the existing lock to be released</caption>
-      <image source="ParallelProcessing/Images/lock.png"
-             width="100%">
+      <caption>
+        A worker trying to access an already locked resource must wait for the existing lock to be
+        released
+      </caption>
+
+      <image source="ParallelProcessing/Images/lock.png" width="100%">
         <shortdescription>Lock icon representing synchronization.</shortdescription>
       </image>
     </figure>
-    <p>In the example above Worker A gets to a resource first and acquires a lock (step 1). Thus when B checks in step
-      3, it finds out it will have to wait until the resource is free. At some point after the lock is released (step
-      5), B will go try again to see if the resource is free. Note that for this scheme to work, we need a command <q>check
-      and acquire lock</q> that can be done as one <term>atomic</term> action - in other words, there is no actual gap
-      between steps 1 and 2 - they can never be separated. If someone else could act between steps 1 and 2 there would
-      be no guarantee that the resource that looked free to A in step 1 was still free in step 2.</p>
-    <p>Introducing locked resources has some big drawbacks. First, by definition, any work that is happening on a locked
-      resource is serial - only one worker can do anything with the resource at a time. The more time the code spends
-      working within locks, the less able workers are to run in parallel. Second, we introduce the possibility of a <term>
-      deadlock</term>. Say we have two workers that both need to use two locked resources, X and Y to complete their
-      work. We could end up in a situation where each is waiting for the other to release a lock it needs:</p>
+
+    <p>
+      In the example above Worker A gets to a resource first and acquires a lock (step 1).
+      Thus when B checks in step 3, it finds out it will have to wait until the resource is free.
+      At some point after the lock is released (step 5), B will go try again to see if the resource
+      is free.
+      Note that for this scheme to work, we need a command <q>check
+      and acquire lock</q> that
+      can be done as one <term>atomic</term> action - in other words, there is no actual gap between
+      steps 1 and 2 - they can never be separated.
+      If someone else could act between steps 1 and 2 there would be no guarantee that the resource
+      that looked free to A in step 1 was still free in step 2.
+    </p>
+
+    <p>
+      Introducing locked resources has some big drawbacks.
+      First, by definition, any work that is happening on a locked resource is serial - only one
+      worker can do anything with the resource at a time.
+      The more time the code spends working within locks, the less able workers are to run in
+      parallel.
+      Second, we introduce the possibility of a <term>
+      deadlock</term>.
+      Say we have two workers that both need to use two locked resources, X and Y to complete their
+      work.
+      We could end up in a situation where each is waiting for the other to release a lock it needs:
+    </p>
+
     <figure>
-      <caption>Once we reach step 4 both A and B will be stuck waiting for the other one to finish.</caption>
-      <image source="ParallelProcessing/Images/deadlocked.png"
-             width="100%">
-        <shortdescription>Diagram illustrating two processes deadlocked while waiting for locks.</shortdescription>
+      <caption>
+        Once we reach step 4 both A and B will be stuck waiting for the other one to finish.
+      </caption>
+
+      <image source="ParallelProcessing/Images/deadlocked.png" width="100%">
+        <shortdescription>
+          Diagram illustrating two processes deadlocked while waiting for locks.
+        </shortdescription>
       </image>
     </figure>
-    <p>Deadlock depends on three criteria being met:</p>
+
+    <p>
+      Deadlock depends on three criteria being met:
+    </p>
+
     <p>
       <dl>
         <li>
           <title>Mutual Exclusion</title>
 
-          <p>Only one worker can access a resource at a time. Any time we allow locks, this will be met. Only by
-            allowing both workers to access the resource at the same time can avoid this.</p>
+          <p>
+            Only one worker can access a resource at a time.
+            Any time we allow locks, this will be met.
+            Only by allowing both workers to access the resource at the same time can avoid this.
+          </p>
         </li>
+
         <li>
           <title>Hold and wait</title>
 
-          <p>A worker can hold onto a lock while they wait on another resource. We might be able to avoid deadlock if in
-            step 4 both workers had to release their existing lock and start over trying to acquire a lock on both X and
-            Y. (To avoid going right back to step 1 every time, we might make each Worker wait a small random amount of
-            time before trying for the locks).</p>
+          <p>
+            A worker can hold onto a lock while they wait on another resource.
+            We might be able to avoid deadlock if in step 4 both workers had to release their
+            existing lock and start over trying to acquire a lock on both X and Y.
+            (To avoid going right back to step 1 every time, we might make each Worker wait a small
+            random amount of time before trying for the locks).
+          </p>
         </li>
+
         <li>
           <title>No Preemption</title>
 
-          <p>No one can be forced to give up their lock. We could say that Worker A can make B give up a lock if they
-            want. Or we could say that anyone who has the lock on X can make someone else give up a lock on Y.</p>
+          <p>
+            No one can be forced to give up their lock.
+            We could say that Worker A can make B give up a lock if they want.
+            Or we could say that anyone who has the lock on X can make someone else give up a lock
+            on Y.
+          </p>
         </li>
       </dl>
     </p>
-    <p>None of the possible fixes mentioned to the conditions for deadlock are without issue. We can very easily end up <q>
-      starving</q> one worker who is forced to wait all the time for their resources. It is also notoriously hard to
-      figure out in advance exactly who needs to lock what resources for how long and how conflicts should be resolved -
-      even experienced programmers can easily make small mistakes that go unnoticed but lead to crashes or data
-      corruption.</p>
 
+    <p>
+      None of the possible fixes mentioned to the conditions for deadlock are without issue.
+      We can very easily end up <q>
+      starving</q> one worker who is forced to wait all the time
+      for their resources.
+      It is also notoriously hard to figure out in advance exactly who needs to lock what resources
+      for how long and how conflicts should be resolved - even experienced programmers can easily
+      make small mistakes that go unnoticed but lead to crashes or data corruption.
+    </p>
 
-  <exercise label="parallel-processing_synchronization-ex1">
-    <statement>
-      <p>What is a race condition?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>A situation where a program's result can depend on the timing or ordering of workers' actions.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>A technique for making all workers run at exactly the same speed.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>A guarantee that shared data cannot be changed.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>A type of processor with two cores.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="parallel-processing_synchronization-ex2">
-    <statement>
-      <p>Which conditions are required for a deadlock? Select all that apply.</p>
-    </statement>
-    <choices randomize="yes"
-             multiple-correct="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Only one worker can use a resource at a time.</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>A worker can keep one lock while waiting for another resource.</p>
-        </statement>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>A worker cannot be forced to give up a lock.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Every worker runs at the same speed.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>All workers can access every resource at the same time.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="parallel-processing_synchronization-ex3">
-    <statement>
-      <p>Initially, <c>x</c> is 5. Worker A wants to add 3 to it, and Worker B wants to add 2 to it. Arrange the blocks
-        to show an execution in which the final value of <c>x</c> is 8.</p>
-      <p>You will not use all of the blocks. There are multiple valid arrangements.</p>
-    </statement>
-    <blocks>
-      <block order="6"
-             name="a"
-             depends="">
-        <cline>Worker A gets x = 5 from memory.</cline>
-      </block>
-      <block order="2"
-             name="b"
-             depends="a">
-        <cline>Worker A adds 3, producing 8.</cline>
-      </block>
-      <block order="5"
-             name="c"
-             depends="">
-        <cline>Worker B gets x = 5 from memory.</cline>
-      </block>
-      <block order="3"
-             name="d"
-             depends="c">
-        <cline>Worker B adds 2, producing 7.</cline>
-      </block>
-      <block order="1"
-             name="e"
-             depends="d">
-        <cline>Worker B stores 7 to x in memory.</cline>
-      </block>
-      <block order="4"
-             name="f"
-             depends="b,e">
-        <cline>Worker A stores 8 to x in memory.</cline>
-      </block>
-    </blocks>
-  </exercise>
-</subsection>
+    <exercise label="parallel-processing_synchronization-ex1">
+      <statement>
+        <p>
+          What is a race condition?
+        </p>
+      </statement>
+
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              A situation where a program's result can depend on the timing or ordering of workers'
+              actions.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              A technique for making all workers run at exactly the same speed.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              A guarantee that shared data cannot be changed.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              A type of processor with two cores.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+
+    <exercise label="parallel-processing_synchronization-ex2">
+      <statement>
+        <p>
+          Which conditions are required for a deadlock?
+          Select all that apply.
+        </p>
+      </statement>
+
+      <choices randomize="yes" multiple-correct="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Only one worker can use a resource at a time.
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              A worker can keep one lock while waiting for another resource.
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              A worker cannot be forced to give up a lock.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Every worker runs at the same speed.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              All workers can access every resource at the same time.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+
+    <exercise label="parallel-processing_synchronization-ex3">
+      <statement>
+        <p>
+          Initially, <c>x</c> is 5.
+          Worker A wants to add 3 to it, and Worker B wants to add 2 to it.
+          Arrange the blocks to show an execution in which the final value of <c>x</c> is 8.
+        </p>
+
+        <p>
+          You will not use all of the blocks.
+          There are multiple valid arrangements.
+        </p>
+      </statement>
+      <blocks>
+        <block order="6" name="a" depends="">
+          <cline>Worker A gets x = 5 from memory.</cline>
+        </block>
+        <block order="2" name="b" depends="a">
+          <cline>Worker A adds 3, producing 8.</cline>
+        </block>
+        <block order="5" name="c" depends="">
+          <cline>Worker B gets x = 5 from memory.</cline>
+        </block>
+        <block order="3" name="d" depends="c">
+          <cline>Worker B adds 2, producing 7.</cline>
+        </block>
+        <block order="1" name="e" depends="d">
+          <cline>Worker B stores 7 to x in memory.</cline>
+        </block>
+        <block order="4" name="f" depends="b,e">
+          <cline>Worker A stores 8 to x in memory.</cline>
+        </block>
+      </blocks>
+    </exercise>
+  </subsection>
 </section>

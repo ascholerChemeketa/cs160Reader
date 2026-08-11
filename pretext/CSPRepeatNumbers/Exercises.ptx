@@ -3,10 +3,12 @@
 
   <exercise label="csprepeatnumbers_exercises1">
     <statement>
-      <p>Complete the code to create a program that adds up all the numbers from 10 to 20. Make sure to include both 10
-        and 20 in the sum.</p>
-
+      <p>
+        Complete the code to create a program that adds up all the numbers from 10 to 20.
+        Make sure to include both 10 and 20 in the sum.
+      </p>
     </statement>
+
     <program xml:id="csprepeatnumbers_exercises1_editor" interactive="activecode" language="python">
       <code>
         sum = _____________
@@ -30,13 +32,18 @@
 
   <exercise label="csprepeatnumbers_exercises2">
     <statement>
-      <p>Complete the code to calculate the sum of the squares of all numbers from 1-10 (inclusive). The sum of squares
-        is the result of squaring each value before adding it to the sum. The sum of squares for the numbers 1-4 would
-        be <m>1 * 1 + 2 * 2 + 3 * 3 + 4 * 4 = 30</m>.</p>
-      <p>It might help to calculate each square and print it out before adding it to the sum to make sure you are using
-        the right values.</p>
+      <p>
+        Complete the code to calculate the sum of the squares of all numbers from 1-10 (inclusive).
+        The sum of squares is the result of squaring each value before adding it to the sum.
+        The sum of squares for the numbers 1-4 would be <m>1 * 1 + 2 * 2 + 3 * 3 + 4 * 4 = 30</m>.
+      </p>
 
+      <p>
+        It might help to calculate each square and print it out before adding it to the sum to make
+        sure you are using the right values.
+      </p>
     </statement>
+
     <program xml:id="csprepeatnumbers_exercises2_editor" interactive="activecode" language="python">
       <code>
         sum = _____________
@@ -58,12 +65,21 @@
       </tests>
     </program>
   </exercise>
+
   <exercise label="csprepeatnumbers_exercises3" indentation="hide" language="python">
     <statement>
-      <p>The following program calculates the height of an object as it falls from 1000 feet. The program should use a
-        loop to print out the current height, then update the time by one second and calculate a new height. It should
-        stop looping once the object reaches the ground (height 0) and then print out the final number of seconds.</p>
-      <p>Put the blocks in the right order and indentation. As usual, you will not use all the blocks.</p>
+      <p>
+        The following program calculates the height of an object as it falls from 1000 feet.
+        The program should use a loop to print out the current height, then update the time by one
+        second and calculate a new height.
+        It should stop looping once the object reaches the ground (height 0) and then print out the
+        final number of seconds.
+      </p>
+
+      <p>
+        Put the blocks in the right order and indentation.
+        As usual, you will not use all the blocks.
+      </p>
     </statement>
     <blocks>
       <block order="6">
@@ -73,8 +89,9 @@
       </block>
       <block order="2">
         <choice correct="yes">
-          <cline>while current_height > 0:</cline>
+          <cline>while current_height &gt; 0:</cline>
         </choice>
+
         <choice>
           <cline>while current_height == 0:</cline>
         </choice>
@@ -96,18 +113,32 @@
       </block>
     </blocks>
   </exercise>
+
   <exercise label="csprepeatnumbers_exercises4">
     <statement>
-      <p>To count how many digits there are in a number, you can do the following:</p>
+      <p>
+        To count how many digits there are in a number, you can do the following:
+      </p>
       <pre>while the number is greater than 0
     set the number to the number divided by 10 (ignore any remainder)
     add one to the number of digits</pre>
-      <p>Below is a function <c>digitsIn</c> that is supposed to calculate the number of digits in A given number. You need to
-        write the logic to calculate that.</p>
-      <p>Hint: when you divide <c>number</c> by 10, make sure to use <c>//</c> to do whole number division.</p>
-      <p>Remember the debugging tricks you used - use codelens or print out values to make sure your work is correct.</p>
+      <p>
+        Below is a function <c>digitsIn</c> that is supposed to calculate the number of digits in A
+        given number.
+        You need to write the logic to calculate that.
+      </p>
 
+      <p>
+        Hint: when you divide <c>number</c> by 10, make sure to use <c>//</c> to do whole number
+        division.
+      </p>
+
+      <p>
+        Remember the debugging tricks you used - use codelens or print out values to make sure your
+        work is correct.
+      </p>
     </statement>
+
     <program xml:id="csprepeatnumbers_exercises4_editor" interactive="activecode" language="python">
       <code>
         def digitsIn(number):
@@ -139,26 +170,45 @@
 
   <exercise label="csprepeatnumbers_exercises5">
     <statement>
-      <p>Below is the start of a program to calculate how long it will take to have at least $50,000 if you invest $300
-        per month at 0.5% interest per month (approximately 6% per year).</p>
-      <p>You should add code to continue doing the following until money reaches 50000:</p>
+      <p>
+        Below is the start of a program to calculate how long it will take to have at least $50,000
+        if you invest $300 per month at 0.5% interest per month (approximately 6% per year).
+      </p>
+
+      <p>
+        You should add code to continue doing the following until money reaches 50000:
+      </p>
+
       <p>
         <ul>
           <li>
-            <p>Increase the existing money by 0.5% (multiply it by 1.005). (This is interest earned on all money already
-              invested.)</p>
+            <p>
+              Increase the existing money by 0.5% (multiply it by 1.005).
+              (This is interest earned on all money already invested.)
+            </p>
           </li>
+
           <li>
-            <p>Add the monthly investment amount to money. (This is another month of investment.)</p>
+            <p>
+              Add the monthly investment amount to money.
+              (This is another month of investment.)
+            </p>
           </li>
+
           <li>
-            <p>Increase the months count by 1</p>
+            <p>
+              Increase the months count by 1
+            </p>
           </li>
         </ul>
       </p>
-      <p>Remember the debugging tricks you used - use codelens or print out values to make sure your work is correct.</p>
 
+      <p>
+        Remember the debugging tricks you used - use codelens or print out values to make sure your
+        work is correct.
+      </p>
     </statement>
+
     <program xml:id="csprepeatnumbers_exercises5_editor" interactive="activecode" language="python">
       <code>
         money = 0
@@ -185,5 +235,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>

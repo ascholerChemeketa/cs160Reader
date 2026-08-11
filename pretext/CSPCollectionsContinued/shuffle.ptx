@@ -1,56 +1,91 @@
 <section xml:id="csp-collections-continued_shuffle-a-list">
   <title>Shuffle A List</title>
+
   <introduction>
-<p>Imagine we want to program a card game. We will need the ability to simulate a deck of cards and select a hand of
-    cards for the player. If we store the deck as a list: <c>["Ace", "2", "3", …]</c> we can think of the start of the list as the
-    <q>top</q> of the deck and the end of the list as the <q>bottom</q>. Dealing a player cards could be
-    as simple as slicing the deck - make one slice that has the first 5 cards, that is the player's hand, and a second
-    slice with everything else that is the leftover cards.</p>
-  <p>However, we don't always want to give the player the cards Ace-4. We need to shuffle the deck before trying
-    to deal. We will explore two different algorithms for doing a shuffle before dealing cards.</p>
-  <p>To reduce the complexity, we will only deal with a deck with 13 cards. However, we will write the code so that it
-    could work for any size deck. A good practice when problem solving is to whenever possible, solve a smaller version
-    of the problem before scaling up to tackle the full version.</p>
+    <p>
+      Imagine we want to program a card game.
+      We will need the ability to simulate a deck of cards and select a hand of cards for the
+      player.
+      If we store the deck as a list: <c>["Ace", "2", "3", …]</c> we can think of the start of the
+      list as the <q>top</q> of the deck and the end of the list as the <q>bottom</q>.
+      Dealing a player cards could be as simple as slicing the deck - make one slice that has the
+      first 5 cards, that is the player's hand, and a second slice with everything else that is the
+      leftover cards.
+    </p>
+
+    <p>
+      However, we don't always want to give the player the cards Ace-4.
+      We need to shuffle the deck before trying to deal.
+      We will explore two different algorithms for doing a shuffle before dealing cards.
+    </p>
+
+    <p>
+      To reduce the complexity, we will only deal with a deck with 13 cards.
+      However, we will write the code so that it could work for any size deck.
+      A good practice when problem solving is to whenever possible, solve a smaller version of the
+      problem before scaling up to tackle the full version.
+    </p>
   </introduction>
-<subsection xml:id="csp-collections-continued_shuffle-by-cuts">
+
+  <subsection xml:id="csp-collections-continued_shuffle-by-cuts">
     <title>Shuffle By Cuts</title>
-    <p>Our first algorithm will be to try shuffling by doing a series of <q>cuts</q>, where we split the deck in
-      half and put the <q>bottom</q> (second) half <q>on top of</q> (in front of) the <q>top</q>
-      (first) half.</p>
-    <p>The exercises below will guide you through writing the algorithm. In the first part, we will just make one cut
-      and reassemble the deck so the <q>top</q> and <q>bottom</q> halves are reversed.</p>
+
+    <p>
+      Our first algorithm will be to try shuffling by doing a series of <q>cuts</q>, where we split
+      the deck in half and put the <q>bottom</q> (second) half <q>on top of</q> (in front of) the
+      <q>top</q> (first) half.
+    </p>
+
+    <p>
+      The exercises below will guide you through writing the algorithm.
+      In the first part, we will just make one cut and reassemble the deck so the <q>top</q> and
+      <q>bottom</q> halves are reversed.
+    </p>
 
     <exercise label="cspcollectionscontinued_shuffle1">
       <statement>
         <p>
           <ol>
             <li>
-              <p><c>cutPoint</c> is set to a random location in the list of cards <c>deck</c>. 
-                Use it to make a slice which contains list items 0 up to (but not including) 
-                the <c>cutPoint</c>. Store it in a new variable <c>top</c> and then print out <c>top</c>. 
-                Run the program a few times to make sure that you are printing out a random 
-                amount of the list each time.
-                Tests 1-2 should now pass.</p>
-            </li>
-            <li>
               <p>
-                Now make a slice that starts at <c>cutPoint</c> and goes until the end. Store 
-                that slice as <c>bottom</c>. Print it out and make sure it has the part of the list 
-                that <c>top</c> does not. Tests 3-4 should now pass.
+                <c>cutPoint</c> is set to a random location in the list of cards <c>deck</c>.
+                Use it to make a slice which contains list items 0 up to (but not including) the
+                <c>cutPoint</c>.
+                Store it in a new variable <c>top</c> and then print out <c>top</c>.
+                Run the program a few times to make sure that you are printing out a random amount
+                of the list each time.
+                Tests 1-2 should now pass.
               </p>
             </li>
+
             <li>
-              <p>Set <c>deck</c> to be <c>bottom</c> plus <c>top</c> and print what deck becomes. That should reverse the order of
-                the two halves. (Doing <c>+</c> will merge two lists into one big list.) Print <c>deck</c> to see that 
-                you did in fact cut the cards and swap the two halves.</p>
+              <p>
+                Now make a slice that starts at <c>cutPoint</c> and goes until the end.
+                Store that slice as <c>bottom</c>.
+                Print it out and make sure it has the part of the list that <c>top</c> does not.
+                Tests 3-4 should now pass.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Set <c>deck</c> to be <c>bottom</c> plus <c>top</c> and print what deck becomes.
+                That should reverse the order of the two halves.
+                (Doing <c>+</c> will merge two lists into one big list.) Print <c>deck</c> to see
+                that you did in fact cut the cards and swap the two halves.
+              </p>
             </li>
           </ol>
         </p>
-        <p>The checks for this program can't verify it works because it is doing something random. They will just
-          make sure you have some of the basic elements that are needed. Make sure to test your program until you are
-          sure it is working. The checks do depend on you using the specified variable names in your code.</p>
-        
+
+        <p>
+          The checks for this program can't verify it works because it is doing something random.
+          They will just make sure you have some of the basic elements that are needed.
+          Make sure to test your program until you are sure it is working.
+          The checks do depend on you using the specified variable names in your code.
+        </p>
       </statement>
+
       <program xml:id="cspcollectionscontinued_shuffle1_editor" interactive="activecode" language="python">
         <code>
           import random
@@ -75,21 +110,29 @@
         </tests>
       </program>
     </exercise>
-    <p>At this point, your program should print out a deck where part of the back has been moved to the front. So
-      hopefully, if we repeat that process a bunch of times, the deck will keep getting chopped up differently and
-      become more and more jumbled.</p>
-    <p>Let's test that.</p>
+
+    <p>
+      At this point, your program should print out a deck where part of the back has been moved to
+      the front.
+      So hopefully, if we repeat that process a bunch of times, the deck will keep getting chopped
+      up differently and become more and more jumbled.
+    </p>
+
+    <p>
+      Let's test that.
+    </p>
 
     <exercise label="cspcollectionscontinued_shuffle2">
       <statement>
         <p>
           <ol>
             <li>
-              <p>Put your code in the loop below that repeats the whole process 10 times.</p>
+              <p>
+                Put your code in the loop below that repeats the whole process 10 times.
+              </p>
             </li>
           </ol>
         </p>
-
       </statement>
 
       <program xml:id="cspcollectionscontinued_shuffle2_editor" interactive="activecode" language="python">
@@ -109,79 +152,123 @@
 
     <exercise label="cspcollectionscontinued_shuffle3">
       <statement>
-
-        <p>How does the method seem to work?</p>
-
+        <p>
+          How does the method seem to work?
+        </p>
       </statement>
-      <choices>
 
+      <choices>
         <choice correct="yes">
           <statement>
-            <p>Poorly. New more cuts do not seem to mix up the deck more thoroughly.</p>
+            <p>
+              Poorly.
+              New more cuts do not seem to mix up the deck more thoroughly.
+            </p>
           </statement>
+
           <feedback>
-            <p>Correct. This is a bad way to shuffle cards. Cutting the deck 10 times (or a million) is
-              no more random than cutting it just once!</p>
+            <p>
+              Correct.
+              This is a bad way to shuffle cards.
+              Cutting the deck 10 times (or a million) is no more random than cutting it just once!
+            </p>
           </feedback>
         </choice>
 
         <choice>
           <statement>
-            <p>OK. Neighbor values like 4/5 or 7/8 tend to stay next to each other, but the deck is getting more mixed
-              up.</p>
+            <p>
+              OK.
+              Neighbor values like 4/5 or 7/8 tend to stay next to each other, but the deck is
+              getting more mixed up.
+            </p>
           </statement>
+
           <feedback>
-            <p>Really???</p>
+            <p>
+              Really???
+            </p>
           </feedback>
         </choice>
 
         <choice>
           <statement>
-            <p>Really well.</p>
+            <p>
+              Really well.
+            </p>
           </statement>
+
           <feedback>
-            <p>Really???</p>
+            <p>
+              Really???
+            </p>
           </feedback>
         </choice>
       </choices>
-
     </exercise>
   </subsection>
+
   <subsection xml:id="csp-collections-continued_shuffle-by-move-to-back">
     <title>Shuffle By Move To Back</title>
-    <p>The second algorithm we will try will be to pick one card at random from the deck (other than the last card) and
-      move it to the end of the deck. On its own, that won't do much, but maybe if we repeat it a bunch of times,
-      it will work.</p>
-    <p>The exercises below will guide you through writing the algorithm.</p>
+
+    <p>
+      The second algorithm we will try will be to pick one card at random from the deck (other than
+      the last card) and move it to the end of the deck.
+      On its own, that won't do much, but maybe if we repeat it a bunch of times, it will work.
+    </p>
+
+    <p>
+      The exercises below will guide you through writing the algorithm.
+    </p>
 
     <exercise label="cspcollectionscontinued_shuffle4">
       <statement>
         <p>
           <ol>
             <li>
-              <p>The starter code makes <c>selectIndex</c> and sets it to a random value between 0 and 2 less than the length of the
-                deck. (Since the last card is length - 1 and we do not want to select it).</p>
+              <p>
+                The starter code makes <c>selectIndex</c> and sets it to a random value between 0
+                and 2 less than the length of the deck.
+                (Since the last card is length - 1 and we do not want to select it).
+              </p>
             </li>
+
             <li>
-              <p>Copy the card at that location of <c>selectIndex</c> to a variable <c>removed</c>. Then use the <c>.pop(XXX)</c> function to
-                remove that item from the <c>deck</c>. Here is the section on <xref ref="csp-collections-intro_adding-and-removing-items" text="title"/>
-                if you need to review.</p>
+              <p>
+                Copy the card at that location of <c>selectIndex</c> to a variable <c>removed</c>.
+                Then use the <c>.pop(XXX)</c> function to remove that item from the <c>deck</c>.
+                Here is the section on
+                <xref ref="csp-collections-intro_adding-and-removing-items" text="title"/> if you
+                need to review.
+              </p>
             </li>
+
             <li>
-              <p>Print <c>removed</c> and <c>deck</c>. Make sure the card you <q>removed</q> is no longer in the deck.
-              At this point the first 3 tests should pass.</p>
+              <p>
+                Print <c>removed</c> and <c>deck</c>.
+                Make sure the card you <q>removed</q> is no longer in the deck.
+                At this point the first 3 tests should pass.
+              </p>
             </li>
+
             <li>
-              <p>Append the removed card to the end of the deck. Print the deck and verify that one random card was
-                moved to the end. At this point the last test should pass.</p>
+              <p>
+                Append the removed card to the end of the deck.
+                Print the deck and verify that one random card was moved to the end.
+                At this point the last test should pass.
+              </p>
             </li>
           </ol>
         </p>
-        <p>The checks for this program can't verify it works because it is doing something random. They will just
-          make sure you have some of the basic elements that are needed. Make sure to test your program until you are
-          sure it is working. The checks do depend on you using the specified variable names in your code.</p>
 
+        <p>
+          The checks for this program can't verify it works because it is doing something random.
+          They will just make sure you have some of the basic elements that are needed.
+          Make sure to test your program until you are sure it is working.
+          The checks do depend on you using the specified variable names in your code.
+        </p>
       </statement>
+
       <program xml:id="cspcollectionscontinued_shuffle4_editor" interactive="activecode" language="python">
         <code>
           import random
@@ -205,21 +292,27 @@
         </tests>
       </program>
     </exercise>
-    <p>Now we will repeat the process. Since we are only moving one card at a time, doing 10 repetitions probably
-      won't be enough. But let's start with that and see if the method looks like it is working before we
-      scale it up to more repetitions.</p>
+
+    <p>
+      Now we will repeat the process.
+      Since we are only moving one card at a time, doing 10 repetitions probably won't be enough.
+      But let's start with that and see if the method looks like it is working before we scale it up
+      to more repetitions.
+    </p>
 
     <exercise label="cspcollectionscontinued_shuffle5">
       <statement>
         <p>
           <ol>
             <li>
-              <p>Put your existing code in the loop below that repeats the whole process 10 times.</p>
+              <p>
+                Put your existing code in the loop below that repeats the whole process 10 times.
+              </p>
             </li>
           </ol>
         </p>
-
       </statement>
+
       <program xml:id="cspcollectionscontinued_shuffle5_editor" interactive="activecode" language="python">
         <code>
           import random
@@ -237,44 +330,69 @@
 
     <exercise label="cspcollectionscontinued_shuffle6">
       <statement>
-
-        <p>How does this new method seem to work?</p>
-
+        <p>
+          How does this new method seem to work?
+        </p>
       </statement>
-      <choices>
 
+      <choices>
         <choice>
           <statement>
-            <p>Poorly. Items seem to drift back to their initial positions after being moved.</p>
+            <p>
+              Poorly.
+              Items seem to drift back to their initial positions after being moved.
+            </p>
           </statement>
+
           <feedback>
-            <p>Things should be more jumbled up than that.</p>
+            <p>
+              Things should be more jumbled up than that.
+            </p>
           </feedback>
         </choice>
 
         <choice>
           <statement>
-            <p>OK. But there are still really long runs of consecutive cards (like 2-6 all in order).</p>
+            <p>
+              OK.
+              But there are still really long runs of consecutive cards (like 2-6 all in order).
+            </p>
           </statement>
+
           <feedback>
-            <p>It is possible that you saw this, but only if you got unlucky. Try running the program again.</p>
+            <p>
+              It is possible that you saw this, but only if you got unlucky.
+              Try running the program again.
+            </p>
           </feedback>
         </choice>
 
         <choice correct="yes">
           <statement>
-            <p>Well.</p>
+            <p>
+              Well.
+            </p>
           </statement>
+
           <feedback>
-            <p>This is pretty effective, though it would help to repeat the process more than 10 times.</p>
+            <p>
+              This is pretty effective, though it would help to repeat the process more than 10
+              times.
+            </p>
           </feedback>
         </choice>
       </choices>
-
     </exercise>
-    <p>If we really wanted to prove which method was the better way to shuffle we would need to create a
-      measurement of randomness and then test how <q>random</q> the results of the different algorithms are. We
-      might also need to do this to figure out the optimum number of repetitions for any particular algorithm. But the <q>eye
-      test</q> is good enough to identify that our second algorithm is superior.</p>
+
+    <p>
+      If we really wanted to prove which method was the better way to shuffle we would need to
+      create a measurement of randomness and then test how <q>random</q> the results of the
+      different algorithms are.
+      We might also need to do this to figure out the optimum number of repetitions for any
+      particular algorithm.
+      But the <q>eye
+      test</q> is good enough to identify that our second algorithm is
+      superior.
+    </p>
   </subsection>
 </section>

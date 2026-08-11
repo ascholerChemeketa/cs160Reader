@@ -3,9 +3,11 @@
 
   <exercise label="cspnamefunctions_exercises1">
     <statement>
-      <p>Fix the errors so it runs and returns the perimeter of a rectangle.</p>
-
+      <p>
+        Fix the errors so it runs and returns the perimeter of a rectangle.
+      </p>
     </statement>
+
     <program xml:id="cspnamefunctions_exercises1_editor" interactive="activecode" language="python">
       <code>
         def recPerimeter(length, width):
@@ -17,7 +19,6 @@
         print(result)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -32,11 +33,14 @@
 
   <exercise label="cspnamefunctions_exercises2">
     <statement>
-      <p>The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base and height of the triangle. 
-        Modify the function so that it has parameters for base and height and works to calculate
-        the area of different triangles.</p>
-
+      <p>
+        The <c>areaTriangle</c> function below was hard coded so it always uses 5 and 4 for the base
+        and height of the triangle.
+        Modify the function so that it has parameters for base and height and works to calculate the
+        area of different triangles.
+      </p>
     </statement>
+
     <program xml:id="cspnamefunctions_exercises2_editor" interactive="activecode" language="python">
       <code>
         def areaTriangle():
@@ -47,7 +51,6 @@
         print(areaTriangle(6, 3))
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -62,16 +65,27 @@
 
   <exercise label="cspnamefunctions_exercises3">
     <statement>
-      <p>The mathemetician Newton invented a method to approximate the square root of a number. Take the number <term>N</term>
-        you want the square root for and a guess <term>G</term> and then calculate <m>1/2(N/G + G)</m>. You will get a
-        rough approximation. If you use the answer as a new guess and repeat the process, you will get a closer
-        approximation. You can keep repeating the process to make your approximation closer and closer to the real
-        value.</p>
-      <p>Write an <c>approximateSqrt</c> function that takes a number and a guess as its parameters and then uses Newton's formula
-        to estimate the square root of the number.</p>
-      <p>There is already code provided to use your function to calculate the square root of 150.</p>
+      <p>
+        The mathemetician Newton invented a method to approximate the square root of a number.
+        Take the number <term>N</term> you want the square root for and a guess <term>G</term> and
+        then calculate <m>1/2(N/G + G)</m>.
+        You will get a rough approximation.
+        If you use the answer as a new guess and repeat the process, you will get a closer
+        approximation.
+        You can keep repeating the process to make your approximation closer and closer to the real
+        value.
+      </p>
 
+      <p>
+        Write an <c>approximateSqrt</c> function that takes a number and a guess as its parameters
+        and then uses Newton's formula to estimate the square root of the number.
+      </p>
+
+      <p>
+        There is already code provided to use your function to calculate the square root of 150.
+      </p>
     </statement>
+
     <program xml:id="cspnamefunctions_exercises3_editor" interactive="activecode" language="python">
       <code>
         # Your code here
@@ -85,7 +99,6 @@
         print(guess4)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -97,6 +110,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>
-

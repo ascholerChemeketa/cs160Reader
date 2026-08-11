@@ -1,15 +1,27 @@
 <section xml:id="csp-decisions-strings_testing-parts-of-strings-and-length">
   <title>Testing parts of strings and length</title>
-  <p>A common need is to see if a string is contained in another string. Maybe we want to test if the user included
-    <q>yes</q> anywhere in their response. Or we have a date that might look like <q>Dec 1st</q> or
-    <q>3rd of December</q> and we just want to verify that in contains <q>Dec</q>. To do this in Python,
-    we can use the <c>in</c> operator.</p>
-  <p><c>in</c> is used like <c>PART in STRING</c> where we are testing if the string <c>PART</c> is in the string <c>STRING</c>. Both can either
-    be a string in quotes or a variable that names a string.</p>
-  <p>This program asks if the user wants to continue. It is designed to handle any possible input that includes a
-    <q>y</q> or <q>Y</q>. First, it changes the input to be all lowercase, then it tests if there is a
-    <q>y</q> in it. Try it with <q>Yes</q>, <q>yeah</q>, <q>yes please continue</q>,
-    <q>y</q>, etc<ellipsis/> they all should work.</p>
+
+  <p>
+    A common need is to see if a string is contained in another string.
+    Maybe we want to test if the user included <q>yes</q> anywhere in their response.
+    Or we have a date that might look like <q>Dec 1st</q> or <q>3rd of December</q> and we just want
+    to verify that in contains <q>Dec</q>.
+    To do this in Python, we can use the <c>in</c> operator.
+  </p>
+
+  <p>
+    <c>in</c> is used like <c>PART in STRING</c> where we are testing if the string <c>PART</c> is
+    in the string <c>STRING</c>.
+    Both can either be a string in quotes or a variable that names a string.
+  </p>
+
+  <p>
+    This program asks if the user wants to continue.
+    It is designed to handle any possible input that includes a <q>y</q> or <q>Y</q>.
+    First, it changes the input to be all lowercase, then it tests if there is a <q>y</q> in it.
+    Try it with <q>Yes</q>, <q>yeah</q>, <q>yes please continue</q>, <q>y</q>, etc <ellipsis/> they
+    all should work.
+  </p>
 
   <program xml:id="cspdecisionsstrings_instring1" interactive="activecode" language="python">
     <code>
@@ -20,26 +32,47 @@ if "y" in answer:
     print("Great, let's continue")
 else:
     print("Bye!")
-        </code>
+    </code>
   </program>
-  <p>We can combine <c>in</c> with other tricks like <c>or</c> or <c>and</c> to make more complex tests. Complete this mixed-up
-    code problem that tells the user what season a given month is part of:</p>
+
+  <p>
+    We can combine <c>in</c> with other tricks like <c>or</c> or <c>and</c> to make more complex
+    tests.
+    Complete this mixed-up code problem that tells the user what season a given month is part of:
+  </p>
 
   <exercise label="cspdecisionsstrings_instring2">
     <statement>
-      <p>Complete the <c>getSeason</c> function so that it returns the correct season for each month. We want it to accept
-        <q>dec</q> or <q>Dec</q> or <q>December</q> or <q>DECEMBER</q> as all being the same
-        thing, so we will convert the month to lower case and then use <c>in</c> to test it.</p>
-      <p>Code for the Winter months is already there, write code for the other seasons. If there is no logical match for
-        the <c>monthName</c>, we will want to return <q>???</q> as the season.</p>
+      <p>
+        Complete the <c>getSeason</c> function so that it returns the correct season for each month.
+        We want it to accept <q>dec</q> or <q>Dec</q> or <q>December</q> or <q>DECEMBER</q> as all
+        being the same thing, so we will convert the month to lower case and then use <c>in</c> to
+        test it.
+      </p>
+
+      <p>
+        Code for the Winter months is already there, write code for the other seasons.
+        If there is no logical match for the <c>monthName</c>, we will want to return <q>???</q> as
+        the season.
+      </p>
+
       <p>
         <em>Hints:</em>
       </p>
-      <p>1. There are a couple of ways to make sure that <c>"???"</c> gets returned as the default value for season.</p>
-      <p>2. To make a bunch of exclusive options, remember that it works better to use if/elif/elif/else instead of
-        if/if/if/if</p>
 
+      <p>
+        1.
+        There are a couple of ways to make sure that <c>"???"</c> gets returned as the default value
+        for season.
+      </p>
+
+      <p>
+        2.
+        To make a bunch of exclusive options, remember that it works better to use if/elif/elif/else
+        instead of if/if/if/if
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsstrings_instring2_editor" interactive="activecode" language="python">
       <code>
         def getSeason(monthName):
@@ -62,7 +95,6 @@ else:
         print("Novuary is in ", getSeason("Novuary"))
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -76,8 +108,12 @@ else:
       </tests>
     </program>
   </exercise>
-  <p>Another common need is to check how long a string is. The <c>len()</c> function can be used to ask for the length of a
-    string. It accepts a string as its parameter and returns the length of that string.</p>
+
+  <p>
+    Another common need is to check how long a string is.
+    The <c>len()</c> function can be used to ask for the length of a string.
+    It accepts a string as its parameter and returns the length of that string.
+  </p>
 
   <program xml:id="cspdecisionsstrings_instring3" interactive="activecode" language="python">
     <code>
@@ -87,54 +123,72 @@ print("That name is", nameLength, "letters long.")
 
 fullName = "Daphne Smith"
 print("The full name is", len(fullName), "letters long.")
-        </code>
+    </code>
   </program>
 
   <exercise label="cspdecisionsstrings_instring4">
     <statement>
-
-      <p>What would <c>len("All good")</c> result in?</p>
-
+      <p>
+        What would <c>len("All good")</c> result in?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice correct="yes">
         <statement>
-          <p>8</p>
+          <p>
+            8
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct</p>
+          <p>
+            Correct
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>7</p>
+          <p>
+            7
+          </p>
         </statement>
+
         <feedback>
-          <p>The space counts as a "letter" in the string</p>
+          <p>
+            The space counts as a "letter" in the string
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>0</p>
+          <p>
+            0
+          </p>
         </statement>
+
         <feedback>
-          <p>Try it in the program above!</p>
+          <p>
+            Try it in the program above!
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>It would be an error</p>
+          <p>
+            It would be an error
+          </p>
         </statement>
+
         <feedback>
-          <p>Try it in the program above!</p>
+          <p>
+            Try it in the program above!
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 </section>
-

@@ -3,9 +3,12 @@
 
   <exercise label="cspnameprocedures_exercises1">
     <statement>
-      <p>There are errors in the indention in the following code. Fix it to work correctly without errors.</p>
-
+      <p>
+        There are errors in the indention in the following code.
+        Fix it to work correctly without errors.
+      </p>
     </statement>
+
     <program xml:id="cspnameprocedures_exercises1_editor" interactive="activecode" language="python">
       <code>
         def square(turtle):
@@ -23,7 +26,6 @@
             square(malik)           # draw a square with malik
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
         import re
 
@@ -43,10 +45,14 @@
 
   <exercise label="cspnameprocedures_exercises2">
     <statement>
-      <p>The following code has some syntax errors. There are two errors, but each error is repeated multiple times due
-        to the author copying and pasting lines of code. Fix the errors so that the code runs and draws multiple squares.</p>
-
+      <p>
+        The following code has some syntax errors.
+        There are two errors, but each error is repeated multiple times due to the author copying
+        and pasting lines of code.
+        Fix the errors so that the code runs and draws multiple squares.
+      </p>
     </statement>
+
     <program xml:id="cspnameprocedures_exercises2_editor" interactive="activecode" language="python">
       <code>
         def square(turtle, size):
@@ -68,7 +74,6 @@
         square(25)              # draw a square of size 25
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
         import re
 
@@ -88,14 +93,24 @@
 
   <exercise label="cspnameprocedures_exercises3">
     <statement>
-      <p>Define a function <c>hexagon</c> that has a turtle's name as its parameter. Your procedure should draw a hexagon
-        (6 sides) where each side has a length of 50. The turtle should end up in its original position and facing.
-        Remember the turns required (exterior angles) for a regular shape are <m>360 / numSides</m>.</p>
-      <p>While you are developing your procedure, we will call the <c>hexagon</c> procedure just once. When you are done,
-        uncomment the code at the bottom of the program to draw 5 more hexagons.</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        Define a function <c>hexagon</c> that has a turtle's name as its parameter.
+        Your procedure should draw a hexagon (6 sides) where each side has a length of 50.
+        The turtle should end up in its original position and facing.
+        Remember the turns required (exterior angles) for a regular shape are <m>360 / numSides</m>.
+      </p>
 
+      <p>
+        While you are developing your procedure, we will call the <c>hexagon</c> procedure just
+        once.
+        When you are done, uncomment the code at the bottom of the program to draw 5 more hexagons.
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="cspnameprocedures_exercises3_editor" interactive="activecode" language="python">
       <code>
         # define hexagon here
@@ -113,7 +128,6 @@
         #    hexagon(brittany)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
         import re
 
@@ -136,17 +150,34 @@
 
   <exercise label="cspnameprocedures_exercises4">
     <statement>
-      <p>Complete the body of the function <c>colorRectangle(turtleName, width, colorValue)</c>.</p>
-      <p>It should draw a rectangle that has a width specified by the parameter <c>width</c> and a height of 100. The turtle
-        should be told to draw with a <c>color</c> specified by the parameter <c>colorValue</c>. The turtle should end up in its
-        original position and facing.</p>
-      <p>Make sure to do <c>pendown</c> and <c>color</c> at the beginning of the procedure and then do <c>penup</c> at the end of the
-        procedure.</p>
-      <p>There is code in the main part of the program to draw two different color rectangles. Once you get your
-        procedure working, you can comment it out and uncomment the last 4 lines of the program to make a cool pattern.</p>
-      <p><xref ref="turtle-reference" text="custom">Turtle procedure reference</xref></p>
+      <p>
+        Complete the body of the function <c>colorRectangle(turtleName, width, colorValue)</c>.
+      </p>
 
+      <p>
+        It should draw a rectangle that has a width specified by the parameter <c>width</c> and a
+        height of 100.
+        The turtle should be told to draw with a <c>color</c> specified by the parameter
+        <c>colorValue</c>.
+        The turtle should end up in its original position and facing.
+      </p>
+
+      <p>
+        Make sure to do <c>pendown</c> and <c>color</c> at the beginning of the procedure and then
+        do <c>penup</c> at the end of the procedure.
+      </p>
+
+      <p>
+        There is code in the main part of the program to draw two different color rectangles.
+        Once you get your procedure working, you can comment it out and uncomment the last 4 lines
+        of the program to make a cool pattern.
+      </p>
+
+      <p>
+        <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
+      </p>
     </statement>
+
     <program xml:id="cspnameprocedures_exercises4_editor" interactive="activecode" language="python">
       <code>
         def colorRectangle(turtleName, width, colorValue):
@@ -171,7 +202,6 @@
 
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
         import re
 
@@ -192,5 +222,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>

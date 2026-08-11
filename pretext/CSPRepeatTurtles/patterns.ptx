@@ -1,19 +1,32 @@
 <section xml:id="csp-repeat-turtles_nesting-loops">
   <title>Nesting Loops</title>
+
   <subsection>
     <title>Repeating Patterns</title>
-<p>If we keep drawing the same shape over and over, turning slightly and/or moving between each drawing, we can make <url href="http://en.wikipedia.org/wiki/Spirograph" visual="http://en.wikipedia.org/wiki/Spirograph">spirograph</url>
-    like patterns.</p>
 
-  <p>The program below does this by drawing 20 pentagons. To do this, we need to repeat the pentagon recipe 20 times
-    with a <c>for</c> loop. The pentagon recipe has its own <c>for</c> loop which repeats 5 times. A loop inside of another
-    loop is known as a <term>nested loop</term>. The inner loop will do all of its repetitions for each iteration of the
-    outer loop.</p>
-  <p>In this example, the code inside of the inner loop (<c>forward(50)</c> and <c>right(72)</c>) will be repeated 5 times and that group
-    will be repeated 20 times. So each of those lines will happen 100 times!</p>
+    <p>
+      If we keep drawing the same shape over and over, turning slightly and/or moving between each
+      drawing, we can make
+      <url href="http://en.wikipedia.org/wiki/Spirograph" visual="http://en.wikipedia.org/wiki/Spirograph">spirograph</url>
+      like patterns.
+    </p>
 
-  <program xml:id="csprepeatturtles_patterns1" interactive="activecode" language="python">
-    <code>
+    <p>
+      The program below does this by drawing 20 pentagons.
+      To do this, we need to repeat the pentagon recipe 20 times with a <c>for</c> loop.
+      The pentagon recipe has its own <c>for</c> loop which repeats 5 times.
+      A loop inside of another loop is known as a <term>nested loop</term>.
+      The inner loop will do all of its repetitions for each iteration of the outer loop.
+    </p>
+
+    <p>
+      In this example, the code inside of the inner loop ( <c>forward(50)</c> and <c>right(72)</c> )
+      will be repeated 5 times and that group will be repeated 20 times.
+      So each of those lines will happen 100 times!
+    </p>
+
+    <program xml:id="csprepeatturtles_patterns1" interactive="activecode" language="python">
+      <code>
 from turtle import *
 from sys import *
 zoe = Turtle()
@@ -27,15 +40,21 @@ for repeats in range(20):
     for sides in range(5):
         zoe.forward(50)
         zoe.right(72)
-        </code>
-  </program>
-  <p>By setting the pen color differently, we can distinguish the part that draws the shape from the part that draws <em>
-    between</em> the shapes. The <c>forward</c> and <c>right</c> inside of the outer loop, before the second <c>for</c> work together
-    to make a circle. 20 turns of 18 degrees will make a full circle of 360 degrees. At each of those 20 points, the
-    turtle draws a pentagon.</p>
+      </code>
+    </program>
 
-  <program xml:id="csprepeatturtles_patterns2" interactive="activecode" language="python">
-    <code>
+    <p>
+      By setting the pen color differently, we can distinguish the part that draws the shape from
+      the part that draws <em>
+    between</em> the shapes.
+      The <c>forward</c> and <c>right</c> inside of the outer loop, before the second <c>for</c>
+      work together to make a circle.
+      20 turns of 18 degrees will make a full circle of 360 degrees.
+      At each of those 20 points, the turtle draws a pentagon.
+    </p>
+
+    <program xml:id="csprepeatturtles_patterns2" interactive="activecode" language="python">
+      <code>
 from turtle import *
 from sys import *
 zoe = Turtle()
@@ -53,67 +72,90 @@ for repeats in range(20):
     for sides in range(5):
         zoe.forward(50)
         zoe.right(72)
-        </code>
-  </program>
-  <p>You can use the coloring in the picture below to help you figure out the correct order of the lines below.</p>
-  <exercise label="csprepeatturtles_patterns3" adaptive="yes" indentation="hide" language="python">
-    <statement>
-      <p>There is a way of arranging the statements below such that the image shown below is created. The turtle will
-        draw 10 triangles. As it does so, we want it to make a full circle. Think carefully about how many degrees the
-        turtle needs to turn at each step to make a full circle.</p>
-      <p>You will not need all of the blocks.</p>
-      <image source="CSPRepeatTurtles/Figures/RedTrianglesBlueCircle.png" width="30%">
-        <shortdescription>Repeated turtle pattern of red triangles around a blue circle.</shortdescription>
-      </image>
-    </statement>
-    <blocks>
-      <block order="2">
-        <cline>from turtle import *</cline>
-        <cline>from sys import *</cline>
-        <cline>mateo = Turtle()</cline>
-        <cline>mateo.speed(0)</cline>
-      </block>
-      <block order="5">
-        <choice correct="yes">
-          <cline>for repeats in range(10):</cline>
-        </choice>
-        <choice>
-          <cline>for repeats in range(10) </cline>
-        </choice>
-      </block>
-      <block order="4">
-        <choice correct="yes">
-          <cline> mateo.color("blue")</cline>
-          <cline> mateo.forward(10)</cline>
-          <cline> mateo.left(36)</cline>
-        </choice>
-        <choice>
-          <cline> mateo.color("blue")</cline>
-          <cline> mateo.forward(10)</cline>
-          <cline> mateo.left(18) </cline>
-        </choice>
-      </block>
-      <block order="8">
-        <choice correct="yes">
-          <cline> for sides in range(3):</cline>
-          <cline> </cline>
-        </choice>
-        <choice>
-          <cline> for sides in range(4): </cline>
-        </choice>
-      </block>
-      <block order="6">
-        <cline>  mateo.color("red")</cline>
-        <cline>  mateo.forward(50)</cline>
-        <cline>  mateo.right(120)</cline>
-      </block>
-    </blocks>
-  </exercise>
-  <p>The following example has 3 syntax errors. Can you fix the errors so that the code compiles and runs? (None of the
-    errors are in the numbers used - those would be logic errors, not syntax errors.)</p>
+      </code>
+    </program>
 
-  <program xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
-    <code>
+    <p>
+      You can use the coloring in the picture below to help you figure out the correct order of the
+      lines below.
+    </p>
+
+    <exercise label="csprepeatturtles_patterns3" adaptive="yes" indentation="hide" language="python">
+      <statement>
+        <p>
+          There is a way of arranging the statements below such that the image shown below is
+          created.
+          The turtle will draw 10 triangles.
+          As it does so, we want it to make a full circle.
+          Think carefully about how many degrees the turtle needs to turn at each step to make a
+          full circle.
+        </p>
+
+        <p>
+          You will not need all of the blocks.
+        </p>
+
+        <image source="CSPRepeatTurtles/Figures/RedTrianglesBlueCircle.png" width="30%">
+          <shortdescription>
+            Repeated turtle pattern of red triangles around a blue circle.
+          </shortdescription>
+        </image>
+      </statement>
+      <blocks>
+        <block order="2">
+          <cline>from turtle import *</cline>
+          <cline>from sys import *</cline>
+          <cline>mateo = Turtle()</cline>
+          <cline>mateo.speed(0)</cline>
+        </block>
+        <block order="5">
+          <choice correct="yes">
+            <cline>for repeats in range(10):</cline>
+          </choice>
+
+          <choice>
+            <cline>for repeats in range(10) </cline>
+          </choice>
+        </block>
+        <block order="4">
+          <choice correct="yes">
+            <cline> mateo.color("blue")</cline>
+            <cline> mateo.forward(10)</cline>
+            <cline> mateo.left(36)</cline>
+          </choice>
+
+          <choice>
+            <cline> mateo.color("blue")</cline>
+            <cline> mateo.forward(10)</cline>
+            <cline> mateo.left(18) </cline>
+          </choice>
+        </block>
+        <block order="8">
+          <choice correct="yes">
+            <cline> for sides in range(3):</cline>
+            <cline/>
+          </choice>
+
+          <choice>
+            <cline> for sides in range(4): </cline>
+          </choice>
+        </block>
+        <block order="6">
+          <cline>  mateo.color("red")</cline>
+          <cline>  mateo.forward(50)</cline>
+          <cline>  mateo.right(120)</cline>
+        </block>
+      </blocks>
+    </exercise>
+
+    <p>
+      The following example has 3 syntax errors.
+      Can you fix the errors so that the code compiles and runs?
+      (None of the errors are in the numbers used - those would be logic errors, not syntax errors.)
+    </p>
+
+    <program xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
+      <code>
 from turtle import *
 
 dave = Turtle
@@ -128,15 +170,20 @@ for repeats in range(20)
     for sides in range(4):
         dave.forward(50)
         dave.right(90)
-        </code>
-  </program>
+      </code>
+    </program>
   </subsection>
-<subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">
+
+  <subsection xml:id="csp-repeat-turtles_execution-limit-run-amok-programs">
     <title>Execution Limit &amp; Run Amok Programs</title>
 
-    <p>A Python program that is running in the browser has a limited amount of time it is allowed to run. If a program
-      takes more than ~20 seconds, it will stop running even if it is not done. This can prevent complex programs from
-      ever finishing what they are doing. Try running this program and wait until an error is printed.</p>
+    <p>
+      A Python program that is running in the browser has a limited amount of time it is allowed to
+      run.
+      If a program takes more than ~20 seconds, it will stop running even if it is not done.
+      This can prevent complex programs from ever finishing what they are doing.
+      Try running this program and wait until an error is printed.
+    </p>
 
     <program xml:id="csprepeatturtles_patterns5" interactive="activecode" language="python">
       <code>
@@ -154,29 +201,50 @@ for repeats in range(36):
     for sides in range(4):
         dave.forward(50)
         dave.right(90)
-        </code>
+      </code>
     </program>
-    <p>Now try uncommenting these two lines:</p>
+
+    <p>
+      Now try uncommenting these two lines:
+    </p>
+
     <program language="python">
       <code>
 import sys
 sys.setExecutionLimit(60000)
-</code>
+      </code>
     </program>
-    <p>They set the time limit for the program to 60,000 milliseconds. (One second is 1,000 milliseconds, so 60,000
-      milliseconds is 60 seconds.) This should give the program time to finish.</p>
-    <p>Of course we also could increase the speed of the turtle to help get the program done faster. But since there is
-      a limit to the turtle's speed, it may sometimes be necessary to also increase the execution limit.</p>
 
-    <p>If you ever get bored waiting for a program to <term>timeout</term> (exceed its execution limit), you can simply
-      refresh the browser page.</p>
+    <p>
+      They set the time limit for the program to 60,000 milliseconds.
+      (One second is 1,000 milliseconds, so 60,000 milliseconds is 60 seconds.) This should give the
+      program time to finish.
+    </p>
+
+    <p>
+      Of course we also could increase the speed of the turtle to help get the program done faster.
+      But since there is a limit to the turtle's speed, it may sometimes be necessary to also
+      increase the execution limit.
+    </p>
+
+    <p>
+      If you ever get bored waiting for a program to <term>timeout</term> (exceed its execution
+      limit), you can simply refresh the browser page.
+    </p>
   </subsection>
+
   <subsection xml:id="csp-repeat-turtles_indirect-nesting">
     <title>Indirect Nesting</title>
-    <p>It is also important to recognize that we can get the same behavior if we indirectly nest loops. The sample below
-      has a <c>square</c> procedure with a loop. The main part of the program has a loop as well and that loop calls the <c>square</c>
-      procedure inside of it. So the lines inside <c>square</c>'s loop get executed 40 total times - the loop in main
-      calls square 10 times and each call to square repeats them 4 times.</p>
+
+    <p>
+      It is also important to recognize that we can get the same behavior if we indirectly nest
+      loops.
+      The sample below has a <c>square</c> procedure with a loop.
+      The main part of the program has a loop as well and that loop calls the <c>square</c>
+      procedure inside of it.
+      So the lines inside <c>square</c> 's loop get executed 40 total times - the loop in main calls
+      square 10 times and each call to square repeats them 4 times.
+    </p>
 
     <program xml:id="csprepeatturtles_patterns6" interactive="activecode" language="python">
       <code>
@@ -194,12 +262,18 @@ for repeats in range(10):
     dave.forward(10)
     dave.left(36)
     square(dave)
-        </code>
+      </code>
     </program>
-    <p>Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loops all stacked
-      inside of each other. The <q>indirect</q> nesting, where the inner loop is hidden inside of a procedure
-      makes the main part of the program a bit easier to read. Compare this program to the one at the top of the page.
-      It is much easier to see that this program draws 10 squares than it was to see that the first one drew 20
-      pentagons. We had to use a comment in the first one just to try to make things clear.</p>
+
+    <p>
+      Normal nested loops can get difficult to read once you have multiple <q>levels</q> of loops
+      all stacked inside of each other.
+      The <q>indirect</q> nesting, where the inner loop is hidden inside of a procedure makes the
+      main part of the program a bit easier to read.
+      Compare this program to the one at the top of the page.
+      It is much easier to see that this program draws 10 squares than it was to see that the first
+      one drew 20 pentagons.
+      We had to use a comment in the first one just to try to make things clear.
+    </p>
   </subsection>
 </section>

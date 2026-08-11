@@ -1,26 +1,44 @@
 <section xml:id="algorithms_algorithm-efficiency">
   <title>Algorithm Efficiency</title>
-  <image source="Algorithms/Images/Stopwatch.png"
-         width="15%">
+
+  <image source="Algorithms/Images/Stopwatch.png" width="15%">
     <shortdescription>Stopwatch representing program running time.</shortdescription>
   </image>
-  <p>When it comes time to put an algorithm to work or choose between competing algorithms, we need a way to measure and
-    compare algorithms. There are many different things we could measure about an algorithm: the number of lines of code
-    to express, how much time it takes to program and debug, the amount of memory used while running, and the time taken
-    to run are all things we might care about. But in general, the most important metric is usually <em>
+
+  <p>
+    When it comes time to put an algorithm to work or choose between competing algorithms, we need a
+    way to measure and compare algorithms.
+    There are many different things we could measure about an algorithm: the number of lines of code
+    to express, how much time it takes to program and debug, the amount of memory used while
+    running, and the time taken to run are all things we might care about.
+    But in general, the most important metric is usually
+    <em>
       <q>How much work does it require for a problem of size n</q>
-    </em>?</p>
-  <p>As users of a computer, what we usually care about is <q>How quickly do I get my answer</q>. A search for a file on
-    your computer that shows results in 0.2 seconds is great; a search that takes 20 minutes would be so slow it would
-    only be much less useful. But the time to do something depends on many factors - how fast is the computer? how many
-    other things is it trying to do? how big is the problem (how many files are there to search)? These factors will
-    change depending on who is running the program and when; the fact that you are running a program on a faster
-    computer and it takes less time than when I run it does not tell us anything interesting about the algorithm the
-    program uses.</p>
-  <p>So instead of measuring time when measuring algorithms, we usually think in terms of the work required. The work
-    required to perform a particular algorithm does not generally change when it is executed on different machines or
-    under different conditions. So what exactly is <q>work</q>? Let's try to come up with some descriptions of how much
-    work two different algorithms take. First, we will consider this DrawSquare algorithm:</p>
+    </em>?
+  </p>
+
+  <p>
+    As users of a computer, what we usually care about is <q>How quickly do I get my answer</q>.
+    A search for a file on your computer that shows results in 0.2 seconds is great; a search that
+    takes 20 minutes would be so slow it would only be much less useful.
+    But the time to do something depends on many factors - how fast is the computer?
+    how many other things is it trying to do?
+    how big is the problem (how many files are there to search)?
+    These factors will change depending on who is running the program and when; the fact that you
+    are running a program on a faster computer and it takes less time than when I run it does not
+    tell us anything interesting about the algorithm the program uses.
+  </p>
+
+  <p>
+    So instead of measuring time when measuring algorithms, we usually think in terms of the work
+    required.
+    The work required to perform a particular algorithm does not generally change when it is
+    executed on different machines or under different conditions.
+    So what exactly is <q>work</q>?
+    Let's try to come up with some descriptions of how much work two different algorithms take.
+    First, we will consider this DrawSquare algorithm:
+  </p>
+
   <program language="none">
     <code>
 DrawSquare of size (n)
@@ -29,15 +47,24 @@ Repeat 4 times:
     Move (n)
     Turn Clockwise (90)
 Pen Up
-</code>
+    </code>
   </program>
-  <p>We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up. Note that it doesn't
-    matter what size the square is (assuming Move always takes a fixed amount of time), this algorithm always requires
-    10 steps of work. If we decided that the pen up and pen down happen instantly and don't count as work, then we might
-    say the algorithm only took 8 <q>units</q> of work (4 Moves + 4 Turns); if we decided that processing the <q>Repeat</q>
-    took one unit of work for each loop we might say that the algorithm requires 14 units (Pen Down + 4 Moves + 4 Turns
-    + 4 Repeats + Pen Up). But whatever we decide, the problem always takes that amount of work.</p>
-  <p>Compare that to the following algorithm:</p>
+
+  <p>
+    We might say it requires 10 <q>units</q> of work: Pen Down + 4 Moves + 4 Turns + Pen Up.
+    Note that it doesn't matter what size the square is (assuming Move always takes a fixed amount
+    of time), this algorithm always requires 10 steps of work.
+    If we decided that the pen up and pen down happen instantly and don't count as work, then we
+    might say the algorithm only took 8 <q>units</q> of work (4 Moves + 4 Turns); if we decided that
+    processing the <q>Repeat</q> took one unit of work for each loop we might say that the algorithm
+    requires 14 units (Pen Down + 4 Moves + 4 Turns + 4 Repeats + Pen Up).
+    But whatever we decide, the problem always takes that amount of work.
+  </p>
+
+  <p>
+    Compare that to the following algorithm:
+  </p>
+
   <program language="none">
     <code>
 DrawShape with (n) sides
@@ -46,83 +73,137 @@ Repeat (n) times:
     Move 100
     Turn Clockwise ( 360 / (n) )
 Pen Up
-</code>
+    </code>
   </program>
-  <p>If we use it to draw a square and stick to our original accounting method, it takes 10 <q>units</q> of work. But
-    what if use it to draw a triangle? Now it would take 8 units of work (Pen Down + 3 Moves + 3 Turns + Pen Up). If we
-    use it to draw a pentagon it would take 12 units of work (Pen Down + 5 Moves + 5 Turns + Pen Up). A decagon would
-    take 22 units (Pen Down + 10 Moves + 10 Turns + Pen Up). For this algorithm, the amount of work grows as the input
-    (number of sides) grows.</p>
-  <p>If we do a little thinking, we could come up with a function relating the amount of work required <term>f(n)</term>
-    to the number of sides <term>n</term>: <term>f(n) = 2n + 2</term>. Each side of the shape takes two steps, and there
-    are two steps for putting the Pen Down and Up.</p>
-  <p>If we decided the Pen Up/Down didn't count, we might say the function for calculating work was just <term>f(n) = 2n</term>.
-    If we decided that each time we <q>Repeat</q> it costs a unit of work, each side would require three steps and the
-    function might be <term>f(n) = 3n + 2</term>.</p>
-  <p>The graph below compares the work required for the two algorithms. The x-axis represents the value of <term>n</term>
-    input to the algorithms while the y-axis represents <term>f(n)</term> - the work required.</p>
+
+  <p>
+    If we use it to draw a square and stick to our original accounting method, it takes 10
+    <q>units</q> of work.
+    But what if use it to draw a triangle?
+    Now it would take 8 units of work (Pen Down + 3 Moves + 3 Turns + Pen Up).
+    If we use it to draw a pentagon it would take 12 units of work (Pen Down + 5 Moves + 5 Turns +
+    Pen Up).
+    A decagon would take 22 units (Pen Down + 10 Moves + 10 Turns + Pen Up).
+    For this algorithm, the amount of work grows as the input (number of sides) grows.
+  </p>
+
+  <p>
+    If we do a little thinking, we could come up with a function relating the amount of work
+    required <term>f(n)</term> to the number of sides <term>n</term>: <term>f(n) = 2n + 2</term>.
+    Each side of the shape takes two steps, and there are two steps for putting the Pen Down and Up.
+  </p>
+
+  <p>
+    If we decided the Pen Up/Down didn't count, we might say the function for calculating work was
+    just <term>f(n) = 2n</term>.
+    If we decided that each time we <q>Repeat</q> it costs a unit of work, each side would require
+    three steps and the function might be <term>f(n) = 3n + 2</term>.
+  </p>
+
+  <p>
+    The graph below compares the work required for the two algorithms.
+    The x-axis represents the value of <term>n</term> input to the algorithms while the y-axis
+    represents <term>f(n)</term>- the work required.
+  </p>
 
   <figure>
-    <caption>Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square (Blue) and Draw
-      Shape (Gold) </caption>
+    <caption>
+      Comparison of 3 different ways of counting work for 2 different algorithms - Draw Square
+      (Blue) and Draw Shape (Gold)
+    </caption>
+
     <image source="Algorithms/Images/DrawAlgorithms.svg">
       <shortdescription>Flowchart showing steps for drawing an algorithm.</shortdescription>
     </image>
   </figure>
-  
-  <p>What should be clear is that it does not matter which accounting system we use when comparing the two algorithms.
-    By any counting system, if we are drawing a large number of sides, the DrawShape algorithm has to do more work than
-    the DrawSquare algorithm.</p>
+
+  <p>
+    What should be clear is that it does not matter which accounting system we use when comparing
+    the two algorithms.
+    By any counting system, if we are drawing a large number of sides, the DrawShape algorithm has
+    to do more work than the DrawSquare algorithm.
+  </p>
+
   <exercise label="algorithms_algorithm-efficiency-ex1">
     <statement>
-      <p>Why do algorithm analyses usually focus on work required instead of elapsed time?</p>
+      <p>
+        Why do algorithm analyses usually focus on work required instead of elapsed time?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Elapsed time depends on the machine and conditions, while the algorithm's required work is more stable.</p>
+          <p>
+            Elapsed time depends on the machine and conditions, while the algorithm's required work
+            is more stable.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Algorithms never take any elapsed time.</p>
+          <p>
+            Algorithms never take any elapsed time.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Work can be measured only in seconds.</p>
+          <p>
+            Work can be measured only in seconds.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>All computers always run at the same speed.</p>
+          <p>
+            All computers always run at the same speed.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="algorithms_algorithm-efficiency-ex2">
     <statement>
-      <p>Which drawing algorithm has work that grows as the number of sides grows?</p>
+      <p>
+        Which drawing algorithm has work that grows as the number of sides grows?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>DrawShape with <m>n</m> sides</p>
+          <p>
+            DrawShape with <m>n</m> sides
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>DrawSquare of size <m>n</m></p>
+          <p>
+            DrawSquare of size <m>n</m>
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Neither; both always take the same work.</p>
+          <p>
+            Neither; both always take the same work.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Both algorithms have work that grows with the number of sides.</p>
+          <p>
+            Both algorithms have work that grows with the number of sides.
+          </p>
         </statement>
       </choice>
     </choices>

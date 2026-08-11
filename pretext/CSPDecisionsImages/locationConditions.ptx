@@ -1,14 +1,21 @@
 <section xml:id="csp-decisions-images_location-based-conditions">
   <title>Location Based Conditions</title>
 
-  <p>We can also use the x and y coordinates of pixels to make decisions about what pixels to process. This program
-    changes pixels to black only if their x coordinate is less than 20 or over 180.</p>
+  <p>
+    We can also use the x and y coordinates of pixels to make decisions about what pixels to
+    process.
+    This program changes pixels to black only if their x coordinate is less than 20 or over 180.
+  </p>
 
   <exercise xml:id="cspdecisionsimages_locationconditions1">
     <statement>
-      <p>Currently, this program changes the 20 leftmost and rightmost pixels to black. Modify it to turn the 40 left
-        and rightmost pixels to black. (Hint: The image is 200 pixels wide.) </p>
+      <p>
+        Currently, this program changes the 20 leftmost and rightmost pixels to black.
+        Modify it to turn the 40 left and rightmost pixels to black.
+        (Hint: The image is 200 pixels wide.)
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsimages_locationconditions1_editor" interactive="activecode" language="python">
       <code>
 from image import *
@@ -36,9 +43,9 @@ for p in pixels:
         # CHANGE THE PIXEL
         img.updatePixel(p)
 
-</code>
+      </code>
       <tests>
-from unittest.gui import TestCaseGui 
+        from unittest.gui import TestCaseGui 
 
 #account for weirdness with datafile color values
 #return b if a is close to it, otherwise return a
@@ -62,8 +69,7 @@ class myTests(TestCaseGui):
         self.assertEqual(str(p3), "[109,161,7]", "Test that pixels in the middle are unmodified")
 
 myTests().main()
-        </tests>
+      </tests>
     </program>
   </exercise>
 </section>
-

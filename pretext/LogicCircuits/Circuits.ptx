@@ -1,108 +1,176 @@
 <section xml:id="logic-circuits_circuits">
   <title>Circuits</title>
-  <p>Every circuit in a computer is made by wiring together switches (transistors) so they implement logic gates. These
-    logic gates are used to store information, do math, and make comparisons, as well as everything else a computer can
-    do.</p>
-  <p>The diagrams for these circuits are drawn using the symbols shown below. Traditionally, the inputs to a gate come
-    from the left, and the output comes out of the right side. That is why two lines are going into every gate but NOT<ellipsis/>
-    every other gate requires two inputs.</p>
 
-  <image source="LogicCircuits/Images/BasicGates.png"
-         width="50%">
+  <p>
+    Every circuit in a computer is made by wiring together switches (transistors) so they implement
+    logic gates.
+    These logic gates are used to store information, do math, and make comparisons, as well as
+    everything else a computer can do.
+  </p>
+
+  <p>
+    The diagrams for these circuits are drawn using the symbols shown below.
+    Traditionally, the inputs to a gate come from the left, and the output comes out of the right
+    side.
+    That is why two lines are going into every gate but NOT <ellipsis/> every other gate requires
+    two inputs.
+  </p>
+
+  <image source="LogicCircuits/Images/BasicGates.png" width="50%">
     <shortdescription>Symbols for basic logic gates.</shortdescription>
   </image>
 
-  <p>Key features:</p>
+  <p>
+    Key features:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>AND has a flat left side and is rounder, OR bends in on the left and is pointier</p>
+        <p>
+          AND has a flat left side and is rounder, OR bends in on the left and is pointier
+        </p>
       </li>
+
       <li>
-        <p>XOR looks just like OR but with an extra line behind it</p>
+        <p>
+          XOR looks just like OR but with an extra line behind it
+        </p>
       </li>
+
       <li>
-        <p>NOT has a little circle at the tip of a triangle</p>
+        <p>
+          NOT has a little circle at the tip of a triangle
+        </p>
       </li>
     </ul>
   </p>
-  <p>Below is an <term>OR</term> gate being used in a circuit. The power is wired to two push-button switches that
-    function as the inputs to the circuit. The inputs can be turned off, in which case they do not transmit power, or
-    on, in which case they allow power through (try clicking on the buttons inside <term>Input1</term> and <term>Input2</term>
-    - the center will turn a different color when they are <q>on</q>). Those inputs feed into the left side of the <term>
-    OR</term> gate. The output of the <term>OR</term> gate comes out of the right side and travels to the <term> Output</term>.
-    If either one of the two Inputs is set to on (or both are), the Output should be on.</p>
-      <interactive label="logic-circuits-circuits-interactive-1" iframe="LogicCircuits/logic-circuits-circuits-interactive-1.html"/>
-  <p> Try clicking the inputs to change them from off to on and back again. Observe what happens to the output. </p>
-  
-    <note xml:id="circuit-tips">
-      <title>Circuit simulator tips</title>
 
-      <p>
-        <ul>
-          <li>
-            <p>An input is ON when the center turns dark.</p>
-          </li>
-          <li>
-            <p>A red circle at the output or input to a gate indicates it is on. Black is off.</p>
-          </li>
-          <li>
-            <p>The final Output light turns bright red when it is on.</p>
-          </li>
-        </ul>
-      </p>
-    </note>
-  
+  <p>
+    Below is an <term>OR</term> gate being used in a circuit.
+    The power is wired to two push-button switches that function as the inputs to the circuit.
+    The inputs can be turned off, in which case they do not transmit power, or on, in which case
+    they allow power through (try clicking on the buttons inside <term>Input1</term> and
+    <term>Input2</term>- the center will turn a different color when they are <q>on</q> ).
+    Those inputs feed into the left side of the <term>
+    OR</term> gate.
+    The output of the <term>OR</term> gate comes out of the right side and travels to the
+    <term> Output</term>.
+    If either one of the two Inputs is set to on (or both are), the Output should be on.
+  </p>
+
+  <interactive label="logic-circuits-circuits-interactive-1" iframe="LogicCircuits/logic-circuits-circuits-interactive-1.html"/>
+  <p>
+    Try clicking the inputs to change them from off to on and back again.
+    Observe what happens to the output.
+  </p>
+
+  <note xml:id="circuit-tips">
+    <title>Circuit simulator tips</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            An input is ON when the center turns dark.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A red circle at the output or input to a gate indicates it is on.
+            Black is off.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The final Output light turns bright red when it is on.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </note>
+
   <exercise label="logic-circuits_circuits-ex1">
     <statement>
-      <p>In a circuit diagram, where are a gate's inputs and output conventionally drawn?</p>
+      <p>
+        In a circuit diagram, where are a gate's inputs and output conventionally drawn?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Inputs enter from the left, and the output leaves on the right.</p>
+          <p>
+            Inputs enter from the left, and the output leaves on the right.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Inputs enter from the right, and the output leaves on the left.</p>
+          <p>
+            Inputs enter from the right, and the output leaves on the left.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Inputs enter from the top, and the output leaves at the bottom.</p>
+          <p>
+            Inputs enter from the top, and the output leaves at the bottom.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>There is no usual direction for circuit diagrams.</p>
+          <p>
+            There is no usual direction for circuit diagrams.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_circuits-ex2">
     <statement>
-      <p>Which feature identifies a NOT gate in a circuit diagram?</p>
+      <p>
+        Which feature identifies a NOT gate in a circuit diagram?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>A flat left side and rounded right side</p>
+          <p>
+            A flat left side and rounded right side
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>A pointed right side with an extra curved line behind it</p>
+          <p>
+            A pointed right side with an extra curved line behind it
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>A triangle with a small circle at its tip</p>
+          <p>
+            A triangle with a small circle at its tip
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Two curved lines that meet at the output</p>
+          <p>
+            Two curved lines that meet at the output
+          </p>
         </statement>
       </choice>
     </choices>

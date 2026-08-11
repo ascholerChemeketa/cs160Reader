@@ -1,8 +1,10 @@
 <section xml:id="csp-collections-intro_in-and-not-in">
   <title>In and Not In</title>
 
-  <p>To check if an item is in a list, we can use the <c>in</c> operator. To check if something is not in a list, we can
-    use <c>not in</c>:</p>
+  <p>
+    To check if an item is in a list, we can use the <c>in</c> operator.
+    To check if something is not in a list, we can use <c>not in</c>:
+  </p>
 
   <program xml:id="cspcollectionsintro_listin1" interactive="activecode" language="python">
     <code>
@@ -13,10 +15,13 @@ if "Dora" in inviteList:
 
 if "Joe" not in inviteList:
     print("We forgot to invite Joe")
-        </code>
+    </code>
   </program>
-  <p>Because <c>in</c> and <c>not in</c> are opposites, we can often use just one or the other and handle the other case with
-    else:</p>
+
+  <p>
+    Because <c>in</c> and <c>not in</c> are opposites, we can often use just one or the other and
+    handle the other case with else:
+  </p>
 
   <program xml:id="cspcollectionsintro_listin2" interactive="activecode" language="python">
     <code>
@@ -27,7 +32,6 @@ if name in inviteList:
     print("We invited", name)
 else:
     print("We forgot", name)
-        </code>
+    </code>
   </program>
 </section>
-

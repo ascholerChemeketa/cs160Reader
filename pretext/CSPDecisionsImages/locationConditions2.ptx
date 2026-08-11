@@ -1,27 +1,42 @@
 <section xml:id="csp-decisions-images_location-based-conditions2">
   <title>Location Based Conditions Continued</title>
-  <p>Let's use location-based decisions to do something more complex.
-    One popular graphic design technique is to make parts of an image black and white, only leaving color in the parts we
-    want to highlight. We will do this to make the graduates' faces stand out from the background in this image:</p>
-    
+
+  <p>
+    Let's use location-based decisions to do something more complex.
+    One popular graphic design technique is to make parts of an image black and white, only leaving
+    color in the parts we want to highlight.
+    We will do this to make the graduates' faces stand out from the background in this image:
+  </p>
+
   <image source="CSP/Images/graduates.jpg" width="40%">
     <shortdescription>Graduates in caps and gowns used as a sample image.</shortdescription>
-  </image> 
-    
-  <p>First, we need to make some procedures that we will use to make a pixel gray and darken it. These procedures
-    will accept a pixel as their parameter (or one of their parameters) and modify them. Because we are modifying an
-    existing object, there will be no new value to return. We will just update the colors of the pixel and those changes
-    will persist when the procedure is done. (Similar to how when we write a procedure that moves a turtle there is no
-    new answer to return. Changing the turtle's location or direction in a function permanently changes it.)</p>
-  <p>Below, the code for <c>makeGray</c> is already written. Your task is to write the code for <c>darken</c> that will be used to
-    make pixels darker:</p>
+  </image>
+
+  <p>
+    First, we need to make some procedures that we will use to make a pixel gray and darken it.
+    These procedures will accept a pixel as their parameter (or one of their parameters) and modify
+    them.
+    Because we are modifying an existing object, there will be no new value to return.
+    We will just update the colors of the pixel and those changes will persist when the procedure is
+    done.
+    (Similar to how when we write a procedure that moves a turtle there is no new answer to return.
+    Changing the turtle's location or direction in a function permanently changes it.)
+  </p>
+
+  <p>
+    Below, the code for <c>makeGray</c> is already written.
+    Your task is to write the code for <c>darken</c> that will be used to make pixels darker:
+  </p>
 
   <exercise label="cspdecisionsimages_locationconditions21">
     <statement>
-      <p>Write code to implement <c>darken</c>. It should reduce all three color values (red, green, blue) of the <c>pixel</c> by
-        the parameter <c>amount</c>.</p>
-
+      <p>
+        Write code to implement <c>darken</c>.
+        It should reduce all three color values (red, green, blue) of the <c>pixel</c> by the
+        parameter <c>amount</c>.
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsimages_locationconditions21_editor" interactive="activecode" language="python">
       <code>
         from image import *
@@ -54,7 +69,6 @@
         print("testPixel3 after darken by 10:", testPixel3, "should be 50,90,80")
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -67,9 +81,14 @@
     </program>
   </exercise>
 
-  <p>Now we can use a conditional to apply those only to particular pixels in the image. Start by copy/pasting <c>darken</c>
-    and <c>makeGray</c> from the program above into this program. Then examine the code inside the loop. Notice that we use a
-    conditional to apply the functions only to pixels that have a Y value of 110 or more.</p>
+  <p>
+    Now we can use a conditional to apply those only to particular pixels in the image.
+    Start by copy/pasting <c>darken</c> and <c>makeGray</c> from the program above into this
+    program.
+    Then examine the code inside the loop.
+    Notice that we use a conditional to apply the functions only to pixels that have a Y value of
+    110 or more.
+  </p>
 
   <program xml:id="cspdecisionsimages_locationconditions22" interactive="activecode" language="python">
     <code>
@@ -96,9 +115,13 @@ for p in pixels:
         makeGray(p)
         darken(p, 20)
         img.updatePixel(p)
-  </code>
+    </code>
   </program>
-  <p>Try modifying the condition so it only leaves a rectangle of color around the students' heads and turns the rest to
-    gray. You want to say something like <q>if y is less than 110 or x is less than 70 or x is more than 200</q>.</p>
-</section>
 
+  <p>
+    Try modifying the condition so it only leaves a rectangle of color around the students' heads
+    and turns the rest to gray.
+    You want to say something like
+    <q>if y is less than 110 or x is less than 70 or x is more than 200</q>.
+  </p>
+</section>

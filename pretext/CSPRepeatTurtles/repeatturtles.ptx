@@ -1,8 +1,13 @@
 <section xml:id="csp-repeat-turtles_using-repetition-with-turtles">
   <title>Using Repetition with Turtles</title>
-  <p>While learning how to draw with the turtle, we have found many reasons to repeat ourselves in ways that a loop can
-    make easier. A simple example is a <c>square</c> procedure - it needs to do both <c>forward</c> and <c>right</c> 4 times. So why not
-    have a <c>for</c> loop repeat those for us:</p>
+
+  <p>
+    While learning how to draw with the turtle, we have found many reasons to repeat ourselves in
+    ways that a loop can make easier.
+    A simple example is a <c>square</c> procedure - it needs to do both <c>forward</c> and
+    <c>right</c> 4 times.
+    So why not have a <c>for</c> loop repeat those for us:
+  </p>
 
   <program xml:id="csprepeatturtles_repeatturtles1" interactive="activecode" language="python">
     <code>
@@ -19,13 +24,21 @@ square(alisha, 20)
 alisha.forward(20)
 square(alisha, 30)
 alisha.forward(30)
-        </code>
+    </code>
   </program>
+
   <exercise label="csprepeatturtles_repeatturtles2" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program should define a procedure <pf>triangle</pf> that uses a loop to
-        help draw a triangle. The main part of the program calls that function twice to draw two different triangles.</p>
-      <p>Arrange and indent the blocks correctly. You will not need them all.</p>
+      <p>
+        The following program should define a procedure <pf>triangle</pf> that uses a loop to help
+        draw a triangle.
+        The main part of the program calls that function twice to draw two different triangles.
+      </p>
+
+      <p>
+        Arrange and indent the blocks correctly.
+        You will not need them all.
+      </p>
     </statement>
     <blocks>
       <block order="5">
@@ -54,12 +67,22 @@ alisha.forward(30)
       </block>
     </blocks>
   </exercise>
+
   <exercise label="csprepeatturtles_repeatturtles3" adaptive="yes" indentation="hide" language="python">
     <statement>
-      <p>The following program uses a turtle to draw a 175x150 rectangle as shown below, but the lines are mixed up. We
-        want to define a <c>rectangle</c> procedure that twice repeats the process to draw half of a rectangle: draw a line for
-        the width, then turn, draw a line for the height, and turn again.</p>
-      <p>Arrange the blocks into the correct solution and indent them properly. You will not use all of the blocks.</p>
+      <p>
+        The following program uses a turtle to draw a 175x150 rectangle as shown below, but the
+        lines are mixed up.
+        We want to define a <c>rectangle</c> procedure that twice repeats the process to draw half
+        of a rectangle: draw a line for the width, then turn, draw a line for the height, and turn
+        again.
+      </p>
+
+      <p>
+        Arrange the blocks into the correct solution and indent them properly.
+        You will not use all of the blocks.
+      </p>
+
       <image source="CSPRepeatTurtles/Figures/TurtleRect.png" width="30%">
         <shortdescription>Turtle graphics drawing of a rectangle.</shortdescription>
       </image>
@@ -73,6 +96,7 @@ alisha.forward(30)
           <cline> # repeat 2 times</cline>
           <cline> for i in range(2):</cline>
         </choice>
+
         <choice>
           <cline> # repeat 2 times</cline>
           <cline> for i in range(2) </cline>
@@ -83,6 +107,7 @@ alisha.forward(30)
           <cline>  turtle.forward(width)</cline>
           <cline>  turtle.right(90)</cline>
         </choice>
+
         <choice>
           <cline>  carlos.forward(width)</cline>
           <cline>  carlos.right(90) </cline>
@@ -93,6 +118,7 @@ alisha.forward(30)
           <cline>  turtle.forward(height)</cline>
           <cline>  turtle.right(90)</cline>
         </choice>
+
         <choice>
           <cline>  turtle.forward(150)</cline>
           <cline>  turtle.right(90) </cline>

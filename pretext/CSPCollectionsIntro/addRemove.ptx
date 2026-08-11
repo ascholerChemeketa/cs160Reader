@@ -1,16 +1,22 @@
 <section xml:id="csp-collections-intro_adding-and-removing-items">
   <title>Adding and Removing Items</title>
 
-  <p>Sometimes, we do not know all of the items in a list in advance - we want to build up a list as the program is
-    running. To do this, we can start with a blank list using <c>[]</c> as our list. And then we can use <c>append</c> to add
-    things to the end of the list.</p>
+  <p>
+    Sometimes, we do not know all of the items in a list in advance - we want to build up a list as
+    the program is running.
+    To do this, we can start with a blank list using <c>[]</c> as our list.
+    And then we can use <c>append</c> to add things to the end of the list.
+  </p>
 
   <exercise label="cspcollectionsintro_addremove1">
     <statement>
-      <p>This program adds two strings to the list <c>words</c>. Add code to add the word <q>Carrot</q> to the list
-        after <q>Banana</q> but before <q>Date</q></p>
+      <p>
+        This program adds two strings to the list <c>words</c>.
+        Add code to add the word <q>Carrot</q> to the list after <q>Banana</q> but before
+        <q>Date</q>
+      </p>
     </statement>
-    
+
     <program xml:id="cspcollectionsintro_addremove1_editor" interactive="activecode" language="python">
       <code>
         words = []
@@ -25,7 +31,6 @@
         print(words)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -33,13 +38,17 @@
                 self.assertEqual(words, ["Apple", "Banana", "Carrot", "Date"], "Testing that you added Carrot")
 
         myTests().main()
-        </tests>
+      </tests>
     </program>
   </exercise>
 
-  <p>It is also possible to add items to locations other than the end of the list by using the <c>insert</c> function. To use
-    it, we provide an index of where to insert the new value with the value we want to insert. Try running this sample
-    with codelens:</p>
+  <p>
+    It is also possible to add items to locations other than the end of the list by using the
+    <c>insert</c> function.
+    To use it, we provide an index of where to insert the new value with the value we want to
+    insert.
+    Try running this sample with codelens:
+  </p>
 
   <program xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
     <code>
@@ -52,71 +61,107 @@ print(numbers)
 # Add the value 15 at location 2 (third place)
 numbers.insert(2, 15)
 print(numbers)
-        </code>
+    </code>
   </program>
 
   <exercise label="cspcollectionsintro_addremove3">
     <statement>
-
-      <p>What happens if you use an index that does not exist to insert? Change the last insert in the sample above
-        to insert at location 200 instead of 2. What happens?</p>
-
+      <p>
+        What happens if you use an index that does not exist to insert?
+        Change the last insert in the sample above to insert at location 200 instead of 2.
+        What happens?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice>
         <statement>
-          <p>The item just does not get added</p>
+          <p>
+            The item just does not get added
+          </p>
         </statement>
+
         <feedback>
-          <p>Try it!</p>
+          <p>
+            Try it!
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>There is an error and the program stops</p>
+          <p>
+            There is an error and the program stops
+          </p>
         </statement>
+
         <feedback>
-          <p>Try it!</p>
+          <p>
+            Try it!
+          </p>
         </feedback>
       </choice>
 
       <choice correct="yes">
         <statement>
-          <p>The item is added to the end of the list</p>
+          <p>
+            The item is added to the end of the list
+          </p>
         </statement>
+
         <feedback>
-          <p>Correct</p>
+          <p>
+            Correct
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>The list is extended to be long enough that there is an item index 200</p>
+          <p>
+            The list is extended to be long enough that there is an item index 200
+          </p>
         </statement>
+
         <feedback>
-          <p>Try it!</p>
+          <p>
+            Try it!
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
-  <p>To remove items from a list, there are two main options:</p>
+
+  <p>
+    To remove items from a list, there are two main options:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p><c>pop()</c> removes an item from the end of a list. (It <q>pops</q> the item off.)</p>
+        <p>
+          <c>pop()</c> removes an item from the end of a list.
+          (It <q>pops</q> the item off.)
+        </p>
       </li>
+
       <li>
-        <p><c>pop(index)</c> removes an item from the specified index.</p>
+        <p>
+          <c>pop(index)</c> removes an item from the specified index.
+        </p>
       </li>
+
       <li>
-        <p><c>remove(value)</c> removes the first copy of the specified value from the list.</p>
+        <p>
+          <c>remove(value)</c> removes the first copy of the specified value from the list.
+        </p>
       </li>
     </ul>
   </p>
-  <p>This sample shows all three methods:</p>
+
+  <p>
+    This sample shows all three methods:
+  </p>
 
   <program xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
     <code>
@@ -135,12 +180,17 @@ names.pop(0)
 
   <exercise label="cspcollectionsintro_addremove5">
     <statement>
-      <p>We want the list called alphabet to contain the letters <q>A</q>, <q>B</q>, <q>C</q>,
-        <q>D</q> in that order. Use a combination of append, insert, remove, and pop to make it have the right
-        values.</p>
-      <p>(Do not use <c>letters[index]</c> to change the existing items.)</p>
+      <p>
+        We want the list called alphabet to contain the letters <q>A</q>, <q>B</q>, <q>C</q>,
+        <q>D</q> in that order.
+        Use a combination of append, insert, remove, and pop to make it have the right values.
+      </p>
 
+      <p>
+        (Do not use <c>letters[index]</c> to change the existing items.)
+      </p>
     </statement>
+
     <program xml:id="cspcollectionsintro_addremove5_editor" interactive="activecode" language="python">
       <code>
         letters = ["A", "F", "C", "Q", "C"] #don't change this
@@ -162,12 +212,20 @@ names.pop(0)
       </tests>
     </program>
   </exercise>
+
   <exercise label="cspcollectionsintro_addremove6" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following program should make the <c>discounts</c> list contain the values of all the items from <c>price_list</c> after they
-        have been discounted by 50%. To do so, we need to loop through the original prices, calculate the discounted
-        price, then append it to the discount list.</p>
-      <p>Put the blocks in the right order. There are some blocks you will not use.</p>
+      <p>
+        The following program should make the <c>discounts</c> list contain the values of all the
+        items from <c>price_list</c> after they have been discounted by 50%.
+        To do so, we need to loop through the original prices, calculate the discounted price, then
+        append it to the discount list.
+      </p>
+
+      <p>
+        Put the blocks in the right order.
+        There are some blocks you will not use.
+      </p>
     </statement>
     <blocks>
       <block order="3">

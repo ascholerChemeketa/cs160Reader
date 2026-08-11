@@ -1,32 +1,47 @@
 <section xml:id="csp-decisions-images_combining-pictures">
   <title>Combining Pictures</title>
-  <p>A common use of color replacement technology is <q>green scren</q> background replacement. An actor performs in
-    front of a green wall or a Zoom meeting participant sits in front of a green sheet. A computer algorithm then looks
-    for green pixels and replaces them with pixels from some other image. The result is that the person looks like they
-    are in some other location. (Unless of course, they have a green shirt on, in which case it will look like their
-    disembodied head is floating in the background.)</p>
 
-  <p>We are going to put the woman shown below into the beach scene:</p>
+  <p>
+    A common use of color replacement technology is <q>green scren</q> background replacement.
+    An actor performs in front of a green wall or a Zoom meeting participant sits in front of a
+    green sheet.
+    A computer algorithm then looks for green pixels and replaces them with pixels from some other
+    image.
+    The result is that the person looks like they are in some other location.
+    (Unless of course, they have a green shirt on, in which case it will look like their disembodied
+    head is floating in the background.)
+  </p>
+
+  <p>
+    We are going to put the woman shown below into the beach scene:
+  </p>
 
   <sidebyside width="20%" margins="25%">
     <image source="CSP/Images/green_screen.jpg">
       <shortdescription>Green screen backdrop used for image compositing.</shortdescription>
     </image>
+
     <image source="CSP/Images/beach.jpg">
       <shortdescription>Beach scene used as a sample image.</shortdescription>
     </image>
   </sidebyside>
 
-  <p>First up, we need to have an <c>isGreen</c> function to identify which pixels are part of the green background. It will be
-    very similar to the <c>isRed</c> from the last page, only we want to verify that the green is greater than the red or
-    blue values.</p>
+  <p>
+    First up, we need to have an <c>isGreen</c> function to identify which pixels are part of the
+    green background.
+    It will be very similar to the <c>isRed</c> from the last page, only we want to verify that the
+    green is greater than the red or blue values.
+  </p>
 
   <exercise label="cspdecisionsimages_combineimages1">
     <statement>
-      <p>Write code to return <c>True</c> if the green value is at least 20 greater than both the red and blue values.
-        Otherwise, return <c>False</c></p>
-
+      <p>
+        Write code to return <c>True</c> if the green value is at least 20 greater than both the red
+        and blue values.
+        Otherwise, return <c>False</c>
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsimages_combineimages1_editor" interactive="activecode" language="python">
       <code>
         def isGreen(r, g, b):
@@ -43,7 +58,6 @@
         print( isGreen(200, 0, 200) )   # aqua
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -59,14 +73,23 @@
       </tests>
     </program>
   </exercise>
-  <p>Once you get that working, you can copy and paste it into the program below. It will load the two pictures, with
-    the woman stored as <c>img1</c> and the beach as <c>img2</c>. It then goes through each pixel in <c>img1</c> and asks <c>isGreen</c>
-    about it. If the answer is <c>true</c>, that pixel gets replaced with the pixel from <c>img2</c> that is at the same x, y.</p>
+
+  <p>
+    Once you get that working, you can copy and paste it into the program below.
+    It will load the two pictures, with the woman stored as <c>img1</c> and the beach as
+    <c>img2</c>.
+    It then goes through each pixel in <c>img1</c> and asks <c>isGreen</c> about it.
+    If the answer is <c>true</c>, that pixel gets replaced with the pixel from <c>img2</c> that is
+    at the same x, y.
+  </p>
 
   <exercise label="cspdecisionsimages_combineimages2">
     <statement>
-      <p> Add your <c>isGreen</c> function to this program. </p>
+      <p>
+        Add your <c>isGreen</c> function to this program.
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsimages_combineimages2_edtior" interactive="activecode" language="python">
       <code>
   from image import *
@@ -100,8 +123,7 @@
           # USE THAT INSTEAD OF p1 IN img1
           img1.setPixel(x, y, p2)
 
-    </code>
+      </code>
     </program>
   </exercise>
 </section>
-

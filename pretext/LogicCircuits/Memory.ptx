@@ -1,88 +1,151 @@
 <section xml:id="logic-circuits_remembering-things">
   <title>Remembering Things</title>
-  <p>In previous circuits we have seen, the flow of power has gone strictly left to right. But we can take the output of
-    a gate and feed it back in as the inputs to earlier gates. This is the secret behind building a <q>memory</q>
-    circuit: feeding the output back into the circuit produces a loop that <q>remembers</q> a value. The circuit below
-    uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes right after an OR). Notice how the
-    output of each NOR gate feeds back as an input to the other gate.</p>
-      <interactive label="logic-circuits-remembering-things-interactive-1" iframe="LogicCircuits/logic-circuits-remembering-things-interactive-1.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
-  <p>With that circuit (known as an SR Flip Flop), try the following experiments</p>
+
+  <p>
+    In previous circuits we have seen, the flow of power has gone strictly left to right.
+    But we can take the output of a gate and feed it back in as the inputs to earlier gates.
+    This is the secret behind building a <q>memory</q> circuit: feeding the output back into the
+    circuit produces a loop that <q>remembers</q> a value.
+    The circuit below uses two NOR gates (NOR is short for Not OR, which is a NOT gate that comes
+    right after an OR).
+    Notice how the output of each NOR gate feeds back as an input to the other gate.
+  </p>
+
+  <interactive label="logic-circuits-remembering-things-interactive-1" iframe="LogicCircuits/logic-circuits-remembering-things-interactive-1.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
+  <p>
+    With that circuit (known as an SR Flip Flop), try the following experiments
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>Turn on Input 1 - this <term>Sets</term> the memory to 1. (Setting this input to on does nothing if the
-          memory is already 1.)</p>
+        <p>
+          Turn on Input 1 - this <term>Sets</term> the memory to 1.
+          (Setting this input to on does nothing if the memory is already 1.)
+        </p>
       </li>
+
       <li>
-        <p>Turn off Input 1. Notice that the memory stays on even though both switches are off.</p>
+        <p>
+          Turn off Input 1.
+          Notice that the memory stays on even though both switches are off.
+        </p>
       </li>
+
       <li>
-        <p>Turn on Input 2 - this <term>Resets</term> the memory to 0. (Setting this input to on does nothing if the
-          memory is already 0.)</p>
+        <p>
+          Turn on Input 2 - this <term>Resets</term> the memory to 0.
+          (Setting this input to on does nothing if the memory is already 0.)
+        </p>
       </li>
+
       <li>
-        <p>Turn off Input 2. Now the circuit remembers the value 0 while both switches are off.</p>
+        <p>
+          Turn off Input 2.
+          Now the circuit remembers the value 0 while both switches are off.
+        </p>
       </li>
     </ul>
   </p>
-  <p>Essentially, the circuit remembers which input, Set or Reset, was most recently on. This is a form of memory: If we
-    want to remember <term>1</term>, we flip <term>Input1</term> on briefly. To remember <term>0</term>, we flip <term>
-    Input2</term> on briefly.</p>
-  <p>Many other circuits can <q>remember</q> a value, but they all use this same basic idea of feeding outputs back in
-    as inputs. To remember more than one bit, we would simply need to make multiple copies of this circuit, one for each
-    bit we need to store.</p>
+
+  <p>
+    Essentially, the circuit remembers which input, Set or Reset, was most recently on.
+    This is a form of memory: If we want to remember <term>1</term>, we flip <term>Input1</term> on
+    briefly.
+    To remember <term>0</term>, we flip <term>
+    Input2</term> on briefly.
+  </p>
+
+  <p>
+    Many other circuits can <q>remember</q> a value, but they all use this same basic idea of
+    feeding outputs back in as inputs.
+    To remember more than one bit, we would simply need to make multiple copies of this circuit, one
+    for each bit we need to store.
+  </p>
+
   <exercise label="logic-circuits_remembering-things-ex1">
     <statement>
-      <p>In the SR flip-flop shown here, what happens when Input 1 is turned on?</p>
+      <p>
+        In the SR flip-flop shown here, what happens when Input 1 is turned on?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>The memory is set to 1.</p>
+          <p>
+            The memory is set to 1.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>The memory is reset to 0.</p>
+          <p>
+            The memory is reset to 0.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Both inputs are disconnected from the circuit.</p>
+          <p>
+            Both inputs are disconnected from the circuit.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>The circuit stops remembering its value.</p>
+          <p>
+            The circuit stops remembering its value.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_remembering-things-ex2">
     <statement>
-      <p>What feature allows the circuit to remember its value when the inputs are turned off?</p>
+      <p>
+        What feature allows the circuit to remember its value when the inputs are turned off?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice>
         <statement>
-          <p>It makes use of OR gates.</p>
+          <p>
+            It makes use of OR gates.
+          </p>
         </statement>
       </choice>
+
       <choice correct="yes">
         <statement>
-          <p>The final output is fed back into the circuit as an input.</p>
+          <p>
+            The final output is fed back into the circuit as an input.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It makes use of NOR gates.</p>
+          <p>
+            It makes use of NOR gates.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It has two inputs and one output.</p>
+          <p>
+            It has two inputs and one output.
+          </p>
         </statement>
       </choice>
     </choices>

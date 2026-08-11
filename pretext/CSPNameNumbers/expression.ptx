@@ -1,161 +1,234 @@
 <section xml:id="csp-name-numbers_expressions">
-    <title>Expressions</title>
+  <title>Expressions</title>
+
   <subsection>
     <title>Arithmetic Expressions</title>
-<p>The <em>right hand</em> side of the assignment statement doesn't have to
-        be a value. It can be <em>an arithmetic expression</em>, like <c>2 * 2</c>. The expression will be evaluated and the
-        result from the expression will be stored in the variable.</p>
 
-    <listing xml:id="csp-name-numbers_expression2_listing1" >
-        <title>Code to do a simple calculation</title>
-        <program xml:id="csp-name-numbers_expression2" interactive="activecode" language="python">
-            <code>
+    <p>
+      The <em>right hand</em> side of the assignment statement doesn't have to be a value.
+      It can be <em>an arithmetic expression</em>, like <c>2 * 2</c>.
+      The expression will be evaluated and the result from the expression will be stored in the
+      variable.
+    </p>
+
+    <listing xml:id="csp-name-numbers_expression2_listing1">
+      <title>Code to do a simple calculation</title>
+
+      <program xml:id="csp-name-numbers_expression2" interactive="activecode" language="python">
+        <code>
         result = 2 * 2 + 1
         print(result)
-                </code>
-        </program>
-
+        </code>
+      </program>
     </listing>
 
     <exercise label="cspnamenumbers_expression1">
-        <statement>
-            <p>What is printed when you run <xref ref="csp-name-numbers_expression2_listing1" />? <fillin mode="string" answer="5"/>
-            </p>
-        </statement>
-        <evaluation>
-          <evaluate>
-            <test correct="yes">
-              <strcmp>^\s*^5$\s*$</strcmp>
-            </test>
-            <test>
-              <strcmp>^\s*.*\s*$</strcmp>
-              <feedback>
-                <p>Did you run the program?</p>
-              </feedback>
-            </test>
-          </evaluate>
-        </evaluation>
+      <statement>
+        <p>
+          What is printed when you run <xref ref="csp-name-numbers_expression2_listing1"/>?
+          <fillin mode="string" answer="5"/>
+        </p>
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <strcmp>
+              ^\s*^5$\s*$
+            </strcmp>
+          </test>
+          <test>
+            <strcmp>
+              ^\s*.*\s*$
+            </strcmp>
+
+            <feedback>
+              <p>
+                Did you run the program?
+              </p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
     </exercise>
   </subsection>
-<subsection xml:id="csp-name-numbers_operations">
-        <title>Operations</title>
-        <p>You can use all the standard mathematical operations, you just have to know the right symbols to use: <c>/</c>
-            means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.</p>
 
-        <listing xml:id="cspnamenumbers_expression4_listing" >
-            <title>Code to do a simple calculation</title>
-            <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression4">
-                <code>
+  <subsection xml:id="csp-name-numbers_operations">
+    <title>Operations</title>
+
+    <p>
+      You can use all the standard mathematical operations, you just have to know the right symbols
+      to use: <c>/</c> means divsion; <c>*</c> means times; <c>**</c> means <q>to the power of</q>.
+    </p>
+
+    <listing xml:id="cspnamenumbers_expression4_listing">
+      <title>Code to do a simple calculation</title>
+
+      <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression4">
+        <code>
     result = 1 / 3
     print(result)
-            </code>
-            </program>
-        </listing>
+        </code>
+      </program>
+    </listing>
 
-        <exercise label="cspnamenumbers_expression3">
-            <statement>
-                <p>What is printed when you run <xref ref="cspnamenumbers_expression4_listing"/> <fillin mode="string" answer="0.3333333333333333" width="20"/>
-                </p>
-            </statement>
-            <evaluation>
-              <evaluate>
-                <test correct="yes">
-                  <strcmp>^\s*^0.3333333333333333$\s*$</strcmp>
-                </test>
-                <test>
-                  <strcmp>^\s*^0.3{1,15}$\s*$</strcmp>
-                  <feedback>
-                    <p>Close, but that is not the number of digits you get.</p>
-                  </feedback>
-                </test>
-                <test>
-                  <strcmp>^\s*.*\s*$</strcmp>
-                  <feedback>
-                    <p>Did you run the program?</p>
-                  </feedback>
-                </test>
-              </evaluate>
-            </evaluation>
-        </exercise>
-    </subsection>
-    <subsection xml:id="csp-name-numbers_division-and-integer-division">
-        <title>Division and Integer Division</title>
+    <exercise label="cspnamenumbers_expression3">
+      <statement>
+        <p>
+          What is printed when you run <xref ref="cspnamenumbers_expression4_listing"/>
+          <fillin mode="string" answer="0.3333333333333333" width="20"/>
+        </p>
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <strcmp>
+              ^\s*^0.3333333333333333$\s*$
+            </strcmp>
+          </test>
+          <test>
+            <strcmp>
+              ^\s*^0.3{1,15}$\s*$
+            </strcmp>
 
-        <p>This book uses Python 3 which returns a decimal value - 1.66666666666667 - from a calculation like <c>5 / 3</c>.
-            If we executed <c>5 / 3</c> in many programming languages (or older versions of Python) it would result in just 1
-            because we can only divide 5 by 3 one whole time. This form of division is known as <term>integer division</term>
-            and is what you probably learned in elementary school before you learned long division.</p>
-        <p>There are times when we want to do integer division as part of solving a problem. If I want to figure out how
-            many whole feet are in 37 inches, I would divide 37 by 12. From it, I want an answer of just 3, not
-            3.083333333333333. To do integer division in Python, we use <c>//</c>. Compare the two results in the code
-            sample below. The first is done using normal (decimal) division. The second is from doing integer division:</p>
+            <feedback>
+              <p>
+                Close, but that is not the number of digits you get.
+              </p>
+            </feedback>
+          </test>
+          <test>
+            <strcmp>
+              ^\s*.*\s*$
+            </strcmp>
 
-        
+            <feedback>
+              <p>
+                Did you run the program?
+              </p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="csp-name-numbers_division-and-integer-division">
+    <title>Division and Integer Division</title>
+
+    <p>
+      This book uses Python 3 which returns a decimal value - 1.66666666666667 - from a calculation
+      like <c>5 / 3</c>.
+      If we executed <c>5 / 3</c> in many programming languages (or older versions of Python) it
+      would result in just 1 because we can only divide 5 by 3 one whole time.
+      This form of division is known as <term>integer division</term> and is what you probably
+      learned in elementary school before you learned long division.
+    </p>
+
+    <p>
+      There are times when we want to do integer division as part of solving a problem.
+      If I want to figure out how many whole feet are in 37 inches, I would divide 37 by 12.
+      From it, I want an answer of just 3, not 3.083333333333333.
+      To do integer division in Python, we use <c>//</c>.
+      Compare the two results in the code sample below.
+      The first is done using normal (decimal) division.
+      The second is from doing integer division:
+    </p>
+
     <listing xml:id="cspnamenumbers_expression5_listing">
-        <title>Code to do integer division</title>
-        <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression5">
-            <code>
+      <title>Code to do integer division</title>
+
+      <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression5">
+        <code>
 result1 = 37 / 3
 print(result1)
 result2 = 37 // 3
 print(result2)
         </code>
-        </program></listing>
-        <note>
-            <p>Integer division always just ignores the remainder - it does not round the answer. <c>5 // 3</c> is just 1.</p>
-        </note>
-    </subsection>
-    <subsection xml:id="csp-name-numbers_modulo">
-        <title>Modulo</title>
+      </program>
+    </listing>
 
-        <p>If you are doing integer division, you may also care about the remainder.
-            When I divide do <c>37/12</c> to figure out the number of feet in 37 inches, I get 3. But maybe I also want to
-            know that there is one inch left over.</p>
-        <p>You may not be familiar with the <term>modulo</term> (remainder) operator <c>%</c>. It returns the remainder
-            when you divide the first number by the second. In the case of <c>4 % 2</c>, <c>2</c> goes into <c>4</c> two times
-            with a remainder of <c>0</c>. The result of <c>5 % 2</c> would be <c>1</c> since <c>2</c> goes into <c>5</c>, two
-            times with a remainder of <c>1</c>.</p>
-        <figure>
-            <caption>Division showing the whole number result and the remainder</caption>
-            <image source="CSPNameNumbers/Figures/mod-py.png" width="30%">
-              <shortdescription>Python modulo expression example.</shortdescription>
-            </image>
-        </figure>
+    <note>
+      <p>
+        Integer division always just ignores the remainder - it does not round the answer.
+        <c>5 // 3</c> is just 1.
+      </p>
+    </note>
+  </subsection>
 
-        <listing xml:id="cspnamenumbers_expression7_listing">
-            <title>Code to do modulo division</title>
-            <program  interactive="activecode" language="python" xml:id="cspnamenumbers_expression7">
-                <code>
+  <subsection xml:id="csp-name-numbers_modulo">
+    <title>Modulo</title>
+
+    <p>
+      If you are doing integer division, you may also care about the remainder.
+      When I divide do <c>37/12</c> to figure out the number of feet in 37 inches, I get 3.
+      But maybe I also want to know that there is one inch left over.
+    </p>
+
+    <p>
+      You may not be familiar with the <term>modulo</term> (remainder) operator <c>%</c>.
+      It returns the remainder when you divide the first number by the second.
+      In the case of <c>4 % 2</c>, <c>2</c> goes into <c>4</c> two times with a remainder of
+      <c>0</c>.
+      The result of <c>5 % 2</c> would be <c>1</c> since <c>2</c> goes into <c>5</c>, two times with
+      a remainder of <c>1</c>.
+    </p>
+
+    <figure>
+      <caption>Division showing the whole number result and the remainder</caption>
+      <image source="CSPNameNumbers/Figures/mod-py.png" width="30%">
+        <shortdescription>Python modulo expression example.</shortdescription>
+      </image>
+    </figure>
+
+    <listing xml:id="cspnamenumbers_expression7_listing">
+      <title>Code to do modulo division</title>
+
+      <program interactive="activecode" language="python" xml:id="cspnamenumbers_expression7">
+        <code>
     x = 11 % 3
     print(x)
-            </code>
-            </program>
-            </listing>
-        <exercise label="cspnamenumbers_expression6">
-            <statement>
-                <p>What is printed when you run <xref ref="cspnamenumbers_expression7_listing"/> <fillin mode="string" answer="2"/>
-                </p>
-            </statement>
-            <evaluation>
-              <evaluate>
-                <test correct="yes">
-                  <strcmp>^\s*^2$\s*$</strcmp>
-                </test>
-                <test>
-                  <strcmp>^\s*.*\s*$</strcmp>
-                  <feedback>
-                    <p>Did you run the program?</p>
-                  </feedback>
-                </test>
-              </evaluate>
-            </evaluation>
-        </exercise>
-        <note>
-            <p>The result of <c>x % y</c> when <c>x</c> is smaller than <c>y</c> is always <c>x</c>. The value <c>y</c>
-                can't go into <c>x</c> at all, since <c>x</c> is smaller than <c>y</c>, so the result is just <c>x</c>.
-                So if you see <c>2 % 3</c> the result is <c>2</c>. Edit the code above to try this for yourself. Change the
-                code to <c>result = 2 % 3</c> and see what that prints when it is run.</p>
-        </note>
-    </subsection>
-</section>
+        </code>
+      </program>
+    </listing>
 
+    <exercise label="cspnamenumbers_expression6">
+      <statement>
+        <p>
+          What is printed when you run <xref ref="cspnamenumbers_expression7_listing"/>
+          <fillin mode="string" answer="2"/>
+        </p>
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <strcmp>
+              ^\s*^2$\s*$
+            </strcmp>
+          </test>
+          <test>
+            <strcmp>
+              ^\s*.*\s*$
+            </strcmp>
+
+            <feedback>
+              <p>
+                Did you run the program?
+              </p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+    </exercise>
+
+    <note>
+      <p>
+        The result of <c>x % y</c> when <c>x</c> is smaller than <c>y</c> is always <c>x</c>.
+        The value <c>y</c> can't go into <c>x</c> at all, since <c>x</c> is smaller than <c>y</c>,
+        so the result is just <c>x</c>.
+        So if you see <c>2 % 3</c> the result is <c>2</c>.
+        Edit the code above to try this for yourself.
+        Change the code to <c>result = 2 % 3</c> and see what that prints when it is run.
+      </p>
+    </note>
+  </subsection>
+</section>

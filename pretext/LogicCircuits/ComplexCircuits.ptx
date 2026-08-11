@@ -1,149 +1,203 @@
 <section xml:id="logic-circuits_complex-circuits">
   <title>Complex Circuits</title>
-  <p>To make more complex circuits we can use the output of some logic gates as the input to other ones. Doing this
-    allows us to compute functions not described by the basic logic rules and functions that involve more than two
-    inputs.</p>
-  <p>Say we want to make a circuit with this truth table:</p>
+
+  <p>
+    To make more complex circuits we can use the output of some logic gates as the input to other
+    ones.
+    Doing this allows us to compute functions not described by the basic logic rules and functions
+    that involve more than two inputs.
+  </p>
+
+  <p>
+    Say we want to make a circuit with this truth table:
+  </p>
 
   <tabular halign="center">
-    <row header="yes"
-         bottom="minor">
-      <cell> Input 1 </cell>
-      <cell right="minor"> Input 2 </cell>
-      <cell> Output </cell>
+    <row header="yes" bottom="minor">
+      <cell>Input 1</cell>
+      <cell right="minor">Input 2</cell>
+      <cell>Output</cell>
     </row>
+
     <row>
-      <cell> 0 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
+      <cell>0</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
     </row>
+
     <row>
-      <cell> 0 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
+      <cell>0</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
     </row>
+
     <row>
-      <cell> 1 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 1 </cell>
+      <cell>1</cell>
+      <cell right="minor">0</cell>
+      <cell>1</cell>
     </row>
+
     <row>
-      <cell> 1 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
+      <cell>1</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
     </row>
   </tabular>
 
-  <p>In other words, we want the output to be on only if the first input is on and the second is not. There is no basic
-    logic rule that matches this function. However, we could implement the desired behavior with the circuit below. Try
-    clicking the Input switches to test each of the four possible combinations - verify the circuit does what it is
-    supposed to.</p>
-      <interactive label="logic-circuits-complex-circuits-interactive-1" iframe="LogicCircuits/logic-circuits-complex-circuits-interactive-1.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
-  <p>More complex circuits can have more than 2 inputs or more than one output. Here is a three-input circuit - see if
-    you can figure out what state the input switches need to be in to produce an <q>ON</q> for output.</p>
-      <interactive label="logic-circuits-complex-circuits-interactive-2" iframe="LogicCircuits/logic-circuits-complex-circuits-interactive-2.html"/>
-    <p>(<xref ref="circuit-tips"
-          text="title"/>)</p>
-  <p>To write the truth table for that circuit, we need to have every possible state for the three inputs. For 3 inputs,
-    each with 2 possible states, there are <m>2^3 = 8</m> possible combinations (000, 001, 010, 011, 100, 101, 110,
-    111). Thus, the truth table needs eight rows to show the possible inputs. If we try out each possibility, we can
-    determine the outputs that go with each of the eight possible inputs:</p>
+  <p>
+    In other words, we want the output to be on only if the first input is on and the second is not.
+    There is no basic logic rule that matches this function.
+    However, we could implement the desired behavior with the circuit below.
+    Try clicking the Input switches to test each of the four possible combinations - verify the
+    circuit does what it is supposed to.
+  </p>
+
+  <interactive label="logic-circuits-complex-circuits-interactive-1" iframe="LogicCircuits/logic-circuits-complex-circuits-interactive-1.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
+  <p>
+    More complex circuits can have more than 2 inputs or more than one output.
+    Here is a three-input circuit - see if you can figure out what state the input switches need to
+    be in to produce an <q>ON</q> for output.
+  </p>
+
+  <interactive label="logic-circuits-complex-circuits-interactive-2" iframe="LogicCircuits/logic-circuits-complex-circuits-interactive-2.html"/>
+  <p>
+    ( <xref ref="circuit-tips" text="title"/> )
+  </p>
+
+  <p>
+    To write the truth table for that circuit, we need to have every possible state for the three
+    inputs.
+    For 3 inputs, each with 2 possible states, there are <m>2^3 = 8</m> possible combinations (000,
+    001, 010, 011, 100, 101, 110, 111).
+    Thus, the truth table needs eight rows to show the possible inputs.
+    If we try out each possibility, we can determine the outputs that go with each of the eight
+    possible inputs:
+  </p>
 
   <tabular halign="center">
-
-    <row header="yes"
-         bottom="minor">
-      <cell> Input 1 </cell>
-      <cell> Input 2 </cell>
-      <cell right="minor"> Input 3 </cell>
-      <cell> Output </cell>
+    <row header="yes" bottom="minor">
+      <cell>Input 1</cell>
+      <cell>Input 2</cell>
+      <cell right="minor">Input 3</cell>
+      <cell>Output</cell>
     </row>
 
     <row>
-      <cell> 0 </cell>
-      <cell> 0 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 0 </cell>
-      <cell> 0 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 0 </cell>
-      <cell> 1 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 0 </cell>
-      <cell> 1 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 1 </cell>
-      <cell> 0 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 1 </cell>
-      <cell> 0 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 1 </cell>
-      <cell> 1 </cell>
-      <cell right="minor"> 0 </cell>
-      <cell> 0 </cell>
-    </row>
-    <row>
-      <cell> 1 </cell>
-      <cell> 1 </cell>
-      <cell right="minor"> 1 </cell>
-      <cell> 1 </cell>
+      <cell>0</cell>
+      <cell>0</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
     </row>
 
+    <row>
+      <cell>0</cell>
+      <cell>0</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>0</cell>
+      <cell>1</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>0</cell>
+      <cell>1</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>1</cell>
+      <cell>0</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>1</cell>
+      <cell>0</cell>
+      <cell right="minor">1</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>1</cell>
+      <cell>1</cell>
+      <cell right="minor">0</cell>
+      <cell>0</cell>
+    </row>
+
+    <row>
+      <cell>1</cell>
+      <cell>1</cell>
+      <cell right="minor">1</cell>
+      <cell>1</cell>
+    </row>
   </tabular>
-  <p>The truth table claims that the output is only ON if all three switches are ON.</p>
+
+  <p>
+    The truth table claims that the output is only ON if all three switches are ON.
+  </p>
+
   <exercise label="logic-circuits_complex-circuits-ex1">
     <statement>
-      <p>In the first circuit, Input 2 passes through a NOT gate before reaching an AND gate with Input 1. What is the
-        output when Input 1 is 1 and Input 2 is 0?</p>
+      <p>
+        In the first circuit, Input 2 passes through a NOT gate before reaching an AND gate with
+        Input 1.
+        What is the output when Input 1 is 1 and Input 2 is 0?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>1</p>
+          <p>
+            1
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>0</p>
+          <p>
+            0
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>It depends on the previous output.</p>
+          <p>
+            It depends on the previous output.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>The circuit has no output for those inputs.</p>
+          <p>
+            The circuit has no output for those inputs.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="logic-circuits_complex-circuits-ex2">
     <statement>
-      <p>How many possible input combinations must a truth table have for a circuit with four binary inputs? <fillin mode="number"
-                answer="16"/></p>
+      <p>
+        How many possible input combinations must a truth table have for a circuit with four binary
+        inputs?
+        <fillin mode="number" answer="16"/>
+      </p>
     </statement>
     <evaluation>
       <evaluate>
@@ -151,9 +205,14 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>.*</strcmp>
+          <strcmp>
+            .*
+          </strcmp>
+
           <feedback>
-            <p>Each input can be 0 or 1, so each bit doubles the number of possible combinations.</p>
+            <p>
+              Each input can be 0 or 1, so each bit doubles the number of possible combinations.
+            </p>
           </feedback>
         </test>
       </evaluate>

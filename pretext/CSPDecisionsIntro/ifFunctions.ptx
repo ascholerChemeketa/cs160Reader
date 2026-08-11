@@ -1,9 +1,13 @@
 <section xml:id="csp-decisions-intro_functions-that-make-decisions">
   <title>Functions that make Decisions</title>
-  <p>Using <c>if</c> is essential for writing functions or procedures that need to make decisions. Say we want a function
-    that calculates the cost to print pages in a library computer lab. The library charges $0.10 per page for up to 30
-    pages. If the number of pages is over 30, they charge $3.00 plus $0.05 per page over 30. The <c>costForPrints</c> function in the
-    program below implements that logic.</p>
+
+  <p>
+    Using <c>if</c> is essential for writing functions or procedures that need to make decisions.
+    Say we want a function that calculates the cost to print pages in a library computer lab.
+    The library charges $0.10 per page for up to 30 pages.
+    If the number of pages is over 30, they charge $3.00 plus $0.05 per page over 30.
+    The <c>costForPrints</c> function in the program below implements that logic.
+  </p>
 
   <program xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
     <code>
@@ -22,20 +26,27 @@ def costForPrints(numberPages):
 print( "10 prints costs", costForPrints(10) )
 print( "30 prints costs", costForPrints(30) )
 print( "40 prints costs", costForPrints(40) )
-        </code>
+    </code>
   </program>
-  <p>Notice an additional advantage of putting our logic into a function (instead of at the top level of our program) -
-    it is easier to use the code multiple times. In this case, it allows us to test how the <c>if</c> works for various
-    values. We can call the function multiple times and pass different values for each function call. If we don't
-    use a function, we can only test one value each time we run the program.</p>
+
+  <p>
+    Notice an additional advantage of putting our logic into a function (instead of at the top level
+    of our program) - it is easier to use the code multiple times.
+    In this case, it allows us to test how the <c>if</c> works for various values.
+    We can call the function multiple times and pass different values for each function call.
+    If we don't use a function, we can only test one value each time we run the program.
+  </p>
 
   <exercise label="cspdecisionsintro_iffunctions2">
     <statement>
-      <p>Write the code for the function <c>cabCost</c>. It should calculate and return the cost of a cab ride. If the distance
-        traveled is less than or equal to 12 miles the cost is $2.00 a mile, and if the distance traveled is more than
-        12 miles the cost is $1.50 a mile.</p>
-
+      <p>
+        Write the code for the function <c>cabCost</c>.
+        It should calculate and return the cost of a cab ride.
+        If the distance traveled is less than or equal to 12 miles the cost is $2.00 a mile, and if
+        the distance traveled is more than 12 miles the cost is $1.50 a mile.
+      </p>
     </statement>
+
     <program xml:id="cspdecisionsintro_iffunctions2_editor" interactive="activecode" language="python">
       <code>
         def cabCost(miles):
@@ -50,7 +61,6 @@ print( "40 prints costs", costForPrints(40) )
         print(cost3)
       </code>
       <tests>
-
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -64,4 +74,3 @@ print( "40 prints costs", costForPrints(40) )
     </program>
   </exercise>
 </section>
-

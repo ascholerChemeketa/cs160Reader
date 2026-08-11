@@ -1,153 +1,254 @@
 <section xml:id="data-representation_floating-point-numbers">
   <title>Floating Point Numbers</title>
-  <p>Computers generally store data in fixed-sized chunks. Hardware can more efficiently handle data if it is assumed
-    that numbers are represented with exactly 32 or 64 bits. But with a fixed number of bits to store fractional values,
-    we are left with a hard choice: how many bits should we have on either side of the binary point?</p>
-  <p>Imagine we are only using 8 bits to store decimal numbers. If we do not worry about negative values and assume that
-    there are always 4 digits on each side of the decimal - something like 1010.0110 - that means that the largest value
-    we can represent is 15.9375 (1111.1111). The smallest non-zero value would be 0.0625 (0000.0001). If we use only 2
-    bits to represent integers and 6 to represent fractional values - like 10.101101 - we could represent smaller
-    values. With 00.000001 we could represent 0.015625; but with this scheme, the largest value we could now represent
-    would be 3.984375 (11.111111).</p>
-  <p>Which of these two formats would be best? 4.4? or 2.6? There is no good answer. Sometimes we care about accurately
-    representing small values and do not care about large ones. Other times, we need to represent larger values. A
-    system with a fixed number of digits to the right of the '.' locks us into one particular set of
-    compromises.</p>
+
+  <p>
+    Computers generally store data in fixed-sized chunks.
+    Hardware can more efficiently handle data if it is assumed that numbers are represented with
+    exactly 32 or 64 bits.
+    But with a fixed number of bits to store fractional values, we are left with a hard choice: how
+    many bits should we have on either side of the binary point?
+  </p>
+
+  <p>
+    Imagine we are only using 8 bits to store decimal numbers.
+    If we do not worry about negative values and assume that there are always 4 digits on each side
+    of the decimal - something like 1010.0110 - that means that the largest value we can represent
+    is 15.9375 (1111.1111).
+    The smallest non-zero value would be 0.0625 (0000.0001).
+    If we use only 2 bits to represent integers and 6 to represent fractional values - like
+    10.101101 - we could represent smaller values.
+    With 00.000001 we could represent 0.015625; but with this scheme, the largest value we could now
+    represent would be 3.984375 (11.111111).
+  </p>
+
+  <p>
+    Which of these two formats would be best?
+    4.4?
+    or 2.6?
+    There is no good answer.
+    Sometimes we care about accurately representing small values and do not care about large ones.
+    Other times, we need to represent larger values.
+    A system with a fixed number of digits to the right of the '.' locks us into one particular set
+    of compromises.
+  </p>
   <aside>
     <title>IEEE 754</title>
-    <p>We are considering a simple example of how floating-point numbers work - real systems have a few extra details
-      like special values to represent infinity. You can find information about the most common real implementation, the
-      IEEE 754 floating-point standard, <url href="http://www.tfinley.net/notes/cps104/floating.html"
-        visual="http://www.tfinley.net/notes/cps104/floating.html">on this page</url> or on <url
-        href="http://en.wikipedia.org/wiki/Floating_point" visual="http://en.wikipedia.org/wiki/Floating_point">
-      wikipedia</url>.</p>
+
+    <p>
+      We are considering a simple example of how floating-point numbers work - real systems have a
+      few extra details like special values to represent infinity.
+      You can find information about the most common real implementation, the IEEE 754
+      floating-point standard,
+      <url href="http://www.tfinley.net/notes/cps104/floating.html" visual="http://www.tfinley.net/notes/cps104/floating.html">on this page</url>
+      or on
+      <url href="http://en.wikipedia.org/wiki/Floating_point" visual="http://en.wikipedia.org/wiki/Floating_point">
+      wikipedia</url>.
+    </p>
   </aside>
-  <p>The alternative is to use a <term>floating-point</term> representation. You may not have heard of the term, but you
-    have seen the same basic idea in <term>scientific notation</term>. When we write 6.2 x <m>{10}^{12}</m> instead of
-    6200000000000 or 1.65 x <m>{10}^{-8}</m> instead of 0.0000000165, we are condensing the representation of large and
-    small values by shifting (or floating) the decimal point. Values are recorded as a decimal multiplied by some power
-    of ten.</p>
-  <p>Computers use this same trick, but instead of representing values as decimals multiplied by powers of ten, they use
-    binary numbers multiplied by a power of two. There are thus three things to represent: the sign of the number, the
-    binary value, and the power of two to multiply it by. We will use the following scheme:</p>
+
+  <p>
+    The alternative is to use a <term>floating-point</term> representation.
+    You may not have heard of the term, but you have seen the same basic idea in
+    <term>scientific notation</term>.
+    When we write 6.2 x <m>{10}^{12}</m> instead of 6200000000000 or 1.65 x <m>{10}^{-8}</m> instead
+    of 0.0000000165, we are condensing the representation of large and small values by shifting (or
+    floating) the decimal point.
+    Values are recorded as a decimal multiplied by some power of ten.
+  </p>
+
+  <p>
+    Computers use this same trick, but instead of representing values as decimals multiplied by
+    powers of ten, they use binary numbers multiplied by a power of two.
+    There are thus three things to represent: the sign of the number, the binary value, and the
+    power of two to multiply it by.
+    We will use the following scheme:
+  </p>
+
   <p>
     <ul>
       <li>
-        <p>1 bit to represent the <term>sign</term>. 0 for positive, 1 for negative.</p>
+        <p>
+          1 bit to represent the <term>sign</term>.
+          0 for positive, 1 for negative.
+        </p>
       </li>
+
       <li>
-        <p>3 bits to represent the <term>exponent</term> - the power of two to multiply by. We need to represent
-          positive and negative exponents; to do so we will subtract 4 from the binary number the exponent represents.
-          For example, if the three exponent bits are 101, that means 5. We would subtract 4 to get 1 and thus raise 2
-          to the 1st power. If the exponent bits were 001, representing 1, we would subtract 4 and get -3<ellipsis/> this
-          indicates we should raise 2 to the -3 power.</p>
+        <p>
+          3 bits to represent the <term>exponent</term>- the power of two to multiply by.
+          We need to represent positive and negative exponents; to do so we will subtract 4 from the
+          binary number the exponent represents.
+          For example, if the three exponent bits are 101, that means 5.
+          We would subtract 4 to get 1 and thus raise 2 to the 1st power.
+          If the exponent bits were 001, representing 1, we would subtract 4 and get -3 <ellipsis/>
+          this indicates we should raise 2 to the -3 power.
+        </p>
       </li>
+
       <li>
-        <p>4 bits to represent the <term>binary fraction</term> (more formally known as the <term>mantissa</term>). We
-          will always interpret these four bits as filling in the blanks of 0.XXXX. For example, if the four fraction
-          bits are 0100 we would interpret that as <m>{0.0100}_{2}</m> or <m>{0.25}_{10}</m>.</p>
+        <p>
+          4 bits to represent the <term>binary fraction</term> (more formally known as the
+          <term>mantissa</term> ).
+          We will always interpret these four bits as filling in the blanks of 0.XXXX.
+          For example, if the four fraction bits are 0100 we would interpret that as
+          <m>{0.0100}_{2}</m> or <m>{0.25}_{10}</m>.
+        </p>
       </li>
+
       <li>
-        <p>The final value is obtained by multiplying the binary fractional by the power of two indicated by the
-          exponent.</p>
+        <p>
+          The final value is obtained by multiplying the binary fractional by the power of two
+          indicated by the exponent.
+        </p>
       </li>
     </ul>
   </p>
-  <p>It may sound a little complex, but remember it is the same idea as scientific notation - calculate an exponent of
-    2, and a binary fraction and multiply them. Experiment with the floating-point decoder below. The row of boxes shows
-    the bits of a number (initially all 0s), below that is an explanation of how that value would be decoded.</p>
-        <interactive label="data-representation-floating-point-numbers-interactive-1" iframe="DataRepresentation/data-representation-floating-point-numbers-interactive-1.html"/>
 
+  <p>
+    It may sound a little complex, but remember it is the same idea as scientific notation -
+    calculate an exponent of 2, and a binary fraction and multiply them.
+    Experiment with the floating-point decoder below.
+    The row of boxes shows the bits of a number (initially all 0s), below that is an explanation of
+    how that value would be decoded.
+  </p>
+
+  <interactive label="data-representation-floating-point-numbers-interactive-1" iframe="DataRepresentation/data-representation-floating-point-numbers-interactive-1.html"/>
   <exercise label="datarepresentation_floatingpointnumbers1">
     <statement>
-      <p>What is the largest value you can make using the scheme above? <fillin mode="string" answer="7.5"/>
+      <p>
+        What is the largest value you can make using the scheme above?
+        <fillin mode="string" answer="7.5"/>
       </p>
     </statement>
     <evaluation>
       <evaluate>
         <test correct="yes">
-          <strcmp>^\s*\+?7\.5\s*$</strcmp>
+          <strcmp>
+            ^\s*\+?7\.5\s*$
+          </strcmp>
         </test>
         <test>
-          <strcmp>^\s*[^0-9\.\-]+\s*$</strcmp>
+          <strcmp>
+            ^\s*[^0-9\.\-]+\s*$
+          </strcmp>
+
           <feedback>
-            <p>Your answer should be a number</p>
+            <p>
+              Your answer should be a number
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*^\-.*\s*$</strcmp>
+          <strcmp>
+            ^\s*^\-.*\s*$
+          </strcmp>
+
           <feedback>
-            <p>It should be positive</p>
+            <p>
+              It should be positive
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*x\s*$</strcmp>
+          <strcmp>
+            ^\s*x\s*$
+          </strcmp>
+
           <feedback>
-            <p>Hint: To make a large value you need the largest exponent and largest fraction you can make</p>
+            <p>
+              Hint: To make a large value you need the largest exponent and largest fraction you can
+              make
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
+
   <exercise label="datarepresentation_floatingpointnumbers2">
     <statement>
-
-      <p>What power of two is represented by exponent bits of 110?</p>
-
+      <p>
+        What power of two is represented by exponent bits of 110?
+      </p>
     </statement>
-    <choices>
 
+    <choices>
       <choice correct="yes">
         <statement>
-          <p>2</p>
+          <p>
+            2
+          </p>
         </statement>
+
         <feedback>
-          <p />
+          <p/>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>3</p>
+          <p>
+            3
+          </p>
         </statement>
+
         <feedback>
-          <p>110 means 6</p>
+          <p>
+            110 means 6
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>4</p>
+          <p>
+            4
+          </p>
         </statement>
+
         <feedback>
-          <p>What power of two is that?</p>
+          <p>
+            What power of two is that?
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>5</p>
+          <p>
+            5
+          </p>
         </statement>
+
         <feedback>
-          <p>110 means 6</p>
+          <p>
+            110 means 6
+          </p>
         </feedback>
       </choice>
 
       <choice>
         <statement>
-          <p>6</p>
+          <p>
+            6
+          </p>
         </statement>
+
         <feedback>
-          <p>In this scheme we subtract 4 from the binary value to get the exponent</p>
+          <p>
+            In this scheme we subtract 4 from the binary value to get the exponent
+          </p>
         </feedback>
       </choice>
     </choices>
-
   </exercise>
 
   <exercise label="datarepresentation_floatingpointnumbers3">
     <statement>
-      <p>Say the exponent bits are 101. What bits are needed in the fraction to make a final value of 1.25? <fillin mode="number" answer="1010"/>
+      <p>
+        Say the exponent bits are 101.
+        What bits are needed in the fraction to make a final value of 1.25?
+        <fillin mode="number" answer="1010"/>
       </p>
     </statement>
     <evaluation>
@@ -156,25 +257,39 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>^\s*[^0-1]+\s*$</strcmp>
+          <strcmp>
+            ^\s*[^0-1]+\s*$
+          </strcmp>
+
           <feedback>
-            <p>Your answer should only consist of 0s and 1s</p>
+            <p>
+              Your answer should only consist of 0s and 1s
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*^[0-1]{4}\s*$</strcmp>
+          <strcmp>
+            ^\s*^[0-1]{4}\s*$
+          </strcmp>
+
           <feedback>
-            <p>Use the tool above to help figure out the answer</p>
+            <p>
+              Use the tool above to help figure out the answer
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*x\s*$</strcmp>
+          <strcmp>
+            ^\s*x\s*$
+          </strcmp>
+
           <feedback>
-            <p>Hint: your answer should be 4 digits</p>
+            <p>
+              Hint: your answer should be 4 digits
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
 </section>
-

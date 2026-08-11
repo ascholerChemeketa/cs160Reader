@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="csp-decisions-images">
   <title>Using Decisions with Images</title>
-  <xi:include href='./decImages.ptx' />
-  <xi:include href='./advancedSelection.ptx' />
-  <xi:include href='./combineImages.ptx' />
-  <xi:include href='./posterize.ptx' />
-  <xi:include href='./locationConditions.ptx' />
-  <xi:include href='./locationConditions2.ptx' />
-  <xi:include href='./Exercises.ptx' />
+
+  <xi:include href="./decImages.ptx"/>
+  <xi:include href="./advancedSelection.ptx"/>
+  <xi:include href="./combineImages.ptx"/>
+  <xi:include href="./posterize.ptx"/>
+  <xi:include href="./locationConditions.ptx"/>
+  <xi:include href="./locationConditions2.ptx"/>
+  <xi:include href="./Exercises.ptx"/>
   <!-- The following is commented out intentionally once the datafiles are loaded into the DB -->
   <!-- <xi:include href='./imageDatafiles.ptx' /> -->
 </chapter>

@@ -1,16 +1,24 @@
 <section xml:id="csp-name-strings_mixed-up-code-practice">
   <title>Mixed Up Code Practice</title>
-  <p>Try to solve each of the following. Click the <em>Check Me</em> button to check each solution.
+
+  <p>
+    Try to solve each of the following.
+    Click the <em>Check Me</em> button to check each solution.
     You will be told if your solution is too short, has a block in the wrong order, or you are using
-    the wrong block. Some of the problems have an extra block that isn't needed in the correct
-    solution.</p>
-  <exercise label="cspnamestrings_stringpracticeparsons1" adaptive="yes" indentation="show"
-    language="python">
+    the wrong block.
+    Some of the problems have an extra block that isn't needed in the correct solution.
+  </p>
+
+  <exercise label="cspnamestrings_stringpracticeparsons1" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print Maria's first name on one line and her last name on the
-        next line. But, the blocks have been mixed up and include an extra block that isn't needed
-        in the solution. Drag the blocks from the left and put them in the correct order on the
-        right. Click the <em>Check Me</em> button to check your solution.</p>
+      <p>
+        The following code should print Maria's first name on one line and her last name on the next
+        line.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -28,12 +36,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons2" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons2" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the words to a famous poem. But the blocks have been mixed
-        up. Drag the blocks from the left and put them in the correct order on the right. Click the <em>Check
-        Me</em> button to check your solution.</p>
+      <p>
+        The following code should print the words to a famous poem.
+        But the blocks have been mixed up.
+        Drag the blocks from the left and put them in the correct order on the right.
+        Click the <em>Check
+        Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="4">
@@ -50,13 +62,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons3" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons3" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print a sentence about Marcus' favorite color on one line. But,
-        the blocks have been mixed up and include an extra block that isn't needed in the solution.
-        Drag the needed blocks from the left and put them in the correct order on the right. Click
-        the <em>Check Me</em> button to check your solution.</p>
+      <p>
+        The following code should print a sentence about Marcus' favorite color on one line.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="2">
@@ -74,13 +89,17 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons4" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons4" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the first 2 characters of the message followed by the last
-        2 characters of the message. But, the blocks have been mixed up and include an extra block
-        that isn't needed in the solution. Drag the needed blocks from the left and put them in the
-        correct order on the right. Click the <em>Check Me</em> button to check your solution.</p>
+      <p>
+        The following code should print the first 2 characters of the message followed by the last 2
+        characters of the message.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="4">
@@ -99,13 +118,17 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons5" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons5" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the name in upper case letters on one line followed by the
-        age on the next line. But, the blocks have been mixed up and include an extra block that
-        isn't needed in the solution. Drag the needed blocks from the left and put them in the
-        correct order on the right. Click the <em>Check Me</em> button to check your solution.</p>
+      <p>
+        The following code should print the name in upper case letters on one line followed by the
+        age on the next line.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -126,13 +149,17 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons6" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons6" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print out the index of the name Tom in a sentence. But, the
-        blocks have been mixed up and include an extra block that isn't needed in the solution. Drag
-        the needed blocks from the left and put them in the correct order on the right. Click the <em>Check
-        Me</em> button to check your solution.</p>
+      <p>
+        The following code should print out the index of the name Tom in a sentence.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check
+        Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="2">
@@ -149,13 +176,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons7" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons7" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the initials in lowercase letters. But, the blocks have
-        been mixed up and include an extra block that isn't needed in the solution. Drag the needed
-        blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em>
-        button to check your solution.</p>
+      <p>
+        The following code should print the initials in lowercase letters.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="3">
@@ -177,13 +207,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons8" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons8" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the message in all uppercase letters. But, the blocks have
-        been mixed up and include an extra block that isn't needed in the solution. Drag the needed
-        blocks from the left and put them in the correct order on the right. Click the <em>Check Me</em>
-        button to check your solution.</p>
+      <p>
+        The following code should print the message in all uppercase letters.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="2">
@@ -200,13 +233,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons9" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons9" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the first 3 letters of <c>message</c> in uppercase letters. But,
-        the blocks have been mixed up and include an extra block that isn't needed in the solution.
-        Drag the needed blocks from the left and put them in the correct order on the right. Click
-        the <em>Check Me</em> button to check your solution.</p>
+      <p>
+        The following code should print the first 3 letters of <c>message</c> in uppercase letters.
+        But, the blocks have been mixed up and include an extra block that isn't needed in the
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="4">
@@ -226,13 +262,16 @@
       </block>
     </blocks>
   </exercise>
-  <exercise label="cspnamestrings_stringpracticeparsons10" adaptive="yes" indentation="show"
-    language="python">
+
+  <exercise label="cspnamestrings_stringpracticeparsons10" adaptive="yes" indentation="show" language="python">
     <statement>
-      <p>The following code should print the part of the message starting with the word <q>nice</q>.
+      <p>
+        The following code should print the part of the message starting with the word <q>nice</q>.
         But, the blocks have been mixed up and include an extra block that isn't needed in the
-        solution. Drag the needed blocks from the left and put them in the correct order on the
-        right. Click the <em>Check Me</em> button to check your solution.</p>
+        solution.
+        Drag the needed blocks from the left and put them in the correct order on the right.
+        Click the <em>Check Me</em> button to check your solution.
+      </p>
     </statement>
     <blocks>
       <block order="1">

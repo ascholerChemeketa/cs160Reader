@@ -1,109 +1,170 @@
 <section xml:id="operating-systems_operating-systems-goals">
   <title>Operating Systems Goals</title>
+
   <subsection>
     <title>Jobs of an Operating System</title>
-<figure>
-    <caption><url
-                 href="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
-      Commons</url> - <url
-                 href="http://creativecommons.org/licenses/by-sa/3.0">
-      CC-BY-SA-3.0</url></caption>
-    <image source="OperatingSystems/Images/Operating_system.png"
-           width="30%">
-      <shortdescription>Operating system layer between applications and computer hardware.</shortdescription>
-    </image>
-  </figure>
-  <p>When a computer is turned on, the hardware loads code from a set location in permanent memory (generally the disk
-    drive) into the main memory. Those instructions load the operating system code and start it up. Once running, the
-    operating system is responsible for starting up application programs and managing the hardware resources that they
-    need. Indeed, most programs are not allowed to interact directly with the hardware - instead, the operating system
-    mediates all interactions between programs and the hardware.</p>
+
+    <figure>
+      <caption>
+        <url href="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
+      Commons</url>-
+        <url href="http://creativecommons.org/licenses/by-sa/3.0">
+      CC-BY-SA-3.0</url>
+      </caption>
+
+      <image source="OperatingSystems/Images/Operating_system.png" width="30%">
+        <shortdescription>
+          Operating system layer between applications and computer hardware.
+        </shortdescription>
+      </image>
+    </figure>
+
+    <p>
+      When a computer is turned on, the hardware loads code from a set location in permanent memory
+      (generally the disk drive) into the main memory.
+      Those instructions load the operating system code and start it up.
+      Once running, the operating system is responsible for starting up application programs and
+      managing the hardware resources that they need.
+      Indeed, most programs are not allowed to interact directly with the hardware - instead, the
+      operating system mediates all interactions between programs and the hardware.
+    </p>
   </subsection>
-<subsection xml:id="operating-systems-goals-allocation">
+
+  <subsection xml:id="operating-systems-goals-allocation">
     <title>Hardware Allocation</title>
-    <p>Most of the hardware resources a computer has are <term>scarce</term>, meaning they are in limited supply: The
-      CPU can only do so much work at any given time. There is a physical limit to how much information can fit into the
-      main memory (RAM). Only one program can be printing to a given printer at any given time.</p>
-    <p>The operating system is in charge of <term>allocating</term> this scarce hardware - deciding who gets what when
-      and preventing any one program from monopolizing the hardware resources.</p>
+
+    <p>
+      Most of the hardware resources a computer has are <term>scarce</term>, meaning they are in
+      limited supply: The CPU can only do so much work at any given time.
+      There is a physical limit to how much information can fit into the main memory (RAM).
+      Only one program can be printing to a given printer at any given time.
+    </p>
+
+    <p>
+      The operating system is in charge of <term>allocating</term> this scarce hardware - deciding
+      who gets what when and preventing any one program from monopolizing the hardware resources.
+    </p>
   </subsection>
 
   <subsection xml:id="operating-systems-goals-abstraxtion">
     <title>Hardware Abstraction</title>
 
-    <p>Computer hardware is diverse and complicated. Many different kinds of storage drives can be hooked up to a
-      computer - flash, hard drive, CD drive, SSD, etc<ellipsis/> and each of those styles of drive comes in thousands
-      of makes and models. Each of those different drives stores information in different ways, often scattered pieces
-      of information across the drive.</p>
-    <p>Imagine you are writing a program and want to read a document from a drive. Without an operating system, you
-      would have to write code to talk to a drive, track down all the chunks of information, and assemble them into one
-      block in memory. Then you would have to make sure that code worked with thousands of different kinds of drives.</p>
-    <p>Instead of that nightmare situation, the operating system provides an <term>abstraction</term> for dealing with
-      hardware - instead of talking to a drive about chunks of information, your program can talk to the operating
-      system about <em>
+    <p>
+      Computer hardware is diverse and complicated.
+      Many different kinds of storage drives can be hooked up to a computer - flash, hard drive, CD
+      drive, SSD, etc <ellipsis/> and each of those styles of drive comes in thousands of makes and
+      models.
+      Each of those different drives stores information in different ways, often scattered pieces of
+      information across the drive.
+    </p>
+
+    <p>
+      Imagine you are writing a program and want to read a document from a drive.
+      Without an operating system, you would have to write code to talk to a drive, track down all
+      the chunks of information, and assemble them into one block in memory.
+      Then you would have to make sure that code worked with thousands of different kinds of drives.
+    </p>
+
+    <p>
+      Instead of that nightmare situation, the operating system provides an <term>abstraction</term>
+      for dealing with hardware - instead of talking to a drive about chunks of information, your
+      program can talk to the operating system about <em>
         <q>opening a file</q>
-      </em>. Because the operating system knows how to look up and retrieve the information
-      that corresponds to that <em>file</em> on a wide variety of devices, your program is freed up from worrying about
-      all of the messy details.</p>
+      </em>.
+      Because the operating system knows how to look up and retrieve the information that
+      corresponds to that <em>file</em> on a wide variety of devices, your program is freed up from
+      worrying about all of the messy details.
+    </p>
   </subsection>
 
   <subsection xml:id="operating-systems-goals-common-interface">
     <title>Common Interface</title>
-    <p>Related to the job of hardware abstraction is providing tools to other programs to interact with users
-      consistently and effectively. Operating systems provide application programming interfaces (APIs) that include
-      tools for doing things like drawing windows. Rather than each application designer deciding what windows should
-      look like, what font to use in the title bar, where to put the close button, etc<ellipsis/> the operating system
-      provides code that takes care of those details. Not only does this make programming an application easier, but it
-      also helps enforce a consistent experience for the user.</p>
-    <p>We could fill books with all the ways that operating systems provide allocations of and abstractions for computer
-      hardware, but on the following pages, we will focus on two fundamental resources: processors and main memory.</p>
 
+    <p>
+      Related to the job of hardware abstraction is providing tools to other programs to interact
+      with users consistently and effectively.
+      Operating systems provide application programming interfaces (APIs) that include tools for
+      doing things like drawing windows.
+      Rather than each application designer deciding what windows should look like, what font to use
+      in the title bar, where to put the close button, etc <ellipsis/> the operating system provides
+      code that takes care of those details.
+      Not only does this make programming an application easier, but it also helps enforce a
+      consistent experience for the user.
+    </p>
 
-  <exercise label="operating-systems_operating-systems-goals-ex1">
-    <statement>
-      <p>Match each operating system responsibility to its purpose.</p>
-    </statement>
-    <cardsort>
-      <match>
-        <premise>Hardware allocation</premise>
-        <response>Decides which program can use a limited hardware resource and when</response>
-      </match>
-      <match>
-        <premise>Hardware abstraction</premise>
-        <response>Lets programs use simple concepts such as files instead of device-specific details</response>
-      </match>
-      <match>
-        <premise>Common interface</premise>
-        <response>Provides consistent tools such as windows and title bars for applications</response>
-      </match>
-    </cardsort>
-  </exercise>
-  <exercise label="operating-systems_operating-systems-goals-ex2">
-    <statement>
-      <p>Why does an operating system manage access to a printer?</p>
-    </statement>
-    <choices randomize="yes">
-      <choice correct="yes">
-        <statement>
-          <p>Only one program can print to a particular printer at a time, so the OS must allocate that resource.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Printers cannot receive information from application programs.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>Programs are allowed to bypass the OS whenever they use a printer.</p>
-        </statement>
-      </choice>
-      <choice>
-        <statement>
-          <p>The OS stores every printed document permanently in RAM.</p>
-        </statement>
-      </choice>
-    </choices>
-  </exercise>
-</subsection>
+    <p>
+      We could fill books with all the ways that operating systems provide allocations of and
+      abstractions for computer hardware, but on the following pages, we will focus on two
+      fundamental resources: processors and main memory.
+    </p>
+
+    <exercise label="operating-systems_operating-systems-goals-ex1">
+      <statement>
+        <p>
+          Match each operating system responsibility to its purpose.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+          <premise>Hardware allocation</premise>
+          <response>Decides which program can use a limited hardware resource and when</response>
+        </match>
+        <match>
+          <premise>Hardware abstraction</premise>
+          <response>
+            Lets programs use simple concepts such as files instead of device-specific details
+          </response>
+        </match>
+        <match>
+          <premise>Common interface</premise>
+          <response>
+            Provides consistent tools such as windows and title bars for applications
+          </response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="operating-systems_operating-systems-goals-ex2">
+      <statement>
+        <p>
+          Why does an operating system manage access to a printer?
+        </p>
+      </statement>
+
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Only one program can print to a particular printer at a time, so the OS must allocate
+              that resource.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Printers cannot receive information from application programs.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Programs are allowed to bypass the OS whenever they use a printer.
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              The OS stores every printed document permanently in RAM.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+  </subsection>
 </section>

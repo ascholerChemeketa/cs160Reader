@@ -1,7 +1,12 @@
 ﻿<section xml:id="binary_bit-patterns">
   <title>Bit Patterns</title>
-  <p>A bit can only represent two possible values - 0 or 1. With one bit there are two possible patterns. How many
-    patterns can be formed with two bits? Here is a complete list:</p>
+
+  <p>
+    A bit can only represent two possible values - 0 or 1.
+    With one bit there are two possible patterns.
+    How many patterns can be formed with two bits?
+    Here is a complete list:
+  </p>
   <pre>
       0 0
       0 1
@@ -9,11 +14,19 @@
       1 1
   </pre>
   <activity xml:id="bit-patterns-demo-app">
-      <p>Try clicking these switches. With two on/off switches, you should be able to make 4 different combinations - off/off, off/on, on/off, on/on.
-      </p>
-      <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
+    <p>
+      Try clicking these switches.
+      With two on/off switches, you should be able to make 4 different combinations - off/off,
+      off/on, on/off, on/on.
+    </p>
+
+    <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
   </activity>
-  <p>How many patterns can be formed with three bits? Let's list them:</p>
+
+  <p>
+    How many patterns can be formed with three bits?
+    Let's list them:
+  </p>
   <pre>
       0 0 0
       0 0 1
@@ -24,68 +37,91 @@
       1 1 0
       1 1 1
   </pre>
-  <p>The list of patterns for three bits has 8 lines (patterns). Notice that the first four patterns are a
-    <q>0</q> followed by the possible patterns for 2 bits. The second four patterns are a <q>1</q>
-    followed by the patterns for 2 bits.</p>
-  <p>To form the list of patterns for 4 bits, we can use the same trick. Make two copies of the list for 3 bits. This
-    gives you 16 lines. Put a <q>0</q> at the start of the first 8 lines and a <q>1</q> at the start of
-    the second 8 lines.</p>
-  <p>This trick can be repeated as many times as you like. Adding one more bit doubles the number of patterns. The table
-    shows the number of patterns for 1, 2, 3, and 4 bits.</p>
-  <p>Number of Bits Number of Patterns Number of Patterns as a power of two:</p>
+  <p>
+    The list of patterns for three bits has 8 lines (patterns).
+    Notice that the first four patterns are a <q>0</q> followed by the possible patterns for 2 bits.
+    The second four patterns are a <q>1</q> followed by the patterns for 2 bits.
+  </p>
 
-    <tabular>
-      <row header="yes">
-        <cell> Bits </cell>
-        <cell> Patterns </cell>
-        <cell> Power of two </cell>
-      </row>
-      <row>
-        <cell> 1 </cell>
-        <cell> 2 </cell>
-        <cell>
-          <m>2^1</m>
-        </cell>
-      </row>
-      <row>
-        <cell> 2 </cell>
-        <cell> 4 </cell>
-        <cell>
-          <m>2^2</m>
-        </cell>
-      </row>
-      <row>
-        <cell> 3 </cell>
-        <cell> 8 </cell>
-        <cell>
-          <m>2^3</m>
-        </cell>
-      </row>
-      <row>
-        <cell> 4 </cell>
-        <cell> 16 </cell>
-        <cell>
-          <m>2^4</m>
-        </cell>
-      </row>
-    </tabular>
+  <p>
+    To form the list of patterns for 4 bits, we can use the same trick.
+    Make two copies of the list for 3 bits.
+    This gives you 16 lines.
+    Put a <q>0</q> at the start of the first 8 lines and a <q>1</q> at the start of the second 8
+    lines.
+  </p>
 
-  <p>How many patterns with 5 bits? Make two copies of the 4-bit patterns (16 patterns per copy). Make the patterns
-    unique by prefixing <q>0</q> to the first 16 patterns and <q>1</q> to the second 16. You now have <m>16 \times 2
-    = 32 = 2^5</m> unique patterns.</p>
-  <p>This demonstrates the following:</p>
+  <p>
+    This trick can be repeated as many times as you like.
+    Adding one more bit doubles the number of patterns.
+    The table shows the number of patterns for 1, 2, 3, and 4 bits.
+  </p>
+
+  <p>
+    Number of Bits Number of Patterns Number of Patterns as a power of two:
+  </p>
+
+  <tabular>
+    <row header="yes">
+      <cell>Bits</cell>
+      <cell>Patterns</cell>
+      <cell>Power of two</cell>
+    </row>
+
+    <row>
+      <cell>1</cell>
+      <cell>2</cell>
+      <cell><m>2^1</m></cell>
+    </row>
+
+    <row>
+      <cell>2</cell>
+      <cell>4</cell>
+      <cell><m>2^2</m></cell>
+    </row>
+
+    <row>
+      <cell>3</cell>
+      <cell>8</cell>
+      <cell><m>2^3</m></cell>
+    </row>
+
+    <row>
+      <cell>4</cell>
+      <cell>16</cell>
+      <cell><m>2^4</m></cell>
+    </row>
+  </tabular>
+
+  <p>
+    How many patterns with 5 bits?
+    Make two copies of the 4-bit patterns (16 patterns per copy).
+    Make the patterns unique by prefixing <q>0</q> to the first 16 patterns and <q>1</q> to the
+    second 16.
+    You now have <m>16 \times 2
+    = 32 = 2^5</m> unique patterns.
+  </p>
+
+  <p>
+    This demonstrates the following:
+  </p>
+
   <p>
     <term>Number of possible patterns of N bits = <m>2^N</m></term>
   </p>
-  <p>This is a fact worth memorizing. It will come up over and over in this course and later ones. So take some time
-    to play with the toggle switches above and convince yourself that this is true and develop an intuition for
-    why it is true.
-  </p>
 
+  <p>
+    This is a fact worth memorizing.
+    It will come up over and over in this course and later ones.
+    So take some time to play with the toggle switches above and convince yourself that this is true
+    and develop an intuition for why it is true.
+  </p>
 
   <exercise label="binary_bitpatterns1">
     <statement>
-      <p>How many different values can be formed from a pattern of 10 bits? <fillin mode="number" answer="1024"/>
+      <p>
+        How many different values can be formed from a pattern of 10 bits?
+        <fillin mode="number" answer="1024"/>
       </p>
     </statement>
     <evaluation>
@@ -94,21 +130,36 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>^\s*.{1,3}\s*$</strcmp>
+          <strcmp>
+            ^\s*.{1,3}\s*$
+          </strcmp>
+
           <feedback>
-            <p>That is not enough digits</p>
+            <p>
+              That is not enough digits
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*.{5,}\s*$</strcmp>
+          <strcmp>
+            ^\s*.{5,}\s*$
+          </strcmp>
+
           <feedback>
-            <p>That is too many digits</p>
+            <p>
+              That is too many digits
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*x\s*$</strcmp>
+          <strcmp>
+            ^\s*x\s*$
+          </strcmp>
+
           <feedback>
-            <p>Hint: it has to be a power of 2</p>
+            <p>
+              Hint: it has to be a power of 2
+            </p>
           </feedback>
         </test>
       </evaluate>
@@ -117,7 +168,9 @@
 
   <exercise label="binary_bitpatterns_2">
     <statement>
-      <p>Given six on/off switches, how many different patterns can be formed? <fillin mode="number" answer="64"/>
+      <p>
+        Given six on/off switches, how many different patterns can be formed?
+        <fillin mode="number" answer="64"/>
       </p>
     </statement>
     <evaluation>
@@ -126,31 +179,48 @@
           <numcmp use-answer="yes"/>
         </test>
         <test>
-          <strcmp>^\s*.{1}\s*$</strcmp>
+          <strcmp>
+            ^\s*.{1}\s*$
+          </strcmp>
+
           <feedback>
-            <p>That is not enough digits</p>
+            <p>
+              That is not enough digits
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*.{3,}\s*$</strcmp>
+          <strcmp>
+            ^\s*.{3,}\s*$
+          </strcmp>
+
           <feedback>
-            <p>That is too many digits</p>
+            <p>
+              That is too many digits
+            </p>
           </feedback>
         </test>
         <test>
-          <strcmp>^\s*x\s*$</strcmp>
+          <strcmp>
+            ^\s*x\s*$
+          </strcmp>
+
           <feedback>
-            <p>Hint: it has to be a power of 2</p>
+            <p>
+              Hint: it has to be a power of 2
+            </p>
           </feedback>
         </test>
       </evaluate>
     </evaluation>
   </exercise>
 
-
-
-  <remark><p> Materials on this page adapted with permission from <url
-      href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url> by Bradley Kjell
-    (<url
-      href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>) </p></remark>
+  <remark>
+    <p>
+      Materials on this page adapted with permission from
+      <url href="http://chortle.ccsu.edu/java5/index.html">Introduction to Computer Science using Java</url>
+      by Bradley Kjell (
+      <url href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url> )
+    </p>
+  </remark>
 </section>

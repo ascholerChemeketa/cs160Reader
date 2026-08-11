@@ -3,13 +3,23 @@
 
   <exercise label="cspcollectionscontinued_exercises1">
     <statement>
-      <p>Write code for the function <c>printFirst</c>. It should print the first <c>numberItems</c> from <c>list</c> with one item appearing on
-        each line.</p>
-      <p>Hint: You will want to use an index-based loop (<c>for i in range( ________ )</c>) to do the iteration.</p>
-      <p>The tests for your code will check the output - make sure not to print anything extra or remove anything from
-        the main program.</p>
+      <p>
+        Write code for the function <c>printFirst</c>.
+        It should print the first <c>numberItems</c> from <c>list</c> with one item appearing on
+        each line.
+      </p>
 
+      <p>
+        Hint: You will want to use an index-based loop ( <c>for i in range( ________ )</c> ) to do
+        the iteration.
+      </p>
+
+      <p>
+        The tests for your code will check the output - make sure not to print anything extra or
+        remove anything from the main program.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionscontinued_exercises1_editor" interactive="activecode" language="python">
       <code>
         def printFirst(numberItems, list):
@@ -30,23 +40,31 @@
                 self.assertEqual(self.getOutput().split("\n")[3:7], ["5", "2", "3", "8"], "Testing that printFirst(4, values1) worked")
 
         myTests().main()
-        </tests>
+      </tests>
     </program>
   </exercise>
 
   <exercise label="cspcollectionscontinued_exercises2">
     <statement>
-      <p>Write the code for the <c>makeAcronym</c> function. It should take a list of words, like 
-        <c>["As", "Far", "As", "I", "Know"]</c> and turn it into a list that has just the first 
-        letters of each word: <c>["A", "F", "A", "I", "K"]</c>
+      <p>
+        Write the code for the <c>makeAcronym</c> function.
+        It should take a list of words, like <c>["As", "Far", "As", "I", "Know"]</c> and turn it
+        into a list that has just the first letters of each word: <c>["A", "F", "A", "I", "K"]</c>
       </p>
-      <p>You will need to use an index-based loop (<c>for i in range( ________ )</c>). For each index <c>i</c>,
-      set item <c>i</c> from <c>list</c> to be just its first letter. You may want to do this in multiple steps - 
-      first get the current word, then get its first letter, then store that letter as <c>list[i]</c></p>
-      <p>Automated tests will check the output - make sure not to print anything extra or remove anything from
-        the main program.</p>
 
+      <p>
+        You will need to use an index-based loop ( <c>for i in range( ________ )</c> ).
+        For each index <c>i</c>, set item <c>i</c> from <c>list</c> to be just its first letter.
+        You may want to do this in multiple steps - first get the current word, then get its first
+        letter, then store that letter as <c>list[i]</c>
+      </p>
+
+      <p>
+        Automated tests will check the output - make sure not to print anything extra or remove
+        anything from the main program.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionscontinued_exercises2_editor" interactive="activecode" language="python">
       <code>
         def makeAcronym(list):
@@ -81,12 +99,22 @@
 
   <exercise label="cspcollectionscontinued_exercises3">
     <statement>
-      <p>We have a list of numbers that are all supposed to be 8-bit values (0-255).</p>
-      <p>Write code for the <c>fixNumbers</c> function. It should go through the <c>list</c> that is passed as a parameter and change
-        any value above 255 to 255 and any value below 0 to 0.</p>
-      <p>You may want to first focus on either fixing just the <q>too high</q> or just the <q>too low</q>
-        values first, and then worry about the other category once that is working.</p>
+      <p>
+        We have a list of numbers that are all supposed to be 8-bit values (0-255).
+      </p>
+
+      <p>
+        Write code for the <c>fixNumbers</c> function.
+        It should go through the <c>list</c> that is passed as a parameter and change any value
+        above 255 to 255 and any value below 0 to 0.
+      </p>
+
+      <p>
+        You may want to first focus on either fixing just the <q>too high</q> or just the
+        <q>too low</q> values first, and then worry about the other category once that is working.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionscontinued_exercises3_editor" interactive="activecode" language="python">
       <code>
         def fixNumbers(list):
@@ -119,14 +147,29 @@
 
   <exercise label="cspcollectionscontinued_exercises4">
     <statement>
-      <p>Write the code for <c>middleThird()</c>. It should accept a <c>list</c> as its parameter and then slice the list into three
-        equal parts (first third, middle third, last third) and return the middle third.</p>
-      <p>You can assume the <c>list</c> will always be of a size that evenly divides by 3.</p>
-      <p>Hint: Indexes you use in a list slice must be integers. You can't ask for a slice <c>[2.0:4.0]</c>, just <c>[2:4]</c>.
-        When you do division, use <c>//</c> to get an integer answer instead of <c>/</c> which gives a decimal answer.</p>
-      <p>If you are having issues, first calculate the indexes you will use to make the slice and print them out.</p>
+      <p>
+        Write the code for <c>middleThird()</c>.
+        It should accept a <c>list</c> as its parameter and then slice the list into three equal
+        parts (first third, middle third, last third) and return the middle third.
+      </p>
 
+      <p>
+        You can assume the <c>list</c> will always be of a size that evenly divides by 3.
+      </p>
+
+      <p>
+        Hint: Indexes you use in a list slice must be integers.
+        You can't ask for a slice <c>[2.0:4.0]</c>, just <c>[2:4]</c>.
+        When you do division, use <c>//</c> to get an integer answer instead of <c>/</c> which gives
+        a decimal answer.
+      </p>
+
+      <p>
+        If you are having issues, first calculate the indexes you will use to make the slice and
+        print them out.
+      </p>
     </statement>
+
     <program xml:id="cspcollectionscontinued_exercises4_editor" interactive="activecode" language="python">
       <code>
         def middleThird(list):
@@ -157,6 +200,4 @@
       </tests>
     </program>
   </exercise>
-
 </exercises>
-

@@ -1,6 +1,11 @@
 <section xml:id="algorithms_algorithms-merge-sort">
   <title>Merge Sort</title>
-  <p>So how does merging help us sort? Well, with it we can define Merge Sort (for a human) as the following:</p>
+
+  <p>
+    So how does merging help us sort?
+    Well, with it we can define Merge Sort (for a human) as the following:
+  </p>
+
   <program language="none">
     <code>
 1   How to MergeSort a list
@@ -14,71 +19,108 @@
 9           Do MergeSort on listA
 10          Do MergeSort on listB
 11          Do Merge on listA, listB back into list
-</code>
+    </code>
   </program>
 
-  <p>It looks almost like cheating… <em>How do you sort a list? You cut it in half and sort each half, then merge the
-    halves together!</em> Note that the definition for <term>MergeSort</term> calls <term>MergeSort</term> on the halves
-    of the list - that means it is a <term>recursive</term> definition, a function that is defined in terms of itself. Recursive functions are a powerful tool, but they can be a bit tricky to understand. They often work by breaking a problem down into smaller sub-problems of the same type.
+  <p>
+    It looks almost like cheating…
+    <em>How do you sort a list? You cut it in half and sort each half, then merge the
+    halves together!</em>
+    Note that the definition for <term>MergeSort</term> calls <term>MergeSort</term> on the halves
+    of the list - that means it is a <term>recursive</term> definition, a function that is defined
+    in terms of itself.
+    Recursive functions are a powerful tool, but they can be a bit tricky to understand.
+    They often work by breaking a problem down into smaller sub-problems of the same type.
   </p>
+
   <p>
     In this case, we keep breaking the list into smaller parts and sorting those parts.
-    Your initial list gets split into 2 halves. Each half gets split into 2 halves. Each of those gets split in half
-    again… Until, finally, we have lists of size 1. A list of size 1 is always sorted, so that means we can stop splitting.
+    Your initial list gets split into 2 halves.
+    Each half gets split into 2 halves.
+    Each of those gets split in half again… Until, finally, we have lists of size 1.
+    A list of size 1 is always sorted, so that means we can stop splitting.
   </p>
-  <p>
-    Then it is time to merge the sorted lists back together. We merge the
-    sorted lists of length 1 back into a sorted list of length 2. Then we merge the sorted lists of length 2 back into a
-    sorted list of length 4…</p>
-  <p>The rest of this video demonstrates the process:</p>
 
-  <video xml:id="EeQ8pwjQxTM-2"
-         youtube="EeQ8pwjQxTM"
-         start="180"
-         width="100%"/>
+  <p>
+    Then it is time to merge the sorted lists back together.
+    We merge the sorted lists of length 1 back into a sorted list of length 2.
+    Then we merge the sorted lists of length 2 back into a sorted list of length 4…
+  </p>
+
+  <p>
+    The rest of this video demonstrates the process:
+  </p>
+
+  <video xml:id="EeQ8pwjQxTM-2" youtube="EeQ8pwjQxTM" start="180" width="100%"/>
   <note>
     <p>
       <em>A point of accuracy you can feel free to ignore…</em>
     </p>
-    <p>The video and animation below merge lists in a slightly different order than the pseudocode. According to the
-      pseudocode (and real implementations of Merge Sort), we would merge indexes 1 and 2, then 3 and 4, then {1, 2} and
-      {3, 4}, then 5 and 6, then 7 and 8, then {5, 6} and {7, 8}, then finally {1, 2, 3, 4} and {5, 6, 7, 8}. Basically,
-      we always go do as much as we can on the left half of the list we are working on, then backtrack to the right
-      side. This order does not change anything about the efficiency or general process, but if you run the pseudocode
-      algorithm by hand you will notice differences from the video/animation.</p>
+
+    <p>
+      The video and animation below merge lists in a slightly different order than the pseudocode.
+      According to the pseudocode (and real implementations of Merge Sort), we would merge indexes 1
+      and 2, then 3 and 4, then {1, 2} and {3, 4}, then 5 and 6, then 7 and 8, then {5, 6} and {7,
+      8}, then finally {1, 2, 3, 4} and {5, 6, 7, 8}.
+      Basically, we always go do as much as we can on the left half of the list we are working on,
+      then backtrack to the right side.
+      This order does not change anything about the efficiency or general process, but if you run
+      the pseudocode algorithm by hand you will notice differences from the video/animation.
+    </p>
   </note>
-  <p>The animation below allows you to step through the process on a randomly generated list.</p>
-      <interactive label="algorithms-algorithms-merge-sort-interactive-1" iframe="Algorithms/algorithms-algorithms-merge-sort-interactive-1.html"/>
+
+  <p>
+    The animation below allows you to step through the process on a randomly generated list.
+  </p>
+
+  <interactive label="algorithms-algorithms-merge-sort-interactive-1" iframe="Algorithms/algorithms-algorithms-merge-sort-interactive-1.html"/>
   <exercise label="algorithms_algorithms-merge-sort-ex1">
     <statement>
-      <p>What stops the recursive process of <q>split the list and mergesort each half</q>?</p>
+      <p>
+        What stops the recursive process of <q>split the list and mergesort each half</q>?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>A list with zero or one item is already sorted and does not need to be split further.</p>
+          <p>
+            A list with zero or one item is already sorted and does not need to be split further.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>A list that has been divided into exactly two halves does not need to be split further.</p>
+          <p>
+            A list that has been divided into exactly two halves does not need to be split further.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>When the first item is the smallest item we are done.</p>
+          <p>
+            When the first item is the smallest item we are done.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Every item has been swapped once.</p>
+          <p>
+            Every item has been swapped once.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="algorithms_algorithms-merge-sort-ex2">
     <statement>
-      <p>Put the main merge sort stages in their logical order.</p>
+      <p>
+        Put the main merge sort stages in their logical order.
+      </p>
     </statement>
     <cardsort>
       <match>

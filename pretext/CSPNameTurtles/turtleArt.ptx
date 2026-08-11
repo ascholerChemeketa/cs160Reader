@@ -1,6 +1,9 @@
 <section xml:id="csp-name-turtles_turtle-art">
   <title>Turtle Art</title>
-  <p>Below is a program to draw a simple house.</p>
+
+  <p>
+    Below is a program to draw a simple house.
+  </p>
 
   <program xml:id="cspnameturtles_turtleart1" interactive="activecode" language="python">
     <code>
@@ -33,14 +36,19 @@ bob.left(120)
 bob.forward(100)
 bob.left(120)
 bob.end_fill()
-        </code>
+    </code>
   </program>
-  <p>Now we want to add a <q>chimney</q> to the house that looks something like this:</p>
+
+  <p>
+    Now we want to add a <q>chimney</q> to the house that looks something like this:
+  </p>
+
   <image source="CSPNameTurtles/Figures/turtle-house-3.png" width="20%">
     <shortdescription>Turtle graphics drawing of a house.</shortdescription>
   </image>
-  <p>Modify the program above so that it draws a <c>"red"</c> chimney. You can either draw it before or after drawing the
-    roof.</p>
 
+  <p>
+    Modify the program above so that it draws a <c>"red"</c> chimney.
+    You can either draw it before or after drawing the roof.
+  </p>
 </section>
-

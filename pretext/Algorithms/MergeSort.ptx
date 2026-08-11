@@ -1,16 +1,30 @@
 <section xml:id="algorithms_algorithms-merging">
   <title>Merging</title>
-  <p>A problem-solving method that is often utilized in computer science is called <term>divide-and-conquer</term>. In
-    this paradigm, a problem is repeatedly divided into smaller and smaller sub-problems, until the solution to
-    individual sub-problems become obvious. The solutions to these sub-problems are then combined to form a solution to
-    the original problem.</p>
-  <p>The sorting algorithms we have learned to this point (Insertion sort and Selection sort) have been <term>quadratic</term>
-    time algorithms: in the worst case, they require <m>O(n^2)</m> amount of time to sort <term>n</term> items.
-    There are a number of sorting algorithms that perform much better than that - a common feature of most of them is
-    some kind of reliance on a divide-and-conquer strategy. The algorithm we are going to examine is <term>Merge Sort</term>
-    .</p>
-  <p>One of the keys to Merge Sort is an algorithm for merging two sorted lists into one big sorted list. We won't worry
-    about computer pseudocode for this process, but here is human pseudocode:</p>
+
+  <p>
+    A problem-solving method that is often utilized in computer science is called
+    <term>divide-and-conquer</term>.
+    In this paradigm, a problem is repeatedly divided into smaller and smaller sub-problems, until
+    the solution to individual sub-problems become obvious.
+    The solutions to these sub-problems are then combined to form a solution to the original
+    problem.
+  </p>
+
+  <p>
+    The sorting algorithms we have learned to this point (Insertion sort and Selection sort) have
+    been <term>quadratic</term> time algorithms: in the worst case, they require <m>O(n^2)</m>
+    amount of time to sort <term>n</term> items.
+    There are a number of sorting algorithms that perform much better than that - a common feature
+    of most of them is some kind of reliance on a divide-and-conquer strategy.
+    The algorithm we are going to examine is <term>Merge Sort</term>.
+  </p>
+
+  <p>
+    One of the keys to Merge Sort is an algorithm for merging two sorted lists into one big sorted
+    list.
+    We won't worry about computer pseudocode for this process, but here is human pseudocode:
+  </p>
+
   <program language="none">
     <code>
 1   How to Merge listA and listB into sortedList
@@ -25,75 +39,112 @@
 9               move first item from listA to end of sortedList
 10          else
 11              move first item from listB to end of sortedList
-</code>
+    </code>
   </program>
-  <p>The first three minutes of the video below demonstrates the process:</p>
 
-  <video xml:id="EeQ8pwjQxTM"
-         youtube="EeQ8pwjQxTM"
-         end="180"
-         width="100%"/>
-  <p>Think you have it? Give it a try below. Use the ListA and ListB buttons to move an item from the two sorted lists
-    at the bottom to the new list at the top:</p>
+  <p>
+    The first three minutes of the video below demonstrates the process:
+  </p>
+
+  <video xml:id="EeQ8pwjQxTM" youtube="EeQ8pwjQxTM" end="180" width="100%"/>
+  <p>
+    Think you have it?
+    Give it a try below.
+    Use the ListA and ListB buttons to move an item from the two sorted lists at the bottom to the
+    new list at the top:
+  </p>
 
   <activity label="algorithms-algorithms-merging-interactive-1">
     <title>Merge activity</title>
-    <interactive  iframe="Algorithms/algorithms-algorithms-merging-interactive-1.html"/>
+
+    <interactive iframe="Algorithms/algorithms-algorithms-merging-interactive-1.html"/>
   </activity>
 
-  <p>Once you have merging down, move on to Merge Sort on the next page. Remember for later what was mentioned at the
-    end of the video - merging <term>n</term> items is a <term>linear algorithm</term> - it takes <m>O(n)</m>
-    work.</p>
+  <p>
+    Once you have merging down, move on to Merge Sort on the next page.
+    Remember for later what was mentioned at the end of the video - merging <term>n</term> items is
+    a <term>linear algorithm</term>- it takes <m>O(n)</m> work.
+  </p>
+
   <exercise label="algorithms_algorithms-merging-ex1">
     <statement>
-      <p>When merging two sorted lists, which item should be moved to the output next?</p>
+      <p>
+        When merging two sorted lists, which item should be moved to the output next?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>The smaller of the first remaining items from the two lists.</p>
+          <p>
+            The smaller of the first remaining items from the two lists.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>The larger of the first remaining items.</p>
+          <p>
+            The larger of the first remaining items.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>A random item from either list.</p>
+          <p>
+            A random item from either list.
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Always the first item from the left list.</p>
+          <p>
+            Always the first item from the left list.
+          </p>
         </statement>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="algorithms_algorithms-merging-ex2">
     <statement>
-      <p>What is the Big-O work required to merge a total of <m>n</m> items from two sorted lists?</p>
+      <p>
+        What is the Big-O work required to merge a total of <m>n</m> items from two sorted lists?
+      </p>
     </statement>
+
     <choices randomize="yes">
       <choice correct="yes">
         <statement>
-          <p>Linear, <m>O(n)</m></p>
+          <p>
+            Linear, <m>O(n)</m>
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Constant, <m>O(1)</m></p>
+          <p>
+            Constant, <m>O(1)</m>
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Quadratic, <m>O(n^2)</m></p>
+          <p>
+            Quadratic, <m>O(n^2)</m>
+          </p>
         </statement>
       </choice>
+
       <choice>
         <statement>
-          <p>Exponential, <m>O(2^n)</m></p>
+          <p>
+            Exponential, <m>O(2^n)</m>
+          </p>
         </statement>
       </choice>
     </choices>

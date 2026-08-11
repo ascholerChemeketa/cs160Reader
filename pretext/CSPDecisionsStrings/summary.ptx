@@ -1,44 +1,65 @@
 <section xml:id="csp-decisions-strings_chapter-summary">
   <title>Chapter Summary</title>
-  <introduction>
-<p>This chapter included the following concepts from computing.</p>
 
-  <p>
-    <ul>
-      <li>
-        <p><term>Input</term> - The <c>input</c> function returns a value that the user enters.</p>
-      </li>
-      <li>
-        <p><term>Complex Conditional</term> - A complex conditional is an expression one that
-          uses operators like <term>and</term> and <term>or</term> to combine multiple logical 
-          expressions.</p>
-      </li>
-    </ul>
-  </p>
-  </introduction>
-<subsection xml:id="csp-decisions-strings_summary-of-python-keywords-and-functions">
-    <title>Summary of Python Keywords and Functions</title>
+  <introduction>
+    <p>
+      This chapter included the following concepts from computing.
+    </p>
+
     <p>
       <ul>
         <li>
-          <p><term>And</term> - The keyword <c>and</c> is used to join two logical expressions. Both of the logical
-            expressions must be true for the joined expression to be true.</p>
+          <p>
+            <term>Input</term>- The <c>input</c> function returns a value that the user enters.
+          </p>
         </li>
+
         <li>
-          <p><term>Not</term> - The keyword <c>not</c> is used to negate a <term>logical expression</term>. If the original
-            expression is true the negated expression is false and if the original expression is false the negated
-            expression is true.</p>
+          <p>
+            <term>Complex Conditional</term>- A complex conditional is an expression one that uses
+            operators like <term>and</term> and <term>or</term> to combine multiple logical
+            expressions.
+          </p>
         </li>
+      </ul>
+    </p>
+  </introduction>
+
+  <subsection xml:id="csp-decisions-strings_summary-of-python-keywords-and-functions">
+    <title>Summary of Python Keywords and Functions</title>
+
+    <p>
+      <ul>
         <li>
-          <p><term>Or</term> - The keyword <c>or</c> is used to join two logical expressions. If either or both
-            of the logical expressions are true, the joined expression to be true.</p>
+          <p>
+            <term>And</term>- The keyword <c>and</c> is used to join two logical expressions.
+            Both of the logical expressions must be true for the joined expression to be true.
+          </p>
         </li>
+
         <li>
-          <p><term>Str</term> - The function <c>str</c> turns a number into a string so that it can be appended to a
-            string.</p>
+          <p>
+            <term>Not</term>- The keyword <c>not</c> is used to negate a
+            <term>logical expression</term>.
+            If the original expression is true the negated expression is false and if the original
+            expression is false the negated expression is true.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <term>Or</term>- The keyword <c>or</c> is used to join two logical expressions.
+            If either or both of the logical expressions are true, the joined expression to be true.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <term>Str</term>- The function <c>str</c> turns a number into a string so that it can be
+            appended to a string.
+          </p>
         </li>
       </ul>
     </p>
   </subsection>
 </section>
-
