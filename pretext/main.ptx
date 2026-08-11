@@ -5,6 +5,7 @@
     <document-id edition="2">welcomecs2</document-id>
     <blurb shelf="Intro to Computer Science">A CS0 / AP CS Principles level text intended for students new to computer
       science.</blurb>
+    <directories external="../assets" />
   </docinfo>
   <book xml:id="welcomecs">
     <title>Welcome to CS</title>

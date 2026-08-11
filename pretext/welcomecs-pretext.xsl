@@ -37,7 +37,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     exclude-result-prefixes="mb"
 >
 
-<xsl:import href="./core/pretext-html.xsl"/>
+<!-- <xsl:import href="./core/pretext-html.xsl"/> -->
+<xsl:import href="../../../pretext/xsl/pretext-html.xsl"/>
 
 <!-- Dump some raw html blocks into output until ported to something better -->
 <xsl:template match="raw">
