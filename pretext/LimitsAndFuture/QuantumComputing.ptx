@@ -45,23 +45,10 @@
     states one by one. A quantum computer with 200 qubits could check all those states simultaneously.</p>
   <figure>
     <caption>
-      <url name="Image by D-Wave Systems"
-           refuri="http://www.dwavesys.com/tutorials/background-reading-series/quantum-computing-primer">Image
+      <url
+           href="http://www.dwavesys.com/tutorials/background-reading-series/quantum-computing-primer">Image
         by D-Wave Systems</url>
-      <p>Lightswitch optimization problem. Each switch can be on (1) or off (-1). A score is computed by:</p>
-      <p>
-        <ol>
-          <li>
-            <p>Multiplying each switch by its red or blue multiplier</p>
-          </li>
-          <li>
-            <p>Multiplying each green or orange circle by the value of the switches it connects</p>
-          </li>
-          <li>
-            <p>Adding up the value from steps 1 and 2</p>
-          </li>
-        </ol>
-      </p>
+      Lightswitch optimization problem. Each switch can be on (1) or off (-1). A score is computed by multiplying each switch by its red or blue multiplier, multiplying each green or orange circle by the value of the switches it connects, and adding up the value from steps 1 and 2.
     </caption>
     <image source="LimitsAndFuture/Images/tut-intro-lightswitcheshandj.png"
            width="50%">

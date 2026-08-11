@@ -4,14 +4,13 @@
     key components labeled:</p>
   <figure>
     <caption>
-      <p>Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power
-        supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse </p>
-      <p>
-        <url name="Image via Wikipedia Commons"
-             refuri="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
-        via Wikipedia Commons</url> - <url name="Creative Commons CC BY 2.5"
-             refuri="http://creativecommons.org/licenses/by/2.5">Creative
-        Commons CC BY 2.5</url></p>
+      Hardware of a modern personal computer: 1. Monitor 2. Motherboard 3. CPU 4. RAM 5. Expansion cards 6. Power
+        supply 7. Optical disc drive 8. Hard disk drive 9. Keyboard 10. Mouse
+        <url
+             href="http://commons.wikimedia.org/wiki/File:Personal_computer,_exploded_5.svg#mediaviewer/File:Personal_computer,_exploded_5.svg">Image
+        via Wikipedia Commons</url> - <url
+             href="http://creativecommons.org/licenses/by/2.5">Creative
+        Commons CC BY 2.5</url>
     </caption>
     <image source="ComputerArchitecture/Images/Personal_computer.png"
            width="60%">
@@ -30,10 +29,10 @@
     information into the computer and printers and monitors that display the results of calculations. Finally, these
     devices need to talk to each other - they do so over electrical circuits called <term>busses</term>.</p>
   <figure>
-    <caption><url name="Image via Wikipedia Commons"
-           refuri="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image
-      via Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
-           refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+    <caption><url
+           href="http://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation#mediaviewer/File:Data_flow_through_a_von_Neumann_machine.svg">Image
+      via Wikipedia Commons</url> - <url
+           href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
       Commons CC BY SA 3.0</url></caption>
     <image source="ComputerArchitecture/Images/vonNeumannData.png"
            width="80%">

@@ -4,9 +4,9 @@
     <title>Jobs of an Operating System</title>
 <figure>
     <caption><reference name="Wikimedia Commons"
-                 refuri="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
+                 href="http://commons.wikimedia.org/wiki/File:Operating_system_placement.svg">Wikimedia
       Commons</reference> - <reference name="CC-BY-SA-3.0"
-                 refuri="http://creativecommons.org/licenses/by-sa/3.0">
+                 href="http://creativecommons.org/licenses/by-sa/3.0">
       CC-BY-SA-3.0</reference></caption>
     <image source="OperatingSystems/Images/Operating_system.png"
            width="30%">

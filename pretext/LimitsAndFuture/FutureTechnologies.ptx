@@ -17,8 +17,8 @@
     transistors are manufactured at a size of about 10 nanometers - or 1/10,000th of the size of a human hair. At this
     scale, the gate in a transistor that blocks or allows current is only about 50 atoms wide.</p>
   <figure>
-    <caption>A transistor is ~10 nm or 1/10,000th the size of a human hair. <url name="Image by US Dept. of Energy"
-           refuri="http://www.nano.gov/nanotech-101/what/nano-size">Image
+    <caption>A transistor is ~10 nm or 1/10,000th the size of a human hair. <url
+           href="http://www.nano.gov/nanotech-101/what/nano-size">Image
       by US Dept. of Energy</url>
     </caption>
     <image source="LimitsAndFuture/Images/nanoscale.jpg"

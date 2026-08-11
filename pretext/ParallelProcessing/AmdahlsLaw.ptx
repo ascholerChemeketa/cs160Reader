@@ -81,10 +81,10 @@ Add fact to page                                                    Serial
   <p>The image below shows the speedup possible for jobs with 50%, 75%, 90% and 95% parallel portions.</p>
   <figure>
     <caption>Even on a problem that is 95% parallel, we can never see more than a 20x speedup no matter how many
-      processors we have. <url name="Wikimedia Commons"
-           refuri="http://en.wikipedia.org/wiki/Amdahl's_law#mediaviewer/File:AmdahlsLaw.svg">Wikimedia
-      Commons</url> - <url name="CC-BY-SA-3.0"
-           refuri="http://creativecommons.org/licenses/by-sa/3.0"> CC-BY-SA-3.0</url></caption>
+      processors we have. <url
+           href="http://en.wikipedia.org/wiki/Amdahl's_law#mediaviewer/File:AmdahlsLaw.svg">Wikimedia
+      Commons</url> - <url
+           href="http://creativecommons.org/licenses/by-sa/3.0"> CC-BY-SA-3.0</url></caption>
     <image source="ParallelProcessing/Images/AmdahlsLaw.png"
            width="80%">
       <shortdescription>Graph of Amdahl law speedup curves for different parallel portions.</shortdescription>

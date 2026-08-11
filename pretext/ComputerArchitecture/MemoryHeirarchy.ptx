@@ -9,8 +9,8 @@
     - a series of layers from small and fast to large and slow.</p>
   <figure>
     <caption>
-      <url name="Image via teachbook.com.au"
-           refuri="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image
+      <url
+           href="http://blog.teachbook.com.au/index.php/2012/02/memory-hierarchy/">Image
         via teachbook.com.au</url>
     </caption>
     <image source="ComputerArchitecture/Images/Memory-Hierarchy.jpg"
@@ -43,10 +43,10 @@
       a significant slowdown. RAM generally needs power to maintain its state; when the power is turned off, it forgets
       the information it is storing.</p>
     <figure>
-      <caption>A stick of RAM that might go in a laptop computer.<url name="Image via Wikipedia Commons"
-             refuri="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image
-        via Wikipedia Commons</url> - <url name="Creative Commons CC BY SA 3.0"
-             refuri="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+      <caption>A stick of RAM that might go in a laptop computer.<url
+             href="http://simple.wikipedia.org/wiki/Random-access_memory#mediaviewer/File:4GB_DDR3_SO-DIMM.jpg">Image
+        via Wikipedia Commons</url> - <url
+             href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
         Commons CC BY SA 3.0</url></caption>
       <image source="ComputerArchitecture/Images/640px-4GB_DDR3_SO-DIMM.jpg"
              width="50%">

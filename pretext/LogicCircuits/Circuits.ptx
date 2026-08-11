@@ -34,7 +34,7 @@
     If either one of the two Inputs is set to on (or both are), the Output should be on.</p>
       <interactive label="logic-circuits-circuits-interactive-1" iframe="LogicCircuits/logic-circuits-circuits-interactive-1.html"/>
   <p> Try clicking the inputs to change them from off to on and back again. Observe what happens to the output. </p>
-  <p>
+  
     <note xml:id="circuit-tips">
       <title>Circuit simulator tips</title>
 
@@ -52,7 +52,7 @@
         </ul>
       </p>
     </note>
-  </p>
+  
   <exercise label="logic-circuits_circuits-ex1">
     <statement>
       <p>In a circuit diagram, where are a gate's inputs and output conventionally drawn?</p>
