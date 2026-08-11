@@ -37,64 +37,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     exclude-result-prefixes="mb"
 >
 
-<xsl:import href="./core/pretext-html.xsl"/>
-<!-- <xsl:import href="../../../pretext/xsl/pretext-html.xsl"/> -->
-
-<!-- Dump some raw html blocks into output until ported to something better -->
-<xsl:template match="raw">
-  <!-- <xsl:message>==========================raw========================</xsl:message> -->
-    <xsl:copy-of select="node()"/>
-</xsl:template>
-
-<!-- Comment out xrefs until conversion is done -->
-<!-- <xsl:template match="xref">
-  <xsl:message>=========================xref========================</xsl:message>
-  <xsl:comment>
-    <xsl:copy-of select="node()"/>
-  </xsl:comment>
-</xsl:template> -->
-
-<!-- Generate items that are hidden on the page -->
-<xsl:template match="hidden">
-  <!-- <xsl:message>=========================hidden========================</xsl:message> -->
-  <div class="hidden">
-    <xsl:apply-templates select="*" />
-  </div>
-</xsl:template>
-
-
-<xsl:variable name="b-has-baseurl" select="not($baseurl = '')"/>
-
-<xsl:template name="brand-logo">
-    <a id="logo-link" class="logo-link" target="_blank" >
-        <xsl:attribute name="href">
-            <xsl:choose>
-                <xsl:when test="$docinfo/brandlogo/@url != ''"><xsl:value-of select="$docinfo/brandlogo/@url"/></xsl:when>
-                <xsl:when test="$b-has-baseurl"><xsl:value-of select="$baseurl"/></xsl:when>
-                <xsl:otherwise></xsl:otherwise>
-            </xsl:choose>
-        </xsl:attribute>
-        <xsl:if test="$docinfo/brandlogo/@source">
-            <xsl:variable name="location">
-                <!-- empty when not using managed directories -->
-                <xsl:value-of select="$external-directory"/>
-                <xsl:value-of select="$docinfo/brandlogo/@source"/>
-            </xsl:variable>
-            <img src="{$location}" alt="Logo image"/>
-        </xsl:if>
-    </a>
-</xsl:template>
-
-<!-- Sometimes this template is useful to see which    -->
-<!-- templates are not implemented at all in some new  -->
-<!-- (basic) conversion building just on this -common. -->
-<!-- Maybe "dead-ending" is preferable (remove the     -->
-<!-- apply-templates) and/or maybe a lower priority    -->
-<!-- will work better.                                 -->
-
-<!-- <xsl:template match="*" priority="0">
-    <xsl:message>[<xsl:value-of select="local-name(.)"/>]</xsl:message>
-    <xsl:apply-templates/>
-</xsl:template> -->
+<!-- <xsl:import href="./core/pretext-html.xsl"/> -->
+<xsl:import href="../../pretext/xsl/pretext-html.xsl"/>
 
 </xsl:stylesheet>
