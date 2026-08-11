@@ -11,7 +11,7 @@
   <data xml:id="csp-python-data_stocks-data-file">
     <title>Stocks datafile</title>
 
-    <datafile filename="stocks.txt" label="stocks.txt">
+    <datafile filename="stocks.txt" label="stocks_txt">
       <pre source="CSP/datafiles/stocks.txt"/>
     </datafile>
   </data>
