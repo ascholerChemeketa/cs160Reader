@@ -18,3 +18,4 @@ logs
 codechat_config.yaml
 published
 out
+generated/
