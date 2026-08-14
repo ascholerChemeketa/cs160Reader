@@ -7,6 +7,7 @@
   </p>
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing1">
+    <title/>
     <program xml:id="cspnamenumbers_walkassign1" interactive="codelens" language="python">
       <code>
 a = 1
@@ -94,6 +95,7 @@ d = b
   </p>
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing2">
+    <title/>
     <program xml:id="cspnamenumbers_walkassign3" interactive="codelens" language="python">
       <code>
 var1 = 45
@@ -180,6 +182,7 @@ var2 = var1
   </p>
 
   <listing xml:id="csp-name-numbers_walking-through-assignment-more-generally-listing3">
+    <title/>
     <program xml:id="cspnamenumbers_walkassign5" interactive="activecode" language="python">
       <code>
 daysInWeek = 7
