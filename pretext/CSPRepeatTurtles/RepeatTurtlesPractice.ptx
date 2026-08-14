@@ -183,9 +183,13 @@
         lucia.pendown()
 
         # Add your code here to make a loop that counts down from 10 to 3 by -1
+        # and prints the loop variable to the console
         ____________________________
-            # Inside the loop - use your loop variable as the second parameter to control the number of sides
-            polygon(lucia, ____, 100)
+            # Inside the loop - print the loop variable to the console
+
+            # Inside the loop - use your loop variable 
+            # as the second parameter to control the number of sides
+            # polygon(lucia, ____, 100)
       </code>
       <tests>
         from unittest.gui import TestCaseGui
