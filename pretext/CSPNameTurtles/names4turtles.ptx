@@ -40,7 +40,7 @@
       forward 75 pixels.
     </p>
 
-    <program xml:id="cspnameturtles_names4turtles1" interactive="activecode" language="python">
+    <program label="cspnameturtles_names4turtles1" xml:id="cspnameturtles_names4turtles1" interactive="activecode" language="python">
       <code>
 from turtle import *    # use the turtle library
 alex = Turtle()         # create a turtle named alex

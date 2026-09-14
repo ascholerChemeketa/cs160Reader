@@ -25,7 +25,7 @@
       our final answer <c>sideC</c> which gets passed to the <c>print</c> function.
     </p>
 
-    <program xml:id="cspnamefunctions_functionscomposition1" interactive="activecode" language="python">
+    <program label="cspnamefunctions_functionscomposition1" xml:id="cspnamefunctions_functionscomposition1" interactive="activecode" language="python">
       <code>
 import math
 
@@ -67,7 +67,7 @@ print("The length of side C is", sideC)
       program does <c>float(input("Enter the length of side A"))</c>.
     </p>
 
-    <program xml:id="cspnamefunctions_functionscomposition2" interactive="activecode" language="python">
+    <program label="cspnamefunctions_functionscomposition2" xml:id="cspnamefunctions_functionscomposition2" interactive="activecode" language="python">
       <code>
 import math
 

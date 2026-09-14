@@ -7,7 +7,7 @@
     We could do that by changing each of the <c>100s into a 50</c>.
   </p>
 
-  <program xml:id="cspnameprocedures_multipleparameters1" interactive="activecode" language="python">
+  <program label="cspnameprocedures_multipleparameters1" xml:id="cspnameprocedures_multipleparameters1" interactive="activecode" language="python">
     <code>
 def square(turtle):
     turtle.forward(100)
@@ -33,7 +33,7 @@ square(grace)
     What if we create a variable <c>size</c> and set its value to the amount to move forward?
   </p>
 
-  <program xml:id="cspnameprocedures_multipleparameters2" interactive="activecode" language="python">
+  <program label="cspnameprocedures_multipleparameters2" xml:id="cspnameprocedures_multipleparameters2" interactive="activecode" language="python">
     <code>
 def square(turtle):
     size = 50
@@ -115,7 +115,7 @@ def largesSquare(turtle):
     Something like <c>square(grace, 100)</c> or <c>square(grace, 50)</c>.
   </p>
 
-  <program xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
+  <program label="cspnameprocedures_multipleparameters3" xml:id="cspnameprocedures_multipleparameters3" interactive="activecode" language="python">
     <code>
 def square(turtle, size):   # square now has two parameters
     turtle.forward(size)

@@ -13,7 +13,7 @@
     project.
   </p>
 
-  <video xml:id="XSkGY6LchJs" youtube="XSkGY6LchJs" width="auto"/>
+  <video label="XSkGY6LchJs" xml:id="XSkGY6LchJs" youtube="XSkGY6LchJs" width="auto"/>
   <p xml:id="dawn-of-computers-2">
     Whereas the Difference Engine could only calculate the values of polynomial functions, the new
     <term>Analytical Engine</term> would be able to do any calculation.

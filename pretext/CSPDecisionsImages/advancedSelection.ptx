@@ -33,7 +33,7 @@
     our criteria and false otherwise.
   </p>
 
-  <program xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
+  <program label="cspdecisionsimages_advancedselection1" xml:id="cspdecisionsimages_advancedselection1" interactive="activecode" language="python">
     <code>
 def isRed(r, g, b):
     if r &gt;= g + 20 and r &gt;= b + 20:
@@ -77,7 +77,7 @@ print( isRed(200, 0, 200) )   # aqua
     Here is the final program:
   </p>
 
-  <program xml:id="cspdecisionsimages_advancedselection2" interactive="activecode" language="python">
+  <program label="cspdecisionsimages_advancedselection2" xml:id="cspdecisionsimages_advancedselection2" interactive="activecode" language="python">
     <code>
 from image import *
 

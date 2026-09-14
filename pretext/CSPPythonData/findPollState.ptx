@@ -26,7 +26,7 @@
     state.
   </p>
 
-  <program xml:id="csppythondata_findpollstate1" interactive="codelens" language="python">
+  <program label="csppythondata_findpollstate1" xml:id="csppythondata_findpollstate1" interactive="codelens" language="python">
     <code>
       line = "Pocatello,ID:15:9"
       values = line.split(":")
@@ -57,7 +57,7 @@
     </p>
   </note>
 
-  <program xml:id="csppythondata_findpollstate2" interactive="activecode" language="python">
+  <program label="csppythondata_findpollstate2" xml:id="csppythondata_findpollstate2" interactive="activecode" language="python">
     <code>
       inFile = open("uspoll.txt")
       data = inFile.read().splitlines()
@@ -95,7 +95,7 @@
     We will only count records that are in the target state.
   </p>
 
-  <program xml:id="csppythondata_findpollstate3" interactive="activecode" language="python">
+  <program label="csppythondata_findpollstate3" xml:id="csppythondata_findpollstate3" interactive="activecode" language="python">
     <code>
       inFile = open("uspoll.txt")
       data = inFile.read().splitlines()

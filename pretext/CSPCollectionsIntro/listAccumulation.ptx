@@ -9,7 +9,7 @@
     I might use the following program:
   </p>
 
-  <program xml:id="cspcollectionsintro_listaccumulation1" interactive="activecode" language="python">
+  <program label="cspcollectionsintro_listaccumulation1" xml:id="cspcollectionsintro_listaccumulation1" interactive="activecode" language="python">
     <code>
 scores = [82, 95, 92, 76, 98, 84, 89, 92]
 
@@ -39,7 +39,7 @@ print(total)
     This is shown in the animation below, using <c>product</c> as the accumulator variable.
   </p>
 
-  <program xml:id="cspcollectionsintro_listaccumulation2" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_listaccumulation2" xml:id="cspcollectionsintro_listaccumulation2" interactive="codelens" language="python">
     <code>
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Pick an appropriate initial value
@@ -143,7 +143,7 @@ print(product)
     is <c>""</c>.
   </p>
 
-  <program xml:id="cspcollectionsintro_listaccumulation4" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_listaccumulation4" xml:id="cspcollectionsintro_listaccumulation4" interactive="codelens" language="python">
     <code>
 words = ["Roses", "are", "red", "violets", "are", "dead"]
 

@@ -32,7 +32,7 @@ else:
     Try running it in codelens mode.
   </p>
 
-  <program xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_eliftricks1" xml:id="cspdecisionsintro_eliftricks1" interactive="activecode" language="python">
     <code>
 score = 83
 if score &gt;= 90:
@@ -55,7 +55,7 @@ else:
     Assumes x represents a percentile and we want to indicate which quartile it is in.
   </p>
 
-  <program xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_eliftricks2" xml:id="cspdecisionsintro_eliftricks2" interactive="activecode" language="python">
     <code>
 x = .25
 if x &lt;= .25:

@@ -28,7 +28,7 @@
     Try running this sample with the Codelens:
   </p>
 
-  <program xml:id="cspnameprocedures_namefandp1" interactive="activecode" language="python">
+  <program label="cspnameprocedures_namefandp1" xml:id="cspnameprocedures_namefandp1" interactive="activecode" language="python">
     <code>
 name = "jeff"
 upperName = name.upper()        # call upper function on the string called "name"

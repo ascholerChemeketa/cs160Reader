@@ -12,7 +12,7 @@
     <c>*</c> to repeat strings.
   </p>
 
-  <program xml:id="cspteasers_computewords1" interactive="activecode" language="python">
+  <program label="cspteasers_computewords1" xml:id="cspteasers_computewords1" interactive="activecode" language="python">
     <code>
             basic = "da"
             print(basic)
@@ -44,7 +44,7 @@
     first letter is capitalized.
   </p>
 
-  <program xml:id="cspteasers_computewords2" interactive="activecode" language="python">
+  <program label="cspteasers_computewords2" xml:id="cspteasers_computewords2" interactive="activecode" language="python">
     <code>
             sentence = "THIS IS A TEST"
             better = sentence.lower()

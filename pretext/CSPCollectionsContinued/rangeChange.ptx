@@ -14,7 +14,7 @@
     This means it visits indexes 0, 2, 4 <ellipsis/>
   </p>
 
-  <program xml:id="cspcollectionscontinued_rangechange1" interactive="activecode" language="python">
+  <program label="cspcollectionscontinued_rangechange1" xml:id="cspcollectionscontinued_rangechange1" interactive="activecode" language="python">
     <code>
 numbers = [8, 9, 7, 10, 6, 10, 7, 4]
 

@@ -31,7 +31,7 @@
     This code sample shows using the two functions to ask for the x and y locations of each pixel.
   </p>
 
-  <program xml:id="csprepeatimages_changecolorloc1" interactive="activecode" language="python">
+  <program label="csprepeatimages_changecolorloc1" xml:id="csprepeatimages_changecolorloc1" interactive="activecode" language="python">
     <code>
       # STEP 1: USE THE IMAGE LIBRARY
       from image import *
@@ -164,7 +164,7 @@
     255 at most.)
   </p>
 
-  <program xml:id="csprepeatimages_changecolorloc3" interactive="activecode" language="python">
+  <program label="csprepeatimages_changecolorloc3" xml:id="csprepeatimages_changecolorloc3" interactive="activecode" language="python">
     <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *
@@ -208,7 +208,7 @@ for p in pixels:
     new location.
   </p>
 
-  <program xml:id="csprepeatimages_changecolorloc4" interactive="activecode" language="python">
+  <program label="csprepeatimages_changecolorloc4" xml:id="csprepeatimages_changecolorloc4" interactive="activecode" language="python">
     <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *

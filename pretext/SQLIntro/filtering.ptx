@@ -16,7 +16,7 @@
     seconds):
   </p>
 
-  <program xml:id="sqlintro_filtering1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_filtering1" xml:id="sqlintro_filtering1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     member_type,
@@ -81,7 +81,7 @@ WHERE
     <c>'Member'</c>, the query would be as below.
   </p>
 
-  <program xml:id="sqlintro_filtering2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_filtering2" xml:id="sqlintro_filtering2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     member_type,

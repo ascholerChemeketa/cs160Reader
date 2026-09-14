@@ -18,7 +18,7 @@
     time it runs:
   </p>
 
-  <program xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_random1" xml:id="cspdecisionssimulations_random1" interactive="activecode" language="python">
     <code>
 import random
 

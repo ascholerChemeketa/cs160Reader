@@ -23,7 +23,7 @@
     If it is a tail, that means we now have seen 0 <c>headsInARow</c>:
   </p>
 
-  <program xml:id="cspdecisionssimulations_simulationbuild1" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_simulationbuild1" xml:id="cspdecisionssimulations_simulationbuild1" interactive="activecode" language="python">
     <code>
 import random
 
@@ -55,7 +55,7 @@ for i in range(100):
     row.
   </p>
 
-  <program xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_simulationbuild2" xml:id="cspdecisionssimulations_simulationbuild2" interactive="activecode" language="python">
     <code>
 import random
 

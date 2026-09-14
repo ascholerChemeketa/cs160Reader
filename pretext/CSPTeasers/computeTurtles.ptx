@@ -54,7 +54,7 @@
     Try clicking the Save &amp; Run button below to see what the following program does.
   </p>
 
-  <program xml:id="cspteasers_computeturtles1" interactive="activecode" language="python">
+  <program label="cspteasers_computeturtles1" xml:id="cspteasers_computeturtles1" interactive="activecode" language="python">
     <code>
             import turtle # use the turtle library
             alex = turtle.Turtle() # create a turtle named alex

@@ -23,7 +23,7 @@
       <c>fullName</c>:
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr1" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr1" xml:id="cspnamestrings_assignnamestr1" interactive="activecode" language="python">
       <code>
 first = "Jorge"
 last = "Garcia"
@@ -36,7 +36,7 @@ print(fullName)
       Now try running this slightly different example.
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr2" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr2" xml:id="cspnamestrings_assignnamestr2" interactive="activecode" language="python">
       <code>
 first = 'Jorge'
 last = "Garcia"
@@ -59,7 +59,7 @@ print(fullName)
       Can you fix the errors?
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr3" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr3" xml:id="cspnamestrings_assignnamestr3" interactive="activecode" language="python">
       <code>
 first = 'Jorge"
 last = 'Garcia"
@@ -109,7 +109,7 @@ print(fullName)
       whatever the user types - something like <em><q>Anne</q></em>.
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr4" xml:id="cspnamestrings_assignnamestr4" interactive="activecode" language="python">
       <code>
 first = input("What is your first name?")
 last = input("What is your last name?")
@@ -131,7 +131,7 @@ print("Your full name is " + fullName)
       The <c>str(num)</c> function will convert a number into a string.
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr5" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr5" xml:id="cspnamestrings_assignnamestr5" interactive="activecode" language="python">
       <code>
 Fred = 5
 print("Fred")
@@ -156,7 +156,7 @@ print("Fred" + " is " + str(Fred))
       statement.
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr6" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr6" xml:id="cspnamestrings_assignnamestr6" interactive="activecode" language="python">
       <code>
 distance = 924.7
 mpg = 35.5
@@ -179,7 +179,7 @@ print("Cost to get from Chicago to Dallas: $" + str(costTrip))
       Here that causes a problem as it means there will be a space between the $ and the cost.
     </p>
 
-    <program xml:id="cspnamestrings_assignnamestr7" interactive="activecode" language="python">
+    <program label="cspnamestrings_assignnamestr7" xml:id="cspnamestrings_assignnamestr7" interactive="activecode" language="python">
       <code>
 distance = 924.7
 mpg = 35.5

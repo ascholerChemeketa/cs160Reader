@@ -7,7 +7,7 @@
       contributed to the development of the modern computer:
     </p>
 
-    <video xml:id="d1pvc9Zh7Tg" youtube="d1pvc9Zh7Tg" width="auto"/>
+    <video label="d1pvc9Zh7Tg" xml:id="d1pvc9Zh7Tg" youtube="d1pvc9Zh7Tg" width="auto"/>
   </introduction>
 
   <xi:include href="./Prehistory.ptx"/>

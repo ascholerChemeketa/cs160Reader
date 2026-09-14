@@ -13,7 +13,7 @@
     <xref ref="turtle-reference" text="custom">Turtle procedure reference</xref>
   </p>
 
-  <program xml:id="cspdecisionssimulations_turtlerandom1" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_turtlerandom1" xml:id="cspdecisionssimulations_turtlerandom1" interactive="activecode" language="python">
     <code>
 def drawSquare(turtleName, size):
     for side in range(4):
@@ -69,7 +69,7 @@ drawSquare(becca, squareSize)
     starting location before drawing the square.
   </p>
 
-  <program xml:id="cspdecisionssimulations_turtlerandom2" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_turtlerandom2" xml:id="cspdecisionssimulations_turtlerandom2" interactive="activecode" language="python">
     <code>
 def drawSquare(turtleName, size):
     for side in range(4):

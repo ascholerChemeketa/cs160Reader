@@ -73,7 +73,7 @@ def ProcedureName(Input1, Input2, Input3, ...):
     Try running this code sample and then keep reading:
   </p>
 
-  <program xml:id="cspnameprocedures_defininghow1" interactive="activecode" language="python">
+  <program label="cspnameprocedures_defininghow1" xml:id="cspnameprocedures_defininghow1" interactive="activecode" language="python">
     <code>
 def square(turtleName):
     turtleName.forward(100)
@@ -113,7 +113,7 @@ def square(turtleName):
     gives it our turtle as input:
   </p>
 
-  <program xml:id="cspnameprocedures_defininghow2" interactive="activecode" language="python">
+  <program label="cspnameprocedures_defininghow2" xml:id="cspnameprocedures_defininghow2" interactive="activecode" language="python">
     <code>
 # define HOW to do a square
 def square(turtleName):

@@ -21,7 +21,7 @@
     Can you figure out the value of <c>weight</c> that will result in an error?
   </p>
 
-  <program xml:id="Price_If_Bugged" interactive="activecode" language="python">
+  <program label="Price_If_Bugged" xml:id="Price_If_Bugged" interactive="activecode" language="python">
     <code>
 weight = 0.5
 if weight &lt; 1:
@@ -73,7 +73,7 @@ print(total)
     Then, we use an <c>if</c> to change it only if the weight turns out to be 1 or more.
   </p>
 
-  <program xml:id="cspdecisionsintro_multiple2" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_multiple2" xml:id="cspdecisionsintro_multiple2" interactive="activecode" language="python">
     <code>
 weight = 0.5
 price = 1.45

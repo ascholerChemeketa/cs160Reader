@@ -16,7 +16,7 @@
     </image>
   </figure>
 
-  <program xml:id="cspnamenumbers_ketchup1" interactive="codelens" language="python">
+  <program label="cspnamenumbers_ketchup1" xml:id="cspnamenumbers_ketchup1" interactive="codelens" language="python">
     <code>
 dripMPH = .028
 FPM = 5280.0
@@ -41,7 +41,7 @@ print(4 / dripFPM)
     <term>Click on the right arrow below to play the following video.</term>
   </p>
 
-  <video xml:id="X5SCf9AV_oo" youtube="X5SCf9AV_oo" width="100%"/>
+  <video label="X5SCf9AV_oo" xml:id="X5SCf9AV_oo" youtube="X5SCf9AV_oo" width="100%"/>
   <exercise label="cspnamenumbers_ketchup2" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>

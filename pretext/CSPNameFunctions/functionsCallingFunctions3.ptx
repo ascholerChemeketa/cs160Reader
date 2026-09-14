@@ -55,7 +55,7 @@
     question below the code sample.
   </p>
 
-  <program xml:id="cspnamefunctions_functionscallingfunctions31" interactive="activecode" language="python">
+  <program label="cspnamefunctions_functionscallingfunctions31" xml:id="cspnamefunctions_functionscallingfunctions31" interactive="activecode" language="python">
     <code>
 def distance(x1, y1, x2, y2):
     xDifference = x2 - x1

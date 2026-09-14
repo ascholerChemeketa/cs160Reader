@@ -14,7 +14,7 @@
     user is trying to navigate a maze:
   </p>
 
-  <program xml:id="cspdecisionsstrings_input1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_input1" xml:id="cspdecisionsstrings_input1" interactive="activecode" language="python">
     <code>
 print("You are in front of a creepy door in a hallway.")
 print("What do you want to do?")

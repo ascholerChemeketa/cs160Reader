@@ -94,7 +94,7 @@ print(binary)
     We can answer that easily using our pattern.
   </p>
 
-  <program xml:id="csprepeatnumbers_accumpattern1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_accumpattern1" xml:id="csprepeatnumbers_accumpattern1" interactive="activecode" language="python">
     <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 sum = 0  # Start with nothing
@@ -116,7 +116,7 @@ print(sum)
     \cdot 3 \cdot 2 \cdot 1</m> )
   </p>
 
-  <program xml:id="csprepeatnumbers_accumpattern2" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_accumpattern2" xml:id="csprepeatnumbers_accumpattern2" interactive="activecode" language="python">
     <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 product = 1  # 0! is defined as 1... that is our starting point
@@ -136,7 +136,7 @@ print(product)
     Watch this failed attempt to add up the numbers from 1 to 5 run line by line to see why:
   </p>
 
-  <program xml:id="csprepeatnumbers_accumpattern3" interactive="codelens" language="python">
+  <program label="csprepeatnumbers_accumpattern3" xml:id="csprepeatnumbers_accumpattern3" interactive="codelens" language="python">
     <code>
 # STEP 2: LOOP THROUGH THE DATA
 for number in range(6):

@@ -32,7 +32,7 @@
     include 'F St':
   </p>
 
-  <program xml:id="sqlintro_like1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_like1" xml:id="sqlintro_like1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     *
@@ -58,7 +58,7 @@ WHERE
     start of the string.
   </p>
 
-  <program xml:id="sqlintro_like2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_like2" xml:id="sqlintro_like2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     *

@@ -83,7 +83,7 @@
     The output from this program will be displayed to the right of the program.
   </p>
 
-  <program xml:id="cspteasers_computenumbers1" interactive="activecode" language="python">
+  <program label="cspteasers_computenumbers1" xml:id="cspteasers_computenumbers1" interactive="activecode" language="python">
     <code>
             P = 10000 # $10,000 - notice we don't use commas in numbers
             APR = 4.9 # annual percentage interest rate - we also don't use % symbols

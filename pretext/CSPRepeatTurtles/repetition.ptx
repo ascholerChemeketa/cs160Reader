@@ -69,7 +69,7 @@ alex.right(60)
       We can do so with a <c>for</c> <term>loop</term>:
     </p>
 
-    <program xml:id="csprepeatturtles_repetition1" interactive="activecode" language="python">
+    <program label="csprepeatturtles_repetition1" xml:id="csprepeatturtles_repetition1" interactive="activecode" language="python">
       <code>
 from turtle import *
 alex = Turtle()
@@ -106,7 +106,7 @@ print("Done with program")
       This example shows exactly what <c>range(6)</c> produces:
     </p>
 
-    <program xml:id="csprepeatturtles_repetition2" interactive="activecode" language="python">
+    <program label="csprepeatturtles_repetition2" xml:id="csprepeatturtles_repetition2" interactive="activecode" language="python">
       <code>
 sides = list( range(6) )
 print(sides)
@@ -210,7 +210,7 @@ for side in range(6):
       when it starts each side of the shape.
     </p>
 
-    <program xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
+    <program label="csprepeatturtles_repetition4" xml:id="csprepeatturtles_repetition4" interactive="activecode" language="python">
       <code>
 from turtle import *
 alex = Turtle()

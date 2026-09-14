@@ -26,7 +26,7 @@
     algorithm in codelens mode:
   </p>
 
-  <program xml:id="csprepeatnumbers_whilegeneral1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_whilegeneral1" xml:id="csprepeatnumbers_whilegeneral1" interactive="activecode" language="python">
     <code>
 number = 11
 binary = ""     # this will hold our answer
@@ -145,7 +145,7 @@ print(binary)
     Notice how the number of repetitions is different for different numbers.
   </p>
 
-  <program xml:id="csprepeatnumbers_whilegeneral3" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_whilegeneral3" xml:id="csprepeatnumbers_whilegeneral3" interactive="activecode" language="python">
     <code>
 number = 110
 guess = number              # guess will store our most recent guess

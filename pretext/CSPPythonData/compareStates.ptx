@@ -20,7 +20,7 @@
     <q>TX</q>.
   </p>
 
-  <program xml:id="csppythondata_comparestates1" interactive="activecode" language="python">
+  <program label="csppythondata_comparestates1" xml:id="csppythondata_comparestates1" interactive="activecode" language="python">
     <code>
       def getAvgPM25(targetState, data):
           print("Working on", targetState)
@@ -109,7 +109,7 @@
     per capita income.
   </p>
 
-  <program xml:id="csppythondata_comparestates3" interactive="activecode" language="python">
+  <program label="csppythondata_comparestates3" xml:id="csppythondata_comparestates3" interactive="activecode" language="python">
     <code>
 def getAvgPM25(targetState, data):
     total25 = 0

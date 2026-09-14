@@ -29,7 +29,7 @@
     So we must use <c>int()</c> to convert the PM2.5 values to integer numbers.
   </p>
 
-  <program xml:id="csppythondata_largestpoll1" interactive="activecode" language="python">
+  <program label="csppythondata_largestpoll1" xml:id="csppythondata_largestpoll1" interactive="activecode" language="python">
     <code>
 inFile = open("uspoll.txt")
 data = inFile.read().splitlines()

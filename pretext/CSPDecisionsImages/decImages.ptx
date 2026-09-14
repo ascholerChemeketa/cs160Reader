@@ -48,7 +48,7 @@
     A good value for the yellow in the flag is 254 red, 242 green, and 0 blue.
   </p>
 
-  <exercise xml:id="cspdecisionsimages_decimages1">
+  <exercise label="cspdecisionsimages_decimages1" xml:id="cspdecisionsimages_decimages1">
     <statement>
       <p>
         Here is a program that changes the French flag to the flag of Chad.
@@ -87,7 +87,7 @@ for p in pixels:
     </program>
   </exercise>
 
-  <exercise xml:id="cspdecisionsimages_decimages2">
+  <exercise label="cspdecisionsimages_decimages2" xml:id="cspdecisionsimages_decimages2">
     <statement>
       <p>
         The Belgian flag is very similar to the Chad flag.

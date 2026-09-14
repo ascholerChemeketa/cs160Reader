@@ -9,7 +9,7 @@
     hasn't changed.
   </p>
 
-  <program xml:id="cspnamestrings_immutable1" interactive="activecode" language="python">
+  <program label="cspnamestrings_immutable1" xml:id="cspnamestrings_immutable1" interactive="activecode" language="python">
     <code>
 sentence = "THIS IS A TEST"
 better = sentence.lower()
@@ -25,7 +25,7 @@ print(sentence)          # Still what it was on line 1
     This throws away the original string and sets the variable's value to the new string.
   </p>
 
-  <program xml:id="cspnamestrings_immutable2" interactive="activecode" language="python">
+  <program label="cspnamestrings_immutable2" xml:id="cspnamestrings_immutable2" interactive="activecode" language="python">
     <code>
 sentence = "THIS IS A TEST"
 print(sentence)
@@ -40,7 +40,7 @@ print(sentence)
     changing the old value of <c>sentence</c> after it was changed to lowercase.
   </p>
 
-  <program xml:id="cspnamestrings_immutable3" interactive="activecode" language="python">
+  <program label="cspnamestrings_immutable3" xml:id="cspnamestrings_immutable3" interactive="activecode" language="python">
     <code>
 sentence = "THIS IS A TEST"
 print(sentence)

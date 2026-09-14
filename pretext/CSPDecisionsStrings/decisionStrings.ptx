@@ -9,7 +9,7 @@
     Try this program a few times and enter different values for the input.
   </p>
 
-  <program xml:id="cspdecisionsstrings_decisionstrings1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_decisionstrings1" xml:id="cspdecisionsstrings_decisionstrings1" interactive="activecode" language="python">
     <code>
 numItems = int( input("How many items do you want?") )
 

@@ -26,7 +26,7 @@ if weight &gt;= 1:
     the else.
   </p>
 
-  <program xml:id="if_and_else" interactive="activecode" language="python">
+  <program label="if_and_else" xml:id="if_and_else" interactive="activecode" language="python">
     <code>
 weight = 0.5
 if weight &lt; 1:

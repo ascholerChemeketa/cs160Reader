@@ -64,7 +64,7 @@ hop(sue)     # a procedure call using the sue turtle as the argument
     then has them each do a hop before doing a forward movement.
   </p>
 
-  <program xml:id="cspnameprocedures_parameters1" interactive="activecode" language="python">
+  <program label="cspnameprocedures_parameters1" xml:id="cspnameprocedures_parameters1" interactive="activecode" language="python">
     <code>
 def hop(turtleName):                # turtleName is the parameter
     turtleName.penup()              # turtleName means whatever turtle was passed to the procedure

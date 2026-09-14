@@ -68,7 +68,7 @@
     <c>GROUP BY member_type</c> ).
   </p>
 
-  <program xml:id="sqlgroupjoin_grouping1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_grouping1" xml:id="sqlgroupjoin_grouping1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     member_type,
@@ -117,7 +117,7 @@ ORDER BY
     have an aggregation function ( <c>MAX</c> or <c>MIN</c> in this case).
   </p>
 
-  <program xml:id="sqlgroupjoin_grouping2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_grouping2" xml:id="sqlgroupjoin_grouping2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     start_station,
@@ -138,7 +138,7 @@ GROUP BY
     'W00174' with this query:
   </p>
 
-  <program xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_grouping3" xml:id="sqlgroupjoin_grouping3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     start_station,

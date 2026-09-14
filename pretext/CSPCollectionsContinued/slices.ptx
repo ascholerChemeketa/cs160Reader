@@ -12,7 +12,7 @@
     As we access each one, we will append it to the <c>summerMonths</c> list that starts empty.
   </p>
 
-  <program xml:id="cspcollectionscontinued_slices1" interactive="codelens" language="python">
+  <program label="cspcollectionscontinued_slices1" xml:id="cspcollectionscontinued_slices1" interactive="codelens" language="python">
     <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -42,7 +42,7 @@ print(summerMonths)
     That means a much easier way to get a list of the summer months would be:
   </p>
 
-  <program xml:id="cspcollectionscontinued_slices2" interactive="codelens" language="python">
+  <program label="cspcollectionscontinued_slices2" xml:id="cspcollectionscontinued_slices2" interactive="codelens" language="python">
     <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -69,7 +69,7 @@ print(summerMonths)
     <c>[-2:]</c> would mean <q>the last two items</q>.
   </p>
 
-  <program xml:id="cspcollectionscontinued_slices3" interactive="activecode" language="python">
+  <program label="cspcollectionscontinued_slices3" xml:id="cspcollectionscontinued_slices3" interactive="activecode" language="python">
     <code>
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 

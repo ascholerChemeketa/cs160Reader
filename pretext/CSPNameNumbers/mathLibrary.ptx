@@ -29,7 +29,7 @@
 
   <listing xml:id="cspnamenumbers_mathlibrary_listing1">
     <title/>
-    <program xml:id="cspnamenumbers_mathlibrary1" interactive="activecode" language="python">
+    <program label="cspnamenumbers_mathlibrary1" xml:id="cspnamenumbers_mathlibrary1" interactive="activecode" language="python">
       <code>
 # make the math library functions and variables available
 import math

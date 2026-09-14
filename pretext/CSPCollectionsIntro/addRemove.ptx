@@ -50,7 +50,7 @@
     Try running this sample with codelens:
   </p>
 
-  <program xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
+  <program label="cspcollectionsintro_addremove2" xml:id="cspcollectionsintro_addremove2" interactive="activecode" language="python">
     <code>
 numbers = [10, 20]
 
@@ -163,7 +163,7 @@ print(numbers)
     This sample shows all three methods:
   </p>
 
-  <program xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_addremove4" xml:id="cspcollectionsintro_addremove4" interactive="codelens" language="python">
     <code>
 names = ["Steve", "Charlie", "Naomi", "Darcy", "Charlie"]
 

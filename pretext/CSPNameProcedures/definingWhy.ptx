@@ -48,7 +48,7 @@
     Click <em>Run</em> and see what happens.
   </p>
 
-  <program xml:id="cspnameprocedures_definingwhy1" interactive="activecode" language="python">
+  <program label="cspnameprocedures_definingwhy1" xml:id="cspnameprocedures_definingwhy1" interactive="activecode" language="python">
     <code>
 from turtle import *
 malik = Turtle()

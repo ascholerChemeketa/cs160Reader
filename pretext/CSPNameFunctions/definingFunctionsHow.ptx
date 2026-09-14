@@ -16,7 +16,7 @@
     The final value that it computes - <c>sideC</c> is what gets returned.
   </p>
 
-  <program xml:id="cspnamefunctions_definingfunctionshow1" interactive="activecode" language="python">
+  <program label="cspnamefunctions_definingfunctionshow1" xml:id="cspnamefunctions_definingfunctionshow1" interactive="activecode" language="python">
     <code>
 def hypotenuse_length(sideA, sideB):
     # sideA and sideB are our inputs
@@ -37,7 +37,7 @@ def hypotenuse_length(sideA, sideB):
     values <c>a</c> and <c>b</c> to call <c>hypotenuse_length</c>.
   </p>
 
-  <program xml:id="cspnamefunctions_definingfunctionshow2" interactive="activecode" language="python">
+  <program label="cspnamefunctions_definingfunctionshow2" xml:id="cspnamefunctions_definingfunctionshow2" interactive="activecode" language="python">
     <code>
 def hypotenuse_length(sideA, sideB):
     aSquared = math.pow(sideA, 2)

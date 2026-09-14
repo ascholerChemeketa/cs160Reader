@@ -46,7 +46,7 @@
     The first three minutes of the video below demonstrates the process:
   </p>
 
-  <video xml:id="EeQ8pwjQxTM" youtube="EeQ8pwjQxTM" end="180" width="100%"/>
+  <video label="EeQ8pwjQxTM" xml:id="EeQ8pwjQxTM" youtube="EeQ8pwjQxTM" end="180" width="100%"/>
   <p>
     Think you have it?
     Give it a try below.

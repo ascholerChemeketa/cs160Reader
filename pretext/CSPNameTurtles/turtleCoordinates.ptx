@@ -25,7 +25,7 @@
     then do <c>forward(1)</c> to make a dot of the current <c>color</c>.
   </p>
 
-  <program xml:id="cspnameturtles_turtlecoordinates1" interactive="activecode" language="python">
+  <program label="cspnameturtles_turtlecoordinates1" xml:id="cspnameturtles_turtlecoordinates1" interactive="activecode" language="python">
     <code>
 from turtle import *
 mario = Turtle()
@@ -66,7 +66,7 @@ mario.forward(1)
     draws it.
   </p>
 
-  <program xml:id="cspnameturtles_turtlecoordinates2" interactive="activecode" language="python">
+  <program label="cspnameturtles_turtlecoordinates2" xml:id="cspnameturtles_turtlecoordinates2" interactive="activecode" language="python">
     <code>
 from turtle import *
 anu = Turtle()

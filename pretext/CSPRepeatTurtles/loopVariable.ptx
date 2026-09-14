@@ -36,7 +36,7 @@ polygon(mia, 3, 100)
       In the second, the loop variable is called <c>y</c> and counts from 0 to 9.
     </p>
 
-    <program xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
+    <program label="csprepeatturtles_loopvariable1" xml:id="csprepeatturtles_loopvariable1" interactive="activecode" language="python">
       <code>
 # x will be set to 0, 1, 2, 3, 4
 for x in range(5):
@@ -75,7 +75,7 @@ range(startValue, stopValue, step)
       <c>stopValue</c>.
     </p>
 
-    <program xml:id="csprepeatturtles_loopvariable2" interactive="activecode" language="python">
+    <program label="csprepeatturtles_loopvariable2" xml:id="csprepeatturtles_loopvariable2" interactive="activecode" language="python">
       <code>
 # x will count from 0, by 2's and stop at 11 (10 will be the last value)
 for x in range(0, 11, 2):
@@ -196,7 +196,7 @@ for y in range(6, 2, -1):
       moves in each repetition.
     </p>
 
-    <program xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
+    <program label="csprepeatturtles_loopvariable4" xml:id="csprepeatturtles_loopvariable4" interactive="activecode" language="python">
       <code>
 from turtle import *
 tess = Turtle()

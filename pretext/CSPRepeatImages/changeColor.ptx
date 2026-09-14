@@ -12,7 +12,7 @@
     This program uses step five to increase each color value by 50% (1.5 times its original value.)
   </p>
 
-  <program xml:id="csprepeatimages_changecolor1" interactive="activecode" language="python">
+  <program label="csprepeatimages_changecolor1" xml:id="csprepeatimages_changecolor1" interactive="activecode" language="python">
     <code>
 # STEP 1: USE THE IMAGE LIBRARY
 from image import *

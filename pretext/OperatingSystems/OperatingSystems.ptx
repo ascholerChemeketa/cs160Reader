@@ -115,7 +115,7 @@
       This video tells the quick version of the story of Linux and free, open-source software:
     </p>
 
-    <video xml:id="yt_5ocq6_3-nEw" youtube="5ocq6_3-nEw" width="100%"/>
+    <video label="yt_5ocq6_3-nEw" xml:id="yt_5ocq6_3-nEw" youtube="5ocq6_3-nEw" width="100%"/>
     <p>
       <url href="https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e" visual="https://smartplayer.captionsync.com/play.php?vid=1521238113sagefreeman_e7627d609d5e">Closed
         Caption Version</url>

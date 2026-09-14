@@ -39,7 +39,7 @@ img.draw(win)                                    # draw it in that window
     </p>
   </warning>
 
-  <program xml:id="csprepeatimages_repeatimages1" interactive="activecode" language="python">
+  <program label="csprepeatimages_repeatimages1" xml:id="csprepeatimages_repeatimages1" interactive="activecode" language="python">
     <code>
 from image import *
 

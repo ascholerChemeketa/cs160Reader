@@ -177,7 +177,7 @@
     index in the list.
   </p>
 
-  <program xml:id="cspcollectionsintro_listindexes3" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_listindexes3" xml:id="cspcollectionsintro_listindexes3" interactive="codelens" language="python">
     <code>
 items = [2, 4, 6, 8]
 
@@ -274,7 +274,7 @@ print(values)</pre>
     As we change <c>itemNum</c>, the item we access by using it as an index changes as well:
   </p>
 
-  <program xml:id="cspcollectionsintro_listindexes5" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_listindexes5" xml:id="cspcollectionsintro_listindexes5" interactive="codelens" language="python">
     <code>
 items = [2, 4, 6, 8]
 
@@ -304,7 +304,7 @@ print( items[itemNum] )
     with it or giving the value a name to work with later:
   </p>
 
-  <program xml:id="cspcollectionsintro_listindexes6" interactive="codelens" language="python">
+  <program label="cspcollectionsintro_listindexes6" xml:id="cspcollectionsintro_listindexes6" interactive="codelens" language="python">
     <code>
 items = [2, 4, 6, 8]
 

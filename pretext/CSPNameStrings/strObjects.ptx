@@ -15,7 +15,7 @@
       capitalized.
     </p>
 
-    <program xml:id="cspnamestrings_strobjects1" interactive="activecode" language="python">
+    <program label="cspnamestrings_strobjects1" xml:id="cspnamestrings_strobjects1" interactive="activecode" language="python">
       <code>
 sentence = "THIS IS A TEST"
 better = sentence.lower()
@@ -51,7 +51,7 @@ print(betterStill)
       This will return a new string with just the character at that position in the string.
     </p>
 
-    <program xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">
+    <program label="cspnamestrings_strobjects2" xml:id="cspnamestrings_strobjects2" interactive="activecode" language="python">
       <code>
 sentence = "This is a test"
 s1 = sentence[1]
@@ -71,7 +71,7 @@ print(s4)
       position.
     </p>
 
-    <program xml:id="cspnamestrings_strobjects3" interactive="activecode" language="python">
+    <program label="cspnamestrings_strobjects3" xml:id="cspnamestrings_strobjects3" interactive="activecode" language="python">
       <code>
 sentence = "This is a test"
 s1 = sentence[1:3]
@@ -223,7 +223,7 @@ print(str)
       in the string including spaces.
     </p>
 
-    <program xml:id="cspnamestrings_strobjects6" interactive="activecode" language="python">
+    <program label="cspnamestrings_strobjects6" xml:id="cspnamestrings_strobjects6" interactive="activecode" language="python">
       <code>
 sentence = "This is a test"
 length = len(sentence)
@@ -240,7 +240,7 @@ print(length)
       If the string isn't found it returns -1.
     </p>
 
-    <program xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
+    <program label="cspnamestrings_strobjects7" xml:id="cspnamestrings_strobjects7" interactive="activecode" language="python">
       <code>
 sentence = "This is a test"
 pos = sentence.find("is")
@@ -390,7 +390,7 @@ print(pos)
           It should print "The length is 17".
         </p>
 
-        <program xml:id="cspnamestrings_strobjects10" interactive="activecode" language="python">
+        <program label="cspnamestrings_strobjects10" xml:id="cspnamestrings_strobjects10" interactive="activecode" language="python">
           <code>
       sentence = 'I like green eggs'
           </code>

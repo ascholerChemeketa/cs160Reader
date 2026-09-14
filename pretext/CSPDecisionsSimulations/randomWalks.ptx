@@ -25,7 +25,7 @@
     cardinal directions (north, south, east, west).
   </p>
 
-  <program xml:id="cspdecisionssimulations_randomwalks1" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_randomwalks1" xml:id="cspdecisionssimulations_randomwalks1" interactive="activecode" language="python">
     <code>
 def takeStep(turtleName):
     # generate 0, 1, 2, or 3
@@ -111,7 +111,7 @@ for step in range(100):
     step to the right is another day - and the y dimension as value - the price of a stock.
   </p>
 
-  <program xml:id="cspdecisionssimulations_randomwalks3" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_randomwalks3" xml:id="cspdecisionssimulations_randomwalks3" interactive="activecode" language="python">
     <code>
 from turtle import *
 import random

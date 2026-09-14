@@ -19,7 +19,7 @@
 
   <listing xml:id="cspnamenumbers_invoice1_listing">
     <title/>
-    <program interactive="activecode" language="python" xml:id="cspnamenumbers_invoice1">
+    <program label="cspnamenumbers_invoice1" interactive="activecode" language="python" xml:id="cspnamenumbers_invoice1">
       <code>
 quantity1 = 2
 unitPrice1 = 7.56
@@ -107,7 +107,7 @@ print(invoiceTotal)
 
   <listing xml:id="cspnamenumbers_invoice3">
     <title/>
-    <program xml:id="cspnamenumbers_invoice3cl" interactive="codelens" language="python">
+    <program label="cspnamenumbers_invoice3cl" xml:id="cspnamenumbers_invoice3cl" interactive="codelens" language="python">
       <code>
 quantity = 2
 unitPrice = 7.56
@@ -192,7 +192,7 @@ print(invoiceTotal)
     Modify the program below to calculate the total cost (it should print 3.55).
   </p>
 
-  <program xml:id="cspnamenumbers_invoice5" interactive="activecode" language="python">
+  <program label="cspnamenumbers_invoice5" xml:id="cspnamenumbers_invoice5" interactive="activecode" language="python">
     <code>
 numApples = 4
 numPears = 3

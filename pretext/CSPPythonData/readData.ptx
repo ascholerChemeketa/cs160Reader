@@ -95,7 +95,7 @@
     Here we just print them out:
   </p>
 
-  <program xml:id="csppythondata_readdata1" interactive="activecode" language="python">
+  <program label="csppythondata_readdata1" xml:id="csppythondata_readdata1" interactive="activecode" language="python">
     <code>
       # Open the file for reading. The reference we will use to work with it will be inFile
       inFile = open("uspoll.txt")

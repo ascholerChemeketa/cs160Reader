@@ -99,7 +99,7 @@ newDirection =                # Done turning left, there is nothing left!!!
     </evaluation>
   </exercise>
 
-  <program xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
+  <program label="cspnameturtles_funcandproc2" xml:id="cspnameturtles_funcandproc2" interactive="activecode" language="python">
     <code>
 from turtle import *    # use the turtle library
 alex = Turtle()         # create a turtle named alex

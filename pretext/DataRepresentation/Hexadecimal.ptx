@@ -266,7 +266,7 @@
       This video reviews how hexadecimal works and provides a few more examples:
     </p>
 
-    <video xml:id="m1JtWKuTLR0" youtube="m1JtWKuTLR0" width="100%"/>
+    <video label="m1JtWKuTLR0" xml:id="m1JtWKuTLR0" youtube="m1JtWKuTLR0" width="100%"/>
     <p>
       <url href="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163" visual="https://smartplayer.captionsync.com/play.php?vid=1521238137sagefreeman_0903e4b5d163">Closed Caption
         Version</url>

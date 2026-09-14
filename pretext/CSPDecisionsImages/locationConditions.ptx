@@ -7,7 +7,7 @@
     This program changes pixels to black only if their x coordinate is less than 20 or over 180.
   </p>
 
-  <exercise xml:id="cspdecisionsimages_locationconditions1">
+  <exercise label="cspdecisionsimages_locationconditions1" xml:id="cspdecisionsimages_locationconditions1">
     <statement>
       <p>
         Currently, this program changes the 20 leftmost and rightmost pixels to black.

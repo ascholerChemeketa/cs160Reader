@@ -25,7 +25,7 @@
       So each of those lines will happen 100 times!
     </p>
 
-    <program xml:id="csprepeatturtles_patterns1" interactive="activecode" language="python">
+    <program label="csprepeatturtles_patterns1" xml:id="csprepeatturtles_patterns1" interactive="activecode" language="python">
       <code>
 from turtle import *
 from sys import *
@@ -53,7 +53,7 @@ for repeats in range(20):
       At each of those 20 points, the turtle draws a pentagon.
     </p>
 
-    <program xml:id="csprepeatturtles_patterns2" interactive="activecode" language="python">
+    <program label="csprepeatturtles_patterns2" xml:id="csprepeatturtles_patterns2" interactive="activecode" language="python">
       <code>
 from turtle import *
 from sys import *
@@ -154,7 +154,7 @@ for repeats in range(20):
       (None of the errors are in the numbers used - those would be logic errors, not syntax errors.)
     </p>
 
-    <program xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
+    <program label="csprepeatturtles_patterns4" xml:id="csprepeatturtles_patterns4" interactive="activecode" language="python">
       <code>
 from turtle import *
 
@@ -185,7 +185,7 @@ for repeats in range(20)
       Try running this program and wait until an error is printed.
     </p>
 
-    <program xml:id="csprepeatturtles_patterns5" interactive="activecode" language="python">
+    <program label="csprepeatturtles_patterns5" xml:id="csprepeatturtles_patterns5" interactive="activecode" language="python">
       <code>
 from turtle import *
 import sys
@@ -246,7 +246,7 @@ sys.setExecutionLimit(60000)
       square 10 times and each call to square repeats them 4 times.
     </p>
 
-    <program xml:id="csprepeatturtles_patterns6" interactive="activecode" language="python">
+    <program label="csprepeatturtles_patterns6" xml:id="csprepeatturtles_patterns6" interactive="activecode" language="python">
       <code>
 def square(turtleName):
     for sides in range(4):

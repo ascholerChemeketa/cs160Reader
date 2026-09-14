@@ -65,7 +65,7 @@ FROM
     </p>
   </warning>
 
-  <program xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_selecting1" xml:id="sqlintro_selecting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     *
@@ -85,7 +85,7 @@ FROM
     would look like the following:
   </p>
 
-  <program xml:id="sqlintro_selecting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlintro_selecting2" xml:id="sqlintro_selecting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     start_date,

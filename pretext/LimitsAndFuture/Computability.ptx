@@ -168,7 +168,7 @@
     can't help us with harder problems, and what this all means:
   </p>
 
-  <video xml:id="YX40hbAHx3s" youtube="YX40hbAHx3s" width="auto"/>
+  <video label="YX40hbAHx3s" xml:id="YX40hbAHx3s" youtube="YX40hbAHx3s" width="auto"/>
   <exercise label="limits-and-future_computability-ex1">
     <statement>
       <p>

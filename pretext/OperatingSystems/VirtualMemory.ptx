@@ -55,7 +55,7 @@
     Below is an illustration of how the virtual memory trick works:
   </p>
 
-  <exploration>
+  <exploration label="operating-systems_memory-management-explore-1">
     <task>
       <statement>
         <image source="OperatingSystems/Images/VirtualMemory-Page-1.png">

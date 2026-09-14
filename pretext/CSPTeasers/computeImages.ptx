@@ -134,7 +134,7 @@
     Please note that processing all those pixels can take a few seconds.
   </p>
 
-  <program xml:id="cspteasers_computeimages2" interactive="activecode" language="python">
+  <program label="cspteasers_computeimages2" xml:id="cspteasers_computeimages2" interactive="activecode" language="python">
     <code>
             # MAKE USE OF IMAGE LIBRARY
             import image

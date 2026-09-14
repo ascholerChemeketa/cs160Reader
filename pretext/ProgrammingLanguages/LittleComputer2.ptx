@@ -57,7 +57,7 @@
       gets:
     </p>
 
-    <video xml:id="povKvhOyif0" youtube="povKvhOyif0" width="100%"/>
+    <video label="povKvhOyif0" xml:id="povKvhOyif0" youtube="povKvhOyif0" width="100%"/>
     <p>
       You can test that program using the link below.
       Since it behaves differently if you enter a positive or negative number, make sure to test it
@@ -81,7 +81,7 @@
       through a series of instructions.
     </p>
 
-    <video xml:id="bLSVhz3j5xQ" youtube="bLSVhz3j5xQ" width="100%"/>
+    <video label="bLSVhz3j5xQ" xml:id="bLSVhz3j5xQ" youtube="bLSVhz3j5xQ" width="100%"/>
     <p>
       You can test that program using the link below.
       As you do, pay attention to each output - the program outputs more than one value, so the

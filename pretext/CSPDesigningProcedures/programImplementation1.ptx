@@ -49,7 +49,7 @@
       Try the code:
     </p>
 
-    <program xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
+    <program label="cspdesigningprocedures_programimplementation11" xml:id="cspdesigningprocedures_programimplementation11" interactive="activecode" language="python">
       <code>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with

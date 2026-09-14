@@ -11,7 +11,7 @@
       To ask for the total number of records a query finds, we can select <c>COUNT(*)</c>.
     </p>
 
-    <program xml:id="sqlgroupjoin_aggregating1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlgroupjoin_aggregating1" xml:id="sqlgroupjoin_aggregating1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     COUNT (*) AS number_rides
@@ -106,7 +106,7 @@ FROM
       For example, the query below calculates the minimum and maximum trip duration:
     </p>
 
-    <program xml:id="sqlgroupjoin_aggregating3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlgroupjoin_aggregating3" xml:id="sqlgroupjoin_aggregating3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
   MIN(duration) AS minimum_duration,
@@ -137,7 +137,7 @@ FROM
       users.
     </p>
 
-    <program xml:id="sqlgroupjoin_aggregating5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlgroupjoin_aggregating5" xml:id="sqlgroupjoin_aggregating5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
   MAX(duration)
@@ -180,7 +180,7 @@ WHERE
       For example, the query below counts how many bike numbers are used.
     </p>
 
-    <program xml:id="sqlgroupjoin_aggregating7" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlgroupjoin_aggregating7" xml:id="sqlgroupjoin_aggregating7" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     COUNT(DISTINCT bike_number) AS n_distinct_bikes

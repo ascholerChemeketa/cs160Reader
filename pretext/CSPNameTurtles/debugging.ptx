@@ -160,7 +160,7 @@
       If not, stop and try to fix that line before moving on.
     </p>
 
-    <program xml:id="cspnameturtles_debugging1" interactive="activecode" language="python">
+    <program label="cspnameturtles_debugging1" xml:id="cspnameturtles_debugging1" interactive="activecode" language="python">
       <code>
 from turtle import *
 alex = Turtle()
@@ -182,7 +182,7 @@ alex.forward(150)        # This is the last active line of code
       like we did in the last exercise.
     </p>
 
-    <program xml:id="cspnameturtles_debugging2" interactive="activecode" language="python">
+    <program label="cspnameturtles_debugging2" xml:id="cspnameturtles_debugging2" interactive="activecode" language="python">
       <code>
 from turtle import *    # use the turtle library
 alisha = Turtle()       # create a turtle named alisha
@@ -198,7 +198,7 @@ alisha.Forward(75)      # move forward by 75 units
       Can you fix the errors so that the code runs correctly to print a capital C?
     </p>
 
-    <program xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
+    <program label="cspnameturtles_debugging3" xml:id="cspnameturtles_debugging3" interactive="activecode" language="python">
       <code>
 from turtle Import *    # use the turtle library
 Alex = Turtle           # create a turtle named alex
@@ -215,7 +215,7 @@ alex.forward            # move forward by 75 units
       Use the area below to try to draw a block letter or number.
     </p>
 
-    <program xml:id="cspnameturtles_debugging4" interactive="activecode" language="python">
+    <program label="cspnameturtles_debugging4" xml:id="cspnameturtles_debugging4" interactive="activecode" language="python">
       <code/>
     </program>
   </subsection>

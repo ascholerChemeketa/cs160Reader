@@ -90,7 +90,7 @@
     Try out one or more of these images by changing line 4 in the program below.
   </p>
 
-  <program xml:id="csprepeatimages_library-of-images1" interactive="activecode" language="python">
+  <program label="csprepeatimages_library-of-images1" xml:id="csprepeatimages_library-of-images1" interactive="activecode" language="python">
     <code>
     from image import *
     

@@ -15,7 +15,7 @@
     </program>
     <p>Here is an example of running the algorithm to convert <m>{11}_{10}</m> to binary:</p>
 
-    <video xml:id="TaagNvZCbjo"
+    <video label="TaagNvZCbjo" xml:id="TaagNvZCbjo"
            youtube="TaagNvZCbjo"
            width="100%"/>
     <p>
@@ -50,7 +50,7 @@
       above into code requires some changes, but the code shown follows the same process described above. See the <q>
       tips</q> box below the code lens for help running the program.</p>
 
-    <program xml:id="datarepresentation_binaryconversions21"
+    <program label="datarepresentation_binaryconversions21" xml:id="datarepresentation_binaryconversions21"
              interactive="codelens"
              language="python">
       <code> number = "1101" answer = 0 while len(number) > 0: #do next 3 lines until length of number is 0 answer =

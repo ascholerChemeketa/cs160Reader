@@ -64,7 +64,7 @@
     Finish up the program so you can find the average PM10 level.
   </p>
 
-  <program xml:id="csppythondata_avgpoll2" interactive="activecode" language="python">
+  <program label="csppythondata_avgpoll2" xml:id="csppythondata_avgpoll2" interactive="activecode" language="python">
     <code>
 inFile = open("uspoll.txt")
 data = inFile.read().splitlines()

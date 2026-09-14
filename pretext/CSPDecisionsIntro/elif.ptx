@@ -95,7 +95,7 @@ if score &lt; 60:
     One way to do this using multiple <c>if</c> statements is shown below.
   </p>
 
-  <program xml:id="cspdecisionsintro_elif2" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_elif2" xml:id="cspdecisionsintro_elif2" interactive="activecode" language="python">
     <code>
 x = 8
 if x &lt; 0:
@@ -151,7 +151,7 @@ else:
     Here is the positive/negative check rewritten with elif:
   </p>
 
-  <program xml:id="cspdecisionsintro_elif3" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_elif3" xml:id="cspdecisionsintro_elif3" interactive="activecode" language="python">
     <code>
 x = 8
 if x &lt; 0:
@@ -178,7 +178,7 @@ else:
     If the score is <c>&gt;= 90</c> we will print A, and then skip all the rest of the tests.
   </p>
 
-  <program xml:id="cspdecisionsintro_elif4" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_elif4" xml:id="cspdecisionsintro_elif4" interactive="activecode" language="python">
     <code>
 score = 83
 if score &gt;= 90:

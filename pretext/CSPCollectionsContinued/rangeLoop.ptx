@@ -19,7 +19,7 @@
     work:
   </p>
 
-  <program xml:id="cspcollectionscontinued_rangeloop1" interactive="codelens" language="python">
+  <program label="cspcollectionscontinued_rangeloop1" xml:id="cspcollectionscontinued_rangeloop1" interactive="codelens" language="python">
     <code>
 list = [5, 10, 15]
 for value in list:
@@ -60,7 +60,7 @@ index[2] = 0 &lt;- third item</pre>
     Here is the final version of the more complex loop.
   </p>
 
-  <program xml:id="cspcollectionscontinued_rangeloop2" interactive="codelens" language="python">
+  <program label="cspcollectionscontinued_rangeloop2" xml:id="cspcollectionscontinued_rangeloop2" interactive="codelens" language="python">
     <code>
 list = [5, 10, 15]
 for index in range( len(list) ):
@@ -91,7 +91,7 @@ for index in range( len(list) ):
     <c>names[i] = …</c>:
   </p>
 
-  <program xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
+  <program label="cspcollectionscontinued_rangeloop3" xml:id="cspcollectionscontinued_rangeloop3" interactive="codelens" language="python">
     <code>
 names = ["vu", "reggie", "dana", "serena"]
 for i in range( len(names) ):

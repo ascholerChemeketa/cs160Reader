@@ -9,7 +9,7 @@
     The <c>costForPrints</c> function in the program below implements that logic.
   </p>
 
-  <program xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
+  <program label="cspdecisionsintro_iffunctions1" xml:id="cspdecisionsintro_iffunctions1" interactive="activecode" language="python">
     <code>
 def costForPrints(numberPages):
     # Assume number is &lt; 30

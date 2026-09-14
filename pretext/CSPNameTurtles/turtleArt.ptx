@@ -5,7 +5,7 @@
     Below is a program to draw a simple house.
   </p>
 
-  <program xml:id="cspnameturtles_turtleart1" interactive="activecode" language="python">
+  <program label="cspnameturtles_turtleart1" xml:id="cspnameturtles_turtleart1" interactive="activecode" language="python">
     <code>
 from turtle import *
 bob = Turtle()

@@ -42,7 +42,7 @@
     This video introduces how the Little Computer works:
   </p>
 
-  <video xml:id="x7RMi6fA0jg" youtube="x7RMi6fA0jg" width="100%"/>
+  <video label="x7RMi6fA0jg" xml:id="x7RMi6fA0jg" youtube="x7RMi6fA0jg" width="100%"/>
   <p>
     You can run the Little Computer be run in a web page using the link below.
     The interface looks a little different than the video, but it functions the same way.

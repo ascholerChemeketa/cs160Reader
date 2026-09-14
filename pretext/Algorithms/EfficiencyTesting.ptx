@@ -124,7 +124,7 @@
     That steady growth means procedureA is <term>Linear</term> or <term>O(n)</term>.
   </p>
 
-  <program xml:id="algorithms_efficiency_testing" interactive="activecode" language="python">
+  <program label="algorithms_efficiency_testing" xml:id="algorithms_efficiency_testing" interactive="activecode" language="python">
     <code>
 def doTest():
     # to test other procedures,

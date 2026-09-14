@@ -5,7 +5,7 @@
     Here is an attempt to sum up all the even numbers from 0 to 100 that has a bug:
   </p>
 
-  <program xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_debuggingloops1" xml:id="csprepeatnumbers_debuggingloops1" interactive="activecode" language="python">
     <code>
 # STEP 1: INITIALIZE ACCUMULATOR
 sum = 0  # Start with nothing

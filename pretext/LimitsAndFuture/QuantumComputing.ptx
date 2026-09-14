@@ -48,14 +48,14 @@
     you want):
   </p>
 
-  <video xml:id="CMdHDHEuOUE" youtube="CMdHDHEuOUE" width="100%" end="103"/>
+  <video label="CMdHDHEuOUE" xml:id="CMdHDHEuOUE" youtube="CMdHDHEuOUE" width="100%" end="103"/>
   <p>
     So how exactly do they work and why are they more powerful?
     By entangling particles that are in a superposition of two possible states, we can make a system
     that tests many states at one time:
   </p>
 
-  <video xml:id="g_IaVepNDT4" youtube="g_IaVepNDT4" width="100%"/>
+  <video label="g_IaVepNDT4" xml:id="g_IaVepNDT4" youtube="g_IaVepNDT4" width="100%"/>
   <p>
     Say you are trying to solve an optimization problem that looks like the picture below.
     Since there are 6 switches, there are <m>2^6 = 64</m> possible states that a classical computer
@@ -105,7 +105,7 @@
     (The video is set to play only a segment from the middle, but feel free to watch the rest.)
   </p>
 
-  <video xml:id="Yl3o236gdp8" youtube="Yl3o236gdp8" width="100%" start="249" end="480"/>
+  <video label="Yl3o236gdp8" xml:id="Yl3o236gdp8" youtube="Yl3o236gdp8" width="100%" start="249" end="480"/>
   <exercise label="limits-and-future_quantum-computing-ex1">
     <statement>
       <p>

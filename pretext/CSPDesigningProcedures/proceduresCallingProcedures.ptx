@@ -24,7 +24,7 @@
     procedure to draw a row of squares:
   </p>
 
-  <program xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
+  <program label="cspdesigningprocedures_procedurescallingprocedures1" xml:id="cspdesigningprocedures_procedurescallingprocedures1" interactive="activecode" language="python">
     <code>
 def square(turtle, size):
     turtle.forward(size)
@@ -71,7 +71,7 @@ row(roger)                      # do the row procedure with roger
     picture:
   </p>
 
-  <program xml:id="cspdesigningprocedures_procedurescallingprocedures2" interactive="activecode" language="python">
+  <program label="cspdesigningprocedures_procedurescallingprocedures2" xml:id="cspdesigningprocedures_procedurescallingprocedures2" interactive="activecode" language="python">
     <code>
 def square(turtle, size):
     turtle.forward(size)

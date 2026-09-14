@@ -18,7 +18,7 @@
       Try running it to see what error message is produced.
     </p>
 
-    <program xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
+    <program label="cspnameprocedures_indentation1" xml:id="cspnameprocedures_indentation1" interactive="activecode" language="python">
       <code>
 # main part of our program
 from turtle import *
@@ -52,7 +52,7 @@ def hop(turtleName):
       Then, when we are done providing the body, we stop indenting:
     </p>
 
-    <program xml:id="cspnameprocedures_indentation2" interactive="activecode" language="python">
+    <program label="cspnameprocedures_indentation2" xml:id="cspnameprocedures_indentation2" interactive="activecode" language="python">
       <code>
 def square(turtleName):
     turtleName.forward(100)         # These are all indented to show they are inside square
@@ -173,7 +173,7 @@ hop(malik)
       See the video below for a hint on how to solve the next mixed-up code problem.
     </p>
 
-    <video xml:id="yt_3oYHEHTt2hM" youtube="3oYHEHTt2hM" width="100%"/>
+    <video label="yt_3oYHEHTt2hM" xml:id="yt_3oYHEHTt2hM" youtube="3oYHEHTt2hM" width="100%"/>
     <exercise label="cspnameprocedures_indentation3" adaptive="yes" indentation="hide" language="python">
       <statement>
         <p>
@@ -217,7 +217,7 @@ hop(malik)
       right if it needs to be indented.
     </p>
 
-    <program xml:id="cspnameprocedures_indentation4" interactive="activecode" language="python">
+    <program label="cspnameprocedures_indentation4" xml:id="cspnameprocedures_indentation4" interactive="activecode" language="python">
       <code>
 # define HOW to draw a T
 def drawT(turtleName):

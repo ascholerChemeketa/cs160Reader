@@ -7,7 +7,7 @@
     This procedure will take the name of the turtle, set a color, and then draw a 300x200 rectangle.
   </p>
 
-  <program xml:id="cspdesigningprocedures_programimplementation21" interactive="activecode" language="python">
+  <program label="cspdesigningprocedures_programimplementation21" xml:id="cspdesigningprocedures_programimplementation21" interactive="activecode" language="python">
     <code>
 def rectangle(turtle, width, height):
     # Assumes turtle faces East to start with

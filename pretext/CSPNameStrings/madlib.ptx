@@ -9,7 +9,7 @@
     the story.
   </p>
 
-  <program xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
+  <program label="cspnamestrings_madlib1" xml:id="cspnamestrings_madlib1" interactive="activecode" language="python">
     <code>
 firstName = "Pat"
 lastName = "Smith"
@@ -95,7 +95,7 @@ print(ending)
     stories:
   </p>
 
-  <program xml:id="cspnamestrings_madlib3" interactive="activecode" language="python">
+  <program label="cspnamestrings_madlib3" xml:id="cspnamestrings_madlib3" interactive="activecode" language="python">
     <code>
 firstName = "Sofia"
 lastName = "Diaz"
@@ -311,7 +311,7 @@ print("Mali" + " is " + str(Mali))
     </blocks>
   </exercise>
 
-  <exercise xml:id="cspnamestrings_madlib8">
+  <exercise label="cspnamestrings_madlib8" xml:id="cspnamestrings_madlib8">
     <statement>
       <p>
         Write a Madlib that uses the variables below in a 1-2 sentence story.

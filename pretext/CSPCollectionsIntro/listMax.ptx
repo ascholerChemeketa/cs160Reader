@@ -105,7 +105,7 @@
     Here is an example of adapting the basic recipe to find the longest name in a list of names:
   </p>
 
-  <program xml:id="cspcollectionsintro_listmax2" interactive="activecode" language="python">
+  <program label="cspcollectionsintro_listmax2" xml:id="cspcollectionsintro_listmax2" interactive="activecode" language="python">
     <code>
 names = ["Ray", "Jessie", "Brittany", "Flora", "David"]
 

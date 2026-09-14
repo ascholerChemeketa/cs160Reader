@@ -11,7 +11,7 @@
     on the coin:
   </p>
 
-  <program xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_usingrandom0a" xml:id="cspdecisionssimulations_usingrandom0a" interactive="activecode" language="python">
     <code>
 import random
 
@@ -30,7 +30,7 @@ else:
     We will only add to our accumulator <c>numHeads</c> if the random value is 0.
   </p>
 
-  <program xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">
+  <program label="cspdecisionssimulations_usingrandom0b" xml:id="cspdecisionssimulations_usingrandom0b" interactive="activecode" language="python">
     <code>
 import random
 

@@ -90,7 +90,7 @@
     110 or more.
   </p>
 
-  <program xml:id="cspdecisionsimages_locationconditions22" interactive="activecode" language="python">
+  <program label="cspdecisionsimages_locationconditions22" xml:id="cspdecisionsimages_locationconditions22" interactive="activecode" language="python">
     <code>
 from image import *
 

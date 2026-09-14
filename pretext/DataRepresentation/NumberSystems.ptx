@@ -166,7 +166,7 @@
     Check out this video for a more detailed explanation:
   </p>
 
-  <video xml:id="ry1hpm1GXVI" youtube="ry1hpm1GXVI" width="100%"/>
+  <video label="ry1hpm1GXVI" xml:id="ry1hpm1GXVI" youtube="ry1hpm1GXVI" width="100%"/>
   <exercise label="datarepresentation_numbersystems1">
     <statement>
       <p>

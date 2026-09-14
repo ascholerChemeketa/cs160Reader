@@ -28,7 +28,7 @@
     </ul>
   </p>
 
-  <program interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-1">
+  <program label="csp-name-numbers_driving-from-chicago-to-dallas-1" interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-1">
     <code>
 distance = 924.7
 mpg = 35.5
@@ -41,7 +41,7 @@ gallons = distance / mpg
     Chicago to Dallas in your car.
   </p>
 
-  <program interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-2">
+  <program label="csp-name-numbers_driving-from-chicago-to-dallas-2" interactive="codelens" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-2">
     <code>
 distance = 924.7
 mpg = 35.5
@@ -73,7 +73,7 @@ costTrip = gallons * costPerGallon
     You can see this on line 12 in the program below.
   </p>
 
-  <program interactive="activecode" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-3">
+  <program label="csp-name-numbers_driving-from-chicago-to-dallas-3" interactive="activecode" language="python" xml:id="csp-name-numbers_driving-from-chicago-to-dallas-3">
     <code>
 distance = 924.7
 mpg = 35.5

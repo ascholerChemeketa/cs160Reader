@@ -15,7 +15,7 @@
       Try changing grade to different values as you run this program:
     </p>
 
-    <program xml:id="cspdecisionsstrings_andornot1" interactive="activecode" language="python">
+    <program label="cspdecisionsstrings_andornot1" xml:id="cspdecisionsstrings_andornot1" interactive="activecode" language="python">
       <code>
 grade = 83
 if grade &gt;= 80 and grade &lt; 90:
@@ -99,7 +99,7 @@ print ("All done")
       will be an extra fee.
     </p>
 
-    <program xml:id="cspdecisionsstrings_andornot3" interactive="activecode" language="python">
+    <program label="cspdecisionsstrings_andornot3" xml:id="cspdecisionsstrings_andornot3" interactive="activecode" language="python">
       <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes" or answer =="y":
@@ -201,7 +201,7 @@ print ("All done")
       code that asks them to try again.
     </p>
 
-    <program xml:id="cspdecisionsstrings_andornot5" interactive="activecode" language="python">
+    <program label="cspdecisionsstrings_andornot5" xml:id="cspdecisionsstrings_andornot5" interactive="activecode" language="python">
       <code>
 name = input("Please enter a username, make sure not to include special characters.")
 if not name.isalnum():

@@ -23,7 +23,7 @@
     all should work.
   </p>
 
-  <program xml:id="cspdecisionsstrings_instring1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_instring1" xml:id="cspdecisionsstrings_instring1" interactive="activecode" language="python">
     <code>
 answer = input("Do you wish to continue?")
 answer = answer.lower()   # change input to lower case
@@ -115,7 +115,7 @@ else:
     It accepts a string as its parameter and returns the length of that string.
   </p>
 
-  <program xml:id="cspdecisionsstrings_instring3" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_instring3" xml:id="cspdecisionsstrings_instring3" interactive="activecode" language="python">
     <code>
 name = "Daphne"
 nameLength = len(name)

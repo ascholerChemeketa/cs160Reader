@@ -30,7 +30,7 @@
     </evaluation>
   </exercise>
 
-  <program xml:id="cspnameturtles_multturtles2" interactive="activecode" language="python">
+  <program label="cspnameturtles_multturtles2" xml:id="cspnameturtles_multturtles2" interactive="activecode" language="python">
     <code>
 from turtle import *
 zari = Turtle()
@@ -56,7 +56,7 @@ zari.right(120)
     same shape.
   </p>
 
-  <program xml:id="cspnameturtles_multturtles3" interactive="activecode" language="python">
+  <program label="cspnameturtles_multturtles3" xml:id="cspnameturtles_multturtles3" interactive="activecode" language="python">
     <code>
 from turtle import *
 zari = Turtle()

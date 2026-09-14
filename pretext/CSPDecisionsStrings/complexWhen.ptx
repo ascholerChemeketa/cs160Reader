@@ -12,7 +12,7 @@
     One sign that you may want to use an <c>and</c> to simplify things, is if you have a nested if:
   </p>
 
-  <program xml:id="cspdecisionsstrings_complexwhen1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complexwhen1" xml:id="cspdecisionsstrings_complexwhen1" interactive="activecode" language="python">
     <code>
 x = 8
 if x &lt;= 10:
@@ -30,7 +30,7 @@ print("Done")
     So why not just write it like this?
   </p>
 
-  <program xml:id="cspdecisionsstrings_complexwhen2" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complexwhen2" xml:id="cspdecisionsstrings_complexwhen2" interactive="activecode" language="python">
     <code>
 x = 8
 if x &lt;= 10 and  x &gt;= 1:
@@ -44,7 +44,7 @@ print("Done")
     statements:
   </p>
 
-  <program xml:id="cspdecisionsstrings_complexwhen3" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complexwhen3" xml:id="cspdecisionsstrings_complexwhen3" interactive="activecode" language="python">
     <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes":
@@ -128,7 +128,7 @@ if age &gt; 12:
     only one part needs to be true to make the whole thing true.
   </p>
 
-  <program xml:id="cspdecisionsstrings_complexwhen5" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complexwhen5" xml:id="cspdecisionsstrings_complexwhen5" interactive="activecode" language="python">
     <code>
 answer = input("Do you have a bag to check? (yes/no)")
 if answer == "yes" or answer =="y" or answer == "Y" or answer == "YES":

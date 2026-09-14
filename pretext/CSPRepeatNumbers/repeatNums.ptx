@@ -10,7 +10,7 @@
     Try running this program with the Codelens:
   </p>
 
-  <program xml:id="csprepeatnumbers_repeatnums1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_repeatnums1" xml:id="csprepeatnumbers_repeatnums1" interactive="activecode" language="python">
     <code>
 # Number to find the square root of
 number = 110

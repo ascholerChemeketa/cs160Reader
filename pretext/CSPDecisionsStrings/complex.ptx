@@ -10,7 +10,7 @@
     Year Experience class to them:
   </p>
 
-  <program xml:id="cspdecisionsstrings_complex1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complex1" xml:id="cspdecisionsstrings_complex1" interactive="activecode" language="python">
     <code>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")
@@ -93,7 +93,7 @@ if credits is between 0 and 45:
     work.
   </p>
 
-  <program xml:id="cspdecisionsstrings_complex2" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complex2" xml:id="cspdecisionsstrings_complex2" interactive="activecode" language="python">
     <code>
 credits = int(input("How many credits do you have?"))
 madeDecision = input("Have you decided on a major? (Y/N or Yes/No")

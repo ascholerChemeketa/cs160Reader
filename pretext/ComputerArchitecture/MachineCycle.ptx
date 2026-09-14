@@ -74,7 +74,7 @@
     and how the PC and IR are used.
   </p>
 
-  <video xml:id="jcHuWnIt6eI" youtube="jcHuWnIt6eI" width="100%"/>
+  <video label="jcHuWnIt6eI" xml:id="jcHuWnIt6eI" youtube="jcHuWnIt6eI" width="100%"/>
   <exercise label="computer-architecture_the-machine-cycle-ex1">
     <statement>
       <p>

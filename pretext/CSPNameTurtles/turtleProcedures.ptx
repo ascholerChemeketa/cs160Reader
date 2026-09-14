@@ -241,7 +241,7 @@
     </p>
   </note>
 
-  <program xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
+  <program label="cspnameturtles_turtleprocedures1" xml:id="cspnameturtles_turtleprocedures1" interactive="activecode" language="python">
     <code>
 from turtle import *
 ji = Turtle()         # create a turtle named ji

@@ -45,7 +45,7 @@
     In this case, it prints <c>4</c> since that is the value stored in <c>a</c>.
   </p>
 
-  <program xml:id="cspnamenumbers_assignname1" interactive="activecode" language="python">
+  <program label="cspnamenumbers_assignname1" xml:id="cspnamenumbers_assignname1" interactive="activecode" language="python">
     <code>
 a = 4
 print(a)
@@ -65,7 +65,7 @@ print(a)
     If you do so correctly, the program will print 7.2 when it runs.
   </p>
 
-  <video xml:id="tULT-Nqunlc" youtube="tULT-Nqunlc" width="100%"/>
+  <video label="tULT-Nqunlc" xml:id="tULT-Nqunlc" youtube="tULT-Nqunlc" width="100%"/>
   <warning>
     <p>
       Because we use the <c>=</c> symbol to do assignment, you should not think of it as

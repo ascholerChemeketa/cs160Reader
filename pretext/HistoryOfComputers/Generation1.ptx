@@ -39,7 +39,7 @@
       different problems relating to the breaking of codes.
     </p>
 
-    <video xml:id="yt_7cDeG3hyraA" youtube="7cDeG3hyraA" width="auto"/>
+    <video label="yt_7cDeG3hyraA" xml:id="yt_7cDeG3hyraA" youtube="7cDeG3hyraA" width="auto"/>
     <p xml:id="the-first-generation-1">
       In 1946, the US finished work on <term>ENIAC</term>, designed to calculate artillery firing
       tables for the army.

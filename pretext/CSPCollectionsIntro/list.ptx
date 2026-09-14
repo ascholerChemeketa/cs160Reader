@@ -24,7 +24,7 @@
     is often best to avoid complicating things by mixing different types of data in one list).
   </p>
 
-  <program xml:id="cspcollectionsintro_list1" interactive="activecode" language="python">
+  <program label="cspcollectionsintro_list1" xml:id="cspcollectionsintro_list1" interactive="activecode" language="python">
     <code>
 numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(numberList)
@@ -42,7 +42,7 @@ print(randomList)
     That means if I want to greet each name in the <c>nameList</c> I could do:
   </p>
 
-  <program xml:id="cspcollectionsintro_list2" interactive="activecode" language="python">
+  <program label="cspcollectionsintro_list2" xml:id="cspcollectionsintro_list2" interactive="activecode" language="python">
     <code>
 nameList = ["Dora", "Rex", "Humberto", "Devon"]
 

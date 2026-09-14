@@ -56,7 +56,7 @@
     Now that you have that function, add it to this program to see it in action:
   </p>
 
-  <program xml:id="cspdecisionsimages_posterize2" interactive="activecode" language="python">
+  <program label="cspdecisionsimages_posterize2" xml:id="cspdecisionsimages_posterize2" interactive="activecode" language="python">
     <code>
 from image import *
 

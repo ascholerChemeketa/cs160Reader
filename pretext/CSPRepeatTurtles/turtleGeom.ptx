@@ -13,7 +13,7 @@
     Here's a triangle:
   </p>
 
-  <program xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
+  <program label="csprepeatturtles_turtlegeom1" xml:id="csprepeatturtles_turtlegeom1" interactive="activecode" language="python">
     <code>
 from turtle import *
 avery = Turtle()
@@ -31,7 +31,7 @@ avery.end_fill()
     And here's a pentagon:
   </p>
 
-  <program xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
+  <program label="csprepeatturtles_turtlegeom2" xml:id="csprepeatturtles_turtlegeom2" interactive="activecode" language="python">
     <code>
 from turtle import *
 will = Turtle()
@@ -70,7 +70,7 @@ will.end_fill()
     If you get it right the turtle will draw a 12-sided closed polygon.
   </p>
 
-  <program xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
+  <program label="csprepeatturtles_turtlegeom3" xml:id="csprepeatturtles_turtlegeom3" interactive="activecode" language="python">
     <code>
 from turtle import *
 mia = Turtle()
@@ -227,7 +227,7 @@ mia.end_fill()
     Once you have figured out the procedure, add it to the program below:
   </p>
 
-  <program xml:id="csprepeatturtles_turtlegeom6" interactive="activecode" language="python">
+  <program label="csprepeatturtles_turtlegeom6" xml:id="csprepeatturtles_turtlegeom6" interactive="activecode" language="python">
     <code>
 # DEFINE THE PROCEDURE HERE
 

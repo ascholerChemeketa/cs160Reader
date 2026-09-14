@@ -12,7 +12,7 @@
     Python your program will not work as expected:
   </p>
 
-  <program xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complextricks1" xml:id="cspdecisionsstrings_complextricks1" interactive="activecode" language="python">
     <code>
 color = "red"
 if color == "blue" or "green":
@@ -100,7 +100,7 @@ print("Done")
     We have to repeat the <c>color ==</c> part so that <c>"green"</c> is not evaluated on its own:
   </p>
 
-  <program xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
+  <program label="cspdecisionsstrings_complextricks3" xml:id="cspdecisionsstrings_complextricks3" interactive="activecode" language="python">
     <code>
 color = "red"
 if color == "blue" or color == "green":

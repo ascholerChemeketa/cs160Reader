@@ -10,7 +10,7 @@
     overall ride:
   </p>
 
-  <program xml:id="sqlgroupjoin_joining1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_joining1" xml:id="sqlgroupjoin_joining1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     start_station
@@ -30,7 +30,7 @@ LIMIT
     To get the name of station 31104, we could query it (notice the <c>FROM</c> clause):
   </p>
 
-  <program xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_joining2" xml:id="sqlgroupjoin_joining2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     *
@@ -86,7 +86,7 @@ ON
     In <c>bikeshare_stations</c> those same values are stored in the <c>station_id</c> column.
   </p>
 
-  <program xml:id="sqlgroupjoin_joining3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_joining3" xml:id="sqlgroupjoin_joining3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     *
@@ -119,7 +119,7 @@ LIMIT
     <c>station_id</c> field in the <c>bikeshare_stations</c> table.
   </p>
 
-  <program xml:id="sqlgroupjoin_joining4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+  <program label="sqlgroupjoin_joining4" xml:id="sqlgroupjoin_joining4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
     <code>
 SELECT
     COUNT(*) AS num_trips

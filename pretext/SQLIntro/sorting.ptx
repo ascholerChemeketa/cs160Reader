@@ -10,7 +10,7 @@
       For example, the following query returns bike trips ordered by duration:
     </p>
 
-    <program xml:id="sqlintro_sorting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlintro_sorting1" xml:id="sqlintro_sorting1" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     *
@@ -32,7 +32,7 @@ ORDER BY
       since that is the default.)
     </p>
 
-    <program xml:id="sqlintro_sorting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlintro_sorting2" xml:id="sqlintro_sorting2" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     *
@@ -54,7 +54,7 @@ ORDER BY
       number of rows to return.
     </p>
 
-    <program xml:id="sqlintro_sorting3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlintro_sorting3" xml:id="sqlintro_sorting3" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     *
@@ -73,7 +73,7 @@ LIMIT 10
       (longest) 10:
     </p>
 
-    <program xml:id="sqlintro_sorting4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlintro_sorting4" xml:id="sqlintro_sorting4" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     start_date,
@@ -109,7 +109,7 @@ LIMIT 10
       <c>end_station</c> values, the rows will be ordered by <c>duration</c>.
     </p>
 
-    <program xml:id="sqlintro_sorting5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
+    <program label="sqlintro_sorting5" xml:id="sqlintro_sorting5" interactive="activecode" language="sql" database="SQL/bikeshare.db">
       <code>
 SELECT
     start_station,

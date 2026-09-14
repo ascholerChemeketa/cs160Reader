@@ -19,7 +19,7 @@
       Try running it in Codelens mode to see:
     </p>
 
-    <program xml:id="cspnamefunctions_commonissues1" interactive="activecode" language="python">
+    <program label="cspnamefunctions_commonissues1" xml:id="cspnamefunctions_commonissues1" interactive="activecode" language="python">
       <code>
 def addFive(x):
     return x
@@ -62,7 +62,7 @@ print(score)
       Again, try running in Codelens:
     </p>
 
-    <program xml:id="cspnamefunctions_commonissues2" interactive="activecode" language="python">
+    <program label="cspnamefunctions_commonissues2" xml:id="cspnamefunctions_commonissues2" interactive="activecode" language="python">
       <code>
 def addFive(x):
     x = x + 5           #This never gets to run!

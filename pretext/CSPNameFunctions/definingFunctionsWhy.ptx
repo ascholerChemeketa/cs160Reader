@@ -43,7 +43,7 @@
     and 7).
   </p>
 
-  <program xml:id="cspnamefunctions_definingfunctionswhy1" interactive="activecode" language="python">
+  <program label="cspnamefunctions_definingfunctionswhy1" xml:id="cspnamefunctions_definingfunctionswhy1" interactive="activecode" language="python">
     <code>
 def hypotenuse_length(sideA, sideB):
     # sideA and sideB are our inputs
@@ -79,7 +79,7 @@ print("The length of side hypotenuse6 is", hypotenuse6)
     Now look below at a version of this program without a function.
   </p>
 
-  <program xml:id="cspnamefunctions_definingfunctionswhy2" interactive="activecode" language="python">
+  <program label="cspnamefunctions_definingfunctionswhy2" xml:id="cspnamefunctions_definingfunctionswhy2" interactive="activecode" language="python">
     <code>
 import math
 aSquared = math.pow(10, 2)

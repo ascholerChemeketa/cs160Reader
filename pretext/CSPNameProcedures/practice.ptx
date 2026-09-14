@@ -13,7 +13,7 @@
     </p>
   </note>
 
-  <exercise xml:id="csp-name-procedures_practice-write-a-procedure_1">
+  <exercise label="csp-name-procedures_practice-write-a-procedure_1" xml:id="csp-name-procedures_practice-write-a-procedure_1">
     <statement>
       <p>
         Write a procedure <c>pentagon</c> that takes two parameters: the turtle to draw with and the

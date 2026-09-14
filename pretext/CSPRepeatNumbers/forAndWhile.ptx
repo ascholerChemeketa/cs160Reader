@@ -37,7 +37,7 @@ for iteration in range(5):
     It will print out the sum and average of all of the numbers you have entered.
   </p>
 
-  <program xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_forandwhile1" xml:id="csprepeatnumbers_forandwhile1" interactive="activecode" language="python">
     <code>
 sum = 0
 count = 0

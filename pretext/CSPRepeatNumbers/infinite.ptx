@@ -6,7 +6,7 @@
     It will run forever.
   </p>
 
-  <program xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
+  <program label="csprepeatnumbers_infinite1" xml:id="csprepeatnumbers_infinite1" interactive="codelens" language="python">
     <code>
 counter = 1
 while counter &lt;= 10:
@@ -21,7 +21,7 @@ while counter &lt;= 10:
     What happens if the logical expression is <em>always</em> true?
   </p>
 
-  <program xml:id="csprepeatnumbers_infinite2" interactive="codelens" language="python">
+  <program label="csprepeatnumbers_infinite2" xml:id="csprepeatnumbers_infinite2" interactive="codelens" language="python">
     <code>
 while 1 == 1:
     print("Looping")
@@ -52,7 +52,7 @@ while 1 == 1:
     address from the address bar of your browser before closing it).
   </p>
 
-  <program xml:id="csprepeatnumbers_infinite3" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_infinite3" xml:id="csprepeatnumbers_infinite3" interactive="activecode" language="python">
     <code>
 counter = 1
 while counter != 10:

@@ -22,7 +22,7 @@
     the program below:
   </p>
 
-  <program xml:id="csprepeatnumbers_logicalexpressions1" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_logicalexpressions1" xml:id="csprepeatnumbers_logicalexpressions1" interactive="activecode" language="python">
     <code>
 x = True
 y = "True"
@@ -98,7 +98,7 @@ print( "z is a ", type(z) )
     Here is a sample of them in use:
   </p>
 
-  <program xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
+  <program label="csprepeatnumbers_logicalexpressions2" xml:id="csprepeatnumbers_logicalexpressions2" interactive="activecode" language="python">
     <code>
 age = 20
 

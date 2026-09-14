@@ -9,7 +9,7 @@
     So why not have a <c>for</c> loop repeat those for us:
   </p>
 
-  <program xml:id="csprepeatturtles_repeatturtles1" interactive="activecode" language="python">
+  <program label="csprepeatturtles_repeatturtles1" xml:id="csprepeatturtles_repeatturtles1" interactive="activecode" language="python">
     <code>
 def square(turtleName, size):
     for side in range(4):              # repeat the indented lines 4 times

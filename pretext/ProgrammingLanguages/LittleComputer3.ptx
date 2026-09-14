@@ -19,7 +19,7 @@
     This video introduces it:
   </p>
 
-  <video xml:id="gg4siPI0sdk" youtube="gg4siPI0sdk" width="100%"/>
+  <video label="gg4siPI0sdk" xml:id="gg4siPI0sdk" youtube="gg4siPI0sdk" width="100%"/>
   <p>
     You can try the assembler here:
     <url href="external/LittleComputer/littleComputerAssembler.html" visual="external/LittleComputer/littleComputerAssembler.html">Launch
