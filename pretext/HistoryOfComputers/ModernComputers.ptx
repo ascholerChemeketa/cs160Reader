@@ -45,6 +45,19 @@
   </p>
 
   <video label="bor0qLifjz4" xml:id="bor0qLifjz4" youtube="bor0qLifjz4" width="auto"/>
+
+  <exercise label="history-of-computers_modern-computers-ex1">
+    <statement>
+      <p>Which example best illustrates ubiquitous computing?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes"><statement><p>A microprocessor embedded in a car, watch, or coffee maker.</p></statement></choice>
+      <choice><statement><p>A microprocessor with billions of transistors on a single chip.</p></statement></choice>
+      <choice><statement><p>Computing that uses artificial intelligence.</p></statement></choice>
+      <choice><statement><p>A computer that must be physically rewired before every calculation.</p></statement></choice>
+    </choices>
+  </exercise>
+
   <remark>
     <p>
       Materials on this page adapted with permission from

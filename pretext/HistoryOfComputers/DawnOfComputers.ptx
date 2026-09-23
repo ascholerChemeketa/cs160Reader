@@ -104,6 +104,19 @@
     </image>
   </figure>
 
+  <exercise label="history-of-computers_dawn-of-computers-ex1">
+    <statement>
+      <p>Which capabilities were part of Babbage's design for the Analytical Engine? Select all that apply.</p>
+    </statement>
+    <choices randomize="yes" multiple-correct="yes">
+      <choice correct="yes"><statement><p>An arithmetic logic unit.</p></statement></choice>
+      <choice correct="yes"><statement><p>Conditional branching and loops.</p></statement></choice>
+      <choice correct="yes"><statement><p>Memory integrated into the design.</p></statement></choice>
+      <choice><statement><p>Electronic transistors as switching devices.</p></statement></choice>
+      <choice><statement><p>A display and keyboard for real-time interaction.</p></statement></choice>
+    </choices>
+  </exercise>
+
   <remark>
     <p>
       Materials on this page adapted with permission from

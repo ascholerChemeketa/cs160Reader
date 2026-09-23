@@ -58,6 +58,18 @@
     </image>
   </figure>
 
+  <exercise label="history-of-computers_the-third-generation-ex1">
+    <statement>
+      <p>What change helped people interact with third-generation computers in real time instead of submitting a job and waiting for it to finish?</p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes"><statement><p>The development of keyboards and displays.</p></statement></choice>
+      <choice><statement><p>The return to using vacuum tubes.</p></statement></choice>
+      <choice><statement><p>The replacement of all transistors with mechanical gears.</p></statement></choice>
+      <choice><statement><p>The use of punched cards as the only input method.</p></statement></choice>
+    </choices>
+  </exercise>
+
   <remark>
     <p>
       Materials on this page adapted with permission from

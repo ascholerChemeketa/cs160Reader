@@ -48,6 +48,19 @@
     </image>
   </figure>
 
+  <exercise label="history-of-computers_the-second-generation-ex1">
+    <statement>
+      <p>Why did transistors lead to a new generation of computers? Select all that apply.</p>
+    </statement>
+    <choices randomize="yes" multiple-correct="yes">
+      <choice correct="yes"><statement><p>They could serve as electronic switches like vacuum tubes.</p></statement></choice>
+      <choice correct="yes"><statement><p>They were smaller and could be packed into less space.</p></statement></choice>
+      <choice correct="yes"><statement><p>They were faster and more reliable than vacuum tubes.</p></statement></choice>
+      <choice><statement><p>They eliminated the need for any electrical power.</p></statement></choice>
+      <choice><statement><p>They allowed every individual to afford a personal computer in the 1950s.</p></statement></choice>
+    </choices>
+  </exercise>
+
   <remark>
     <p>
       Materials on this page adapted with permission from

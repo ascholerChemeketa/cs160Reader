@@ -139,6 +139,30 @@
       </image>
     </figure>
 
+    <exercise label="history-of-computers_the-first-generation-ex1">
+      <statement>
+        <p>Match each first-generation computer or design with its distinguishing description.</p>
+      </statement>
+      <cardsort>
+        <match>
+          <premise>Colossus</premise>
+          <response>The first electronic digital computer that could be reprogrammed to solve code-breaking problems.</response>
+        </match>
+        <match>
+          <premise>ENIAC</premise>
+          <response>A general-purpose computer whose program was represented by physical wiring.</response>
+        </match>
+        <match>
+          <premise>EDVAC</premise>
+          <response>A general-purpose computer designed to store instructions electronically.</response>
+        </match>
+        <match>
+          <premise>Manchester Baby</premise>
+          <response>The first machine to run a stored program.</response>
+        </match>
+      </cardsort>
+    </exercise>
+
     <remark>
       <p>
         Materials on this page adapted with permission from

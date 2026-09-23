@@ -83,6 +83,17 @@
     </figure>
   </sidebyside>
 
+  <exercise label="history-of-computers_prehistory-ex1">
+    <statement>
+      <p>Which famous inventors or mathematicians are associated with early mechanical calculation aids?</p>
+    </statement>
+    <choices randomize="yes" multiple-correct="yes">
+      <choice correct="yes"><statement><p>Leibniz</p></statement></choice>
+      <choice correct="yes"><statement><p>Pascal</p></statement></choice>
+      <choice><statement><p>Newton</p></statement></choice>
+    </choices>
+  </exercise>
+
   <remark>
     <p>
       Materials on this page adapted with permission from

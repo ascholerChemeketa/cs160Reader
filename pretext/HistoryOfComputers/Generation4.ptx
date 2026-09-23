@@ -56,6 +56,43 @@
     </figure>
   </sidebyside>
 
+  <exercise label="history-of-computers_the-fourth-generation-ex1">
+    <statement>
+      <p>Arrange these fourth-generation milestones from earliest to latest.</p>
+    </statement>
+    <blocks>
+      <block><cline>Intel releases the 4004 microprocessor.</cline></block>
+      <block><cline>Computers such as the Altair, Apple, and Commodore are widely sold to individual users.</cline></block>
+      <block><cline>IBM releases its first PC.</cline></block>
+    </blocks>
+  </exercise>
+
+  <exercise label="history-of-computers_the-fourth-generation-ex2">
+    <statement>
+      <p>Match each computational generation with its foundational technology.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>First Generation</premise>
+        <response>Vacuum tubes</response>
+      </match>
+      <match>
+        <premise>Second Generation</premise>
+        <response>Transistors</response>
+      </match>
+      <match>
+        <premise>Third Generation</premise>
+        <response>Integrated circuits</response>
+      </match>
+      <match>
+        <premise>Fourth Generation</premise>
+        <response>Microprocessors</response>
+      </match>
+    </cardsort>
+  </exercise>
+
+
+
   <remark>
     <p>
       Materials on this page adapted with permission from
