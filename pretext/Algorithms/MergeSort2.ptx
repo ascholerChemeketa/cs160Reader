@@ -73,7 +73,7 @@
     The animation below allows you to step through the process on a randomly generated list.
   </p>
 
-  <interactive label="algorithms-algorithms-merge-sort-interactive-1" iframe="Algorithms/algorithms-algorithms-merge-sort-interactive-1.html"/>
+  <interactive label="algorithms-algorithms-merge-sort-interactive-1" iframe="Algorithms/algorithms-algorithms-merge-sort-interactive-1.html" aspect="600:480"/>
   <exercise label="algorithms_algorithms-merge-sort-ex1">
     <statement>
       <p>

@@ -53,7 +53,7 @@
     Try following the algorithm above step by step as you watch the animation.
   </p>
 
-  <interactive label="algorithms-algorithms-linear-search-interactive-1" iframe="Algorithms/algorithms-algorithms-linear-search-interactive-1.html"/>
+  <interactive label="algorithms-algorithms-linear-search-interactive-1" iframe="Algorithms/algorithms-algorithms-linear-search-interactive-1.html" aspect="600:480"/>
   <p>
     Linear search is pretty easy, but it does have one big weakness - you potentially have to look
     at every item in the list.

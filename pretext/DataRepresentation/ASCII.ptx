@@ -1,24 +1,6 @@
 <section xml:id="data-representation_representing-letters-with-ascii">
   <title>Representing Letters with ASCII</title>
 
-  <aside>
-    <title>ASCII Art</title>
-
-    <p>
-      ASCII art is images drawn only using the ASCII characters.
-      Shading is created by using characters like @ for dark areas and - for lighter ones.
-      Below is the Mona Lisa as ASCII Art; the font size is 2 points to make the image more
-      apparent, but if you zoom in you will see the individual characters.
-    </p>
-
-    <interactive label="data-representation-representing-letters-with-ascii-interactive-1" iframe="DataRepresentation/data-representation-representing-letters-with-ascii-interactive-1.html"/>
-    <p>
-      And then there is asciimation, which
-      <url href="http://www.asciimation.co.nz/" visual="http://www.asciimation.co.nz/">needs to be seen</url>
-      to be believed.
-    </p>
-  </aside>
-
   <p>
     To represent things other than integers, we need to find a way to map the data we wish to
     represent onto binary strings.
@@ -54,7 +36,25 @@
     You can use the slider below to view various parts of the ASCII table.
   </p>
 
-  <interactive label="data-representation-representing-letters-with-ascii-interactive-2" iframe="DataRepresentation/data-representation-representing-letters-with-ascii-interactive-2.html"/>
+  <interactive label="data-representation-representing-letters-with-ascii-interactive-2" iframe="DataRepresentation/data-representation-representing-letters-with-ascii-interactive-2.html" width="100%" aspect="600:185"/>
+
+
+  <aside>
+    <title>ASCII Art</title>
+
+    <p>
+      ASCII art is images drawn only using the ASCII characters.
+      Shading is created by using characters like @ for dark areas and - for lighter ones.
+      Here is a link to the <url href="external/DataRepresentation/data-representation-representing-letters-with-ascii-interactive-1.html" visual="Mona Lisa">Mona Lisa</url> as ASCII Art.
+    </p>
+
+    <p>
+      And then there is asciimation, which
+      <url href="http://www.asciimation.co.nz/" visual="http://www.asciimation.co.nz/">needs to be seen</url>
+      to be believed.
+    </p>
+  </aside>
+
   <note>
     <p>
       Some key things about ASCII codes:

@@ -17,7 +17,8 @@
     A light switch holds one bit of information.
   </p>
 
-  <interactive label="binary-binary-and-its-advantages-interactive-1" iframe="Binary/binary-binary-and-its-advantages-interactive-1.html"/>
+  <interactive label="binary-binary-and-its-advantages-interactive-12" iframe="Binary/binary-binary-and-its-advantages-interactive-1.html" width="60%" resize-behavior="responsive"/>
+
   <p>
     There are many advantages to binary.
     Here are four (somewhat overlapping) important reasons for using binary:
@@ -287,19 +288,18 @@
       </choice>
     </choices>
   </exercise>
-  <aside>
-    <figure xml:id="binary-and-its-advantages-img1">
-      <caption>
-        Claude Shannon, a mathematician at Bell Telephone Laboratories, identified these
-        characteristics of binary.
-        His 1948 paper A Mathematical Theory of Communication is the foundation of information
-        theory and much of computer science.
-      </caption>
 
-      <image source="Binary/Images/shannonSmall.jpg" width="50%">
-        <shortdescription>Claude Shannon</shortdescription>
-      </image>
-    </figure>
+  <aside>
+    <p>
+      Claude Shannon, a mathematician at Bell Telephone Laboratories, identified these
+      characteristics of binary.
+      His 1948 paper A Mathematical Theory of Communication is the foundation of information
+      theory and much of computer science.
+    </p>
+
+    <image source="Binary/Images/shannonSmall.jpg" width="50%">
+      <shortdescription>Claude Shannon</shortdescription>
+    </image>
   </aside>
 
   <remark>

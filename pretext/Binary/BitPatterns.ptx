@@ -20,7 +20,7 @@
       off/on, on/off, on/on.
     </p>
 
-    <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html"/>
+    <interactive label="binary-bit-patterns-interactive-1" iframe="Binary/binary-bit-patterns-interactive-1.html" width="66%"/>
   </activity>
 
   <p>

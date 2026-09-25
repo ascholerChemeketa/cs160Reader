@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Merging interactive 1</title>
-  <script src="../iframe-resizer.js"></script>
+  <!-- <script src="../iframe-resizer.js"></script> -->
   <style>
     * {
       box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 <body>
 <div align="center">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" ></script>
-<canvas id="Merge" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="580" height="400"></canvas></div>
+<canvas id="Merge" style="border-style: solid; image-rendering: -webkit-optimize-contrast !important;" tabindex="0" width="530" height="400"></canvas></div>
 <script type="text/processing" data-processing-target="Merge">
   
 int[] list = new int[8];
@@ -40,7 +44,7 @@ boolean startMergeLevel;
 // Setup the Processing Canvas
 void setup() {
 textAlign(CENTER, TOP);
-size(600, 400);
+size(530, 400);
 strokeWeight(2);
 
 for (int i = 0; i < list.length; i++) {

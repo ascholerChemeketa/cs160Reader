@@ -38,7 +38,7 @@
     Gray items show the range of possible locations that still need to be checked:
   </p>
 
-  <interactive label="algorithms-algorithms-binary-search-interactive-1" iframe="Algorithms/algorithms-algorithms-binary-search-interactive-1.html"/>
+  <interactive label="algorithms-algorithms-binary-search-interactive-1" iframe="Algorithms/algorithms-algorithms-binary-search-interactive-1.html" aspect="600:490"/>
   <p>
     Below are the main steps of the binary search algorithm, expressed in pseudocode.
     To do a binary search you need to keep track of the <c>lowIndex</c>, the lowest possible

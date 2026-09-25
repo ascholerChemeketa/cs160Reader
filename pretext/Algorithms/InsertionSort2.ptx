@@ -40,7 +40,8 @@
     getting used.
   </p>
 
-  <interactive label="algorithms-algorithms-insertion-sort-2-interactive-1" iframe="Algorithms/algorithms-algorithms-insertion-sort-2-interactive-1.html"/>
+  <interactive label="algorithms-algorithms-insertion-sort-2-interactive-1" iframe="Algorithms/algorithms-algorithms-insertion-sort-2-interactive-1.html" aspect="600:480"/>
+
   <p>
     Why would we care about knowing more than one sorting algorithm?
     Each approach has its own advantages and disadvantages.

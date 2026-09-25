@@ -17,6 +17,7 @@ function installLTIResizer() {
     window.parent.postMessage(data, '*')
   };
   window.addEventListener('resize', requestSizeChangeForLTI);
+  window.requestSizeChangeForLTI = requestSizeChangeForLTI;
   requestSizeChangeForLTI();
 }
 document.addEventListener("DOMContentLoaded", function() {

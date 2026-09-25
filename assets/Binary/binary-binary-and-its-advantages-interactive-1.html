@@ -9,10 +9,18 @@
     * {
       box-sizing: border-box;
     }
+    img.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Controls how the image resizes */
+    }
   </style>
 </head>
 <body>
-<img class="center" width="50%" src="Images/OffSwitch.gif" id="binary-switch" />
+<img class="center" src="Images/OffSwitch.gif" id="binary-switch" />
 <script>
   const binarySwitch = document.getElementById("binary-switch");
   binarySwitch.addEventListener("mouseover", () => {

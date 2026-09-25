@@ -93,7 +93,12 @@ print("Done")
     <c>True</c> (according to Python), the final value of the expression is <c>True</c>.
   </p>
 
-  <interactive label="csp-decisions-strings-complex-conditional-dangers-interactive-1" iframe="CSPDecisionsStrings/csp-decisions-strings-complex-conditional-dangers-interactive-1.html"/>
+  <pre>
+  if color == "blue"     or     "green":
+  if     False           or       True :
+  if                    True           :
+  </pre>
+
   <p>
     The only way to get the logic we want, is to make sure both the left and right sides of the
     <c>or</c> are expressions that make sense on their own as logical expressions.

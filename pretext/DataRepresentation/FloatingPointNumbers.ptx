@@ -112,7 +112,8 @@
     how that value would be decoded.
   </p>
 
-  <interactive label="data-representation-floating-point-numbers-interactive-1" iframe="DataRepresentation/data-representation-floating-point-numbers-interactive-1.html"/>
+  <interactive label="data-representation-floating-point-numbers-interactive-1" iframe="DataRepresentation/data-representation-floating-point-numbers-interactive-1.html" aspect="600:580" />
+
   <exercise label="datarepresentation_floatingpointnumbers1">
     <statement>
       <p>

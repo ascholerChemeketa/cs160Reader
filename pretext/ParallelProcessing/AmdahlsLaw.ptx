@@ -48,7 +48,7 @@ Add fact to page                                                    Serial
     takes the same time.
   </p>
 
-  <sidebyside>
+  <sidebyside widths="45% 45%">
     <figure>
       <caption>Effect of splitting the parallel part of a job in 5.</caption>
       <image source="ParallelProcessing/Images/amdahl1.png" width="50%">
@@ -112,7 +112,7 @@ Add fact to page                                                    Serial
 
   <p>
     <md>
-      <mrow>\\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} = \frac{1}{0.40 +
+      <mrow>\textrm{Speedup}(N) = \frac{1}{(1-P) + \frac{P}{N}} = \frac{1}{(1-0.60) + \frac{0.60}{3}} = \frac{1}{0.40 +
         0.20} = \frac{1}{0.60} = 1.67</mrow>
     </md>
   </p>

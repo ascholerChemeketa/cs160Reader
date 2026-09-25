@@ -57,7 +57,7 @@
   <activity label="algorithms-algorithms-merging-interactive-1">
     <title>Merge activity</title>
 
-    <interactive iframe="Algorithms/algorithms-algorithms-merging-interactive-1.html"/>
+    <interactive iframe="Algorithms/algorithms-algorithms-merging-interactive-1.html" aspect="540:480" width="90%"/>
   </activity>
 
   <p>

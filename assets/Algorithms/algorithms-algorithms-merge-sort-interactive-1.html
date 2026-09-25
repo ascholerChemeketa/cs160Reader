@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Merge Sort interactive 1</title>
-  <script src="../iframe-resizer.js"></script>
+  <!-- <script src="../iframe-resizer.js"></script> -->
   <style>
     * {
       box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
@@ -41,7 +45,7 @@
     // Setup the Processing Canvas
     void setup() {
       textAlign(CENTER, TOP);
-      size(600, 400);
+      size(580, 400);
       strokeWeight(2);
 
       for (int i = 0; i < list.length; i++) {

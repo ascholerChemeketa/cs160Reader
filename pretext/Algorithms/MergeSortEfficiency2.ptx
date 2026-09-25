@@ -78,7 +78,7 @@
     At what point does Merges Sort start taking more than a half-second?
   </p>
 
-  <interactive label="algorithms-merge-sort-compared-interactive-1" iframe="Algorithms/algorithms-merge-sort-compared-interactive-1.html"/>
+  <interactive label="algorithms-merge-sort-compared-interactive-1" iframe="Algorithms/algorithms-merge-sort-compared-interactive-1.html" aspect="600:140"/>
   <exercise label="algorithms_merge-sort-compared-ex1">
     <statement>
       <p>
