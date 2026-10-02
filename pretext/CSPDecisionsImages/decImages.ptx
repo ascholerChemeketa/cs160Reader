@@ -143,7 +143,7 @@ for p in pixels:
 
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+from unittest.gui import TestCaseGui
 
 #account for weirdness with datafile color values
 #return b if a is close to it, otherwise return a

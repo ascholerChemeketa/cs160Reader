@@ -366,9 +366,9 @@ A.S. Duggal              | 67
       <code/>
       <tests>
         assert 0,0 == A.B. Lane
-      assert 0,1 == 0
-      assert 2,0 == A.K. Hangal
-      assert 2,1 == 84
+        assert 0,1 == 0
+        assert 2,0 == A.K. Hangal
+        assert 2,1 == 84
       </tests>
     </program>
   </exercise>

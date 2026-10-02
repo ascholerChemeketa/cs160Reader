@@ -32,7 +32,7 @@
           print(total)
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+          from unittest.gui import TestCaseGui
 
           class myTests(TestCaseGui):
               def testOne(self):
