@@ -17,22 +17,22 @@
 
     <program xml:id="cspnamenumbers_exercises1_editor" interactive="activecode" language="python">
       <code>
-              print((7 # 2) # 10 == 35)
-              print(2 # 4 == 0.5)
-              print(5 # 2 # 3 == -1)
-              print(3 # 2 # 1 == 7)
-              print(16 # 7 == 2)
+        print((7 # 2) # 10 == 35)
+        print(2 # 4 == 0.5)
+        print(5 # 2 # 3 == -1)
+        print(3 # 2 # 1 == 7)
+        print(16 # 7 == 2)
       </code>
       <tests>
         from unittest.gui import TestCaseGui
 
-              class myTests(TestCaseGui):
-                  def testOne(self):
-                      self.assertNotIn("False", self.getOutput(), "Testing that you have no False's.")
-                      self.assertNotIn("True", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-                      self.assertRegex(self.getOutput(), r"(True[\s\n]*){5}", "Testing that you produced 5 True's.")
+        class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertNotIn("False", self.getOutput(), "Testing that you have no False's.")
+                self.assertNotIn("True", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+                self.assertRegex(self.getOutput(), r"(True[\s\n]*){5}", "Testing that you produced 5 True's.")
 
-              myTests().main()
+        myTests().main()
       </tests>
     </program>
   </exercise>
@@ -51,7 +51,7 @@
             print(x)
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+            from unittest.gui import TestCaseGui
 
             class myTests(TestCaseGui):
                 def testOne(self):
@@ -77,7 +77,7 @@
 
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+            from unittest.gui import TestCaseGui
 
             class myTests(TestCaseGui):
 
@@ -113,7 +113,7 @@
             print(total)
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+            from unittest.gui import TestCaseGui
 
             class myTests(TestCaseGui):
 
@@ -152,7 +152,7 @@
               print(clockTime)
       </code>
       <tests>
-        from unittest.gui import TestCaseGui
+              from unittest.gui import TestCaseGui
 
               class myTests(TestCaseGui):
 
@@ -197,12 +197,11 @@
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-            def testOne(self):
-                self.assertEqual(numHours, 4, "Testing that numHours has the correct value." )
-                self.assertEqual(numMinutes, 30, "Testing that numHours has the correct value." )
-                self.assertNotIn("30", self.getEditorText(), "Testing that you didn't hardcode the answer.")
-                self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+          def testOne(self):
+              self.assertEqual(numHours, 4, "Testing that numHours has the correct value." )
+              self.assertEqual(numMinutes, 30, "Testing that numHours has the correct value." )
+              self.assertNotIn("30", self.getEditorText(), "Testing that you didn't hardcode the answer.")
+              self.assertNotIn("4", self.getEditorText(), "Testing that you didn't hardcode the answer.")
 
         myTests().main()
       </tests>
