@@ -2,30 +2,21 @@
   <title>The Little Computer - Branching</title>
 
   <introduction>
-    <p>
-      Normally, a computer works its way through the instructions in memory in order.
-      After instruction 1, it runs instruction 2, then 3, etc <ellipsis/> A <term>branch</term>
-      instruction can change that.
-      A branch might tell the computer
-      <em>
-      <q>skip ahead to memory location number 20 and execute that</q>
-    </em> or
-      <em>
-      <q>go back and execute the instruction at location 1 again</q>
-    </em>.
-    </p>
+    <p> Normally, a computer works its way through the instructions in memory in order. After
+      instruction 1, it runs instruction 2, then 3, etc <ellipsis/> A <term>branch</term>
+      instruction can change that. A branch might tell the computer <em>
+        <q>skip ahead to memory location number 20 and execute that</q>
+      </em> or <em>
+        <q>go back and execute the instruction at location 1 again</q>
+      </em>. </p>
   </introduction>
 
   <subsection xml:id="the-little-computer-branching-decisions">
     <title>Decisions</title>
 
-    <p>
-      Branch instructions are how a computer can make decisions.
-      In high-level languages, we generally use <q>if</q> statements to make decisions about which
-      instructions to execute.
-      At a low level, those decisions are usually implemented as branches to skip certain
-      instructions.
-    </p>
+    <p> Branch instructions are how a computer can make decisions. In high-level languages, we
+      generally use <q>if</q> statements to make decisions about which instructions to execute. At a
+      low level, those decisions are usually implemented as branches to skip certain instructions. </p>
 
     <p>
       In the Little Computer, an instruction that starts with 6, 7, or 8 is a branch.
@@ -57,7 +48,10 @@
       gets:
     </p>
 
-    <video label="povKvhOyif0" xml:id="povKvhOyif0" youtube="povKvhOyif0" width="100%"/>
+    <video label="povKvhOyif0"
+           xml:id="povKvhOyif0"
+           youtube="povKvhOyif0"
+           width="100%"/>
     <p>
       You can test that program using the link below.
       Since it behaves differently if you enter a positive or negative number, make sure to test it
@@ -65,7 +59,8 @@
     </p>
 
     <p>
-      <url href="external/LittleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000" visual="external/LittleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000">Launch
+      <url href="external/LittleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000"
+           visual="external/LittleComputer/littleComputer.html?program=901/310/806/511/210/310/902/000">Launch
         the Little Computer branch program</url>
     </p>
   </subsection>
@@ -73,29 +68,27 @@
   <subsection xml:id="the-little-computer-branching-looping">
     <title>Looping</title>
 
-    <p>
-      The target of a branch does not need to be later in the program - it is perfectly legal to
-      branch to an earlier instruction.
-      This is how we make a computer <q>loop</q> or repeat a series of instructions.
-      This video demonstrates a Little Computer program that uses a branch instruction to loop
-      through a series of instructions.
-    </p>
+    <p> The target of a branch does not need to be later in the program - it is perfectly legal to
+      branch to an earlier instruction. This is how we make a computer <q>loop</q> or repeat a
+      series of instructions. This video demonstrates a Little Computer program that uses a branch
+      instruction to loop through a series of instructions. </p>
 
-    <video label="bLSVhz3j5xQ" xml:id="bLSVhz3j5xQ" youtube="bLSVhz3j5xQ" width="100%"/>
-    <p>
-      You can test that program using the link below.
-      As you do, pay attention to each output - the program outputs more than one value, so the
-      behavior is best described by the pattern of the output,
-      <em>
+    <video label="bLSVhz3j5xQ"
+           xml:id="bLSVhz3j5xQ"
+           youtube="bLSVhz3j5xQ"
+           width="100%"/>
+    <p> You can test that program using the link below. As you do, pay attention to each output -
+      the program outputs more than one value, so the behavior is best described by the pattern of
+      the output, <em>
         <q>It counts down from 1 to 0</q>
-      </em>, than its final output.
-      We would not say that this program just <em>
+      </em>, than its final output. We would not say that
+      this program just <em>
         <q>outputs 0</q>
-      </em>.
-    </p>
+      </em>. </p>
 
     <p>
-      <url href="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001" visual="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001">Launch
+      <url href="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001"
+           visual="external/LittleComputer/littleComputer.html?program=510/902/211/801/000//////004/001">Launch
         the Little Computer loop program</url>
     </p>
 
@@ -182,5 +175,72 @@
         </choice>
       </choices>
     </exercise>
+
+    <exercise label="programming-languages_the-little-computer-branching-ex3">
+      <statement>
+        <p> Below is a program for the little computer that takes one input and either prints 0 or
+          it prints 1. If you like, you can <url href="external/LittleComputer/littleComputer.html?program=901/313/215/810/514/213/810/517/902/612/516/902/000/000/005/010/0/1/"
+               visual="external/LittleComputer/littleComputer.html?program=901/313/215/810/514/213/810/517/902/612/516/902/000/000/005/010/0/1/">run
+          it in
+            the Little Computer simulator.</url>
+        </p>
+        <program>
+        901
+        313
+        215
+        810
+        514
+        213
+        810
+        517
+        902
+        612
+        516
+        902
+        000
+        000
+        005
+        010
+        0
+        1
+      </program>
+        <p>Use a combination of reading the code and experimentation to determine what is the lowest
+          and highest integer values that will cause the program to print 1.
+        </p>
+        <p>Lowest value: <fillin mode="number"
+                  answer="6"/></p>
+        <p>Highest value: <fillin mode="number"
+                  answer="9"/></p>
+      </statement>
+      <evaluation>
+        <evaluate>
+          <test correct="yes">
+            <numcmp use-answer="yes"/>
+          </test>
+          <test>
+            <strcmp>[a-zA-Z]*</strcmp>
+            <feedback>
+              <p>
+                We are looking for an integer (whole number value).
+              </p>
+            </feedback>
+          </test>
+        </evaluate>
+        <evaluate>
+          <test correct="yes">
+            <numcmp use-answer="yes"/>
+          </test>
+          <test>
+            <strcmp>[a-zA-Z]*</strcmp>
+            <feedback>
+              <p>
+                We are looking for an integer (whole number value).
+              </p>
+            </feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+    </exercise>
+
   </subsection>
 </section>

@@ -8,41 +8,35 @@
     operations on that data.
   </p>
 
-  <p>
-    The Little Computer has memory for 100 pieces of information and a simple CPU.
-    The CPU has three
-    <xref ref="computer-architecture-instruction-register" text="custom">
-    registers</xref>: a
-    program counter, an instruction register, and an accumulator.
-    The CPU supports a very basic set of operations: it can get input and output, it can store data
-    to memory and load it from memory, it can do addition and subtraction, and it can branch (or
-    jump) to a different instruction if certain conditions are met.
-  </p>
+  <p> The Little Computer has memory for 100 pieces of information and a simple CPU. The CPU has
+    three <xref ref="computer-architecture-instruction-register"
+          text="custom">
+      registers</xref>: a program counter, an instruction register, and an accumulator. The CPU
+    supports a very basic set of operations: it can get input and output, it can store data to
+    memory and load it from memory, it can do addition and subtraction, and it can branch (or jump)
+    to a different instruction if certain conditions are met. </p>
 
-  <p>
-    Rather than use binary to encode instructions, it uses decimal numbers to represent data and
-    instructions.
-    This makes it a little easier for a human to see what is going on.
-    But other than that, it is a relatively accurate, if very simple, simulation of a computer.
-    A real processor will have more registers to work with and will support dozens of instructions
-    instead of the handful that the Little Computer does.
-    But for the most part, everything they do is just as simple: they load/store data from memory,
-    they do basic math and logic operations on data, and they use branches to make decisions and
-    repeat operations.
-    Whatever code a programmer writes in a
-    <xref ref="programming-languages_high-level-programming-languages" text="custom">high-level
-    language</xref>
-    like javascript or C++ gets turned into these basic
-    <xref ref="programming-languages_machine-languages" text="custom">machine
-    language</xref>
-    commands.
-  </p>
+  <p> Rather than use binary to encode instructions, it uses decimal numbers to represent data and
+    instructions. This makes it a little easier for a human to see what is going on. But other than
+    that, it is a relatively accurate, if very simple, simulation of a computer. A real processor
+    will have more registers to work with and will support dozens of instructions instead of the
+    handful that the Little Computer does. But for the most part, everything they do is just as
+    simple: they load/store data from memory, they do basic math and logic operations on data, and
+    they use branches to make decisions and repeat operations. Whatever code a programmer writes in
+    a <xref ref="programming-languages_high-level-programming-languages"
+          text="custom">high-level
+    language</xref> like javascript or C++ gets turned into these basic <xref ref="programming-languages_machine-languages"
+          text="custom">machine
+    language</xref> commands. </p>
 
   <p>
     This video introduces how the Little Computer works:
   </p>
 
-  <video label="x7RMi6fA0jg" xml:id="x7RMi6fA0jg" youtube="x7RMi6fA0jg" width="100%"/>
+  <video label="x7RMi6fA0jg"
+         xml:id="x7RMi6fA0jg"
+         youtube="x7RMi6fA0jg"
+         width="100%"/>
   <p>
     You can run the Little Computer be run in a web page using the link below.
     The interface looks a little different than the video, but it functions the same way.
@@ -52,17 +46,15 @@
   </p>
 
   <p>
-    <url href="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000" visual="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000">Launch
+    <url href="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000"
+         visual="external/LittleComputer/littleComputer.html?program=901/310/901/110/902/000">Launch
       the Little Computer</url>
   </p>
 
   <note>
-    <p>
-      As you experiment with the little computer, notice that the memory is storing both the
-      instructions and the data.
-      An <q>instruction</q> is simply some data in memory that the computer tries to decode as a
-      machine instruction and run.
-    </p>
+    <p> As you experiment with the little computer, notice that the memory is storing both the
+      instructions and the data. An <q>instruction</q> is simply some data in memory that the
+      computer tries to decode as a machine instruction and run. </p>
   </note>
 
   <exercise label="programming-languages_the-little-computer-ex1">
@@ -130,4 +122,174 @@
       </match>
     </cardsort>
   </exercise>
+
+  <exercise label="programming-languages_the-little-computer-ex3">
+    <statement>
+      <p> Here is a simple program for the little computer. If you like, you can <url href="external/LittleComputer/littleComputer.html?program=901/312/901/112/312/112/902/000"
+             visual="external/LittleComputer/littleComputer.html?program=901/312/901/112/312/112/902/000">run
+        it in
+          the Little Computer simulator.</url>
+      </p>
+      <program>
+        901
+        312
+        901
+        112
+        312
+        112
+        902
+        000
+      </program>
+      <p>Match each machine instruction to a description of its role. Note that are some roles that
+        do not have a corresponding instruction in this program.</p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise>901</premise>
+        <response>Get input from the user and place it in the accumulator</response>
+      </match>
+      <match>
+        <response>Get input from the user and store it in memory</response>
+      </match>
+      <match>
+        <premise>312</premise>
+        <response>Store the accumulator value into memory location 12</response>
+      </match>
+      <match>
+        <response>Store the value 12 into memory</response>
+      </match>
+      <match>
+        <response>Add 12 to the value in the accumulator</response>
+      </match>
+      <match>
+        <premise>112</premise>
+        <response>Add the value in memory location 12 to the value in the accumulator</response>
+      </match>
+      <match>
+        <premise>902</premise>
+        <response>Output the value in the accumulator to the user</response>
+      </match>
+      <match>
+        <premise>000</premise>
+        <response>Halt the program</response>
+      </match>
+    </cardsort>
+  </exercise>
+
+  <exercise label="programming-languages_the-little-computer-ex4">
+    <statement>
+      <p> Here is a simple program for the little computer. If you like, you can <url href="external/LittleComputer/littleComputer.html?program=901/312/901/112/312/112/902/000"
+             visual="external/LittleComputer/littleComputer.html?program=901/312/901/112/312/112/902/000">run
+        it in
+          the Little Computer simulator.</url>
+      </p>
+      <program>
+        901
+        312
+        901
+        112
+        312
+        112
+        902
+        000
+      </program>
+      <p>Call the first value the user enters <c>x</c> and the second value <c>y</c>. What expression
+        does the program compute?</p>
+      <p>
+        <fillin mode="math"
+                ansobj="correctAnswer"/>
+      </p>
+    </statement>
+
+    <setup>
+      <de-object name="correctAnswer"
+                 context="formula">
+        <de-expression mode="formula">2*x+2*y</de-expression>
+      </de-object>
+    </setup>
+
+    <evaluation>
+      <evaluate>
+        <test correct="yes">
+          <mathcmp use-answer="yes"/>
+        </test>
+        <test>
+          <strcmp>*</strcmp>
+          <feedback>
+            <p> Make sure to write your answer as a math expression using the variables <c>x</c> and <c>y</c>
+              .
+            </p>
+          </feedback>
+        </test>
+      </evaluate>
+    </evaluation>
+
+    <hint>
+      <p>
+        Try using various inputs to the program and see what output it produces. What do you get if
+        you input 3 and 5? How about 10 and 20? If you carefully follow the steps of the program,
+        you can figure out the general pattern of what it computes with the two inputs.
+      </p>
+    </hint>
+  </exercise>
+
+  <exercise label="programming-languages_the-little-computer-ex5">
+    <statement>
+      <p> Arrange the instructions to produce a program that computes 3y - x where x is the first
+        input and y is the second input. You should use <url href="external/LittleComputer/littleComputer.html"
+             visual="external/LittleComputer/littleComputer.html">
+        the Little Computer simulator</url> to test your program. </p>
+      <p>Note: there are multiple ways to arrange the instructions to achieve the desired result.
+        And you could write a program that used different instructions to achieve the same result.</p>
+    </statement>
+
+    <blocks>
+      <block order="4"
+             name="a"
+             depends="">
+        <cline><![CDATA[901 (input x)]]></cline>
+      </block>
+      <block order="5"
+             name="b"
+             depends="a">
+        <cline><![CDATA[315]]></cline>
+      </block>
+      <block order="6"
+             name="c"
+             depends="b">
+        <cline><![CDATA[901 (input y)]]></cline>
+      </block>
+      <block order="8"
+             name="d"
+             depends="c">
+        <cline><![CDATA[316]]></cline>
+      </block>
+      <block order="1"
+             name="e"
+             depends="d">
+        <cline><![CDATA[116]]></cline>
+      </block>
+      <block order="7"
+             name="f"
+             depends="d">
+        <cline><![CDATA[116]]></cline>
+      </block>
+      <block order="2"
+             name="g"
+             depends="d">
+        <cline><![CDATA[215]]></cline>
+      </block>
+      <block order="9"
+             name="h"
+             depends="e f g">
+        <cline><![CDATA[902]]></cline>
+      </block>
+      <block order="3"
+             name="i"
+             depends="h">
+        <cline><![CDATA[000]]></cline>
+      </block>
+    </blocks>
+  </exercise>
+
 </section>
