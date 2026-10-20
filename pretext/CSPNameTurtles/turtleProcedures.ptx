@@ -164,7 +164,7 @@
           <p>
             Sets the color for drawing.
             Use <term>strings</term>- like 'red', 'black', etc <ellipsis/> This page has a
-            <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">table of colors</url>
+            <url href="https://coddy.tech/tools/color-converter#named-colors" visual="https://coddy.tech/tools/color-converter#named-colors">table of colors</url>
             Make sure to put quotation marks around the name of the color!
           </p>
         </cell>
@@ -196,7 +196,7 @@
         <cell>
           <p>
             This page has a
-            <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">table of colors</url>
+            <url href="https://coddy.tech/tools/color-converter#named-colors" visual="https://coddy.tech/tools/color-converter#named-colors">table of colors</url>
           </p>
         </cell>
       </row>
@@ -292,7 +292,7 @@ ji.forward(75)
       <li>
         <p>
           Try
-          <url href="https://trinket.io/docs/colors" visual="https://trinket.io/docs/colors">looking up some other
+          <url href="https://coddy.tech/tools/color-converter#named-colors" visual="https://coddy.tech/tools/color-converter#named-colors">looking up some other
           colors</url>
           and change what color the turtle draws with.
         </p>
